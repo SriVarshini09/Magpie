@@ -1,0 +1,1235 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "BME280 sensor module"
+  }
+ },
+ "key": "80d2ebe869d1404d852b4aa7489f11a4e445e353c154fb6e9ade0fe1b17b0dad",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:42-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 851); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODUxLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 851
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>The <strong>BME280 sensor</strong> module measures temperature, barometric pressure and humidity with solid accuracy in a compact, low‑power, tiny-footprint package ideal for Arduino and Raspberry Pi projects that run at 3.3V; it delivers reliable real-world environment data without a complicated setup. It integrates cleanly over <strong>I2C or SPI</strong> with widespread library support for rapid prototyping and deployed IoT dashboards. Use it for weather stations, indoor air monitoring and altitude estimation from pressure trends; its <strong>3.3V compatibility</strong> and simple wiring make dependable sensing quick to install.</p>"
+     },
+     "handle": "bme280-pre-soldered-atmospheric-temperature-pressure-and-humidity-sensor",
+     "id": "gid://shopify/p/pd4O7nLWNimHttDTRzUdX",
+     "media": [
+      {
+       "alt_text": "Close-up of ShillehTek Pre-Soldered BME280 sensor with purple PCB and metal pins",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/0837/4340/8415/files/3_c8d4b8d9-3108-42b1-956c-a2379b99d511.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0837/4340/8415/files/3_c8d4b8d9-3108-42b1-956c-a2379b99d511.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Pre-soldered BME280 module: Enables quick and hassle-free installation for immediate prototyping",
+       "Measures temperature, pressure, and humidity: Provides comprehensive environmental data for monitoring and analysis",
+       "3.3V compatibility: Ensures seamless integration with Arduino and Raspberry Pi boards",
+       "I2C and SPI interface: Offers flexible connection options with broad library support",
+       "Low power consumption: Maintains energy efficiency for battery-powered applications"
+      ],
+      "unique_selling_points": [
+       "Pre-soldered, ready-to-use BME280 module with 3.3V compatibility and simple wiring for rapid prototyping."
+      ]
+     },
+     "options": [
+      {
+       "name": "Pack size",
+       "values": [
+        {
+         "label": "Single"
+        },
+        {
+         "label": "2-Pack"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1099,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 57,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "BME280 Pre-Soldered Temperature, Pressure & Humidity Sensor for Arduino & Raspberry Pi",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://shillehtek.com/buy/47072161005855:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The <strong>BME280 sensor</strong> module measures temperature, barometric pressure and humidity with solid accuracy in a compact, low‑power, tiny-footprint package ideal for Arduino and Raspberry Pi projects that run at 3.3V; it delivers reliable real-world environment data without a complicated setup. It integrates cleanly over <strong>I2C or SPI</strong> with widespread library support for rapid prototyping and deployed IoT dashboards. Use it for weather stations, indoor air monitoring and altitude estimation from pressure trends; its <strong>3.3V compatibility</strong> and simple wiring make dependable sensing quick to install.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-pre-soldered-atmospheric-temperature-pressure-and-humidity-sensor",
+       "id": "gid://shopify/ProductVariant/47072161005855",
+       "media": [
+        {
+         "alt_text": "Close-up of ShillehTek Pre-Soldered BME280 sensor with purple PCB and metal pins",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/0837/4340/8415/files/3_c8d4b8d9-3108-42b1-956c-a2379b99d511.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0837/4340/8415/files/3_c8d4b8d9-3108-42b1-956c-a2379b99d511.jpg",
+         "width": 1500
+        }
+       ],
+       "options": [
+        {
+         "label": "Single",
+         "name": "Pack size"
+        }
+       ],
+       "price": {
+        "amount": 1099,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "dcb15d-3.myshopify.com",
+        "id": "gid://shopify/Shop/83743408415",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/83743408415/policies/36397318431.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/83743408415/policies/36397351199.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/83743408415/policies/36397285663.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/83743408415/policies/36397383967.html"
+         }
+        ],
+        "name": "ShillehTek",
+        "url": "https://shillehtek.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8758807003423",
+       "source": "shopify",
+       "title": "BME280 Pre-Soldered Temperature, Pressure & Humidity Sensor for Arduino & Raspberry Pi",
+       "url": "https://shillehtek.com/products/bme280-pre-soldered-atmospheric-temperature-pressure-and-humidity-sensor?variant=47072161005855&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"elementor-element elementor-element-36e25742 elementor-widget elementor-widget-text-editor\">\n<div class=\"elementor-widget-container\">This AX22-sized board plants Bosch’s BME280 on a 22 × 22 mm PCB <strong>with a small cut-out milled right around the sensor can</strong> so ambient air flows freely and self-heating stays microscopic. You get calibrated digital readings of temperature, barometric pressure, and relative humidity over I²C or SPI with a single library call. A 3 V LDO plus bidirectional level shifters let any 1.8 V, 3.3 V, or 5 V microcontroller talk to it safely, and an onboard RC filter keeps the supply rail quiet for rock-steady measurements. Snap it into any AX22 backplane to add weather-station precision, altitude calculation, or climate control feedback ready for Arduino IDE, MicroPython, or MicroBlocks.</div>\n</div>"
+     },
+     "handle": "bme280",
+     "id": "gid://shopify/p/7jn53xRrtdaVwI1HX1maiK",
+     "media": [
+      {
+       "alt_text": "Temperature, Pressure, & Humidity (BME280)",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/0966/7756/0659/files/Untitled_design_11.png",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0966/7756/0659/files/Untitled_design_11.png",
+       "width": 1080
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1399,
+       "currency": "USD"
+      }
+     },
+     "title": "Temperature, Pressure, & Humidity (BME280)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.axiometa.io/buy/51357263036755:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"elementor-element elementor-element-36e25742 elementor-widget elementor-widget-text-editor\">\n<div class=\"elementor-widget-container\">This AX22-sized board plants Bosch’s BME280 on a 22 × 22 mm PCB <strong>with a small cut-out milled right around the sensor can</strong> so ambient air flows freely and self-heating stays microscopic. You get calibrated digital readings of temperature, barometric pressure, and relative humidity over I²C or SPI with a single library call. A 3 V LDO plus bidirectional level shifters let any 1.8 V, 3.3 V, or 5 V microcontroller talk to it safely, and an onboard RC filter keeps the supply rail quiet for rock-steady measurements. Snap it into any AX22 backplane to add weather-station precision, altitude calculation, or climate control feedback ready for Arduino IDE, MicroPython, or MicroBlocks.</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280",
+       "id": "gid://shopify/ProductVariant/51357263036755",
+       "media": [
+        {
+         "alt_text": "Temperature, Pressure, & Humidity (BME280)",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/0966/7756/0659/files/Untitled_design_11.png",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0966/7756/0659/files/Untitled_design_11.png",
+         "width": 1080
+        }
+       ],
+       "price": {
+        "amount": 1399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "jhk9a9-gd.myshopify.com",
+        "id": "gid://shopify/Shop/96677560659",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/96677560659/policies/47350645075.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/96677560659/policies/48208904531.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/96677560659/policies/48208838995.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/96677560659/policies/48209035603.html"
+         }
+        ],
+        "name": "Axiometa",
+        "url": "https://www.axiometa.io"
+       },
+       "seller_product_id": "gid://shopify/Product/9997910114643",
+       "source": "shopify",
+       "title": "Temperature, Pressure, & Humidity (BME280)",
+       "url": "https://www.axiometa.io/products/bme280?variant=51357263036755&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2 data-section-id=\"11tvhfk\" data-start=\"80\" data-end=\"183\">🌦️ BME280 5V Environmental Sensor Module (Temperature, Humidity &amp; Pressure) – I2C / SPI (GY-BME280)</h2>\n<p data-start=\"295\" data-end=\"611\">The GY-BME280 sensor module is a compact and high-precision environmental sensor capable of measuring temperature, humidity, and atmospheric pressure. Based on the reliable BME280 chip, this module supports both I2C and SPI communication, making it highly versatile for a wide range of embedded and IoT applications.</p>\n<p data-start=\"613\" data-end=\"777\">With low power consumption and excellent accuracy, the BME280 is ideal for weather stations, indoor climate monitoring, altitude estimation, and smart home systems.</p>\n<hr data-start=\"779\" data-end=\"782\">\n<h3 data-section-id=\"1efomr0\" data-start=\"784\" data-end=\"803\">🔧 Key Features</h3>\n<ul data-start=\"804\" data-end=\"1121\">\n<li data-section-id=\"1tk9nn7\" data-start=\"804\" data-end=\"873\">🌡️ <strong data-start=\"810\" data-end=\"871\">Temperature, humidity, and pressure sensing in one module</strong>\n</li>\n<li data-section-id=\"1erl59y\" data-start=\"874\" data-end=\"921\">🎯 <strong data-start=\"879\" data-end=\"919\">High accuracy and stable performance</strong>\n</li>\n<li data-section-id=\"ocr0nv\" data-start=\"922\" data-end=\"969\">🔌 <strong data-start=\"927\" data-end=\"967\">Supports both I2C and SPI interfaces</strong>\n</li>\n<li data-section-id=\"14k4vtq\" data-start=\"970\" data-end=\"1029\">⚡ <strong data-start=\"974\" data-end=\"999\">Low power consumption</strong> (ideal for battery devices)</li>\n<li data-section-id=\"xnjg2k\" data-start=\"1030\" data-end=\"1069\">📦 Compact GY-BME280 breakout board</li>\n<li data-section-id=\"1lytboe\" data-start=\"1070\" data-end=\"1121\">🤖 Compatible with Arduino, ESP32, Raspberry Pi</li>\n</ul>\n<hr data-start=\"1123\" data-end=\"1126\">\n<h3 data-section-id=\"1ssk91b\" data-start=\"1128\" data-end=\"1149\">📊 Specifications</h3>\n<ul data-start=\"1150\" data-end=\"1588\">\n<li data-section-id=\"qbw26e\" data-start=\"1150\" data-end=\"1177\">\n<strong data-start=\"1152\" data-end=\"1168\">Sensor Chip:</strong> BME280</li>\n<li data-section-id=\"i38ax6\" data-start=\"1178\" data-end=\"1206\">\n<strong data-start=\"1180\" data-end=\"1194\">Interface:</strong> I2C / SPI</li>\n<li data-section-id=\"1g81r1\" data-start=\"1207\" data-end=\"1267\">\n<strong data-start=\"1209\" data-end=\"1231\">Operating Voltage:</strong> 3.3V – 5V (module with regulator)</li>\n<li data-section-id=\"104iyid\" data-start=\"1268\" data-end=\"1309\">\n<strong data-start=\"1270\" data-end=\"1292\">Temperature Range:</strong> -40°C to +85°C</li>\n<li data-section-id=\"vh6n90\" data-start=\"1310\" data-end=\"1347\">\n<strong data-start=\"1312\" data-end=\"1331\">Humidity Range:</strong> 0% to 100% RH</li>\n<li data-section-id=\"1gqskao\" data-start=\"1348\" data-end=\"1391\">\n<strong data-start=\"1350\" data-end=\"1369\">Pressure Range:</strong> 300 hPa to 1100 hPa</li>\n<li data-section-id=\"168tetx\" data-start=\"1392\" data-end=\"1438\">\n<strong data-start=\"1394\" data-end=\"1419\">Temperature Accuracy:</strong> ±1.0°C (typical)</li>\n<li data-section-id=\"1nmbamo\" data-start=\"1439\" data-end=\"1482\">\n<strong data-start=\"1441\" data-end=\"1463\">Humidity Accuracy:</strong> ±3% RH (typical)</li>\n<li data-section-id=\"1wj3zvs\" data-start=\"1483\" data-end=\"1526\">\n<strong data-start=\"1485\" data-end=\"1507\">Pressure Accuracy:</strong> ±1 hPa (typical)</li>\n<li data-section-id=\"14qfofw\" data-start=\"1527\" data-end=\"1588\">\n<strong data-start=\"1529\" data-end=\"1545\">I2C Address:</strong> 0x76 / 0x77 (depending on configuration)</li>\n</ul>\n<hr data-start=\"1590\" data-end=\"1593\">\n<h3 data-section-id=\"qnulqp\" data-start=\"1595\" data-end=\"1614\">🧠 Applications</h3>\n<ul data-start=\"1615\" data-end=\"1794\">\n<li data-section-id=\"92z0x8\" data-start=\"1615\" data-end=\"1639\">🌦️ Weather stations</li>\n<li data-section-id=\"1o9d32\" data-start=\"1640\" data-end=\"1676\">🏠 Indoor air quality monitoring</li>\n<li data-section-id=\"14jbdys\" data-start=\"1677\" data-end=\"1728\">📏 Altitude and barometric pressure measurement</li>\n<li data-section-id=\"297yor\" data-start=\"1729\" data-end=\"1761\">🌱 Smart agriculture systems</li>\n<li data-section-id=\"1d4ajqp\" data-start=\"1762\" data-end=\"1794\">🤖 IoT and embedded projects</li>\n</ul>\n<hr data-start=\"1796\" data-end=\"1799\">\n<h3 data-section-id=\"2w2lzc\" data-start=\"1801\" data-end=\"1824\">📦 Package Includes</h3>\n<ul data-start=\"1825\" data-end=\"1856\">\n<li data-section-id=\"r4d0bl\" data-start=\"1825\" data-end=\"1856\">1 × GY-BME280 Sensor Module</li>\n</ul>\n<hr data-start=\"1858\" data-end=\"1861\">\n<h3 data-section-id=\"bkmqss\" data-start=\"1863\" data-end=\"1885\">⚠️ Important Notes</h3>\n<ul data-start=\"1886\" data-end=\"2089\">\n<li data-section-id=\"9l7p72\" data-start=\"1886\" data-end=\"1960\">Some versions may default to <strong data-start=\"1917\" data-end=\"1929\">I2C mode</strong> (SPI requires configuration)</li>\n<li data-section-id=\"1ahl89s\" data-start=\"1961\" data-end=\"2028\">Ensure correct voltage level when interfacing with 3.3V systems</li>\n<li data-section-id=\"fvgsle\" data-start=\"2029\" data-end=\"2089\">Libraries available for Arduino, ESP32, and Raspberry Pi</li>\n</ul>\n<hr data-start=\"2091\" data-end=\"2094\">\n<h3 data-section-id=\"8mr89u\" data-start=\"2096\" data-end=\"2125\">⭐ Why Choose This Sensor?</h3>\n<p data-start=\"2126\" data-end=\"2319\">The BME280 module provides <strong data-start=\"2153\" data-end=\"2226\">three environmental measurements in one compact and efficient package</strong>, making it a versatile and reliable choice for both hobbyists and professional applications.</p>"
+     },
+     "handle": "bme280-5v-environmental-sensor-module",
+     "id": "gid://shopify/p/17yx6kI2afQQo0J88VlXbn",
+     "media": [
+      {
+       "alt_text": "BME280 5V Environmental Sensor Module",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/0752/6901/3784/files/71tysou55pL._SL1500.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0752/6901/3784/files/71tysou55pL._SL1500.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Measures temperature, humidity, and pressure simultaneously for comprehensive environmental monitoring",
+       "Supports both I2C and SPI interfaces for flexible integration with various microcontrollers",
+       "Low power consumption ideal for battery-powered devices",
+       "High accuracy and stable performance ensures reliable data collection",
+       "Compact breakout board design compatible with Arduino, ESP32, and Raspberry Pi"
+      ],
+      "unique_selling_points": [
+       "Combines temperature, humidity, and pressure sensing in one module with both I2C and SPI communication options for maximum versatility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 795,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 795,
+       "currency": "USD"
+      }
+     },
+     "title": "BME280 5V Environmental Sensor Module",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://alpha3dlab.com/buy/51851946852632:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2 data-section-id=\"11tvhfk\" data-start=\"80\" data-end=\"183\">🌦️ BME280 5V Environmental Sensor Module (Temperature, Humidity &amp; Pressure) – I2C / SPI (GY-BME280)</h2>\n<p data-start=\"295\" data-end=\"611\">The GY-BME280 sensor module is a compact and high-precision environmental sensor capable of measuring temperature, humidity, and atmospheric pressure. Based on the reliable BME280 chip, this module supports both I2C and SPI communication, making it highly versatile for a wide range of embedded and IoT applications.</p>\n<p data-start=\"613\" data-end=\"777\">With low power consumption and excellent accuracy, the BME280 is ideal for weather stations, indoor climate monitoring, altitude estimation, and smart home systems.</p>\n<hr data-start=\"779\" data-end=\"782\">\n<h3 data-section-id=\"1efomr0\" data-start=\"784\" data-end=\"803\">🔧 Key Features</h3>\n<ul data-start=\"804\" data-end=\"1121\">\n<li data-section-id=\"1tk9nn7\" data-start=\"804\" data-end=\"873\">🌡️ <strong data-start=\"810\" data-end=\"871\">Temperature, humidity, and pressure sensing in one module</strong>\n</li>\n<li data-section-id=\"1erl59y\" data-start=\"874\" data-end=\"921\">🎯 <strong data-start=\"879\" data-end=\"919\">High accuracy and stable performance</strong>\n</li>\n<li data-section-id=\"ocr0nv\" data-start=\"922\" data-end=\"969\">🔌 <strong data-start=\"927\" data-end=\"967\">Supports both I2C and SPI interfaces</strong>\n</li>\n<li data-section-id=\"14k4vtq\" data-start=\"970\" data-end=\"1029\">⚡ <strong data-start=\"974\" data-end=\"999\">Low power consumption</strong> (ideal for battery devices)</li>\n<li data-section-id=\"xnjg2k\" data-start=\"1030\" data-end=\"1069\">📦 Compact GY-BME280 breakout board</li>\n<li data-section-id=\"1lytboe\" data-start=\"1070\" data-end=\"1121\">🤖 Compatible with Arduino, ESP32, Raspberry Pi</li>\n</ul>\n<hr data-start=\"1123\" data-end=\"1126\">\n<h3 data-section-id=\"1ssk91b\" data-start=\"1128\" data-end=\"1149\">📊 Specifications</h3>\n<ul data-start=\"1150\" data-end=\"1588\">\n<li data-section-id=\"qbw26e\" data-start=\"1150\" data-end=\"1177\">\n<strong data-start=\"1152\" data-end=\"1168\">Sensor Chip:</strong> BME280</li>\n<li data-section-id=\"i38ax6\" data-start=\"1178\" data-end=\"1206\">\n<strong data-start=\"1180\" data-end=\"1194\">Interface:</strong> I2C / SPI</li>\n<li data-section-id=\"1g81r1\" data-start=\"1207\" data-end=\"1267\">\n<strong data-start=\"1209\" data-end=\"1231\">Operating Voltage:</strong> 3.3V – 5V (module with regulator)</li>\n<li data-section-id=\"104iyid\" data-start=\"1268\" data-end=\"1309\">\n<strong data-start=\"1270\" data-end=\"1292\">Temperature Range:</strong> -40°C to +85°C</li>\n<li data-section-id=\"vh6n90\" data-start=\"1310\" data-end=\"1347\">\n<strong data-start=\"1312\" data-end=\"1331\">Humidity Range:</strong> 0% to 100% RH</li>\n<li data-section-id=\"1gqskao\" data-start=\"1348\" data-end=\"1391\">\n<strong data-start=\"1350\" data-end=\"1369\">Pressure Range:</strong> 300 hPa to 1100 hPa</li>\n<li data-section-id=\"168tetx\" data-start=\"1392\" data-end=\"1438\">\n<strong data-start=\"1394\" data-end=\"1419\">Temperature Accuracy:</strong> ±1.0°C (typical)</li>\n<li data-section-id=\"1nmbamo\" data-start=\"1439\" data-end=\"1482\">\n<strong data-start=\"1441\" data-end=\"1463\">Humidity Accuracy:</strong> ±3% RH (typical)</li>\n<li data-section-id=\"1wj3zvs\" data-start=\"1483\" data-end=\"1526\">\n<strong data-start=\"1485\" data-end=\"1507\">Pressure Accuracy:</strong> ±1 hPa (typical)</li>\n<li data-section-id=\"14qfofw\" data-start=\"1527\" data-end=\"1588\">\n<strong data-start=\"1529\" data-end=\"1545\">I2C Address:</strong> 0x76 / 0x77 (depending on configuration)</li>\n</ul>\n<hr data-start=\"1590\" data-end=\"1593\">\n<h3 data-section-id=\"qnulqp\" data-start=\"1595\" data-end=\"1614\">🧠 Applications</h3>\n<ul data-start=\"1615\" data-end=\"1794\">\n<li data-section-id=\"92z0x8\" data-start=\"1615\" data-end=\"1639\">🌦️ Weather stations</li>\n<li data-section-id=\"1o9d32\" data-start=\"1640\" data-end=\"1676\">🏠 Indoor air quality monitoring</li>\n<li data-section-id=\"14jbdys\" data-start=\"1677\" data-end=\"1728\">📏 Altitude and barometric pressure measurement</li>\n<li data-section-id=\"297yor\" data-start=\"1729\" data-end=\"1761\">🌱 Smart agriculture systems</li>\n<li data-section-id=\"1d4ajqp\" data-start=\"1762\" data-end=\"1794\">🤖 IoT and embedded projects</li>\n</ul>\n<hr data-start=\"1796\" data-end=\"1799\">\n<h3 data-section-id=\"2w2lzc\" data-start=\"1801\" data-end=\"1824\">📦 Package Includes</h3>\n<ul data-start=\"1825\" data-end=\"1856\">\n<li data-section-id=\"r4d0bl\" data-start=\"1825\" data-end=\"1856\">1 × GY-BME280 Sensor Module</li>\n</ul>\n<hr data-start=\"1858\" data-end=\"1861\">\n<h3 data-section-id=\"bkmqss\" data-start=\"1863\" data-end=\"1885\">⚠️ Important Notes</h3>\n<ul data-start=\"1886\" data-end=\"2089\">\n<li data-section-id=\"9l7p72\" data-start=\"1886\" data-end=\"1960\">Some versions may default to <strong data-start=\"1917\" data-end=\"1929\">I2C mode</strong> (SPI requires configuration)</li>\n<li data-section-id=\"1ahl89s\" data-start=\"1961\" data-end=\"2028\">Ensure correct voltage level when interfacing with 3.3V systems</li>\n<li data-section-id=\"fvgsle\" data-start=\"2029\" data-end=\"2089\">Libraries available for Arduino, ESP32, and Raspberry Pi</li>\n</ul>\n<hr data-start=\"2091\" data-end=\"2094\">\n<h3 data-section-id=\"8mr89u\" data-start=\"2096\" data-end=\"2125\">⭐ Why Choose This Sensor?</h3>\n<p data-start=\"2126\" data-end=\"2319\">The BME280 module provides <strong data-start=\"2153\" data-end=\"2226\">three environmental measurements in one compact and efficient package</strong>, making it a versatile and reliable choice for both hobbyists and professional applications.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-5v-environmental-sensor-module",
+       "id": "gid://shopify/ProductVariant/51851946852632",
+       "media": [
+        {
+         "alt_text": "BME280 5V Environmental Sensor Module",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/0752/6901/3784/files/71tysou55pL._SL1500.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0752/6901/3784/files/71tysou55pL._SL1500.jpg",
+         "width": 1500
+        }
+       ],
+       "price": {
+        "amount": 795,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "0e93a7.myshopify.com",
+        "id": "gid://shopify/Shop/75269013784",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/75269013784/policies/32188596504.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/75269013784/policies/32188629272.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/75269013784/policies/32188563736.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/75269013784/policies/32188662040.html"
+         }
+        ],
+        "name": "Alpha 3D Lab",
+        "url": "https://alpha3dlab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10182927679768",
+       "source": "shopify",
+       "title": "BME280 5V Environmental Sensor Module",
+       "url": "https://alpha3dlab.com/products/bme280-5v-environmental-sensor-module?variant=51851946852632&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Description</strong><br>\nME-BME280 is a Breakout Board featuring a Bosch Sensortec ME280 Temperature, Humidity &amp; Pressure Sensor.<br>\nThe board has selectable I2C address jumper (solder link GS2), I2C pull-up resistors, 7 pin header 2.54mm, and two mounting holes 3.5mm.<br>\nDefault setting of the board; single power rail Vdd=Vdd_IO (solder link GS1), pull-ups resistors (R2, R3) 10k, protocol selector resistor 0 ohm (R1), decoupling capacitors 0.1uF on both power supply pins Vdd &amp; Vdd_IO.<br>\nIf you connect board to both power rails VDD_IO 1.8V and VDD 3.3V be sure to remove the power rail jumper GS1!<br>\n<br>\n<strong>BME280 Features</strong><br>\n- Package 2.5 mm x 2.5 mm x 0.93 mm metal lid LGA<br>\n- Digital interface I2C (up to 3.4 MHz) and SPI (3 and 4 wire, up to 10 MHz)<br>\n- Supply voltage VDD main supply voltage range: 1.71 V to 3.6 V<br>\nVDDIO interface voltage range: 1.2 V to 3.6 V<br>\n- Current consumption 1.8 uA @ 1 Hz humidity and temperature<br>\n2.8 uA @ 1 Hz pressure and temperature<br>\n3.6 uA @ 1 Hz humidity, pressure and temperature<br>\n0.1 uA in sleep mode<br>\n- Operating range -40C+85 C, 0C 100 % rel. humidity, 300C 1100 hPa- Humidity sensor and pressure sensor can be independently enabled/disabled<br>\n<br>\nBosch has stepped up their game with their new BMP280 sensor, an environmental sensor with temperature, barometric pressure that is the next generation upgrade to the BMP085/BMP180/BMP183. This sensor is great for all sorts of weather sensing and can even be used in both I2C and SPI!<br>\n<br>\nThis precision sensor from Bosch is the best low-cost, precision sensing solution for measuring barometric pressure with &amp;plusmn;1 hPa absolute accuracy, and temperature with &amp;plusmn;1.0&amp;deg;C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with &amp;plusmn;1 meter accuracy<br>\n<br>\nThe BME280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI.</p>\n\n<p><strong>Package Included:</strong><br>\n1 x GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC</p>\n"
+     },
+     "handle": "gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic",
+     "id": "gid://shopify/p/1eWOjSc8IGlFFRsvppkNvC",
+     "media": [
+      {
+       "alt_text": "GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC - eElectronicParts",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0102/3577/2994/products/gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic.jpg",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0102/3577/2994/products/gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic.jpg",
+       "width": 1200
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Selectable I2C address jumper for flexible sensor management",
+       "Supports both I2C and SPI interfaces for versatile wiring options",
+       "High-precision Bosch BME280 sensor delivers accurate temperature, humidity, and pressure readings",
+       "Low power consumption for efficient operation",
+       "Includes decoupling capacitors and pull-up resistors for reliable signal integrity"
+      ],
+      "unique_selling_points": [
+       "Supports both I2C and SPI interfaces with selectable address and high-precision Bosch BME280 sensor integration."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 698,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 698,
+       "currency": "USD"
+      }
+     },
+     "title": "GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.eelectronicparts.com/buy/36193389609128:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Description</strong><br>\nME-BME280 is a Breakout Board featuring a Bosch Sensortec ME280 Temperature, Humidity &amp; Pressure Sensor.<br>\nThe board has selectable I2C address jumper (solder link GS2), I2C pull-up resistors, 7 pin header 2.54mm, and two mounting holes 3.5mm.<br>\nDefault setting of the board; single power rail Vdd=Vdd_IO (solder link GS1), pull-ups resistors (R2, R3) 10k, protocol selector resistor 0 ohm (R1), decoupling capacitors 0.1uF on both power supply pins Vdd &amp; Vdd_IO.<br>\nIf you connect board to both power rails VDD_IO 1.8V and VDD 3.3V be sure to remove the power rail jumper GS1!<br>\n<br>\n<strong>BME280 Features</strong><br>\n- Package 2.5 mm x 2.5 mm x 0.93 mm metal lid LGA<br>\n- Digital interface I2C (up to 3.4 MHz) and SPI (3 and 4 wire, up to 10 MHz)<br>\n- Supply voltage VDD main supply voltage range: 1.71 V to 3.6 V<br>\nVDDIO interface voltage range: 1.2 V to 3.6 V<br>\n- Current consumption 1.8 uA @ 1 Hz humidity and temperature<br>\n2.8 uA @ 1 Hz pressure and temperature<br>\n3.6 uA @ 1 Hz humidity, pressure and temperature<br>\n0.1 uA in sleep mode<br>\n- Operating range -40C+85 C, 0C 100 % rel. humidity, 300C 1100 hPa- Humidity sensor and pressure sensor can be independently enabled/disabled<br>\n<br>\nBosch has stepped up their game with their new BMP280 sensor, an environmental sensor with temperature, barometric pressure that is the next generation upgrade to the BMP085/BMP180/BMP183. This sensor is great for all sorts of weather sensing and can even be used in both I2C and SPI!<br>\n<br>\nThis precision sensor from Bosch is the best low-cost, precision sensing solution for measuring barometric pressure with &amp;plusmn;1 hPa absolute accuracy, and temperature with &amp;plusmn;1.0&amp;deg;C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with &amp;plusmn;1 meter accuracy<br>\n<br>\nThe BME280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI.</p>\n\n<p><strong>Package Included:</strong><br>\n1 x GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC</p>\n"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic",
+       "id": "gid://shopify/ProductVariant/36193389609128",
+       "media": [
+        {
+         "alt_text": "GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC - eElectronicParts",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0102/3577/2994/products/gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic.jpg",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0102/3577/2994/products/gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic.jpg",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 698,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "eelectronicparts.myshopify.com",
+        "id": "gid://shopify/Shop/10235772994",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/10235772994/policies/7919763522.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/10235772994/policies/7919796290.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/10235772994/policies/7919730754.html"
+         }
+        ],
+        "name": "eElectronicParts",
+        "url": "https://www.eelectronicparts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/5764007559336",
+       "source": "shopify",
+       "title": "GY-BME280-3.3 BME280 3.3V Atmospheric Pressure Humidity Temperature Sensor Module for Arduino SPI IIC",
+       "url": "https://www.eelectronicparts.com/products/gy-bme280-3-3-bme280-3-3v-atmospheric-pressure-humidity-temperature-sensor-module-for-arduino-spi-iic?variant=36193389609128&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>BME280 3.3V Atmospheric Pressure Sensor</h2>\n<h3>Key Features</h3>\n<ul>\n<li>Integrated sensor for measuring atmospheric pressure, humidity, and temperature.</li>\n<li>Dual communication interface support for both I2C and SPI protocols.</li>\n<li>Onboard voltage regulator and level shifter for compatibility with 3.3V and 5V logic.</li>\n<li>Pressure measurement range: 300 to 1100 hPa.</li>\n<li>Temperature measurement range: -40°C to +85°C.</li>\n<li>Humidity measurement range: 0% to 100% relative humidity.<br>\n</li>\n</ul>\n<h3>Replaces / Cross-Reference Part Numbers</h3>\n<ul>\n<li>BME280</li>\n<li>GY-BME280</li>\n<li>Functional upgrade for BMP280, BMP180, and BMP085 sensors (adds humidity sensing and higher precision).</li>\n</ul>\n<h3>Compatibility &amp; Fitment</h3>\n<ul>\n<li>Designed for use with microcontrollers such as Arduino, ESP32, ESP8266, and Raspberry Pi.</li>\n<li>Suitable for a wide range of applications:\n<ul>\n<li>Weather stations and environmental monitoring</li>\n<li>Indoor climate control and HVAC systems</li>\n<li>Altimetry and barometry for drones or personal navigation</li>\n<li>Home automation projects</li>\n</ul>\n</li>\n</ul>\n<h3>When to Replace</h3>\n<ul>\n<li>Sensor fails to provide readings or sends intermittent data.</li>\n<li>Readings for pressure, temperature, or humidity are static or inaccurate.</li>\n<li>Module is no longer detected on the I2C or SPI bus.</li>\n<li>Physical damage to the PCB or sensor element is visible.</li>\n</ul>\n<h3>Installation Tips</h3>\n<ul>\n<li>Connect VCC to a 3.3V or 5V power supply and GND to ground.</li>\n<li>For I2C mode, connect the SCL and SDA pins to the microcontroller's corresponding I2C pins.</li>\n<li>For SPI mode, connect SCK, SDO, SDI, and CS pins to the microcontroller's SPI interface.</li>\n<li>To ensure accurate temperature data, position the sensor away from heat-generating components.</li>\n<li>Protect the sensing element from direct exposure to dust, liquids, and physical contact.</li>\n<li>Refer to the component datasheet for I2C addressing and register information.</li>\n</ul>"
+     },
+     "handle": "2pack-bme280-33v-atmospheric-pressure-sensor",
+     "id": "gid://shopify/p/2reNTmsmOarxKk13U1LuSU",
+     "media": [
+      {
+       "alt_text": "Two BME280 3.3V atmospheric pressure sensor modules with included header pins.",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/2576/7548/files/AZ00122621_1_3ef0f943-b366-4496-99d9-848bd0712276.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2576/7548/files/AZ00122621_1_3ef0f943-b366-4496-99d9-848bd0712276.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated sensor for atmospheric pressure, temperature, and humidity enables compact, multi-parameter monitoring",
+       "Dual I2C and SPI communication interfaces provide flexible integration with various microcontrollers",
+       "Onboard voltage regulator and level shifter ensure compatibility with both 3.3V and 5V logic",
+       "Wide measurement ranges for pressure (300–1100 hPa), temperature (−40°C to 85°C), and humidity (0–100% RH) support diverse applications",
+       "Functional upgrade for BMP280, BMP180, and BMP085 sensors expands compatibility"
+      ],
+      "unique_selling_points": [
+       "Combines pressure, temperature, and humidity sensing in a single module with dual communication options and wide operating voltage range."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 769,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 769,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 5,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 2.8
+     },
+     "title": "GY-BME280 BME280 Digital 3.3V Atmospheric Pressure Sensor - 2 Pack",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://bluestarsparts.com/buy/45369808388285:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>BME280 3.3V Atmospheric Pressure Sensor</h2>\n<h3>Key Features</h3>\n<ul>\n<li>Integrated sensor for measuring atmospheric pressure, humidity, and temperature.</li>\n<li>Dual communication interface support for both I2C and SPI protocols.</li>\n<li>Onboard voltage regulator and level shifter for compatibility with 3.3V and 5V logic.</li>\n<li>Pressure measurement range: 300 to 1100 hPa.</li>\n<li>Temperature measurement range: -40°C to +85°C.</li>\n<li>Humidity measurement range: 0% to 100% relative humidity.<br>\n</li>\n</ul>\n<h3>Replaces / Cross-Reference Part Numbers</h3>\n<ul>\n<li>BME280</li>\n<li>GY-BME280</li>\n<li>Functional upgrade for BMP280, BMP180, and BMP085 sensors (adds humidity sensing and higher precision).</li>\n</ul>\n<h3>Compatibility &amp; Fitment</h3>\n<ul>\n<li>Designed for use with microcontrollers such as Arduino, ESP32, ESP8266, and Raspberry Pi.</li>\n<li>Suitable for a wide range of applications:\n<ul>\n<li>Weather stations and environmental monitoring</li>\n<li>Indoor climate control and HVAC systems</li>\n<li>Altimetry and barometry for drones or personal navigation</li>\n<li>Home automation projects</li>\n</ul>\n</li>\n</ul>\n<h3>When to Replace</h3>\n<ul>\n<li>Sensor fails to provide readings or sends intermittent data.</li>\n<li>Readings for pressure, temperature, or humidity are static or inaccurate.</li>\n<li>Module is no longer detected on the I2C or SPI bus.</li>\n<li>Physical damage to the PCB or sensor element is visible.</li>\n</ul>\n<h3>Installation Tips</h3>\n<ul>\n<li>Connect VCC to a 3.3V or 5V power supply and GND to ground.</li>\n<li>For I2C mode, connect the SCL and SDA pins to the microcontroller's corresponding I2C pins.</li>\n<li>For SPI mode, connect SCK, SDO, SDI, and CS pins to the microcontroller's SPI interface.</li>\n<li>To ensure accurate temperature data, position the sensor away from heat-generating components.</li>\n<li>Protect the sensing element from direct exposure to dust, liquids, and physical contact.</li>\n<li>Refer to the component datasheet for I2C addressing and register information.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "2pack-bme280-33v-atmospheric-pressure-sensor",
+       "id": "gid://shopify/ProductVariant/45369808388285",
+       "list_price": {
+        "amount": 861,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Two BME280 3.3V atmospheric pressure sensor modules with included header pins.",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/2576/7548/files/AZ00122621_1_3ef0f943-b366-4496-99d9-848bd0712276.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2576/7548/files/AZ00122621_1_3ef0f943-b366-4496-99d9-848bd0712276.jpg",
+         "width": 1500
+        }
+       ],
+       "price": {
+        "amount": 769,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "bluestarsparts.myshopify.com",
+        "id": "gid://shopify/Shop/25767548",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/25767548/policies/2291531818.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/25767548/policies/2291564586.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/25767548/policies/2291499050.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/25767548/policies/36522197181.html"
+         }
+        ],
+        "name": "BlueStars Parts",
+        "url": "https://bluestarsparts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8076119703741",
+       "source": "shopify",
+       "title": "GY-BME280 BME280 Digital 3.3V Atmospheric Pressure Sensor - 2 Pack",
+       "url": "https://bluestarsparts.com/products/2pack-bme280-33v-atmospheric-pressure-sensor?variant=45369808388285&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>BME280 Environmental Sensor Module (Temperature / Humidity / Pressure)</h2>\n<!-- ===================== Overview ===================== -->\n<ol>\n<li>The <strong>BME280 Pressure Sensor Module</strong> is a high-precision, ultra-low-power sensing solution designed for seamless integration with the <strong><a href=\"https://meshnology.com/products/heltec-wifi-lora-32-v4-expansion-kit-863-928mhz-28dbm-with-gnss-battery-included\" title=\"heltec wifi lora 32 v4 expansion kit\" target=\"_self\">Heltec WiFi LoRa 32 (V4) Expansion Kit</a></strong>.</li>\n<li>It provides accurate measurement of <strong>temperature, humidity, and atmospheric pressure</strong> in a compact form factor optimized for IoT and embedded applications.</li>\n<li>With stable <a href=\"https://en.wikipedia.org/wiki/I2C\" title=\"\" target=\"_self\">I²C communication</a> and optimized power efficiency, this module is ideal for continuous environmental monitoring in both indoor and outdoor scenarios.</li>\n</ol>\n<p> </p>\n<p><strong style=\"color: #ff2a00;\">⚠️ Important Note:</strong> This module is exclusively compatible with the <a href=\"https://meshnology.com/products/heltec-wifi-lora-32-v4-expansion-kit-863-928mhz-28dbm-with-gnss-battery-included\" rel=\"noopener\" target=\"_blank\"> Heltec WiFi LoRa 32 (V4) Expansion Kit </a>.</p>"
+     },
+     "handle": "bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit",
+     "id": "gid://shopify/p/2QXiJBZISHd0AzCkyQclLe",
+     "media": [
+      {
+       "alt_text": "BME280 Atmospheric Pressure Sensor for Heltec WiFi LoRa 32 (V4) Expansion Kit wireless device",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/0736/4090/2894/files/bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit-9281679.png",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0736/4090/2894/files/bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit-9281679.png",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High-precision temperature, humidity, and pressure measurement for reliable environmental data collection",
+       "Ultra low power consumption extends battery life in IoT and embedded applications",
+       "Stable I2C communication ensures consistent and accurate data transmission",
+       "Compact form factor allows easy integration into custom devices",
+       "Optimized for continuous monitoring in both indoor and outdoor environments"
+      ],
+      "unique_selling_points": [
+       "Seamless integration with Heltec WiFi LoRa 32 V4 expansion kit for precise, low-power environmental sensing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "BME280 Atmospheric Pressure Sensor for Heltec WiFi LoRa 32 (V4) Expansion Kit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://meshnology.com/buy/47435489247470:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>BME280 Environmental Sensor Module (Temperature / Humidity / Pressure)</h2>\n<!-- ===================== Overview ===================== -->\n<ol>\n<li>The <strong>BME280 Pressure Sensor Module</strong> is a high-precision, ultra-low-power sensing solution designed for seamless integration with the <strong><a href=\"https://meshnology.com/products/heltec-wifi-lora-32-v4-expansion-kit-863-928mhz-28dbm-with-gnss-battery-included\" title=\"heltec wifi lora 32 v4 expansion kit\" target=\"_self\">Heltec WiFi LoRa 32 (V4) Expansion Kit</a></strong>.</li>\n<li>It provides accurate measurement of <strong>temperature, humidity, and atmospheric pressure</strong> in a compact form factor optimized for IoT and embedded applications.</li>\n<li>With stable <a href=\"https://en.wikipedia.org/wiki/I2C\" title=\"\" target=\"_self\">I²C communication</a> and optimized power efficiency, this module is ideal for continuous environmental monitoring in both indoor and outdoor scenarios.</li>\n</ol>\n<p> </p>\n<p><strong style=\"color: #ff2a00;\">⚠️ Important Note:</strong> This module is exclusively compatible with the <a href=\"https://meshnology.com/products/heltec-wifi-lora-32-v4-expansion-kit-863-928mhz-28dbm-with-gnss-battery-included\" rel=\"noopener\" target=\"_blank\"> Heltec WiFi LoRa 32 (V4) Expansion Kit </a>.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit",
+       "id": "gid://shopify/ProductVariant/47435489247470",
+       "media": [
+        {
+         "alt_text": "BME280 Atmospheric Pressure Sensor for Heltec WiFi LoRa 32 (V4) Expansion Kit wireless device",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/0736/4090/2894/files/bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit-9281679.png",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0736/4090/2894/files/bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit-9281679.png",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "uryykz-d4.myshopify.com",
+        "id": "gid://shopify/Shop/73640902894",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/73640902894/policies/34071249134.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/73640902894/policies/34071478510.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/73640902894/policies/34209399022.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/73640902894/policies/34209431790.html"
+         }
+        ],
+        "name": "Meshnology",
+        "url": "https://meshnology.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9082165559534",
+       "source": "shopify",
+       "title": "BME280 Atmospheric Pressure Sensor for Heltec WiFi LoRa 32 (V4) Expansion Kit",
+       "url": "https://meshnology.com/products/bme280-atmospheric-pressure-sensor-for-heltec-wifi-lora-32-v4-expansion-kit?variant=47435489247470&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<article><section><h2>Product Overview</h2>\n<p>With compact build quality and practical use, the BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) addresses the needs of household use. Notable features include 3-in-1 environmental and environmental sensor, contributing to its time-tested character.</p></section><section><h2>Key Features</h2>\n<ul>\n<li>3-in-1 Environmental Sensor Kit - This BME280 sensor module measures temperature, humidity, and barometric pressure in one compact board. The package includes Dupont jumper wires for easy connection and quick prototyping.</li>\n<li>High Precision Measurement - Provides stable and accurate environmental data for atmospheric pressure, ambient temperature, and relative humidity monitoring. Ideal for weather stations, altitude detection, and IoT sensor projects.</li>\n<li>I2C and SPI Communication - Supports both I2C and SPI interfaces, allowing flexible connection with a wide range of development boards and microcontrollers for fast integration and reliable data communication.</li>\n<li>Compact and Low Power Design - The module features low power consumption and compact size, making it suitable for embedded systems, portable electronics, and long-term environmental monitoring applications.</li>\n<li>Wide Platform Compatibility - Compatible with many popular development platforms including Arduino-compatible boards, Raspberry Pi systems, ESP32, ESP8266, and other microcontrollers, suitable for engineers, makers, students, and DIY electronics projects.</li>\n</ul></section><section><h2>Why Choose the HJHYUL BME280 Sensor Module with Jumper Wires</h2>\n<p>The BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) represents a reliable take on indoor air quality meters, with 3-in-1 environmental that supports everyday convenience consistently.</p></section><section><h2>Best For</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is best suited for: weather stations, embedded systems, engineers.</p></section><section><h2>Quick Summary</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is a Indoor Air Quality Meters product by HJHYUL.</p></section></article>"
+     },
+     "handle": "bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8",
+     "id": "gid://shopify/p/4vYPSCvWXzO9XEezTvrkOx",
+     "media": [
+      {
+       "alt_text": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric by HJHYUL",
+       "height": 522,
+       "preview": {
+        "height": 522,
+        "url": "https://cdn.shopify.com/s/files/1/0806/6701/7455/files/61pa1TcGuNL._SX522.jpg",
+        "width": 522
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0806/6701/7455/files/61pa1TcGuNL._SX522.jpg",
+       "width": 522
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3-in-1 environmental sensor: Measures temperature, humidity, and barometric pressure for comprehensive monitoring",
+       "Dual I2C and SPI interfaces: Flexible integration with a wide range of microcontrollers and development boards",
+       "High-precision measurement: Ensures stable and accurate environmental data for reliable applications",
+       "Compact and low power design: Suitable for embedded systems, portable electronics, and long-term monitoring",
+       "Includes DuPont jumper wires: Simplifies setup and prototyping for quick project integration"
+      ],
+      "unique_selling_points": [
+       "Combines temperature, humidity, and barometric pressure sensing in a single module with I2C and SPI compatibility for broad microcontroller support."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1998,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1998,
+       "currency": "USD"
+      }
+     },
+     "title": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://appliquestshop.com/buy/50576767746287:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<article><section><h2>Product Overview</h2>\n<p>With compact build quality and practical use, the BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) addresses the needs of household use. Notable features include 3-in-1 environmental and environmental sensor, contributing to its time-tested character.</p></section><section><h2>Key Features</h2>\n<ul>\n<li>3-in-1 Environmental Sensor Kit - This BME280 sensor module measures temperature, humidity, and barometric pressure in one compact board. The package includes Dupont jumper wires for easy connection and quick prototyping.</li>\n<li>High Precision Measurement - Provides stable and accurate environmental data for atmospheric pressure, ambient temperature, and relative humidity monitoring. Ideal for weather stations, altitude detection, and IoT sensor projects.</li>\n<li>I2C and SPI Communication - Supports both I2C and SPI interfaces, allowing flexible connection with a wide range of development boards and microcontrollers for fast integration and reliable data communication.</li>\n<li>Compact and Low Power Design - The module features low power consumption and compact size, making it suitable for embedded systems, portable electronics, and long-term environmental monitoring applications.</li>\n<li>Wide Platform Compatibility - Compatible with many popular development platforms including Arduino-compatible boards, Raspberry Pi systems, ESP32, ESP8266, and other microcontrollers, suitable for engineers, makers, students, and DIY electronics projects.</li>\n</ul></section><section><h2>Why Choose the HJHYUL BME280 Sensor Module with Jumper Wires</h2>\n<p>The BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) represents a reliable take on indoor air quality meters, with 3-in-1 environmental that supports everyday convenience consistently.</p></section><section><h2>Best For</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is best suited for: weather stations, embedded systems, engineers.</p></section><section><h2>Quick Summary</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is a Indoor Air Quality Meters product by HJHYUL.</p></section></article>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8",
+       "id": "gid://shopify/ProductVariant/50576767746287",
+       "media": [
+        {
+         "alt_text": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric by HJHYUL",
+         "height": 522,
+         "preview": {
+          "height": 522,
+          "url": "https://cdn.shopify.com/s/files/1/0806/6701/7455/files/61pa1TcGuNL._SX522.jpg",
+          "width": 522
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0806/6701/7455/files/61pa1TcGuNL._SX522.jpg",
+         "width": 522
+        }
+       ],
+       "price": {
+        "amount": 1998,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "zp1r4r-jr.myshopify.com",
+        "id": "gid://shopify/Shop/80667017455",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/80667017455/policies/41982427375.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/80667017455/policies/42212196591.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/80667017455/policies/42212229359.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/80667017455/policies/42212163823.html"
+         }
+        ],
+        "name": "AppliQuest",
+        "url": "https://appliquestshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9582966472943",
+       "source": "shopify",
+       "title": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric",
+       "url": "https://appliquestshop.com/products/bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8?variant=50576767746287&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "\n<h2>BME280 Digital Temperature, Humidity &amp; Barometric Pressure Sensor Module</h2>\n<p>The <strong>BME280 Sensor Module</strong> is a compact, high-accuracy digital sensor designed to measure <strong>temperature, relative humidity, and barometric pressure</strong> simultaneously. Available in both <strong>3.3V and 5V</strong> versions, this versatile module is ideal for Arduino, Raspberry Pi, ESP8266, ESP32, and other microcontroller-based projects. Whether you're building a weather station, a smart home automation system, or an IoT environmental monitor, the BME280 delivers reliable, precise readings every time.</p>\n\n<h3>Key Features</h3>\n<ul>\n  <li>\n<strong>3-in-1 Sensing:</strong> Measures temperature, humidity, and barometric pressure in a single compact module</li>\n  <li>\n<strong>Dual Voltage Support:</strong> Available in GY-BME280-3.3V and GY-BME280-5V variants — compatible with a wide range of microcontrollers</li>\n  <li>\n<strong>Dual Interface:</strong> Supports both <strong>I²C and SPI</strong> communication protocols for maximum flexibility</li>\n  <li>\n<strong>High Accuracy:</strong> Temperature accuracy ±1°C, Humidity accuracy ±3%, Pressure resolution 0.18 Pa</li>\n  <li>\n<strong>Low Power Consumption:</strong> Ideal for battery-powered and portable applications</li>\n  <li>\n<strong>Compact SMD Design:</strong> Small form factor fits easily into tight project enclosures</li>\n  <li>\n<strong>Wide Compatibility:</strong> Works seamlessly with Arduino, Raspberry Pi, ESP8266, ESP32, and more</li>\n</ul>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>\n<strong>Sensor Chip:</strong> Bosch BME280</li>\n  <li>\n<strong>Operating Voltage:</strong> 3.3V or 5V (depending on variant)</li>\n  <li>\n<strong>Communication Interface:</strong> I²C / SPI</li>\n  <li>\n<strong>Temperature Range:</strong> -40°C to +85°C</li>\n  <li>\n<strong>Humidity Range:</strong> 0–100% RH</li>\n  <li>\n<strong>Pressure Range:</strong> 300–1100 hPa</li>\n  <li>\n<strong>Package Includes:</strong> 1 × BME280 SMD Sensor Module</li>\n</ul>\n\n<h3>What's in the Box?</h3>\n<ul>\n  <li>1 × BME280 Sensor Module (GY-BME280-3.3V or GY-BME280-5V — your choice)</li>\n</ul>\n\n<h3>Perfect For</h3>\n<ul>\n  <li>DIY weather stations and environmental monitors</li>\n  <li>Smart home and IoT automation projects</li>\n  <li>Arduino and Raspberry Pi experiments</li>\n  <li>Altitude and altitude-change detection applications</li>\n  <li>Greenhouse and indoor climate monitoring</li>\n</ul>\n\n<h3>Related Products You May Like</h3>\n<ul>\n  <li><a href=\"/products/natural-stone-round-beads-2mm-3mm-tiger-eye-labradorite-agate-diy-jewelry\">Natural Stone Round Beads 2mm 3mm – Tiger Eye, Labradorite, Agate</a></li>\n  <li><a href=\"/products/round-aluminum-wire-diy-jewelry-making-1mm-3mm\">Round Aluminum Wire 1mm–3mm | DIY Jewelry Making Wire</a></li>\n</ul>\n\n<p>Learn more: <a href=\"https://www.epa.gov/recycle/used-lithium-ion-batteries\" target=\"_blank\" rel=\"noopener\">EPA guidance on lithium-ion battery handling</a></p>\n<h3>Frequently Asked Questions</h3>\n<h4>Q: What does the BME280 sensor module measure?</h4>\n<p>A: The BME280 sensor module simultaneously measures three environmental parameters: <strong>temperature</strong>, <strong>relative humidity</strong>, and <strong>barometric pressure</strong>. This makes it a powerful all-in-one solution for weather monitoring, IoT projects, and smart home systems.</p>\n\n<h4>Q: What is the difference between the GY-BME280-3.3V and GY-BME280-5V versions?</h4>\n<p>A: The primary difference is the operating voltage. The <strong>GY-BME280-3.3V</strong> version is designed for 3.3V microcontrollers such as the ESP8266 and ESP32, while the <strong>GY-BME280-5V</strong> version is compatible with 5V systems like the Arduino Uno. Both versions support I²C and SPI communication protocols.</p>\n\n<h4>Q: Is the BME280 module compatible with Arduino and Raspberry Pi?</h4>\n<p>A: Yes! The BME280 module is fully compatible with <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, <strong>ESP8266</strong>, <strong>ESP32</strong>, and virtually any microcontroller platform that supports I²C or SPI communication. Libraries are freely available for all major platforms.</p>\n\n<h4>Q: What communication protocols does the BME280 module support?</h4>\n<p>A: The BME280 module supports both <strong>I²C</strong> and <strong>SPI</strong> interfaces, giving you flexibility to integrate it into almost any microcontroller project regardless of your preferred communication protocol.</p>\n<!-- production-packaging-notice -->\n<h3>Production &amp; Packaging Notice</h3>\n<p>To maintain high stock availability and fast shipping times, our items are sourced from multiple verified manufacturing facilities. While the core quality, materials, and product specifications remain identical, you may notice slight variations in the packaging design, manufacturing origin, or the wording of the printed instructions.</p>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"What does the BME280 sensor module measure?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The BME280 sensor module simultaneously measures three environmental parameters: temperature, relative humidity, and barometric pressure. This makes it a powerful all-in-one solution for weather monitoring, IoT projects, and smart home systems.\"}}, {\"@type\": \"Question\", \"name\": \"What is the difference between the GY-BME280-3.3V and GY-BME280-5V versions?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The primary difference is the operating voltage. The GY-BME280-3.3V version is designed for 3.3V microcontrollers such as the ESP8266 and ESP32, while the GY-BME280-5V version is compatible with 5V systems like the Arduino Uno. Both versions support I²C and SPI communication protocols.\"}}, {\"@type\": \"Question\", \"name\": \"Is the BME280 module compatible with Arduino and Raspberry Pi?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes! The BME280 module is fully compatible with Arduino, Raspberry Pi, ESP8266, ESP32, and virtually any microcontroller platform that supports I²C or SPI communication. Libraries are freely available for all major platforms.\"}}, {\"@type\": \"Question\", \"name\": \"What communication protocols does the BME280 module support?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The BME280 module supports both I²C and SPI interfaces, giving you flexibility to integrate it into almost any microcontroller project regardless of your preferred communication protocol.\"}}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://0i45ne-c8.myshopify.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Home page\", \"item\": \"https://0i45ne-c8.myshopify.com/collections/frontpage\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"BME280 3.3V 5V Digital Sensor – Temp, Humidity & Barometric\", \"item\": \"https://0i45ne-c8.myshopify.com/products/bme280-digital-temperature-humidity-barometric-pressure-sensor-module-i2c-spi\"}]}</script>"
+     },
+     "handle": "bme280-digital-temperature-humidity-barometric-pressure-sensor-module-i2c-spi",
+     "id": "gid://shopify/p/3XTFBRSmSgRWNYUNB2wRCC",
+     "media": [
+      {
+       "alt_text": "BME280 3.3v 5v Digital Sensor Temperature Humidity Barometric Pressure Sensor Module I2C SPI 1.8-5V GY-BME280 5V/3.3V Zpaxo GY-BME280-3.3",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0989/7774/3158/files/S6c69b4d75af8486499d1aca51f78c3abu.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0989/7774/3158/files/S6c69b4d75af8486499d1aca51f78c3abu.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Measures temperature, humidity, and barometric pressure for comprehensive environmental monitoring",
+       "Operates at 3.3V and 5V to support a wide range of microcontroller platforms",
+       "Compact and durable construction for long-lasting everyday use",
+       "Available in two color options for personalized decor integration"
+      ],
+      "unique_selling_points": [
+       "Combines precise temperature, humidity, and barometric pressure sensing in a durable, customizable module."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Gy-Bme280-3.3"
+        },
+        {
+         "label": "Gy-Bme280-5v"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1247,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1247,
+       "currency": "USD"
+      }
+     },
+     "title": "BME280 3.3V 5V Digital Sensor – Temp, Humidity & Barometric",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://zpaxo.com/buy/54240456933686:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "\n<h2>BME280 Digital Temperature, Humidity &amp; Barometric Pressure Sensor Module</h2>\n<p>The <strong>BME280 Sensor Module</strong> is a compact, high-accuracy digital sensor designed to measure <strong>temperature, relative humidity, and barometric pressure</strong> simultaneously. Available in both <strong>3.3V and 5V</strong> versions, this versatile module is ideal for Arduino, Raspberry Pi, ESP8266, ESP32, and other microcontroller-based projects. Whether you're building a weather station, a smart home automation system, or an IoT environmental monitor, the BME280 delivers reliable, precise readings every time.</p>\n\n<h3>Key Features</h3>\n<ul>\n  <li>\n<strong>3-in-1 Sensing:</strong> Measures temperature, humidity, and barometric pressure in a single compact module</li>\n  <li>\n<strong>Dual Voltage Support:</strong> Available in GY-BME280-3.3V and GY-BME280-5V variants — compatible with a wide range of microcontrollers</li>\n  <li>\n<strong>Dual Interface:</strong> Supports both <strong>I²C and SPI</strong> communication protocols for maximum flexibility</li>\n  <li>\n<strong>High Accuracy:</strong> Temperature accuracy ±1°C, Humidity accuracy ±3%, Pressure resolution 0.18 Pa</li>\n  <li>\n<strong>Low Power Consumption:</strong> Ideal for battery-powered and portable applications</li>\n  <li>\n<strong>Compact SMD Design:</strong> Small form factor fits easily into tight project enclosures</li>\n  <li>\n<strong>Wide Compatibility:</strong> Works seamlessly with Arduino, Raspberry Pi, ESP8266, ESP32, and more</li>\n</ul>\n\n<h3>Technical Specifications</h3>\n<ul>\n  <li>\n<strong>Sensor Chip:</strong> Bosch BME280</li>\n  <li>\n<strong>Operating Voltage:</strong> 3.3V or 5V (depending on variant)</li>\n  <li>\n<strong>Communication Interface:</strong> I²C / SPI</li>\n  <li>\n<strong>Temperature Range:</strong> -40°C to +85°C</li>\n  <li>\n<strong>Humidity Range:</strong> 0–100% RH</li>\n  <li>\n<strong>Pressure Range:</strong> 300–1100 hPa</li>\n  <li>\n<strong>Package Includes:</strong> 1 × BME280 SMD Sensor Module</li>\n</ul>\n\n<h3>What's in the Box?</h3>\n<ul>\n  <li>1 × BME280 Sensor Module (GY-BME280-3.3V or GY-BME280-5V — your choice)</li>\n</ul>\n\n<h3>Perfect For</h3>\n<ul>\n  <li>DIY weather stations and environmental monitors</li>\n  <li>Smart home and IoT automation projects</li>\n  <li>Arduino and Raspberry Pi experiments</li>\n  <li>Altitude and altitude-change detection applications</li>\n  <li>Greenhouse and indoor climate monitoring</li>\n</ul>\n\n<h3>Related Products You May Like</h3>\n<ul>\n  <li><a href=\"/products/natural-stone-round-beads-2mm-3mm-tiger-eye-labradorite-agate-diy-jewelry\">Natural Stone Round Beads 2mm 3mm – Tiger Eye, Labradorite, Agate</a></li>\n  <li><a href=\"/products/round-aluminum-wire-diy-jewelry-making-1mm-3mm\">Round Aluminum Wire 1mm–3mm | DIY Jewelry Making Wire</a></li>\n</ul>\n\n<p>Learn more: <a href=\"https://www.epa.gov/recycle/used-lithium-ion-batteries\" target=\"_blank\" rel=\"noopener\">EPA guidance on lithium-ion battery handling</a></p>\n<h3>Frequently Asked Questions</h3>\n<h4>Q: What does the BME280 sensor module measure?</h4>\n<p>A: The BME280 sensor module simultaneously measures three environmental parameters: <strong>temperature</strong>, <strong>relative humidity</strong>, and <strong>barometric pressure</strong>. This makes it a powerful all-in-one solution for weather monitoring, IoT projects, and smart home systems.</p>\n\n<h4>Q: What is the difference between the GY-BME280-3.3V and GY-BME280-5V versions?</h4>\n<p>A: The primary difference is the operating voltage. The <strong>GY-BME280-3.3V</strong> version is designed for 3.3V microcontrollers such as the ESP8266 and ESP32, while the <strong>GY-BME280-5V</strong> version is compatible with 5V systems like the Arduino Uno. Both versions support I²C and SPI communication protocols.</p>\n\n<h4>Q: Is the BME280 module compatible with Arduino and Raspberry Pi?</h4>\n<p>A: Yes! The BME280 module is fully compatible with <strong>Arduino</strong>, <strong>Raspberry Pi</strong>, <strong>ESP8266</strong>, <strong>ESP32</strong>, and virtually any microcontroller platform that supports I²C or SPI communication. Libraries are freely available for all major platforms.</p>\n\n<h4>Q: What communication protocols does the BME280 module support?</h4>\n<p>A: The BME280 module supports both <strong>I²C</strong> and <strong>SPI</strong> interfaces, giving you flexibility to integrate it into almost any microcontroller project regardless of your preferred communication protocol.</p>\n<!-- production-packaging-notice -->\n<h3>Production &amp; Packaging Notice</h3>\n<p>To maintain high stock availability and fast shipping times, our items are sourced from multiple verified manufacturing facilities. While the core quality, materials, and product specifications remain identical, you may notice slight variations in the packaging design, manufacturing origin, or the wording of the printed instructions.</p>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"What does the BME280 sensor module measure?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The BME280 sensor module simultaneously measures three environmental parameters: temperature, relative humidity, and barometric pressure. This makes it a powerful all-in-one solution for weather monitoring, IoT projects, and smart home systems.\"}}, {\"@type\": \"Question\", \"name\": \"What is the difference between the GY-BME280-3.3V and GY-BME280-5V versions?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The primary difference is the operating voltage. The GY-BME280-3.3V version is designed for 3.3V microcontrollers such as the ESP8266 and ESP32, while the GY-BME280-5V version is compatible with 5V systems like the Arduino Uno. Both versions support I²C and SPI communication protocols.\"}}, {\"@type\": \"Question\", \"name\": \"Is the BME280 module compatible with Arduino and Raspberry Pi?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes! The BME280 module is fully compatible with Arduino, Raspberry Pi, ESP8266, ESP32, and virtually any microcontroller platform that supports I²C or SPI communication. Libraries are freely available for all major platforms.\"}}, {\"@type\": \"Question\", \"name\": \"What communication protocols does the BME280 module support?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The BME280 module supports both I²C and SPI interfaces, giving you flexibility to integrate it into almost any microcontroller project regardless of your preferred communication protocol.\"}}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://0i45ne-c8.myshopify.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Home page\", \"item\": \"https://0i45ne-c8.myshopify.com/collections/frontpage\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"BME280 3.3V 5V Digital Sensor – Temp, Humidity & Barometric\", \"item\": \"https://0i45ne-c8.myshopify.com/products/bme280-digital-temperature-humidity-barometric-pressure-sensor-module-i2c-spi\"}]}</script>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-digital-temperature-humidity-barometric-pressure-sensor-module-i2c-spi",
+       "id": "gid://shopify/ProductVariant/54240456933686",
+       "list_price": {
+        "amount": 1543,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "BME280 3.3v 5v Digital Sensor Temperature Humidity Barometric Pressure Sensor Module I2C SPI 1.8-5V GY-BME280 5V/3.3V Zpaxo GY-BME280-3.3",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0989/7774/3158/files/S6c69b4d75af8486499d1aca51f78c3abu.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0989/7774/3158/files/S6c69b4d75af8486499d1aca51f78c3abu.webp",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Gy-Bme280-3.3",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 1247,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "0i45ne-c8.myshopify.com",
+        "id": "gid://shopify/Shop/98977743158",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/98977743158/policies/51646300470.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/98977743158/policies/51646595382.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/98977743158/policies/51646497078.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/98977743158/policies/51646628150.html"
+         }
+        ],
+        "name": "Zpaxo",
+        "url": "https://zpaxo.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10780685893942",
+       "source": "shopify",
+       "title": "BME280 3.3V 5V Digital Sensor – Temp, Humidity & Barometric",
+       "url": "https://zpaxo.com/products/bme280-digital-temperature-humidity-barometric-pressure-sensor-module-i2c-spi?variant=54240456933686&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<article><section><h2>Product Overview</h2>\n<p>With compact build quality and practical use, the BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) addresses the needs of household use. Notable features include 3-in-1 environmental and environmental sensor, contributing to its time-tested character.</p></section><section><h2>Key Features</h2>\n<ul>\n<li>3-in-1 Environmental Sensor Kit - This BME280 sensor module measures temperature, humidity, and barometric pressure in one compact board. The package includes Dupont jumper wires for easy connection and quick prototyping.</li>\n<li>High Precision Measurement - Provides stable and accurate environmental data for atmospheric pressure, ambient temperature, and relative humidity monitoring. Ideal for weather stations, altitude detection, and IoT sensor projects.</li>\n<li>I2C and SPI Communication - Supports both I2C and SPI interfaces, allowing flexible connection with a wide range of development boards and microcontrollers for fast integration and reliable data communication.</li>\n<li>Compact and Low Power Design - The module features low power consumption and compact size, making it suitable for embedded systems, portable electronics, and long-term environmental monitoring applications.</li>\n<li>Wide Platform Compatibility - Compatible with many popular development platforms including Arduino-compatible boards, Raspberry Pi systems, ESP32, ESP8266, and other microcontrollers, suitable for engineers, makers, students, and DIY electronics projects.</li>\n</ul></section><section><h2>Why Choose the HJHYUL BME280 Sensor Module with Jumper Wires</h2>\n<p>The BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) represents a reliable take on indoor air quality meters, with 3-in-1 environmental that supports everyday convenience consistently.</p></section><section><h2>Best For</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is best suited for: weather stations, embedded systems, engineers.</p></section><section><h2>Quick Summary</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is a Indoor Air Quality Meters product by HJHYUL.</p></section></article>"
+     },
+     "handle": "bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8",
+     "id": "gid://shopify/p/6KVoVlicSlhxz84icQjhwg",
+     "media": [
+      {
+       "alt_text": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric by HJHYUL",
+       "height": 522,
+       "preview": {
+        "height": 522,
+        "url": "https://cdn.shopify.com/s/files/1/0761/1999/8719/files/61pa1TcGuNL._SX522.jpg",
+        "width": 522
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0761/1999/8719/files/61pa1TcGuNL._SX522.jpg",
+       "width": 522
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3-in-1 environmental sensor: Measures temperature, humidity, and barometric pressure for comprehensive monitoring",
+       "Dual I2C and SPI interfaces: Flexible integration with a wide range of microcontrollers and development boards",
+       "High-precision measurement: Ensures stable and accurate environmental data for reliable applications",
+       "Compact and low power design: Suitable for embedded systems, portable electronics, and long-term monitoring",
+       "Includes DuPont jumper wires: Simplifies connection and quick prototyping"
+      ],
+      "unique_selling_points": [
+       "Combines temperature, humidity, and barometric pressure sensing in a single I2C/SPI compatible module with jumper wires for easy prototyping."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1998,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1998,
+       "currency": "USD"
+      }
+     },
+     "title": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://workwellsuppliesshop.com/buy/49223668433151:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<article><section><h2>Product Overview</h2>\n<p>With compact build quality and practical use, the BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) addresses the needs of household use. Notable features include 3-in-1 environmental and environmental sensor, contributing to its time-tested character.</p></section><section><h2>Key Features</h2>\n<ul>\n<li>3-in-1 Environmental Sensor Kit - This BME280 sensor module measures temperature, humidity, and barometric pressure in one compact board. The package includes Dupont jumper wires for easy connection and quick prototyping.</li>\n<li>High Precision Measurement - Provides stable and accurate environmental data for atmospheric pressure, ambient temperature, and relative humidity monitoring. Ideal for weather stations, altitude detection, and IoT sensor projects.</li>\n<li>I2C and SPI Communication - Supports both I2C and SPI interfaces, allowing flexible connection with a wide range of development boards and microcontrollers for fast integration and reliable data communication.</li>\n<li>Compact and Low Power Design - The module features low power consumption and compact size, making it suitable for embedded systems, portable electronics, and long-term environmental monitoring applications.</li>\n<li>Wide Platform Compatibility - Compatible with many popular development platforms including Arduino-compatible boards, Raspberry Pi systems, ESP32, ESP8266, and other microcontrollers, suitable for engineers, makers, students, and DIY electronics projects.</li>\n</ul></section><section><h2>Why Choose the HJHYUL BME280 Sensor Module with Jumper Wires</h2>\n<p>The BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric Pressure Environmental Sensor, I2C SPI Compatible with Arduino, Raspberry Pi, ESP32, ESP8266 (3.3 V, 1-Pack) represents a reliable take on indoor air quality meters, with 3-in-1 environmental that supports everyday convenience consistently.</p></section><section><h2>Best For</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is best suited for: weather stations, embedded systems, engineers.</p></section><section><h2>Quick Summary</h2>\n<p>The HJHYUL BME280 Sensor Module with Jumper Wires is a Indoor Air Quality Meters product by HJHYUL.</p></section></article>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8",
+       "id": "gid://shopify/ProductVariant/49223668433151",
+       "media": [
+        {
+         "alt_text": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric by HJHYUL",
+         "height": 522,
+         "preview": {
+          "height": 522,
+          "url": "https://cdn.shopify.com/s/files/1/0761/1999/8719/files/61pa1TcGuNL._SX522.jpg",
+          "width": 522
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0761/1999/8719/files/61pa1TcGuNL._SX522.jpg",
+         "width": 522
+        }
+       ],
+       "price": {
+        "amount": 1998,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "eyw49k-mp.myshopify.com",
+        "id": "gid://shopify/Shop/76119998719",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/76119998719/policies/36786503935.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/76119998719/policies/38463635711.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/76119998719/policies/38463602943.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/76119998719/policies/38463668479.html"
+         }
+        ],
+        "name": "Prime Gadget",
+        "url": "https://workwellsuppliesshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9694495801599",
+       "source": "shopify",
+       "title": "BME280 Sensor Module with Jumper Wires, 3-in-1 Temperature Humidity Barometric",
+       "url": "https://workwellsuppliesshop.com/products/bme280-sensor-module-with-jumper-wires-3-in-1-temperature-humidity-barometric-b0grrdxgh8?variant=49223668433151&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>High accuracy</li>\r\n<li>Absolute accuracy of ±1.0 hPa for pressure</li>\r\n<li>±1 accuracy for temperature and ±3% for humidity</li>\r\n<li>Easy-to-use Grove Compatible Interface</li>\r\n<li>Supports both I2C and SPI communication</li>\r\n<li>Can be used as an altimeter with accuracy of ±1 meter</li>\r\n</ul>\r\n<p>The <strong>Grove - Temperature &amp; Barometer Sensor (BME280)</strong> is based on new BME280 sensor, which is even superior to BMP280 used in Grove – Barometer Sensor (BMP280), and any other former versions like BMP180 used in Grove – Barometer Sensor (BMP180). The module provides precise measurement of not only barometric pressure and temperature, but also the humidity in the environment.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Dimensions: 20mm x 40mm </li>\r\n<li>Weight: 4g</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF Files</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_.pdf\" target=\"_blank\">Datasheet</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_brd_v1.0.pdf\" target=\"_blank\">Schematic 1</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_sch_v1.0.pdf\" target=\"_blank\">Schematic 2</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Supply Voltage: 5V or 3.3V</li>\r\n<li>Current Consumption: 0.4 mA</li>\r\n<li>Humidity Accuracy: ±3%</li>\r\n<li>Interface: I2C and SPI</li>\r\n<li>Grove Port: I2C (selectable address at 0x77(default) and 0x76)</li>\r\n</ul>\r\n<p><strong>Temperature Measurement:</strong></p>\r\n<ul>\r\n<li>Range: -40 to 85</li>\r\n<li>Accuracy: ±1</li>\r\n</ul>\r\n<p><strong>Barometric Pressure Measurement:</strong></p>\r\n<ul>\r\n<li>Range: 300 – 1100 hPa</li>\r\n<li>Accuracy: ±1.0 hPa</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "grove-temperature-barometer-sensor-bme280",
+     "id": "gid://shopify/p/6mlfX2JiFyplwDoEeBrU6Q",
+     "media": [
+      {
+       "alt_text": "Grove - Temperature&Barometer Sensor (BME280)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Selectable I2C or SPI interface enables flexible integration with various microcontrollers",
+       "High-precision temperature measurement (1°C accuracy) ensures reliable environmental monitoring",
+       "Accurate pressure measurement (1.0 mbar) provides reliable altimeter readings",
+       "Wide operating voltage range (5 V or 3.3 V) supports diverse microcontroller platforms",
+       "Compact 4 g design with Grove base allows easy prototyping and installation"
+      ],
+      "unique_selling_points": [
+       "High-precision BME280 sensor module with selectable I2C or SPI interface and 1 mbar pressure accuracy."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1875,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1875,
+       "currency": "USD"
+      }
+     },
+     "title": "Grove - Temperature&Barometer Sensor (BME280)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42360466079905:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=4xPv7Yq5wqKZ&_gsid=4xPv7Yq5wqKZ",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>High accuracy</li>\r\n<li>Absolute accuracy of ±1.0 hPa for pressure</li>\r\n<li>±1 accuracy for temperature and ±3% for humidity</li>\r\n<li>Easy-to-use Grove Compatible Interface</li>\r\n<li>Supports both I2C and SPI communication</li>\r\n<li>Can be used as an altimeter with accuracy of ±1 meter</li>\r\n</ul>\r\n<p>The <strong>Grove - Temperature &amp; Barometer Sensor (BME280)</strong> is based on new BME280 sensor, which is even superior to BMP280 used in Grove – Barometer Sensor (BMP280), and any other former versions like BMP180 used in Grove – Barometer Sensor (BMP180). The module provides precise measurement of not only barometric pressure and temperature, but also the humidity in the environment.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Dimensions: 20mm x 40mm </li>\r\n<li>Weight: 4g</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF Files</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_.pdf\" target=\"_blank\">Datasheet</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_brd_v1.0.pdf\" target=\"_blank\">Schematic 1</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/s/see/rb-see-528/pdf/Grove-Barometer_Sensor_BME280_sch_v1.0.pdf\" target=\"_blank\">Schematic 2</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Supply Voltage: 5V or 3.3V</li>\r\n<li>Current Consumption: 0.4 mA</li>\r\n<li>Humidity Accuracy: ±3%</li>\r\n<li>Interface: I2C and SPI</li>\r\n<li>Grove Port: I2C (selectable address at 0x77(default) and 0x76)</li>\r\n</ul>\r\n<p><strong>Temperature Measurement:</strong></p>\r\n<ul>\r\n<li>Range: -40 to 85</li>\r\n<li>Accuracy: ±1</li>\r\n</ul>\r\n<p><strong>Barometric Pressure Measurement:</strong></p>\r\n<ul>\r\n<li>Range: 300 – 1100 hPa</li>\r\n<li>Accuracy: ±1.0 hPa</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "grove-temperature-barometer-sensor-bme280",
+       "id": "gid://shopify/ProductVariant/42360466079905",
+       "media": [
+        {
+         "alt_text": "Grove - Temperature&Barometer Sensor (BME280)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1875,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7487171854497",
+       "source": "shopify",
+       "title": "Grove - Temperature&Barometer Sensor (BME280)",
+       "url": "https://www.robotshop.com/products/grove-temperature-barometer-sensor-bme280?variant=42360466079905&_gsid=4xPv7Yq5wqKZ&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

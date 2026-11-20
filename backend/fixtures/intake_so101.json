@@ -1,0 +1,77 @@
+{
+  "intake_id": "in_mock_so101",
+  "ready": false,
+  "summary": "One SO-101 follower arm, from the project's README",
+  "build_type": "robot_arm",
+  "confidence": 0.97,
+  "alternatives": [
+    {
+      "build_type": "claw_gripper",
+      "confidence": 0.02
+    }
+  ],
+  "inputs": {
+    "text": "https://github.com/TheRobotStudio/SO-ARM100",
+    "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+    "images": []
+  },
+  "constraints": {},
+  "questions": [
+    {
+      "id": "voltage_class",
+      "text": "Which servo voltage?",
+      "chips": [
+        {
+          "value": "7v4",
+          "label": "7.4V (standard)"
+        },
+        {
+          "value": "12v",
+          "label": "12V (more torque)"
+        }
+      ],
+      "default": "7v4"
+    },
+    {
+      "id": "own_printer",
+      "text": "Do you have a 3D printer?",
+      "chips": [
+        {
+          "value": "yes",
+          "label": "Yes, I'll print the parts"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes"
+    }
+  ],
+  "template_id": "tpl_robot_arm",
+  "mandate_preset": {
+    "budget_usd": 160.0,
+    "deadline": "2026-12-04",
+    "ship_to_country": "US",
+    "allowed_merchants": [
+      "wowrobo",
+      "armdojo",
+      "geekworm",
+      "amazon",
+      "seeed",
+      "adafruit",
+      "sparkfun"
+    ],
+    "data_sharing": {
+      "country": true,
+      "postal_code": false,
+      "street_address": false,
+      "email": false,
+      "phone": false,
+      "name": false,
+      "photo_to_models": false
+    }
+  },
+  "source_api": "mock",
+  "simulated": true
+}

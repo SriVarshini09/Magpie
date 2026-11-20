@@ -1,0 +1,1804 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "3.7V LiPo JST-PH 2.0 battery"
+  }
+ },
+ "key": "ccaffafe1d31ce68b2895db0a6348b95dbaddbd4bd56363a517dca39cac5181d",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:16-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzJPRFV5TnpVME1EYzVPREkzTENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "We have great discounts on selected items across our range!"
+       },
+       "handle": "special-offers",
+       "id": "gid://shopify/Collection/12782833",
+       "title": "Special Offers!"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "deal-bot",
+       "id": "gid://shopify/Collection/689489314171",
+       "title": "Deal Bot’s Bargains"
+      }
+     ],
+     "description": {
+      "html": "Need MOAR POWAH? These high capacity lithium ion battery packs are super concentrated and are available in four different sizes - up to an impressive 13400mAh! Thes battery packs are made from balanced 3350mAh cells connected in parallel and include protection circuitry. We're very careful about where we source our lipo batteries from and we've tested each version to ensure the datasheet specs are accurate and the safety features work as they should. We stock several different sizes so that you you can pick the perfect one for your project! Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST-PH connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST-PH terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets 3350mAh 6700mAh 10050mAh 13400mAh"
+     },
+     "gift_card": false,
+     "handle": "high-capacity-lithium-ion-battery-pack",
+     "id": "gid://shopify/Product/4511024545875",
+     "list_price_range": {
+      "max": {
+       "amount": 4700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4700,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HighCapacityBatteries_1of4.jpg?v=1595601077"
+      }
+     ],
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "3350mAh"
+        },
+        {
+         "label": "6700mAh"
+        },
+        {
+         "label": "10050mAh"
+        },
+        {
+         "label": "13400mAh"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_battery",
+      "_dealbot",
+      "_weslin",
+      "Batteries",
+      "Components",
+      "Power",
+      "Prototyping"
+     ],
+     "title": "High Capacity Lithium Ion Battery Pack",
+     "url": "https://shop.pimoroni.com/en-us/products/high-capacity-lithium-ion-battery-pack",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32012684558419:1",
+       "description": {
+        "html": "Need MOAR POWAH? These high capacity lithium ion battery packs are super concentrated and are available in four different sizes - up to an impressive 13400mAh! Thes battery packs are made from balanced 3350mAh cells connected in parallel and include protection circuitry. We're very careful about where we source our lipo batteries from and we've tested each version to ensure the datasheet specs are accurate and the safety features work as they should. We stock several different sizes so that you you can pick the perfect one for your project! Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST-PH connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST-PH terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets 3350mAh 6700mAh 10050mAh 13400mAh"
+       },
+       "id": "gid://shopify/ProductVariant/32012684558419",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HighCapacityBatteries_1of4.jpg?v=1595601077"
+        }
+       ],
+       "options": [
+        {
+         "label": "3350mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0012",
+       "title": "3350mAh"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32012684591187:1",
+       "description": {
+        "html": "Need MOAR POWAH? These high capacity lithium ion battery packs are super concentrated and are available in four different sizes - up to an impressive 13400mAh! Thes battery packs are made from balanced 3350mAh cells connected in parallel and include protection circuitry. We're very careful about where we source our lipo batteries from and we've tested each version to ensure the datasheet specs are accurate and the safety features work as they should. We stock several different sizes so that you you can pick the perfect one for your project! Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST-PH connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST-PH terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets 3350mAh 6700mAh 10050mAh 13400mAh"
+       },
+       "id": "gid://shopify/ProductVariant/32012684591187",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HighCapacityBatteries_2of4.jpg?v=1595601077"
+        }
+       ],
+       "options": [
+        {
+         "label": "6700mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 2500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0013",
+       "title": "6700mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32012684623955:1",
+       "description": {
+        "html": "Need MOAR POWAH? These high capacity lithium ion battery packs are super concentrated and are available in four different sizes - up to an impressive 13400mAh! Thes battery packs are made from balanced 3350mAh cells connected in parallel and include protection circuitry. We're very careful about where we source our lipo batteries from and we've tested each version to ensure the datasheet specs are accurate and the safety features work as they should. We stock several different sizes so that you you can pick the perfect one for your project! Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST-PH connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST-PH terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets 3350mAh 6700mAh 10050mAh 13400mAh"
+       },
+       "id": "gid://shopify/ProductVariant/32012684623955",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HighCapacityBatteries_3of4.jpg?v=1595601077"
+        }
+       ],
+       "options": [
+        {
+         "label": "10050mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 3400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0014",
+       "title": "10050mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32012684656723:1",
+       "description": {
+        "html": "Need MOAR POWAH? These high capacity lithium ion battery packs are super concentrated and are available in four different sizes - up to an impressive 13400mAh! Thes battery packs are made from balanced 3350mAh cells connected in parallel and include protection circuitry. We're very careful about where we source our lipo batteries from and we've tested each version to ensure the datasheet specs are accurate and the safety features work as they should. We stock several different sizes so that you you can pick the perfect one for your project! Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST-PH connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST-PH terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets 3350mAh 6700mAh 10050mAh 13400mAh"
+       },
+       "id": "gid://shopify/ProductVariant/32012684656723",
+       "list_price": {
+        "amount": 4700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/HighCapacityBatteries_4of4.jpg?v=1595601077"
+        }
+       ],
+       "options": [
+        {
+         "label": "13400mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 3800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0015",
+       "title": "13400mAh"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "Give your project some grunt with these high-density LiPo batteries! We have a range of LiPo battery packs ranging from 150mAh all the way up to 2000mAh. The ultimate range of high-quality LiPo battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Note: LiPo batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 10cm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over-discharged/charged and are protected from short-circuits but you should still take care when using them. Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection Approx Dimensions 150mAh 27 x 20.5 x 4.3mm 500mAh 37 x 30.5 x 5.3mm 1200mAh 64 x 35.5 x 5.3mm 2000mAh 60 x 42.5 x 8.3mm You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 150mAh, 500mAh, 1200mAh, 2000mAh"
+     },
+     "gift_card": false,
+     "handle": "lipo-battery-pack",
+     "id": "gid://shopify/Product/6388916871",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/3000mAh_-_BAT0009.JPG?v=1534944395"
+      }
+     ],
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "150mAh"
+        },
+        {
+         "label": "500mAh"
+        },
+        {
+         "label": "1200mAh"
+        },
+        {
+         "label": "2000mAh"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_battery",
+      "_weslin",
+      "Batteries",
+      "Components",
+      "Power",
+      "Prototyping"
+     ],
+     "title": "LiPo Battery Pack",
+     "url": "https://shop.pimoroni.com/en-us/products/lipo-battery-pack",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/20429081991:1",
+       "description": {
+        "html": "Give your project some grunt with these high-density LiPo batteries! We have a range of LiPo battery packs ranging from 150mAh all the way up to 2000mAh. The ultimate range of high-quality LiPo battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Note: LiPo batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 10cm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over-discharged/charged and are protected from short-circuits but you should still take care when using them. Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection Approx Dimensions 150mAh 27 x 20.5 x 4.3mm 500mAh 37 x 30.5 x 5.3mm 1200mAh 64 x 35.5 x 5.3mm 2000mAh 60 x 42.5 x 8.3mm You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 150mAh, 500mAh, 1200mAh, 2000mAh"
+       },
+       "id": "gid://shopify/ProductVariant/20429081991",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_7_of_8.JPG?v=1534944395"
+        }
+       ],
+       "options": [
+        {
+         "label": "150mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0002",
+       "title": "150mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/20429082055:1",
+       "description": {
+        "html": "Give your project some grunt with these high-density LiPo batteries! We have a range of LiPo battery packs ranging from 150mAh all the way up to 2000mAh. The ultimate range of high-quality LiPo battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Note: LiPo batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 10cm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over-discharged/charged and are protected from short-circuits but you should still take care when using them. Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection Approx Dimensions 150mAh 27 x 20.5 x 4.3mm 500mAh 37 x 30.5 x 5.3mm 1200mAh 64 x 35.5 x 5.3mm 2000mAh 60 x 42.5 x 8.3mm You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 150mAh, 500mAh, 1200mAh, 2000mAh"
+       },
+       "id": "gid://shopify/ProductVariant/20429082055",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_1_of_2.JPG?v=1539263892"
+        }
+       ],
+       "options": [
+        {
+         "label": "500mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0003",
+       "title": "500mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/20429082183:1",
+       "description": {
+        "html": "Give your project some grunt with these high-density LiPo batteries! We have a range of LiPo battery packs ranging from 150mAh all the way up to 2000mAh. The ultimate range of high-quality LiPo battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Note: LiPo batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 10cm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over-discharged/charged and are protected from short-circuits but you should still take care when using them. Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection Approx Dimensions 150mAh 27 x 20.5 x 4.3mm 500mAh 37 x 30.5 x 5.3mm 1200mAh 64 x 35.5 x 5.3mm 2000mAh 60 x 42.5 x 8.3mm You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 150mAh, 500mAh, 1200mAh, 2000mAh"
+       },
+       "id": "gid://shopify/ProductVariant/20429082183",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_2_of_2.JPG?v=1539263892"
+        }
+       ],
+       "options": [
+        {
+         "label": "1200mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0004",
+       "title": "1200mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/20429082247:1",
+       "description": {
+        "html": "Give your project some grunt with these high-density LiPo batteries! We have a range of LiPo battery packs ranging from 150mAh all the way up to 2000mAh. The ultimate range of high-quality LiPo battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Note: LiPo batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 10cm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over-discharged/charged and are protected from short-circuits but you should still take care when using them. Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection Approx Dimensions 150mAh 27 x 20.5 x 4.3mm 500mAh 37 x 30.5 x 5.3mm 1200mAh 64 x 35.5 x 5.3mm 2000mAh 60 x 42.5 x 8.3mm You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 150mAh, 500mAh, 1200mAh, 2000mAh"
+       },
+       "id": "gid://shopify/ProductVariant/20429082247",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/2000mAh_-_BAT0005.JPG?v=1539263892"
+        }
+       ],
+       "options": [
+        {
+         "label": "2000mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0005",
+       "title": "2000mAh"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "Give your project some grunt with these lithium ion battery packs! Made from balanced 2200mAh cells connected in parallel including protection circuitry. The ultimate range of high-quality lithium ion battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 2200mAh, 4400mAh, 6600mAh"
+     },
+     "gift_card": false,
+     "handle": "lithium-ion-battery-pack",
+     "id": "gid://shopify/Product/7319172935",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_1_of_8_f804ae92-bf3e-4439-aa0d-285f12014623.JPG?v=1551969338"
+      }
+     ],
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "2200mAh"
+        },
+        {
+         "label": "4400mAh"
+        },
+        {
+         "label": "6600mAh"
+        },
+        {
+         "label": "8800mAh"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_battery",
+      "_weslin",
+      "Batteries",
+      "Components",
+      "Power",
+      "Prototyping"
+     ],
+     "title": "Lithium Ion Battery Pack",
+     "url": "https://shop.pimoroni.com/en-us/products/lithium-ion-battery-pack",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/23417820359:1",
+       "description": {
+        "html": "Give your project some grunt with these lithium ion battery packs! Made from balanced 2200mAh cells connected in parallel including protection circuitry. The ultimate range of high-quality lithium ion battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 2200mAh, 4400mAh, 6600mAh"
+       },
+       "id": "gid://shopify/ProductVariant/23417820359",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_3_of_8_45f979a3-522c-4bc7-b1ea-cf6d22c6faed.JPG?v=1551969338"
+        }
+       ],
+       "options": [
+        {
+         "label": "2200mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0006",
+       "title": "2200mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/23417820423:1",
+       "description": {
+        "html": "Give your project some grunt with these lithium ion battery packs! Made from balanced 2200mAh cells connected in parallel including protection circuitry. The ultimate range of high-quality lithium ion battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 2200mAh, 4400mAh, 6600mAh"
+       },
+       "id": "gid://shopify/ProductVariant/23417820423",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_2_of_8_9decee9d-308a-4a56-8222-ea5c271c8d68.JPG?v=1551969338"
+        }
+       ],
+       "options": [
+        {
+         "label": "4400mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0007",
+       "title": "4400mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/23417820487:1",
+       "description": {
+        "html": "Give your project some grunt with these lithium ion battery packs! Made from balanced 2200mAh cells connected in parallel including protection circuitry. The ultimate range of high-quality lithium ion battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 2200mAh, 4400mAh, 6600mAh"
+       },
+       "id": "gid://shopify/ProductVariant/23417820487",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/LiPo_1_of_8_f804ae92-bf3e-4439-aa0d-285f12014623.JPG?v=1551969338"
+        }
+       ],
+       "options": [
+        {
+         "label": "6600mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 2000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0008",
+       "title": "6600mAh"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/21758938251347:1",
+       "description": {
+        "html": "Give your project some grunt with these lithium ion battery packs! Made from balanced 2200mAh cells connected in parallel including protection circuitry. The ultimate range of high-quality lithium ion battery packs - pick whichever offers the best performance/size for your project. These little guys pack a huge amount of energy - we've tested each version to ensure the datasheet specs are accurate and the safety features kick in when needed. Please note: Lithium ion batteries must be treated with respect and charged/discharged within the parameters listed in the datasheet, you should never dent, bend, puncture, crush, or otherwise damage them. You should only consider these kinds of batteries for your projects if you've done your research and understand the risks. All our batteries come with a 100mm lead terminated with a standard 2-pole JST connector. They also include protection circuitry to ensure that they are not over discharged/charged and are protected from short-circuits but you should still take care when using them. ﻿Features 3.7V nominal voltage 100mm JST terminated lead Come 30% pre-charged for longer life storage 4.2V charging cut-off and 2.4V emergency discharge cut-off Short circuit protection You should avoid discharging these batteries beyond 3.0V - the emergency protection circuitry will kick in at 2.4V. If the battery bulges or is physically damaged it should be discarded. Do not charge unattended. Datasheets: 2200mAh, 4400mAh, 6600mAh"
+       },
+       "id": "gid://shopify/ProductVariant/21758938251347",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/880mAh_1_of_1_3262daef-cb6e-47e1-9c44-4544fd84c323.JPG?v=1551969338"
+        }
+       ],
+       "options": [
+        {
+         "label": "8800mAh",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 2400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BAT0011",
+       "title": "8800mAh"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "Connect the Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor to your Lipoly or LiIon battery and it will let you know the voltage of the cell, it does the annoying math of decoding the non-linear voltage to get you a valid percentage as well! Low cost Lithium Polymer batteries have revolutionized electronics - they're thin, they're light, they can be regulated down to 3.3V and they're easy to charge. On your phone, there's a little image of a battery cell that tells you the percentage of charge - so you know when you absolutely need to plug it in and when you can stay untethered. The Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor does the same thing. Since this nice chip is I2C, it works with any and all microcontroller or microcomputer boards, from the Arduino UNO up to the Raspberry Pi. And you don't have to worry about logic level, as the gauge runs with 3.3V or 5.0V power and logic equally fine. To use, connect a single-cell battery to one of the JST 2 PH ports (either one). Then use the included JST PH jumper cable to connect to your boost converter, Feather, whatever! Use the I2C interface and the Arduino or CircuitPython/Python library code to set the pack size (this helps tune the calculation) and read the voltage and percentage whenever you like. If you connect a 10K thermistor to the THERM pin you can also use it to read the battery pack temperature - our packs do not come with a built in thermistor but many do. To get you going fast, Adafruit spun up a custom made PCB in the STEMMA QT form factor, making it easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the LC709203 or to chain it with a wide range of other sensors and accessories using a compatible cable. Primary Guide: Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery MonitorKeep track of when to charge your batteries! Includes: LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor PCB strip of male header pins JST PH jumper cable Please note that the lipo battery, STEMMA QT cable and Feather / Featherwing pictured are for illustrative purposes and are not included."
+     },
+     "gift_card": false,
+     "handle": "adafruit-lc709203f-lipoly-liion-fuel-gauge-and-battery-monitor-stemma-jst-ph-qt-qwiic",
+     "id": "gid://shopify/Product/4687493857363",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/4712-02.jpg?v=1618822204"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "CircuitPython",
+      "Measurement & Test",
+      "Power",
+      "Qw/ST"
+     ],
+     "title": "Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-lc709203f-lipoly-liion-fuel-gauge-and-battery-monitor-stemma-jst-ph-qt-qwiic",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32236623396947:1",
+       "description": {
+        "html": "Connect the Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor to your Lipoly or LiIon battery and it will let you know the voltage of the cell, it does the annoying math of decoding the non-linear voltage to get you a valid percentage as well! Low cost Lithium Polymer batteries have revolutionized electronics - they're thin, they're light, they can be regulated down to 3.3V and they're easy to charge. On your phone, there's a little image of a battery cell that tells you the percentage of charge - so you know when you absolutely need to plug it in and when you can stay untethered. The Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor does the same thing. Since this nice chip is I2C, it works with any and all microcontroller or microcomputer boards, from the Arduino UNO up to the Raspberry Pi. And you don't have to worry about logic level, as the gauge runs with 3.3V or 5.0V power and logic equally fine. To use, connect a single-cell battery to one of the JST 2 PH ports (either one). Then use the included JST PH jumper cable to connect to your boost converter, Feather, whatever! Use the I2C interface and the Arduino or CircuitPython/Python library code to set the pack size (this helps tune the calculation) and read the voltage and percentage whenever you like. If you connect a 10K thermistor to the THERM pin you can also use it to read the battery pack temperature - our packs do not come with a built in thermistor but many do. To get you going fast, Adafruit spun up a custom made PCB in the STEMMA QT form factor, making it easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the LC709203 or to chain it with a wide range of other sensors and accessories using a compatible cable. Primary Guide: Adafruit LC709203F LiPoly / LiIon Fuel Gauge and Battery MonitorKeep track of when to charge your batteries! Includes: LC709203F LiPoly / LiIon Fuel Gauge and Battery Monitor PCB strip of male header pins JST PH jumper cable Please note that the lipo battery, STEMMA QT cable and Feather / Featherwing pictured are for illustrative purposes and are not included."
+       },
+       "id": "gid://shopify/ProductVariant/32236623396947",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/4712-02.jpg?v=1618822204"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA4712",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Motors, servos, wheels and the boards that drive them, with our own controllers plus drivers from Adafruit and gearmotors from Pololu."
+       },
+       "handle": "robotics",
+       "id": "gid://shopify/Collection/80541953",
+       "title": "Robotics"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Yukon is our modular high-power platform for robots and props. Six module slots combine motors, servos, steppers, lighting and audio on one board."
+       },
+       "handle": "yukon",
+       "id": "gid://shopify/Collection/278070853715",
+       "title": "Yukon Robotics"
+      }
+     ],
+     "description": {
+      "html": "With a constant discharge rating of 35C (hitting a peak of 65C in bursts), these hardcore LiPo batteries are perfect for supplying power to Pimoroni Yukon and other hefty projects that are capable of dealing with higher voltages. You will need a specialist charger to charge these batteries safely (we stock Overlander's VSRMini) and we also highly recommend picking up a Safety Charge Sack for use when charging and storing them. You can plug the XT60 connector on these batteries directly into Yukon using one of these handy XT60 to XT30 adapters. ⚠ Warning! These batteries do not have the in-built safety features of our other LiPos that prevent against over-charging and over-discharging, so we only recommend them for use by folks who've used LiPos before and understand the risks. Be sure to read the safety warnings in the package thoroughly before use! Specifications OVERLANDER-2566 OVERLANDER-2646 OVERLANDER-2577 Capacity (mAh) 2200 2200 5000 Voltage 7.4 11.1 11.1 Cell Count 2S 3S 3S Constant Discharge 35C 35C 35C Burst Discharge 65C 65C 65C Maximum Constant Current (A) 77 77 175 Maximum Burst Current (A) 143 143 325 Watt Hours (Wh) 16.28 24.42 55.5 Dimensions (mm) 101 x 33 x 15 101 x 33 x 23 138 x 42 x 27 Weight (g) 119 169 343 Wire Gauge (AWG) 14 AWG 14AWG 10 AWG Connector XT60 XT60 XT60 Balance Connector Type JST-XH JST-XH JST-XH Datasheet [Link] [Link] [Link] Material Safety Data Sheet (MSDS) [Link] [Link] [Link] LiPo Warning Sheet [Link] [Link] [Link] About Overlander LiPo Batteries All of Overlander's LiPo batteries are designed with optimal performance, longevity and reliability in mind. Overlander's LiPo batteries are manufactured using the superior stacking method; this provides dependable capacity and consistent power. Every cell is fully matched in Internal Resistance, Voltage and Weight before they are put together to create your battery packs. This stringent matching process makes for exceptional results both competitively and professionally. Overlander is proud to work in conjunction with Fullymax to produce high-quality LiPo packs. The production process for LiPo battery cells is fully automatic and completed in a dust free atmosphere using uniformity and conformity. Fullymax cells are renowned for their: Overlander LiPo packs come fully equipped with high quality silicone leads. It is safe to say with Overlander you are guaranteed to receive the highest-quality, top-performing batteries that you’ve grown to expect. Lithium Polymer batteries provide superior voltage, capacity and discharge/power. These combined into a lighter, more compact size, make lithium battery packs the favourable choice over alternative chemistries."
+     },
+     "gift_card": false,
+     "handle": "supersport-pro-lipo-battery-xt60-connector",
+     "id": "gid://shopify/Product/7110529548371",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/overlander-batteries-1.jpg?v=1701949487"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "2200mAh 7.4V 2S 35C"
+        },
+        {
+         "label": "2200mAh 11.1V 3S 35C"
+        },
+        {
+         "label": "5000mAh 11.1V 3S 35C"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2000,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_battery",
+      "_yukon",
+      "Batteries",
+      "Components",
+      "Power",
+      "Prototyping",
+      "Robotics",
+      "Yukon"
+     ],
+     "title": "Supersport Pro LiPo Battery (XT60 Connector)",
+     "url": "https://shop.pimoroni.com/en-us/products/supersport-pro-lipo-battery-xt60-connector",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41199488565331:1",
+       "description": {
+        "html": "With a constant discharge rating of 35C (hitting a peak of 65C in bursts), these hardcore LiPo batteries are perfect for supplying power to Pimoroni Yukon and other hefty projects that are capable of dealing with higher voltages. You will need a specialist charger to charge these batteries safely (we stock Overlander's VSRMini) and we also highly recommend picking up a Safety Charge Sack for use when charging and storing them. You can plug the XT60 connector on these batteries directly into Yukon using one of these handy XT60 to XT30 adapters. ⚠ Warning! These batteries do not have the in-built safety features of our other LiPos that prevent against over-charging and over-discharging, so we only recommend them for use by folks who've used LiPos before and understand the risks. Be sure to read the safety warnings in the package thoroughly before use! Specifications OVERLANDER-2566 OVERLANDER-2646 OVERLANDER-2577 Capacity (mAh) 2200 2200 5000 Voltage 7.4 11.1 11.1 Cell Count 2S 3S 3S Constant Discharge 35C 35C 35C Burst Discharge 65C 65C 65C Maximum Constant Current (A) 77 77 175 Maximum Burst Current (A) 143 143 325 Watt Hours (Wh) 16.28 24.42 55.5 Dimensions (mm) 101 x 33 x 15 101 x 33 x 23 138 x 42 x 27 Weight (g) 119 169 343 Wire Gauge (AWG) 14 AWG 14AWG 10 AWG Connector XT60 XT60 XT60 Balance Connector Type JST-XH JST-XH JST-XH Datasheet [Link] [Link] [Link] Material Safety Data Sheet (MSDS) [Link] [Link] [Link] LiPo Warning Sheet [Link] [Link] [Link] About Overlander LiPo Batteries All of Overlander's LiPo batteries are designed with optimal performance, longevity and reliability in mind. Overlander's LiPo batteries are manufactured using the superior stacking method; this provides dependable capacity and consistent power. Every cell is fully matched in Internal Resistance, Voltage and Weight before they are put together to create your battery packs. This stringent matching process makes for exceptional results both competitively and professionally. Overlander is proud to work in conjunction with Fullymax to produce high-quality LiPo packs. The production process for LiPo battery cells is fully automatic and completed in a dust free atmosphere using uniformity and conformity. Fullymax cells are renowned for their: Overlander LiPo packs come fully equipped with high quality silicone leads. It is safe to say with Overlander you are guaranteed to receive the highest-quality, top-performing batteries that you’ve grown to expect. Lithium Polymer batteries provide superior voltage, capacity and discharge/power. These combined into a lighter, more compact size, make lithium battery packs the favourable choice over alternative chemistries."
+       },
+       "id": "gid://shopify/ProductVariant/41199488565331",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/overlander-batteries-2.jpg?v=1701962618"
+        }
+       ],
+       "options": [
+        {
+         "label": "2200mAh 7.4V 2S 35C",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 2000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "OVERLANDER-2566",
+       "title": "2200mAh 7.4V 2S 35C"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41199488598099:1",
+       "description": {
+        "html": "With a constant discharge rating of 35C (hitting a peak of 65C in bursts), these hardcore LiPo batteries are perfect for supplying power to Pimoroni Yukon and other hefty projects that are capable of dealing with higher voltages. You will need a specialist charger to charge these batteries safely (we stock Overlander's VSRMini) and we also highly recommend picking up a Safety Charge Sack for use when charging and storing them. You can plug the XT60 connector on these batteries directly into Yukon using one of these handy XT60 to XT30 adapters. ⚠ Warning! These batteries do not have the in-built safety features of our other LiPos that prevent against over-charging and over-discharging, so we only recommend them for use by folks who've used LiPos before and understand the risks. Be sure to read the safety warnings in the package thoroughly before use! Specifications OVERLANDER-2566 OVERLANDER-2646 OVERLANDER-2577 Capacity (mAh) 2200 2200 5000 Voltage 7.4 11.1 11.1 Cell Count 2S 3S 3S Constant Discharge 35C 35C 35C Burst Discharge 65C 65C 65C Maximum Constant Current (A) 77 77 175 Maximum Burst Current (A) 143 143 325 Watt Hours (Wh) 16.28 24.42 55.5 Dimensions (mm) 101 x 33 x 15 101 x 33 x 23 138 x 42 x 27 Weight (g) 119 169 343 Wire Gauge (AWG) 14 AWG 14AWG 10 AWG Connector XT60 XT60 XT60 Balance Connector Type JST-XH JST-XH JST-XH Datasheet [Link] [Link] [Link] Material Safety Data Sheet (MSDS) [Link] [Link] [Link] LiPo Warning Sheet [Link] [Link] [Link] About Overlander LiPo Batteries All of Overlander's LiPo batteries are designed with optimal performance, longevity and reliability in mind. Overlander's LiPo batteries are manufactured using the superior stacking method; this provides dependable capacity and consistent power. Every cell is fully matched in Internal Resistance, Voltage and Weight before they are put together to create your battery packs. This stringent matching process makes for exceptional results both competitively and professionally. Overlander is proud to work in conjunction with Fullymax to produce high-quality LiPo packs. The production process for LiPo battery cells is fully automatic and completed in a dust free atmosphere using uniformity and conformity. Fullymax cells are renowned for their: Overlander LiPo packs come fully equipped with high quality silicone leads. It is safe to say with Overlander you are guaranteed to receive the highest-quality, top-performing batteries that you’ve grown to expect. Lithium Polymer batteries provide superior voltage, capacity and discharge/power. These combined into a lighter, more compact size, make lithium battery packs the favourable choice over alternative chemistries."
+       },
+       "id": "gid://shopify/ProductVariant/41199488598099",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/overlander-batteries-1_4f3ccbc7-6f17-4893-b880-575edaa09b39.jpg?v=1701962645"
+        }
+       ],
+       "options": [
+        {
+         "label": "2200mAh 11.1V 3S 35C",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 2400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "OVERLANDER-2646",
+       "title": "2200mAh 11.1V 3S 35C"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41199488630867:1",
+       "description": {
+        "html": "With a constant discharge rating of 35C (hitting a peak of 65C in bursts), these hardcore LiPo batteries are perfect for supplying power to Pimoroni Yukon and other hefty projects that are capable of dealing with higher voltages. You will need a specialist charger to charge these batteries safely (we stock Overlander's VSRMini) and we also highly recommend picking up a Safety Charge Sack for use when charging and storing them. You can plug the XT60 connector on these batteries directly into Yukon using one of these handy XT60 to XT30 adapters. ⚠ Warning! These batteries do not have the in-built safety features of our other LiPos that prevent against over-charging and over-discharging, so we only recommend them for use by folks who've used LiPos before and understand the risks. Be sure to read the safety warnings in the package thoroughly before use! Specifications OVERLANDER-2566 OVERLANDER-2646 OVERLANDER-2577 Capacity (mAh) 2200 2200 5000 Voltage 7.4 11.1 11.1 Cell Count 2S 3S 3S Constant Discharge 35C 35C 35C Burst Discharge 65C 65C 65C Maximum Constant Current (A) 77 77 175 Maximum Burst Current (A) 143 143 325 Watt Hours (Wh) 16.28 24.42 55.5 Dimensions (mm) 101 x 33 x 15 101 x 33 x 23 138 x 42 x 27 Weight (g) 119 169 343 Wire Gauge (AWG) 14 AWG 14AWG 10 AWG Connector XT60 XT60 XT60 Balance Connector Type JST-XH JST-XH JST-XH Datasheet [Link] [Link] [Link] Material Safety Data Sheet (MSDS) [Link] [Link] [Link] LiPo Warning Sheet [Link] [Link] [Link] About Overlander LiPo Batteries All of Overlander's LiPo batteries are designed with optimal performance, longevity and reliability in mind. Overlander's LiPo batteries are manufactured using the superior stacking method; this provides dependable capacity and consistent power. Every cell is fully matched in Internal Resistance, Voltage and Weight before they are put together to create your battery packs. This stringent matching process makes for exceptional results both competitively and professionally. Overlander is proud to work in conjunction with Fullymax to produce high-quality LiPo packs. The production process for LiPo battery cells is fully automatic and completed in a dust free atmosphere using uniformity and conformity. Fullymax cells are renowned for their: Overlander LiPo packs come fully equipped with high quality silicone leads. It is safe to say with Overlander you are guaranteed to receive the highest-quality, top-performing batteries that you’ve grown to expect. Lithium Polymer batteries provide superior voltage, capacity and discharge/power. These combined into a lighter, more compact size, make lithium battery packs the favourable choice over alternative chemistries."
+       },
+       "id": "gid://shopify/ProductVariant/41199488630867",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/overlander-batteries-1.jpg?v=1701949487"
+        }
+       ],
+       "options": [
+        {
+         "label": "5000mAh 11.1V 3S 35C",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 5600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "OVERLANDER-2577",
+       "title": "5000mAh 11.1V 3S 35C"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "A range of compact, convenient USB-C LiPo/LiIon battery chargers, perfect for feeding hungry batteries. We've spent quite a lot of time at Pirate HQ over the last few weeks figuring out ways to charge up batteries for our Badger 2040s, and we've come up with all sorts of horrible solutions. Good news though - you won't have to make do with dubious bits of left over prototype, because we've made some straightforward, small LiPo battery chargers that are just the job. LiPo Amigo is a stamp sized board with a USB-C connector on one end and a JST-PH connector at the other so you can plug in a LiPo or LiIon battery. Betwixt the two, you can find a perky red LED that will light up to tell you when battery charging is happening. Simples! LiPo Amigo Pro is a bit larger and has some additional tricks up its sleeves. It's got two JST-PH connectors so you can charge your battery and power your device at the same time (and switch seamlessly between USB and battery power). It also has a power on/off button and extra built in battery protection. Both are compatible with any of our LiPo, LiIon or high capacity LiIon batteries (batteries are sold separately). Features MCP73831 charger with 200mA* charging current (datasheet) USB-C connector for power 2 pin JST-PH connector for plugging in a LiPo/LiIon battery Charge LED XB6096I2S battery protector (datasheet) (Pro only) Additional 2 pin JST-PH connector for powering an up to 4.2V tolerant device** (Pro only) Power on/off button and associated LED (Pro only) Comes fully assembled. LiPo Amigo schematic LiPo Amigo Pro schematic LiPo Amigo dimensional drawing LiPo Amigo Pro dimensional drawing Obligatory LiPo warnings LiPo and LiIon batteries can be dangerous if not treated with respect! You should only use LiPo Amigo boards to charge 3.7V LiPo or LiIon batteries, and you should make sure that any project involving LiPos is sufficiently protected from being dented, bent, punctured or crushed. We recommend only using LiPo batteries that have own internal protection against overcharge, over discharge and short circuits (all the ones we sell do). If you're using a battery bought from elsewhere, double check that the polarity of the wires matches the markings on our board (red to + and black to -) before you plug it in! Some battery manufacturers attach the JST connector the other way up. Notes Measurements: LiPo Amigo - 26 x 21 x 7 mm, LiPo Amigo Pro- 36 x 23 x 7 mm (LxWxH, including connectors) * The pads on the back labelled FAST CHARGE can be bridged with solder to allow charging at up to 500mA (instead of the default 200mA). Don't do this if you're using an unprotected battery. The battery protection IC on LiPo Amigo Pro limits charge and discharge to about 1A. The pads marked NO PROTECT can be bridged to disable this (no protec, only attac). Only do this if you're using a battery with its own protection that can handle the higher discharge current. We wouldn't recommend trying to draw more than 2A from the battery, as this is the max rating of the JST-PH connectors. ** You should only use the DEVICE connector on LiPo Amigo Pro for powering devices that can handle 4.2V - that's the maximum potential voltage that can be supplied by a fully charged LiPo. Don't plug in things like micro:bits that can't deal with LiPo voltages! The DEVICE connector draws its current from the attached LiPo so it will only provide power if a battery is plugged in. There's no boost circuitry on board, so it won't power Raspberry Pi computers or other devices that need 5V. For connecting your device to LiPo Amigo Pro, we'd suggest using this double-ended JST-PH cable or this JST-PH wire assembly. Because we hate leaving unused space on our PCBs, we've broken out a bunch of other headers that you might find it useful to solder things up to. The LED headers can be used to connect up an external LED to show charging or on/off status - useful if you're building your battery charger into an enclosure. The SW headers can be used to add an external momentary on/off switch to enable and disable the power output of LiPo Amigo Pro. The battery will still charge when the power output is turned off. VBAT is the battery + pin (the same as the positive pin on the BAT JST connector) VDEV is the device + pin (the same as the positive pin on the DEVICE JST connector."
+     },
+     "gift_card": false,
+     "handle": "lipo-amigo",
+     "id": "gid://shopify/Product/6728770617427",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/P1050500-Edit.jpg?v=1653052736"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "LiPo Amigo"
+        },
+        {
+         "label": "LiPo Amigo Pro"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "Power"
+     ],
+     "title": "LiPo Amigo (LiPo/LiIon Battery Charger)",
+     "url": "https://shop.pimoroni.com/en-us/products/lipo-amigo",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39779302506579:1",
+       "description": {
+        "html": "A range of compact, convenient USB-C LiPo/LiIon battery chargers, perfect for feeding hungry batteries. We've spent quite a lot of time at Pirate HQ over the last few weeks figuring out ways to charge up batteries for our Badger 2040s, and we've come up with all sorts of horrible solutions. Good news though - you won't have to make do with dubious bits of left over prototype, because we've made some straightforward, small LiPo battery chargers that are just the job. LiPo Amigo is a stamp sized board with a USB-C connector on one end and a JST-PH connector at the other so you can plug in a LiPo or LiIon battery. Betwixt the two, you can find a perky red LED that will light up to tell you when battery charging is happening. Simples! LiPo Amigo Pro is a bit larger and has some additional tricks up its sleeves. It's got two JST-PH connectors so you can charge your battery and power your device at the same time (and switch seamlessly between USB and battery power). It also has a power on/off button and extra built in battery protection. Both are compatible with any of our LiPo, LiIon or high capacity LiIon batteries (batteries are sold separately). Features MCP73831 charger with 200mA* charging current (datasheet) USB-C connector for power 2 pin JST-PH connector for plugging in a LiPo/LiIon battery Charge LED XB6096I2S battery protector (datasheet) (Pro only) Additional 2 pin JST-PH connector for powering an up to 4.2V tolerant device** (Pro only) Power on/off button and associated LED (Pro only) Comes fully assembled. LiPo Amigo schematic LiPo Amigo Pro schematic LiPo Amigo dimensional drawing LiPo Amigo Pro dimensional drawing Obligatory LiPo warnings LiPo and LiIon batteries can be dangerous if not treated with respect! You should only use LiPo Amigo boards to charge 3.7V LiPo or LiIon batteries, and you should make sure that any project involving LiPos is sufficiently protected from being dented, bent, punctured or crushed. We recommend only using LiPo batteries that have own internal protection against overcharge, over discharge and short circuits (all the ones we sell do). If you're using a battery bought from elsewhere, double check that the polarity of the wires matches the markings on our board (red to + and black to -) before you plug it in! Some battery manufacturers attach the JST connector the other way up. Notes Measurements: LiPo Amigo - 26 x 21 x 7 mm, LiPo Amigo Pro- 36 x 23 x 7 mm (LxWxH, including connectors) * The pads on the back labelled FAST CHARGE can be bridged with solder to allow charging at up to 500mA (instead of the default 200mA). Don't do this if you're using an unprotected battery. The battery protection IC on LiPo Amigo Pro limits charge and discharge to about 1A. The pads marked NO PROTECT can be bridged to disable this (no protec, only attac). Only do this if you're using a battery with its own protection that can handle the higher discharge current. We wouldn't recommend trying to draw more than 2A from the battery, as this is the max rating of the JST-PH connectors. ** You should only use the DEVICE connector on LiPo Amigo Pro for powering devices that can handle 4.2V - that's the maximum potential voltage that can be supplied by a fully charged LiPo. Don't plug in things like micro:bits that can't deal with LiPo voltages! The DEVICE connector draws its current from the attached LiPo so it will only provide power if a battery is plugged in. There's no boost circuitry on board, so it won't power Raspberry Pi computers or other devices that need 5V. For connecting your device to LiPo Amigo Pro, we'd suggest using this double-ended JST-PH cable or this JST-PH wire assembly. Because we hate leaving unused space on our PCBs, we've broken out a bunch of other headers that you might find it useful to solder things up to. The LED headers can be used to connect up an external LED to show charging or on/off status - useful if you're building your battery charger into an enclosure. The SW headers can be used to add an external momentary on/off switch to enable and disable the power output of LiPo Amigo Pro. The battery will still charge when the power output is turned off. VBAT is the battery + pin (the same as the positive pin on the BAT JST connector) VDEV is the device + pin (the same as the positive pin on the DEVICE JST connector."
+       },
+       "id": "gid://shopify/ProductVariant/39779302506579",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/P1050500-Edit.jpg?v=1653052736"
+        }
+       ],
+       "options": [
+        {
+         "label": "LiPo Amigo",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM611",
+       "title": "LiPo Amigo"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39779302539347:1",
+       "description": {
+        "html": "A range of compact, convenient USB-C LiPo/LiIon battery chargers, perfect for feeding hungry batteries. We've spent quite a lot of time at Pirate HQ over the last few weeks figuring out ways to charge up batteries for our Badger 2040s, and we've come up with all sorts of horrible solutions. Good news though - you won't have to make do with dubious bits of left over prototype, because we've made some straightforward, small LiPo battery chargers that are just the job. LiPo Amigo is a stamp sized board with a USB-C connector on one end and a JST-PH connector at the other so you can plug in a LiPo or LiIon battery. Betwixt the two, you can find a perky red LED that will light up to tell you when battery charging is happening. Simples! LiPo Amigo Pro is a bit larger and has some additional tricks up its sleeves. It's got two JST-PH connectors so you can charge your battery and power your device at the same time (and switch seamlessly between USB and battery power). It also has a power on/off button and extra built in battery protection. Both are compatible with any of our LiPo, LiIon or high capacity LiIon batteries (batteries are sold separately). Features MCP73831 charger with 200mA* charging current (datasheet) USB-C connector for power 2 pin JST-PH connector for plugging in a LiPo/LiIon battery Charge LED XB6096I2S battery protector (datasheet) (Pro only) Additional 2 pin JST-PH connector for powering an up to 4.2V tolerant device** (Pro only) Power on/off button and associated LED (Pro only) Comes fully assembled. LiPo Amigo schematic LiPo Amigo Pro schematic LiPo Amigo dimensional drawing LiPo Amigo Pro dimensional drawing Obligatory LiPo warnings LiPo and LiIon batteries can be dangerous if not treated with respect! You should only use LiPo Amigo boards to charge 3.7V LiPo or LiIon batteries, and you should make sure that any project involving LiPos is sufficiently protected from being dented, bent, punctured or crushed. We recommend only using LiPo batteries that have own internal protection against overcharge, over discharge and short circuits (all the ones we sell do). If you're using a battery bought from elsewhere, double check that the polarity of the wires matches the markings on our board (red to + and black to -) before you plug it in! Some battery manufacturers attach the JST connector the other way up. Notes Measurements: LiPo Amigo - 26 x 21 x 7 mm, LiPo Amigo Pro- 36 x 23 x 7 mm (LxWxH, including connectors) * The pads on the back labelled FAST CHARGE can be bridged with solder to allow charging at up to 500mA (instead of the default 200mA). Don't do this if you're using an unprotected battery. The battery protection IC on LiPo Amigo Pro limits charge and discharge to about 1A. The pads marked NO PROTECT can be bridged to disable this (no protec, only attac). Only do this if you're using a battery with its own protection that can handle the higher discharge current. We wouldn't recommend trying to draw more than 2A from the battery, as this is the max rating of the JST-PH connectors. ** You should only use the DEVICE connector on LiPo Amigo Pro for powering devices that can handle 4.2V - that's the maximum potential voltage that can be supplied by a fully charged LiPo. Don't plug in things like micro:bits that can't deal with LiPo voltages! The DEVICE connector draws its current from the attached LiPo so it will only provide power if a battery is plugged in. There's no boost circuitry on board, so it won't power Raspberry Pi computers or other devices that need 5V. For connecting your device to LiPo Amigo Pro, we'd suggest using this double-ended JST-PH cable or this JST-PH wire assembly. Because we hate leaving unused space on our PCBs, we've broken out a bunch of other headers that you might find it useful to solder things up to. The LED headers can be used to connect up an external LED to show charging or on/off status - useful if you're building your battery charger into an enclosure. The SW headers can be used to add an external momentary on/off switch to enable and disable the power output of LiPo Amigo Pro. The battery will still charge when the power output is turned off. VBAT is the battery + pin (the same as the positive pin on the BAT JST connector) VDEV is the device + pin (the same as the positive pin on the DEVICE JST connector."
+       },
+       "id": "gid://shopify/ProductVariant/39779302539347",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/P1050505.jpg?v=1653052742"
+        }
+       ],
+       "options": [
+        {
+         "label": "LiPo Amigo Pro",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 1000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM612",
+       "title": "LiPo Amigo Pro"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "This battery holder connects 3 AAA batteries together in series for powering all kinds of projects. The box is slim, and 3 AAA's add up to about 3.3-4.5V, a very similar range to Lithium Ion/polymer (Li-Ion) batteries, plus it has a nifty on-off switch. That makes them ideal for use with 3.3V projects that have a 2-pin JST connector meant for one of our Li-Ion/Poly batteries. (Of course, you can't recharge them like Li-Ion/Polys, so don't try to plug this into one of our Li-Ion/Poly charger boards!) It also features an ergonomic belt clip for taking your power on the go. Fits any standard AAA battery. When using rechargeable NiMH the output voltage will range from about 3.7V with charged batteries to 2.7V at the end of life with a nominal voltage of 3.6V. When using alkalines, the output will range from 4.6V with new batteries to 3.3V at the end of life with a nominal voltage of about 4.5V. The polarity matches that of our 2-pin JST cable and Li-Ion/Poly batteries. Uses a genuine JST connector so it wont 'catch and tear' in JST connectors. TECHNICAL DETAILS Cable Length: 6\" long, terminated with a genuine JST-PH 2 pin connector Product Dimensions: 63.0mm x 37.0mm x 28.0mm / 2.5\" x 1.5\" x 1.1\" Product Weight: 24.6g / 0.9oz"
+     },
+     "gift_card": false,
+     "handle": "3-x-aaa-battery-holder-with-on-off-switch-jst-and-belt-clip",
+     "id": "gid://shopify/Product/9705356170",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/3286-00.jpg?v=1539264315"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Components",
+      "Power"
+     ],
+     "title": "3 x AAA Battery Holder with On/Off Switch, JST, and Belt Clip",
+     "url": "https://shop.pimoroni.com/en-us/products/3-x-aaa-battery-holder-with-on-off-switch-jst-and-belt-clip",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/34943591434:1",
+       "description": {
+        "html": "This battery holder connects 3 AAA batteries together in series for powering all kinds of projects. The box is slim, and 3 AAA's add up to about 3.3-4.5V, a very similar range to Lithium Ion/polymer (Li-Ion) batteries, plus it has a nifty on-off switch. That makes them ideal for use with 3.3V projects that have a 2-pin JST connector meant for one of our Li-Ion/Poly batteries. (Of course, you can't recharge them like Li-Ion/Polys, so don't try to plug this into one of our Li-Ion/Poly charger boards!) It also features an ergonomic belt clip for taking your power on the go. Fits any standard AAA battery. When using rechargeable NiMH the output voltage will range from about 3.7V with charged batteries to 2.7V at the end of life with a nominal voltage of 3.6V. When using alkalines, the output will range from 4.6V with new batteries to 3.3V at the end of life with a nominal voltage of about 4.5V. The polarity matches that of our 2-pin JST cable and Li-Ion/Poly batteries. Uses a genuine JST connector so it wont 'catch and tear' in JST connectors. TECHNICAL DETAILS Cable Length: 6\" long, terminated with a genuine JST-PH 2 pin connector Product Dimensions: 63.0mm x 37.0mm x 28.0mm / 2.5\" x 1.5\" x 1.1\" Product Weight: 24.6g / 0.9oz"
+       },
+       "id": "gid://shopify/ProductVariant/34943591434",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/3286-00.jpg?v=1539264315"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA3286",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "Oh so handy, this little lipo charger is so small and easy to use you can keep it on your desk or mount it easily into any project! Simply plug it via any MicroUSB cable into a USB port and a 3.7V/4.2V lithium polymer or lithium ion rechargeable battery into the JST plug on the other end. There are two LEDs - one red and one green. While charging, the red LED is lit. When the battery is fully charged and ready for use, the green LED turns on. Seriously, it could not get more easy. Lipo/Lipoly/LiIon Batteries not included, but we've got tons in the shop.Charging is performed in three stages: first a preconditioning charge, then a constant-current fast charge and finally a constant-voltage trickle charge to keep the battery topped-up. The charge current is 100mA by default, so it will work with any size battery and USB port. If you want you can easily change it over to 500mA mode by soldering closed the jumper on the front, for when you'll only be charging batteries with 500mAh size or larger. Comes assembled and tested with a free bonus JST cable! 5V input via Micro-B USB connector For charging single Lithium Ion/Lithium Polymer 3.7/4.2v batteries (not for older 3.6/4.1v cells) 100mA charge current, adjustable to 500mA by soldering a jumper closed TECHNICAL DETAILS Details: Dimensions: 21mm x 19mm x 2mm / 0.8\" x 0.75\" x 0.08\" We are currently shipping with a half thickness (0.8mm) PCB Height w/ JST: 7mm x 0.3\" Weight: 2g Datasheets, PCB CAD files, and Fritzing objects available in the tutorial"
+     },
+     "gift_card": false,
+     "handle": "adafruit-micro-lipo-w-microusb-jack-usb-liion-lipoly-charger",
+     "id": "gid://shopify/Product/332590753",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/1904-00_9f2b72f8-7ba8-4541-b04b-61bc6953509e.jpg?v=1571224516"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "Power"
+     ],
+     "title": "Adafruit Micro Lipo w/MicroUSB Jack - USB LiIon/LiPoly charger",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-micro-lipo-w-microusb-jack-usb-liion-lipoly-charger",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/804956441:1",
+       "description": {
+        "html": "Oh so handy, this little lipo charger is so small and easy to use you can keep it on your desk or mount it easily into any project! Simply plug it via any MicroUSB cable into a USB port and a 3.7V/4.2V lithium polymer or lithium ion rechargeable battery into the JST plug on the other end. There are two LEDs - one red and one green. While charging, the red LED is lit. When the battery is fully charged and ready for use, the green LED turns on. Seriously, it could not get more easy. Lipo/Lipoly/LiIon Batteries not included, but we've got tons in the shop.Charging is performed in three stages: first a preconditioning charge, then a constant-current fast charge and finally a constant-voltage trickle charge to keep the battery topped-up. The charge current is 100mA by default, so it will work with any size battery and USB port. If you want you can easily change it over to 500mA mode by soldering closed the jumper on the front, for when you'll only be charging batteries with 500mAh size or larger. Comes assembled and tested with a free bonus JST cable! 5V input via Micro-B USB connector For charging single Lithium Ion/Lithium Polymer 3.7/4.2v batteries (not for older 3.6/4.1v cells) 100mA charge current, adjustable to 500mA by soldering a jumper closed TECHNICAL DETAILS Details: Dimensions: 21mm x 19mm x 2mm / 0.8\" x 0.75\" x 0.08\" We are currently shipping with a half thickness (0.8mm) PCB Height w/ JST: 7mm x 0.3\" Weight: 2g Datasheets, PCB CAD files, and Fritzing objects available in the tutorial"
+       },
+       "id": "gid://shopify/ProductVariant/804956441",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/1904-00_9f2b72f8-7ba8-4541-b04b-61bc6953509e.jpg?v=1571224516"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA1904",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "This board that will watch your QT Py's back and give it the power and support to wander out past your USB port. This little lipo charger is designed to fit onto the back of any QT Py board, and make it easy for portable powering. Simply plug any standard 3.7V/4.2V lithium polymer or lithium-ion rechargeable battery into the JST plug on the end. When powered by the USB port on the QT Py, the charger kicks in and will charge up the battery at 200mA max rate. You'll see the yellow LED light up when that happens. When the USB is removed, the battery will reverse charge into the 5V port via a Schottky diode. You can turn it on or off with the built in slide switch as well. A simple voltage divider on the cathode side of the diode and connected to pin A2 will let your firmware detect basic modes: if the voltage is over 4.3V, it is probably plugged into USB. If the voltage is 4.2V or below its probably running on the Lipoly battery and you can roughly determine the battery state. Adafruit include some header that you can solder to your QT Py. For use with Adafruit LiPoly/LiIon batteries only! Other batteries may have different voltage, chemistry, polarity, or pinout. Comes as an assembled and tested PCB Uses the 5V input via USB Type-C connector on QT Py For charging single Lithium Ion/Lithium Polymer 3.7/4.2v batteries (not for older 3.6/4.1v cells) 200mA charge current Batteries and QT Py are not included. Technical Details Product Dimensions: 20.9mm x 17.9mm x 7.2mm / 0.8\" x 0.7\" x 0.3\" Product Weight: 1.6g / 0.1oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-liion-or-lipoly-charger-bff-add-on-for-qt-py",
+     "id": "gid://shopify/Product/6735164670035",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5397-00.jpg?v=1745608123"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power"
+     ],
+     "title": "Adafruit LiIon or LiPoly Charger BFF Add-On for QT Py",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-liion-or-lipoly-charger-bff-add-on-for-qt-py",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39802673463379:1",
+       "description": {
+        "html": "This board that will watch your QT Py's back and give it the power and support to wander out past your USB port. This little lipo charger is designed to fit onto the back of any QT Py board, and make it easy for portable powering. Simply plug any standard 3.7V/4.2V lithium polymer or lithium-ion rechargeable battery into the JST plug on the end. When powered by the USB port on the QT Py, the charger kicks in and will charge up the battery at 200mA max rate. You'll see the yellow LED light up when that happens. When the USB is removed, the battery will reverse charge into the 5V port via a Schottky diode. You can turn it on or off with the built in slide switch as well. A simple voltage divider on the cathode side of the diode and connected to pin A2 will let your firmware detect basic modes: if the voltage is over 4.3V, it is probably plugged into USB. If the voltage is 4.2V or below its probably running on the Lipoly battery and you can roughly determine the battery state. Adafruit include some header that you can solder to your QT Py. For use with Adafruit LiPoly/LiIon batteries only! Other batteries may have different voltage, chemistry, polarity, or pinout. Comes as an assembled and tested PCB Uses the 5V input via USB Type-C connector on QT Py For charging single Lithium Ion/Lithium Polymer 3.7/4.2v batteries (not for older 3.6/4.1v cells) 200mA charge current Batteries and QT Py are not included. Technical Details Product Dimensions: 20.9mm x 17.9mm x 7.2mm / 0.8\" x 0.7\" x 0.3\" Product Weight: 1.6g / 0.1oz"
+       },
+       "id": "gid://shopify/ProductVariant/39802673463379",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5397-00.jpg?v=1745608123"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA5397",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "Low cost Lithium Polymer batteries have revolutionized electronics - they're thin, they're light, they can be regulated down to 3.3V and they're easy to charge. On your phone, there's a little image of a battery cell that tells you the percentage of charge - so you know when you absolutely need to plug it in and when you can stay untethered. The Adafruit MAX17048 LiPoly / LiIon Fuel Gauge and Battery Monitor does the same thing. Connect it to your Lipoly or LiIon battery and it will let you know the voltage of the cell, it does the annoying math of decoding the non-linear voltage to get you a valid percentage as well! Since this nice chip is I2C, it works with any and all microcontroller or microcomputer boards, from the Arduino UNO up to the Raspberry Pi. And you don't have to worry about logic level, as the gauge runs with 3.3V or 5.0V power and logic equally fine. To use, connect a 1S 3.7-4.2V Lithium Ion or Polymer battery to one of the JST 2 PH ports (either one). Then use a JST PH jumper cable to connect to your boost converter, Feather, whatever! Use the I2C interface and the Arduino or CircuitPython/Python library code to read the voltage and percentage whenever you like. There are various alerts, low power modes that can be customized as desired. To get you going fast, Adafruit spun up a custom-made PCB in the STEMMA QT form factor, making it easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the MAX17048 or to chain it with a wide range of other sensors and accessories using a compatible cable. QT Cable is not included, but we have a variety in the shop Technical Details Product Dimensions: 25.7mm x 20.3mm x 7.2mm / 1.0\" x 0.8\" x 0.3\" Product Weight: 2.6g / 0.1oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-max17048-lipoly-liion-fuel-gauge-and-battery-monitor-stemma-jst-ph-qt-qwiic",
+     "id": "gid://shopify/Product/6852754079827",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5580-06.jpg?v=1662106387"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "CircuitPython",
+      "Power",
+      "Qw/ST"
+     ],
+     "title": "Adafruit MAX17048 LiPoly / LiIon Fuel Gauge and Battery Monitor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-max17048-lipoly-liion-fuel-gauge-and-battery-monitor-stemma-jst-ph-qt-qwiic",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40263977467987:1",
+       "description": {
+        "html": "Low cost Lithium Polymer batteries have revolutionized electronics - they're thin, they're light, they can be regulated down to 3.3V and they're easy to charge. On your phone, there's a little image of a battery cell that tells you the percentage of charge - so you know when you absolutely need to plug it in and when you can stay untethered. The Adafruit MAX17048 LiPoly / LiIon Fuel Gauge and Battery Monitor does the same thing. Connect it to your Lipoly or LiIon battery and it will let you know the voltage of the cell, it does the annoying math of decoding the non-linear voltage to get you a valid percentage as well! Since this nice chip is I2C, it works with any and all microcontroller or microcomputer boards, from the Arduino UNO up to the Raspberry Pi. And you don't have to worry about logic level, as the gauge runs with 3.3V or 5.0V power and logic equally fine. To use, connect a 1S 3.7-4.2V Lithium Ion or Polymer battery to one of the JST 2 PH ports (either one). Then use a JST PH jumper cable to connect to your boost converter, Feather, whatever! Use the I2C interface and the Arduino or CircuitPython/Python library code to read the voltage and percentage whenever you like. There are various alerts, low power modes that can be customized as desired. To get you going fast, Adafruit spun up a custom-made PCB in the STEMMA QT form factor, making it easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the MAX17048 or to chain it with a wide range of other sensors and accessories using a compatible cable. QT Cable is not included, but we have a variety in the shop Technical Details Product Dimensions: 25.7mm x 20.3mm x 7.2mm / 1.0\" x 0.8\" x 0.3\" Product Weight: 2.6g / 0.1oz"
+       },
+       "id": "gid://shopify/ProductVariant/40263977467987",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5580-06.jpg?v=1662106387"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA5580",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

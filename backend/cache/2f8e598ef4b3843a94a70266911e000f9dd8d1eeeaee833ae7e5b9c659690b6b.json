@@ -1,0 +1,1486 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Enclosure"
+  }
+ },
+ "key": "2f8e598ef4b3843a94a70266911e000f9dd8d1eeeaee833ae7e5b9c659690b6b",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:51-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNORGcyTkRnNE5qQTRPVEk1TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description DFRobot Plastic Project Box Enclosure Waterproof Clear Cover Offers transparent cover with a lid gasket Made from high-quality ABS material Sturdy and terrific for use indoors and outdoors Suitable for LattePanda V1, Raspberry Pi, and other boards Waterproof: IP68 The DFRobot Plastic Project Box Enclosure Waterproof Clear Cover made from high-quality ABS material, these boxes are sturdy and terrific for use indoors and outdoors. Each box has a transparent cover with a lid gasket, and there are screws and screw decorative caps in the package. Aside from that, the “ears” on the enclosure allow you to easily fix it on other objects. This project box is suitable for LattePanda V1, Raspberry Pi, and other boards with smaller sizes. View more What's Included 1 x DFRobot Plastic Project Box Enclosure Waterproof Clear Cover Dimensions Size 120 x 168 x 55 mm (L x W x H) Specifications Waterproof: IP68 Material: ABS for box body, Polycarbonate for the lid Environment Temperature: ABS (-45 ~85 °C), Polycarbonate (-60 ~120 °C) Weight: 243 g"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-plastic-project-box-enclosure-waterproof-clear-cover",
+     "id": "gid://shopify/Product/7487251742881",
+     "list_price_range": {
+      "max": {
+       "amount": 1167,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1167,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot Plastic Project Box Enclosure Waterproof Clear Cover",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-01.webp?v=1764788424"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1167,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1167,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment"
+     ],
+     "title": "DFRobot Plastic Project Box Enclosure Waterproof Clear Cover",
+     "url": "https://www.robotshop.com/products/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360637161633:1",
+       "description": {
+        "html": "Description DFRobot Plastic Project Box Enclosure Waterproof Clear Cover Offers transparent cover with a lid gasket Made from high-quality ABS material Sturdy and terrific for use indoors and outdoors Suitable for LattePanda V1, Raspberry Pi, and other boards Waterproof: IP68 The DFRobot Plastic Project Box Enclosure Waterproof Clear Cover made from high-quality ABS material, these boxes are sturdy and terrific for use indoors and outdoors. Each box has a transparent cover with a lid gasket, and there are screws and screw decorative caps in the package. Aside from that, the “ears” on the enclosure allow you to easily fix it on other objects. This project box is suitable for LattePanda V1, Raspberry Pi, and other boards with smaller sizes. View more What's Included 1 x DFRobot Plastic Project Box Enclosure Waterproof Clear Cover Dimensions Size 120 x 168 x 55 mm (L x W x H) Specifications Waterproof: IP68 Material: ABS for box body, Polycarbonate for the lid Environment Temperature: ABS (-45 ~85 °C), Polycarbonate (-60 ~120 °C) Weight: 243 g"
+       },
+       "id": "gid://shopify/ProductVariant/42360637161633",
+       "list_price": {
+        "amount": 1167,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-01.webp?v=1764788424"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1167,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-936",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description Built tough enough to withstand a truck 2mm-thick, die-cast enclosure Perfect for producing “stomp box” style effects pedals Aluminum enclosure version features a smoother metal finish The Aluminum Enclosure (112x61x31mm) has been built tough enough to withstand a truck. This 2mm-thick, die-cast enclosure is rated IP54 against dust and splashing water. Because it’s aluminum, it’s easy to cut and drill so that you can add LCD screens, buttons and cable connections. If you want to “pretty up” your project, hit this with some fine-grit sand paper and buff it or just spray paint it! This enclosure is perfect for producing “stomp box” style effects pedals. Try combining this with a stomp switch and some of your own secret sauce circuitry to build a sweet custom pedal. The lid fits nicely to the top of the enclosure and is secured with 10mm long #6-32 screws (included). This aluminum enclosure version features a smoother metal finish as well as a more structurally sound design. View more Dimensions Size: 112x61x31mm Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+     },
+     "gift_card": false,
+     "handle": "aluminum-enclosure-112x61x31mm",
+     "id": "gid://shopify/Product/7486610145441",
+     "list_price_range": {
+      "max": {
+       "amount": 770,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 770,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Enclosure (112x61x31mm)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/aluminum-enclosure-112x61x31mm.webp?v=1720525629"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 770,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 770,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "no-cps-warranty"
+     ],
+     "title": "Enclosure (112x61x31mm)",
+     "url": "https://www.robotshop.com/products/aluminum-enclosure-112x61x31mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358543024289:1",
+       "description": {
+        "html": "Description Built tough enough to withstand a truck 2mm-thick, die-cast enclosure Perfect for producing “stomp box” style effects pedals Aluminum enclosure version features a smoother metal finish The Aluminum Enclosure (112x61x31mm) has been built tough enough to withstand a truck. This 2mm-thick, die-cast enclosure is rated IP54 against dust and splashing water. Because it’s aluminum, it’s easy to cut and drill so that you can add LCD screens, buttons and cable connections. If you want to “pretty up” your project, hit this with some fine-grit sand paper and buff it or just spray paint it! This enclosure is perfect for producing “stomp box” style effects pedals. Try combining this with a stomp switch and some of your own secret sauce circuitry to build a sweet custom pedal. The lid fits nicely to the top of the enclosure and is secured with 10mm long #6-32 screws (included). This aluminum enclosure version features a smoother metal finish as well as a more structurally sound design. View more Dimensions Size: 112x61x31mm Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+       },
+       "id": "gid://shopify/ProductVariant/42358543024289",
+       "list_price": {
+        "amount": 770,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/aluminum-enclosure-112x61x31mm.webp?v=1720525629"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 770,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-1380",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "yahboom",
+       "id": "gid://shopify/Collection/290272149665",
+       "title": "Yahboom"
+      },
+      {
+       "description": {
+        "html": "Shenzhen Yahboom Technology Co., Ltd. is a globally leading open-source hardware service provider, specializing in the R&D of edge computing AI controllers, embedded intelligent hardware, and AI educational robots. As a deep-tech player in edge AI, we offer full-stack R&D from edge controllers to algorithms which empower global developers to rapidly validate applications in embodied intelligence and edge computing. We have established a standardized product delivery system that features an open-source hardware ecosystem as the carrier, AI-driven technology as the core, and a wealth of supporting algorithms and open-source materials as the cornerstone of its services. Headquartered in Shenzhen, the company operates a 1,000㎡ R&D center and a 3,000㎡ modern production base. Our team brings together master's and doctoral talents from universities worldwide, holds over 100 technology patents, and possesses full capabilities in self-developing full-stack computing hardware and delivering integrated algorithm solutions.Yahboom has been recognized with multiple authoritative honors, including National High-Tech Enterprise and Shenzhen Specialized, Refined, and Innovative Enterprise."
+       },
+       "handle": "vendor-yahboom",
+       "id": "gid://shopify/Collection/290714845345",
+       "title": "Yahboom"
+      }
+     ],
+     "description": {
+      "html": "Description Supports M2 NVMe protocol, supports PCle3.0 and PCle4.0. Supports M Key/B&M Key interface, supports 2230/2242/2260/2280 solid state drives of different sizes. Suitable for Jetson Orin Nano SUPER, Orin NX SUPER, Xavier NX and TX2 NX, be used to write system images and backup systems. Supports common home devices such as computers, TVs, routers, etc., This M.2 SSD enclosure provides you with a convenient and secure way to transform your M.2 SSD into a portable storage device. It comes with USB3.1 interface, the maximum reading speed can reach 10GBPS, allowing you to quickly transfer data between different devices. For example, it can be used to write mirror systems to Jetson series development boards. And it is made of aluminum alloy, which can protect your SSD from the external environment and provide good heat dissipation performance. View more Links Attached files Product Features.jpg Support control board .jpg Product Introduction.jpg"
+     },
+     "gift_card": false,
+     "handle": "yahboom-m2-ssd-enclosure-support-nvme-protocol-and-m-key-b-m-key-interface",
+     "id": "gid://shopify/Product/7835635384481",
+     "list_price_range": {
+      "max": {
+       "amount": 3099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3099,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "M.2 SSD Enclosure Support NVMe protocol and M Key/B&amp;M Key interface",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/00703511_3.webp?v=1720508112"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3099,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "no-cps-warranty",
+      "rbm",
+      "rbmVendor_YAHB"
+     ],
+     "title": "M.2 SSD Enclosure Support NVMe protocol and M Key/B&amp;M Key interface",
+     "url": "https://www.robotshop.com/products/yahboom-m2-ssd-enclosure-support-nvme-protocol-and-m-key-b-m-key-interface",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43623890944161:1",
+       "description": {
+        "html": "Description Supports M2 NVMe protocol, supports PCle3.0 and PCle4.0. Supports M Key/B&M Key interface, supports 2230/2242/2260/2280 solid state drives of different sizes. Suitable for Jetson Orin Nano SUPER, Orin NX SUPER, Xavier NX and TX2 NX, be used to write system images and backup systems. Supports common home devices such as computers, TVs, routers, etc., This M.2 SSD enclosure provides you with a convenient and secure way to transform your M.2 SSD into a portable storage device. It comes with USB3.1 interface, the maximum reading speed can reach 10GBPS, allowing you to quickly transfer data between different devices. For example, it can be used to write mirror systems to Jetson series development boards. And it is made of aluminum alloy, which can protect your SSD from the external environment and provide good heat dissipation performance. View more Links Attached files Product Features.jpg Support control board .jpg Product Introduction.jpg"
+       },
+       "id": "gid://shopify/ProductVariant/43623890944161",
+       "list_price": {
+        "amount": 3099,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/00703511_3.webp?v=1720508112"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3099,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RM-YAHB-050",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Enhance your robotics projects with our Microcontroller & SBC Accessories collection. This selection includes essential expansion boards, motor controllers, and connectivity modules designed to augment your microcontroller or single-board computer setups like Arduino and Raspberry Pi. From PWM motor drivers to advanced sensor interfaces, these accessories facilitate diverse functionality for robotics enthusiasts and professionals alike."
+       },
+       "handle": "microcontroller-accessories",
+       "id": "gid://shopify/Collection/290219458721",
+       "title": "Microcontroller & SBC Accessories"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Step into the world of Arduino with our extensive range of Arduino compatible parts. From sensors and modules to shields and kits, you'll find components designed to extend the functionality of your Arduino board and enhance your projects. Whether you're building an IoT device, developing a robotic arm, or experimenting with new sensors, our selection offers reliable and versatile parts to meet your needs. Each product is carefully curated to ensure compatibility and ease of integration, making it easier for you to innovate and create."
+       },
+       "handle": "arduino-accessories",
+       "id": "gid://shopify/Collection/290231812257",
+       "title": "Arduino Compatible Parts"
+      },
+      {
+       "description": {
+        "html": "SunFounder is a dynamic company specializing in STEAM education kits and robotics solutions, offering a wide range of products including open-source robots, Arduino & Raspberry Pi kits, and smart devices. Their products are designed to enhance hands-on practice and problem-solving skills, benefiting students, hobbyists, and professionals. With a strong emphasis on educational value and innovation, SunFounder provides detailed tutorials and visual programming tools to ease the learning process. Discover the joy of building and programming with SunFounder's diverse and engaging products."
+       },
+       "handle": "sunfounder",
+       "id": "gid://shopify/Collection/290246099105",
+       "title": "Sunfounder"
+      }
+     ],
+     "description": {
+      "html": "Description Protective case of UNO R3 Fastened by eight screws Made by high grade acrylic Provides excellent protection The Transparent Acrylic Enclosure for Arduino Uno is protective case fastened by eight screws. It is made of high grade acrylic, which provides excellent protection, with good appearance. This is designed for the UNO R3 with holes for pins, so connection to other components is easy. View more What's Included 1x R3 Acrylic box"
+     },
+     "gift_card": false,
+     "handle": "transparent-acrylic-enclosure-arduino-uno",
+     "id": "gid://shopify/Product/7487286345889",
+     "list_price_range": {
+      "max": {
+       "amount": 1479,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1479,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Transparent Acrylic Enclosure for Arduino Uno",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1070507.webp?v=1780954189"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1479,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1479,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino Compatible Parts",
+      "category:Microcontroller & SBC Accessories",
+      "category:Robot Parts",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Transparent Acrylic Enclosure for Arduino Uno",
+     "url": "https://www.robotshop.com/products/transparent-acrylic-enclosure-arduino-uno",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360792547489:1",
+       "description": {
+        "html": "Description Protective case of UNO R3 Fastened by eight screws Made by high grade acrylic Provides excellent protection The Transparent Acrylic Enclosure for Arduino Uno is protective case fastened by eight screws. It is made of high grade acrylic, which provides excellent protection, with good appearance. This is designed for the UNO R3 with holes for pins, so connection to other components is easy. View more What's Included 1x R3 Acrylic box"
+       },
+       "id": "gid://shopify/ProductVariant/42360792547489",
+       "list_price": {
+        "amount": 1479,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1070507.webp?v=1780954189"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1479,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Suf-39",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": "Snapmaker is a trailblazer in the world of digital fabrication, offering innovative 3-in-1 3D printers that combine 3D printing, laser engraving, and CNC carving into one versatile machine. Their products, including the Snapmaker 2.0 and Snapmaker Artisan, are known for their precise performance, robust build quality with aerospace-grade aluminum alloys, and user-friendly touchscreens. Designed to enhance creativity and productivity, Snapmaker's modular design allows for easy upgrades and customization, providing a tailored experience for both hobbyists and professionals."
+       },
+       "handle": "snapmaker",
+       "id": "gid://shopify/Collection/290252751009",
+       "title": "Snapmaker"
+      }
+     ],
+     "description": {
+      "html": "Description Enclosure for Snapmaker 2.0 3D Printer A350 Designed for Snapmaker 2.0 Modular 3-in-1 3D Printer A350T Creates a safe and stable environment Constructed with aircraft-grade aluminum alloy Keeps your kids or pets away from potential hazards Avoids warping and/or shrinkage of ABS when printing Reducing the risk of breaking the acrylic panels The Enclosure for Snapmaker 2.0 3D Printer A350 is constructed with aircraft-grade aluminum alloy and laser filtering acrylic sheet. It is super easy to assemble as the doors come pre-assembled for you. The enclosure can protect you and your family members from potential hazards caused by the laser engraving/cutting process. When one of the doors is opened, the laser engraving/cutting process will stop automatically; when all the doors are closed, you can resume the laser engraving/cutting via the touchscreen. The Door Detection feature works in the following scenarios: engraving/cutting via Wi-Fi or USB flash drive. The enclosure uses a folding door mechanism and takes up less space, reducing the risk of breaking the acrylic panels. View more What's Included 1 x Enclosure for Snapmaker 2.0 3D Printer A350 Dimensions Size 625 x 820 x 602 mm (L x W x H) Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Laser filtering: Yes Noise reduction: Yes Smell/fumes reduction: Yes Dustproof: Yes Weight: 22.2 kg"
+     },
+     "gift_card": false,
+     "handle": "enclosure-for-snapmaker-20-3d-printer-a350",
+     "id": "gid://shopify/Product/7487303123105",
+     "list_price_range": {
+      "max": {
+       "amount": 49900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 49900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Enclosure for Snapmaker 2.0 3D Printer A350",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1732280.webp?v=1787925057"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 49900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 49900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment"
+     ],
+     "title": "Enclosure for Snapmaker 2.0 3D Printer A350",
+     "url": "https://www.robotshop.com/products/enclosure-for-snapmaker-20-3d-printer-a350",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360918409377:1",
+       "description": {
+        "html": "Description Enclosure for Snapmaker 2.0 3D Printer A350 Designed for Snapmaker 2.0 Modular 3-in-1 3D Printer A350T Creates a safe and stable environment Constructed with aircraft-grade aluminum alloy Keeps your kids or pets away from potential hazards Avoids warping and/or shrinkage of ABS when printing Reducing the risk of breaking the acrylic panels The Enclosure for Snapmaker 2.0 3D Printer A350 is constructed with aircraft-grade aluminum alloy and laser filtering acrylic sheet. It is super easy to assemble as the doors come pre-assembled for you. The enclosure can protect you and your family members from potential hazards caused by the laser engraving/cutting process. When one of the doors is opened, the laser engraving/cutting process will stop automatically; when all the doors are closed, you can resume the laser engraving/cutting via the touchscreen. The Door Detection feature works in the following scenarios: engraving/cutting via Wi-Fi or USB flash drive. The enclosure uses a folding door mechanism and takes up less space, reducing the risk of breaking the acrylic panels. View more What's Included 1 x Enclosure for Snapmaker 2.0 3D Printer A350 Dimensions Size 625 x 820 x 602 mm (L x W x H) Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Laser filtering: Yes Noise reduction: Yes Smell/fumes reduction: Yes Dustproof: Yes Weight: 22.2 kg"
+       },
+       "id": "gid://shopify/ProductVariant/42360918409377",
+       "list_price": {
+        "amount": 49900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1732280.webp?v=1787925057"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 49900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Snp-23",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Digilent, an NI company, empowers engineers, researchers, educators, and scientists through innovative hardware and software solutions, with a strong focus on Xilinx-based FPGA development boards, USB-based test devices, DAQ, and robust data-logging options. With a global distribution network, Digilent makes engineering accessible with competitive pricing, comprehensive documentation, and portable products, driven by a philosophy of modularity, customizability, and open-source principles."
+       },
+       "handle": "digilent-en",
+       "id": "gid://shopify/Collection/290240331937",
+       "title": "Digilent"
+      }
+     ],
+     "description": {
+      "html": "Description Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) Ensures robust protection for USRP boards Constructed from durable steel Features K-slots for anti-theft security Compatible with green USRP B200/B210 Safeguards against unauthorized access The Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) is designed to provide robust protection for the USRP B200 and B210 boards. This kit features a custom-designed steel case that ensures the safety and security of the devices. The enclosure is specifically compatible with green USRP B200 and B210 models equipped with a USB-B connector. The enclosure is constructed entirely from steel, offering a durable and reliable shield for the sensitive components housed within. It includes strategically placed K-slots on both the front and rear panels, which serve as an anti-theft measure, enhancing the security of the enclosed devices. This enclosure kit is an essential accessory for users seeking to safeguard their USRP B200 and B210 boards from physical damage and unauthorized access, ensuring the longevity and integrity of the devices. View more What's Included 1x Top Enclosure 1x Bottom Enclosure 1x Front Panel 1x Rear Panel 1x B210 Front Overlay 1x B200 Front Overlay 1x Rear Overlay 1x Lightpipes 1x Adhesive Feet 1x 8 mm Screws 1x SMA Nuts and Washers 1x Torx Key Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) Specifications Full steel enclosure Compatible with USRP B200 and B210 devices Front and rear K-Slots for anti-theft protection"
+     },
+     "gift_card": false,
+     "handle": "digilent-enclosure-kit-for-ettus-usrp-b200-b210-green",
+     "id": "gid://shopify/Product/14623450235244",
+     "list_price_range": {
+      "max": {
+       "amount": 21647,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 21647,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Digilent Enclosure Kit for Ettus USRP B200/B210 (Green)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/digilent_enclosure_kit_for_ettus_usrp_b200_b210_gr_1.webp?v=1729103664"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 21647,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 21647,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Digilent Enclosure Kit for Ettus USRP B200/B210 (Green)",
+     "url": "https://www.robotshop.com/products/digilent-enclosure-kit-for-ettus-usrp-b200-b210-green",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51642797982060:1",
+       "description": {
+        "html": "Description Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) Ensures robust protection for USRP boards Constructed from durable steel Features K-slots for anti-theft security Compatible with green USRP B200/B210 Safeguards against unauthorized access The Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) is designed to provide robust protection for the USRP B200 and B210 boards. This kit features a custom-designed steel case that ensures the safety and security of the devices. The enclosure is specifically compatible with green USRP B200 and B210 models equipped with a USB-B connector. The enclosure is constructed entirely from steel, offering a durable and reliable shield for the sensitive components housed within. It includes strategically placed K-slots on both the front and rear panels, which serve as an anti-theft measure, enhancing the security of the enclosed devices. This enclosure kit is an essential accessory for users seeking to safeguard their USRP B200 and B210 boards from physical damage and unauthorized access, ensuring the longevity and integrity of the devices. View more What's Included 1x Top Enclosure 1x Bottom Enclosure 1x Front Panel 1x Rear Panel 1x B210 Front Overlay 1x B200 Front Overlay 1x Rear Overlay 1x Lightpipes 1x Adhesive Feet 1x 8 mm Screws 1x SMA Nuts and Washers 1x Torx Key Digilent Enclosure Kit for Ettus USRP B200/B210 (Green) Specifications Full steel enclosure Compatible with USRP B200 and B210 devices Front and rear K-Slots for anti-theft protection"
+       },
+       "id": "gid://shopify/ProductVariant/51642797982060",
+       "list_price": {
+        "amount": 21647,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/digilent_enclosure_kit_for_ettus_usrp_b200_b210_gr_1.webp?v=1729103664"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 21647,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dig-339",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 Safeguards projects from rain and splashes Constructed with high-quality ABS material Features a transparent cover with a lid gasket Includes screws and decorative caps Compatible with LattePanda V1 and Raspberry Pi The DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 is designed to safeguard electronic projects from rain and water splashes. Constructed from high-quality ABS material, it is robust and suitable for both indoor and outdoor applications. The enclosure features a transparent cover with a lid gasket and includes screws and decorative caps. Additionally, the \"ears\" on the enclosure facilitate easy attachment to other objects. This project box is compatible with LattePanda V1, Raspberry Pi, and other smaller-sized boards. View more What's Included 1x Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 inch Dimensions 5.83 x 3.70 x 2.36 inches Specifications Waterproof rating: IP68 Box body material: ABS Lid material: Polycarbonate Operating temperature for ABS: -45°C to 85°C Operating temperature for Polycarbonate: -60°C to 120°C Weight: 192 g"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-583-x-370-x-236",
+     "id": "gid://shopify/Product/8116318339233",
+     "list_price_range": {
+      "max": {
+       "amount": 1217,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1217,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-583-x-370-x-236-img01.webp?v=1767078154"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1217,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1217,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Microcontroller & SBC Accessories",
+      "category:Raspberry Pi Accessories / HATs",
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36",
+     "url": "https://www.robotshop.com/products/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-583-x-370-x-236",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/44571856502945:1",
+       "description": {
+        "html": "Description DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 Safeguards projects from rain and splashes Constructed with high-quality ABS material Features a transparent cover with a lid gasket Includes screws and decorative caps Compatible with LattePanda V1 and Raspberry Pi The DFRobot Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 is designed to safeguard electronic projects from rain and water splashes. Constructed from high-quality ABS material, it is robust and suitable for both indoor and outdoor applications. The enclosure features a transparent cover with a lid gasket and includes screws and decorative caps. Additionally, the \"ears\" on the enclosure facilitate easy attachment to other objects. This project box is compatible with LattePanda V1, Raspberry Pi, and other smaller-sized boards. View more What's Included 1x Plastic Project Box Enclosure Waterproof Clear Cover - 5.83 x 3.70 x 2.36 inch Dimensions 5.83 x 3.70 x 2.36 inches Specifications Waterproof rating: IP68 Box body material: ABS Lid material: Polycarbonate Operating temperature for ABS: -45°C to 85°C Operating temperature for Polycarbonate: -60°C to 120°C Weight: 192 g"
+       },
+       "id": "gid://shopify/ProductVariant/44571856502945",
+       "list_price": {
+        "amount": 1217,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-plastic-project-box-enclosure-waterproof-clear-cover-583-x-370-x-236-img01.webp?v=1767078154"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1217,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1564",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": "Phidgets specializes in creating user-friendly, affordable, and highly versatile sensors and control modules that empower makers, engineers, and hobbyists. Their products, which include a variety of sensors, motor controllers, and I/O boards, are known for their plug and play simplicity and reliable performance. Phidgets' commitment to quality and innovation makes them an invaluable resource for both DIY enthusiasts and professionals working on complex projects."
+       },
+       "handle": "phidgets-en",
+       "id": "gid://shopify/Collection/290240528545",
+       "title": "Phidgets"
+      }
+     ],
+     "description": {
+      "html": "Description Waterproof Enclosure 230x160x105 w/ Latch Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 2990 cm³ The Waterproof Enclosure 230x160x105 w/ Latch comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. The latched lid means you don't even need a screwdriver to get at the equipment inside. View more What's Included 1 x Waterproof Enclosure 230x160x105 w/ Latch Dimensions Size 215 x 145 x 96 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 2990 cm³"
+     },
+     "gift_card": false,
+     "handle": "waterproof-enclosure-230x160x105-w-latch",
+     "id": "gid://shopify/Product/7486504468641",
+     "list_price_range": {
+      "max": {
+       "amount": 2540,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2540,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waterproof Enclosure 230x160x105 w/ Latch",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746471.webp?v=1778264227"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2540,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2540,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment"
+     ],
+     "title": "Waterproof Enclosure 230x160x105 w/ Latch",
+     "url": "https://www.robotshop.com/products/waterproof-enclosure-230x160x105-w-latch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358386589857:1",
+       "description": {
+        "html": "Description Waterproof Enclosure 230x160x105 w/ Latch Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 2990 cm³ The Waterproof Enclosure 230x160x105 w/ Latch comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. The latched lid means you don't even need a screwdriver to get at the equipment inside. View more What's Included 1 x Waterproof Enclosure 230x160x105 w/ Latch Dimensions Size 215 x 145 x 96 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 2990 cm³"
+       },
+       "id": "gid://shopify/ProductVariant/42358386589857",
+       "list_price": {
+        "amount": 2540,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746471.webp?v=1778264227"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2540,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Phi-430",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Phidgets specializes in creating user-friendly, affordable, and highly versatile sensors and control modules that empower makers, engineers, and hobbyists. Their products, which include a variety of sensors, motor controllers, and I/O boards, are known for their plug and play simplicity and reliable performance. Phidgets' commitment to quality and innovation makes them an invaluable resource for both DIY enthusiasts and professionals working on complex projects."
+       },
+       "handle": "phidgets-en",
+       "id": "gid://shopify/Collection/290240528545",
+       "title": "Phidgets"
+      }
+     ],
+     "description": {
+      "html": "Description Waterproof Enclosure 150x100x70 w/ Latch Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 695 cm³ The Waterproof Enclosure 150x100x70 w/ Latch comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. The latched lid means you don't even need a screwdriver to get at the equipment inside. View more What's Included 1 x Waterproof Enclosure 150x100x70 w/ Latch Dimensions Size 130 x 80 x 67 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 695 cm³"
+     },
+     "gift_card": false,
+     "handle": "waterproof-enclosure-150x100x70-w-latch",
+     "id": "gid://shopify/Product/7486652252321",
+     "list_price_range": {
+      "max": {
+       "amount": 1449,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1449,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waterproof Enclosure 150x100x70 w/ Latch",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746472.webp?v=1772728700"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1449,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1449,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waterproof Enclosure 150x100x70 w/ Latch",
+     "url": "https://www.robotshop.com/products/waterproof-enclosure-150x100x70-w-latch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358636970145:1",
+       "description": {
+        "html": "Description Waterproof Enclosure 150x100x70 w/ Latch Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 695 cm³ The Waterproof Enclosure 150x100x70 w/ Latch comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. The latched lid means you don't even need a screwdriver to get at the equipment inside. View more What's Included 1 x Waterproof Enclosure 150x100x70 w/ Latch Dimensions Size 130 x 80 x 67 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 695 cm³"
+       },
+       "id": "gid://shopify/ProductVariant/42358636970145",
+       "list_price": {
+        "amount": 1449,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746472.webp?v=1772728700"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1449,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Phi-435",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover our extensive range of cases and boxes designed to protect and organize your electronic components and projects. This collection includes durable enclosures for Raspberry Pi, Arduino, Jetson Nano, and more. From waterproof cases with high-grade polycarbonate materials to stylish protective sleeves, every item ensures optimal security and functionality. Ideal for both indoor and outdoor applications, these cases and boxes offer versatile and reliable protection for all your tools and equipment."
+       },
+       "handle": "tool-cases-boxes",
+       "id": "gid://shopify/Collection/290210447521",
+       "title": "Cases & Boxes"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover our wide selection of tools and equipment designed specifically for robotics projects. From precise soldering tools and heat guns to specialized screwdrivers and pliers, our inventory covers the full range of essential items you need to build, maintain, and upgrade your robots. We also provide testing equipment, such as multimeters, to ensure your projects operate smoothly. All our products are chosen for their quality and reliability, helping you create more efficiently and effectively."
+       },
+       "handle": "robotic-tools-equipment",
+       "id": "gid://shopify/Collection/290229059745",
+       "title": "Tools & Equipment"
+      },
+      {
+       "description": {
+        "html": "Phidgets specializes in creating user-friendly, affordable, and highly versatile sensors and control modules that empower makers, engineers, and hobbyists. Their products, which include a variety of sensors, motor controllers, and I/O boards, are known for their plug and play simplicity and reliable performance. Phidgets' commitment to quality and innovation makes them an invaluable resource for both DIY enthusiasts and professionals working on complex projects."
+       },
+       "handle": "phidgets-en",
+       "id": "gid://shopify/Collection/290240528545",
+       "title": "Phidgets"
+      }
+     ],
+     "description": {
+      "html": "Description Waterproof Enclosure 200x120x75 w/ Flange Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 1425 cm³ The Waterproof Enclosure 200x120x75 w/ Flange comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. All that is needed to assemble is a Phillips screwdriver. View more What's Included 1 x Waterproof Enclosure 200x120x75 w/ Flange Dimensions Size 192 x 112 x 67 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 1425 cm³"
+     },
+     "gift_card": false,
+     "handle": "waterproof-enclosure-200x120x75-w-flange",
+     "id": "gid://shopify/Product/7486488608929",
+     "list_price_range": {
+      "max": {
+       "amount": 1273,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1273,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waterproof Enclosure 200x120x75 w/ Flange",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746465.webp?v=1778262177"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1273,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1273,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment"
+     ],
+     "title": "Waterproof Enclosure 200x120x75 w/ Flange",
+     "url": "https://www.robotshop.com/products/waterproof-enclosure-200x120x75-w-flange",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358360735905:1",
+       "description": {
+        "html": "Description Waterproof Enclosure 200x120x75 w/ Flange Comes with an IP65 rating Protects your Phidgets from the elements Material: High impact ABS Volume: approx. 1425 cm³ The Waterproof Enclosure 200x120x75 w/ Flange comes with an IP65 rating, this enclosure will protect your Phidgets from the elements. With proper installation of the foam rubber sealing ring, even the heaviest of rainstorms won't get through. All that is needed to assemble is a Phillips screwdriver. View more What's Included 1 x Waterproof Enclosure 200x120x75 w/ Flange Dimensions Size 192 x 112 x 67 mm (L x W x H) Specifications Material: High impact ABS IP Rating: 65 Volume: approx. 1425 cm³"
+       },
+       "id": "gid://shopify/ProductVariant/42358360735905",
+       "list_price": {
+        "amount": 1273,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1746465.webp?v=1778262177"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1273,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Phi-428",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

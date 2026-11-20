@@ -1,0 +1,95 @@
+{
+  "intake_id": "in_mock_drone",
+  "ready": false,
+  "summary": "A palm-size camera quadcopter, about $200",
+  "build_type": "quadcopter",
+  "confidence": 0.93,
+  "alternatives": [
+    {
+      "build_type": "rc_car",
+      "confidence": 0.03
+    }
+  ],
+  "inputs": {
+    "text": "a small camera drone under $200",
+    "images": []
+  },
+  "constraints": {
+    "budget_usd": 200.0
+  },
+  "questions": [
+    {
+      "id": "size_class",
+      "text": "What size?",
+      "chips": [
+        {
+          "value": "3in",
+          "label": "Palm-size (3-inch)"
+        },
+        {
+          "value": "5in",
+          "label": "5-inch"
+        },
+        {
+          "value": "x500",
+          "label": "10-inch dev kit"
+        }
+      ],
+      "default": "3in"
+    },
+    {
+      "id": "own_radio",
+      "text": "Have a radio and goggles?",
+      "chips": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes"
+    },
+    {
+      "id": "own_soldering_iron",
+      "text": "Have a soldering iron?",
+      "chips": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes"
+    }
+  ],
+  "template_id": "tpl_quadcopter",
+  "mandate_preset": {
+    "budget_usd": 200.0,
+    "deadline": "2026-12-04",
+    "ship_to_country": "US",
+    "allowed_merchants": [
+      "mock_store",
+      "amazon",
+      "adafruit",
+      "seeed",
+      "sparkfun"
+    ],
+    "data_sharing": {
+      "country": true,
+      "postal_code": false,
+      "street_address": false,
+      "email": false,
+      "phone": false,
+      "name": false,
+      "photo_to_models": false
+    }
+  },
+  "source_api": "mock",
+  "simulated": true
+}

@@ -1,0 +1,1630 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Waveshare 7.5 inch e-paper raw panel"
+  }
+ },
+ "key": "67c0ba6eafa58a68f1ed9fae7b1c067da2da2ea1f61803892a69238108214fb9",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:17-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFF6TVRRMk1UWTJOekUwTUN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description The 1.54inch e-Paper display from Waveshare is a compact E Ink Spectra 6 full-color panel with 240 x 240 resolution and SPI communication. It is designed for low-power color labels, shelf tags, small status screens, education projects and embedded display prototypes where content should remain visible without a backlight. This 1.54inch e-Paper display keeps the last image visible for a long time even after power-off, and power is mainly required during refresh. The reflective paper-like panel has a viewing angle over 170 degrees and works best under ambient light, making it suitable for readable always-on information panels. The queue includes two official variants. Waveshare-35201 is the raw display only for custom integration. Waveshare-35486 includes the driver board, SPI control interface and onboard voltage translator for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 style controller boards. Features E Ink Spectra 6: E6 full-color 1.54inch e-Paper display for compact color graphics. 240 x 240 resolution: square display area for icons, labels, QR-style information and small dashboards. Ultra-low power: no backlight is required, and power is mainly consumed during refresh. SPI interface: supports 3-wire SPI and 4-wire SPI communication. Driver board option: the module version adapts SPI for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32. Voltage translator: the driver board version supports 3.3V and 5V controller boards. Paper-like readability: reflective panel with over 170-degree viewing angle for ambient-light applications. Specifications Product name Waveshare 1.54inch Full-Color e-Paper Display (E) Display technology E Ink Spectra 6, E6 full color Display size 1.54inch, 27.0 x 27.0mm active area Resolution 240 x 240 pixels Dot pitch 0.1125 x 0.1125mm Display color E6 full color Grey scale 2 Interface 3-wire SPI, 4-wire SPI Viewing angle >170 degrees Display panel Reflective e-Paper, paper-like viewing Backlight No backlight required Full refresh time 27s Refresh power <40mW Standby current <0.01uA, almost none Raw display operating voltage 3.3V Driver board operating voltage 3.3V / 5V Raw display outline 37.32 x 31.8 x 0.85mm Driver board outline 48.00 x 33.00mm Official package weight not listed separately; module class is lightweight Shipping weight 15g estimated Variant SKU Official part Configuration Operating voltage Outline dimensions Product list Waveshare-35201 1.54inch e-Paper (E) without driver board 3.3V 37.32 x 31.8 x 0.85mm 1.54inch e-Paper (E) x1 Waveshare-35486 1.54inch e-Paper Module (E) with driver board 3.3V / 5V 48.00 x 33.00mm 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 cable x1 Applications Color shelf labels, price tags and low-power product information cards. Battery-powered status displays where the image should remain visible between refreshes. Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 display experiments with the driver board version. Education projects demonstrating reflective display technology and E Ink Spectra 6 color rendering. Small embedded dashboards for environmental readings, device state, inventory labels and maker prototypes. Product List Waveshare-35201 / 1.54inch e-Paper (E): raw 1.54inch e-Paper (E) display x1.Waveshare-35486 / 1.54inch e-Paper Module (E): 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 200mm cable x1. Other Content Variant selection: choose the raw 1.54inch e-Paper display when you are designing your own driver circuitry or compact product PCB. Choose the module version when you want the onboard SPI control interface, voltage translator and easier controller-board wiring. Display technology: E Ink Spectra 6 focuses on full-color reflective image presentation. It is different from fast-refresh LCD or OLED modules, so refresh timing, color update behavior and ambient-light readability should be considered during UI design. Driver board reference: the module version exposes an SPI control interface and voltage translator for 3.3V / 5V hosts. The official dimension and package images help confirm board size, cable routing and included accessories. Relevant search terms include 1.54inch e-Paper display, full-color e-Paper module, E Ink Spectra 6 display, SPI e-Paper display, 240x240 e-Paper module and low power color e-Paper display. Resources Waveshare 1.54inch e-Paper E documentation FAQ What is the difference between Waveshare-35201 and Waveshare-35486?Waveshare-35201 is the raw 1.54inch e-Paper display only. Waveshare-35486 is the module version with driver board, SPI interface and cable.Does this e-Paper display need a backlight?No. The official page states that no backlight is required and the display remains visible for a long time after power-off.What resolution does the display use?The display resolution is 240 x 240 pixels with a 27.0 x 27.0mm display area.Which controllers can use the driver board version?The official page lists Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 examples for the driver board version.Is this display suitable for fast animation?No. The official full refresh time is 27 seconds, so this 1.54inch e-Paper display is best for static or slowly changing information."
+     },
+     "gift_card": false,
+     "handle": "waveshare-1-54inch-full-color-e-paper-display-e-240x240",
+     "id": "gid://shopify/Product/15655116636484",
+     "list_price_range": {
+      "max": {
+       "amount": 1515,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 930,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 1.54inch e-Paper Display white background product image",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-35201-media-01.webp?v=1788340044"
+      }
+     ],
+     "options": [
+      {
+       "name": "Configuration",
+       "values": [
+        {
+         "label": "without driver board"
+        },
+        {
+         "label": "with driver board"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1515,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 930,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "1.54inch e-Paper display",
+      "240x240 display",
+      "E Ink Spectra 6",
+      "e-Paper module",
+      "full-color e-Paper",
+      "low power display",
+      "SPI display",
+      "Waveshare"
+     ],
+     "title": "Waveshare 1.54inch Full-Color e-Paper Display (E) 240x240",
+     "url": "https://openelab.com/products/waveshare-1-54inch-full-color-e-paper-display-e-240x240",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57182651973956:1",
+       "description": {
+        "html": "Description The 1.54inch e-Paper display from Waveshare is a compact E Ink Spectra 6 full-color panel with 240 x 240 resolution and SPI communication. It is designed for low-power color labels, shelf tags, small status screens, education projects and embedded display prototypes where content should remain visible without a backlight. This 1.54inch e-Paper display keeps the last image visible for a long time even after power-off, and power is mainly required during refresh. The reflective paper-like panel has a viewing angle over 170 degrees and works best under ambient light, making it suitable for readable always-on information panels. The queue includes two official variants. Waveshare-35201 is the raw display only for custom integration. Waveshare-35486 includes the driver board, SPI control interface and onboard voltage translator for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 style controller boards. Features E Ink Spectra 6: E6 full-color 1.54inch e-Paper display for compact color graphics. 240 x 240 resolution: square display area for icons, labels, QR-style information and small dashboards. Ultra-low power: no backlight is required, and power is mainly consumed during refresh. SPI interface: supports 3-wire SPI and 4-wire SPI communication. Driver board option: the module version adapts SPI for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32. Voltage translator: the driver board version supports 3.3V and 5V controller boards. Paper-like readability: reflective panel with over 170-degree viewing angle for ambient-light applications. Specifications Product name Waveshare 1.54inch Full-Color e-Paper Display (E) Display technology E Ink Spectra 6, E6 full color Display size 1.54inch, 27.0 x 27.0mm active area Resolution 240 x 240 pixels Dot pitch 0.1125 x 0.1125mm Display color E6 full color Grey scale 2 Interface 3-wire SPI, 4-wire SPI Viewing angle >170 degrees Display panel Reflective e-Paper, paper-like viewing Backlight No backlight required Full refresh time 27s Refresh power <40mW Standby current <0.01uA, almost none Raw display operating voltage 3.3V Driver board operating voltage 3.3V / 5V Raw display outline 37.32 x 31.8 x 0.85mm Driver board outline 48.00 x 33.00mm Official package weight not listed separately; module class is lightweight Shipping weight 15g estimated Variant SKU Official part Configuration Operating voltage Outline dimensions Product list Waveshare-35201 1.54inch e-Paper (E) without driver board 3.3V 37.32 x 31.8 x 0.85mm 1.54inch e-Paper (E) x1 Waveshare-35486 1.54inch e-Paper Module (E) with driver board 3.3V / 5V 48.00 x 33.00mm 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 cable x1 Applications Color shelf labels, price tags and low-power product information cards. Battery-powered status displays where the image should remain visible between refreshes. Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 display experiments with the driver board version. Education projects demonstrating reflective display technology and E Ink Spectra 6 color rendering. Small embedded dashboards for environmental readings, device state, inventory labels and maker prototypes. Product List Waveshare-35201 / 1.54inch e-Paper (E): raw 1.54inch e-Paper (E) display x1.Waveshare-35486 / 1.54inch e-Paper Module (E): 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 200mm cable x1. Other Content Variant selection: choose the raw 1.54inch e-Paper display when you are designing your own driver circuitry or compact product PCB. Choose the module version when you want the onboard SPI control interface, voltage translator and easier controller-board wiring. Display technology: E Ink Spectra 6 focuses on full-color reflective image presentation. It is different from fast-refresh LCD or OLED modules, so refresh timing, color update behavior and ambient-light readability should be considered during UI design. Driver board reference: the module version exposes an SPI control interface and voltage translator for 3.3V / 5V hosts. The official dimension and package images help confirm board size, cable routing and included accessories. Relevant search terms include 1.54inch e-Paper display, full-color e-Paper module, E Ink Spectra 6 display, SPI e-Paper display, 240x240 e-Paper module and low power color e-Paper display. Resources Waveshare 1.54inch e-Paper E documentation FAQ What is the difference between Waveshare-35201 and Waveshare-35486?Waveshare-35201 is the raw 1.54inch e-Paper display only. Waveshare-35486 is the module version with driver board, SPI interface and cable.Does this e-Paper display need a backlight?No. The official page states that no backlight is required and the display remains visible for a long time after power-off.What resolution does the display use?The display resolution is 240 x 240 pixels with a 27.0 x 27.0mm display area.Which controllers can use the driver board version?The official page lists Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 examples for the driver board version.Is this display suitable for fast animation?No. The official full refresh time is 27 seconds, so this 1.54inch e-Paper display is best for static or slowly changing information."
+       },
+       "id": "gid://shopify/ProductVariant/57182651973956",
+       "list_price": {
+        "amount": 930,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-35201-media-01.webp?v=1788340044"
+        }
+       ],
+       "options": [
+        {
+         "label": "without driver board",
+         "name": "Configuration"
+        }
+       ],
+       "price": {
+        "amount": 930,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-35201",
+       "title": "without driver board"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57182652006724:1",
+       "description": {
+        "html": "Description The 1.54inch e-Paper display from Waveshare is a compact E Ink Spectra 6 full-color panel with 240 x 240 resolution and SPI communication. It is designed for low-power color labels, shelf tags, small status screens, education projects and embedded display prototypes where content should remain visible without a backlight. This 1.54inch e-Paper display keeps the last image visible for a long time even after power-off, and power is mainly required during refresh. The reflective paper-like panel has a viewing angle over 170 degrees and works best under ambient light, making it suitable for readable always-on information panels. The queue includes two official variants. Waveshare-35201 is the raw display only for custom integration. Waveshare-35486 includes the driver board, SPI control interface and onboard voltage translator for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 style controller boards. Features E Ink Spectra 6: E6 full-color 1.54inch e-Paper display for compact color graphics. 240 x 240 resolution: square display area for icons, labels, QR-style information and small dashboards. Ultra-low power: no backlight is required, and power is mainly consumed during refresh. SPI interface: supports 3-wire SPI and 4-wire SPI communication. Driver board option: the module version adapts SPI for Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32. Voltage translator: the driver board version supports 3.3V and 5V controller boards. Paper-like readability: reflective panel with over 170-degree viewing angle for ambient-light applications. Specifications Product name Waveshare 1.54inch Full-Color e-Paper Display (E) Display technology E Ink Spectra 6, E6 full color Display size 1.54inch, 27.0 x 27.0mm active area Resolution 240 x 240 pixels Dot pitch 0.1125 x 0.1125mm Display color E6 full color Grey scale 2 Interface 3-wire SPI, 4-wire SPI Viewing angle >170 degrees Display panel Reflective e-Paper, paper-like viewing Backlight No backlight required Full refresh time 27s Refresh power <40mW Standby current <0.01uA, almost none Raw display operating voltage 3.3V Driver board operating voltage 3.3V / 5V Raw display outline 37.32 x 31.8 x 0.85mm Driver board outline 48.00 x 33.00mm Official package weight not listed separately; module class is lightweight Shipping weight 15g estimated Variant SKU Official part Configuration Operating voltage Outline dimensions Product list Waveshare-35201 1.54inch e-Paper (E) without driver board 3.3V 37.32 x 31.8 x 0.85mm 1.54inch e-Paper (E) x1 Waveshare-35486 1.54inch e-Paper Module (E) with driver board 3.3V / 5V 48.00 x 33.00mm 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 cable x1 Applications Color shelf labels, price tags and low-power product information cards. Battery-powered status displays where the image should remain visible between refreshes. Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 display experiments with the driver board version. Education projects demonstrating reflective display technology and E Ink Spectra 6 color rendering. Small embedded dashboards for environmental readings, device state, inventory labels and maker prototypes. Product List Waveshare-35201 / 1.54inch e-Paper (E): raw 1.54inch e-Paper (E) display x1.Waveshare-35486 / 1.54inch e-Paper Module (E): 1.54inch e-Paper Module (E) x1; MX1.25 9PIN to 2.54 200mm cable x1. Other Content Variant selection: choose the raw 1.54inch e-Paper display when you are designing your own driver circuitry or compact product PCB. Choose the module version when you want the onboard SPI control interface, voltage translator and easier controller-board wiring. Display technology: E Ink Spectra 6 focuses on full-color reflective image presentation. It is different from fast-refresh LCD or OLED modules, so refresh timing, color update behavior and ambient-light readability should be considered during UI design. Driver board reference: the module version exposes an SPI control interface and voltage translator for 3.3V / 5V hosts. The official dimension and package images help confirm board size, cable routing and included accessories. Relevant search terms include 1.54inch e-Paper display, full-color e-Paper module, E Ink Spectra 6 display, SPI e-Paper display, 240x240 e-Paper module and low power color e-Paper display. Resources Waveshare 1.54inch e-Paper E documentation FAQ What is the difference between Waveshare-35201 and Waveshare-35486?Waveshare-35201 is the raw 1.54inch e-Paper display only. Waveshare-35486 is the module version with driver board, SPI interface and cable.Does this e-Paper display need a backlight?No. The official page states that no backlight is required and the display remains visible for a long time after power-off.What resolution does the display use?The display resolution is 240 x 240 pixels with a 27.0 x 27.0mm display area.Which controllers can use the driver board version?The official page lists Raspberry Pi, Jetson Nano, Arduino, STM32 and ESP32 examples for the driver board version.Is this display suitable for fast animation?No. The official full refresh time is 27 seconds, so this 1.54inch e-Paper display is best for static or slowly changing information."
+       },
+       "id": "gid://shopify/ProductVariant/57182652006724",
+       "list_price": {
+        "amount": 1515,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-35201-media-01.webp?v=1788340044"
+        }
+       ],
+       "options": [
+        {
+         "label": "with driver board",
+         "name": "Configuration"
+        }
+       ],
+       "price": {
+        "amount": 1515,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-35486",
+       "title": "with driver board"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Product Features Advanced Color ePaper (ACeP) technology on the screen, supporting seven colorsOverall power consumption is very low, basically only consumes power when refreshing.Large-capacity lithium battery with power-saving circuitry, one charge can refresh thousands of times.On-board RTC chip, can realize the timer refreshingSimple solid wood photo frame, elegant and beautifulRotating bracket and hook, unrestricted use of the sceneOpen source code, free to customize the function Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging"
+     },
+     "gift_card": false,
+     "handle": "waveshare-7-5-inch-e",
+     "id": "gid://shopify/Product/15431474020676",
+     "list_price_range": {
+      "max": {
+       "amount": 12849,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12849,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.5inch-e-Paper-6.jpg?v=1768292134"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 12849,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12849,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "7.5 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 7.5 inch E-Ink Display 800x480 E-Paper for Raspberry Pico",
+     "url": "https://openelab.com/products/waveshare-7-5-inch-e",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246681436484:1",
+       "description": {
+        "html": "Product Features Advanced Color ePaper (ACeP) technology on the screen, supporting seven colorsOverall power consumption is very low, basically only consumes power when refreshing.Large-capacity lithium battery with power-saving circuitry, one charge can refresh thousands of times.On-board RTC chip, can realize the timer refreshingSimple solid wood photo frame, elegant and beautifulRotating bracket and hook, unrestricted use of the sceneOpen source code, free to customize the function Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging"
+       },
+       "id": "gid://shopify/ProductVariant/56246681436484",
+       "list_price": {
+        "amount": 12849,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.5inch-e-Paper-6.jpg?v=1768292134"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 12849,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-20128",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Product Features Advanced Color ePaper (ACeP) technology on the screen, supporting seven colorsOverall power consumption is very low, basically only consumes power when refreshing.Large-capacity lithium battery with power-saving circuitry, one charge can refresh thousands of times.On-board RTC chip, can realize the timer refreshingSimple solid wood photo frame, elegant and beautifulRotating bracket and hook, unrestricted use of the sceneOpen source code, free to customize the function Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging"
+     },
+     "gift_card": false,
+     "handle": "waveshare-7-5-inch-800x480",
+     "id": "gid://shopify/Product/15431476216132",
+     "list_price_range": {
+      "max": {
+       "amount": 12849,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12849,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.5inch-e-Paper-6_cd0d848c-62f2-46de-b9dd-36e88ea35dbd.jpg?v=1768292599"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 12849,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12849,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "7.5 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 7.5 inch E-Ink Display 800x480 E-Paper with Hat",
+     "url": "https://openelab.com/products/waveshare-7-5-inch-800x480",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246687990084:1",
+       "description": {
+        "html": "Product Features Advanced Color ePaper (ACeP) technology on the screen, supporting seven colorsOverall power consumption is very low, basically only consumes power when refreshing.Large-capacity lithium battery with power-saving circuitry, one charge can refresh thousands of times.On-board RTC chip, can realize the timer refreshingSimple solid wood photo frame, elegant and beautifulRotating bracket and hook, unrestricted use of the sceneOpen source code, free to customize the function Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging"
+       },
+       "id": "gid://shopify/ProductVariant/56246687990084",
+       "list_price": {
+        "amount": 12849,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.5inch-e-Paper-6_cd0d848c-62f2-46de-b9dd-36e88ea35dbd.jpg?v=1768292599"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 12849,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-13504",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-raspberry-pi",
+       "id": "gid://shopify/Collection/658193318212",
+       "title": "Waveshare - Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "The 7.5-inch EPD (Electronic Paper Display) Module is specifically designed for the Raspberry Pi Pico. It features an 800 × 480 pixel resolution and supports Black, White, and Red colors via an SPI Interface. Key Features No Backlight: The display maintains the last content for an extended period even after power down. Ultra-low Power Consumption: Power is essentially only required for refreshing. Minimalist Design: The SPI interface requires minimal IO pins, leaving more room for other components. Easy Interaction: Equipped with 2 x user buttons and 1 x reset button for streamlined operation. Technical Specifications Attribute Details Dimension 7.5-inch Outline Dimensions (Raw Panel) 170.2mm x 111.2mm x 1.18mm Outline Dimensions (Driver Board) 65mm x 31mm Display Size 163.2mm x 97.92mm Operating Voltage 3.3V Interface SPI Dot Pitch 0.205 x 0.204 Display Color Black, White, Red Resolution 800 x 480 Greyscale 2 Full Refresh Time 16s Refresh Power 48mW (typ.) Standby Current <0.01uA (almost none) Note on Performance: Refresh Time: Stated figures are based on experimental test data; actual times may vary. A flickering effect during the global refresh process is a normal characteristic of EPD technology. Power Consumption: Data is based on laboratory testing. Actual consumption may vary depending on the driver board and specific use cases. 7.5\" e-Paper Module (B) for Pico low power, wide viewing angle, paper-like effect without electricity Ideal for price tags, shelf labels, industrial instruments... Features at a glance No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing SPI interface, requires minimal IO pins 2x user buttons and 1x reset button for easy interacting Comes with development resources and manual (Raspberry Pi Pico C/C++ and MicroPython examples) Specifications operating voltage 3.3V/5V display color red, black, white interface 3-wire SPI, 4-wire SPI grey scale 2 outline dimensions 170.2mm × 111.2mm full refresh time 26s display size 163.2mm × 97.92mm Fast Refresh time 16s refresh power 48mW (typ.) Black & WhitePartial Refresh time 1.5s dot pitch 0.205mm × 0.204mm standby current <0.01uA (almost none) resolution 800 × 480 pixels viewing angle >170° Advantages of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Raspberry Pi Pico header compatibility onboard female pin header for direct attaching to Raspberry Pi Pico2x user buttons and 1x reset button for easy interacting Stackable design extended Pico header, allows attaching more modules for Pico Raspberry Pi Pico and other modules are NOT included. Widely compatible driver board Onboard switch for using with multi e-paper displays, or selecting SPI bus Pinout definition Application examples Suitable for price Tags, asset/equipment Tags, shelf labels, conference name tags... Outline dimensions Resources & Services WIKI: Pico-ePaper-7.5-B Resources for different product may vary, please check the wiki page to confirm the actually provided resources. Package Content Weight: 0.279 kg 7.5inch e-Paper (B) x1 Pico-ePaper-Driver-Board x1 Standoff pack x1 1 2 3"
+     },
+     "gift_card": false,
+     "handle": "waveshare-7-5inch-e-paper",
+     "id": "gid://shopify/Product/15505357111620",
+     "list_price_range": {
+      "max": {
+       "amount": 7199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 7199,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/pico-epaper-7-1.webp?v=1774245601"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 7199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 7199,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare 7.5inch E-Paper E-Ink Display Module (B) for RPi Pico",
+     "url": "https://openelab.com/products/waveshare-7-5inch-e-paper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56552449343812:1",
+       "description": {
+        "html": "The 7.5-inch EPD (Electronic Paper Display) Module is specifically designed for the Raspberry Pi Pico. It features an 800 × 480 pixel resolution and supports Black, White, and Red colors via an SPI Interface. Key Features No Backlight: The display maintains the last content for an extended period even after power down. Ultra-low Power Consumption: Power is essentially only required for refreshing. Minimalist Design: The SPI interface requires minimal IO pins, leaving more room for other components. Easy Interaction: Equipped with 2 x user buttons and 1 x reset button for streamlined operation. Technical Specifications Attribute Details Dimension 7.5-inch Outline Dimensions (Raw Panel) 170.2mm x 111.2mm x 1.18mm Outline Dimensions (Driver Board) 65mm x 31mm Display Size 163.2mm x 97.92mm Operating Voltage 3.3V Interface SPI Dot Pitch 0.205 x 0.204 Display Color Black, White, Red Resolution 800 x 480 Greyscale 2 Full Refresh Time 16s Refresh Power 48mW (typ.) Standby Current <0.01uA (almost none) Note on Performance: Refresh Time: Stated figures are based on experimental test data; actual times may vary. A flickering effect during the global refresh process is a normal characteristic of EPD technology. Power Consumption: Data is based on laboratory testing. Actual consumption may vary depending on the driver board and specific use cases. 7.5\" e-Paper Module (B) for Pico low power, wide viewing angle, paper-like effect without electricity Ideal for price tags, shelf labels, industrial instruments... Features at a glance No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing SPI interface, requires minimal IO pins 2x user buttons and 1x reset button for easy interacting Comes with development resources and manual (Raspberry Pi Pico C/C++ and MicroPython examples) Specifications operating voltage 3.3V/5V display color red, black, white interface 3-wire SPI, 4-wire SPI grey scale 2 outline dimensions 170.2mm × 111.2mm full refresh time 26s display size 163.2mm × 97.92mm Fast Refresh time 16s refresh power 48mW (typ.) Black & WhitePartial Refresh time 1.5s dot pitch 0.205mm × 0.204mm standby current <0.01uA (almost none) resolution 800 × 480 pixels viewing angle >170° Advantages of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Raspberry Pi Pico header compatibility onboard female pin header for direct attaching to Raspberry Pi Pico2x user buttons and 1x reset button for easy interacting Stackable design extended Pico header, allows attaching more modules for Pico Raspberry Pi Pico and other modules are NOT included. Widely compatible driver board Onboard switch for using with multi e-paper displays, or selecting SPI bus Pinout definition Application examples Suitable for price Tags, asset/equipment Tags, shelf labels, conference name tags... Outline dimensions Resources & Services WIKI: Pico-ePaper-7.5-B Resources for different product may vary, please check the wiki page to confirm the actually provided resources. Package Content Weight: 0.279 kg 7.5inch e-Paper (B) x1 Pico-ePaper-Driver-Board x1 Standoff pack x1 1 2 3"
+       },
+       "id": "gid://shopify/ProductVariant/56552449343812",
+       "list_price": {
+        "amount": 7199,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/pico-epaper-7-1.webp?v=1774245601"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 7199,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-20129",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "PACKAGE CONTENT Weight: 0.035 kg 5.79inch e-Paper x1 1 5.79inch E-Paper Raw Display, E-Ink Display, 792x272, Black/White, SPI Communication 5.79″ E-Paper Low Power, Wide Viewing Angle, Paper-Like Effect Without Electricity Ideal for price tags, shelf labels, industrial instruments... Size5.79″ Resolution792×272 Viewing Angle>170° Display ColorBlack/White Grey Scale4 CommunicationSPI Display PanelE-paper ExperiencePaper-like EnvironmentAmbient Light Required Display TypePassively Reflective RefreshingPartial Refresh Support Features At A Glance No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing Comes with online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR Black/White INTERFACE 3-wire SPI, 4-wire SPI GREY SCALE 4 OUTLINE DIMENSIONS 150.92 × 56.94 × 1.00mm FULL REFRESH TIME 3.5s DISPLAY SIZE 139.00 × 47.74mm PARTIAL REFRESH TIME 0.8s DOT PITCH 0.1755 × 0.1755mm REFRESH POWER <50mW VIEWING ANGLE >170° STANDBY CURRENT <0.01uA (almost none) RESOLUTION 792 × 272 pixels Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Application Examples Suitable For Price Tags, Asset/Equipment Tags, Shelf Labels, Conference Name Tags... Outline Dimensions"
+     },
+     "gift_card": false,
+     "handle": "waveshare-5-79-inch-raw",
+     "id": "gid://shopify/Product/15431428309316",
+     "list_price_range": {
+      "max": {
+       "amount": 4739,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4739,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 5.79 inch Raw E-Ink Display 792x272 E-Paper - OpenELAB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-79inch-e-Paper-raw-display-e-ink-display-792x272-Black-White-SPI-Communication.webp?v=1768286091"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4739,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4739,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "5.79 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 5.79 inch Raw E-Ink Display 792x272 E-Paper",
+     "url": "https://openelab.com/products/waveshare-5-79-inch-raw",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246612394308:1",
+       "description": {
+        "html": "PACKAGE CONTENT Weight: 0.035 kg 5.79inch e-Paper x1 1 5.79inch E-Paper Raw Display, E-Ink Display, 792x272, Black/White, SPI Communication 5.79″ E-Paper Low Power, Wide Viewing Angle, Paper-Like Effect Without Electricity Ideal for price tags, shelf labels, industrial instruments... Size5.79″ Resolution792×272 Viewing Angle>170° Display ColorBlack/White Grey Scale4 CommunicationSPI Display PanelE-paper ExperiencePaper-like EnvironmentAmbient Light Required Display TypePassively Reflective RefreshingPartial Refresh Support Features At A Glance No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing Comes with online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR Black/White INTERFACE 3-wire SPI, 4-wire SPI GREY SCALE 4 OUTLINE DIMENSIONS 150.92 × 56.94 × 1.00mm FULL REFRESH TIME 3.5s DISPLAY SIZE 139.00 × 47.74mm PARTIAL REFRESH TIME 0.8s DOT PITCH 0.1755 × 0.1755mm REFRESH POWER <50mW VIEWING ANGLE >170° STANDBY CURRENT <0.01uA (almost none) RESOLUTION 792 × 272 pixels Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Application Examples Suitable For Price Tags, Asset/Equipment Tags, Shelf Labels, Conference Name Tags... Outline Dimensions"
+       },
+       "id": "gid://shopify/ProductVariant/56246612394308",
+       "list_price": {
+        "amount": 4739,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-79inch-e-Paper-raw-display-e-ink-display-792x272-Black-White-SPI-Communication.webp?v=1768286091"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4739,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-26843",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "5.83inch E-Paper E-Ink Raw Display, 648×480 Pixels, Black / White Dual-Color, SPI Interface, Without PCB 5.83\" E-PAPER Low Power Consumption, Wide Viewing Angle, Paper-Like Displaying Without Electricity Ideal for price tags, shelf labels, industrial instruments... Size5.83\" Resolution648×480 Viewing Angle>170° Display ColorBlack / White Grey Scale2 CommunicationSPI Display PanelE-paper ExperiencePaper-like EnvironmentAmbient Light Required Display TypePassively Reflective Features At A Glance No backlight, keeps displaying the latest content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing Comes with development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR black, white INTERFACE 3-wire SPI, 4-wire SPI GREYSCALE 2 OUTLINE DIMENSIONS 125.40 × 99.50 × 1.18mm FULL REFRESH TIME 5s DISPLAY SIZE 119.232 × 88.320mm REFRESH POWER 26.4mW(typ.) DOT PITCH 0.184 × 0.184mm STANDBY CURRENT <0.01uA (almost none) RESOLUTION 648 × 480 pixels VIEWING ANGLE >170° Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Application Examples Suitable For Price Tags, Asset/Equipment Tags, Shelf Labels, Conference Name Tags... Outline Dimensions PACKAGE CONTENT Weight: 0.029 kg 5.83inch e-Paper x1 1"
+     },
+     "gift_card": false,
+     "handle": "waveshare-5-79-inch-display",
+     "id": "gid://shopify/Product/15431467893060",
+     "list_price_range": {
+      "max": {
+       "amount": 6409,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6409,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 5.79 inch Raw E-Ink Display 648x480 E-Paper - OpenELAB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-83inch-E-Paper-E-Ink-Raw-Display-648-480-Pixels-Black-White-SPI-Interface.webp?v=1768289129"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6409,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6409,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "5.79 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 5.79 inch Raw E-Ink Display 648x480 E-Paper",
+     "url": "https://openelab.com/products/waveshare-5-79-inch-display",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246660235588:1",
+       "description": {
+        "html": "5.83inch E-Paper E-Ink Raw Display, 648×480 Pixels, Black / White Dual-Color, SPI Interface, Without PCB 5.83\" E-PAPER Low Power Consumption, Wide Viewing Angle, Paper-Like Displaying Without Electricity Ideal for price tags, shelf labels, industrial instruments... Size5.83\" Resolution648×480 Viewing Angle>170° Display ColorBlack / White Grey Scale2 CommunicationSPI Display PanelE-paper ExperiencePaper-like EnvironmentAmbient Light Required Display TypePassively Reflective Features At A Glance No backlight, keeps displaying the latest content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing Comes with development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR black, white INTERFACE 3-wire SPI, 4-wire SPI GREYSCALE 2 OUTLINE DIMENSIONS 125.40 × 99.50 × 1.18mm FULL REFRESH TIME 5s DISPLAY SIZE 119.232 × 88.320mm REFRESH POWER 26.4mW(typ.) DOT PITCH 0.184 × 0.184mm STANDBY CURRENT <0.01uA (almost none) RESOLUTION 648 × 480 pixels VIEWING ANGLE >170° Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in clear fluid will move to sides of microcapsule when electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as e-reader due to its paper-like effect. Application Examples Suitable For Price Tags, Asset/Equipment Tags, Shelf Labels, Conference Name Tags... Outline Dimensions PACKAGE CONTENT Weight: 0.029 kg 5.83inch e-Paper x1 1"
+       },
+       "id": "gid://shopify/ProductVariant/56246660235588",
+       "list_price": {
+        "amount": 6409,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-83inch-E-Paper-E-Ink-Raw-Display-648-480-Pixels-Black-White-SPI-Interface.webp?v=1768289129"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6409,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-14410",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "The Waveshare PhotoPainter is a 7.3-inch, 7-colour ePaper display with Advanced Color ePaper (ACeP) technology that supports seven different colours. Housed in a minimalist solid wood frame, it provides an elegant display for photos, calendars, quotes, artwork and posters. Designed for ultra-low power consumption, the screen retains the last image displayed even when switched off, using power only when refreshing. With a built-in RTC chip, it also supports scheduled refresh. The frame includes a swivel stand and wall hook for flexible placement, making it ideal for a variety of display needs. Features Advanced Color ePaper (ACeP) technology, supports 7-Color display Ultra-low power consumption, basically power is only required for refreshing Large capacity Lithium battery (optional), onboard power saving circuit, allows thousand times of refreshing by one charge Onboard RTC chip for timing refresh Simple solid wood photo frame, elegant and beautiful Rotatable stand and hook hanger on the back, not limited to usage scenarios Open source code, more freedom to customize functions Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging Specification Display Size 160.0mm × 96.0mm Outline Dimensions 154.0mm × 214.0mm × 32.0mm Pixel Pitch 0.2mm × 0.2mm Resolution 800 × 480 Display Color Black, White, Green, Blue, Red, Yellow, Orange Greyscale 2 Refresh Time 31s Sleep Current < 0.01uA (almost 0) Charging/Operating Voltage 5V Simple solid wood photo frame High-quality solid wood frame and white edge, simple and elegant Tabletop or Wall Mount support rotatable stand and hook hanger on the back, different directions to place Use the stand to place on the table Use a hook to hang on the wall"
+     },
+     "gift_card": false,
+     "handle": "waveshare-7-3-inch-7",
+     "id": "gid://shopify/Product/15431472841028",
+     "list_price_range": {
+      "max": {
+       "amount": 17349,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17349,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/PhotoPainter-1.jpg?v=1768291906"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 17349,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17349,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "7.3 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 7.3 inch 7 Color E-Paper with Solid Wood Photo Frame",
+     "url": "https://openelab.com/products/waveshare-7-3-inch-7",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246679699780:1",
+       "description": {
+        "html": "The Waveshare PhotoPainter is a 7.3-inch, 7-colour ePaper display with Advanced Color ePaper (ACeP) technology that supports seven different colours. Housed in a minimalist solid wood frame, it provides an elegant display for photos, calendars, quotes, artwork and posters. Designed for ultra-low power consumption, the screen retains the last image displayed even when switched off, using power only when refreshing. With a built-in RTC chip, it also supports scheduled refresh. The frame includes a swivel stand and wall hook for flexible placement, making it ideal for a variety of display needs. Features Advanced Color ePaper (ACeP) technology, supports 7-Color display Ultra-low power consumption, basically power is only required for refreshing Large capacity Lithium battery (optional), onboard power saving circuit, allows thousand times of refreshing by one charge Onboard RTC chip for timing refresh Simple solid wood photo frame, elegant and beautiful Rotatable stand and hook hanger on the back, not limited to usage scenarios Open source code, more freedom to customize functions Powerful functions and user-friendly operation Automatic power-off circuitEffectively extend the use of time, low power consumption and more energy-saving RTC ChipRTC timer function, which can realize switching pictures at regular time. TF card expansion interfaceSupports large-capacity TF card Picture switching buttonOne key to switch pictures Auto mode switchOne key to switch to refresh mode (coin cell battery is required to use auto mode) RUN and BOOT buttonConvenient for burning program and debugging Specification Display Size 160.0mm × 96.0mm Outline Dimensions 154.0mm × 214.0mm × 32.0mm Pixel Pitch 0.2mm × 0.2mm Resolution 800 × 480 Display Color Black, White, Green, Blue, Red, Yellow, Orange Greyscale 2 Refresh Time 31s Sleep Current < 0.01uA (almost 0) Charging/Operating Voltage 5V Simple solid wood photo frame High-quality solid wood frame and white edge, simple and elegant Tabletop or Wall Mount support rotatable stand and hook hanger on the back, different directions to place Use the stand to place on the table Use a hook to hang on the wall"
+       },
+       "id": "gid://shopify/ProductVariant/56246679699780",
+       "list_price": {
+        "amount": 17349,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/PhotoPainter-1.jpg?v=1768291906"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 17349,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-24709",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-display",
+       "id": "gid://shopify/Collection/658454970692",
+       "title": "Waveshare - Display"
+      }
+     ],
+     "description": {
+      "html": "4.26 inch E-Paper Display (G) 800 x 480 red/yellow/black/white e-Paper display with SPI interface, wide viewing angle, and optional Raspberry Pi HAT+ driver board. Key Features 4.26 inch sizeCompact e-Paper panel for low-power information display. 800 x 480 resolutionClear layout for labels, dashboards, and status information. Four display colorsRed, yellow, black, and white. SPI interfaceSupports 3-wire SPI and 4-wire SPI. Ultra-low powerPower is mainly required during refresh. No backlightKeeps displaying the last content even after power down. Version Options Driver board is optional; check package content for the exact included parts. 4.26inch e-Paper (G) Raw display panel, without driver board. 4.26inch e-Paper HAT+ (G) Display with driver board and Raspberry Pi 40-pin GPIO header. Specifications Operating Voltage Raw display: 3.3V; with driver board: 3.3V / 5V Display Color Red / Yellow / Black / White Interface 3-wire SPI, 4-wire SPI Grey Scale 2 Resolution 800 x 480 Display Size 92.80 x 55.68 mm Full Refresh Time 20s Viewing Angle >170 degrees Advantages of E-Ink No backlight, paper-like display, wide viewing angle, and excellent visibility under ambient light. Application Examples Suitable for shelf labels, industrial instruments, conference name tags, smart homes, and low-power information panels. Driver Board Interfaces The optional driver board provides a Raspberry Pi 40-pin GPIO header, SPI control interface, and onboard voltage translator. Outline Dimensions Dimensions are for reference only and may differ slightly from the actual product. Resources Wiki: docs.waveshare.com/4.26inch_e-Paper_G"
+     },
+     "gift_card": false,
+     "handle": "waveshare-4-26inch-e-paper",
+     "id": "gid://shopify/Product/15557702123844",
+     "list_price_range": {
+      "max": {
+       "amount": 4109,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4109,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 4.26inch E-Paper Display with Driver Board 800 x 480 - image 1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-4-26inch-e-paper-hat-01.webp?v=1779242586"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4109,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4109,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare 4.26inch E-Paper Display with Driver Board 800 x 480",
+     "url": "https://openelab.com/products/waveshare-4-26inch-e-paper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56771397189956:1",
+       "description": {
+        "html": "4.26 inch E-Paper Display (G) 800 x 480 red/yellow/black/white e-Paper display with SPI interface, wide viewing angle, and optional Raspberry Pi HAT+ driver board. Key Features 4.26 inch sizeCompact e-Paper panel for low-power information display. 800 x 480 resolutionClear layout for labels, dashboards, and status information. Four display colorsRed, yellow, black, and white. SPI interfaceSupports 3-wire SPI and 4-wire SPI. Ultra-low powerPower is mainly required during refresh. No backlightKeeps displaying the last content even after power down. Version Options Driver board is optional; check package content for the exact included parts. 4.26inch e-Paper (G) Raw display panel, without driver board. 4.26inch e-Paper HAT+ (G) Display with driver board and Raspberry Pi 40-pin GPIO header. Specifications Operating Voltage Raw display: 3.3V; with driver board: 3.3V / 5V Display Color Red / Yellow / Black / White Interface 3-wire SPI, 4-wire SPI Grey Scale 2 Resolution 800 x 480 Display Size 92.80 x 55.68 mm Full Refresh Time 20s Viewing Angle >170 degrees Advantages of E-Ink No backlight, paper-like display, wide viewing angle, and excellent visibility under ambient light. Application Examples Suitable for shelf labels, industrial instruments, conference name tags, smart homes, and low-power information panels. Driver Board Interfaces The optional driver board provides a Raspberry Pi 40-pin GPIO header, SPI control interface, and onboard voltage translator. Outline Dimensions Dimensions are for reference only and may differ slightly from the actual product. Resources Wiki: docs.waveshare.com/4.26inch_e-Paper_G"
+       },
+       "id": "gid://shopify/ProductVariant/56771397189956",
+       "list_price": {
+        "amount": 4109,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-4-26inch-e-paper-hat-01.webp?v=1779242586"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4109,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-34061",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-display",
+       "id": "gid://shopify/Collection/658454970692",
+       "title": "Waveshare - Display"
+      }
+     ],
+     "description": {
+      "html": "2.15inch 3 Color E-Paper Display (B) 2.15inch e-Paper display with 296 × 160 resolution, red / black / white display color, SPI interface, low power consumption, and optional HAT+ driver board support. Designed for price tags, shelf labels, industrial instruments, asset labels, conference name tags, and other compact low-power display applications. Key Features 2.15inch e-paper display with 296 × 160 resolution and red / black / white three-color output. No backlight; the screen keeps displaying the last content for a long time even after power is removed. Ultra-low power consumption, with power mainly required during refresh. Wide viewing angle and paper-like visual effect under ambient light. SPI communication interface for controller boards such as Raspberry Pi, Jetson Nano, RDK X3, Arduino, and STM32. Optional HAT+ driver board supports Raspberry Pi 40PIN GPIO, HAT+ standard, and onboard voltage translation for 3.3V / 5V MCUs. Version Options 2.15inch e-Paper (B) Raw display version without driver board. 2.15inch e-Paper HAT+ (B) Version with HAT+ driver board. Specifications Operating voltage Raw display: 3.3V; with driver board: 3.3V / 5V Interface 3-wire SPI, 4-wire SPI Display color Red / Black / White Resolution 296 × 160 pixels Raw display dimensions 60.8 × 31.8 × 1.00mm With driver board dimensions 65 × 34mm Display size 48.10 × 26mm Dot pitch 0.1625 × 0.1625mm Grey scale 2 Full refresh time 23s Refresh power <15mW Standby current <0.01uA, almost none Viewing angle >170° E-Paper Advantages E-paper display uses microcapsule electrophoretic technology. Charged particles suspended in clear fluid move when an electric field is applied, making the display visible by reflecting ambient light like printed paper. The display is clearly visible under lamplight or natural light, requires no backlight, and provides a paper-like viewing experience with a wide viewing angle. Raspberry Pi 40PIN GPIO Header The optional HAT+ driver board provides a standard Raspberry Pi 40PIN GPIO header and supports Raspberry Pi series boards, Jetson Nano, and RDK X3. Optional Driver Board Interface The onboard SPI control interface supports controller boards such as Raspberry Pi, Arduino, and STM32. VCC Power, 3.3V / 5V input GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection RST External reset, low active BUSY Busy status output pin HAT+ Standard and Voltage Translator The HAT+ standard improves interoperability and helps users design, develop, and extend Raspberry Pi projects more quickly. The onboard voltage translator supports both 3.3V and 5V MCUs. Application Examples Suitable for price tags, asset and equipment tags, shelf labels, conference name tags, and other compact low-power display applications. Outline Dimensions 2.15inch e-Paper (B) 2.15inch e-Paper HAT+ (B)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-epaper-display-2p15-28815",
+     "id": "gid://shopify/Product/15561743827268",
+     "list_price_range": {
+      "max": {
+       "amount": 689,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 689,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 2.15inch 3 Color E-Paper Display (B) 296x160 - image 1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-28815-01.webp?v=1779884140"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 689,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 689,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare 2.15inch 3 Color E-Paper Display (B) 296x160",
+     "url": "https://openelab.com/products/waveshare-epaper-display-2p15-28815",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56795907326276:1",
+       "description": {
+        "html": "2.15inch 3 Color E-Paper Display (B) 2.15inch e-Paper display with 296 × 160 resolution, red / black / white display color, SPI interface, low power consumption, and optional HAT+ driver board support. Designed for price tags, shelf labels, industrial instruments, asset labels, conference name tags, and other compact low-power display applications. Key Features 2.15inch e-paper display with 296 × 160 resolution and red / black / white three-color output. No backlight; the screen keeps displaying the last content for a long time even after power is removed. Ultra-low power consumption, with power mainly required during refresh. Wide viewing angle and paper-like visual effect under ambient light. SPI communication interface for controller boards such as Raspberry Pi, Jetson Nano, RDK X3, Arduino, and STM32. Optional HAT+ driver board supports Raspberry Pi 40PIN GPIO, HAT+ standard, and onboard voltage translation for 3.3V / 5V MCUs. Version Options 2.15inch e-Paper (B) Raw display version without driver board. 2.15inch e-Paper HAT+ (B) Version with HAT+ driver board. Specifications Operating voltage Raw display: 3.3V; with driver board: 3.3V / 5V Interface 3-wire SPI, 4-wire SPI Display color Red / Black / White Resolution 296 × 160 pixels Raw display dimensions 60.8 × 31.8 × 1.00mm With driver board dimensions 65 × 34mm Display size 48.10 × 26mm Dot pitch 0.1625 × 0.1625mm Grey scale 2 Full refresh time 23s Refresh power <15mW Standby current <0.01uA, almost none Viewing angle >170° E-Paper Advantages E-paper display uses microcapsule electrophoretic technology. Charged particles suspended in clear fluid move when an electric field is applied, making the display visible by reflecting ambient light like printed paper. The display is clearly visible under lamplight or natural light, requires no backlight, and provides a paper-like viewing experience with a wide viewing angle. Raspberry Pi 40PIN GPIO Header The optional HAT+ driver board provides a standard Raspberry Pi 40PIN GPIO header and supports Raspberry Pi series boards, Jetson Nano, and RDK X3. Optional Driver Board Interface The onboard SPI control interface supports controller boards such as Raspberry Pi, Arduino, and STM32. VCC Power, 3.3V / 5V input GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection RST External reset, low active BUSY Busy status output pin HAT+ Standard and Voltage Translator The HAT+ standard improves interoperability and helps users design, develop, and extend Raspberry Pi projects more quickly. The onboard voltage translator supports both 3.3V and 5V MCUs. Application Examples Suitable for price tags, asset and equipment tags, shelf labels, conference name tags, and other compact low-power display applications. Outline Dimensions 2.15inch e-Paper (B) 2.15inch e-Paper HAT+ (B)"
+       },
+       "id": "gid://shopify/ProductVariant/56795907326276",
+       "list_price": {
+        "amount": 689,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-28815-01.webp?v=1779884140"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 689,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-28815",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "5.79inch E-Paper (B) Raw Display, E-Ink Display, 792x272, Red/Black/White, SPI Communication 5.79″ E-Paper (B) Low Power, Wide Viewing Angle, Paper-Like Effect Without Electricity Ideal for price tags, shelf labels, industrial instruments... Features At A Glance No backlight keeps displaying the latest content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing Comes with online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR Red/Black/White INTERFACE 3-wire SPI, 4-wire SPI GREYSCALE 2 OUTLINE DIMENSIONS 150.92 × 56.94 × 1.00mm FULL REFRESH TIME 24s DISPLAY SIZE 139.00 × 47.74mm REFRESH POWER <50mW DOT PITCH 0.1755 × 0.1755mm STANDBY CURRENT <0.01uA (almost none) RESOLUTION 792 × 272 pixels VIEWING ANGLE >170° Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: that charged particles suspended in clear fluid will move to sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. Weight: 0.035 kg 5.79inch e-Paper (B) x1"
+     },
+     "gift_card": false,
+     "handle": "waveshare-5-79-inch-3",
+     "id": "gid://shopify/Product/15431461667140",
+     "list_price_range": {
+      "max": {
+       "amount": 4739,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4739,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 5.79 inch 3 Color Raw E-Ink Display 792x272 E-Paper - OpenELAB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-79inch-E-Paper-B-Raw-Display-E-ink-Display-792x272-Red-Black-White-SPI_55d54816-2294-4bc9-b305-13133505ffed.webp?v=1768286571"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4739,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4739,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "5.79 inch",
+      "Waveshare"
+     ],
+     "title": "Waveshare 5.79 inch 3 Color Raw E-Ink Display 792x272 E-Paper",
+     "url": "https://openelab.com/products/waveshare-5-79-inch-3",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56246645588292:1",
+       "description": {
+        "html": "5.79inch E-Paper (B) Raw Display, E-Ink Display, 792x272, Red/Black/White, SPI Communication 5.79″ E-Paper (B) Low Power, Wide Viewing Angle, Paper-Like Effect Without Electricity Ideal for price tags, shelf labels, industrial instruments... Features At A Glance No backlight keeps displaying the latest content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing Comes with online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications OPERATING VOLTAGE 3.3V DISPLAY COLOR Red/Black/White INTERFACE 3-wire SPI, 4-wire SPI GREYSCALE 2 OUTLINE DIMENSIONS 150.92 × 56.94 × 1.00mm FULL REFRESH TIME 24s DISPLAY SIZE 139.00 × 47.74mm REFRESH POWER <50mW DOT PITCH 0.1755 × 0.1755mm STANDBY CURRENT <0.01uA (almost none) RESOLUTION 792 × 272 pixels VIEWING ANGLE >170° Advantages Of EINK E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: that charged particles suspended in clear fluid will move to sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper.E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. Weight: 0.035 kg 5.79inch e-Paper (B) x1"
+       },
+       "id": "gid://shopify/ProductVariant/56246645588292",
+       "list_price": {
+        "amount": 4739,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Waveshare-5-79inch-E-Paper-B-Raw-Display-E-ink-Display-792x272-Red-Black-White-SPI_55d54816-2294-4bc9-b305-13133505ffed.webp?v=1768286571"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4739,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-26844",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

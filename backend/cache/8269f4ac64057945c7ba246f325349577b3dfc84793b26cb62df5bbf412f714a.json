@@ -1,0 +1,1614 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Enclosure"
+  }
+ },
+ "key": "8269f4ac64057945c7ba246f325349577b3dfc84793b26cb62df5bbf412f714a",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:48-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFl6TkRVMk9ESXhOamt3TUN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "seeed-studio-respeaker",
+       "id": "gid://shopify/Collection/653415350596",
+       "title": "Seeed Studio - reSpeaker"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "🎶 Discover a premium DIY enclosure kit crafted from sleek black acrylic, purpose-built for ReSpeaker Lite. This enclosure delivers reliable, high-grade protection 🛡️ and allows seamless pairing with the Mono Enclosed Speaker - 4R 5W 🔊, transforming your setup into a complete audio solution. Ideal for smart home automation 🏠, IoT development 🌐, or professional sound projects 🎧, the kit ensures dependable support for speech recognition, audio processing, and AI-driven applications. ✨ Key Features 🛠️ Precision Fit: Designed to perfectly house the ReSpeaker Lite board and Mono Enclosed Speaker, keeping all connectors and ports accessible. 💎 Durable Build: Made from tough matte black acrylic, combining modern aesthetics ✨ with long-lasting protection. ⚡ Quick Assembly: Includes all required parts and tools 🔧, enabling straightforward installation with step-by-step guidance. 🎤 Optimized for Audio: Tailored for projects involving voice AI, sound capture, and acoustic enhancement. Note: 📦 The enclosure kit ships as individual panels and hardware, requiring user assembly following the assembly guide. 📐 Specifications ITEM DETAILS Dimensions (Assembled) 151 × 103 × 34 mm 📏 Material Acrylic 🪟 Weight 195 g ⚖️ 📄 Documentation Assembly Instructions for Acrylic Enclosure Acrylic Enclosure for ReSpeaker Lite.dxf 📑 Certification HSCODE 3926909090 USHSCODE 3926909989 UPC — EUHSCODE 3926909705 COO CHINA 🇨🇳 🧩 Component List Parts Quantity 3mm Acrylic Panels - Black Matte 🪟 11 Silicone Rubber Foot Pads ⚫ 4 Double-sided Tape (15mm Wide) 🏷️ 1 Phillips Machine Screws - PM2.0_H6.0mm 🔩 4 Phillips Screws - M36mm 🔩 8 Hex Standoffs - M2.0_H10.0mm 🔧 4 Hex Standoffs - M3.0_H60.0mm 🔧 4 Adhesive EVA Foam - 12_12_4 🧱 2 Adhesive EVA Foam - 16_16_8 🧱 2"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-acrylic-enclosure",
+     "id": "gid://shopify/Product/15425234862404",
+     "list_price_range": {
+      "max": {
+       "amount": 882,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 882,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_3a078d3d-6a31-4078-a85f-9dc66d9fdb45.webp?v=1767587284"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 882,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 882,
+       "currency": "USD"
+      }
+     },
+     "title": "Seeed Studio Acrylic Enclosure for ReSpeaker Lite",
+     "url": "https://openelab.com/products/seeed-studio-acrylic-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56208914415940:1",
+       "description": {
+        "html": "🎶 Discover a premium DIY enclosure kit crafted from sleek black acrylic, purpose-built for ReSpeaker Lite. This enclosure delivers reliable, high-grade protection 🛡️ and allows seamless pairing with the Mono Enclosed Speaker - 4R 5W 🔊, transforming your setup into a complete audio solution. Ideal for smart home automation 🏠, IoT development 🌐, or professional sound projects 🎧, the kit ensures dependable support for speech recognition, audio processing, and AI-driven applications. ✨ Key Features 🛠️ Precision Fit: Designed to perfectly house the ReSpeaker Lite board and Mono Enclosed Speaker, keeping all connectors and ports accessible. 💎 Durable Build: Made from tough matte black acrylic, combining modern aesthetics ✨ with long-lasting protection. ⚡ Quick Assembly: Includes all required parts and tools 🔧, enabling straightforward installation with step-by-step guidance. 🎤 Optimized for Audio: Tailored for projects involving voice AI, sound capture, and acoustic enhancement. Note: 📦 The enclosure kit ships as individual panels and hardware, requiring user assembly following the assembly guide. 📐 Specifications ITEM DETAILS Dimensions (Assembled) 151 × 103 × 34 mm 📏 Material Acrylic 🪟 Weight 195 g ⚖️ 📄 Documentation Assembly Instructions for Acrylic Enclosure Acrylic Enclosure for ReSpeaker Lite.dxf 📑 Certification HSCODE 3926909090 USHSCODE 3926909989 UPC — EUHSCODE 3926909705 COO CHINA 🇨🇳 🧩 Component List Parts Quantity 3mm Acrylic Panels - Black Matte 🪟 11 Silicone Rubber Foot Pads ⚫ 4 Double-sided Tape (15mm Wide) 🏷️ 1 Phillips Machine Screws - PM2.0_H6.0mm 🔩 4 Phillips Screws - M36mm 🔩 8 Hex Standoffs - M2.0_H10.0mm 🔧 4 Hex Standoffs - M3.0_H60.0mm 🔧 4 Adhesive EVA Foam - 12_12_4 🧱 2 Adhesive EVA Foam - 16_16_8 🧱 2"
+       },
+       "id": "gid://shopify/ProductVariant/56208914415940",
+       "list_price": {
+        "amount": 882,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_3a078d3d-6a31-4078-a85f-9dc66d9fdb45.webp?v=1767587284"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 882,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-110991984",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "The Wireless & IoT product series provides advanced solutions for seamless connectivity, enabling smart communication across various applications. Designed for developers and businesses, these products integrate technologies like Wi-Fi, Bluetooth, Zigbee, and LoRa for reliable performance. Focused on IoT (Internet of Things), these solutions allow users to create interconnected systems that gather and analyze real-time data. From smart homes to industrial automation, our Wireless & IoT offerings feature low power consumption, secure communications, and easy integration with platforms like Arduino and MicroPython. With extensive documentation and a supportive community, the Wireless & IoT series simplifies rapid prototyping, making it easier to bring innovative ideas to life."
+       },
+       "handle": "wireless-iot",
+       "id": "gid://shopify/Collection/648194031940",
+       "title": "Wireless & IoT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rakwireless-accessory",
+       "id": "gid://shopify/Collection/658192335172",
+       "title": "RakWireless - Accessory"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rakwireless",
+       "id": "gid://shopify/Collection/658193580356",
+       "title": "RakWireless"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-rakwireless",
+       "id": "gid://shopify/Collection/660495302980",
+       "title": "Brands - RakWireless"
+      }
+     ],
+     "description": {
+      "html": "WisBlock RAKBox-B6 Enclosure is a WisBlock indoor enclosure built to protect, organize, and neatly house sensor-based projects created with the WisBlock Modular System. The enclosure is designed with a carefully planned internal layout, giving generous room for multiple components while maintaining a clean, low-profile footprint for indoor use. It also supports a wide range of WisBlock Base Boards, helping you keep projects flexible as needs change. Design Highlights Side ventilation slots (both sides): Supports continuous airflow to help sensors run under stable conditions. USB port opening: Enables updates and maintenance without dismantling the enclosure setup. Roomy internal compartment: Fits larger batteries to extend operation time. Included mounting plate: Helps secure boards firmly during operation. Base mounting holes: Allows fast mounting to walls or other surfaces. Recommended For Indoor deployments where you want a tidy, protected, and adaptable enclosure for modular sensor applications, keeping installations organized and clutter-free. Value Summary (Need → Benefit) Deployment need How RAKBox-B6 helps Modular flexibility Supports multiple WisBlock base board layouts as projects evolve Easy maintenance USB access opening enables updates without opening the enclosure Longer operation time Interior space allows use of larger-capacity batteries Stable sensor readings Side ventilation slots promote airflow and reduce heat buildup Clean indoor installation Compact, enclosed design keeps sensor setups organized and protected Key Features of WisBlock RAKBox-B6 Enclosure Material: ABS Color: Pure White External Size: 84.5x84.5x36.7mm Internal Space: Approx. 66x66x16mm (Usable space varies due to internal features) Use Case Examples for WisBlock RAKBox-B6 Enclosure Offering efficient organization and protection, this indoor monitoring sensor box enhances both the reliability and maintainability of indoor sensor projects. Use Case #1: Environmental Monitoring in a Shared Workspace A team deploys air quality sensors in an office. The secure modular IoT sensor housing serves as a temperature sensor box to prevent accidental tampering, while vented airflow ensures accurate readings, allowing them to track indoor conditions effectively. Use Case #2: Educational IoT Lab Setup Students assemble modular sensors for coursework. The enclosure organizes components neatly and protects delicate boards from handling damage, helping them focus on learning without worrying about hardware issues. What’s in the Box 1 pc Enclosure 1 pc Internal Mounting Plate 1 pc USB-C Silicone cover 1 Screw set How to Get Started with WisBlock RAKBox-B6 Enclosure Overview of WisBlock RAKBox-B6 Enclosure Installation Guide for WisBlock RAKBox-B6 Enclosure Datasheet for WisBlock RAKBox-B6 Enclosure"
+     },
+     "gift_card": false,
+     "handle": "rakwireless-wisblock-rakbox-b6-indoor",
+     "id": "gid://shopify/Product/15491586687300",
+     "list_price_range": {
+      "max": {
+       "amount": 3339,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3339,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/wisblock-rakbox-b6-usecase_913x_2x_5e8c2f50-2bb2-4ec3-b398-41ca02e1be4b.webp?v=1772765572"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3339,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3339,
+       "currency": "USD"
+      }
+     },
+     "title": "RakWireless WisBlock RAKBox-B6 Indoor Sensor Enclosure",
+     "url": "https://openelab.com/products/rakwireless-wisblock-rakbox-b6-indoor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56473256755524:1",
+       "description": {
+        "html": "WisBlock RAKBox-B6 Enclosure is a WisBlock indoor enclosure built to protect, organize, and neatly house sensor-based projects created with the WisBlock Modular System. The enclosure is designed with a carefully planned internal layout, giving generous room for multiple components while maintaining a clean, low-profile footprint for indoor use. It also supports a wide range of WisBlock Base Boards, helping you keep projects flexible as needs change. Design Highlights Side ventilation slots (both sides): Supports continuous airflow to help sensors run under stable conditions. USB port opening: Enables updates and maintenance without dismantling the enclosure setup. Roomy internal compartment: Fits larger batteries to extend operation time. Included mounting plate: Helps secure boards firmly during operation. Base mounting holes: Allows fast mounting to walls or other surfaces. Recommended For Indoor deployments where you want a tidy, protected, and adaptable enclosure for modular sensor applications, keeping installations organized and clutter-free. Value Summary (Need → Benefit) Deployment need How RAKBox-B6 helps Modular flexibility Supports multiple WisBlock base board layouts as projects evolve Easy maintenance USB access opening enables updates without opening the enclosure Longer operation time Interior space allows use of larger-capacity batteries Stable sensor readings Side ventilation slots promote airflow and reduce heat buildup Clean indoor installation Compact, enclosed design keeps sensor setups organized and protected Key Features of WisBlock RAKBox-B6 Enclosure Material: ABS Color: Pure White External Size: 84.5x84.5x36.7mm Internal Space: Approx. 66x66x16mm (Usable space varies due to internal features) Use Case Examples for WisBlock RAKBox-B6 Enclosure Offering efficient organization and protection, this indoor monitoring sensor box enhances both the reliability and maintainability of indoor sensor projects. Use Case #1: Environmental Monitoring in a Shared Workspace A team deploys air quality sensors in an office. The secure modular IoT sensor housing serves as a temperature sensor box to prevent accidental tampering, while vented airflow ensures accurate readings, allowing them to track indoor conditions effectively. Use Case #2: Educational IoT Lab Setup Students assemble modular sensors for coursework. The enclosure organizes components neatly and protects delicate boards from handling damage, helping them focus on learning without worrying about hardware issues. What’s in the Box 1 pc Enclosure 1 pc Internal Mounting Plate 1 pc USB-C Silicone cover 1 Screw set How to Get Started with WisBlock RAKBox-B6 Enclosure Overview of WisBlock RAKBox-B6 Enclosure Installation Guide for WisBlock RAKBox-B6 Enclosure Datasheet for WisBlock RAKBox-B6 Enclosure"
+       },
+       "id": "gid://shopify/ProductVariant/56473256755524",
+       "list_price": {
+        "amount": 3339,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/wisblock-rakbox-b6-usecase_913x_2x_5e8c2f50-2bb2-4ec3-b398-41ca02e1be4b.webp?v=1772765572"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3339,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Rak-910471",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "The Wireless & IoT product series provides advanced solutions for seamless connectivity, enabling smart communication across various applications. Designed for developers and businesses, these products integrate technologies like Wi-Fi, Bluetooth, Zigbee, and LoRa for reliable performance. Focused on IoT (Internet of Things), these solutions allow users to create interconnected systems that gather and analyze real-time data. From smart homes to industrial automation, our Wireless & IoT offerings feature low power consumption, secure communications, and easy integration with platforms like Arduino and MicroPython. With extensive documentation and a supportive community, the Wireless & IoT series simplifies rapid prototyping, making it easier to bring innovative ideas to life."
+       },
+       "handle": "wireless-iot",
+       "id": "gid://shopify/Collection/648194031940",
+       "title": "Wireless & IoT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rakwireless-accessory",
+       "id": "gid://shopify/Collection/658192335172",
+       "title": "RakWireless - Accessory"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rakwireless",
+       "id": "gid://shopify/Collection/658193580356",
+       "title": "RakWireless"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-rakwireless",
+       "id": "gid://shopify/Collection/660495302980",
+       "title": "Brands - RakWireless"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "RAKBox-B4: IP67-rated enclosure for outdoor Industrial IoT use, matching the WisBlock form factor board. Mechanical Characteristics Dimensions W x L x H: 168mm (include mount ears) x 120mm x 55mm Weight: approximately 8.46oz (240g) Material thickness: 3mm Pole and wall-mounting: 50~75mm pole diameter Logo customization possibility Support for Logo printing and custom color painting Support opening as required. Board Support Support the WisBlock form factor board, the detailed matched WisBlock modules include the following: WisBlock Base RAK19007 WisBlock Core RAK4631 WisBlock Wireless RAK2305 WisBlock Wireless RAK5860 WisBlock Sensor RAK1901 WisBlock Sensor RAK1902 WisBlock Sensor RAK1904 WisBlock Sensor RAK1906 WisBlock Sensor RAK1910 WisBlock Interface RAK5801 WisBlock Interface RAK5802 WisBlock Interface RAK5811 WisBlock Interface RAK5804 WisBlock Interface RAK1920 Package Inclusion Enclosure Internal mounting plates Wall mount bracket Pole mount accessory 2 x Plugs Assembly screws and standoffs Mounting screws"
+     },
+     "gift_card": false,
+     "handle": "rakwireless-rakbox-b4-outdoor-enclosure",
+     "id": "gid://shopify/Product/15491587342660",
+     "list_price_range": {
+      "max": {
+       "amount": 5519,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5519,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/RAKBox-B4_Outdoor-Enclosure_Top-View_02_913x_2x_9f50ef4c-b374-4aec-b141-f89bbf53fb01.webp?v=1772766299"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5519,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5519,
+       "currency": "USD"
+      }
+     },
+     "title": "RakWireless RAKBox-B4 Outdoor enclosure",
+     "url": "https://openelab.com/products/rakwireless-rakbox-b4-outdoor-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56473274941764:1",
+       "description": {
+        "html": "RAKBox-B4: IP67-rated enclosure for outdoor Industrial IoT use, matching the WisBlock form factor board. Mechanical Characteristics Dimensions W x L x H: 168mm (include mount ears) x 120mm x 55mm Weight: approximately 8.46oz (240g) Material thickness: 3mm Pole and wall-mounting: 50~75mm pole diameter Logo customization possibility Support for Logo printing and custom color painting Support opening as required. Board Support Support the WisBlock form factor board, the detailed matched WisBlock modules include the following: WisBlock Base RAK19007 WisBlock Core RAK4631 WisBlock Wireless RAK2305 WisBlock Wireless RAK5860 WisBlock Sensor RAK1901 WisBlock Sensor RAK1902 WisBlock Sensor RAK1904 WisBlock Sensor RAK1906 WisBlock Sensor RAK1910 WisBlock Interface RAK5801 WisBlock Interface RAK5802 WisBlock Interface RAK5811 WisBlock Interface RAK5804 WisBlock Interface RAK1920 Package Inclusion Enclosure Internal mounting plates Wall mount bracket Pole mount accessory 2 x Plugs Assembly screws and standoffs Mounting screws"
+       },
+       "id": "gid://shopify/ProductVariant/56473274941764",
+       "list_price": {
+        "amount": 5519,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/RAKBox-B4_Outdoor-Enclosure_Top-View_02_913x_2x_9f50ef4c-b374-4aec-b141-f89bbf53fb01.webp?v=1772766299"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5519,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Rak-910011",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-11-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio SenseCAP series features a wide range of industrial-grade IoT sensors and solutions tailored for environmental monitoring. Engineered to endure harsh outdoor conditions, these devices offer exceptional durability, accuracy, and extended battery life."
+       },
+       "handle": "seeed-studio-sensecap",
+       "id": "gid://shopify/Collection/648145109316",
+       "title": "Seeed Studio - SenseCAP"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "lorawan-antennas-accessories",
+       "id": "gid://shopify/Collection/660657439044",
+       "title": "LoRaWAN - Antennas & Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Protect your Helium hotspot outdoors with this IP66 waterproof enclosure, designed for popular models like SenseCAP M1/M2, BobCat, RAK, and more. Effortlessly transform your indoor gateway into a durable outdoor solution with the included accessories. Boost your LoRaWAN application’s coverage range for stronger, wider connectivity. Install with confidence—mount it on a wall or pole using the flexible kit. Smart design with reserved interfaces: Triple N-type female connectors for antennas Secure Ethernet port with cable gland PG9 power supply interface Ground connector for lightning protection Description Are you eager to find a solution that could increase your gateway coverage? Are you wondering how to keep your gateways safe when putting them outdoors? Are you struggling to find a case that could perfectly meet your gateway size and extended interface requirements? Here you have SenseCAP Outdoor Enclosure Kit! Note When installing the enclosure, please ensure the panel with holes faces downward to prevent water from entering the holes. Being specially designed to meet all your needs to put the gateways outdoors, SenseCAP Outdoor Enclosure has a decent size that is able to allocate most of the mainstream hotspots, such as BobCat miner 300, RAK hotspot, Cal-Chip, Nebra, Helium hotspot, etc. With multiple types of extended interfaces provided, including 3* N-type female interface for LoRa Antenna, 1* Ethernet connector with cable gland for Ethernet cable, 1* PG9 interface for power supply, and 1* lightning arrestor ground connector reserved on the bottom cover, SenseCAP Outdoor Enclosure helps you easily connect your hotspot with the Ethernet cable, fiberglass antenna, 4G antenna, GPS antenna, solar panel power station, lightning arrestor, etc. IP66 waterproof rate keeps it safe from dust and water when placed outdoors. Rich accessories are provided for you to assemble. More possibilities are waiting for you to discover with your gateways! Bring your IoT applications into the wild with SenseCAP Outdoor Enclosure Kit now. Specification Material: PC Waterproof Rate: IP66 Maximum ambient temperature -40~85°C Attention The working temperature of the outdoor enclosure is -40~85°C, however, users should always keep in mind that it is important to make sure the inner temperature does not exceed the specified working temperature range of each component assembled inside, such as the hotspot, PoE, and battery management controller. If your placement is in a high-temperature weather area and has a long period of direct sunlight, it is highly suggested to add an additional cover or put the enclosure under the solar panel to prevent overheating damage to the internal device. Please note that SenseCAP will not be responsible for the damage to the inside devices due to users' misuse in inappropriate weather conditions and placement. Enclosure Size (connectors excluded): 255*275*92mm Package Size: 360*320*125mm Gross Weight: 2.2 kg Port: Holes for N-type antenna cable gland *3, Hole for Ethernet cable gland *1, PG9-hole*1 Note All cable glands and connectors are not assembled to the enclosure holes, providing users with more flexibility to choose what to use based on different scenarios. Waterproof silicon plugs are provided for the unused holes. Part List: Outdoor Enclosure *1 Pole mounting kit *1 Wall Mounting Clip *4 Mounting sheet plane *1 Ethernet cable gland *1 Antenna cable gland *1 Hook-and-loop Cable Tie*1m Waterproof Silicone Plug *2 PG9 Connector *1 PG9 Plug *1 Screws set Note This kit includes the necessary parts to assemble SenseCAP M1/M2 and other hotspots that could fit in the size, but it does not include SenseCAP M1/M2 Hotspot, SenseCAP PoE Splitter, and Antenna. Optional Accessories: SenseCAP PoE splitter PoE injector (to be released) Fiberglass Antenna Extended Cable Lightning Arrestor Usage Scenario Note This product does not include an antenna. Please click here to choose antennas and cables. Certification HSCODE 8517799000 USHSCODE 8517690000 UPC EUHSCODE 8517180000 COO CHINA"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-sensecap-outdoor-enclosure",
+     "id": "gid://shopify/Product/15470166475076",
+     "list_price_range": {
+      "max": {
+       "amount": 8999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8999,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/2_55d91b25-dbd5-4496-bea0-06349274ea8c.webp?v=1771039265"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6799,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6799,
+       "currency": "USD"
+      }
+     },
+     "title": "Seeed Studio SenseCAP Outdoor Enclosure for Helium Hotspot- IP66 waterproof rate",
+     "url": "https://openelab.com/products/seeed-studio-sensecap-outdoor-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56398408646980:1",
+       "description": {
+        "html": "Protect your Helium hotspot outdoors with this IP66 waterproof enclosure, designed for popular models like SenseCAP M1/M2, BobCat, RAK, and more. Effortlessly transform your indoor gateway into a durable outdoor solution with the included accessories. Boost your LoRaWAN application’s coverage range for stronger, wider connectivity. Install with confidence—mount it on a wall or pole using the flexible kit. Smart design with reserved interfaces: Triple N-type female connectors for antennas Secure Ethernet port with cable gland PG9 power supply interface Ground connector for lightning protection Description Are you eager to find a solution that could increase your gateway coverage? Are you wondering how to keep your gateways safe when putting them outdoors? Are you struggling to find a case that could perfectly meet your gateway size and extended interface requirements? Here you have SenseCAP Outdoor Enclosure Kit! Note When installing the enclosure, please ensure the panel with holes faces downward to prevent water from entering the holes. Being specially designed to meet all your needs to put the gateways outdoors, SenseCAP Outdoor Enclosure has a decent size that is able to allocate most of the mainstream hotspots, such as BobCat miner 300, RAK hotspot, Cal-Chip, Nebra, Helium hotspot, etc. With multiple types of extended interfaces provided, including 3* N-type female interface for LoRa Antenna, 1* Ethernet connector with cable gland for Ethernet cable, 1* PG9 interface for power supply, and 1* lightning arrestor ground connector reserved on the bottom cover, SenseCAP Outdoor Enclosure helps you easily connect your hotspot with the Ethernet cable, fiberglass antenna, 4G antenna, GPS antenna, solar panel power station, lightning arrestor, etc. IP66 waterproof rate keeps it safe from dust and water when placed outdoors. Rich accessories are provided for you to assemble. More possibilities are waiting for you to discover with your gateways! Bring your IoT applications into the wild with SenseCAP Outdoor Enclosure Kit now. Specification Material: PC Waterproof Rate: IP66 Maximum ambient temperature -40~85°C Attention The working temperature of the outdoor enclosure is -40~85°C, however, users should always keep in mind that it is important to make sure the inner temperature does not exceed the specified working temperature range of each component assembled inside, such as the hotspot, PoE, and battery management controller. If your placement is in a high-temperature weather area and has a long period of direct sunlight, it is highly suggested to add an additional cover or put the enclosure under the solar panel to prevent overheating damage to the internal device. Please note that SenseCAP will not be responsible for the damage to the inside devices due to users' misuse in inappropriate weather conditions and placement. Enclosure Size (connectors excluded): 255*275*92mm Package Size: 360*320*125mm Gross Weight: 2.2 kg Port: Holes for N-type antenna cable gland *3, Hole for Ethernet cable gland *1, PG9-hole*1 Note All cable glands and connectors are not assembled to the enclosure holes, providing users with more flexibility to choose what to use based on different scenarios. Waterproof silicon plugs are provided for the unused holes. Part List: Outdoor Enclosure *1 Pole mounting kit *1 Wall Mounting Clip *4 Mounting sheet plane *1 Ethernet cable gland *1 Antenna cable gland *1 Hook-and-loop Cable Tie*1m Waterproof Silicone Plug *2 PG9 Connector *1 PG9 Plug *1 Screws set Note This kit includes the necessary parts to assemble SenseCAP M1/M2 and other hotspots that could fit in the size, but it does not include SenseCAP M1/M2 Hotspot, SenseCAP PoE Splitter, and Antenna. Optional Accessories: SenseCAP PoE splitter PoE injector (to be released) Fiberglass Antenna Extended Cable Lightning Arrestor Usage Scenario Note This product does not include an antenna. Please click here to choose antennas and cables. Certification HSCODE 8517799000 USHSCODE 8517690000 UPC EUHSCODE 8517180000 COO CHINA"
+       },
+       "id": "gid://shopify/ProductVariant/56398408646980",
+       "list_price": {
+        "amount": 8999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/2_55d91b25-dbd5-4496-bea0-06349274ea8c.webp?v=1771039265"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6799,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-110991747",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "workshop",
+       "id": "gid://shopify/Collection/653778190660",
+       "title": "Workshop"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "workshop-laser-engraving",
+       "id": "gid://shopify/Collection/654279049540",
+       "title": "Workshop - Laser Engraving"
+      },
+      {
+       "description": {
+        "html": "LaserPecker is the leading brand for portable, smart, and powerful laser engraving and cutting machines. Our innovative, compact devices—including award-winning diode and fiber lasers—are designed for creators, DIY enthusiasts, and small businesses. \"Let Your Creativity Fly!\" by transforming any material, anywhere, with high-precision, user-friendly technology."
+       },
+       "handle": "brands-laserpecker",
+       "id": "gid://shopify/Collection/654905966916",
+       "title": "Brands - LaserPecker"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The LaserPecker Safety Enclosure turns your LaserPecker setup especially LP5 into a dedicated protected workspace. It surrounds the engraver in a closed chamber that helps shield users from stray laser light smoke and debris while still giving a clear view of the work area and convenient access for loading and unloading projects. Equipped with smart safety sensors built in exhaust options and a layout that supports camera mounting this enclosure is a strong choice for studios workshops retail counters classrooms and home work areas where safety and cleanliness matter every day. Safety Focused Design Fully enclosed housing helps contain laser reflections and flying particles during engraving jobs Front viewing window with laser light filtering to support eye protection while you monitor the process Door sensor can trigger an instant safety response if the door is opened during operation Class 1 style safety concept when correctly used together with compatible LaserPecker engravers Cleaner More Comfortable Workspace Dual exhaust layout helps pull smoke and fumes out of the engraving chamber Room to connect exhaust tubing to external ventilation to support better indoor air quality Helps keep dust and residue inside the enclosure instead of spreading across nearby surfaces Ready for Camera and Lighting Upgrades Compatible with the LaserPecker smart camera system for automatic alignment and on screen preview Camera can view the table from above to support accurate positioning and live monitoring Fill lighting inside the enclosure provides bright even illumination so you can see fine engraving details clearly Motorized Adjustable Base Platform Motor driven base plate allows precise height adjustment beneath the laser head Quickly adapts to different material thicknesses and varied engraving setups Supports thin tags and cards as well as taller parts and objects Built for a Wide Variety of Workspaces The compact footprint of the Safety Enclosure fits neatly on desks counters and workbenches making it easy to integrate into many types of environments. Well suited for indoor use in retail shops maker spaces studios and classrooms Helps standardize safety routines in shared labs and cooperative work areas Clean professional appearance suitable for customer facing setups demo stations and show floors Compatibility and Everyday Use The LaserPecker Safety Enclosure is engineered to work smoothly with LaserPecker engravers such as LP5 providing a protective shell that does not get in the way of convenience or precision. Safe on site engraving demonstrations at events trade shows fairs and in store experiences Daily production runs for customized gifts signage branded merchandise and more Educational and training projects where additional safety containment and visibility are required Key Specifications Item Description Product type Laser engraver safety enclosure for LaserPecker systems Safety functions Enclosed chamber filtered viewing window door sensor instant safety response support Workspace features Motorized adjustable base plate camera compatible design internal lighting support Air handling Dual exhaust structure with ports for external ventilation Recommended environments Home studios workshops retail counters classrooms maker spaces Main purpose Improve safety cleanliness and visibility during laser engraving"
+     },
+     "gift_card": false,
+     "handle": "laserpecker-safety-enclosure-lp5-compact-safety-lp5-safety-enclosure",
+     "id": "gid://shopify/Product/15370834805060",
+     "list_price_range": {
+      "max": {
+       "amount": 81290,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 81290,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/laserpecker_safety_enclosure_blick_von_oben.webp?v=1763452842"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 81290,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 81290,
+       "currency": "USD"
+      }
+     },
+     "title": "LaserPecker LP5 Safety Enclosure",
+     "url": "https://openelab.com/products/laserpecker-safety-enclosure-lp5-compact-safety-lp5-safety-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55952965108036:1",
+       "description": {
+        "html": "The LaserPecker Safety Enclosure turns your LaserPecker setup especially LP5 into a dedicated protected workspace. It surrounds the engraver in a closed chamber that helps shield users from stray laser light smoke and debris while still giving a clear view of the work area and convenient access for loading and unloading projects. Equipped with smart safety sensors built in exhaust options and a layout that supports camera mounting this enclosure is a strong choice for studios workshops retail counters classrooms and home work areas where safety and cleanliness matter every day. Safety Focused Design Fully enclosed housing helps contain laser reflections and flying particles during engraving jobs Front viewing window with laser light filtering to support eye protection while you monitor the process Door sensor can trigger an instant safety response if the door is opened during operation Class 1 style safety concept when correctly used together with compatible LaserPecker engravers Cleaner More Comfortable Workspace Dual exhaust layout helps pull smoke and fumes out of the engraving chamber Room to connect exhaust tubing to external ventilation to support better indoor air quality Helps keep dust and residue inside the enclosure instead of spreading across nearby surfaces Ready for Camera and Lighting Upgrades Compatible with the LaserPecker smart camera system for automatic alignment and on screen preview Camera can view the table from above to support accurate positioning and live monitoring Fill lighting inside the enclosure provides bright even illumination so you can see fine engraving details clearly Motorized Adjustable Base Platform Motor driven base plate allows precise height adjustment beneath the laser head Quickly adapts to different material thicknesses and varied engraving setups Supports thin tags and cards as well as taller parts and objects Built for a Wide Variety of Workspaces The compact footprint of the Safety Enclosure fits neatly on desks counters and workbenches making it easy to integrate into many types of environments. Well suited for indoor use in retail shops maker spaces studios and classrooms Helps standardize safety routines in shared labs and cooperative work areas Clean professional appearance suitable for customer facing setups demo stations and show floors Compatibility and Everyday Use The LaserPecker Safety Enclosure is engineered to work smoothly with LaserPecker engravers such as LP5 providing a protective shell that does not get in the way of convenience or precision. Safe on site engraving demonstrations at events trade shows fairs and in store experiences Daily production runs for customized gifts signage branded merchandise and more Educational and training projects where additional safety containment and visibility are required Key Specifications Item Description Product type Laser engraver safety enclosure for LaserPecker systems Safety functions Enclosed chamber filtered viewing window door sensor instant safety response support Workspace features Motorized adjustable base plate camera compatible design internal lighting support Air handling Dual exhaust structure with ports for external ventilation Recommended environments Home studios workshops retail counters classrooms maker spaces Main purpose Improve safety cleanliness and visibility during laser engraving"
+       },
+       "id": "gid://shopify/ProductVariant/55952965108036",
+       "list_price": {
+        "amount": 81290,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/laserpecker_safety_enclosure_blick_von_oben.webp?v=1763452842"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 81290,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "LaserPecker-LP5S",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "Accessories compatible with DFRobot, Arduino, Raspberry Pi, and Micro:bit."
+       },
+       "handle": "dfrobot-accessories",
+       "id": "gid://shopify/Collection/648151564612",
+       "title": "DFRobot - Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Dedicated Design, Superior Texture The Titan Case redefines industrial design by blending functionality with sci-fi inspired aesthetics. As a premium SBC enclosure, this case features a refined color palette and layered surface treatment, offering a sleek and futuristic appearance that complements high-performance hardware like the LattePanda Alpha & Delta. Two Modes: Balancing Extensibility and Integrity Thanks to its invisible quick-release cover design, the Titan Case for LattePanda Alpha & Delta can easily switch between two versatile modes for your SBC enclosure setup: A fully enclosed computer for practical use An open hardware platform ready for rapid development and prototyping with the LattePanda Alpha & Delta Perfect Protection for your SBC Enclosure Crafted from high-strength engineering plastic (ABS+PC), the Titan Case effectively shields your LattePanda Alpha & Delta from drops, shocks, and static discharge in complex environments, ensuring your SBC enclosure components stay safe and stable throughout development. Titan Case Features Protects internal LattePanda Alpha & Delta components from physical and static damage Quick to assemble and disassemble SBC enclosure All Titan Case interfaces fully accessible (no blocking of ports or connectors on the LattePanda Alpha & Delta) Titan Case Specifications Compatibility: LattePanda 2 Alpha & 2 Delta (Premium SBC Enclosure) Material: ABS + PC engineering plastic Dimensions: 120 × 87 × 26 mm (4.7 × 3.4 × 1.0 inch) Weight: 100g Important Notes for your SBC Enclosure The Titan Case is not compatible with LattePanda V1.0 or LattePanda 3 Delta. Use M4 screws for the two middle holes in the bottom case. Ensure screws do not exceed 5mm in length when entering the LattePanda Alpha & Delta PCB from the outside. For devices with added thickness a, the recommended screw length for the Titan Case is a + 5mm. Avoid using screws longer than 7mm to prevent damaging the LattePanda Alpha & Delta PCB. Why Choose the Titan Case for LattePanda Alpha & Delta? Sleek, sci-fi-inspired SBC enclosure design with functional detail Ideal for both end-use scenarios and prototyping with the LattePanda Alpha & Delta Lightweight yet durable SBC enclosure materials Easy, tool-free quick-release cover for the Titan Case Maintains full access to all LattePanda Alpha & Delta ports Titan Case Reference Tutorial of Titan Case Assembly for LattePanda Alpha & Delta"
+     },
+     "gift_card": false,
+     "handle": "titan-case-for-lattepanda-2",
+     "id": "gid://shopify/Product/15433141649732",
+     "list_price_range": {
+      "max": {
+       "amount": 2568,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2568,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Titan Case for LattePanda 2 Alpha & Delta-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Titan_Case_for_LattePanda_2_Alpha_Delta-1.webp?v=1768381913"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2568,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2568,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Accessories"
+     ],
+     "title": "Titan Case for LattePanda Alpha & Delta - Aluminum SBC Enclosure",
+     "url": "https://openelab.com/products/titan-case-for-lattepanda-2",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56253427843396:1",
+       "description": {
+        "html": "Dedicated Design, Superior Texture The Titan Case redefines industrial design by blending functionality with sci-fi inspired aesthetics. As a premium SBC enclosure, this case features a refined color palette and layered surface treatment, offering a sleek and futuristic appearance that complements high-performance hardware like the LattePanda Alpha & Delta. Two Modes: Balancing Extensibility and Integrity Thanks to its invisible quick-release cover design, the Titan Case for LattePanda Alpha & Delta can easily switch between two versatile modes for your SBC enclosure setup: A fully enclosed computer for practical use An open hardware platform ready for rapid development and prototyping with the LattePanda Alpha & Delta Perfect Protection for your SBC Enclosure Crafted from high-strength engineering plastic (ABS+PC), the Titan Case effectively shields your LattePanda Alpha & Delta from drops, shocks, and static discharge in complex environments, ensuring your SBC enclosure components stay safe and stable throughout development. Titan Case Features Protects internal LattePanda Alpha & Delta components from physical and static damage Quick to assemble and disassemble SBC enclosure All Titan Case interfaces fully accessible (no blocking of ports or connectors on the LattePanda Alpha & Delta) Titan Case Specifications Compatibility: LattePanda 2 Alpha & 2 Delta (Premium SBC Enclosure) Material: ABS + PC engineering plastic Dimensions: 120 × 87 × 26 mm (4.7 × 3.4 × 1.0 inch) Weight: 100g Important Notes for your SBC Enclosure The Titan Case is not compatible with LattePanda V1.0 or LattePanda 3 Delta. Use M4 screws for the two middle holes in the bottom case. Ensure screws do not exceed 5mm in length when entering the LattePanda Alpha & Delta PCB from the outside. For devices with added thickness a, the recommended screw length for the Titan Case is a + 5mm. Avoid using screws longer than 7mm to prevent damaging the LattePanda Alpha & Delta PCB. Why Choose the Titan Case for LattePanda Alpha & Delta? Sleek, sci-fi-inspired SBC enclosure design with functional detail Ideal for both end-use scenarios and prototyping with the LattePanda Alpha & Delta Lightweight yet durable SBC enclosure materials Easy, tool-free quick-release cover for the Titan Case Maintains full access to all LattePanda Alpha & Delta ports Titan Case Reference Tutorial of Titan Case Assembly for LattePanda Alpha & Delta"
+       },
+       "id": "gid://shopify/ProductVariant/56253427843396",
+       "list_price": {
+        "amount": 2568,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Titan_Case_for_LattePanda_2_Alpha_Delta-1.webp?v=1768381913"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2568,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-FIT0550",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wireless-iot-wifi",
+       "id": "gid://shopify/Collection/651381604676",
+       "title": "Wireless & IoT - WiFi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-sonoff",
+       "id": "gid://shopify/Collection/663472767300",
+       "title": "Brands - SONOFF"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "sonoff-wall-switches-smart-panels",
+       "id": "gid://shopify/Collection/663472963908",
+       "title": "SONOFF – Wall Switches & Smart Panels"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Description SONOFF Fusion Series Roller Shutter Wall Switch Enclosure | ERBS is an official roller shutter wall switch enclosure accessory in the SONOFF Fusion Series. SONOFF designed ERBS specifically for MINI-RBS installations that need a clean in-wall control surface and a matching enclosure for roller shutter and blind applications. Official SONOFF information highlights PC material construction, clip-on installation, a micro-arc button design, and an ultra-slim 21 mm profile. SONOFF also states that ERBS fits standard EU round wall boxes and supports both European round mounting boxes and 86-type mounting boxes. Features Official MINI-RBS accessory enclosure for Fusion Series roller shutter wall-switch installations. PC material housing that SONOFF describes as fireproof, scratch-resistant, and stable against deformation. Clip-on installation design that reduces wiring complexity and improves the installation workflow. Micro-arc button design for a more natural pressing angle and cleaner tactile response. Ultra-slim 21 mm thickness for better in-wall fit in standard EU round mounting boxes. Clean white Fusion Series appearance for coordinated shutter-switch projects in homes and renovation work. Specifications Brand SONOFF Product Series Fusion Series Model ERBS Product Type Roller shutter wall switch enclosure accessory Designed For SONOFF MINI-RBS Main Material PC Key Functions Clip-on installation, micro-arc button structure, slim in-wall enclosure support Thickness 21 mm Applicable Mounting Box European round mounting box (Phi 60 mm, Phi 80 mm) and 86-type mounting box Color White Net Weight 94 g Applications Roller shutter upgrades that use SONOFF MINI-RBS behind a matching wall-switch enclosure. Blind and shutter control projects that need a cleaner finished wall appearance after retrofit work. Fusion Series installations in homes, apartments, and renovation projects using EU round or 86-type boxes. Replacement or spare enclosure needs for MINI-RBS-based shutter control systems. Product List 1 x SONOFF Fusion Series Roller Shutter Wall Switch Enclosure 1 x Official retail package Other Content This official graphic summarizes the PC material body and the clip-on structure that SONOFF promotes for easier installation. This official image highlights the micro-arc button design that aligns better with the user's natural pressing angle. This official diagram explains the ultra-slim profile and compatible mounting-box formats for in-wall planning. This official package graphic helps confirm what the customer should expect in the retail box. FAQ 1. What is ERBS used for?ERBS is an official SONOFF Fusion Series wall-switch enclosure accessory designed for MINI-RBS roller shutter installations. 2. What material is ERBS made from?SONOFF states that ERBS is made of PC material and describes it as fireproof, scratch-resistant, and durable. 3. Which mounting boxes are compatible?Official information lists European round mounting boxes of Phi 60 mm and Phi 80 mm, plus 86-type mounting boxes. 4. How slim is the enclosure?SONOFF lists an ultra-slim 21 mm profile for this enclosure. 5. Is ERBS the smart module itself?No. ERBS is the enclosure accessory; official materials specify that it is designed for MINI-RBS."
+     },
+     "gift_card": false,
+     "handle": "sonoff-erbs",
+     "id": "gid://shopify/Product/15634522833220",
+     "list_price_range": {
+      "max": {
+       "amount": 1052,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1052,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "SONOFF ERBS pure product image on white background",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/gallery_01_hero_white_bg_ff295b2c-51e6-4aee-a2e5-c5e174520348.webp?v=1786332612"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1158,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1158,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Accessories",
+      "ERBS",
+      "Fusion Series",
+      "MINI-RBS",
+      "Roller Shutter",
+      "SONOFF",
+      "Wall Switch Enclosure"
+     ],
+     "title": "SONOFF Fusion Series Roller Shutter Wall Switch Enclosure | ERBS",
+     "url": "https://openelab.com/products/sonoff-erbs",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57089612415300:1",
+       "description": {
+        "html": "Description SONOFF Fusion Series Roller Shutter Wall Switch Enclosure | ERBS is an official roller shutter wall switch enclosure accessory in the SONOFF Fusion Series. SONOFF designed ERBS specifically for MINI-RBS installations that need a clean in-wall control surface and a matching enclosure for roller shutter and blind applications. Official SONOFF information highlights PC material construction, clip-on installation, a micro-arc button design, and an ultra-slim 21 mm profile. SONOFF also states that ERBS fits standard EU round wall boxes and supports both European round mounting boxes and 86-type mounting boxes. Features Official MINI-RBS accessory enclosure for Fusion Series roller shutter wall-switch installations. PC material housing that SONOFF describes as fireproof, scratch-resistant, and stable against deformation. Clip-on installation design that reduces wiring complexity and improves the installation workflow. Micro-arc button design for a more natural pressing angle and cleaner tactile response. Ultra-slim 21 mm thickness for better in-wall fit in standard EU round mounting boxes. Clean white Fusion Series appearance for coordinated shutter-switch projects in homes and renovation work. Specifications Brand SONOFF Product Series Fusion Series Model ERBS Product Type Roller shutter wall switch enclosure accessory Designed For SONOFF MINI-RBS Main Material PC Key Functions Clip-on installation, micro-arc button structure, slim in-wall enclosure support Thickness 21 mm Applicable Mounting Box European round mounting box (Phi 60 mm, Phi 80 mm) and 86-type mounting box Color White Net Weight 94 g Applications Roller shutter upgrades that use SONOFF MINI-RBS behind a matching wall-switch enclosure. Blind and shutter control projects that need a cleaner finished wall appearance after retrofit work. Fusion Series installations in homes, apartments, and renovation projects using EU round or 86-type boxes. Replacement or spare enclosure needs for MINI-RBS-based shutter control systems. Product List 1 x SONOFF Fusion Series Roller Shutter Wall Switch Enclosure 1 x Official retail package Other Content This official graphic summarizes the PC material body and the clip-on structure that SONOFF promotes for easier installation. This official image highlights the micro-arc button design that aligns better with the user's natural pressing angle. This official diagram explains the ultra-slim profile and compatible mounting-box formats for in-wall planning. This official package graphic helps confirm what the customer should expect in the retail box. FAQ 1. What is ERBS used for?ERBS is an official SONOFF Fusion Series wall-switch enclosure accessory designed for MINI-RBS roller shutter installations. 2. What material is ERBS made from?SONOFF states that ERBS is made of PC material and describes it as fireproof, scratch-resistant, and durable. 3. Which mounting boxes are compatible?Official information lists European round mounting boxes of Phi 60 mm and Phi 80 mm, plus 86-type mounting boxes. 4. How slim is the enclosure?SONOFF lists an ultra-slim 21 mm profile for this enclosure. 5. Is ERBS the smart module itself?No. ERBS is the enclosure accessory; official materials specify that it is designed for MINI-RBS."
+       },
+       "id": "gid://shopify/ProductVariant/57089612415300",
+       "list_price": {
+        "amount": 1052,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/gallery_01_hero_white_bg_ff295b2c-51e6-4aee-a2e5-c5e174520348.webp?v=1786332612"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1158,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Sonoff-ERBS",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "This aluminum cooling case keeps your Raspberry Pi 5 running cool, quiet, and stable. The metal body works as a large heatsink, and the built‑in fan provides extra airflow for demanding workloads. Perfect for makers, developers, and long‑term projects. Highlights Strong aluminum body for excellent cooling Built‑in fan for extra performance Easy access to all ports and GPIO Protective and durable metal enclosure Specifications Feature Value Material Aluminum alloy Cooling Heatsink + fan Compatibility Raspberry Pi 5 Access All ports accessible"
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-5-radiator-aluminum",
+     "id": "gid://shopify/Product/15440423092548",
+     "list_price_range": {
+      "max": {
+       "amount": 629,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 629,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/O1CN01kcxKOm1qdIPSsgCT4__2118835518_jpg.webp?v=1769049932"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 629,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 629,
+       "currency": "USD"
+      }
+     },
+     "title": "Raspberry Pi 5 Radiator Aluminum alloy enclosure with fan",
+     "url": "https://openelab.com/products/raspberry-pi-5-radiator-aluminum",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56279604527428:1",
+       "description": {
+        "html": "This aluminum cooling case keeps your Raspberry Pi 5 running cool, quiet, and stable. The metal body works as a large heatsink, and the built‑in fan provides extra airflow for demanding workloads. Perfect for makers, developers, and long‑term projects. Highlights Strong aluminum body for excellent cooling Built‑in fan for extra performance Easy access to all ports and GPIO Protective and durable metal enclosure Specifications Feature Value Material Aluminum alloy Cooling Heatsink + fan Compatibility Raspberry Pi 5 Access All ports accessible"
+       },
+       "id": "gid://shopify/ProductVariant/56279604527428",
+       "list_price": {
+        "amount": 629,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/O1CN01kcxKOm1qdIPSsgCT4__2118835518_jpg.webp?v=1769049932"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 629,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "TB-Raspberry-Pi-Radiator",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio SenseCAP series features a wide range of industrial-grade IoT sensors and solutions tailored for environmental monitoring. Engineered to endure harsh outdoor conditions, these devices offer exceptional durability, accuracy, and extended battery life."
+       },
+       "handle": "seeed-studio-sensecap",
+       "id": "gid://shopify/Collection/648145109316",
+       "title": "Seeed Studio - SenseCAP"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "👁️🔊🧠 The SenseCAP Watcher is a powerful AI agent built on the advanced ESP32S3 platform ⚙️. It integrates the Himax WiseEye2 HX6538 AI chip 💡 featuring Arm Cortex-M55 & Ethos-U55, delivering exceptional performance in image processing 🖼️ and vector data analysis 📈. 📸🎤🔈 With its embedded camera, microphone, and speaker, SenseCAP Watcher can see, hear, and talk—bringing physical intelligence to life. 🧠✨ Thanks to the LLM-enabled SenseCraft suite, SenseCAP Watcher understands your commands 🎯, perceives its surroundings 🌍, and triggers smart actions 🔁 for seamless smart interaction. Feature SenseCAP Watcher Price Adjustment Announcement: After careful evaluation, the pricing of SenseCAP Watcher has been thoughtfully adjusted to make it even more accessible. 💬 Feature 1: Simply Speak Your Command Just speak to SenseCAP Watcher 🎙️ and tell it what to monitor. Whether it’s “Notify me when someone enters the room” or “Watch for my dog chewing paper,” it listens and acts. Command via Push to Talk 🟢 Or use the SenseCraft App 📱 You can easily send commands by Push to Talk or from SenseCraft App. 👁️ Feature 2: Understand What It Sees Powered by on-device AI models, SenseCAP Watcher detects people, pets, objects, and more. But what truly sets it apart is its LLM integration 🧠. Goes beyond detection: understands behaviors + context Examples: “Dog + playing ball, 0 people in room” 🐶⚽ “Person in DHL outfit arrived” 👕📦 Efficient hybrid architecture: On-device AI filters keyframes LLM analyzes only relevant scenes Reduces cost while boosting precision 💡 Constantly calling LLMs like ChatGPT incurs a high cost. Hence, we use the architecture of on-device AI + LLMs. The on-device AI model on Watcher detects the target, which is then analyzed by LLM to generate accurate and actionable insights. With the task \"tell me if the dog is tearing up paper\" when the on-device model detects dogs, this keyframe is sent to LLM for further analysis - is it tearing up paper? LLMs won't be triggered by people, cats, squirrel or others. This tremendously reduces LLMs' cost. 🔈 Feature 3: Respond via Voice SenseCAP Watcher doesn’t just observe—it talks back! Example scenario: Event: Someone picks up the pink keyboard 🎹 Reaction 1: Voice reply — “Good choice! Inspired by the Pink Royal Typewriter.” Reaction 2: Text alert to sales — “Someone’s interested in the latest keyboard!” Other use cases: “Stop, Cooper!” when dog tears tissues 🐾 “No smoking!” in restricted areas 🚭 🔌 Feature 4: Plug-In Power for Your Systems SenseCAP Watcher integrates seamlessly with your smart ecosystem: Triggers LED flashes 💡 Sends push notifications 📲 Connects to Home Assistant for contextual automation Detects people → lights on for reading 📖 Detects sleep mode → lights off 🌙 Add Watcher to Home Assistant Connected to IoT platform like Home Assistant, your Watcher acts as a behavior sensor, activating tailored actions in various contexts. For example, when it detects people, Watcher analyzes the situation and automatically triggers actions: lights on for reading and lights off for sleeping. When someone sleeping + dim the light More than a vision sensor, Watcher is extendable with other sensors to enable multi-modal sensing. On Watcher's back, the I2C is reserved to accommodate 100+ Grove sensors. This flexibility allows Watcher to integrate a wide range of data sources for thorough analysis and appropriate actions. You will be able to build applications like detect room temperature and adjust the AC accordingly - turn it to 22°C when you're in suits, or 26°C in shorts. Add Watcher to your Node-RED flow Just 3 blocks away, you can stream the detected results from your Watcher to any place on the internet via Node-RED, as easy as making a snap! Add Watcher to your Arduino | ESP32 and other hardware systems Wanna add an AI agent to popular MCUs and SBCs such as Arduino/ ESP32/ Raspberry Pi? Simply connect it to Watcher via UART or HTTP or USB, and you can explore the new frontier of intelligence. Feature 5: Give Your Watcher Unique Emotions SenseCAP Watcher adapts to your commands with unique \"modes.\" It is LISTENING to your instructions, then shifts to WATCHING mode to safeguard your designated space, etc. But the fun doesn't stop here! You can upload your own designs of emotions to give your Watcher a unique personality. Get a PNG file ready and upload it to Watcher within seconds! It is your call! Watcher's default emojis are inspired by C-3PO, paying tribute to one of our greatest helpers! You can easily upload yours in .PNG format. You can even custom design a unique UI (User Interface) for your SenseCAP Watcher. Our current UI is powered by Squareline. Feature 6: Open Source and On-premise Deployment. As an AI device, it is fundamental to respect privacy. And we embrace and implement two primary strategies in this nifty device. SenseCAP Watcher is open source, giving you full access to thoroughly understand how it works. It supports on-premise deployment. The backbone of SenseCAP Watcher is SenseCraft software suite, which is used to configure Watcher, interpret your commands, and access LLMs. Hence, everything is stored and running privately, ensuring that your models and data are not streamed to any public LLMs or public clouds. SenseCraft can run on Windows/ MacOS / Linux. Since SenseCraft contains LLMs, certain performance criteria are required for the computer, as follows. You can deploy SenseCraft on your spare computers. However, if you aim for applications requiring commercial-grade reliability and low-power consumption, the combination of SenseCAP Watchter + NVIDIA® Jetson AGX Orin™ is perfect for you! Compared to consumer-grade graphics cards (e.g. RTX 4090) for AI tasks, NVIDIA® Jetson AGX Orin™ stands out with key advantages: Industrial-grade reliability: Designed for industrial and commercial applications, Jetson AGX series boasts a longer MTBF (Mean Time Between Failures). Engineered for 24/7 operation, it offers superior reliability for round-the-clock applications compared to consumer graphics cards. Compact and low power: With embedded and edge computing applications in mind, Jetson AGX series are designed in a smaller form factor and consume 3+ times less power, compared to consumer graphics cards. Suitable for constrained spaces, Jetson AGX series generates less heat and helps reduce overall operating costs. This is crucial for embedded systems. Subscription? You Decide! SenseCraft AI Services are tailored to your needs. Start with Basic, completely FREE for low-frequency: 15min/request for image analysis, 200 chats/month with LLMs. Need more? Just $6.90 for Pro, pay only for what you consume, NO commitment to recurring subscription fees! Plus, each NEW device includes a FREE $6.90 Pro package! Top up as needed. Want to avoid fees altogether? Choose On-Premise. Just deploy and use with no additional costs! Specification MCU ESP32-S3 @240MHz 8MB PSRAM Built-in AI Processor Himax HX6538 (Cortex M55 + Ethos-U55) Camera OV5647 120° FOV Fixed Focal 3 meters Wi-Fi IEEE 802.11b/g/n-compliant 2.4GHz Band Wireless Range: Up to 100 meters (open space test) Bluetooth LE Bluetooth 5 Antenna Built-in Wi-Fi and BLE antenna Display Touchscreen with 1.45-inch, 412×412 resolution Microphone Single microphone Speaker 1W speaker output Wheel Supports scrolling up&down and button LED 1xRGB light for indication microSD Card Slot Supports up to 32GB FAT32 microSD card Flash 32MB Flash for ESP32-S3 16MB Flash for Himax HX6538 Extension Interface 1xGrove IIC interface 2x4 Female header(1xIIC, 2xGPIO, 2xGND, 1x3.3V_OUT, 1x5V_IN) USB-C 1x USB-C on the back(power supply only) 1x USB-C on the bottom(power supply and programming) Reset Button 1xRST button in the bottom hole Power Supply 5V DC power Battery 3.7V 400mAh Li-ion battery as backup power Operating Temperature 0 ~ 45°C Dimensions 69 x 65 x 20 mm Mounting Bracket Supports wall, desktop and bracket installation 1 x Universal wheel and base plate with adhesive 1 x 1/4\" Female adapter set Hardware Overview Support Various Mounting Methods It can be placed on a desktop or mounted on walls as a smart expansion. Or it can also be transformed into the head of a robot. Application Fun fact: Here at Seeed, Watcher has the nickname \"Nobody,\" symbolizing a robot with No Body. This conveys a powerful message: Give Watcher a body! Watcher can be a cool head for your robot! Others used it as: Customization - Shortest Path to Build AI Hardware The next gadget should be AI-powered. Hardware with built-in AI connected to LLMs is the trend! With SenseCAP Watcher, we've developed a revolutionary framework that brings powerful LLMs to the very edge of the physical world. This framework speeds up AI hardware prototyping. With our customization services, you can bring your AI hardware to life faster than ever before! Part List Watcher x1 Universal wheel and base plate with adhesive x1 1/4\" Female adapter set x1 USB Type-C cable x1 3*10mm screw x2"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-sensecap-watcher-w1",
+     "id": "gid://shopify/Product/15425251082564",
+     "list_price_range": {
+      "max": {
+       "amount": 9799,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9799,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_7a3902c7-16b3-40ac-a132-19e3bc00c6de.webp?v=1767603086"
+      }
+     ],
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "White Enclosure"
+        },
+        {
+         "label": "Clear Enclosure"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 7599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 7599,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Seeed Studio",
+      "SenseCAP"
+     ],
+     "title": "Seeed Studio SenseCAP Watcher W1 Clear Enclosure Physical AI Agent",
+     "url": "https://openelab.com/products/seeed-studio-sensecap-watcher-w1",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56209347051844:1",
+       "description": {
+        "html": "👁️🔊🧠 The SenseCAP Watcher is a powerful AI agent built on the advanced ESP32S3 platform ⚙️. It integrates the Himax WiseEye2 HX6538 AI chip 💡 featuring Arm Cortex-M55 & Ethos-U55, delivering exceptional performance in image processing 🖼️ and vector data analysis 📈. 📸🎤🔈 With its embedded camera, microphone, and speaker, SenseCAP Watcher can see, hear, and talk—bringing physical intelligence to life. 🧠✨ Thanks to the LLM-enabled SenseCraft suite, SenseCAP Watcher understands your commands 🎯, perceives its surroundings 🌍, and triggers smart actions 🔁 for seamless smart interaction. Feature SenseCAP Watcher Price Adjustment Announcement: After careful evaluation, the pricing of SenseCAP Watcher has been thoughtfully adjusted to make it even more accessible. 💬 Feature 1: Simply Speak Your Command Just speak to SenseCAP Watcher 🎙️ and tell it what to monitor. Whether it’s “Notify me when someone enters the room” or “Watch for my dog chewing paper,” it listens and acts. Command via Push to Talk 🟢 Or use the SenseCraft App 📱 You can easily send commands by Push to Talk or from SenseCraft App. 👁️ Feature 2: Understand What It Sees Powered by on-device AI models, SenseCAP Watcher detects people, pets, objects, and more. But what truly sets it apart is its LLM integration 🧠. Goes beyond detection: understands behaviors + context Examples: “Dog + playing ball, 0 people in room” 🐶⚽ “Person in DHL outfit arrived” 👕📦 Efficient hybrid architecture: On-device AI filters keyframes LLM analyzes only relevant scenes Reduces cost while boosting precision 💡 Constantly calling LLMs like ChatGPT incurs a high cost. Hence, we use the architecture of on-device AI + LLMs. The on-device AI model on Watcher detects the target, which is then analyzed by LLM to generate accurate and actionable insights. With the task \"tell me if the dog is tearing up paper\" when the on-device model detects dogs, this keyframe is sent to LLM for further analysis - is it tearing up paper? LLMs won't be triggered by people, cats, squirrel or others. This tremendously reduces LLMs' cost. 🔈 Feature 3: Respond via Voice SenseCAP Watcher doesn’t just observe—it talks back! Example scenario: Event: Someone picks up the pink keyboard 🎹 Reaction 1: Voice reply — “Good choice! Inspired by the Pink Royal Typewriter.” Reaction 2: Text alert to sales — “Someone’s interested in the latest keyboard!” Other use cases: “Stop, Cooper!” when dog tears tissues 🐾 “No smoking!” in restricted areas 🚭 🔌 Feature 4: Plug-In Power for Your Systems SenseCAP Watcher integrates seamlessly with your smart ecosystem: Triggers LED flashes 💡 Sends push notifications 📲 Connects to Home Assistant for contextual automation Detects people → lights on for reading 📖 Detects sleep mode → lights off 🌙 Add Watcher to Home Assistant Connected to IoT platform like Home Assistant, your Watcher acts as a behavior sensor, activating tailored actions in various contexts. For example, when it detects people, Watcher analyzes the situation and automatically triggers actions: lights on for reading and lights off for sleeping. When someone sleeping + dim the light More than a vision sensor, Watcher is extendable with other sensors to enable multi-modal sensing. On Watcher's back, the I2C is reserved to accommodate 100+ Grove sensors. This flexibility allows Watcher to integrate a wide range of data sources for thorough analysis and appropriate actions. You will be able to build applications like detect room temperature and adjust the AC accordingly - turn it to 22°C when you're in suits, or 26°C in shorts. Add Watcher to your Node-RED flow Just 3 blocks away, you can stream the detected results from your Watcher to any place on the internet via Node-RED, as easy as making a snap! Add Watcher to your Arduino | ESP32 and other hardware systems Wanna add an AI agent to popular MCUs and SBCs such as Arduino/ ESP32/ Raspberry Pi? Simply connect it to Watcher via UART or HTTP or USB, and you can explore the new frontier of intelligence. Feature 5: Give Your Watcher Unique Emotions SenseCAP Watcher adapts to your commands with unique \"modes.\" It is LISTENING to your instructions, then shifts to WATCHING mode to safeguard your designated space, etc. But the fun doesn't stop here! You can upload your own designs of emotions to give your Watcher a unique personality. Get a PNG file ready and upload it to Watcher within seconds! It is your call! Watcher's default emojis are inspired by C-3PO, paying tribute to one of our greatest helpers! You can easily upload yours in .PNG format. You can even custom design a unique UI (User Interface) for your SenseCAP Watcher. Our current UI is powered by Squareline. Feature 6: Open Source and On-premise Deployment. As an AI device, it is fundamental to respect privacy. And we embrace and implement two primary strategies in this nifty device. SenseCAP Watcher is open source, giving you full access to thoroughly understand how it works. It supports on-premise deployment. The backbone of SenseCAP Watcher is SenseCraft software suite, which is used to configure Watcher, interpret your commands, and access LLMs. Hence, everything is stored and running privately, ensuring that your models and data are not streamed to any public LLMs or public clouds. SenseCraft can run on Windows/ MacOS / Linux. Since SenseCraft contains LLMs, certain performance criteria are required for the computer, as follows. You can deploy SenseCraft on your spare computers. However, if you aim for applications requiring commercial-grade reliability and low-power consumption, the combination of SenseCAP Watchter + NVIDIA® Jetson AGX Orin™ is perfect for you! Compared to consumer-grade graphics cards (e.g. RTX 4090) for AI tasks, NVIDIA® Jetson AGX Orin™ stands out with key advantages: Industrial-grade reliability: Designed for industrial and commercial applications, Jetson AGX series boasts a longer MTBF (Mean Time Between Failures). Engineered for 24/7 operation, it offers superior reliability for round-the-clock applications compared to consumer graphics cards. Compact and low power: With embedded and edge computing applications in mind, Jetson AGX series are designed in a smaller form factor and consume 3+ times less power, compared to consumer graphics cards. Suitable for constrained spaces, Jetson AGX series generates less heat and helps reduce overall operating costs. This is crucial for embedded systems. Subscription? You Decide! SenseCraft AI Services are tailored to your needs. Start with Basic, completely FREE for low-frequency: 15min/request for image analysis, 200 chats/month with LLMs. Need more? Just $6.90 for Pro, pay only for what you consume, NO commitment to recurring subscription fees! Plus, each NEW device includes a FREE $6.90 Pro package! Top up as needed. Want to avoid fees altogether? Choose On-Premise. Just deploy and use with no additional costs! Specification MCU ESP32-S3 @240MHz 8MB PSRAM Built-in AI Processor Himax HX6538 (Cortex M55 + Ethos-U55) Camera OV5647 120° FOV Fixed Focal 3 meters Wi-Fi IEEE 802.11b/g/n-compliant 2.4GHz Band Wireless Range: Up to 100 meters (open space test) Bluetooth LE Bluetooth 5 Antenna Built-in Wi-Fi and BLE antenna Display Touchscreen with 1.45-inch, 412×412 resolution Microphone Single microphone Speaker 1W speaker output Wheel Supports scrolling up&down and button LED 1xRGB light for indication microSD Card Slot Supports up to 32GB FAT32 microSD card Flash 32MB Flash for ESP32-S3 16MB Flash for Himax HX6538 Extension Interface 1xGrove IIC interface 2x4 Female header(1xIIC, 2xGPIO, 2xGND, 1x3.3V_OUT, 1x5V_IN) USB-C 1x USB-C on the back(power supply only) 1x USB-C on the bottom(power supply and programming) Reset Button 1xRST button in the bottom hole Power Supply 5V DC power Battery 3.7V 400mAh Li-ion battery as backup power Operating Temperature 0 ~ 45°C Dimensions 69 x 65 x 20 mm Mounting Bracket Supports wall, desktop and bracket installation 1 x Universal wheel and base plate with adhesive 1 x 1/4\" Female adapter set Hardware Overview Support Various Mounting Methods It can be placed on a desktop or mounted on walls as a smart expansion. Or it can also be transformed into the head of a robot. Application Fun fact: Here at Seeed, Watcher has the nickname \"Nobody,\" symbolizing a robot with No Body. This conveys a powerful message: Give Watcher a body! Watcher can be a cool head for your robot! Others used it as: Customization - Shortest Path to Build AI Hardware The next gadget should be AI-powered. Hardware with built-in AI connected to LLMs is the trend! With SenseCAP Watcher, we've developed a revolutionary framework that brings powerful LLMs to the very edge of the physical world. This framework speeds up AI hardware prototyping. With our customization services, you can bring your AI hardware to life faster than ever before! Part List Watcher x1 Universal wheel and base plate with adhesive x1 1/4\" Female adapter set x1 USB Type-C cable x1 3*10mm screw x2"
+       },
+       "id": "gid://shopify/ProductVariant/56209347051844",
+       "list_price": {
+        "amount": 9799,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/3_3f28e971-89b0-4ae2-bcba-84902046d5e0.webp?v=1767603086"
+        }
+       ],
+       "options": [
+        {
+         "label": "Clear Enclosure",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 7599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-113991315",
+       "title": "Clear Enclosure"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56209347084612:1",
+       "description": {
+        "html": "👁️🔊🧠 The SenseCAP Watcher is a powerful AI agent built on the advanced ESP32S3 platform ⚙️. It integrates the Himax WiseEye2 HX6538 AI chip 💡 featuring Arm Cortex-M55 & Ethos-U55, delivering exceptional performance in image processing 🖼️ and vector data analysis 📈. 📸🎤🔈 With its embedded camera, microphone, and speaker, SenseCAP Watcher can see, hear, and talk—bringing physical intelligence to life. 🧠✨ Thanks to the LLM-enabled SenseCraft suite, SenseCAP Watcher understands your commands 🎯, perceives its surroundings 🌍, and triggers smart actions 🔁 for seamless smart interaction. Feature SenseCAP Watcher Price Adjustment Announcement: After careful evaluation, the pricing of SenseCAP Watcher has been thoughtfully adjusted to make it even more accessible. 💬 Feature 1: Simply Speak Your Command Just speak to SenseCAP Watcher 🎙️ and tell it what to monitor. Whether it’s “Notify me when someone enters the room” or “Watch for my dog chewing paper,” it listens and acts. Command via Push to Talk 🟢 Or use the SenseCraft App 📱 You can easily send commands by Push to Talk or from SenseCraft App. 👁️ Feature 2: Understand What It Sees Powered by on-device AI models, SenseCAP Watcher detects people, pets, objects, and more. But what truly sets it apart is its LLM integration 🧠. Goes beyond detection: understands behaviors + context Examples: “Dog + playing ball, 0 people in room” 🐶⚽ “Person in DHL outfit arrived” 👕📦 Efficient hybrid architecture: On-device AI filters keyframes LLM analyzes only relevant scenes Reduces cost while boosting precision 💡 Constantly calling LLMs like ChatGPT incurs a high cost. Hence, we use the architecture of on-device AI + LLMs. The on-device AI model on Watcher detects the target, which is then analyzed by LLM to generate accurate and actionable insights. With the task \"tell me if the dog is tearing up paper\" when the on-device model detects dogs, this keyframe is sent to LLM for further analysis - is it tearing up paper? LLMs won't be triggered by people, cats, squirrel or others. This tremendously reduces LLMs' cost. 🔈 Feature 3: Respond via Voice SenseCAP Watcher doesn’t just observe—it talks back! Example scenario: Event: Someone picks up the pink keyboard 🎹 Reaction 1: Voice reply — “Good choice! Inspired by the Pink Royal Typewriter.” Reaction 2: Text alert to sales — “Someone’s interested in the latest keyboard!” Other use cases: “Stop, Cooper!” when dog tears tissues 🐾 “No smoking!” in restricted areas 🚭 🔌 Feature 4: Plug-In Power for Your Systems SenseCAP Watcher integrates seamlessly with your smart ecosystem: Triggers LED flashes 💡 Sends push notifications 📲 Connects to Home Assistant for contextual automation Detects people → lights on for reading 📖 Detects sleep mode → lights off 🌙 Add Watcher to Home Assistant Connected to IoT platform like Home Assistant, your Watcher acts as a behavior sensor, activating tailored actions in various contexts. For example, when it detects people, Watcher analyzes the situation and automatically triggers actions: lights on for reading and lights off for sleeping. When someone sleeping + dim the light More than a vision sensor, Watcher is extendable with other sensors to enable multi-modal sensing. On Watcher's back, the I2C is reserved to accommodate 100+ Grove sensors. This flexibility allows Watcher to integrate a wide range of data sources for thorough analysis and appropriate actions. You will be able to build applications like detect room temperature and adjust the AC accordingly - turn it to 22°C when you're in suits, or 26°C in shorts. Add Watcher to your Node-RED flow Just 3 blocks away, you can stream the detected results from your Watcher to any place on the internet via Node-RED, as easy as making a snap! Add Watcher to your Arduino | ESP32 and other hardware systems Wanna add an AI agent to popular MCUs and SBCs such as Arduino/ ESP32/ Raspberry Pi? Simply connect it to Watcher via UART or HTTP or USB, and you can explore the new frontier of intelligence. Feature 5: Give Your Watcher Unique Emotions SenseCAP Watcher adapts to your commands with unique \"modes.\" It is LISTENING to your instructions, then shifts to WATCHING mode to safeguard your designated space, etc. But the fun doesn't stop here! You can upload your own designs of emotions to give your Watcher a unique personality. Get a PNG file ready and upload it to Watcher within seconds! It is your call! Watcher's default emojis are inspired by C-3PO, paying tribute to one of our greatest helpers! You can easily upload yours in .PNG format. You can even custom design a unique UI (User Interface) for your SenseCAP Watcher. Our current UI is powered by Squareline. Feature 6: Open Source and On-premise Deployment. As an AI device, it is fundamental to respect privacy. And we embrace and implement two primary strategies in this nifty device. SenseCAP Watcher is open source, giving you full access to thoroughly understand how it works. It supports on-premise deployment. The backbone of SenseCAP Watcher is SenseCraft software suite, which is used to configure Watcher, interpret your commands, and access LLMs. Hence, everything is stored and running privately, ensuring that your models and data are not streamed to any public LLMs or public clouds. SenseCraft can run on Windows/ MacOS / Linux. Since SenseCraft contains LLMs, certain performance criteria are required for the computer, as follows. You can deploy SenseCraft on your spare computers. However, if you aim for applications requiring commercial-grade reliability and low-power consumption, the combination of SenseCAP Watchter + NVIDIA® Jetson AGX Orin™ is perfect for you! Compared to consumer-grade graphics cards (e.g. RTX 4090) for AI tasks, NVIDIA® Jetson AGX Orin™ stands out with key advantages: Industrial-grade reliability: Designed for industrial and commercial applications, Jetson AGX series boasts a longer MTBF (Mean Time Between Failures). Engineered for 24/7 operation, it offers superior reliability for round-the-clock applications compared to consumer graphics cards. Compact and low power: With embedded and edge computing applications in mind, Jetson AGX series are designed in a smaller form factor and consume 3+ times less power, compared to consumer graphics cards. Suitable for constrained spaces, Jetson AGX series generates less heat and helps reduce overall operating costs. This is crucial for embedded systems. Subscription? You Decide! SenseCraft AI Services are tailored to your needs. Start with Basic, completely FREE for low-frequency: 15min/request for image analysis, 200 chats/month with LLMs. Need more? Just $6.90 for Pro, pay only for what you consume, NO commitment to recurring subscription fees! Plus, each NEW device includes a FREE $6.90 Pro package! Top up as needed. Want to avoid fees altogether? Choose On-Premise. Just deploy and use with no additional costs! Specification MCU ESP32-S3 @240MHz 8MB PSRAM Built-in AI Processor Himax HX6538 (Cortex M55 + Ethos-U55) Camera OV5647 120° FOV Fixed Focal 3 meters Wi-Fi IEEE 802.11b/g/n-compliant 2.4GHz Band Wireless Range: Up to 100 meters (open space test) Bluetooth LE Bluetooth 5 Antenna Built-in Wi-Fi and BLE antenna Display Touchscreen with 1.45-inch, 412×412 resolution Microphone Single microphone Speaker 1W speaker output Wheel Supports scrolling up&down and button LED 1xRGB light for indication microSD Card Slot Supports up to 32GB FAT32 microSD card Flash 32MB Flash for ESP32-S3 16MB Flash for Himax HX6538 Extension Interface 1xGrove IIC interface 2x4 Female header(1xIIC, 2xGPIO, 2xGND, 1x3.3V_OUT, 1x5V_IN) USB-C 1x USB-C on the back(power supply only) 1x USB-C on the bottom(power supply and programming) Reset Button 1xRST button in the bottom hole Power Supply 5V DC power Battery 3.7V 400mAh Li-ion battery as backup power Operating Temperature 0 ~ 45°C Dimensions 69 x 65 x 20 mm Mounting Bracket Supports wall, desktop and bracket installation 1 x Universal wheel and base plate with adhesive 1 x 1/4\" Female adapter set Hardware Overview Support Various Mounting Methods It can be placed on a desktop or mounted on walls as a smart expansion. Or it can also be transformed into the head of a robot. Application Fun fact: Here at Seeed, Watcher has the nickname \"Nobody,\" symbolizing a robot with No Body. This conveys a powerful message: Give Watcher a body! Watcher can be a cool head for your robot! Others used it as: Customization - Shortest Path to Build AI Hardware The next gadget should be AI-powered. Hardware with built-in AI connected to LLMs is the trend! With SenseCAP Watcher, we've developed a revolutionary framework that brings powerful LLMs to the very edge of the physical world. This framework speeds up AI hardware prototyping. With our customization services, you can bring your AI hardware to life faster than ever before! Part List Watcher x1 Universal wheel and base plate with adhesive x1 1/4\" Female adapter set x1 USB Type-C cable x1 3*10mm screw x2"
+       },
+       "id": "gid://shopify/ProductVariant/56209347084612",
+       "list_price": {
+        "amount": 9799,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/3-113991275-sensecap-watcher-w1-b-font_1.jpg?v=1767603086"
+        }
+       ],
+       "options": [
+        {
+         "label": "White Enclosure",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 7599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-113991275",
+       "title": "White Enclosure"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wireless-iot-wifi",
+       "id": "gid://shopify/Collection/651381604676",
+       "title": "Wireless & IoT - WiFi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-sonoff",
+       "id": "gid://shopify/Collection/663472767300",
+       "title": "Brands - SONOFF"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "sonoff-wall-switches-smart-panels",
+       "id": "gid://shopify/Collection/663472963908",
+       "title": "SONOFF – Wall Switches & Smart Panels"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Description SONOFF Fusion Series 1-Gang Wall Switch Enclosure | E1GSL is the official no-neutral-wire version of the SONOFF Fusion Series 1-gang wall switch enclosure. SONOFF designed E1GSL specifically for the SONOFF ZBMINIL2 in-wall retrofit module, helping installers fit a smart switch solution into standard wall boxes with a cleaner finished look. Official SONOFF information highlights a PC material housing, a clip-on installation design, a micro-arc button structure, and an ultra-slim enclosure body under 23 mm. SONOFF also states that E1GSL fits both 86-type mounting boxes and European round mounting boxes with 60 mm diameter. Features Official E1GSL no-neutral-wire wall switch enclosure for SONOFF ZBMINIL2 retrofit projects. Compatible with SONOFF ZBMINIL2 for smart wall-switch control where no neutral wire is available. PC material construction that SONOFF describes as fire-resistant, scratch-resistant, and durable. Clip-on installation design that simplifies wiring and reduces installation complexity. Micro-arc button design for smoother pressing feel and cleaner wall-switch appearance. Ultra-slim enclosure profile for shallower wall-box installations and retrofit use. Specifications Brand SONOFF Product Series Fusion Series Model E1GSL Product Type 1-gang wall switch enclosure Designed For SONOFF ZBMINIL2 Neutral Wire Requirement No neutral wire required Main Material PC Thickness Less than 23 mm Mounting Box Support 86-type mounting box and European round mounting box (60 mm) Dimensions 86 x 86 x 35.8 mm Color White Net Weight 57.5 g Applications Wall-switch retrofit projects using SONOFF ZBMINIL2 where no neutral wire is available. Smart home lighting upgrades that need a cleaner 1-gang switch finish on the wall. Installations in 86-type boxes or 60 mm European round wall boxes with limited internal depth. Fusion Series enclosure replacement or spare-part preparation for maintenance and renovation work. Product List 1 x SONOFF Fusion Series 1-Gang Wall Switch Enclosure E1GSL 1 x Official retail package Other Content This official image shows the compatible retrofit module relationship for E1GSL and confirms that SONOFF designed this enclosure for ZBMINIL2 installations. This official diagram explains the supported mounting-box formats for installers planning an E1GSL retrofit project. This official installation overview helps customers understand the enclosure assembly workflow before wiring and wall mounting. FAQ 1. What is SONOFF E1GSL used for?E1GSL is the official no-neutral-wire Fusion Series 1-gang wall switch enclosure designed for SONOFF ZBMINIL2 installations. 2. Does E1GSL require a neutral wire?No. Official SONOFF information identifies E1GSL as the no-neutral-wire version for ZBMINIL2. 3. Which SONOFF module is compatible with E1GSL?E1GSL is designed for SONOFF ZBMINIL2. 4. Which wall boxes can this enclosure fit?SONOFF lists 86-type mounting boxes and European round mounting boxes with 60 mm diameter. 5. What switch mode is required?Official FAQ information states that ZBMINIL2 should be set to pulse mode when used with the E1GSL enclosure."
+     },
+     "gift_card": false,
+     "handle": "e1gsl",
+     "id": "gid://shopify/Product/15634568216900",
+     "list_price_range": {
+      "max": {
+       "amount": 1052,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1052,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "SONOFF E1GSL pure product image on white background",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/gallery_01_hero_white_bg_ee37c980-92a1-4db1-b0bc-b118f9dfe34c.webp?v=1786349040"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1158,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1158,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Accessories",
+      "E1GSL",
+      "Fusion Series",
+      "No Neutral Wire",
+      "SONOFF",
+      "Wall Switch Enclosure",
+      "ZBMINIL2"
+     ],
+     "title": "SONOFF Fusion Series 1-Gang Wall Switch Enclosure | E1GSL",
+     "url": "https://openelab.com/products/e1gsl",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57089775796548:1",
+       "description": {
+        "html": "Description SONOFF Fusion Series 1-Gang Wall Switch Enclosure | E1GSL is the official no-neutral-wire version of the SONOFF Fusion Series 1-gang wall switch enclosure. SONOFF designed E1GSL specifically for the SONOFF ZBMINIL2 in-wall retrofit module, helping installers fit a smart switch solution into standard wall boxes with a cleaner finished look. Official SONOFF information highlights a PC material housing, a clip-on installation design, a micro-arc button structure, and an ultra-slim enclosure body under 23 mm. SONOFF also states that E1GSL fits both 86-type mounting boxes and European round mounting boxes with 60 mm diameter. Features Official E1GSL no-neutral-wire wall switch enclosure for SONOFF ZBMINIL2 retrofit projects. Compatible with SONOFF ZBMINIL2 for smart wall-switch control where no neutral wire is available. PC material construction that SONOFF describes as fire-resistant, scratch-resistant, and durable. Clip-on installation design that simplifies wiring and reduces installation complexity. Micro-arc button design for smoother pressing feel and cleaner wall-switch appearance. Ultra-slim enclosure profile for shallower wall-box installations and retrofit use. Specifications Brand SONOFF Product Series Fusion Series Model E1GSL Product Type 1-gang wall switch enclosure Designed For SONOFF ZBMINIL2 Neutral Wire Requirement No neutral wire required Main Material PC Thickness Less than 23 mm Mounting Box Support 86-type mounting box and European round mounting box (60 mm) Dimensions 86 x 86 x 35.8 mm Color White Net Weight 57.5 g Applications Wall-switch retrofit projects using SONOFF ZBMINIL2 where no neutral wire is available. Smart home lighting upgrades that need a cleaner 1-gang switch finish on the wall. Installations in 86-type boxes or 60 mm European round wall boxes with limited internal depth. Fusion Series enclosure replacement or spare-part preparation for maintenance and renovation work. Product List 1 x SONOFF Fusion Series 1-Gang Wall Switch Enclosure E1GSL 1 x Official retail package Other Content This official image shows the compatible retrofit module relationship for E1GSL and confirms that SONOFF designed this enclosure for ZBMINIL2 installations. This official diagram explains the supported mounting-box formats for installers planning an E1GSL retrofit project. This official installation overview helps customers understand the enclosure assembly workflow before wiring and wall mounting. FAQ 1. What is SONOFF E1GSL used for?E1GSL is the official no-neutral-wire Fusion Series 1-gang wall switch enclosure designed for SONOFF ZBMINIL2 installations. 2. Does E1GSL require a neutral wire?No. Official SONOFF information identifies E1GSL as the no-neutral-wire version for ZBMINIL2. 3. Which SONOFF module is compatible with E1GSL?E1GSL is designed for SONOFF ZBMINIL2. 4. Which wall boxes can this enclosure fit?SONOFF lists 86-type mounting boxes and European round mounting boxes with 60 mm diameter. 5. What switch mode is required?Official FAQ information states that ZBMINIL2 should be set to pulse mode when used with the E1GSL enclosure."
+       },
+       "id": "gid://shopify/ProductVariant/57089775796548",
+       "list_price": {
+        "amount": 1052,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/gallery_01_hero_white_bg_ee37c980-92a1-4db1-b0bc-b118f9dfe34c.webp?v=1786349040"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1158,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Sonoff-E1GSL",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

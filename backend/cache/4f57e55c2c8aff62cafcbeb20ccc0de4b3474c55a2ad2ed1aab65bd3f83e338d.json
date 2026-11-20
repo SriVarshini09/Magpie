@@ -1,0 +1,1574 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "3.7V LiPo JST-PH 2.0 battery"
+  }
+ },
+ "key": "4f57e55c2c8aff62cafcbeb20ccc0de4b3474c55a2ad2ed1aab65bd3f83e338d",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:08-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFF6TXpFeE9UTXpORGN5TkN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "WHEELTEC is a leading Chinese company specializing in autonomous driving and robotics education. They offer high-performance products in intelligent control and related components, maintaining a strong presence in the domestic online market and collaborating with companies like iFLYTEK and universities. WHEELTEC focuses on innovation and building a world-renowned brand through quality and service."
+       },
+       "handle": "brands-wheeltec",
+       "id": "gid://shopify/Collection/653265568068",
+       "title": "Brands-WHEELTEC"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "24V-Class LiFePO4 Battery Kit for Mobile Robotics WHEELTEC P760S is a compact rechargeable lithium iron phosphate battery kit for 24V-class robot chassis, mobile automation projects and other compatible DC systems. This listing is specifically the P760S 24V 6000mAh LiFePO4 battery plus 25.55V 2.8A charger configuration. It is not a magnetic-mount, coulomb-meter or higher-capacity bundle. What Is Included WHEELTEC P760S LiFePO4 battery pack, 24V-class / 6000mAh 25.55V 2.8A LiFePO4 charger Do not assume that a magnetic mounting base, coulomb meter, extension harness or other accessories shown with other supplier configurations are included with this battery-and-charger kit. Electrical and Mechanical Specifications Battery model P760S Product voltage class 24V Battery-pack nominal voltage 22.4V Rated capacity 6000mAh Maximum charge voltage 25.55V Cut-off voltage 16.5V Maximum continuous discharge current 15A Battery dimensions 177 x 146 x 42mm Battery weight Approx. 1.72kg Enclosure Metal enclosure Charging connector DC 4.0 x 1.7mm Discharge connector XT60U Voltage note: “24V” is the product voltage class. The supplier specification identifies the pack's nominal voltage as 22.4V and its fully charged voltage as 25.55V. Verify your controller, motor driver and DC-DC converter input range against the full battery voltage range, not the product name alone. Supplied 2.8A Charger Charger output 25.55V DC, 2.8A Charger AC input 110-240V AC, 50/60Hz DC connector DC 4.0 x 1.7mm male Charger dimensions 142 x 61 x 37mm Charger weight Approx. 0.5kg Status indicator Red while charging; green when charged Use the supplied LiFePO4 charger and its matching connector. Do not substitute a charger intended for another battery chemistry or a different charge-voltage range. Protection and Operating Limits The supplier material lists protection against short circuit, overcharge, over-discharge, over-current and out-of-range charge/discharge temperature. It also lists the following operating limits: Charging temperature 0 to 45°C Discharging temperature -20 to 60°C Storage temperature -20 to 45°C These limits are not an instruction to continuously charge or discharge at the extremes. The supplier notes that long-duration, high-current discharge in extreme-temperature conditions can affect cycle life. Choosing and Integrating the Battery For 24V robot platforms: confirm the system accepts the pack's 16.5-25.55V operating range and that expected continuous current remains within 15A. For motor loads: account for startup and stall current, not just the normal running current. A protection trip or voltage drop can occur if the application exceeds the battery's capability. For mounting: plan for the 177 x 146 x 42mm enclosure and approximately 1.72kg battery mass. This listed configuration does not include a magnetic base. For cabling: use a compatible XT60U connection for the load side; check polarity before connecting to a controller or power distribution system. Safe Use and Charging Inspect the housing, cable and connectors before each use. Do not use a damaged, swollen, leaking or overheated battery. Charge on a non-flammable surface in a ventilated area, within the stated charging-temperature range, and do not leave charging unattended. Disconnect the load before wiring changes or storage. Avoid shorting the XT60U output. For transport and shipment, follow the carrier and destination rules applicable to lithium battery products; do not assume any air-travel eligibility. FAQ Does this kit include a coulomb meter or magnetic base?No. This listing is the 24V 6000mAh P760S battery plus 2.8A charger configuration only. Can I use a different charger?Use only a charger designed for this LiFePO4 pack's 25.55V charging requirement and compatible DC connector. The supplied 2.8A charger is matched to this kit. Is it suitable for every “24V” device?No. Check the actual device voltage range, connector, polarity and startup/current demand. The battery's specified range is 16.5-25.55V, with up to 15A continuous discharge."
+     },
+     "gift_card": false,
+     "handle": "wheeltec-p760s-24v-6000mah-lifepo4",
+     "id": "gid://shopify/Product/15681919156548",
+     "list_price_range": {
+      "max": {
+       "amount": 12039,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12039,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "WHEELTEC P760S 24V 6000mAh LiFePO4 Battery with 2.8A Charger",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/O1CN01cyLPzT23EBvdvSM1N__723377223.jpg__1.jpg?v=1789896573"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 12039,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12039,
+       "currency": "USD"
+      }
+     },
+     "title": "WHEELTEC P760S 24V 6000mAh LiFePO4 Battery with 2.8A Charger",
+     "url": "https://openelab.com/products/wheeltec-p760s-24v-6000mah-lifepo4",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57301683929412:1",
+       "description": {
+        "html": "24V-Class LiFePO4 Battery Kit for Mobile Robotics WHEELTEC P760S is a compact rechargeable lithium iron phosphate battery kit for 24V-class robot chassis, mobile automation projects and other compatible DC systems. This listing is specifically the P760S 24V 6000mAh LiFePO4 battery plus 25.55V 2.8A charger configuration. It is not a magnetic-mount, coulomb-meter or higher-capacity bundle. What Is Included WHEELTEC P760S LiFePO4 battery pack, 24V-class / 6000mAh 25.55V 2.8A LiFePO4 charger Do not assume that a magnetic mounting base, coulomb meter, extension harness or other accessories shown with other supplier configurations are included with this battery-and-charger kit. Electrical and Mechanical Specifications Battery model P760S Product voltage class 24V Battery-pack nominal voltage 22.4V Rated capacity 6000mAh Maximum charge voltage 25.55V Cut-off voltage 16.5V Maximum continuous discharge current 15A Battery dimensions 177 x 146 x 42mm Battery weight Approx. 1.72kg Enclosure Metal enclosure Charging connector DC 4.0 x 1.7mm Discharge connector XT60U Voltage note: “24V” is the product voltage class. The supplier specification identifies the pack's nominal voltage as 22.4V and its fully charged voltage as 25.55V. Verify your controller, motor driver and DC-DC converter input range against the full battery voltage range, not the product name alone. Supplied 2.8A Charger Charger output 25.55V DC, 2.8A Charger AC input 110-240V AC, 50/60Hz DC connector DC 4.0 x 1.7mm male Charger dimensions 142 x 61 x 37mm Charger weight Approx. 0.5kg Status indicator Red while charging; green when charged Use the supplied LiFePO4 charger and its matching connector. Do not substitute a charger intended for another battery chemistry or a different charge-voltage range. Protection and Operating Limits The supplier material lists protection against short circuit, overcharge, over-discharge, over-current and out-of-range charge/discharge temperature. It also lists the following operating limits: Charging temperature 0 to 45°C Discharging temperature -20 to 60°C Storage temperature -20 to 45°C These limits are not an instruction to continuously charge or discharge at the extremes. The supplier notes that long-duration, high-current discharge in extreme-temperature conditions can affect cycle life. Choosing and Integrating the Battery For 24V robot platforms: confirm the system accepts the pack's 16.5-25.55V operating range and that expected continuous current remains within 15A. For motor loads: account for startup and stall current, not just the normal running current. A protection trip or voltage drop can occur if the application exceeds the battery's capability. For mounting: plan for the 177 x 146 x 42mm enclosure and approximately 1.72kg battery mass. This listed configuration does not include a magnetic base. For cabling: use a compatible XT60U connection for the load side; check polarity before connecting to a controller or power distribution system. Safe Use and Charging Inspect the housing, cable and connectors before each use. Do not use a damaged, swollen, leaking or overheated battery. Charge on a non-flammable surface in a ventilated area, within the stated charging-temperature range, and do not leave charging unattended. Disconnect the load before wiring changes or storage. Avoid shorting the XT60U output. For transport and shipment, follow the carrier and destination rules applicable to lithium battery products; do not assume any air-travel eligibility. FAQ Does this kit include a coulomb meter or magnetic base?No. This listing is the 24V 6000mAh P760S battery plus 2.8A charger configuration only. Can I use a different charger?Use only a charger designed for this LiFePO4 pack's 25.55V charging requirement and compatible DC connector. The supplied 2.8A charger is matched to this kit. Is it suitable for every “24V” device?No. Check the actual device voltage range, connector, polarity and startup/current demand. The battery's specified range is 16.5-25.55V, with up to 15A continuous discharge."
+       },
+       "id": "gid://shopify/ProductVariant/57301683929412",
+       "list_price": {
+        "amount": 12039,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/O1CN01cyLPzT23EBvdvSM1N__723377223.jpg__1.jpg?v=1789896573"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 12039,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Wheeltec-P760S-24V-6000mAh",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-1-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "M5Stack is a modular IoT and smart device development platform that combines compact design with powerful hardware. Featuring a high-performance microcontroller and multiple integrated modules, its plug-and-play architecture simplifies prototyping and development. Ideal for creating home automation systems, wearable tech, and smart sensor networks, M5Stack offers exceptional versatility for makers, educators, and professionals. Backed by comprehensive documentation, strong community support, and an extensive ecosystem of accessories, it provides everything needed to turn innovative ideas into reality with maximum efficiency. Want to learn how to build interactive IoT projects with this round AMOLED screen? Read our complete M5Stack StopWatch Hands-on Guide & Review."
+       },
+       "handle": "m5stack",
+       "id": "gid://shopify/Collection/647046988100",
+       "title": "M5Stack"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-m5stack",
+       "id": "gid://shopify/Collection/647304806724",
+       "title": "Brands - M5Stack"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your M5Stack projects with premium accessories crafted for versatility and user-friendliness. These accessories offer essential tools to expand the capabilities of your M5Stack development kits. Ideal for creating IoT applications, smart devices, and interactive projects, they are simple to integrate and come with thorough documentation and community support. Unleash your creativity and simplify your development process with M5Stack accessories."
+       },
+       "handle": "m5stack-accessory",
+       "id": "gid://shopify/Collection/648141701444",
+       "title": "M5Stack - Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The M5Stack Atomic Battery Base is a compact rechargeable power supply module specifically designed for the M5Stack Atom series. It provides reliable power for your M5Stack projects, featuring a 200mAh lithium battery with a stable 5V boosted output, making it perfect for IoT and portable applications. Utilizing the ETA9085E10 boost converter and the LGS4056HDA linear charging chip, the M5Stack Battery Base provides safe and efficient charging. It includes a battery voltage detection circuit and LED level indicators for real-time monitoring. The onboard DIP switch allows for easy toggling between charging and boost modes, which is ideal for rapid prototyping and mobile development with M5Stack devices. Key Features Designed specifically for the M5Stack Atom series ETA9085E10 high-efficiency boost converter LGS4056HDA linear charging management chip Built-in 200mAh lithium rechargeable battery LED indicators for battery level and charging status DIP switch for convenient switching between boost and charging modes Technical Specifications Specification Parameter Charging/Discharging Chip LGS4056HDA Boost Converter Chip ETA9085E10 Battery Indicator 4-level red LED Charging Indicator Blue (charging), Green (full) Battery Capacity 3.7V @ 200mAh Voltage Detection Circuit Included (divider-based) Charging Current 5V @ 223mA Boost Output Current Max 5V @ 300mA Standby Current 4.2V @ 2.55µA Operating Current 4.2V @ 39.55mA Temperature Range 0°C ~ 40°C Product Size 24.0 x 24.0 x 23.95 mm Product Weight 9.4g Package Size 47.0 x 46.0 x 27.0 mm Gross Weight 15.8g Applications Power source for M5Stack IoT devices Portable devices powered by M5Stack Mobile development and testing environments Embedded systems integrating the M5Stack Atom Includes 1 × M5Stack Atomic Battery Base Compatibility Note This M5Stack Battery Base is compatible with most Atom series products. If used with M5Stack Atom Echo Base, cut all right-side pins. If used with M5Stack Atom-Echo, cut the G33 pin.In both cases, it acts as a power supply only and cannot read battery voltage. Charging/Discharging Instructions Reference M5Stack Atomic Battery Base (200mAh) ETA9085E10"
+     },
+     "gift_card": false,
+     "handle": "m5stack-atomic-battery-base-200mah",
+     "id": "gid://shopify/Product/15170967830852",
+     "list_price_range": {
+      "max": {
+       "amount": 1102,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1102,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/M5Stack_Atomic_Battery_Base_200mAh_-2.webp?v=1750820120"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 699,
+       "currency": "USD"
+      }
+     },
+     "title": "M5Stack Atomic Battery Base (200mAh)",
+     "url": "https://openelab.com/products/m5stack-atomic-battery-base-200mah",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55132605350212:1",
+       "description": {
+        "html": "The M5Stack Atomic Battery Base is a compact rechargeable power supply module specifically designed for the M5Stack Atom series. It provides reliable power for your M5Stack projects, featuring a 200mAh lithium battery with a stable 5V boosted output, making it perfect for IoT and portable applications. Utilizing the ETA9085E10 boost converter and the LGS4056HDA linear charging chip, the M5Stack Battery Base provides safe and efficient charging. It includes a battery voltage detection circuit and LED level indicators for real-time monitoring. The onboard DIP switch allows for easy toggling between charging and boost modes, which is ideal for rapid prototyping and mobile development with M5Stack devices. Key Features Designed specifically for the M5Stack Atom series ETA9085E10 high-efficiency boost converter LGS4056HDA linear charging management chip Built-in 200mAh lithium rechargeable battery LED indicators for battery level and charging status DIP switch for convenient switching between boost and charging modes Technical Specifications Specification Parameter Charging/Discharging Chip LGS4056HDA Boost Converter Chip ETA9085E10 Battery Indicator 4-level red LED Charging Indicator Blue (charging), Green (full) Battery Capacity 3.7V @ 200mAh Voltage Detection Circuit Included (divider-based) Charging Current 5V @ 223mA Boost Output Current Max 5V @ 300mA Standby Current 4.2V @ 2.55µA Operating Current 4.2V @ 39.55mA Temperature Range 0°C ~ 40°C Product Size 24.0 x 24.0 x 23.95 mm Product Weight 9.4g Package Size 47.0 x 46.0 x 27.0 mm Gross Weight 15.8g Applications Power source for M5Stack IoT devices Portable devices powered by M5Stack Mobile development and testing environments Embedded systems integrating the M5Stack Atom Includes 1 × M5Stack Atomic Battery Base Compatibility Note This M5Stack Battery Base is compatible with most Atom series products. If used with M5Stack Atom Echo Base, cut all right-side pins. If used with M5Stack Atom-Echo, cut the G33 pin.In both cases, it acts as a power supply only and cannot read battery voltage. Charging/Discharging Instructions Reference M5Stack Atomic Battery Base (200mAh) ETA9085E10"
+       },
+       "id": "gid://shopify/ProductVariant/55132605350212",
+       "list_price": {
+        "amount": 1102,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/M5Stack_Atomic_Battery_Base_200mAh_-2.webp?v=1750820120"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 699,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "M5-A151",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "☀️ Solar LiPo Charger – Ultra-Efficient & Plug-and-Play The Solar LiPo Charger is a compact, intelligent charging module for 3.7V LiPo/Li-ion batteries. Designed for IoT sensors, solar gadgets, and emergency packs, it combines solar-optimized charging, robust safety protections, and industrial-grade durability. With its plug-and-play JST connectors and ultra-compact size (33 × 33 × 12 mm), it’s the perfect solution for eco-conscious makers and engineers. 🔑 Features 🌞 Solar-Optimized Charging: Input Voltage: 4.4–6V (solar/USB). Compatible with 1.5V–6V solar panels (e.g., 1.5V/250mA). 500mA max charge current with auto-shutdown at 4.2V. 🛡️ Safety & Reliability: Reverse-polarity protection. Tri-color LED status: Blinking Red = No battery. Solid Red = Charging. Green = Fully charged. 🔌 Plug-and-Play Integration: JST 2.0 connectors for solar panels and batteries. No programming required. 📏 Compact Design: Fits drones, sensors, portable chargers. Operating Temp: -40°C to +85°C. 📊 Technical Specifications Parameter Specification Input Voltage 4.4–6V (Solar/USB) Max Charge Current 500mA Cutoff Voltage 4.2V ±1% Compatibility 3.7V LiPo/Li-ion batteries Operating Temp -40°C to +85°C Dimensions 33 × 33 × 12 mm 🎯 Applications 📡 IoT Sensor Networks: Power soil moisture/temperature loggers. 🏕️ Off-Grid Gadgets: Solar garden lights, camping gear, emergency packs. 🔋 Portable Chargers: Recharge phones or small devices (USB 5V/500mA). 📦 Recommended Bundles Solar Panel: 1.5V/250mA for consistent harvesting. Battery: 3.7V LiPo 1000mAh for extended runtime. 📦 Package Includes 1 × Solar LiPo Charger Module ⚙️ Documents Wiki doc Schematic"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-solar-lipo-charger-protection",
+     "id": "gid://shopify/Product/15393897742660",
+     "list_price_range": {
+      "max": {
+       "amount": 889,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 889,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/24_7563bfef-ea03-4e74-b0b6-7111eccfcdc3.webp?v=1765172418"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 889,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 889,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board"
+     ],
+     "title": "DFRobot Solar LiPo Charger 3.7V 500mA with Reverse Polarity Protection",
+     "url": "https://openelab.com/products/dfrobot-solar-lipo-charger-protection",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56075451105604:1",
+       "description": {
+        "html": "☀️ Solar LiPo Charger – Ultra-Efficient & Plug-and-Play The Solar LiPo Charger is a compact, intelligent charging module for 3.7V LiPo/Li-ion batteries. Designed for IoT sensors, solar gadgets, and emergency packs, it combines solar-optimized charging, robust safety protections, and industrial-grade durability. With its plug-and-play JST connectors and ultra-compact size (33 × 33 × 12 mm), it’s the perfect solution for eco-conscious makers and engineers. 🔑 Features 🌞 Solar-Optimized Charging: Input Voltage: 4.4–6V (solar/USB). Compatible with 1.5V–6V solar panels (e.g., 1.5V/250mA). 500mA max charge current with auto-shutdown at 4.2V. 🛡️ Safety & Reliability: Reverse-polarity protection. Tri-color LED status: Blinking Red = No battery. Solid Red = Charging. Green = Fully charged. 🔌 Plug-and-Play Integration: JST 2.0 connectors for solar panels and batteries. No programming required. 📏 Compact Design: Fits drones, sensors, portable chargers. Operating Temp: -40°C to +85°C. 📊 Technical Specifications Parameter Specification Input Voltage 4.4–6V (Solar/USB) Max Charge Current 500mA Cutoff Voltage 4.2V ±1% Compatibility 3.7V LiPo/Li-ion batteries Operating Temp -40°C to +85°C Dimensions 33 × 33 × 12 mm 🎯 Applications 📡 IoT Sensor Networks: Power soil moisture/temperature loggers. 🏕️ Off-Grid Gadgets: Solar garden lights, camping gear, emergency packs. 🔋 Portable Chargers: Recharge phones or small devices (USB 5V/500mA). 📦 Recommended Bundles Solar Panel: 1.5V/250mA for consistent harvesting. Battery: 3.7V LiPo 1000mAh for extended runtime. 📦 Package Includes 1 × Solar LiPo Charger Module ⚙️ Documents Wiki doc Schematic"
+       },
+       "id": "gid://shopify/ProductVariant/56075451105604",
+       "list_price": {
+        "amount": 889,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/24_7563bfef-ea03-4e74-b0b6-7111eccfcdc3.webp?v=1765172418"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 889,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0264",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "M5Stack is a modular IoT and smart device development platform that combines compact design with powerful hardware. Featuring a high-performance microcontroller and multiple integrated modules, its plug-and-play architecture simplifies prototyping and development. Ideal for creating home automation systems, wearable tech, and smart sensor networks, M5Stack offers exceptional versatility for makers, educators, and professionals. Backed by comprehensive documentation, strong community support, and an extensive ecosystem of accessories, it provides everything needed to turn innovative ideas into reality with maximum efficiency. Want to learn how to build interactive IoT projects with this round AMOLED screen? Read our complete M5Stack StopWatch Hands-on Guide & Review."
+       },
+       "handle": "m5stack",
+       "id": "gid://shopify/Collection/647046988100",
+       "title": "M5Stack"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-m5stack",
+       "id": "gid://shopify/Collection/647304806724",
+       "title": "Brands - M5Stack"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "M5Stack Modules are versatile, stackable components designed for M5Stack development kits, offering limitless possibilities for your projects. These plug-and-play modules facilitate easy integration, allowing for rapid prototyping and development of IoT applications, automation systems, and more. With extensive documentation and a supportive community, M5Stack Modules empower your innovation."
+       },
+       "handle": "m5stack-module",
+       "id": "gid://shopify/Collection/648141930820",
+       "title": "M5Stack - Modules"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Description The M5Stack Battery Module 13.2 is a 1500mAh battery module for the M5Stack stackable module series. It provides high-capacity lithium battery expansion for projects that need longer runtime in a compact stacked form factor. This stackable battery expansion module integrates a Seiko protection board with a higher cutoff protection voltage to help prevent overcharge and over-discharge. Multiple battery modules can be stacked to extend device battery life. Official test information: The battery has passed multiple safety tests. Official laboratory data lists 791mA charging current with about 110 minutes to full charge using Basic plus Module13.2 Battery, and 330mA discharge current with about 265 minutes of discharge duration using Basic plus Module13.2 Battery plus M5GO BOTTOM under the stated test setup. Features 1500mAh battery module for M5Stack stackable systems. Integrated Seiko protection board helps prevent overcharge and over-discharge. Supports stacking multiple modules to extend battery life. Battery passed multiple official safety tests. Compact stackable battery expansion for portable M5Stack projects. Specifications Item Parameter Nominal capacity 1500mAh (0.2C) Nominal voltage 3.7V Charging voltage 4.2V Discharge cutoff 3.0V Charging current Standard charging: 0.2C (300mA); fast charging: 0.8C (1200mA) Max charge/discharge current 0.8C (1200mA) Internal resistance <=150mOhm Cycle life >=300 cycles Operating temperature Charging: 5 C to 45 C; discharging: -10 C to 55 C Size 54.0 x 54.0 x 19.7mm Weight 43.3g Package size 132.0 x 95.0 x 20.0mm Gross weight 63.7g Applications Battery expansion for M5Stack stackable systems Longer runtime for portable M5Stack projects Backup power expansion for sensor and controller prototypes Product List 1 x Module13.2 Battery Other Content Review the official documentation and model size reference before mechanical integration. The M5Stack Battery Module 13.2 is intended for projects that need a 1500mAh battery module and stackable battery expansion without changing the module footprint. Resources Official documentation Model size reference FAQ What is this module used for? It is used to add battery expansion to M5Stack stackable systems, especially when a portable project needs longer runtime. Can multiple modules be stacked? Yes. The official description states that multiple battery modules can be stacked to significantly extend device battery life. What protection does the battery include? It integrates a Seiko protection board designed to help prevent overcharge and over-discharge for safer operation."
+     },
+     "gift_card": false,
+     "handle": "m5stack-battery-module-13-1500mah",
+     "id": "gid://shopify/Product/15380003782980",
+     "list_price_range": {
+      "max": {
+       "amount": 1784,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1784,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/10_1200x1200_496e70b0-2e14-4d70-ae0b-db419fb6ce73.jpg?v=1764050695"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1340,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1340,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Extention"
+     ],
+     "title": "M5stack Battery Module 13.2 (1500mAh)",
+     "url": "https://openelab.com/products/m5stack-battery-module-13-1500mah",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55999368659268:1",
+       "description": {
+        "html": "Description The M5Stack Battery Module 13.2 is a 1500mAh battery module for the M5Stack stackable module series. It provides high-capacity lithium battery expansion for projects that need longer runtime in a compact stacked form factor. This stackable battery expansion module integrates a Seiko protection board with a higher cutoff protection voltage to help prevent overcharge and over-discharge. Multiple battery modules can be stacked to extend device battery life. Official test information: The battery has passed multiple safety tests. Official laboratory data lists 791mA charging current with about 110 minutes to full charge using Basic plus Module13.2 Battery, and 330mA discharge current with about 265 minutes of discharge duration using Basic plus Module13.2 Battery plus M5GO BOTTOM under the stated test setup. Features 1500mAh battery module for M5Stack stackable systems. Integrated Seiko protection board helps prevent overcharge and over-discharge. Supports stacking multiple modules to extend battery life. Battery passed multiple official safety tests. Compact stackable battery expansion for portable M5Stack projects. Specifications Item Parameter Nominal capacity 1500mAh (0.2C) Nominal voltage 3.7V Charging voltage 4.2V Discharge cutoff 3.0V Charging current Standard charging: 0.2C (300mA); fast charging: 0.8C (1200mA) Max charge/discharge current 0.8C (1200mA) Internal resistance <=150mOhm Cycle life >=300 cycles Operating temperature Charging: 5 C to 45 C; discharging: -10 C to 55 C Size 54.0 x 54.0 x 19.7mm Weight 43.3g Package size 132.0 x 95.0 x 20.0mm Gross weight 63.7g Applications Battery expansion for M5Stack stackable systems Longer runtime for portable M5Stack projects Backup power expansion for sensor and controller prototypes Product List 1 x Module13.2 Battery Other Content Review the official documentation and model size reference before mechanical integration. The M5Stack Battery Module 13.2 is intended for projects that need a 1500mAh battery module and stackable battery expansion without changing the module footprint. Resources Official documentation Model size reference FAQ What is this module used for? It is used to add battery expansion to M5Stack stackable systems, especially when a portable project needs longer runtime. Can multiple modules be stacked? Yes. The official description states that multiple battery modules can be stacked to significantly extend device battery life. What protection does the battery include? It integrates a Seiko protection board designed to help prevent overcharge and over-discharge for safer operation."
+       },
+       "id": "gid://shopify/ProductVariant/55999368659268",
+       "list_price": {
+        "amount": 1784,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/10_1200x1200_496e70b0-2e14-4d70-ae0b-db419fb6ce73.jpg?v=1764050695"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1340,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "M5-M120",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "M5Stack is a modular IoT and smart device development platform that combines compact design with powerful hardware. Featuring a high-performance microcontroller and multiple integrated modules, its plug-and-play architecture simplifies prototyping and development. Ideal for creating home automation systems, wearable tech, and smart sensor networks, M5Stack offers exceptional versatility for makers, educators, and professionals. Backed by comprehensive documentation, strong community support, and an extensive ecosystem of accessories, it provides everything needed to turn innovative ideas into reality with maximum efficiency. Want to learn how to build interactive IoT projects with this round AMOLED screen? Read our complete M5Stack StopWatch Hands-on Guide & Review."
+       },
+       "handle": "m5stack",
+       "id": "gid://shopify/Collection/647046988100",
+       "title": "M5Stack"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-m5stack",
+       "id": "gid://shopify/Collection/647304806724",
+       "title": "Brands - M5Stack"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "M5Stack Modules are versatile, stackable components designed for M5Stack development kits, offering limitless possibilities for your projects. These plug-and-play modules facilitate easy integration, allowing for rapid prototyping and development of IoT applications, automation systems, and more. With extensive documentation and a supportive community, M5Stack Modules empower your innovation."
+       },
+       "handle": "m5stack-module",
+       "id": "gid://shopify/Collection/648141930820",
+       "title": "M5Stack - Modules"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "🔋 BATTERY Module: Power Up Your Prototypes! Need more juice for your M5GO or Basic setup? We've got just the thing! The BATTERY is a compact extension module featuring a 750mAh lithium polymer battery — perfect for powering up your demos and prototypes that demand longer runtime. ⚡ 🔄 Stack & Expand The beauty of LiPo batteries is their stackability! With the BATTERY module, you can layer up to extend battery life and keep your project running smoothly. 🔧🔋 ⚠️ Safety First Lithium polymer batteries are powerful — but they need care. Here's what to watch out for: 🚫 Overcharging 🚫 Over-discharging 🌡️ Overheating ⚡ Short-circuiting 🧱 Crushing or puncturing These risks can lead to serious damage like pouch rupture, electrolyte leakage, or even fire. 🔥 🛡️ Built-In Protection To keep you safe, every battery we offer includes a protection circuit board. But please remember: handle with care when integrating LiPo batteries into your projects. 🧯 🔌 Easy Integration Once stacked beneath your M5 controller, the positive pole of the battery connects directly to the VBAT pin via the IP5306 power management chip — ensuring smooth and reliable power delivery. 🔗 Product Features 750mAh High-Capacity Battery Includes 1x M5Stack BATTERY Module Specification Resources Parameter Net weight 24g Gross weight 36g Product Size 54*54*14mm Package Size 60*57*17mm"
+     },
+     "gift_card": false,
+     "handle": "m5stack-battery-module-esp32-core",
+     "id": "gid://shopify/Product/15353795215684",
+     "list_price_range": {
+      "max": {
+       "amount": 1193,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1193,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/media_4_d11fc41d-bcc5-40a7-b517-4a0a79bd5cf1.webp?v=1787121499"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1099,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Extention"
+     ],
+     "title": "M5Stack Battery Module for ESP32 Core Development Kit",
+     "url": "https://openelab.com/products/m5stack-battery-module-esp32-core",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55876348576068:1",
+       "description": {
+        "html": "🔋 BATTERY Module: Power Up Your Prototypes! Need more juice for your M5GO or Basic setup? We've got just the thing! The BATTERY is a compact extension module featuring a 750mAh lithium polymer battery — perfect for powering up your demos and prototypes that demand longer runtime. ⚡ 🔄 Stack & Expand The beauty of LiPo batteries is their stackability! With the BATTERY module, you can layer up to extend battery life and keep your project running smoothly. 🔧🔋 ⚠️ Safety First Lithium polymer batteries are powerful — but they need care. Here's what to watch out for: 🚫 Overcharging 🚫 Over-discharging 🌡️ Overheating ⚡ Short-circuiting 🧱 Crushing or puncturing These risks can lead to serious damage like pouch rupture, electrolyte leakage, or even fire. 🔥 🛡️ Built-In Protection To keep you safe, every battery we offer includes a protection circuit board. But please remember: handle with care when integrating LiPo batteries into your projects. 🧯 🔌 Easy Integration Once stacked beneath your M5 controller, the positive pole of the battery connects directly to the VBAT pin via the IP5306 power management chip — ensuring smooth and reliable power delivery. 🔗 Product Features 750mAh High-Capacity Battery Includes 1x M5Stack BATTERY Module Specification Resources Parameter Net weight 24g Gross weight 36g Product Size 54*54*14mm Package Size 60*57*17mm"
+       },
+       "id": "gid://shopify/ProductVariant/55876348576068",
+       "list_price": {
+        "amount": 1193,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/media_4_d11fc41d-bcc5-40a7-b517-4a0a79bd5cf1.webp?v=1787121499"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1099,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "M5-M002",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-2-2"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "LILYGO is a technology company that specialises in developing, manufacturing and distributing IoT (Internet of Things) products. It is renowned for its versatile development boards, which are widely used in applications such as remote monitoring, smart metering and wearable devices. Many of its products are based on ESP32 or RP2040 technology and support 4G LTE, NB-IoT, GSM and GNSS. LILYGO openly shares documentation and sample code with the open-source community to support developers worldwide."
+       },
+       "handle": "brands-lilygo",
+       "id": "gid://shopify/Collection/647304905028",
+       "title": "Brands - LILYGO"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "LILYGO develops and manufactures innovative hardware products, specializing in a wide range of Internet of Things (IoT) and embedded device solutions."
+       },
+       "handle": "lilygo",
+       "id": "gid://shopify/Collection/648142455108",
+       "title": "LILYGO"
+      },
+      {
+       "description": {
+        "html": "LILYGO's Accessory series offers add-ons like expansion boards for extra I/O and sensors, displays (touchscreens and OLED), sensors (temperature, motion), wireless modules (Wi-Fi and Bluetooth), power supplies, and enclosures, all affordable and ideal for IoT projects."
+       },
+       "handle": "lilygo-accessory",
+       "id": "gid://shopify/Collection/648144093508",
+       "title": "LILYGO - Accessory"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Introducing the LILYGO T-BAT 18650 Battery Holder, an essential component for your portable power solutions. This versatile module features the efficient CN3065 power management chip, delivering a consistent and stable 5V output, perfect for powering a wide array of electronic devices. It’s important to note that this product is not equipped with a Battery Management System (BMS); therefore, we highly recommend using protected 18650 batteries to ensure optimal safety and reliability in all your projects. Features Advanced Power Management: Utilizes the CN3065 charging management chip for stable and efficient power delivery and charging. Flexible Power Input: Supports multiple charging methods including USB, solar panel (4.5-6V), and direct 3.7V battery input, offering adaptability for diverse applications. Dual USB Power Output: Provides a robust 5V / 1A output via two USB ports, capable of directly powering smartphones and various small electronic devices. Intuitive LED Indicators: Features clear LED indicators: red for charging, green for a full charge, and a separate green LED for power output. 18650 Battery Compatibility: Designed for use with 3.7V rechargeable lithium 18650 batteries, making it an ideal choice for custom power supply projects. Specifications Parameter Details Chipset CN3065 Power Management Chip Input Interfaces Micro USB, 3.7V BAT input (2Pin 2.0MM), Solar IN (4.5-6V) Output Interfaces USB output 5V / 1A (USB female port), USB output 2Pin 2.0MM Battery Support 18650 / 3.7V rechargeable lithium battery LED Indicators CHG (Red), DONE (Green), Power ON (Green) Optional Accessories 30CM Micro USB Charging Cable Applications DIY Electronics Projects: Power microcontrollers, Raspberry Pi setups, and other small electronic circuits. Sustainable Solar Power Systems: Ideal for creating portable or off-grid solar charging solutions using its Solar IN input. Custom Portable Power Banks: Easily build a compact and efficient power bank with 18650 batteries. Outdoor Device Power: Perfect for powering LED lighting, wireless sensors, and other low-power devices in remote or outdoor environments. Includes LILYGO T-BAT 18650 Battery Holder x1 Micro USB Charging Cable x1 (30CM) Important Notice This product does not include BMS protection. We strongly advise using protected 18650 batteries for enhanced safety."
+     },
+     "gift_card": false,
+     "handle": "lilygo-t-bat-18650-battery-holder",
+     "id": "gid://shopify/Product/15286743335236",
+     "list_price_range": {
+      "max": {
+       "amount": 766,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 766,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LILYGO_T-BAT_18650_Battery_Hold-01_800x800_df3a5beb-0087-407e-83f4-ad94d9f2deba.webp?v=1758266451"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 766,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 766,
+       "currency": "USD"
+      }
+     },
+     "title": "LILYGO T-BAT 18650 Battery Hold",
+     "url": "https://openelab.com/products/lilygo-t-bat-18650-battery-holder",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55659109908804:1",
+       "description": {
+        "html": "Introducing the LILYGO T-BAT 18650 Battery Holder, an essential component for your portable power solutions. This versatile module features the efficient CN3065 power management chip, delivering a consistent and stable 5V output, perfect for powering a wide array of electronic devices. It’s important to note that this product is not equipped with a Battery Management System (BMS); therefore, we highly recommend using protected 18650 batteries to ensure optimal safety and reliability in all your projects. Features Advanced Power Management: Utilizes the CN3065 charging management chip for stable and efficient power delivery and charging. Flexible Power Input: Supports multiple charging methods including USB, solar panel (4.5-6V), and direct 3.7V battery input, offering adaptability for diverse applications. Dual USB Power Output: Provides a robust 5V / 1A output via two USB ports, capable of directly powering smartphones and various small electronic devices. Intuitive LED Indicators: Features clear LED indicators: red for charging, green for a full charge, and a separate green LED for power output. 18650 Battery Compatibility: Designed for use with 3.7V rechargeable lithium 18650 batteries, making it an ideal choice for custom power supply projects. Specifications Parameter Details Chipset CN3065 Power Management Chip Input Interfaces Micro USB, 3.7V BAT input (2Pin 2.0MM), Solar IN (4.5-6V) Output Interfaces USB output 5V / 1A (USB female port), USB output 2Pin 2.0MM Battery Support 18650 / 3.7V rechargeable lithium battery LED Indicators CHG (Red), DONE (Green), Power ON (Green) Optional Accessories 30CM Micro USB Charging Cable Applications DIY Electronics Projects: Power microcontrollers, Raspberry Pi setups, and other small electronic circuits. Sustainable Solar Power Systems: Ideal for creating portable or off-grid solar charging solutions using its Solar IN input. Custom Portable Power Banks: Easily build a compact and efficient power bank with 18650 batteries. Outdoor Device Power: Perfect for powering LED lighting, wireless sensors, and other low-power devices in remote or outdoor environments. Includes LILYGO T-BAT 18650 Battery Holder x1 Micro USB Charging Cable x1 (30CM) Important Notice This product does not include BMS protection. We strongly advise using protected 18650 batteries for enhanced safety."
+       },
+       "id": "gid://shopify/ProductVariant/55659109908804",
+       "list_price": {
+        "amount": 766,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LILYGO_T-BAT_18650_Battery_Hold-01_800x800_df3a5beb-0087-407e-83f4-ad94d9f2deba.webp?v=1758266451"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 766,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "LILYGO-H435-L743",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Robotic is a complete product series that includes robotic arms, cars, humanoid robots, kits, and accessories. Tailored for research, education, and automation, the Robotic lineup features modular, scalable, and intelligent hardware solutions that enhance robotics development and integration across various industries."
+       },
+       "handle": "robotic",
+       "id": "gid://shopify/Collection/648243282244",
+       "title": "Robotic"
+      },
+      {
+       "description": {
+        "html": "Unitree Robotics is a globally recognized civilian robotics company dedicated to the R&D, production, and sales of high-performance general-purpose legged and humanoid robots, along with six-axis manipulators. The company has been invited to prestigious events such as the 2021 CCTV Spring Festival Gala, the opening ceremony of the 2022 Winter Games, the 2023 Super Bowl, the 19th Asian Games, the 4th Asian Para Games, and the 2025 Year of the Snake CCTV Spring Festival Gala. Unitree has also received extensive coverage through interviews and reports by CCTV and other major media outlets. Unitree Robotics was the first in the world to publicly retail high-performance quadruped robots and to achieve industry landing, leading global sales for several years."
+       },
+       "handle": "brands-unitree",
+       "id": "gid://shopify/Collection/651380031812",
+       "title": "Brands - Unitree"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "robotic-accessories",
+       "id": "gid://shopify/Collection/653565460804",
+       "title": "Robotic - Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Unitree Go1 Battery 6000mAh and Charger Power Adapter is an accessory listing for the Unitree Go1 quadruped robot. Choose the Standard range 6000mAh battery when you need a spare or replacement Go1 battery, or choose Charger and Power Adapter when you need the charging accessory set only. The official Unitree Go1 battery parameters list model GO1-BT03, 6000mAh / 133.2Wh rated capacity, DC25.2V charge limit voltage, and 151.2W maximum charging power. This page is not a robot package and does not include the Unitree Go1 robot. Features Two selectable accessory options - Choose either the Go1 standard battery or the charger and power adapter set from the Shopify variant selector. Official 6000mAh battery parameters - Unitree lists the standard Go1 battery at 6000mAh and 133.2Wh. GO1-BT03 battery model - The official parameter page identifies the Go1 battery model as GO1-BT03. Polymer lithium-ion battery - Unitree specifies the battery type as polymer lithium-ion. DC25.2V charge limit voltage - Verified from the official Unitree Go1 battery parameter page. 151.2W maximum charging power - Suitable for fast, managed charging with the compatible Go1 charging accessory. Intelligent battery management - Unitree describes monitoring for battery capacity and cell status to support stable energy output. Multiple safety protections - Official protections include temperature, overcharge, discharge, short-circuit, over-voltage, and under-voltage protection. Current product media - Product images show the battery views and the charger/power adapter option. Specifications Product Unitree Go1 battery and charging accessory options Compatible Robot Unitree Go1 quadruped robot Battery Model GO1-BT03 Battery Type Polymer lithium-ion battery Rated Capacity 6000mAh, 133.2Wh Battery Weight 1.2kg Battery Size 85mm x 83mm x 146.5mm Charge Limit Voltage DC25.2V Maximum Charging Power 151.2W Battery Protection Temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, under-voltage protection Shopify Option Name Type Variant Options Variant SKU Confirmed Difference Package Content Standard range 6000mAh Unitree-Go1-Battery Standard Go1 battery option; official parameters list 6000mAh, 133.2Wh, model GO1-BT03. Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Unitree-Go1-BatteryC Charging accessory option for the Go1 battery; battery is not included with this variant. Charger x1, power adapter x1, EU plug converter x1 Product Visuals Go1 standard 6000mAh battery on a white background Battery housing detail for Go1 replacement and rotation Connector and product detail view for compatibility checking Charger and power adapter option for Go1 battery charging Reference Documents Unitree Go1 Battery Official Parameters Unitree Go1 Documentation Downloads Application Spare battery rotation - Keep an additional Go1 battery ready for demos, tests, and classroom sessions. Battery replacement - Replace an unavailable or aging standard Go1 battery with the 6000mAh option. Charging station setup - Use the charger and power adapter variant when a separate charging accessory set is needed. Robotics education - Support repeated Go1 startup, training, and maintenance practice in labs. Research workflow continuity - Reduce downtime during quadruped robot development and software testing. Field demonstration preparation - Prepare battery and charging accessories before off-site Go1 demonstrations. Maintenance bench use - Keep a clear battery/charger accessory option for inspection, swapping, and charging routines. Packing List Selected Variant Included Items Quantity Standard range 6000mAh Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Charger x1 Charger and Power Adapter Power adapter x1 Charger and Power Adapter EU plug converter x1 FAQ .faq-accordion details { border-bottom: 1px solid #e6eef8; padding: 14px 0; } .faq-accordion summary { list-style: none; cursor: pointer; font-size: 16px; font-weight: 700; color: #1f2933; position: relative; padding-right: 32px; } .faq-accordion summary::-webkit-details-marker { display: none; } .faq-accordion summary::after { content: \"\\203A\"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%) rotate(90deg); color: #007fff; font-size: 28px; line-height: 1; transition: transform 0.2s ease; } .faq-accordion details[open] summary::after { transform: translateY(-50%) rotate(270deg); } .faq-accordion p { margin: 12px 0 0; color: #4b5563; line-height: 1.65; } What is the difference between the two variants?The Standard range 6000mAh variant is the Go1 battery itself. The Charger and Power Adapter variant is the charging accessory set and does not include the battery. Is the 6000mAh battery compatible with Unitree Go1?Yes. The official Unitree Go1 battery page lists the Go1 battery model as GO1-BT03 with a 6000mAh rated capacity. Does this listing include any other battery capacity option?No. The active Shopify variants for this product are Standard range 6000mAh and Charger and Power Adapter. This description is written for those two variants only. What battery capacity and energy are listed officially?The official Unitree Go1 battery parameter page lists 6000mAh rated capacity and 133.2Wh energy for the standard battery. What is the charge limit voltage?The official Unitree Go1 battery parameters list a DC25.2V charge limit voltage. What protection functions are listed for the battery?Unitree lists temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, and under-voltage protection for the Go1 battery. Is the Go1 robot included?No. This product page is for Go1 battery and charging accessories only; the Unitree Go1 robot is not included. What should I choose if I only need the charger?Select the Charger and Power Adapter variant. Its packing list includes the charger, power adapter, and EU plug converter according to the current Shopify product configuration."
+     },
+     "gift_card": false,
+     "handle": "unitree-go1-battery-standard-range",
+     "id": "gid://shopify/Product/15434761306436",
+     "list_price_range": {
+      "max": {
+       "amount": 77089,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19169,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/170_540x_6956c926-42f5-478e-86dc-f86c85dcb1b3.webp?v=1768542721"
+      }
+     ],
+     "options": [
+      {
+       "name": "Type",
+       "values": [
+        {
+         "label": "Charger and Power Adapter"
+        },
+        {
+         "label": "Battery"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 77089,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19169,
+       "currency": "USD"
+      }
+     },
+     "title": "Unitree Go1 Battery Standard range 6000mAh",
+     "url": "https://openelab.com/products/unitree-go1-battery-standard-range",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56258813690180:1",
+       "description": {
+        "html": "Unitree Go1 Battery 6000mAh and Charger Power Adapter is an accessory listing for the Unitree Go1 quadruped robot. Choose the Standard range 6000mAh battery when you need a spare or replacement Go1 battery, or choose Charger and Power Adapter when you need the charging accessory set only. The official Unitree Go1 battery parameters list model GO1-BT03, 6000mAh / 133.2Wh rated capacity, DC25.2V charge limit voltage, and 151.2W maximum charging power. This page is not a robot package and does not include the Unitree Go1 robot. Features Two selectable accessory options - Choose either the Go1 standard battery or the charger and power adapter set from the Shopify variant selector. Official 6000mAh battery parameters - Unitree lists the standard Go1 battery at 6000mAh and 133.2Wh. GO1-BT03 battery model - The official parameter page identifies the Go1 battery model as GO1-BT03. Polymer lithium-ion battery - Unitree specifies the battery type as polymer lithium-ion. DC25.2V charge limit voltage - Verified from the official Unitree Go1 battery parameter page. 151.2W maximum charging power - Suitable for fast, managed charging with the compatible Go1 charging accessory. Intelligent battery management - Unitree describes monitoring for battery capacity and cell status to support stable energy output. Multiple safety protections - Official protections include temperature, overcharge, discharge, short-circuit, over-voltage, and under-voltage protection. Current product media - Product images show the battery views and the charger/power adapter option. Specifications Product Unitree Go1 battery and charging accessory options Compatible Robot Unitree Go1 quadruped robot Battery Model GO1-BT03 Battery Type Polymer lithium-ion battery Rated Capacity 6000mAh, 133.2Wh Battery Weight 1.2kg Battery Size 85mm x 83mm x 146.5mm Charge Limit Voltage DC25.2V Maximum Charging Power 151.2W Battery Protection Temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, under-voltage protection Shopify Option Name Type Variant Options Variant SKU Confirmed Difference Package Content Standard range 6000mAh Unitree-Go1-Battery Standard Go1 battery option; official parameters list 6000mAh, 133.2Wh, model GO1-BT03. Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Unitree-Go1-BatteryC Charging accessory option for the Go1 battery; battery is not included with this variant. Charger x1, power adapter x1, EU plug converter x1 Product Visuals Go1 standard 6000mAh battery on a white background Battery housing detail for Go1 replacement and rotation Connector and product detail view for compatibility checking Charger and power adapter option for Go1 battery charging Reference Documents Unitree Go1 Battery Official Parameters Unitree Go1 Documentation Downloads Application Spare battery rotation - Keep an additional Go1 battery ready for demos, tests, and classroom sessions. Battery replacement - Replace an unavailable or aging standard Go1 battery with the 6000mAh option. Charging station setup - Use the charger and power adapter variant when a separate charging accessory set is needed. Robotics education - Support repeated Go1 startup, training, and maintenance practice in labs. Research workflow continuity - Reduce downtime during quadruped robot development and software testing. Field demonstration preparation - Prepare battery and charging accessories before off-site Go1 demonstrations. Maintenance bench use - Keep a clear battery/charger accessory option for inspection, swapping, and charging routines. Packing List Selected Variant Included Items Quantity Standard range 6000mAh Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Charger x1 Charger and Power Adapter Power adapter x1 Charger and Power Adapter EU plug converter x1 FAQ .faq-accordion details { border-bottom: 1px solid #e6eef8; padding: 14px 0; } .faq-accordion summary { list-style: none; cursor: pointer; font-size: 16px; font-weight: 700; color: #1f2933; position: relative; padding-right: 32px; } .faq-accordion summary::-webkit-details-marker { display: none; } .faq-accordion summary::after { content: \"\\203A\"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%) rotate(90deg); color: #007fff; font-size: 28px; line-height: 1; transition: transform 0.2s ease; } .faq-accordion details[open] summary::after { transform: translateY(-50%) rotate(270deg); } .faq-accordion p { margin: 12px 0 0; color: #4b5563; line-height: 1.65; } What is the difference between the two variants?The Standard range 6000mAh variant is the Go1 battery itself. The Charger and Power Adapter variant is the charging accessory set and does not include the battery. Is the 6000mAh battery compatible with Unitree Go1?Yes. The official Unitree Go1 battery page lists the Go1 battery model as GO1-BT03 with a 6000mAh rated capacity. Does this listing include any other battery capacity option?No. The active Shopify variants for this product are Standard range 6000mAh and Charger and Power Adapter. This description is written for those two variants only. What battery capacity and energy are listed officially?The official Unitree Go1 battery parameter page lists 6000mAh rated capacity and 133.2Wh energy for the standard battery. What is the charge limit voltage?The official Unitree Go1 battery parameters list a DC25.2V charge limit voltage. What protection functions are listed for the battery?Unitree lists temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, and under-voltage protection for the Go1 battery. Is the Go1 robot included?No. This product page is for Go1 battery and charging accessories only; the Unitree Go1 robot is not included. What should I choose if I only need the charger?Select the Charger and Power Adapter variant. Its packing list includes the charger, power adapter, and EU plug converter according to the current Shopify product configuration."
+       },
+       "id": "gid://shopify/ProductVariant/56258813690180",
+       "list_price": {
+        "amount": 77089,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/170_540x_6956c926-42f5-478e-86dc-f86c85dcb1b3.webp?v=1768542721"
+        }
+       ],
+       "options": [
+        {
+         "label": "Battery",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 77089,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Unitree-Go1-Battery",
+       "title": "Battery"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56258813722948:1",
+       "description": {
+        "html": "Unitree Go1 Battery 6000mAh and Charger Power Adapter is an accessory listing for the Unitree Go1 quadruped robot. Choose the Standard range 6000mAh battery when you need a spare or replacement Go1 battery, or choose Charger and Power Adapter when you need the charging accessory set only. The official Unitree Go1 battery parameters list model GO1-BT03, 6000mAh / 133.2Wh rated capacity, DC25.2V charge limit voltage, and 151.2W maximum charging power. This page is not a robot package and does not include the Unitree Go1 robot. Features Two selectable accessory options - Choose either the Go1 standard battery or the charger and power adapter set from the Shopify variant selector. Official 6000mAh battery parameters - Unitree lists the standard Go1 battery at 6000mAh and 133.2Wh. GO1-BT03 battery model - The official parameter page identifies the Go1 battery model as GO1-BT03. Polymer lithium-ion battery - Unitree specifies the battery type as polymer lithium-ion. DC25.2V charge limit voltage - Verified from the official Unitree Go1 battery parameter page. 151.2W maximum charging power - Suitable for fast, managed charging with the compatible Go1 charging accessory. Intelligent battery management - Unitree describes monitoring for battery capacity and cell status to support stable energy output. Multiple safety protections - Official protections include temperature, overcharge, discharge, short-circuit, over-voltage, and under-voltage protection. Current product media - Product images show the battery views and the charger/power adapter option. Specifications Product Unitree Go1 battery and charging accessory options Compatible Robot Unitree Go1 quadruped robot Battery Model GO1-BT03 Battery Type Polymer lithium-ion battery Rated Capacity 6000mAh, 133.2Wh Battery Weight 1.2kg Battery Size 85mm x 83mm x 146.5mm Charge Limit Voltage DC25.2V Maximum Charging Power 151.2W Battery Protection Temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, under-voltage protection Shopify Option Name Type Variant Options Variant SKU Confirmed Difference Package Content Standard range 6000mAh Unitree-Go1-Battery Standard Go1 battery option; official parameters list 6000mAh, 133.2Wh, model GO1-BT03. Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Unitree-Go1-BatteryC Charging accessory option for the Go1 battery; battery is not included with this variant. Charger x1, power adapter x1, EU plug converter x1 Product Visuals Go1 standard 6000mAh battery on a white background Battery housing detail for Go1 replacement and rotation Connector and product detail view for compatibility checking Charger and power adapter option for Go1 battery charging Reference Documents Unitree Go1 Battery Official Parameters Unitree Go1 Documentation Downloads Application Spare battery rotation - Keep an additional Go1 battery ready for demos, tests, and classroom sessions. Battery replacement - Replace an unavailable or aging standard Go1 battery with the 6000mAh option. Charging station setup - Use the charger and power adapter variant when a separate charging accessory set is needed. Robotics education - Support repeated Go1 startup, training, and maintenance practice in labs. Research workflow continuity - Reduce downtime during quadruped robot development and software testing. Field demonstration preparation - Prepare battery and charging accessories before off-site Go1 demonstrations. Maintenance bench use - Keep a clear battery/charger accessory option for inspection, swapping, and charging routines. Packing List Selected Variant Included Items Quantity Standard range 6000mAh Unitree Go1 standard range 6000mAh battery x1 Charger and Power Adapter Charger x1 Charger and Power Adapter Power adapter x1 Charger and Power Adapter EU plug converter x1 FAQ .faq-accordion details { border-bottom: 1px solid #e6eef8; padding: 14px 0; } .faq-accordion summary { list-style: none; cursor: pointer; font-size: 16px; font-weight: 700; color: #1f2933; position: relative; padding-right: 32px; } .faq-accordion summary::-webkit-details-marker { display: none; } .faq-accordion summary::after { content: \"\\203A\"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%) rotate(90deg); color: #007fff; font-size: 28px; line-height: 1; transition: transform 0.2s ease; } .faq-accordion details[open] summary::after { transform: translateY(-50%) rotate(270deg); } .faq-accordion p { margin: 12px 0 0; color: #4b5563; line-height: 1.65; } What is the difference between the two variants?The Standard range 6000mAh variant is the Go1 battery itself. The Charger and Power Adapter variant is the charging accessory set and does not include the battery. Is the 6000mAh battery compatible with Unitree Go1?Yes. The official Unitree Go1 battery page lists the Go1 battery model as GO1-BT03 with a 6000mAh rated capacity. Does this listing include any other battery capacity option?No. The active Shopify variants for this product are Standard range 6000mAh and Charger and Power Adapter. This description is written for those two variants only. What battery capacity and energy are listed officially?The official Unitree Go1 battery parameter page lists 6000mAh rated capacity and 133.2Wh energy for the standard battery. What is the charge limit voltage?The official Unitree Go1 battery parameters list a DC25.2V charge limit voltage. What protection functions are listed for the battery?Unitree lists temperature protection, overcharge protection, discharge protection, short-circuit protection, over-voltage protection, and under-voltage protection for the Go1 battery. Is the Go1 robot included?No. This product page is for Go1 battery and charging accessories only; the Unitree Go1 robot is not included. What should I choose if I only need the charger?Select the Charger and Power Adapter variant. Its packing list includes the charger, power adapter, and EU plug converter according to the current Shopify product configuration."
+       },
+       "id": "gid://shopify/ProductVariant/56258813722948",
+       "list_price": {
+        "amount": 19169,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/O1CN01m3ZGmE2BkGVNUKQBB__2209818168376_jpg_6beb8fd1-7c46-40ef-89e3-72447be1e06e.webp?v=1768542721"
+        }
+       ],
+       "options": [
+        {
+         "label": "Charger and Power Adapter",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 19169,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Unitree-Go1-BatteryC",
+       "title": "Charger and Power Adapter"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "Accessories compatible with DFRobot, Arduino, Raspberry Pi, and Micro:bit."
+       },
+       "handle": "dfrobot-accessories",
+       "id": "gid://shopify/Collection/648151564612",
+       "title": "DFRobot - Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "This Type-C LiPo Charger is a compact, high-efficiency charging module designed for single-cell 3.7V lithium batteries. Powered by the TP4056X charging IC, this USB-C battery charger delivers safe, fast, and adjustable charging, making it ideal for embedded and DIY electronics projects. Every lithium ion charging board supports three selectable charging currents (50mA, 200mA, 500mA) to accommodate different battery capacities. Using a Type-C LiPo Charger ensures modern connectivity for your Li-ion battery charging needs. Features Supports 50mA / 200mA / 500mA charging current settings on the Type-C LiPo Charger TP4056X IC with built-in thermal feedback protection for this lithium ion charging board Compact size for easy integration: 16.5 x 28 mm USB-C battery charger Type-C input port for universal compatibility with any Type-C LiPo Charger setup 3-stage charging: trickle, constant current, and constant voltage for the lithium ion charging board Built-in LED status indicator, with external indicator support on the USB-C battery charger Safe for unattended operation, protects the Type-C LiPo Charger against overheating Recommended Charging Current (Based on Battery Capacity) Battery Capacity Recommended Charging Gear 100–400mAh 50mA 400–1000mAh 200mA Above 1000mAh 500mA Note: Do not use high current settings with small-capacity batteries on your Type-C LiPo Charger. This may damage or overheat the battery during the lithium ion charging board process. Technical Specifications Input Voltage: 5V (via USB Type-C) for the USB-C battery charger Charging Currents: Selectable 50mA, 200mA, or 500mA on this Type-C LiPo Charger Charging Voltage: 4.2V ±1% for the lithium ion charging board Operating Temperature: -40℃ to 85℃ for safe USB-C battery charger usage Dimensions: 16.5 x 28 mm (0.65 x 1.10 inches) Type-C LiPo Charger profile LED Charging Indicator Flashing: No battery connected to the lithium ion charging board On (solid): Charging via the USB-C battery charger Off: Fully charged battery on the Type-C LiPo Charger External indicator connection is available for custom lithium ion charging board applications. Applications DIY electronics and embedded systems using a Type-C LiPo Charger Rechargeable IoT devices powered by a lithium ion charging board Wearable battery packs with an integrated USB-C battery charger Lithium battery-powered sensors and projects with a Type-C LiPo Charger Package Includes LiPo Charger – Type-C (3.7V TP4056X) x1"
+     },
+     "gift_card": false,
+     "handle": "lipo-charger-type-c",
+     "id": "gid://shopify/Product/15437308952900",
+     "list_price_range": {
+      "max": {
+       "amount": 766,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 766,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Lipo Charger-Type C-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Lipo_Charger-Type_C-1.webp?v=1768791645"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 766,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 766,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Moudles"
+     ],
+     "title": "USB Type-C LiPo Battery Charger Module: 3.7V Lithium Ion Charging",
+     "url": "https://openelab.com/products/lipo-charger-type-c",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56268064620868:1",
+       "description": {
+        "html": "This Type-C LiPo Charger is a compact, high-efficiency charging module designed for single-cell 3.7V lithium batteries. Powered by the TP4056X charging IC, this USB-C battery charger delivers safe, fast, and adjustable charging, making it ideal for embedded and DIY electronics projects. Every lithium ion charging board supports three selectable charging currents (50mA, 200mA, 500mA) to accommodate different battery capacities. Using a Type-C LiPo Charger ensures modern connectivity for your Li-ion battery charging needs. Features Supports 50mA / 200mA / 500mA charging current settings on the Type-C LiPo Charger TP4056X IC with built-in thermal feedback protection for this lithium ion charging board Compact size for easy integration: 16.5 x 28 mm USB-C battery charger Type-C input port for universal compatibility with any Type-C LiPo Charger setup 3-stage charging: trickle, constant current, and constant voltage for the lithium ion charging board Built-in LED status indicator, with external indicator support on the USB-C battery charger Safe for unattended operation, protects the Type-C LiPo Charger against overheating Recommended Charging Current (Based on Battery Capacity) Battery Capacity Recommended Charging Gear 100–400mAh 50mA 400–1000mAh 200mA Above 1000mAh 500mA Note: Do not use high current settings with small-capacity batteries on your Type-C LiPo Charger. This may damage or overheat the battery during the lithium ion charging board process. Technical Specifications Input Voltage: 5V (via USB Type-C) for the USB-C battery charger Charging Currents: Selectable 50mA, 200mA, or 500mA on this Type-C LiPo Charger Charging Voltage: 4.2V ±1% for the lithium ion charging board Operating Temperature: -40℃ to 85℃ for safe USB-C battery charger usage Dimensions: 16.5 x 28 mm (0.65 x 1.10 inches) Type-C LiPo Charger profile LED Charging Indicator Flashing: No battery connected to the lithium ion charging board On (solid): Charging via the USB-C battery charger Off: Fully charged battery on the Type-C LiPo Charger External indicator connection is available for custom lithium ion charging board applications. Applications DIY electronics and embedded systems using a Type-C LiPo Charger Rechargeable IoT devices powered by a lithium ion charging board Wearable battery packs with an integrated USB-C battery charger Lithium battery-powered sensors and projects with a Type-C LiPo Charger Package Includes LiPo Charger – Type-C (3.7V TP4056X) x1"
+       },
+       "id": "gid://shopify/ProductVariant/56268064620868",
+       "list_price": {
+        "amount": 766,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Lipo_Charger-Type_C-1.webp?v=1768791645"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 766,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0668",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Founded in 2016, Elephant Robotics is a high-tech company specializing in robot development. The company offers a range of robots, including educational, professional, humanoid, and companion models. Its products are sold in 51 countries and utilized in various industries such as manufacturing, education, and healthcare, all aimed at promoting an “Enjoy Robots World.”"
+       },
+       "handle": "brands-elephant-robotics",
+       "id": "gid://shopify/Collection/647305462084",
+       "title": "Brands - Elephant Robotics"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Robotic is a complete product series that includes robotic arms, cars, humanoid robots, kits, and accessories. Tailored for research, education, and automation, the Robotic lineup features modular, scalable, and intelligent hardware solutions that enhance robotics development and integration across various industries."
+       },
+       "handle": "robotic",
+       "id": "gid://shopify/Collection/648243282244",
+       "title": "Robotic"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "robotic-accessories",
+       "id": "gid://shopify/Collection/653565460804",
+       "title": "Robotic - Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "elephant-robotics-accessories",
+       "id": "gid://shopify/Collection/658070044996",
+       "title": "Elephant Robotics - Accessories"
+      }
+     ],
+     "description": {
+      "html": "The Elephant Robotics Spare Battery is a high-capacity power solution designed to extend the runtime of your myAGV 2023 series, including myAGV Pi 2023 and myAGV Jetson Nano 2023. Featuring the same specifications as the original battery, it supports quick and easy installation, making it an ideal accessory for continuous mobile robot operations. Key Features High-capacity 6400mAh battery for extended performance 11.1V output ensures stable power delivery Fully compatible with myAGV Pi 2023 and myAGV Jetson Nano 2023 Quick installation for minimal downtime Built with industrial-grade reliability for research and educational use Technical Specifications Capacity: 6400mAh Voltage: 11.1V Compatibility: myAGV Pi 2023, myAGV Jetson Nano 2023 Why Choose This Battery Perfect for users running long-duration experiments or mobile tasks Seamless integration with your existing myAGV setup Reliable power source for AI research, autonomous navigation, and robotics education"
+     },
+     "gift_card": false,
+     "handle": "elephant-robotics-spare-battery-for",
+     "id": "gid://shopify/Product/15434770317636",
+     "list_price_range": {
+      "max": {
+       "amount": 22639,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 22639,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Elephant Robotics Spare Battery for myAGV-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Elephant_Robotics_Spare_Battery_for_myAGV-1.webp?v=1768547525"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 22639,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 22639,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Robotic"
+     ],
+     "title": "Elephant Robotics",
+     "url": "https://openelab.com/products/elephant-robotics-spare-battery-for",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56258916188484:1",
+       "description": {
+        "html": "The Elephant Robotics Spare Battery is a high-capacity power solution designed to extend the runtime of your myAGV 2023 series, including myAGV Pi 2023 and myAGV Jetson Nano 2023. Featuring the same specifications as the original battery, it supports quick and easy installation, making it an ideal accessory for continuous mobile robot operations. Key Features High-capacity 6400mAh battery for extended performance 11.1V output ensures stable power delivery Fully compatible with myAGV Pi 2023 and myAGV Jetson Nano 2023 Quick installation for minimal downtime Built with industrial-grade reliability for research and educational use Technical Specifications Capacity: 6400mAh Voltage: 11.1V Compatibility: myAGV Pi 2023, myAGV Jetson Nano 2023 Why Choose This Battery Perfect for users running long-duration experiments or mobile tasks Seamless integration with your existing myAGV setup Reliable power source for AI research, autonomous navigation, and robotics education"
+       },
+       "id": "gid://shopify/ProductVariant/56258916188484",
+       "list_price": {
+        "amount": 22639,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Elephant_Robotics_Spare_Battery_for_myAGV-1.webp?v=1768547525"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 22639,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "spare-battery",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Robotic is a complete product series that includes robotic arms, cars, humanoid robots, kits, and accessories. Tailored for research, education, and automation, the Robotic lineup features modular, scalable, and intelligent hardware solutions that enhance robotics development and integration across various industries."
+       },
+       "handle": "robotic",
+       "id": "gid://shopify/Collection/648243282244",
+       "title": "Robotic"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "robotic-accessories",
+       "id": "gid://shopify/Collection/653565460804",
+       "title": "Robotic - Accessories"
+      },
+      {
+       "description": {
+        "html": "Booster Robotics is an innovative company that specializes in developing advanced robotic solutions. Its flagship product, the Booster T1, is a humanoid robot designed specifically for developers looking to create and enhance robotic applications. The T1's cutting-edge technology and versatile platform allow for customization and integration into various projects, making it suitable for educational, research, and industrial uses. The robot garnered significant attention at events like NVIDIA's Spring Festival, where it showcased its capabilities, appealing to both tech enthusiasts and professionals. With a commitment to pushing the boundaries of robotic technology, Booster Robotics continues to lead the way in the industry."
+       },
+       "handle": "brands-booster",
+       "id": "gid://shopify/Collection/653565526340",
+       "title": "Brands-Booster"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Unlock industrial-grade AI performance in a compact, energy-efficient module. Perfect for robotics, smart cities, and real-time vision systems—6x faster than its predecessor (Jetson AGX Xavier) 🤖💡. 🔑 Key Specs at a Glance Category Specification AI Performance 200 TOPS (INT8) — Handles complex neural networks effortlessly 🧠 GPU 1792-core NVIDIA Ampere + 56 Tensor Cores (930MHz max) 🚀 CPU 8-core Arm Cortex-A78AE (2.2GHz) for multitasking Memory 32GB LPDDR5 w/ 204.8 GB/s bandwidth — Smooth data flow for large models Storage 64GB eMMC 5.1 + expandable via NVMe/M.2 slots 💾 Video Power Decode: 1x 8K30 / Encode: 1x 4K60 (H.265) 🎥 Power Range 15W–40W (ultra-efficient for battery-powered bots) 🔋 Durability -20°C to +65°C operating range — Tough enough for factories & outdoors 🌡️ ⚙️ Features Plug-and-Play AI: Integrates seamlessly with ROS 2, CUDA, and TensorRT for quick prototyping Massive Sensor Support: Connect 6+ cameras (LiDAR, depth cams) via 16-lane MIPI CSI-2 📷 Real-Time Speed: Runs YOLOv8 at 373 FPS (INT8) — ideal for instant object detection Expandable Storage: Add NVMe SSDs or microSD cards for heavy data logging 📂 Industrial Tough: Withstands vibrations, dust, and extreme temps — no lab coddling needed! 🚀Advantages 3× faster GPU compute vs. older Xavier models 114.5 GB/s internal data-copy speed — zero bottlenecks 0.35ms system latency — critical for autonomous decisions ⚡ 🌐 Applications Robotics: Self-navigating bots, drones, AGVs Smart Factories: Real-time defect detection on assembly lines 🏭. Healthcare: Medical imaging analysis & diagnostic tools 🩺. Retail: Cashier-less checkout & shelf monitoring 🛒. 💼 Package Includes Jetson AGX Orin 32GB module Developer resources (JetPack SDK, Isaac Sim support)"
+     },
+     "gift_card": false,
+     "handle": "booster-k1-5ah-high-capacity",
+     "id": "gid://shopify/Product/15433119334724",
+     "list_price_range": {
+      "max": {
+       "amount": 321619,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 321619,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_12_GH_Booster-Robotics_Lg.webp?v=1768380025"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 321619,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 321619,
+       "currency": "USD"
+      }
+     },
+     "title": "Booster K1 5Ah High-capacity Battery with Charger  (Pre-sale, back in 2-3 weeks)",
+     "url": "https://openelab.com/products/booster-k1-5ah-high-capacity",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56253377610052:1",
+       "description": {
+        "html": "Unlock industrial-grade AI performance in a compact, energy-efficient module. Perfect for robotics, smart cities, and real-time vision systems—6x faster than its predecessor (Jetson AGX Xavier) 🤖💡. 🔑 Key Specs at a Glance Category Specification AI Performance 200 TOPS (INT8) — Handles complex neural networks effortlessly 🧠 GPU 1792-core NVIDIA Ampere + 56 Tensor Cores (930MHz max) 🚀 CPU 8-core Arm Cortex-A78AE (2.2GHz) for multitasking Memory 32GB LPDDR5 w/ 204.8 GB/s bandwidth — Smooth data flow for large models Storage 64GB eMMC 5.1 + expandable via NVMe/M.2 slots 💾 Video Power Decode: 1x 8K30 / Encode: 1x 4K60 (H.265) 🎥 Power Range 15W–40W (ultra-efficient for battery-powered bots) 🔋 Durability -20°C to +65°C operating range — Tough enough for factories & outdoors 🌡️ ⚙️ Features Plug-and-Play AI: Integrates seamlessly with ROS 2, CUDA, and TensorRT for quick prototyping Massive Sensor Support: Connect 6+ cameras (LiDAR, depth cams) via 16-lane MIPI CSI-2 📷 Real-Time Speed: Runs YOLOv8 at 373 FPS (INT8) — ideal for instant object detection Expandable Storage: Add NVMe SSDs or microSD cards for heavy data logging 📂 Industrial Tough: Withstands vibrations, dust, and extreme temps — no lab coddling needed! 🚀Advantages 3× faster GPU compute vs. older Xavier models 114.5 GB/s internal data-copy speed — zero bottlenecks 0.35ms system latency — critical for autonomous decisions ⚡ 🌐 Applications Robotics: Self-navigating bots, drones, AGVs Smart Factories: Real-time defect detection on assembly lines 🏭. Healthcare: Medical imaging analysis & diagnostic tools 🩺. Retail: Cashier-less checkout & shelf monitoring 🛒. 💼 Package Includes Jetson AGX Orin 32GB module Developer resources (JetPack SDK, Isaac Sim support)"
+       },
+       "id": "gid://shopify/ProductVariant/56253377610052",
+       "list_price": {
+        "amount": 321619,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_12_GH_Booster-Robotics_Lg.webp?v=1768380025"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 321619,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Booster-K1-BC",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

@@ -1,0 +1,626 @@
+{
+ "args": {
+  "business": "https://xee8tz-dc.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Putty knife"
+  }
+ },
+ "key": "f14ac03f9f1db6fac2b108d09888c51a8186a39c00636d34108c5786b50e4e90",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:21:35-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://xee8tz-dc.myshopify.com",
+  "endpoint": "https://xee8tz-dc.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-13-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Replacement and upgrade parts for FDM and resin 3D printers: GT2 timing pulleys, NEMA 17 stepper motors, TB6600 drivers and post-processing tool kits for removing supports and finishing prints. Each page explains compatibility, specifications and common questions."
+       },
+       "handle": "3d-printer-parts-tools",
+       "id": "gid://shopify/Collection/502512255215",
+       "title": "3D Printer Parts & Tools"
+      },
+      {
+       "description": {
+        "html": "Every robot arm kit, servo, driver board, motor, Raspberry Pi kit and 3D-printer part ArmDojo sells, with free worldwide shipping."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/502537617647",
+       "title": "All products"
+      },
+      {
+       "description": {
+        "html": "Spares, upgrades and add-ons for SO-ARM101, NexArm and other LeRobot arms: Feetech STS3215 and STS3250 servos, metal horns, 3-pin cables, BusLinker and Waveshare adapter boards, 1080p wrist and overhead cameras, camera desk arms, G-clamps, power adapters, training props and the SO-101 Builder's Pack with free 3D-print files."
+       },
+       "handle": "robot-arm-parts-accessories",
+       "id": "gid://shopify/Collection/502578315503",
+       "title": "Robot Arm Parts & Accessories"
+      }
+     ],
+     "description": {
+      "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+     },
+     "gift_card": false,
+     "handle": "3d-printer-tool-kit-support-removal-pliers",
+     "id": "gid://shopify/Product/9618440093935",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "RUITOOL 3D print finishing tool kit in its zip case: flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers and deburring knife beside a printed model with supports",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+      }
+     ],
+     "options": [
+      {
+       "name": "Item",
+       "values": [
+        {
+         "label": "Ergonomic support-removal kit with case"
+        },
+        {
+         "label": "Advanced support-removal kit"
+        },
+        {
+         "label": "Complete kit without case"
+        },
+        {
+         "label": "Flat-nose support pliers (smooth jaws)"
+        },
+        {
+         "label": "Bent-nose support pliers"
+        },
+        {
+         "label": "Flush cutters for sprues and supports"
+        },
+        {
+         "label": "Needle-nose pliers for deep supports"
+        },
+        {
+         "label": "Deburring / trimming knife"
+        },
+        {
+         "label": "Complete kit with case (5 tools)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1099,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "3D printer tools",
+      "3D printing tool kit",
+      "deburring tool",
+      "FDM",
+      "flush cutters",
+      "maker tools",
+      "Microduck",
+      "post-processing",
+      "printed robot parts",
+      "resin printing",
+      "robot builder tools",
+      "robot dog",
+      "RUITOOL",
+      "SO-101",
+      "support removal",
+      "support removal pliers"
+     ],
+     "title": "RUITOOL 3D Print Finishing Tool Kit for Printed Robot Parts: Support Removal Pliers, Flush Cutters, Bent-Nose and Needle-Nose Pliers, Deburring Knife",
+     "url": "https://armdojo.com/products/3d-printer-tool-kit-support-removal-pliers",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896677615:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896677615",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Complete kit with case (5 tools)",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 4999,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-KIT-CASE",
+       "title": "Complete kit with case (5 tools)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896710383:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896710383",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Ergonomic support-removal kit with case",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 4999,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-KIT-ERGO",
+       "title": "Ergonomic support-removal kit with case"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896743151:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896743151",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Advanced support-removal kit",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 5999,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-KIT-ADV",
+       "title": "Advanced support-removal kit"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896775919:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896775919",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Complete kit without case",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 3999,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-KIT-NOCASE",
+       "title": "Complete kit without case"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896808687:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896808687",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Flat-nose support pliers (smooth jaws)",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-FLAT",
+       "title": "Flat-nose support pliers (smooth jaws)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896841455:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896841455",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Bent-nose support pliers",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-BENT",
+       "title": "Bent-nose support pliers"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896874223:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896874223",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Flush cutters for sprues and supports",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 1099,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-CUTTER",
+       "title": "Flush cutters for sprues and supports"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896906991:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896906991",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Needle-nose pliers for deep supports",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-NEEDLE",
+       "title": "Needle-nose pliers for deep supports"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xee8tz-dc.myshopify.com/cart/50753896939759:1",
+       "description": {
+        "html": "The RUITOOL 3D print finishing tool kit is a set of five hand tools designed for post-processing FDM and resin prints: removing tree and lattice supports, snipping sprues and rafts flush, reaching supports inside cavities, and trimming strings, seams and burrs, so models come off the printer clean without scars, including the printed frames of robot builds such as SO-101 arms, Microduck-style ducks and 12-DOF robot dogs.At a glance Five tools: smooth-jaw flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers and a swivel deburring knife with a spare blade High-carbon steel with hardened edges; non-slip TPR handles with a return spring Works on PLA, PETG, ABS, ASA, TPU and cured resin prints from any FDM or resin printer For robot builds: clears supports from bearing seats, servo pockets, screw holes and cable channels so parts fit without forcing Kits with or without a zip case; every tool is also sold on its own A purpose-made set of hand tools for cleaning up FDM and resin prints without damaging them: smooth-jaw flat pliers that pull supports cleanly, a bent-nose pair for supports hidden inside cavities, flush cutters that leave no stub, long needle-nose pliers for tight slots, and a swivel deburring knife for seams and strings. Kits come in a zip case that keeps the set together next to the printer; every tool is also sold on its own.What can you use it for? Cleaning printed robot parts before assembly: clearing supports from bearing seats, servo pockets and cable channels on SO-101, Microduck-style duck and robot dog frames Trimming brims and stringing on TPU feet and deburring screw holes so M2 and M3 screws seat straight Removing supports from PLA, PETG, ABS and resin prints without gouging the surface Cleaning up miniatures, cosplay props, functional parts and prototypes Trimming brims, rafts, stringing and layer seams before painting Print farms and classrooms that need a matched set of tools per printer Resin printing stations where supports are dense and delicate Who is it for?Robot builders printing their own SO-101, Microduck or robot dog parts, FDM and resin printer owners, miniature painters, makerspaces and anyone who has ever cracked a print pulling supports off with ordinary pliers.Compatibility Materials: PLA, PETG, ABS, ASA, TPU and cured resin Printers: any FDM or resin printer; the tools are independent of brand Storage: kit versions include a zip case with elastic loops; single tools ship without a case Specifications Brand / model RUITOOL 9304-17 series Tool steel High-carbon steel, hardened cutting edges Flat-nose pliers Smooth, tooth-free jaws that grip supports without scarring the model Bent-nose pliers Angled tip for supports inside cavities and overhangs Flush cutters Flat-ground blade for sprues, rafts and thin supports, cuts flush with the surface Needle-nose pliers Long slim jaws for supports in narrow slots Deburring knife Swivel-style blade for removing strings, seams and burrs; spare blade included Grips Non-slip two-tone TPR handles with return spring Storage Oxford-cloth zip case with elastic tool loops (kit versions with case) Works with PLA, PETG, ABS, TPU and resin prints What's in the box Complete kit with case (5 tools): Flat-nose support pliers, bent-nose pliers, flush cutters, needle-nose pliers, deburring knife, zip case Ergonomic support-removal kit with case: Ergonomic-handle version of the 5-tool kit with zip case Advanced support-removal kit: Extended kit with the leverage-assisted support pliers, cutters, knife and case Complete kit without case: The 5 tools without the zip case Flat-nose support pliers (smooth jaws): 1 × flat-nose smooth-jaw pliers Bent-nose support pliers: 1 × bent-nose pliers Flush cutters for sprues and supports: 1 × flush cutters Needle-nose pliers for deep supports: 1 × needle-nose pliers Deburring / trimming knife: 1 × swivel deburring knife with spare blade Which version should I choose? Option What you get Best for Complete kit with case Flat-nose and bent-nose support pliers, flush cutters, needle-nose pliers, deburring knife, zip case Most builders: one full set kept next to the printer Ergonomic support-removal kit with case Ergonomic-handle version of the five-tool kit, zip case Long post-processing sessions and large print sets Advanced support-removal kit Leverage-assisted support pliers, cutters, knife and case Dense or stubborn supports Complete kit without case The five tools without the case You already have a toolbox Single tools Any one of the five tools Replacing a lost or worn tool Shipping and returnsShips from Singapore with tracking, charged by parcel weight and shown in full before payment. Checkout shows one shipping option: the lowest-cost tracked service for your parcel. United States: tracked shipping (8–14 business days) from $18.99 for parcels up to 1.9 kg; heavier parcels up to 5 kg ship express tracked (2–5 business days) from $77.99; assembled robot-arm kits and parcels over 5 kg ship by DHL Express (3–5 business days) from $260.99. US import duty is not collected at checkout; the recipient pays it on arrival. UK, France, Germany, Netherlands, Italy & Spain: tracked shipping (8–14 business days) from $17.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Rest of Europe & Canada: tracked shipping (5–22 business days) from $10.99 for parcels up to 1.9 kg. Import VAT and any duty are paid on delivery. Japan & Australia: tracked shipping (5–14 business days) from $11.99 for parcels up to 2 kg. Heavier parcels and assembled robot-arm kits (built and calibrated to order in Singapore, dispatched in 7–10 business days): priority tracked from $144.99 to Europe, the UK and Canada (9–14 business days); DHL Express from $260.99 to the US for robot-arm kits; robot-arm kits to Japan, Australia and other countries by priority tracked from $124.99 (10–14 business days), other parcels over 2 kg there by express courier from $229.99. Free shipping: orders of $100 or more ship free when the shipping charge is $22.99 or less (most destinations outside the US). Everywhere else: tracked shipping (5–15 business days) from $11.99; the rate for your country is shown at checkout. Full table: shipping, duties and delivery times. 14-day returns; defective items are replaced or refunded with shipping covered.One parcel, one shipping charge: small parts travel together, so the postage on a single servo is usually the same as on three of them.Frequently asked questionsWhich tools do I need to clean up 3D-printed robot parts?Flat-nose support pliers to pull supports, flush cutters to trim what is left level with the surface, and a deburring knife to clear bearing seats, servo pockets and screw holes. The complete RUITOOL kit has all three plus bent-nose and needle-nose pliers for supports inside cavities, which covers a full SO-101, Microduck-style duck or robot dog print set.Which version should I buy for a robot build?The complete kit with case covers a whole robot print set and keeps the five tools together next to the printer. Choose the advanced kit if your prints use dense or stubborn supports, the kit without case if you already have a toolbox, or a single tool to replace one you have lost.Why not use ordinary pliers or nail clippers?Standard pliers have serrated jaws that bite into the model and leave marks, and nail clippers cannot reach inside cavities. These tools have smooth, polished jaws and shapes matched to how supports attach, so they grip the support and not the part.Do they work on resin prints?Yes. The flat-nose pliers and flush cutters are ideal for the fine supports on cured resin models; cut supports before final curing to reduce chipping.What is the deburring knife for?The swivel blade follows edges and holes to shave off strings, seams, elephant-foot flare and burrs in one pass, where sandpaper would round the edge.Are the cutters truly flush?Yes. The blade is ground flat on one face so a sprue or support can be cut level with the surface, leaving no stub to sand.Can I buy just one tool?Yes. Each of the five tools is available individually as a variant on this page; the kits add the zip case.Build guides How to clean up 3D-printed robot parts: supports, bearing seats, servo pockets and screw holes Microduck replica BOM with Feetech HD-1910 servos: every part for a community duck build STS3215 robot dog parts list: what a 12-DOF quadruped needs SO-101 bill of materials and real cost: printing your own arm vs buying a kit Robot Builder FAQ: short answers for robot builders"
+       },
+       "id": "gid://shopify/ProductVariant/50753896939759",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0821/5406/2063/files/02c.jpg?v=1789371657"
+        }
+       ],
+       "options": [
+        {
+         "label": "Deburring / trimming knife",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RUITOOL-KNIFE",
+       "title": "Deburring / trimming knife"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": false
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "82154062063"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "ArmDojo",
+        "merchant_origin": "armdojo.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "82154062063"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

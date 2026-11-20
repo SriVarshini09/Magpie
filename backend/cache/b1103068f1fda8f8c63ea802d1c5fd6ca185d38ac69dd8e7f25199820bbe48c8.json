@@ -1,0 +1,1620 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Push button reset button"
+  }
+ },
+ "key": "b1103068f1fda8f8c63ea802d1c5fd6ca185d38ac69dd8e7f25199820bbe48c8",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:09-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNORGcyT1RJeU5qVXpPRFUzTENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description Standard 12mm square momentary button Great for user input on a PCB Breadboard friendly RoHS Compliant The 12mm Push Button Switch is a standard 12mm square momentary button. It features the large button head and good tactile feel. It 'clicks' really well. This button is great for user input on a PCB or a good, big reset button on a breadboard. View more"
+     },
+     "gift_card": false,
+     "handle": "sfe-12mm-push-button-switch",
+     "id": "gid://shopify/Product/7487071879329",
+     "list_price_range": {
+      "max": {
+       "amount": 75,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 75,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "12mm Push Button Switch",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-12mm-push-button-switch_1.webp?v=1720526623"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 75,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 75,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "12mm Push Button Switch",
+     "url": "https://www.robotshop.com/products/sfe-12mm-push-button-switch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359824842913:1",
+       "description": {
+        "html": "Description Standard 12mm square momentary button Great for user input on a PCB Breadboard friendly RoHS Compliant The 12mm Push Button Switch is a standard 12mm square momentary button. It features the large button head and good tactile feel. It 'clicks' really well. This button is great for user input on a PCB or a good, big reset button on a breadboard. View more"
+       },
+       "id": "gid://shopify/ProductVariant/42359824842913",
+       "list_price": {
+        "amount": 75,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-12mm-push-button-switch_1.webp?v=1720526623"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 75,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-364",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Find our extensive selection of high-quality electronic components perfect for building, repairing, and customizing your robotic and electronic projects. Our collection includes a wide variety of sensors, buzzers, switches, resistors, capacitors, and more, all designed to meet the needs of your innovative projects. Enhance your creations with reliable and durable components that offer excellent performance and versatility for any application."
+       },
+       "handle": "electronic-components",
+       "id": "gid://shopify/Collection/290220769441",
+       "title": "Electronic Components"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description High quality Omron type B3F momentary on switch Perfect as a tactile reset switch Maximum ratings: DC 12V 50mA Operation temperature range: -25 to 70°C The Mini Push Button (5pk) is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Rated up to 50mA. View more Links PDF File Datasheet"
+     },
+     "gift_card": false,
+     "handle": "mini-push-button-5pk",
+     "id": "gid://shopify/Product/7487299584161",
+     "list_price_range": {
+      "max": {
+       "amount": 145,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 145,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Mini Push Button (5pk)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp?v=1720493653"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 145,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 145,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Electronic Components",
+      "category:Robot Parts",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Mini Push Button (5pk)",
+     "url": "https://www.robotshop.com/products/mini-push-button-5pk",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360894193825:1",
+       "description": {
+        "html": "Description High quality Omron type B3F momentary on switch Perfect as a tactile reset switch Maximum ratings: DC 12V 50mA Operation temperature range: -25 to 70°C The Mini Push Button (5pk) is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Rated up to 50mA. View more Links PDF File Datasheet"
+       },
+       "id": "gid://shopify/ProductVariant/42360894193825",
+       "list_price": {
+        "amount": 145,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp?v=1720493653"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 145,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-448",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "OSEPP Electronics specializes in creating versatile and beginner-friendly electronic modules and kits, perfect for hobbyists and educators. Their product range at Robotshop.com includes high-quality connectors, jumper wires, motor modules, and various sensors, all designed to be 100% Arduino-compatible, facilitating easy integration and experimentation. OSEPP is renowned for its robust engineering and commitment to providing accessible and comprehensive DIY solutions, making it an excellent choice for anyone looking to dive into the world of electronics and robotics."
+       },
+       "handle": "osepp-electronics",
+       "id": "gid://shopify/Collection/290250195105",
+       "title": "OSEPP ELECTRONICS"
+      }
+     ],
+     "description": {
+      "html": "Description Standard 12mm square switch Breadboard friendly Method of input for various projects Great for use as reset button View more"
+     },
+     "gift_card": false,
+     "handle": "12mm-push-button-switch-10pk",
+     "id": "gid://shopify/Product/7487174869153",
+     "list_price_range": {
+      "max": {
+       "amount": 483,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 483,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "12mm Push Button Switch (10PK)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp?v=1720516041"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 483,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 483,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "12mm Push Button Switch (10PK)",
+     "url": "https://www.robotshop.com/products/12mm-push-button-switch-10pk",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360470732961:1",
+       "description": {
+        "html": "Description Standard 12mm square switch Breadboard friendly Method of input for various projects Great for use as reset button View more"
+       },
+       "id": "gid://shopify/ProductVariant/42360470732961",
+       "list_price": {
+        "amount": 483,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp?v=1720516041"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 483,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Oel-72",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description High-quality push-button switch Rated up to 50mA The SFE Mini Push Button Switch is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Mounts directly into standard bread boards. Rated up to 50mA. View more Links PDF FileDimensional Drawing"
+     },
+     "gift_card": false,
+     "handle": "sfe-mini-push-button-switch",
+     "id": "gid://shopify/Product/7486517969057",
+     "list_price_range": {
+      "max": {
+       "amount": 50,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 50,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Mini Push Button Switch",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-mini-push-button-switch-2_1.webp?v=1720525859"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 50,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 50,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Mini Push Button Switch",
+     "url": "https://www.robotshop.com/products/sfe-mini-push-button-switch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358410739873:1",
+       "description": {
+        "html": "Description High-quality push-button switch Rated up to 50mA The SFE Mini Push Button Switch is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Mounts directly into standard bread boards. Rated up to 50mA. View more Links PDF FileDimensional Drawing"
+       },
+       "id": "gid://shopify/ProductVariant/42358410739873",
+       "list_price": {
+        "amount": 50,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-mini-push-button-switch-2_1.webp?v=1720525859"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 50,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-191",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Browse our extensive range of Electronic Experimentation Parts, the essential components you need to fuel your innovative projects. From versatile sensors like the Gravity MEMS Gas Sensor and Grove Sound Sensor to robust control boards including the Makeblock Me Orion and Me Auriga Microcontrollers, this collection has everything you need for your next DIY electronics venture. Discover quality connectors, cables, and prototyping boards to bring your ideas to life with ease and precision."
+       },
+       "handle": "electronic-experimentation-parts",
+       "id": "gid://shopify/Collection/290228240545",
+       "title": "Electronic Experimentation Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Digital push button with LED (Red) Large button keypad and high-quality first-class top High quality connector and immersion gold surface Supply voltage: 3.3V to 5V The Gravity Digital Push Button (Red) comes with LED, immersion gold surface, and bright colored top. A capital D at left corner indicates that it is a digital sensor. An illustration of button painted in the back notifying its function. View more Links ZIP File Documentation"
+     },
+     "gift_card": false,
+     "handle": "gravity-digital-push-button-red",
+     "id": "gid://shopify/Product/7487270650017",
+     "list_price_range": {
+      "max": {
+       "amount": 194,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 194,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Gravity Digital Push Button (Red)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1756416.webp?v=1773253940"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 194,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 194,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Electronic Experimentation Parts",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Gravity Digital Push Button (Red)",
+     "url": "https://www.robotshop.com/products/gravity-digital-push-button-red",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360689950881:1",
+       "description": {
+        "html": "Description Digital push button with LED (Red) Large button keypad and high-quality first-class top High quality connector and immersion gold surface Supply voltage: 3.3V to 5V The Gravity Digital Push Button (Red) comes with LED, immersion gold surface, and bright colored top. A capital D at left corner indicates that it is a digital sensor. An illustration of button painted in the back notifying its function. View more Links ZIP File Documentation"
+       },
+       "id": "gid://shopify/ProductVariant/42360689950881",
+       "list_price": {
+        "amount": 194,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1756416.webp?v=1773253940"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 194,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-561",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description Concave plunger design Durable red nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Red is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+     },
+     "gift_card": false,
+     "handle": "concave-button-red",
+     "id": "gid://shopify/Product/7487146950817",
+     "list_price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Concave Button - Red",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1535192.webp?v=1778534963"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Concave Button - Red",
+     "url": "https://www.robotshop.com/products/concave-button-red",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360334090401:1",
+       "description": {
+        "html": "Description Concave plunger design Durable red nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Red is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+       },
+       "id": "gid://shopify/ProductVariant/42360334090401",
+       "list_price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1535192.webp?v=1778534963"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-674",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description LED indicator light runs at 12VDC, bulb holder is easy to install or remove 3 Terminals Button Actuator microswitch included Microswitch reliability tested to 10,000,000 cycles Microswitch can be replaced, polycarbonate lens cap for optical clarity The Big Red Push Button comes with an LED, securing nut and a pre-installed long life horizontal microswitch. Button can also be adjusted to a low profile button by removing the middle ring. View more Dimensions 100 mm Diameter x 72 mm Height Net weight: 100grams Mounting hole diameter: 24 mm Links ZIP File Documentation Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+     },
+     "gift_card": false,
+     "handle": "big-red-push-button",
+     "id": "gid://shopify/Product/7486947262625",
+     "list_price_range": {
+      "max": {
+       "amount": 1895,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1895,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Big Red Push Button",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/big-red-push-button.webp?v=1720525442"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1895,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1895,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots"
+     ],
+     "title": "Big Red Push Button",
+     "url": "https://www.robotshop.com/products/big-red-push-button",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359232200865:1",
+       "description": {
+        "html": "Description LED indicator light runs at 12VDC, bulb holder is easy to install or remove 3 Terminals Button Actuator microswitch included Microswitch reliability tested to 10,000,000 cycles Microswitch can be replaced, polycarbonate lens cap for optical clarity The Big Red Push Button comes with an LED, securing nut and a pre-installed long life horizontal microswitch. Button can also be adjusted to a low profile button by removing the middle ring. View more Dimensions 100 mm Diameter x 72 mm Height Net weight: 100grams Mounting hole diameter: 24 mm Links ZIP File Documentation Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+       },
+       "id": "gid://shopify/ProductVariant/42359232200865",
+       "list_price": {
+        "amount": 1895,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/big-red-push-button.webp?v=1720525442"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1895,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-1172",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Find our extensive selection of high-quality electronic components perfect for building, repairing, and customizing your robotic and electronic projects. Our collection includes a wide variety of sensors, buzzers, switches, resistors, capacitors, and more, all designed to meet the needs of your innovative projects. Enhance your creations with reliable and durable components that offer excellent performance and versatility for any application."
+       },
+       "handle": "electronic-components",
+       "id": "gid://shopify/Collection/290220769441",
+       "title": "Electronic Components"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Concave plunger design Durable black nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Black is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+     },
+     "gift_card": false,
+     "handle": "sfe-concave-button-black",
+     "id": "gid://shopify/Product/7486926127265",
+     "list_price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Concave Button - Black",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-concave-button-black.webp?v=1720526478"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Electronic Components",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Concave Button - Black",
+     "url": "https://www.robotshop.com/products/sfe-concave-button-black",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359087333537:1",
+       "description": {
+        "html": "Description Concave plunger design Durable black nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Black is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+       },
+       "id": "gid://shopify/ProductVariant/42359087333537",
+       "list_price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sfe-concave-button-black.webp?v=1720526478"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-323",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Find our extensive selection of high-quality electronic components perfect for building, repairing, and customizing your robotic and electronic projects. Our collection includes a wide variety of sensors, buzzers, switches, resistors, capacitors, and more, all designed to meet the needs of your innovative projects. Enhance your creations with reliable and durable components that offer excellent performance and versatility for any application."
+       },
+       "handle": "electronic-components",
+       "id": "gid://shopify/Collection/290220769441",
+       "title": "Electronic Components"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Concave plunger design Durable green nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Green is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+     },
+     "gift_card": false,
+     "handle": "sfe-concave-button-green",
+     "id": "gid://shopify/Product/7487314428065",
+     "list_price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Concave Button - Green",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1535190.webp?v=1778535192"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 250,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Electronic Components",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Concave Button - Green",
+     "url": "https://www.robotshop.com/products/sfe-concave-button-green",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360996561057:1",
+       "description": {
+        "html": "Description Concave plunger design Durable green nylon material Microswitch: max 3A @ 120 VAC Microswitch reliability tested to 10,000,000 cycles Includes 3 terminal microswitches The Concave Button - Green is a 35mm concave momentary push button, similar to the ones you find on arcade games. It is perfect for mashing with simple screw in design. View more Dimensions Cap diameter: 35mm Overall height: 65mm Specifications Net weight: 25g Mounting hole: 1 1/8th inch paddle bit (1.125\"/28mm)"
+       },
+       "id": "gid://shopify/ProductVariant/42360996561057",
+       "list_price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1535190.webp?v=1778535192"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-324",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover our diverse range of contact and proximity sensors, perfect for detecting objects, touch and movement. Our collection features innovative products like capacitive touch sensors, versatile joystick modules, and advanced proximity detection systems. These sensors are ideal for various applications such as robotics, home automation, and industrial projects, providing reliable performance and easy integration with platforms like Arduino and Raspberry Pi."
+       },
+       "handle": "contact-sensors",
+       "id": "gid://shopify/Collection/290215002273",
+       "title": "Contact & Proximity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Pololu is a distinguished electronics manufacturer and online retailer offering a wide range of products from sensors and motion control electronics to complete robotic systems. At Pololu, quality engineering and customer support are at the core of their mission, empowering enthusiasts and engineers to transform ideas into tangible creations. Explore Pololu's innovative solutions and comprehensive documentation to elevate your projects."
+       },
+       "handle": "pololu-en",
+       "id": "gid://shopify/Collection/290232664225",
+       "title": "Pololu"
+      }
+     ],
+     "description": {
+      "html": "Description Pushbutton-based latching power control Additional control inputs allow advanced applications This low-voltage (LV) version operates from 2.2 V to 20 V Can deliver continuous currents up to around 6 A The Mini Pushbutton Power Switch LV is sophisticated power control alternatives to bulky mechanical switches. View more Dimensions Size: 0.6″ × 0.7″ × 0.12″ Weight: 0.6 g Links PDF File Datasheet Specifications Current rating: 6 A Minimum operating voltage: 2.2 V Maximum operating voltage: 20 V Reverse voltage protection?: Y Identifying markings PCB dev codes: psw03a Other PCB markings: 0J9124 LED color: red"
+     },
+     "gift_card": false,
+     "handle": "mini-pushbutton-power-switch-lv",
+     "id": "gid://shopify/Product/7486922653857",
+     "list_price_range": {
+      "max": {
+       "amount": 495,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 495,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Mini Pushbutton Power Switch LV",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1618688.webp?v=1778534900"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 495,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 495,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Contact & Proximity Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "Mini Pushbutton Power Switch LV",
+     "url": "https://www.robotshop.com/products/mini-pushbutton-power-switch-lv",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359072391329:1",
+       "description": {
+        "html": "Description Pushbutton-based latching power control Additional control inputs allow advanced applications This low-voltage (LV) version operates from 2.2 V to 20 V Can deliver continuous currents up to around 6 A The Mini Pushbutton Power Switch LV is sophisticated power control alternatives to bulky mechanical switches. View more Dimensions Size: 0.6″ × 0.7″ × 0.12″ Weight: 0.6 g Links PDF File Datasheet Specifications Current rating: 6 A Minimum operating voltage: 2.2 V Maximum operating voltage: 20 V Reverse voltage protection?: Y Identifying markings PCB dev codes: psw03a Other PCB markings: 0J9124 LED color: red"
+       },
+       "id": "gid://shopify/ProductVariant/42359072391329",
+       "list_price": {
+        "amount": 495,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1618688.webp?v=1778534900"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 495,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Pol-345",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

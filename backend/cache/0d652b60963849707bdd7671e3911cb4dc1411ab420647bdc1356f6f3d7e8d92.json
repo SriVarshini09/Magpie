@@ -1,0 +1,925 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Push button reset button"
+  }
+ },
+ "key": "0d652b60963849707bdd7671e3911cb4dc1411ab420647bdc1356f6f3d7e8d92",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:06-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-10-2"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "This tactile push button switch module operates through a simple mechanical principle: apply pressure to activate the switch, establishing a connection, and release to return it to its open state. The internal mechanism utilizes the dynamic force changes of a metal dome to reliably achieve both open and closed circuit conditions. Typically, pins 1 and 2, and pins 3 and 4 are connected when the button is at rest. When pressed, all four pins establish a connection, and upon release, the button reverts to its original configuration. When properly powered, a red LED illuminates to indicate active power. Pressing the button causes the module to output a low signal, simultaneously lighting up a blue LED. Releasing the button switches the output to a high signal and turns off the blue LED, providing clear visual and electrical feedback for its state. Schematic Diagram Module Parameters Pin Definitions Pin Name Description G GND (Power input ground) V VCC (Power input positive) S Signal (Digital signal output pin) Additional Specifications Supply Voltage: 3.3V / 5V Connection Method: 2.54mm pitch header Mounting Method: Dual screw fixing"
+     },
+     "gift_card": false,
+     "handle": "tactile-push-button-switch-module",
+     "id": "gid://shopify/Product/15281114022212",
+     "list_price_range": {
+      "max": {
+       "amount": 326,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 326,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_21_10-Size_800x800_0f92ae7d-f7d4-4856-a2c0-b1e58dd2769b.jpg?v=1757906747"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 576,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 576,
+       "currency": "USD"
+      }
+     },
+     "title": "Key Switch Modules",
+     "url": "https://openelab.com/products/tactile-push-button-switch-module",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55638384083268:1",
+       "description": {
+        "html": "This tactile push button switch module operates through a simple mechanical principle: apply pressure to activate the switch, establishing a connection, and release to return it to its open state. The internal mechanism utilizes the dynamic force changes of a metal dome to reliably achieve both open and closed circuit conditions. Typically, pins 1 and 2, and pins 3 and 4 are connected when the button is at rest. When pressed, all four pins establish a connection, and upon release, the button reverts to its original configuration. When properly powered, a red LED illuminates to indicate active power. Pressing the button causes the module to output a low signal, simultaneously lighting up a blue LED. Releasing the button switches the output to a high signal and turns off the blue LED, providing clear visual and electrical feedback for its state. Schematic Diagram Module Parameters Pin Definitions Pin Name Description G GND (Power input ground) V VCC (Power input positive) S Signal (Digital signal output pin) Additional Specifications Supply Voltage: 3.3V / 5V Connection Method: 2.54mm pitch header Mounting Method: Dual screw fixing"
+       },
+       "id": "gid://shopify/ProductVariant/55638384083268",
+       "list_price": {
+        "amount": 326,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_21_10-Size_800x800_0f92ae7d-f7d4-4856-a2c0-b1e58dd2769b.jpg?v=1757906747"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 576,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "HS-KEY1B",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "LILYGO is a technology company that specialises in developing, manufacturing and distributing IoT (Internet of Things) products. It is renowned for its versatile development boards, which are widely used in applications such as remote monitoring, smart metering and wearable devices. Many of its products are based on ESP32 or RP2040 technology and support 4G LTE, NB-IoT, GSM and GNSS. LILYGO openly shares documentation and sample code with the open-source community to support developers worldwide."
+       },
+       "handle": "brands-lilygo",
+       "id": "gid://shopify/Collection/647304905028",
+       "title": "Brands - LILYGO"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "LILYGO develops and manufactures innovative hardware products, specializing in a wide range of Internet of Things (IoT) and embedded device solutions."
+       },
+       "handle": "lilygo",
+       "id": "gid://shopify/Collection/648142455108",
+       "title": "LILYGO"
+      },
+      {
+       "description": {
+        "html": "The Basic Module series from LILYGO features fundamental development boards built around microcontrollers such as the ESP32 and ESP8266. These modules come equipped with essential functionalities like Wi-Fi, Bluetooth, and GPIO pins. Their compact and cost-effective design makes them ideal for straightforward IoT projects, prototyping, and home automation. Additionally, they are user-friendly, catering to both beginners and experienced developers alike."
+       },
+       "handle": "lilygo-basic-module",
+       "id": "gid://shopify/Collection/648143765828",
+       "title": "LILYGO - Basic Module"
+      },
+      {
+       "description": {
+        "html": "LILYGO's LCD OLED series includes OLED (high contrast, low power) and LCD screens (colorful, detailed display). These displays are used in IoT, smart homes, and health monitoring, with easy SPI/I2C connectivity for development boards. They're ideal for showing text, graphics, or real-time data."
+       },
+       "handle": "lilygo-lcd-oled",
+       "id": "gid://shopify/Collection/648144027972",
+       "title": "LILYGO - LCD OLED"
+      }
+     ],
+     "description": {
+      "html": "The LILYGO T-Lite is a compact, versatile ESP32 development board designed for IoT, network communication, and low-power wireless projects. It features a 0.96-inch SSD1306 OLED display, USB Type-C interface, and supports Wi-Fi, Bluetooth, and optional W5500 Ethernet or CH9102F USB to Serial modules. With a ceramic or external antenna, rich GPIO pinout, and multiple connectivity options, the T-Lite is ideal for both prototyping and deployment. Available Versions 1. T-Lite with W5500 Ethernet Gateway Module All features of the CH9102F version Adds W5500 Ethernet Module for stable wired network communication Pre-soldered headers for easy setup Ideal for Ethernet-based IoT gateway projects Package Includes: 1 x T-Lite W5500 Gateway Module (Soldered Header) 2. T-Lite with CH9102F Powered by the ESP32 chipset Integrated SSD1306 0.96-inch OLED display CH9102F USB-to-Serial chip for stable communication Default ceramic antenna, optional external antenna support Boot and Reset buttons onboard Breadboard-compatible size Package Includes: 1 x T-Lite CH9102F 2 x Female Pin Headers Hardware Specifications Parameter Details Chipset ESP32 Flash 4MB SRAM 520 KB Display SSD1306 / 0.96-inch OLED Clock 40 MHz crystal oscillator Antenna Ceramic (default) / External option Buttons Boot, Reset Working Voltage 2.7V – 3.6V Temperature Range -40°C to +85°C Size 29.5 × 23 × 8 mm Weight 4.5g Wireless Communication Wi-Fi: 802.11 b/g/n (up to 150 Mbps), 2.4GHz Bluetooth: v4.2 BR/EDR, BLE Range: Up to 300m Transmit Power: 22 dBm Protocols: IPv4, IPv6, TCP, UDP, HTTP, FTP, MQTT Security: WPA/WPA2, WPS, AES/RSA/ECC/SHA encryption OTA Firmware Update supported Software & Development Supports Arduino, PlatformIO, ESP-IDF, FreeRTOS Wi-Fi Modes: Station / SoftAP / P2P Cloud server SDKs, AT commands, Mobile app control (Android/iOS) Firmware upgrade via UART or OTA Applications IoT gateway development Wi-Fi & Ethernet network applications Remote display dashboards Sensor monitoring & control nodes Smart home communication modules References T-Lite W5500"
+     },
+     "gift_card": false,
+     "handle": "lilygo-t-lite-w5500-ssd1306",
+     "id": "gid://shopify/Product/15481580323140",
+     "list_price_range": {
+      "max": {
+       "amount": 1919,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1019,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "LILYGO T-Lite W5500 SSD1306 0.96 Inch OLED Dev Board-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LILYGO_T-Lite_W5500_SSD1306_0.96_Inch_OLED_Dev_Board-1.webp?v=1772003752"
+      }
+     ],
+     "options": [
+      {
+       "name": "Styles",
+       "values": [
+        {
+         "label": "T-Lite CH9102F"
+        },
+        {
+         "label": "W5500 Gateway Module"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1919,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1019,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LILYGO"
+     ],
+     "title": "LILYGO T-Lite W5500 SSD1306 0.96 Inch OLED Dev Board",
+     "url": "https://openelab.com/products/lilygo-t-lite-w5500-ssd1306",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56433818796356:1",
+       "description": {
+        "html": "The LILYGO T-Lite is a compact, versatile ESP32 development board designed for IoT, network communication, and low-power wireless projects. It features a 0.96-inch SSD1306 OLED display, USB Type-C interface, and supports Wi-Fi, Bluetooth, and optional W5500 Ethernet or CH9102F USB to Serial modules. With a ceramic or external antenna, rich GPIO pinout, and multiple connectivity options, the T-Lite is ideal for both prototyping and deployment. Available Versions 1. T-Lite with W5500 Ethernet Gateway Module All features of the CH9102F version Adds W5500 Ethernet Module for stable wired network communication Pre-soldered headers for easy setup Ideal for Ethernet-based IoT gateway projects Package Includes: 1 x T-Lite W5500 Gateway Module (Soldered Header) 2. T-Lite with CH9102F Powered by the ESP32 chipset Integrated SSD1306 0.96-inch OLED display CH9102F USB-to-Serial chip for stable communication Default ceramic antenna, optional external antenna support Boot and Reset buttons onboard Breadboard-compatible size Package Includes: 1 x T-Lite CH9102F 2 x Female Pin Headers Hardware Specifications Parameter Details Chipset ESP32 Flash 4MB SRAM 520 KB Display SSD1306 / 0.96-inch OLED Clock 40 MHz crystal oscillator Antenna Ceramic (default) / External option Buttons Boot, Reset Working Voltage 2.7V – 3.6V Temperature Range -40°C to +85°C Size 29.5 × 23 × 8 mm Weight 4.5g Wireless Communication Wi-Fi: 802.11 b/g/n (up to 150 Mbps), 2.4GHz Bluetooth: v4.2 BR/EDR, BLE Range: Up to 300m Transmit Power: 22 dBm Protocols: IPv4, IPv6, TCP, UDP, HTTP, FTP, MQTT Security: WPA/WPA2, WPS, AES/RSA/ECC/SHA encryption OTA Firmware Update supported Software & Development Supports Arduino, PlatformIO, ESP-IDF, FreeRTOS Wi-Fi Modes: Station / SoftAP / P2P Cloud server SDKs, AT commands, Mobile app control (Android/iOS) Firmware upgrade via UART or OTA Applications IoT gateway development Wi-Fi & Ethernet network applications Remote display dashboards Sensor monitoring & control nodes Smart home communication modules References T-Lite W5500"
+       },
+       "id": "gid://shopify/ProductVariant/56433818796356",
+       "list_price": {
+        "amount": 1019,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LILYGO_T-Lite_W5500_SSD1306_0.96_Inch_OLED_Dev_Board-1.webp?v=1772003752"
+        }
+       ],
+       "options": [
+        {
+         "label": "W5500 Gateway Module",
+         "name": "Styles"
+        }
+       ],
+       "price": {
+        "amount": 1019,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "LILYGO-H288",
+       "title": "W5500 Gateway Module"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56433818829124:1",
+       "description": {
+        "html": "The LILYGO T-Lite is a compact, versatile ESP32 development board designed for IoT, network communication, and low-power wireless projects. It features a 0.96-inch SSD1306 OLED display, USB Type-C interface, and supports Wi-Fi, Bluetooth, and optional W5500 Ethernet or CH9102F USB to Serial modules. With a ceramic or external antenna, rich GPIO pinout, and multiple connectivity options, the T-Lite is ideal for both prototyping and deployment. Available Versions 1. T-Lite with W5500 Ethernet Gateway Module All features of the CH9102F version Adds W5500 Ethernet Module for stable wired network communication Pre-soldered headers for easy setup Ideal for Ethernet-based IoT gateway projects Package Includes: 1 x T-Lite W5500 Gateway Module (Soldered Header) 2. T-Lite with CH9102F Powered by the ESP32 chipset Integrated SSD1306 0.96-inch OLED display CH9102F USB-to-Serial chip for stable communication Default ceramic antenna, optional external antenna support Boot and Reset buttons onboard Breadboard-compatible size Package Includes: 1 x T-Lite CH9102F 2 x Female Pin Headers Hardware Specifications Parameter Details Chipset ESP32 Flash 4MB SRAM 520 KB Display SSD1306 / 0.96-inch OLED Clock 40 MHz crystal oscillator Antenna Ceramic (default) / External option Buttons Boot, Reset Working Voltage 2.7V – 3.6V Temperature Range -40°C to +85°C Size 29.5 × 23 × 8 mm Weight 4.5g Wireless Communication Wi-Fi: 802.11 b/g/n (up to 150 Mbps), 2.4GHz Bluetooth: v4.2 BR/EDR, BLE Range: Up to 300m Transmit Power: 22 dBm Protocols: IPv4, IPv6, TCP, UDP, HTTP, FTP, MQTT Security: WPA/WPA2, WPS, AES/RSA/ECC/SHA encryption OTA Firmware Update supported Software & Development Supports Arduino, PlatformIO, ESP-IDF, FreeRTOS Wi-Fi Modes: Station / SoftAP / P2P Cloud server SDKs, AT commands, Mobile app control (Android/iOS) Firmware upgrade via UART or OTA Applications IoT gateway development Wi-Fi & Ethernet network applications Remote display dashboards Sensor monitoring & control nodes Smart home communication modules References T-Lite W5500"
+       },
+       "id": "gid://shopify/ProductVariant/56433818829124",
+       "list_price": {
+        "amount": 1919,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LILYGO_T-Lite_W5500_SSD1306_0.96_Inch_OLED_Dev_Board-5.webp?v=1772003752"
+        }
+       ],
+       "options": [
+        {
+         "label": "T-Lite CH9102F",
+         "name": "Styles"
+        }
+       ],
+       "price": {
+        "amount": 1919,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "LILYGO-Q132",
+       "title": "T-Lite CH9102F"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio reComputer Series consists of high-performance edge computing devices designed for AI, IoT, and industrial applications. These compact yet powerful units incorporate NVIDIA Jetson modules or Raspberry Pi CM4, providing robust processing capabilities for tasks such as computer vision, robotics, and smart automation. For instance, the reComputer R1000 is built on the Raspberry Pi CM4 platform and features a quad-core Cortex-A72 processor, dual Ethernet interfaces, and multiple RS485 channels that support BACnet and Modbus protocols. It also offers wireless connectivity options like 4G, LoRa®, Wi-Fi, and BLE, making it ideal for smart building and energy management applications."
+       },
+       "handle": "seeed-studio-recomputer",
+       "id": "gid://shopify/Collection/648146616644",
+       "title": "Seeed Studio - reComputer"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      },
+      {
+       "description": {
+        "html": "Products on sale in the US warehouse — at least 20% off (up to 30%)."
+       },
+       "handle": "20-off",
+       "id": "gid://shopify/Collection/668241133892",
+       "title": "20% off"
+      }
+     ],
+     "description": {
+      "html": "The reComputer Mini J501 carrier board is an ultra-compact carrier board designed for the NVIDIA Jetson AGX Orin™ modules, supporting both the 32GB and 64GB versions. Despite its small footprint, it provides a rich set of I/O interfaces, including CAN, USB, Ethernet, RS-485, and I2S, making it an excellent choice for humanoid robot controllers, embedded systems, and rapid prototyping. When paired with a Jetson AGX Orin™ module, the reComputer Mini J501 serves as a highly capable and cost-effective alternative to the NVIDIA® Jetson AGX Orin™ Developer Kit, offering strong performance, flexible integration, and a compact design optimized for production-ready applications. Features Powerful Embodied AI Platform: Fully compatible with the Jetson AGX Orin module, delivering up to 275 TOPS of AI performance. It is the perfect platform for embodied AI development and edge computing. Ultra-Compact Form Factor: Features a tiny 110mm x 110mm footprint, making it ideal for robot prototyping and deployment in space-constrained environments, such as humanoid robots. Wide Voltage Input Range: Supports a broad power input, making it compatible with 48V battery systems (up to 54V max input) for mobile robotics. Rich I/O Capabilities: Equipped with essential industrial interfaces including USB 3.2, 10G Ethernet, Dual CAN (CAN-FD), RS-485, and I2S for comprehensive connectivity. Specifications Product reComputer Mini J501 Carrier Board Storage 1x M.2 Key M slot (NVMe SSD support) Networking 1x M.2 Key E slot for WiFi/Bluetooth module I/O Interfaces USB 2x USB 3.2 Type-A (10Gbps);1x USB 3.0 Type-C (Recovery);1x USB 2.0 Type-C (Debug); Ethernet 1x 1G Ethernet;1x 10G Ethernet CAN 2x CAN (CAN-FD supported) RS485 1x RS-485 Audio 1x I2S GPIO 4x DI, 4x DO (DO can be configured as UART) Display 1x HDMI 2.1 Cooling 1x 4-pin Fan Connector (12V PWM) Buttons 1x Reset Button; 1x Recovery Button RTC 1x RTC 2-pin Power 1x XT30 Connector (19-48V DC input range) Mechanical Dimensions 110mm x 110mm x 38mm Weight 90g Installation Desk-mount, wall-mounting Temperature -10℃ to 60℃ (with thermal grease);-10℃ to 55℃ (with thermal pad) Warranty 2 Year Hardware Overview Product Applications Humanoid Robotics AI Robot Development Equipped with the AGX Orin module, this powerful embedded AI system enables the creation of advanced robotics and edge AI applications for manufacturing, logistics, and healthcare. As a leading-edge embedded platform, it pushes the boundaries of AI robotics. The NVIDIA Isaac robotics platform provides accelerated systems, libraries, and generative AI models to significantly enhance AI perception, manipulation, and simulation. Learn more about the Isaac platform: Isaac - AI Robot Development Platform | NVIDIA Developer Multi-Sensor Fusion for Autonomous Mapping & Navigation The reComputer Mini J501 supports sensor-rich autonomy by integrating data from LiDAR (via Ethernet/CAN), 3D cameras (via USB/CSI), GPS, and IMU (via UART). Utilizing AI models and algorithms such as ORB-SLAM, A-LOAM, or Nav2, it executes complex sensor fusion, real-time localization, path planning, and obstacle avoidance. The low-latency processing of the Orin SoC allows autonomous systems to adapt instantly to changing terrains. Its wide voltage input and compact form factor make it ideal for mobile deployment, providing robust edge-level autonomy. Explore compatible sensor options for the reComputer Mini J501: Sensor Options Wiki Edge-Based Generative AI Capabilities Build sophisticated AI agents capable of processing live or archived video and images using Vision-Language Models (VLM) such as LLaVA. These AI agents empower industries to summarize, search, and extract actionable insights from visual data using natural language. Rapid Deployment of Generative AI and Computer Vision Leverage our jetson-examples repository for streamlined development! We provide one-line deployment for Generative AI projects (including Ollama and Llama3) and Computer Vision (including YOLOv8). The environment is fully pre-configured to ensure single-command deployment of your edge AI projects. Documentation & Resources Product Datasheet Carrier Board Schematic Power Board Schematic 3D Design Files (STEP) Seeed NVIDIA Jetson Catalog NVIDIA Jetson Series Comparison Detailed Product Comparison Chart Jetson Success Stories & Case Studies Seeed Jetson One-Pager Summary Certifications & Shipping Info HSCODE 8473309000 USHSCODE 8473309100 UPC EUHSCODE 8471707000 COO CHINA Part List Seeed Carrier Board (reComputer Mini J501) x1 Power Board x1 XT30 to DC Power Cable x1 USB Type-C to Type-A Cable x1 GH-1.25 4-pin 100mm JST Cable x3 GH-1.25 6-pin 100mm JST Cable x3 M2.5*4 Screw x1 M2*6 Screw x3 M2.5*25 Stud x4 M2.5*8 Screw x4"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-recomputer-mini-j501",
+     "id": "gid://shopify/Product/15466588078404",
+     "list_price_range": {
+      "max": {
+       "amount": 45900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 45900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/4_932246a1-a546-460f-b947-9cddc20aae9c.webp?v=1770778028"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 38493,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 38493,
+       "currency": "USD"
+      }
+     },
+     "title": "Seeed Studio reComputer Mini J501 Carrier Board for Jetson AGX Orin™",
+     "url": "https://openelab.com/products/seeed-studio-recomputer-mini-j501",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56380935766340:1",
+       "description": {
+        "html": "The reComputer Mini J501 carrier board is an ultra-compact carrier board designed for the NVIDIA Jetson AGX Orin™ modules, supporting both the 32GB and 64GB versions. Despite its small footprint, it provides a rich set of I/O interfaces, including CAN, USB, Ethernet, RS-485, and I2S, making it an excellent choice for humanoid robot controllers, embedded systems, and rapid prototyping. When paired with a Jetson AGX Orin™ module, the reComputer Mini J501 serves as a highly capable and cost-effective alternative to the NVIDIA® Jetson AGX Orin™ Developer Kit, offering strong performance, flexible integration, and a compact design optimized for production-ready applications. Features Powerful Embodied AI Platform: Fully compatible with the Jetson AGX Orin module, delivering up to 275 TOPS of AI performance. It is the perfect platform for embodied AI development and edge computing. Ultra-Compact Form Factor: Features a tiny 110mm x 110mm footprint, making it ideal for robot prototyping and deployment in space-constrained environments, such as humanoid robots. Wide Voltage Input Range: Supports a broad power input, making it compatible with 48V battery systems (up to 54V max input) for mobile robotics. Rich I/O Capabilities: Equipped with essential industrial interfaces including USB 3.2, 10G Ethernet, Dual CAN (CAN-FD), RS-485, and I2S for comprehensive connectivity. Specifications Product reComputer Mini J501 Carrier Board Storage 1x M.2 Key M slot (NVMe SSD support) Networking 1x M.2 Key E slot for WiFi/Bluetooth module I/O Interfaces USB 2x USB 3.2 Type-A (10Gbps);1x USB 3.0 Type-C (Recovery);1x USB 2.0 Type-C (Debug); Ethernet 1x 1G Ethernet;1x 10G Ethernet CAN 2x CAN (CAN-FD supported) RS485 1x RS-485 Audio 1x I2S GPIO 4x DI, 4x DO (DO can be configured as UART) Display 1x HDMI 2.1 Cooling 1x 4-pin Fan Connector (12V PWM) Buttons 1x Reset Button; 1x Recovery Button RTC 1x RTC 2-pin Power 1x XT30 Connector (19-48V DC input range) Mechanical Dimensions 110mm x 110mm x 38mm Weight 90g Installation Desk-mount, wall-mounting Temperature -10℃ to 60℃ (with thermal grease);-10℃ to 55℃ (with thermal pad) Warranty 2 Year Hardware Overview Product Applications Humanoid Robotics AI Robot Development Equipped with the AGX Orin module, this powerful embedded AI system enables the creation of advanced robotics and edge AI applications for manufacturing, logistics, and healthcare. As a leading-edge embedded platform, it pushes the boundaries of AI robotics. The NVIDIA Isaac robotics platform provides accelerated systems, libraries, and generative AI models to significantly enhance AI perception, manipulation, and simulation. Learn more about the Isaac platform: Isaac - AI Robot Development Platform | NVIDIA Developer Multi-Sensor Fusion for Autonomous Mapping & Navigation The reComputer Mini J501 supports sensor-rich autonomy by integrating data from LiDAR (via Ethernet/CAN), 3D cameras (via USB/CSI), GPS, and IMU (via UART). Utilizing AI models and algorithms such as ORB-SLAM, A-LOAM, or Nav2, it executes complex sensor fusion, real-time localization, path planning, and obstacle avoidance. The low-latency processing of the Orin SoC allows autonomous systems to adapt instantly to changing terrains. Its wide voltage input and compact form factor make it ideal for mobile deployment, providing robust edge-level autonomy. Explore compatible sensor options for the reComputer Mini J501: Sensor Options Wiki Edge-Based Generative AI Capabilities Build sophisticated AI agents capable of processing live or archived video and images using Vision-Language Models (VLM) such as LLaVA. These AI agents empower industries to summarize, search, and extract actionable insights from visual data using natural language. Rapid Deployment of Generative AI and Computer Vision Leverage our jetson-examples repository for streamlined development! We provide one-line deployment for Generative AI projects (including Ollama and Llama3) and Computer Vision (including YOLOv8). The environment is fully pre-configured to ensure single-command deployment of your edge AI projects. Documentation & Resources Product Datasheet Carrier Board Schematic Power Board Schematic 3D Design Files (STEP) Seeed NVIDIA Jetson Catalog NVIDIA Jetson Series Comparison Detailed Product Comparison Chart Jetson Success Stories & Case Studies Seeed Jetson One-Pager Summary Certifications & Shipping Info HSCODE 8473309000 USHSCODE 8473309100 UPC EUHSCODE 8471707000 COO CHINA Part List Seeed Carrier Board (reComputer Mini J501) x1 Power Board x1 XT30 to DC Power Cable x1 USB Type-C to Type-A Cable x1 GH-1.25 4-pin 100mm JST Cable x3 GH-1.25 6-pin 100mm JST Cable x3 M2.5*4 Screw x1 M2*6 Screw x3 M2.5*25 Stud x4 M2.5*8 Screw x4"
+       },
+       "id": "gid://shopify/ProductVariant/56380935766340",
+       "list_price": {
+        "amount": 45900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/4_932246a1-a546-460f-b947-9cddc20aae9c.webp?v=1770778028"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 38493,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-100094378",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Arduino is a powerful open-source electronics platform that enables users to create interactive projects easily. Designed for beginners and experts alike, it features various microcontroller boards, such as the Arduino Uno and Mega, along with an intuitive IDE supporting simplified programming. The platform is ideal for applications in education, robotics, IoT, and home automation. Its active community offers extensive resources, tutorials, and project ideas, fostering creativity and innovation in electronics and programming."
+       },
+       "handle": "arduino",
+       "id": "gid://shopify/Collection/648191279428",
+       "title": "Arduino"
+      },
+      {
+       "description": {
+        "html": "KeyeStudio is a brand dedicated to hardware and software development, offering innovative electronic components, development boards, and sensors for both hobbyists and professionals. Their products are commonly utilized in IoT, robotics, and smart home technologies, along with comprehensive tutorials and support to improve the user experience."
+       },
+       "handle": "brands-keyestudio",
+       "id": "gid://shopify/Collection/651379736900",
+       "title": "Brands - KeyeStudio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "keyestudio",
+       "id": "gid://shopify/Collection/651381801284",
+       "title": "KeyeStudio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "keyestudio-arduino",
+       "id": "gid://shopify/Collection/651381834052",
+       "title": "KeyeStudio - Arduino"
+      }
+     ],
+     "description": {
+      "html": "The KeyeStudio USB Host v1.5 shield is an expansion module designed for Arduino boards to enable USB Host capabilities. Simply attach it to your Arduino, and it will allow communication with USB peripherals like flash drives, keyboards, mice, game controllers, and digital cameras. One of its standout features is the ability to connect Android smartphones, unlocking Google ADK functionality. This allows your mobile device to act as a control interface for robots or other hardware, while also displaying sensor or system data directly on your phone. Supports Google Android ADK protocol for mobile integration Works seamlessly with UNO R3 and MEGA 2560 boards Compatible with Android OS and includes an app (up to version 4.0.3) Equipped with a convenient reset button Provides full USB Host functionality, enabling interaction with multiple USB devices and USB HUB support Features a dual-sided prototyping pad for soldering components and building custom circuits"
+     },
+     "gift_card": false,
+     "handle": "keyestudio-usb-host-v1-shield",
+     "id": "gid://shopify/Product/15341879460164",
+     "list_price_range": {
+      "max": {
+       "amount": 1088,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1088,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Keyestudio USB Host v1.5 Shield - OpenELAB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/d5f5322785.webp?v=1761208581"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1088,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1088,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat"
+     ],
+     "title": "KeyeStudio USB Host v1.5 Shield for Arduino UNO R3 Mega 2560",
+     "url": "https://openelab.com/products/keyestudio-usb-host-v1-shield",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55826793234756:1",
+       "description": {
+        "html": "The KeyeStudio USB Host v1.5 shield is an expansion module designed for Arduino boards to enable USB Host capabilities. Simply attach it to your Arduino, and it will allow communication with USB peripherals like flash drives, keyboards, mice, game controllers, and digital cameras. One of its standout features is the ability to connect Android smartphones, unlocking Google ADK functionality. This allows your mobile device to act as a control interface for robots or other hardware, while also displaying sensor or system data directly on your phone. Supports Google Android ADK protocol for mobile integration Works seamlessly with UNO R3 and MEGA 2560 boards Compatible with Android OS and includes an app (up to version 4.0.3) Equipped with a convenient reset button Provides full USB Host functionality, enabling interaction with multiple USB devices and USB HUB support Features a dual-sided prototyping pad for soldering components and building custom circuits"
+       },
+       "id": "gid://shopify/ProductVariant/55826793234756",
+       "list_price": {
+        "amount": 1088,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/d5f5322785.webp?v=1761208581"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1088,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "KY-KS0155",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The RS485 Shield for Arduino is a reliable communication expansion board designed specifically for the Arduino Uno and compatible boards. This Arduino RS485 shield enables UART-to-RS485 conversion, allowing your Arduino to communicate with industrial RS485 devices over long distances. With this UART to RS485 module, you get high anti-interference performance and stable data transmission for Modbus Arduino projects. Built with standard and mini RS485 ports, RS485 headers, and a flexible welding area, this RS485 shield for Arduino offers convenience and adaptability for both standard applications and custom DIY designs. With a switchable automatic/manual transmission mode, users can fine-tune their Arduino RS485 communication control based on specific system requirements. Features Converts UART/Serial to RS485 protocol Supports long-distance and noise-resistant communication Includes standard RS485 port, mini RS485 port, and RS485 header pins Switch between automatic and manual transceiver mode Onboard transceiver status LEDs Integrated operation/programming switch to avoid conflicts during Arduino uploads Designed for Arduino Uno with long pin headers for compatibility Gold immersion PCB for durability and enhanced signal integrity Convenient PH2.0 sensor interface for DFRobot RS485 devices (e.g., URM04 ultrasonic sensor) Applications Industrial communication systems using RS485 shield for Arduino Multi-node sensor networks and Arduino RS485 setups Long-distance data acquisition via UART to RS485 Building automation with Modbus Arduino protocols Arduino-based industrial monitoring systems Specifications Power Supply: +5V from Arduino Dimensions: 55mm x 53mm (2.16\" x 2.08\") Digital IO Ports: 16 (includes I2C interface) Analog IO Ports: 6 Programming/Operation Mode Switch: Yes Transceiver Mode: Auto/Manual RS485 Interfaces: Standard RS485 port, mini RS485 port, RS485 headers Transceiver Indicator: Yes (LED) Welding Area: Included Reset Button: Onboard In the Box 1 x RS485 Shield for Arduino"
+     },
+     "gift_card": false,
+     "handle": "rs485-shield-for-arduino",
+     "id": "gid://shopify/Product/15437341032772",
+     "list_price_range": {
+      "max": {
+       "amount": 1279,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1279,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "RS485 Shield for Arduino-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/RS485_Shield_for_Arduino-1.webp?v=1768811836"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1279,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1279,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board"
+     ],
+     "title": "RS485 Shield for Arduino - UART to RS485 Modbus Expansion Board",
+     "url": "https://openelab.com/products/rs485-shield-for-arduino",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56268756943172:1",
+       "description": {
+        "html": "The RS485 Shield for Arduino is a reliable communication expansion board designed specifically for the Arduino Uno and compatible boards. This Arduino RS485 shield enables UART-to-RS485 conversion, allowing your Arduino to communicate with industrial RS485 devices over long distances. With this UART to RS485 module, you get high anti-interference performance and stable data transmission for Modbus Arduino projects. Built with standard and mini RS485 ports, RS485 headers, and a flexible welding area, this RS485 shield for Arduino offers convenience and adaptability for both standard applications and custom DIY designs. With a switchable automatic/manual transmission mode, users can fine-tune their Arduino RS485 communication control based on specific system requirements. Features Converts UART/Serial to RS485 protocol Supports long-distance and noise-resistant communication Includes standard RS485 port, mini RS485 port, and RS485 header pins Switch between automatic and manual transceiver mode Onboard transceiver status LEDs Integrated operation/programming switch to avoid conflicts during Arduino uploads Designed for Arduino Uno with long pin headers for compatibility Gold immersion PCB for durability and enhanced signal integrity Convenient PH2.0 sensor interface for DFRobot RS485 devices (e.g., URM04 ultrasonic sensor) Applications Industrial communication systems using RS485 shield for Arduino Multi-node sensor networks and Arduino RS485 setups Long-distance data acquisition via UART to RS485 Building automation with Modbus Arduino protocols Arduino-based industrial monitoring systems Specifications Power Supply: +5V from Arduino Dimensions: 55mm x 53mm (2.16\" x 2.08\") Digital IO Ports: 16 (includes I2C interface) Analog IO Ports: 6 Programming/Operation Mode Switch: Yes Transceiver Mode: Auto/Manual RS485 Interfaces: Standard RS485 port, mini RS485 port, RS485 headers Transceiver Indicator: Yes (LED) Welding Area: Included Reset Button: Onboard In the Box 1 x RS485 Shield for Arduino"
+       },
+       "id": "gid://shopify/ProductVariant/56268756943172",
+       "list_price": {
+        "amount": 1279,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/RS485_Shield_for_Arduino-1.webp?v=1768811836"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1279,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0259",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

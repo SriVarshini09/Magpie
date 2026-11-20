@@ -1,0 +1,44 @@
+[project]
+name = "build-to-cart-backend"
+version = "0.0.1"
+description = "Build-to-Cart backend (FastAPI). Shared file: owned by the coordinator, see OWNERSHIP.md."
+requires-python = ">=3.13"
+dependencies = [
+    # PLAN §3.4 core
+    "fastapi",
+    "uvicorn[standard]",
+    "sse-starlette",
+    "httpx",
+    "pydantic>=2",
+    "python-dotenv",
+    "python-multipart",
+    "pillow",
+    "pulp",
+    "pyjwt[crypto]",
+    "rapidfuzz",
+    "pytest",
+    # PLAN §3.4 sponsor and service SDKs (imports are lazy: see app/registry.py)
+    "anthropic",
+    "singlestoredb",
+    "sie-sdk",
+    "airbyte-agent-sdk",
+    "amplitude-ai[anthropic,fastapi]",
+    "cognee",
+    # PLAN §3.4 planned extras
+    "stripe",
+    "statsig-python-core",
+]
+
+[project.optional-dependencies]
+# PLAN §3.4 fallback embedder (Cognee local mode). Install with: uv sync --extra fallback
+fallback = ["fastembed"]
+
+[tool.uv]
+package = false
+# OneDrive: hardlinks from the uv cache fail or get "dehydrated"; always copy.
+link-mode = "copy"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

@@ -1,0 +1,1733 @@
+{
+ "args": {
+  "business": "https://geekworm.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "5V power supply 5.5x2.1mm"
+  }
+ },
+ "key": "cce3e5e9c0315d0ef6a38f5d0767772773c7141fccf967a852b2be3e4e17a0e7",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:18:28-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://geekworm.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://geekworm.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hNREkxTmpNNE9ESTVNamt5TVN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-products",
+       "id": "gid://shopify/Collection/473526042937",
+       "title": "Featured Products"
+      }
+     ],
+     "description": {
+      "html": "Note: The US plug is out of stock; only EU plug is available now. OverviewThe XS-GaN-27W power supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.It powered by GaN Technology, making power supply smaller without sacrificing a drop of power and work with low temp and more stable.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual: https://wiki.geekworm.com/XS-GaN-27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5（US or EU Plug） Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+     },
+     "gift_card": false,
+     "handle": "xs-gan-27w",
+     "id": "gid://shopify/Product/9196735693113",
+     "list_price_range": {
+      "max": {
+       "amount": 1800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1800,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851.jpg?v=1711966147"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm GaN PD 27W 5.1V 5A Power Supply for Raspberry Pi 5",
+     "url": "https://geekworm.com/products/xs-gan-27w",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/48458860560697:1",
+       "description": {
+        "html": "Note: The US plug is out of stock; only EU plug is available now. OverviewThe XS-GaN-27W power supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.It powered by GaN Technology, making power supply smaller without sacrificing a drop of power and work with low temp and more stable.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual: https://wiki.geekworm.com/XS-GaN-27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5（US or EU Plug） Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+       },
+       "id": "gid://shopify/ProductVariant/48458860560697",
+       "list_price": {
+        "amount": 1800,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851.jpg?v=1711966147"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100427",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/48458860593465:1",
+       "description": {
+        "html": "Note: The US plug is out of stock; only EU plug is available now. OverviewThe XS-GaN-27W power supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.It powered by GaN Technology, making power supply smaller without sacrificing a drop of power and work with low temp and more stable.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual: https://wiki.geekworm.com/XS-GaN-27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5（US or EU Plug） Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+       },
+       "id": "gid://shopify/ProductVariant/48458860593465",
+       "list_price": {
+        "amount": 1800,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851_c2319619-460a-4884-bfdb-4719b110206d.jpg?v=1711961588"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100428",
+       "title": "EU Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-12"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "ups-hat",
+       "id": "gid://shopify/Collection/185197002840",
+       "title": "UPS HAT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "raspberry-pi-5-ups",
+       "id": "gid://shopify/Collection/478158225721",
+       "title": "Raspberry Pi 5 UPS"
+      }
+     ],
+     "description": {
+      "html": "Note: Please note: If the UPS does not detect the Raspberry Pi 5, it will automatically shut down within 3 seconds. So you need to install the RPi 5 on the UPS and make sure that the RPi5 has good contact with the UPS's pogo pins. The Raspberry Pi 5, 18650 batteries, active cooler or power adapter is not included in the packing list. NOT compatible with X1002 PCIe to M.2 2280 to NVMe SSD Bottom. Compatible with X1001/X1000/X1003 PCIe to M.2 NVMe SSD Top. OverviewThis X1202 is an ultra-compact advanced uninterruptible power supply expansion board designed specifically for the Raspberry Pi 5.With its advanced features and robust power backup capabilities, the X1202 is perfect for even the most demanding Raspberry Pi setups. User Manual: https://wiki.geekworm.com/X1202Reliable Power Backup: The X1202 provides a stable 5.1V 5000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1202 delivers reliable and consistent power supply.Enhanced Power Management: One of the standout features of the X1202 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery.Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1202 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions.Convenient Features: The X1202 offers convenient features such as auto power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention.Fast Charging: With fast charging capabilities of up to 3000mA, the X1202 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed.Versatile Design: The X1202 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs.Seamless Data Backup: The X1202 is compatible with our range of storage products, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure.Enhance the reliability and performance of your Raspberry Pi 5B with the X1202 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1202 to ensure uninterrupted operation and safeguard your valuable data.Specifications Power input: 6-18Vdc via DC5521 Jack or 5Vdc 5A via USB Type-C UPS output: 5.1V ±5% Max 5A Battery charging current: Max 2.3-3.2A Terminal Battery Voltage: 4.23V Battery Recharge Threshold: 4.1V PCB Size: 97.4mm x 85mm Ports & Connectors: DC power jack - 5.5x2.1mm 18650 battery socket x4 5V Power output connector x2 - XH2.54 2-pin USB2.0 type-A power output socket x2 External power button connector x1 - XH2.54-2P Please note that the DC 6V-18V wide voltage connector is just for the convenience of using the power supply you have on hand. If you have a Raspberry Pi 5 power supply, you don’t need to buy an additional power supply. Just use it to charge the X1202. Packing List 1 x X1202 UPS Shield 4 x CM2.5 x 4mm screws"
+     },
+     "gift_card": false,
+     "handle": "x1202",
+     "id": "gid://shopify/Product/9024114327865",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1202-V1.1-IMG-7241.jpg?v=1715741962"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat",
+      "Raspberry Pi",
+      "Raspberry Pi 5",
+      "ups"
+     ],
+     "title": "Geekworm X1202 4-Cell 18650 5.1V 5A UPS HAT for Raspberry Pi 5 Series",
+     "url": "https://geekworm.com/products/x1202",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/47823831236921:1",
+       "description": {
+        "html": "Note: Please note: If the UPS does not detect the Raspberry Pi 5, it will automatically shut down within 3 seconds. So you need to install the RPi 5 on the UPS and make sure that the RPi5 has good contact with the UPS's pogo pins. The Raspberry Pi 5, 18650 batteries, active cooler or power adapter is not included in the packing list. NOT compatible with X1002 PCIe to M.2 2280 to NVMe SSD Bottom. Compatible with X1001/X1000/X1003 PCIe to M.2 NVMe SSD Top. OverviewThis X1202 is an ultra-compact advanced uninterruptible power supply expansion board designed specifically for the Raspberry Pi 5.With its advanced features and robust power backup capabilities, the X1202 is perfect for even the most demanding Raspberry Pi setups. User Manual: https://wiki.geekworm.com/X1202Reliable Power Backup: The X1202 provides a stable 5.1V 5000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1202 delivers reliable and consistent power supply.Enhanced Power Management: One of the standout features of the X1202 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery.Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1202 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions.Convenient Features: The X1202 offers convenient features such as auto power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention.Fast Charging: With fast charging capabilities of up to 3000mA, the X1202 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed.Versatile Design: The X1202 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs.Seamless Data Backup: The X1202 is compatible with our range of storage products, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure.Enhance the reliability and performance of your Raspberry Pi 5B with the X1202 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1202 to ensure uninterrupted operation and safeguard your valuable data.Specifications Power input: 6-18Vdc via DC5521 Jack or 5Vdc 5A via USB Type-C UPS output: 5.1V ±5% Max 5A Battery charging current: Max 2.3-3.2A Terminal Battery Voltage: 4.23V Battery Recharge Threshold: 4.1V PCB Size: 97.4mm x 85mm Ports & Connectors: DC power jack - 5.5x2.1mm 18650 battery socket x4 5V Power output connector x2 - XH2.54 2-pin USB2.0 type-A power output socket x2 External power button connector x1 - XH2.54-2P Please note that the DC 6V-18V wide voltage connector is just for the convenience of using the power supply you have on hand. If you have a Raspberry Pi 5 power supply, you don’t need to buy an additional power supply. Just use it to charge the X1202. Packing List 1 x X1202 UPS Shield 4 x CM2.5 x 4mm screws"
+       },
+       "id": "gid://shopify/ProductVariant/47823831236921",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1202-V1.1-IMG-7241.jpg?v=1715741962"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100412",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+     },
+     "gift_card": false,
+     "handle": "psu60",
+     "id": "gid://shopify/Product/7248960815192",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-US.jpg?v=1722588901"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 3",
+      "Raspberry Pi 4"
+     ],
+     "title": "Geekworm DC 5521 60W 12V 5A Power Supply (PSU60)",
+     "url": "https://geekworm.com/products/psu60",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40071057080408:1",
+       "description": {
+        "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+       },
+       "id": "gid://shopify/ProductVariant/40071057080408",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-US.jpg?v=1722588901"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100343",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40071057277016:1",
+       "description": {
+        "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+       },
+       "id": "gid://shopify/ProductVariant/40071057277016",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-EU.jpg?v=1722588934"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100342",
+       "title": "EU Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+     },
+     "gift_card": false,
+     "handle": "dc5521-5v-10a-psu",
+     "id": "gid://shopify/Product/10153592586553",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664.jpg?v=1773992993"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        },
+        {
+         "label": "UK Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 3",
+      "Raspberry Pi 4",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm DC5521 5V 10A Power Adapter for X1011 etc",
+     "url": "https://geekworm.com/products/dc5521-5v-10a-psu",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035693216057:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035693216057",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664.jpg?v=1773992993"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200382",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035693248825:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035693248825",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664-EU.jpg?v=1773998471"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200383",
+       "title": "EU Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035697967417:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035697967417",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664-UK.jpg?v=1773998471"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200384",
+       "title": "UK Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "OverviewDesigned specifically for the Raspberry Pi 5, this high-performance 27W power module delivers stable and efficient 5V/5A power through dual input methods and dual output interfaces. It ensures reliable operation for power-intensive applications and includes built-in protection and customization features. Key Features: Dual Input Flexibility: Supports two input methods: USB-C PD Input: Connects to a Power Delivery (PD) adapter for an automatic handshake to request 12V input. DC 5.5x2.1mm Input: Accepts a wide voltage range of 9-15V/9-24V from a standard DC power supply. Use either input method based on your available equipment. High-Current Dual Output: Provides a combined output of over 5A through two convenient ports: USB-C Output USB-A 2.0 Output Perfect for powering your Raspberry Pi 5 and additional peripherals simultaneously. Output Voltage Trimming: Equipped with a trimming jumper. Removing the jumper allows you to raise the output voltage by approximately 0.2V to compensate for voltage drop under high load. Integrated Active Cooling: Includes a standard fan for optimal thermal management. The fan operates continuously and does not support temperature-controlled start/stop. If your load remains below 3A for extended periods and fan noise is a concern, you may manually remove it. Enhanced Protection & Mounting: Comes with a standard 3D-printed base for secure tabletop placement and protection of the unit. To compensate for cable voltage drop, a jumper is provided: For the 9-15V version, removing the jumper increases the output voltage by +0.2V. For the 9-24V version, shorting the jumper increases the output voltage by +0.2V. Packing List 1x 5V 5A Dual PD Power Module for Raspberry Pi 5"
+     },
+     "gift_card": false,
+     "handle": "rpi5-5v5a-pd",
+     "id": "gid://shopify/Product/9973372682553",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/Pi5-Power-PD-Activation-Module-IMG-9976.jpg?v=1757150843"
+      }
+     ],
+     "options": [
+      {
+       "name": "Input Range",
+       "values": [
+        {
+         "label": "9-24V-5.5mm x 2.1mm DC Jack Input"
+        },
+        {
+         "label": "9-24V-3.81mm Pitch 2-Pin Terminal Block Input"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1650,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1650,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat",
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm Raspberry Pi 5 5V 5A Dual PD Power Module | 9–24V Wide Voltage Input | Dual PD Input/Output",
+     "url": "https://geekworm.com/products/rpi5-5v5a-pd",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/51143289766201:1",
+       "description": {
+        "html": "OverviewDesigned specifically for the Raspberry Pi 5, this high-performance 27W power module delivers stable and efficient 5V/5A power through dual input methods and dual output interfaces. It ensures reliable operation for power-intensive applications and includes built-in protection and customization features. Key Features: Dual Input Flexibility: Supports two input methods: USB-C PD Input: Connects to a Power Delivery (PD) adapter for an automatic handshake to request 12V input. DC 5.5x2.1mm Input: Accepts a wide voltage range of 9-15V/9-24V from a standard DC power supply. Use either input method based on your available equipment. High-Current Dual Output: Provides a combined output of over 5A through two convenient ports: USB-C Output USB-A 2.0 Output Perfect for powering your Raspberry Pi 5 and additional peripherals simultaneously. Output Voltage Trimming: Equipped with a trimming jumper. Removing the jumper allows you to raise the output voltage by approximately 0.2V to compensate for voltage drop under high load. Integrated Active Cooling: Includes a standard fan for optimal thermal management. The fan operates continuously and does not support temperature-controlled start/stop. If your load remains below 3A for extended periods and fan noise is a concern, you may manually remove it. Enhanced Protection & Mounting: Comes with a standard 3D-printed base for secure tabletop placement and protection of the unit. To compensate for cable voltage drop, a jumper is provided: For the 9-15V version, removing the jumper increases the output voltage by +0.2V. For the 9-24V version, shorting the jumper increases the output voltage by +0.2V. Packing List 1x 5V 5A Dual PD Power Module for Raspberry Pi 5"
+       },
+       "id": "gid://shopify/ProductVariant/51143289766201",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/Pi5-Power-PD-Activation-Module-IMG-9976.jpg?v=1757150843"
+        }
+       ],
+       "options": [
+        {
+         "label": "9-24V-5.5mm x 2.1mm DC Jack Input",
+         "name": "Input Range"
+        }
+       ],
+       "price": {
+        "amount": 1650,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100174",
+       "title": "9-24V-5.5mm x 2.1mm DC Jack Input"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/54243606200633:1",
+       "description": {
+        "html": "OverviewDesigned specifically for the Raspberry Pi 5, this high-performance 27W power module delivers stable and efficient 5V/5A power through dual input methods and dual output interfaces. It ensures reliable operation for power-intensive applications and includes built-in protection and customization features. Key Features: Dual Input Flexibility: Supports two input methods: USB-C PD Input: Connects to a Power Delivery (PD) adapter for an automatic handshake to request 12V input. DC 5.5x2.1mm Input: Accepts a wide voltage range of 9-15V/9-24V from a standard DC power supply. Use either input method based on your available equipment. High-Current Dual Output: Provides a combined output of over 5A through two convenient ports: USB-C Output USB-A 2.0 Output Perfect for powering your Raspberry Pi 5 and additional peripherals simultaneously. Output Voltage Trimming: Equipped with a trimming jumper. Removing the jumper allows you to raise the output voltage by approximately 0.2V to compensate for voltage drop under high load. Integrated Active Cooling: Includes a standard fan for optimal thermal management. The fan operates continuously and does not support temperature-controlled start/stop. If your load remains below 3A for extended periods and fan noise is a concern, you may manually remove it. Enhanced Protection & Mounting: Comes with a standard 3D-printed base for secure tabletop placement and protection of the unit. To compensate for cable voltage drop, a jumper is provided: For the 9-15V version, removing the jumper increases the output voltage by +0.2V. For the 9-24V version, shorting the jumper increases the output voltage by +0.2V. Packing List 1x 5V 5A Dual PD Power Module for Raspberry Pi 5"
+       },
+       "id": "gid://shopify/ProductVariant/54243606200633",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/Pi5-5V5A-PD-Module-IMG-1205.jpg?v=1785139247"
+        }
+       ],
+       "options": [
+        {
+         "label": "9-24V-3.81mm Pitch 2-Pin Terminal Block Input",
+         "name": "Input Range"
+        }
+       ],
+       "price": {
+        "amount": 1650,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100169",
+       "title": "9-24V-3.81mm Pitch 2-Pin Terminal Block Input"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-12"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "ups-hat",
+       "id": "gid://shopify/Collection/185197002840",
+       "title": "UPS HAT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "raspberry-pi-5-ups",
+       "id": "gid://shopify/Collection/478158225721",
+       "title": "Raspberry Pi 5 UPS"
+      }
+     ],
+     "description": {
+      "html": "Overview: X1203 is an innovative uninterruptible power supply (UPS) expansion board designed specifically for the Raspberry Pi 5B. With its advanced features and robust power backup capabilities, the X1203 is perfect for even the most demanding Raspberry Pi setups. Reliable Power Backup: The X1203 provides a stable 5.1V 5000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1203 delivers reliable and consistent power supply. Enhanced Power Management: One of the standout features of the X1203 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery. Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1203 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions. Convenient Features: The X1203 offers convenient features such as auto power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention. Fast Charging: With fast charging capabilities of up to 3000mA, the X1203 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed. Flexible charging:You can use either type-c or DC5521 to charge the battery. When using type-c you can use the PD27W power supply that powers the Raspberry Pi 5, when you use the DC5521 you can use a variety of power adapters in the 6-18V range. Versatile Design: The X1203 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs. Seamless Data Backup: The X1203 is compatible with our range of storage products, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure. Enhance the reliability and performance of your Raspberry Pi 5B with the X1203 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1203 to ensure uninterrupted operation and safeguard your valuable data. Warning:When you use an external battery box or battery pack, please pay attention to the positive and negative poles, generally speaking, the red wire is the positive pole, the black wire is the negative pole User Manual: https://wiki.geekworm.com/X1203 Features: For use with Raspberry Pi 5 2GB/4GB/8GB/16GB Key Features UPS Output Provides continuous operation for up to 10 hours (duration depends on battery type and applications) Supports a maximum current output of 5.1V 5000mA, suitable for most Raspberry Pi applications Integrated Advanced Power MOSFET with an equivalent of 7mΩ RDS(ON) to minimize power loss Convenient pogo pin connection for powering the Pi, eliminating the need for cabling and soldering Equipped with XH2.54 connectors for 5V power output Battery Charging Supports fast battery charging with a capacity of 3000mA Battery charging control can be managed via GPIO Provides protection against battery overcurrent and overvoltage Built-in protection against reverse connection of battery cells Integrated Maxim's fuel-gauge systems for reading battery voltage and percentage over i2c On-board LEDs indicate battery charging and discharging levels of 25%, 50%, 75%, and 100% Features two XH2.54 battery connectors Power Input Integrated high-efficiency step-down DC-DC converter Wide operating input range of 6V to 18V Up to 95% efficiency for optimal power conversion Provides up to 5.5A output current, enabling 3A fast charging while powering the system Allows power input from various sources such as a car, solder panel, and more Common power input jack size of 5.5x2.1mm Compatible with Raspberry Pi USB-C Power Supply Enhanced Power Management Seamless power switching between backup power and power adapter On-board push button performs the same actions as the Pi's power button Automatically cuts off power when the Pi is shut down On-board LED indicates power status and Pi detection AC power loss and power adapter failure detection via GPIO Auto power-on when power is applied or restored Automatic safe shutdown when battery voltage is low (programmable) Ultra-low standby power consumption to maximize battery life Advanced system power-path management to minimize frequent charging and discharging of batteries Miscellaneous Connects to the Pi via convenient pogo pins, eliminating the need for additional cabling Designed to be attached on the bottom, allowing the use of favorite HATs alongside it XH2.54 connector available for adding your own power button Technical Spec Power input: 6-18Vdc via DC5521 power jack of X1203 (12Vdc 3A power adapter recommended), OR 5Vdc ±5%, ≥5A via USB-C socket of X1203 UPS output: 5.1V ±5% Max 5A Battery charging current: 2.3-3.2A --IMPORTANT !!-- Please confirm before connecting your battery. Terminal Battery Voltage: 4.23V --IMPORTANT !!-- Please confirm before connecting your battery. Battery Recharge Threshold: 4.1V Ports & Connectors: DC power jack - 5.5x2.1mm to charge (Refer to PSU60) Type-C Socket to charge (Refer to PD27W) XH2.54 battery connector x2 5V Power output connector x2 - XH2.54 2-pin External power button connector x1 - XH2.54-2P PCB Size: 85mm x 68mm Important Notes: Do not apply power to your Raspberry Pi via the Type-C USB socket. Do not use 18650 battery with built-in protection circuit. Packing List: 1 x X1203 Expansion Board 1 x Screw pack"
+     },
+     "gift_card": false,
+     "handle": "x1203",
+     "id": "gid://shopify/Product/9404877013305",
+     "list_price_range": {
+      "max": {
+       "amount": 4600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4600,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1203-V1.0-IMG-8121.jpg?v=1716365207"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat",
+      "Raspberry Pi",
+      "Raspberry Pi 5",
+      "ups"
+     ],
+     "title": "Geekworm X1203 5.1V 5A UPS Shield for Raspberry Pi 5 Series",
+     "url": "https://geekworm.com/products/x1203",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/49144238276921:1",
+       "description": {
+        "html": "Overview: X1203 is an innovative uninterruptible power supply (UPS) expansion board designed specifically for the Raspberry Pi 5B. With its advanced features and robust power backup capabilities, the X1203 is perfect for even the most demanding Raspberry Pi setups. Reliable Power Backup: The X1203 provides a stable 5.1V 5000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1203 delivers reliable and consistent power supply. Enhanced Power Management: One of the standout features of the X1203 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery. Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1203 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions. Convenient Features: The X1203 offers convenient features such as auto power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention. Fast Charging: With fast charging capabilities of up to 3000mA, the X1203 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed. Flexible charging:You can use either type-c or DC5521 to charge the battery. When using type-c you can use the PD27W power supply that powers the Raspberry Pi 5, when you use the DC5521 you can use a variety of power adapters in the 6-18V range. Versatile Design: The X1203 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs. Seamless Data Backup: The X1203 is compatible with our range of storage products, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure. Enhance the reliability and performance of your Raspberry Pi 5B with the X1203 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1203 to ensure uninterrupted operation and safeguard your valuable data. Warning:When you use an external battery box or battery pack, please pay attention to the positive and negative poles, generally speaking, the red wire is the positive pole, the black wire is the negative pole User Manual: https://wiki.geekworm.com/X1203 Features: For use with Raspberry Pi 5 2GB/4GB/8GB/16GB Key Features UPS Output Provides continuous operation for up to 10 hours (duration depends on battery type and applications) Supports a maximum current output of 5.1V 5000mA, suitable for most Raspberry Pi applications Integrated Advanced Power MOSFET with an equivalent of 7mΩ RDS(ON) to minimize power loss Convenient pogo pin connection for powering the Pi, eliminating the need for cabling and soldering Equipped with XH2.54 connectors for 5V power output Battery Charging Supports fast battery charging with a capacity of 3000mA Battery charging control can be managed via GPIO Provides protection against battery overcurrent and overvoltage Built-in protection against reverse connection of battery cells Integrated Maxim's fuel-gauge systems for reading battery voltage and percentage over i2c On-board LEDs indicate battery charging and discharging levels of 25%, 50%, 75%, and 100% Features two XH2.54 battery connectors Power Input Integrated high-efficiency step-down DC-DC converter Wide operating input range of 6V to 18V Up to 95% efficiency for optimal power conversion Provides up to 5.5A output current, enabling 3A fast charging while powering the system Allows power input from various sources such as a car, solder panel, and more Common power input jack size of 5.5x2.1mm Compatible with Raspberry Pi USB-C Power Supply Enhanced Power Management Seamless power switching between backup power and power adapter On-board push button performs the same actions as the Pi's power button Automatically cuts off power when the Pi is shut down On-board LED indicates power status and Pi detection AC power loss and power adapter failure detection via GPIO Auto power-on when power is applied or restored Automatic safe shutdown when battery voltage is low (programmable) Ultra-low standby power consumption to maximize battery life Advanced system power-path management to minimize frequent charging and discharging of batteries Miscellaneous Connects to the Pi via convenient pogo pins, eliminating the need for additional cabling Designed to be attached on the bottom, allowing the use of favorite HATs alongside it XH2.54 connector available for adding your own power button Technical Spec Power input: 6-18Vdc via DC5521 power jack of X1203 (12Vdc 3A power adapter recommended), OR 5Vdc ±5%, ≥5A via USB-C socket of X1203 UPS output: 5.1V ±5% Max 5A Battery charging current: 2.3-3.2A --IMPORTANT !!-- Please confirm before connecting your battery. Terminal Battery Voltage: 4.23V --IMPORTANT !!-- Please confirm before connecting your battery. Battery Recharge Threshold: 4.1V Ports & Connectors: DC power jack - 5.5x2.1mm to charge (Refer to PSU60) Type-C Socket to charge (Refer to PD27W) XH2.54 battery connector x2 5V Power output connector x2 - XH2.54 2-pin External power button connector x1 - XH2.54-2P PCB Size: 85mm x 68mm Important Notes: Do not apply power to your Raspberry Pi via the Type-C USB socket. Do not use 18650 battery with built-in protection circuit. Packing List: 1 x X1203 Expansion Board 1 x Screw pack"
+       },
+       "id": "gid://shopify/ProductVariant/49144238276921",
+       "list_price": {
+        "amount": 4600,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1203-V1.0-IMG-8121.jpg?v=1716365207"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100438",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-products",
+       "id": "gid://shopify/Collection/473526042937",
+       "title": "Featured Products"
+      }
+     ],
+     "description": {
+      "html": "OverviewPower your Raspberry Pi 5 and high-performance peripherals with confidence using the PD27W USB-C Power Supply. Specially designed to meet the power demands of Raspberry Pi 5, this adapter is ideal for users connecting power-hungry devices like SSDs, external hard drives, and more via the board’s four Type-A USB ports. With support for USB Power Delivery (PD), this intelligent power adapter allows the Raspberry Pi 5 to negotiate and select the most suitable power profile automatically. It can dynamically increase the USB current limit from the default 600mA up to 1.6A, ensuring stable performance for connected devices. The PD 27W power adapter isn't just for Raspberry Pi 5—it's also a versatile choice for powering a wide range of PD-compatible third-party devices Features: Model: XLS-GaN-27W USB-C Power Supply US/EU/UK Compatible with Raspberry Pi 5 Input Voltage: 100 – 240V AC/60HZ 0.8A Max Output Power Profiles (USB PD): 5.1V 5A 25.5W; 9V 3A 27W; 12V 2.25A 27W; 15V 1.8A 27W Connector Type: USB-C Plug Options: US / EU / UK plug available Cable Length: 120cm / 47.24in (18AWG) Color: Black Safety: Built-in overvoltage, overcurrent, and short circuit protection Ripple & Noise: ≤200mV peak-to-peak (full load) Packing List: 1 × 27W USB-C PD Power Adapter for Raspberry Pi 5"
+     },
+     "gift_card": false,
+     "handle": "xsl-gan-27w",
+     "id": "gid://shopify/Product/9914639155513",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/XSL-GaN-27W-US-IMG-9614-2.jpg?v=1751948776"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        },
+        {
+         "label": "UK Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1250,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1250,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm GaN PD 27W 5.1V 5A Power Supply for Raspberry Pi 5",
+     "url": "https://geekworm.com/products/xsl-gan-27w",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/50962634244409:1",
+       "description": {
+        "html": "OverviewPower your Raspberry Pi 5 and high-performance peripherals with confidence using the PD27W USB-C Power Supply. Specially designed to meet the power demands of Raspberry Pi 5, this adapter is ideal for users connecting power-hungry devices like SSDs, external hard drives, and more via the board’s four Type-A USB ports. With support for USB Power Delivery (PD), this intelligent power adapter allows the Raspberry Pi 5 to negotiate and select the most suitable power profile automatically. It can dynamically increase the USB current limit from the default 600mA up to 1.6A, ensuring stable performance for connected devices. The PD 27W power adapter isn't just for Raspberry Pi 5—it's also a versatile choice for powering a wide range of PD-compatible third-party devices Features: Model: XLS-GaN-27W USB-C Power Supply US/EU/UK Compatible with Raspberry Pi 5 Input Voltage: 100 – 240V AC/60HZ 0.8A Max Output Power Profiles (USB PD): 5.1V 5A 25.5W; 9V 3A 27W; 12V 2.25A 27W; 15V 1.8A 27W Connector Type: USB-C Plug Options: US / EU / UK plug available Cable Length: 120cm / 47.24in (18AWG) Color: Black Safety: Built-in overvoltage, overcurrent, and short circuit protection Ripple & Noise: ≤200mV peak-to-peak (full load) Packing List: 1 × 27W USB-C PD Power Adapter for Raspberry Pi 5"
+       },
+       "id": "gid://shopify/ProductVariant/50962634244409",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/XSL-GaN-27W-US-IMG-9614-2.jpg?v=1751948776"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100613",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/50962634277177:1",
+       "description": {
+        "html": "OverviewPower your Raspberry Pi 5 and high-performance peripherals with confidence using the PD27W USB-C Power Supply. Specially designed to meet the power demands of Raspberry Pi 5, this adapter is ideal for users connecting power-hungry devices like SSDs, external hard drives, and more via the board’s four Type-A USB ports. With support for USB Power Delivery (PD), this intelligent power adapter allows the Raspberry Pi 5 to negotiate and select the most suitable power profile automatically. It can dynamically increase the USB current limit from the default 600mA up to 1.6A, ensuring stable performance for connected devices. The PD 27W power adapter isn't just for Raspberry Pi 5—it's also a versatile choice for powering a wide range of PD-compatible third-party devices Features: Model: XLS-GaN-27W USB-C Power Supply US/EU/UK Compatible with Raspberry Pi 5 Input Voltage: 100 – 240V AC/60HZ 0.8A Max Output Power Profiles (USB PD): 5.1V 5A 25.5W; 9V 3A 27W; 12V 2.25A 27W; 15V 1.8A 27W Connector Type: USB-C Plug Options: US / EU / UK plug available Cable Length: 120cm / 47.24in (18AWG) Color: Black Safety: Built-in overvoltage, overcurrent, and short circuit protection Ripple & Noise: ≤200mV peak-to-peak (full load) Packing List: 1 × 27W USB-C PD Power Adapter for Raspberry Pi 5"
+       },
+       "id": "gid://shopify/ProductVariant/50962634277177",
+       "list_price": {
+        "amount": 0,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/XSL-GaN-27W-EU-IMG-9614-2.jpg?v=1752812206"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100612",
+       "title": "EU Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/50962643681593:1",
+       "description": {
+        "html": "OverviewPower your Raspberry Pi 5 and high-performance peripherals with confidence using the PD27W USB-C Power Supply. Specially designed to meet the power demands of Raspberry Pi 5, this adapter is ideal for users connecting power-hungry devices like SSDs, external hard drives, and more via the board’s four Type-A USB ports. With support for USB Power Delivery (PD), this intelligent power adapter allows the Raspberry Pi 5 to negotiate and select the most suitable power profile automatically. It can dynamically increase the USB current limit from the default 600mA up to 1.6A, ensuring stable performance for connected devices. The PD 27W power adapter isn't just for Raspberry Pi 5—it's also a versatile choice for powering a wide range of PD-compatible third-party devices Features: Model: XLS-GaN-27W USB-C Power Supply US/EU/UK Compatible with Raspberry Pi 5 Input Voltage: 100 – 240V AC/60HZ 0.8A Max Output Power Profiles (USB PD): 5.1V 5A 25.5W; 9V 3A 27W; 12V 2.25A 27W; 15V 1.8A 27W Connector Type: USB-C Plug Options: US / EU / UK plug available Cable Length: 120cm / 47.24in (18AWG) Color: Black Safety: Built-in overvoltage, overcurrent, and short circuit protection Ripple & Noise: ≤200mV peak-to-peak (full load) Packing List: 1 × 27W USB-C PD Power Adapter for Raspberry Pi 5"
+       },
+       "id": "gid://shopify/ProductVariant/50962643681593",
+       "list_price": {
+        "amount": 0,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/XSL-GaN-27W-UK-IMG-9614.jpg?v=1752812206"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1250,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100611",
+       "title": "UK Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "ups-hat",
+       "id": "gid://shopify/Collection/185197002840",
+       "title": "UPS HAT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "raspberry-pi-5-ups",
+       "id": "gid://shopify/Collection/478158225721",
+       "title": "Raspberry Pi 5 UPS"
+      }
+     ],
+     "description": {
+      "html": "Note: the Raspberry Pi 5, 21700 battery, power adapter is not included in the packing list. OverviewThis X1205 is an ultra-compact advanced uninterruptible power supply expansion board designed specifically for the Raspberry Pi 5. It features a 2-cell Lithium 21700 battery holder, supporting up to 10,000mAh (with 2 cell 21700 batteries), With its advanced features and robust power backup capabilities, the X1205 is perfect for even the most demanding Raspberry Pi setups. Reliable Power Backup: The X1205 provides a stable 5.1V 6000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1205 delivers reliable and consistent power supply. Enhanced Power Management: One of the standout features of the X1205 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery. Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1205 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions. Convenient Features: The X1205 offers convenient features such as auto power-on and always power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention. Fast Charging: With fast charging capabilities of up to 3000mA, the X1205 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed. Versatile Design: The X1205 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs. Seamless Data Backup: The X1205 is compatible with our range of storage products such as X1001, X1000, X1004 top PiPs etc, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure. Enhance the reliability and performance of your Raspberry Pi 5B with the X1205 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1205 to ensure uninterrupted operation and safeguard your valuable data. What is the difference between X1205 and X1200:1. X1205 uses a wide voltage power input (9V-18V);2. Uses a higher capacity 21700 lithium battery to provide longer power supply time;3. The power supply capacity through the DC jack is greatly increased from 5.5A of X1200 to 10A Features For use with Raspberry Pi 5 Only UPS Output Provides continuous operation for up to 10 hours (duration depends on battery type and applications) Delivers reliable, long-lasting power for continuous use Supports a maximum current output of 5.1V 6000mA, suitable for most Raspberry Pi applications Integrated Advanced Power MOSFET with an equivalent of 7mΩ RDS(ON) to minimize power loss Convenient pogo pin connection for powering the Pi, eliminating the need for cabling and soldering Equipped with XH2.54 connectors for 5V power output (Share 6000mA current output) Battery Charging Supports fast battery charging with a upto 3000mA current Battery charging control can be managed via GPIO Provides protection against battery overcurrent and overvoltage Built-in protection against reverse connection of battery cells Integrated Maxim's fuel-gauge systems for reading battery voltage and percentage over i2c On-board LEDs indicate battery charging and discharging levels of 25%, 50%, 75%, and 100% Features a 2-cell 21700 battery holder, supporting up to 10,000mAh with two 21700 batteries Power Input Integrated high-efficiency step-down DC-DC converter Wide operating input range of 9V to 18V, strongly recommend Geekworm 12V 5A Power supply Up to 95% efficiency for optimal power conversion The power supply with DC jack can get up to 10A input current, which can achieve 3A fast charging while powering the system. Of course, this also depends on the DC power adapter you use. A good quality power adapter is very important. Allows power input from various sources such as a car, solder panel, and more Common power input jack size of 5.5x2.1mm Compatible with Raspberry Pi USB-C Power Supply Power Management Seamless power switching between backup power and power adapter On-board push button performs the same actions as the RPi 5's power button Automatically cuts off power when the Pi is shut down On-board LED indicates power status and Pi detection AC power loss and power adapter failure detection via GPIO Auto power-on when power is applied or restored Automatic safe shutdown when battery voltage is low (programmable) Ultra-low standby power consumption to maximize battery life Advanced system power-path management to minimize frequent charging and discharging of batteries Misc Connects to the Pi via convenient pogo pins, eliminating the need for additional cabling Designed to be attached on the bottom, allowing the use of favorite HATs alongside it XH2.54 connector available for adding your own power button Power Supply Tips The Wide 9-18V Input allows the user to choose the power supply flexibly. The required current is greater than or equal to 3A. The reserved 9-18V XH2.54 connector provide convenient power supply when integrate this ups shield with other products. A good quality power adapter is very important. Most of the problems you encounter are usually caused by using a poor quality power supply. Strongly recommend Geekworm 12V 5A Power supply Notes Only DC Jack power is enough, DON'T apply power to your Raspberry Pi 5 via the Type-C USB socket. Do not use 21700 battery with built-in protection circuit. Technical specification UPS output 5.1V ±5% Max 6A Battery charging current Max 2.3-3.2A Terminal Battery Voltage 4.23V Battery Recharge Threshold 4.1V Ports & Connectors DC power jack - 5.5x2.1mm (to Power in) USB Type-C socket x1 (to Power in) 2-cell 21700 battery socket x1 5.1V Power output connector x2 - XH2.54 2-pin USB2.0 type-A power output socket x2 External power button connector x1 - XH2.54-2P PCB Size 69.5mm x 85mm Packing List 1 x X1205 UPS Shield 4 x CM2.5*4 screws"
+     },
+     "gift_card": false,
+     "handle": "x1205",
+     "id": "gid://shopify/Product/9744368533817",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1205-IMG-9063.jpg?v=1735803321"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat",
+      "Raspberry Pi",
+      "Raspberry Pi 5",
+      "ups"
+     ],
+     "title": "Geekworm X1205 2-Cell 21700 5.1V 6A UPS HAT for Raspberry Pi 5 Series",
+     "url": "https://geekworm.com/products/x1205",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/50306706768185:1",
+       "description": {
+        "html": "Note: the Raspberry Pi 5, 21700 battery, power adapter is not included in the packing list. OverviewThis X1205 is an ultra-compact advanced uninterruptible power supply expansion board designed specifically for the Raspberry Pi 5. It features a 2-cell Lithium 21700 battery holder, supporting up to 10,000mAh (with 2 cell 21700 batteries), With its advanced features and robust power backup capabilities, the X1205 is perfect for even the most demanding Raspberry Pi setups. Reliable Power Backup: The X1205 provides a stable 5.1V 6000mA power backup, ensuring uninterrupted operation of your Raspberry Pi. Whether you are running resource-intensive applications or powering multiple peripherals, the X1205 delivers reliable and consistent power supply. Enhanced Power Management: One of the standout features of the X1205 is its enhanced power management system. It intelligently monitors the power status of the Raspberry Pi and automatically cuts off power when the Pi is shut down. This helps optimize battery life by entering an ultra-low standby power consumption mode. It ensures efficient operation and maximizes the lifespan of the UPS battery. Seamless Power Switching: Equipped with AC power loss and power adapter failure detection, the X1205 seamlessly switches to backup power in the event of a power outage or power adapter failure. This feature guarantees that your Raspberry Pi remains operational and protected from unexpected power disruptions. Convenient Features: The X1205 offers convenient features such as auto power-on and always power-on, enabling your Raspberry Pi to automatically boot up when power is restored. It also supports full power-off from software, allowing you to safely shut down your Raspberry Pi without manual intervention. Fast Charging: With fast charging capabilities of up to 3000mA, the X1205 ensures quick recharging of the UPS, making it ready to provide backup power whenever needed. Versatile Design: The X1205 is designed to be attached on bottom and don't use the 40-pin header, enabling easy stacking with other Raspberry Pi accessory boards. This versatility allows you to expand the functionality of your Raspberry Pi and create enhanced applications tailored to your specific needs. Seamless Data Backup: The X1205 is compatible with our range of storage products such as X1001, X1000, X1004 top PiPs etc, providing seamless integration for safe and reliable data backup. Your valuable data remains protected, even in the event of a power failure. Enhance the reliability and performance of your Raspberry Pi 5B with the X1205 UPS expansion board. Experience peace of mind with its advanced features and robust power backup capabilities. Trust the X1205 to ensure uninterrupted operation and safeguard your valuable data. What is the difference between X1205 and X1200:1. X1205 uses a wide voltage power input (9V-18V);2. Uses a higher capacity 21700 lithium battery to provide longer power supply time;3. The power supply capacity through the DC jack is greatly increased from 5.5A of X1200 to 10A Features For use with Raspberry Pi 5 Only UPS Output Provides continuous operation for up to 10 hours (duration depends on battery type and applications) Delivers reliable, long-lasting power for continuous use Supports a maximum current output of 5.1V 6000mA, suitable for most Raspberry Pi applications Integrated Advanced Power MOSFET with an equivalent of 7mΩ RDS(ON) to minimize power loss Convenient pogo pin connection for powering the Pi, eliminating the need for cabling and soldering Equipped with XH2.54 connectors for 5V power output (Share 6000mA current output) Battery Charging Supports fast battery charging with a upto 3000mA current Battery charging control can be managed via GPIO Provides protection against battery overcurrent and overvoltage Built-in protection against reverse connection of battery cells Integrated Maxim's fuel-gauge systems for reading battery voltage and percentage over i2c On-board LEDs indicate battery charging and discharging levels of 25%, 50%, 75%, and 100% Features a 2-cell 21700 battery holder, supporting up to 10,000mAh with two 21700 batteries Power Input Integrated high-efficiency step-down DC-DC converter Wide operating input range of 9V to 18V, strongly recommend Geekworm 12V 5A Power supply Up to 95% efficiency for optimal power conversion The power supply with DC jack can get up to 10A input current, which can achieve 3A fast charging while powering the system. Of course, this also depends on the DC power adapter you use. A good quality power adapter is very important. Allows power input from various sources such as a car, solder panel, and more Common power input jack size of 5.5x2.1mm Compatible with Raspberry Pi USB-C Power Supply Power Management Seamless power switching between backup power and power adapter On-board push button performs the same actions as the RPi 5's power button Automatically cuts off power when the Pi is shut down On-board LED indicates power status and Pi detection AC power loss and power adapter failure detection via GPIO Auto power-on when power is applied or restored Automatic safe shutdown when battery voltage is low (programmable) Ultra-low standby power consumption to maximize battery life Advanced system power-path management to minimize frequent charging and discharging of batteries Misc Connects to the Pi via convenient pogo pins, eliminating the need for additional cabling Designed to be attached on the bottom, allowing the use of favorite HATs alongside it XH2.54 connector available for adding your own power button Power Supply Tips The Wide 9-18V Input allows the user to choose the power supply flexibly. The required current is greater than or equal to 3A. The reserved 9-18V XH2.54 connector provide convenient power supply when integrate this ups shield with other products. A good quality power adapter is very important. Most of the problems you encounter are usually caused by using a poor quality power supply. Strongly recommend Geekworm 12V 5A Power supply Notes Only DC Jack power is enough, DON'T apply power to your Raspberry Pi 5 via the Type-C USB socket. Do not use 21700 battery with built-in protection circuit. Technical specification UPS output 5.1V ±5% Max 6A Battery charging current Max 2.3-3.2A Terminal Battery Voltage 4.23V Battery Recharge Threshold 4.1V Ports & Connectors DC power jack - 5.5x2.1mm (to Power in) USB Type-C socket x1 (to Power in) 2-cell 21700 battery socket x1 5.1V Power output connector x2 - XH2.54 2-pin USB2.0 type-A power output socket x2 External power button connector x1 - XH2.54-2P PCB Size 69.5mm x 85mm Packing List 1 x X1205 UPS Shield 4 x CM2.5*4 screws"
+       },
+       "id": "gid://shopify/ProductVariant/50306706768185",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1205-IMG-9063.jpg?v=1735803321"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100472",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-products",
+       "id": "gid://shopify/Collection/473526042937",
+       "title": "Featured Products"
+      }
+     ],
+     "description": {
+      "html": "OverviewThe PD27W USB-C Power Supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual:https://wiki.geekworm.com/HT-PD27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug/UK plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5 Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+     },
+     "gift_card": false,
+     "handle": "pd27w",
+     "id": "gid://shopify/Product/8976887513401",
+     "list_price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851-_-US-Plug.jpg?v=1701853390"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        },
+        {
+         "label": "UK Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm PD 27W 5.1V 5A Power Supply for Raspberry Pi 5",
+     "url": "https://geekworm.com/products/pd27w",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/47646229659961:1",
+       "description": {
+        "html": "OverviewThe PD27W USB-C Power Supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual:https://wiki.geekworm.com/HT-PD27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug/UK plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5 Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+       },
+       "id": "gid://shopify/ProductVariant/47646229659961",
+       "list_price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851-_-US-Plug.jpg?v=1701853390"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100509",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/47646527717689:1",
+       "description": {
+        "html": "OverviewThe PD27W USB-C Power Supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual:https://wiki.geekworm.com/HT-PD27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug/UK plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5 Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+       },
+       "id": "gid://shopify/ProductVariant/47646527717689",
+       "list_price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-6851-_-EU-Plug.jpg?v=1702006810"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100510",
+       "title": "EU Plug"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/47646528110905:1",
+       "description": {
+        "html": "OverviewThe PD27W USB-C Power Supply is an ideal power supply for Raspberry Pi 5 soc, especially for users who wish to drive high-power peripherals, such as hard drives and SSDs, from Raspberry Pi 5's four Type A USB ports.Delivering a maximum of 5.1V, 5A, it supports USB PD (Power Delivery), so Raspberry Pi 5 can communicate with it and select the most appropriate power profile. This enables Raspberry Pi 5 to increase the USB current limit automatically from the default 600mA to 1.6A, in order to provide extra power for devices connected to the four Type A USB ports.Additional built-in power profiles mean the Raspberry Pi 27W USB-C Power Supply is also an excellent option for powering third-party PD-compatible products. The available profiles are 9V, 3A; 12V, 2.25A; and 15V, 1.8A, all limited to a maximum of 27W.[Wholesale]Customised logo is available for bulk purchase, please contact us at info@geekworm.com;User Manual:https://wiki.geekworm.com/HT-PD27WFeatures Input: 100 – 240Vac Output: 5.1V, 5A; 9V, 3A; 12V, 2.25A; 15V, 1.8A (Power Delivery) Connector: USB-C Plug Type: EU plug/US plug/UK plug availble Cable length: 120mm/47.24inch, 18AWG Color: black Ripple and Noise: ≤200mV p-p (Full load) With over voltage, over current short circuit protection. Packing List 1x PD 27W Power Adapter for Raspberry Pi 5 Warnings This product should be operated in a well ventilated environment. The connection of incompatible devices to this power supply may affect compliance, result in damage to the unit, and invalidate the warranty. Safety InstructionsTo avoid malfunction or damage to this product, please observe the following: Do not expose to water or moisture, or place on a conductive surface while in operation. Do not expose to heat from any source; this power supply is designed for reliable operation at normal ambient temperatures. Do not attempt to open or remove the power supply case."
+       },
+       "id": "gid://shopify/ProductVariant/47646528110905",
+       "list_price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/01-IMG-6851-_-UK-Plug.jpg?v=1702368603"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100513",
+       "title": "UK Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Geekworm will find the most trending and potential new products according to the market demand. We will update the newest accessories about raspberry pi, orange pi, and other mini pc products here."
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/78216331322",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Overview The PSU12V10A is a high-capacity 12V 10A (120W) DC power adapter specifically engineered for power-hungry hardware setups, storage expansion boards, and DIY mini-server systems. Designed with reliability in mind, it provides a massive, stable power output to ensure peak performance even under heavy loads. This power supply is highly recommended and fully compatible with Geekworm's storage boards, such as the X1509 CM5 8-Port SATA board for Raspberry Pi CM5/X1017 8-Port SATA board for Raspberry Pi 5, allowing you to effortlessly power your compute module alongside multiple 2.5\" or 3.5\" SATA hard drives from a single wall outlet. Available with three regional plug options—US, EU, and UK—this power supply is a global solution for your makerspace, home lab, or commercial applications. Key Features ⚡ High Power Capacity & Stability 120W Peak Output: Delivers continuous 12V 10A current to fulfill the high startup current requirements of multiple mechanical hard drives (HDDs). Low Ripple & Noise: Ensures clean and stable power delivery to protect sensitive electronic components and storage data integrity. High Efficiency: Features energy-saving conversion technology that reduces heat generation and extends lifespan. 🔌 Global Compatibility & Multiple Plug Options Universal AC Input: Supports a wide input voltage range from 100V to 240V AC, suitable for use worldwide. Three Plug Specifications: Available in US Plug, EU Plug, and UK Plug variations to match your local power outlets seamlessly. Standard DC Output Jack: Equipped with a standard 5.5mm x 2.5mm (compatible with 5.5mm x 2.1mm) DC connector for wide peripheral support. 🛡️ Industrial-Grade Safety Protections Over-Voltage Protection (OVP): Prevents excessive voltage from reaching and damaging your connected devices. Over-Current Protection (OCP): Safely shuts off power if the load exceeds standard limits to prevent hazards. Short-Circuit Protection (SCP): Instant automatic cut-off in case of short circuits to protect both the power adapter and your hardware. Usage Requirements & Safety Guide ⚠️ IMPORTANT POWER SAFETY WARNINGS: Indoor Use Only: This power supply adapter is not waterproof. Please keep it in a dry and well-ventilated environment. Match the Voltage: Confirm your device requires a 12V input before connecting. Using a 12V power supply on lower voltage devices (e.g., 5V) will cause permanent damage! Current Margin: While it delivers up to 10A, it is recommended to keep continuous loads under 8A (80% rule) for long-term optimal lifespan. Technical Specifications Parameter Specification Model PSU12V10A Input Voltage 100V - 240V AC, 50/60Hz Output Voltage 12V DC Output Current 10A Max (120W) DC Connector Size 5.5mm x 2.5mm (Center Positive) Available Plugs US Plug / EU Plug / UK Plug (Optional) Safety Certification CE / FCC / RoHS Certified Compatible Products To expand your setup or build a fully integrated system, this product is compatible with the following Geekworm ecosystem accessories: 📂 NAS X-NAS1: Network Attached Storage Devices 💾 Storage Expansion Boards (Raspberry Pi 5) X1001-Max: PCIe 3.0 M.2 NVMe HAT for Raspberry Pi 5 X1008: PCIe to SATA 2.5\" +3.5\" HDD Board for Raspberry Pi 5 X1009: PCIe to 5-port SATA Board for Raspberry Pi 5 X1017: PCIe3.0 to 8-port SATA expansion board for Raspberry Pi 5 🔌 Raspberry Pi CM5 Baseboards & IO Boards X1502: Raspberry Pi CM5 IO Board X1503: Raspberry Pi CM5 IO Board X1505: Raspberry Pi CM5 IO Board X1509: Raspberry Pi CM5 IO Board 🔋 UPS (Uninterruptible Power Supply) Boards for Raspberry Pi 5 X1202: 4-Cell 18650 UPS Power Management Board X1203: Uninterruptible Power Supply (UPS) Board X1205: 2-Cell 21700 UPS Power Management Board X1206 V2.0: 4-Cell 21700 UPS Power Management Board (Please note: Not compatible with older X1206 V1.0 hardware) Packing List 1 x 12V 10A DC Power Adapter 1 x AC Power Cord (with US, EU, or UK plug based on your selection)"
+     },
+     "gift_card": false,
+     "handle": "psu12v10a",
+     "id": "gid://shopify/Product/10256388292921",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/PSU-12V10A-IMG-0998-US.jpg?v=1782891065"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        },
+        {
+         "label": "UK Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2300,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2300,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 3",
+      "Raspberry Pi 4",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm DC 5521 120W 12V 10A Power Supply",
+     "url": "https://geekworm.com/products/psu12v10a",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/53650234016057:1",
+       "description": {
+        "html": "Overview The PSU12V10A is a high-capacity 12V 10A (120W) DC power adapter specifically engineered for power-hungry hardware setups, storage expansion boards, and DIY mini-server systems. Designed with reliability in mind, it provides a massive, stable power output to ensure peak performance even under heavy loads. This power supply is highly recommended and fully compatible with Geekworm's storage boards, such as the X1509 CM5 8-Port SATA board for Raspberry Pi CM5/X1017 8-Port SATA board for Raspberry Pi 5, allowing you to effortlessly power your compute module alongside multiple 2.5\" or 3.5\" SATA hard drives from a single wall outlet. Available with three regional plug options—US, EU, and UK—this power supply is a global solution for your makerspace, home lab, or commercial applications. Key Features ⚡ High Power Capacity & Stability 120W Peak Output: Delivers continuous 12V 10A current to fulfill the high startup current requirements of multiple mechanical hard drives (HDDs). Low Ripple & Noise: Ensures clean and stable power delivery to protect sensitive electronic components and storage data integrity. High Efficiency: Features energy-saving conversion technology that reduces heat generation and extends lifespan. 🔌 Global Compatibility & Multiple Plug Options Universal AC Input: Supports a wide input voltage range from 100V to 240V AC, suitable for use worldwide. Three Plug Specifications: Available in US Plug, EU Plug, and UK Plug variations to match your local power outlets seamlessly. Standard DC Output Jack: Equipped with a standard 5.5mm x 2.5mm (compatible with 5.5mm x 2.1mm) DC connector for wide peripheral support. 🛡️ Industrial-Grade Safety Protections Over-Voltage Protection (OVP): Prevents excessive voltage from reaching and damaging your connected devices. Over-Current Protection (OCP): Safely shuts off power if the load exceeds standard limits to prevent hazards. Short-Circuit Protection (SCP): Instant automatic cut-off in case of short circuits to protect both the power adapter and your hardware. Usage Requirements & Safety Guide ⚠️ IMPORTANT POWER SAFETY WARNINGS: Indoor Use Only: This power supply adapter is not waterproof. Please keep it in a dry and well-ventilated environment. Match the Voltage: Confirm your device requires a 12V input before connecting. Using a 12V power supply on lower voltage devices (e.g., 5V) will cause permanent damage! Current Margin: While it delivers up to 10A, it is recommended to keep continuous loads under 8A (80% rule) for long-term optimal lifespan. Technical Specifications Parameter Specification Model PSU12V10A Input Voltage 100V - 240V AC, 50/60Hz Output Voltage 12V DC Output Current 10A Max (120W) DC Connector Size 5.5mm x 2.5mm (Center Positive) Available Plugs US Plug / EU Plug / UK Plug (Optional) Safety Certification CE / FCC / RoHS Certified Compatible Products To expand your setup or build a fully integrated system, this product is compatible with the following Geekworm ecosystem accessories: 📂 NAS X-NAS1: Network Attached Storage Devices 💾 Storage Expansion Boards (Raspberry Pi 5) X1001-Max: PCIe 3.0 M.2 NVMe HAT for Raspberry Pi 5 X1008: PCIe to SATA 2.5\" +3.5\" HDD Board for Raspberry Pi 5 X1009: PCIe to 5-port SATA Board for Raspberry Pi 5 X1017: PCIe3.0 to 8-port SATA expansion board for Raspberry Pi 5 🔌 Raspberry Pi CM5 Baseboards & IO Boards X1502: Raspberry Pi CM5 IO Board X1503: Raspberry Pi CM5 IO Board X1505: Raspberry Pi CM5 IO Board X1509: Raspberry Pi CM5 IO Board 🔋 UPS (Uninterruptible Power Supply) Boards for Raspberry Pi 5 X1202: 4-Cell 18650 UPS Power Management Board X1203: Uninterruptible Power Supply (UPS) Board X1205: 2-Cell 21700 UPS Power Management Board X1206 V2.0: 4-Cell 21700 UPS Power Management Board (Please note: Not compatible with older X1206 V1.0 hardware) Packing List 1 x 12V 10A DC Power Adapter 1 x AC Power Cord (with US, EU, or UK plug based on your selection)"
+       },
+       "id": "gid://shopify/ProductVariant/53650234016057",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/PSU-12V10A-IMG-0998-US.jpg?v=1782891065"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 2300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200402",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/53650234048825:1",
+       "description": {
+        "html": "Overview The PSU12V10A is a high-capacity 12V 10A (120W) DC power adapter specifically engineered for power-hungry hardware setups, storage expansion boards, and DIY mini-server systems. Designed with reliability in mind, it provides a massive, stable power output to ensure peak performance even under heavy loads. This power supply is highly recommended and fully compatible with Geekworm's storage boards, such as the X1509 CM5 8-Port SATA board for Raspberry Pi CM5/X1017 8-Port SATA board for Raspberry Pi 5, allowing you to effortlessly power your compute module alongside multiple 2.5\" or 3.5\" SATA hard drives from a single wall outlet. Available with three regional plug options—US, EU, and UK—this power supply is a global solution for your makerspace, home lab, or commercial applications. Key Features ⚡ High Power Capacity & Stability 120W Peak Output: Delivers continuous 12V 10A current to fulfill the high startup current requirements of multiple mechanical hard drives (HDDs). Low Ripple & Noise: Ensures clean and stable power delivery to protect sensitive electronic components and storage data integrity. High Efficiency: Features energy-saving conversion technology that reduces heat generation and extends lifespan. 🔌 Global Compatibility & Multiple Plug Options Universal AC Input: Supports a wide input voltage range from 100V to 240V AC, suitable for use worldwide. Three Plug Specifications: Available in US Plug, EU Plug, and UK Plug variations to match your local power outlets seamlessly. Standard DC Output Jack: Equipped with a standard 5.5mm x 2.5mm (compatible with 5.5mm x 2.1mm) DC connector for wide peripheral support. 🛡️ Industrial-Grade Safety Protections Over-Voltage Protection (OVP): Prevents excessive voltage from reaching and damaging your connected devices. Over-Current Protection (OCP): Safely shuts off power if the load exceeds standard limits to prevent hazards. Short-Circuit Protection (SCP): Instant automatic cut-off in case of short circuits to protect both the power adapter and your hardware. Usage Requirements & Safety Guide ⚠️ IMPORTANT POWER SAFETY WARNINGS: Indoor Use Only: This power supply adapter is not waterproof. Please keep it in a dry and well-ventilated environment. Match the Voltage: Confirm your device requires a 12V input before connecting. Using a 12V power supply on lower voltage devices (e.g., 5V) will cause permanent damage! Current Margin: While it delivers up to 10A, it is recommended to keep continuous loads under 8A (80% rule) for long-term optimal lifespan. Technical Specifications Parameter Specification Model PSU12V10A Input Voltage 100V - 240V AC, 50/60Hz Output Voltage 12V DC Output Current 10A Max (120W) DC Connector Size 5.5mm x 2.5mm (Center Positive) Available Plugs US Plug / EU Plug / UK Plug (Optional) Safety Certification CE / FCC / RoHS Certified Compatible Products To expand your setup or build a fully integrated system, this product is compatible with the following Geekworm ecosystem accessories: 📂 NAS X-NAS1: Network Attached Storage Devices 💾 Storage Expansion Boards (Raspberry Pi 5) X1001-Max: PCIe 3.0 M.2 NVMe HAT for Raspberry Pi 5 X1008: PCIe to SATA 2.5\" +3.5\" HDD Board for Raspberry Pi 5 X1009: PCIe to 5-port SATA Board for Raspberry Pi 5 X1017: PCIe3.0 to 8-port SATA expansion board for Raspberry Pi 5 🔌 Raspberry Pi CM5 Baseboards & IO Boards X1502: Raspberry Pi CM5 IO Board X1503: Raspberry Pi CM5 IO Board X1505: Raspberry Pi CM5 IO Board X1509: Raspberry Pi CM5 IO Board 🔋 UPS (Uninterruptible Power Supply) Boards for Raspberry Pi 5 X1202: 4-Cell 18650 UPS Power Management Board X1203: Uninterruptible Power Supply (UPS) Board X1205: 2-Cell 21700 UPS Power Management Board X1206 V2.0: 4-Cell 21700 UPS Power Management Board (Please note: Not compatible with older X1206 V1.0 hardware) Packing List 1 x 12V 10A DC Power Adapter 1 x AC Power Cord (with US, EU, or UK plug based on your selection)"
+       },
+       "id": "gid://shopify/ProductVariant/53650234048825",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/PSU-12V10A-IMG-0999-EU.jpg?v=1782891085"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 2300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200399",
+       "title": "EU Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/53650245222713:1",
+       "description": {
+        "html": "Overview The PSU12V10A is a high-capacity 12V 10A (120W) DC power adapter specifically engineered for power-hungry hardware setups, storage expansion boards, and DIY mini-server systems. Designed with reliability in mind, it provides a massive, stable power output to ensure peak performance even under heavy loads. This power supply is highly recommended and fully compatible with Geekworm's storage boards, such as the X1509 CM5 8-Port SATA board for Raspberry Pi CM5/X1017 8-Port SATA board for Raspberry Pi 5, allowing you to effortlessly power your compute module alongside multiple 2.5\" or 3.5\" SATA hard drives from a single wall outlet. Available with three regional plug options—US, EU, and UK—this power supply is a global solution for your makerspace, home lab, or commercial applications. Key Features ⚡ High Power Capacity & Stability 120W Peak Output: Delivers continuous 12V 10A current to fulfill the high startup current requirements of multiple mechanical hard drives (HDDs). Low Ripple & Noise: Ensures clean and stable power delivery to protect sensitive electronic components and storage data integrity. High Efficiency: Features energy-saving conversion technology that reduces heat generation and extends lifespan. 🔌 Global Compatibility & Multiple Plug Options Universal AC Input: Supports a wide input voltage range from 100V to 240V AC, suitable for use worldwide. Three Plug Specifications: Available in US Plug, EU Plug, and UK Plug variations to match your local power outlets seamlessly. Standard DC Output Jack: Equipped with a standard 5.5mm x 2.5mm (compatible with 5.5mm x 2.1mm) DC connector for wide peripheral support. 🛡️ Industrial-Grade Safety Protections Over-Voltage Protection (OVP): Prevents excessive voltage from reaching and damaging your connected devices. Over-Current Protection (OCP): Safely shuts off power if the load exceeds standard limits to prevent hazards. Short-Circuit Protection (SCP): Instant automatic cut-off in case of short circuits to protect both the power adapter and your hardware. Usage Requirements & Safety Guide ⚠️ IMPORTANT POWER SAFETY WARNINGS: Indoor Use Only: This power supply adapter is not waterproof. Please keep it in a dry and well-ventilated environment. Match the Voltage: Confirm your device requires a 12V input before connecting. Using a 12V power supply on lower voltage devices (e.g., 5V) will cause permanent damage! Current Margin: While it delivers up to 10A, it is recommended to keep continuous loads under 8A (80% rule) for long-term optimal lifespan. Technical Specifications Parameter Specification Model PSU12V10A Input Voltage 100V - 240V AC, 50/60Hz Output Voltage 12V DC Output Current 10A Max (120W) DC Connector Size 5.5mm x 2.5mm (Center Positive) Available Plugs US Plug / EU Plug / UK Plug (Optional) Safety Certification CE / FCC / RoHS Certified Compatible Products To expand your setup or build a fully integrated system, this product is compatible with the following Geekworm ecosystem accessories: 📂 NAS X-NAS1: Network Attached Storage Devices 💾 Storage Expansion Boards (Raspberry Pi 5) X1001-Max: PCIe 3.0 M.2 NVMe HAT for Raspberry Pi 5 X1008: PCIe to SATA 2.5\" +3.5\" HDD Board for Raspberry Pi 5 X1009: PCIe to 5-port SATA Board for Raspberry Pi 5 X1017: PCIe3.0 to 8-port SATA expansion board for Raspberry Pi 5 🔌 Raspberry Pi CM5 Baseboards & IO Boards X1502: Raspberry Pi CM5 IO Board X1503: Raspberry Pi CM5 IO Board X1505: Raspberry Pi CM5 IO Board X1509: Raspberry Pi CM5 IO Board 🔋 UPS (Uninterruptible Power Supply) Boards for Raspberry Pi 5 X1202: 4-Cell 18650 UPS Power Management Board X1203: Uninterruptible Power Supply (UPS) Board X1205: 2-Cell 21700 UPS Power Management Board X1206 V2.0: 4-Cell 21700 UPS Power Management Board (Please note: Not compatible with older X1206 V1.0 hardware) Packing List 1 x 12V 10A DC Power Adapter 1 x AC Power Cord (with US, EU, or UK plug based on your selection)"
+       },
+       "id": "gid://shopify/ProductVariant/53650245222713",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/PSU-12V10A-IMG-1069-UK.jpg?v=1782981932"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 2300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200401",
+       "title": "UK Plug"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "6884819002"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Geekworm",
+        "merchant_origin": "geekworm.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "jcb",
+          "diners_club"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "6884819002"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

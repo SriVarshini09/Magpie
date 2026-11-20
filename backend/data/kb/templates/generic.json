@@ -1,0 +1,146 @@
+{
+  "template_id": "tpl_generic",
+  "build_type": "generic",
+  "version": "0.1",
+  "title": "Generic build",
+  "summary": "Generic template: anything else; a gadget, robot, machine, maker project, DIY build or kit that no other template covers. No reference design. Six category rows (controller board, motor or actuator, power source, sensor, cables and connectors, mechanical parts) with no quantity and no spec: the agent proposes the lines, and every line starts as an assumption you confirm, unless a reference design it finds supports it. Detection labels: circuit board, motor, battery, power supply, sensor module, cable, screw, bracket.",
+  "references": [],
+  "questions": [
+    {
+      "id": "power",
+      "text": "How is it powered?",
+      "chips": [
+        {"value": "usb", "label": "USB"},
+        {"value": "battery", "label": "Battery"},
+        {"value": "wall", "label": "Wall adapter"}
+      ],
+      "default": "usb",
+      "skip_if": ["text_mentions_power"]
+    },
+    {
+      "id": "own_soldering_iron",
+      "text": "Have a soldering iron?",
+      "chips": [
+        {"value": "yes", "label": "Yes"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers"]
+    },
+    {
+      "id": "own_printer",
+      "text": "Do you have a 3D printer?",
+      "chips": [
+        {"value": "yes", "label": "Yes"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers"]
+    }
+  ],
+  "variants": [],
+  "parts": [
+    {
+      "row_id": "board",
+      "name": "Controller board",
+      "category": "board",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": ["G1", "G4", "G11"],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "motor",
+      "name": "Motor or actuator",
+      "category": "motor",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": ["G9", "G10", "G11"],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "power",
+      "name": "Power source",
+      "category": "power",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": ["G1", "G2"],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "sensor",
+      "name": "Sensor",
+      "category": "sensor",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": ["G1", "G4"],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "cable",
+      "name": "Cables and connectors",
+      "category": "cable",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": ["G5", "G6"],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "mechanical",
+      "name": "Mechanical parts and fasteners",
+      "category": "mechanical",
+      "qty": null,
+      "line_kind": "part",
+      "typical_spec": null,
+      "attrs": {},
+      "search_query": null,
+      "rules": [],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": null
+    }
+  ],
+  "rule_packs": ["generic_electrical"],
+  "view": {
+    "kind": "kit",
+    "model": null,
+    "parts": []
+  },
+  "edges": [
+    {"from": "power", "to": "board", "label": "power", "rules": ["G1", "G2"]},
+    {"from": "board", "to": "motor", "label": "through a driver", "rules": ["G9", "G11"]},
+    {"from": "sensor", "to": "board", "label": "signal", "rules": ["G1", "G4"]},
+    {"from": "cable", "to": "board", "label": "connectors", "rules": ["G5"]}
+  ]
+}

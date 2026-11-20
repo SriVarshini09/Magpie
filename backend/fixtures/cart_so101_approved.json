@@ -1,0 +1,189 @@
+{
+  "run_id": "r_mock_so101",
+  "state": "approved",
+  "plan_id": "p_mock_so101_cheapest",
+  "tier": "cheapest",
+  "editable": false,
+  "total_usd": 132.41,
+  "budget_usd": 160.0,
+  "bought_usd": 0.0,
+  "remaining_usd": 132.41,
+  "prices_checked_at": "2026-11-20T13:06:10-08:00",
+  "price_changes": [],
+  "counts": {
+    "stores": 4,
+    "done": 0,
+    "agent_cart": 3,
+    "prefilled_cart": 1,
+    "product_link": 0,
+    "items_by_hand": 0
+  },
+  "stores": [
+    {
+      "store_id": "wowrobo",
+      "display_name": "WowRobo",
+      "domain": "shop.wowrobo.com",
+      "action_level": "agent_cart",
+      "order": 1,
+      "subtotal_usd": 90.94,
+      "items": [
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o17",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+          "qty": 5,
+          "packs": 1,
+          "unit_price_usd": 74.95,
+          "line_usd": 74.95,
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "url": "https://mock.invalid/wowrobo/o17",
+          "alternatives": 3,
+          "simulated": true
+        },
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o18",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+          "qty": 1,
+          "packs": 1,
+          "unit_price_usd": 15.99,
+          "line_usd": 15.99,
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "url": "https://mock.invalid/wowrobo/o18",
+          "alternatives": 3,
+          "simulated": true
+        }
+      ],
+      "handoff": {
+        "kind": "agent_cart",
+        "url": "https://mock.invalid/wowrobo/cart/c_mock_wowrobo",
+        "cart_id": "c_mock_wowrobo",
+        "url_sha256": "b1db93ca8f8fa2d5fee4b9feb5ddec349d88fbc01d01b3382efd1f6d51ba0f5c",
+        "state": "ready",
+        "simulated": true
+      }
+    },
+    {
+      "store_id": "geekworm",
+      "display_name": "Geekworm",
+      "domain": "geekworm.myshopify.com",
+      "action_level": "agent_cart",
+      "order": 2,
+      "subtotal_usd": 17.0,
+      "items": [
+        {
+          "bom_line_id": "b4",
+          "offer_id": "o40",
+          "title": "12V 5A Power Supply, DC5521 (5.5x2.1mm), US plug",
+          "qty": 1,
+          "packs": 1,
+          "unit_price_usd": 17.0,
+          "line_usd": 17.0,
+          "seen_at": "2026-11-20T13:05:20-08:00",
+          "source_api": "mock",
+          "url": "https://mock.invalid/geekworm/o40",
+          "alternatives": 0,
+          "simulated": true
+        }
+      ],
+      "handoff": {
+        "kind": "agent_cart",
+        "url": "https://mock.invalid/geekworm/cart/c_mock_geekworm",
+        "cart_id": "c_mock_geekworm",
+        "url_sha256": "2a70e373816c748f320bc462dd459d15c3d7460596cf57fc66e730df080cb39c",
+        "state": "ready",
+        "simulated": true
+      }
+    },
+    {
+      "store_id": "armdojo",
+      "display_name": "ArmDojo",
+      "domain": "xee8tz-dc.myshopify.com",
+      "action_level": "agent_cart",
+      "order": 3,
+      "subtotal_usd": 11.99,
+      "items": [
+        {
+          "bom_line_id": "b2",
+          "offer_id": "o30",
+          "title": "Waveshare Bus Servo Adapter (A), USB-C",
+          "qty": 1,
+          "packs": 1,
+          "unit_price_usd": 11.99,
+          "line_usd": 11.99,
+          "seen_at": "2026-11-20T13:04:40-08:00",
+          "source_api": "mock",
+          "url": "https://mock.invalid/armdojo/o30",
+          "alternatives": 1,
+          "simulated": true
+        }
+      ],
+      "handoff": {
+        "kind": "agent_cart",
+        "url": "https://mock.invalid/armdojo/cart/c_mock_armdojo",
+        "cart_id": "c_mock_armdojo",
+        "url_sha256": "93c87b763005e5527da655cdd50af366fc7a829ae8dbbd9139f1e48d19317a20",
+        "state": "ready",
+        "simulated": true
+      }
+    },
+    {
+      "store_id": "amazon",
+      "display_name": "Amazon",
+      "domain": "amazon.com",
+      "action_level": "prefilled_cart",
+      "order": 4,
+      "subtotal_usd": 12.48,
+      "items": [
+        {
+          "bom_line_id": "b5",
+          "offer_id": "o50",
+          "title": "Table clamp 6 inch, 2 pcs (README link; PLACEHOLDER price from the PLAN §3.7 example)",
+          "qty": 1,
+          "packs": 1,
+          "unit_price_usd": 12.48,
+          "line_usd": 12.48,
+          "seen_at": "2026-11-20T13:05:40-08:00",
+          "source_api": "mock",
+          "url": "https://mock.invalid/amazon/o50",
+          "alternatives": 0,
+          "simulated": true
+        }
+      ],
+      "handoff": {
+        "kind": "prefilled_cart",
+        "url": "https://mock.invalid/amazon/cart/add?item.1=o50&qty.1=1",
+        "caveat": "Amazon asks you to sign in first",
+        "url_sha256": "fecb65ddbc4924d9c4dcf39fdd7852d4796dc336f3d541d7b2594a7a53dca9a6",
+        "state": "ready",
+        "simulated": true
+      }
+    }
+  ],
+  "left_out": [
+    {
+      "bom_line_id": "b3",
+      "name": "USB-C Cable 2 pcs",
+      "reason": "owned",
+      "note": "owns two USB-C data cables"
+    },
+    {
+      "bom_line_id": "b6",
+      "name": "Screwdriver Set",
+      "reason": "owned",
+      "note": "owns a precision screwdriver set"
+    },
+    {
+      "bom_line_id": "b7",
+      "name": "3D-printed parts (11)",
+      "reason": "print_at_home",
+      "note": "owns a 3D printer and PLA"
+    }
+  ],
+  "open_assumptions": [],
+  "source_api": "mock",
+  "simulated": true,
+  "current_store_id": "wowrobo"
+}

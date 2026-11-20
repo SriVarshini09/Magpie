@@ -1,0 +1,310 @@
+{
+  "bom_line_id": "b1",
+  "name": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+  "qty": 6,
+  "line_kind": "part",
+  "status": "chosen",
+  "mesh_keys": [
+    "sts3215_03a_v1",
+    "sts3215_03a_no_horn_v1"
+  ],
+  "provenance": {
+    "check": "pass",
+    "supports": [],
+    "type": "readme_quote",
+    "url": "https://github.com/TheRobotStudio/SO-ARM100",
+    "path": "README.md",
+    "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+    "via": "airbyte.github",
+    "quote": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+    "span": [
+      12192,
+      12229
+    ],
+    "line_from": 96,
+    "line_to": 96,
+    "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+    "more_quotes": []
+  },
+  "spec": "Feetech STS3215 12V 30kg (C018)",
+  "attrs": {
+    "voltage": "12V",
+    "torque": "30kg.cm",
+    "variant": "C018"
+  },
+  "confidence": 0.95,
+  "method": "kb",
+  "offers": [
+    {
+      "offer_id": "o17",
+      "store_id": "wowrobo",
+      "store_name": "WowRobo",
+      "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+      "url": "https://mock.invalid/wowrobo/o17",
+      "price_usd": 74.95,
+      "units_per_pack": 5,
+      "packs_needed": 1,
+      "line_usd": 74.95,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:10-08:00",
+      "evidence_sha256": "d86e481af0469e3e68b37a24de0edcad5e839f72541f4f02be3b4ff3bfa24200",
+      "status": "chosen",
+      "rerank_score": 0.93,
+      "simulated": true
+    },
+    {
+      "offer_id": "o18",
+      "store_id": "wowrobo",
+      "store_name": "WowRobo",
+      "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+      "url": "https://mock.invalid/wowrobo/o18",
+      "price_usd": 15.99,
+      "units_per_pack": 1,
+      "packs_needed": 1,
+      "line_usd": 15.99,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:10-08:00",
+      "evidence_sha256": "e9d08e360994ce7be8713c6e40a8a45453bd8d41e6ba5affad4cf9a4ecdf9a22",
+      "status": "chosen",
+      "rerank_score": 0.93,
+      "simulated": true
+    },
+    {
+      "offer_id": "o20",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "6PCS STS3215 12V 30KG serial bus servo (PLACEHOLDER listing and price)",
+      "url": "https://mock.invalid/amazon/o20",
+      "price_usd": 109.99,
+      "units_per_pack": 6,
+      "packs_needed": 1,
+      "line_usd": 109.99,
+      "stock": "in_stock",
+      "rating": 4.4,
+      "reviews": 212,
+      "action_level": "prefilled_cart",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:04:31-08:00",
+      "evidence_sha256": "584433798641a5a271bb4e84d49a7292286c7a5dcf9417d369368068ee1e333a",
+      "status": "alternative",
+      "rerank_score": 0.81,
+      "vs_chosen_usd": 19.05,
+      "simulated": true
+    },
+    {
+      "offer_id": "o21",
+      "store_id": "seeed",
+      "store_name": "Seeed Studio",
+      "title": "Feetech STS3215 12V servo (C047: variant needs a check)",
+      "url": "https://mock.invalid/seeed/o21",
+      "price_usd": 22.0,
+      "units_per_pack": 1,
+      "packs_needed": 6,
+      "line_usd": 132.0,
+      "stock": "in_stock",
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:04:22-08:00",
+      "evidence_sha256": "b5b2e1d264047736ead694d3a98ab1ec28927999c422b838841fed474ecf1556",
+      "status": "alternative",
+      "rerank_score": 0.78,
+      "vs_chosen_usd": 41.06,
+      "simulated": true
+    },
+    {
+      "offer_id": "o19",
+      "store_id": "wowrobo",
+      "store_name": "WowRobo",
+      "title": "Feetech STS3215 Servo C018 12V 30kg, 10 pcs",
+      "url": "https://mock.invalid/wowrobo/o19",
+      "price_usd": 139.9,
+      "units_per_pack": 10,
+      "packs_needed": 1,
+      "line_usd": 139.9,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:10-08:00",
+      "evidence_sha256": "d3d2450a328ebc5fbfd723ea077c9c0b373bd1fa998f77d650622f78cf775b1c",
+      "status": "alternative",
+      "rerank_score": 0.93,
+      "vs_chosen_usd": 48.96,
+      "simulated": true
+    },
+    {
+      "offer_id": "o22",
+      "store_id": "wowrobo",
+      "store_name": "WowRobo",
+      "title": "Feetech STS3215 Servo C001 7.4V 1/345, 5 pcs",
+      "url": "https://mock.invalid/wowrobo/o22",
+      "price_usd": 74.95,
+      "units_per_pack": 5,
+      "packs_needed": 2,
+      "line_usd": 149.9,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:10-08:00",
+      "evidence_sha256": "f289e8fd91b4dffc295f39c0a1e8e1497441b1cb88d29ab2f94211d614fee495",
+      "status": "rejected",
+      "reason": "variant_mismatch: 7.4V C001, need 12V C018",
+      "rerank_score": 0.64,
+      "simulated": true
+    },
+    {
+      "offer_id": "o23",
+      "store_id": "seeed",
+      "store_name": "Seeed Studio",
+      "title": "Feetech STS3215 7.4V servo (C001)",
+      "url": "https://mock.invalid/seeed/o23",
+      "price_usd": 20.0,
+      "units_per_pack": 1,
+      "packs_needed": 6,
+      "line_usd": 120.0,
+      "stock": "in_stock",
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:04:22-08:00",
+      "evidence_sha256": "e93d0ca37403faed70af19d7cc3cc888eeb11f138a4f817edc77d35b0e047fd0",
+      "status": "rejected",
+      "reason": "variant_mismatch: 7.4V C001, need 12V C018",
+      "rerank_score": 0.61,
+      "simulated": true
+    },
+    {
+      "offer_id": "o24",
+      "store_id": "robotshop",
+      "store_name": "RobotShop USA",
+      "title": "Feetech STS3215 C001 7.4V servo",
+      "url": "https://mock.invalid/robotshop/o24",
+      "price_usd": 22.69,
+      "units_per_pack": 1,
+      "packs_needed": 6,
+      "line_usd": 136.14,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:12-08:00",
+      "evidence_sha256": "6e21e898b2a7279777d13d2611a4f6d4cd026266f7bcc21677757a4c4a807a88",
+      "status": "refused",
+      "reason": "constraints.allowed_merchants",
+      "simulated": true
+    },
+    {
+      "offer_id": "o25",
+      "store_id": "openelab",
+      "store_name": "OpenELAB",
+      "title": "Feetech STS3215 C001 7.4V servo",
+      "url": "https://mock.invalid/openelab/o25",
+      "price_usd": 26.39,
+      "units_per_pack": 1,
+      "packs_needed": 6,
+      "line_usd": 158.34,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "shopify_ucp",
+      "seen_at": "2026-11-20T13:04:12-08:00",
+      "evidence_sha256": "2e55fc58132846d205324d1f17fcc3820277aa4900cb66a76c727201f1df5504",
+      "status": "refused",
+      "reason": "constraints.allowed_merchants",
+      "simulated": true
+    }
+  ],
+  "why": {
+    "tier": "cheapest",
+    "reason_codes": [
+      "cheapest_allowed",
+      "pack_break",
+      "agent_cart_at_equal_price"
+    ],
+    "explanation": "A 5-pack plus one single from WowRobo is the cheapest allowed way to get 6 of the 12V servo.",
+    "edited_by_user": false
+  },
+  "checks": [
+    {
+      "rule_id": "R1 PSU_VOLTAGE_MATCH",
+      "result": "pass",
+      "message": "12V servos need a 12V supply. The README's 5V supply failed; the 12V 5A supply passes.",
+      "fix": "Swapped the 5V supply for a 12V 5A+ supply (README line 73)",
+      "kb_refs": [
+        "kb://so101_readme#L73"
+      ],
+      "bom_line_ids": [
+        "b1",
+        "b4"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R4 SERVO_COUNT",
+      "result": "pass",
+      "message": "6 servos match the 6 servo meshes in the URDF.",
+      "kb_refs": [],
+      "bom_line_ids": [
+        "b1"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R9 PACK_COVERS_QTY",
+      "result": "pass",
+      "message": "A 5-pack plus 1 single covers 6 servos.",
+      "kb_refs": [],
+      "bom_line_ids": [
+        "b1"
+      ],
+      "needs_ack": false
+    }
+  ],
+  "refusals": [
+    {
+      "rule": "merchant_allowed",
+      "clause": "constraints.allowed_merchants",
+      "attempted": "alibaba.com",
+      "triggered_by": "source_document",
+      "count": 1
+    },
+    {
+      "rule": "merchant_allowed",
+      "clause": "constraints.allowed_merchants",
+      "attempted": "robotshop",
+      "triggered_by": "store_listing",
+      "count": 1
+    },
+    {
+      "rule": "merchant_allowed",
+      "clause": "constraints.allowed_merchants",
+      "attempted": "openelab",
+      "triggered_by": "store_listing",
+      "count": 1
+    }
+  ],
+  "kb": [
+    {
+      "kb_ref": "kb://so101_readme#L73",
+      "doc_title": "SO-ARM100 README",
+      "line_from": 73,
+      "line_to": 73,
+      "text": "The STS3215 motors for the follower arm comes in two sizes. The 7.4V has a stall torque of 16.5kg.cm at 6V (and likely slightly less for a 5V power supply). The 12V version has a stall torque of 30kg.cm. While we found the 7.4V to be sufficient, if you would like more powerful motors you can buy the 12V version [here](<link>). Note if you do this, you will also have to buy a 12V 5A+ power supply instead of a 5V one. The leader arm is always 7.4V for the SO101.",
+      "score": 0.031,
+      "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ..."
+    }
+  ],
+  "needs_confirmation": false,
+  "record_hash": "sha256:1de856af60f8eb2ec6cec623a2cb9576de02994b3620410de2146a89a7064a9d",
+  "source_api": "mock",
+  "simulated": true
+}

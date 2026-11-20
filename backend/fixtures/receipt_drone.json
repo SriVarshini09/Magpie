@@ -1,0 +1,144 @@
+{
+  "open_mandate": {
+    "type": "b2c.mandate.open",
+    "version": "0.4",
+    "note": "AP2-inspired (v0.2 open Checkout Mandate shape); not AP2-compliant",
+    "mandate_id": "m_mock_drone",
+    "run_id": "r_mock_drone",
+    "user_id": "demo_user",
+    "created_at": "2026-11-20T13:20:02-08:00",
+    "expires_at": "2026-11-20T19:00:00-08:00",
+    "scope": {
+      "build_type": "quadcopter",
+      "build_type_set_by": "classifier",
+      "goal": "a small camera drone under $200",
+      "intake_sha256": "398489eb722bd0348ee0830e10413a0b346b74e8edb31bb582315377fd606d0c",
+      "inputs": {
+        "text_sha256": "cae5a3601afc2c982b2fdd5717102db7fbe7ffaeeac35ad7bd668fd22162b6e3",
+        "image_sha256": []
+      },
+      "template_id": "tpl_quadcopter",
+      "reference_search": true
+    },
+    "constraints": {
+      "budget_usd": 200.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "mock_store",
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      },
+      "actions": {
+        "search": true,
+        "create_cart": true,
+        "build_cart_link": true,
+        "checkout": false,
+        "pay": false,
+        "message_seller": false
+      }
+    },
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..2d998umB60ZxIPKzIybCoOZQCmc9nNdluzfL0gQ4G67ufLKnEN1e9TaEDqClCudRoN4ejEphDr1bi_jVnEfSkg"
+    },
+    "simulated": true
+  },
+  "records": [
+    {
+      "run_id": "r_mock_drone",
+      "seq": 1,
+      "ts": "2026-11-20T13:20:00-08:00",
+      "kind": "intake",
+      "prev_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "sha256:7f0685780a9608b1c0cac35768aeb8a5faa490e47ea24b043c25cb4f0de77023",
+      "intake_id": "in_mock_drone",
+      "build_type": "quadcopter",
+      "confidence": 0.93,
+      "answers": {
+        "size_class": "3in",
+        "own_radio": "yes",
+        "own_soldering_iron": "yes"
+      },
+      "defaulted": [
+        "own_radio",
+        "own_soldering_iron"
+      ],
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_drone",
+      "seq": 2,
+      "ts": "2026-11-20T13:20:02-08:00",
+      "kind": "mandate_open",
+      "prev_hash": "sha256:7f0685780a9608b1c0cac35768aeb8a5faa490e47ea24b043c25cb4f0de77023",
+      "hash": "sha256:cccc4daee27e1df57dbda28023fed80b38c4ce2c4c6b9c5fb77e576a98064724",
+      "mandate_id": "m_mock_drone",
+      "mandate_sha256": "40cba2447322675e5aa3c5518677d5a86b1248e831cc3685ce319f67f16055eb",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_drone",
+      "seq": 3,
+      "ts": "2026-11-20T13:20:04-08:00",
+      "kind": "template_load",
+      "prev_hash": "sha256:cccc4daee27e1df57dbda28023fed80b38c4ce2c4c6b9c5fb77e576a98064724",
+      "hash": "sha256:9f1b6701be98e887d9a28969b61b89d7a5ed3df22b3b51ec3a6184a878af0665",
+      "template_id": "tpl_quadcopter",
+      "variant": "3in_4s",
+      "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ...",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_drone",
+      "seq": 4,
+      "ts": "2026-11-20T13:20:08-08:00",
+      "kind": "assumption",
+      "prev_hash": "sha256:9f1b6701be98e887d9a28969b61b89d7a5ed3df22b3b51ec3a6184a878af0665",
+      "hash": "sha256:7d2fea2ee36487b21fc5855f2060778ea92cd73d804b1767738daf122643610f",
+      "bom_line_id": "b12",
+      "action": "opened",
+      "statement": "You already have a radio transmitter and goggles, so none are in the cart.",
+      "by": "agent",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_drone",
+      "seq": 5,
+      "ts": "2026-11-20T13:21:00-08:00",
+      "kind": "plan",
+      "prev_hash": "sha256:7d2fea2ee36487b21fc5855f2060778ea92cd73d804b1767738daf122643610f",
+      "hash": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+      "plan_id": "p_mock_drone_cheapest",
+      "tier": "cheapest",
+      "total_usd": 199.92,
+      "plan_sha256": "c0a413e855a69c3914d1a7864da3f072449b729bb24c25e74c6f47972049bb76",
+      "simulated": true
+    }
+  ],
+  "head_hash": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+  "public_key_jwk": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "Notgr6RTel0GF_QAzUhIElpykmtStblPKDARuaQE4lQ",
+    "y": "l3EtDZF8mXHJ4XyVSKpTnz7hR1N2IJ0EDFvEDejN-1w",
+    "alg": "ES256",
+    "use": "sig",
+    "kid": "fixture-key-1",
+    "note": "fixture key derived from a public seed: these signatures only show the format"
+  },
+  "source_api": "mock",
+  "simulated": true
+}

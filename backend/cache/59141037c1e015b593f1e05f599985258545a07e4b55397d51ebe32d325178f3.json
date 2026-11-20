@@ -1,0 +1,1467 @@
+{
+ "args": {
+  "business": "https://geekworm.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Waveshare bus servo adapter serial bus servo driver board"
+  }
+ },
+ "key": "59141037c1e015b593f1e05f599985258545a07e4b55397d51ebe32d325178f3",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:18:12-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://geekworm.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://geekworm.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFF3T0RrMU1qUTNOVGsyTVN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "others",
+       "id": "gid://shopify/Collection/185196937304",
+       "title": "Others"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "best-selling",
+       "id": "gid://shopify/Collection/477568926009",
+       "title": "Best Selling"
+      },
+      {
+       "description": {
+        "html": "DIY Display Adapters"
+       },
+       "handle": "display-adapter",
+       "id": "gid://shopify/Collection/518630146361",
+       "title": "Display Adapter"
+      }
+     ],
+     "description": {
+      "html": "Read Me: This is the DIY product and we cannot guarantee the compatibility, please place your order carefully. We can recept the return the order to China within 7 days after order delivered and partial refund after we received your return package but need to deduct the shipping cost. And buyer must pay for the shipping cost to send back the package. OverviewDue to the wide variety of screens on the market, the EDID recognition of different screens may have compatibility issues, which may lead to incorrect screen colors or abnormal screens or no display.This LVDS2HD board is limited to LVDS output, the resolution can be the VESA or JEIDA standard, the LVDS2 board is set default as Double 8 & VESA.If you need change to single 8 , please short the R20 on the LVDS2HD board.Because it is the DIY product, so sometimes there may be the compatibility problem. When it shows no signal or no sound, it may be the compability problem. User Manual: https://wiki.geekworm.com/LVDS2HDFeatures LVDS input signal to HDMI output, the maximum bandwidth can reach 150MHz; LVDS input interface adopts the general 30-pin socket FI-X30SSLA-HF, which supports dual 8 inputs, and the riginal screen cable can be used directly; Optional 36-pin double-row pin input, support dual-link 10Bit; A variety of options are reserved on the board, which can be selected by pull-down resistors: 6Bit / 8Bit / 10Bit; Single-strand / double-strand; JEIDA / VESA; SPDIF / I2S sound input; Not only supports standard HDMI signals, but also supports other graphics format signals, the common formats are as follows: 1920x1200, 1920x1080, 1600x1200, 1280x1024, 1280x720, etc. Support LVDS signal to spread spectrum Powered by 5V in the screen cable ONLY. DON'T power it by 12V. Packing List 1 x LVDS to HDMI Converter with Cable (cable length: 22cm)"
+     },
+     "gift_card": false,
+     "handle": "lvds2hd",
+     "id": "gid://shopify/Product/7193275727960",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/products/lvds2hd-IMG_4537.jpg?v=1785142591"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Display Adapter",
+      "Hat",
+      "Others"
+     ],
+     "title": "Geekworm LVDS to HDMI Adapter Board(LVDS2HD) with Cable Default Mode Double 8 | VESA  | 8bit | I2S Sound Input",
+     "url": "https://geekworm.com/products/lvds2hd",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40004371808344:1",
+       "description": {
+        "html": "Read Me: This is the DIY product and we cannot guarantee the compatibility, please place your order carefully. We can recept the return the order to China within 7 days after order delivered and partial refund after we received your return package but need to deduct the shipping cost. And buyer must pay for the shipping cost to send back the package. OverviewDue to the wide variety of screens on the market, the EDID recognition of different screens may have compatibility issues, which may lead to incorrect screen colors or abnormal screens or no display.This LVDS2HD board is limited to LVDS output, the resolution can be the VESA or JEIDA standard, the LVDS2 board is set default as Double 8 & VESA.If you need change to single 8 , please short the R20 on the LVDS2HD board.Because it is the DIY product, so sometimes there may be the compatibility problem. When it shows no signal or no sound, it may be the compability problem. User Manual: https://wiki.geekworm.com/LVDS2HDFeatures LVDS input signal to HDMI output, the maximum bandwidth can reach 150MHz; LVDS input interface adopts the general 30-pin socket FI-X30SSLA-HF, which supports dual 8 inputs, and the riginal screen cable can be used directly; Optional 36-pin double-row pin input, support dual-link 10Bit; A variety of options are reserved on the board, which can be selected by pull-down resistors: 6Bit / 8Bit / 10Bit; Single-strand / double-strand; JEIDA / VESA; SPDIF / I2S sound input; Not only supports standard HDMI signals, but also supports other graphics format signals, the common formats are as follows: 1920x1200, 1920x1080, 1600x1200, 1280x1024, 1280x720, etc. Support LVDS signal to spread spectrum Powered by 5V in the screen cable ONLY. DON'T power it by 12V. Packing List 1 x LVDS to HDMI Converter with Cable (cable length: 22cm)"
+       },
+       "id": "gid://shopify/ProductVariant/40004371808344",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/products/lvds2hd-IMG_4537.jpg?v=1785142591"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100338",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-3-2"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "others",
+       "id": "gid://shopify/Collection/185196937304",
+       "title": "Others"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "best-selling",
+       "id": "gid://shopify/Collection/477568926009",
+       "title": "Best Selling"
+      },
+      {
+       "description": {
+        "html": "The Christmas Countdown Sale – Enjoy 5% Off Storewide! Celebrate the holidays with 5% off everything across our entire store. No minimum spend required – just festive deals for everyone."
+       },
+       "handle": "holiday-deals",
+       "id": "gid://shopify/Collection/487735623993",
+       "title": "Holiday Deals"
+      },
+      {
+       "description": {
+        "html": "DIY Display Adapters"
+       },
+       "handle": "display-adapter",
+       "id": "gid://shopify/Collection/518630146361",
+       "title": "Display Adapter"
+      }
+     ],
+     "description": {
+      "html": "Overview The Geekworm LVDS to HDMI Adapter Board converts an LVDS source signal to an HDMI output. Choose either the V1.5 or V20 board; each option includes one 25 cm LVDS cable. Signal direction: LVDS source → adapter board → HDMI display. Features Signal conversion: LVDS input to HDMI output. Power supply voltage: 5–12V. LVDS input modes: Dual 8 and Single 8, selectable using the jumpers for your board version. LVDS mapping: VESA by default, with a jumper setting for JEIDA. Before You Order This is a DIY product. Compatibility is not guaranteed. Different source boards and displays may have compatibility or EDID recognition issues, resulting in incorrect colors, an abnormal picture, no display, or no sound. Use an LVDS source driver board of V59 grade or above, as specified in the product documentation. Use with 4K TVs is not recommended because of possible compatibility issues. Both V1.5 and V20 remain available. If V20 already works with your setup, choose V20 again. A different version does not guarantee better compatibility. Choose Your Board Version V1.5 Board with LVDS Cable V1.5 was released on May 10, 2021. The default settings are Dual 8 and VESA. Single 8: short Pin 3 and Pin 4 on the mode-selection jumper group shown below. JEIDA: short Pin 1 and Pin 2 on the mode-selection jumper group shown below. Power off before changing jumpers, then power the board on again for the settings to take effect. V20 Board with LVDS Cable The default settings are Dual 8 and VESA. The V20 jumper labels differ from those on V1.5. Single 8: short GND and S1. JEIDA: short S2 and GND. Power off before changing jumpers, then power the board on again for the settings to take effect. AtGames Legends Pinball: Customer Reference A customer has reported using the Geekworm V1.5 adapter with the original AtGames Legends Pinball mainboard to connect a replacement monitor. The reported installation used V1.5, not V20 or the separate LVDS2HD product. Customer installation report — Geekworm V1.5 with AtGames Legends Pinball Community discussion — LVDS-to-HDMI adapters for Legends Pinball These third-party reports are provided for reference only. Results vary, and other users have reported no-signal issues. Compatibility with your particular machine and monitor is not guaranteed. Please verify the adapter version, supply voltage, LVDS pinout and signal format before purchasing. LVDS Input Modes Select the mode to match your LVDS source. The following are examples listed in the existing product documentation, not a guarantee of compatibility with every source and display. Dual 8 (also called Double 8): examples include 1920 × 1080, 1280 × 1024, 1600 × 900, and 1920 × 1200. Single 8: examples include 480p, 720p, 768p, 800p, and 960p. VESA/JEIDA mapping and Single 8/Dual 8 mode are separate settings. Check the instructions for your exact board version above. Package Contents V1.5 option: 1 × V1.5 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. V20 option: 1 × V20 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. Documentation and Setup See the LVDS Adapter Wiki for board diagrams, reference documents, and troubleshooting. Match the board version before following any jumper or modification instructions; the Wiki also contains information about older hardware. Returns for This DIY Product Returns to China are accepted within 7 days after delivery. A partial refund is issued after the returned package is received, with the original shipping cost deducted. The buyer is responsible for return shipping costs."
+     },
+     "gift_card": false,
+     "handle": "lvds-to-hdmi-adapter-board-converter-with-lvds-cable",
+     "id": "gid://shopify/Product/4769396719704",
+     "list_price_range": {
+      "max": {
+       "amount": 3500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3500,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/products/IMG_0156_dfa2018e-bb14-446b-a5af-1b789cf64451.jpg?v=1627523698"
+      }
+     ],
+     "options": [
+      {
+       "name": "Item",
+       "values": [
+        {
+         "label": "V1.5 Board with LVDS Cable"
+        },
+        {
+         "label": "V20 Board with LVDS Cable"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Display Adapter",
+      "Hat",
+      "Others"
+     ],
+     "title": "Geekworm LVDS to HDMI Adapter Board with LVDS Cable",
+     "url": "https://geekworm.com/products/lvds-to-hdmi-adapter-board-converter-with-lvds-cable",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/39416497045592:1",
+       "description": {
+        "html": "Overview The Geekworm LVDS to HDMI Adapter Board converts an LVDS source signal to an HDMI output. Choose either the V1.5 or V20 board; each option includes one 25 cm LVDS cable. Signal direction: LVDS source → adapter board → HDMI display. Features Signal conversion: LVDS input to HDMI output. Power supply voltage: 5–12V. LVDS input modes: Dual 8 and Single 8, selectable using the jumpers for your board version. LVDS mapping: VESA by default, with a jumper setting for JEIDA. Before You Order This is a DIY product. Compatibility is not guaranteed. Different source boards and displays may have compatibility or EDID recognition issues, resulting in incorrect colors, an abnormal picture, no display, or no sound. Use an LVDS source driver board of V59 grade or above, as specified in the product documentation. Use with 4K TVs is not recommended because of possible compatibility issues. Both V1.5 and V20 remain available. If V20 already works with your setup, choose V20 again. A different version does not guarantee better compatibility. Choose Your Board Version V1.5 Board with LVDS Cable V1.5 was released on May 10, 2021. The default settings are Dual 8 and VESA. Single 8: short Pin 3 and Pin 4 on the mode-selection jumper group shown below. JEIDA: short Pin 1 and Pin 2 on the mode-selection jumper group shown below. Power off before changing jumpers, then power the board on again for the settings to take effect. V20 Board with LVDS Cable The default settings are Dual 8 and VESA. The V20 jumper labels differ from those on V1.5. Single 8: short GND and S1. JEIDA: short S2 and GND. Power off before changing jumpers, then power the board on again for the settings to take effect. AtGames Legends Pinball: Customer Reference A customer has reported using the Geekworm V1.5 adapter with the original AtGames Legends Pinball mainboard to connect a replacement monitor. The reported installation used V1.5, not V20 or the separate LVDS2HD product. Customer installation report — Geekworm V1.5 with AtGames Legends Pinball Community discussion — LVDS-to-HDMI adapters for Legends Pinball These third-party reports are provided for reference only. Results vary, and other users have reported no-signal issues. Compatibility with your particular machine and monitor is not guaranteed. Please verify the adapter version, supply voltage, LVDS pinout and signal format before purchasing. LVDS Input Modes Select the mode to match your LVDS source. The following are examples listed in the existing product documentation, not a guarantee of compatibility with every source and display. Dual 8 (also called Double 8): examples include 1920 × 1080, 1280 × 1024, 1600 × 900, and 1920 × 1200. Single 8: examples include 480p, 720p, 768p, 800p, and 960p. VESA/JEIDA mapping and Single 8/Dual 8 mode are separate settings. Check the instructions for your exact board version above. Package Contents V1.5 option: 1 × V1.5 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. V20 option: 1 × V20 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. Documentation and Setup See the LVDS Adapter Wiki for board diagrams, reference documents, and troubleshooting. Match the board version before following any jumper or modification instructions; the Wiki also contains information about older hardware. Returns for This DIY Product Returns to China are accepted within 7 days after delivery. A partial refund is issued after the returned package is received, with the original shipping cost deducted. The buyer is responsible for return shipping costs."
+       },
+       "id": "gid://shopify/ProductVariant/39416497045592",
+       "list_price": {
+        "amount": 3500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-0149-LVDS-V1.5-Cable.jpg?v=1785142905"
+        }
+       ],
+       "options": [
+        {
+         "label": "V1.5 Board with LVDS Cable",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 3200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "509117+100019",
+       "title": "V1.5 Board with LVDS Cable"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/39521988771928:1",
+       "description": {
+        "html": "Overview The Geekworm LVDS to HDMI Adapter Board converts an LVDS source signal to an HDMI output. Choose either the V1.5 or V20 board; each option includes one 25 cm LVDS cable. Signal direction: LVDS source → adapter board → HDMI display. Features Signal conversion: LVDS input to HDMI output. Power supply voltage: 5–12V. LVDS input modes: Dual 8 and Single 8, selectable using the jumpers for your board version. LVDS mapping: VESA by default, with a jumper setting for JEIDA. Before You Order This is a DIY product. Compatibility is not guaranteed. Different source boards and displays may have compatibility or EDID recognition issues, resulting in incorrect colors, an abnormal picture, no display, or no sound. Use an LVDS source driver board of V59 grade or above, as specified in the product documentation. Use with 4K TVs is not recommended because of possible compatibility issues. Both V1.5 and V20 remain available. If V20 already works with your setup, choose V20 again. A different version does not guarantee better compatibility. Choose Your Board Version V1.5 Board with LVDS Cable V1.5 was released on May 10, 2021. The default settings are Dual 8 and VESA. Single 8: short Pin 3 and Pin 4 on the mode-selection jumper group shown below. JEIDA: short Pin 1 and Pin 2 on the mode-selection jumper group shown below. Power off before changing jumpers, then power the board on again for the settings to take effect. V20 Board with LVDS Cable The default settings are Dual 8 and VESA. The V20 jumper labels differ from those on V1.5. Single 8: short GND and S1. JEIDA: short S2 and GND. Power off before changing jumpers, then power the board on again for the settings to take effect. AtGames Legends Pinball: Customer Reference A customer has reported using the Geekworm V1.5 adapter with the original AtGames Legends Pinball mainboard to connect a replacement monitor. The reported installation used V1.5, not V20 or the separate LVDS2HD product. Customer installation report — Geekworm V1.5 with AtGames Legends Pinball Community discussion — LVDS-to-HDMI adapters for Legends Pinball These third-party reports are provided for reference only. Results vary, and other users have reported no-signal issues. Compatibility with your particular machine and monitor is not guaranteed. Please verify the adapter version, supply voltage, LVDS pinout and signal format before purchasing. LVDS Input Modes Select the mode to match your LVDS source. The following are examples listed in the existing product documentation, not a guarantee of compatibility with every source and display. Dual 8 (also called Double 8): examples include 1920 × 1080, 1280 × 1024, 1600 × 900, and 1920 × 1200. Single 8: examples include 480p, 720p, 768p, 800p, and 960p. VESA/JEIDA mapping and Single 8/Dual 8 mode are separate settings. Check the instructions for your exact board version above. Package Contents V1.5 option: 1 × V1.5 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. V20 option: 1 × V20 LVDS to HDMI adapter board + 1 × 25 cm LVDS cable. Documentation and Setup See the LVDS Adapter Wiki for board diagrams, reference documents, and troubleshooting. Match the board version before following any jumper or modification instructions; the Wiki also contains information about older hardware. Returns for This DIY Product Returns to China are accepted within 7 days after delivery. A partial refund is issued after the returned package is received, with the original shipping cost deducted. The buyer is responsible for return shipping costs."
+       },
+       "id": "gid://shopify/ProductVariant/39521988771928",
+       "list_price": {
+        "amount": 3500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/IMG-0149-LVDS-V20-Cable.jpg?v=1785143162"
+        }
+       ],
+       "options": [
+        {
+         "label": "V20 Board with LVDS Cable",
+         "name": "Item"
+        }
+       ],
+       "price": {
+        "amount": 3200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100279+100019",
+       "title": "V20 Board with LVDS Cable"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Geekworm will find the most trending and potential new products according to the market demand. We will update the newest accessories about raspberry pi, orange pi, and other mini pc products here."
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/78216331322",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "others",
+       "id": "gid://shopify/Collection/185196937304",
+       "title": "Others"
+      }
+     ],
+     "description": {
+      "html": "Overview The ESP32-S3 Industrial Control Board is an industrial-oriented mainboard purpose-built for AIoT, industrial automation, and fieldbus application scenarios. Powered by the high-performance ESP32-S3 chip, it integrates fully isolated RS485 and CAN interfaces, dual-mode 2.4GHz Wi-Fi + Bluetooth 5 (LE) connectivity, and multi-layer circuit protection. Housed in a standard DIN rail-mount enclosure and supporting a 7–36V wide-voltage power input, it delivers a stable, robust, and plug-and-play solution for Modbus networking, CAN device control, remote sensor monitoring, and edge IoT deployments. Key Features 🚀 High-Performance ESP32-S3 Platform Dual-Core Processing: Powered by the Xtensa 32-bit LX7 dual-core processor running at up to 240MHz, equipped with 16MB Flash. Onboard RTC: Features a PCF85063 real-time clock chip for precise scheduled tasks (requires an external backup battery for power-off time retention). Dual-Mode Wireless: Supports 2.4GHz Wi-Fi (802.11b/g/n) and Bluetooth 5 (LE). Includes an onboard ceramic antenna plus a reserved IPEX 1 connector (antenna selection via resistor configuration). 🌐 Industrial Isolated Bus Interfaces Isolated RS485 Port: Screw terminal connection featuring hardware automatic flow control, TVS surge protection, and ESD protection. Includes an onboard 120Ω terminal resistor (NC by default, enabled via jumper). Isolated CAN Port: Screw terminal connection featuring hardware automatic direction control, TVS surge protection, and ESD protection. Includes an onboard 120Ω terminal resistor (NC by default, enabled via jumper). Dual Isolation Guard: Combines digital and power isolation to effectively block signal interference and protect the core MCU. ⚡ Industrial Power & Mechanical Design Flexible Dual Power Options: Powered via USB Type-C (5V DC) or screw terminal input (7–36V DC wide voltage) for easy integration into industrial control systems. DIN Rail-Mount Case: Standard DIN rail ABS housing allows quick, tool-free installation into standard electrical cabinets. Compact footprint: 91.6 × 23.3 × 58.7 mm. Real-Time LED Status: Features clear diagnostic LEDs for PWR (Red), RS485 TX (Green), RS485 RX (Blue), and CAN (Blinking during transmission) for effortless field debugging. 🛠️ Developer-Friendly Ecosystem Broad Framework Support: Officially supports Arduino IDE, fully compatible with ESP-IDF, MicroPython, and other mainstream ESP32-S3 platforms. Rich Expansion Capabilities: Onboard 2.54mm GPIO header and SH1.0 4-pin expansion port for custom sensors and peripherals. Convenient Programming: Onboard BOOT and RESET buttons for easy firmware flashing and debugging. Important Operating & Safety Notes ⚠️ IMPORTANT OPERATING & WIRING WARNINGS: Terminal Voltage Limit: The 7–36V DC wide-voltage rating applies strictly to the screw terminal input. The USB Type-C port supports 5V DC ONLY. Applying high voltage to the Type-C port will cause permanent damage! Terminal Resistors: Onboard 120Ω terminal resistors for RS485 and CAN are disconnected by default. Enable them via jumpers only when end-of-line bus matching is required. Professional Integration: This module is intended for industrial integration and electronics development. Professional technical knowledge is required for wiring, bus parameter setup, and debugging. Bus Wiring Safety: Improper CAN bus wiring or configuration may cause communication errors or equipment damage. Always follow standard fieldbus installation guidelines. Technical Specifications Feature Specification Microcontroller ESP32-S3 (Default: ESP32-S3R8 module, customizable) CPU Core Xtensa 32-bit LX7 dual-core, up to 240MHz Flash Memory 16MB Real-Time Clock PCF85063 (External backup battery required for power-off timekeeping) Wireless Connectivity 2.4GHz Wi-Fi (802.11b/g/n) + Bluetooth 5 (LE) Antenna Options Onboard ceramic antenna + IPEX 1 connector USB Interface USB Type-C (5V DC power input, firmware flashing, USB communication) Isolated RS485 Port Screw terminal; hardware auto flow control; TVS/Surge/ESD protection; 120Ω resistor (NC default) Isolated CAN Port Screw terminal; hardware auto direction control; TVS/Surge/ESD protection; 120Ω resistor (NC default) Power Input Options 5V DC (USB Type-C) / 7–36V DC (Screw Terminal) Status Indicators PWR (Red), RS485 TX (Green), RS485 RX (Blue), CAN (Blinking on transmission) Expansion Interfaces 2.54mm GPIO header + SH1.0 4-pin connector Enclosure & Mounting DIN rail-mount ABS enclosure (91.6 × 23.3 × 58.7 mm) Supported Frameworks Arduino IDE (Official), ESP-IDF, MicroPython, etc. Packing List 1 x Industrial ESP32-S3 RS485 CAN Control Board (with DIN Rail Enclosure) 1 x SH1.0 4-Pin Cable (150mm) 1 x Screwdriver"
+     },
+     "gift_card": false,
+     "handle": "esp32-s3-rs485-can",
+     "id": "gid://shopify/Product/15382079373625",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/ESP32-S3-RS485-CAN-01.jpg?v=1790752360"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "ESP32",
+      "Others"
+     ],
+     "title": "Industrial ESP32-S3 Board with RS485 & CAN Bus",
+     "url": "https://geekworm.com/products/esp32-s3-rs485-can",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/67572860518713:1",
+       "description": {
+        "html": "Overview The ESP32-S3 Industrial Control Board is an industrial-oriented mainboard purpose-built for AIoT, industrial automation, and fieldbus application scenarios. Powered by the high-performance ESP32-S3 chip, it integrates fully isolated RS485 and CAN interfaces, dual-mode 2.4GHz Wi-Fi + Bluetooth 5 (LE) connectivity, and multi-layer circuit protection. Housed in a standard DIN rail-mount enclosure and supporting a 7–36V wide-voltage power input, it delivers a stable, robust, and plug-and-play solution for Modbus networking, CAN device control, remote sensor monitoring, and edge IoT deployments. Key Features 🚀 High-Performance ESP32-S3 Platform Dual-Core Processing: Powered by the Xtensa 32-bit LX7 dual-core processor running at up to 240MHz, equipped with 16MB Flash. Onboard RTC: Features a PCF85063 real-time clock chip for precise scheduled tasks (requires an external backup battery for power-off time retention). Dual-Mode Wireless: Supports 2.4GHz Wi-Fi (802.11b/g/n) and Bluetooth 5 (LE). Includes an onboard ceramic antenna plus a reserved IPEX 1 connector (antenna selection via resistor configuration). 🌐 Industrial Isolated Bus Interfaces Isolated RS485 Port: Screw terminal connection featuring hardware automatic flow control, TVS surge protection, and ESD protection. Includes an onboard 120Ω terminal resistor (NC by default, enabled via jumper). Isolated CAN Port: Screw terminal connection featuring hardware automatic direction control, TVS surge protection, and ESD protection. Includes an onboard 120Ω terminal resistor (NC by default, enabled via jumper). Dual Isolation Guard: Combines digital and power isolation to effectively block signal interference and protect the core MCU. ⚡ Industrial Power & Mechanical Design Flexible Dual Power Options: Powered via USB Type-C (5V DC) or screw terminal input (7–36V DC wide voltage) for easy integration into industrial control systems. DIN Rail-Mount Case: Standard DIN rail ABS housing allows quick, tool-free installation into standard electrical cabinets. Compact footprint: 91.6 × 23.3 × 58.7 mm. Real-Time LED Status: Features clear diagnostic LEDs for PWR (Red), RS485 TX (Green), RS485 RX (Blue), and CAN (Blinking during transmission) for effortless field debugging. 🛠️ Developer-Friendly Ecosystem Broad Framework Support: Officially supports Arduino IDE, fully compatible with ESP-IDF, MicroPython, and other mainstream ESP32-S3 platforms. Rich Expansion Capabilities: Onboard 2.54mm GPIO header and SH1.0 4-pin expansion port for custom sensors and peripherals. Convenient Programming: Onboard BOOT and RESET buttons for easy firmware flashing and debugging. Important Operating & Safety Notes ⚠️ IMPORTANT OPERATING & WIRING WARNINGS: Terminal Voltage Limit: The 7–36V DC wide-voltage rating applies strictly to the screw terminal input. The USB Type-C port supports 5V DC ONLY. Applying high voltage to the Type-C port will cause permanent damage! Terminal Resistors: Onboard 120Ω terminal resistors for RS485 and CAN are disconnected by default. Enable them via jumpers only when end-of-line bus matching is required. Professional Integration: This module is intended for industrial integration and electronics development. Professional technical knowledge is required for wiring, bus parameter setup, and debugging. Bus Wiring Safety: Improper CAN bus wiring or configuration may cause communication errors or equipment damage. Always follow standard fieldbus installation guidelines. Technical Specifications Feature Specification Microcontroller ESP32-S3 (Default: ESP32-S3R8 module, customizable) CPU Core Xtensa 32-bit LX7 dual-core, up to 240MHz Flash Memory 16MB Real-Time Clock PCF85063 (External backup battery required for power-off timekeeping) Wireless Connectivity 2.4GHz Wi-Fi (802.11b/g/n) + Bluetooth 5 (LE) Antenna Options Onboard ceramic antenna + IPEX 1 connector USB Interface USB Type-C (5V DC power input, firmware flashing, USB communication) Isolated RS485 Port Screw terminal; hardware auto flow control; TVS/Surge/ESD protection; 120Ω resistor (NC default) Isolated CAN Port Screw terminal; hardware auto direction control; TVS/Surge/ESD protection; 120Ω resistor (NC default) Power Input Options 5V DC (USB Type-C) / 7–36V DC (Screw Terminal) Status Indicators PWR (Red), RS485 TX (Green), RS485 RX (Blue), CAN (Blinking on transmission) Expansion Interfaces 2.54mm GPIO header + SH1.0 4-pin connector Enclosure & Mounting DIN rail-mount ABS enclosure (91.6 × 23.3 × 58.7 mm) Supported Frameworks Arduino IDE (Official), ESP-IDF, MicroPython, etc. Packing List 1 x Industrial ESP32-S3 RS485 CAN Control Board (with DIN Rail Enclosure) 1 x SH1.0 4-Pin Cable (150mm) 1 x Screwdriver"
+       },
+       "id": "gid://shopify/ProductVariant/67572860518713",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/ESP32-S3-RS485-CAN-01.jpg?v=1790752360"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100771",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "description": {
+      "html": "Overview A PN532-based near-field communication board operating at 13.56 MHz, with a Raspberry Pi 40-pin GPIO connector. Jumpers and DIP switches select UART, SPI or I2C host communication. Features Onboard NFC antenna, PN532 controller and power indicator. Selectable UART, SPI and I2C interfaces; connect only one at a time. Breakout control pins for integration with other development boards. Manufacturer examples for Raspberry Pi Python/C, STM32 and Arduino. Specifications Item Value Model PN532 NFC HAT Brand Waveshare NFC controller PN532 Operating voltage 3.3 V / 5 V Operating frequency 13.56 MHz Host interface UART (default), SPI, I2C Default serial baud rate 115200 bps Raspberry Pi connection 40-pin GPIO NFC Operating Modes Reader/writer modes for ISO/IEC 14443A / MIFARE, FeliCa and ISO/IEC 14443B. Card operation modes for ISO/IEC 14443A / MIFARE and FeliCa. Peer-to-peer communication based on ISO/IEC 18092 (NFCIP-1). These are controller capabilities. Available operations depend on the host software, card type and access permissions. Card operation mode does not mean that an arbitrary card can be fully cloned or emulated. Interface Selection Mode I0 I1 UART L L I2C H L SPI L H Configure jumpers with power disconnected. Enable only the DIP switches for the selected interface. Check connector orientation and match the software interface to the hardware settings. Board Layout and Control Signals 40-pin GPIO connector: connects the HAT to a Raspberry Pi. Breakout control pins: provide connections to compatible host boards such as STM32 or Arduino. Integrated antenna coil and PN532 controller: handle contactless communication. Power LED: indicates that the board is powered. DIP switches: route the selected interface to the Raspberry Pi; enable only one interface group at a time. I0 / I1 jumpers: select UART, I2C or SPI as shown in the interface table. INT0 jumper: response signal connection to Raspberry Pi D16 (BCM16). RSTPDN jumper: reset signal connection to Raspberry Pi D20 (BCM20). Dimensions Board outline: 85 × 56 mm, according to the manufacturer's dimension drawing. These dimensions describe the PCB outline, not the shipping package or the full assembly height. Package Contents PN532 NFC HAT × 1. MIFARE Classic 1K keyfob × 1. Raspberry Pi is not included. Compatibility and Limitations Supported contactless card families include MIFARE/NTAG2xx; operations depend on the card, software and access permissions. This board cannot read SLE4442 contact cards or bypass the key requirements of encrypted cards. SPI uses BCM4 for chip select. I2C clock stretching requires attention, and UART may conflict with the serial console. Follow the manufacturer guide. Available examples do not establish testing on every Raspberry Pi model or OS release. Development Resources The manufacturer's technical guide provides setup instructions, Raspberry Pi Python/C examples, STM32 and Arduino examples, schematics and controller documentation. Select the example matching your hardware interface and operating system."
+     },
+     "gift_card": false,
+     "handle": "pn532",
+     "id": "gid://shopify/Product/15435722293561",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "PN532 NFC HAT with MIFARE Classic 1K keyfob",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/pn532-kit-no-logo.jpg?v=1793706124"
+      }
+     ],
+     "options": [
+      {
+       "name": "Model",
+       "values": [
+        {
+         "label": "PN532-NFC-HAT"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Electronics",
+      "PN532-NFC-HAT"
+     ],
+     "title": "PN532 NFC HAT for Raspberry Pi, I2C / SPI / UART",
+     "url": "https://geekworm.com/products/pn532",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/67938166505785:1",
+       "description": {
+        "html": "Overview A PN532-based near-field communication board operating at 13.56 MHz, with a Raspberry Pi 40-pin GPIO connector. Jumpers and DIP switches select UART, SPI or I2C host communication. Features Onboard NFC antenna, PN532 controller and power indicator. Selectable UART, SPI and I2C interfaces; connect only one at a time. Breakout control pins for integration with other development boards. Manufacturer examples for Raspberry Pi Python/C, STM32 and Arduino. Specifications Item Value Model PN532 NFC HAT Brand Waveshare NFC controller PN532 Operating voltage 3.3 V / 5 V Operating frequency 13.56 MHz Host interface UART (default), SPI, I2C Default serial baud rate 115200 bps Raspberry Pi connection 40-pin GPIO NFC Operating Modes Reader/writer modes for ISO/IEC 14443A / MIFARE, FeliCa and ISO/IEC 14443B. Card operation modes for ISO/IEC 14443A / MIFARE and FeliCa. Peer-to-peer communication based on ISO/IEC 18092 (NFCIP-1). These are controller capabilities. Available operations depend on the host software, card type and access permissions. Card operation mode does not mean that an arbitrary card can be fully cloned or emulated. Interface Selection Mode I0 I1 UART L L I2C H L SPI L H Configure jumpers with power disconnected. Enable only the DIP switches for the selected interface. Check connector orientation and match the software interface to the hardware settings. Board Layout and Control Signals 40-pin GPIO connector: connects the HAT to a Raspberry Pi. Breakout control pins: provide connections to compatible host boards such as STM32 or Arduino. Integrated antenna coil and PN532 controller: handle contactless communication. Power LED: indicates that the board is powered. DIP switches: route the selected interface to the Raspberry Pi; enable only one interface group at a time. I0 / I1 jumpers: select UART, I2C or SPI as shown in the interface table. INT0 jumper: response signal connection to Raspberry Pi D16 (BCM16). RSTPDN jumper: reset signal connection to Raspberry Pi D20 (BCM20). Dimensions Board outline: 85 × 56 mm, according to the manufacturer's dimension drawing. These dimensions describe the PCB outline, not the shipping package or the full assembly height. Package Contents PN532 NFC HAT × 1. MIFARE Classic 1K keyfob × 1. Raspberry Pi is not included. Compatibility and Limitations Supported contactless card families include MIFARE/NTAG2xx; operations depend on the card, software and access permissions. This board cannot read SLE4442 contact cards or bypass the key requirements of encrypted cards. SPI uses BCM4 for chip select. I2C clock stretching requires attention, and UART may conflict with the serial console. Follow the manufacturer guide. Available examples do not establish testing on every Raspberry Pi model or OS release. Development Resources The manufacturer's technical guide provides setup instructions, Raspberry Pi Python/C examples, STM32 and Arduino examples, schematics and controller documentation. Select the example matching your hardware interface and operating system."
+       },
+       "id": "gid://shopify/ProductVariant/67938166505785",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/pn532-kit-no-logo.jpg?v=1793706124"
+        }
+       ],
+       "options": [
+        {
+         "label": "PN532-NFC-HAT",
+         "name": "Model"
+        }
+       ],
+       "price": {
+        "amount": 3500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100775",
+       "title": "PN532-NFC-HAT"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "nas-storage",
+       "id": "gid://shopify/Collection/185194872920",
+       "title": "NAS Storage"
+      }
+     ],
+     "description": {
+      "html": "Note: The Raspberry Pi 5 board, SSD/HDD, power adapter is not included in the packing list.OverviewThe X1100 is a 2.5 inch SATA HDD/SSD expansion board designed for the latest Raspberry Pi 5 1GB/2GB/4GB/8GB. Its allows single 2.5\" HDD/SSD to be attached to Raspberry Pi 5. The SuperSpeed USB 3.0 port delivers a blistering data transfer rate of up to 5Gbps, letting you transfer a large amount of data in seconds. The built-in LED light indicates the reading or writing status – no more guesswork again.The X1100 provides storage solution for your home media center and building Network-attached storage (NAS) for storing and streaming your own videos, music, and digital photos around the house and even across the world. The X1100 also supports operating system booting from your HDD/SSD for faster app opens, web serving and file copying. User Manual: wiki.geekworm.com/X1100 Matching Case Refer to X1100-C1 Features Only compatible with Raspberry Pi 5, also support stack X1001/Official Raspbery Pi AI HAT+ A storage solution for Raspberry Pi 5 - 2.5\" SATA HDD/SSD Shield Supports up to 5TB 2.5-inch SATA hard disk drives (HDD) / solid-state drive (SSD) Integrated USB 3.1 Gen1 to SATA 6Gb/s bridge controller USB3.1 Gen1 5Gb/s connectivity offers plug-and-play functionality on your Raspberry Pi Supporting booting OS from your HDD/SSD for faster app opens, web serving and file copying Compatible with USB 2.0 USB bus-powered - only one PSU required LED blue indicator indicates drive status Specially-made USB3.1 jumper to connect with Raspberry Pi - no additional cables needed Mounting holes and standoffs provide mechanical stability of the Raspberry Pi and X1100 assembly PCB Size: 107.5mm x 85mm How to Power Power supply: 5Vdc +/-5% 1.3A via USB3 port (Don't need extra power adapter. Use the power adapter for Raspberry Pi 5.) Packing List 1 x X1100 V1.0 2.5\" SATA HDD/SSD Shield 1 x Screw pack"
+     },
+     "gift_card": false,
+     "handle": "x1100",
+     "id": "gid://shopify/Product/8963274834233",
+     "list_price_range": {
+      "max": {
+       "amount": 3000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3000,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1100-IMG-6713.jpg?v=1701252719"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "25 inch SSD",
+      "Hat",
+      "nas",
+      "Raspberry Pi",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm X1100 2.5\" SATA HDD/SSD Shield for Raspberry Pi 5",
+     "url": "https://geekworm.com/products/x1100",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/47602474582329:1",
+       "description": {
+        "html": "Note: The Raspberry Pi 5 board, SSD/HDD, power adapter is not included in the packing list.OverviewThe X1100 is a 2.5 inch SATA HDD/SSD expansion board designed for the latest Raspberry Pi 5 1GB/2GB/4GB/8GB. Its allows single 2.5\" HDD/SSD to be attached to Raspberry Pi 5. The SuperSpeed USB 3.0 port delivers a blistering data transfer rate of up to 5Gbps, letting you transfer a large amount of data in seconds. The built-in LED light indicates the reading or writing status – no more guesswork again.The X1100 provides storage solution for your home media center and building Network-attached storage (NAS) for storing and streaming your own videos, music, and digital photos around the house and even across the world. The X1100 also supports operating system booting from your HDD/SSD for faster app opens, web serving and file copying. User Manual: wiki.geekworm.com/X1100 Matching Case Refer to X1100-C1 Features Only compatible with Raspberry Pi 5, also support stack X1001/Official Raspbery Pi AI HAT+ A storage solution for Raspberry Pi 5 - 2.5\" SATA HDD/SSD Shield Supports up to 5TB 2.5-inch SATA hard disk drives (HDD) / solid-state drive (SSD) Integrated USB 3.1 Gen1 to SATA 6Gb/s bridge controller USB3.1 Gen1 5Gb/s connectivity offers plug-and-play functionality on your Raspberry Pi Supporting booting OS from your HDD/SSD for faster app opens, web serving and file copying Compatible with USB 2.0 USB bus-powered - only one PSU required LED blue indicator indicates drive status Specially-made USB3.1 jumper to connect with Raspberry Pi - no additional cables needed Mounting holes and standoffs provide mechanical stability of the Raspberry Pi and X1100 assembly PCB Size: 107.5mm x 85mm How to Power Power supply: 5Vdc +/-5% 1.3A via USB3 port (Don't need extra power adapter. Use the power adapter for Raspberry Pi 5.) Packing List 1 x X1100 V1.0 2.5\" SATA HDD/SSD Shield 1 x Screw pack"
+       },
+       "id": "gid://shopify/ProductVariant/47602474582329",
+       "list_price": {
+        "amount": 3000,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/X1100-IMG-6713.jpg?v=1701252719"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100401",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "others",
+       "id": "gid://shopify/Collection/185196937304",
+       "title": "Others"
+      },
+      {
+       "description": {
+        "html": "DIY Display Adapters"
+       },
+       "handle": "display-adapter",
+       "id": "gid://shopify/Collection/518630146361",
+       "title": "Display Adapter"
+      }
+     ],
+     "description": {
+      "html": "This product is a technical DIY product. We regret that we are unable to provide specific technical support. Overview This product is RGB888 to HDMI adapter board, using 50pin RGB FFC input, can convert the RGB signal of 7/9/10 inch industrial control screen to standard HDMI output. It can be applied to industrial equipment maintenance, control panel modification, DIY display expansion related use scenarios. Note: This board does not have a scaling function, and the output HDMI resolution is the same as the input RGB signal resolution, so for non-standard HDMI resolutions, the monitor connected to the back end may not support it! If it is 6-bit input, connect R[7:2], G[7:2], B[7:2]; and R/G/B 0,1 to ground Features Precise signal conversion: Stable conversion of RGB888 digital signals to standard HDMI output. Dual Mode Input Connector: 50PIN FFC Input Connector: Supports RGB888 (24bit). 30P Pin connector(15x2 2.0mm connectors to be prepared and soldered by yourself): Supports RGB888 (24bit) and 6bit input. Audio Integration: Provides digital audio I2S inputs to support simultaneous transmission of audio signals to HDMI outputs. Dimensional clarity: Provides accurate mechanical mounting dimensions for easy integration into your equipment enclosure. Packing List 1 x RGB888 to HDMI adapter Board 1 x 50PIN FFC cable (length 5 cm)"
+     },
+     "gift_card": false,
+     "handle": "rgb888-to-hdmi",
+     "id": "gid://shopify/Product/9921560183097",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/RGB-to-HDMI-IMG-9513.jpg?v=1752116665"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Display Adapter",
+      "Hat",
+      "Others"
+     ],
+     "title": "Geekworm 50Pin RGB888 to HDMI Adapter Board",
+     "url": "https://geekworm.com/products/rgb888-to-hdmi",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/50981270716729:1",
+       "description": {
+        "html": "This product is a technical DIY product. We regret that we are unable to provide specific technical support. Overview This product is RGB888 to HDMI adapter board, using 50pin RGB FFC input, can convert the RGB signal of 7/9/10 inch industrial control screen to standard HDMI output. It can be applied to industrial equipment maintenance, control panel modification, DIY display expansion related use scenarios. Note: This board does not have a scaling function, and the output HDMI resolution is the same as the input RGB signal resolution, so for non-standard HDMI resolutions, the monitor connected to the back end may not support it! If it is 6-bit input, connect R[7:2], G[7:2], B[7:2]; and R/G/B 0,1 to ground Features Precise signal conversion: Stable conversion of RGB888 digital signals to standard HDMI output. Dual Mode Input Connector: 50PIN FFC Input Connector: Supports RGB888 (24bit). 30P Pin connector(15x2 2.0mm connectors to be prepared and soldered by yourself): Supports RGB888 (24bit) and 6bit input. Audio Integration: Provides digital audio I2S inputs to support simultaneous transmission of audio signals to HDMI outputs. Dimensional clarity: Provides accurate mechanical mounting dimensions for easy integration into your equipment enclosure. Packing List 1 x RGB888 to HDMI adapter Board 1 x 50PIN FFC cable (length 5 cm)"
+       },
+       "id": "gid://shopify/ProductVariant/50981270716729",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/RGB-to-HDMI-IMG-9513.jpg?v=1752116665"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100604",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+     },
+     "gift_card": false,
+     "handle": "psu60",
+     "id": "gid://shopify/Product/7248960815192",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-US.jpg?v=1722588901"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 3",
+      "Raspberry Pi 4"
+     ],
+     "title": "Geekworm DC 5521 60W 12V 5A Power Supply (PSU60)",
+     "url": "https://geekworm.com/products/psu60",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40071057080408:1",
+       "description": {
+        "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+       },
+       "id": "gid://shopify/ProductVariant/40071057080408",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-US.jpg?v=1722588901"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100343",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40071057277016:1",
+       "description": {
+        "html": "OverviewThis is Geekworm 60W 12V max. 5A power adapter with DC5521 connection, it is high quality CE certified and UL Listed power supply.It compatible well with expansion boards like Geekworm X735 V3.0 / X880 / X832 / X715 expansion board.Features Input: 100-240V 50 / 60Hz 1.2A Max. Output: 12V Max.5A 60W Cable length: 1.2 m / 47.24 inches DC Jack Type: 5.5 * 2.1mm male Net Weight: 200g Model: PSU60 Application X735 V3.0 X880 X832 X715 X1202 X-UPS1 X1203 X885 X882 V2.0 ROCKPro64 Packing List 1x DC 5521 12V 5A 60W Power Supply (US/EU Plug, cable length: 120CM)"
+       },
+       "id": "gid://shopify/ProductVariant/40071057277016",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/psu60-1-main-EU.jpg?v=1722588934"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100342",
+       "title": "EU Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-5"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+     },
+     "gift_card": false,
+     "handle": "dc5521-5v-10a-psu",
+     "id": "gid://shopify/Product/10153592586553",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664.jpg?v=1773992993"
+      }
+     ],
+     "options": [
+      {
+       "name": "Plug Type",
+       "values": [
+        {
+         "label": "US Plug"
+        },
+        {
+         "label": "EU Plug"
+        },
+        {
+         "label": "UK Plug"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power Supply",
+      "Raspberry Pi",
+      "Raspberry Pi 3",
+      "Raspberry Pi 4",
+      "Raspberry Pi 5"
+     ],
+     "title": "Geekworm DC5521 5V 10A Power Adapter for X1011 etc",
+     "url": "https://geekworm.com/products/dc5521-5v-10a-psu",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035693216057:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035693216057",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664.jpg?v=1773992993"
+        }
+       ],
+       "options": [
+        {
+         "label": "US Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200382",
+       "title": "US Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035693248825:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035693248825",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664-EU.jpg?v=1773998471"
+        }
+       ],
+       "options": [
+        {
+         "label": "EU Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200383",
+       "title": "EU Plug"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/52035697967417:1",
+       "description": {
+        "html": "Notes Please ensure your device requires 5V DC5521 jack NOT DC5525 input before use. The total current of connected devices should not exceed 9A. Overview This 5V 10A DC5521 power adapter provides a stable and reliable power supply for high-current electronic devices. It features a DC5521 (5.5mm × 2.1mm) barrel connector, making it suitable for a wide range of development boards, embedded systems, and accessories. It is recommended for powering the X1011 expansion board, delivering sufficient current to ensure stable operation of connected devices and peripherals. Features Input: 100-240V 50 / 60Hz 1.5A Max. Output: 5V Max.10A Cable length: 100mm Connection: DC55*21(5.5mm × 2.1mm)(5.5mm outer diameter, 2.1mm inner diameter) Polarity: Center positive (+), outer negative (-) Power Brick Net Weight: 250g Built-in Protection: Over-voltage, over-current, overload, and short-circuit protection Compatible with X1011, X825 V2.0, X728, T300 Compliance & Certifications: Europe: CE (EMC & LVD), GS Certified United Kingdom: UKCA (EMC & LVD) North America: UL Listed/Recognized (for power < 75W) Packing List 1 x DC5521 5V 10A Power Adapter"
+       },
+       "id": "gid://shopify/ProductVariant/52035697967417",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/DC5521-5V-10A-IMG-0664-UK.jpg?v=1773998471"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK Plug",
+         "name": "Plug Type"
+        }
+       ],
+       "price": {
+        "amount": 1900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "200384",
+       "title": "UK Plug"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "others",
+       "id": "gid://shopify/Collection/185196937304",
+       "title": "Others"
+      },
+      {
+       "description": {
+        "html": "DIY Display Adapters"
+       },
+       "handle": "display-adapter",
+       "id": "gid://shopify/Collection/518630146361",
+       "title": "Display Adapter"
+      }
+     ],
+     "description": {
+      "html": "This product is a technical DIY product. We regret that we are unable to provide specific technical support. OverviewS.EDP-HDMI-4K2K.V1.3 is a signal adapter board, which is mainly used to convert EDP signal into HDMI signal, the resolution of this adapter supports up to 4K 30HZ resolution. The adapter can be used in set-top boxes, advertising machines, conference systems and other fields. EDP input needs to comply with EDP1.1, EDP1.2 standards;User Manual: https://wiki.geekworm.com/EDP_to_HDMI_AdapterPower Supply Requirement Support power supply voltage 5-12V((The adapter board is powered by the drive screen with EDP interface.) Features ( EPD/DP RX )： Compliant with VESA EDP/DP1.2 Support 1.62/2.7/5.4Gbps Support 1/2/4 lanes （Default with 2 lanes program） Support SSC 1Mbps AUX channel Compliant with HDCP1.3 Features ( HDMI TX)： Compliant with HDMI2.0, HDMI1.4 and DVI1.0 Compliant with HDCP2.2 and HDCP1.4 IData rate up to 6Gbps Support UHD 4k@60Hz(RGB and YCbCr 4:4:4) Support TMDS scrambling for EMI/RFI reduction Support SCDC(Status and Control Data Channel) Configuration & General Precautions Relative humidity: ≤ 80%. Storage temperature: -20~60°C. Operation temperature: -20~60°C. Protect the board from static electricity in case of damage to the IC. Keep the board away from conductor when it is working. Don't wire in the board to power supply before panel is correctly connected. Operating:Less than 2000m Packing List: 1 x EDP to HDMI adapter board(2lanes/4lanes program)"
+     },
+     "gift_card": false,
+     "handle": "edp-to-hdmi-adapter",
+     "id": "gid://shopify/Product/7054374174808",
+     "list_price_range": {
+      "max": {
+       "amount": 4500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4500,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/EDP-to-HDMI-IMG-1555.jpg?v=1791864104"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4000,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Display Adapter",
+      "Hat",
+      "Others"
+     ],
+     "title": "EDP to HDMI Adapter 2lane Support 1080P @30HZ Resolution 4lane Support 2K 4K @60HZ Resolution",
+     "url": "https://geekworm.com/products/edp-to-hdmi-adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/40107593564248:1",
+       "description": {
+        "html": "This product is a technical DIY product. We regret that we are unable to provide specific technical support. OverviewS.EDP-HDMI-4K2K.V1.3 is a signal adapter board, which is mainly used to convert EDP signal into HDMI signal, the resolution of this adapter supports up to 4K 30HZ resolution. The adapter can be used in set-top boxes, advertising machines, conference systems and other fields. EDP input needs to comply with EDP1.1, EDP1.2 standards;User Manual: https://wiki.geekworm.com/EDP_to_HDMI_AdapterPower Supply Requirement Support power supply voltage 5-12V((The adapter board is powered by the drive screen with EDP interface.) Features ( EPD/DP RX )： Compliant with VESA EDP/DP1.2 Support 1.62/2.7/5.4Gbps Support 1/2/4 lanes （Default with 2 lanes program） Support SSC 1Mbps AUX channel Compliant with HDCP1.3 Features ( HDMI TX)： Compliant with HDMI2.0, HDMI1.4 and DVI1.0 Compliant with HDCP2.2 and HDCP1.4 IData rate up to 6Gbps Support UHD 4k@60Hz(RGB and YCbCr 4:4:4) Support TMDS scrambling for EMI/RFI reduction Support SCDC(Status and Control Data Channel) Configuration & General Precautions Relative humidity: ≤ 80%. Storage temperature: -20~60°C. Operation temperature: -20~60°C. Protect the board from static electricity in case of damage to the IC. Keep the board away from conductor when it is working. Don't wire in the board to power supply before panel is correctly connected. Operating:Less than 2000m Packing List: 1 x EDP to HDMI adapter board(2lanes/4lanes program)"
+       },
+       "id": "gid://shopify/ProductVariant/40107593564248",
+       "list_price": {
+        "amount": 4500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/EDP-to-HDMI-IMG-1555.jpg?v=1791864104"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100315",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-15-15"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Geekworm will find the most trending and potential new products according to the market demand. We will update the newest accessories about raspberry pi, orange pi, and other mini pc products here."
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/78216331322",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi is the name of a series of single-board computers made by the Raspberry Pi Foundation, a UK charity that aims to educate people in computing and create easier access to computing education. The Raspberry Pi launched in 2012, and there have been several iterations and variations released since then. The original Pi had a single-core 700MHz CPU and just 256MB RAM, and the latest model Raspberry Pi 5 has a quad-core CPU clocking in at over 2.4GHz, and 8GB RAM. The price point for Raspberry Pi has always been under $100 (usually around $35 USD), most notably the Pi Zero, which costs just $5."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/185189400664",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Overview The Power Supply Expansion Board (YB-MPP01-V1.0) is a purpose-built, high-efficiency voltage regulation expansion board designed specifically for the Raspberry Pi 5. Integrating multiple input/output options and advanced power management, it converts wide DC input into a rock-solid, fully compliant 5V/5A power output tailored to the Raspberry Pi 5’s exact power specifications. Say goodbye to low-voltage warnings and restricted peripheral performance. By supporting the Raspberry Pi 5 exclusive PD protocol, this board unlocks the full 1.6A USB port current capacity, allowing you to run high-power USB devices, drives, and accessories without hassle. Its compact, stackable design with standard M2.5 mounting holes makes it perfectly suited for mobile platforms like smart cars, wheeled/quadruped robots, robotic arms, and IoT edge projects. Note: The Type-C output port is dedicated to power delivery only and does not support USB data transmission. Key Features ⚡ Raspberry Pi 5 PD Protocol Compliance Official Spec Match: Fully complies with the Raspberry Pi 5 official 5V/5A power requirement. Maximized USB Output: Completely eliminates low-voltage warnings and unlocks full 1.6A current across USB interfaces (compared to the 0.6A limit with non-PD supplies). 🔋 6–24V Wide Input Voltage Range Versatile Compatibility: Accepts power from DC adapters, lithium battery packs, vehicle power supplies, or robot bus power. Automatic Current Adjustment: Delivers 5V/3A with a 6V input, and 5V/5A with a 7–24V input. Linear Compensation: Maintains precise voltage output even under fluctuating input source conditions. 🔌 Rich & Versatile Interfaces Type-C Output Port: Dedicated power supply output for Raspberry Pi 5 (cable-free setup with included bridge adapter). 2× PH2.0-2Pin Connectors: Easy power breakout for sensors and low-power peripherals. DC 5.5×2.1mm Barrel Jack: Ideal for powering Jetson Nano and other DC-powered devices. 2× 6Pin Bent Pin Headers: Simple connection for Arduino, STM32, ESP32, and custom MCU development boards. 🛠️ Stackable DIY Design & Wide Ecosystem Flexible Mounting: Can be stacked directly on top or underneath the Raspberry Pi 5 board. Dual Type-C Bridge Included: Features a custom dual Type-C bridge for a clean, cable-free power connection. Multi-Board Compatibility: Works seamlessly with Raspberry Pi 5, Pi 4B, Jetson Nano B01, STM32, ESP32, K210, and RDK series boards or other 5V DC powered single-board computers Ideal Applications: Perfectly tailored for wheeled, quadruped, or tracked robots, robotic arms, IoT edge computing nodes, and custom embedded systems. 🛡️ Multi-Layer Circuit Safety Comprehensive Circuit Protection: Built-in input reverse polarity protection, output over-current protection, current limiting, over-voltage protection, and over-temperature protection. Power & Safety Usage Guide ⚠️ IMPORTANT POWER & HANDLING WARNINGS: Single Power Input: Never connect multiple power sources to the input interfaces simultaneously. Pi 5 Input Requirement: To achieve the full 5V/5A performance required for Raspberry Pi 5, input voltage MUST be between 7V and 24V. (A 6V input provides only 5V/3A). No Input to Output Ports: Do NOT feed external voltage/power directly into any output interfaces. Maximum allowed input is 24V DC. Do NOT Measure Type-C Output with a Multimeter: The Type-C port relies on active PD handshake negotiation. Probing directly with a multimeter will fail to read voltage and risks short-circuiting and damaging the board! PD-Compatible Cable Required: If using a Type-C cable instead of the bridge adapter, ensure the cable is PD-compliant to trigger power negotiation. Non-Conductive Operation: Always operate the board on an insulated, non-conductive surface to prevent accidental short circuits from contact with metal. Technical Specifications Parameter Specification Model YB-MPP01-V1.0 Voltage Input 6V ~ 24V DC Voltage & Current Output 5V/3A (at 6V input) | 5V/5A (at 7~24V input) Supported Power Protocol Raspberry Pi 5 exclusive PD protocol (5V/5A) Input Interfaces 1x KF301-2P screw terminal (5.08mm) | 1x XH2.54-2Pin | 1x DC 5.5×2.5mm barrel jack Output Interfaces 1x Type-C (Power delivery only) | 2x PH2.0-2Pin | 1x DC 5.5×2.1mm barrel jack | 2x 6Pin bent pin headers LED Status Indicators Red LED: Power input status | Blue LED: 5V output status Circuit Protections Input anti-reverse polarity, output over-current, current limiting, over-voltage, over-temperature Board Compatibility Raspberry Pi 5 (recommended), Raspberry Pi 4B, Jetson Nano B01, STM32, ESP32, K210, RDK series Dimensions & Weight 65 mm × 56 mm | Net Weight: 32g (M2.5 mounting holes) Packing List 1 x Yahboom Power Supply Expansion Board (YB-MPP01-V1.0) 1 x Dual Type-C Bridge Adapter (for Raspberry Pi 5 stacked setup) 1 x XH2.54-2Pin Power Cable (15cm) 1 x Set of M2.5 Mounting Hardware (copper standoffs, screws & nuts) Note: Raspberry Pi 5 mainboard, power adapters, cooling fans, and other peripherals shown in photos are for demonstration only and are not included."
+     },
+     "gift_card": false,
+     "handle": "yb-mpp01",
+     "id": "gid://shopify/Product/15408952475961",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/YB-MPP01-01.jpg?v=1792480878"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Hat",
+      "Jetson Nano",
+      "NVIDIA Jetson Nano",
+      "Raspberry Pi",
+      "Raspberry Pi 4",
+      "Raspberry Pi 5"
+     ],
+     "title": "Voltage Regualtor Power Expansion Board with 6~24V Wide Input for Raspberry Pi 5/4B/RDK Series/Robotics & Embedded Projects",
+     "url": "https://geekworm.com/products/yb-mpp01",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://geekworm.myshopify.com/cart/67718937018681:1",
+       "description": {
+        "html": "Overview The Power Supply Expansion Board (YB-MPP01-V1.0) is a purpose-built, high-efficiency voltage regulation expansion board designed specifically for the Raspberry Pi 5. Integrating multiple input/output options and advanced power management, it converts wide DC input into a rock-solid, fully compliant 5V/5A power output tailored to the Raspberry Pi 5’s exact power specifications. Say goodbye to low-voltage warnings and restricted peripheral performance. By supporting the Raspberry Pi 5 exclusive PD protocol, this board unlocks the full 1.6A USB port current capacity, allowing you to run high-power USB devices, drives, and accessories without hassle. Its compact, stackable design with standard M2.5 mounting holes makes it perfectly suited for mobile platforms like smart cars, wheeled/quadruped robots, robotic arms, and IoT edge projects. Note: The Type-C output port is dedicated to power delivery only and does not support USB data transmission. Key Features ⚡ Raspberry Pi 5 PD Protocol Compliance Official Spec Match: Fully complies with the Raspberry Pi 5 official 5V/5A power requirement. Maximized USB Output: Completely eliminates low-voltage warnings and unlocks full 1.6A current across USB interfaces (compared to the 0.6A limit with non-PD supplies). 🔋 6–24V Wide Input Voltage Range Versatile Compatibility: Accepts power from DC adapters, lithium battery packs, vehicle power supplies, or robot bus power. Automatic Current Adjustment: Delivers 5V/3A with a 6V input, and 5V/5A with a 7–24V input. Linear Compensation: Maintains precise voltage output even under fluctuating input source conditions. 🔌 Rich & Versatile Interfaces Type-C Output Port: Dedicated power supply output for Raspberry Pi 5 (cable-free setup with included bridge adapter). 2× PH2.0-2Pin Connectors: Easy power breakout for sensors and low-power peripherals. DC 5.5×2.1mm Barrel Jack: Ideal for powering Jetson Nano and other DC-powered devices. 2× 6Pin Bent Pin Headers: Simple connection for Arduino, STM32, ESP32, and custom MCU development boards. 🛠️ Stackable DIY Design & Wide Ecosystem Flexible Mounting: Can be stacked directly on top or underneath the Raspberry Pi 5 board. Dual Type-C Bridge Included: Features a custom dual Type-C bridge for a clean, cable-free power connection. Multi-Board Compatibility: Works seamlessly with Raspberry Pi 5, Pi 4B, Jetson Nano B01, STM32, ESP32, K210, and RDK series boards or other 5V DC powered single-board computers Ideal Applications: Perfectly tailored for wheeled, quadruped, or tracked robots, robotic arms, IoT edge computing nodes, and custom embedded systems. 🛡️ Multi-Layer Circuit Safety Comprehensive Circuit Protection: Built-in input reverse polarity protection, output over-current protection, current limiting, over-voltage protection, and over-temperature protection. Power & Safety Usage Guide ⚠️ IMPORTANT POWER & HANDLING WARNINGS: Single Power Input: Never connect multiple power sources to the input interfaces simultaneously. Pi 5 Input Requirement: To achieve the full 5V/5A performance required for Raspberry Pi 5, input voltage MUST be between 7V and 24V. (A 6V input provides only 5V/3A). No Input to Output Ports: Do NOT feed external voltage/power directly into any output interfaces. Maximum allowed input is 24V DC. Do NOT Measure Type-C Output with a Multimeter: The Type-C port relies on active PD handshake negotiation. Probing directly with a multimeter will fail to read voltage and risks short-circuiting and damaging the board! PD-Compatible Cable Required: If using a Type-C cable instead of the bridge adapter, ensure the cable is PD-compliant to trigger power negotiation. Non-Conductive Operation: Always operate the board on an insulated, non-conductive surface to prevent accidental short circuits from contact with metal. Technical Specifications Parameter Specification Model YB-MPP01-V1.0 Voltage Input 6V ~ 24V DC Voltage & Current Output 5V/3A (at 6V input) | 5V/5A (at 7~24V input) Supported Power Protocol Raspberry Pi 5 exclusive PD protocol (5V/5A) Input Interfaces 1x KF301-2P screw terminal (5.08mm) | 1x XH2.54-2Pin | 1x DC 5.5×2.5mm barrel jack Output Interfaces 1x Type-C (Power delivery only) | 2x PH2.0-2Pin | 1x DC 5.5×2.1mm barrel jack | 2x 6Pin bent pin headers LED Status Indicators Red LED: Power input status | Blue LED: 5V output status Circuit Protections Input anti-reverse polarity, output over-current, current limiting, over-voltage, over-temperature Board Compatibility Raspberry Pi 5 (recommended), Raspberry Pi 4B, Jetson Nano B01, STM32, ESP32, K210, RDK series Dimensions & Weight 65 mm × 56 mm | Net Weight: 32g (M2.5 mounting holes) Packing List 1 x Yahboom Power Supply Expansion Board (YB-MPP01-V1.0) 1 x Dual Type-C Bridge Adapter (for Raspberry Pi 5 stacked setup) 1 x XH2.54-2Pin Power Cable (15cm) 1 x Set of M2.5 Mounting Hardware (copper standoffs, screws & nuts) Note: Raspberry Pi 5 mainboard, power adapters, cooling fans, and other peripherals shown in photos are for demonstration only and are not included."
+       },
+       "id": "gid://shopify/ProductVariant/67718937018681",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0068/8481/9002/files/YB-MPP01-01.jpg?v=1792480878"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100773",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "6884819002"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Geekworm",
+        "merchant_origin": "geekworm.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "jcb",
+          "diners_club"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "6884819002"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

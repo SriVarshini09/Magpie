@@ -1,0 +1,54 @@
+{
+  "sample": {
+    "build_type": "electronics_mcu",
+    "title": "E-paper weather display (link)",
+    "source_url": "https://github.com/lmarzen/esp32-weather-epd",
+    "blurb": "Electronics only, shown as a board diagram",
+    "mandate_preset": {
+      "budget_usd": 130,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "openelab",
+        "robotshop",
+        "rokland",
+        "pimoroni",
+        "amazon",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "diagram"
+  },
+  "template_id": "tpl_electronics_mcu",
+  "source_commit": "c78ad15e7933684fb5af19168f6e2da003e08b84",
+  "default_answers": {
+    "board": "esp32",
+    "power": "battery",
+    "own_soldering_iron": "yes"
+  },
+  "seed_memories": [
+    "owns a soldering iron",
+    "owns jumper wires",
+    "prefers US sellers; no Alibaba or AliExpress"
+  ],
+  "kb_docs": [
+    "esp32_weather_epd_notes",
+    "compat_rules_mcu_battery",
+    "electrical_notes",
+    "compat_rules_generic",
+    "store_policies",
+    "template_sources",
+    "tpl_electronics_mcu"
+  ],
+  "notes": "Second demo (PLAN §13.2). README pinned to commit c78ad15e; GPL-3.0: we read its parts list and use none of its code. Digi-Key is left out: it is disabled in data/stores.json until P11 (the API key) exists; add 'digikey' to allowed_merchants only then. Adafruit and SparkFun are in on purpose (product-link stores): the mandate is not shaped to manufacture a failure."
+}

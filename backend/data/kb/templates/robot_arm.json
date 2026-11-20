@@ -1,0 +1,209 @@
+{
+  "template_id": "tpl_robot_arm",
+  "build_type": "robot_arm",
+  "version": "0.1",
+  "title": "SO-101 follower arm",
+  "summary": "Robot arm template: a desktop robot arm, SO-101, SO-ARM100, LeRobot follower arm, 6-axis arm with bus servos, teleoperation arm. Rows: six STS3215 bus servos, the Waveshare bus servo adapter, a 5V or 12V power supply with a 5.5×2.1 mm plug, USB-C data cables, table clamps, a Phillips screwdriver set and the 3D-printed parts. Detection labels: servo motor, robot arm, motor control board, power supply, usb cable, clamp. Used for a text or photo request for an arm with no link; with the SO-ARM100 link the README itself is the source and this template only supplies the view and questions.",
+  "references": [
+    {
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "title": "SO-ARM100 / SO-101 README (TheRobotStudio), parts for one follower arm, read at commit a758567c",
+      "licence": "Apache-2.0",
+      "used_for": "every row: parts, quantities, the 12V note, print settings; stated total $121.94 per follower arm"
+    }
+  ],
+  "questions": [
+    {
+      "id": "voltage_class",
+      "text": "Which servo voltage?",
+      "chips": [
+        {"value": "7v4", "label": "7.4V (standard)"},
+        {"value": "12v", "label": "12V (more torque)"}
+      ],
+      "default": "7v4",
+      "skip_if": ["text_mentions_voltage"]
+    },
+    {
+      "id": "own_printer",
+      "text": "Do you have a 3D printer?",
+      "chips": [
+        {"value": "yes", "label": "Yes, I'll print the parts"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers"]
+    },
+    {
+      "id": "own_screwdriver",
+      "text": "Have a small Phillips screwdriver set?",
+      "chips": [
+        {"value": "yes", "label": "Yes"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers"]
+    }
+  ],
+  "variants": [
+    {
+      "id": "7v4",
+      "label": "7.4V servos on a 5V supply",
+      "when": {"voltage_class": "7v4"},
+      "overrides": {}
+    },
+    {
+      "id": "12v",
+      "label": "12V servos on a 12V 5A+ supply",
+      "when": {"voltage_class": "12v"},
+      "overrides": {
+        "servo": {
+          "typical_spec": "STS3215 12V, 30 kg·cm stall torque (C018)",
+          "attrs": {"voltage_v": "12", "variant": "C018"},
+          "search_query": "STS3215 12V C018 servo",
+          "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "The 12V version has a stall torque of 30kg.cm"}
+        },
+        "psu": {
+          "typical_spec": "12V 5A+ power supply, 5.5×2.1 mm plug",
+          "attrs": {"voltage_v": "12", "current_a": "5", "connector": "barrel 5.5x2.1"},
+          "search_query": "12V 5A power supply 5.5x2.1mm",
+          "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "12V 5A+ power supply"}
+        }
+      }
+    }
+  ],
+  "parts": [
+    {
+      "row_id": "servo",
+      "name": "Bus servo",
+      "category": "motor",
+      "qty": 6,
+      "line_kind": "part",
+      "typical_spec": "STS3215 Servo 7.4V, 1/345 gear (C001); the 12V variant is C018",
+      "attrs": {"voltage_v": "7.4", "variant": "C001"},
+      "search_query": "STS3215 7.4V C001 servo 1/345",
+      "rules": ["R1", "R3", "R4", "R7", "G1"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "STS3215 Servo 7.4V, 1/345 gear (C001)"},
+      "mesh": "sts3215_03a_v1"
+    },
+    {
+      "row_id": "controller",
+      "name": "Motor control board",
+      "category": "board",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "Waveshare Bus Servo Adapter (A), 3-pin daisy chain",
+      "attrs": {"voltage_range": null},
+      "search_query": "Waveshare bus servo adapter A",
+      "rules": ["R5", "R10"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Motor Control Board"},
+      "mesh": null
+    },
+    {
+      "row_id": "psu",
+      "name": "Power supply",
+      "category": "power",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "5V supply for the 7.4V servos (amps not stated in the source), 5.5×2.1 mm plug",
+      "attrs": {"voltage_v": "5", "current_a": null, "connector": "barrel 5.5x2.1"},
+      "search_query": "5V power supply 5.5x2.1mm",
+      "rules": ["R1", "R2", "R6", "R11", "G1", "G2", "G5"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "5V power supply"},
+      "mesh": null
+    },
+    {
+      "row_id": "usb_cable",
+      "name": "USB-C cable",
+      "category": "cable",
+      "qty": 2,
+      "qty_note": "2 pcs, one pack in the README",
+      "line_kind": "part",
+      "typical_spec": "Data-capable USB-C cable",
+      "attrs": {"connector": "USB-C"},
+      "search_query": "USB-C data cable 2 pack",
+      "rules": ["R8"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "USB-C Cable 2 pcs"},
+      "mesh": null
+    },
+    {
+      "row_id": "clamp",
+      "name": "Table clamp",
+      "category": "mechanical",
+      "qty": 2,
+      "qty_note": "2 pcs, one pack in the README",
+      "line_kind": "part",
+      "typical_spec": "Small table clamp",
+      "attrs": {},
+      "search_query": "small table clamp 2 pcs",
+      "rules": [],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Table Clamp 2pcs"},
+      "mesh": null
+    },
+    {
+      "row_id": "screwdriver",
+      "name": "Screwdriver set",
+      "category": "tool",
+      "qty": 1,
+      "line_kind": "tool",
+      "typical_spec": "Phillips #0 and #1",
+      "attrs": {},
+      "search_query": "precision screwdriver set phillips #0 #1",
+      "rules": [],
+      "own_question": "own_screwdriver",
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "phillips head screw driver sizes #0 and #1"},
+      "mesh": null
+    },
+    {
+      "row_id": "printed",
+      "name": "Printed parts",
+      "category": "printed",
+      "qty": 1,
+      "qty_note": "1 set (11 parts)",
+      "line_kind": "part",
+      "typical_spec": "PLA+, 0.4 mm nozzle, 0.2 mm layer, 15% infill",
+      "attrs": {},
+      "search_query": null,
+      "rules": [],
+      "own_question": "own_printer",
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Material: PLA+"},
+      "mesh": "base_so101_v2"
+    }
+  ],
+  "rule_packs": ["generic_electrical", "robot_arm"],
+  "view": {
+    "kind": "urdf",
+    "model": "so101",
+    "parts": [
+      {"mesh": "base_so101_v2", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "base_motor_holder_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "motor_holder_so101_base_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "motor_holder_so101_wrist_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "moving_jaw_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "rotation_pitch_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "under_arm_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "upper_arm_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "waveshare_mounting_plate_so101_v2", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "wrist_roll_follower_so101_v1", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "wrist_roll_pitch_so101_v2", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "sts3215_03a_v1", "row_id": "servo", "instances": 5, "explode": [0, 0, 0], "order": 2},
+      {"mesh": "sts3215_03a_no_horn_v1", "row_id": "servo", "instances": 1, "explode": [0, 0, 0], "order": 2}
+    ]
+  },
+  "edges": [
+    {"from": "psu", "to": "controller", "label": "5.5×2.1 mm barrel, 5V or 12V", "rules": ["R1", "R6", "R10", "G1", "G5"]},
+    {"from": "controller", "to": "servo", "label": "3-pin bus, daisy chain", "rules": ["R5", "R7"]},
+    {"from": "usb_cable", "to": "controller", "label": "USB-C data", "rules": ["R8"]}
+  ]
+}

@@ -1,0 +1,337 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Push button reset button"
+  }
+ },
+ "key": "43cb07d877659e3404223df6fc56c3d2bf6350730b00b0a075d04d45b575e063",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:13-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Picade arcade cabinet kits for Raspberry Pi, plus arcade buttons, joysticks and screens for building a machine of your own."
+       },
+       "handle": "gaming-and-arcade",
+       "id": "gid://shopify/Collection/13148789",
+       "title": "Retro Gaming & Arcade"
+      },
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "DO NOT PRESS THE BIG RED BUTTON! This 100mm diameter arcade button with a 10mm deep plastic base is so massive and inviting it may collapse upon itself and form a black hole from which not even light can escape! Until it does, however, it ready for all sorts of pressing and pushing. Science has shown no one can resist pressing its shiny surface and saying \"beep!\". We've seen these on some games of skill in arcades, they're easy to mount on nearly any kind of enclosure. They're not waterproof or weatherproof, so best used indoors. This button has a domed red plastic cover with a black retaining ring around it. There's an optional LED included that will light up the button. The LED has a built in resistor so you can run it up to 12V but given the massive size and shallow depth of the button, it doesn't illuminate the entire button face evenly. The button activates a common arcade microswitch (included), the switch contacts are normally open. When the button is pressed, the contacts close. Technical Details Micro switch terminals are 0.187\" wide, LED connection terminals are 0.25\" wide"
+     },
+     "gift_card": false,
+     "handle": "massive-arcade-button-with-led-100mm-red",
+     "id": "gid://shopify/Product/2473086657",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/1185-00.jpg?v=1665147686"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Switches"
+     ],
+     "title": "Massive Arcade Button with LED - 100mm Red",
+     "url": "https://shop.pimoroni.com/en-us/products/massive-arcade-button-with-led-100mm-red",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/8310528641:1",
+       "description": {
+        "html": "DO NOT PRESS THE BIG RED BUTTON! This 100mm diameter arcade button with a 10mm deep plastic base is so massive and inviting it may collapse upon itself and form a black hole from which not even light can escape! Until it does, however, it ready for all sorts of pressing and pushing. Science has shown no one can resist pressing its shiny surface and saying \"beep!\". We've seen these on some games of skill in arcades, they're easy to mount on nearly any kind of enclosure. They're not waterproof or weatherproof, so best used indoors. This button has a domed red plastic cover with a black retaining ring around it. There's an optional LED included that will light up the button. The LED has a built in resistor so you can run it up to 12V but given the massive size and shallow depth of the button, it doesn't illuminate the entire button face evenly. The button activates a common arcade microswitch (included), the switch contacts are normally open. When the button is pressed, the contacts close. Technical Details Micro switch terminals are 0.187\" wide, LED connection terminals are 0.25\" wide"
+       },
+       "id": "gid://shopify/ProductVariant/8310528641",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/1185-00.jpg?v=1665147686"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA1185",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

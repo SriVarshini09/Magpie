@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "records": 17,
+  "head_hash": "sha256:00698d3adb04668a4ccc23af2f55a34f3e2522718a6d613f213b19bba47adb24",
+  "broken_at": null,
+  "signatures_ok": true,
+  "checks": [
+    {
+      "name": "chain",
+      "ok": true,
+      "detail": "17 records recompute"
+    },
+    {
+      "name": "open_mandate.signature",
+      "ok": true,
+      "detail": "ES256 signature valid"
+    },
+    {
+      "name": "open_mandate.chain",
+      "ok": true,
+      "detail": "mandate_open record seq 2"
+    },
+    {
+      "name": "closed_mandate.signature",
+      "ok": true,
+      "detail": "ES256 signature valid"
+    },
+    {
+      "name": "closed_mandate.open_binding",
+      "ok": true,
+      "detail": "open_mandate_sha256 matches"
+    },
+    {
+      "name": "closed_mandate.chain",
+      "ok": true,
+      "detail": "mandate_closed record seq 13"
+    },
+    {
+      "name": "closed_mandate.chain_head",
+      "ok": true,
+      "detail": "chain_head is record seq 12"
+    },
+    {
+      "name": "closed_mandate.handoff_urls",
+      "ok": true,
+      "detail": "every hand-off URL matches its hash"
+    }
+  ],
+  "simulated": true
+}

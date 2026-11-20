@@ -1,0 +1,823 @@
+{
+  "template_id": "tpl_quadcopter",
+  "build_type": "quadcopter",
+  "version": "0.1",
+  "title": "Small camera quadcopter",
+  "summary": "Quadcopter template: a small camera drone, quad, quadcopter, FPV drone, multicopter, mini quad, cinewhoop or toothpick; palm-size 3-inch, 5-inch freestyle, or a 10-inch X500 development kit. Rows: frame, brushless motors, ESC (4-in-1 or all-in-one), flight controller, propellers, power distribution, LiPo battery, RC receiver, FPV camera, video transmitter and antenna, GPS, LiPo balance charger, radio transmitter and goggles. Detection labels: drone frame, brushless motor, propeller, flight controller board, ESC board, LiPo battery, FPV camera, antenna, receiver. Starting point, not a verified design: the 3-inch and 5-inch rows are rules of thumb.",
+  "references": [
+    {
+      "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+      "title": "PX4 User Guide: Holybro X500 V2 (Pixhawk 5X build)",
+      "licence": "CC BY 4.0",
+      "used_for": "which parts a quadcopter needs, the PDB and connector layout, and the x500 variant rows; not the 3-inch or 5-inch numbers"
+    },
+    {
+      "url": "https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2",
+      "title": "Holybro PX4 Development Kit X500 V2",
+      "licence": "[unverified]; cited, not copied",
+      "used_for": "x500 variant: motor KV920 (the PX4 page says KV880; both cited) and the 4S 2000-5000 mAh battery range"
+    },
+    {
+      "url": "https://oscarliang.com/motors/",
+      "title": "Oscar Liang: FPV drone motors",
+      "licence": "not an open licence; cited, short quote",
+      "used_for": "5in variant: motor KV range per cell count (rule of thumb)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "size_class",
+      "text": "What size?",
+      "chips": [
+        {
+          "value": "3in",
+          "label": "Palm-size (3-inch)"
+        },
+        {
+          "value": "5in",
+          "label": "5-inch"
+        },
+        {
+          "value": "x500",
+          "label": "10-inch dev kit"
+        }
+      ],
+      "default": "3in",
+      "skip_if": [
+        "text_mentions_size"
+      ]
+    },
+    {
+      "id": "own_radio",
+      "text": "Have a radio and goggles?",
+      "chips": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes",
+      "skip_if": [
+        "memory_answers"
+      ]
+    },
+    {
+      "id": "own_soldering_iron",
+      "text": "Have a soldering iron?",
+      "chips": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "default": "yes",
+      "skip_if": [
+        "memory_answers"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "3in_4s",
+      "label": "3-inch, 4S",
+      "when": {
+        "size_class": "3in"
+      },
+      "overrides": {
+        "_view": {
+          "scale": 0.65
+        }
+      }
+    },
+    {
+      "id": "5in",
+      "label": "5-inch, 4S (6S possible)",
+      "when": {
+        "size_class": "5in"
+      },
+      "overrides": {
+        "frame": {
+          "typical_spec": "5-inch frame, about 220 mm wheelbase (rule of thumb)",
+          "attrs": {
+            "prop_in": "5"
+          },
+          "search_query": "5 inch FPV frame 220mm"
+        },
+        "motor": {
+          "typical_spec": "2207, 2300–2800 KV on 4S (1600–2100 KV if you build on 6S) (rule of thumb, cited)",
+          "attrs": {
+            "cells": "4S",
+            "kv": "2300-2800",
+            "prop_in": "5",
+            "max_current_a": null
+          },
+          "search_query": "2207 brushless motor 2400KV 4S",
+          "source": {
+            "url": "https://oscarliang.com/motors/",
+            "quote": "1600-2100KV is for 6S, while 2300-2800KV is for 4S"
+          }
+        },
+        "esc": {
+          "line_kind": "part",
+          "qty_note": "One 4-in-1 board",
+          "typical_spec": "4-in-1 ESC, 45 A or more, 4–6S (rule of thumb)",
+          "attrs": {
+            "cells_range": "4-6S",
+            "current_a": "45",
+            "connector": "XT60",
+            "mount_mm": "30x30"
+          },
+          "search_query": "4 in 1 ESC 45A 4-6S 30x30"
+        },
+        "fc": {
+          "typical_spec": "F4 or F7 flight controller, 30×30 mm stack (rule of thumb)",
+          "attrs": {
+            "cells_range": "4-6S",
+            "voltage_range": null,
+            "mount_mm": "30x30"
+          },
+          "search_query": "F7 flight controller 30x30 stack"
+        },
+        "props": {
+          "typical_spec": "5-inch, 3-blade (rule of thumb)",
+          "attrs": {
+            "prop_in": "5"
+          },
+          "search_query": "5 inch 3 blade FPV propellers"
+        },
+        "pdb": {
+          "qty_note": "On the 4-in-1 ESC",
+          "typical_spec": "On the 4-in-1 ESC; no separate board (rule of thumb)",
+          "attrs": {
+            "connector": "XT60"
+          }
+        },
+        "battery": {
+          "typical_spec": "4S LiPo, 1100–1500 mAh, XT60 (6S if the motors are 6S) (rule of thumb)",
+          "attrs": {
+            "cells": "4S",
+            "capacity_mah": "1100-1500",
+            "connector": "XT60",
+            "voltage_v": "14.8",
+            "c_rating": null
+          },
+          "search_query": "4S 1300mAh LiPo XT60"
+        },
+        "camera": {
+          "typical_spec": "FPV camera, 19 mm (rule of thumb)",
+          "search_query": "19mm FPV camera"
+        },
+        "vtx": {
+          "typical_spec": "5.8 GHz VTX with antenna (rule of thumb)",
+          "search_query": "5.8GHz VTX 30x30",
+          "attrs": {
+            "mount_mm": "30x30"
+          }
+        },
+        "gps": {
+          "qty": 1,
+          "line_kind": "optional",
+          "typical_spec": "Optional GPS module (rule of thumb)",
+          "search_query": "M10 GPS module FPV"
+        },
+        "_view": {
+          "scale": 1.0
+        }
+      }
+    },
+    {
+      "id": "x500",
+      "label": "Holybro X500 V2 (10-inch props, PX4)",
+      "when": {
+        "size_class": "x500"
+      },
+      "overrides": {
+        "frame": {
+          "typical_spec": "Holybro X500 V2 frame, 500 mm wheelbase (cited, not quoted)",
+          "attrs": {
+            "prop_in": "10"
+          },
+          "search_query": "Holybro X500 V2 frame kit",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "motor": {
+          "typical_spec": "2216 motor; KV880 on the PX4 page, KV920 on the Holybro page: the sources disagree, both are cited (cited, not quoted)",
+          "attrs": {
+            "cells": "4S",
+            "kv": "880-920",
+            "prop_in": "10",
+            "max_current_a": null
+          },
+          "search_query": "2216 brushless motor 920KV",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "esc": {
+          "qty": 4,
+          "line_kind": "part",
+          "qty_note": "Four separate ESCs",
+          "typical_spec": "BLHeli S 20A ESC, XT30",
+          "attrs": {
+            "cells_range": null,
+            "current_a": "20",
+            "connector": "XT30"
+          },
+          "search_query": "BLHeli S 20A ESC",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": "BLHeli S 20A"
+          }
+        },
+        "fc": {
+          "typical_spec": "Pixhawk 6C (the kit on the page shipped with a Pixhawk 5X) (cited, not quoted)",
+          "attrs": {
+            "cells_range": null,
+            "voltage_range": null
+          },
+          "search_query": "Pixhawk 6C flight controller",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "props": {
+          "typical_spec": "1045 propellers (cited, not quoted)",
+          "attrs": {
+            "prop_in": "10"
+          },
+          "search_query": "1045 propellers CW CCW",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "pdb": {
+          "qty": 1,
+          "line_kind": "part",
+          "qty_note": "Power distribution board plus a PM02 power module",
+          "typical_spec": "PDB with an XT60 for the battery and XT30 for the ESCs; PM02 power module",
+          "attrs": {
+            "connector": "XT60"
+          },
+          "search_query": "Holybro PM02 power module PDB XT60",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": "XT60 plug for battery & XT30 plug for ESCs & peripherals"
+          }
+        },
+        "battery": {
+          "typical_spec": "4S LiPo, 2000–5000 mAh (Holybro page), XT60; 4S 5000 mAh recommended",
+          "attrs": {
+            "cells": "4S",
+            "capacity_mah": "2000-5000",
+            "connector": "XT60",
+            "voltage_v": "14.8",
+            "c_rating": null
+          },
+          "search_query": "4S 5000mAh LiPo XT60",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": "Holybro recommends a 4S 5000mAh"
+          }
+        },
+        "receiver": {
+          "typical_spec": "RC receiver that matches your radio; not included in the kit (cited, not quoted)",
+          "search_query": "RC receiver PPM SBUS",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "camera": {
+          "line_kind": "optional",
+          "typical_spec": "Optional on this build (cited, not quoted)",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "vtx": {
+          "name": "Telemetry radio",
+          "typical_spec": "Telemetry radio (SiK 433/915 MHz) instead of a video transmitter (cited, not quoted)",
+          "search_query": "SiK telemetry radio 915MHz",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "gps": {
+          "qty": 1,
+          "line_kind": "part",
+          "typical_spec": "M8N GPS on a mast (cited, not quoted)",
+          "search_query": "M8N GPS module",
+          "basis": "reference",
+          "source": {
+            "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+            "quote": null
+          }
+        },
+        "_view": {
+          "scale": 1.0
+        }
+      }
+    }
+  ],
+  "parts": [
+    {
+      "row_id": "frame",
+      "name": "Frame",
+      "category": "mechanical",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "3-inch frame, about 140 mm wheelbase (rule of thumb; no source read for 3-inch, unverified: human check)",
+      "attrs": {
+        "prop_in": "3"
+      },
+      "search_query": "3 inch FPV frame 140mm",
+      "rules": [],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "frame"
+    },
+    {
+      "row_id": "motor",
+      "name": "Brushless motor",
+      "category": "motor",
+      "qty": 4,
+      "line_kind": "part",
+      "typical_spec": "1404, 3500–4500 KV for 3-inch props on 4S (rule of thumb; no source read for 3-inch, unverified: human check)",
+      "attrs": {
+        "cells": "4S",
+        "kv": "3500-4500",
+        "prop_in": "3",
+        "max_current_a": null
+      },
+      "search_query": "1404 brushless motor 4S 3 inch",
+      "rules": [
+        "G3",
+        "G7",
+        "G8"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "motor"
+    },
+    {
+      "row_id": "esc",
+      "name": "ESC",
+      "category": "esc_driver",
+      "qty": 1,
+      "qty_note": "Part of the all-in-one board (4-in-1)",
+      "line_kind": "optional",
+      "typical_spec": "Part of an all-in-one FC + ESC board, 20 A or more, 2–4S (rule of thumb; unverified: human check)",
+      "attrs": {
+        "cells_range": "2-4S",
+        "current_a": "20",
+        "connector": "XT30"
+      },
+      "search_query": "AIO flight controller ESC 20A 2-4S 25.5mm",
+      "rules": [
+        "G3",
+        "G5",
+        "G8"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "esc"
+    },
+    {
+      "row_id": "fc",
+      "name": "Flight controller",
+      "category": "board",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "All-in-one FC + ESC, 25.5×25.5 mm mounting (rule of thumb; unverified: human check)",
+      "attrs": {
+        "cells_range": "2-4S",
+        "voltage_range": null
+      },
+      "search_query": "AIO flight controller 25.5x25.5 ELRS",
+      "rules": [
+        "G1"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "fc"
+    },
+    {
+      "row_id": "props",
+      "name": "Propellers",
+      "category": "mechanical",
+      "qty": 4,
+      "qty_note": "2 CW + 2 CCW",
+      "line_kind": "part",
+      "typical_spec": "3-inch propellers (rule of thumb)",
+      "attrs": {
+        "prop_in": "3"
+      },
+      "search_query": "3 inch propellers 3 blade",
+      "rules": [
+        "G7"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "props"
+    },
+    {
+      "row_id": "pdb",
+      "name": "Power distribution",
+      "category": "power",
+      "qty": 1,
+      "qty_note": "On the all-in-one board",
+      "line_kind": "optional",
+      "typical_spec": "On the all-in-one board; no separate part to buy (rule of thumb)",
+      "attrs": {
+        "connector": "XT30"
+      },
+      "search_query": null,
+      "rules": [
+        "G5",
+        "G6"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": null
+    },
+    {
+      "row_id": "battery",
+      "name": "LiPo battery",
+      "category": "battery",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "4S LiPo, 650–850 mAh, XT30 (rule of thumb; unverified: human check)",
+      "attrs": {
+        "cells": "4S",
+        "capacity_mah": "650-850",
+        "connector": "XT30",
+        "voltage_v": "14.8",
+        "c_rating": null
+      },
+      "search_query": "4S 650mAh LiPo XT30",
+      "rules": [
+        "G1",
+        "G2",
+        "G3",
+        "G5",
+        "G6"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "battery"
+    },
+    {
+      "row_id": "receiver",
+      "name": "RC receiver",
+      "category": "radio",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "ELRS 2.4 GHz receiver (rule of thumb)",
+      "attrs": {
+        "voltage_range": null
+      },
+      "search_query": "ELRS 2.4GHz receiver",
+      "rules": [
+        "G1"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "receiver"
+    },
+    {
+      "row_id": "camera",
+      "name": "Camera",
+      "category": "camera",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "FPV camera, 14–19 mm (rule of thumb)",
+      "attrs": {
+        "voltage_range": null
+      },
+      "search_query": "micro FPV camera 14mm",
+      "rules": [
+        "G1"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "camera"
+    },
+    {
+      "row_id": "vtx",
+      "name": "Video transmitter + antenna",
+      "category": "radio",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "5.8 GHz VTX, 20×20 mm mounting, with antenna (rule of thumb)",
+      "attrs": {
+        "voltage_range": null
+      },
+      "search_query": "5.8GHz VTX 20x20",
+      "rules": [
+        "G1"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": "vtx"
+    },
+    {
+      "row_id": "gps",
+      "name": "GPS",
+      "category": "sensor",
+      "qty": 0,
+      "qty_note": "Not used on a 3-inch build",
+      "line_kind": "optional",
+      "typical_spec": "Not used on a 3-inch build (rule of thumb)",
+      "attrs": {},
+      "search_query": null,
+      "rules": [],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": null
+    },
+    {
+      "row_id": "charger",
+      "name": "LiPo balance charger",
+      "category": "tool",
+      "qty": 1,
+      "line_kind": "tool",
+      "typical_spec": "Balance charger that handles 4S LiPo (rule of thumb)",
+      "attrs": {
+        "cells": "4S"
+      },
+      "search_query": "LiPo balance charger 4S",
+      "rules": [
+        "G3"
+      ],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": null
+    },
+    {
+      "row_id": "radio",
+      "name": "Radio transmitter, goggles",
+      "category": "tool",
+      "qty": 1,
+      "line_kind": "tool",
+      "typical_spec": "ELRS radio transmitter and FPV goggles (rule of thumb)",
+      "attrs": {},
+      "search_query": "ELRS radio transmitter",
+      "rules": [],
+      "own_question": "own_radio",
+      "basis": "rule_of_thumb",
+      "source": {
+        "url": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x",
+        "quote": null
+      },
+      "mesh": null
+    }
+  ],
+  "rule_packs": [
+    "generic_electrical"
+  ],
+  "view": {
+    "kind": "procedural",
+    "model": "quadcopter",
+    "parts": [
+      {
+        "mesh": "frame",
+        "row_id": "frame",
+        "instances": 1,
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "motor",
+        "row_id": "motor",
+        "instances": 4,
+        "explode": [
+          0,
+          30,
+          0
+        ],
+        "order": 2
+      },
+      {
+        "mesh": "esc",
+        "row_id": "esc",
+        "instances": 1,
+        "explode": [
+          0,
+          18,
+          0
+        ],
+        "order": 3
+      },
+      {
+        "mesh": "fc",
+        "row_id": "fc",
+        "instances": 1,
+        "explode": [
+          0,
+          38,
+          0
+        ],
+        "order": 4
+      },
+      {
+        "mesh": "receiver",
+        "row_id": "receiver",
+        "instances": 1,
+        "explode": [
+          0,
+          10,
+          -45
+        ],
+        "order": 5
+      },
+      {
+        "mesh": "vtx",
+        "row_id": "vtx",
+        "instances": 1,
+        "explode": [
+          0,
+          25,
+          -60
+        ],
+        "order": 5
+      },
+      {
+        "mesh": "camera",
+        "row_id": "camera",
+        "instances": 1,
+        "explode": [
+          0,
+          10,
+          55
+        ],
+        "order": 6
+      },
+      {
+        "mesh": "props",
+        "row_id": "props",
+        "instances": 4,
+        "explode": [
+          0,
+          65,
+          0
+        ],
+        "order": 8
+      },
+      {
+        "mesh": "battery",
+        "row_id": "battery",
+        "instances": 1,
+        "explode": [
+          0,
+          100,
+          0
+        ],
+        "order": 9
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "battery",
+      "to": "pdb",
+      "label": "XT30 (3-inch) or XT60 (5-inch, X500)",
+      "rules": [
+        "G3",
+        "G5",
+        "G6"
+      ]
+    },
+    {
+      "from": "pdb",
+      "to": "esc",
+      "label": "battery power",
+      "rules": [
+        "G6"
+      ]
+    },
+    {
+      "from": "esc",
+      "to": "motor",
+      "label": "motor leads",
+      "rules": [
+        "G8"
+      ]
+    },
+    {
+      "from": "fc",
+      "to": "esc",
+      "label": "ESC signal",
+      "rules": []
+    },
+    {
+      "from": "receiver",
+      "to": "fc",
+      "label": "UART",
+      "rules": [
+        "G1"
+      ]
+    },
+    {
+      "from": "camera",
+      "to": "vtx",
+      "label": "video",
+      "rules": [
+        "G1"
+      ]
+    },
+    {
+      "from": "vtx",
+      "to": "fc",
+      "label": "power and OSD",
+      "rules": [
+        "G1"
+      ]
+    },
+    {
+      "from": "props",
+      "to": "motor",
+      "label": "prop size vs. KV",
+      "rules": [
+        "G7"
+      ]
+    }
+  ]
+}

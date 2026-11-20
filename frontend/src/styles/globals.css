@@ -1,0 +1,246 @@
+/* Tailwind v4 + shadcn/ui theme, wired to the tokens in tokens.css (PLAN §11.3). Owner: C. */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+/* Fonts are self-hosted from npm packages, never a CDN (works offline). */
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+@import "./tokens.css";
+
+/* Geist Serif (Vercel, SIL OFL 1.1; licence in public/fonts/geist-serif/OFL.txt), served from this origin. */
+@font-face {
+  font-family: "Geist Serif";
+  src: url("/fonts/geist-serif/GeistSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light only. `dark:` utilities in shadcn components apply only under a .dark class, which we never set. */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--b2c-font-sans);
+  --font-heading: var(--b2c-font-sans);
+  --font-mono: var(--b2c-font-mono);
+  --font-serif: var(--b2c-font-serif);
+
+  /* Type scale (px / line height): 12/16 13/18 14/20 16/24 20/28 24/32 32/40 48/52 64/68 */
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-small: 13px;
+  --text-small--line-height: 18px;
+  --text-body: 14px;
+  --text-body--line-height: 20px;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-h3: 20px;
+  --text-h3--line-height: 28px;
+  --text-h2: 24px;
+  --text-h2--line-height: 32px;
+  --text-h1: 32px;
+  --text-h1--line-height: 40px;
+  --text-display: 48px;
+  --text-display--line-height: 52px;
+  --text-hero: 64px;
+  --text-hero--line-height: 68px;
+
+  /* Our tokens as utilities: bg-page, text-brand, border-test, bg-pass-tint, ... */
+  --color-page: var(--b2c-page);
+  --color-surface: var(--b2c-surface);
+  --color-stage: var(--b2c-stage);
+  --color-stage-surface: var(--b2c-stage-surface);
+  --color-stage-border: var(--b2c-stage-border);
+  --color-stage-text: var(--b2c-stage-text);
+  --color-stage-muted: var(--b2c-stage-muted);
+  --color-stage-fail: var(--b2c-stage-fail);
+  --color-border-strong: var(--b2c-border-strong);
+  --color-secondary-text: var(--b2c-text-secondary);
+  --color-ink: var(--b2c-ink);
+  --color-brand: var(--b2c-brand);
+  --color-brand-hover: var(--b2c-brand-hover);
+  --color-brand-tint: var(--b2c-brand-tint);
+  --color-pass: var(--b2c-pass);
+  --color-pass-tint: var(--b2c-pass-tint);
+  --color-warn: var(--b2c-warn);
+  --color-warn-tint: var(--b2c-warn-tint);
+  --color-fail: var(--b2c-fail);
+  --color-fail-tint: var(--b2c-fail-tint);
+  --color-info: var(--b2c-info);
+  --color-info-tint: var(--b2c-info-tint);
+  --color-test: var(--b2c-test);
+  --color-test-tint: var(--b2c-test-tint);
+  --color-level-agent-cart: var(--b2c-level-agent-cart);
+  --color-level-prefilled-cart: var(--b2c-level-prefilled-cart);
+  --color-level-product-link: var(--b2c-level-product-link);
+  --color-store-1: var(--b2c-store-1);
+  --color-store-2: var(--b2c-store-2);
+  --color-store-3: var(--b2c-store-3);
+  --color-store-4: var(--b2c-store-4);
+  --color-store-5: var(--b2c-store-5);
+  --color-store-6: var(--b2c-store-6);
+  --color-store-7: var(--b2c-store-7);
+  --color-store-8: var(--b2c-store-8);
+  --color-blueprint: var(--b2c-blueprint);
+  --color-blueprint-hover: var(--b2c-blueprint-hover);
+  --color-blueprint-line: var(--b2c-blueprint-line);
+  --color-blueprint-paper: var(--b2c-blueprint-paper);
+  --color-blueprint-edge: var(--b2c-blueprint-edge);
+  --color-blueprint-page: var(--b2c-blueprint-page);
+
+  --shadow-e1: var(--b2c-shadow-1);
+  --shadow-e2: var(--b2c-shadow-2);
+  --shadow-e3: var(--b2c-shadow-3);
+  --ease-b2c: var(--b2c-ease);
+
+  /* shadcn/ui colour slots */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Radius: sm 6 (inputs, chips), lg 10 (cards, dialogs), 2xl 16 (hero panels) */
+  --radius-sm: var(--b2c-radius-sm);
+  --radius-md: 8px;
+  --radius-lg: var(--b2c-radius-md);
+  --radius-xl: 12px;
+  --radius-2xl: var(--b2c-radius-lg);
+  --radius-3xl: 20px;
+  --radius-4xl: 24px;
+}
+
+/* shadcn/ui theme variables, fed from the tokens */
+:root {
+  --background: var(--b2c-page);
+  --foreground: var(--b2c-text);
+  --card: var(--b2c-surface);
+  --card-foreground: var(--b2c-text);
+  --popover: var(--b2c-surface);
+  --popover-foreground: var(--b2c-text);
+  --primary: var(--b2c-ink);
+  --primary-foreground: var(--b2c-ink-foreground);
+  --secondary: var(--b2c-muted);
+  --secondary-foreground: var(--b2c-text);
+  --muted: var(--b2c-muted);
+  --muted-foreground: var(--b2c-text-muted);
+  --accent: var(--b2c-brand-tint);
+  --accent-foreground: var(--b2c-text);
+  --destructive: var(--b2c-fail);
+  --border: var(--b2c-border);
+  --input: var(--b2c-border);
+  --ring: var(--b2c-brand);
+  --radius: var(--b2c-radius-md);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background text-foreground text-body antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* The dark stage: a soft radial vignette (PLAN §11.6). */
+@utility stage {
+  background-color: var(--b2c-stage);
+  background-image:
+    radial-gradient(ellipse at 50% 38%, rgb(255 255 255 / 0.08), transparent 62%),
+    radial-gradient(ellipse at 50% 100%, rgb(37 99 235 / 0.1), transparent 55%);
+}
+
+@keyframes b2c-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+@utility shake-once {
+  animation: b2c-shake var(--b2c-dur-layout) var(--b2c-ease) 1;
+}
+@keyframes b2c-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+@utility progress-line {
+  animation: b2c-progress 1.4s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shake-once,
+  .progress-line {
+    animation: none;
+  }
+}
+
+/* A visible 2 px blue focus ring on everything focusable (PLAN §11.8). */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--b2c-brand);
+    outline-offset: 2px;
+  }
+}
+
+/* Blueprint paper: a fine grid with a heavier line every fifth cell (the start page and its cards). */
+@utility blueprint-grid {
+  background-color: var(--b2c-blueprint-page);
+  background-image:
+    linear-gradient(var(--b2c-blueprint-grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--b2c-blueprint-grid-major) 1px, transparent 1px),
+    linear-gradient(var(--b2c-blueprint-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--b2c-blueprint-grid) 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px;
+}
+@utility blueprint-grid-fine {
+  background-color: var(--b2c-blueprint-paper);
+  background-image:
+    linear-gradient(rgb(37 99 235 / 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(37 99 235 / 0.09) 1px, transparent 1px),
+    linear-gradient(rgb(37 99 235 / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(37 99 235 / 0.045) 1px, transparent 1px);
+  background-size:
+    60px 60px,
+    60px 60px,
+    12px 12px,
+    12px 12px;
+  background-position: -1px -1px;
+}
+
+@utility tabular {
+  /* Tabular numbers on all prices */
+  font-variant-numeric: tabular-nums;
+}

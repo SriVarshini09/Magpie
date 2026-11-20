@@ -1,0 +1,1308 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "1404 brushless motor 4S 3 inch"
+  }
+ },
+ "key": "126c4877cfa7440935f67f8874de8af3a0d84c2d7b4648d07aaa3e43ef4ab428",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:01-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 774); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6Nzc0LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 774
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a rel=\"noopener\" href=\"https://pyrodrone.com/collections/14xx\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" href=\"https://pyrodrone.com/collections/skystars-products\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/skystars-products\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\" alt=\"\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 3800</li>\n<li>Lipo: 4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+     },
+     "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs",
+     "id": "gid://shopify/p/7GG6StxKM66naNg4UerkO7",
+     "media": [
+      {
+       "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3800KV high-speed rating enables rapid acceleration and responsive flight",
+       "1.5mm shaft and 9N12P configuration ensure compatibility with 2.5 to 4 inch drones",
+       "9g lightweight design reduces overall drone weight for improved agility",
+       "24AWG 120mm cables provide stable and reliable power delivery",
+       "Includes mounting hardware for easy installation"
+      ],
+      "unique_selling_points": [
+       "Delivers 3800KV power and 1.5mm shaft compatibility for enhanced flight performance in micro drones."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3699,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/41131468881963:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a rel=\"noopener\" href=\"https://pyrodrone.com/collections/14xx\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" href=\"https://pyrodrone.com/collections/skystars-products\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/skystars-products\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\" alt=\"\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 3800</li>\n<li>Lipo: 4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs",
+       "id": "gid://shopify/ProductVariant/41131468881963",
+       "media": [
+        {
+         "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3699,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7255140302891",
+       "source": "shopify",
+       "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+       "url": "https://pyrodrone.com/products/skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs?variant=41131468881963&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>DeepSpace Aether 1404 4600KV 3000KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone<br><br>\n</h2>\n<p class=\"p1\">The <span class=\"s1\"><strong>DeepSpace Aether 1404 4600KV Motor</strong></span> is a high-performance brushless motor designed specifically for 2.5 to 4-inch toothpick-style FPV drones. Built for pilots who demand responsive power, low weight, and durable construction, this 4600KV 4S motor delivers explosive speed and excellent efficiency across a wide range of micro drone builds.</p>\n<p class=\"p1\">Optimized for 4S LiPo batteries, the <span class=\"s1\"><strong>DeepSpace Aether 1404 4600KV Motor</strong></span> features high-quality materials including a precision-machined bell, robust shaft, and smooth bearings for extended durability and flight stability. Whether you’re flying freestyle, racing through tight gates, or cruising long range, this motor provides the thrust and responsiveness needed for agile handling.</p>\n<p class=\"p1\">The compact 1404 stator size makes it a perfect fit for ultralight builds, and its versatile mounting pattern ensures wide compatibility with popular frames.</p>\n<section class=\"section\">\n<div class=\"productshow_html\">\n<div class=\"container\">\n<div class=\"product_tab_list\">\n<div class=\"tab-content\">\n<div id=\"tab_content_01\" class=\"description_wrap tab_content tab-pane active\">\n<div id=\"products_02a\" class=\"detailed_body\">\n<p><img src=\"https://www.deepspacefpv.com/cdn/shop/16631/product/detail/20250529/1748512020275_0.png\"><br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</section>\n<footer class=\"footer\">\n<div class=\"social\">\n<div class=\"container text-center\">\n<div class=\"footer_action clearfix\">\n<div class=\"email_subscribe col-md-6 text-center\"><form>\n<div class=\"subscribe_ip\"><br></div>\n</form></div>\n<div class=\"join_us col-md-6 text-center\"><br></div>\n</div>\n</div>\n</div>\n</footer>"
+     },
+     "handle": "deepspace-aether-1404-4600kv-4s-brushless-motor-for-2-5-4inch-toothpick-rc-drone",
+     "id": "gid://shopify/p/NQEM8HGg19S0Dz7fJCsau",
+     "media": [
+      {
+       "alt_text": "DeepSpace Aether 1404 4600KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone DeepSpace",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-Aether-1404-4600KV-4S-Brushless-Motor-For-2.5-4inch-Toothpick-RC-Drone-DeepSpace-148306814.png",
+        "width": 2000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-Aether-1404-4600KV-4S-Brushless-Motor-For-2.5-4inch-Toothpick-RC-Drone-DeepSpace-148306814.png",
+       "width": 2000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High-efficiency 4600KV rating: Provides explosive speed and responsive power for agile drone handling",
+       "Precision-machined bell and robust shaft: Ensures durability and long-term flight stability",
+       "Smooth bearings: Reduces friction for improved performance and longevity",
+       "Compact 1404 stator size: Fits ultralight and micro drone builds for versatile compatibility",
+       "Wide mounting pattern: Compatible with popular toothpick drone frames"
+      ],
+      "unique_selling_points": [
+       "Precision-machined 1404 stator and robust construction optimized for 4S LiPo batteries in ultralight toothpick drones."
+      ]
+     },
+     "options": [
+      {
+       "name": "Kv",
+       "values": [
+        {
+         "label": "4600KV"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1472,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1472,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "DeepSpace Aether 1404 4600KV 3000KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/68218983088496:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>DeepSpace Aether 1404 4600KV 3000KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone<br><br>\n</h2>\n<p class=\"p1\">The <span class=\"s1\"><strong>DeepSpace Aether 1404 4600KV Motor</strong></span> is a high-performance brushless motor designed specifically for 2.5 to 4-inch toothpick-style FPV drones. Built for pilots who demand responsive power, low weight, and durable construction, this 4600KV 4S motor delivers explosive speed and excellent efficiency across a wide range of micro drone builds.</p>\n<p class=\"p1\">Optimized for 4S LiPo batteries, the <span class=\"s1\"><strong>DeepSpace Aether 1404 4600KV Motor</strong></span> features high-quality materials including a precision-machined bell, robust shaft, and smooth bearings for extended durability and flight stability. Whether you’re flying freestyle, racing through tight gates, or cruising long range, this motor provides the thrust and responsiveness needed for agile handling.</p>\n<p class=\"p1\">The compact 1404 stator size makes it a perfect fit for ultralight builds, and its versatile mounting pattern ensures wide compatibility with popular frames.</p>\n<section class=\"section\">\n<div class=\"productshow_html\">\n<div class=\"container\">\n<div class=\"product_tab_list\">\n<div class=\"tab-content\">\n<div id=\"tab_content_01\" class=\"description_wrap tab_content tab-pane active\">\n<div id=\"products_02a\" class=\"detailed_body\">\n<p><img src=\"https://www.deepspacefpv.com/cdn/shop/16631/product/detail/20250529/1748512020275_0.png\"><br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</section>\n<footer class=\"footer\">\n<div class=\"social\">\n<div class=\"container text-center\">\n<div class=\"footer_action clearfix\">\n<div class=\"email_subscribe col-md-6 text-center\"><form>\n<div class=\"subscribe_ip\"><br></div>\n</form></div>\n<div class=\"join_us col-md-6 text-center\"><br></div>\n</div>\n</div>\n</div>\n</footer>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "deepspace-aether-1404-4600kv-4s-brushless-motor-for-2-5-4inch-toothpick-rc-drone",
+       "id": "gid://shopify/ProductVariant/68218983088496",
+       "list_price": {
+        "amount": 1550,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "DeepSpace Aether 1404 4600KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone DeepSpace",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-Aether-1404-4600KV-4S-Brushless-Motor-For-2.5-4inch-Toothpick-RC-Drone-DeepSpace-148306814.png",
+          "width": 2000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-Aether-1404-4600KV-4S-Brushless-Motor-For-2.5-4inch-Toothpick-RC-Drone-DeepSpace-148306814.png",
+         "width": 2000
+        }
+       ],
+       "options": [
+        {
+         "label": "4600KV",
+         "name": "Kv"
+        }
+       ],
+       "price": {
+        "amount": 1472,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14829078937968",
+       "source": "shopify",
+       "title": "DeepSpace Aether 1404 4600KV 3000KV 4S Brushless Motor For 2.5-4inch Toothpick RC Drone",
+       "url": "https://newbeedrone.com/products/deepspace-aether-1404-4600kv-4s-brushless-motor-for-2-5-4inch-toothpick-rc-drone?variant=68218983088496&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The RATEFPV 1404 Brushless Motor series (4600KV/3800KV/2900KV) delivers tailored, reliable performance validated by global pilot reviews. Engineered for lightweight 2.5-4 inch builds—ideal for sub-250g setups compliant with most US/EU regulations—this motor balances power, efficiency, and durability, solving common pain points of budget alternatives (overheating, inconsistent thrust, poor responsiveness). With three optimized KV options, it caters to aggressive racing, smooth freestyle, and long-range filming, making it versatile for hobbyists and seasoned pilots alike. Its premium construction (including smooth bearings and precise winding) ensures consistent performance, while its lightweight design (around 9.5g) enhances agility without sacrificing sturdiness</p>\n<h3>Features </h3>\n<h4>1. Three KV Options (Tested &amp; Pilot-Approved)</h4>\n<p><strong>4600KV:</strong> 4S 2.5-3 inch freestyle/racing—max power for aggressive flying; Betaflight throttle expo fine-tunes control.</p>\n<p><strong>3800KV: </strong>4S 2.5-3 inch cinewhoops/freestyle—smooth thrust, low current draw for steady footage.</p>\n<p><strong>2900KV: </strong>4S 4-inch long-range/6S 2.5-3 inch racing—versatile, handles high loads without overheating.</p>\n<h4>2. Premium Durability &amp; Consistency</h4>\n<p>High-quality components and strict QC avoid budget motor pitfalls. Crash-resistant uni-bell design and smooth bearings lower repair costs.</p>\n<h4>3. User-Friendly Design</h4>\n<p>Works with 4S/6S batteries, 2.5-4 inch frames; 9.5g design meets sub-250g regulations. High ESC compatibility simplifies setup.</p>\n<h4>4. Smooth Control for All Pilots</h4>\n<p>Linear power eliminates lag. 3800KV is beginner-friendly; 4600KV/2900KV are for pros chasing aggressive response.</p>\n<h3>Specifications</h3>\n<p>KV: 2900KV/3800KV/4600KV</p>\n<p>Max Power: 169.57W(4600KV/D51-5)</p>\n<p>Max Current: 10.60A(4600KV/D51-5) </p>\n<p>Slot Pole：9n/12p </p>\n<p>Winding：Single-strand Winding</p>\n<p>Recommended Prop： 2-4 Inch (<span>ø</span>5 fixed holes） </p>\n<p>Dimensions： <span>ø</span>19.4mm x 17.5mm </p>\n<p>Output Shaft Diameter： <span>ø</span>1.5mm </p>\n<p>Output Shaft Length： 3.6mm </p>\n<p>Mounting hole： 9*9mm </p>\n<p>Input Voltage: 7.2v-17.4v </p>\n<p>FPV Drone Recommended Voltage: 10.8v-17.4v(3-4S Lipo/Hv) </p>\n<p>Lead Wires：100mm/24AWG</p>\n<p>ESC: ＞ 15A </p>\n<p>Weight: 10.19g( include the wire) </p>\n<p> </p>\n<p> </p>"
+     },
+     "handle": "ratefpv-1404-4600kv-3800kv-2900kv-brushless-fpv-motor",
+     "id": "gid://shopify/p/5unw61obeTVyAy8uQOwDKB",
+     "media": [
+      {
+       "alt_text": "RATEFPV 1404 4600KV/3800KV/2900KV Brushless FPV Motor",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/05_69cb4426-a018-4db8-a7fa-b075995f1c42.png",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/05_69cb4426-a018-4db8-a7fa-b075995f1c42.png",
+       "width": 1080
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Three KV options (2900KV, 3800KV, 4600KV) for customized power and performance in different flight modes",
+       "Lightweight 9.5g design enables agile builds under 250g for enhanced maneuverability",
+       "Premium construction with smooth bearings and precise winding ensures consistent, reliable operation",
+       "Crash-resistant uni bell design and high-quality components reduce repair costs and increase durability",
+       "User-friendly design compatible with 4S and 6S batteries, 2.5 to 4 inch frames, and easy ESC integration"
+      ],
+      "unique_selling_points": [
+       "Three optimized KV options tested by pilots for tailored power and responsiveness in FPV racing, freestyle, and filming."
+      ]
+     },
+     "options": [
+      {
+       "name": "Kv version",
+       "values": [
+        {
+         "label": "2900KV(6S High Thrust 4S Long Endurance)"
+        },
+        {
+         "label": "3800KV (4S Balanced & Highly Stable)"
+        },
+        {
+         "label": "4600KV(4S High Power Compatible 3S)"
+        }
+       ]
+      },
+      {
+       "name": "Quantity",
+       "values": [
+        {
+         "label": "1 PCS"
+        },
+        {
+         "label": "2 PCS"
+        },
+        {
+         "label": "4 PCS"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 989,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 989,
+       "currency": "USD"
+      }
+     },
+     "title": "RATEFPV 1404 4600KV/3800KV/2900KV Brushless FPV Motor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ratefpv.com/buy/53636349690224:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The RATEFPV 1404 Brushless Motor series (4600KV/3800KV/2900KV) delivers tailored, reliable performance validated by global pilot reviews. Engineered for lightweight 2.5-4 inch builds—ideal for sub-250g setups compliant with most US/EU regulations—this motor balances power, efficiency, and durability, solving common pain points of budget alternatives (overheating, inconsistent thrust, poor responsiveness). With three optimized KV options, it caters to aggressive racing, smooth freestyle, and long-range filming, making it versatile for hobbyists and seasoned pilots alike. Its premium construction (including smooth bearings and precise winding) ensures consistent performance, while its lightweight design (around 9.5g) enhances agility without sacrificing sturdiness</p>\n<h3>Features </h3>\n<h4>1. Three KV Options (Tested &amp; Pilot-Approved)</h4>\n<p><strong>4600KV:</strong> 4S 2.5-3 inch freestyle/racing—max power for aggressive flying; Betaflight throttle expo fine-tunes control.</p>\n<p><strong>3800KV: </strong>4S 2.5-3 inch cinewhoops/freestyle—smooth thrust, low current draw for steady footage.</p>\n<p><strong>2900KV: </strong>4S 4-inch long-range/6S 2.5-3 inch racing—versatile, handles high loads without overheating.</p>\n<h4>2. Premium Durability &amp; Consistency</h4>\n<p>High-quality components and strict QC avoid budget motor pitfalls. Crash-resistant uni-bell design and smooth bearings lower repair costs.</p>\n<h4>3. User-Friendly Design</h4>\n<p>Works with 4S/6S batteries, 2.5-4 inch frames; 9.5g design meets sub-250g regulations. High ESC compatibility simplifies setup.</p>\n<h4>4. Smooth Control for All Pilots</h4>\n<p>Linear power eliminates lag. 3800KV is beginner-friendly; 4600KV/2900KV are for pros chasing aggressive response.</p>\n<h3>Specifications</h3>\n<p>KV: 2900KV/3800KV/4600KV</p>\n<p>Max Power: 169.57W(4600KV/D51-5)</p>\n<p>Max Current: 10.60A(4600KV/D51-5) </p>\n<p>Slot Pole：9n/12p </p>\n<p>Winding：Single-strand Winding</p>\n<p>Recommended Prop： 2-4 Inch (<span>ø</span>5 fixed holes） </p>\n<p>Dimensions： <span>ø</span>19.4mm x 17.5mm </p>\n<p>Output Shaft Diameter： <span>ø</span>1.5mm </p>\n<p>Output Shaft Length： 3.6mm </p>\n<p>Mounting hole： 9*9mm </p>\n<p>Input Voltage: 7.2v-17.4v </p>\n<p>FPV Drone Recommended Voltage: 10.8v-17.4v(3-4S Lipo/Hv) </p>\n<p>Lead Wires：100mm/24AWG</p>\n<p>ESC: ＞ 15A </p>\n<p>Weight: 10.19g( include the wire) </p>\n<p> </p>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ratefpv-1404-4600kv-3800kv-2900kv-brushless-fpv-motor",
+       "id": "gid://shopify/ProductVariant/53636349690224",
+       "media": [
+        {
+         "alt_text": "RATEFPV 1404 4600KV/3800KV/2900KV Brushless FPV Motor",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/05_69cb4426-a018-4db8-a7fa-b075995f1c42.png",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/05_69cb4426-a018-4db8-a7fa-b075995f1c42.png",
+         "width": 1080
+        }
+       ],
+       "price": {
+        "amount": 989,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "dqdsvn-ta.myshopify.com",
+        "id": "gid://shopify/Shop/101096391024",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54083944816.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150431088.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150332784.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54149874032.html"
+         }
+        ],
+        "name": "RATEFPV",
+        "url": "https://ratefpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15085527466352",
+       "source": "shopify",
+       "title": "RATEFPV 1404 4600KV/3800KV/2900KV Brushless FPV Motor",
+       "url": "https://ratefpv.com/products/ratefpv-1404-4600kv-3800kv-2900kv-brushless-fpv-motor?variant=53636349690224&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><img src=\"https://cdn.shopify.com/s/files/1/1840/1085/files/1404_1024x1024.jpg?v=1670130102\" alt=\"\"></p>\n<p><!-- Begin start of Selling Points section --> <span id=\"listing_selling_points0\" style=\"font: Arial; font-size: 12pt; color: #343434;\"></span><br><!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>Model: EX1404</li>\n<li>KV: 2750KV, 3500KV, 4800KV</li>\n<li>Shaft Diameter: 1.5mm</li>\n<li>Configuration: 9N12P</li>\n<li>Stator Diameter: 14mm</li>\n<li>Stator Length: 4mm</li>\n<li>Motor Dimensions: 17.8x17.6mm</li>\n<li>No.of Cells(Lipo): (2750KV / 4S), (3500KV / 3-4S), (4800KV / 3S Only)</li>\n<li>Weight: 8.7g</li>\n</ul>\n<p><span id=\"listing_product_features0\" style=\"font: Arial; font-size: 12pt; color: #343434;\"><br></span></p>\n<!-- End of Product Features and Specifications Section -->\n<p> </p>\n<!-- Start of Package Contents Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>1x Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV) (Red/Black Wire)</li>\n</ul>\n<!-- End of Package Contents Section -->"
+     },
+     "handle": "happymodel-ex1404-3-4s-brushless-motor-1-5mm-shaft-2750kv-3500-4800kv-red-black-wire",
+     "id": "gid://shopify/p/5Fz0xEX9JimPQmyvzuZjcm",
+     "media": [
+      {
+       "alt_text": "Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV)",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/HAPPYMODEL.1404.1.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/HAPPYMODEL.1404.1.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Multiple KV options (2750KV, 3500KV, 4800KV) allow precise tuning for different flight styles and power requirements",
+       "1.5mm shaft diameter ensures compatibility with a wide range of RC drones",
+       "Lightweight design at 8.7g reduces overall drone weight for improved agility",
+       "9N12P configuration provides optimal balance of thrust and efficiency",
+       "Includes red and black wires for easy installation and connection"
+      ],
+      "unique_selling_points": [
+       "Offers three KV ratings (2750KV, 3500KV, 4800KV) to suit various RC drone performance needs."
+      ]
+     },
+     "options": [
+      {
+       "name": "Kv rating",
+       "values": [
+        {
+         "label": "2750KV"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://speedyfpv.com/buy/43861293269206:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><img src=\"https://cdn.shopify.com/s/files/1/1840/1085/files/1404_1024x1024.jpg?v=1670130102\" alt=\"\"></p>\n<p><!-- Begin start of Selling Points section --> <span id=\"listing_selling_points0\" style=\"font: Arial; font-size: 12pt; color: #343434;\"></span><br><!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>Model: EX1404</li>\n<li>KV: 2750KV, 3500KV, 4800KV</li>\n<li>Shaft Diameter: 1.5mm</li>\n<li>Configuration: 9N12P</li>\n<li>Stator Diameter: 14mm</li>\n<li>Stator Length: 4mm</li>\n<li>Motor Dimensions: 17.8x17.6mm</li>\n<li>No.of Cells(Lipo): (2750KV / 4S), (3500KV / 3-4S), (4800KV / 3S Only)</li>\n<li>Weight: 8.7g</li>\n</ul>\n<p><span id=\"listing_product_features0\" style=\"font: Arial; font-size: 12pt; color: #343434;\"><br></span></p>\n<!-- End of Product Features and Specifications Section -->\n<p> </p>\n<!-- Start of Package Contents Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>1x Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV) (Red/Black Wire)</li>\n</ul>\n<!-- End of Package Contents Section -->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "happymodel-ex1404-3-4s-brushless-motor-1-5mm-shaft-2750kv-3500-4800kv-red-black-wire",
+       "id": "gid://shopify/ProductVariant/43861293269206",
+       "media": [
+        {
+         "alt_text": "Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV)",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/HAPPYMODEL.1404.1.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/HAPPYMODEL.1404.1.jpg",
+         "width": 1600
+        }
+       ],
+       "options": [
+        {
+         "label": "2750KV",
+         "name": "Kv rating"
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 1
+       },
+       "seller": {
+        "domain": "speedyfpv.myshopify.com",
+        "id": "gid://shopify/Shop/18401085",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299083.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/18401085/policies/33299147.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299019.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/25847562454.html"
+         }
+        ],
+        "name": "SpeedyFPV",
+        "url": "https://speedyfpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7944121876694",
+       "source": "shopify",
+       "title": "Happymodel EX1404 3-4S Brushless Motor 1.5mm Shaft (2750KV/3500/4800KV)",
+       "url": "https://speedyfpv.com/products/happymodel-ex1404-3-4s-brushless-motor-1-5mm-shaft-2750kv-3500-4800kv-red-black-wire?variant=43861293269206&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">The SPEEDX2 1404 motor is an innovative brushless motor with a lightweight design, unique appearance and good heat dissipation.</p>\n<p data-mce-fragment=\"1\">GEPRC is committed to providing pilots with brushless motors that are lighter in weight, faster in response, higher in efficiency and stronger in power.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\">﻿</a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest of <a href=\"https://pyrodrone.com/collections/geprc-products\" target=\"_blank\">GEPRC Products</a>.</p>\n<p data-mce-fragment=\"1\"><img decoding=\"async\" class=\"size-full wp-image-90402 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" alt=\"\" width=\"1200\" height=\"1494\" fetchpriority=\"high\"><img decoding=\"async\" class=\"size-full wp-image-90403 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" alt=\"\" width=\"1200\" height=\"1454\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90404 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" alt=\"\" width=\"1200\" height=\"952\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90405 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" alt=\"\" width=\"1200\" height=\"838\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90406 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" alt=\"\" width=\"1200\" height=\"1230\"></p>\n<h3 data-mce-fragment=\"1\"><span style=\"font-size: 0.875rem;\">Features:</span></h3>\n<ul>\n<li>Red with black color is obviously high-end.</li>\n<li>Use bearings with excellent performance and strong anti-wear ability.</li>\n<li>Lightweight silhouette, strong power.</li>\n<li>Suitable for 2-inch-4-inch lightweight chassis.</li>\n</ul>\n<h3>Specifications:<br>\n</h3>\n<ul>\n<li>Model: SPEEDX2 1404 3000KV Motor</li>\n<li>Max Watt: 160W</li>\n<li>Peak current: 10A/3″</li>\n<li>Interphase resistance: 0.33Ω</li>\n<li>Magnet: N52H</li>\n<li>Bearing type: NSK/NMB</li>\n<li>Configuration: 9N12P</li>\n<li>Dimension: φ18.2mm*13.8mm</li>\n<li>Shaft Diameter: φ1.5mm</li>\n<li>Shaft Protruding Length: 4mm</li>\n<li>Mounting holes: 9mm*9mm（M2）</li>\n<li>Lead: 160mm/26AWG</li>\n<li>ESC: 12A/2-4S（7.4V-14.8V）</li>\n<li>Input Volts: 14.8V（4S LiPo)</li>\n<li>Winding: Single strand copper winding</li>\n<li>Weight: 10.5g (included wire)</li>\n<li>Suitable for: 3 inch – 4 inch lightweight models</li>\n</ul>\n<h3> Package Includes:</h3>\n<ul>\n<li><span>1 x SPEEDX2 1404 3000KV Motor</span></li>\n</ul>\n<p><span><img src=\"https://geprc.com/wp-content/uploads/2024/01/10-1.jpg\"></span></p>"
+     },
+     "handle": "geprc-speedx2-1404-3000kv-motor-for-3-inch-to-4-inch-lighweight-drones-1-pc",
+     "id": "gid://shopify/p/45tIO4ZKrsWRClfILombTM",
+     "media": [
+      {
+       "alt_text": "GEPRC SPEEDX2 1404 3000KV Motor for 3 inch to 4 inch Lighweight Drones (1 Pc.)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._902fb617-1043-4cbb-b2ca-5f371911ce06.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._902fb617-1043-4cbb-b2ca-5f371911ce06.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Brushless design delivers faster response and higher efficiency for improved drone performance",
+       "Lightweight construction reduces overall drone weight for better flight agility",
+       "High-performance NSK NMB bearings provide strong anti-wear ability and smooth operation",
+       "Excellent heat dissipation ensures reliable operation during extended use",
+       "Single strand copper winding maximizes power output and durability"
+      ],
+      "unique_selling_points": [
+       "Lightweight, high-end brushless motor with excellent bearings and strong anti-wear performance, suitable for 2 to 4 inch lightweight drones."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "GEPRC SPEEDX2 1404 3000KV Motor for 3 inch to 4 inch Lighweight Drones (1 Pc.)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://foldedjoy.store/buy/68099794370639:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">The SPEEDX2 1404 motor is an innovative brushless motor with a lightweight design, unique appearance and good heat dissipation.</p>\n<p data-mce-fragment=\"1\">GEPRC is committed to providing pilots with brushless motors that are lighter in weight, faster in response, higher in efficiency and stronger in power.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\">﻿</a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest of <a href=\"https://pyrodrone.com/collections/geprc-products\" target=\"_blank\">GEPRC Products</a>.</p>\n<p data-mce-fragment=\"1\"><img decoding=\"async\" class=\"size-full wp-image-90402 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" alt=\"\" width=\"1200\" height=\"1494\" fetchpriority=\"high\"><img decoding=\"async\" class=\"size-full wp-image-90403 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" alt=\"\" width=\"1200\" height=\"1454\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90404 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" alt=\"\" width=\"1200\" height=\"952\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90405 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" alt=\"\" width=\"1200\" height=\"838\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90406 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" alt=\"\" width=\"1200\" height=\"1230\"></p>\n<h3 data-mce-fragment=\"1\"><span style=\"font-size: 0.875rem;\">Features:</span></h3>\n<ul>\n<li>Red with black color is obviously high-end.</li>\n<li>Use bearings with excellent performance and strong anti-wear ability.</li>\n<li>Lightweight silhouette, strong power.</li>\n<li>Suitable for 2-inch-4-inch lightweight chassis.</li>\n</ul>\n<h3>Specifications:<br>\n</h3>\n<ul>\n<li>Model: SPEEDX2 1404 3000KV Motor</li>\n<li>Max Watt: 160W</li>\n<li>Peak current: 10A/3″</li>\n<li>Interphase resistance: 0.33Ω</li>\n<li>Magnet: N52H</li>\n<li>Bearing type: NSK/NMB</li>\n<li>Configuration: 9N12P</li>\n<li>Dimension: φ18.2mm*13.8mm</li>\n<li>Shaft Diameter: φ1.5mm</li>\n<li>Shaft Protruding Length: 4mm</li>\n<li>Mounting holes: 9mm*9mm（M2）</li>\n<li>Lead: 160mm/26AWG</li>\n<li>ESC: 12A/2-4S（7.4V-14.8V）</li>\n<li>Input Volts: 14.8V（4S LiPo)</li>\n<li>Winding: Single strand copper winding</li>\n<li>Weight: 10.5g (included wire)</li>\n<li>Suitable for: 3 inch – 4 inch lightweight models</li>\n</ul>\n<h3> Package Includes:</h3>\n<ul>\n<li><span>1 x SPEEDX2 1404 3000KV Motor</span></li>\n</ul>\n<p><span><img src=\"https://geprc.com/wp-content/uploads/2024/01/10-1.jpg\"></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "geprc-speedx2-1404-3000kv-motor-for-3-inch-to-4-inch-lighweight-drones-1-pc",
+       "id": "gid://shopify/ProductVariant/68099794370639",
+       "media": [
+        {
+         "alt_text": "GEPRC SPEEDX2 1404 3000KV Motor for 3 inch to 4 inch Lighweight Drones (1 Pc.)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._902fb617-1043-4cbb-b2ca-5f371911ce06.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._902fb617-1043-4cbb-b2ca-5f371911ce06.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ny1tms-xb.myshopify.com",
+        "id": "gid://shopify/Shop/71030767695",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/39289716815.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859359311.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859326543.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859392079.html"
+         }
+        ],
+        "name": " Folded Joy",
+        "url": "https://foldedjoy.store"
+       },
+       "seller_product_id": "gid://shopify/Product/15536700457039",
+       "source": "shopify",
+       "title": "GEPRC SPEEDX2 1404 3000KV Motor for 3 inch to 4 inch Lighweight Drones (1 Pc.)",
+       "url": "https://foldedjoy.store/products/geprc-speedx2-1404-3000kv-motor-for-3-inch-to-4-inch-lighweight-drones-1-pc?variant=68099794370639&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a rel=\"noopener\" href=\"https://pyrodrone.com/collections/14xx\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" href=\"https://pyrodrone.com/collections/skystars-products\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/skystars-products\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\" alt=\"\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 3800</li>\n<li>Lipo: 4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+     },
+     "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs",
+     "id": "gid://shopify/p/V38Dr1P0HcdHgIqmcVab1",
+     "media": [
+      {
+       "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3800KV high-speed rating enables rapid acceleration and responsive flight",
+       "1.5mm shaft fits standard 3 inch propellers for easy upgrades",
+       "9N12P configuration provides optimal balance of thrust and efficiency",
+       "Lightweight 9g design reduces overall drone weight for improved agility",
+       "Includes 24AWG 120mm cables and mounting hardware for straightforward installation"
+      ],
+      "unique_selling_points": [
+       "Delivers 3800KV power and 1.5mm shaft compatibility for enhanced flight performance in micro drones."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3699,
+       "currency": "USD"
+      }
+     },
+     "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://foldedjoy.store/buy/68099704651855:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a rel=\"noopener\" href=\"https://pyrodrone.com/collections/14xx\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" href=\"https://pyrodrone.com/collections/skystars-products\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/skystars-products\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\" alt=\"\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 3800</li>\n<li>Lipo: 4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs",
+       "id": "gid://shopify/ProductVariant/68099704651855",
+       "media": [
+        {
+         "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_83d27fc6-685e-43de-8e86-b2031ddfd9c6.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3699,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ny1tms-xb.myshopify.com",
+        "id": "gid://shopify/Shop/71030767695",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/39289716815.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859359311.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859326543.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859392079.html"
+         }
+        ],
+        "name": " Folded Joy",
+        "url": "https://foldedjoy.store"
+       },
+       "seller_product_id": "gid://shopify/Product/15536639213647",
+       "source": "shopify",
+       "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 4S - 3800KV (2 PCS)",
+       "url": "https://foldedjoy.store/products/skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-4s-3800kv-2-pcs?variant=68099704651855&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a href=\"https://pyrodrone.com/collections/skystars-products\" title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" target=\"_blank\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 4600</li>\n<li>Lipo: 3-4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+     },
+     "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-3-4s-4600kv-2-pcs",
+     "id": "gid://shopify/p/2H1ls2dOBu8OmJJljeNr6T",
+     "media": [
+      {
+       "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 3-4S - 4600KV (2 PCS)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_f1c4405d-bf50-412d-a04a-ba77d5c2332c.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_f1c4405d-bf50-412d-a04a-ba77d5c2332c.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "4600KV high-speed rating enables rapid acceleration and efficient power use for agile flight",
+       "1.5mm shaft diameter ensures compatibility with 3 inch propellers and toothpick frame drones",
+       "9N12P configuration provides optimal balance of thrust and torque for stable hovering",
+       "NMB520ZZ bearing offers smooth operation and extended motor life",
+       "Includes 24AWG 120mm cables for secure and flexible installation"
+      ],
+      "unique_selling_points": [
+       "Delivers powerful 4600KV performance with a 1.5mm shaft for enhanced flight stability and compatibility with 3 inch propellers."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3699,
+       "currency": "USD"
+      }
+     },
+     "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 3-4S - 4600KV (2 PCS)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://foldedjoy.store/buy/68099704586319:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Introducing the new Skystars 1404 motor - the perfect addition to any 2.5 inch to 4 inch lightweight drone. With its 1.5mm shaft, this motor provides a smoother and more reliable flight experience, while also delivering powerful performance. Recommended for use with 3 inch propellers with a 1.5mm hole. Upgrade your FPV micro drone and take your flights to new heights with this cutting-edge motor.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest <span>of our </span><a href=\"https://pyrodrone.com/collections/skystars-products\" title=\"Skystars Products for FPV Drone Racing and Freestyle sold by PyroDrone\" target=\"_blank\">Skystars Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/9812-994.jpg?v=1716125070\"></span></p>\n<h3 data-mce-fragment=\"1\">\n<strong>Features</strong><span style=\"font-size: 0.875rem;\">:</span>\n</h3>\n<ul>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Skystars KOKO 1404 motor ,new series fpv motors,more smooth, reliable and powerful</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">Suit for 2.5inch-4inch fpv micro drone toothpick frame</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">1.5mm shaft ,Recommend propeller: 3inch propellers 1.5mm hole</span></li>\n</ul>\n<h3>\n<strong>Specifications:</strong><br>\n</h3>\n<ul>\n<li>Size: 1404</li>\n<li>Kv: 4600</li>\n<li>Lipo: 3-4S</li>\n<li>Shaft diameter: 1.5mm<br>\n</li>\n<li>Configuration: 9N12P</li>\n<li>Weight: 9g</li>\n<li>Cables: 24AWG 120mm</li>\n<li>Bearing: NMB520ZZ</li>\n<li>Mounting holes: 9mm M2<br>\n</li>\n</ul>\n<h3><strong>Package Includes:</strong></h3>\n<ul>\n<li>2 x Motor</li>\n<li>2 x Screw set</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-3-4s-4600kv-2-pcs",
+       "id": "gid://shopify/ProductVariant/68099704586319",
+       "media": [
+        {
+         "alt_text": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 3-4S - 4600KV (2 PCS)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_f1c4405d-bf50-412d-a04a-ba77d5c2332c.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/51zrXAAj4ZL._SL1000_f1c4405d-bf50-412d-a04a-ba77d5c2332c.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3699,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ny1tms-xb.myshopify.com",
+        "id": "gid://shopify/Shop/71030767695",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/39289716815.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859359311.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859326543.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859392079.html"
+         }
+        ],
+        "name": " Folded Joy",
+        "url": "https://foldedjoy.store"
+       },
+       "seller_product_id": "gid://shopify/Product/15536639148111",
+       "source": "shopify",
+       "title": "Skystars 1404 Brushless Motor for 2.5 inch to 4 inch Lighweight Drones 3-4S - 4600KV (2 PCS)",
+       "url": "https://foldedjoy.store/products/skystars-1404-brushless-motor-for-2-5-inch-to-4-inch-lighweight-drones-3-4s-4600kv-2-pcs?variant=68099704586319&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\"><span>The ECO Series is one of EMAX's most economical, brushless motors, designed for performance. They provide a great balance of quality reliability as well as affordability.    </span></p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong><span class=\"s1\" data-mce-fragment=\"1\">FEATURES:</span></strong></p>\n<ul class=\"ul1\" data-mce-fragment=\"1\">\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Precision durable ball-bearings</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Steel shaft for high-strength</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Anodizing for finish and corrosion resistance</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">9x9mm hole pattern</span></li>\n<li class=\"li3\" data-mce-fragment=\"1\"><span class=\"s1\" data-mce-fragment=\"1\">Multi-strand copper windings</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\">100mm 26 guage silicone wire</li>\n</ul>\n<p> </p>\n<p class=\"p1\" data-mce-fragment=\"1\"><strong><span class=\"s1\" data-mce-fragment=\"1\">SPECIFICATIONS:</span></strong></p>\n<ul class=\"ul1\" data-mce-fragment=\"1\">\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Framework: 9N12P</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Length: 19.75mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Diameter: 18.8mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Propeller: 2.5\" to 4\"</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Weight: 8.6g (w/o Silicone Wire)</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Prop adapter shaft diameter: 1.5mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Bearing Shaft: 2mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Shaft Thread: CW</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Hole Pattern: 4-Hole</span></li>\n</ul>\n<p> </p>\n<p><strong><span class=\"s3\" data-mce-fragment=\"1\">INCLUDES: </span></strong></p>\n<p><span class=\"s3\" data-mce-fragment=\"1\">(1) Emax ECO 1404 / 3700KV or <span data-mce-fragment=\"1\">4800KV </span>Micro Brushless Motor <br>(1) Set of Screws</span></p>"
+     },
+     "handle": "emax-eco-1404-3700kv-or-4800kv-micro-brushless-motor",
+     "id": "gid://shopify/p/6hzBatXwyEwR7wxTi91o53",
+     "media": [
+      {
+       "alt_text": "Emax ECO 1404 Micro Brushless Motor (3-4S / Choose KV)",
+       "height": 811,
+       "preview": {
+        "height": 811,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/EMAX_1404_3700_29c7f2b0-60be-4e52-b365-66c6684527ab.png",
+        "width": 811
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/EMAX_1404_3700_29c7f2b0-60be-4e52-b365-66c6684527ab.png",
+       "width": 811
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Precision ball bearings ensure smooth and reliable operation for high-speed applications",
+       "Steel shaft construction provides high strength and durability for demanding RC builds",
+       "Anodized finish offers corrosion resistance for extended motor life",
+       "Multi-strand copper windings deliver efficient power transfer and consistent performance",
+       "9x9mm mounting pattern fits most micro quad frames for easy integration"
+      ],
+      "unique_selling_points": [
+       "Balanced torque and RPM in a compact, lightweight 1404 stator with multi-strand copper windings and corrosion-resistant anodized finish."
+      ]
+     },
+     "options": [
+      {
+       "name": "Kv",
+       "values": [
+        {
+         "label": "4800kv"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Emax ECO 1404 Micro Brushless Motor (3-4S / Choose KV)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/43496801108182:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\"><span>The ECO Series is one of EMAX's most economical, brushless motors, designed for performance. They provide a great balance of quality reliability as well as affordability.    </span></p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong><span class=\"s1\" data-mce-fragment=\"1\">FEATURES:</span></strong></p>\n<ul class=\"ul1\" data-mce-fragment=\"1\">\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Precision durable ball-bearings</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Steel shaft for high-strength</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Anodizing for finish and corrosion resistance</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">9x9mm hole pattern</span></li>\n<li class=\"li3\" data-mce-fragment=\"1\"><span class=\"s1\" data-mce-fragment=\"1\">Multi-strand copper windings</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\">100mm 26 guage silicone wire</li>\n</ul>\n<p> </p>\n<p class=\"p1\" data-mce-fragment=\"1\"><strong><span class=\"s1\" data-mce-fragment=\"1\">SPECIFICATIONS:</span></strong></p>\n<ul class=\"ul1\" data-mce-fragment=\"1\">\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Framework: 9N12P</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Length: 19.75mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Diameter: 18.8mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Propeller: 2.5\" to 4\"</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Weight: 8.6g (w/o Silicone Wire)</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Prop adapter shaft diameter: 1.5mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Bearing Shaft: 2mm</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Shaft Thread: CW</span></li>\n<li class=\"li2\" data-mce-fragment=\"1\"><span class=\"s3\" data-mce-fragment=\"1\">Hole Pattern: 4-Hole</span></li>\n</ul>\n<p> </p>\n<p><strong><span class=\"s3\" data-mce-fragment=\"1\">INCLUDES: </span></strong></p>\n<p><span class=\"s3\" data-mce-fragment=\"1\">(1) Emax ECO 1404 / 3700KV or <span data-mce-fragment=\"1\">4800KV </span>Micro Brushless Motor <br>(1) Set of Screws</span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "emax-eco-1404-3700kv-or-4800kv-micro-brushless-motor",
+       "id": "gid://shopify/ProductVariant/43496801108182",
+       "media": [
+        {
+         "alt_text": "Emax ECO 1404 Micro Brushless Motor (3-4S / Choose KV)",
+         "height": 811,
+         "preview": {
+          "height": 811,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/EMAX_1404_3700_29c7f2b0-60be-4e52-b365-66c6684527ab.png",
+          "width": 811
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/EMAX_1404_3700_29c7f2b0-60be-4e52-b365-66c6684527ab.png",
+         "width": 811
+        }
+       ],
+       "price": {
+        "amount": 1299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4651980947516",
+       "source": "shopify",
+       "title": "Emax ECO 1404 Micro Brushless Motor (3-4S / Choose KV)",
+       "url": "https://www.rc-n-go.com/products/emax-eco-1404-3700kv-or-4800kv-micro-brushless-motor?variant=43496801108182&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Unmatched performance for sub-250g 2.5-3” Cinewhoops and Freestyle quads.<br></p>\n<p>What do you do when you’ve broken the world drone speed record with a motor capable of 580 kph? You bring that technology to the most popular drone category in the world: Sub-250g!</p>\n<p>If you are seeking the ultimate performance for your sub-250g build, this is it. Built on the world-drone-speed-record-breaking technology of the AOS Supernova 3220, the AOS Supernova 1404 is engineered to deliver more torque, more power, and a more exciting flying experience than any 1404 before it.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DZZZ-2PYzdY?si=OUQSvfoXiKOAop1R\" title=\"YouTube video player\"></iframe></p>\n<p>The motor is optimized for driving 2.5” Bullnose or 3” Freestyle Tri-blade props on 4S battery voltage. On the thrust test stand and in the air, Chris Rosser found the Supernova 1404 outperforms any other 1404 motor he’s tested on the market, producing more thrust and a faster response without sacrificing efficiency. The Supernova 1404 broaches no compromises, delivering the smoothest footage on a Cinewhoop and also blowing away the competition in dynamic freestyle flying.</p>\n<p>Built on the incredible success of the AOS Supernova 2207, 2807, and 3220 the 1404 takes the same revolutionary design philosophy and scales it down for the challenging demands of sub-250g drone pilots. Thanks to thousands of finite element simulations, including 4D field modeling for the first time, the Supernova 1404 delivers an exhilarating combination of control, power, and efficiency, all in service of the ultimate in-flight performance.</p>\n<p>Exceptional designs require exceptional execution. That’s why the AOS Supernova 1404 is manufactured by RCinPower, a brand synonymous with race-winning and record-breaking motors. This partnership, coupled with AOS’s cutting-edge design approach, ensures that this motor not only meets but exceeds the expectations of the most demanding pilots. With the Supernova 1404, you can experience more than ever before, and still stay under 250g.</p>\n<div style=\"text-align: left;\"><img style=\"float: none;\" alt=\"RCInPower AOS RC Supernova 1404 4000KV Motors\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/5_3b6f4620-9e21-43ea-a766-3e1b0447ae94.jpg?v=1761334806\"></div>\n<p>For smooth, precise low-throttle control and breathtaking top-end power, AOS recommends applying throttle expo in Betaflight. Start with Throttle MID = 0 and Throttle EXPO = 0.20, adjusting EXPO to fine-tune your desired throttle response. Increase EXPO for greater precision at low throttle or reduce it for a sharper, more aggressive feel.<br></p>\n<p><strong>Specifications</strong>:</p>\n<ul>\n<li>KV:  4000</li>\n<li>Configuration:  9N12P</li>\n<li>Stator Diameter:  14mm</li>\n<li>Stator Length:  4.5mm</li>\n<li>Shaft Diameter:  1.5mm ( 2mm inside)</li>\n<li>Motor Dimensions:  18.75*13.2mm</li>\n<li>Weight:  10.2g (3cm wire)</li>\n<li>Idle Current(10)@10V(A):  0.77</li>\n<li>Cells (LiPo):  3S-4S</li>\n<li>Max Continuous Power(W)3S:  335</li>\n<li>Max Current(3S):  20.9A</li>\n<li>Max Efficiency Current:  (4-7A)&gt;85%</li>\n</ul>\n<div style=\"text-align: start;\"><img style=\"float: none;\" alt=\"RCInPower AOS RC Supernova 1404 4000KV Motors\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/Supernova_1404.jpg?v=1761334512\"></div>\n<div style=\"text-align: start;\">\n<strong>Includes</strong>:<br>1x RCInPower AOS RC Supernova 1404 4000KV Motors</div>\n<p> </p>"
+     },
+     "handle": "rcinpower-aos-rc-supernova-1404-4000kv-motors",
+     "id": "gid://shopify/p/5Hkv0MZEo8uMQ4DKoXlLXK",
+     "media": [
+      {
+       "alt_text": "RCInPower AOS RC Supernova 1404 4000KV Motors",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/1349/4827/files/RCInPower-AOS-RC-Supernova-1404-4000KV-Motors-1.jpg",
+        "width": 1598
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1349/4827/files/RCInPower-AOS-RC-Supernova-1404-4000KV-Motors-1.jpg",
+       "width": 1598
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "25% more thrust for enhanced acceleration and takeoff performance",
+       "30% increased torque on bullnose and freestyle tri-blade props for better control",
+       "Optimized magnetic design reduces motor heating at full throttle for longer lifespan",
+       "High efficiency at high power output, maximizing flight time and performance",
+       "Tested and proven by top pilots for smooth footage and dynamic freestyle flying"
+      ],
+      "unique_selling_points": [
+       "Delivers 25% more thrust and 30% more torque than standard 1404 motors, optimized for sub-250g FPV builds."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 3,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "RCInPower AOS RC Supernova 1404 4000KV Motors",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.defiancerc.com/buy/43888252649541:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Unmatched performance for sub-250g 2.5-3” Cinewhoops and Freestyle quads.<br></p>\n<p>What do you do when you’ve broken the world drone speed record with a motor capable of 580 kph? You bring that technology to the most popular drone category in the world: Sub-250g!</p>\n<p>If you are seeking the ultimate performance for your sub-250g build, this is it. Built on the world-drone-speed-record-breaking technology of the AOS Supernova 3220, the AOS Supernova 1404 is engineered to deliver more torque, more power, and a more exciting flying experience than any 1404 before it.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DZZZ-2PYzdY?si=OUQSvfoXiKOAop1R\" title=\"YouTube video player\"></iframe></p>\n<p>The motor is optimized for driving 2.5” Bullnose or 3” Freestyle Tri-blade props on 4S battery voltage. On the thrust test stand and in the air, Chris Rosser found the Supernova 1404 outperforms any other 1404 motor he’s tested on the market, producing more thrust and a faster response without sacrificing efficiency. The Supernova 1404 broaches no compromises, delivering the smoothest footage on a Cinewhoop and also blowing away the competition in dynamic freestyle flying.</p>\n<p>Built on the incredible success of the AOS Supernova 2207, 2807, and 3220 the 1404 takes the same revolutionary design philosophy and scales it down for the challenging demands of sub-250g drone pilots. Thanks to thousands of finite element simulations, including 4D field modeling for the first time, the Supernova 1404 delivers an exhilarating combination of control, power, and efficiency, all in service of the ultimate in-flight performance.</p>\n<p>Exceptional designs require exceptional execution. That’s why the AOS Supernova 1404 is manufactured by RCinPower, a brand synonymous with race-winning and record-breaking motors. This partnership, coupled with AOS’s cutting-edge design approach, ensures that this motor not only meets but exceeds the expectations of the most demanding pilots. With the Supernova 1404, you can experience more than ever before, and still stay under 250g.</p>\n<div style=\"text-align: left;\"><img style=\"float: none;\" alt=\"RCInPower AOS RC Supernova 1404 4000KV Motors\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/5_3b6f4620-9e21-43ea-a766-3e1b0447ae94.jpg?v=1761334806\"></div>\n<p>For smooth, precise low-throttle control and breathtaking top-end power, AOS recommends applying throttle expo in Betaflight. Start with Throttle MID = 0 and Throttle EXPO = 0.20, adjusting EXPO to fine-tune your desired throttle response. Increase EXPO for greater precision at low throttle or reduce it for a sharper, more aggressive feel.<br></p>\n<p><strong>Specifications</strong>:</p>\n<ul>\n<li>KV:  4000</li>\n<li>Configuration:  9N12P</li>\n<li>Stator Diameter:  14mm</li>\n<li>Stator Length:  4.5mm</li>\n<li>Shaft Diameter:  1.5mm ( 2mm inside)</li>\n<li>Motor Dimensions:  18.75*13.2mm</li>\n<li>Weight:  10.2g (3cm wire)</li>\n<li>Idle Current(10)@10V(A):  0.77</li>\n<li>Cells (LiPo):  3S-4S</li>\n<li>Max Continuous Power(W)3S:  335</li>\n<li>Max Current(3S):  20.9A</li>\n<li>Max Efficiency Current:  (4-7A)&gt;85%</li>\n</ul>\n<div style=\"text-align: start;\"><img style=\"float: none;\" alt=\"RCInPower AOS RC Supernova 1404 4000KV Motors\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/Supernova_1404.jpg?v=1761334512\"></div>\n<div style=\"text-align: start;\">\n<strong>Includes</strong>:<br>1x RCInPower AOS RC Supernova 1404 4000KV Motors</div>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "rcinpower-aos-rc-supernova-1404-4000kv-motors",
+       "id": "gid://shopify/ProductVariant/43888252649541",
+       "media": [
+        {
+         "alt_text": "RCInPower AOS RC Supernova 1404 4000KV Motors",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/1349/4827/files/RCInPower-AOS-RC-Supernova-1404-4000KV-Motors-1.jpg",
+          "width": 1598
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1349/4827/files/RCInPower-AOS-RC-Supernova-1404-4000KV-Motors-1.jpg",
+         "width": 1598
+        }
+       ],
+       "price": {
+        "amount": 1899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "defiancerc.myshopify.com",
+        "id": "gid://shopify/Shop/13494827",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/13494827/policies/28400902.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/13494827/policies/28400966.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/13494827/policies/28400838.html"
+         }
+        ],
+        "name": "defianceRC",
+        "url": "https://www.defiancerc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7810053668933",
+       "source": "shopify",
+       "title": "RCInPower AOS RC Supernova 1404 4000KV Motors",
+       "url": "https://www.defiancerc.com/products/rcinpower-aos-rc-supernova-1404-4000kv-motors?variant=43888252649541&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">The SPEEDX2 1404 motor is an innovative brushless motor with a lightweight design, unique appearance and good heat dissipation.</p>\n<p data-mce-fragment=\"1\">GEPRC is committed to providing pilots with brushless motors that are lighter in weight, faster in response, higher in efficiency and stronger in power.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest of <a href=\"https://pyrodrone.com/collections/geprc-products\" target=\"_blank\">GEPRC Products</a>.</p>\n<p data-mce-fragment=\"1\"><img decoding=\"async\" class=\"size-full wp-image-90402 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" alt=\"\" width=\"1200\" height=\"1494\"><img decoding=\"async\" class=\"size-full wp-image-90403 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" alt=\"\" width=\"1200\" height=\"1454\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90404 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" alt=\"\" width=\"1200\" height=\"952\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90405 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" alt=\"\" width=\"1200\" height=\"838\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90406 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" alt=\"\" width=\"1200\" height=\"1230\"></p>\n<h3 data-mce-fragment=\"1\"><strong>Features:</strong></h3>\n<ul>\n<li>Red with black color is obviously high-end.</li>\n<li>Use bearings with excellent performance and strong anti-wear ability.</li>\n<li>Lightweight silhouette, strong power.</li>\n<li>Suitable for 2-inch-4-inch lightweight chassis.</li>\n</ul>\n<h3>Specifications:<br>\n</h3>\n<ul>\n<li>Model: SPEEDX2 1404 3850KV Motor</li>\n<li>Max Watt: 160W</li>\n<li>Peak current: 10A/3″</li>\n<li>Interphase resistance: 0.33Ω</li>\n<li>Magnet: N52H</li>\n<li>Bearing type: NSK/NMB</li>\n<li>Configuration: 9N12P</li>\n<li>Dimension: φ18.2mm*13.8mm</li>\n<li>Shaft Diameter: φ1.5mm</li>\n<li>Shaft Protruding Length: 4mm</li>\n<li>Mounting holes: 9mm*9mm（M2）</li>\n<li>Lead: 160mm/26AWG</li>\n<li>ESC: 12A/2-4S（7.4V-14.8V）</li>\n<li>Input Volts: 14.8V（4S LiPo)</li>\n<li>Winding: Single strand copper winding</li>\n<li>Weight: 10.5g (included wire)</li>\n<li>Suitable for: 3 inch – 4 inch lightweight models</li>\n</ul>\n<h3> Package Includes:</h3>\n<ul>\n<li><span>1 x SPEEDX2 1404 3850KV Motor</span></li>\n</ul>\n<p><span><img src=\"https://geprc.com/wp-content/uploads/2024/01/10-1.jpg\"></span></p>"
+     },
+     "handle": "geprc-speedx2-1404-3850kv-motor-1-pc",
+     "id": "gid://shopify/p/6HtkufA7cX4YgSJ4fVDwyZ",
+     "media": [
+      {
+       "alt_text": "GEPRC SPEEDX2 1404 3850KV Motor - (1 Pc.)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._11844800-6709-4016-bc96-76ddd61013ca.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._11844800-6709-4016-bc96-76ddd61013ca.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Brushless motor design delivers higher efficiency and faster response for RC vehicles",
+       "Lightweight silhouette reduces overall vehicle weight for improved agility",
+       "Excellent heat dissipation ensures reliable performance during extended use",
+       "High-performance bearings provide strong anti-wear ability for longer lifespan",
+       "Compatible with 2 inch and 3 inch 4 inch lightweight chassis for versatile use"
+      ],
+      "unique_selling_points": [
+       "Innovative brushless design with excellent heat dissipation and lightweight build for enhanced RC vehicle performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2299,
+       "currency": "USD"
+      }
+     },
+     "title": "GEPRC SPEEDX2 1404 3850KV Motor - (1 Pc.)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://foldedjoy.store/buy/68099289350223:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=MuNHYsdKq3db&_gsid=MuNHYsdKq3db",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">The SPEEDX2 1404 motor is an innovative brushless motor with a lightweight design, unique appearance and good heat dissipation.</p>\n<p data-mce-fragment=\"1\">GEPRC is committed to providing pilots with brushless motors that are lighter in weight, faster in response, higher in efficiency and stronger in power.</p>\n<p data-mce-fragment=\"1\">Check out all our <a href=\"https://pyrodrone.com/collections/13xx\" target=\"_blank\"></a><a href=\"https://pyrodrone.com/collections/14xx\" rel=\"noopener\" target=\"_blank\">14xx Motors</a> and the rest of <a href=\"https://pyrodrone.com/collections/geprc-products\" target=\"_blank\">GEPRC Products</a>.</p>\n<p data-mce-fragment=\"1\"><img decoding=\"async\" class=\"size-full wp-image-90402 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/1-3.jpg\" alt=\"\" width=\"1200\" height=\"1494\"><img decoding=\"async\" class=\"size-full wp-image-90403 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/2-4.jpg\" alt=\"\" width=\"1200\" height=\"1454\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90404 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/3-4.jpg\" alt=\"\" width=\"1200\" height=\"952\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90405 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/4-4.jpg\" alt=\"\" width=\"1200\" height=\"838\"><img loading=\"lazy\" decoding=\"async\" class=\"size-full wp-image-90406 aligncenter lazyloaded\" src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" data-src=\"https://geprc.com/wp-content/uploads/2024/01/5-4.jpg\" alt=\"\" width=\"1200\" height=\"1230\"></p>\n<h3 data-mce-fragment=\"1\"><strong>Features:</strong></h3>\n<ul>\n<li>Red with black color is obviously high-end.</li>\n<li>Use bearings with excellent performance and strong anti-wear ability.</li>\n<li>Lightweight silhouette, strong power.</li>\n<li>Suitable for 2-inch-4-inch lightweight chassis.</li>\n</ul>\n<h3>Specifications:<br>\n</h3>\n<ul>\n<li>Model: SPEEDX2 1404 3850KV Motor</li>\n<li>Max Watt: 160W</li>\n<li>Peak current: 10A/3″</li>\n<li>Interphase resistance: 0.33Ω</li>\n<li>Magnet: N52H</li>\n<li>Bearing type: NSK/NMB</li>\n<li>Configuration: 9N12P</li>\n<li>Dimension: φ18.2mm*13.8mm</li>\n<li>Shaft Diameter: φ1.5mm</li>\n<li>Shaft Protruding Length: 4mm</li>\n<li>Mounting holes: 9mm*9mm（M2）</li>\n<li>Lead: 160mm/26AWG</li>\n<li>ESC: 12A/2-4S（7.4V-14.8V）</li>\n<li>Input Volts: 14.8V（4S LiPo)</li>\n<li>Winding: Single strand copper winding</li>\n<li>Weight: 10.5g (included wire)</li>\n<li>Suitable for: 3 inch – 4 inch lightweight models</li>\n</ul>\n<h3> Package Includes:</h3>\n<ul>\n<li><span>1 x SPEEDX2 1404 3850KV Motor</span></li>\n</ul>\n<p><span><img src=\"https://geprc.com/wp-content/uploads/2024/01/10-1.jpg\"></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "geprc-speedx2-1404-3850kv-motor-1-pc",
+       "id": "gid://shopify/ProductVariant/68099289350223",
+       "media": [
+        {
+         "alt_text": "GEPRC SPEEDX2 1404 3850KV Motor - (1 Pc.)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._11844800-6709-4016-bc96-76ddd61013ca.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/1._11844800-6709-4016-bc96-76ddd61013ca.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2299,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ny1tms-xb.myshopify.com",
+        "id": "gid://shopify/Shop/71030767695",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/39289716815.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859359311.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859326543.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859392079.html"
+         }
+        ],
+        "name": " Folded Joy",
+        "url": "https://foldedjoy.store"
+       },
+       "seller_product_id": "gid://shopify/Product/15536587538511",
+       "source": "shopify",
+       "title": "GEPRC SPEEDX2 1404 3850KV Motor - (1 Pc.)",
+       "url": "https://foldedjoy.store/products/geprc-speedx2-1404-3850kv-motor-1-pc?variant=68099289350223&_gsid=MuNHYsdKq3db&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+  "type": "b2c.mandate.closed",
+  "version": "0.4",
+  "open_mandate_sha256": "572058a8b55cf7fc61457530e69945e8e1b6d085064ece000cb2a6d72de9bafb",
+  "plan_id": "p_mock_so101_cheapest",
+  "plan_sha256": "8fe4604e0d0f42d5804f68b0c4941d0226f26bac1d136b476cbbec379bbe41b5",
+  "tier": "cheapest",
+  "handoffs": [
+    {
+      "store_id": "wowrobo",
+      "action_level": "agent_cart",
+      "cart_id": "c_mock_wowrobo",
+      "url": "https://mock.invalid/wowrobo/cart/c_mock_wowrobo",
+      "url_sha256": "b1db93ca8f8fa2d5fee4b9feb5ddec349d88fbc01d01b3382efd1f6d51ba0f5c",
+      "subtotal_usd": 90.94,
+      "items": [
+        {
+          "offer_id": "o17",
+          "ids": {
+            "variant_gid": "gid://shopify/ProductVariant/48037575065817"
+          },
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+          "qty": 1,
+          "unit_price_usd": 74.95,
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "d86e481af0469e3e68b37a24de0edcad5e839f72541f4f02be3b4ff3bfa24200",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "o18",
+          "ids": {
+            "variant_gid": "gid://shopify/ProductVariant/48037575033049"
+          },
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+          "qty": 1,
+          "unit_price_usd": 15.99,
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "e9d08e360994ce7be8713c6e40a8a45453bd8d41e6ba5affad4cf9a4ecdf9a22",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "store_id": "geekworm",
+      "action_level": "agent_cart",
+      "cart_id": "c_mock_geekworm",
+      "url": "https://mock.invalid/geekworm/cart/c_mock_geekworm",
+      "url_sha256": "2a70e373816c748f320bc462dd459d15c3d7460596cf57fc66e730df080cb39c",
+      "subtotal_usd": 17.0,
+      "items": [
+        {
+          "offer_id": "o40",
+          "ids": {
+            "variant_gid": "gid://shopify/ProductVariant/MOCK-GEEKWORM-12V5A"
+          },
+          "title": "12V 5A Power Supply, DC5521 (5.5x2.1mm), US plug",
+          "qty": 1,
+          "unit_price_usd": 17.0,
+          "seen_at": "2026-11-20T13:05:20-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "e12289b02638eeba5c3bd4a86e55d0cc7e3e537dc112f3bfff15181c4e7f15af",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "store_id": "armdojo",
+      "action_level": "agent_cart",
+      "cart_id": "c_mock_armdojo",
+      "url": "https://mock.invalid/armdojo/cart/c_mock_armdojo",
+      "url_sha256": "93c87b763005e5527da655cdd50af366fc7a829ae8dbbd9139f1e48d19317a20",
+      "subtotal_usd": 11.99,
+      "items": [
+        {
+          "offer_id": "o30",
+          "ids": {
+            "variant_gid": "gid://shopify/ProductVariant/50874126958831"
+          },
+          "title": "Waveshare Bus Servo Adapter (A), USB-C",
+          "qty": 1,
+          "unit_price_usd": 11.99,
+          "seen_at": "2026-11-20T13:04:40-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "1ae36037ae8dcb48e90099f5ad6dcf663f4f9fa4c60c48a36f3201efc1f7be4a",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "store_id": "amazon",
+      "action_level": "prefilled_cart",
+      "url": "https://mock.invalid/amazon/cart/add?item.1=o50&qty.1=1",
+      "url_sha256": "fecb65ddbc4924d9c4dcf39fdd7852d4796dc336f3d541d7b2594a7a53dca9a6",
+      "subtotal_usd": 12.48,
+      "caveat": "Amazon asks you to sign in first",
+      "items": [
+        {
+          "offer_id": "o50",
+          "ids": {
+            "asin": "B092L925J4"
+          },
+          "title": "Table clamp 6 inch, 2 pcs (README link; PLACEHOLDER price from the PLAN §3.7 example)",
+          "qty": 1,
+          "unit_price_usd": 12.48,
+          "seen_at": "2026-11-20T13:05:40-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "1a93fe13aa24f46eea4f69f5264fcebbc27af033fca4868e1268a04ca7b264c7",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    }
+  ],
+  "total_usd": 132.41,
+  "prices_checked_at": "2026-11-20T13:06:10-08:00",
+  "approved_by": "ui_button",
+  "approved_at": "2026-11-20T13:08:00-08:00",
+  "approval_token_sha256": "e5151f6084d4eaae5ef58d808a766e231fb81ee85f82c9c1c01eb195f9d75fbc",
+  "chain_head": "sha256:f4fab2c96fabf18d9acf5dec583dfc196f03c3708c31fb495b3b6fc750fd1015",
+  "simulated": true,
+  "signature": {
+    "alg": "ES256",
+    "kid": "fixture-key-1",
+    "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..os6nkZXortCeChzVGwKRTonFI_B8c_jA04-lvY9rizA3WHuZkxth67kqS2_MCIdjxnBfajfV3NajrjbDkU0Rpg"
+  }
+}

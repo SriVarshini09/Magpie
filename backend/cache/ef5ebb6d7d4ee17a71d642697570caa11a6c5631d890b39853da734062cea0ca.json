@@ -1,0 +1,1961 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "LiPo battery charger"
+  }
+ },
+ "key": "ef5ebb6d7d4ee17a71d642697570caa11a6c5631d890b39853da734062cea0ca",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:31:59-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNOVEV6TkRrMk1USTFOVEl6TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "other-lora-products",
+       "id": "gid://shopify/Collection/260842127443",
+       "title": "Other LoRa Products"
+      }
+     ],
+     "description": {
+      "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+     },
+     "gift_card": false,
+     "handle": "3-7v-1100mah-lithium-rechargeable-battery-1s-1c-lipo-battery-with-protection-board-with-micro-jst-1-25-plug",
+     "id": "gid://shopify/Product/7001018662995",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/780228697151_1.png?v=1687462971"
+      }
+     ],
+     "options": [
+      {
+       "name": "mAh",
+       "values": [
+        {
+         "label": "1100"
+        },
+        {
+         "label": "2000"
+        },
+        {
+         "label": "3000"
+        },
+        {
+         "label": "4000"
+        },
+        {
+         "label": "8000"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "3.7V Lithium Rechargeable 1S 1C LiPo Battery with Micro JST 1.25 Plug (LILYGO® TTGO LoRa32 Compatible) 1100, 2000, 3000, 4000, or 8000 mAh",
+     "url": "https://store.rokland.com/products/3-7v-1100mah-lithium-rechargeable-battery-1s-1c-lipo-battery-with-protection-board-with-micro-jst-1-25-plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40838520242259:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+       },
+       "id": "gid://shopify/ProductVariant/40838520242259",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/780228697151_1.png?v=1687462971"
+        }
+       ],
+       "options": [
+        {
+         "label": "1100",
+         "name": "mAh"
+        }
+       ],
+       "price": {
+        "amount": 997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "371100m",
+       "title": "1100"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40838520275027:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+       },
+       "id": "gid://shopify/ProductVariant/40838520275027",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/780228697151_2.png?v=1687889956"
+        }
+       ],
+       "options": [
+        {
+         "label": "2000",
+         "name": "mAh"
+        }
+       ],
+       "price": {
+        "amount": 1197,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "371100m-2",
+       "title": "2000"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40838520307795:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+       },
+       "id": "gid://shopify/ProductVariant/40838520307795",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/780228697151_4.png?v=1687890082"
+        }
+       ],
+       "options": [
+        {
+         "label": "3000",
+         "name": "mAh"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "371100m-3",
+       "title": "3000"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43264927694931:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+       },
+       "id": "gid://shopify/ProductVariant/43264927694931",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/makernova.png?v=1763416205"
+        }
+       ],
+       "options": [
+        {
+         "label": "4000",
+         "name": "mAh"
+        }
+       ],
+       "price": {
+        "amount": 1597,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "4-J1.25",
+       "title": "4000"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43264927727699:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)- this has polarity for most LILYGO and Heltec dev boards. Specification:Choose from 1100, 2000, 3000, 4000, or 8000 mAh capacity in the dropdown menu. Standard voltage- 3.7V Capacity- 1100, 2000, 3000, 4000, or 8000 mAh Approximate weight- 1100 mAh: 19g 2000 mAh: 35g 3000 mAh: 35g Dimensions- 1100 mAh: (±2mm)0 49*28*7.8mm / 1.85*1.10*0.31inch(L*W*H) 2000mAh: (±2mm): 50*34*10 mm /1.96*1.33*0.39inch(L*W*H) 3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H) 4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H) 8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) Discharge rate- 1C Working current- 1.5A Maximum discharge current- 3C Overcurrent protection- 1.8-2.1A Connector Type- Micro JST 1.25 Standard charging method: Charge the battery to 4.25V with a constant current of 0.2C, and then charge it with a constant voltage of 4.2V until the charging current is less than or equal to 0.05C. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are not returnable once used. New batteries purchased that are not the correct size or fit can be returned with 30 days of purchase for exchange or refund. A $3 USD restock fee may be deducted from the refund to help cover original shipping cost. Any shipping charges paid are non-refundable."
+       },
+       "id": "gid://shopify/ProductVariant/43264927727699",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/makernova_1.png?v=1763416280"
+        }
+       ],
+       "options": [
+        {
+         "label": "8000",
+         "name": "mAh"
+        }
+       ],
+       "price": {
+        "amount": 1997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "8-J1.25",
+       "title": "8000"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "other-lora-products",
+       "id": "gid://shopify/Collection/260842127443",
+       "title": "Other LoRa Products"
+      }
+     ],
+     "description": {
+      "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use 1.25 size and opposite polarity. Specifications: Manufacturer: MakerFocus/MakerNova Typical Capacity 3000mAh/4000mAh/8000mAh (choose) Nominal Voltage 3.7 V Max Charge Current 3000mAh/4000mAh/8000mAh Max Loading Current (peak value) 3000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions:3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) JST Type PH 2.0 Plug California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "makerfocus-flat-3-7v-3000mah-rechargeable-lithium-polymer-11-1wh-battery-with-jst-type-ph-2-0-plug",
+     "id": "gid://shopify/Product/7155446054995",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png?v=1707937737"
+      }
+     ],
+     "options": [
+      {
+       "name": "Capacity",
+       "values": [
+        {
+         "label": "3000 mAh (fits most RAK board)"
+        },
+        {
+         "label": "4000 mAh (fits most RAK board)"
+        },
+        {
+         "label": "8000 mAh (fits most RAK board)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "MakerFocus Flat 3.7V 3000 mAh/4000/8000 choice Rechargeable Lithium Polymer 11.1Wh Battery with JST Type PH 2.0 Plug",
+     "url": "https://store.rokland.com/products/makerfocus-flat-3-7v-3000mah-rechargeable-lithium-polymer-11-1wh-battery-with-jst-type-ph-2-0-plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43445176303699:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use 1.25 size and opposite polarity. Specifications: Manufacturer: MakerFocus/MakerNova Typical Capacity 3000mAh/4000mAh/8000mAh (choose) Nominal Voltage 3.7 V Max Charge Current 3000mAh/4000mAh/8000mAh Max Loading Current (peak value) 3000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions:3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) JST Type PH 2.0 Plug California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/43445176303699",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png?v=1707937737"
+        }
+       ],
+       "options": [
+        {
+         "label": "3000 mAh (fits most RAK board)",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "7237521",
+       "title": "3000 mAh (fits most RAK board)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43445176336467:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use 1.25 size and opposite polarity. Specifications: Manufacturer: MakerFocus/MakerNova Typical Capacity 3000mAh/4000mAh/8000mAh (choose) Nominal Voltage 3.7 V Max Charge Current 3000mAh/4000mAh/8000mAh Max Loading Current (peak value) 3000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions:3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) JST Type PH 2.0 Plug California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/43445176336467",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/battery-JST-2.png?v=1768855133"
+        }
+       ],
+       "options": [
+        {
+         "label": "4000 mAh (fits most RAK board)",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1597,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "4000-JST2",
+       "title": "4000 mAh (fits most RAK board)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43445176369235:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use 1.25 size and opposite polarity. Specifications: Manufacturer: MakerFocus/MakerNova Typical Capacity 3000mAh/4000mAh/8000mAh (choose) Nominal Voltage 3.7 V Max Charge Current 3000mAh/4000mAh/8000mAh Max Loading Current (peak value) 3000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions:3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H) JST Type PH 2.0 Plug California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/43445176369235",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/battery-JST-2_1.png?v=1768855151"
+        }
+       ],
+       "options": [
+        {
+         "label": "8000 mAh (fits most RAK board)",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "8000-JST2",
+       "title": "8000 mAh (fits most RAK board)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "other-lora-products",
+       "id": "gid://shopify/Collection/260842127443",
+       "title": "Other LoRa Products"
+      }
+     ],
+     "description": {
+      "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND- expedited ship options will not show at checkout if battery in cart*** Check polarity match (red and black cable order)Compatible with RAKwireless RAK19026 v2 board, BoardONE boardsThis is a special 3-pin connector battery designed for use with the RAK19026 board, or as a replacement for the RAKwireless WisMesh Pocket all-in-one device.It is also compatible with the RAK Board ONE 3 pin version.Choose 1000 mAh or 3200 mAh version by cart buttonThis will not work with other boards that require a 2-pin connection. Specifications for 1000 mAh: Typical Capacity 1000mAh Nominal Voltage 3.7 V Max Charge Current 1000mAh Max Loading Current (peak value) 1000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 49.7mm x 29.7mm x 5.8mm (+/- 2mm) 3-pin JST PH connector type Specifications for 3200 mAh: Typical Capacity 3200mAh Nominal Voltage 3.7 V Max Charge Current 3200mAh Max Loading Current (peak value) 3200mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 64mm x 42mm x 9mm (+/- 2mm) 3-pin JST PH connector type California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "specialty-3-pin-jst-ph-3-7v-3200mah-rechargeable-lithium-polymer-battery-for-rak19026",
+     "id": "gid://shopify/Product/7523278979155",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/JST3-pinPH.png?v=1738095004"
+      }
+     ],
+     "options": [
+      {
+       "name": "Capacity",
+       "values": [
+        {
+         "label": "1000 mAh"
+        },
+        {
+         "label": "3200 mAh"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1397,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "Specialty 3-pin JST PH 3.7V Rechargeable Lithium Polymer Battery for RAK19026 or Board ONE 3-pin",
+     "url": "https://store.rokland.com/products/specialty-3-pin-jst-ph-3-7v-3200mah-rechargeable-lithium-polymer-battery-for-rak19026",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42867440123987:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND- expedited ship options will not show at checkout if battery in cart*** Check polarity match (red and black cable order)Compatible with RAKwireless RAK19026 v2 board, BoardONE boardsThis is a special 3-pin connector battery designed for use with the RAK19026 board, or as a replacement for the RAKwireless WisMesh Pocket all-in-one device.It is also compatible with the RAK Board ONE 3 pin version.Choose 1000 mAh or 3200 mAh version by cart buttonThis will not work with other boards that require a 2-pin connection. Specifications for 1000 mAh: Typical Capacity 1000mAh Nominal Voltage 3.7 V Max Charge Current 1000mAh Max Loading Current (peak value) 1000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 49.7mm x 29.7mm x 5.8mm (+/- 2mm) 3-pin JST PH connector type Specifications for 3200 mAh: Typical Capacity 3200mAh Nominal Voltage 3.7 V Max Charge Current 3200mAh Max Loading Current (peak value) 3200mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 64mm x 42mm x 9mm (+/- 2mm) 3-pin JST PH connector type California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/42867440123987",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3pin-1000mAh.png?v=1752170558"
+        }
+       ],
+       "options": [
+        {
+         "label": "1000 mAh",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "B-003",
+       "title": "1000 mAh"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42867440156755:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND- expedited ship options will not show at checkout if battery in cart*** Check polarity match (red and black cable order)Compatible with RAKwireless RAK19026 v2 board, BoardONE boardsThis is a special 3-pin connector battery designed for use with the RAK19026 board, or as a replacement for the RAKwireless WisMesh Pocket all-in-one device.It is also compatible with the RAK Board ONE 3 pin version.Choose 1000 mAh or 3200 mAh version by cart buttonThis will not work with other boards that require a 2-pin connection. Specifications for 1000 mAh: Typical Capacity 1000mAh Nominal Voltage 3.7 V Max Charge Current 1000mAh Max Loading Current (peak value) 1000mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 49.7mm x 29.7mm x 5.8mm (+/- 2mm) 3-pin JST PH connector type Specifications for 3200 mAh: Typical Capacity 3200mAh Nominal Voltage 3.7 V Max Charge Current 3200mAh Max Loading Current (peak value) 3200mAh Operating Temperature: Charge temperature: 0-10°C (Maximum 0.2C) Cut-off voltage: 4.1V Discharge temperature: 10-45°C (Maximum 0.5C) Cut-off voltage: 4.2V Working temperature range: 10-60°C PCM over/under charge protection Dimensions 64mm x 42mm x 9mm (+/- 2mm) 3-pin JST PH connector type California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/42867440156755",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/JST3-pinPH.png?v=1738095004"
+        }
+       ],
+       "options": [
+        {
+         "label": "3200 mAh",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "B-004",
+       "title": "3200 mAh"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "other-lora-products",
+       "id": "gid://shopify/Collection/260842127443",
+       "title": "Other LoRa Products"
+      }
+     ],
+     "description": {
+      "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter kit Specifications: Manufacturer: PKCELL Typical Capacity 2000mAh Nominal Voltage 3.7 V Max Charge Current 2000mAh Max Loading Current (peak value) 2000mAh PCM over/under charge protection Dimensions 60mm x 38mm x 8mm California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "pkcell-flat-3-7v-2000mah-rechargeable-lithium-polymer-803860-battery-with-jst-type-ph-2-0-plug",
+     "id": "gid://shopify/Product/6993573412947",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/ProductPage700x700_6.png?v=1684961610"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1297,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "PKCELL Flat 3.7V 2000mAh Rechargeable Lithium Polymer 803860 Battery with JST Type PH 2.0 Plug",
+     "url": "https://store.rokland.com/products/pkcell-flat-3-7v-2000mah-rechargeable-lithium-polymer-803860-battery-with-jst-type-ph-2-0-plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40804699963475:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND*** Check polarity match (red and black cable order)Compatible with RAK Meshtastic Starter kit Specifications: Manufacturer: PKCELL Typical Capacity 2000mAh Nominal Voltage 3.7 V Max Charge Current 2000mAh Max Loading Current (peak value) 2000mAh PCM over/under charge protection Dimensions 60mm x 38mm x 8mm California Prop 65WARNING: Cancer and Reproductive Harmwww.P65Warnings.ca.gov Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping Policy and Warranty – Rokland Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/40804699963475",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/ProductPage700x700_6.png?v=1684961610"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "The Battery Connector Cable is suitable to connect your LiPo battery to the battery connector of your JST 1.25 connector on a base board. The polarity is for LILYGO and Heltec products. See picture and always check positive/negative on your board before hooking up to ensure a match. Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion 5 pcs Battery Connector Wires JST 1.25 connector size For LILYGO, Heltec Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "battery-connector-cables-battery-wires-jst-1-25-5pcs-for-lilygo-and-heltec",
+     "id": "gid://shopify/Product/7368450834515",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/batterywire125.png?v=1718040017"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 797,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 797,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-battery-solar-cables"
+     ],
+     "title": "Battery Connector Cables Battery Wires JST 1.25 (5pcs) for LILYGO and Heltec",
+     "url": "https://store.rokland.com/products/battery-connector-cables-battery-wires-jst-1-25-5pcs-for-lilygo-and-heltec",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41913743671379:1",
+       "description": {
+        "html": "The Battery Connector Cable is suitable to connect your LiPo battery to the battery connector of your JST 1.25 connector on a base board. The polarity is for LILYGO and Heltec products. See picture and always check positive/negative on your board before hooking up to ensure a match. Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion 5 pcs Battery Connector Wires JST 1.25 connector size For LILYGO, Heltec Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/41913743671379",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/batterywire125.png?v=1718040017"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "HELBAT125",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "other-lora-products",
+       "id": "gid://shopify/Collection/260842127443",
+       "title": "Other LoRa Products"
+      }
+     ],
+     "description": {
+      "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND***batteries also ship with 30% charge or less per HAZMAT restrictions. Capacity: Rated: 3300 mAhTypical: 3450 mAh(see below for definitions) Specifications: Included- 2 batteries (2 pack as shown in picture) Manufacturer: Sanyo (or Panasonic selection available) Model: NCR18650GA Size: 18650 Style: Flat Top Protected: NO, UNPROTECTED. This cell is unprotected and intended for use in protected battery packs only and NOT individually or as a standalone product. In order to operate safely it must have additional protection in the form of a PCB (protection circuit board) or BMS (battery management system), which is not included. Nominal Capacity: 3450mAh, typical Discharge Current: 10A Maximum Continuous Nominal Voltage: 3.6V Maximum Voltage: 4.2V Approximate Dimensions: 18.5mm x 65.3mm Approximate Weight: 48g Specification Datasheet: Sanyo NCR18650GA Datasheet Rated Capacity: This is the total amount of charge a battery can store as determined under controlled conditions, usually specified by the manufacturer. It's often measured under ideal conditions with a specific discharge rate, temperature, and cutoff voltage. The rated capacity is usually determined using standard testing procedures that might not perfectly replicate everyday usage but provide a consistent basis for comparing different batteries. Typical Capacity: This term is less formal and is often used to describe the battery capacity that a user can expect under normal usage conditions, which may differ from the controlled conditions used to determine the rated capacity. Typical capacity can take into account more realistic factors such as variable discharge rates, temperature variations, and aging of the battery. It's an estimate of what users might experience more regularly, thus providing a more practical perspective on the battery's performance. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping & Warranty Policy Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are non-refundable if used. If you purchased the wrong batteries and have not used them, they can be returned for a refund minus $4 postage fee for the initial shipment (fee is waived if batteries were not purchased with other items or customer purchased expedited shipping). For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "sanyo-ncr18650ga-3450mah-10a-battery-lilygo-ttgo-meshtastic-t-beam",
+     "id": "gid://shopify/Product/6938581205075",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/WPK-NanoSIM.png?v=1675374293"
+      }
+     ],
+     "options": [
+      {
+       "name": "Brand",
+       "values": [
+        {
+         "label": "Panasonic"
+        },
+        {
+         "label": "Sanyo"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1397,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1397,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "Sanyo NCR18650GA 3300mAh/3450mAh 10A Battery LILYGO® TTGO Meshtastic T-Beam 2-pack",
+     "url": "https://store.rokland.com/products/sanyo-ncr18650ga-3450mah-10a-battery-lilygo-ttgo-meshtastic-t-beam",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41218703622227:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND***batteries also ship with 30% charge or less per HAZMAT restrictions. Capacity: Rated: 3300 mAhTypical: 3450 mAh(see below for definitions) Specifications: Included- 2 batteries (2 pack as shown in picture) Manufacturer: Sanyo (or Panasonic selection available) Model: NCR18650GA Size: 18650 Style: Flat Top Protected: NO, UNPROTECTED. This cell is unprotected and intended for use in protected battery packs only and NOT individually or as a standalone product. In order to operate safely it must have additional protection in the form of a PCB (protection circuit board) or BMS (battery management system), which is not included. Nominal Capacity: 3450mAh, typical Discharge Current: 10A Maximum Continuous Nominal Voltage: 3.6V Maximum Voltage: 4.2V Approximate Dimensions: 18.5mm x 65.3mm Approximate Weight: 48g Specification Datasheet: Sanyo NCR18650GA Datasheet Rated Capacity: This is the total amount of charge a battery can store as determined under controlled conditions, usually specified by the manufacturer. It's often measured under ideal conditions with a specific discharge rate, temperature, and cutoff voltage. The rated capacity is usually determined using standard testing procedures that might not perfectly replicate everyday usage but provide a consistent basis for comparing different batteries. Typical Capacity: This term is less formal and is often used to describe the battery capacity that a user can expect under normal usage conditions, which may differ from the controlled conditions used to determine the rated capacity. Typical capacity can take into account more realistic factors such as variable discharge rates, temperature variations, and aging of the battery. It's an estimate of what users might experience more regularly, thus providing a more practical perspective on the battery's performance. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping & Warranty Policy Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are non-refundable if used. If you purchased the wrong batteries and have not used them, they can be returned for a refund minus $4 postage fee for the initial shipment (fee is waived if batteries were not purchased with other items or customer purchased expedited shipping). For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/41218703622227",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/panasonic-18650-battery.png?v=1702322600"
+        }
+       ],
+       "options": [
+        {
+         "label": "Panasonic",
+         "name": "Brand"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Green",
+       "title": "Panasonic"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41218703589459:1",
+       "description": {
+        "html": "***WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND***batteries also ship with 30% charge or less per HAZMAT restrictions. Capacity: Rated: 3300 mAhTypical: 3450 mAh(see below for definitions) Specifications: Included- 2 batteries (2 pack as shown in picture) Manufacturer: Sanyo (or Panasonic selection available) Model: NCR18650GA Size: 18650 Style: Flat Top Protected: NO, UNPROTECTED. This cell is unprotected and intended for use in protected battery packs only and NOT individually or as a standalone product. In order to operate safely it must have additional protection in the form of a PCB (protection circuit board) or BMS (battery management system), which is not included. Nominal Capacity: 3450mAh, typical Discharge Current: 10A Maximum Continuous Nominal Voltage: 3.6V Maximum Voltage: 4.2V Approximate Dimensions: 18.5mm x 65.3mm Approximate Weight: 48g Specification Datasheet: Sanyo NCR18650GA Datasheet Rated Capacity: This is the total amount of charge a battery can store as determined under controlled conditions, usually specified by the manufacturer. It's often measured under ideal conditions with a specific discharge rate, temperature, and cutoff voltage. The rated capacity is usually determined using standard testing procedures that might not perfectly replicate everyday usage but provide a consistent basis for comparing different batteries. Typical Capacity: This term is less formal and is often used to describe the battery capacity that a user can expect under normal usage conditions, which may differ from the controlled conditions used to determine the rated capacity. Typical capacity can take into account more realistic factors such as variable discharge rates, temperature variations, and aging of the battery. It's an estimate of what users might experience more regularly, thus providing a more practical perspective on the battery's performance. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Battery Shipping & Warranty Policy Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Batteries are non-refundable if used. If you purchased the wrong batteries and have not used them, they can be returned for a refund minus $4 postage fee for the initial shipment (fee is waived if batteries were not purchased with other items or customer purchased expedited shipping). For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/41218703589459",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/WPK-NanoSIM.png?v=1675374293"
+        }
+       ],
+       "options": [
+        {
+         "label": "Sanyo",
+         "name": "Brand"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Red",
+       "title": "Sanyo"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wi-fi-accessories",
+       "id": "gid://shopify/Collection/7531928",
+       "title": "Wi-Fi Accessories"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Most Recent Rokland Products"
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/265491742803",
+       "title": "New Arrivals"
+      }
+     ],
+     "description": {
+      "html": "Description Power your WisBlock IoT solution with this powerful and reliable USB Type C power supply. Designed for WisBlock, this power supply can be used with the WisBlock Base Boards RAK19001, RAK19003 and RAK19007. It fits as well with the WisBlock Power Modules RAK19012 and RAK19014. It’s 1.2m long cable with the USB Type C connector enables flexible deployment of your WisBlock IoT solution Features Compatible with RAK19001 Dual IO Slot Base Board RAK19003 Mini Base Board RAK19007 Base Board RAK19012 USB LiPo Solar Power Slot Module RAK19014 USB Battery Power Slot Module Input: 100-240 V AC (50~60 Hz) Output: 5 V DC Output current: 3 A Power: 15W Cable length: 1200 mm Connector type: Type-C USB Overcurrent protection Short circuit protection MTBF: ≥ 50000 h (max load at 25 ℃) Operating temperature: 0℃ to 40℃ Storage temperature: -30℃ to +70℃ Storage humidity: 35~90% RH, Non-condensing External dimensions of the power supply: 70x29x39.8 mm (±1 mm) EMC compliance: EN55032, EN55013, EN55024, EN55020, FCC Part 15 Class B, GB9254, GB17625.1, EN61000-4-4 Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) State sales tax of 7.5% will be added to FLORIDA purchases only. There is no sales tax for any other state. Return Policy: This item can be returned for refund within 30 days of receipt. Orders with free shipping selected will incur a $4.95 restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "rak-wisblock-power-supply5v-3a-15w-usb-c-with-1-2m-long-cable-sku-920120",
+     "id": "gid://shopify/Product/7101098819667",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/WisBlockPowerSupply.png?v=1699990628"
+      }
+     ],
+     "options": [
+      {
+       "name": "Pack Size",
+       "values": [
+        {
+         "label": "1-pack"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "RAK-power-supplies"
+     ],
+     "title": "RAK WisBlock Power Supply5V 3A 15W USB-C with 1.2m Long Cable SKU: 920120",
+     "url": "https://store.rokland.com/products/rak-wisblock-power-supply5v-3a-15w-usb-c-with-1-2m-long-cable-sku-920120",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41352557297747:1",
+       "description": {
+        "html": "Description Power your WisBlock IoT solution with this powerful and reliable USB Type C power supply. Designed for WisBlock, this power supply can be used with the WisBlock Base Boards RAK19001, RAK19003 and RAK19007. It fits as well with the WisBlock Power Modules RAK19012 and RAK19014. It’s 1.2m long cable with the USB Type C connector enables flexible deployment of your WisBlock IoT solution Features Compatible with RAK19001 Dual IO Slot Base Board RAK19003 Mini Base Board RAK19007 Base Board RAK19012 USB LiPo Solar Power Slot Module RAK19014 USB Battery Power Slot Module Input: 100-240 V AC (50~60 Hz) Output: 5 V DC Output current: 3 A Power: 15W Cable length: 1200 mm Connector type: Type-C USB Overcurrent protection Short circuit protection MTBF: ≥ 50000 h (max load at 25 ℃) Operating temperature: 0℃ to 40℃ Storage temperature: -30℃ to +70℃ Storage humidity: 35~90% RH, Non-condensing External dimensions of the power supply: 70x29x39.8 mm (±1 mm) EMC compliance: EN55032, EN55013, EN55024, EN55020, FCC Part 15 Class B, GB9254, GB17625.1, EN61000-4-4 Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) State sales tax of 7.5% will be added to FLORIDA purchases only. There is no sales tax for any other state. Return Policy: This item can be returned for refund within 30 days of receipt. Orders with free shipping selected will incur a $4.95 restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/41352557297747",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/WisBlockPowerSupply.png?v=1699990628"
+        }
+       ],
+       "options": [
+        {
+         "label": "1-pack",
+         "name": "Pack Size"
+        }
+       ],
+       "price": {
+        "amount": 997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "920120-1",
+       "title": "1-pack"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "The Battery Connector Cable is suitable to connect your LiPo battery to the battery connector of your WisBlock Base Boards allowing you to easily turn on and off the device with a slider switch. Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion 1 pcs 2-pin or 3-pin battery cable with power switch JST-PH 2.0 connector size Description 70mm 24AWG*2 or 24AWG*3 PH2.0 Male PH2.0 Female Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-2-pin-jst-ph-2-0-battery-cable-with-power-switch-pid-920452",
+     "id": "gid://shopify/Product/7563529814099",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_db209f2e-a488-4d20-af61-602ef6e73bee.png?v=1741615251"
+      }
+     ],
+     "options": [
+      {
+       "name": "Pin Amount",
+       "values": [
+        {
+         "label": "2-pin [PID:920452]"
+        },
+        {
+         "label": "3-pin [PID:920453]"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 897,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 897,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-battery-solar-cables"
+     ],
+     "title": "RAK Wireless 2-pin 3-pin JST-PH 2.0 Battery Cable with Power Switch PID: 920452 / 920453",
+     "url": "https://store.rokland.com/products/rak-wireless-2-pin-jst-ph-2-0-battery-cable-with-power-switch-pid-920452",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42579900072019:1",
+       "description": {
+        "html": "The Battery Connector Cable is suitable to connect your LiPo battery to the battery connector of your WisBlock Base Boards allowing you to easily turn on and off the device with a slider switch. Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion 1 pcs 2-pin or 3-pin battery cable with power switch JST-PH 2.0 connector size Description 70mm 24AWG*2 or 24AWG*3 PH2.0 Male PH2.0 Female Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42579900072019",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_db209f2e-a488-4d20-af61-602ef6e73bee.png?v=1741615251"
+        }
+       ],
+       "options": [
+        {
+         "label": "2-pin [PID:920452]",
+         "name": "Pin Amount"
+        }
+       ],
+       "price": {
+        "amount": 897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BATTSW-2",
+       "title": "2-pin [PID:920452]"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42579900104787:1",
+       "description": {
+        "html": "The Battery Connector Cable is suitable to connect your LiPo battery to the battery connector of your WisBlock Base Boards allowing you to easily turn on and off the device with a slider switch. Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion 1 pcs 2-pin or 3-pin battery cable with power switch JST-PH 2.0 connector size Description 70mm 24AWG*2 or 24AWG*3 PH2.0 Male PH2.0 Female Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42579900104787",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/Untitled_design_4.png?v=1742503020"
+        }
+       ],
+       "options": [
+        {
+         "label": "3-pin [PID:920453]",
+         "name": "Pin Amount"
+        }
+       ],
+       "price": {
+        "amount": 897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "BATTSW-3",
+       "title": "3-pin [PID:920453]"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "delivery-app",
+       "id": "gid://shopify/Collection/137206923347",
+       "title": "Delivery App"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rak-nebra-indoor-bobcat-syncrobit",
+       "id": "gid://shopify/Collection/260841209939",
+       "title": "RAK Nebra Indoor Bobcat Syncrobit"
+      }
+     ],
+     "description": {
+      "html": "Due to HAZMAT shipping requirements, lead time on Battery Plus units is about 3-5 business days before ship out.Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship FREE from USA (to other US locations) so no additional shipping or tariffs apply. This solution includes everything to power the WisGate Edge Pro or WisGate Edge Prime (with Battery Plus support) gateway with Solar energy anywhere where reliable LoRaWAN coverage is needed.Choose between 2 variants before adding to cart Variant 1: Battery Plus package (battery only)Variant 2: Battery Plus with Solar Panel Battery Plus, combined with the Solar Panel Kit, is the latest RAK battery system incorporating a solar panel, mounting kit, solar charging system, and status monitoring. It is specially developed for the WisGate Edge Pro and WisGate Edge Prime(with Battery Plus support) gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only will your gateway be powered 24/7, but you will also get all the battery information and status in the WisGateOS Web UI locally and in the WisDM platform remotely. With this 50ah battery, your gateway can run for more than 5 days without sun. The 80W panel is specially selected to meet the needs of the Battery Plus system and with the included mounting kit the solution can be deployed quickly and easily. Enhance your commercial and large-scale deployments with the RAK Battery Plus, backed by a Product/Public Liability Certificate of Insurance for unparalleled reliability and risk mitigation in even the most remote locations. Battery Plus Features Long Life Span - The Lithium Iron Phosphate battery can be expected to remain serviceable for more than 10 years, considering that it is charged and discharged once a day at room temperature (25°C). Integrated Heating Function - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0°C. Lightweight Design - The weight of RAK9155 is no more than 8kg making installation by a single person easier. High Waterproof Grade - With an IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments. Solar Panel Kit Features (included with the RAK Battery Plus & Solar Panel kit variant) Peak power: 80 W Open circuit voltage (Voc): 24.4V power voltage (Vmp): 20.5V power current (Imp): 3.90A Dimensions: 795x580x30mm Operating temperature: -40°C to +85°C The pole diameter supported by the mounting kit is 50-100 mm Note: Change Notification for Solar Panel Change Notification for Battery Plus Bundle Inclusion Battery Plus power solution with 50Ah battery Solar Panel with mounting kit (if selected) All cables for the connection between the Solar Panel, Battery Plus, and gateway are included Package Inclusion 1pc Solar Battery 3pcs Power Cable 1pc Mounting Kit 3pcs Cable trap-Screw Mount 1pc Carry equipment Battery Plus Data Sheet Battery Plus QuickStart Guide Solar Panel Details80W-20.5V Monocrystalline Silicon Solar Panels, including:⚫ Enhanced solar cell efficiency: over 23.5%⚫ Sleek dimensions and modern materials⚫ 25-year lifespan with robust warranty terms⚫ Comprehensive certifications: CE, IEC61215, ISO9001:2015, RoHSSolar Panel Installation Instructions Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: All sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rak9155-rak-battery-plus-solar-battery-kit-for-lorawan-gateways",
+     "id": "gid://shopify/Product/7466045964371",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK9155.png?v=1730304517"
+      }
+     ],
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "RAK9155 Battery Only"
+        },
+        {
+         "label": "RAK9155 Battery + 80W Solar Panel"
+        },
+        {
+         "label": "80W Solar Panel & Mount Only"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 93700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases",
+      "rak-solar"
+     ],
+     "title": "RAK9155 RAK Battery Plus Solar Battery Kit for LoRaWAN Gateways",
+     "url": "https://store.rokland.com/products/rak9155-rak-battery-plus-solar-battery-kit-for-lorawan-gateways",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42269688528979:1",
+       "description": {
+        "html": "Due to HAZMAT shipping requirements, lead time on Battery Plus units is about 3-5 business days before ship out.Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship FREE from USA (to other US locations) so no additional shipping or tariffs apply. This solution includes everything to power the WisGate Edge Pro or WisGate Edge Prime (with Battery Plus support) gateway with Solar energy anywhere where reliable LoRaWAN coverage is needed.Choose between 2 variants before adding to cart Variant 1: Battery Plus package (battery only)Variant 2: Battery Plus with Solar Panel Battery Plus, combined with the Solar Panel Kit, is the latest RAK battery system incorporating a solar panel, mounting kit, solar charging system, and status monitoring. It is specially developed for the WisGate Edge Pro and WisGate Edge Prime(with Battery Plus support) gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only will your gateway be powered 24/7, but you will also get all the battery information and status in the WisGateOS Web UI locally and in the WisDM platform remotely. With this 50ah battery, your gateway can run for more than 5 days without sun. The 80W panel is specially selected to meet the needs of the Battery Plus system and with the included mounting kit the solution can be deployed quickly and easily. Enhance your commercial and large-scale deployments with the RAK Battery Plus, backed by a Product/Public Liability Certificate of Insurance for unparalleled reliability and risk mitigation in even the most remote locations. Battery Plus Features Long Life Span - The Lithium Iron Phosphate battery can be expected to remain serviceable for more than 10 years, considering that it is charged and discharged once a day at room temperature (25°C). Integrated Heating Function - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0°C. Lightweight Design - The weight of RAK9155 is no more than 8kg making installation by a single person easier. High Waterproof Grade - With an IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments. Solar Panel Kit Features (included with the RAK Battery Plus & Solar Panel kit variant) Peak power: 80 W Open circuit voltage (Voc): 24.4V power voltage (Vmp): 20.5V power current (Imp): 3.90A Dimensions: 795x580x30mm Operating temperature: -40°C to +85°C The pole diameter supported by the mounting kit is 50-100 mm Note: Change Notification for Solar Panel Change Notification for Battery Plus Bundle Inclusion Battery Plus power solution with 50Ah battery Solar Panel with mounting kit (if selected) All cables for the connection between the Solar Panel, Battery Plus, and gateway are included Package Inclusion 1pc Solar Battery 3pcs Power Cable 1pc Mounting Kit 3pcs Cable trap-Screw Mount 1pc Carry equipment Battery Plus Data Sheet Battery Plus QuickStart Guide Solar Panel Details80W-20.5V Monocrystalline Silicon Solar Panels, including:⚫ Enhanced solar cell efficiency: over 23.5%⚫ Sleek dimensions and modern materials⚫ 25-year lifespan with robust warranty terms⚫ Comprehensive certifications: CE, IEC61215, ISO9001:2015, RoHSSolar Panel Installation Instructions Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: All sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42269688528979",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK9155_2_31e40335-0625-49e4-b420-ecff2f7a1fe6.png?v=1730305414"
+        }
+       ],
+       "options": [
+        {
+         "label": "RAK9155 Battery Only",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 83700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "920171",
+       "title": "RAK9155 Battery Only"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42269688561747:1",
+       "description": {
+        "html": "Due to HAZMAT shipping requirements, lead time on Battery Plus units is about 3-5 business days before ship out.Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship FREE from USA (to other US locations) so no additional shipping or tariffs apply. This solution includes everything to power the WisGate Edge Pro or WisGate Edge Prime (with Battery Plus support) gateway with Solar energy anywhere where reliable LoRaWAN coverage is needed.Choose between 2 variants before adding to cart Variant 1: Battery Plus package (battery only)Variant 2: Battery Plus with Solar Panel Battery Plus, combined with the Solar Panel Kit, is the latest RAK battery system incorporating a solar panel, mounting kit, solar charging system, and status monitoring. It is specially developed for the WisGate Edge Pro and WisGate Edge Prime(with Battery Plus support) gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only will your gateway be powered 24/7, but you will also get all the battery information and status in the WisGateOS Web UI locally and in the WisDM platform remotely. With this 50ah battery, your gateway can run for more than 5 days without sun. The 80W panel is specially selected to meet the needs of the Battery Plus system and with the included mounting kit the solution can be deployed quickly and easily. Enhance your commercial and large-scale deployments with the RAK Battery Plus, backed by a Product/Public Liability Certificate of Insurance for unparalleled reliability and risk mitigation in even the most remote locations. Battery Plus Features Long Life Span - The Lithium Iron Phosphate battery can be expected to remain serviceable for more than 10 years, considering that it is charged and discharged once a day at room temperature (25°C). Integrated Heating Function - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0°C. Lightweight Design - The weight of RAK9155 is no more than 8kg making installation by a single person easier. High Waterproof Grade - With an IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments. Solar Panel Kit Features (included with the RAK Battery Plus & Solar Panel kit variant) Peak power: 80 W Open circuit voltage (Voc): 24.4V power voltage (Vmp): 20.5V power current (Imp): 3.90A Dimensions: 795x580x30mm Operating temperature: -40°C to +85°C The pole diameter supported by the mounting kit is 50-100 mm Note: Change Notification for Solar Panel Change Notification for Battery Plus Bundle Inclusion Battery Plus power solution with 50Ah battery Solar Panel with mounting kit (if selected) All cables for the connection between the Solar Panel, Battery Plus, and gateway are included Package Inclusion 1pc Solar Battery 3pcs Power Cable 1pc Mounting Kit 3pcs Cable trap-Screw Mount 1pc Carry equipment Battery Plus Data Sheet Battery Plus QuickStart Guide Solar Panel Details80W-20.5V Monocrystalline Silicon Solar Panels, including:⚫ Enhanced solar cell efficiency: over 23.5%⚫ Sleek dimensions and modern materials⚫ 25-year lifespan with robust warranty terms⚫ Comprehensive certifications: CE, IEC61215, ISO9001:2015, RoHSSolar Panel Installation Instructions Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: All sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42269688561747",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK9155.png?v=1730304517"
+        }
+       ],
+       "options": [
+        {
+         "label": "RAK9155 Battery + 80W Solar Panel",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 93700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910317",
+       "title": "RAK9155 Battery + 80W Solar Panel"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/67568766058579:1",
+       "description": {
+        "html": "Due to HAZMAT shipping requirements, lead time on Battery Plus units is about 3-5 business days before ship out.Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship FREE from USA (to other US locations) so no additional shipping or tariffs apply. This solution includes everything to power the WisGate Edge Pro or WisGate Edge Prime (with Battery Plus support) gateway with Solar energy anywhere where reliable LoRaWAN coverage is needed.Choose between 2 variants before adding to cart Variant 1: Battery Plus package (battery only)Variant 2: Battery Plus with Solar Panel Battery Plus, combined with the Solar Panel Kit, is the latest RAK battery system incorporating a solar panel, mounting kit, solar charging system, and status monitoring. It is specially developed for the WisGate Edge Pro and WisGate Edge Prime(with Battery Plus support) gateways. It will allow reliable outdoor deployment of the gateway in remote off-grid scenarios where the power is unreliable or inaccessible. Not only will your gateway be powered 24/7, but you will also get all the battery information and status in the WisGateOS Web UI locally and in the WisDM platform remotely. With this 50ah battery, your gateway can run for more than 5 days without sun. The 80W panel is specially selected to meet the needs of the Battery Plus system and with the included mounting kit the solution can be deployed quickly and easily. Enhance your commercial and large-scale deployments with the RAK Battery Plus, backed by a Product/Public Liability Certificate of Insurance for unparalleled reliability and risk mitigation in even the most remote locations. Battery Plus Features Long Life Span - The Lithium Iron Phosphate battery can be expected to remain serviceable for more than 10 years, considering that it is charged and discharged once a day at room temperature (25°C). Integrated Heating Function - The battery integrates a solar charger and heater, it can be connected to PV panels directly and charged under 0°C. Lightweight Design - The weight of RAK9155 is no more than 8kg making installation by a single person easier. High Waterproof Grade - With an IP65 rating of the enclosure, RAK9155 is suitable for both indoor and outdoor environments. Solar Panel Kit Features (included with the RAK Battery Plus & Solar Panel kit variant) Peak power: 80 W Open circuit voltage (Voc): 24.4V power voltage (Vmp): 20.5V power current (Imp): 3.90A Dimensions: 795x580x30mm Operating temperature: -40°C to +85°C The pole diameter supported by the mounting kit is 50-100 mm Note: Change Notification for Solar Panel Change Notification for Battery Plus Bundle Inclusion Battery Plus power solution with 50Ah battery Solar Panel with mounting kit (if selected) All cables for the connection between the Solar Panel, Battery Plus, and gateway are included Package Inclusion 1pc Solar Battery 3pcs Power Cable 1pc Mounting Kit 3pcs Cable trap-Screw Mount 1pc Carry equipment Battery Plus Data Sheet Battery Plus QuickStart Guide Solar Panel Details80W-20.5V Monocrystalline Silicon Solar Panels, including:⚫ Enhanced solar cell efficiency: over 23.5%⚫ Sleek dimensions and modern materials⚫ 25-year lifespan with robust warranty terms⚫ Comprehensive certifications: CE, IEC61215, ISO9001:2015, RoHSSolar Panel Installation Instructions Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: All sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/67568766058579",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_94d0d088-75d1-4a04-842a-175a3c27b538.png?v=1790773564"
+        }
+       ],
+       "options": [
+        {
+         "label": "80W Solar Panel & Mount Only",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 17900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910311",
+       "title": "80W Solar Panel & Mount Only"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Radio and battery not included. This listing is for the 18650 battery holder ONLY.Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion Battery holder suitable for cells of the design: 1x 18650 with JST PH 2.0 or 1.25 connector - therefore suitable for many microcontroller boards / charging boards. Dimensions: approx.. 76 x 21 x 18 mm Connection: cable, approx. 13cm per side JST PH 2.0 compatible with the following and more: RAK19001 RAK19003 RAK19007 RAK19011 LILYGO T3 S3 E-PAPER and more just ask... JST PH 1.25 compatible with the following and more: LILYGO T-Deck LILYGO T-Echo LILYGO T-LoRa V2.1-1.6 Majority of HELTECs and more just ask... Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "battery-holder-for-18650-with-jst-ph-connector",
+     "id": "gid://shopify/Product/7513496125523",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_090218bf-9599-48e1-a9e5-fdaa4028281d.png?v=1736878943"
+      }
+     ],
+     "options": [
+      {
+       "name": "Connector Type",
+       "values": [
+        {
+         "label": "JST PH 1.25"
+        },
+        {
+         "label": "JST PH 2.0"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 897,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 897,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-battery-solar-cables"
+     ],
+     "title": "Battery Holder for 18650 with JST PH Connector (Flat Spring Contact)",
+     "url": "https://store.rokland.com/products/battery-holder-for-18650-with-jst-ph-connector",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42427390623827:1",
+       "description": {
+        "html": "Radio and battery not included. This listing is for the 18650 battery holder ONLY.Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion Battery holder suitable for cells of the design: 1x 18650 with JST PH 2.0 or 1.25 connector - therefore suitable for many microcontroller boards / charging boards. Dimensions: approx.. 76 x 21 x 18 mm Connection: cable, approx. 13cm per side JST PH 2.0 compatible with the following and more: RAK19001 RAK19003 RAK19007 RAK19011 LILYGO T3 S3 E-PAPER and more just ask... JST PH 1.25 compatible with the following and more: LILYGO T-Deck LILYGO T-Echo LILYGO T-LoRa V2.1-1.6 Majority of HELTECs and more just ask... Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42427390623827",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3_609ab11c-781d-458e-b198-a7f36786e9a8.png?v=1736878943"
+        }
+       ],
+       "options": [
+        {
+         "label": "JST PH 1.25",
+         "name": "Connector Type"
+        }
+       ],
+       "price": {
+        "amount": 897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "",
+       "title": "JST PH 1.25"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42427390591059:1",
+       "description": {
+        "html": "Radio and battery not included. This listing is for the 18650 battery holder ONLY.Please make sure to connect the battery with the correct polarity to the cable. Red = positive voltage, Black = ground. Package Inclusion Battery holder suitable for cells of the design: 1x 18650 with JST PH 2.0 or 1.25 connector - therefore suitable for many microcontroller boards / charging boards. Dimensions: approx.. 76 x 21 x 18 mm Connection: cable, approx. 13cm per side JST PH 2.0 compatible with the following and more: RAK19001 RAK19003 RAK19007 RAK19011 LILYGO T3 S3 E-PAPER and more just ask... JST PH 1.25 compatible with the following and more: LILYGO T-Deck LILYGO T-Echo LILYGO T-LoRa V2.1-1.6 Majority of HELTECs and more just ask... Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42427390591059",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_090218bf-9599-48e1-a9e5-fdaa4028281d.png?v=1736878943"
+        }
+       ],
+       "options": [
+        {
+         "label": "JST PH 2.0",
+         "name": "Connector Type"
+        }
+       ],
+       "price": {
+        "amount": 897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "",
+       "title": "JST PH 2.0"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

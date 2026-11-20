@@ -1,0 +1,146 @@
+/*
+ * Design tokens (PLAN §11.3). Light only: no theme toggle.
+ * Shared file: only C edits it (OWNERSHIP.md). Nobody writes one-off colours; use these.
+ * Values are the Tailwind palette steps named in the comments, written out so they work
+ * in plain CSS, in three.js materials (read with getComputedStyle) and offline.
+ */
+:root {
+  /* Type */
+  --b2c-font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --b2c-font-mono: "JetBrains Mono Variable", ui-monospace, "Cascadia Mono", monospace;
+  /* Display serif for the start page's headlines (Geist Serif, OFL, self-hosted in public/fonts). One weight. */
+  --b2c-font-serif: "Geist Serif", "Iowan Old Style", Charter, Georgia, "Times New Roman", serif;
+
+  /* Neutrals (zinc) */
+  --b2c-page: #fafafa; /* zinc-50 */
+  --b2c-surface: #ffffff;
+  --b2c-border: #e4e4e7; /* zinc-200 */
+  --b2c-muted: #f4f4f5; /* zinc-100 */
+  --b2c-text-muted: #71717a; /* zinc-500 */
+  --b2c-text: #18181b; /* zinc-900 */
+  --b2c-stage: #09090b; /* zinc-950: the dark 3D stage inside the light page */
+  --b2c-stage-surface: #18181b; /* zinc-900: chips and cards on the stage */
+  --b2c-stage-border: #3f3f46; /* zinc-700 */
+  --b2c-stage-text: #f4f4f5; /* zinc-100 */
+  --b2c-stage-muted: #a1a1aa; /* zinc-400 */
+  --b2c-stage-fail: #fca5a5; /* red-300: refusal text on the dark stage */
+  --b2c-border-strong: #d4d4d8; /* zinc-300: inputs */
+  --b2c-text-secondary: #52525b; /* zinc-600: long-form secondary text */
+
+  /* Brand / selection (blue) */
+  --b2c-brand: #2563eb; /* blue-600: links, focus rings, selected part */
+  --b2c-brand-hover: #1d4ed8; /* blue-700 */
+  --b2c-brand-tint: #eff6ff; /* blue-50 */
+
+  /* Blueprint (the start page and its sidebar): royal blue actions, drawing lines, grid paper. Not a status colour. */
+  --b2c-blueprint: #1d4ed8; /* blue-700: New build, the start page's send button */
+  --b2c-blueprint-hover: #1e40af; /* blue-800 */
+  --b2c-blueprint-line: #2149b8; /* drawing lines and dimensions (the rendered drawings use the same blue) */
+  --b2c-blueprint-paper: #f6f9ff; /* sample-build cards */
+  --b2c-blueprint-edge: #c7d5f3; /* card borders and rules on the paper */
+  --b2c-blueprint-page: #fbfcff; /* the start page behind the grid */
+  --b2c-blueprint-grid: rgb(37 99 235 / 0.055);
+  --b2c-blueprint-grid-major: rgb(37 99 235 / 0.085);
+
+  /* Primary button: ink. One primary button per screen. */
+  --b2c-ink: #18181b; /* zinc-900 */
+  --b2c-ink-foreground: #ffffff;
+
+  /* Status. Never colour alone: every badge has an icon and a word. */
+  --b2c-pass: #059669; /* emerald-600 */
+  --b2c-pass-tint: #ecfdf5; /* emerald-50 */
+  --b2c-warn: #d97706; /* amber-600 */
+  --b2c-warn-tint: #fffbeb; /* amber-50 */
+  --b2c-fail: #dc2626; /* red-600: fail and refusal */
+  --b2c-fail-tint: #fef2f2; /* red-50 */
+  --b2c-info: #52525b; /* zinc-600 */
+  --b2c-info-tint: #f4f4f5; /* zinc-100 */
+
+  /* Test / simulated: ONLY for test-mode and mock things, always with a dashed border. */
+  --b2c-test: #7c3aed; /* violet-600 */
+  --b2c-test-tint: #f5f3ff; /* violet-50 */
+
+  /* Action level (always icon + words; wording fixed in PLAN §3.16) */
+  --b2c-level-agent-cart: #18181b; /* ink fill, white text, ShoppingCart */
+  --b2c-level-prefilled-cart: #2563eb; /* blue-600 outline, ListPlus */
+  --b2c-level-product-link: #a1a1aa; /* zinc-400 outline, ExternalLink */
+
+  /* Store palette (colour mode "Store"), assigned in cart order. Never red, amber, emerald or violet. */
+  --b2c-store-1: #0ea5e9; /* sky-500 */
+  --b2c-store-2: #f97316; /* orange-500 */
+  --b2c-store-3: #14b8a6; /* teal-500 */
+  --b2c-store-4: #ec4899; /* pink-500 */
+  --b2c-store-5: #84cc16; /* lime-500 */
+  --b2c-store-6: #6366f1; /* indigo-500 */
+  --b2c-store-7: #eab308; /* yellow-500 */
+  --b2c-store-8: #78716c; /* stone-500 */
+
+  /* 3D materials (PLAN §11.6) */
+  --b2c-mat-printed: #f5f1e8; /* matte warm white */
+  --b2c-mat-servo: #3f3f46; /* graphite */
+  --b2c-mat-unknown: #71717a; /* grey edges before a line resolves */
+  --b2c-mat-carbon: #2a2a30;
+  --b2c-mat-metal: #8b8f98;
+  --b2c-mat-pcb: #15803d; /* green-700 */
+  --b2c-mat-pcb-blue: #1d4ed8; /* blue-700: driver boards */
+  --b2c-mat-plastic: #3a3a42;
+  --b2c-mat-accent: #cbd5e1; /* slate-300: props, jumpers (never a status colour) */
+  --b2c-mat-label: #eab308; /* yellow-500: battery band, XT plug */
+  --b2c-mat-chip: #18181b;
+  --b2c-mat-battery: #3f3f46;
+  --b2c-mat-rubber: #18181b;
+  --b2c-mat-clear: #cbd5e1;
+  --b2c-mat-ghost: #a1a1aa; /* owned / left out */
+  /* Detailed models (models/detail): real materials. Yellow stays on the XT60 and one battery band. */
+  --b2c-mat-carbon-deep: #17181c; /* carbon plate under its resin skin */
+  --b2c-mat-steel: #cdd1d6;
+  --b2c-mat-gunmetal: #50545c; /* laminations, magnets, inductors */
+  --b2c-mat-anodized: #1b1c20; /* black anodized aluminium */
+  --b2c-mat-copper: #c96f35; /* enamelled winding wire */
+  --b2c-mat-gold: #d6a84a; /* ENIG pads, connector pins */
+  --b2c-mat-pcb-black: #121617; /* black solder mask */
+  --b2c-mat-pcb-dark: #14432b; /* deep green solder mask */
+  --b2c-mat-silk: #d8dcd6; /* silkscreen */
+  --b2c-mat-nylon: #e6e0d2; /* JST housings */
+  --b2c-mat-ceramic: #d8ccb2; /* capacitors, a GPS patch antenna */
+  --b2c-mat-wire-red: #b4281e;
+  --b2c-mat-wire-black: #1c1c1f;
+  --b2c-mat-lens: #06070a;
+  --b2c-mat-wrap: #23252b; /* battery shrink wrap */
+
+  /* Radius: 6 inputs and chips, 10 cards and dialogs, 16 hero panels, full pills */
+  --b2c-radius-sm: 6px;
+  --b2c-radius-md: 10px;
+  --b2c-radius-lg: 16px;
+
+  /* Elevation. Level 0 is border only (default for cards). */
+  --b2c-shadow-1: 0 1px 2px rgb(0 0 0 / 0.06);
+  --b2c-shadow-2: 0 8px 24px rgb(0 0 0 / 0.1); /* popovers, part panel */
+  --b2c-shadow-3: 0 24px 48px rgb(0 0 0 / 0.16); /* dialogs */
+
+  /* Motion: 150 hover and press, 200 enter, 300 layout and camera. Ease-out. */
+  --b2c-dur-fast: 150ms;
+  --b2c-dur-enter: 200ms;
+  --b2c-dur-layout: 300ms;
+  --b2c-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --b2c-gutter: 24px; /* 32px at >= 1536 */
+  --b2c-mandate-bar-h: 56px;
+  --b2c-footer-h: 28px;
+  --b2c-panel-w: 520px;
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --b2c-gutter: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --b2c-dur-fast: 0ms;
+    --b2c-dur-enter: 0ms;
+    --b2c-dur-layout: 0ms;
+  }
+}

@@ -1,0 +1,1520 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "STS3215 servo 7.4V"
+  }
+ },
+ "key": "29d1424fb7cc15e151b1fd849d90077bf07553a75f1652d19052cbc54c4e6095",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:16:13-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNORGcyT1RJNU1UQTVNVFV6TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board Engineered with robust metal gearbox and plastic case Incorporates 12-bit high precision magnetic sensor Offers 360-degree control with continuous mode Ideal for robotics and small torque applications Features advanced TTL control board technology The Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board is engineered with a plastic case and core motor, complemented by a robust metal gearbox. It incorporates a Feetech self-developed TTL control board and a 12-bit high precision magnetic coding sensor. This smart servo offers a 360-degree controllable angle and supports multi-turn continuous operation mode. It is ideal for use in industrial equipment, robotics, and applications requiring small torque drive. Note: Ensure proper handling to avoid overload situations. View more What's Included 1x Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board Dimensions 45.2 x 24.7 x 35 mm Specifications Model: STS3215-C044 Storage temperature range: -30℃ to 80℃ Operating temperature range: -20℃ to 70℃ Weight: 55±1g Gear type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Horn type: Plastic, POM Case: Aluminium alloy Connector wire: 150mm ±5 mm Motor: Coreless motor Operating voltage range: 6-7.4V No-load speed: 0.238 sec/60°@6V Running current (at no load): 150 mA@6V Peak stall torque: 19.5 kg.cm@6V Rated torque: 6.5 kg.cm@6V Stall current: 2000 mA@6V Command signal: Digital Packet Protocol type: Half-Duplex Asynchronous Serial ID range: 0-253 Communication speed: 38400 bps ~ 1 Mbps Running degree: 360° (when 0~4096) Feedback: Load, Position, Speed, Input Voltage, Current"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3215-c044-74v-19kg-smart-servo-w-metal-gearbox-ttl-control-board",
+     "id": "gid://shopify/Product/15393175667052",
+     "list_price_range": {
+      "max": {
+       "amount": 2283,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2283,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527796.webp?v=1790678404"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2283,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2283,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Smart Servo Motors"
+     ],
+     "title": "Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board",
+     "url": "https://www.robotshop.com/products/feetech-sts3215-c044-74v-19kg-smart-servo-w-metal-gearbox-ttl-control-board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/67580445557100:1",
+       "description": {
+        "html": "Description Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board Engineered with robust metal gearbox and plastic case Incorporates 12-bit high precision magnetic sensor Offers 360-degree control with continuous mode Ideal for robotics and small torque applications Features advanced TTL control board technology The Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board is engineered with a plastic case and core motor, complemented by a robust metal gearbox. It incorporates a Feetech self-developed TTL control board and a 12-bit high precision magnetic coding sensor. This smart servo offers a 360-degree controllable angle and supports multi-turn continuous operation mode. It is ideal for use in industrial equipment, robotics, and applications requiring small torque drive. Note: Ensure proper handling to avoid overload situations. View more What's Included 1x Feetech Sts3215-C044 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board Dimensions 45.2 x 24.7 x 35 mm Specifications Model: STS3215-C044 Storage temperature range: -30℃ to 80℃ Operating temperature range: -20℃ to 70℃ Weight: 55±1g Gear type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Horn type: Plastic, POM Case: Aluminium alloy Connector wire: 150mm ±5 mm Motor: Coreless motor Operating voltage range: 6-7.4V No-load speed: 0.238 sec/60°@6V Running current (at no load): 150 mA@6V Peak stall torque: 19.5 kg.cm@6V Rated torque: 6.5 kg.cm@6V Stall current: 2000 mA@6V Command signal: Digital Packet Protocol type: Half-Duplex Asynchronous Serial ID range: 0-253 Communication speed: 38400 bps ~ 1 Mbps Running degree: 360° (when 0~4096) Feedback: Load, Position, Speed, Input Voltage, Current"
+       },
+       "id": "gid://shopify/ProductVariant/67580445557100",
+       "list_price": {
+        "amount": 2283,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527796.webp?v=1790678404"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2283,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-161",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) 12-bit high-precision magnetic encoder for accurate positioning Up to 19.5kg.cm peak stall torque at 6V Full 360° controllable angle with multi-turn continuous rotation mode TTL serial bus control with ID range of 0-253 for daisy-chaining Feedback on position, speed, load, input voltage and current The Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) is a smart serial bus servo built around a metal gearbox, a Feetech-designed TTL control board and a 12-bit high-precision magnetic encoder. It delivers up to 19.5kg.cm of stall torque and can be positioned at any angle across a full 360°, or run in multi-turn continuous rotation and stepper modes. The servo supports one-key middle point setting, as well as acceleration-controlled slow start and slow stop for smoother motion. Real-time feedback of position, speed, voltage, current, temperature and load allows for overload and over-current protection. With its dual-axis design and half-duplex serial communication up to 1 Mbps, it is well suited for robotic arms, industrial equipment and other low-torque drive applications. View more What's Included 1x Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) Dimensions 45.2 x 24.7 x 35 mm Specifications Model: ST-3215-C001 Operating Voltage Range: 6V to 7.4V Peak Stall Torque: 19.5kg.cm at 6V Rated Torque: 6.5kg.cm at 6V No-Load Speed: 0.238 sec/60° at 6V Running Current (at no load): 150mA at 6V Stall Current: 2000mA at 6V Encoder: 12-bit magnetic encoder Running Degree: 360° (0~4096) Limit Angle: No limit Command Signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication ID Range: 0-253 Communication Speed: 38400 bps to 1 Mbps Feedback: Load, Position, Speed, Input Voltage, Current Gear Type: Copper Bearings: Ball bearings Horn Gear Spline: 25T Horn Type: Plastic, POM Case Material: Aluminum alloy Motor Type: Coreless motor Connector Wire Length: 150mm ± 5mm Weight: 55 ± 1g Operating Temperature Range: -20°C to 70°C Storage Temperature Range: -30°C to 80°C"
+     },
+     "gift_card": false,
+     "handle": "feetech-74v-19kg-magnetic-encoding-servo-sts3215-c001",
+     "id": "gid://shopify/Product/15393175863660",
+     "list_price_range": {
+      "max": {
+       "amount": 2269,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2269,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527805.webp?v=1790678445"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2269,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2269,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Smart Servo Motors"
+     ],
+     "title": "Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001)",
+     "url": "https://www.robotshop.com/products/feetech-74v-19kg-magnetic-encoding-servo-sts3215-c001",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/67580448768364:1",
+       "description": {
+        "html": "Description Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) 12-bit high-precision magnetic encoder for accurate positioning Up to 19.5kg.cm peak stall torque at 6V Full 360° controllable angle with multi-turn continuous rotation mode TTL serial bus control with ID range of 0-253 for daisy-chaining Feedback on position, speed, load, input voltage and current The Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) is a smart serial bus servo built around a metal gearbox, a Feetech-designed TTL control board and a 12-bit high-precision magnetic encoder. It delivers up to 19.5kg.cm of stall torque and can be positioned at any angle across a full 360°, or run in multi-turn continuous rotation and stepper modes. The servo supports one-key middle point setting, as well as acceleration-controlled slow start and slow stop for smoother motion. Real-time feedback of position, speed, voltage, current, temperature and load allows for overload and over-current protection. With its dual-axis design and half-duplex serial communication up to 1 Mbps, it is well suited for robotic arms, industrial equipment and other low-torque drive applications. View more What's Included 1x Feetech 7.4V 19kg Magnetic Encoding Servo (STS3215-C001) Dimensions 45.2 x 24.7 x 35 mm Specifications Model: ST-3215-C001 Operating Voltage Range: 6V to 7.4V Peak Stall Torque: 19.5kg.cm at 6V Rated Torque: 6.5kg.cm at 6V No-Load Speed: 0.238 sec/60° at 6V Running Current (at no load): 150mA at 6V Stall Current: 2000mA at 6V Encoder: 12-bit magnetic encoder Running Degree: 360° (0~4096) Limit Angle: No limit Command Signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication ID Range: 0-253 Communication Speed: 38400 bps to 1 Mbps Feedback: Load, Position, Speed, Input Voltage, Current Gear Type: Copper Bearings: Ball bearings Horn Gear Spline: 25T Horn Type: Plastic, POM Case Material: Aluminum alloy Motor Type: Coreless motor Connector Wire Length: 150mm ± 5mm Weight: 55 ± 1g Operating Temperature Range: -20°C to 70°C Storage Temperature Range: -30°C to 80°C"
+       },
+       "id": "gid://shopify/ProductVariant/67580448768364",
+       "list_price": {
+        "amount": 2269,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527805.webp?v=1790678445"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2269,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-163",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) Incorporates metal gearbox for durability Features 12-bit precision sensor Offers limitless rotation angle Supports 6-7.4V operating voltage Communicates via digital packet protocol The Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) features a robust design with a plastic case and a core motor. It incorporates a metal gearbox and a TTL control board developed by Feetech, ensuring reliable performance. This smart servo is equipped with a 12-bit high precision magnetic coding sensor, making it ideal for use in industrial equipment, robotics, and applications requiring small torque drive. View more What's Included 1x Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) Dimensions 45.2 x 24.7 x 35 mm Specifications Storage temperature range: -30℃ to 80℃ Operating temperature range: -20℃ to 70℃ Gear type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Horn type: Plastic, POM Case: Aluminium alloy Connector wire: 150mm ±5 mm Motor: Coreless motor Operating voltage range: 6-7.4V No-load speed: 0.238 sec/60°@6V Running current (at no load): 150 mA@6V Peak stall torque: 19.5 kg.cm@6V Rated torque: 6.5 kg.cm@6V Stall current: 2000 mA@6V Command signal: Digital packet Protocol type: Half duplex asynchronous serial ID range: 0-253 Communication speed: 38400 bps ~ 1 Mbps Running degree: 360° (when 0~4096) Feedback: Load, position, speed, input voltage, current"
+     },
+     "gift_card": false,
+     "handle": "feetech-74v-19kg-smart-servo-w-metal-gearbox-ttl-control-board-sts3215-c046",
+     "id": "gid://shopify/Product/15393175929196",
+     "list_price_range": {
+      "max": {
+       "amount": 2276,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2276,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527801.webp?v=1790678454"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2276,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2276,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Smart Servo Motors"
+     ],
+     "title": "Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046)",
+     "url": "https://www.robotshop.com/products/feetech-74v-19kg-smart-servo-w-metal-gearbox-ttl-control-board-sts3215-c046",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/67580448833900:1",
+       "description": {
+        "html": "Description Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) Incorporates metal gearbox for durability Features 12-bit precision sensor Offers limitless rotation angle Supports 6-7.4V operating voltage Communicates via digital packet protocol The Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) features a robust design with a plastic case and a core motor. It incorporates a metal gearbox and a TTL control board developed by Feetech, ensuring reliable performance. This smart servo is equipped with a 12-bit high precision magnetic coding sensor, making it ideal for use in industrial equipment, robotics, and applications requiring small torque drive. View more What's Included 1x Feetech 7.4V 19kg Smart Servo w/ Metal Gearbox & TTL Control Board (Sts3215-C046) Dimensions 45.2 x 24.7 x 35 mm Specifications Storage temperature range: -30℃ to 80℃ Operating temperature range: -20℃ to 70℃ Gear type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Horn type: Plastic, POM Case: Aluminium alloy Connector wire: 150mm ±5 mm Motor: Coreless motor Operating voltage range: 6-7.4V No-load speed: 0.238 sec/60°@6V Running current (at no load): 150 mA@6V Peak stall torque: 19.5 kg.cm@6V Rated torque: 6.5 kg.cm@6V Stall current: 2000 mA@6V Command signal: Digital packet Protocol type: Half duplex asynchronous serial ID range: 0-253 Communication speed: 38400 bps ~ 1 Mbps Running degree: 360° (when 0~4096) Feedback: Load, position, speed, input voltage, current"
+       },
+       "id": "gid://shopify/ProductVariant/67580448833900",
+       "list_price": {
+        "amount": 2276,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4527801.webp?v=1790678454"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2276,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-162",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-7"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Dive into our Rotational Motors & Actuators collection featuring a diverse range of motors and actuators, including brushed and brushless DC motors, stepper motors, and servo motors. Our selection caters to precise requirements for torque, speed, and integration. Perfect for robotics enthusiasts and professionals seeking quality drive solutions for various applications. Browse through gear motors with encoders, high-efficiency planetary motors, and innovative gimbal motors designed for smooth and accurate movement."
+       },
+       "handle": "motors-actuators",
+       "id": "gid://shopify/Collection/290224504993",
+       "title": "Rotational Motors & Actuators"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 Features a 12-bit magnetic coding sensor for high precision Delivers up to 30kg.cm stall torque ideal for heavy-duty tasks Supports 0-360 degrees controllable angle and continuous operation Includes slow start/stop and one-key middle point setting functions Provides feedback on position, speed, voltage, current, and load The FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 features a plastic case, core motor, and metal gearbox, with a high precision 12-bit magnetic coding sensor. It offers 30kg.cm stall torque, 0-360 degrees controllable angle, and multi-turn continuous operation. The servo includes functions such as one-key middle point setting, slow start and stop, and feedback on position, speed, voltage, current, temperature, and load parameters. It is ideal for industrial equipment, robotics, and small torque drive applications. View more What's Included 1x FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 Dimensions 45.2 x 24.7 x 35 mm Links Website Magnetic Encoding Servo STS3215 - Github PDF File FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 - Specification PDF Specifications Storage Temperature Range: -30°C to 80°C Operating Temperature Range: -20°C to 60°C Weight: 55 ± 1g Gear Type: Steel Gear Limit Angle: No limit Bearings: Ball bearings Horn Gear Spline: 25T/OD 5.9mm Horn Type: Plastic, POM Case Material: PA+GF Connector Wire Length: 15 cm Motor Type: Core Motor Operating Voltage Range: 4V to 14V No-Load Speed: 0.222 sec/60° at 12V Running Current (at no load): 180 mA at 12V Peak Stall Torque: 30 kg·cm at 12V Rated Torque: 10 kg·cm at 12V Stall Current: 2.7A at 12V Command Signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication ID Range: 0-253 Communication Speed: 38400 bps to 1 Mbps Running Degree: 360° (when 0~4096) Feedback: Load, Position, Speed, Input Voltage, Current"
+     },
+     "gift_card": false,
+     "handle": "feetech-12v-30kgcm-magnetic-encoding-servo-sts3215",
+     "id": "gid://shopify/Product/8133105418401",
+     "list_price_range": {
+      "max": {
+       "amount": 3171,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3171,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/feetech_12v_30kg_cm_magnetic_encoding_servo_sts321_1.webp?v=1726240229"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3171,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3171,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Rotational Motors & Actuators",
+      "category:Smart Servo Motors",
+      "on-demand"
+     ],
+     "title": "FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215",
+     "url": "https://www.robotshop.com/products/feetech-12v-30kgcm-magnetic-encoding-servo-sts3215",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/44616398995617:1",
+       "description": {
+        "html": "Description FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 Features a 12-bit magnetic coding sensor for high precision Delivers up to 30kg.cm stall torque ideal for heavy-duty tasks Supports 0-360 degrees controllable angle and continuous operation Includes slow start/stop and one-key middle point setting functions Provides feedback on position, speed, voltage, current, and load The FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 features a plastic case, core motor, and metal gearbox, with a high precision 12-bit magnetic coding sensor. It offers 30kg.cm stall torque, 0-360 degrees controllable angle, and multi-turn continuous operation. The servo includes functions such as one-key middle point setting, slow start and stop, and feedback on position, speed, voltage, current, temperature, and load parameters. It is ideal for industrial equipment, robotics, and small torque drive applications. View more What's Included 1x FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 Dimensions 45.2 x 24.7 x 35 mm Links Website Magnetic Encoding Servo STS3215 - Github PDF File FeeTech 12V 30kg.cm Magnetic Encoding Servo STS3215 - Specification PDF Specifications Storage Temperature Range: -30°C to 80°C Operating Temperature Range: -20°C to 60°C Weight: 55 ± 1g Gear Type: Steel Gear Limit Angle: No limit Bearings: Ball bearings Horn Gear Spline: 25T/OD 5.9mm Horn Type: Plastic, POM Case Material: PA+GF Connector Wire Length: 15 cm Motor Type: Core Motor Operating Voltage Range: 4V to 14V No-Load Speed: 0.222 sec/60° at 12V Running Current (at no load): 180 mA at 12V Peak Stall Torque: 30 kg·cm at 12V Rated Torque: 10 kg·cm at 12V Stall Current: 2.7A at 12V Command Signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication ID Range: 0-253 Communication Speed: 38400 bps to 1 Mbps Running Degree: 360° (when 0~4096) Feedback: Load, Position, Speed, Input Voltage, Current"
+       },
+       "id": "gid://shopify/ProductVariant/44616398995617",
+       "list_price": {
+        "amount": 3171,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/feetech_12v_30kg_cm_magnetic_encoding_servo_sts321_1.webp?v=1726240229"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3171,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-155",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-7"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Dive into our Rotational Motors & Actuators collection featuring a diverse range of motors and actuators, including brushed and brushless DC motors, stepper motors, and servo motors. Our selection caters to precise requirements for torque, speed, and integration. Perfect for robotics enthusiasts and professionals seeking quality drive solutions for various applications. Browse through gear motors with encoders, high-efficiency planetary motors, and innovative gimbal motors designed for smooth and accurate movement."
+       },
+       "handle": "motors-actuators",
+       "id": "gid://shopify/Collection/290224504993",
+       "title": "Rotational Motors & Actuators"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description 7.4V 19kg Serial Bus Servo w/ Current Feedback by FeeTech Gear Type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Motor: Core Motor The FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback is a 7.4V 19 kg serial bus servo that adopts a plastic case metal gearbox core motor Feetech self-researched and developed TTL control board high-quality potentiometer 25T output shaft. The stall torque is 19 kg.cm effective control angle is 300° with servo mode and continuous motor working mode feedback position, speed, voltage, temperature, current and load parameters, so as to achieve overload protection. It is suitable for teaching maker robot joints and other small torque transmission applications. View more What's Included 1x FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback Dimensions Size 45.23 x 24.73 x 35 mm (L x W x H) Connector Wire: 15 cm Specifications Gear Type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Case: PA + GF Motor: Core Motor Operating Voltage Range: 4 - 7.4 V No-load speed: 0.192 sec / 60° at 7.4 V Running current (at no-load): 150 mA at 7.4 V Peak stall torque: 19 kg.cm at 7.4 V Rated torque: 6.3 kg.cm at 7.4 V Stall current: 2.5 A at 6 V Command signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication Communication Speed: 38.400 bps ~ 1 Mbps Running degree: 300° (when 0 ~ 1.024) Resolution [deg/pulse] 0.322° (330° / 1.024) Storage Temperature Range: -30 ~ 80 °C Operating Temperature Range: -20 ~ 60 °C Weight: 55 ± 1 g"
+     },
+     "gift_card": false,
+     "handle": "feetech-74v-19kg-serial-bus-servo-w-current-feedback",
+     "id": "gid://shopify/Product/7620736155809",
+     "list_price_range": {
+      "max": {
+       "amount": 2393,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2393,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/74v-19kg-serial-bus-servo-with-current-feedback-img1.webp?v=1720505005"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2393,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2393,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Rotational Motors & Actuators",
+      "category:Smart Servo Motors"
+     ],
+     "title": "FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback",
+     "url": "https://www.robotshop.com/products/feetech-74v-19kg-serial-bus-servo-w-current-feedback",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42787241492641:1",
+       "description": {
+        "html": "Description 7.4V 19kg Serial Bus Servo w/ Current Feedback by FeeTech Gear Type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Motor: Core Motor The FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback is a 7.4V 19 kg serial bus servo that adopts a plastic case metal gearbox core motor Feetech self-researched and developed TTL control board high-quality potentiometer 25T output shaft. The stall torque is 19 kg.cm effective control angle is 300° with servo mode and continuous motor working mode feedback position, speed, voltage, temperature, current and load parameters, so as to achieve overload protection. It is suitable for teaching maker robot joints and other small torque transmission applications. View more What's Included 1x FeeTech 7.4V 19kg Serial Bus Servo w/ Current Feedback Dimensions Size 45.23 x 24.73 x 35 mm (L x W x H) Connector Wire: 15 cm Specifications Gear Type: Copper Limit angle: No limit Bearing: Ball bearings Horn gear spline: 25T Case: PA + GF Motor: Core Motor Operating Voltage Range: 4 - 7.4 V No-load speed: 0.192 sec / 60° at 7.4 V Running current (at no-load): 150 mA at 7.4 V Peak stall torque: 19 kg.cm at 7.4 V Rated torque: 6.3 kg.cm at 7.4 V Stall current: 2.5 A at 6 V Command signal: Digital Packet Protocol Type: Half Duplex Asynchronous Serial Communication Communication Speed: 38.400 bps ~ 1 Mbps Running degree: 300° (when 0 ~ 1.024) Resolution [deg/pulse] 0.322° (330° / 1.024) Storage Temperature Range: -30 ~ 80 °C Operating Temperature Range: -20 ~ 60 °C Weight: 55 ± 1 g"
+       },
+       "id": "gid://shopify/ProductVariant/42787241492641",
+       "list_price": {
+        "amount": 2393,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/74v-19kg-serial-bus-servo-with-current-feedback-img1.webp?v=1720505005"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2393,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-139",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-7"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Smart servo motors offer precise control with feedback mechanisms such as position, temperature, and torque. These advanced servos are ideal for complex robotics projects, providing high torque, speed, and adjustable parameters for seamless integration with various applications. Explore our range of smart servos including models for animatronics, robotic arms, and multi-servo synchronization to elevate your robotics designs."
+       },
+       "handle": "smart-servo-motors",
+       "id": "gid://shopify/Collection/290216640673",
+       "title": "Smart Servo Motors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Dive into our Rotational Motors & Actuators collection featuring a diverse range of motors and actuators, including brushed and brushless DC motors, stepper motors, and servo motors. Our selection caters to precise requirements for torque, speed, and integration. Perfect for robotics enthusiasts and professionals seeking quality drive solutions for various applications. Browse through gear motors with encoders, high-efficiency planetary motors, and innovative gimbal motors designed for smooth and accurate movement."
+       },
+       "handle": "motors-actuators",
+       "id": "gid://shopify/Collection/290224504993",
+       "title": "Rotational Motors & Actuators"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description 30KG Serial Bus Servo, High Precision and Torque by Waveshare Offers a high-torque programmable serial bus servo Equipped with a 360° magnetic encoder Compact structure design Built-in acceleration start-stop function Operating Voltage: 6 ~ 12.6 V The Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder is a high-torque programmable serial bus servo, it is equipped with a 360° high-precision magnetic encoder, which can realize 360-degree absolute angle control. With the program to control, any angles can be set as the middle of the position, and it can also be switched to the continuously rotating motor or stepper motor mode. The built-in acceleration start-stop function makes the action softer. There are two interfaces on each servo, which can be used in series. In theory, 253 bus servos can be controlled at the same time, and each servo can obtain its own current angle, load, voltage, mode, and so on. It is suitable for robot projects, such as robotic arms, hexapod walkers, humanoid robots, wheeled robots, and so on, which require real-time feedback for closed-loop control. View more What's Included 1x Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder Dimensions Size 45.22 x 35 x 24.72 mm (L x W x H) Links PDF Files Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - User Manual Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - Schematics Website Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - Wiki Specifications Torque: 30 kg.cm at 12 V Rotation Angle: 360° (0 ~ 4095) Position Sensor Resolution: 360° / 4096 Mechanism Limited Angle: No Limit Operating Voltage: 6 ~ 12.6 V Gear: high precision metal gear No-Load Speed: 0.222 sec / 60° (45RPM) at 12 V Encoder Type: 360° Magnetic Encoder ID Range: 0 ~ 253 Baudrate: 38400 bps ~ 1 Mbps (1 Mbps by default) Feedback: Position, Load, Speed, Input Voltage No-Load Current: 180 mA Locked-Rotor Current: 2.7 A KT: 11 kg.cm / A Weight: 69 g"
+     },
+     "gift_card": false,
+     "handle": "waveshare-30kg-serial-bus-servo-high-precision-torque-w-360-deg-encoder",
+     "id": "gid://shopify/Product/7642069172385",
+     "list_price_range": {
+      "max": {
+       "amount": 2834,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2834,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/30kg-serial-bus-servo-high-precision--torque-w--programmable-360-deg-encoder-img1.webp?v=1720530480"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2834,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2834,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Rotational Motors & Actuators",
+      "category:Smart Servo Motors"
+     ],
+     "title": "Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder",
+     "url": "https://www.robotshop.com/products/waveshare-30kg-serial-bus-servo-high-precision-torque-w-360-deg-encoder",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42839091970209:1",
+       "description": {
+        "html": "Description 30KG Serial Bus Servo, High Precision and Torque by Waveshare Offers a high-torque programmable serial bus servo Equipped with a 360° magnetic encoder Compact structure design Built-in acceleration start-stop function Operating Voltage: 6 ~ 12.6 V The Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder is a high-torque programmable serial bus servo, it is equipped with a 360° high-precision magnetic encoder, which can realize 360-degree absolute angle control. With the program to control, any angles can be set as the middle of the position, and it can also be switched to the continuously rotating motor or stepper motor mode. The built-in acceleration start-stop function makes the action softer. There are two interfaces on each servo, which can be used in series. In theory, 253 bus servos can be controlled at the same time, and each servo can obtain its own current angle, load, voltage, mode, and so on. It is suitable for robot projects, such as robotic arms, hexapod walkers, humanoid robots, wheeled robots, and so on, which require real-time feedback for closed-loop control. View more What's Included 1x Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder Dimensions Size 45.22 x 35 x 24.72 mm (L x W x H) Links PDF Files Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - User Manual Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - Schematics Website Waveshare 30KG Serial Bus Servo, High Precision, Torque w/ 360 deg Encoder - Wiki Specifications Torque: 30 kg.cm at 12 V Rotation Angle: 360° (0 ~ 4095) Position Sensor Resolution: 360° / 4096 Mechanism Limited Angle: No Limit Operating Voltage: 6 ~ 12.6 V Gear: high precision metal gear No-Load Speed: 0.222 sec / 60° (45RPM) at 12 V Encoder Type: 360° Magnetic Encoder ID Range: 0 ~ 253 Baudrate: 38400 bps ~ 1 Mbps (1 Mbps by default) Feedback: Position, Load, Speed, Input Voltage No-Load Current: 180 mA Locked-Rotor Current: 2.7 A KT: 11 kg.cm / A Weight: 69 g"
+       },
+       "id": "gid://shopify/ProductVariant/42839091970209",
+       "list_price": {
+        "amount": 2834,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/30kg-serial-bus-servo-high-precision--torque-w--programmable-360-deg-encoder-img1.webp?v=1720530480"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2834,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-571",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our diverse range of motor controllers, featuring devices to regulate DC, stepper, and servo motors. These controllers support high efficiency and precision control, suitable for various applications including robotics, automation, and embedded systems. With options for different voltage and current specifications, our motor controllers offer features like PWM modulation, feedback mechanisms, and easy interfacing with microcontrollers and SBCs like Arduino and Raspberry Pi."
+       },
+       "handle": "motor-controllers",
+       "id": "gid://shopify/Collection/290207170721",
+       "title": "Motor Controllers"
+      },
+      {
+       "description": {
+        "html": "Discover the versatility and quality of Lynxmotion products, available for various robotics applications ranging from education to advanced development. Lynxmotion offers robotic kits, servo mounts, motors, robotic arms, and more, designed with high-grade materials and precision engineering to meet your robotics needs."
+       },
+       "handle": "lynxmotion",
+       "id": "gid://shopify/Collection/290221129889",
+       "title": "Lynxmotion"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "RC Servo Motor Controllers facilitate precision control for your servos in various robotics applications. From hobbyist projects to more sophisticated systems, these controllers allow for accurate positioning and movement through programmable interfaces like I2C, USB, Bluetooth, or UART. Common features include support for multiple channels, PWM signal generation, and compatibility with major platforms like Raspberry Pi and Arduino. Enhance your robotics projects with reliable and versatile RC servo motor controllers designed to give your servos smooth and precise movements."
+       },
+       "handle": "servo-controllers",
+       "id": "gid://shopify/Collection/290224439457",
+       "title": "RC Servo Motor Controllers"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Controls up to 32 servo motors Comes preassembled USB interface (cable included), Xbee socket, and TTL serial Bidirectional communication with Query commands Large capacitors to prevent brownouts The Lynxmotion SSC-32U USB Servo Controller is the latest version of the very popular SSC-32 servo controller board. It has a USB port, an Xbee socket, improved power circuit, and a many other improvements. Lynxmotion SSC-32U Servo Controller The Lynxmotion SSC-32U Servo Controller is a small preassembled servo controller with some big features. It has high resolution (1uS) for accurate positioning, and extremely smooth moves. The range is 0.50mS to 2.50mS for a range of about 180°. The motion control can be immediate response, speed controlled, timed motion, or a combination. A unique \"Group Move\" allows any combination of servos to begin and end motion at the same time, even if the servos have to move different distances. This is a very powerful feature for creating complex walking gaits for multi servo walking robots. The servo's position or movement can be Queried to provide feedback to the host computer. There is even a 12 servo Hexapod sequencer built in. This allows complete control of all aspects of the alternating tripod gait simply by transferring a few values from the host controller. Any output pin can be used as a TTL level output. There are 8 analog inputs pins for reading sensor values, and 6 of them can be used as static or latched digital inputs, so you don't have to worry about missing a short event. The new SSC-32U board has improved power and communication management. The board still has three terminal blocks, but the new power circuit means that most of the time you will only need to use VS1. With the new board, the logic circuits have large capacitors to protect against brownouts, and the logic has auto power select so the VL=VS1 jumper isn't needed anymore. For communication, in addition to having USB on-board, the SSC-32U has an Xbee socket for easy use with wireless devices such as XBees and Bluetooth. Features: 32 channels of 1uS resolution servo control Bidirectional communication with Query commands Synchronized, or \"Group\" moves 12 Servo Hexapod Gait Sequencer built in MiniSSC-II emulation, like having 4 of them SSC-32 Servo Sequencer Utility (created using FlowBotics Studio) The Lynxmotion SSC-32 Servo Controller board can be easily controlled with the new SSC-32 Servo Sequencer Utility. It is available as a free downloadable utility which makes it easy to experiment with robotics and animatronics. It can be found in the Useful Links section. This utility is an example of the type of program which can be built using FlowBotics Studio (Download) , which includes this program as an open source demo project. The SSC-32 Servo Sequencer Utility program enables you to easily move servo motors, calibrate their position, store and playback motion sequences, upgrade the SSC-32 firmware and more. View more Links PDF Files SSC-32U User Guide FREE Utility SSC-32 Servo Sequencer Utility (created using FlowBotics Studio) Website Lynxmotion User and Assembly Guides Blog Post: Guide to the Power Supply Options for Lynxmotion Controllers Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Firmware: 2.50USB Microcontroller: Atmel ATmega328P External EEPROM: 512 kbit Internal Sequencer: 12 Servo Hexapod (Alternating Tripod) Serial input: USB, 3.3V Xbee, TTL UART, N81 Baud speeds: 9600, 38.4k, and 115.2k selectable via push button; other speeds through register configuration RC PWM Outputs: 32 (Servo or TTL) Inputs: 8 (8 Analog, 6 Static or Latching Digital) PC interface: USB Mini B (cable included) Microcontroller interface: 0.1\" Header Servo control: Up to 32 servos plug in directly Servo type supported: Futaba, Hitec and general 0.1\" spaced 3-pin R/C Servo travel range: 0.5ms to 2.5ms (most RC servos travel 180°) Servo resolution: 1uS (~0.09° for 180 degree servos, if servo permits) Servo speed resolution: 1uS / Second Servo motion control: Immediate, Timed, Speed or Synchronized. PC board size: 3.0\" x 2.3\" (mounting holes set 0.15” from each edge) Logic power: auto select between VS1 and VL VS peak current: max 15 amps per side VS steady current: max 3-5 amps per side recommended"
+     },
+     "gift_card": false,
+     "handle": "lynxmotion-ssc-32u-usb-servo-controller",
+     "id": "gid://shopify/Product/7487366758561",
+     "list_price_range": {
+      "max": {
+       "amount": 4678,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4678,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Lynxmotion SSC-32U USB Servo Controller",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/lynxmotion-ssc-32u-usb-servo-controller-4_2.webp?v=1720512157"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4678,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4678,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Lynxmotion",
+      "category:Lynxmotion Electronics",
+      "category:Motor Controllers",
+      "category:RC Servo Motor Controllers",
+      "category:Robot Construction Kit Parts",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "Lynxmotion SSC-32U USB Servo Controller",
+     "url": "https://www.robotshop.com/products/lynxmotion-ssc-32u-usb-servo-controller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42361381224609:1",
+       "description": {
+        "html": "Description Controls up to 32 servo motors Comes preassembled USB interface (cable included), Xbee socket, and TTL serial Bidirectional communication with Query commands Large capacitors to prevent brownouts The Lynxmotion SSC-32U USB Servo Controller is the latest version of the very popular SSC-32 servo controller board. It has a USB port, an Xbee socket, improved power circuit, and a many other improvements. Lynxmotion SSC-32U Servo Controller The Lynxmotion SSC-32U Servo Controller is a small preassembled servo controller with some big features. It has high resolution (1uS) for accurate positioning, and extremely smooth moves. The range is 0.50mS to 2.50mS for a range of about 180°. The motion control can be immediate response, speed controlled, timed motion, or a combination. A unique \"Group Move\" allows any combination of servos to begin and end motion at the same time, even if the servos have to move different distances. This is a very powerful feature for creating complex walking gaits for multi servo walking robots. The servo's position or movement can be Queried to provide feedback to the host computer. There is even a 12 servo Hexapod sequencer built in. This allows complete control of all aspects of the alternating tripod gait simply by transferring a few values from the host controller. Any output pin can be used as a TTL level output. There are 8 analog inputs pins for reading sensor values, and 6 of them can be used as static or latched digital inputs, so you don't have to worry about missing a short event. The new SSC-32U board has improved power and communication management. The board still has three terminal blocks, but the new power circuit means that most of the time you will only need to use VS1. With the new board, the logic circuits have large capacitors to protect against brownouts, and the logic has auto power select so the VL=VS1 jumper isn't needed anymore. For communication, in addition to having USB on-board, the SSC-32U has an Xbee socket for easy use with wireless devices such as XBees and Bluetooth. Features: 32 channels of 1uS resolution servo control Bidirectional communication with Query commands Synchronized, or \"Group\" moves 12 Servo Hexapod Gait Sequencer built in MiniSSC-II emulation, like having 4 of them SSC-32 Servo Sequencer Utility (created using FlowBotics Studio) The Lynxmotion SSC-32 Servo Controller board can be easily controlled with the new SSC-32 Servo Sequencer Utility. It is available as a free downloadable utility which makes it easy to experiment with robotics and animatronics. It can be found in the Useful Links section. This utility is an example of the type of program which can be built using FlowBotics Studio (Download) , which includes this program as an open source demo project. The SSC-32 Servo Sequencer Utility program enables you to easily move servo motors, calibrate their position, store and playback motion sequences, upgrade the SSC-32 firmware and more. View more Links PDF Files SSC-32U User Guide FREE Utility SSC-32 Servo Sequencer Utility (created using FlowBotics Studio) Website Lynxmotion User and Assembly Guides Blog Post: Guide to the Power Supply Options for Lynxmotion Controllers Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Firmware: 2.50USB Microcontroller: Atmel ATmega328P External EEPROM: 512 kbit Internal Sequencer: 12 Servo Hexapod (Alternating Tripod) Serial input: USB, 3.3V Xbee, TTL UART, N81 Baud speeds: 9600, 38.4k, and 115.2k selectable via push button; other speeds through register configuration RC PWM Outputs: 32 (Servo or TTL) Inputs: 8 (8 Analog, 6 Static or Latching Digital) PC interface: USB Mini B (cable included) Microcontroller interface: 0.1\" Header Servo control: Up to 32 servos plug in directly Servo type supported: Futaba, Hitec and general 0.1\" spaced 3-pin R/C Servo travel range: 0.5ms to 2.5ms (most RC servos travel 180°) Servo resolution: 1uS (~0.09° for 180 degree servos, if servo permits) Servo speed resolution: 1uS / Second Servo motion control: Immediate, Timed, Speed or Synchronized. PC board size: 3.0\" x 2.3\" (mounting holes set 0.15” from each edge) Logic power: auto select between VS1 and VL VS peak current: max 15 amps per side VS steady current: max 3-5 amps per side recommended"
+       },
+       "id": "gid://shopify/ProductVariant/42361381224609",
+       "list_price": {
+        "amount": 4678,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/lynxmotion-ssc-32u-usb-servo-controller-4_2.webp?v=1720512157"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4678,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Lyn-850",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Dive into our extensive selection of robotic arms and grippers, built for various tasks. From modular kits for educational purposes to advanced industrial-grade robotic arms equipped with precision control and safety features, we offer a wide range of options. Perfect for projects in automation, research, or hobby robotics, our products are versatile and user-friendly. Explore grippers with adaptive capabilities, electric parallel grippers, and collaborative robot arms that cater to your specific needs."
+       },
+       "handle": "robotic-arms",
+       "id": "gid://shopify/Collection/290207727777",
+       "title": "Robotic Arms & Grippers"
+      },
+      {
+       "description": {
+        "html": "Dive into our range of advanced robots designed for graduate and research applications. This collection features platforms for robotics development, from open-source systems like the Clearpath TurtleBot 4 to versatile manipulators such as the Reach Robotics Bravo Pro. Perfect for AI and machine learning projects, these robots are equipped with cutting-edge technologies including LIDAR, advanced image processing, and multiple degrees of freedom. Elevate your research and development initiatives with tools that offer deep integration and programmability."
+       },
+       "handle": "robots-graduates-research",
+       "id": "gid://shopify/Collection/290211430561",
+       "title": "Robots for Graduate & Research"
+      },
+      {
+       "description": {
+        "html": "Find a fantastic array of robots and kits, ideal for both beginners and advanced users. From programmable robots that introduce coding concepts to versatile kits for creating intricate robotic models, each product offers hands-on learning opportunities. These kits include everything needed for assembly, whether you want a simple line-following robot or a complex multi-function rover. Perfect for education and fun, explore endless possibilities and enhance your STEM skills."
+       },
+       "handle": "robot-kits",
+       "id": "gid://shopify/Collection/290216706209",
+       "title": "Robots & Kits"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot Note: 3D Printed Parts not included! Integrates with LeRobot platform Offers seamless Nvidia compatibility Includes abundant learning resources Features wiring optimization Supports real-time following functionality The Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts) is an advanced solution for building imitation learning robotic arms. This kit is specifically designed for integration with the LeRobot platform, which supports PyTorch models and tools for reinforcement and imitation learning in real-world robotics applications. It includes servo motors, an adapter board, and cables, but does not come with 3D-printed parts, which must be ordered separately if needed. This open-source and cost-effective kit is ideal for robotics enthusiasts and developers looking to prototype and develop robotic applications. It offers comprehensive learning resources, including assembly and calibration guides, as well as tutorials for testing, data collection, training, and deployment. These resources facilitate a quick start and efficient development process. The kit is compatible with Nvidia devices, such as the reComputer Mini J4012 Orin NX 16 GB, allowing for seamless deployment. It features wiring optimization to prevent disconnection issues, different gear ratios for enhanced performance, and new functionality support for real-time following. Additionally, it includes a 12-bit magnetic encoder angle sensor and communicates via UART. Note: 3D Printed Parts not included! View more What's Included 1x 7.4v STS3215 Servo Motor 1:345 gear rate 2x 7.4v STS3215 Servo Motor 1:191 gear rate 3x 7.4v STS3215 Servo Motor 1:145 gear rate 6x 12v STS3215 Servo Motor 1:345 gear rate 2x Servo Adaptor Board for Seeed Studio XIAO 8x Stud 8x Screw 1x 5V Power Supply Cable (Multiple head) 1x 12V Power Supply Cable (Multiple head) 2x USB-C Cable 2x DC Power Pigtail Cable Links PDF File SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts) - Servo Motor Datasheet Specifications Leader Arm 1x (7.4V) 1:345 gear ratio motor for No.2 joint 2x (7.4V) 1:191 gear ratio motors for No.1 and No.3 joints 3x (7.4V) 1:145 gear ratio motors for No.4, No.5 joints and the No.6 gripper Follower Arm: 12x (12V) 1:345 gear ratio motors for all joints Power Supply 5.5 x 2.1 mm DC 12V2A For Follower Arm 5.5 x 2.1 mm DC 5V4A For Leader Arm Angle sensor: 12-bit magnetic encoder Recommended Operating Temperature Range: 0 ～40℃ Communication Method: UART Control Method: PC"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-so-arm101-ai-arm-servo-motor-kit-pro-lerobot-w-o-3d-printed-parts",
+     "id": "gid://shopify/Product/14757052907884",
+     "list_price_range": {
+      "max": {
+       "amount": 29994,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 29994,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/so-arm101-ai-arm-servo-motor-kit-pro-for-lerobot-w-o-3d-printed-parts-1.webp?v=1750278946"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 29994,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 29994,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Parts for AI",
+      "category:Robot Parts",
+      "category:Robotic Arms & Grippers",
+      "category:Robotics Education",
+      "category:Robots",
+      "category:Robots & Kits",
+      "category:Robots for Graduate & Research",
+      "on-demand"
+     ],
+     "title": "Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts)",
+     "url": "https://www.robotshop.com/products/seeed-studio-so-arm101-ai-arm-servo-motor-kit-pro-lerobot-w-o-3d-printed-parts",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/52115285737836:1",
+       "description": {
+        "html": "Description Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot Note: 3D Printed Parts not included! Integrates with LeRobot platform Offers seamless Nvidia compatibility Includes abundant learning resources Features wiring optimization Supports real-time following functionality The Seeed Studio SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts) is an advanced solution for building imitation learning robotic arms. This kit is specifically designed for integration with the LeRobot platform, which supports PyTorch models and tools for reinforcement and imitation learning in real-world robotics applications. It includes servo motors, an adapter board, and cables, but does not come with 3D-printed parts, which must be ordered separately if needed. This open-source and cost-effective kit is ideal for robotics enthusiasts and developers looking to prototype and develop robotic applications. It offers comprehensive learning resources, including assembly and calibration guides, as well as tutorials for testing, data collection, training, and deployment. These resources facilitate a quick start and efficient development process. The kit is compatible with Nvidia devices, such as the reComputer Mini J4012 Orin NX 16 GB, allowing for seamless deployment. It features wiring optimization to prevent disconnection issues, different gear ratios for enhanced performance, and new functionality support for real-time following. Additionally, it includes a 12-bit magnetic encoder angle sensor and communicates via UART. Note: 3D Printed Parts not included! View more What's Included 1x 7.4v STS3215 Servo Motor 1:345 gear rate 2x 7.4v STS3215 Servo Motor 1:191 gear rate 3x 7.4v STS3215 Servo Motor 1:145 gear rate 6x 12v STS3215 Servo Motor 1:345 gear rate 2x Servo Adaptor Board for Seeed Studio XIAO 8x Stud 8x Screw 1x 5V Power Supply Cable (Multiple head) 1x 12V Power Supply Cable (Multiple head) 2x USB-C Cable 2x DC Power Pigtail Cable Links PDF File SO-ARM101 AI Arm Servo Motor Kit Pro for LeRobot (w/o 3D Printed Parts) - Servo Motor Datasheet Specifications Leader Arm 1x (7.4V) 1:345 gear ratio motor for No.2 joint 2x (7.4V) 1:191 gear ratio motors for No.1 and No.3 joints 3x (7.4V) 1:145 gear ratio motors for No.4, No.5 joints and the No.6 gripper Follower Arm: 12x (12V) 1:345 gear ratio motors for all joints Power Supply 5.5 x 2.1 mm DC 12V2A For Follower Arm 5.5 x 2.1 mm DC 5V4A For Leader Arm Angle sensor: 12-bit magnetic encoder Recommended Operating Temperature Range: 0 ～40℃ Communication Method: UART Control Method: PC"
+       },
+       "id": "gid://shopify/ProductVariant/52115285737836",
+       "list_price": {
+        "amount": 29994,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/so-arm101-ai-arm-servo-motor-kit-pro-for-lerobot-w-o-3d-printed-parts-1.webp?v=1750278946"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 29994,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-See-1199",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-7"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover a wide range of high-performance RC servo motors designed for precision and versatility. These motors feature options like metal gears, digital control, coreless motors, and various torque and speed capacities. Ideal for robotics, RC cars, and microcontroller projects, our collection ensures reliable performance across different applications. Enhance your projects with these durable and efficient servo motors."
+       },
+       "handle": "servo-motors",
+       "id": "gid://shopify/Collection/290209693857",
+       "title": "RC Servo Motors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Dive into our Rotational Motors & Actuators collection featuring a diverse range of motors and actuators, including brushed and brushless DC motors, stepper motors, and servo motors. Our selection caters to precise requirements for torque, speed, and integration. Perfect for robotics enthusiasts and professionals seeking quality drive solutions for various applications. Browse through gear motors with encoders, high-efficiency planetary motors, and innovative gimbal motors designed for smooth and accurate movement."
+       },
+       "handle": "motors-actuators",
+       "id": "gid://shopify/Collection/290224504993",
+       "title": "Rotational Motors & Actuators"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "FeeTech is renowned for its high-quality servos and robotic components, offering a range of products that include digital, analog, and continuous rotation servos. Known for their durability and precision, FeeTech's servos cater to various applications, from RC hobbies to industrial automation. Their smart servos incorporate advanced features such as feedback and increased torque, making them a preferred choice for robotics enthusiasts and professionals alike."
+       },
+       "handle": "feetech",
+       "id": "gid://shopify/Collection/290234106017",
+       "title": "FeeTech"
+      }
+     ],
+     "description": {
+      "html": "Description Standard 15kg.cm Metal Gear Analog Servo FS5115M Operating Speed: 0.18sec/60 degrees (4.8V), 0.16sec/60 degrees (6V) Stall Torque: 14kg.cm/194.8oz.in (4.8V), 15.5kg.cm/215.6oz.in (6V) Operating Voltage: 4.8V~6V Motor Type: Carbon View more What's Included 1 x FS5115M Analog Metal Gear Servo Dimensions 40.8 × 20.1 × 38 mm Weight: 56 g Specifications Operating Speed: 0.18sec/60 degrees (4.8V), 0.16sec/60 degrees (6V) Stall Torque: 14kg.cm/194.8oz.in (4.8V), 15.5kg.cm/215.6oz.in (6V) Operating Voltage: 4.8V~6V Control System: Analog Direction: CCW Operating Angle: 180 degrees Required Pulse: 500us-2500us Bearing Type: 2BB Gear Type: Metal Motor Type: Carbon Connector Wire Length: 30 cm"
+     },
+     "gift_card": false,
+     "handle": "fs5115m-analog-metal-gear-servo",
+     "id": "gid://shopify/Product/7486620139681",
+     "list_price_range": {
+      "max": {
+       "amount": 1848,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1848,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FS5115M Analog Metal Gear Servo",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/fs5115m-analog-metal-gear-servo.webp?v=1720505045"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1848,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1848,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:RC Servo Motors",
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Rotational Motors & Actuators"
+     ],
+     "title": "FS5115M Analog Metal Gear Servo",
+     "url": "https://www.robotshop.com/products/fs5115m-analog-metal-gear-servo",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358559670433:1",
+       "description": {
+        "html": "Description Standard 15kg.cm Metal Gear Analog Servo FS5115M Operating Speed: 0.18sec/60 degrees (4.8V), 0.16sec/60 degrees (6V) Stall Torque: 14kg.cm/194.8oz.in (4.8V), 15.5kg.cm/215.6oz.in (6V) Operating Voltage: 4.8V~6V Motor Type: Carbon View more What's Included 1 x FS5115M Analog Metal Gear Servo Dimensions 40.8 × 20.1 × 38 mm Weight: 56 g Specifications Operating Speed: 0.18sec/60 degrees (4.8V), 0.16sec/60 degrees (6V) Stall Torque: 14kg.cm/194.8oz.in (4.8V), 15.5kg.cm/215.6oz.in (6V) Operating Voltage: 4.8V~6V Control System: Analog Direction: CCW Operating Angle: 180 degrees Required Pulse: 500us-2500us Bearing Type: 2BB Gear Type: Metal Motor Type: Carbon Connector Wire Length: 30 cm"
+       },
+       "id": "gid://shopify/ProductVariant/42358559670433",
+       "list_price": {
+        "amount": 1848,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/fs5115m-analog-metal-gear-servo.webp?v=1720505045"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1848,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Fit-21",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-7"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover a wide range of high-performance RC servo motors designed for precision and versatility. These motors feature options like metal gears, digital control, coreless motors, and various torque and speed capacities. Ideal for robotics, RC cars, and microcontroller projects, our collection ensures reliable performance across different applications. Enhance your projects with these durable and efficient servo motors."
+       },
+       "handle": "servo-motors",
+       "id": "gid://shopify/Collection/290209693857",
+       "title": "RC Servo Motors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Dive into our Rotational Motors & Actuators collection featuring a diverse range of motors and actuators, including brushed and brushless DC motors, stepper motors, and servo motors. Our selection caters to precise requirements for torque, speed, and integration. Perfect for robotics enthusiasts and professionals seeking quality drive solutions for various applications. Browse through gear motors with encoders, high-efficiency planetary motors, and innovative gimbal motors designed for smooth and accurate movement."
+       },
+       "handle": "motors-actuators",
+       "id": "gid://shopify/Collection/290224504993",
+       "title": "Rotational Motors & Actuators"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Hitec is a leading manufacturer of high-performance RC servos, offering a diverse range of products tailored to the needs of hobbyists, professionals, and enthusiasts alike. Known for their durability, precision, and advanced technology, Hitec's servos are perfect for robotics, UAVs, and various remote-controlled applications. Explore their extensive lineup of servos, including digital, analog, and programmable options, as well as essential accessories, only at Robotshop.com."
+       },
+       "handle": "hitec-en",
+       "id": "gid://shopify/Collection/290240463009",
+       "title": "Hitec"
+      }
+     ],
+     "description": {
+      "html": "Description Speed: 0.15 sec @ 60° Torque: 3.7 kg/cm - 51.38 oz/in Size: 40x20x36.5 mm Weight: 43 g - 1.51 oz Karbonite Gear The HS-322HD Standard Heavy Duty Servo utilizes Hitec's revolutionary KarboniteT gear train which is four times stronger than standard white nylon gears, and even after hundreds of thousands of cycles they don't show any signs of wear. KarboniteT gears and our custom IC makes the HS-322HD a great choice for an economical sport servo. Applications:Heli's and Aircraft up to 72\" or up to 12lbs when using just one servo per control surface.Note: Be aware that high vibration gas (not glow) engines combined with large control surfaces and large throws (3D models) can put undue strain on the gears. Metal geared servos are recommended for these applications, even if under 12lbs.Warning: Do not use thread lockers on KarboniteT geared servo as it will cause the output shaft to fail. View more Links PDF FilesHitec HS-322HD Servo ManualHitec HS-322HD Servo Specsheet"
+     },
+     "gift_card": false,
+     "handle": "hitec-hs-322hd-servo",
+     "id": "gid://shopify/Product/7486929109153",
+     "list_price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "HS-322HD Standard Heavy Duty Servo",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hitec-hs-322hd-servo_1.webp?v=1720507455"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:RC Servo Motors",
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Rotational Motors & Actuators"
+     ],
+     "title": "HS-322HD Standard Heavy Duty Servo",
+     "url": "https://www.robotshop.com/products/hitec-hs-322hd-servo",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359101915297:1",
+       "description": {
+        "html": "Description Speed: 0.15 sec @ 60° Torque: 3.7 kg/cm - 51.38 oz/in Size: 40x20x36.5 mm Weight: 43 g - 1.51 oz Karbonite Gear The HS-322HD Standard Heavy Duty Servo utilizes Hitec's revolutionary KarboniteT gear train which is four times stronger than standard white nylon gears, and even after hundreds of thousands of cycles they don't show any signs of wear. KarboniteT gears and our custom IC makes the HS-322HD a great choice for an economical sport servo. Applications:Heli's and Aircraft up to 72\" or up to 12lbs when using just one servo per control surface.Note: Be aware that high vibration gas (not glow) engines combined with large control surfaces and large throws (3D models) can put undue strain on the gears. Metal geared servos are recommended for these applications, even if under 12lbs.Warning: Do not use thread lockers on KarboniteT geared servo as it will cause the output shaft to fail. View more Links PDF FilesHitec HS-322HD Servo ManualHitec HS-322HD Servo Specsheet"
+       },
+       "id": "gid://shopify/ProductVariant/42359101915297",
+       "list_price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hitec-hs-322hd-servo_1.webp?v=1720507455"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Hit-67",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

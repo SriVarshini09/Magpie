@@ -1,0 +1,62 @@
+{
+  "sample": {
+    "build_type": "robot_arm",
+    "title": "SO-101 robot arm (link)",
+    "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+    "blurb": "Every part quoted from the README, the project's own 3D model",
+    "mandate_preset": {
+      "budget_usd": 160,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "wowrobo",
+        "armdojo",
+        "geekworm",
+        "amazon",
+        "seeed",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "urdf"
+  },
+  "template_id": "tpl_robot_arm",
+  "source_commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "default_answers": {
+    "voltage_class": "7v4",
+    "own_printer": "yes",
+    "own_screwdriver": "yes"
+  },
+  "stage_answers": {
+    "voltage_class": "12v",
+    "own_printer": "yes"
+  },
+  "seed_memories": [
+    "owns a precision screwdriver set",
+    "owns two USB-C data cables",
+    "owns a 3D printer and PLA",
+    "owns a soldering iron and jumper wires",
+    "prefers US sellers; no Alibaba or AliExpress"
+  ],
+  "kb_docs": [
+    "so101_readme_notes",
+    "sts3215_notes",
+    "waveshare_adapter",
+    "compat_rules_robot_arm",
+    "store_policies",
+    "electrical_notes",
+    "compat_rules_generic",
+    "template_sources",
+    "tpl_robot_arm"
+  ],
+  "notes": "Hero link run (PLAN §6.2). With the link, the README is the source (readme_quote lines) and tpl_robot_arm supplies the view and the questions. stage_answers picks the 12V servos so R1 fails on the 5V supply and the agent swaps in a 12V 5A+ supply (M4). Prices drift; read them from the screen."
+}

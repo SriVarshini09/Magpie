@@ -1,0 +1,63 @@
+{
+  "client_secret": "pi_mock_secret_mock",
+  "payment_intent_id": "pi_mock_so101",
+  "payment_mandate": {
+    "type": "b2c.mandate.payment",
+    "version": "0.4",
+    "mode": "test",
+    "mandate_id": "mnd_mock_so101",
+    "closed_mandate_sha256": "7ae05f7e65da3a2da9e1338ffc04ab9f0dcbf34fe9e082a8a0646bc22cdd963f",
+    "status": "open",
+    "user_consent": {
+      "at": "2026-11-20T13:09:00-08:00",
+      "text_shown": "You authorise up to $132.41, split as shown. Each store can charge at most its own subtotal. TEST MODE: no real money moves."
+    },
+    "total": {
+      "amount": 13241,
+      "currency": "usd"
+    },
+    "allocations": [
+      {
+        "store_id": "wowrobo",
+        "action_level": "agent_cart",
+        "url_sha256": "b1db93ca8f8fa2d5fee4b9feb5ddec349d88fbc01d01b3382efd1f6d51ba0f5c",
+        "limit": 9094,
+        "simulated": true,
+        "status": "queued"
+      },
+      {
+        "store_id": "geekworm",
+        "action_level": "agent_cart",
+        "url_sha256": "2a70e373816c748f320bc462dd459d15c3d7460596cf57fc66e730df080cb39c",
+        "limit": 1700,
+        "simulated": true,
+        "status": "queued"
+      },
+      {
+        "store_id": "armdojo",
+        "action_level": "agent_cart",
+        "url_sha256": "93c87b763005e5527da655cdd50af366fc7a829ae8dbbd9139f1e48d19317a20",
+        "limit": 1199,
+        "simulated": true,
+        "status": "queued"
+      },
+      {
+        "store_id": "amazon",
+        "action_level": "prefilled_cart",
+        "url_sha256": "fecb65ddbc4924d9c4dcf39fdd7852d4796dc336f3d541d7b2594a7a53dca9a6",
+        "limit": 1248,
+        "simulated": true,
+        "status": "queued"
+      }
+    ],
+    "mandate_hash": "sha256:a295551e1ad521512205ff623ab1f3c549459566f5c2b976b2206ce1f06b9051",
+    "simulated": true,
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..6ZHwZaT1RrZzsF0kKeH1QW6nQjUHGwMIE9asMp_O4bqLxPydFk1qXFVzmVrVs3p_OjLBNRT3XVHkjXIGb7I3Nw"
+    }
+  },
+  "livemode": false,
+  "simulated": true
+}

@@ -1,0 +1,1183 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "Waveshare bus servo adapter serial bus servo driver board"
+  }
+ },
+ "key": "bd4e21f542eb4f6588a07ba6b1f11c197dd73f9e1a9489c83a41e7cac224f31b",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:18:05-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 820); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODIwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 820
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<h2>Description</h2><p>The <strong>Waveshare Serial Bus Servo Driver Board</strong>, model <strong>Bus Servo Adapter (A)</strong>, connects a computer or microcontroller to <strong>ST/SC series serial bus servos</strong>. This compact bus servo controller integrates power and control circuitry and supports both <strong>UART and USB control</strong>. It suits custom robotics systems that need servo feedback as well as movement commands.</p><p>Depending on the connected servo, the board supports reading angle, load, voltage and operating mode, and programming the servo ID or operating mode. The bus servo driver can theoretically address <strong>up to 253 servos</strong>, provided the installation has sufficient external power. It is a control adapter rather than a complete robot kit: servos, a power supply and the host computer are separate requirements.</p>\n<h2>Features</h2><ul>\n<li>\n<strong>ST/SC bus servo control:</strong> an interface for compatible serial servos and their feedback.</li>\n<li>\n<strong>Bus servo host connections:</strong> UART for microcontrollers and USB Type-C for suitable computers.</li>\n<li>\n<strong>A/B mode jumper:</strong> position A selects UART; position B selects USB.</li>\n<li>\n<strong>Two power inputs:</strong> a DC5521 jack and screw terminal simplify integration.</li>\n<li>\n<strong>Programmable IDs and modes:</strong> configure servo IDs and servo/motor modes where supported by the connected model.</li>\n<li>\n<strong>Compact bus servo board:</strong> 42 × 33 mm board with 2.5 mm mounting holes.</li>\n<li>Python, Arduino and Linux libraries for custom bus servo projects.</li>\n</ul>\n<h2>Specifications</h2><table><tbody>\n<tr>\n<th>SKU / Model</th>\n<td>Waveshare-25514 / Bus Servo Adapter (A)</td>\n</tr>\n<tr>\n<th>Power Supply</th>\n<td>DC 9–12.6 V (ST series servo); input voltage must match the servo</td>\n</tr>\n<tr>\n<th>Power supply connector</th>\n<td>5.5 × 2.1 mm DC</td>\n</tr>\n<tr>\n<th>Communication interface</th>\n<td>UART; USB control through USB Type-C</td>\n</tr>\n<tr>\n<th>Dimensions</th>\n<td>42.00 × 33.00 mm</td>\n</tr>\n<tr>\n<th>Mounting hole size</th>\n<td>Ø 2.50 mm</td>\n</tr>\n<tr>\n<th>Mounting hole spacing</th>\n<td>37.00 × 28.00 mm</td>\n</tr>\n<tr>\n<th>Compatibility</th>\n<td>ST/SC series serial bus servos; do not mix the two series</td>\n</tr>\n<tr>\n<th>Additional input range</th>\n<td>5–8.4 V is also supported according to the documentation when appropriate for the connected servo</td>\n</tr>\n<tr>\n<th>Addressable servos</th>\n<td>Theoretically up to 253, with sufficient external power</td>\n</tr>\n<tr>\n<th>Baud rate</th>\n<td>Must match the connected servos</td>\n</tr>\n<tr>\n<th>Additional connections</th>\n<td>Power screw terminal, UART header, bus servo connectors and A/B jumper</td>\n</tr>\n<tr>\n<th>Product-page weight</th>\n<td>0.016 kg</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2><ul>\n<li>\n<strong>Custom robotic arms:</strong> control multiple bus servos and inspect position or load feedback.</li>\n<li>\n<strong>Quadruped and hexapod robots:</strong> connect addressable joints through a serial bus.</li>\n<li>\n<strong>Humanoid prototypes:</strong> organize servo IDs and motion routines in a compact installation.</li>\n<li>\n<strong>Servo test benches:</strong> configure individual bus servos and check feedback before mechanical assembly.</li>\n<li>\n<strong>PC-based bus servo development:</strong> use USB to prototype control and telemetry software.</li>\n<li>\n<strong>Embedded robotics:</strong> connect a UART microcontroller for custom closed-loop control experiments.</li>\n</ul>\n<h2>Product List</h2><ul><li>1 × Bus Servo Adapter (A)</li></ul>\n<h2>Other Content</h2><h3>Interface Overview</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-01.webp?v=1793081445\" alt=\"Bus Servo Adapter (A) power, USB, mode jumper, servo and UART interfaces\"></p><h3>Dimensions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-02.webp?v=1793081457\" alt=\"Bus servo driver dimensions and mounting hole spacing\"></p><h3>UART and USB Modes</h3><p>For UART control, set the jumper to <strong>A</strong>. The Waveshare wiring guide specifies <strong>RX–RX and TX–TX</strong> for this adapter, so follow its labeled wiring rather than assuming a generic crossover. For USB control, set the jumper to <strong>B</strong> and connect a suitable USB cable to the host. Match the baud rate to the connected bus servos.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-03.webp?v=1793081470\" alt=\"A/B jumper positions for UART and USB control\"></p><h3>External Power</h3><p>The bus servo adapter provides a DC5521 jack and a screw terminal. Select a voltage suitable for <strong>every connected servo</strong>. The 9–12.6 V range applies to appropriate ST models; SC models may require a lower model-specific supply. Waveshare recommends <strong>not mixing ST and SC series</strong>. When using different models within one series, verify the voltage requirements and total current demand individually.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-04.webp?v=1793081483\" alt=\"DC5521 jack and screw terminal for servo power\"></p><h3>Bus Wiring</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-05.webp?v=1793081501\" alt=\"Serial bus servo wiring example\"></p><p>The pictured servos and cables illustrate a connection and are not included. Assign unique IDs before combining multiple bus servos. The theoretical 253-address limit does not mean one supply can power an arbitrary number of loaded servos.</p>\n<h2>Resources</h2><ul>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A\" target=\"_blank\" rel=\"nofollow noopener\">Bus Servo Adapter (A) documentation</a></li>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A/Product-Wiring-Example\" target=\"_blank\" rel=\"nofollow noopener\">UART and USB wiring examples</a></li>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A/Resources-And-Documents\" target=\"_blank\" rel=\"nofollow noopener\">SDKs, examples and hardware resources</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus_Servo_Adapter_A/STServo_Python.zip\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Python control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/SCSTServoLibrary.zip\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Arduino control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/SCServo_Linux.rar\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Linux control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus_Servo_Adapter_A/Bus_Servo_Adapter_A.pdf\" target=\"_blank\" rel=\"nofollow noopener\">Bus Servo Adapter (A) schematic</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/Bus%20Servo%20Adapter%20(A)_3D.zip\" target=\"_blank\" rel=\"nofollow noopener\">STEP mechanical model</a></li>\n</ul>\n<h2>FAQ</h2><h3>Which servos does this bus servo driver support?</h3><p>Compatible ST/SC series serial bus servos. A conventional PWM servo is not a direct substitute. Do not mix ST and SC series together.</p><h3>Which jumper position should I use?</h3><p>Use A for UART control and B for USB control, following the corresponding wiring guide.</p><h3>What supply voltage is required?</h3><p>Choose a supply rated for the specific servo. 9–12.6 V applies to suitable ST models; the documentation also allows lower model-appropriate voltages.</p><h3>Can I actually connect 253 servos?</h3><p>The bus servo driver supports that theoretical address count. Supply capacity, wiring and operating load must all suit the installation.</p><h3>Are servos and a power supply included?</h3><p>No. The package contains one adapter board. Servos, a host, cables and external power are separate requirements.</p>"
+     },
+     "handle": "waveshare-serial-bus-servo-driver-board",
+     "id": "gid://shopify/p/11DnKdiJSewhcYqwothy23",
+     "media": [
+      {
+       "alt_text": "Waveshare Bus Servo Adapter (A) white background product view",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-media-01.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-media-01.webp",
+       "width": 700
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 527,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 527,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare Serial Bus Servo Driver Board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/57597073326404:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>Description</h2><p>The <strong>Waveshare Serial Bus Servo Driver Board</strong>, model <strong>Bus Servo Adapter (A)</strong>, connects a computer or microcontroller to <strong>ST/SC series serial bus servos</strong>. This compact bus servo controller integrates power and control circuitry and supports both <strong>UART and USB control</strong>. It suits custom robotics systems that need servo feedback as well as movement commands.</p><p>Depending on the connected servo, the board supports reading angle, load, voltage and operating mode, and programming the servo ID or operating mode. The bus servo driver can theoretically address <strong>up to 253 servos</strong>, provided the installation has sufficient external power. It is a control adapter rather than a complete robot kit: servos, a power supply and the host computer are separate requirements.</p>\n<h2>Features</h2><ul>\n<li>\n<strong>ST/SC bus servo control:</strong> an interface for compatible serial servos and their feedback.</li>\n<li>\n<strong>Bus servo host connections:</strong> UART for microcontrollers and USB Type-C for suitable computers.</li>\n<li>\n<strong>A/B mode jumper:</strong> position A selects UART; position B selects USB.</li>\n<li>\n<strong>Two power inputs:</strong> a DC5521 jack and screw terminal simplify integration.</li>\n<li>\n<strong>Programmable IDs and modes:</strong> configure servo IDs and servo/motor modes where supported by the connected model.</li>\n<li>\n<strong>Compact bus servo board:</strong> 42 × 33 mm board with 2.5 mm mounting holes.</li>\n<li>Python, Arduino and Linux libraries for custom bus servo projects.</li>\n</ul>\n<h2>Specifications</h2><table><tbody>\n<tr>\n<th>SKU / Model</th>\n<td>Waveshare-25514 / Bus Servo Adapter (A)</td>\n</tr>\n<tr>\n<th>Power Supply</th>\n<td>DC 9–12.6 V (ST series servo); input voltage must match the servo</td>\n</tr>\n<tr>\n<th>Power supply connector</th>\n<td>5.5 × 2.1 mm DC</td>\n</tr>\n<tr>\n<th>Communication interface</th>\n<td>UART; USB control through USB Type-C</td>\n</tr>\n<tr>\n<th>Dimensions</th>\n<td>42.00 × 33.00 mm</td>\n</tr>\n<tr>\n<th>Mounting hole size</th>\n<td>Ø 2.50 mm</td>\n</tr>\n<tr>\n<th>Mounting hole spacing</th>\n<td>37.00 × 28.00 mm</td>\n</tr>\n<tr>\n<th>Compatibility</th>\n<td>ST/SC series serial bus servos; do not mix the two series</td>\n</tr>\n<tr>\n<th>Additional input range</th>\n<td>5–8.4 V is also supported according to the documentation when appropriate for the connected servo</td>\n</tr>\n<tr>\n<th>Addressable servos</th>\n<td>Theoretically up to 253, with sufficient external power</td>\n</tr>\n<tr>\n<th>Baud rate</th>\n<td>Must match the connected servos</td>\n</tr>\n<tr>\n<th>Additional connections</th>\n<td>Power screw terminal, UART header, bus servo connectors and A/B jumper</td>\n</tr>\n<tr>\n<th>Product-page weight</th>\n<td>0.016 kg</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2><ul>\n<li>\n<strong>Custom robotic arms:</strong> control multiple bus servos and inspect position or load feedback.</li>\n<li>\n<strong>Quadruped and hexapod robots:</strong> connect addressable joints through a serial bus.</li>\n<li>\n<strong>Humanoid prototypes:</strong> organize servo IDs and motion routines in a compact installation.</li>\n<li>\n<strong>Servo test benches:</strong> configure individual bus servos and check feedback before mechanical assembly.</li>\n<li>\n<strong>PC-based bus servo development:</strong> use USB to prototype control and telemetry software.</li>\n<li>\n<strong>Embedded robotics:</strong> connect a UART microcontroller for custom closed-loop control experiments.</li>\n</ul>\n<h2>Product List</h2><ul><li>1 × Bus Servo Adapter (A)</li></ul>\n<h2>Other Content</h2><h3>Interface Overview</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-01.webp?v=1793081445\" alt=\"Bus Servo Adapter (A) power, USB, mode jumper, servo and UART interfaces\"></p><h3>Dimensions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-02.webp?v=1793081457\" alt=\"Bus servo driver dimensions and mounting hole spacing\"></p><h3>UART and USB Modes</h3><p>For UART control, set the jumper to <strong>A</strong>. The Waveshare wiring guide specifies <strong>RX–RX and TX–TX</strong> for this adapter, so follow its labeled wiring rather than assuming a generic crossover. For USB control, set the jumper to <strong>B</strong> and connect a suitable USB cable to the host. Match the baud rate to the connected bus servos.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-03.webp?v=1793081470\" alt=\"A/B jumper positions for UART and USB control\"></p><h3>External Power</h3><p>The bus servo adapter provides a DC5521 jack and a screw terminal. Select a voltage suitable for <strong>every connected servo</strong>. The 9–12.6 V range applies to appropriate ST models; SC models may require a lower model-specific supply. Waveshare recommends <strong>not mixing ST and SC series</strong>. When using different models within one series, verify the voltage requirements and total current demand individually.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-04.webp?v=1793081483\" alt=\"DC5521 jack and screw terminal for servo power\"></p><h3>Bus Wiring</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-detail-05.webp?v=1793081501\" alt=\"Serial bus servo wiring example\"></p><p>The pictured servos and cables illustrate a connection and are not included. Assign unique IDs before combining multiple bus servos. The theoretical 253-address limit does not mean one supply can power an arbitrary number of loaded servos.</p>\n<h2>Resources</h2><ul>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A\" target=\"_blank\" rel=\"nofollow noopener\">Bus Servo Adapter (A) documentation</a></li>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A/Product-Wiring-Example\" target=\"_blank\" rel=\"nofollow noopener\">UART and USB wiring examples</a></li>\n<li><a href=\"https://docs.waveshare.com/Bus_Servo_Adapter_A/Resources-And-Documents\" target=\"_blank\" rel=\"nofollow noopener\">SDKs, examples and hardware resources</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus_Servo_Adapter_A/STServo_Python.zip\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Python control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/SCSTServoLibrary.zip\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Arduino control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/SCServo_Linux.rar\" target=\"_blank\" rel=\"nofollow noopener\">ST/SC Linux control library</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus_Servo_Adapter_A/Bus_Servo_Adapter_A.pdf\" target=\"_blank\" rel=\"nofollow noopener\">Bus Servo Adapter (A) schematic</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/Bus-Servo-Adapter-(A)/Bus%20Servo%20Adapter%20(A)_3D.zip\" target=\"_blank\" rel=\"nofollow noopener\">STEP mechanical model</a></li>\n</ul>\n<h2>FAQ</h2><h3>Which servos does this bus servo driver support?</h3><p>Compatible ST/SC series serial bus servos. A conventional PWM servo is not a direct substitute. Do not mix ST and SC series together.</p><h3>Which jumper position should I use?</h3><p>Use A for UART control and B for USB control, following the corresponding wiring guide.</p><h3>What supply voltage is required?</h3><p>Choose a supply rated for the specific servo. 9–12.6 V applies to suitable ST models; the documentation also allows lower model-appropriate voltages.</p><h3>Can I actually connect 253 servos?</h3><p>The bus servo driver supports that theoretical address count. Supply capacity, wiring and operating load must all suit the installation.</p><h3>Are servos and a power supply included?</h3><p>No. The package contains one adapter board. Servos, a host, cables and external power are separate requirements.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-serial-bus-servo-driver-board",
+       "id": "gid://shopify/ProductVariant/57597073326404",
+       "media": [
+        {
+         "alt_text": "Waveshare Bus Servo Adapter (A) white background product view",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-media-01.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-25514-us-media-01.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 527,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15755279925572",
+       "source": "shopify",
+       "title": "Waveshare Serial Bus Servo Driver Board",
+       "url": "https://openelab.com/products/waveshare-serial-bus-servo-driver-board?variant=57597073326404&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>Waveshare Serial Bus Servo Driver HAT (A)</li>\n\t<li>Integrates ESP32 &amp; Servo Control Circuit, Suitable for ST / RSBL Series Serial Bus Servos</li>\n\t<li>Controls up to 253 servos simultaneously</li>\n\t<li>Offers wired and wireless communication</li>\n\t<li>Integrates seamlessly with Raspberry Pi</li>\n\t<li>Supports 9~25V wide voltage input</li>\n\t<li>Features onboard USB Type-C ports</li>\n</ul>\n\n<p>The <strong>Waveshare Serial Bus Servo Driver HAT (A)</strong> is engineered for controlling up to 253 serial bus servos simultaneously via ESP32 UART or USB port. It serves as a primary controller for robotics projects, supporting both wired and wireless communication. This device is compatible with Raspberry Pi, offering power through an integrated 5V buck regulator and communication via GPIO UART interface. It is ideal for constructing quadruped robots, hexapod walkers, and robotic arms.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x Waveshare Serial Bus Servo Driver HAT (A)</li>\n\t<li>1x 2x20 pin header</li>\n\t<li>1x USB-A to USB-C cable</li>\n\t<li>1x Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img style=\"width: 520px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-836/img/serial-bus-servo-driver-hat-integrates-esp32-servo-control-circuit-suitable-for-st-rsbl-series-serial-bus-servos-dime.webp\"></p>\n\n<ul>\n\t<li>PCB: 65 x 57 mm</li>\n\t<li>Mounting Hole Diameter: 3 mm</li>\n\t<li>Mounting Hole Spacing: 58 x 49 mm</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://www.waveshare.com/wiki/Bus_Servo_Driver_HAT_(A)\" target=\"_blank\">Waveshare Serial Bus Servo Driver HAT (A) - Bus Servo Driver</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>Controller: ESP32-WROOM-32</li>\n\t<li>Power Supply Port: XT60 connector, 5.5x2.5 mm DC jack</li>\n\t<li>Power Supply: 9 ~ 25 V (the input voltage and the servo voltage must be matched)</li>\n\t<li>Communication Interface\n\t<ul>\n\t\t<li>UART</li>\n\t\t<li>USB</li>\n\t\t<li>Type-C port x2</li>\n\t</ul>\n\t</li>\n\t<li>Wireless Communication: 2.4G WiFi</li>\n\t<li>Weight: 82 g</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "waveshare-serial-bus-servo-driver-hat-a",
+     "id": "gid://shopify/p/5kg0gTAbg5MF9z86I9sYu4",
+     "media": [
+      {
+       "alt_text": "Waveshare Serial Bus Servo Driver HAT (A)",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3240402.webp",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3240402.webp",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "ESP32 and servo control circuit integration enables efficient and reliable servo management",
+       "Supports up to 253 servos simultaneously for large-scale robotic projects",
+       "Wired and wireless communication options provide flexible deployment",
+       "Seamless compatibility with Raspberry Pi via onboard 5V buck regulator and GPIO UART interface",
+       "Wide voltage input range (9–25V) accommodates various power sources"
+      ],
+      "unique_selling_points": [
+       "Simultaneously controls up to 253 servos with both wired and wireless communication, seamlessly integrating with Raspberry Pi and supporting a wide voltage range."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1992,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1992,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare Serial Bus Servo Driver HAT (A)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/44625747509409:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>Waveshare Serial Bus Servo Driver HAT (A)</li>\n\t<li>Integrates ESP32 &amp; Servo Control Circuit, Suitable for ST / RSBL Series Serial Bus Servos</li>\n\t<li>Controls up to 253 servos simultaneously</li>\n\t<li>Offers wired and wireless communication</li>\n\t<li>Integrates seamlessly with Raspberry Pi</li>\n\t<li>Supports 9~25V wide voltage input</li>\n\t<li>Features onboard USB Type-C ports</li>\n</ul>\n\n<p>The <strong>Waveshare Serial Bus Servo Driver HAT (A)</strong> is engineered for controlling up to 253 serial bus servos simultaneously via ESP32 UART or USB port. It serves as a primary controller for robotics projects, supporting both wired and wireless communication. This device is compatible with Raspberry Pi, offering power through an integrated 5V buck regulator and communication via GPIO UART interface. It is ideal for constructing quadruped robots, hexapod walkers, and robotic arms.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x Waveshare Serial Bus Servo Driver HAT (A)</li>\n\t<li>1x 2x20 pin header</li>\n\t<li>1x USB-A to USB-C cable</li>\n\t<li>1x Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img style=\"width: 520px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-836/img/serial-bus-servo-driver-hat-integrates-esp32-servo-control-circuit-suitable-for-st-rsbl-series-serial-bus-servos-dime.webp\"></p>\n\n<ul>\n\t<li>PCB: 65 x 57 mm</li>\n\t<li>Mounting Hole Diameter: 3 mm</li>\n\t<li>Mounting Hole Spacing: 58 x 49 mm</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://www.waveshare.com/wiki/Bus_Servo_Driver_HAT_(A)\" target=\"_blank\">Waveshare Serial Bus Servo Driver HAT (A) - Bus Servo Driver</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>Controller: ESP32-WROOM-32</li>\n\t<li>Power Supply Port: XT60 connector, 5.5x2.5 mm DC jack</li>\n\t<li>Power Supply: 9 ~ 25 V (the input voltage and the servo voltage must be matched)</li>\n\t<li>Communication Interface\n\t<ul>\n\t\t<li>UART</li>\n\t\t<li>USB</li>\n\t\t<li>Type-C port x2</li>\n\t</ul>\n\t</li>\n\t<li>Wireless Communication: 2.4G WiFi</li>\n\t<li>Weight: 82 g</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-serial-bus-servo-driver-hat-a",
+       "id": "gid://shopify/ProductVariant/44625747509409",
+       "media": [
+        {
+         "alt_text": "Waveshare Serial Bus Servo Driver HAT (A)",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3240402.webp",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3240402.webp",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 1992,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8136873738401",
+       "source": "shopify",
+       "title": "Waveshare Serial Bus Servo Driver HAT (A)",
+       "url": "https://www.robotshop.com/products/waveshare-serial-bus-servo-driver-hat-a?variant=44625747509409&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "\n<h2>Description</h2>\n<p>The <strong>Waveshare Serial Bus Servo DC buck adapter</strong> is a mini step-down power module designed for serial bus servo projects. This compact <strong>DC buck adapter</strong> accepts a wide DC 9V to 36V input and provides either a 6V or 7.2V regulated output, depending on the selected variant.</p>\n<p>Use this compact regulator when a robot, test bench, education kit or servo debugging setup needs cleaner project power without building a separate regulator board. The <strong>DC buck adapter</strong> is especially useful when the main control board and serial bus servo require a dependable servo-side supply in a small footprint.</p>\n<p>The two official variants target different servo voltage needs: the 7.2V <strong>DC buck adapter</strong> is suitable for servos such as SC15 Servo, while the 6V <strong>DC buck adapter</strong> is suitable for servos such as SC09 Servo. Choose the output voltage that matches the servo specification and wiring plan.</p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-01.webp?v=1788336371\" alt=\"Serial Bus Servo DC buck adapter overview\"></p>\n<h2>Features</h2>\n<ul>\n<li>\n<strong>Dedicated servo power accessory:</strong> the module is designed for serial bus servo power conversion.</li>\n<li>\n<strong>Two output options:</strong> select the 6V <strong>DC buck adapter</strong> or the 7.2V <strong>DC buck adapter</strong> according to the servo model.</li>\n<li>\n<strong>Wide input range:</strong> accepts DC 9V to 36V, making the module flexible for robotics power systems.</li>\n<li>\n<strong>Mini module design:</strong> small board footprint helps keep robot joints, arms, mobile platforms and lab fixtures compact.</li>\n<li>\n<strong>Easy wiring:</strong> onboard DC IN and DC OUT terminals simplify the connection between the supply and servo power rail.</li>\n<li>\n<strong>Useful with serial bus servos:</strong> the 7.2V output is indicated for SC15 Servo, and the 6V output is indicated for SC09 Servo.</li>\n<li>\n<strong>Project-friendly regulator:</strong> the adapter reduces the need for a larger external power board in quick prototypes.</li>\n</ul>\n<h2>Specifications</h2>\n<table><tbody>\n<tr>\n<th>Product name</th>\n<td>Waveshare Serial Bus Servo DC Buck Adapter</td>\n</tr>\n<tr>\n<th>Brand</th>\n<td>Waveshare</td>\n</tr>\n<tr>\n<th>Product type</th>\n<td>Serial bus servo DC-DC buck regulator accessory</td>\n</tr>\n<tr>\n<th>Part No.</th>\n<td>DC BUCK Adapter (6V) / DC BUCK Adapter (7.2V)</td>\n</tr>\n<tr>\n<th>Input voltage</th>\n<td>DC 9V to 36V</td>\n</tr>\n<tr>\n<th>Output voltage</th>\n<td>DC 6V or DC 7.2V, variant dependent</td>\n</tr>\n<tr>\n<th>Suitable servo examples</th>\n<td>6V version for SC09 Servo; 7.2V version for SC15 Servo</td>\n</tr>\n<tr>\n<th>Interface marking</th>\n<td>DC IN and DC OUT terminals</td>\n</tr>\n<tr>\n<th>Use case</th>\n<td>Power conversion for serial bus servo robotics projects</td>\n</tr>\n<tr>\n<th>Official package weight</th>\n<td>0.01kg</td>\n</tr>\n<tr>\n<th>Shipping weight</th>\n<td>10g</td>\n</tr>\n</tbody></table>\n<table><tbody>\n<tr>\n<th>Variant SKU</th>\n<th>Official part</th>\n<th>Output voltage</th>\n<th>Official suitable servo example</th>\n<th>Product list</th>\n</tr>\n<tr>\n<td>Waveshare-34860</td>\n<td>DC BUCK Adapter (6V)</td>\n<td>6V regulated output</td>\n<td>SC09 Servo</td>\n<td>DC BUCK Adapter (6V) x1; accessory pack x1</td>\n</tr>\n<tr>\n<td>Waveshare-27380</td>\n<td>DC BUCK Adapter (7.2V)</td>\n<td>7.2V regulated output</td>\n<td>SC15 Servo</td>\n<td>DC BUCK Adapter (7.2V) x1; accessory pack x1</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2>\n<ul>\n<li>Serial bus servo power conversion in robot arms, small mobile robots and servo test rigs.</li>\n<li>Classroom robotics kits that need a compact <strong>DC buck adapter</strong> for repeatable servo wiring.</li>\n<li>Maker-space maintenance benches for SC-series serial bus servo testing.</li>\n<li>Prototype builds where a DC 9V to 36V input supply must feed a lower-voltage servo rail.</li>\n<li>Embedded robot projects that need a small <strong>DC buck adapter</strong> instead of a full custom power board.</li>\n</ul>\n<h2>Product List</h2>\n<p><strong>Waveshare-34860 / DC BUCK Adapter (6V):</strong> DC BUCK Adapter (6V) x1; accessory pack x1.</p><p><strong>Waveshare-27380 / DC BUCK Adapter (7.2V):</strong> DC BUCK Adapter (7.2V) x1; accessory pack x1.</p>\n<h2>Other Content</h2>\n<p><strong>Variant selection:</strong> choose the 6V <strong>DC buck adapter</strong> for servo systems that specify a 6V rail, and choose the 7.2V <strong>DC buck adapter</strong> for servo systems that specify a 7.2V rail. Do not select voltage by connector shape alone; always check the servo datasheet or controller documentation first.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-02.webp?v=1788336375\" alt=\"6V DC buck adapter variant\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-03.webp?v=1788336379\" alt=\"7.2V DC buck adapter variant\"></p>\n<p><strong>Servo connection reference:</strong> the official application images show how the <strong>DC buck adapter</strong> can be connected in serial bus servo projects. Keep polarity and rated voltage aligned with the selected servo model before power-on.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-04.webp?v=1788336383\" alt=\"7.2V DC buck adapter connected with SC15 Servo\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-05.webp?v=1788336388\" alt=\"6V DC buck adapter connected with SC09 Servo\"></p>\n<p><strong>Board reference:</strong> the onboard resources and outline images help confirm DC IN, DC OUT and mounting placement before the adapter is installed in a robot chassis or service fixture.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-06.webp?v=1788336392\" alt=\"DC buck adapter onboard resources\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-07.webp?v=1788336397\" alt=\"DC buck adapter outline dimensions\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-08.webp?v=1788336401\" alt=\"DC buck adapter package accessory\"></p>\n<p>Relevant search terms include <strong>DC buck adapter</strong>, <strong>serial bus servo regulator</strong>, <strong>6V servo buck converter</strong>, <strong>7.2V servo buck converter</strong>, <strong>Waveshare servo power module</strong> and <strong>robot servo power adapter</strong>.</p>\n<h2>Resources</h2>\n<ul><li><a href=\"http://www.waveshare.com/wiki/DC_BUCK_Adapter_(7.2V)\" target=\"_blank\" rel=\"nofollow noopener\">Waveshare DC BUCK Adapter wiki</a></li></ul>\n<h2>FAQ</h2>\n<h3>What is the difference between the two variants?</h3><p>The two versions differ by output voltage. Waveshare-34860 is the 6V <strong>DC buck adapter</strong>, and Waveshare-27380 is the 7.2V <strong>DC buck adapter</strong>.</p><h3>What input voltage does the module accept?</h3><p>The official page lists a DC 9V to 36V input range for this <strong>DC buck adapter</strong>.</p><h3>Which servo examples are listed by Waveshare?</h3><p>Waveshare lists the 7.2V version as suitable for SC15 Servo and the 6V version as suitable for SC09 Servo.</p><h3>Can I use the adapter with any servo?</h3><p>Use it only when the servo voltage requirement matches the selected <strong>DC buck adapter</strong> output. Check the servo documentation before wiring.</p><h3>Does the package include the adapter only?</h3><p>The official package section lists one DC BUCK Adapter and an accessory pack for each voltage version.</p>"
+     },
+     "handle": "waveshare-serial-bus-servo-dc-buck-adapter",
+     "id": "gid://shopify/p/3d8ymz5012YLgVKqTj8PIS",
+     "media": [
+      {
+       "alt_text": "Waveshare Serial Bus Servo DC Buck Adapter white background product image",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-media-01.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-media-01.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Selectable 6V or 7.2V output: Ensures compatibility with both SC09 and SC15 servos for flexible project integration",
+       "Wide input voltage range (9V to 36V DC): Provides power flexibility for various robotics power systems",
+       "Miniature module design: Saves space on robot chassis and lab fixtures",
+       "Onboard DC in and DC out terminals: Simplifies wiring and reduces external components",
+       "Official variant selection: Guarantees correct voltage output for specific servo requirements"
+      ],
+      "unique_selling_points": [
+       "Offers both 6V and 7.2V output options for compatibility with different servo models, all in a compact, easy-to-use module."
+      ]
+     },
+     "options": [
+      {
+       "name": "Output voltage",
+       "values": [
+        {
+         "label": "6V Buck Regulator"
+        },
+        {
+         "label": "7.2V Buck Regulator"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 454,
+       "currency": "EUR"
+      },
+      "min": {
+       "amount": 454,
+       "currency": "EUR"
+      }
+     },
+     "title": "Waveshare Serial Bus Servo DC Buck Adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.io/buy/47132911239366:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "\n<h2>Description</h2>\n<p>The <strong>Waveshare Serial Bus Servo DC buck adapter</strong> is a mini step-down power module designed for serial bus servo projects. This compact <strong>DC buck adapter</strong> accepts a wide DC 9V to 36V input and provides either a 6V or 7.2V regulated output, depending on the selected variant.</p>\n<p>Use this compact regulator when a robot, test bench, education kit or servo debugging setup needs cleaner project power without building a separate regulator board. The <strong>DC buck adapter</strong> is especially useful when the main control board and serial bus servo require a dependable servo-side supply in a small footprint.</p>\n<p>The two official variants target different servo voltage needs: the 7.2V <strong>DC buck adapter</strong> is suitable for servos such as SC15 Servo, while the 6V <strong>DC buck adapter</strong> is suitable for servos such as SC09 Servo. Choose the output voltage that matches the servo specification and wiring plan.</p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-01.webp?v=1788336371\" alt=\"Serial Bus Servo DC buck adapter overview\"></p>\n<h2>Features</h2>\n<ul>\n<li>\n<strong>Dedicated servo power accessory:</strong> the module is designed for serial bus servo power conversion.</li>\n<li>\n<strong>Two output options:</strong> select the 6V <strong>DC buck adapter</strong> or the 7.2V <strong>DC buck adapter</strong> according to the servo model.</li>\n<li>\n<strong>Wide input range:</strong> accepts DC 9V to 36V, making the module flexible for robotics power systems.</li>\n<li>\n<strong>Mini module design:</strong> small board footprint helps keep robot joints, arms, mobile platforms and lab fixtures compact.</li>\n<li>\n<strong>Easy wiring:</strong> onboard DC IN and DC OUT terminals simplify the connection between the supply and servo power rail.</li>\n<li>\n<strong>Useful with serial bus servos:</strong> the 7.2V output is indicated for SC15 Servo, and the 6V output is indicated for SC09 Servo.</li>\n<li>\n<strong>Project-friendly regulator:</strong> the adapter reduces the need for a larger external power board in quick prototypes.</li>\n</ul>\n<h2>Specifications</h2>\n<table><tbody>\n<tr>\n<th>Product name</th>\n<td>Waveshare Serial Bus Servo DC Buck Adapter</td>\n</tr>\n<tr>\n<th>Brand</th>\n<td>Waveshare</td>\n</tr>\n<tr>\n<th>Product type</th>\n<td>Serial bus servo DC-DC buck regulator accessory</td>\n</tr>\n<tr>\n<th>Part No.</th>\n<td>DC BUCK Adapter (6V) / DC BUCK Adapter (7.2V)</td>\n</tr>\n<tr>\n<th>Input voltage</th>\n<td>DC 9V to 36V</td>\n</tr>\n<tr>\n<th>Output voltage</th>\n<td>DC 6V or DC 7.2V, variant dependent</td>\n</tr>\n<tr>\n<th>Suitable servo examples</th>\n<td>6V version for SC09 Servo; 7.2V version for SC15 Servo</td>\n</tr>\n<tr>\n<th>Interface marking</th>\n<td>DC IN and DC OUT terminals</td>\n</tr>\n<tr>\n<th>Use case</th>\n<td>Power conversion for serial bus servo robotics projects</td>\n</tr>\n<tr>\n<th>Official package weight</th>\n<td>0.01kg</td>\n</tr>\n<tr>\n<th>Shipping weight</th>\n<td>10g</td>\n</tr>\n</tbody></table>\n<table><tbody>\n<tr>\n<th>Variant SKU</th>\n<th>Official part</th>\n<th>Output voltage</th>\n<th>Official suitable servo example</th>\n<th>Product list</th>\n</tr>\n<tr>\n<td>Waveshare-34860</td>\n<td>DC BUCK Adapter (6V)</td>\n<td>6V regulated output</td>\n<td>SC09 Servo</td>\n<td>DC BUCK Adapter (6V) x1; accessory pack x1</td>\n</tr>\n<tr>\n<td>Waveshare-27380</td>\n<td>DC BUCK Adapter (7.2V)</td>\n<td>7.2V regulated output</td>\n<td>SC15 Servo</td>\n<td>DC BUCK Adapter (7.2V) x1; accessory pack x1</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2>\n<ul>\n<li>Serial bus servo power conversion in robot arms, small mobile robots and servo test rigs.</li>\n<li>Classroom robotics kits that need a compact <strong>DC buck adapter</strong> for repeatable servo wiring.</li>\n<li>Maker-space maintenance benches for SC-series serial bus servo testing.</li>\n<li>Prototype builds where a DC 9V to 36V input supply must feed a lower-voltage servo rail.</li>\n<li>Embedded robot projects that need a small <strong>DC buck adapter</strong> instead of a full custom power board.</li>\n</ul>\n<h2>Product List</h2>\n<p><strong>Waveshare-34860 / DC BUCK Adapter (6V):</strong> DC BUCK Adapter (6V) x1; accessory pack x1.</p><p><strong>Waveshare-27380 / DC BUCK Adapter (7.2V):</strong> DC BUCK Adapter (7.2V) x1; accessory pack x1.</p>\n<h2>Other Content</h2>\n<p><strong>Variant selection:</strong> choose the 6V <strong>DC buck adapter</strong> for servo systems that specify a 6V rail, and choose the 7.2V <strong>DC buck adapter</strong> for servo systems that specify a 7.2V rail. Do not select voltage by connector shape alone; always check the servo datasheet or controller documentation first.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-02.webp?v=1788336375\" alt=\"6V DC buck adapter variant\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-03.webp?v=1788336379\" alt=\"7.2V DC buck adapter variant\"></p>\n<p><strong>Servo connection reference:</strong> the official application images show how the <strong>DC buck adapter</strong> can be connected in serial bus servo projects. Keep polarity and rated voltage aligned with the selected servo model before power-on.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-04.webp?v=1788336383\" alt=\"7.2V DC buck adapter connected with SC15 Servo\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-05.webp?v=1788336388\" alt=\"6V DC buck adapter connected with SC09 Servo\"></p>\n<p><strong>Board reference:</strong> the onboard resources and outline images help confirm DC IN, DC OUT and mounting placement before the adapter is installed in a robot chassis or service fixture.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-06.webp?v=1788336392\" alt=\"DC buck adapter onboard resources\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-07.webp?v=1788336397\" alt=\"DC buck adapter outline dimensions\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-detail-08.webp?v=1788336401\" alt=\"DC buck adapter package accessory\"></p>\n<p>Relevant search terms include <strong>DC buck adapter</strong>, <strong>serial bus servo regulator</strong>, <strong>6V servo buck converter</strong>, <strong>7.2V servo buck converter</strong>, <strong>Waveshare servo power module</strong> and <strong>robot servo power adapter</strong>.</p>\n<h2>Resources</h2>\n<ul><li><a href=\"http://www.waveshare.com/wiki/DC_BUCK_Adapter_(7.2V)\" target=\"_blank\" rel=\"nofollow noopener\">Waveshare DC BUCK Adapter wiki</a></li></ul>\n<h2>FAQ</h2>\n<h3>What is the difference between the two variants?</h3><p>The two versions differ by output voltage. Waveshare-34860 is the 6V <strong>DC buck adapter</strong>, and Waveshare-27380 is the 7.2V <strong>DC buck adapter</strong>.</p><h3>What input voltage does the module accept?</h3><p>The official page lists a DC 9V to 36V input range for this <strong>DC buck adapter</strong>.</p><h3>Which servo examples are listed by Waveshare?</h3><p>Waveshare lists the 7.2V version as suitable for SC15 Servo and the 6V version as suitable for SC09 Servo.</p><h3>Can I use the adapter with any servo?</h3><p>Use it only when the servo voltage requirement matches the selected <strong>DC buck adapter</strong> output. Check the servo documentation before wiring.</p><h3>Does the package include the adapter only?</h3><p>The official package section lists one DC BUCK Adapter and an accessory pack for each voltage version.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-serial-bus-servo-dc-buck-adapter",
+       "id": "gid://shopify/ProductVariant/47132911239366",
+       "media": [
+        {
+         "alt_text": "Waveshare Serial Bus Servo DC Buck Adapter white background product image",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-media-01.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-34860-media-01.webp",
+         "width": 700
+        }
+       ],
+       "options": [
+        {
+         "label": "6V Buck Regulator",
+         "name": "Output voltage"
+        }
+       ],
+       "price": {
+        "amount": 454,
+        "currency": "EUR"
+       },
+       "seller": {
+        "domain": "38c3cf-92.myshopify.com",
+        "id": "gid://shopify/Shop/62100504774",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301169862.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301202630.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301137094.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301235398.html"
+         }
+        ],
+        "name": "OpenELAB Technology Ltd.",
+        "url": "https://openelab.io"
+       },
+       "seller_product_id": "gid://shopify/Product/9043862782150",
+       "source": "shopify",
+       "title": "Waveshare Serial Bus Servo DC Buck Adapter",
+       "url": "https://openelab.io/products/waveshare-serial-bus-servo-dc-buck-adapter?variant=47132911239366&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Waveshare 12-Bit PWM Servo Driver</li>\r\n<li>Compatible with Raspberry Pi Zero / Zero W / Zero WH / 2B / 3B / 3B+</li>\r\n<li>Features up to 16-Channel servo/PWM outputs</li>\r\n<li>Designed for <rbcollection handle=\"raspberry-pi\">Raspberry Pi</rbcollection>(not included)</li>\r\n</ul>\r\n<p>The <strong>Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi</strong> is a useful Servo Driver HAT and lets you use up to 16 channel servo/PWM outputs.</p>\r\n<p>It is compatible with Raspberry Pi Zero/Zero W/Zero WH/2B/3B/3B+. Its standard servo interface supports commonly used servo such as SG90, MG90S, MG996R, etc.; the reserved I2C control pins allows working with other control boards. The included manual contains examples in python like Bluetooth/WiFi remote control.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Size</strong></p>\r\n<ul>\r\n<li>65mm x 30mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF Files</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/w/wav/rb-wav-159/pdf/waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi-datasheet.pdf\" target=\"_blank\">Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi Datasheet</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/w/wav/rb-wav-159/pdf/waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi-schematic.pdf\" target=\"_blank\">Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi Schematic</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power supply: 5V (Pi connector) OR 6V~12V (VIN terminal)</li>\r\n<li>Servo voltage: 5V</li>\r\n<li>Logic voltage: 3.3V</li>\r\n<li>Driver: PCA9685</li>\r\n<li>Control interface: I2C</li>\r\n<li>Mounting hole size: 3mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi",
+     "id": "gid://shopify/p/3M0HkxlpCWSitxeTREERS",
+     "media": [
+      {
+       "alt_text": "Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1597100.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1597100.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "16-channel PWM servo support enables complex multi-servo robot configurations",
+       "12-bit resolution provides precise servo positioning for accurate control",
+       "I2C control interface allows easy integration with other Raspberry Pi accessories",
+       "Standard servo compatibility with popular models like SG90 and MG90S",
+       "Plug-in design ensures secure and stable installation on Raspberry Pi"
+      ],
+      "unique_selling_points": [
+       "Supports up to 16 channels of PWM servo outputs with 12-bit resolution for advanced robotics control."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1567,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1567,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 7,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42358401990817:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Waveshare 12-Bit PWM Servo Driver</li>\r\n<li>Compatible with Raspberry Pi Zero / Zero W / Zero WH / 2B / 3B / 3B+</li>\r\n<li>Features up to 16-Channel servo/PWM outputs</li>\r\n<li>Designed for <rbcollection handle=\"raspberry-pi\">Raspberry Pi</rbcollection>(not included)</li>\r\n</ul>\r\n<p>The <strong>Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi</strong> is a useful Servo Driver HAT and lets you use up to 16 channel servo/PWM outputs.</p>\r\n<p>It is compatible with Raspberry Pi Zero/Zero W/Zero WH/2B/3B/3B+. Its standard servo interface supports commonly used servo such as SG90, MG90S, MG996R, etc.; the reserved I2C control pins allows working with other control boards. The included manual contains examples in python like Bluetooth/WiFi remote control.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Size</strong></p>\r\n<ul>\r\n<li>65mm x 30mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF Files</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/w/wav/rb-wav-159/pdf/waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi-datasheet.pdf\" target=\"_blank\">Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi Datasheet</a></li>\r\n<li><a href=\"https://cdn.robotshop.com/media/w/wav/rb-wav-159/pdf/waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi-schematic.pdf\" target=\"_blank\">Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi Schematic</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power supply: 5V (Pi connector) OR 6V~12V (VIN terminal)</li>\r\n<li>Servo voltage: 5V</li>\r\n<li>Logic voltage: 3.3V</li>\r\n<li>Driver: PCA9685</li>\r\n<li>Control interface: I2C</li>\r\n<li>Mounting hole size: 3mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi",
+       "id": "gid://shopify/ProductVariant/42358401990817",
+       "media": [
+        {
+         "alt_text": "Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1597100.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1597100.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1567,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7486512824481",
+       "source": "shopify",
+       "title": "Waveshare 16-Channel 12-Bit PWM Servo Driver for Raspberry Pi",
+       "url": "https://www.robotshop.com/products/waveshare-16-channel-12-bit-pwm-servo-driver-raspberry-pi?variant=42358401990817&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)</li>\n<li>Offers 360° rotation and -45° to 90° tilt range</li>\n<li>Ensures clear low-light images with LED fill light</li>\n<li>Supports Raspberry Pi 4B and 5 integration</li>\n<li>Enables high accuracy with 12-bit magnetic encoder</li>\n<li>Allows flexible expansion and secondary development</li>\n</ul>\n<p>The <strong>Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)</strong> is a sophisticated device designed for versatile camera control applications. It features a high-torque, two-degree-of-freedom pan-tilt mechanism, driven by serial bus servos, allowing for precise and expansive movement. The module supports a full 360° horizontal rotation and a vertical tilt range from -45° to 90°, making it suitable for a wide array of surveillance and monitoring tasks.</p>\n<p>This camera module is compatible with Raspberry Pi 4B and 5, providing seamless integration into existing systems. It is equipped with a 160° ultra wide-angle 5MP camera, ensuring a broad field of view to capture extensive areas. The inclusion of an LED fill light enhances image clarity in low-light conditions, making it ideal for both day and night operations.</p>\n<p>The module is built on a general driver board for robots, offering open-source control demonstrations for various functionalities such as photo taking, video recording, face detection, and motion detection. These features can be accessed and controlled via a cross-platform web application, which supports customization and secondary development, allowing users to tailor the interface and add new functionalities as needed.</p>\n<p>The design incorporates a joint direct-drive system with high-precision serial bus servos and a 12-bit magnetic encoder, enabling closed-loop control by providing feedback on joint angle, load, and other parameters. This ensures high accuracy and reliability in operation. The module also supports flexible expansion, making it a versatile choice for developers looking to integrate it into diverse projects.</p>\n<p>*Note: Ensure proper handling and installation to avoid damage to the device or injury.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>1x Bearing retainer</li>\n<li>1x Servo mounting plate (2pcs)</li>\n<li>1x Pan-tilt metal kit (3pcs)</li>\n<li>1x Chassis mounting plate (2pcs)</li>\n<li>1x LED fill light with PH2.0 male plug</li>\n<li>1x RPI camera (G) (with cable)</li>\n<li>2x ST3215 servo (with cable and screws)</li>\n<li>2x 3pin servo connection cable ~300mm</li>\n<li>1x FFC 15pin cable ~600mm</li>\n<li>1x Thrust ball plain bearing</li>\n<li>1x 2.4G antenna</li>\n<li>1x DC5521 to XH2.54 male cable ~15cm</li>\n<li>1x PH2.0 dual-plug 4pin cable ~20cm</li>\n<li>1x IPEX 1 to SMA adapter cable ~17cm</li>\n<li>1x 0.91inch OLED</li>\n<li>1x General driver for robots</li>\n<li>5x 5.3cm clear suction pad</li>\n<li>1x Options 12V 5A power supply</li>\n<li>1x Screwdriver</li>\n<li>1x Jetson Nano adapter (A)</li>\n<li>1x 2*5pin cable ~9cm</li>\n<li>1x USB Type-A male to Type-C male cable ~1m</li>\n<li>1x Mini cross wrench sleeve</li>\n<li>1x Picatinny rail (with spanner)</li>\n<li>1x Spanner</li>\n<li>1x FFC 15pin black cable ~400mm</li>\n<li>1x PI5-camera-cable-500mm</li>\n<li>8x Silicone nonskid feet</li>\n<li>Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img alt=\"360° Omnidirectional High-Torque 2-Axis Camera Module - Dimensions\" src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-956/img/waveshare_360_omnidirectional_high_torque_2_axis_e_dims.webp\" style=\"width: 600px;\" loading=\"lazy\"></p>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>Degrees of Freedom: 2</li>\n<li>Drive Method: TTL Serial bus servo</li>\n<li>Servo Rotation Speed: 40 rpm</li>\n<li>Joint Angle Sensor: 12-bit 360° magnetic encoder</li>\n<li>Servo Torque: 30 kg.cm at 12V</li>\n<li>Joint Feedback Information: Servo status, joint angle, rotation speed, joint load, servo voltage, servo current, servo temperature, and servo working mode</li>\n<li>Main Control: ESP32-D0WD-V3</li>\n<li>Wired Control Mode: USB, UART</li>\n<li>Host Support: Raspberry Pi 4B, Raspberry Pi 5</li>\n<li>LED Power: Less than 1.5W</li>\n<li>Demonstrations: Real-time video transmission, zoom, face detection (OpenCV), motion detection (OpenCV), photo taking, video recording, video review, detection condition setting, detection action setting, LED control, pan-tilt control, and serial bus servo setting</li>\n<li>Flexible 360° Omnidirectional Rotation: Horizontal rotation range up to 360°, vertical rotation range up to 135°</li>\n<li>Ultra Wide-Angle Camera: Equipped with 0V5647 5MP 160° ultra wide-angle camera</li>\n<li>LED Fill Light: Ensures clear images in low-light conditions</li>\n<li>Joint Direct-Drive Design: High-precision serial bus servos, built-in 360° 12-bit magnetic encoder</li>\n<li>Supports Flexible Expansion and Secondary Development: Includes a free Picatinny rail and 1/4 screw, open source for models and drawings</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "waveshare-360-omnidirectional-high-torque-2-axis-expandable-pan-tilt-camera-module-driven-by-serial-bus-servos-us",
+     "id": "gid://shopify/p/2RHkd4Tx0YZYZrT31Gjmdy",
+     "media": [
+      {
+       "alt_text": "Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3880318.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3880318.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "360° horizontal rotation and 45° to 90° vertical tilt for comprehensive coverage and flexible positioning",
+       "160° ultra-wide angle camera with LED fill light ensures clear images in low light and wide field of view",
+       "12-bit magnetic encoder provides precise joint angle and load feedback for closed-loop control",
+       "Supports real-time video transmission, zoom, face detection, and motion detection via open source web app",
+       "Expandable design with secondary development and compatibility with Raspberry Pi 4B and 5 for easy integration"
+      ],
+      "unique_selling_points": [
+       "360° omnidirectional rotation with 12-bit magnetic encoder and ultra-wide 160° camera for flexible, high-precision control and real-time video streaming."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 11601,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 11601,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/51837765026156:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)</li>\n<li>Offers 360° rotation and -45° to 90° tilt range</li>\n<li>Ensures clear low-light images with LED fill light</li>\n<li>Supports Raspberry Pi 4B and 5 integration</li>\n<li>Enables high accuracy with 12-bit magnetic encoder</li>\n<li>Allows flexible expansion and secondary development</li>\n</ul>\n<p>The <strong>Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)</strong> is a sophisticated device designed for versatile camera control applications. It features a high-torque, two-degree-of-freedom pan-tilt mechanism, driven by serial bus servos, allowing for precise and expansive movement. The module supports a full 360° horizontal rotation and a vertical tilt range from -45° to 90°, making it suitable for a wide array of surveillance and monitoring tasks.</p>\n<p>This camera module is compatible with Raspberry Pi 4B and 5, providing seamless integration into existing systems. It is equipped with a 160° ultra wide-angle 5MP camera, ensuring a broad field of view to capture extensive areas. The inclusion of an LED fill light enhances image clarity in low-light conditions, making it ideal for both day and night operations.</p>\n<p>The module is built on a general driver board for robots, offering open-source control demonstrations for various functionalities such as photo taking, video recording, face detection, and motion detection. These features can be accessed and controlled via a cross-platform web application, which supports customization and secondary development, allowing users to tailor the interface and add new functionalities as needed.</p>\n<p>The design incorporates a joint direct-drive system with high-precision serial bus servos and a 12-bit magnetic encoder, enabling closed-loop control by providing feedback on joint angle, load, and other parameters. This ensures high accuracy and reliability in operation. The module also supports flexible expansion, making it a versatile choice for developers looking to integrate it into diverse projects.</p>\n<p>*Note: Ensure proper handling and installation to avoid damage to the device or injury.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>1x Bearing retainer</li>\n<li>1x Servo mounting plate (2pcs)</li>\n<li>1x Pan-tilt metal kit (3pcs)</li>\n<li>1x Chassis mounting plate (2pcs)</li>\n<li>1x LED fill light with PH2.0 male plug</li>\n<li>1x RPI camera (G) (with cable)</li>\n<li>2x ST3215 servo (with cable and screws)</li>\n<li>2x 3pin servo connection cable ~300mm</li>\n<li>1x FFC 15pin cable ~600mm</li>\n<li>1x Thrust ball plain bearing</li>\n<li>1x 2.4G antenna</li>\n<li>1x DC5521 to XH2.54 male cable ~15cm</li>\n<li>1x PH2.0 dual-plug 4pin cable ~20cm</li>\n<li>1x IPEX 1 to SMA adapter cable ~17cm</li>\n<li>1x 0.91inch OLED</li>\n<li>1x General driver for robots</li>\n<li>5x 5.3cm clear suction pad</li>\n<li>1x Options 12V 5A power supply</li>\n<li>1x Screwdriver</li>\n<li>1x Jetson Nano adapter (A)</li>\n<li>1x 2*5pin cable ~9cm</li>\n<li>1x USB Type-A male to Type-C male cable ~1m</li>\n<li>1x Mini cross wrench sleeve</li>\n<li>1x Picatinny rail (with spanner)</li>\n<li>1x Spanner</li>\n<li>1x FFC 15pin black cable ~400mm</li>\n<li>1x PI5-camera-cable-500mm</li>\n<li>8x Silicone nonskid feet</li>\n<li>Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img alt=\"360° Omnidirectional High-Torque 2-Axis Camera Module - Dimensions\" src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-956/img/waveshare_360_omnidirectional_high_torque_2_axis_e_dims.webp\" style=\"width: 600px;\" loading=\"lazy\"></p>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>Degrees of Freedom: 2</li>\n<li>Drive Method: TTL Serial bus servo</li>\n<li>Servo Rotation Speed: 40 rpm</li>\n<li>Joint Angle Sensor: 12-bit 360° magnetic encoder</li>\n<li>Servo Torque: 30 kg.cm at 12V</li>\n<li>Joint Feedback Information: Servo status, joint angle, rotation speed, joint load, servo voltage, servo current, servo temperature, and servo working mode</li>\n<li>Main Control: ESP32-D0WD-V3</li>\n<li>Wired Control Mode: USB, UART</li>\n<li>Host Support: Raspberry Pi 4B, Raspberry Pi 5</li>\n<li>LED Power: Less than 1.5W</li>\n<li>Demonstrations: Real-time video transmission, zoom, face detection (OpenCV), motion detection (OpenCV), photo taking, video recording, video review, detection condition setting, detection action setting, LED control, pan-tilt control, and serial bus servo setting</li>\n<li>Flexible 360° Omnidirectional Rotation: Horizontal rotation range up to 360°, vertical rotation range up to 135°</li>\n<li>Ultra Wide-Angle Camera: Equipped with 0V5647 5MP 160° ultra wide-angle camera</li>\n<li>LED Fill Light: Ensures clear images in low-light conditions</li>\n<li>Joint Direct-Drive Design: High-precision serial bus servos, built-in 360° 12-bit magnetic encoder</li>\n<li>Supports Flexible Expansion and Secondary Development: Includes a free Picatinny rail and 1/4 screw, open source for models and drawings</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-360-omnidirectional-high-torque-2-axis-expandable-pan-tilt-camera-module-driven-by-serial-bus-servos-us",
+       "id": "gid://shopify/ProductVariant/51837765026156",
+       "media": [
+        {
+         "alt_text": "Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3880318.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3880318.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 11601,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14682248937836",
+       "source": "shopify",
+       "title": "Waveshare 360° Omnidirectional High-Torque 2-Axis Expandable Pan-Tilt Camera Module, Driven by Serial Bus Servos (US)",
+       "url": "https://www.robotshop.com/products/waveshare-360-omnidirectional-high-torque-2-axis-expandable-pan-tilt-camera-module-driven-by-serial-bus-servos-us?variant=51837765026156&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span><strong>Servo Driver for Micro:bit Expansion Board</strong>: a <strong>compact, reliable add-on</strong> that delivers <strong>precise servo control</strong> for Micro:bit projects, supporting <strong>standard hobby servos</strong> with easy <strong>plug-and-play integration</strong> to Micro:bit GPIO, <strong>built-in protection</strong>, and a <strong>shared-ground power setup</strong> for safe, smooth robotics demos and classroom experiments. Note: if you’ve hit the <strong>PWM output limit</strong> on Micro:bit when building a multi-servo robot, this <strong>servo driver breakout</strong> offers an excellent scalable solution to expand your arm or robot projects efficiently.<br><br></span></p>\n<h2>Features</h2>\n<ul>\n<li>micro:bit edge connector, directly pluggable</li>\n<li>I2C controlled, using only 2 pins</li>\n<li>Up to 16-Channel servo/PWM outputs, 12-bit resolution for each channel (4096 scales)</li>\n<li>Integrates 5V regulator, up to 3A output current, can be powered from battery through VIN terminal</li>\n<li>Standard servo interface, supports common used servos</li>\n<li>Reserved I2C control pins, allows to work with other control boards</li>\n<li>Comes with development resources and manual (micro:bit graphical examples like Bluetooth/2.4G wir eless remote control)<br><br>\n</li>\n</ul>\n<h2>Specifications</h2>\n<ul>\n<li>Power supply: 5V (POWER connector) <strong>OR</strong> 6V~12V (VIN terminal)</li>\n<li>Servo voltage: 5V</li>\n<li>Logic voltage: 3.3V</li>\n<li>Driver: PCA9685</li>\n<li>Control interface: I2C</li>\n<li>Dimension: 65mm x 36mm</li>\n<li>Mounting hole size: 3.0mm<br><br>\n</li>\n</ul>\n<h2>Demo</h2>\n<p><span><img src=\"https://www.waveshare.com/img/devkit/accBoard/Servo-Driver-for-micro-bit/Servo-Driver-for-micro-bit-demo.gif\" alt=\"Servo Driver for micro:bit demo\"><br><br></span></p>\n<h2>Dimensions</h2>\n<p><span><img src=\"https://www.waveshare.com/img/devkit/accBoard/Servo-Driver-for-micro-bit/Servo-Driver-for-micro-bit-size.jpg\" alt=\"Servo Driver for micro:bit dimensions\"></span><br></p>"
+     },
+     "handle": "waveshare-servo-driver-control-board",
+     "id": "gid://shopify/p/4eoqSMj7lN25RkCXVrlf6d",
+     "media": [
+      {
+       "alt_text": "Waveshare Servo Driver for micro:bit 16-Channel 12-bit I2C Control Board",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/servo-driver-for-micro-bit-1_6b9bbda9-0d10-42f3-846c-7cb96569ee40.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/servo-driver-for-micro-bit-1_6b9bbda9-0d10-42f3-846c-7cb96569ee40.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Direct microbit edge connector enables easy integration for robotics projects",
+       "I2C control using only 2 pins simplifies wiring and setup",
+       "Supports up to 16 servo PWM outputs for scalable multi-servo control",
+       "12-bit resolution per channel ensures precise servo positioning",
+       "Built-in protection and shared ground power setup enhance safety during experiments"
+      ],
+      "unique_selling_points": [
+       "Directly plug-and-play I2C-controlled servo driver with up to 16 channels and 12-bit resolution for microbit projects."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1782,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1782,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare Servo Driver for micro:bit 16-Channel 12-bit I2C Control Board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/55857932828996:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span><strong>Servo Driver for Micro:bit Expansion Board</strong>: a <strong>compact, reliable add-on</strong> that delivers <strong>precise servo control</strong> for Micro:bit projects, supporting <strong>standard hobby servos</strong> with easy <strong>plug-and-play integration</strong> to Micro:bit GPIO, <strong>built-in protection</strong>, and a <strong>shared-ground power setup</strong> for safe, smooth robotics demos and classroom experiments. Note: if you’ve hit the <strong>PWM output limit</strong> on Micro:bit when building a multi-servo robot, this <strong>servo driver breakout</strong> offers an excellent scalable solution to expand your arm or robot projects efficiently.<br><br></span></p>\n<h2>Features</h2>\n<ul>\n<li>micro:bit edge connector, directly pluggable</li>\n<li>I2C controlled, using only 2 pins</li>\n<li>Up to 16-Channel servo/PWM outputs, 12-bit resolution for each channel (4096 scales)</li>\n<li>Integrates 5V regulator, up to 3A output current, can be powered from battery through VIN terminal</li>\n<li>Standard servo interface, supports common used servos</li>\n<li>Reserved I2C control pins, allows to work with other control boards</li>\n<li>Comes with development resources and manual (micro:bit graphical examples like Bluetooth/2.4G wir eless remote control)<br><br>\n</li>\n</ul>\n<h2>Specifications</h2>\n<ul>\n<li>Power supply: 5V (POWER connector) <strong>OR</strong> 6V~12V (VIN terminal)</li>\n<li>Servo voltage: 5V</li>\n<li>Logic voltage: 3.3V</li>\n<li>Driver: PCA9685</li>\n<li>Control interface: I2C</li>\n<li>Dimension: 65mm x 36mm</li>\n<li>Mounting hole size: 3.0mm<br><br>\n</li>\n</ul>\n<h2>Demo</h2>\n<p><span><img src=\"https://www.waveshare.com/img/devkit/accBoard/Servo-Driver-for-micro-bit/Servo-Driver-for-micro-bit-demo.gif\" alt=\"Servo Driver for micro:bit demo\"><br><br></span></p>\n<h2>Dimensions</h2>\n<p><span><img src=\"https://www.waveshare.com/img/devkit/accBoard/Servo-Driver-for-micro-bit/Servo-Driver-for-micro-bit-size.jpg\" alt=\"Servo Driver for micro:bit dimensions\"></span><br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-servo-driver-control-board",
+       "id": "gid://shopify/ProductVariant/55857932828996",
+       "media": [
+        {
+         "alt_text": "Waveshare Servo Driver for micro:bit 16-Channel 12-bit I2C Control Board",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/servo-driver-for-micro-bit-1_6b9bbda9-0d10-42f3-846c-7cb96569ee40.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/servo-driver-for-micro-bit-1_6b9bbda9-0d10-42f3-846c-7cb96569ee40.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 1782,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15349041889604",
+       "source": "shopify",
+       "title": "Waveshare Servo Driver for micro:bit 16-Channel 12-bit I2C Control Board",
+       "url": "https://openelab.com/products/waveshare-servo-driver-control-board?variant=55857932828996&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "\n<h2>Description</h2>\n<p>The <strong>Waveshare Servo Driver HAT</strong> is a 16-channel PWM and servo controller for Raspberry Pi series boards and Jetson Nano. It uses the PCA9685 driver over I2C, so a Raspberry Pi can control many servos while using only two control pins.</p>\n<p>This <strong>Servo Driver HAT</strong> is useful when a project needs stable, repeatable servo signals without relying on software PWM from the Raspberry Pi GPIO. The 12-bit PWM resolution gives 4096 steps per channel, which helps robotic arms, pan-tilt platforms, walkers and small automation fixtures move more smoothly.</p>\n<p>The <strong>Servo Driver HAT</strong> keeps servo power separate through a 5V screw terminal while the board is controlled from the 40-pin GPIO header. Raspberry Pi boards and servos are not included, so it is best treated as a compact expansion board for users who already have the controller board, servos and a suitable 5V servo power supply.</p>\n<h2>Features</h2>\n<ul>\n<li>\n<strong>16-channel servo control:</strong> drives up to 16 servo or PWM outputs from one Raspberry Pi HAT.</li>\n<li>\n<strong>PCA9685 driver:</strong> dedicated PWM controller reduces timing jitter compared with software-generated PWM.</li>\n<li>\n<strong>12-bit PWM resolution:</strong> each channel supports 4096 control steps for finer servo positioning.</li>\n<li>\n<strong>I2C interface:</strong> uses only SDA and SCL control lines and leaves more GPIO available for sensors or other modules.</li>\n<li>\n<strong>40-pin Raspberry Pi header:</strong> standard GPIO extension header supports Raspberry Pi series boards and Jetson Nano.</li>\n<li>\n<strong>Reserved I2C pins:</strong> exposes the I2C control pins for use with other control boards or expansion wiring.</li>\n<li>\n<strong>External servo power input:</strong> screw terminal helps supply the current demanded by multiple servos.</li>\n</ul>\n<h2>Specifications</h2>\n<table><tbody>\n<tr>\n<th>Product name</th>\n<td>Waveshare 16-Channel Servo HAT for Raspberry Pi</td>\n</tr>\n<tr>\n<th>Part No.</th>\n<td>Servo Driver HAT</td>\n</tr>\n<tr>\n<th>SKU</th>\n<td>Waveshare-15275</td>\n</tr>\n<tr>\n<th>Brand</th>\n<td>Waveshare</td>\n</tr>\n<tr>\n<th>Driver chip</th>\n<td>PCA9685</td>\n</tr>\n<tr>\n<th>Control interface</th>\n<td>I2C</td>\n</tr>\n<tr>\n<th>Compatibility</th>\n<td>Raspberry Pi series boards, Jetson Nano</td>\n</tr>\n<tr>\n<th>GPIO header</th>\n<td>Standard Raspberry Pi 40PIN GPIO extension header</td>\n</tr>\n<tr>\n<th>PWM / servo channels</th>\n<td>Up to 16 channels</td>\n</tr>\n<tr>\n<th>PWM resolution</th>\n<td>12-bit, 4096 steps per channel</td>\n</tr>\n<tr>\n<th>Power input for servos</th>\n<td>External 5V screw terminal</td>\n</tr>\n<tr>\n<th>Expansion pins</th>\n<td>Reserved I2C control pins</td>\n</tr>\n<tr>\n<th>Pinheader version</th>\n<td>Straight pinheader</td>\n</tr>\n<tr>\n<th>Package weight</th>\n<td>80g estimated shipping weight</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2>\n<ul>\n<li>Raspberry Pi robotic arm projects with several servo joints.</li>\n<li>Hexapod walker, rover steering and pan-tilt camera mechanisms.</li>\n<li>Education labs that demonstrate PWM, I2C and actuator control.</li>\n<li>Maker automation fixtures that need repeated servo motion.</li>\n<li>Jetson Nano robot prototypes that need a compact multi-servo controller.</li>\n</ul>\n<h2>Product List</h2>\n<ul>\n<li>Servo Driver HAT x1</li>\n<li>Screws pack x1</li>\n</ul>\n<h2>Other Content</h2>\n<p><strong>Connection layout:</strong> the <strong>Servo Driver HAT</strong> plugs into the Raspberry Pi 40-pin header and routes PWM outputs to the servo headers, with an external 5V input for servo power.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-01.webp?v=1789096302\" alt=\"Waveshare Servo Driver HAT board overview\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-02.webp?v=1789096306\" alt=\"Waveshare Servo Driver HAT wiring example\"></p>\n<p><strong>Project testing:</strong> the official example images show the board driving servos from a Raspberry Pi setup. Use a suitable external servo supply whenever several servos move at the same time.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-03.webp?v=1789096310\" alt=\"Waveshare Servo Driver HAT powered servo test\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-04.webp?v=1789096314\" alt=\"Waveshare Servo Driver HAT bottom board view\"></p>\n<p><strong>Mechanical planning:</strong> the official demo and dimension resources help verify clearance before adding the board to a robot chassis, classroom fixture or bench prototype.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-05.webp?v=1789096317\" alt=\"Waveshare PCA9685 demo animation\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-06.webp?v=1789096322\" alt=\"Waveshare servo board dimensions\"></p>\n<p><strong>Package check:</strong> the package contains the board and screws pack. Raspberry Pi, Jetson Nano, servos and power supply are separate project parts.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-07.webp?v=1789096327\" alt=\"Waveshare servo board package contents\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-08.webp?v=1789096332\" alt=\"Waveshare screws pack\"></p>\n<p>Relevant search terms include <strong>Servo Driver HAT</strong>, <strong>Raspberry Pi servo driver</strong>, <strong>16-channel servo controller</strong>, <strong>PCA9685 PWM driver</strong>, <strong>I2C servo controller</strong>, <strong>12-bit PWM HAT</strong> and <strong>Jetson Nano servo driver</strong>.</p>\n<h2>Resources</h2>\n<ul>\n<li><a href=\"https://www.waveshare.com/wiki/Servo_Driver_HAT\" target=\"_blank\" rel=\"nofollow noopener\">Waveshare Wiki</a></li>\n<li><a href=\"https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf\" target=\"_blank\" rel=\"nofollow noopener\">NXP PCA9685 datasheet</a></li>\n<li><a href=\"https://www.raspberrypi.com/documentation/computers/\" target=\"_blank\" rel=\"nofollow noopener\">Raspberry Pi computer documentation</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Are Raspberry Pi boards or servos included?</h3><p>No. The official package includes the board and screws pack only.</p><h3>How many servos can it control?</h3><p>The board provides up to 16 PWM or servo output channels.</p><h3>Which driver chip does it use?</h3><p>It uses the PCA9685 PWM controller, controlled through I2C.</p><h3>Why use this instead of Raspberry Pi GPIO PWM?</h3><p>The dedicated driver provides stable 12-bit PWM outputs and avoids common software PWM jitter problems.</p><h3>Does it work with Jetson Nano?</h3><p>Yes. Waveshare lists support for Raspberry Pi series boards and Jetson Nano.</p>"
+     },
+     "handle": "waveshare-servo-driver-hat-for-raspberry-pi-16-channel-12-bit-i2c",
+     "id": "gid://shopify/p/wdlIB8Zpwc2cBELdM86cA",
+     "media": [
+      {
+       "alt_text": "Waveshare Servo Driver HAT white background product image",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-media-01.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-media-01.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "16-channel PWM and servo control enables simultaneous management of multiple servos for complex robotic projects",
+       "Dedicated PCA9685 PWM controller ensures stable, low-jitter servo signals for smoother motion",
+       "12-bit PWM resolution (4096 steps per channel) allows for precise servo positioning",
+       "I2C interface uses only two control pins, freeing up GPIO for other peripherals",
+       "External 5V screw terminal supplies power to multiple servos, supporting high current demands"
+      ],
+      "unique_selling_points": [
+       "Provides up to 16 stable PWM outputs with 12-bit resolution, reducing timing jitter compared to software PWM on the Raspberry Pi GPIO."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1632,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1632,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare Servo Driver HAT for Raspberry Pi, 16-Channel, 12-bit, I2C",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/57233756946756:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "\n<h2>Description</h2>\n<p>The <strong>Waveshare Servo Driver HAT</strong> is a 16-channel PWM and servo controller for Raspberry Pi series boards and Jetson Nano. It uses the PCA9685 driver over I2C, so a Raspberry Pi can control many servos while using only two control pins.</p>\n<p>This <strong>Servo Driver HAT</strong> is useful when a project needs stable, repeatable servo signals without relying on software PWM from the Raspberry Pi GPIO. The 12-bit PWM resolution gives 4096 steps per channel, which helps robotic arms, pan-tilt platforms, walkers and small automation fixtures move more smoothly.</p>\n<p>The <strong>Servo Driver HAT</strong> keeps servo power separate through a 5V screw terminal while the board is controlled from the 40-pin GPIO header. Raspberry Pi boards and servos are not included, so it is best treated as a compact expansion board for users who already have the controller board, servos and a suitable 5V servo power supply.</p>\n<h2>Features</h2>\n<ul>\n<li>\n<strong>16-channel servo control:</strong> drives up to 16 servo or PWM outputs from one Raspberry Pi HAT.</li>\n<li>\n<strong>PCA9685 driver:</strong> dedicated PWM controller reduces timing jitter compared with software-generated PWM.</li>\n<li>\n<strong>12-bit PWM resolution:</strong> each channel supports 4096 control steps for finer servo positioning.</li>\n<li>\n<strong>I2C interface:</strong> uses only SDA and SCL control lines and leaves more GPIO available for sensors or other modules.</li>\n<li>\n<strong>40-pin Raspberry Pi header:</strong> standard GPIO extension header supports Raspberry Pi series boards and Jetson Nano.</li>\n<li>\n<strong>Reserved I2C pins:</strong> exposes the I2C control pins for use with other control boards or expansion wiring.</li>\n<li>\n<strong>External servo power input:</strong> screw terminal helps supply the current demanded by multiple servos.</li>\n</ul>\n<h2>Specifications</h2>\n<table><tbody>\n<tr>\n<th>Product name</th>\n<td>Waveshare 16-Channel Servo HAT for Raspberry Pi</td>\n</tr>\n<tr>\n<th>Part No.</th>\n<td>Servo Driver HAT</td>\n</tr>\n<tr>\n<th>SKU</th>\n<td>Waveshare-15275</td>\n</tr>\n<tr>\n<th>Brand</th>\n<td>Waveshare</td>\n</tr>\n<tr>\n<th>Driver chip</th>\n<td>PCA9685</td>\n</tr>\n<tr>\n<th>Control interface</th>\n<td>I2C</td>\n</tr>\n<tr>\n<th>Compatibility</th>\n<td>Raspberry Pi series boards, Jetson Nano</td>\n</tr>\n<tr>\n<th>GPIO header</th>\n<td>Standard Raspberry Pi 40PIN GPIO extension header</td>\n</tr>\n<tr>\n<th>PWM / servo channels</th>\n<td>Up to 16 channels</td>\n</tr>\n<tr>\n<th>PWM resolution</th>\n<td>12-bit, 4096 steps per channel</td>\n</tr>\n<tr>\n<th>Power input for servos</th>\n<td>External 5V screw terminal</td>\n</tr>\n<tr>\n<th>Expansion pins</th>\n<td>Reserved I2C control pins</td>\n</tr>\n<tr>\n<th>Pinheader version</th>\n<td>Straight pinheader</td>\n</tr>\n<tr>\n<th>Package weight</th>\n<td>80g estimated shipping weight</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2>\n<ul>\n<li>Raspberry Pi robotic arm projects with several servo joints.</li>\n<li>Hexapod walker, rover steering and pan-tilt camera mechanisms.</li>\n<li>Education labs that demonstrate PWM, I2C and actuator control.</li>\n<li>Maker automation fixtures that need repeated servo motion.</li>\n<li>Jetson Nano robot prototypes that need a compact multi-servo controller.</li>\n</ul>\n<h2>Product List</h2>\n<ul>\n<li>Servo Driver HAT x1</li>\n<li>Screws pack x1</li>\n</ul>\n<h2>Other Content</h2>\n<p><strong>Connection layout:</strong> the <strong>Servo Driver HAT</strong> plugs into the Raspberry Pi 40-pin header and routes PWM outputs to the servo headers, with an external 5V input for servo power.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-01.webp?v=1789096302\" alt=\"Waveshare Servo Driver HAT board overview\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-02.webp?v=1789096306\" alt=\"Waveshare Servo Driver HAT wiring example\"></p>\n<p><strong>Project testing:</strong> the official example images show the board driving servos from a Raspberry Pi setup. Use a suitable external servo supply whenever several servos move at the same time.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-03.webp?v=1789096310\" alt=\"Waveshare Servo Driver HAT powered servo test\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-04.webp?v=1789096314\" alt=\"Waveshare Servo Driver HAT bottom board view\"></p>\n<p><strong>Mechanical planning:</strong> the official demo and dimension resources help verify clearance before adding the board to a robot chassis, classroom fixture or bench prototype.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-05.webp?v=1789096317\" alt=\"Waveshare PCA9685 demo animation\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-06.webp?v=1789096322\" alt=\"Waveshare servo board dimensions\"></p>\n<p><strong>Package check:</strong> the package contains the board and screws pack. Raspberry Pi, Jetson Nano, servos and power supply are separate project parts.</p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-07.webp?v=1789096327\" alt=\"Waveshare servo board package contents\"></p><p><img src=\"https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-detail-08.webp?v=1789096332\" alt=\"Waveshare screws pack\"></p>\n<p>Relevant search terms include <strong>Servo Driver HAT</strong>, <strong>Raspberry Pi servo driver</strong>, <strong>16-channel servo controller</strong>, <strong>PCA9685 PWM driver</strong>, <strong>I2C servo controller</strong>, <strong>12-bit PWM HAT</strong> and <strong>Jetson Nano servo driver</strong>.</p>\n<h2>Resources</h2>\n<ul>\n<li><a href=\"https://www.waveshare.com/wiki/Servo_Driver_HAT\" target=\"_blank\" rel=\"nofollow noopener\">Waveshare Wiki</a></li>\n<li><a href=\"https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf\" target=\"_blank\" rel=\"nofollow noopener\">NXP PCA9685 datasheet</a></li>\n<li><a href=\"https://www.raspberrypi.com/documentation/computers/\" target=\"_blank\" rel=\"nofollow noopener\">Raspberry Pi computer documentation</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Are Raspberry Pi boards or servos included?</h3><p>No. The official package includes the board and screws pack only.</p><h3>How many servos can it control?</h3><p>The board provides up to 16 PWM or servo output channels.</p><h3>Which driver chip does it use?</h3><p>It uses the PCA9685 PWM controller, controlled through I2C.</p><h3>Why use this instead of Raspberry Pi GPIO PWM?</h3><p>The dedicated driver provides stable 12-bit PWM outputs and avoids common software PWM jitter problems.</p><h3>Does it work with Jetson Nano?</h3><p>Yes. Waveshare lists support for Raspberry Pi series boards and Jetson Nano.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-servo-driver-hat-for-raspberry-pi-16-channel-12-bit-i2c",
+       "id": "gid://shopify/ProductVariant/57233756946756",
+       "media": [
+        {
+         "alt_text": "Waveshare Servo Driver HAT white background product image",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-media-01.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-waveshare-15275-media-01.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 1632,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15664858235204",
+       "source": "shopify",
+       "title": "Waveshare Servo Driver HAT for Raspberry Pi, 16-Channel, 12-bit, I2C",
+       "url": "https://openelab.com/products/waveshare-servo-driver-hat-for-raspberry-pi-16-channel-12-bit-i2c?variant=57233756946756&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>Waveshare General Driver Board, ESP32-Based</li>\n\t<li>Versatile and multi-functional, designed for robots</li>\n\t<li>Supports WIFI, Bluetooth, and ESP-NOW communications</li>\n\t<li>Equipped with onboard motor control and serial bus servos control interfaces</li>\n\t<li>Features a 9-axis IMU, TF card slot, and Laser Lidar interface</li>\n\t<li>Compatible with Raspberry Pi and Jetson Nano, with open-source demos and tutorials</li>\n</ul>\n\n<p>The <strong>Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth &amp; ESP-NOW </strong>is a versatile piece of technology that is compatible with Raspberry Pi and Jetson Nano. This multi-functional driver board is specifically designed for robots, offering a wide range of possibilities. It is built on the ESP32-WROOM-32 module, which supports various forms of wireless communication such as WIFI, Bluetooth, and ESP-NOW.</p>\n\n<p>The board features onboard motor control interfaces that can accommodate either two DC motors with encoders or four DC motors without encoders, divided into two groups. It also includes onboard serial bus servos control interfaces, capable of controlling up to 253 ST3215 serial bus servos and receiving feedback from these servos.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-desc1.webp\"></p>\n\n<p>In addition, the board is equipped with an onboard 9-axis IMU, which can provide attitude and heading information at any given time. It supports a power input range of 7~13V and can be powered directly by a 2S or 3S lithium battery module. The board also includes an automatic download circuit for easy program uploading and supports input voltage/current monitoring.</p>\n\n<p>Additional features include an onboard TF card slot, a Laser Lidar interface, and an integrated UART to USB function. The board also has an I2C interface for connecting peripherals such as OLED, IMU, and other I2C devices. It also includes a multi-functional extended header for additional functions, such as controlling servos or relays.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-desc2.webp\"></p>\n\n<p>The board comes with a 40-Pin GPIO header for connecting and powering the host computer, such as a Raspberry Pi or Jetson Nano, and can communicate via serial port or I2C. The General Driver Board for Robots also provides open-source demos and detailed tutorials for beginners, making it easy to get started with this technology.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x General Driver for Robots</li>\n\t<li>1x Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/W/Wav/RB-Wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-dime.jpg\" target=\"_blank\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-dime.webp\"></a></p>\n\n<ul>\n\t<li>65 x 65 mm (L x W)</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://www.waveshare.com/wiki/General_Driver_for_Robots\" target=\"_blank\">Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth &amp; ESP-NOW - Wiki</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>Control module: ESP32-WROOM-32</li>\n\t<li>Control chip: ESP32</li>\n\t<li>Power supply: DC 7~13V</li>\n\t<li>Power interface: XH2.54</li>\n\t<li>Antenna connector: IPEX1</li>\n\t<li>Download interface: Type-C</li>\n\t<li>Wireless communication: WIFI, Bluetooth, ESP-NOW</li>\n\t<li>Weight: 49 g</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "waveshare-general-driver-board-esp32-based-supports-wifi-bluetooth-esp-now",
+     "id": "gid://shopify/p/2qa4YPuVBGiCpMGlSdCyXe",
+     "media": [
+      {
+       "alt_text": "Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth & ESP-NOW",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1851656.webp",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1851656.webp",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Supports WiFi, Bluetooth, and ESP-NOW wireless communications for flexible connectivity",
+       "Onboard motor control interfaces for 2x DC motors with encoder or 4x DC motors for versatile actuation",
+       "Serial bus servo control for up to 253 ST3215 servos, enabling complex robotic movements",
+       "9-axis IMU (QMI8658C, AK09918) for real-time attitude and heading information",
+       "Voltage and current monitoring onboard for precise power management"
+      ],
+      "unique_selling_points": [
+       "Supports WiFi, Bluetooth, and ESP-NOW wireless communications with onboard motor and servo control, plus 9-axis IMU integration."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3527,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3527,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth & ESP-NOW",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/43123355844769:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>Waveshare General Driver Board, ESP32-Based</li>\n\t<li>Versatile and multi-functional, designed for robots</li>\n\t<li>Supports WIFI, Bluetooth, and ESP-NOW communications</li>\n\t<li>Equipped with onboard motor control and serial bus servos control interfaces</li>\n\t<li>Features a 9-axis IMU, TF card slot, and Laser Lidar interface</li>\n\t<li>Compatible with Raspberry Pi and Jetson Nano, with open-source demos and tutorials</li>\n</ul>\n\n<p>The <strong>Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth &amp; ESP-NOW </strong>is a versatile piece of technology that is compatible with Raspberry Pi and Jetson Nano. This multi-functional driver board is specifically designed for robots, offering a wide range of possibilities. It is built on the ESP32-WROOM-32 module, which supports various forms of wireless communication such as WIFI, Bluetooth, and ESP-NOW.</p>\n\n<p>The board features onboard motor control interfaces that can accommodate either two DC motors with encoders or four DC motors without encoders, divided into two groups. It also includes onboard serial bus servos control interfaces, capable of controlling up to 253 ST3215 serial bus servos and receiving feedback from these servos.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-desc1.webp\"></p>\n\n<p>In addition, the board is equipped with an onboard 9-axis IMU, which can provide attitude and heading information at any given time. It supports a power input range of 7~13V and can be powered directly by a 2S or 3S lithium battery module. The board also includes an automatic download circuit for easy program uploading and supports input voltage/current monitoring.</p>\n\n<p>Additional features include an onboard TF card slot, a Laser Lidar interface, and an integrated UART to USB function. The board also has an I2C interface for connecting peripherals such as OLED, IMU, and other I2C devices. It also includes a multi-functional extended header for additional functions, such as controlling servos or relays.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-desc2.webp\"></p>\n\n<p>The board comes with a 40-Pin GPIO header for connecting and powering the host computer, such as a Raspberry Pi or Jetson Nano, and can communicate via serial port or I2C. The General Driver Board for Robots also provides open-source demos and detailed tutorials for beginners, making it easy to get started with this technology.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x General Driver for Robots</li>\n\t<li>1x Screws pack</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/W/Wav/RB-Wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-dime.jpg\" target=\"_blank\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/w/wav/rb-wav-688/img/general-driver-board-robots-esp32-based-supports-wifi-bluetooth--esp-now-dime.webp\"></a></p>\n\n<ul>\n\t<li>65 x 65 mm (L x W)</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://www.waveshare.com/wiki/General_Driver_for_Robots\" target=\"_blank\">Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth &amp; ESP-NOW - Wiki</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>Control module: ESP32-WROOM-32</li>\n\t<li>Control chip: ESP32</li>\n\t<li>Power supply: DC 7~13V</li>\n\t<li>Power interface: XH2.54</li>\n\t<li>Antenna connector: IPEX1</li>\n\t<li>Download interface: Type-C</li>\n\t<li>Wireless communication: WIFI, Bluetooth, ESP-NOW</li>\n\t<li>Weight: 49 g</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-general-driver-board-esp32-based-supports-wifi-bluetooth-esp-now",
+       "id": "gid://shopify/ProductVariant/43123355844769",
+       "media": [
+        {
+         "alt_text": "Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth & ESP-NOW",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1851656.webp",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1851656.webp",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 3527,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7735446503585",
+       "source": "shopify",
+       "title": "Waveshare General Driver Board, ESP32-Based, Supports WIFI, Bluetooth & ESP-NOW",
+       "url": "https://www.robotshop.com/products/waveshare-general-driver-board-esp32-based-supports-wifi-bluetooth-esp-now?variant=43123355844769&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Waveshare 16 Servo Controller Board</li>\r\n<li>Designed for the <rbproduct handle=\"bbc-microbit-programmable-board\">BBC micro:bit Programmable Board</rbproduct>(not included)</li>\r\n<li>Lets you connect up to 16-Channel servo/PWM outputs</li>\r\n<li>Features a 12-bit resolution for each channel (4,096 scales)</li>\r\n<li>Comes with development resources and manual</li>\r\n</ul>\r\n<p>This <strong>Waveshare 16 Servo Controller Board for micro:bit</strong> lets you connect up to 16 servos. It is designed for the BBC micro:bit (not included).</p>\r\n<p>The controller board integrates a 5V regulator, up to 3A output current, and can be powered from a battery through a VIN terminal. The standard servo interface supports commonly used servos such as SG90, MG90S, MG996R, etc. It has reserved I2C control pins, allowing you to work with other control boards.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Servo Driver for micro:bit</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Size</strong></p>\r\n<ul>\r\n<li>65mm x 36mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power supply: 5V (POWER connector) OR 6V~12V (VIN terminal)</li>\r\n<li>Servo voltage: 5V</li>\r\n<li>Logic voltage: 3.3V</li>\r\n<li>Driver: PCA9685</li>\r\n<li>Control interface: I2C</li>\r\n<li>Mounting hole size: 3.0mm</li>\r\n<li>Weight: 0.019 kg</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "waveshare-16-servo-controller-board-microbit",
+     "id": "gid://shopify/p/6nYTLvKyKaYk844gps8maE",
+     "media": [
+      {
+       "alt_text": "Waveshare 16 Servo Controller Board for micro:bit",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1595166.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1595166.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Supports up to 16 servo channels for complex robotic movements",
+       "12-bit resolution per channel ensures precise servo positioning",
+       "Integrated 5V regulator up to 3A for reliable power supply",
+       "I2C control interface for easy integration with other boards",
+       "Standard servo interface compatible with popular servos like SG90 and MG90S"
+      ],
+      "unique_selling_points": [
+       "Enables 16-channel servo control with high precision and flexible power options for microbit-based robotics projects."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1852,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1852,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare 16 Servo Controller Board for micro:bit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42360984273057:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Waveshare 16 Servo Controller Board</li>\r\n<li>Designed for the <rbproduct handle=\"bbc-microbit-programmable-board\">BBC micro:bit Programmable Board</rbproduct>(not included)</li>\r\n<li>Lets you connect up to 16-Channel servo/PWM outputs</li>\r\n<li>Features a 12-bit resolution for each channel (4,096 scales)</li>\r\n<li>Comes with development resources and manual</li>\r\n</ul>\r\n<p>This <strong>Waveshare 16 Servo Controller Board for micro:bit</strong> lets you connect up to 16 servos. It is designed for the BBC micro:bit (not included).</p>\r\n<p>The controller board integrates a 5V regulator, up to 3A output current, and can be powered from a battery through a VIN terminal. The standard servo interface supports commonly used servos such as SG90, MG90S, MG996R, etc. It has reserved I2C control pins, allowing you to work with other control boards.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Servo Driver for micro:bit</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>Size</strong></p>\r\n<ul>\r\n<li>65mm x 36mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power supply: 5V (POWER connector) OR 6V~12V (VIN terminal)</li>\r\n<li>Servo voltage: 5V</li>\r\n<li>Logic voltage: 3.3V</li>\r\n<li>Driver: PCA9685</li>\r\n<li>Control interface: I2C</li>\r\n<li>Mounting hole size: 3.0mm</li>\r\n<li>Weight: 0.019 kg</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-16-servo-controller-board-microbit",
+       "id": "gid://shopify/ProductVariant/42360984273057",
+       "media": [
+        {
+         "alt_text": "Waveshare 16 Servo Controller Board for micro:bit",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1595166.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1595166.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1852,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7487312199841",
+       "source": "shopify",
+       "title": "Waveshare 16 Servo Controller Board for micro:bit",
+       "url": "https://www.robotshop.com/products/waveshare-16-servo-controller-board-microbit?variant=42360984273057&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>Description</h2>\n<p>The <strong>Waveshare DDSM Driver HAT (B)</strong> is a dedicated <strong>DDSM400 direct-drive servo motor driver board</strong> for building multi-wheel mobile robots. Six motor connectors bring the DDSM400 wiring to one board, while an onboard <strong>ESP32-WROOM-32</strong> handles control and wireless communication. This B version is intended for DDSM400 motors; it is not the driver board for DDSM115 or DDSM210.</p>\n<p>Power the DDSM400 driver board from a suitable <strong>9–28V supply</strong> through its XT60 or DC input, and choose Raspberry Pi UART, USB or the ESP32 wireless interface for control. The board has a 40-pin Raspberry Pi header and an onboard 5V buck converter for Pi power. For a complete drive assembly, pair it with the <a href=\"https://openelab.io/products/waveshare-ddsm400-direct-drive-servo-motor\">Waveshare DDSM400 direct-drive servo motor</a>; motors and the external power supply are separate purchases.</p>\n<p><strong>Notice:</strong> Do not let an unsecured DDSM400 hub motor rotate directly on a desktop; fix its shaft or configure the heartbeat stop function. The DDSM Driver HAT (B) is for DDSM400 motors. Do not mix DDSM115, DDSM210 and DDSM400 motors, as their control commands and feedback differ. Set each motor ID before connecting multiple motors: connect only one motor to the driver board while assigning its ID, or all connected motors may receive the same ID. Choose a power supply with enough current for the connected motors.</p>\n<h2>Features</h2><ul>\n<li>\n<strong>Six motor ports:</strong> connect up to six DDSM400 hub motors to one DDSM400 driver board.</li>\n<li>\n<strong>Integrated ESP32:</strong> ESP32-WROOM-32 supports local control, 2.4GHz Wi-Fi and ESP-NOW wireless operation.</li>\n<li>\n<strong>Three control paths:</strong> Raspberry Pi UART, USB serial control or the ESP32-hosted web interface.</li>\n<li>\n<strong>Flexible power input:</strong> 9–28V through XT60 or 5.5 × 2.5mm DC jack, sized to the motor load.</li>\n<li>\n<strong>Raspberry Pi interface:</strong> 2 × 20-pin header and onboard 5V buck conversion.</li>\n<li>\n<strong>Accessible setup:</strong> controller-selection switch, dual USB-C ports and documented JSON command examples.</li>\n</ul>\n<h2>Specifications</h2><table><tbody>\n<tr>\n<th>Brand / model</th>\n<td>Waveshare DDSM Driver HAT (B)</td>\n</tr>\n<tr>\n<th>Compatible motor</th>\n<td>DDSM400 direct-drive servo motor</td>\n</tr>\n<tr>\n<th>Controller</th>\n<td>ESP32-WROOM-32</td>\n</tr>\n<tr>\n<th>Motor outputs</th>\n<td>6 × DDSM400 motor connectors</td>\n</tr>\n<tr>\n<th>Input voltage</th>\n<td>9–28V DC</td>\n</tr>\n<tr>\n<th>Power connectors</th>\n<td>XT60; 5.5 × 2.5mm DC jack</td>\n</tr>\n<tr>\n<th>Host interfaces</th>\n<td>Raspberry Pi 40-pin header; UART; 2 × USB Type-C</td>\n</tr>\n<tr>\n<th>Wireless</th>\n<td>2.4GHz Wi-Fi; ESP-NOW</td>\n</tr>\n<tr>\n<th>Serial command rate</th>\n<td>115200 baud for documented JSON commands</td>\n</tr>\n<tr>\n<th>Mounting holes</th>\n<td>3mm diameter; 58 × 49mm spacing</td>\n</tr>\n<tr>\n<th>PCB size</th>\n<td>85 × 57mm</td>\n</tr>\n<tr>\n<th>Product weight</th>\n<td>Approx. 87g</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2><ul>\n<li>\n<strong>Six-wheel robots:</strong> bring six DDSM400 wheel motors onto one compact driver board.</li>\n<li>\n<strong>Raspberry Pi robotics:</strong> integrate drive control with a Pi-based navigation or sensing stack.</li>\n<li>\n<strong>Wireless prototypes:</strong> test ESP32 Wi-Fi or ESP-NOW control without a separate wireless controller.</li>\n<li>\n<strong>USB development:</strong> send the documented commands from a computer during bench testing.</li>\n<li>\n<strong>Educational platforms:</strong> compare motor-control interfaces and power distribution in one build.</li>\n</ul>\n<h2>Product List</h2><ul>\n<li>DDSM Driver HAT (B) × 1</li>\n<li>2 × 20-pin header × 1</li>\n<li>USB Type-A to Type-C cable × 1</li>\n<li>Screws pack × 1</li>\n</ul>\n<h2>Other Content</h2>\n<p><strong>Power and compatibility:</strong> this is the DDSM400-specific B board. Do not mix it with DDSM115 or DDSM210 motors. Choose a 9–28V supply with adequate current for the number of connected motors, and disconnect power before changing motor wiring. The listed package does not include DDSM400 motors or a power adapter.</p>\n<p><strong>Control selection:</strong> use the onboard switch to select the appropriate UART/USB control path. The ESP32 firmware provides documented serial JSON commands at 115200 baud and a Wi-Fi web interface. When connecting a Raspberry Pi, align the 40-pin header and verify the wiring against the Waveshare pin diagram before applying power.</p>\n<h3>Board Functions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-1.webp?v=1792054239\" alt=\"DDSM Driver HAT B component labels and connectors\"></p>\n<h3>Dimensions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-2.webp?v=1792054239\" alt=\"DDSM Driver HAT B board size and mounting hole spacing\"></p>\n<h3>Raspberry Pi and Motor Wiring</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-3.webp?v=1792054239\" alt=\"DDSM Driver HAT B Raspberry Pi interface and DDSM400 motor connections\"></p>\n<h3>ESP32 Control</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-4.webp?v=1792054239\" alt=\"DDSM Driver HAT B ESP32 control method\"></p>\n<h3>Wireless Web Control</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-5.webp?v=1792054239\" alt=\"DDSM Driver HAT B Wi-Fi web application control\"></p>\n<h2>Resources</h2><ul>\n<li><a href=\"https://www.waveshare.com/wiki/DDSM_Driver_HAT_%28B%29\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) Wiki</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/DDSM%20Driver%20HAT%20(B)/DDSM_Driver_HAT_(B).pdf\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) Schematic PDF</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/DDSM%20Driver%20HAT%20(B)/DDSM_Driver_HAT_(B)_STEP%20model.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) STEP Model</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm400_example.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM400 Factory Demo</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm400_example_downloader.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM400 Factory Demo Downloader</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm_python.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Python Serial Demo</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Does this driver work with DDSM115 or DDSM210?</h3><p>No. The DDSM Driver HAT (B) is the DDSM400 version. Select the appropriate A-series board for DDSM115 or DDSM210 instead.</p>\n<h3>How many motors can I connect?</h3><p>The DDSM400 driver board provides six DDSM400 motor connectors. Match the external supply capacity to the actual connected motor load.</p>\n<h3>Are motors and a power supply included?</h3><p>No. The package contains the board, a 2 × 20-pin header, a USB cable and a screws pack. DDSM400 motors and the 9–28V power supply are sold separately.</p>\n<h3>Can I control it without a Raspberry Pi?</h3><p>Yes. The onboard ESP32 and USB interface provide other supported control routes. Follow the Waveshare wiki for mode selection and command examples.</p>"
+     },
+     "handle": "waveshare-ddsm-driver-hat-b-for-ddsm400",
+     "id": "gid://shopify/p/1Wfx0jIg7pn73zBMmfyXdh",
+     "media": [
+      {
+       "alt_text": "Waveshare DDSM Driver HAT B product on white background",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-media-1.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-media-1.webp",
+       "width": 700
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2294,
+       "currency": "EUR"
+      },
+      "min": {
+       "amount": 2294,
+       "currency": "EUR"
+      }
+     },
+     "title": "Waveshare DDSM Driver HAT (B) for DDSM400",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.io/buy/48325498470598:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=dGmidKYHeu79&_gsid=dGmidKYHeu79",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>Description</h2>\n<p>The <strong>Waveshare DDSM Driver HAT (B)</strong> is a dedicated <strong>DDSM400 direct-drive servo motor driver board</strong> for building multi-wheel mobile robots. Six motor connectors bring the DDSM400 wiring to one board, while an onboard <strong>ESP32-WROOM-32</strong> handles control and wireless communication. This B version is intended for DDSM400 motors; it is not the driver board for DDSM115 or DDSM210.</p>\n<p>Power the DDSM400 driver board from a suitable <strong>9–28V supply</strong> through its XT60 or DC input, and choose Raspberry Pi UART, USB or the ESP32 wireless interface for control. The board has a 40-pin Raspberry Pi header and an onboard 5V buck converter for Pi power. For a complete drive assembly, pair it with the <a href=\"https://openelab.io/products/waveshare-ddsm400-direct-drive-servo-motor\">Waveshare DDSM400 direct-drive servo motor</a>; motors and the external power supply are separate purchases.</p>\n<p><strong>Notice:</strong> Do not let an unsecured DDSM400 hub motor rotate directly on a desktop; fix its shaft or configure the heartbeat stop function. The DDSM Driver HAT (B) is for DDSM400 motors. Do not mix DDSM115, DDSM210 and DDSM400 motors, as their control commands and feedback differ. Set each motor ID before connecting multiple motors: connect only one motor to the driver board while assigning its ID, or all connected motors may receive the same ID. Choose a power supply with enough current for the connected motors.</p>\n<h2>Features</h2><ul>\n<li>\n<strong>Six motor ports:</strong> connect up to six DDSM400 hub motors to one DDSM400 driver board.</li>\n<li>\n<strong>Integrated ESP32:</strong> ESP32-WROOM-32 supports local control, 2.4GHz Wi-Fi and ESP-NOW wireless operation.</li>\n<li>\n<strong>Three control paths:</strong> Raspberry Pi UART, USB serial control or the ESP32-hosted web interface.</li>\n<li>\n<strong>Flexible power input:</strong> 9–28V through XT60 or 5.5 × 2.5mm DC jack, sized to the motor load.</li>\n<li>\n<strong>Raspberry Pi interface:</strong> 2 × 20-pin header and onboard 5V buck conversion.</li>\n<li>\n<strong>Accessible setup:</strong> controller-selection switch, dual USB-C ports and documented JSON command examples.</li>\n</ul>\n<h2>Specifications</h2><table><tbody>\n<tr>\n<th>Brand / model</th>\n<td>Waveshare DDSM Driver HAT (B)</td>\n</tr>\n<tr>\n<th>Compatible motor</th>\n<td>DDSM400 direct-drive servo motor</td>\n</tr>\n<tr>\n<th>Controller</th>\n<td>ESP32-WROOM-32</td>\n</tr>\n<tr>\n<th>Motor outputs</th>\n<td>6 × DDSM400 motor connectors</td>\n</tr>\n<tr>\n<th>Input voltage</th>\n<td>9–28V DC</td>\n</tr>\n<tr>\n<th>Power connectors</th>\n<td>XT60; 5.5 × 2.5mm DC jack</td>\n</tr>\n<tr>\n<th>Host interfaces</th>\n<td>Raspberry Pi 40-pin header; UART; 2 × USB Type-C</td>\n</tr>\n<tr>\n<th>Wireless</th>\n<td>2.4GHz Wi-Fi; ESP-NOW</td>\n</tr>\n<tr>\n<th>Serial command rate</th>\n<td>115200 baud for documented JSON commands</td>\n</tr>\n<tr>\n<th>Mounting holes</th>\n<td>3mm diameter; 58 × 49mm spacing</td>\n</tr>\n<tr>\n<th>PCB size</th>\n<td>85 × 57mm</td>\n</tr>\n<tr>\n<th>Product weight</th>\n<td>Approx. 87g</td>\n</tr>\n</tbody></table>\n<h2>Applications</h2><ul>\n<li>\n<strong>Six-wheel robots:</strong> bring six DDSM400 wheel motors onto one compact driver board.</li>\n<li>\n<strong>Raspberry Pi robotics:</strong> integrate drive control with a Pi-based navigation or sensing stack.</li>\n<li>\n<strong>Wireless prototypes:</strong> test ESP32 Wi-Fi or ESP-NOW control without a separate wireless controller.</li>\n<li>\n<strong>USB development:</strong> send the documented commands from a computer during bench testing.</li>\n<li>\n<strong>Educational platforms:</strong> compare motor-control interfaces and power distribution in one build.</li>\n</ul>\n<h2>Product List</h2><ul>\n<li>DDSM Driver HAT (B) × 1</li>\n<li>2 × 20-pin header × 1</li>\n<li>USB Type-A to Type-C cable × 1</li>\n<li>Screws pack × 1</li>\n</ul>\n<h2>Other Content</h2>\n<p><strong>Power and compatibility:</strong> this is the DDSM400-specific B board. Do not mix it with DDSM115 or DDSM210 motors. Choose a 9–28V supply with adequate current for the number of connected motors, and disconnect power before changing motor wiring. The listed package does not include DDSM400 motors or a power adapter.</p>\n<p><strong>Control selection:</strong> use the onboard switch to select the appropriate UART/USB control path. The ESP32 firmware provides documented serial JSON commands at 115200 baud and a Wi-Fi web interface. When connecting a Raspberry Pi, align the 40-pin header and verify the wiring against the Waveshare pin diagram before applying power.</p>\n<h3>Board Functions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-1.webp?v=1792054239\" alt=\"DDSM Driver HAT B component labels and connectors\"></p>\n<h3>Dimensions</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-2.webp?v=1792054239\" alt=\"DDSM Driver HAT B board size and mounting hole spacing\"></p>\n<h3>Raspberry Pi and Motor Wiring</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-3.webp?v=1792054239\" alt=\"DDSM Driver HAT B Raspberry Pi interface and DDSM400 motor connections\"></p>\n<h3>ESP32 Control</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-4.webp?v=1792054239\" alt=\"DDSM Driver HAT B ESP32 control method\"></p>\n<h3>Wireless Web Control</h3><p><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-detail-5.webp?v=1792054239\" alt=\"DDSM Driver HAT B Wi-Fi web application control\"></p>\n<h2>Resources</h2><ul>\n<li><a href=\"https://www.waveshare.com/wiki/DDSM_Driver_HAT_%28B%29\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) Wiki</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/DDSM%20Driver%20HAT%20(B)/DDSM_Driver_HAT_(B).pdf\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) Schematic PDF</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/DDSM%20Driver%20HAT%20(B)/DDSM_Driver_HAT_(B)_STEP%20model.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Driver HAT (B) STEP Model</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm400_example.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM400 Factory Demo</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm400_example_downloader.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM400 Factory Demo Downloader</a></li>\n<li><a href=\"https://files.waveshare.com/wiki/common/Ddsm_python.zip\" target=\"_blank\" rel=\"nofollow noopener\">DDSM Python Serial Demo</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Does this driver work with DDSM115 or DDSM210?</h3><p>No. The DDSM Driver HAT (B) is the DDSM400 version. Select the appropriate A-series board for DDSM115 or DDSM210 instead.</p>\n<h3>How many motors can I connect?</h3><p>The DDSM400 driver board provides six DDSM400 motor connectors. Match the external supply capacity to the actual connected motor load.</p>\n<h3>Are motors and a power supply included?</h3><p>No. The package contains the board, a 2 × 20-pin header, a USB cable and a screws pack. DDSM400 motors and the 9–28V power supply are sold separately.</p>\n<h3>Can I control it without a Raspberry Pi?</h3><p>Yes. The onboard ESP32 and USB interface provide other supported control routes. Follow the Waveshare wiki for mode selection and command examples.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "waveshare-ddsm-driver-hat-b-for-ddsm400",
+       "id": "gid://shopify/ProductVariant/48325498470598",
+       "media": [
+        {
+         "alt_text": "Waveshare DDSM Driver HAT B product on white background",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-media-1.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/global-waveshare-29965-media-1.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 2294,
+        "currency": "EUR"
+       },
+       "seller": {
+        "domain": "38c3cf-92.myshopify.com",
+        "id": "gid://shopify/Shop/62100504774",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301169862.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301202630.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301137094.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301235398.html"
+         }
+        ],
+        "name": "OpenELAB Technology Ltd.",
+        "url": "https://openelab.io"
+       },
+       "seller_product_id": "gid://shopify/Product/9113928925382",
+       "source": "shopify",
+       "title": "Waveshare DDSM Driver HAT (B) for DDSM400",
+       "url": "https://openelab.io/products/waveshare-ddsm-driver-hat-b-for-ddsm400?variant=48325498470598&_gsid=dGmidKYHeu79&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

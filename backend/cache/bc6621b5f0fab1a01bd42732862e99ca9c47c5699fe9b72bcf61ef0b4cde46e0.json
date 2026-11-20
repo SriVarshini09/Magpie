@@ -1,0 +1,931 @@
+{
+ "args": {
+  "business": "https://f0c6d4-21.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "STS3215 servo 7.4V"
+  }
+ },
+ "key": "bc6621b5f0fab1a01bd42732862e99ca9c47c5699fe9b72bcf61ef0b4cde46e0",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:16:11-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://f0c6d4-21.myshopify.com",
+  "endpoint": "https://f0c6d4-21.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/bi-3-1-9"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "servos-electronics",
+       "id": "gid://shopify/Collection/452019552473",
+       "title": "Servos & Electronics"
+      }
+     ],
+     "description": {
+      "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 7.4V, 19.5KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C001 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 4-7.4V Stall Torque: ~19.5KG.cm @ 7.4V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM100/ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3215-c001-servo-7-4v-19-5kg-high-torque-servo-for-so-arm100-101",
+     "id": "gid://shopify/Product/9217419477209",
+     "list_price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+      }
+     ],
+     "options": [
+      {
+       "name": "Package",
+       "values": [
+        {
+         "label": "Single Piece(15.99/pcs)"
+        },
+        {
+         "label": "5 Pieces(14.99/pcs)"
+        },
+        {
+         "label": "10 Pieces(13.99/pcs)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 13990,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "title": "Feetech STS3215 C001 Servo – 7.4V 19.5KG 1/345 Servo for SO-ARM100/101",
+     "url": "https://shop.wowrobo.com/products/feetech-sts3215-c001-servo-7-4v-19-5kg-high-torque-servo-for-so-arm100-101",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037674090713:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 7.4V, 19.5KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C001 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 4-7.4V Stall Torque: ~19.5KG.cm @ 7.4V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM100/ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037674090713",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "Single Piece(15.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Single Piece(15.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037674123481:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 7.4V, 19.5KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C001 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 4-7.4V Stall Torque: ~19.5KG.cm @ 7.4V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM100/ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037674123481",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "5 Pieces(14.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 7495,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "5 Pieces(14.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037674156249:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 7.4V, 19.5KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C001 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 4-7.4V Stall Torque: ~19.5KG.cm @ 7.4V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM100/ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037674156249",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "10 Pieces(13.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 13990,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "10 Pieces(13.99/pcs)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/bi-3-1-9"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "servos-electronics",
+       "id": "gid://shopify/Collection/452019552473",
+       "title": "Servos & Electronics"
+      }
+     ],
+     "description": {
+      "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 14.4KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C046 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~14.4KG.cm @ 7.4V Gear Ratio: 1/147 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3215-c046-servo-7-4v-14-4kg-1-147-servo-for-so-arm101",
+     "id": "gid://shopify/Product/9217429405913",
+     "list_price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+      }
+     ],
+     "options": [
+      {
+       "name": "Package",
+       "values": [
+        {
+         "label": "Single Piece(15.99/pcs)"
+        },
+        {
+         "label": "5 Pieces(14.99/pcs)"
+        },
+        {
+         "label": "10 Pieces(13.99/pcs)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 13990,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "title": "Feetech STS3215 C046 Servo – 7.4V 14.4KG 1/147 Servo for SO-ARM101",
+     "url": "https://shop.wowrobo.com/products/feetech-sts3215-c046-servo-7-4v-14-4kg-1-147-servo-for-so-arm101",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037665145049:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 14.4KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C046 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~14.4KG.cm @ 7.4V Gear Ratio: 1/147 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037665145049",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "Single Piece(15.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Single Piece(15.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037665177817:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 14.4KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C046 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~14.4KG.cm @ 7.4V Gear Ratio: 1/147 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037665177817",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "5 Pieces(14.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 7495,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "5 Pieces(14.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037665210585:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 14.4KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C046 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~14.4KG.cm @ 7.4V Gear Ratio: 1/147 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037665210585",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "10 Pieces(13.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 13990,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "10 Pieces(13.99/pcs)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/bi-3-1-9"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "servos-electronics",
+       "id": "gid://shopify/Collection/452019552473",
+       "title": "Servos & Electronics"
+      }
+     ],
+     "description": {
+      "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 16KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C044 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~16KG.cm @ 7.4V Gear Ratio: 1/191 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3215-c044-servo-7-4v-27-4kg-1-191-servo-for-so-arm101",
+     "id": "gid://shopify/Product/9217430388953",
+     "list_price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+      }
+     ],
+     "options": [
+      {
+       "name": "Package",
+       "values": [
+        {
+         "label": "Single Piece(15.99/pcs)"
+        },
+        {
+         "label": "5 Pieces(14.99/pcs)"
+        },
+        {
+         "label": "10 Pieces(13.99/pcs)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 13990,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "title": "Feetech STS3215 C044 Servo – 7.4V 16KG 1/191 Servo for SO-ARM101",
+     "url": "https://shop.wowrobo.com/products/feetech-sts3215-c044-servo-7-4v-27-4kg-1-191-servo-for-so-arm101",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037626708185:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 16KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C044 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~16KG.cm @ 7.4V Gear Ratio: 1/191 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037626708185",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "Single Piece(15.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Single Piece(15.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037626740953:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 16KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C044 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~16KG.cm @ 7.4V Gear Ratio: 1/191 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037626740953",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "5 Pieces(14.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 7495,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "5 Pieces(14.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037626773721:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM101 robotic arm. 7.4V, 16KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C044 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 5-8.4V Stall Torque: ~16KG.cm @ 7.4V Gear Ratio: 1/191 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM101 robotic arm kit 🔄 Why We Offer It Separately To support users of the SO-ARM101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037626773721",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "10 Pieces(13.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 13990,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "10 Pieces(13.99/pcs)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/bi-3-1-9"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "servos-electronics",
+       "id": "gid://shopify/Collection/452019552473",
+       "title": "Servos & Electronics"
+      }
+     ],
+     "description": {
+      "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 12V, 30KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C018 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. This servo is the default joint actuator in the SO-ARM100/101 robotic arm kit by WowRobo. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 12V Stall Torque: ~30KG.cm @ 12V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/101 robotic arm kit Can also be used in other robotics, RC, and DIY projects requiring high torque and 12V operation 🔄 Why We Offer It Separately To support users of the SO-ARM100/101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3215-servo-12v-30kg-high-torque-servo-for-so-arm100",
+     "id": "gid://shopify/Product/9153067155673",
+     "list_price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+      }
+     ],
+     "options": [
+      {
+       "name": "Package",
+       "values": [
+        {
+         "label": "Single Piece(15.99/pcs)"
+        },
+        {
+         "label": "5 Pieces(14.99/pcs)"
+        },
+        {
+         "label": "10 Pieces(13.99/pcs)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 13990,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "title": "Feetech STS3215 C018 Servo – 12V 30KG High Torque Servo for SO-ARM100/101",
+     "url": "https://shop.wowrobo.com/products/feetech-sts3215-servo-12v-30kg-high-torque-servo-for-so-arm100",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037575033049:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 12V, 30KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C018 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. This servo is the default joint actuator in the SO-ARM100/101 robotic arm kit by WowRobo. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 12V Stall Torque: ~30KG.cm @ 12V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/101 robotic arm kit Can also be used in other robotics, RC, and DIY projects requiring high torque and 12V operation 🔄 Why We Offer It Separately To support users of the SO-ARM100/101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037575033049",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "Single Piece(15.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Single Piece(15.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037575065817:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 12V, 30KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C018 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. This servo is the default joint actuator in the SO-ARM100/101 robotic arm kit by WowRobo. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 12V Stall Torque: ~30KG.cm @ 12V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/101 robotic arm kit Can also be used in other robotics, RC, and DIY projects requiring high torque and 12V operation 🔄 Why We Offer It Separately To support users of the SO-ARM100/101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037575065817",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "5 Pieces(14.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 7495,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "5 Pieces(14.99/pcs)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/48037575098585:1",
+       "description": {
+        "html": "⚡ Short Description Officially recommended servo for the SO-ARM100/101 robotic arm. 12V, 30KG high-torque, durable and precise – ready for both original builds and spare part replacement. 🔍 Product Description The Feetech STS3215 C018 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. This servo is the default joint actuator in the SO-ARM100/101 robotic arm kit by WowRobo. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 12V Stall Torque: ~30KG.cm @ 12V Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal) 🤖 Compatibility Fully compatible with WowRobo SO-ARM100/101 robotic arm kit Can also be used in other robotics, RC, and DIY projects requiring high torque and 12V operation 🔄 Why We Offer It Separately To support users of the SO-ARM100/101 worldwide, we make this key component available for: New builds (if you’re sourcing parts individually) After-sales replacements (for damaged or worn servos) Expanding and customizing your robotic projects"
+       },
+       "id": "gid://shopify/ProductVariant/48037575098585",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/3215_b303473f-4d7c-4e56-b8b9-e0318fd707f9.jpg?v=1743095268"
+        }
+       ],
+       "options": [
+        {
+         "label": "10 Pieces(13.99/pcs)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 13990,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "10 Pieces(13.99/pcs)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/bi-3-1-9"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "servos-electronics",
+       "id": "gid://shopify/Collection/452019552473",
+       "title": "Servos & Electronics"
+      }
+     ],
+     "description": {
+      "html": "🔍 Product Description The Feetech STS3250 C002 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 6-12V Stall Torque: 50KG.cm Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal)"
+     },
+     "gift_card": false,
+     "handle": "feetech-sts3250-c002-servo-12v-50kg-1-345-servo",
+     "id": "gid://shopify/Product/9263009759449",
+     "list_price_range": {
+      "max": {
+       "amount": 4300,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4300,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/5.jpg?v=1753358445"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4300,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4300,
+       "currency": "USD"
+      }
+     },
+     "title": "Feetech STS3250 C002 Servo – 12V 50KG 1/345 Servo",
+     "url": "https://shop.wowrobo.com/products/feetech-sts3250-c002-servo-12v-50kg-1-345-servo",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://f0c6d4-21.myshopify.com/cart/46838447145177:1",
+       "description": {
+        "html": "🔍 Product Description The Feetech STS3250 C002 is a high-performance servo motor designed for robotic applications requiring strong torque and stable performance. Whether you're building your robotic arm from scratch or need a reliable replacement for maintenance, this servo ensures compatibility and ease of integration. We offer this part separately to make it easy for our global customers to purchase additional or replacement servos, without needing to source them from other channels. 📦 Key Features Operating Voltage: 6-12V Stall Torque: 50KG.cm Gear Ratio: 1/345 Precision digital control Metal gear structure for extended durability Standard 3-pin servo connector (TTL signal)"
+       },
+       "id": "gid://shopify/ProductVariant/46838447145177",
+       "list_price": {
+        "amount": 4300,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0719/7982/7417/files/5.jpg?v=1753358445"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {},
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

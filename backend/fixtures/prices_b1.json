@@ -1,0 +1,61 @@
+{
+  "sql": "-- MOCK: latest observation per offer for this BOM line (PLAN §3.14)\nSELECT ... FROM price_observations WHERE run_id = ? AND bom_line_id = ?",
+  "rows": [
+    {
+      "store_id": "wowrobo",
+      "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+      "price_usd": 15.99,
+      "seen_at": "2026-11-20T13:04:10-08:00",
+      "age_min": 2.0,
+      "vs_median_pct": -27.3,
+      "source_api": "mock",
+      "refused": false,
+      "simulated": true
+    },
+    {
+      "store_id": "seeed",
+      "title": "Feetech STS3215 7.4V servo (C001)",
+      "price_usd": 20.0,
+      "seen_at": "2026-11-20T13:04:22-08:00",
+      "age_min": 2.0,
+      "vs_median_pct": -9.1,
+      "source_api": "mock",
+      "refused": false,
+      "simulated": true
+    },
+    {
+      "store_id": "seeed",
+      "title": "Feetech STS3215 12V servo (C047: variant needs a check)",
+      "price_usd": 22.0,
+      "seen_at": "2026-11-20T13:04:22-08:00",
+      "age_min": 2.0,
+      "vs_median_pct": 0.0,
+      "source_api": "mock",
+      "refused": false,
+      "simulated": true
+    },
+    {
+      "store_id": "robotshop",
+      "title": "Feetech STS3215 C001 7.4V servo",
+      "price_usd": 22.69,
+      "seen_at": "2026-11-20T13:04:12-08:00",
+      "age_min": 2.0,
+      "vs_median_pct": 3.1,
+      "source_api": "mock",
+      "refused": true,
+      "simulated": true
+    },
+    {
+      "store_id": "openelab",
+      "title": "Feetech STS3215 C001 7.4V servo",
+      "price_usd": 26.39,
+      "seen_at": "2026-11-20T13:04:12-08:00",
+      "age_min": 2.0,
+      "vs_median_pct": 20.0,
+      "source_api": "mock",
+      "refused": true,
+      "simulated": true
+    }
+  ],
+  "simulated": true
+}

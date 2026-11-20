@@ -1,0 +1,1406 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "3.7V LiPo JST-PH 2.0 battery"
+  }
+ },
+ "key": "618acf34a67eb0b3f452d0027ab16269da83dd9b32bf5c176f1a4394e6083aed",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:05-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 688); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6Njg4LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 688
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<!-- Begin start of Selling Points section -->\n<span id=\"listing_selling_points0\" style=\"font:Arial; font-size: 12pt; color: #343434;\"></span><br>\n<!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section -->\n<span id=\"listing_product_features0\" style=\"font:Arial; font-size: 12pt; color: #343434;\">\n<!-- Product Features Area --><b>Specifications:</b><br>\n<ul style=\"padding-left:25px;\">\n<li>Capacity: 300mAh</li>\n<li>Voltage: 1S1P / 1 Cell / 3.7V</li>\n<li>Discharge: 45C Constant / 90C Burst</li>\n<li>Weight: 7.5g (including wire, plug &amp; case)</li>\n<li>Dimensions: 62 x 12 x 6.5mm</li>\n<li>Discharge Plug: JST-PH 2.0</li>\n\t\t</ul>\n\t\t<br>\n</span>\n<!-- End of Product Features and Specifications Section -->\n\n<!-- Start of Package Contents Section -->\n\t<!-- End of Package Contents Section -->\n\n"
+     },
+     "handle": "turnigy-nano-tech-300mah-1s-45c-lipo-pack-w-jst-ph",
+     "id": "gid://shopify/p/5DzMCoVlhxQMAJY7YVUX6L",
+     "media": [
+      {
+       "alt_text": "Turnigy Nano-Tech 300mAh 1S 3.7V LiPo Battery 45C 90C (JST-PH Connector)",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/TGY.744.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/TGY.744.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "300mAh capacity provides ample energy for extended RC operation",
+       "45C constant and 90C burst discharge rates enable rapid power delivery during high-demand tasks",
+       "JST-PH connector ensures secure and reliable connection",
+       "Lightweight design minimizes added weight to RC models",
+       "Includes wire, plug, and case for convenient setup and protection"
+      ],
+      "unique_selling_points": [
+       "Delivers up to 90C burst discharge for rapid power in high-performance RC and FPV setups."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 249,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 249,
+       "currency": "USD"
+      }
+     },
+     "title": "Turnigy Nano-Tech 300mAh 1S 3.7V LiPo Battery 45C 90C (JST-PH Connector)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://speedyfpv.com/buy/44984306237654:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<!-- Begin start of Selling Points section -->\n<span id=\"listing_selling_points0\" style=\"font:Arial; font-size: 12pt; color: #343434;\"></span><br>\n<!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section -->\n<span id=\"listing_product_features0\" style=\"font:Arial; font-size: 12pt; color: #343434;\">\n<!-- Product Features Area --><b>Specifications:</b><br>\n<ul style=\"padding-left:25px;\">\n<li>Capacity: 300mAh</li>\n<li>Voltage: 1S1P / 1 Cell / 3.7V</li>\n<li>Discharge: 45C Constant / 90C Burst</li>\n<li>Weight: 7.5g (including wire, plug &amp; case)</li>\n<li>Dimensions: 62 x 12 x 6.5mm</li>\n<li>Discharge Plug: JST-PH 2.0</li>\n\t\t</ul>\n\t\t<br>\n</span>\n<!-- End of Product Features and Specifications Section -->\n\n<!-- Start of Package Contents Section -->\n\t<!-- End of Package Contents Section -->\n\n"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "turnigy-nano-tech-300mah-1s-45c-lipo-pack-w-jst-ph",
+       "id": "gid://shopify/ProductVariant/44984306237654",
+       "media": [
+        {
+         "alt_text": "Turnigy Nano-Tech 300mAh 1S 3.7V LiPo Battery 45C 90C (JST-PH Connector)",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/TGY.744.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/TGY.744.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 249,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "speedyfpv.myshopify.com",
+        "id": "gid://shopify/Shop/18401085",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299083.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/18401085/policies/33299147.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299019.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/25847562454.html"
+         }
+        ],
+        "name": "SpeedyFPV",
+        "url": "https://speedyfpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8313652183254",
+       "source": "shopify",
+       "title": "Turnigy Nano-Tech 300mAh 1S 3.7V LiPo Battery 45C 90C (JST-PH Connector)",
+       "url": "https://speedyfpv.com/products/turnigy-nano-tech-300mah-1s-45c-lipo-pack-w-jst-ph?variant=44984306237654&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Specifications</strong>:</p>\n<ul>\n<li>\n<strong>Battery Type</strong>: Lithium Polymer (LiPo)</li>\n<li>\n<strong>Voltage</strong>: 3.7V</li>\n<li>\n<strong>Capacity</strong>: 300mAh</li>\n<li>\n<strong>Discharge Rate</strong>: 1C-20C</li>\n<li>\n<strong>Connector Type</strong>: <meta charset=\"utf-8\">JST-PH2.0 2-Pin Connector</li>\n<li>\n<strong>Dimensions</strong>: 0.3 × 0.8 × 1.4 inches (7.6 x 20.5 x 34.5mm)</li>\n<li>\n<strong>Weight</strong>: 0.34oz (9.6g)</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "3-7v-300mah-lipo-with-jst-ph2-0-2-pin-connector",
+     "id": "gid://shopify/p/6OtFvb1r2kVIgipc2ChOcf",
+     "media": [
+      {
+       "alt_text": "3.7V 300mAh 702032 LiPo battery with JST-PH 2.0 2-pin connector",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-300mah-702032-lipo-with-jst-ph20-2-pin-connector-126668.png",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-300mah-702032-lipo-with-jst-ph20-2-pin-connector-126668.png",
+       "width": 1000
+      },
+      {
+       "alt_text": "3.7V 300mAh 702032 LiPo with JST-PH2.0 2-Pin Connector",
+       "duration": 27,
+       "preview": {
+        "height": 540,
+        "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/preview_images/f9d350a592384f35a75e07e039877d3b.thumbnail.0000000000.jpg",
+        "width": 960
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 480,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/f9d350a592384f35a75e07e039877d3b/f9d350a592384f35a75e07e039877d3b.m3u8",
+         "width": 852
+        },
+        {
+         "format": "mp4",
+         "height": 480,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/f9d350a592384f35a75e07e039877d3b/f9d350a592384f35a75e07e039877d3b.SD-480p-1.0Mbps-38667475.mp4",
+         "width": 852
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/f9d350a592384f35a75e07e039877d3b/f9d350a592384f35a75e07e039877d3b.m3u8"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "JST-PH2.0 2-pin connector ensures secure and reliable connection to compatible devices",
+       "Rechargeable lithium polymer technology offers high energy density and long cycle life",
+       "Compact size fits a variety of RC and drone models for versatile use",
+       "Lightweight design minimizes added weight to your build",
+       "Solid color options for easy identification during assembly"
+      ],
+      "unique_selling_points": [
+       "Features a robust JST-PH2.0 2-pin connector for secure and efficient connection in demanding RC setups."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "3.7V 300mAh 702032 LiPo with JST-PH2.0 2-Pin Connector",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rcbatterydepot.com/buy/42205099556933:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Specifications</strong>:</p>\n<ul>\n<li>\n<strong>Battery Type</strong>: Lithium Polymer (LiPo)</li>\n<li>\n<strong>Voltage</strong>: 3.7V</li>\n<li>\n<strong>Capacity</strong>: 300mAh</li>\n<li>\n<strong>Discharge Rate</strong>: 1C-20C</li>\n<li>\n<strong>Connector Type</strong>: <meta charset=\"utf-8\">JST-PH2.0 2-Pin Connector</li>\n<li>\n<strong>Dimensions</strong>: 0.3 × 0.8 × 1.4 inches (7.6 x 20.5 x 34.5mm)</li>\n<li>\n<strong>Weight</strong>: 0.34oz (9.6g)</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "3-7v-300mah-lipo-with-jst-ph2-0-2-pin-connector",
+       "id": "gid://shopify/ProductVariant/42205099556933",
+       "list_price": {
+        "amount": 1399,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "3.7V 300mAh 702032 LiPo battery with JST-PH 2.0 2-pin connector",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-300mah-702032-lipo-with-jst-ph20-2-pin-connector-126668.png",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-300mah-702032-lipo-with-jst-ph20-2-pin-connector-126668.png",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "z54q35-kc.myshopify.com",
+        "id": "gid://shopify/Shop/62651695173",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28609085509.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62651695173/policies/28622192709.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28622159941.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28986540101.html"
+         }
+        ],
+        "name": "RC Battery Depot",
+        "url": "https://rcbatterydepot.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7468822331461",
+       "source": "shopify",
+       "title": "3.7V 300mAh 702032 LiPo with JST-PH2.0 2-Pin Connector",
+       "url": "https://rcbatterydepot.com/products/3-7v-300mah-lipo-with-jst-ph2-0-2-pin-connector?variant=42205099556933&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Rechargeable battery pack for compatible lighting, electronics and DIY projects.</p>\n<h3>Compatibility</h3>\n<ul>\n  <li>Applications: Solar and outdoor lights, Meshtastic projects, CTronics cameras, toys, speakers, fire alarms, LED lighting and GPS devices.</li>\n</ul>\n<h3>Specifications</h3>\n<ul>\n  <li>Voltage: 3.7V nominal; Capacity: 4400mAh; Energy: 16.28Wh.</li>\n  <li>Chemistry: rechargeable lithium-ion; configuration: 1S2P; two 18650 cells.</li>\n  <li>Connection: JST-PH 2.0 mm 2-pin; positive polarity.</li>\n  <li>Protection: Built-in battery management system (BMS).</li>\n  <li>Dimensions: 2.64 × 1.44 × 0.76 in (approximately 67.1 × 36.6 × 19.3 mm).</li>\n  <li>Weight: 94 g.</li>\n</ul>\n<h3>Before ordering</h3>\n<ul>\n  <li>Compare the original battery’s voltage, part number, connector, pin assignments, polarity and dimensions. Confirm the device’s charging and current requirements before ordering.</li>\n</ul>\n<h3>Care &amp; support</h3>\n<ul>\n  <li>Use only with compatible equipment and charging systems. Do not short-circuit, puncture or use a damaged battery. Keep away from extreme temperatures and children.</li>\n  <li>Warranty: one-year warranty; terms apply.</li>\n  <li>Compatibility help: <a href=\"mailto:support@xain-usa-marketplace.com\">support@xain-usa-marketplace.com</a>. Manuals and care information: <a href=\"https://xain-usa.com\">xain-usa.com</a>.</li>\n</ul>"
+     },
+     "handle": "3-7v-4400mah-1s2p-rechargeable-li-ion-battery-pack-replacement-16-28wh-with-jst-ph2-0mm-2-pin-interface-female-connector-for-outdoor-lights-toys-gps-speakers-fire-alarm",
+     "id": "gid://shopify/p/5DZU0tvlpwojvpCRh5MPzK",
+     "media": [
+      {
+       "alt_text": "Xain-USA 3.7V 4400mAh battery pack with a white JST-PH 2-pin connector and 16.28Wh label.",
+       "height": 2401,
+       "preview": {
+        "height": 2401,
+        "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/1_3.7V_4400mAh_PH_4x_ed01a2cf-0736-4503-897e-f793266ac29c.png",
+        "width": 4001
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/1_3.7V_4400mAh_PH_4x_ed01a2cf-0736-4503-897e-f793266ac29c.png",
+       "width": 4001
+      },
+      {
+       "alt_text": "3.7V 4400mAh 1S2P Li-ion Replacement Battery – JST-PH 2.0 2-Pin Connector, 16.28Wh",
+       "duration": 27,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/preview_images/e49c9b7d362e4ce4886d83f6b0140492.thumbnail.0000000000.jpg",
+        "width": 1920
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 1080,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/e49c9b7d362e4ce4886d83f6b0140492/e49c9b7d362e4ce4886d83f6b0140492.m3u8",
+         "width": 1920
+        },
+        {
+         "format": "mp4",
+         "height": 1080,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/e49c9b7d362e4ce4886d83f6b0140492/e49c9b7d362e4ce4886d83f6b0140492.HD-1080p-7.2Mbps-37730147.mp4",
+         "width": 1920
+        },
+        {
+         "format": "mp4",
+         "height": 720,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/e49c9b7d362e4ce4886d83f6b0140492/e49c9b7d362e4ce4886d83f6b0140492.HD-720p-4.5Mbps-37730147.mp4",
+         "width": 1280
+        },
+        {
+         "format": "mp4",
+         "height": 480,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/e49c9b7d362e4ce4886d83f6b0140492/e49c9b7d362e4ce4886d83f6b0140492.SD-480p-1.5Mbps-37730147.mp4",
+         "width": 852
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/e49c9b7d362e4ce4886d83f6b0140492/e49c9b7d362e4ce4886d83f6b0140492.m3u8"
+      },
+      {
+       "alt_text": "3D model of 3.7V 4400mAh 1S2P Li-ion Replacement Battery – JST-PH 2.0 2-Pin Connector, 16.28Wh",
+       "preview": {
+        "height": 1024,
+        "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/preview_images/xain-002-9636483858710-wave5.jpg",
+        "width": 1024
+       },
+       "sources": [
+        {
+         "filesize": 2175208,
+         "format": "glb",
+         "mime_type": "model/gltf-binary",
+         "url": "https://cdn.shopify.com/3d/models/o/51a9ec847b372599/xain-002-9636483858710-wave5.glb"
+        },
+        {
+         "filesize": 2117045,
+         "format": "usdz",
+         "mime_type": "model/vnd.usdz+zip",
+         "url": "https://cdn.shopify.com/3d/models/o/cbe7d26c862f0ad5/xain-002-9636483858710-wave5.usdz"
+        }
+       ],
+       "type": "model_3d",
+       "url": "https://cdn.shopify.com/3d/models/o/51a9ec847b372599/xain-002-9636483858710-wave5.glb"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Built-in battery management system ensures safe charging and operation",
+       "JST-PH 2.0 2-pin connector provides secure and reliable connection",
+       "Rechargeable lithium-ion chemistry offers long cycle life and consistent performance",
+       "Compatible with a wide range of devices including solar and outdoor lights",
+       "Lightweight design for easy installation in various projects"
+      ],
+      "unique_selling_points": [
+       "Includes built-in BMS and supports both solar and outdoor lighting applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 139,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "3.7V 4400mAh 1S2P Li-ion Replacement Battery – JST-PH 2.0 2-Pin Connector, 16.28Wh",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xain-usa-marketplace.com/buy/48899808952598:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Rechargeable battery pack for compatible lighting, electronics and DIY projects.</p>\n<h3>Compatibility</h3>\n<ul>\n  <li>Applications: Solar and outdoor lights, Meshtastic projects, CTronics cameras, toys, speakers, fire alarms, LED lighting and GPS devices.</li>\n</ul>\n<h3>Specifications</h3>\n<ul>\n  <li>Voltage: 3.7V nominal; Capacity: 4400mAh; Energy: 16.28Wh.</li>\n  <li>Chemistry: rechargeable lithium-ion; configuration: 1S2P; two 18650 cells.</li>\n  <li>Connection: JST-PH 2.0 mm 2-pin; positive polarity.</li>\n  <li>Protection: Built-in battery management system (BMS).</li>\n  <li>Dimensions: 2.64 × 1.44 × 0.76 in (approximately 67.1 × 36.6 × 19.3 mm).</li>\n  <li>Weight: 94 g.</li>\n</ul>\n<h3>Before ordering</h3>\n<ul>\n  <li>Compare the original battery’s voltage, part number, connector, pin assignments, polarity and dimensions. Confirm the device’s charging and current requirements before ordering.</li>\n</ul>\n<h3>Care &amp; support</h3>\n<ul>\n  <li>Use only with compatible equipment and charging systems. Do not short-circuit, puncture or use a damaged battery. Keep away from extreme temperatures and children.</li>\n  <li>Warranty: one-year warranty; terms apply.</li>\n  <li>Compatibility help: <a href=\"mailto:support@xain-usa-marketplace.com\">support@xain-usa-marketplace.com</a>. Manuals and care information: <a href=\"https://xain-usa.com\">xain-usa.com</a>.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "3-7v-4400mah-1s2p-rechargeable-li-ion-battery-pack-replacement-16-28wh-with-jst-ph2-0mm-2-pin-interface-female-connector-for-outdoor-lights-toys-gps-speakers-fire-alarm",
+       "id": "gid://shopify/ProductVariant/48899808952598",
+       "media": [
+        {
+         "alt_text": "Xain-USA 3.7V 4400mAh battery pack with a white JST-PH 2-pin connector and 16.28Wh label.",
+         "height": 2401,
+         "preview": {
+          "height": 2401,
+          "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/1_3.7V_4400mAh_PH_4x_ed01a2cf-0736-4503-897e-f793266ac29c.png",
+          "width": 4001
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/1_3.7V_4400mAh_PH_4x_ed01a2cf-0736-4503-897e-f793266ac29c.png",
+         "width": 4001
+        }
+       ],
+       "price": {
+        "amount": 2399,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "4dbace-f2.myshopify.com",
+        "id": "gid://shopify/Shop/87207182614",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095716630.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095749398.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095683862.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095782166.html"
+         }
+        ],
+        "name": "Xain-USA",
+        "url": "https://xain-usa-marketplace.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9636483858710",
+       "source": "shopify",
+       "title": "3.7V 4400mAh 1S2P Li-ion Replacement Battery – JST-PH 2.0 2-Pin Connector, 16.28Wh",
+       "url": "https://xain-usa-marketplace.com/products/3-7v-4400mah-1s2p-rechargeable-li-ion-battery-pack-replacement-16-28wh-with-jst-ph2-0mm-2-pin-interface-female-connector-for-outdoor-lights-toys-gps-speakers-fire-alarm?variant=48899808952598&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong><span>Specifications:</span></strong><br></p>\n<div>\n<ul>\n<li><span>3.7V-4.20V  450mAh 1S 80C/160C Lipo Battery</span></li>\n<li><span>Capacity: 450MAH</span></li>\n<li><span>Continuous Discharge Rate: 80C/160C</span></li>\n<li><span>Connector:  JST-PH 2.0</span></li>\n<li><span>Weight: 12.8g</span></li>\n<li><span>Dimensions:  59.6x17.5x6.6mm</span></li>\n</ul>\n</div>"
+     },
+     "handle": "gnb-1s-450mah-80c-ph-2-0",
+     "id": "gid://shopify/p/2TSBsrtbt6vke3ekSgkPXv",
+     "media": [
+      {
+       "alt_text": "Gaoneng GNB 1S 450mAh 80C 3.7V Li-Po Battery - PH 2.0",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/450mah_1S_battery_4_700x700_222333b1-9999-463a-8029-2e8e8020f0ca.jpg",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/450mah_1S_battery_4_700x700_222333b1-9999-463a-8029-2e8e8020f0ca.jpg",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "80C continuous discharge rate enables rapid power delivery for high-performance RC motors",
+       "450mAh capacity provides extended flight time between charges",
+       "JST PH 2.0 connector ensures secure and reliable connection",
+       "Lightweight design minimizes added weight to RC systems",
+       "Rechargeable lithium polymer technology offers long cycle life"
+      ],
+      "unique_selling_points": [
+       "Supports up to 160C continuous discharge rate for maximum power output in demanding RC applications."
+      ]
+     },
+     "options": [
+      {
+       "name": "Battery capacity",
+       "values": [
+        {
+         "label": "450 mAh"
+        }
+       ]
+      },
+      {
+       "name": "Voltage",
+       "values": [
+        {
+         "label": "3.7-4.2 V"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 699,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gaoneng GNB 1S 450mAh 80C 3.7V Li-Po Battery - PH 2.0",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/31443667779627:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong><span>Specifications:</span></strong><br></p>\n<div>\n<ul>\n<li><span>3.7V-4.20V  450mAh 1S 80C/160C Lipo Battery</span></li>\n<li><span>Capacity: 450MAH</span></li>\n<li><span>Continuous Discharge Rate: 80C/160C</span></li>\n<li><span>Connector:  JST-PH 2.0</span></li>\n<li><span>Weight: 12.8g</span></li>\n<li><span>Dimensions:  59.6x17.5x6.6mm</span></li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gnb-1s-450mah-80c-ph-2-0",
+       "id": "gid://shopify/ProductVariant/31443667779627",
+       "media": [
+        {
+         "alt_text": "Gaoneng GNB 1S 450mAh 80C 3.7V Li-Po Battery - PH 2.0",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/450mah_1S_battery_4_700x700_222333b1-9999-463a-8029-2e8e8020f0ca.jpg",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/450mah_1S_battery_4_700x700_222333b1-9999-463a-8029-2e8e8020f0ca.jpg",
+         "width": 700
+        }
+       ],
+       "options": [
+        {
+         "label": "450 mAh",
+         "name": "Battery capacity"
+        },
+        {
+         "label": "3.7-4.2 V",
+         "name": "Voltage"
+        }
+       ],
+       "price": {
+        "amount": 699,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 28,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4365633749035",
+       "source": "shopify",
+       "title": "Gaoneng GNB 1S 450mAh 80C 3.7V Li-Po Battery - PH 2.0",
+       "url": "https://pyrodrone.com/products/gnb-1s-450mah-80c-ph-2-0?variant=31443667779627&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Built specifically to accommodate the Marauder v7. This is not for the Marauder Mini v3 or Marauder v8</p>\n<p><strong>Features</strong></p>\n<ul>\n<li><span>3.7V nominal</span></li>\n<li><span>PH2.0 JST connector</span></li>\n<li><span>70mm cable length</span></li>\n<li><span>10mm x 51mm x 51mm</span></li>\n<li><span>3000mAh</span></li>\n</ul>\n<p><strong>Disclaimer</strong></p>\n<p class=\"\">All products sold by JustCallMeKoko LLC are intended for lawful, ethical, and educational use only. These devices are designed for network security assessments, penetration testing, and cybersecurity research by authorized individuals.</p>\n<p class=\"\">It is the sole responsibility of the purchaser to comply with all local, state, and federal laws when using these products. JustCallMeKoko LLC does not condone or support any illegal activity and cannot be held liable for misuse or unlawful application of the hardware sold.</p>\n<p class=\"\">By purchasing from JustCallMeKoko LLC, you agree to use these products in a manner consistent with all applicable laws and assume full responsibility for their use.</p>\n<p class=\"\"><strong>International Customers</strong></p>\n<p class=\"\">This product is not available for customers outside of the US.</p>"
+     },
+     "handle": "3-7v-lipo-battery",
+     "id": "gid://shopify/p/6JYueyM8y4yZzC1BnjDHJA",
+     "media": [
+      {
+       "alt_text": "3.7V LiPo Battery",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0672/7503/0682/files/DSC07550-Edit_727fe83e-1a2e-4b93-8553-c29bd0e5557b.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0672/7503/0682/files/DSC07550-Edit_727fe83e-1a2e-4b93-8553-c29bd0e5557b.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3000mAh capacity provides extended runtime for demanding electronics applications",
+       "PH2.0 JST connector ensures secure and reliable connection to Marauder V7",
+       "70mm cable length offers flexible placement options",
+       "Compact 10mm x 51mm x 51mm dimensions fit discreetly in custom builds"
+      ],
+      "unique_selling_points": [
+       "Specially engineered 3000mAh LiPo battery with PH2.0 JST connector and 70mm cable for Marauder V7 compatibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 700,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 11,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "3.7V LiPo Battery",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://justcallmekokollc.com/buy/46876415459482:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Built specifically to accommodate the Marauder v7. This is not for the Marauder Mini v3 or Marauder v8</p>\n<p><strong>Features</strong></p>\n<ul>\n<li><span>3.7V nominal</span></li>\n<li><span>PH2.0 JST connector</span></li>\n<li><span>70mm cable length</span></li>\n<li><span>10mm x 51mm x 51mm</span></li>\n<li><span>3000mAh</span></li>\n</ul>\n<p><strong>Disclaimer</strong></p>\n<p class=\"\">All products sold by JustCallMeKoko LLC are intended for lawful, ethical, and educational use only. These devices are designed for network security assessments, penetration testing, and cybersecurity research by authorized individuals.</p>\n<p class=\"\">It is the sole responsibility of the purchaser to comply with all local, state, and federal laws when using these products. JustCallMeKoko LLC does not condone or support any illegal activity and cannot be held liable for misuse or unlawful application of the hardware sold.</p>\n<p class=\"\">By purchasing from JustCallMeKoko LLC, you agree to use these products in a manner consistent with all applicable laws and assume full responsibility for their use.</p>\n<p class=\"\"><strong>International Customers</strong></p>\n<p class=\"\">This product is not available for customers outside of the US.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "3-7v-lipo-battery",
+       "id": "gid://shopify/ProductVariant/46876415459482",
+       "media": [
+        {
+         "alt_text": "3.7V LiPo Battery",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0672/7503/0682/files/DSC07550-Edit_727fe83e-1a2e-4b93-8553-c29bd0e5557b.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0672/7503/0682/files/DSC07550-Edit_727fe83e-1a2e-4b93-8553-c29bd0e5557b.jpg",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 700,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 21,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "zypxva-ke.myshopify.com",
+        "id": "gid://shopify/Shop/67275030682",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/67275030682/policies/31643041946.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/67275030682/policies/31664504986.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/67275030682/policies/32346996890.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/67275030682/policies/32346734746.html"
+         }
+        ],
+        "name": "JustCallMeKoko LLC",
+        "url": "https://justcallmekokollc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8701051502746",
+       "source": "shopify",
+       "title": "3.7V LiPo Battery",
+       "url": "https://justcallmekokollc.com/products/3-7v-lipo-battery?variant=46876415459482&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div dir=\"ltr\" aria-busy=\"false\" aria-live=\"polite\" id=\"model-response-message-contentr_2c27d7487528ab3b\" class=\"markdown markdown-main-panel tutor-markdown-rendering stronger enable-updated-hr-color\">\n<h1 data-path-to-node=\"0\">3.7V LiPo Battery with JST ACH 1.2mm Connector</h1>\n<p data-path-to-node=\"1\">Power your wireless builds without the hassle of crimping or soldering. This 3.7V Lithium Polymer (LiPo) battery comes pre-terminated with a <b data-index-in-node=\"141\" data-path-to-node=\"1\">JST ACH 1.2mm pitch connector</b>, specifically chosen to be a direct plug-and-play match for the <b data-index-in-node=\"235\" data-path-to-node=\"1\">Wireless Lily 58 SMT</b>.</p>\n<h3 data-path-to-node=\"2\">The Perfect Fit</h3>\n<p data-path-to-node=\"3\">Most standard LiPo batteries ship with JST-PH 2.0mm connectors that are too large for ultra-compact wireless splits. We sourced these batteries specifically to eliminate this problem. These batteries mate perfectly with the <b data-index-in-node=\"213\" data-path-to-node=\"3\">BM02B-ACHSS-GAN-ETF</b> headers used on our wireless PCBs, ensuring a secure, low-profile connection that fits inside even the slimmest cases.</p>\n<h3 data-path-to-node=\"4\">Compatibility</h3>\n<p data-path-to-node=\"5\">This battery is the official power source for the Boardsource wireless ecosystem but is compatible with any project requiring a 3.7V cell and an ACH connector.</p>\n<ul data-path-to-node=\"6\">\n<li>\n<p data-path-to-node=\"6,0,0\"><b data-index-in-node=\"0\" data-path-to-node=\"6,0,0\">Wireless Lily 58 SMT:</b> Fits perfectly in the compact central battery cutout.</p>\n</li>\n</ul>\n<h3 data-path-to-node=\"9\">Safety &amp; Specs</h3>\n<ul data-path-to-node=\"10\">\n<li>\n<p data-path-to-node=\"10,0,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,0,0\">Voltage:</b> 3.7V Nominal</p>\n</li>\n<li>\n<p data-path-to-node=\"10,1,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,1,0\">Connector:</b> JST ACH (1.2mm Pitch)</p>\n</li>\n<li>\n<p data-path-to-node=\"10,2,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,2,0\">Protection:</b> Integrated PCM (Protection Circuit Module) to prevent overcharging and over-discharging.</p>\n</li>\n</ul>\n</div>\n<p> </p>"
+     },
+     "handle": "jst-ble-small",
+     "id": "gid://shopify/p/6NIJBW8y9cU2nbjDWbruod",
+     "media": [
+      {
+       "alt_text": "JST Battery Small",
+       "height": 1687,
+       "preview": {
+        "height": 1687,
+        "url": "https://cdn.shopify.com/s/files/1/0673/8680/2415/files/battery_40_stack.jpg",
+        "width": 3000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0673/8680/2415/files/battery_40_stack.jpg",
+       "width": 3000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Pre-terminated JST-ACH 1.2mm connector: Enables direct, plug-and-play connection without soldering or crimping",
+       "Integrated PCM protection circuit: Prevents overcharging and over-discharging for enhanced safety",
+       "Ultra-compact design: Fits perfectly in slim wireless PCBs and central battery cutouts",
+       "Official compatibility with Wireless Lily 58 SMT: Ensures perfect fit and reliable performance",
+       "Rechargeable lithium polymer technology: Provides reliable, long-lasting power for repeated use"
+      ],
+      "unique_selling_points": [
+       "Pre-terminated JST-ACH 1.2mm connector eliminates crimping and ensures a secure fit in ultra-compact wireless projects."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "title": "JST Battery Small",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://boardsource.xyz/buy/50147961045231:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div dir=\"ltr\" aria-busy=\"false\" aria-live=\"polite\" id=\"model-response-message-contentr_2c27d7487528ab3b\" class=\"markdown markdown-main-panel tutor-markdown-rendering stronger enable-updated-hr-color\">\n<h1 data-path-to-node=\"0\">3.7V LiPo Battery with JST ACH 1.2mm Connector</h1>\n<p data-path-to-node=\"1\">Power your wireless builds without the hassle of crimping or soldering. This 3.7V Lithium Polymer (LiPo) battery comes pre-terminated with a <b data-index-in-node=\"141\" data-path-to-node=\"1\">JST ACH 1.2mm pitch connector</b>, specifically chosen to be a direct plug-and-play match for the <b data-index-in-node=\"235\" data-path-to-node=\"1\">Wireless Lily 58 SMT</b>.</p>\n<h3 data-path-to-node=\"2\">The Perfect Fit</h3>\n<p data-path-to-node=\"3\">Most standard LiPo batteries ship with JST-PH 2.0mm connectors that are too large for ultra-compact wireless splits. We sourced these batteries specifically to eliminate this problem. These batteries mate perfectly with the <b data-index-in-node=\"213\" data-path-to-node=\"3\">BM02B-ACHSS-GAN-ETF</b> headers used on our wireless PCBs, ensuring a secure, low-profile connection that fits inside even the slimmest cases.</p>\n<h3 data-path-to-node=\"4\">Compatibility</h3>\n<p data-path-to-node=\"5\">This battery is the official power source for the Boardsource wireless ecosystem but is compatible with any project requiring a 3.7V cell and an ACH connector.</p>\n<ul data-path-to-node=\"6\">\n<li>\n<p data-path-to-node=\"6,0,0\"><b data-index-in-node=\"0\" data-path-to-node=\"6,0,0\">Wireless Lily 58 SMT:</b> Fits perfectly in the compact central battery cutout.</p>\n</li>\n</ul>\n<h3 data-path-to-node=\"9\">Safety &amp; Specs</h3>\n<ul data-path-to-node=\"10\">\n<li>\n<p data-path-to-node=\"10,0,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,0,0\">Voltage:</b> 3.7V Nominal</p>\n</li>\n<li>\n<p data-path-to-node=\"10,1,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,1,0\">Connector:</b> JST ACH (1.2mm Pitch)</p>\n</li>\n<li>\n<p data-path-to-node=\"10,2,0\"><b data-index-in-node=\"0\" data-path-to-node=\"10,2,0\">Protection:</b> Integrated PCM (Protection Circuit Module) to prevent overcharging and over-discharging.</p>\n</li>\n</ul>\n</div>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "jst-ble-small",
+       "id": "gid://shopify/ProductVariant/50147961045231",
+       "media": [
+        {
+         "alt_text": "JST Battery Small",
+         "height": 1687,
+         "preview": {
+          "height": 1687,
+          "url": "https://cdn.shopify.com/s/files/1/0673/8680/2415/files/battery_40_stack.jpg",
+          "width": 3000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0673/8680/2415/files/battery_40_stack.jpg",
+         "width": 3000
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "boardsrc.myshopify.com",
+        "id": "gid://shopify/Shop/67386802415",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/67386802415/policies/36127277295.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/67386802415/policies/36127342831.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/67386802415/policies/36159357167.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/67386802415/policies/36159389935.html"
+         }
+        ],
+        "name": "Boardsource",
+        "url": "https://boardsource.xyz"
+       },
+       "seller_product_id": "gid://shopify/Product/9455805169903",
+       "source": "shopify",
+       "title": "JST Battery Small",
+       "url": "https://boardsource.xyz/products/jst-ble-small?variant=50147961045231&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>***<strong><span style=\"text-decoration: underline;\">WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND</span></strong>***</h2>\n<p>Check polarity match (red and black cable order)<br>Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use <a href=\"https://store.rokland.com/products/3-7v-1100mah-lithium-rechargeable-battery-1s-1c-lipo-battery-with-protection-board-with-micro-jst-1-25-plug?variant=40838520242259\">1.25 size </a>and opposite polarity.<br><br></p>\n<p><span style=\"text-decoration: underline;\"><strong>Specifications:</strong></span><br></p>\n<ul>\n<li>Manufacturer:\n<ul>\n<li>MakerFocus/MakerNova</li>\n</ul>\n</li>\n<li>Typical Capacity\n<ul>\n<li>3000mAh/4000mAh/8000mAh (choose)</li>\n</ul>\n</li>\n<li>Nominal Voltage\n<ul>\n<li>3.7 V</li>\n</ul>\n</li>\n<li>Max Charge Current\n<ul>\n<li>3000mAh/4000mAh/8000mAh</li>\n</ul>\n</li>\n<li>Max Loading Current (peak value)\n<ul>\n<li>3000mAh</li>\n</ul>\n</li>\n<li>\n<strong>Operating Temperature</strong>:\n<ul>\n<li>Charge temperature: 0-10°C (Maximum 0.2C)\n<ul>\n<li>Cut-off voltage: 4.1V</li>\n</ul>\n</li>\n<li>Discharge temperature: 10-45°C (Maximum 0.5C)\n<ul>\n<li>Cut-off voltage: 4.2V</li>\n</ul>\n</li>\n<li>Working temperature range: 10-60°C<br>\n</li>\n</ul>\n</li>\n<li>PCM over/under charge protection</li>\n<li>Dimensions:<br><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)<br></span><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)<br></span><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H)</span>\n</li>\n<li>JST Type PH 2.0 Plug</li>\n</ul>\n<p>California Prop 65<br>WARNING: Cancer and Reproductive Harm<br>www.P65Warnings.ca.gov</p>\n<p><strong style=\"color: #000000; font-size: 1.4em;\">Warranty &amp; Support:</strong><br></p>\n<p><span style=\"color: #000000;\">Complimentary </span><a href=\"https://store.rokland.com/pages/rokland-technologies-support\">Telephone and Email/Live Chat Support (Click Here)</a><br><span style=\"color: #000000;\">Online</span> <a href=\"https://store.rokland.com/pages/rokland-technologies-support\">Technical Manuals and Instructions (Click Here)</a></p>\n<p><a href=\"https://store.rokland.com/pages/battery-shipping-policy-and-warranty\">Battery Shipping Policy and Warranty – Rokland</a></p>\n<p><span style=\"color: #000000;\"><strong>Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department.</strong></span></p>\n<p><span style=\"color: #000000;\"><strong>Return Policy:</strong> Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy</span><span> </span><a href=\"https://store.rokland.com/pages/bulk-order-return-policy\">here</a><span style=\"color: #000000;\">.</span></p>"
+     },
+     "handle": "makerfocus-flat-3-7v-3000mah-rechargeable-lithium-polymer-11-1wh-battery-with-jst-type-ph-2-0-plug",
+     "id": "gid://shopify/p/2FMlmmMuYztLEgh43cJeYH",
+     "media": [
+      {
+       "alt_text": "MakerFocus Flat 3.7V 3000 mAh/4000/8000 choice Rechargeable Lithium Polymer 11.1Wh Battery with JST Type PH 2.0 Plug",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Overcharge protection ensures safe operation and prevents battery damage",
+       "JST Type PH 2.0 plug provides secure and easy connection to compatible devices",
+       "Wide operating temperature range from -10°C to 60°C enables use in diverse environments",
+       "Rechargeable lithium polymer technology delivers high energy density for extended runtime"
+      ],
+      "unique_selling_points": [
+       "Features overcharge protection and a robust JST Type PH 2.0 plug for secure, reliable connections."
+      ]
+     },
+     "options": [
+      {
+       "name": "Capacity",
+       "values": [
+        {
+         "label": "4000 mAh (fits most RAK board)"
+        },
+        {
+         "label": "8000 mAh (fits most RAK board)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1297,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 29,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "MakerFocus Flat 3.7V 3000 mAh/4000/8000 choice Rechargeable Lithium Polymer 11.1Wh Battery with JST Type PH 2.0 Plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://store.rokland.com/buy/43445176303699:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>***<strong><span style=\"text-decoration: underline;\">WARNING BATTERIES CAN ONLY BE SHIPPED VIA GROUND</span></strong>***</h2>\n<p>Check polarity match (red and black cable order)<br>Compatible with RAK Meshtastic Starter Kit- these batteries are commonly used with RAK hardware and not as commonly used with LILYGO or Heltec which use <a href=\"https://store.rokland.com/products/3-7v-1100mah-lithium-rechargeable-battery-1s-1c-lipo-battery-with-protection-board-with-micro-jst-1-25-plug?variant=40838520242259\">1.25 size </a>and opposite polarity.<br><br></p>\n<p><span style=\"text-decoration: underline;\"><strong>Specifications:</strong></span><br></p>\n<ul>\n<li>Manufacturer:\n<ul>\n<li>MakerFocus/MakerNova</li>\n</ul>\n</li>\n<li>Typical Capacity\n<ul>\n<li>3000mAh/4000mAh/8000mAh (choose)</li>\n</ul>\n</li>\n<li>Nominal Voltage\n<ul>\n<li>3.7 V</li>\n</ul>\n</li>\n<li>Max Charge Current\n<ul>\n<li>3000mAh/4000mAh/8000mAh</li>\n</ul>\n</li>\n<li>Max Loading Current (peak value)\n<ul>\n<li>3000mAh</li>\n</ul>\n</li>\n<li>\n<strong>Operating Temperature</strong>:\n<ul>\n<li>Charge temperature: 0-10°C (Maximum 0.2C)\n<ul>\n<li>Cut-off voltage: 4.1V</li>\n</ul>\n</li>\n<li>Discharge temperature: 10-45°C (Maximum 0.5C)\n<ul>\n<li>Cut-off voltage: 4.2V</li>\n</ul>\n</li>\n<li>Working temperature range: 10-60°C<br>\n</li>\n</ul>\n</li>\n<li>PCM over/under charge protection</li>\n<li>Dimensions:<br><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">3000 mAh: (±2mm): 67*36*12 mm /2.80*1.50*0.50inch(L*W*H)<br></span><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">4000 mAh: (±2mm): 66*40*11.1 mm /2.60*1.57*0.44inch(L*W*H)<br></span><span data-asw-orgtextalign=\"\" data-asw-orgcolor=\"\" data-asw-orgbgcolor=\"\" data-asw-orgfontsize=\"15\" data-asw-orglineheight=\"24\" data-asw-orgletterspacing=\"NaN\" data-asw-orgfilter=\"\" data-asw-orgbgnotimg=\"none\">8000 mAh: (±2mm): 91.4*59.4*13.1 mm /3.60*2.34*0.52inch(L*W*H)</span>\n</li>\n<li>JST Type PH 2.0 Plug</li>\n</ul>\n<p>California Prop 65<br>WARNING: Cancer and Reproductive Harm<br>www.P65Warnings.ca.gov</p>\n<p><strong style=\"color: #000000; font-size: 1.4em;\">Warranty &amp; Support:</strong><br></p>\n<p><span style=\"color: #000000;\">Complimentary </span><a href=\"https://store.rokland.com/pages/rokland-technologies-support\">Telephone and Email/Live Chat Support (Click Here)</a><br><span style=\"color: #000000;\">Online</span> <a href=\"https://store.rokland.com/pages/rokland-technologies-support\">Technical Manuals and Instructions (Click Here)</a></p>\n<p><a href=\"https://store.rokland.com/pages/battery-shipping-policy-and-warranty\">Battery Shipping Policy and Warranty – Rokland</a></p>\n<p><span style=\"color: #000000;\"><strong>Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department.</strong></span></p>\n<p><span style=\"color: #000000;\"><strong>Return Policy:</strong> Used batteries are not returnable. If brand new, no charge count, you may return this item within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy</span><span> </span><a href=\"https://store.rokland.com/pages/bulk-order-return-policy\">here</a><span style=\"color: #000000;\">.</span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "makerfocus-flat-3-7v-3000mah-rechargeable-lithium-polymer-11-1wh-battery-with-jst-type-ph-2-0-plug",
+       "id": "gid://shopify/ProductVariant/43445176303699",
+       "media": [
+        {
+         "alt_text": "MakerFocus Flat 3.7V 3000 mAh/4000/8000 choice Rechargeable Lithium Polymer 11.1Wh Battery with JST Type PH 2.0 Plug",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3000mah-lipo-meshtastic.png",
+         "width": 700
+        }
+       ],
+       "options": [
+        {
+         "label": "3000 mAh (fits most RAK board)",
+         "name": "Capacity"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 40,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "rokland.myshopify.com",
+        "id": "gid://shopify/Shop/713772",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/713772/policies/303522.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/713772/policies/303532.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/713772/policies/303512.html"
+         }
+        ],
+        "name": "Rokland",
+        "url": "https://store.rokland.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7155446054995",
+       "source": "shopify",
+       "title": "MakerFocus Flat 3.7V 3000 mAh/4000/8000 choice Rechargeable Lithium Polymer 11.1Wh Battery with JST Type PH 2.0 Plug",
+       "url": "https://store.rokland.com/products/makerfocus-flat-3-7v-3000mah-rechargeable-lithium-polymer-11-1wh-battery-with-jst-type-ph-2-0-plug?variant=43445176303699&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Specifications</strong>:</p>\n<ul>\n<li>\n<strong>Battery Type</strong>: Lithium Polymer (LiPo)</li>\n<li>\n<strong>Voltage</strong>: 3.7V</li>\n<li>\n<strong>Capacity</strong>: 2000mAh</li>\n<li>\n<strong>Discharge Rate</strong>: 1C</li>\n<li>\n<strong>Connector Type</strong>: <meta charset=\"utf-8\">JST-PH2.0 2-Pin Connector</li>\n<li>\n<strong>Dimensions</strong>: 0.4 x 1.36 x 2.09 inches (10.16 x 34.54 x 53.09mm)</li>\n<li>\n<strong>Weight</strong>: 1.44oz (28.5g)</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "3-7v-2000mah-lipo-with-jst-ph2-0-2-pin-connector",
+     "id": "gid://shopify/p/2LEYX1Z9n8BcH2B5LxQGHA",
+     "media": [
+      {
+       "alt_text": "3.7V 2000mAh 103450 LiPo battery with JST-PH 2.0 2-pin connector",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-2000mah-103454-lipo-with-jst-ph20-2-pin-connector-474968.png",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-2000mah-103454-lipo-with-jst-ph20-2-pin-connector-474968.png",
+       "width": 1000
+      },
+      {
+       "alt_text": "3.7V 2000mAh 103450 LiPo with JST-PH2.0 2-Pin Connector",
+       "duration": 109,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/preview_images/165ae70969eb4b059450eb66464f01e3.thumbnail.0000000000.jpg",
+        "width": 1920
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 1080,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/165ae70969eb4b059450eb66464f01e3/165ae70969eb4b059450eb66464f01e3.m3u8",
+         "width": 1920
+        },
+        {
+         "format": "mp4",
+         "height": 1080,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/165ae70969eb4b059450eb66464f01e3/165ae70969eb4b059450eb66464f01e3.HD-1080p-2.5Mbps-39615595.mp4",
+         "width": 1920
+        },
+        {
+         "format": "mp4",
+         "height": 720,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/165ae70969eb4b059450eb66464f01e3/165ae70969eb4b059450eb66464f01e3.HD-720p-1.6Mbps-39615595.mp4",
+         "width": 1280
+        },
+        {
+         "format": "mp4",
+         "height": 480,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/165ae70969eb4b059450eb66464f01e3/165ae70969eb4b059450eb66464f01e3.SD-480p-0.9Mbps-39615595.mp4",
+         "width": 852
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/165ae70969eb4b059450eb66464f01e3/165ae70969eb4b059450eb66464f01e3.m3u8"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "2000mAh capacity provides ample energy for extended use",
+       "Rechargeable lithium polymer technology ensures long cycle life",
+       "JST-PH2.0 2-pin connector offers secure and reliable connection",
+       "Lightweight design minimizes added weight to devices"
+      ],
+      "unique_selling_points": [
+       "Includes a robust JST-PH2.0 2-pin connector for secure and easy connection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1399,
+       "currency": "USD"
+      }
+     },
+     "title": "3.7V 2000mAh 103450 LiPo with JST-PH2.0 2-Pin Connector",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rcbatterydepot.com/buy/42178700181573:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Specifications</strong>:</p>\n<ul>\n<li>\n<strong>Battery Type</strong>: Lithium Polymer (LiPo)</li>\n<li>\n<strong>Voltage</strong>: 3.7V</li>\n<li>\n<strong>Capacity</strong>: 2000mAh</li>\n<li>\n<strong>Discharge Rate</strong>: 1C</li>\n<li>\n<strong>Connector Type</strong>: <meta charset=\"utf-8\">JST-PH2.0 2-Pin Connector</li>\n<li>\n<strong>Dimensions</strong>: 0.4 x 1.36 x 2.09 inches (10.16 x 34.54 x 53.09mm)</li>\n<li>\n<strong>Weight</strong>: 1.44oz (28.5g)</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "3-7v-2000mah-lipo-with-jst-ph2-0-2-pin-connector",
+       "id": "gid://shopify/ProductVariant/42178700181573",
+       "media": [
+        {
+         "alt_text": "3.7V 2000mAh 103450 LiPo battery with JST-PH 2.0 2-pin connector",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-2000mah-103454-lipo-with-jst-ph20-2-pin-connector-474968.png",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0626/5169/5173/files/37v-2000mah-103454-lipo-with-jst-ph20-2-pin-connector-474968.png",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1399,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "z54q35-kc.myshopify.com",
+        "id": "gid://shopify/Shop/62651695173",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28609085509.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62651695173/policies/28622192709.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28622159941.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62651695173/policies/28986540101.html"
+         }
+        ],
+        "name": "RC Battery Depot",
+        "url": "https://rcbatterydepot.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7468818694213",
+       "source": "shopify",
+       "title": "3.7V 2000mAh 103450 LiPo with JST-PH2.0 2-Pin Connector",
+       "url": "https://rcbatterydepot.com/products/3-7v-2000mah-lipo-with-jst-ph2-0-2-pin-connector?variant=42178700181573&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>This 3.7V, 1100 mAh LiPo rechargeable battery features a 603449 form factor and a JST-PH 2.0 mm connector. Built with a brand-new EEMB LP603449 LiPo pouch cell, it is a compact replacement or power option for compatible electronics.</p><p><strong>Specifications:</strong></p><ul>\n<li>\n<strong>Voltage:</strong> 3.7V nominal (4.2V max charge)</li>\n<li>\n<strong>Capacity:</strong> 1100 mAh (4.1Wh)</li>\n<li>\n<strong>Configuration:</strong> 1S1P — 1 x EEMB LP603449 LiPo pouch cell</li>\n<li>\n<strong>Connector:</strong> JST-PH 2.0 mm</li>\n<li>\n<strong>Protection (BMS):</strong> Not specified</li>\n<li>\n<strong>Dimensions:</strong> 51 x 34.5 x 6.0 mm</li>\n<li>\n<strong>Weight:</strong> approx. 25 g</li>\n<li>\n<strong>Part number:</strong> EEMB LP603449</li>\n</ul><p>Please verify your device's voltage, dimensions, capacity, and connector before ordering.</p>"
+     },
+     "handle": "lipo-rechargeable-battery-3-7v-1100mah-603449-connector-jst-ph-2-0mm",
+     "id": "gid://shopify/p/4dOj91RIWlJ9xjR6qAM9nA",
+     "media": [
+      {
+       "alt_text": "Lipo Rechargeable Battery 3.7V 1100mAh 603449 connector JST-PH 2.0mm",
+       "height": 1238,
+       "preview": {
+        "height": 1238,
+        "url": "https://cdn.shopify.com/s/files/1/0770/1322/1445/files/s-l1600-24.png",
+        "width": 1271
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0770/1322/1445/files/s-l1600-24.png",
+       "width": 1271
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2118,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2118,
+       "currency": "USD"
+      }
+     },
+     "title": "Lipo Rechargeable Battery 3.7V 1100mAh 603449 connector JST-PH 2.0mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://mycustombattery.com/buy/46054005112901:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>This 3.7V, 1100 mAh LiPo rechargeable battery features a 603449 form factor and a JST-PH 2.0 mm connector. Built with a brand-new EEMB LP603449 LiPo pouch cell, it is a compact replacement or power option for compatible electronics.</p><p><strong>Specifications:</strong></p><ul>\n<li>\n<strong>Voltage:</strong> 3.7V nominal (4.2V max charge)</li>\n<li>\n<strong>Capacity:</strong> 1100 mAh (4.1Wh)</li>\n<li>\n<strong>Configuration:</strong> 1S1P — 1 x EEMB LP603449 LiPo pouch cell</li>\n<li>\n<strong>Connector:</strong> JST-PH 2.0 mm</li>\n<li>\n<strong>Protection (BMS):</strong> Not specified</li>\n<li>\n<strong>Dimensions:</strong> 51 x 34.5 x 6.0 mm</li>\n<li>\n<strong>Weight:</strong> approx. 25 g</li>\n<li>\n<strong>Part number:</strong> EEMB LP603449</li>\n</ul><p>Please verify your device's voltage, dimensions, capacity, and connector before ordering.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "lipo-rechargeable-battery-3-7v-1100mah-603449-connector-jst-ph-2-0mm",
+       "id": "gid://shopify/ProductVariant/46054005112901",
+       "media": [
+        {
+         "alt_text": "Lipo Rechargeable Battery 3.7V 1100mAh 603449 connector JST-PH 2.0mm",
+         "height": 1238,
+         "preview": {
+          "height": 1238,
+          "url": "https://cdn.shopify.com/s/files/1/0770/1322/1445/files/s-l1600-24.png",
+          "width": 1271
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0770/1322/1445/files/s-l1600-24.png",
+         "width": 1271
+        }
+       ],
+       "price": {
+        "amount": 2118,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "d6vfjy-if.myshopify.com",
+        "id": "gid://shopify/Shop/77013221445",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/77013221445/policies/45959217221.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/77013221445/policies/46470463557.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/77013221445/policies/46469546053.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/77013221445/policies/46470529093.html"
+         }
+        ],
+        "name": "My Custom Battery",
+        "url": "https://mycustombattery.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8341773221957",
+       "source": "shopify",
+       "title": "Lipo Rechargeable Battery 3.7V 1100mAh 603449 connector JST-PH 2.0mm",
+       "url": "https://mycustombattery.com/products/lipo-rechargeable-battery-3-7v-1100mah-603449-connector-jst-ph-2-0mm?variant=46054005112901&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Rechargeable battery pack with a JST-PH 2-pin connector.</p>\n<h3>Compatibility</h3>\n<ul>\n  <li>Applications: Compatible flashlights, drones, voice amplifiers, RC toys and electronics.</li>\n</ul>\n<h3>Specifications</h3>\n<ul>\n  <li>Voltage: 3.7V nominal; Capacity: 2600mAh; Energy: 9.62Wh.</li>\n  <li>Chemistry: rechargeable lithium-ion; configuration: 1S1P.</li>\n  <li>Connection: JST-PH 2.0 mm 2-pin.</li>\n  <li>Protection: Built-in battery management system (BMS).</li>\n  <li>Dimensions: 18 × 20 × 65 mm.</li>\n  <li>Weight: 49 g.</li>\n</ul>\n<h3>Before ordering</h3>\n<ul>\n  <li>Compare the original battery’s voltage, part number, connector, pin assignments, polarity and dimensions. Confirm the device’s charging and current requirements before ordering.</li>\n</ul>\n<h3>Care &amp; support</h3>\n<ul>\n  <li>Use only with compatible equipment and charging systems. Do not short-circuit, puncture or use a damaged battery. Keep away from extreme temperatures and children.</li>\n  <li>Warranty: one-year warranty; terms apply.</li>\n  <li>Compatibility help: <a href=\"mailto:support@xain-usa-marketplace.com\">support@xain-usa-marketplace.com</a>. Manuals and care information: <a href=\"https://xain-usa.com\">xain-usa.com</a>.</li>\n</ul>"
+     },
+     "handle": "premium-3-7v-2600mah-replacement-battery-jst-ph-2-pin-connector-compatible-with-flashlights-drones-voice-amplifiers-rc-toys-and-a-wide-range-of-electronics",
+     "id": "gid://shopify/p/286zVNv3DZn5Zc0tiCkqMG",
+     "media": [
+      {
+       "alt_text": "Blue Xain-USA 3.7V 2600mAh replacement battery with white JST-PH 2-pin connector.",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/13.72600PH_4x_6b5f2174-9715-45ba-8525-fb954823279c.png",
+        "width": 3601
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/13.72600PH_4x_6b5f2174-9715-45ba-8525-fb954823279c.png",
+       "width": 3601
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Built-in BMS protection circuit module ensures safe charging and operation",
+       "JST PH 2-pin connector offers secure and universal compatibility",
+       "Rechargeable lithium-ion technology provides long-lasting power",
+       "Certified by CE, UN38.3, and RoHS for safety and environmental compliance"
+      ],
+      "unique_selling_points": [
+       "Includes built-in BMS for enhanced safety and protection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 13,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "3.7V 2600mAh Replacement Battery - JST-PH 2-Pin",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://xain-usa-marketplace.com/buy/50959412166934:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=n5AHjaKoV1aR&_gsid=n5AHjaKoV1aR",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Rechargeable battery pack with a JST-PH 2-pin connector.</p>\n<h3>Compatibility</h3>\n<ul>\n  <li>Applications: Compatible flashlights, drones, voice amplifiers, RC toys and electronics.</li>\n</ul>\n<h3>Specifications</h3>\n<ul>\n  <li>Voltage: 3.7V nominal; Capacity: 2600mAh; Energy: 9.62Wh.</li>\n  <li>Chemistry: rechargeable lithium-ion; configuration: 1S1P.</li>\n  <li>Connection: JST-PH 2.0 mm 2-pin.</li>\n  <li>Protection: Built-in battery management system (BMS).</li>\n  <li>Dimensions: 18 × 20 × 65 mm.</li>\n  <li>Weight: 49 g.</li>\n</ul>\n<h3>Before ordering</h3>\n<ul>\n  <li>Compare the original battery’s voltage, part number, connector, pin assignments, polarity and dimensions. Confirm the device’s charging and current requirements before ordering.</li>\n</ul>\n<h3>Care &amp; support</h3>\n<ul>\n  <li>Use only with compatible equipment and charging systems. Do not short-circuit, puncture or use a damaged battery. Keep away from extreme temperatures and children.</li>\n  <li>Warranty: one-year warranty; terms apply.</li>\n  <li>Compatibility help: <a href=\"mailto:support@xain-usa-marketplace.com\">support@xain-usa-marketplace.com</a>. Manuals and care information: <a href=\"https://xain-usa.com\">xain-usa.com</a>.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "premium-3-7v-2600mah-replacement-battery-jst-ph-2-pin-connector-compatible-with-flashlights-drones-voice-amplifiers-rc-toys-and-a-wide-range-of-electronics",
+       "id": "gid://shopify/ProductVariant/50959412166934",
+       "media": [
+        {
+         "alt_text": "Blue Xain-USA 3.7V 2600mAh replacement battery with white JST-PH 2-pin connector.",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/13.72600PH_4x_6b5f2174-9715-45ba-8525-fb954823279c.png",
+          "width": 3601
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0872/0718/2614/files/13.72600PH_4x_6b5f2174-9715-45ba-8525-fb954823279c.png",
+         "width": 3601
+        }
+       ],
+       "price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "4dbace-f2.myshopify.com",
+        "id": "gid://shopify/Shop/87207182614",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095716630.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095749398.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095683862.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/87207182614/policies/38095782166.html"
+         }
+        ],
+        "name": "Xain-USA",
+        "url": "https://xain-usa-marketplace.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10379763613974",
+       "source": "shopify",
+       "title": "3.7V 2600mAh Replacement Battery - JST-PH 2-Pin",
+       "url": "https://xain-usa-marketplace.com/products/premium-3-7v-2600mah-replacement-battery-jst-ph-2-pin-connector-compatible-with-flashlights-drones-voice-amplifiers-rc-toys-and-a-wide-range-of-electronics?variant=50959412166934&_gsid=n5AHjaKoV1aR&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

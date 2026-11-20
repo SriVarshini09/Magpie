@@ -1,0 +1,1384 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "Putty knife"
+  }
+ },
+ "key": "748193d7b8b4072bc99e0e76677adc259780bb6b7e3c17debb02d364da657314",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:21:30-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 620); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6NjIwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 620
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p><span>Utility knife and Putty Knife are two of the most used products that painters have on them daily. Now the NEW 2-Edge Knife is a Utility Knife and Putty Knife Combo tool into one.</span></p>\n<div class=\"ng-scope\" ng-if=\"spec.description == 'General Information'\">\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Belt clip</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Folding Knife locks into handle</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Made solid with Steel and Aluminum</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Quick Grab Finger Loop</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Utility Knife &amp;Putty Knife Combo</li>\n</ul>\n</div>\n<p>ZORR MFG# ZH-412</p>\n<p>UPC# 856728004079</p>"
+     },
+     "handle": "90323741",
+     "id": "gid://shopify/p/6iy8HARvzve7Z4Lp4oufoa",
+     "media": [
+      {
+       "alt_text": "Zorr ZH-412 2-EDGE Putty Knife and Utility Knife Combo",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/0200/5889/8496/files/Zorr2-Edge.png",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0200/5889/8496/files/Zorr2-Edge.png",
+       "width": 1080
+      },
+      {
+       "alt_text": "zorr corp knife video",
+       "duration": 24,
+       "preview": {
+        "height": 1920,
+        "url": "https://cdn.shopify.com/s/files/1/0200/5889/8496/products/0accf32e126c4244ab76f3cbf82d8deb.thumbnail.0000000000.jpg",
+        "width": 1080
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 1080,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/0accf32e126c4244ab76f3cbf82d8deb/0accf32e126c4244ab76f3cbf82d8deb.m3u8",
+         "width": 606
+        },
+        {
+         "format": "mp4",
+         "height": 1080,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/0accf32e126c4244ab76f3cbf82d8deb/0accf32e126c4244ab76f3cbf82d8deb.HD-1080p-7.2Mbps-12623402.mp4",
+         "width": 606
+        },
+        {
+         "format": "mp4",
+         "height": 720,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/0accf32e126c4244ab76f3cbf82d8deb/0accf32e126c4244ab76f3cbf82d8deb.HD-720p-4.5Mbps-12623402.mp4",
+         "width": 404
+        },
+        {
+         "format": "mp4",
+         "height": 480,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/0accf32e126c4244ab76f3cbf82d8deb/0accf32e126c4244ab76f3cbf82d8deb.SD-480p-1.5Mbps-12623402.mp4",
+         "width": 270
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/0accf32e126c4244ab76f3cbf82d8deb/0accf32e126c4244ab76f3cbf82d8deb.m3u8"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated utility knife and putty knife: Enables both cutting and scraping tasks in one tool for increased efficiency",
+       "Belt clip folding design: Allows easy attachment to belts for hands-free use on the job",
+       "Quick grab finger loop: Provides secure and convenient access to the tool while working",
+       "Solid steel and aluminum construction: Ensures durability and long-lasting performance",
+       "Locking handle mechanism: Keeps the tool securely in place during use for safety"
+      ],
+      "unique_selling_points": [
+       "Dual-purpose design with integrated utility knife and putty knife in a single, foldable belt clip tool."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1450,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1450,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "Zorr ZH-412 2-EDGE Putty Knife and Utility Knife Combo",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.painterssolutions.com/buy/22933934047296:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>Utility knife and Putty Knife are two of the most used products that painters have on them daily. Now the NEW 2-Edge Knife is a Utility Knife and Putty Knife Combo tool into one.</span></p>\n<div class=\"ng-scope\" ng-if=\"spec.description == 'General Information'\">\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Belt clip</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Folding Knife locks into handle</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Made solid with Steel and Aluminum</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Quick Grab Finger Loop</li>\n</ul>\n<ul class=\"ng-scope\" ng-repeat=\"bullet in product.bullets track by $index\">\n<li class=\"ng-binding ng-scope\" style=\"box-sizing: border-box;\" ng-if=\"bullet.value.length &gt; 0\">Utility Knife &amp;Putty Knife Combo</li>\n</ul>\n</div>\n<p>ZORR MFG# ZH-412</p>\n<p>UPC# 856728004079</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "90323741",
+       "id": "gid://shopify/ProductVariant/22933934047296",
+       "media": [
+        {
+         "alt_text": "Zorr ZH-412 2-EDGE Putty Knife and Utility Knife Combo",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/0200/5889/8496/files/Zorr2-Edge.png",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0200/5889/8496/files/Zorr2-Edge.png",
+         "width": 1080
+        }
+       ],
+       "price": {
+        "amount": 1450,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "painter-solutions.myshopify.com",
+        "id": "gid://shopify/Shop/20058898496",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/20058898496/policies/10385358912.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/20058898496/policies/10385391680.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/20058898496/policies/10385326144.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/20058898496/policies/10385424448.html"
+         }
+        ],
+        "name": "Painters Solutions",
+        "url": "https://www.painterssolutions.com"
+       },
+       "seller_product_id": "gid://shopify/Product/2353490853952",
+       "source": "shopify",
+       "title": "Zorr ZH-412 2-EDGE Putty Knife and Utility Knife Combo",
+       "url": "https://www.painterssolutions.com/products/90323741?variant=22933934047296&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The SuperFlexx™ Stainless Steel Putty Knives feature a 30% more flexible blade for versatile applications such as applying or smoothing compounds. These high-quality putty knives come with an overmold comfort grip for ease of use and a HammerHead® for added functionality.</p>\n<p><strong>Key Features:</strong></p>\n<ul>\n<li>\n<strong>Super Flexible Blade: </strong>30% more flexible than our standard putty knives -<span> i</span>deal for applying or smoothing compounds.</li>\n<li>\n<strong>High-Quality Stainless Steel Blade:</strong><span> </span>Hardened for durability and long-lasting performance. Rust-Resistant</li>\n<li>\n<strong>Overmold Comfort Grip:</strong><span> </span>Provides a comfortable and secure hold during use.</li>\n<li>\n<strong>HammerHead®:</strong><span> </span>Allows for setting nails and screws as you work.</li>\n</ul>\n<p><strong>Benefits:</strong></p>\n<ul>\n<li>\n<strong>Versatile Functionality:</strong><span> </span>Suitable for a variety of tasks, including compound application and surface smoothing.</li>\n<li>\n<strong>Enhanced Comfort:</strong><span> </span>Overmold grip for comfort.</li>\n</ul>\n<p><strong>Sizes Available:</strong></p>\n<ul>\n<li>1-1/2\"</li>\n<li>2\"</li>\n</ul>"
+     },
+     "handle": "superflexx-stainless-steel-putty-knives",
+     "id": "gid://shopify/p/2or3TQNkJZbX9erX1r4FIm",
+     "media": [
+      {
+       "alt_text": "SuperFlexx™ Stainless Steel Putty Knives",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0808/2014/2357/files/HEIGHT___HYDE-302-06257_8e3797d0-52aa-4fad-9ffc-318585ab88a6.jpg",
+        "width": 604
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0808/2014/2357/files/HEIGHT___HYDE-302-06257_8e3797d0-52aa-4fad-9ffc-318585ab88a6.jpg",
+       "width": 604
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Super flexible stainless steel blade enables precise application and smoothing of compounds",
+       "Comfort grip handle with overmold cushioning ensures secure, comfortable use",
+       "Hammerhead end allows for resetting popped nails and dimpling nail holes",
+       "Rust-resistant stainless steel construction for long-lasting durability",
+       "Easy to remove with no residue left behind"
+      ],
+      "unique_selling_points": [
+       "30 percent more flexible blade than standard putty knives for superior application and smoothing flexibility."
+      ]
+     },
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "1-1/2\""
+        },
+        {
+         "label": "2\""
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 728,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 728,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "SuperFlexx™ Stainless Steel Putty Knives",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://hydetools.com/buy/50138619805973:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The SuperFlexx™ Stainless Steel Putty Knives feature a 30% more flexible blade for versatile applications such as applying or smoothing compounds. These high-quality putty knives come with an overmold comfort grip for ease of use and a HammerHead® for added functionality.</p>\n<p><strong>Key Features:</strong></p>\n<ul>\n<li>\n<strong>Super Flexible Blade: </strong>30% more flexible than our standard putty knives -<span> i</span>deal for applying or smoothing compounds.</li>\n<li>\n<strong>High-Quality Stainless Steel Blade:</strong><span> </span>Hardened for durability and long-lasting performance. Rust-Resistant</li>\n<li>\n<strong>Overmold Comfort Grip:</strong><span> </span>Provides a comfortable and secure hold during use.</li>\n<li>\n<strong>HammerHead®:</strong><span> </span>Allows for setting nails and screws as you work.</li>\n</ul>\n<p><strong>Benefits:</strong></p>\n<ul>\n<li>\n<strong>Versatile Functionality:</strong><span> </span>Suitable for a variety of tasks, including compound application and surface smoothing.</li>\n<li>\n<strong>Enhanced Comfort:</strong><span> </span>Overmold grip for comfort.</li>\n</ul>\n<p><strong>Sizes Available:</strong></p>\n<ul>\n<li>1-1/2\"</li>\n<li>2\"</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "superflexx-stainless-steel-putty-knives",
+       "id": "gid://shopify/ProductVariant/50138619805973",
+       "media": [
+        {
+         "alt_text": "SuperFlexx™ Stainless Steel Putty Knives",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0808/2014/2357/files/HEIGHT___HYDE-302-06257_8e3797d0-52aa-4fad-9ffc-318585ab88a6.jpg",
+          "width": 604
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0808/2014/2357/files/HEIGHT___HYDE-302-06257_8e3797d0-52aa-4fad-9ffc-318585ab88a6.jpg",
+         "width": 604
+        }
+       ],
+       "options": [
+        {
+         "label": "1-1/2\"",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 728,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "hyde-tools-dev.myshopify.com",
+        "id": "gid://shopify/Shop/80820142357",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/80820142357/policies/36242555157.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/80820142357/policies/36242587925.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/80820142357/policies/36242522389.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/80820142357/policies/36242620693.html"
+         }
+        ],
+        "name": "Hyde Tools",
+        "url": "https://hydetools.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9103550677269",
+       "source": "shopify",
+       "title": "SuperFlexx™ Stainless Steel Putty Knives",
+       "url": "https://hydetools.com/products/superflexx-stainless-steel-putty-knives?variant=50138619805973&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h4><span>Hyde Tool Stiff Bent Blade Putty Knife 1.25\"</span></h4>\n<p><span>1-1/4″ stiff putty knife with bent blade for getting under paint and removing putty. Heavy duty Black &amp; Silver</span><sup>®</sup><span> blade is electrocoated for rust prevention. Durable nylon handle. Full-tang blade. Guaranteed forever.</span></p>\n<p><span>#02070</span></p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3dzkfNszd0k\" title=\"YouTube video player\"></iframe></p>"
+     },
+     "handle": "stiff-bent-blade-putty-knife-1-25",
+     "id": "gid://shopify/p/25aEFHhFiElm4UmQa2epQZ",
+     "media": [
+      {
+       "alt_text": "Stiff Bent Blade Putty Knife 1.25\"-Hyde Tool-Atlas Preservation",
+       "height": 645,
+       "preview": {
+        "height": 645,
+        "url": "https://cdn.shopify.com/s/files/1/1426/4714/products/StiffBentPuttyKnife1.25inch2.png",
+        "width": 860
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1426/4714/products/StiffBentPuttyKnife1.25inch2.png",
+       "width": 860
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stiff bent blade allows access under paint and into crevices for thorough application",
+       "Heavy-duty black silver blade is electrocoated for rust prevention, ensuring long-term durability",
+       "Durable nylon handle provides a secure, comfortable grip during use",
+       "Full tang blade construction guarantees strength and reliability",
+       "Designed for professional and DIY use in restoration and maintenance projects"
+      ],
+      "unique_selling_points": [
+       "Stiff bent blade design enables access to hard-to-reach areas and effective paint removal."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 905,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 905,
+       "currency": "USD"
+      }
+     },
+     "title": "Stiff Bent Blade Putty Knife 1.25\"",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://atlaspreservation.com/buy/37924108173511:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h4><span>Hyde Tool Stiff Bent Blade Putty Knife 1.25\"</span></h4>\n<p><span>1-1/4″ stiff putty knife with bent blade for getting under paint and removing putty. Heavy duty Black &amp; Silver</span><sup>®</sup><span> blade is electrocoated for rust prevention. Durable nylon handle. Full-tang blade. Guaranteed forever.</span></p>\n<p><span>#02070</span></p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3dzkfNszd0k\" title=\"YouTube video player\"></iframe></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "stiff-bent-blade-putty-knife-1-25",
+       "id": "gid://shopify/ProductVariant/37924108173511",
+       "media": [
+        {
+         "alt_text": "Stiff Bent Blade Putty Knife 1.25\"-Hyde Tool-Atlas Preservation",
+         "height": 645,
+         "preview": {
+          "height": 645,
+          "url": "https://cdn.shopify.com/s/files/1/1426/4714/products/StiffBentPuttyKnife1.25inch2.png",
+          "width": 860
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1426/4714/products/StiffBentPuttyKnife1.25inch2.png",
+         "width": 860
+        }
+       ],
+       "price": {
+        "amount": 905,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "atlas-preservation.myshopify.com",
+        "id": "gid://shopify/Shop/14264714",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/14264714/policies/33127239.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/14264714/policies/33127303.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/14264714/policies/33127175.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/14264714/policies/28534702292.html"
+         }
+        ],
+        "name": "Atlas Preservation",
+        "url": "https://atlaspreservation.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6165077557447",
+       "source": "shopify",
+       "title": "Stiff Bent Blade Putty Knife 1.25\"",
+       "url": "https://atlaspreservation.com/products/stiff-bent-blade-putty-knife-1-25?variant=37924108173511&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>High carbon steel bent blade individually ground, polished, mirror finished and clear coated. Nylon projection interlock handle resists most common paint thinners and solvents. Full tang blade construction. Blade measures 3/4\" wide.</p>"
+     },
+     "handle": "h-02205",
+     "id": "gid://shopify/p/1mRTKq4TCS2ZjrqOtVwziK",
+     "media": [
+      {
+       "alt_text": "Hyde Tools 02205 Black & Silver® 3/4” Stiff Chisel Edge Putty Knife/Scraper | the Hyde Store",
+       "height": 806,
+       "preview": {
+        "height": 806,
+        "url": "https://cdn.shopify.com/s/files/1/0586/8362/1429/products/hyde-tools-02205-black-silver-34-stiff-chisel-edge-putty-knifescraper-829707.jpg",
+        "width": 600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0586/8362/1429/products/hyde-tools-02205-black-silver-34-stiff-chisel-edge-putty-knifescraper-829707.jpg",
+       "width": 600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stiff chisel edge blade enables precise application and removal of putty and paint",
+       "Full tang construction provides enhanced strength and stability",
+       "Mirror finished and clear coated blade resists most paint thinners and solvents for long-lasting performance",
+       "Nylon projection interlock handle offers a secure, comfortable grip",
+       "Individually ground and polished blade ensures consistent edge quality"
+      ],
+      "unique_selling_points": [
+       "Full tang high carbon steel blade with mirror finish and clear coat for durability and corrosion resistance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 824,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 824,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Hyde Tools 02205 Black & Silver® 3/4” Stiff Chisel Edge Putty Knife/Scraper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://hydestore.com/buy/41209466486837:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>High carbon steel bent blade individually ground, polished, mirror finished and clear coated. Nylon projection interlock handle resists most common paint thinners and solvents. Full tang blade construction. Blade measures 3/4\" wide.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "h-02205",
+       "id": "gid://shopify/ProductVariant/41209466486837",
+       "media": [
+        {
+         "alt_text": "Hyde Tools 02205 Black & Silver® 3/4” Stiff Chisel Edge Putty Knife/Scraper | the Hyde Store",
+         "height": 806,
+         "preview": {
+          "height": 806,
+          "url": "https://cdn.shopify.com/s/files/1/0586/8362/1429/products/hyde-tools-02205-black-silver-34-stiff-chisel-edge-putty-knifescraper-829707.jpg",
+          "width": 600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0586/8362/1429/products/hyde-tools-02205-black-silver-34-stiff-chisel-edge-putty-knifescraper-829707.jpg",
+         "width": 600
+        }
+       ],
+       "price": {
+        "amount": 824,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "hydestore-com.myshopify.com",
+        "id": "gid://shopify/Shop/58683621429",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/58683621429/policies/24670273589.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/58683621429/policies/24670306357.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/58683621429/policies/24670240821.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/58683621429/policies/24670339125.html"
+         }
+        ],
+        "name": "the Hyde Store ",
+        "url": "https://hydestore.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6932905558069",
+       "source": "shopify",
+       "title": "Hyde Tools 02205 Black & Silver® 3/4” Stiff Chisel Edge Putty Knife/Scraper",
+       "url": "https://hydestore.com/products/h-02205?variant=41209466486837&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>This SABER SELECT Stainless Steel Putty Knife is a professional tool that offers precise and efficient application of putty. Made with high-quality stainless steel, it provides exceptional durability and strength. Perfect for any DIY project or professional job, this putty knife will make your next project a breeze.</p>"
+     },
+     "handle": "saber-select-tool-scraper-knife",
+     "id": "gid://shopify/p/xwOIRGX3E2PtvgcFhuQoA",
+     "media": [
+      {
+       "alt_text": "Saber Select™ Stainless Steel Putty Knife",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0566/9054/0681/files/IMG-1585.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0566/9054/0681/files/IMG-1585.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stainless steel blade ensures long-lasting sharpness and resistance to corrosion for reliable performance",
+       "Ergonomic handle provides comfortable grip for extended use",
+       "Solid handle pattern offers a secure and stable hold",
+       "Durable construction withstands heavy-duty tasks in both DIY and professional settings"
+      ],
+      "unique_selling_points": [
+       "Constructed from high quality stainless steel for exceptional durability and strength."
+      ]
+     },
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "1 in."
+        },
+        {
+         "label": "2 in."
+        },
+        {
+         "label": "3 in."
+        },
+        {
+         "label": "4 in."
+        },
+        {
+         "label": "5 in."
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 198,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 198,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Saber Select™ Stainless Steel Putty Knife",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://sabersales.com/buy/42272697090185:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>This SABER SELECT Stainless Steel Putty Knife is a professional tool that offers precise and efficient application of putty. Made with high-quality stainless steel, it provides exceptional durability and strength. Perfect for any DIY project or professional job, this putty knife will make your next project a breeze.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "saber-select-tool-scraper-knife",
+       "id": "gid://shopify/ProductVariant/42272697090185",
+       "list_price": {
+        "amount": 298,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Saber Select™ Stainless Steel Putty Knife",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0566/9054/0681/files/IMG-1585.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0566/9054/0681/files/IMG-1585.jpg",
+         "width": 2048
+        }
+       ],
+       "options": [
+        {
+         "label": "1 in.",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 198,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "sabersaleshq.myshopify.com",
+        "id": "gid://shopify/Shop/56690540681",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/56690540681/policies/24898338953.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/56690540681/policies/24898371721.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/56690540681/policies/24898306185.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/56690540681/policies/24898404489.html"
+         }
+        ],
+        "name": "Saber Sales",
+        "url": "https://sabersales.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7588590485641",
+       "source": "shopify",
+       "title": "Saber Select™ Stainless Steel Putty Knife",
+       "url": "https://sabersales.com/products/saber-select-tool-scraper-knife?variant=42272697090185&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span class=\"a-list-item\"><strong><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/ab75c73f-0672-4d50-82ef-c70c81ff500e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A1a-US1-1464X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></strong></span></p>\n<p>This putty knife set contains 4 putty knives-3 with flexible blades and 1 with a stiff blade.</p>\n<p>The set is ideal for homeowners or DIYers for performing operations, doing drywall taping, sealing drywall joints, applying materials, spackling, scraping, or removing.</p>\n<p>Size: 1-1/2\", 3\", 4\", 6\"</p>\n<p><span class=\"a-list-item\"><strong>High Quality</strong>: These putty knives are made of stainless steel, ensuring high quality, flexibility, durability, and smoothness</span></p>\n<p><span class=\"a-list-item\"><strong>More Robust</strong>: Mirror-polished for enhanced durability and rust resistance. Note: After using the putty knife, clean it promptly and keep it dry during storage to ensure the blade's longevity</span></p>\n<p><span class=\"a-list-item\"><strong>Safe to Use</strong>: The ergonomic handle, made from PP &amp; TPR materials, provides a comfortable and soft grip, and features a finger guide rail for added safety</span></p>\n<p><span class=\"a-list-item\"><strong>Multi-Purpose</strong>: The set includes 4 sizes of putty knives in both flexible and stiff versions for various applications</span></p>\n<p><span class=\"a-list-item\"><strong>Includes</strong>: This putty knife set includes four different widths: 1.5\", 3\", 4\", and 6\". It meets most of your essential needs with a blade thickness of 1.2 mm</span></p>\n<table width=\"100%\" style=\"width: 100%;\">\n<tbody>\n<tr>\n<td style=\"width: 50%;\"><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/00dff272-c9ff-4659-a0d8-ef779d169772.__CR0,0,800,600_PT0_SX800_V1___.jpg\" alt=\"W004902A-A2-US1-800X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></td>\n<td style=\"width: 50%;\">\n<h4 class=\"aplus-h1 aplus-module-1-heading a-text-bold\">Design</h4>\n<ul class=\"a-unordered-list a-vertical\">\n<li><span class=\"a-unordered-list a-vertical\">All blades are constructed by stainless steel of high quality, robust, tough and smooth; mirror polished for durability and rust resistance</span></li>\n<li><span class=\"a-unordered-list a-vertical\">Ergonomic handle by PP &amp; TPR material,comfortable and soft grip</span></li>\n<li><span class=\"a-unordered-list a-vertical\">Finger guide rail in the front and back for better leverage with less effort</span></li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table>\n<p><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/9100609e-5f1d-4238-af48-a4c79a6ddcc6.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A5a-US1-1464X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></p>\n<p><strong>Three types of grip:</strong></p>\n<ul>\n<li>1. Power grip: strong handhold while scraping</li>\n<li>2. Finger guide rail: control pull/push</li>\n<li>3. Precision grip: gently and accurately spread and smooth compounds</li>\n</ul>\n<p><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/4584b9aa-e53e-4b7a-8329-c46658221875.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A4a-US1-1464X600\"><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/53437250-8a2d-4bcd-b915-fb721efb5219.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A6a-US1-1464X600\"></p>"
+     },
+     "handle": "workpro-4-piece-putty-knife-set-stainless-steel-made-perfect-for-drywall-spackle-taping-scraping-paint-1-5-3-4-6",
+     "id": "gid://shopify/p/41CiUmQnrBmKma1liUyKPt",
+     "media": [
+      {
+       "alt_text": "Four putty knives with blue and red handles and stainless steel blades",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/0600/0676/0638/files/51h4k1ml3eL._AC_US1500.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0600/0676/0638/files/51h4k1ml3eL._AC_US1500.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Four-piece set with three flexible and one stiff blade for various applications",
+       "Mirror-polished stainless steel blades ensure durability and rust resistance",
+       "Ergonomic PP TPR handles provide a comfortable, soft grip and finger guide rail for safety",
+       "Multiple blade sizes (1.2 mm, 1 in, 3 in, 4 in, 6 in) accommodate different tasks",
+       "Power, precision, and control grips for tailored handling"
+      ],
+      "unique_selling_points": [
+       "Includes three flexible and one stiff stainless steel blade putty knives in four different sizes for maximum versatility."
+      ]
+     },
+     "options": [
+      {
+       "name": "Blade size",
+       "values": [
+        {
+         "label": "0.05 in"
+        }
+       ]
+      },
+      {
+       "name": "Length",
+       "values": [
+        {
+         "label": "1 1/2 in"
+        }
+       ]
+      },
+      {
+       "name": "Width",
+       "values": [
+        {
+         "label": "1.5 in"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 112,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "WORKPRO 4 Pcs Stainless Steel Made Putty Knife Set",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://workprotools.com/buy/41095888797886:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span class=\"a-list-item\"><strong><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/ab75c73f-0672-4d50-82ef-c70c81ff500e.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A1a-US1-1464X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></strong></span></p>\n<p>This putty knife set contains 4 putty knives-3 with flexible blades and 1 with a stiff blade.</p>\n<p>The set is ideal for homeowners or DIYers for performing operations, doing drywall taping, sealing drywall joints, applying materials, spackling, scraping, or removing.</p>\n<p>Size: 1-1/2\", 3\", 4\", 6\"</p>\n<p><span class=\"a-list-item\"><strong>High Quality</strong>: These putty knives are made of stainless steel, ensuring high quality, flexibility, durability, and smoothness</span></p>\n<p><span class=\"a-list-item\"><strong>More Robust</strong>: Mirror-polished for enhanced durability and rust resistance. Note: After using the putty knife, clean it promptly and keep it dry during storage to ensure the blade's longevity</span></p>\n<p><span class=\"a-list-item\"><strong>Safe to Use</strong>: The ergonomic handle, made from PP &amp; TPR materials, provides a comfortable and soft grip, and features a finger guide rail for added safety</span></p>\n<p><span class=\"a-list-item\"><strong>Multi-Purpose</strong>: The set includes 4 sizes of putty knives in both flexible and stiff versions for various applications</span></p>\n<p><span class=\"a-list-item\"><strong>Includes</strong>: This putty knife set includes four different widths: 1.5\", 3\", 4\", and 6\". It meets most of your essential needs with a blade thickness of 1.2 mm</span></p>\n<table width=\"100%\" style=\"width: 100%;\">\n<tbody>\n<tr>\n<td style=\"width: 50%;\"><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/00dff272-c9ff-4659-a0d8-ef779d169772.__CR0,0,800,600_PT0_SX800_V1___.jpg\" alt=\"W004902A-A2-US1-800X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></td>\n<td style=\"width: 50%;\">\n<h4 class=\"aplus-h1 aplus-module-1-heading a-text-bold\">Design</h4>\n<ul class=\"a-unordered-list a-vertical\">\n<li><span class=\"a-unordered-list a-vertical\">All blades are constructed by stainless steel of high quality, robust, tough and smooth; mirror polished for durability and rust resistance</span></li>\n<li><span class=\"a-unordered-list a-vertical\">Ergonomic handle by PP &amp; TPR material,comfortable and soft grip</span></li>\n<li><span class=\"a-unordered-list a-vertical\">Finger guide rail in the front and back for better leverage with less effort</span></li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table>\n<p><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/9100609e-5f1d-4238-af48-a4c79a6ddcc6.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A5a-US1-1464X600\" style=\"display: block; margin-left: auto; margin-right: auto;\"></p>\n<p><strong>Three types of grip:</strong></p>\n<ul>\n<li>1. Power grip: strong handhold while scraping</li>\n<li>2. Finger guide rail: control pull/push</li>\n<li>3. Precision grip: gently and accurately spread and smooth compounds</li>\n</ul>\n<p><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/4584b9aa-e53e-4b7a-8329-c46658221875.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A4a-US1-1464X600\"><img src=\"https://m.media-amazon.com/images/S/aplus-media-library-service-media/53437250-8a2d-4bcd-b915-fb721efb5219.__CR0,0,1464,600_PT0_SX1464_V1___.jpg\" alt=\"W004902A-A6a-US1-1464X600\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "workpro-4-piece-putty-knife-set-stainless-steel-made-perfect-for-drywall-spackle-taping-scraping-paint-1-5-3-4-6",
+       "id": "gid://shopify/ProductVariant/41095888797886",
+       "list_price": {
+        "amount": 2532,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Four putty knives with blue and red handles and stainless steel blades",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/0600/0676/0638/files/51h4k1ml3eL._AC_US1500.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0600/0676/0638/files/51h4k1ml3eL._AC_US1500.jpg",
+         "width": 1500
+        }
+       ],
+       "options": [
+        {
+         "label": "1 1/2 in",
+         "name": "Length"
+        },
+        {
+         "label": "0.05 in",
+         "name": "Blade size"
+        },
+        {
+         "label": "1.5 in",
+         "name": "Width"
+        }
+       ],
+       "price": {
+        "amount": 1899,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "workprostore.myshopify.com",
+        "id": "gid://shopify/Shop/60006760638",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/60006760638/policies/25376129214.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/60006760638/policies/25376161982.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/60006760638/policies/25376096446.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/60006760638/policies/25376194750.html"
+         }
+        ],
+        "name": "WORKPRO Tools",
+        "url": "https://workprotools.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7118114521278",
+       "source": "shopify",
+       "title": "WORKPRO 4 Pcs Stainless Steel Made Putty Knife Set",
+       "url": "https://workprotools.com/products/workpro-4-piece-putty-knife-set-stainless-steel-made-perfect-for-drywall-spackle-taping-scraping-paint-1-5-3-4-6?variant=41095888797886&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<ul class=\"c-details\">\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Made in the U.S.A.</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Made in the United States of America</p>\n</div>\n</div>\n</li>\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Individually Ground Blade</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Individually honed and ground blade ensures the highest sharpness</p>\n</div>\n</div>\n</li>\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Enhanced Grain Structure</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Blade is heat-treated and cooled to precise temperatures to enhance grain structure and maximize performance</p>\n<p><span>The blade on this knife is perfect for scooping and applying putty without getting it all over your hands, scraping paint, and more. The handle is designed with comfort in mind, so that you can use it for hours without worrying about hand fatigue</span></p>\n<p>///manufacture_country=United States,square_product_image=https://square-production.s3.amazonaws.com/files/b7e2696e87bcdc34b687ab21ccb17d2a01e5143c/original.jpeg</p>\n</div>\n<div class=\"c-details__content\"></div>\n</div>\n</li>\n</ul>"
+     },
+     "handle": "dexter-russell-1-1-8-bent-putty-knife-50391",
+     "id": "gid://shopify/p/33c4HPIBttI3JTTBfazY5V",
+     "media": [
+      {
+       "alt_text": "Dexter Russell 1 1/8\" Bent Putty Knife (50391)",
+       "height": 3024,
+       "preview": {
+        "height": 3024,
+        "url": "https://cdn.shopify.com/s/files/1/0806/4640/6441/files/IMG_5129.jpg",
+        "width": 3024
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0806/4640/6441/files/IMG_5129.jpg",
+       "width": 3024
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Individually ground and honed blade: Delivers exceptional sharpness for precise putty and paint application",
+       "Heat-treated and cooled blade: Enhances grain structure for improved durability and performance",
+       "Ergonomic wood handle: Reduces hand fatigue during extended use",
+       "Bent blade design: Allows for easy scooping and applying of putty without overspray",
+       "Made in the USA: Ensures high manufacturing standards and quality control"
+      ],
+      "unique_selling_points": [
+       "Individually ground and honed steel blade ensures maximum sharpness and performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1590,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1590,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Dexter Russell 1 1/8\" Bent Putty Knife (50391)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.harryepstein.com/buy/48525705347369:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<ul class=\"c-details\">\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Made in the U.S.A.</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Made in the United States of America</p>\n</div>\n</div>\n</li>\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Individually Ground Blade</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Individually honed and ground blade ensures the highest sharpness</p>\n</div>\n</div>\n</li>\n<li class=\"c-details__detail\">\n<div class=\"c-details__content\">\n<h3 class=\"c-details__title\">Enhanced Grain Structure</h3>\n<div class=\"c-wysiwyg c-wysiwyg--details\">\n<p>Blade is heat-treated and cooled to precise temperatures to enhance grain structure and maximize performance</p>\n<p><span>The blade on this knife is perfect for scooping and applying putty without getting it all over your hands, scraping paint, and more. The handle is designed with comfort in mind, so that you can use it for hours without worrying about hand fatigue</span></p>\n<p>///manufacture_country=United States,square_product_image=https://square-production.s3.amazonaws.com/files/b7e2696e87bcdc34b687ab21ccb17d2a01e5143c/original.jpeg</p>\n</div>\n<div class=\"c-details__content\"></div>\n</div>\n</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dexter-russell-1-1-8-bent-putty-knife-50391",
+       "id": "gid://shopify/ProductVariant/48525705347369",
+       "media": [
+        {
+         "alt_text": "Dexter Russell 1 1/8\" Bent Putty Knife (50391)",
+         "height": 3024,
+         "preview": {
+          "height": 3024,
+          "url": "https://cdn.shopify.com/s/files/1/0806/4640/6441/files/IMG_5129.jpg",
+          "width": 3024
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0806/4640/6441/files/IMG_5129.jpg",
+         "width": 3024
+        }
+       ],
+       "price": {
+        "amount": 1590,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "51fc3b-3.myshopify.com",
+        "id": "gid://shopify/Shop/80646406441",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/80646406441/policies/43052138793.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/80646406441/policies/43052171561.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/80646406441/policies/43052007721.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/80646406441/policies/43052106025.html"
+         }
+        ],
+        "name": "Harry J. Epstein Co.",
+        "url": "https://www.harryepstein.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9248971850025",
+       "source": "shopify",
+       "title": "Dexter Russell 1 1/8\" Bent Putty Knife (50391)",
+       "url": "https://www.harryepstein.com/products/dexter-russell-1-1-8-bent-putty-knife-50391?variant=48525705347369&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "One-piece polypropylene Economy series tool for spreading or scraping compounds. Easy cleanup or toss when finished. Reinforced handles to outlast other disposables. Spreader 2 in wide.<br>Unit: EA<br>UPC: 079423055201<br>Model Number: 05520"
+     },
+     "handle": "vorg6087449-hyde-economy-series-05520-putty-knife-2-in-w-blade-polypropylene-blade-reinforced-handle-05520",
+     "id": "gid://shopify/p/50XO1YYipjBEahXhvZp4mp",
+     "media": [
+      {
+       "alt_text": "Hyde 05520 Putty Knife, 2 in W Blade, Polypropylene Blade, Reinforced Handle",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/0745/6332/2154/files/6087449_2eucxf.jpg",
+        "width": 791
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0745/6332/2154/files/6087449_2eucxf.jpg",
+       "width": 791
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "One-piece polypropylene blade: Ensures flexibility and durability for smooth spreading and scraping",
+       "Reinforced handle: Outlasts standard disposable handles for extended use",
+       "Lightweight design: Reduces hand fatigue during prolonged use",
+       "Easy to clean: Allows for quick disposal after use",
+       "2 inch blade width: Covers more area for efficient application"
+      ],
+      "unique_selling_points": [
+       "One-piece polypropylene blade and reinforced handle provide durability and easy cleanup compared to standard disposables."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 70,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 70,
+       "currency": "USD"
+      }
+     },
+     "title": "Hyde Economy Series 05520 Putty Knife, 2 in W Blade, Polypropylene Blade, Reinforced Handle",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://mrosupreme.com/buy/45082665320746:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "One-piece polypropylene Economy series tool for spreading or scraping compounds. Easy cleanup or toss when finished. Reinforced handles to outlast other disposables. Spreader 2 in wide.<br>Unit: EA<br>UPC: 079423055201<br>Model Number: 05520"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "vorg6087449-hyde-economy-series-05520-putty-knife-2-in-w-blade-polypropylene-blade-reinforced-handle-05520",
+       "id": "gid://shopify/ProductVariant/45082665320746",
+       "list_price": {
+        "amount": 109,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Hyde 05520 Putty Knife, 2 in W Blade, Polypropylene Blade, Reinforced Handle",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/0745/6332/2154/files/6087449_2eucxf.jpg",
+          "width": 791
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0745/6332/2154/files/6087449_2eucxf.jpg",
+         "width": 791
+        }
+       ],
+       "price": {
+        "amount": 70,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "mrosupreme.myshopify.com",
+        "id": "gid://shopify/Shop/74563322154",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/74563322154/policies/33343045930.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/74563322154/policies/33343078698.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/74563322154/policies/33343013162.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/74563322154/policies/33343111466.html"
+         }
+        ],
+        "name": "Mrosupreme.com",
+        "url": "https://mrosupreme.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8291867066666",
+       "source": "shopify",
+       "title": "Hyde Economy Series 05520 Putty Knife, 2 in W Blade, Polypropylene Blade, Reinforced Handle",
+       "url": "https://mrosupreme.com/products/vorg6087449-hyde-economy-series-05520-putty-knife-2-in-w-blade-polypropylene-blade-reinforced-handle-05520?variant=45082665320746&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><a href=\"https://www.finishingfocus.com/collections/arroworthy-brush-roller-and-paint-supply-collection\" title=\"Arroworthy Brush, Roller and Paint Supply Collection\"><img src=\"//cdn.shopify.com/s/files/1/1438/9862/files/Project_Select_Logo_compact.jpg?v=1505392701\" alt=\"Project Select Logo\"></a></p>\n<h2>Product Overview:</h2>\n<p><b>Project Select 2\" Putty Knife (5601-2)</b> is a premium quality tool designed for <span>surface preparation, filling cracks and for paint removal.</span></p>\n<p>Constructed of h<span>igh quality carbon steel blades</span>. Flexible blade for better handling and performance. Features rubber and vinyl comfort grip handle with steel end cap.</p>\n<h2>Features and Benefits:</h2>\n<ul>\n<li>2\" blade width</li>\n<li>High quality carbon steel blade</li>\n<li>Flexible</li>\n<li>For surface preparation, filling cracks and for paint removal</li>\n<li>Rubber and vinyl comfort grip handle with steel end cap</li>\n<li><span>Manufactured by Linzer/Arroworthy</span></li>\n</ul>\n<ul></ul>"
+     },
+     "handle": "project-select-2-inch-putty-knife-5601-2",
+     "id": "gid://shopify/p/AHdB1atJaXUzfJQwY6wcC",
+     "media": [
+      {
+       "alt_text": "Project Select 2 Inch Putty Knife, 5601-2",
+       "height": 439,
+       "preview": {
+        "height": 439,
+        "url": "https://cdn.shopify.com/s/files/1/1438/9862/products/Arroworthy2InchPuttyKnife_5601_1.jpg",
+        "width": 439
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1438/9862/products/Arroworthy2InchPuttyKnife_5601_1.jpg",
+       "width": 439
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High quality carbon steel blade ensures durability and long-lasting sharpness for precise work",
+       "Flexible blade allows for easy filling of cracks and surface preparation",
+       "Rubber and vinyl comfort grip handle provides secure, comfortable handling during extended use",
+       "Steel end cap offers added safety and prevents blade damage"
+      ],
+      "unique_selling_points": [
+       "High quality carbon steel blade with flexible design and ergonomic comfort grip handle for superior performance."
+      ]
+     },
+     "options": [
+      {
+       "name": "Blade size",
+       "values": [
+        {
+         "label": "2 in"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 450,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 450,
+       "currency": "USD"
+      }
+     },
+     "title": "Project Select 2\" Putty Knife, 5601-2",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.finishingfocus.com/buy/37921051329:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><a href=\"https://www.finishingfocus.com/collections/arroworthy-brush-roller-and-paint-supply-collection\" title=\"Arroworthy Brush, Roller and Paint Supply Collection\"><img src=\"//cdn.shopify.com/s/files/1/1438/9862/files/Project_Select_Logo_compact.jpg?v=1505392701\" alt=\"Project Select Logo\"></a></p>\n<h2>Product Overview:</h2>\n<p><b>Project Select 2\" Putty Knife (5601-2)</b> is a premium quality tool designed for <span>surface preparation, filling cracks and for paint removal.</span></p>\n<p>Constructed of h<span>igh quality carbon steel blades</span>. Flexible blade for better handling and performance. Features rubber and vinyl comfort grip handle with steel end cap.</p>\n<h2>Features and Benefits:</h2>\n<ul>\n<li>2\" blade width</li>\n<li>High quality carbon steel blade</li>\n<li>Flexible</li>\n<li>For surface preparation, filling cracks and for paint removal</li>\n<li>Rubber and vinyl comfort grip handle with steel end cap</li>\n<li><span>Manufactured by Linzer/Arroworthy</span></li>\n</ul>\n<ul></ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "project-select-2-inch-putty-knife-5601-2",
+       "id": "gid://shopify/ProductVariant/37921051329",
+       "media": [
+        {
+         "alt_text": "Project Select 2 Inch Putty Knife, 5601-2",
+         "height": 439,
+         "preview": {
+          "height": 439,
+          "url": "https://cdn.shopify.com/s/files/1/1438/9862/products/Arroworthy2InchPuttyKnife_5601_1.jpg",
+          "width": 439
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1438/9862/products/Arroworthy2InchPuttyKnife_5601_1.jpg",
+         "width": 439
+        }
+       ],
+       "options": [
+        {
+         "label": "2 in",
+         "name": "Blade size"
+        }
+       ],
+       "price": {
+        "amount": 450,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "finishingfocus-com.myshopify.com",
+        "id": "gid://shopify/Shop/14389862",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/14389862/policies/25252417.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/14389862/policies/25252481.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/14389862/policies/25252353.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/14389862/policies/26379944188.html"
+         }
+        ],
+        "name": "FinishingFocus.com",
+        "url": "https://www.finishingfocus.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10173825281",
+       "source": "shopify",
+       "title": "Project Select 2\" Putty Knife, 5601-2",
+       "url": "https://www.finishingfocus.com/products/project-select-2-inch-putty-knife-5601-2?variant=37921051329&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div style=\"text-align: center;\"><img alt=\"\" src=\"//cdn.shopify.com/s/files/1/0039/5106/7205/files/kraft_tool_logo_medium.png?v=1540605223\"></div>\n<div style=\"text-align: center;\"><span style=\"text-decoration: underline;\"><strong>Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF</strong></span></div>\n<div style=\"text-align: center;\">\n<span style=\"text-decoration: underline;\"><strong></strong></span><br>\n</div>\n<div style=\"text-align: center;\"></div>\n<div style=\"text-align: left;\"><span>The Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF is the most unique but also the most durable joint knife around: The knife and handle are made out of a single piece of stainless steel. The polished blade is ideal for scraping, painting and drywall applications. Non-rust stainless steel blade and handle is made from one-piece of material for strength and longevity. The end of the handle is flat and strong for nail setting. The rivet-free, contoured handle comfortable and easy to grasp. </span></div>\n<div style=\"text-align: left;\"><span>Kraft has added a soft rubber sleeve on the one-piece stainless steel model for even more comfort and grip.</span></div>\n<div style=\"text-align: left;\">\n<p> </p>\n</div>\n<div style=\"text-align: center;\">\n<p style=\"text-align: left;\" class=\"product-description\"><strong>Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF Features:</strong></p>\n<ul>\n<li style=\"text-align: left;\">Flexible putty &amp; drywall knife</li>\n<li style=\"text-align: left;\">One piece stainless steel blade and handle</li>\n<li style=\"text-align: left;\">Blade ground for comfortable \"broken-in\" feel</li>\n<li style=\"text-align: left;\">Neoprene grip sleve is soft, comfortable, and resists slipping from sweat and moisture</li>\n</ul>\n<p style=\"text-align: left;\">DW730PF</p>\n<p style=\"text-align: left;\">Kraft Tool</p>\n</div>"
+     },
+     "handle": "kraft-5-one-piece-sure-grip-all-stainless-putty-knife-dw730pf",
+     "id": "gid://shopify/p/2WMdUASi0VZ3qecfHoD5aR",
+     "media": [
+      {
+       "alt_text": "Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF - Timothy's Toolbox",
+       "height": 1081,
+       "preview": {
+        "height": 1081,
+        "url": "https://cdn.shopify.com/s/files/1/0039/5106/7205/products/kraftDW730PF.jpg",
+        "width": 1081
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0039/5106/7205/products/kraftDW730PF.jpg",
+       "width": 1081
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "One-piece stainless steel blade and handle: Ensures maximum strength and longevity for demanding tasks",
+       "Flexible blade design: Allows for precise scraping, painting, and drywall work",
+       "Contoured neoprene grip: Provides a comfortable, non-slip hold even with sweat or moisture",
+       "Flat handle end: Enables easy nail setting for added versatility",
+       "Rivet-free contoured handle: Offers ergonomic comfort and easy handling"
+      ],
+      "unique_selling_points": [
+       "Single-piece stainless steel construction with a soft neoprene grip for superior comfort and durability."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1649,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1649,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://timothystoolbox.com/buy/17608062107717:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=nF8CckSirijv&_gsid=nF8CckSirijv",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div style=\"text-align: center;\"><img alt=\"\" src=\"//cdn.shopify.com/s/files/1/0039/5106/7205/files/kraft_tool_logo_medium.png?v=1540605223\"></div>\n<div style=\"text-align: center;\"><span style=\"text-decoration: underline;\"><strong>Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF</strong></span></div>\n<div style=\"text-align: center;\">\n<span style=\"text-decoration: underline;\"><strong></strong></span><br>\n</div>\n<div style=\"text-align: center;\"></div>\n<div style=\"text-align: left;\"><span>The Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF is the most unique but also the most durable joint knife around: The knife and handle are made out of a single piece of stainless steel. The polished blade is ideal for scraping, painting and drywall applications. Non-rust stainless steel blade and handle is made from one-piece of material for strength and longevity. The end of the handle is flat and strong for nail setting. The rivet-free, contoured handle comfortable and easy to grasp. </span></div>\n<div style=\"text-align: left;\"><span>Kraft has added a soft rubber sleeve on the one-piece stainless steel model for even more comfort and grip.</span></div>\n<div style=\"text-align: left;\">\n<p> </p>\n</div>\n<div style=\"text-align: center;\">\n<p style=\"text-align: left;\" class=\"product-description\"><strong>Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF Features:</strong></p>\n<ul>\n<li style=\"text-align: left;\">Flexible putty &amp; drywall knife</li>\n<li style=\"text-align: left;\">One piece stainless steel blade and handle</li>\n<li style=\"text-align: left;\">Blade ground for comfortable \"broken-in\" feel</li>\n<li style=\"text-align: left;\">Neoprene grip sleve is soft, comfortable, and resists slipping from sweat and moisture</li>\n</ul>\n<p style=\"text-align: left;\">DW730PF</p>\n<p style=\"text-align: left;\">Kraft Tool</p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "kraft-5-one-piece-sure-grip-all-stainless-putty-knife-dw730pf",
+       "id": "gid://shopify/ProductVariant/17608062107717",
+       "media": [
+        {
+         "alt_text": "Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF - Timothy's Toolbox",
+         "height": 1081,
+         "preview": {
+          "height": 1081,
+          "url": "https://cdn.shopify.com/s/files/1/0039/5106/7205/products/kraftDW730PF.jpg",
+          "width": 1081
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0039/5106/7205/products/kraftDW730PF.jpg",
+         "width": 1081
+        }
+       ],
+       "price": {
+        "amount": 1649,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "timothys-toolbox.myshopify.com",
+        "id": "gid://shopify/Shop/3951067205",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/3951067205/policies/7363199045.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/3951067205/policies/7363231813.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/3951067205/policies/7363166277.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/3951067205/policies/13694369850.html"
+         }
+        ],
+        "name": "Timothy's Toolbox",
+        "url": "https://timothystoolbox.com"
+       },
+       "seller_product_id": "gid://shopify/Product/1859945168965",
+       "source": "shopify",
+       "title": "Kraft 5\" One-Piece Sure Grip All-Stainless Putty Knife DW730PF",
+       "url": "https://timothystoolbox.com/products/kraft-5-one-piece-sure-grip-all-stainless-putty-knife-dw730pf?variant=17608062107717&_gsid=nF8CckSirijv&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

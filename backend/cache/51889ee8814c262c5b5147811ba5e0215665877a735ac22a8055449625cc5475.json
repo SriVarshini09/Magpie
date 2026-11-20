@@ -1,0 +1,1905 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Enclosure"
+  }
+ },
+ "key": "51889ee8814c262c5b5147811ba5e0215665877a735ac22a8055449625cc5475",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:53-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNORFV6TXpNMk5UWTNPRGt4TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Most Recent Rokland Products"
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/265491742803",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-but-miners",
+       "id": "gid://shopify/Collection/265527689299",
+       "title": "All items but miners"
+      }
+     ],
+     "description": {
+      "html": "The Unify Enclosures are modular IP65 rated outdoor enclosures that include tailored features to support WisBlock Base Boards and WisBlock Modules.RAK PID 910224-White, 910224-Gray Deployment of your IoT solution is easy thanks to a range of swappable mounting accessories that enable you to install your IoT solution in any setting. These accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The 100x75x38mm enclosure has enough space to support the following WisBlock Base Boards - RAK19003, RAK19007, RAK5005-O. There is also space for a flat LiPo battery to be hosted under the internal mounting plate. Approximate space available is 55x34x5mm excluding any tape used to secure such a battery. Unify Mounting Plate with Screw Bosses for 100x75x38mm Enclosure This mounting plate fits perfectly into the Unify Enclosure 100x75x38mm and has integrated screw bosses to support RAK19003, RAK19007 and RAK5005-O. The mounting plate can be adapted easily to accommodate each of the Base Boards and any attached sensors by the removal of sections of the mounting plate that are not required by using of simple hand-operated side-cutters to cut away the unnecessary sections. Mounting Plate with Screw Bosses Specifications: Compatible only with Unify Enclosure IP65 100x75x38mm Supports RAK19003 Supports RAK19007 Supports RAK5005-O Thickness: 2mm Includes M3 countersink screws to mount to the enclosure Includes self-tapping screws to mount the WisBlock Base Board to the mounting plate Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+     },
+     "gift_card": false,
+     "handle": "rak-unify-enclosure-ip65-100x75x38mm-pure-white-4-x-3-x-1-5-inch",
+     "id": "gid://shopify/Product/6848154337363",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/RAKUnifyWhite.png?v=1680888164"
+      }
+     ],
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "White"
+        },
+        {
+         "label": "Cool Gray"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "rak-cases"
+     ],
+     "title": "RAK Unify Enclosure IP65 100x75x38mm White or Cool Gray (4 x 3 x 1.5 inch) for WisBlock Modules",
+     "url": "https://store.rokland.com/products/rak-unify-enclosure-ip65-100x75x38mm-pure-white-4-x-3-x-1-5-inch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40620007915603:1",
+       "description": {
+        "html": "The Unify Enclosures are modular IP65 rated outdoor enclosures that include tailored features to support WisBlock Base Boards and WisBlock Modules.RAK PID 910224-White, 910224-Gray Deployment of your IoT solution is easy thanks to a range of swappable mounting accessories that enable you to install your IoT solution in any setting. These accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The 100x75x38mm enclosure has enough space to support the following WisBlock Base Boards - RAK19003, RAK19007, RAK5005-O. There is also space for a flat LiPo battery to be hosted under the internal mounting plate. Approximate space available is 55x34x5mm excluding any tape used to secure such a battery. Unify Mounting Plate with Screw Bosses for 100x75x38mm Enclosure This mounting plate fits perfectly into the Unify Enclosure 100x75x38mm and has integrated screw bosses to support RAK19003, RAK19007 and RAK5005-O. The mounting plate can be adapted easily to accommodate each of the Base Boards and any attached sensors by the removal of sections of the mounting plate that are not required by using of simple hand-operated side-cutters to cut away the unnecessary sections. Mounting Plate with Screw Bosses Specifications: Compatible only with Unify Enclosure IP65 100x75x38mm Supports RAK19003 Supports RAK19007 Supports RAK5005-O Thickness: 2mm Includes M3 countersink screws to mount to the enclosure Includes self-tapping screws to mount the WisBlock Base Board to the mounting plate Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/40620007915603",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/RAKUnifyWhite.png?v=1680888164"
+        }
+       ],
+       "options": [
+        {
+         "label": "White",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 3697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910224",
+       "title": "White"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40620007948371:1",
+       "description": {
+        "html": "The Unify Enclosures are modular IP65 rated outdoor enclosures that include tailored features to support WisBlock Base Boards and WisBlock Modules.RAK PID 910224-White, 910224-Gray Deployment of your IoT solution is easy thanks to a range of swappable mounting accessories that enable you to install your IoT solution in any setting. These accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The 100x75x38mm enclosure has enough space to support the following WisBlock Base Boards - RAK19003, RAK19007, RAK5005-O. There is also space for a flat LiPo battery to be hosted under the internal mounting plate. Approximate space available is 55x34x5mm excluding any tape used to secure such a battery. Unify Mounting Plate with Screw Bosses for 100x75x38mm Enclosure This mounting plate fits perfectly into the Unify Enclosure 100x75x38mm and has integrated screw bosses to support RAK19003, RAK19007 and RAK5005-O. The mounting plate can be adapted easily to accommodate each of the Base Boards and any attached sensors by the removal of sections of the mounting plate that are not required by using of simple hand-operated side-cutters to cut away the unnecessary sections. Mounting Plate with Screw Bosses Specifications: Compatible only with Unify Enclosure IP65 100x75x38mm Supports RAK19003 Supports RAK19007 Supports RAK5005-O Thickness: 2mm Includes M3 countersink screws to mount to the enclosure Includes self-tapping screws to mount the WisBlock Base Board to the mounting plate Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/40620007948371",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/QTY1included_photoshowsdifferentcoloroption_3.png?v=1680888164"
+        }
+       ],
+       "options": [
+        {
+         "label": "Cool Gray",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 3697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "NONE",
+       "title": "Cool Gray"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "delivery-app",
+       "id": "gid://shopify/Collection/137206923347",
+       "title": "Delivery App"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. Note: The RAK Hotspot V2 or the MNTD hotspot are not included in the Outdoor Enclosure Kit.The provided PoE Injector and Splitter are not Gigabit (1000Mbps) Ethernet capable. They are 10/100Mbps devices, working only with 10/100Mbps ports on routers and switches.In case you want to use a 1000Mbps switch or router to provision your hotspot, you need to source a Gigabit Ethernet capable PoE injector and splitter.This kit includes all necessary parts to take your RAK Hotspot V2 or the MNTD hotspot (NOT INCLUDED IN THE KIT) outdoor in a secure and durable casing.Combined with one of our fiberglass antennas, this kit allows you to better position your Miner and maximize your rewards without a compromise to harsh outdoor conditions. Features: Outdoor Enclosure Kit PoE splitter Type-C USB (in 48 V; out 5 V/2.4 A) PoE injector (in 100-240 V; out 48 V/0.5 A) Power cord for the PoE Injector Zip tie, PVC tape, and waterproof tape Antenna cable type RG1.32, with N-type to RP-SMA male connectors. Setup Guide Outdoor Enclosure for Gateway Documentation **Note: If ordering this kit directly from RAK you will be required to pay 25% Import Duty as well as shipping on the kit. Ordering from Rokland.com incurs no duty for the customer and free shipping is included as always**Compatible with:RAK Hotspot V2 or the MNTD hotspot Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: You may return this item, open or used, for an exchange or refund at your discretion within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-rak-hotspot-v2-or-mntd-outdoor-enclosure-kit-weatherproof-hotspot-conversion-box-usa-only",
+     "id": "gid://shopify/Product/6787498246227",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/4_14cdc180-a60a-4bdc-bc74-9dafbb593d4e.png?v=1694811516"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases"
+     ],
+     "title": "RAK Wireless RAK Hotspot V2 or MNTD Outdoor Enclosure Kit - Weatherproof Hotspot Conversion Box - USA Only",
+     "url": "https://store.rokland.com/products/rak-wireless-rak-hotspot-v2-or-mntd-outdoor-enclosure-kit-weatherproof-hotspot-conversion-box-usa-only",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40040068776019:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. Note: The RAK Hotspot V2 or the MNTD hotspot are not included in the Outdoor Enclosure Kit.The provided PoE Injector and Splitter are not Gigabit (1000Mbps) Ethernet capable. They are 10/100Mbps devices, working only with 10/100Mbps ports on routers and switches.In case you want to use a 1000Mbps switch or router to provision your hotspot, you need to source a Gigabit Ethernet capable PoE injector and splitter.This kit includes all necessary parts to take your RAK Hotspot V2 or the MNTD hotspot (NOT INCLUDED IN THE KIT) outdoor in a secure and durable casing.Combined with one of our fiberglass antennas, this kit allows you to better position your Miner and maximize your rewards without a compromise to harsh outdoor conditions. Features: Outdoor Enclosure Kit PoE splitter Type-C USB (in 48 V; out 5 V/2.4 A) PoE injector (in 100-240 V; out 48 V/0.5 A) Power cord for the PoE Injector Zip tie, PVC tape, and waterproof tape Antenna cable type RG1.32, with N-type to RP-SMA male connectors. Setup Guide Outdoor Enclosure for Gateway Documentation **Note: If ordering this kit directly from RAK you will be required to pay 25% Import Duty as well as shipping on the kit. Ordering from Rokland.com incurs no duty for the customer and free shipping is included as always**Compatible with:RAK Hotspot V2 or the MNTD hotspot Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: You may return this item, open or used, for an exchange or refund at your discretion within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost, unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are never refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/40040068776019",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/4_14cdc180-a60a-4bdc-bc74-9dafbb593d4e.png?v=1694811516"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "A10001",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available.The enclosure is made of transparent acrylic material and has an open design. While protecting the PCB, it is convenient to assemble and stack according to the actual needs. It supports most of the WisBlock modules and achieves good compatibility. Assembly Instructions Mechanical Characteristics Dimensions W x L x H: 105mm x 75mm x 30mm Weight: approximately 4.23oz (120g) Material thickness: 3mm (Cover); 5mm (Base) Board Support Support the WisBlock form factor board, the detailed matched WisBlock modules include the following: WisBlock Base RAK19007 WisBlock Core RAK4631 WisBlock Wireless RAK2305 WisBlock Wireless RAK5860 WisBlock Sensor RAK1901 WisBlock Sensor RAK1902 WisBlock Sensor RAK1904 WisBlock Sensor RAK1906 WisBlock Sensor RAK1910 WisBlock Interface RAK5801 WisBlock Interface RAK5802 WisBlock Interface RAK5811 WisBlock Interface RAK5804 WisBlock Interface RAK1920 WisBlock Display RAK1921 Package Inclusion Acrylic Enclosure Plates 18650 Flat Top Battery holder (Not compatible w/ Button Top) Assembly screws and standoffs (battery wire not included) Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: May be returned for refund if new within 30 days of delivery. Used cases cannot be returned except in case of defect. We only cover return shipping in case of wrong item shipped. Returned orders with free shipping selected will incur a 15% recovery fee to help us recover some of the original shipping cost, unless the item is defective or incorrect. Expedited shipping charges paid are non-refundable. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "rakbox-b5-transparent-acrylic-enclosure-pid-910010",
+     "id": "gid://shopify/Product/6878848221267",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/1.135_757x.progressive_c2c39623-2737-42bc-bb9f-03c8017c72d6.webp?v=1665161937"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases"
+     ],
+     "title": "RAKBox-B5 Transparent Acrylic Enclosure Case PID: 910010",
+     "url": "https://store.rokland.com/products/rakbox-b5-transparent-acrylic-enclosure-pid-910010",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40344541331539:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available.The enclosure is made of transparent acrylic material and has an open design. While protecting the PCB, it is convenient to assemble and stack according to the actual needs. It supports most of the WisBlock modules and achieves good compatibility. Assembly Instructions Mechanical Characteristics Dimensions W x L x H: 105mm x 75mm x 30mm Weight: approximately 4.23oz (120g) Material thickness: 3mm (Cover); 5mm (Base) Board Support Support the WisBlock form factor board, the detailed matched WisBlock modules include the following: WisBlock Base RAK19007 WisBlock Core RAK4631 WisBlock Wireless RAK2305 WisBlock Wireless RAK5860 WisBlock Sensor RAK1901 WisBlock Sensor RAK1902 WisBlock Sensor RAK1904 WisBlock Sensor RAK1906 WisBlock Sensor RAK1910 WisBlock Interface RAK5801 WisBlock Interface RAK5802 WisBlock Interface RAK5811 WisBlock Interface RAK5804 WisBlock Interface RAK1920 WisBlock Display RAK1921 Package Inclusion Acrylic Enclosure Plates 18650 Flat Top Battery holder (Not compatible w/ Button Top) Assembly screws and standoffs (battery wire not included) Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: May be returned for refund if new within 30 days of delivery. Used cases cannot be returned except in case of defect. We only cover return shipping in case of wrong item shipped. Returned orders with free shipping selected will incur a 15% recovery fee to help us recover some of the original shipping cost, unless the item is defective or incorrect. Expedited shipping charges paid are non-refundable. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/40344541331539",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/1.135_757x.progressive_c2c39623-2737-42bc-bb9f-03c8017c72d6.webp?v=1665161937"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910010",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. The WisBlock RAKBox-B6 Enclosure is a WisBlock indoor enclosure designed to protect and organize sensor-based projects built using the WisBlock Modular System. Its layout is carefully crafted to provide ample internal space for multiple components while maintaining a clean, low-profile form that suits indoor environments. The enclosure supports a wide range of WisBlock Base Boards, offering flexibility to adapt projects as requirements change. With ventilation slots on both sides, it ensures a steady airflow to keep sensors operating at stable conditions. The accessible USB port opening simplifies device updates and maintenance without dismantling the setup. Inside, the roomy compartment accommodates larger batteries for longer operation, and the included mounting plate helps secure boards firmly during use. For easy installation, mounting holes on the base allow quick attachment to walls or other surfaces. Ideal for organizing and safeguarding modular sensor setups, this WisBlock indoor sensor enclosure helps create a stable, clutter-free environment for indoor sensor deployments. Why it’s useful: Deployment Need How RAKBox-B6 Helps Modular flexibility Supports multiple WisBlock base board layouts as projects evolve Easy maintenance USB access opening enables updates without opening the enclosure Longer operation time Interior space allows use of larger-capacity batteries Stable sensor readings Side ventilation slots promote airflow and reduce heat buildup Clean indoor installation Compact, enclosed design keeps sensor setups organized and protected Key Features Material: ABS Color: Pure White External Size: 84.5x84.5x36.7mm Internal Space: Approx. 66x66x16mm (Usable space varies due to internal features) Use Case #1: Environmental Monitoring in a Shared Workspace A team deploys air quality sensors in an office. The secure modular IoT sensor housing serves as a temperature sensor box to prevent accidental tampering, while vented airflow ensures accurate readings, allowing them to track indoor conditions effectively. Use Case #2: Educational IoT Lab Setup Students assemble modular sensors for coursework. The enclosure organizes components neatly and protects delicate boards from handling damage, helping them focus on learning without worrying about hardware issues. What’s in the Box 1 pc Enclosure 1 pc Internal Mounting Plate 1 pc USB-C Silicone cover 1 Screw set How to Get Started with WisBlock RAKBox-B6 Enclosure Overview of WisBlock RAKBox-B6 Enclosure Installation Guide for WisBlock RAKBox-B6 Enclosure Datasheet for WisBlock RAKBox-B6 Enclosure Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: May be returned for refund if new within 30 days of delivery. Used cases cannot be returned except in case of defect. We only cover return shipping in case of wrong item shipped. Returned orders with free shipping selected will incur a 15% recovery fee to help us recover some of the original shipping cost, unless the item is defective or incorrect. Expedited shipping charges paid are non-refundable. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "wisblock-rakbox-b6-indoor-sensor-enclosure",
+     "id": "gid://shopify/Product/15430379503699",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAKBox_B6_01_700x700_23b8eddb-e35d-4f24-b83c-16c7be34554f.jpg?v=1792782088"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2897,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2897,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases"
+     ],
+     "title": "WisBlock RAKBox-B6 Indoor Sensor Enclosure",
+     "url": "https://store.rokland.com/products/wisblock-rakbox-b6-indoor-sensor-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/67892786036819:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. The WisBlock RAKBox-B6 Enclosure is a WisBlock indoor enclosure designed to protect and organize sensor-based projects built using the WisBlock Modular System. Its layout is carefully crafted to provide ample internal space for multiple components while maintaining a clean, low-profile form that suits indoor environments. The enclosure supports a wide range of WisBlock Base Boards, offering flexibility to adapt projects as requirements change. With ventilation slots on both sides, it ensures a steady airflow to keep sensors operating at stable conditions. The accessible USB port opening simplifies device updates and maintenance without dismantling the setup. Inside, the roomy compartment accommodates larger batteries for longer operation, and the included mounting plate helps secure boards firmly during use. For easy installation, mounting holes on the base allow quick attachment to walls or other surfaces. Ideal for organizing and safeguarding modular sensor setups, this WisBlock indoor sensor enclosure helps create a stable, clutter-free environment for indoor sensor deployments. Why it’s useful: Deployment Need How RAKBox-B6 Helps Modular flexibility Supports multiple WisBlock base board layouts as projects evolve Easy maintenance USB access opening enables updates without opening the enclosure Longer operation time Interior space allows use of larger-capacity batteries Stable sensor readings Side ventilation slots promote airflow and reduce heat buildup Clean indoor installation Compact, enclosed design keeps sensor setups organized and protected Key Features Material: ABS Color: Pure White External Size: 84.5x84.5x36.7mm Internal Space: Approx. 66x66x16mm (Usable space varies due to internal features) Use Case #1: Environmental Monitoring in a Shared Workspace A team deploys air quality sensors in an office. The secure modular IoT sensor housing serves as a temperature sensor box to prevent accidental tampering, while vented airflow ensures accurate readings, allowing them to track indoor conditions effectively. Use Case #2: Educational IoT Lab Setup Students assemble modular sensors for coursework. The enclosure organizes components neatly and protects delicate boards from handling damage, helping them focus on learning without worrying about hardware issues. What’s in the Box 1 pc Enclosure 1 pc Internal Mounting Plate 1 pc USB-C Silicone cover 1 Screw set How to Get Started with WisBlock RAKBox-B6 Enclosure Overview of WisBlock RAKBox-B6 Enclosure Installation Guide for WisBlock RAKBox-B6 Enclosure Datasheet for WisBlock RAKBox-B6 Enclosure Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: May be returned for refund if new within 30 days of delivery. Used cases cannot be returned except in case of defect. We only cover return shipping in case of wrong item shipped. Returned orders with free shipping selected will incur a 15% recovery fee to help us recover some of the original shipping cost, unless the item is defective or incorrect. Expedited shipping charges paid are non-refundable. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/67892786036819",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAKBox_B6_01_700x700_23b8eddb-e35d-4f24-b83c-16c7be34554f.jpg?v=1792782088"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available The Unify Hook Loop Kit (Type J) consists of the key accessories to enable you to mount your Unify Enclosure in huge range of settings. The accessory consists of a closed loop that can be used to hook over a physical feature in your deployment environment or can be adapted as required. The Unify accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The Unify Hook Loop Kit (Type J) accessory is compatible with all Unify Enclosures. Unify Hook Loop (Type J) Specifications Material: ABS UL94V-0 General Wall Thickness: 4.0mm Hook loop hole diameter: 27mm Compatible with Unify Enclosure 100x75x38mm Compatible with Unify Enclosure 150x100x45mm Compatible with Unify Enclosure 180x130x60mm Package Inclusion 1 pc Unify Hook Loop Kit(Type J) accessories 2 pc M3x8mm Stainless Steel Screw (to mount the accessory to the enclosure) Documentation Unify Hook Loop Kit (Type J) Datasheet Unify Hook Loop Kit (Type J) 3D Model Downloads Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping. If free shipping is selected, this part may incur a $4.50 shipping recovery charge deducted from refund. Waived if defective or different from advertisement."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-unify-unify-hook-loop-kit-type-jcool-grey-pid-910231",
+     "id": "gid://shopify/Product/7364270784595",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/910231.png?v=1717523102"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases"
+     ],
+     "title": "RAKwireless Unify Unify Hook Loop Kit (Type J)(Cool Grey) PID: 910231",
+     "url": "https://store.rokland.com/products/rakwireless-unify-unify-hook-loop-kit-type-jcool-grey-pid-910231",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41904351608915:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available The Unify Hook Loop Kit (Type J) consists of the key accessories to enable you to mount your Unify Enclosure in huge range of settings. The accessory consists of a closed loop that can be used to hook over a physical feature in your deployment environment or can be adapted as required. The Unify accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The Unify Hook Loop Kit (Type J) accessory is compatible with all Unify Enclosures. Unify Hook Loop (Type J) Specifications Material: ABS UL94V-0 General Wall Thickness: 4.0mm Hook loop hole diameter: 27mm Compatible with Unify Enclosure 100x75x38mm Compatible with Unify Enclosure 150x100x45mm Compatible with Unify Enclosure 180x130x60mm Package Inclusion 1 pc Unify Hook Loop Kit(Type J) accessories 2 pc M3x8mm Stainless Steel Screw (to mount the accessory to the enclosure) Documentation Unify Hook Loop Kit (Type J) Datasheet Unify Hook Loop Kit (Type J) 3D Model Downloads Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping. If free shipping is selected, this part may incur a $4.50 shipping recovery charge deducted from refund. Waived if defective or different from advertisement."
+       },
+       "id": "gid://shopify/ProductVariant/41904351608915",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/910231.png?v=1717523102"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910231",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available This solar panel is the perfect add-on to your IoT product. With its larger size of 140x90mm (5.5 x 3.5 inch) it fits on our Unify Enclosures or your custom enclosures. This is also the replacement panel for the 910421 solar case. It’s capable of charging the battery from the sun and extending the battery life time. If you have a low-power solution built with our WisBlock system or based on our low-power WisDuo modules, it is able to keep your device independent from recharging through external supplies. It comes with a 10cm long cable and ZHR-2 (JST) 1.5mm plug that fits with the connectors of our WisBlock Base Boards and the RAK5010 WisTrio modules. Features Size 140x90x2mm (5.5 x 3.5 inch) Works with WisBlock Base Boards and the WisTrio RAK5010 Open circuit voltage 6.1V (±10%) Voltage at nominal power 5V (±10%) Current at nominal power 380mA (±5%) Cell efficiency 18% UV resistant Temperature -20-65℃ Humidity 45-85% Lifetime 5 years Documentation Solar Panel Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-solar-panel-with-jst-1-5-connector-large-5-5-x-3-5-inch-sku-920433",
+     "id": "gid://shopify/Product/7479622402131",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/SolarPanel_a68a6cc3-7e98-4903-83c4-7452b7aa6956.png?v=1732744367"
+      }
+     ],
+     "options": [
+      {
+       "name": "Pack Size",
+       "values": [
+        {
+         "label": "1 pack"
+        },
+        {
+         "label": "3 pack"
+        },
+        {
+         "label": "10 pack"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 10997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1497,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases",
+      "rak-solar",
+      "solar"
+     ],
+     "title": "RAKwireless Solar Panel with JST 1.5 connector (Large 5.5 x 3.5 inch) SKU 920433",
+     "url": "https://store.rokland.com/products/rakwireless-solar-panel-with-jst-1-5-connector-large-5-5-x-3-5-inch-sku-920433",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42325013823571:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available This solar panel is the perfect add-on to your IoT product. With its larger size of 140x90mm (5.5 x 3.5 inch) it fits on our Unify Enclosures or your custom enclosures. This is also the replacement panel for the 910421 solar case. It’s capable of charging the battery from the sun and extending the battery life time. If you have a low-power solution built with our WisBlock system or based on our low-power WisDuo modules, it is able to keep your device independent from recharging through external supplies. It comes with a 10cm long cable and ZHR-2 (JST) 1.5mm plug that fits with the connectors of our WisBlock Base Boards and the RAK5010 WisTrio modules. Features Size 140x90x2mm (5.5 x 3.5 inch) Works with WisBlock Base Boards and the WisTrio RAK5010 Open circuit voltage 6.1V (±10%) Voltage at nominal power 5V (±10%) Current at nominal power 380mA (±5%) Cell efficiency 18% UV resistant Temperature -20-65℃ Humidity 45-85% Lifetime 5 years Documentation Solar Panel Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42325013823571",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/SolarPanel_a68a6cc3-7e98-4903-83c4-7452b7aa6956.png?v=1732744367"
+        }
+       ],
+       "options": [
+        {
+         "label": "1 pack",
+         "name": "Pack Size"
+        }
+       ],
+       "price": {
+        "amount": 1497,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Large-1",
+       "title": "1 pack"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42325013856339:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available This solar panel is the perfect add-on to your IoT product. With its larger size of 140x90mm (5.5 x 3.5 inch) it fits on our Unify Enclosures or your custom enclosures. This is also the replacement panel for the 910421 solar case. It’s capable of charging the battery from the sun and extending the battery life time. If you have a low-power solution built with our WisBlock system or based on our low-power WisDuo modules, it is able to keep your device independent from recharging through external supplies. It comes with a 10cm long cable and ZHR-2 (JST) 1.5mm plug that fits with the connectors of our WisBlock Base Boards and the RAK5010 WisTrio modules. Features Size 140x90x2mm (5.5 x 3.5 inch) Works with WisBlock Base Boards and the WisTrio RAK5010 Open circuit voltage 6.1V (±10%) Voltage at nominal power 5V (±10%) Current at nominal power 380mA (±5%) Cell efficiency 18% UV resistant Temperature -20-65℃ Humidity 45-85% Lifetime 5 years Documentation Solar Panel Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42325013856339",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/SolarPanel_a68a6cc3-7e98-4903-83c4-7452b7aa6956.png?v=1732744367"
+        }
+       ],
+       "options": [
+        {
+         "label": "3 pack",
+         "name": "Pack Size"
+        }
+       ],
+       "price": {
+        "amount": 3697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Large-3",
+       "title": "3 pack"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42325013889107:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available This solar panel is the perfect add-on to your IoT product. With its larger size of 140x90mm (5.5 x 3.5 inch) it fits on our Unify Enclosures or your custom enclosures. This is also the replacement panel for the 910421 solar case. It’s capable of charging the battery from the sun and extending the battery life time. If you have a low-power solution built with our WisBlock system or based on our low-power WisDuo modules, it is able to keep your device independent from recharging through external supplies. It comes with a 10cm long cable and ZHR-2 (JST) 1.5mm plug that fits with the connectors of our WisBlock Base Boards and the RAK5010 WisTrio modules. Features Size 140x90x2mm (5.5 x 3.5 inch) Works with WisBlock Base Boards and the WisTrio RAK5010 Open circuit voltage 6.1V (±10%) Voltage at nominal power 5V (±10%) Current at nominal power 380mA (±5%) Cell efficiency 18% UV resistant Temperature -20-65℃ Humidity 45-85% Lifetime 5 years Documentation Solar Panel Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42325013889107",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/SolarPanel_a68a6cc3-7e98-4903-83c4-7452b7aa6956.png?v=1732744367"
+        }
+       ],
+       "options": [
+        {
+         "label": "10 pack",
+         "name": "Pack Size"
+        }
+       ],
+       "price": {
+        "amount": 10997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Large-10",
+       "title": "10 pack"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available The Unify Pole Mount Horizontal Kit (Type C) consists of the key parts to enable you to mount your Unify Enclosure to a pole (Pole diameter between.60-85mm is recommended). The Unify Pole Mount Horizontal (Type C) accessory enables you to use regular mechanical adjustable industrial straps to secure your product in place. The Unify accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The Unify Pole Mount Horizontal (Type C) accessory is ONLY compatible with Unify Enclosure 150x100x45mm. It is fixed across the mounting locations 2+3 and / or 5+6. Unify Pole Mount (Type C) Specifications: Material: ABS UL94V-0 General Wall Thickness: 4.0mm Compatible with ONLY Unify Enclosure 150x100x45mm and Unify Enclosure 180x130x60mm Compatible with mechanical adjustable industrial straps with strap width of up to 16mm Enclosure NOT supported: Unify Enclosure 100x75x38mm Included in the Kit: 2pc Unify Pole Mount Horizontal (Type C) accessories 4pc M3x8mm Stainless Steel Screw (to mount the accessory to the enclosure) 2pc Mechanical adjustable strap (stainless steel) for pole diameters 65-80mm Documentation Unify Pole Mounting Horizontal Kit (Type C) Datasheet Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping. If free shipping is selected, this part may incur a $4.50 shipping recovery charge deducted from refund. Waived if defective or different from advertisement."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-unify-pole-mounting-horizontal-kit-type-c-910245",
+     "id": "gid://shopify/Product/7391192285267",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/910245.png?v=1719418090"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 797,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 797,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-cases"
+     ],
+     "title": "RAKwireless Unify Pole Mounting Horizontal Kit (Type C) 910245",
+     "url": "https://store.rokland.com/products/rakwireless-unify-pole-mounting-horizontal-kit-type-c-910245",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41975764090963:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. When comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available The Unify Pole Mount Horizontal Kit (Type C) consists of the key parts to enable you to mount your Unify Enclosure to a pole (Pole diameter between.60-85mm is recommended). The Unify Pole Mount Horizontal (Type C) accessory enables you to use regular mechanical adjustable industrial straps to secure your product in place. The Unify accessories are hosted on the rear surface of the enclosure using the integrated mounting locations and are secured with M3 fasteners into robust and reusable brass threaded inserts. The Unify Pole Mount Horizontal (Type C) accessory is ONLY compatible with Unify Enclosure 150x100x45mm. It is fixed across the mounting locations 2+3 and / or 5+6. Unify Pole Mount (Type C) Specifications: Material: ABS UL94V-0 General Wall Thickness: 4.0mm Compatible with ONLY Unify Enclosure 150x100x45mm and Unify Enclosure 180x130x60mm Compatible with mechanical adjustable industrial straps with strap width of up to 16mm Enclosure NOT supported: Unify Enclosure 100x75x38mm Included in the Kit: 2pc Unify Pole Mount Horizontal (Type C) accessories 4pc M3x8mm Stainless Steel Screw (to mount the accessory to the enclosure) 2pc Mechanical adjustable strap (stainless steel) for pole diameters 65-80mm Documentation Unify Pole Mounting Horizontal Kit (Type C) Datasheet Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping. If free shipping is selected, this part may incur a $4.50 shipping recovery charge deducted from refund. Waived if defective or different from advertisement."
+       },
+       "id": "gid://shopify/ProductVariant/41975764090963",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/910245.png?v=1719418090"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "910245",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+     },
+     "gift_card": false,
+     "handle": "wismesh-pocket",
+     "id": "gid://shopify/Product/7296917798995",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/Wisblock_Pocket_A.png?v=1724897062"
+      }
+     ],
+     "options": [
+      {
+       "name": "Type",
+       "values": [
+        {
+         "label": "White- US915 MHz"
+        },
+        {
+         "label": "Army Green- US915 MHz"
+        },
+        {
+         "label": "Black- US915 MHz"
+        },
+        {
+         "label": "VERSION 3 Bone White"
+        },
+        {
+         "label": "VERSION 3 Desert Sand"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 8497,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 7797,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-kits"
+     ],
+     "title": "RAKwireless WisMesh Pocket All-in-one Meshtastic Handheld 915 Mhz Radio with LoRa Antenna & GPS",
+     "url": "https://store.rokland.com/products/wismesh-pocket",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42054749159507:1",
+       "description": {
+        "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+       },
+       "id": "gid://shopify/ProductVariant/42054749159507",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/Wisblock_Pocket_A.png?v=1724897062"
+        }
+       ],
+       "options": [
+        {
+         "label": "White- US915 MHz",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 7797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "105130",
+       "title": "White- US915 MHz"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42232364138579:1",
+       "description": {
+        "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+       },
+       "id": "gid://shopify/ProductVariant/42232364138579",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/vintagearmy.png?v=1755180698"
+        }
+       ],
+       "options": [
+        {
+         "label": "Army Green- US915 MHz",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 7797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "105129",
+       "title": "Army Green- US915 MHz"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42195317620819:1",
+       "description": {
+        "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+       },
+       "id": "gid://shopify/ProductVariant/42195317620819",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/wismesh-pocket-black.png?v=1755180698"
+        }
+       ],
+       "options": [
+        {
+         "label": "Black- US915 MHz",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 7797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "105128",
+       "title": "Black- US915 MHz"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/68187965456467:1",
+       "description": {
+        "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+       },
+       "id": "gid://shopify/ProductVariant/68187965456467",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/WisMesh_Pocket_v3_9.png?v=1791829789"
+        }
+       ],
+       "options": [
+        {
+         "label": "VERSION 3 Bone White",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 8497,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "VERSION 3 Bone White"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/68236661456979:1",
+       "description": {
+        "html": "NEW VERSION NOTICE: WisMesh Pocket v3 with IP67 waterproof casing is now shipping! Click here to learn more. RAKwireless is an industry leader in Meshtastic®-ready hardware, and now we are excited to bring you RAK's first all-in-one complete handheld Meshtastic® 915 Mhz radio unit, developed in partnership with Rokland Technologies and QuantumShadow3D.US915 MHz only Meet the WisMesh Pocket. WisMesh Pocket includes a hard exterior case and an OLED screen, a GPS radio, and a 3200 mAh rechargeable battery built-in to the case+ an external LoRa antenna, and internal Bluetooth antenna.Building and DIY are fun, and RAK will always make individual parts. But if you need a ready-to-use unit, get WisMesh Pocket today.New to Meshtastic®?Meshtastic® is an off-grid messaging system using inexpensive hardware to create your personal mesh. Radios forward messages to the next node to distribute them over the network. Communicate kilometers/miles between nodes. Internet-connected relay nodes enable the conversation to move online too.Rokland is an authorized distributor for RAKwireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh Pocket is the perfect start to explore and use the Meshtastic® LoRa Mesh Network. Pre-flashed with the Meshtastic firmware, with matching enclosure, OLED display, GNSS location module and acceleration sensor it is the perfect for the Meshtastic Client or Tracker role. With the Meshtastic® Getting Started Guide the WisMesh Pocket is ready for use within a short time. The included enclosure features an SMA antenna connector, integrated OLED display and a user button to control the display content. new internal baseboard with enhancements specifically added for Meshtastic® switch to disconnect the battery, but still allows recharge through USB (or Solar Panel if used in different enclosure) User button onboard GPS module onboard Acceleration/motion sensor onboard All available GPIO’s available on pin headers Larger OLED display for better readability (1.3” instead of 0.96”) SMA type connector for the external LoRa antenna Enclosure dimension approximation: 103*52*35mm External SMA LoRa antenna Internal BLE antenna ABA (black or white), ASA (green) heat resistant case material Package Inclusion Mesh Pocket V2.0 x 1 3200mAh Rechargeable Battery x 1 LoRa Antenna x 1 USB cable x 1 Documentation & Support WisMesh Pocket V2- Rokland New User Guide & Support How to flash Meshtastic Firmware WisMesh Pocket V2 Overview WisMesh Pocket V2 Quick Start Guide RAK19026 Overview RAK19026 Quick Start Guide RAK19026 VC Datasheet Sunnyway OEM Gluestick Antenna Datasheet Questions about miners, antennas, and cables? Visit this page to learn more. Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product and volatile stock, all sales for this product are final. The exception is defective parts can be returned for refund or exchange. Preorders may be cancelled before shipping with full refund."
+       },
+       "id": "gid://shopify/ProductVariant/68236661456979",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/desert-sand-2_89e060db-43fa-488d-bac9-998a323071d3.png?v=1795112627"
+        }
+       ],
+       "options": [
+        {
+         "label": "VERSION 3 Desert Sand",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 7797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "VERSION 3 Desert Sand"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+     },
+     "gift_card": false,
+     "handle": "wismesh-rak3312-starter-kit-with-meshtastic-firmware",
+     "id": "gid://shopify/Product/7776445562963",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218.png?v=1766090258"
+      }
+     ],
+     "options": [
+      {
+       "name": "Type",
+       "values": [
+        {
+         "label": "SKU 116218- RAK19007 + RAK3312"
+        },
+        {
+         "label": "SKU 116230- RAK19001 + RAK3312"
+        },
+        {
+         "label": "SKU 116224- RAK19003 + RAK3312"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-kits"
+     ],
+     "title": "WisMesh RAK3312 ESP32-S3 Starter Kit Meshtastic Firmware",
+     "url": "https://store.rokland.com/products/wismesh-rak3312-starter-kit-with-meshtastic-firmware",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43356192145491:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43356192145491",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218.png?v=1766090258"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116218- RAK19007 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116218",
+       "title": "SKU 116218- RAK19007 + RAK3312"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43333191204947:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43333191204947",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK3312.png?v=1766090258"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116224- RAK19003 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116224",
+       "title": "SKU 116224- RAK19003 + RAK3312"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43356251816019:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43356251816019",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218_1.png?v=1766092210"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116230- RAK19001 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116230",
+       "title": "SKU 116230- RAK19001 + RAK3312"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "delivery-app",
+       "id": "gid://shopify/Collection/137206923347",
+       "title": "Delivery App"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. With LTE CAT-1 (EG915Q-NA) for North AmericaFrequency 900MHz for US915/AU915/KR920/AS923 RAK7267 WisGate Soho Pro is a versatile and innovative 8-channel LoRaWAN gateway designed to thrive in both indoor and outdoor settings. With its robust IP67-rated Unify enclosure, this gateway ensures optimal performance even in the harshest weather conditions, making it perfect for a wide range of applications, from smart agriculture to industrial IoT solutions. Fully Integrated Antennas: Comes with built-in antennas for LoRa, LTE, Wi-Fi, and GPS. Its all-in-one, compact design enhances weather resistance and simplifies installation. Flexible Power Options: Compatible with RAK Solar Battery Kits, the WisGate Soho Pro supports sustainable energy solutions and can operate efficiently in remote locations without traditional power sources. Supports DC 9-36 V power input. Enhanced Connectivity: Featuring Cat-1 LTE, this gateway offers reliable, cost-efficient connectivity options, eliminating the need for ethernet backhaul and simplifying deployment in areas where ethernet is not viable. Advanced Operating System: Powered by WisGateOS 2, based on the latest OpenWrt kernel, it provides enhanced security, customizable extensions, and remote management capabilities via WisDM. Ease of Installation Setting up the WisGate Soho Pro is straightforward and requires just a single power cable for connection to external solar or DC power supplies. Whether you are mounting it on a horizontal or vertical pole, everything you need comes included in the box. Wide Power Input Support The RAK7267 WisGate Soho Pro Gateway supports a versatile input power range of 9 to 36 VDC, accommodating the commonly used 12V and 24V power standards. This wide range enhances its adaptability for various deployment scenarios. For instance, in remote agricultural settings, the gateway can be seamlessly powered by 12V solar battery kits, ensuring continuous operation even off-grid. In urban smart city environments or industrial installations, it easily integrates with standard 24V power supplies, providing robust and reliable connectivity. This flexibility in power options not only simplifies installation but also broadens the gateway's applicability, making it an ideal solution for diverse environments, from rural areas to urban centers and industrial sites. Application and typical use cases The RAK7267 WisGate Soho Pro Gateway is ideal for a variety of applications, including smart agriculture, smart cities, industrial IoT, and remote monitoring solutions, where robust and reliable connectivity is essential. Greenhouses and Small-Scale Farms Its easy installation and compatibility with non-traditional power sources, like solar panels, make it perfect for rural areas. The compact design with integrated antennas reduces the risk of damage from wildlife, such as birds, to external antennas, ensuring that your connectivity is as resilient as your crops. Ideal for monitoring soil moisture, weather conditions, and crop health, the WisGate Soho Pro helps maximize yields with minimal effort. Solar-Powered Street Lighting Urban and rural communities seeking cost-effective street lighting solutions will find the WisGate Soho Pro to be a perfect fit. This gateway seamlessly integrates with existing solar-powered street lights, enhancing their functionality with smart monitoring and control. With its low-cost Cat-1 LTE connectivity and robust outdoor durability, the WisGate Soho Pro allows for efficient management and maintenance of street lighting systems, making them smarter and more sustainable without breaking the bank. Why Choose WisGate Soho Pro? Ideal for low-density, open-area installations, the WisGate Soho Pro is your go-to choice if you need a cost-effective, easy-to-install outdoor gateway with flexible connectivity options. Its robust design and advanced features make it a formidable choice for ensuring seamless communication in various IoT applications. Choose Your Region with Ease Please select your LoRaWAN region according to the frequency compatibility: 800 MHz Contact RAKwireless900 MHz Available here at Rokland Choose your power WisGate Soho Pro supports RAK Battery Plus Solar system or custom DC power. You can choose the suitable option for you. Battery Plus cable (SKU 716119) Includes a cable to connect the WisGate Soho Pro to the Battery Plus. DC power and Power Adapter(SKU 716116) Includes a matching connector with a cable for connection to a 9-36V DC power supply. It also comes with a DC power adapter for indoor setup and offers a variety of wall plug options. Package Inclusion 1 x RAK7267 WisGate Soho Pro 2 x Vertical Mounting Kit 2 x Pole Mounting Brackets 1 x 1.5 meter DC cable and power adapter (if select SKU 716116) 1 x 1.5 meter Battery Plus cable (if select SKU 916119) Documentation RAK7267 Datasheet RAK7267 Quick Start Guide RAK7267 Supported LoRa Network Servers Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns for refund unless full brand new, or defective."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-rak7267-wisgate-soho-pro-iot-lte-gateway-8-channel-us915-mhz",
+     "id": "gid://shopify/Product/7453336567891",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_75b489dd-be9c-4b9e-8606-f9c3b42cb4a8.png?v=1728163007"
+      }
+     ],
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "716116- DC cable and US power adapter"
+        },
+        {
+         "label": "716119- w/ cable for RAK9155 Battery Plus"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 24900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 23900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-gateways"
+     ],
+     "title": "RAKwireless RAK7267 WisGate Soho Pro IoT + LTE Gateway 8-Channel US915 Mhz",
+     "url": "https://store.rokland.com/products/rakwireless-rak7267-wisgate-soho-pro-iot-lte-gateway-8-channel-us915-mhz",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42220209504339:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. With LTE CAT-1 (EG915Q-NA) for North AmericaFrequency 900MHz for US915/AU915/KR920/AS923 RAK7267 WisGate Soho Pro is a versatile and innovative 8-channel LoRaWAN gateway designed to thrive in both indoor and outdoor settings. With its robust IP67-rated Unify enclosure, this gateway ensures optimal performance even in the harshest weather conditions, making it perfect for a wide range of applications, from smart agriculture to industrial IoT solutions. Fully Integrated Antennas: Comes with built-in antennas for LoRa, LTE, Wi-Fi, and GPS. Its all-in-one, compact design enhances weather resistance and simplifies installation. Flexible Power Options: Compatible with RAK Solar Battery Kits, the WisGate Soho Pro supports sustainable energy solutions and can operate efficiently in remote locations without traditional power sources. Supports DC 9-36 V power input. Enhanced Connectivity: Featuring Cat-1 LTE, this gateway offers reliable, cost-efficient connectivity options, eliminating the need for ethernet backhaul and simplifying deployment in areas where ethernet is not viable. Advanced Operating System: Powered by WisGateOS 2, based on the latest OpenWrt kernel, it provides enhanced security, customizable extensions, and remote management capabilities via WisDM. Ease of Installation Setting up the WisGate Soho Pro is straightforward and requires just a single power cable for connection to external solar or DC power supplies. Whether you are mounting it on a horizontal or vertical pole, everything you need comes included in the box. Wide Power Input Support The RAK7267 WisGate Soho Pro Gateway supports a versatile input power range of 9 to 36 VDC, accommodating the commonly used 12V and 24V power standards. This wide range enhances its adaptability for various deployment scenarios. For instance, in remote agricultural settings, the gateway can be seamlessly powered by 12V solar battery kits, ensuring continuous operation even off-grid. In urban smart city environments or industrial installations, it easily integrates with standard 24V power supplies, providing robust and reliable connectivity. This flexibility in power options not only simplifies installation but also broadens the gateway's applicability, making it an ideal solution for diverse environments, from rural areas to urban centers and industrial sites. Application and typical use cases The RAK7267 WisGate Soho Pro Gateway is ideal for a variety of applications, including smart agriculture, smart cities, industrial IoT, and remote monitoring solutions, where robust and reliable connectivity is essential. Greenhouses and Small-Scale Farms Its easy installation and compatibility with non-traditional power sources, like solar panels, make it perfect for rural areas. The compact design with integrated antennas reduces the risk of damage from wildlife, such as birds, to external antennas, ensuring that your connectivity is as resilient as your crops. Ideal for monitoring soil moisture, weather conditions, and crop health, the WisGate Soho Pro helps maximize yields with minimal effort. Solar-Powered Street Lighting Urban and rural communities seeking cost-effective street lighting solutions will find the WisGate Soho Pro to be a perfect fit. This gateway seamlessly integrates with existing solar-powered street lights, enhancing their functionality with smart monitoring and control. With its low-cost Cat-1 LTE connectivity and robust outdoor durability, the WisGate Soho Pro allows for efficient management and maintenance of street lighting systems, making them smarter and more sustainable without breaking the bank. Why Choose WisGate Soho Pro? Ideal for low-density, open-area installations, the WisGate Soho Pro is your go-to choice if you need a cost-effective, easy-to-install outdoor gateway with flexible connectivity options. Its robust design and advanced features make it a formidable choice for ensuring seamless communication in various IoT applications. Choose Your Region with Ease Please select your LoRaWAN region according to the frequency compatibility: 800 MHz Contact RAKwireless900 MHz Available here at Rokland Choose your power WisGate Soho Pro supports RAK Battery Plus Solar system or custom DC power. You can choose the suitable option for you. Battery Plus cable (SKU 716119) Includes a cable to connect the WisGate Soho Pro to the Battery Plus. DC power and Power Adapter(SKU 716116) Includes a matching connector with a cable for connection to a 9-36V DC power supply. It also comes with a DC power adapter for indoor setup and offers a variety of wall plug options. Package Inclusion 1 x RAK7267 WisGate Soho Pro 2 x Vertical Mounting Kit 2 x Pole Mounting Brackets 1 x 1.5 meter DC cable and power adapter (if select SKU 716116) 1 x 1.5 meter Battery Plus cable (if select SKU 916119) Documentation RAK7267 Datasheet RAK7267 Quick Start Guide RAK7267 Supported LoRa Network Servers Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns for refund unless full brand new, or defective."
+       },
+       "id": "gid://shopify/ProductVariant/42220209504339",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/7_cdd97439-cfc9-410c-b3f6-58047dc26265.png?v=1728163007"
+        }
+       ],
+       "options": [
+        {
+         "label": "716116- DC cable and US power adapter",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 24900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "716116",
+       "title": "716116- DC cable and US power adapter"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42220209537107:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. With LTE CAT-1 (EG915Q-NA) for North AmericaFrequency 900MHz for US915/AU915/KR920/AS923 RAK7267 WisGate Soho Pro is a versatile and innovative 8-channel LoRaWAN gateway designed to thrive in both indoor and outdoor settings. With its robust IP67-rated Unify enclosure, this gateway ensures optimal performance even in the harshest weather conditions, making it perfect for a wide range of applications, from smart agriculture to industrial IoT solutions. Fully Integrated Antennas: Comes with built-in antennas for LoRa, LTE, Wi-Fi, and GPS. Its all-in-one, compact design enhances weather resistance and simplifies installation. Flexible Power Options: Compatible with RAK Solar Battery Kits, the WisGate Soho Pro supports sustainable energy solutions and can operate efficiently in remote locations without traditional power sources. Supports DC 9-36 V power input. Enhanced Connectivity: Featuring Cat-1 LTE, this gateway offers reliable, cost-efficient connectivity options, eliminating the need for ethernet backhaul and simplifying deployment in areas where ethernet is not viable. Advanced Operating System: Powered by WisGateOS 2, based on the latest OpenWrt kernel, it provides enhanced security, customizable extensions, and remote management capabilities via WisDM. Ease of Installation Setting up the WisGate Soho Pro is straightforward and requires just a single power cable for connection to external solar or DC power supplies. Whether you are mounting it on a horizontal or vertical pole, everything you need comes included in the box. Wide Power Input Support The RAK7267 WisGate Soho Pro Gateway supports a versatile input power range of 9 to 36 VDC, accommodating the commonly used 12V and 24V power standards. This wide range enhances its adaptability for various deployment scenarios. For instance, in remote agricultural settings, the gateway can be seamlessly powered by 12V solar battery kits, ensuring continuous operation even off-grid. In urban smart city environments or industrial installations, it easily integrates with standard 24V power supplies, providing robust and reliable connectivity. This flexibility in power options not only simplifies installation but also broadens the gateway's applicability, making it an ideal solution for diverse environments, from rural areas to urban centers and industrial sites. Application and typical use cases The RAK7267 WisGate Soho Pro Gateway is ideal for a variety of applications, including smart agriculture, smart cities, industrial IoT, and remote monitoring solutions, where robust and reliable connectivity is essential. Greenhouses and Small-Scale Farms Its easy installation and compatibility with non-traditional power sources, like solar panels, make it perfect for rural areas. The compact design with integrated antennas reduces the risk of damage from wildlife, such as birds, to external antennas, ensuring that your connectivity is as resilient as your crops. Ideal for monitoring soil moisture, weather conditions, and crop health, the WisGate Soho Pro helps maximize yields with minimal effort. Solar-Powered Street Lighting Urban and rural communities seeking cost-effective street lighting solutions will find the WisGate Soho Pro to be a perfect fit. This gateway seamlessly integrates with existing solar-powered street lights, enhancing their functionality with smart monitoring and control. With its low-cost Cat-1 LTE connectivity and robust outdoor durability, the WisGate Soho Pro allows for efficient management and maintenance of street lighting systems, making them smarter and more sustainable without breaking the bank. Why Choose WisGate Soho Pro? Ideal for low-density, open-area installations, the WisGate Soho Pro is your go-to choice if you need a cost-effective, easy-to-install outdoor gateway with flexible connectivity options. Its robust design and advanced features make it a formidable choice for ensuring seamless communication in various IoT applications. Choose Your Region with Ease Please select your LoRaWAN region according to the frequency compatibility: 800 MHz Contact RAKwireless900 MHz Available here at Rokland Choose your power WisGate Soho Pro supports RAK Battery Plus Solar system or custom DC power. You can choose the suitable option for you. Battery Plus cable (SKU 716119) Includes a cable to connect the WisGate Soho Pro to the Battery Plus. DC power and Power Adapter(SKU 716116) Includes a matching connector with a cable for connection to a 9-36V DC power supply. It also comes with a DC power adapter for indoor setup and offers a variety of wall plug options. Package Inclusion 1 x RAK7267 WisGate Soho Pro 2 x Vertical Mounting Kit 2 x Pole Mounting Brackets 1 x 1.5 meter DC cable and power adapter (if select SKU 716116) 1 x 1.5 meter Battery Plus cable (if select SKU 916119) Documentation RAK7267 Datasheet RAK7267 Quick Start Guide RAK7267 Supported LoRa Network Servers Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns for refund unless full brand new, or defective."
+       },
+       "id": "gid://shopify/ProductVariant/42220209537107",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/6_54db7a15-0a04-44a2-81c2-3a477484025b.png?v=1728163007"
+        }
+       ],
+       "options": [
+        {
+         "label": "716119- w/ cable for RAK9155 Battery Plus",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 23900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "716119",
+       "title": "716119- w/ cable for RAK9155 Battery Plus"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

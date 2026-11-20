@@ -1,0 +1,327 @@
+{
+  "template_id": "tpl_electronics_mcu",
+  "build_type": "electronics_mcu",
+  "version": "0.1",
+  "title": "Microcontroller project",
+  "summary": "Electronics template: a microcontroller project, Arduino or ESP32 project, breadboard circuit, sensor project, weather station, e-paper display, IoT gadget, starter kit, blinking LEDs. Rows: microcontroller board (Arduino Uno 5 V or ESP32 3.3 V), USB cable, breadboard, jumper wires, sensor, display, servo or DC motor with a driver, LEDs, resistors, buttons and potentiometers, battery, e-paper adapter. Detection labels for a breadboard photo: arduino board, esp32 board, breadboard, jumper wires, led, resistor, sensor module, servo motor, lcd display, battery. Starting point, not a verified design; kit rows come from a reseller's kit list and are rules of thumb.",
+  "references": [
+    {
+      "url": "https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf",
+      "title": "Arduino Uno R3 datasheet (A000066)",
+      "licence": "[unverified]; cited, short quote",
+      "used_for": "mcu row: VIN range and 5 V logic"
+    },
+    {
+      "url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736",
+      "title": "Arduino Starter Kit K000007 contents (reseller listing)",
+      "licence": "[unverified]; reseller listing, cited, not copied",
+      "used_for": "arduino_starter kit rows (rules of thumb); unverified against Arduino's own page, which refused automated requests"
+    },
+    {
+      "url": "https://github.com/lmarzen/esp32-weather-epd",
+      "title": "esp32-weather-epd README (lmarzen), parts table, read at commit c78ad15e",
+      "licence": "GPL-3.0 (parts list read; no code used)",
+      "used_for": "esp32_epaper variant rows: board, panel, adapter, sensor, battery, wires"
+    }
+  ],
+  "questions": [
+    {
+      "id": "board",
+      "text": "Which board?",
+      "chips": [
+        {"value": "arduino_uno", "label": "Arduino Uno (5 V)"},
+        {"value": "esp32", "label": "ESP32 (3.3 V)"}
+      ],
+      "default": "arduino_uno",
+      "skip_if": ["text_mentions_board", "link_names_board"]
+    },
+    {
+      "id": "power",
+      "text": "How is it powered?",
+      "chips": [
+        {"value": "usb", "label": "USB"},
+        {"value": "battery", "label": "Battery"},
+        {"value": "wall", "label": "Wall adapter"}
+      ],
+      "default": "usb",
+      "skip_if": ["link_names_power"]
+    },
+    {
+      "id": "own_soldering_iron",
+      "text": "Have a soldering iron?",
+      "chips": [
+        {"value": "yes", "label": "Yes"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers", "photo_present"]
+    },
+    {
+      "id": "own_photo_parts",
+      "text": "Are the parts in your photo already yours?",
+      "chips": [
+        {"value": "yes", "label": "Yes, I have them"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["no_photo"]
+    }
+  ],
+  "variants": [
+    {
+      "id": "arduino_starter",
+      "label": "Arduino Uno starter project",
+      "when": {"board": "arduino_uno"},
+      "overrides": {}
+    },
+    {
+      "id": "esp32_devkit",
+      "label": "ESP32 DevKitC project (3.3 V)",
+      "when": {"board": "esp32"},
+      "overrides": {
+        "mcu": {
+          "typical_spec": "ESP32 DevKitC: 3.3 V logic, GPIO not 5 V tolerant; powered through micro-USB, the 5V pin or the 3V3 pin, only one at a time (rule of thumb here; the Espressif datasheet lines are KB rows in electrical_notes)",
+          "attrs": {"logic_v": "3.3", "voltage_range": null},
+          "search_query": "ESP32 DevKitC",
+          "basis": "rule_of_thumb",
+          "source": null
+        },
+        "battery": {
+          "typical_spec": "3.7 V single-cell LiPo with a JST-PH 2.0 plug, for boards with a LiPo charger (rule of thumb)",
+          "attrs": {"cells": "1S", "voltage_v": "3.7", "connector": "JST-PH", "pitch_mm": "2.0"},
+          "search_query": "3.7V LiPo JST-PH 2.0"
+        }
+      }
+    },
+    {
+      "id": "esp32_epaper",
+      "label": "ESP32 e-paper weather display (esp32-weather-epd)",
+      "when": {"source_url": "https://github.com/lmarzen/esp32-weather-epd"},
+      "overrides": {
+        "mcu": {
+          "name": "ESP32 board",
+          "typical_spec": "FireBeetle 2 ESP32-E",
+          "attrs": {"logic_v": "3.3", "voltage_range": null},
+          "search_query": "FireBeetle 2 ESP32-E",
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "FireBeetle 2 ESP32-E"}
+        },
+        "display": {
+          "name": "E-paper display",
+          "qty": 1,
+          "line_kind": "part",
+          "typical_spec": "Waveshare 7.5in e-paper (v2), the panel the README recommends; must match its panel table",
+          "search_query": "Waveshare 7.5 inch e-paper raw panel",
+          "rules": ["G1", "R15"],
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "Waveshare 7.5in e-paper (v2)"}
+        },
+        "adapter": {
+          "qty": 1,
+          "typical_spec": "DESPI-C02 e-paper adapter board",
+          "search_query": "DESPI-C02 e-paper adapter",
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "DESPI-C02"}
+        },
+        "sensor": {
+          "typical_spec": "BME280 (temperature, humidity and pressure)",
+          "search_query": "BME280 sensor module",
+          "rules": ["G1", "G4", "R16"],
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "BME280"}
+        },
+        "battery": {
+          "line_kind": "part",
+          "typical_spec": "3.7V LiPo w/ JST-PH2.0 connector",
+          "attrs": {"cells": "1S", "voltage_v": "3.7", "connector": "JST-PH", "pitch_mm": "2.0"},
+          "search_query": "3.7V LiPo JST-PH 2.0 battery",
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "3.7V LiPo w/ JST-PH2.0 connector"}
+        },
+        "jumpers": {
+          "qty": 1,
+          "qty_note": "1 set",
+          "typical_spec": "Wires, or jumper wires to avoid soldering",
+          "basis": "reference",
+          "source": {"url": "https://github.com/lmarzen/esp32-weather-epd", "quote": "Wires (\"Jumper Wires\" if looking to minimize/avoid soldering)."}
+        },
+        "breadboard": {"qty": 0},
+        "actuator": {"qty": 0},
+        "passives": {"qty": 0}
+      }
+    }
+  ],
+  "parts": [
+    {
+      "row_id": "mcu",
+      "name": "Microcontroller board",
+      "category": "board",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "Arduino Uno R3: 5 V logic, VIN 7–12 V (an ESP32 DevKitC instead: 3.3 V logic, GPIO not 5 V tolerant)",
+      "attrs": {"logic_v": "5", "voltage_range": "7-12"},
+      "search_query": "Arduino Uno R3",
+      "rules": ["G1", "G4", "G11"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf", "quote": "7 – 12 V"},
+      "mesh": null
+    },
+    {
+      "row_id": "usb_cable",
+      "name": "USB cable",
+      "category": "cable",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "USB cable whose plug matches the board (rule of thumb)",
+      "attrs": {"connector": null},
+      "search_query": "USB A to B cable Arduino",
+      "rules": ["R8"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": null,
+      "mesh": null
+    },
+    {
+      "row_id": "breadboard",
+      "name": "Breadboard",
+      "category": "mechanical",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "400 tie points (rule of thumb from the Arduino Starter Kit list on a reseller page; unverified against Arduino's page)",
+      "attrs": {},
+      "search_query": "400 tie point breadboard",
+      "rules": [],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "jumpers",
+      "name": "Jumper wires",
+      "category": "cable",
+      "qty": 70,
+      "line_kind": "part",
+      "typical_spec": "Solid-core jumper wires (rule of thumb from the kit list; unverified)",
+      "attrs": {},
+      "search_query": "solid core jumper wire kit",
+      "rules": [],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "sensor",
+      "name": "Sensor",
+      "category": "sensor",
+      "qty": 1,
+      "qty_note": "1 or more",
+      "line_kind": "part",
+      "typical_spec": "Kit: TMP36, tilt sensor, phototransistors. Common add-ons: DHT22 (3.3–5.5 V), HC-SR04 (5 V, 15 mA) (rule of thumb; the datasheet lines are KB rows in electrical_notes)",
+      "attrs": {"voltage_range": null, "current_a": null},
+      "search_query": "sensor module",
+      "rules": ["G1", "G4"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "display",
+      "name": "Display",
+      "category": "board",
+      "qty": 1,
+      "qty_note": "0 or 1",
+      "line_kind": "optional",
+      "typical_spec": "Kit: 16×2 LCD (rule of thumb from the kit list; unverified)",
+      "attrs": {"voltage_range": null},
+      "search_query": "16x2 LCD display",
+      "rules": ["G1"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "actuator",
+      "name": "Servo or DC motor",
+      "category": "motor",
+      "qty": 1,
+      "qty_note": "0 or 1",
+      "line_kind": "optional",
+      "typical_spec": "Kit: small servo, 6/9 V DC motor, L293D driver (rule of thumb from the kit list; unverified)",
+      "attrs": {"voltage_range": null, "max_current_a": null},
+      "search_query": "micro servo",
+      "rules": ["G9", "G10", "G11"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "passives",
+      "name": "LEDs, resistors, buttons, potentiometers",
+      "category": "mechanical",
+      "qty": 1,
+      "qty_note": "1 set",
+      "line_kind": "part",
+      "typical_spec": "Kit: 220 Ω ×20, 10 kΩ ×20, LEDs, 10 pushbuttons, 3 potentiometers (rule of thumb from the kit list; unverified)",
+      "attrs": {},
+      "search_query": "LED resistor pushbutton assortment kit",
+      "rules": ["G11"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "battery",
+      "name": "Battery",
+      "category": "battery",
+      "qty": 1,
+      "qty_note": "0 or 1",
+      "line_kind": "optional",
+      "typical_spec": "9 V battery snap (kit) for an Uno; a 3.7 V LiPo with JST-PH 2.0 for an ESP32 (rule of thumb)",
+      "attrs": {"voltage_v": "9", "connector": "9V snap"},
+      "search_query": "9V battery snap connector",
+      "rules": ["G1", "G3", "G5", "R12", "R13", "R14"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": {"url": "https://www.kiwi-electronics.com/en/educational-kits-288/arduino-starter-kit-736", "quote": null},
+      "mesh": null
+    },
+    {
+      "row_id": "adapter",
+      "name": "E-paper adapter board",
+      "category": "board",
+      "qty": 0,
+      "qty_note": "Only for e-paper panels",
+      "line_kind": "part",
+      "typical_spec": "Only for a raw e-paper panel: DESPI-C02 (rule of thumb; used by the esp32_epaper variant)",
+      "attrs": {},
+      "search_query": null,
+      "rules": ["R17"],
+      "own_question": null,
+      "basis": "rule_of_thumb",
+      "source": null,
+      "mesh": null
+    }
+  ],
+  "rule_packs": ["generic_electrical", "mcu_battery"],
+  "view": {
+    "kind": "diagram",
+    "model": null,
+    "parts": []
+  },
+  "edges": [
+    {"from": "battery", "to": "mcu", "label": "battery lead: JST-PH 2.0, 2-pin, 3.7V on the ESP32 build", "rules": ["G1", "G3", "G5", "R12", "R13", "R14"]},
+    {"from": "usb_cable", "to": "mcu", "label": "USB", "rules": ["R8"]},
+    {"from": "sensor", "to": "mcu", "label": "signal and power", "rules": ["G1", "G4", "R16"]},
+    {"from": "display", "to": "adapter", "label": "24-pin FPC", "rules": ["R15"]},
+    {"from": "adapter", "to": "mcu", "label": "SPI", "rules": ["R17"]},
+    {"from": "actuator", "to": "mcu", "label": "through a driver, own supply", "rules": ["G9", "G10", "G11"]},
+    {"from": "passives", "to": "mcu", "label": "GPIO", "rules": ["G11"]}
+  ]
+}

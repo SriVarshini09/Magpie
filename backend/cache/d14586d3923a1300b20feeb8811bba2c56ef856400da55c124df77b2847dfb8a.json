@@ -1,0 +1,1432 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "3 inch FPV frame 140mm"
+  }
+ },
+ "key": "d14586d3923a1300b20feeb8811bba2c56ef856400da55c124df77b2847dfb8a",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:28:57-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 849); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODQ5LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 849
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>The RATEFPV S30 Pro Frame is a upgraded, versatile 2.5/3-inch FPV frame designed for pilots—blending flexible compatibility, optimized build space, and sub-250g compliance. With a CNC-machined front nose, dual prop options, and broad support for popular flight stacks, cameras, and transmitters, it’s perfect for both cinematic filming and aggressive freestyle. Lightweight yet durable, it balances portability and performance, making it ideal for beginners and seasoned pilots alike—all at RATEFPV’s signature unbeatable value.</p>\n<h3>Key Features </h3>\n<p><strong>📐 Optimized Build Space:</strong> Redesigned internal layout for easier installation, no cramped wiring, and smooth assembly—saves time for DIY builds.<br><strong>🛠️ CNC-Machined Front Nose</strong>: Compatible with nearly all FPV cameras; includes a new 3D-printable GPS mount for long-range setups (sold separately).<br><strong>🚁 Dual Prop Options</strong>: 2.5-inch props for unobstructed footage (stable outdoor filming); 3-inch props for high agility (perfect for freestyle).<br><strong>⚖️ Sub-250g Compliant:</strong> Total weight under 250g when fully built—meets most US/EU regulations, no registration hassle.<br><strong>💪 Durable Carbon Fiber Construction:</strong> 3.5mm arm thickness, 2mm top/bottom plates, 1.5mm middle plate—crash-resistant for daily freestyle and practice.<br><strong>🔧 Wide Compatibility</strong>: Works with most stacks, motors, and vtxs for maximum flexibility.</p>\n<h3>Specifications </h3>\n<table style=\"width: 100.059%; height: 224.198px;\" width=\"100%\">\n<tbody>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<strong><meta charset=\"utf-8\"></strong>\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-SKqaf9c2Ad9wAMcUWGScHrBBnuC\"><strong>Wheelbase</strong></div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Wheelbase\"},\"attribs\":{\"0\":\"*0*1+9\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"5972b4bc-82c9-49dc-b34c-75316b156126\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":38,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":9},\"recordId\":\"SKqaf9c2Ad9wAMcUWGScHrBBnuC\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\"> <meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-IUNwfRrhmdB7VmcZUYqc1xUXndd\">2.5-inch: 122mm; 3-inch: 134mm</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"2.5-inch: 122mm; 3-inch: 134mm\"},\"attribs\":{\"0\":\"*0*1+u\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"77cac8a6-33f7-4a83-9dda-26ceab309667\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":39,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":30},\"recordId\":\"IUNwfRrhmdB7VmcZUYqc1xUXndd\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n</tr>\n<tr style=\"height: 28.2604px;\">\n<td style=\"width: 31.5126%; height: 28.2604px;\">\n<meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"true\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div>\n<table data-ace-table-col-widths=\"200\" class=\"ace-table\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td rowspan=\"1\" colspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-HsPufhsVZd09AbclNw5cxtCQnse\"><strong>Plate Thicknes</strong></div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/record\" data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[26],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"Bf27fmGQXdBVjscoXDmck07OnOf\":{\"id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"HsPufhsVZd09AbclNw5cxtCQnse\",\"FVJDdzCnLoNo0QxmpPocjICanZW\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"HsPufhsVZd09AbclNw5cxtCQnse\":{\"id\":\"HsPufhsVZd09AbclNw5cxtCQnse\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"Plate Thickness\"},\"attribs\":{\"0\":\"*0*1+f\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"FVJDdzCnLoNo0QxmpPocjICanZW\":{\"id\":\"FVJDdzCnLoNo0QxmpPocjICanZW\",\"snapshot\":{\"parent_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"type\":\"text\",\"children\":[],\"comments\":[],\"revisions\":[],\"author\":\"7580394043591363526\",\"text\":{\"apool\":{\"nextNum\":0,\"numToAttrib\":{}},\"initialAttributedTexts\":{\"attribs\":{\"0\":\"\"},\"text\":{\"0\":\"\"}}},\"folded\":false}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"row115fd66f-e0f0-4a38-956a-2a20ea0def4f\"],\"type\":\"table\"}}},\"payloadMap\":{\"HsPufhsVZd09AbclNw5cxtCQnse\":{\"level\":1},\"FVJDdzCnLoNo0QxmpPocjICanZW\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"e41b0b9f-950a-4086-a28b-8bd84c473de2\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":26,\"type\":\"block\",\"recordId\":\"Bf27fmGQXdBVjscoXDmck07OnOf\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}'></span>\n</td>\n<td style=\"width: 68.0672%; height: 28.2604px;\">\n<meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-PQqQfsYZRd3ZoxcHWX1c7ZEHnlf\">Top/Bottom: 2mm; Middle: 1.5mm</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Top/Bottom: 2mm; Middle: 1.5mm\"},\"attribs\":{\"0\":\"*0*1+u\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"244151f0-9bfc-47b4-af8b-6de42b90ed1b\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":34,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":30},\"recordId\":\"PQqQfsYZRd3ZoxcHWX1c7ZEHnlf\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Y2epf86DgdW8VUcilaZcVDfrnH6\"><strong>Arm Thickness</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Arm Thickness\"},\"attribs\":{\"0\":\"*0*1+d\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"ae45abdc-e149-4434-a46f-72d5110d21d1\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":28,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":13},\"recordId\":\"Y2epf86DgdW8VUcilaZcVDfrnH6\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Du3Yf0bZDddG89cv5DpcWg59n0e\">3.5mm</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"3.5mm\"},\"attribs\":{\"0\":\"*0*1+5\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"cbd9a21f-bbef-429b-ab91-b6557ca2e4e1\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":30,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":5},\"recordId\":\"Du3Yf0bZDddG89cv5DpcWg59n0e\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" data-ace-table-col-widths=\"200\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-J98YfskdmdWsFYcSeVncja68nOg\"><strong>Max Stack Height</strong></div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[40],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"BsLlfeqamd9grfcoYrrcYKtdnse\":{\"id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"J98YfskdmdWsFYcSeVncja68nOg\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"J98YfskdmdWsFYcSeVncja68nOg\":{\"id\":\"J98YfskdmdWsFYcSeVncja68nOg\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"Max Flight Stack Height\"},\"attribs\":{\"0\":\"*0*1+n\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"rowa443237b-ac83-4831-b598-bd7c2895ccd6\"],\"type\":\"table\"}}},\"payloadMap\":{\"J98YfskdmdWsFYcSeVncja68nOg\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"d3ed58ed-935e-4179-b709-4c095539eaba\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":40,\"type\":\"block\",\"recordId\":\"BsLlfeqamd9grfcoYrrcYKtdnse\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}' data-lark-record-format=\"docx/record\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-RpdKfzqjIdhnvqcx9WmchXcFnMf\">16.2mm (uses M2*22 countersunk screws; adjust for taller stacks)</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"16.2mm (uses M2*22 countersunk screws; adjust for taller stacks)\"},\"attribs\":{\"0\":\"*0*1+1s\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"6f79a882-0ef0-48a5-813a-96c5d6d63a34\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":47,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":64},\"recordId\":\"RpdKfzqjIdhnvqcx9WmchXcFnMf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-M7QJfhLandIEhwcjGrBca0hqnmf\"><strong>Flight Controller Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Flight Controller Compatibility\"},\"attribs\":{\"0\":\"*0*1+v\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"ff97d64b-2001-49de-aab4-cf5e13706bd6\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":50,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":31},\"recordId\":\"M7QJfhLandIEhwcjGrBca0hqnmf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" data-ace-table-col-widths=\"200\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-K8rZf4Dzfd1TZScocPtcaCVwnlc\">25.5mm  AIO / 20mm stacks</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[45],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"YlIRfJVgpdYObNcn38CcdqgdnLd\":{\"id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"K8rZf4Dzfd1TZScocPtcaCVwnlc\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"K8rZf4Dzfd1TZScocPtcaCVwnlc\":{\"id\":\"K8rZf4Dzfd1TZScocPtcaCVwnlc\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"25.5mm hole spacing AIO / 20mm hole spacing flight stacks\"},\"attribs\":{\"0\":\"*0*1+1l\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2\"],\"type\":\"table\"}}},\"payloadMap\":{\"K8rZf4Dzfd1TZScocPtcaCVwnlc\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"7622c2eb-3f11-4100-8d67-54ccdeeacd65\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":45,\"type\":\"block\",\"recordId\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}' data-lark-record-format=\"docx/record\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-ADQFf7rxtdcNUDc7DjwcmW3mnNf\"><strong>VTX Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Transmitter Compatibility\"},\"attribs\":{\"0\":\"*0*1+p\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"14211a74-e64b-4b8f-900e-4081ee28b19c\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":54,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":25},\"recordId\":\"ADQFf7rxtdcNUDc7DjwcmW3mnNf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-IFqcfZW4Sdtpycc9ExjcPj7rn1d\">O3/Vista and 25.5mm/20mm analog vtxs</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"O3/Vista and 25.5mm/20mm hole spacing analog transmitters\"},\"attribs\":{\"0\":\"*0*1+1l\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"2675f230-cbc7-431e-8991-0e53a87b423d\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":56,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":57},\"recordId\":\"IFqcfZW4Sdtpycc9ExjcPj7rn1d\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-YoKTfmmr8dDTafcOE86ciKl2nsx\"><strong>Motor Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Motor Compatibility\"},\"attribs\":{\"0\":\"*0*1+j\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"b7e145c6-bf89-4291-89c8-4841f98302bb\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":61,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":19},\"recordId\":\"YoKTfmmr8dDTafcOE86ciKl2nsx\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-UDokfEIoCdLwZQcG71hc5BQ4nOf\">9mm-12mm hole spacing motors</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"9mm-12mm hole spacing motors\"},\"attribs\":{\"0\":\"*0*1+s\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"9e1479d2-2f0c-4d18-8e4d-5dd8e9b4f88c\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":62,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":28},\"recordId\":\"UDokfEIoCdLwZQcG71hc5BQ4nOf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-GHFjftylydeZcicDXEOcuL7tnDc\"><strong>Recommended Props</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Recommended Props\"},\"attribs\":{\"0\":\"*0*1+h\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"a963e57b-3498-4ba6-832f-2af1a8542c49\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":64,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":17},\"recordId\":\"GHFjftylydeZcicDXEOcuL7tnDc\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-LYI2finAldCZ9VcnQNscofBonXg\">Cinematic: 2.5-inch (HG2.5x2.5x3+, pitch ≥25); Freestyle: 3-inch (HG3x2.5x3, HG3x3x3+, pitch ≥25)</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Filming: 2.5-inch (HG2.5x2.5x3+, pitch ≥25); Freestyle/Practice: 3-inch (HG3x2.5x3, HG3x3x3+, pitch ≥25)\"},\"attribs\":{\"0\":\"*0*1+2w\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"e5318644-8fe9-43f0-a586-a922617548e7\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":65,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":104},\"recordId\":\"LYI2finAldCZ9VcnQNscofBonXg\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+     },
+     "handle": "ratefpv-rate-s30-pro-3-frame",
+     "id": "gid://shopify/p/6A4GTL2EgdP5glycByuchq",
+     "media": [
+      {
+       "alt_text": "RATEFPV RATE S30  Pro 3\" Frame",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/01_5265c116-d523-4f4c-bc18-6f9d8afc0e39.png",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/01_5265c116-d523-4f4c-bc18-6f9d8afc0e39.png",
+       "width": 1080
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Optimized build space and redesigned internal layout: Enables easier installation and smooth assembly for DIY builds",
+       "CNC-machined front nose: Compatible with nearly all FPV cameras for broad support",
+       "Dual prop options (2.5 inch and 3 inch): Balances stable outdoor filming with high agility for freestyle",
+       "Durable carbon fiber construction: Crash-resistant and lightweight for daily use",
+       "3D printable GPS mount: Supports long-range setups (sold separately)"
+      ],
+      "unique_selling_points": [
+       "Optimized build space and dual prop options in a sub-250g, CNC-machined carbon fiber frame for maximum flexibility and performance."
+      ]
+     },
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "Arm(4pcs)"
+        },
+        {
+         "label": "Bottom Plate"
+        },
+        {
+         "label": "Foot Pads"
+        },
+        {
+         "label": "Frame"
+        },
+        {
+         "label": "Full Set of Printed Parts"
+        },
+        {
+         "label": "Mid Plate(2pcs)"
+        },
+        {
+         "label": "Top Plate"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3599,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 4,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 3.5
+     },
+     "title": "RATEFPV RATE S30  Pro 3\" Frame",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ratefpv.com/buy/53651676037488:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The RATEFPV S30 Pro Frame is a upgraded, versatile 2.5/3-inch FPV frame designed for pilots—blending flexible compatibility, optimized build space, and sub-250g compliance. With a CNC-machined front nose, dual prop options, and broad support for popular flight stacks, cameras, and transmitters, it’s perfect for both cinematic filming and aggressive freestyle. Lightweight yet durable, it balances portability and performance, making it ideal for beginners and seasoned pilots alike—all at RATEFPV’s signature unbeatable value.</p>\n<h3>Key Features </h3>\n<p><strong>📐 Optimized Build Space:</strong> Redesigned internal layout for easier installation, no cramped wiring, and smooth assembly—saves time for DIY builds.<br><strong>🛠️ CNC-Machined Front Nose</strong>: Compatible with nearly all FPV cameras; includes a new 3D-printable GPS mount for long-range setups (sold separately).<br><strong>🚁 Dual Prop Options</strong>: 2.5-inch props for unobstructed footage (stable outdoor filming); 3-inch props for high agility (perfect for freestyle).<br><strong>⚖️ Sub-250g Compliant:</strong> Total weight under 250g when fully built—meets most US/EU regulations, no registration hassle.<br><strong>💪 Durable Carbon Fiber Construction:</strong> 3.5mm arm thickness, 2mm top/bottom plates, 1.5mm middle plate—crash-resistant for daily freestyle and practice.<br><strong>🔧 Wide Compatibility</strong>: Works with most stacks, motors, and vtxs for maximum flexibility.</p>\n<h3>Specifications </h3>\n<table style=\"width: 100.059%; height: 224.198px;\" width=\"100%\">\n<tbody>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<strong><meta charset=\"utf-8\"></strong>\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-SKqaf9c2Ad9wAMcUWGScHrBBnuC\"><strong>Wheelbase</strong></div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Wheelbase\"},\"attribs\":{\"0\":\"*0*1+9\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"5972b4bc-82c9-49dc-b34c-75316b156126\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":38,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":9},\"recordId\":\"SKqaf9c2Ad9wAMcUWGScHrBBnuC\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\"> <meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-IUNwfRrhmdB7VmcZUYqc1xUXndd\">2.5-inch: 122mm; 3-inch: 134mm</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"2.5-inch: 122mm; 3-inch: 134mm\"},\"attribs\":{\"0\":\"*0*1+u\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"77cac8a6-33f7-4a83-9dda-26ceab309667\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":39,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":30},\"recordId\":\"IUNwfRrhmdB7VmcZUYqc1xUXndd\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n</tr>\n<tr style=\"height: 28.2604px;\">\n<td style=\"width: 31.5126%; height: 28.2604px;\">\n<meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"true\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div>\n<table data-ace-table-col-widths=\"200\" class=\"ace-table\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td rowspan=\"1\" colspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-HsPufhsVZd09AbclNw5cxtCQnse\"><strong>Plate Thicknes</strong></div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/record\" data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[26],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"Bf27fmGQXdBVjscoXDmck07OnOf\":{\"id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"HsPufhsVZd09AbclNw5cxtCQnse\",\"FVJDdzCnLoNo0QxmpPocjICanZW\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"HsPufhsVZd09AbclNw5cxtCQnse\":{\"id\":\"HsPufhsVZd09AbclNw5cxtCQnse\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"Plate Thickness\"},\"attribs\":{\"0\":\"*0*1+f\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"FVJDdzCnLoNo0QxmpPocjICanZW\":{\"id\":\"FVJDdzCnLoNo0QxmpPocjICanZW\",\"snapshot\":{\"parent_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"type\":\"text\",\"children\":[],\"comments\":[],\"revisions\":[],\"author\":\"7580394043591363526\",\"text\":{\"apool\":{\"nextNum\":0,\"numToAttrib\":{}},\"initialAttributedTexts\":{\"attribs\":{\"0\":\"\"},\"text\":{\"0\":\"\"}}},\"folded\":false}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"row115fd66f-e0f0-4a38-956a-2a20ea0def4f\"],\"type\":\"table\"}}},\"payloadMap\":{\"HsPufhsVZd09AbclNw5cxtCQnse\":{\"level\":1},\"FVJDdzCnLoNo0QxmpPocjICanZW\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"e41b0b9f-950a-4086-a28b-8bd84c473de2\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":26,\"type\":\"block\",\"recordId\":\"Bf27fmGQXdBVjscoXDmck07OnOf\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}'></span>\n</td>\n<td style=\"width: 68.0672%; height: 28.2604px;\">\n<meta charset=\"utf-8\">\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\">\n<div class=\"ace-line ace-line old-record-id-PQqQfsYZRd3ZoxcHWX1c7ZEHnlf\">Top/Bottom: 2mm; Middle: 1.5mm</div>\n</div>\n<span class=\"lark-record-clipboard\" data-lark-record-format=\"docx/text\" data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Top/Bottom: 2mm; Middle: 1.5mm\"},\"attribs\":{\"0\":\"*0*1+u\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"244151f0-9bfc-47b4-af8b-6de42b90ed1b\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":34,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":30},\"recordId\":\"PQqQfsYZRd3ZoxcHWX1c7ZEHnlf\"}],\"payloadMap\":{},\"isCut\":false}'></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Y2epf86DgdW8VUcilaZcVDfrnH6\"><strong>Arm Thickness</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Arm Thickness\"},\"attribs\":{\"0\":\"*0*1+d\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"ae45abdc-e149-4434-a46f-72d5110d21d1\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":28,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":13},\"recordId\":\"Y2epf86DgdW8VUcilaZcVDfrnH6\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Du3Yf0bZDddG89cv5DpcWg59n0e\">3.5mm</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"3.5mm\"},\"attribs\":{\"0\":\"*0*1+5\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"cbd9a21f-bbef-429b-ab91-b6557ca2e4e1\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":30,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":5},\"recordId\":\"Du3Yf0bZDddG89cv5DpcWg59n0e\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" data-ace-table-col-widths=\"200\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-J98YfskdmdWsFYcSeVncja68nOg\"><strong>Max Stack Height</strong></div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[40],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"BsLlfeqamd9grfcoYrrcYKtdnse\":{\"id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"J98YfskdmdWsFYcSeVncja68nOg\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"J98YfskdmdWsFYcSeVncja68nOg\":{\"id\":\"J98YfskdmdWsFYcSeVncja68nOg\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"Max Flight Stack Height\"},\"attribs\":{\"0\":\"*0*1+n\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"rowa443237b-ac83-4831-b598-bd7c2895ccd6\"],\"type\":\"table\"}}},\"payloadMap\":{\"J98YfskdmdWsFYcSeVncja68nOg\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"d3ed58ed-935e-4179-b709-4c095539eaba\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":40,\"type\":\"block\",\"recordId\":\"BsLlfeqamd9grfcoYrrcYKtdnse\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}' data-lark-record-format=\"docx/record\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-RpdKfzqjIdhnvqcx9WmchXcFnMf\">16.2mm (uses M2*22 countersunk screws; adjust for taller stacks)</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"16.2mm (uses M2*22 countersunk screws; adjust for taller stacks)\"},\"attribs\":{\"0\":\"*0*1+1s\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"6f79a882-0ef0-48a5-813a-96c5d6d63a34\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":47,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":64},\"recordId\":\"RpdKfzqjIdhnvqcx9WmchXcFnMf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 39.1875px;\">\n<td style=\"width: 31.5126%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-M7QJfhLandIEhwcjGrBca0hqnmf\"><strong>Flight Controller Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Flight Controller Compatibility\"},\"attribs\":{\"0\":\"*0*1+v\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"ff97d64b-2001-49de-aab4-cf5e13706bd6\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":50,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":31},\"recordId\":\"M7QJfhLandIEhwcjGrBca0hqnmf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 39.1875px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" data-ace-table-col-widths=\"200\">\n<colgroup><col width=\"200\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-K8rZf4Dzfd1TZScocPtcaCVwnlc\">25.5mm  AIO / 20mm stacks</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<span data-lark-record-data='{\"isCut\":false,\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"parentId\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"blockIds\":[45],\"recordIds\":[\"EcN3fh1iudHlWccULQ0ch05qnte\"],\"recordMap\":{\"YlIRfJVgpdYObNcn38CcdqgdnLd\":{\"id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"children\":[\"K8rZf4Dzfd1TZScocPtcaCVwnlc\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"revisions\":[],\"type\":\"table_cell\",\"vertical_align\":\"top\"}},\"K8rZf4Dzfd1TZScocPtcaCVwnlc\":{\"id\":\"K8rZf4Dzfd1TZScocPtcaCVwnlc\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"align\":\"\",\"author\":\"7580394043591363526\",\"children\":[],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"revisions\":[],\"text\":{\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2,\"attribToNum\":{\"ai-extra,{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\":0,\"author,7580394043591363526\":1}},\"initialAttributedTexts\":{\"text\":{\"0\":\"25.5mm hole spacing AIO / 20mm hole spacing flight stacks\"},\"attribs\":{\"0\":\"*0*1+1l\"},\"rows\":{},\"cols\":{}}},\"type\":\"text\"}},\"EcN3fh1iudHlWccULQ0ch05qnte\":{\"id\":\"EcN3fh1iudHlWccULQ0ch05qnte\",\"snapshot\":{\"ai_extra\":{\"is_ai_gen\":true,\"rewrite_command\":1},\"author\":\"7580394043591363526\",\"cell_set\":{\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"GekXf1Y7IdH1ohcHJzkcOncHnCf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdca77dec-aaf1-454a-80c6-2f0b8b52b024col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"DVeEfB7f0dlUuCcFWGoc6DzJnEc\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"IplzfYCqwdGjTrcdd26cQTErnsd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowc7bbac2a-a4b7-433f-acf5-4d2da139c825col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"JcJzfpP0Vdy6NTcVt8Qc9NCUnSh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"LedCfGvAadIfFFcIhT1cztmIn3r\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowdf678918-0a63-4ce2-bfd3-55e463e5eee2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"KQpZffceAd5NQpcsWlxcElqRnlb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Bf27fmGQXdBVjscoXDmck07OnOf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115fd66f-e0f0-4a38-956a-2a20ea0def4fcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"LVBCfs5GndHD94cpfJ9c6Ig2nyh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"NI3ef9dHCda5O0cRosqcKOoCnVh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row0685727b-2cfd-4f81-8ed0-21f59f501549col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"MbqcfSdthd4bF2cwgAoc5zTjngg\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"BsLlfeqamd9grfcoYrrcYKtdnse\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowa443237b-ac83-4831-b598-bd7c2895ccd6col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"Dem3f8oGYd3llZcLXRycCNBynIf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"VbQkfqMEud4LfJc1Th4cPEiQnmh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"SWPbf0ViEdzfnBcVSYEcmqOTn7v\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row115880da-34b9-42d2-9e01-a3d7e0dda959col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"SY4dfPDXldJaqdc5TcOceCI1npb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"XOpof3MYldZIEycj0z0cGH9Qn7g\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowcf115abc-5288-479a-9dd7-5f93fbc1813bcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"VjhpfKwa8dJjb9c5MM8cT95VnNb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"Aa5MfQAkidmCu5c7VaucVdQ0nGh\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"row5051085a-22b4-4376-9445-7f1d3eaedffbcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"NiWhf2baedU7WmcdFRicXI8mnHb\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"block_id\":\"CLqafEpRfdLs31cZTgRcJoVznDf\",\"merge_info\":{\"col_span\":1,\"row_span\":1}},\"rowd33962c7-4f63-4ff5-a5d8-bd09ef99119dcol63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"block_id\":\"GHySfcpqrdBlnBcs3BIcQMEYnab\",\"merge_info\":{\"col_span\":1,\"row_span\":1}}},\"column_set\":{\"cole3ca746e-83f6-4ffe-ac71-a4d374410044\":{\"column_width\":200},\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\":{\"column_width\":200}},\"columns_id\":[\"col63810eb1-a1ce-4205-a97d-17b7480cdec3\"],\"comments\":[],\"hidden\":false,\"locked\":false,\"parent_id\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"revisions\":[],\"rows_id\":[\"row1876e97a-09e3-405f-92fd-6a8b8f2b49f2\"],\"type\":\"table\"}}},\"payloadMap\":{\"K8rZf4Dzfd1TZScocPtcaCVwnlc\":{\"level\":1}},\"extra\":{\"channel\":\"saas\",\"pasteRandomId\":\"7622c2eb-3f11-4100-8d67-54ccdeeacd65\",\"mention_page_title\":{},\"external_mention_url\":{},\"isEqualBlockSelection\":false},\"isKeepQuoteContainer\":false,\"selection\":[{\"id\":45,\"type\":\"block\",\"recordId\":\"YlIRfJVgpdYObNcn38CcdqgdnLd\"}],\"pasteFlag\":\"7071acae-c5a7-4f00-b397-63abcfb9ace2\"}' data-lark-record-format=\"docx/record\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-ADQFf7rxtdcNUDc7DjwcmW3mnNf\"><strong>VTX Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Transmitter Compatibility\"},\"attribs\":{\"0\":\"*0*1+p\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"14211a74-e64b-4b8f-900e-4081ee28b19c\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":54,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":25},\"recordId\":\"ADQFf7rxtdcNUDc7DjwcmW3mnNf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-IFqcfZW4Sdtpycc9ExjcPj7rn1d\">O3/Vista and 25.5mm/20mm analog vtxs</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"O3/Vista and 25.5mm/20mm hole spacing analog transmitters\"},\"attribs\":{\"0\":\"*0*1+1l\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"2675f230-cbc7-431e-8991-0e53a87b423d\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":56,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":57},\"recordId\":\"IFqcfZW4Sdtpycc9ExjcPj7rn1d\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-YoKTfmmr8dDTafcOE86ciKl2nsx\"><strong>Motor Compatibility</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Motor Compatibility\"},\"attribs\":{\"0\":\"*0*1+j\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"b7e145c6-bf89-4291-89c8-4841f98302bb\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":61,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":19},\"recordId\":\"YoKTfmmr8dDTafcOE86ciKl2nsx\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-UDokfEIoCdLwZQcG71hc5BQ4nOf\">9mm-12mm hole spacing motors</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"9mm-12mm hole spacing motors\"},\"attribs\":{\"0\":\"*0*1+s\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"9e1479d2-2f0c-4d18-8e4d-5dd8e9b4f88c\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":62,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":28},\"recordId\":\"UDokfEIoCdLwZQcG71hc5BQ4nOf\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 31.5126%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-GHFjftylydeZcicDXEOcuL7tnDc\"><strong>Recommended Props</strong></div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Recommended Props\"},\"attribs\":{\"0\":\"*0*1+h\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"a963e57b-3498-4ba6-832f-2af1a8542c49\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":64,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":17},\"recordId\":\"GHFjftylydeZcicDXEOcuL7tnDc\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n<td style=\"width: 68.0672%; height: 19.5938px;\">\n<meta charset=\"utf-8\">\n<div data-page-id=\"EhTadi9AZoQ0X4x1hYucxZsknvd\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-LYI2finAldCZ9VcnQNscofBonXg\">Cinematic: 2.5-inch (HG2.5x2.5x3+, pitch ≥25); Freestyle: 3-inch (HG3x2.5x3, HG3x3x3+, pitch ≥25)</div>\n</div>\n<span data-lark-record-data='{\"rootId\":\"EhTadi9AZoQ0X4x1hYucxZsknvd\",\"text\":{\"initialAttributedTexts\":{\"text\":{\"0\":\"Filming: 2.5-inch (HG2.5x2.5x3+, pitch ≥25); Freestyle/Practice: 3-inch (HG3x2.5x3, HG3x3x3+, pitch ≥25)\"},\"attribs\":{\"0\":\"*0*1+2w\"}},\"apool\":{\"numToAttrib\":{\"0\":[\"ai-extra\",\"{\\\"is_ai_gen\\\":true,\\\"rewrite_command\\\":1}\"],\"1\":[\"author\",\"7580394043591363526\"]},\"nextNum\":2}},\"type\":\"text\",\"referenceRecordMap\":{},\"extra\":{\"channel\":\"saas\",\"isEqualBlockSelection\":true,\"pasteRandomId\":\"e5318644-8fe9-43f0-a586-a922617548e7\",\"mention_page_title\":{},\"external_mention_url\":{}},\"isKeepQuoteContainer\":false,\"isFromCode\":false,\"selection\":[{\"id\":65,\"type\":\"text\",\"selection\":{\"start\":0,\"end\":104},\"recordId\":\"LYI2finAldCZ9VcnQNscofBonXg\"}],\"payloadMap\":{},\"isCut\":false}' data-lark-record-format=\"docx/text\" class=\"lark-record-clipboard\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ratefpv-rate-s30-pro-3-frame",
+       "id": "gid://shopify/ProductVariant/53651676037488",
+       "media": [
+        {
+         "alt_text": "RATEFPV RATE S30  Pro 3\" Frame",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/01_5265c116-d523-4f4c-bc18-6f9d8afc0e39.png",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/01_5265c116-d523-4f4c-bc18-6f9d8afc0e39.png",
+         "width": 1080
+        }
+       ],
+       "options": [
+        {
+         "label": "Frame",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 3599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.3
+       },
+       "seller": {
+        "domain": "dqdsvn-ta.myshopify.com",
+        "id": "gid://shopify/Shop/101096391024",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54083944816.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150431088.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150332784.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54149874032.html"
+         }
+        ],
+        "name": "RATEFPV",
+        "url": "https://ratefpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15089989812592",
+       "source": "shopify",
+       "title": "RATEFPV RATE S30  Pro 3\" Frame",
+       "url": "https://ratefpv.com/products/ratefpv-rate-s30-pro-3-frame?variant=53651676037488&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>DeepSpace SEEKER 3 / 3 inch FPV freestyle Frame Kit for DJI O4 PRO O3 AIR UNIT<br>\n</h2>\n<p class=\"p1\">The <span class=\"s1\"><strong>DeepSpace SEEKER 3 Frame Kit</strong></span> is a premium 3-inch FPV freestyle frame engineered for high-performance drone builds. Designed to support both <span class=\"s1\"><strong>DJI O4 PRO</strong></span> and <span class=\"s1\"><strong>O3 Air Units</strong></span>, this frame provides ideal mounting options and airflow for modern digital video systems while maintaining a lightweight, freestyle-ready design.</p>\n<p class=\"p1\">Crafted for balance, durability, and agility, the <span class=\"s1\"><strong>DeepSpace SEEKER 3 Frame Kit</strong></span> features a robust carbon fiber construction with a forward GPS mount, optimized for satellite reception and minimal interference. With a sub-250g target weight (when fully built), it’s perfect for cinematic and freestyle pilots looking to maximize flight time and responsiveness in a compact footprint.</p>\n<p class=\"p1\">Compatible with 20×20mm and 25.5×25.5mm stack mounting options, the frame offers excellent flexibility for a range of flight controllers, ESCs, and VTX systems.</p>\n<p class=\"p3\"><strong>Key Features:</strong></p>\n<ul>\n<li>\n<p class=\"p1\">Designed for DJI O4 PRO and O3 Air Units</p>\n</li>\n<li>\n<p class=\"p1\">3-inch freestyle layout – agile, responsive, and durable</p>\n</li>\n<li>\n<p class=\"p1\">Sub-250g build target with recommended components</p>\n</li>\n<li>\n<p class=\"p1\">Forward-mounted GPS tray for optimal signal clarity</p>\n</li>\n<li>\n<p class=\"p1\">Compatible with 20×20mm and 25.5×25.5mm stacks</p>\n</li>\n<li>\n<p class=\"p1\">Lightweight carbon fiber arms and plates</p>\n</li>\n<li>\n<p class=\"p1\">Perfect for cinematic, freestyle, or long-range micro builds</p>\n</li>\n</ul>\n<h2>\n<br><img src=\"https://www.deepspacefpv.com/cdn/shop/16631/product/detail/20250410/1744292181525_0.png\"><br>\n</h2>"
+     },
+     "handle": "deepspace-seeker-3-frame-kit",
+     "id": "gid://shopify/p/7wZgrfa5QFpNyQ9hBsi3vC",
+     "media": [
+      {
+       "alt_text": "DeepSpace SEEKER 3 Frame Kit – 3” FPV Freestyle Frame for DJI O4 PRO & O3 Air Unit - NewBeeDrone",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-SEEKER-3-Frame-Kit-_-3_-FPV-Freestyle-Frame-for-DJI-O4-PRO-_-O3-Air-Unit-DeepSpace-146581868.png",
+        "width": 2000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-SEEKER-3-Frame-Kit-_-3_-FPV-Freestyle-Frame-for-DJI-O4-PRO-_-O3-Air-Unit-DeepSpace-146581868.png",
+       "width": 2000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Natively supports DJI O4 PRO and O3 Air Unit for seamless integration and optimal video performance",
+       "Lightweight carbon fiber construction reduces overall weight for improved flight agility",
+       "Forward GPS mount minimizes satellite interference for clear, stable video feeds",
+       "Multiple stack mounting options (20x20mm and 25.5x25.5mm) for flexible electronics compatibility",
+       "Quick assembly and disassembly for easy customization and transport"
+      ],
+      "unique_selling_points": [
+       "Natively supports DJI O4 PRO and O3 Air Unit with a sub-250g build and optimized carbon fiber construction for balance, durability, and agility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4179,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4179,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 3,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.3
+     },
+     "title": "DeepSpace SEEKER 3 Frame Kit – 3” FPV Freestyle Frame for DJI O4 PRO & O3 Air Unit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/53991653671280:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>DeepSpace SEEKER 3 / 3 inch FPV freestyle Frame Kit for DJI O4 PRO O3 AIR UNIT<br>\n</h2>\n<p class=\"p1\">The <span class=\"s1\"><strong>DeepSpace SEEKER 3 Frame Kit</strong></span> is a premium 3-inch FPV freestyle frame engineered for high-performance drone builds. Designed to support both <span class=\"s1\"><strong>DJI O4 PRO</strong></span> and <span class=\"s1\"><strong>O3 Air Units</strong></span>, this frame provides ideal mounting options and airflow for modern digital video systems while maintaining a lightweight, freestyle-ready design.</p>\n<p class=\"p1\">Crafted for balance, durability, and agility, the <span class=\"s1\"><strong>DeepSpace SEEKER 3 Frame Kit</strong></span> features a robust carbon fiber construction with a forward GPS mount, optimized for satellite reception and minimal interference. With a sub-250g target weight (when fully built), it’s perfect for cinematic and freestyle pilots looking to maximize flight time and responsiveness in a compact footprint.</p>\n<p class=\"p1\">Compatible with 20×20mm and 25.5×25.5mm stack mounting options, the frame offers excellent flexibility for a range of flight controllers, ESCs, and VTX systems.</p>\n<p class=\"p3\"><strong>Key Features:</strong></p>\n<ul>\n<li>\n<p class=\"p1\">Designed for DJI O4 PRO and O3 Air Units</p>\n</li>\n<li>\n<p class=\"p1\">3-inch freestyle layout – agile, responsive, and durable</p>\n</li>\n<li>\n<p class=\"p1\">Sub-250g build target with recommended components</p>\n</li>\n<li>\n<p class=\"p1\">Forward-mounted GPS tray for optimal signal clarity</p>\n</li>\n<li>\n<p class=\"p1\">Compatible with 20×20mm and 25.5×25.5mm stacks</p>\n</li>\n<li>\n<p class=\"p1\">Lightweight carbon fiber arms and plates</p>\n</li>\n<li>\n<p class=\"p1\">Perfect for cinematic, freestyle, or long-range micro builds</p>\n</li>\n</ul>\n<h2>\n<br><img src=\"https://www.deepspacefpv.com/cdn/shop/16631/product/detail/20250410/1744292181525_0.png\"><br>\n</h2>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "deepspace-seeker-3-frame-kit",
+       "id": "gid://shopify/ProductVariant/53991653671280",
+       "list_price": {
+        "amount": 4399,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "DeepSpace SEEKER 3 Frame Kit – 3” FPV Freestyle Frame for DJI O4 PRO & O3 Air Unit - NewBeeDrone",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-SEEKER-3-Frame-Kit-_-3_-FPV-Freestyle-Frame-for-DJI-O4-PRO-_-O3-Air-Unit-DeepSpace-146581868.png",
+          "width": 2000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/DeepSpace-SEEKER-3-Frame-Kit-_-3_-FPV-Freestyle-Frame-for-DJI-O4-PRO-_-O3-Air-Unit-DeepSpace-146581868.png",
+         "width": 2000
+        }
+       ],
+       "price": {
+        "amount": 4179,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 7,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.7
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14766794932592",
+       "source": "shopify",
+       "title": "DeepSpace SEEKER 3 Frame Kit – 3” FPV Freestyle Frame for DJI O4 PRO & O3 Air Unit",
+       "url": "https://newbeedrone.com/products/deepspace-seeker-3-frame-kit?variant=53991653671280&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3>Crash-Proof Your 3\" Build — Without the Weight Penalty</h3>\n<p>Every FPV pilot knows the feeling: one bad landing, and your flight controller or camera is gone. The RATEFPV Snap 30 is built so that never happens to your 3-inch build. A fully enclosed, injection-molded shell wraps your electronics on every side — so when you crash, the frame takes the hit, not your circuit board.</p>\n<p><strong>Full-body injection-molded protection.</strong><span> The entire airframe is sheathed in a tough molded shell — not just prop guards, but real coverage around your stack and camera. Your sensitive electronics stay intact through the crashes that end most builds.</span></p>\n<p><span><strong>High-strength T700 carbon fiber core.</strong> The structural plates use T700 — the same aerospace-grade carbon favored for its higher tensile strength over standard T300 frames. You get a frame that shrugs off harder hits while staying light enough to punch out and rip freestyle.</span></p>\n<p><span><strong>Lighter frame, longer flights, snappier moves.</strong> Strength without ballast means more efficiency per battery and crisper response in the air. The protection you want, without the sluggish feel enclosed frames usually bring.</span></p>\n<p><span><strong>4-screw quick-release. See everything in seconds.</strong> Need to check wiring, swap a part, or just show a friend your build? Loosen the four screws on the bottom plate and the whole internals are exposed — no full teardown, no lost screws, no swearing. Assembly and field repairs become genuinely easy.</span></p>\n<h3>Why Choose a Protected Frame?</h3>\n<p>An open carbon frame is lighter by a few grams — until a crash smashes a $40 flight controller or a $30 camera. The Snap 30 pays for itself the first time you bounce off a wall instead of rebuilding. You fly harder, closer, and near people or property with confidence — the ducted shell keeps props away from what matters.</p>"
+     },
+     "handle": "ratefpv-snap30-3inch-fpv-drone-frame",
+     "id": "gid://shopify/p/1mSEuFCggoRTW0sCiYh0vu",
+     "media": [
+      {
+       "alt_text": "RATEFPV Snap30 3Inch FPV Drone Frame",
+       "height": 2160,
+       "preview": {
+        "height": 2160,
+        "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/untitled15.png",
+        "width": 2160
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/untitled15.png",
+       "width": 2160
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Full-body injection-molded shell: Shields electronics from impacts and prop damage for reliable crashes",
+       "T700 carbon fiber core: Delivers high strength and lightweight performance for efficient flight",
+       "Quick release screw system: Allows fast, tool-free assembly and disassembly for easy maintenance",
+       "Ducted prop protection: Keeps propellers away from sensitive electronics to prevent damage",
+       "Enclosed design: Maintains snappy response and efficiency while providing robust protection"
+      ],
+      "unique_selling_points": [
+       "Fully enclosed injection-molded shell provides superior protection for electronics without adding unnecessary weight."
+      ]
+     },
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "Bottom Plate"
+        },
+        {
+         "label": "Frame"
+        },
+        {
+         "label": "Modular Head Unit"
+        },
+        {
+         "label": "Top Plate"
+        },
+        {
+         "label": "Whoop Duct"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5599,
+       "currency": "USD"
+      }
+     },
+     "title": "RATEFPV Snap30 3Inch FPV Drone Frame",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ratefpv.com/buy/54151327678832:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3>Crash-Proof Your 3\" Build — Without the Weight Penalty</h3>\n<p>Every FPV pilot knows the feeling: one bad landing, and your flight controller or camera is gone. The RATEFPV Snap 30 is built so that never happens to your 3-inch build. A fully enclosed, injection-molded shell wraps your electronics on every side — so when you crash, the frame takes the hit, not your circuit board.</p>\n<p><strong>Full-body injection-molded protection.</strong><span> The entire airframe is sheathed in a tough molded shell — not just prop guards, but real coverage around your stack and camera. Your sensitive electronics stay intact through the crashes that end most builds.</span></p>\n<p><span><strong>High-strength T700 carbon fiber core.</strong> The structural plates use T700 — the same aerospace-grade carbon favored for its higher tensile strength over standard T300 frames. You get a frame that shrugs off harder hits while staying light enough to punch out and rip freestyle.</span></p>\n<p><span><strong>Lighter frame, longer flights, snappier moves.</strong> Strength without ballast means more efficiency per battery and crisper response in the air. The protection you want, without the sluggish feel enclosed frames usually bring.</span></p>\n<p><span><strong>4-screw quick-release. See everything in seconds.</strong> Need to check wiring, swap a part, or just show a friend your build? Loosen the four screws on the bottom plate and the whole internals are exposed — no full teardown, no lost screws, no swearing. Assembly and field repairs become genuinely easy.</span></p>\n<h3>Why Choose a Protected Frame?</h3>\n<p>An open carbon frame is lighter by a few grams — until a crash smashes a $40 flight controller or a $30 camera. The Snap 30 pays for itself the first time you bounce off a wall instead of rebuilding. You fly harder, closer, and near people or property with confidence — the ducted shell keeps props away from what matters.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ratefpv-snap30-3inch-fpv-drone-frame",
+       "id": "gid://shopify/ProductVariant/54151327678832",
+       "media": [
+        {
+         "alt_text": "RATEFPV Snap30 3Inch FPV Drone Frame",
+         "height": 2160,
+         "preview": {
+          "height": 2160,
+          "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/untitled15.png",
+          "width": 2160
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/untitled15.png",
+         "width": 2160
+        }
+       ],
+       "options": [
+        {
+         "label": "Frame",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 5599,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "dqdsvn-ta.myshopify.com",
+        "id": "gid://shopify/Shop/101096391024",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54083944816.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150431088.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150332784.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54149874032.html"
+         }
+        ],
+        "name": "RATEFPV",
+        "url": "https://ratefpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15219346014576",
+       "source": "shopify",
+       "title": "RATEFPV Snap30 3Inch FPV Drone Frame",
+       "url": "https://ratefpv.com/products/ratefpv-snap30-3inch-fpv-drone-frame?variant=54151327678832&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2><br></h2>\n<p>“A balance of size, budget, and fun-factor, that encourages anyone to create awesome HD FPV videos, without risking expensive equipment, breaking laws, or scaring spectators.” – Tommy<br><br>Check out <a href=\"www.acrobrat.com\" title=\"Acrobrat Detailed Design &amp; Testing Blog\">www.acrobrat.com</a> for a full story of the how and why the Acrobrat was designed.</p>\n<p><span style=\"color: #0000ff;\"><em>This is THE frame that jump started the Micro HD/low cost HD craze.</em></span><br><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AYAnT1dKzaM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></p>\n<p> </p>\n<p><b><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/VTkBM8IN5_Y\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></b></p>\n<p><b>Design Goals:</b></p>\n<ol>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A well designed 3” quad that feels and flies like a 5”</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Uses the runcam split mini (or caddx Turtle), that mitigates the jello issues that these HD cams can be prone to.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">All in a package that is fairly durable and not intimidating for the pilot or spectators</span></li>\n</ol>\n<b>Specs:</b>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Unibody Main plate = 3mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Side plates (w/adjustable FPV cam placement) = 2mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Battery plate (w/optional top mount FC holes) = 1.5mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Hardware = Stainless Steel</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Frame Dampeners = Custom Poly-urethane</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor to Motor (diagonal) = 163mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor to Motor (front to back/side to side) = 115mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Overall Frame size = 141x141mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Frame height = 55.5mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Dry Frame Weight = 54g</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor bolt pattern = 12x12mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor c-clip hole = 6mm</span></li>\n</ul>"
+     },
+     "handle": "acrobrat-frame",
+     "id": "gid://shopify/p/3w9Gk8TpGxO0F4lPSWVcEg",
+     "media": [
+      {
+       "alt_text": "OMG03218__24118.1532712236_a0486dc5-b6d2-495f-b48c-4a9f09df7ae2.jpg",
+       "height": 853,
+       "preview": {
+        "height": 853,
+        "url": "https://cdn.shopify.com/s/files/1/0066/5754/0185/files/OMG03218__24118.1532712236_f907e272-1392-4322-9cd0-5ae1309fd606.jpg",
+        "width": 1280
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0066/5754/0185/files/OMG03218__24118.1532712236_f907e272-1392-4322-9cd0-5ae1309fd606.jpg",
+       "width": 1280
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Unibody main plate with 3mm bi axial Toray carbon fiber side plates for enhanced strength and stability",
+       "Adjustable FPV camera placement for optimal camera positioning during flight",
+       "Custom poly urethane dampeners reduce vibration for smoother video feed",
+       "Stainless steel hardware ensures long-lasting durability",
+       "Compatible with popular micro HD FPV cameras like Runcam Split Mini and Caddx Turtle"
+      ],
+      "unique_selling_points": [
+       "Combines a lightweight, robust build with a custom FPV camera mount to enable high-definition FPV flying at an accessible price."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3995,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3995,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "The Acrobrat 3 inch HD Frame",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ummagawd.com/buy/20121476628569:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2><br></h2>\n<p>“A balance of size, budget, and fun-factor, that encourages anyone to create awesome HD FPV videos, without risking expensive equipment, breaking laws, or scaring spectators.” – Tommy<br><br>Check out <a href=\"www.acrobrat.com\" title=\"Acrobrat Detailed Design &amp; Testing Blog\">www.acrobrat.com</a> for a full story of the how and why the Acrobrat was designed.</p>\n<p><span style=\"color: #0000ff;\"><em>This is THE frame that jump started the Micro HD/low cost HD craze.</em></span><br><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AYAnT1dKzaM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></p>\n<p> </p>\n<p><b><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/VTkBM8IN5_Y\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe></b></p>\n<p><b>Design Goals:</b></p>\n<ol>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A well designed 3” quad that feels and flies like a 5”</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Uses the runcam split mini (or caddx Turtle), that mitigates the jello issues that these HD cams can be prone to.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">All in a package that is fairly durable and not intimidating for the pilot or spectators</span></li>\n</ol>\n<b>Specs:</b>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Unibody Main plate = 3mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Side plates (w/adjustable FPV cam placement) = 2mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Battery plate (w/optional top mount FC holes) = 1.5mm bi-axial Toray Carbon Fiber</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Hardware = Stainless Steel</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Frame Dampeners = Custom Poly-urethane</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor to Motor (diagonal) = 163mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor to Motor (front to back/side to side) = 115mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Overall Frame size = 141x141mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Frame height = 55.5mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Dry Frame Weight = 54g</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor bolt pattern = 12x12mm</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Motor c-clip hole = 6mm</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "acrobrat-frame",
+       "id": "gid://shopify/ProductVariant/20121476628569",
+       "list_price": {
+        "amount": 4500,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "OMG03218__24118.1532712236_a0486dc5-b6d2-495f-b48c-4a9f09df7ae2.jpg",
+         "height": 853,
+         "preview": {
+          "height": 853,
+          "url": "https://cdn.shopify.com/s/files/1/0066/5754/0185/files/OMG03218__24118.1532712236_f907e272-1392-4322-9cd0-5ae1309fd606.jpg",
+          "width": 1280
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0066/5754/0185/files/OMG03218__24118.1532712236_f907e272-1392-4322-9cd0-5ae1309fd606.jpg",
+         "width": 1280
+        }
+       ],
+       "price": {
+        "amount": 3995,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "the-ummagawd-company.myshopify.com",
+        "id": "gid://shopify/Shop/6657540185",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/6657540185/policies/4209967193.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/6657540185/policies/4209999961.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/6657540185/policies/4209934425.html"
+         }
+        ],
+        "name": "The Ummagawd Company",
+        "url": "https://ummagawd.com"
+       },
+       "seller_product_id": "gid://shopify/Product/1965089685593",
+       "source": "shopify",
+       "title": "The Acrobrat 3 inch HD Frame",
+       "url": "https://ummagawd.com/products/acrobrat-frame?variant=20121476628569&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The <strong>Vannystyle Mini Frame Kit</strong> is an ultra tiny version of the legendary Vannystyle Pro frame, designed specifically for 3.5\" props. With the DJI O4 camera on board, this is the perfect little cinema drone or a great neighborhood backyard ripper! Built for those who want extreme agility and control without sacrificing durability or flight feel. The Vannystyle Mini offers exceptional flight performance in a compact, lightweight frame.</p>\n<p>Choose between the <strong>Universal Camera Plates</strong> (DJI O3, Analog, Walksnail, etc.) or the <strong>DJI O4 Pro Camera Plates</strong>.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y2fpE-MjQEI?si=Fo_j-6_0Y3EiifTq\" title=\"YouTube video player\"></iframe></p>\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/YRny3v4jCsE?si=m4IF45PLfVcPtUfT\" height=\"315\" width=\"560\"></iframe></p>\n<p>Great video from <a href=\"https://www.youtube.com/@spidersugar_fpv\">@Spider Sugar_FPV</a>!</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uJBmEOLAvbo?si=9MRm075-Au5RhKR-\" title=\"YouTube video player\"></iframe></p>\n<h3>Another great tutorial by @TalonFPV</h3>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qL9YCWX-6Vo?si=Qs03Z8yN-T881HkI\" title=\"YouTube video player\"></iframe></p>\n<h3>Recommendations</h3>\n<p>Do not use heavy motors on the arms as this will negatively affect flight performance.<br>We're recommending smaller motors like 1604 or 1606 currently.</p>\n<p>Flight Controller (20x20)</p>\n<ul>\n<ul>\n<li><a href=\"https://wrekd.com/products/kiss-ultra-mini-v2-fpv-drone-flight-controller-20x20mm\">KISS Ultra V2 Mini + Voltera</a></li>\n<li>\n</li>\n</ul>\n</ul>\n\n<ul>\n<li>\n<p><a href=\"https://wrekd.com/products/t-motor-mini-f7-3-6s-20x20-stack-combo-for-dji-f7-fc-45a-4in1-esc?pr_prod_strat=e5_desc&amp;pr_rec_id=abb54f9ee&amp;pr_rec_pid=8933731762480&amp;pr_ref_pid=8156009922864&amp;pr_seq=uniform\">T-Motor Mini F7 3-6S 20x20 Stack</a></p>\n</li>\n<li>Foxeer Mini 20x20</li>\n<li>Hobbywing 20x20</li>\n</ul>\n<p>4-in-1 ESC:</p>\n\n<ul>\n<li><a href=\"https://wrekd.com/products/t-motor-mini-f7-3-6s-20x20-stack-combo-for-dji-f7-fc-45a-4in1-esc?pr_prod_strat=e5_desc&amp;pr_rec_id=abb54f9ee&amp;pr_rec_pid=8933731762480&amp;pr_ref_pid=8156009922864&amp;pr_seq=uniform\">T-Motor Mini F7 3-6S 20x20 Stack</a></li>\n<li>Foxeer Reaper Mini 45A 20 x 20</li>\n</ul>\n<p>AIO</p>\n<ul>\n<li>\n<a href=\"https://wrekd.com/products/iflight-blitz-e55-mini-v1-3-32bit-55a-2-6s-20x20-4in1-esc?_pos=2&amp;_sid=927ed1913&amp;_ss=r&amp;_fid=c422693f4\">iFlight Blitz E55A (20x20)</a> (Untested but looks promising)</li>\n</ul>\n<p> Motors:</p>\n<ul>\n<li>\n<a href=\"https://wrekd.com/products/fpvcycle-16mm-motor-4100kv\">FPVCycle 16mm Motor - 4100Kv</a> (4S)</li>\n<li>\n<a href=\"https://wrekd.com/products/vci-1606-motor-choose-kv\">VCI 1606 2850Kv </a>(4S)</li>\n<li>\n<a href=\"https://wrekd.com/products/t-motor-pacer-1604-2850kv-motor\">T-Hobby Pacer 1604 2850Kv </a>(6S)</li>\n<li>\n<a href=\"https://wrekd.com/products/t-motor-pacer-1604-3800kv-motor\">T-Hobby Pacer 1604 3800Kv </a>(4S)</li>\n</ul>\n<p>As folks build out their own builds, we will be updating the recommendations list.</p>\n<h3>Available Accessories</h3>\n<h4>Your Way Add-on Kit</h4>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0722/5661/8800/files/VannystyleMiniGif.gif?v=1742965143\"></p>\n<p>View More Details about Vannystyle Mini Your Way Add-on Kit</p>\n<h4>3D Printed Parts</h4>\n<ul>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-front-bumper\">Front Bumper</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-protection-pack-choose-style?_pos=5&amp;_sid=92945eaa8&amp;_ss=r\">Protection Pack</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dipole-antenna-mount-choose-color?_pos=6&amp;_sid=92945eaa8&amp;_ss=r\">Dipole Antenna Mount</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dual-antenna-mount-straight-choose-color?_pos=7&amp;_sid=92945eaa8&amp;_ss=r\">Dual Antenna Mount - Straight</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dual-antenna-mount-angled-choose-color?_pos=8&amp;_sid=92945eaa8&amp;_ss=r\">Dual Antenna Mount - Angled</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dji-o4-camera-protection-mount-choose-color?_pos=10&amp;_sid=92945eaa8&amp;_ss=r\">DJI O4 Pro Camera Protector &amp; Mount</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-soft-mount-arm-end-protectors-choose-color?_pos=11&amp;_sid=92945eaa8&amp;_ss=r\">Soft Mount Arm Protector</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dji-o4-camera-plate-inserts-4pcs-choose-color?_pos=12&amp;_sid=92945eaa8&amp;_ss=r\">DJI O4 Pro Camera Plate Inserts</a></li>\n</ul>\n<h3><strong>Specifications</strong></h3>\n<ul>\n<ul>\n<li>\n<strong>Material</strong>: 3K Twill Carbon Fiber</li>\n<li>\n<strong>Prop Size</strong>: 3.5\"</li>\n<li>\n<strong>Motor Mount</strong>: 9mm x 9mm or 12mm x 12mm</li>\n<li>\n<strong>Top Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>Bottom Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>Arm Thickness</strong>: 4mm</li>\n<li>\n<strong>Camera Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>CamWiggle Thickness</strong>: 1.5mm</li>\n<li>\n<strong>Mid Plate Thickness</strong>: 1.5mm</li>\n<li>\n<strong>Stack Size: </strong>20x20 or 25.5x25.5</li>\n<li><strong>Weight:</strong></li>\n</ul>\n</ul>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul>\n<li>\n<strong>72g</strong>: With Battery Strap, Battery Pad, TPU Antenna Mount, Camera Inserts</li>\n<li>\n<strong>250g</strong>: Fully built with Battery, WREKD Standard Issue Strap, KISS Ultra V2 Mini, ESC, DJI O4 Pro, Motors,  Props, etc.<br>Your weight may vary depending on build decisions. <br>Alex's build is sitting at 253g with the BEAST strap. Would be at 250g with Standard Issue strap.<br>\n<div style=\"text-align: left;\"><img style=\"margin-bottom: 16px; float: none;\" src=\"https://cdn.shopify.com/s/files/1/0722/5661/8800/files/A8DA5E29-CE3C-45D7-9DBA-F26D5773D235.png?v=1743004789\"></div>\n</li>\n</ul>\n</li>\n</ul>\n<h3><strong>Includes</strong></h3>\n<p><strong>DJI O4 Version</strong></p>\n<ul>\n<li>1 x Frame Kit\n<ul>\n<li>1 x Bottom Plate</li>\n<li>2 x Cam Brace Plates</li>\n<li>1 x Mid Plate</li>\n<li>1 x Top Plate</li>\n</ul>\n</li>\n<li>2 x Camera Plates (O4)</li>\n<li>1 x Arm Kit (Includes 5 arms)</li>\n<li>Hardware Kit<br>\n<ul>\n<li>1 x M2 x 23mm Aluminum Standoff (Dark Blue)</li>\n<li>5 x M3 x 20mm Aluminum Standoffs (Dark Blue)</li>\n<li>3 x M3 x 5mm Steel Countersunk Screws</li>\n<li>2 x M3 x 10mm Steel Countersunk Screws</li>\n<li>4 x M3 x 12mm Steel Countersunk Screws</li>\n<li>5 x M3 x 5mm Steel Button Head Screws</li>\n</ul>\n</li>\n<li>TPU Kit (7pcs)\n<ul>\n<li>4 x TPU Cam Plate Inserts</li>\n<li>2 x TPU Cam Protector Inserts (optional)</li>\n<li>1 x TPU Dual Antenna Mount</li>\n</ul>\n</li>\n<li>1 x WREKD® Standard Issue Battery Strap - 180 x 12.5mm</li>\n<li>1 x Diamond File For Perfect Fitment</li>\n<li>1 x Ummagrip Lite Battery Pad (1\" x 1\")<br>\n</li>\n</ul>\n<p><strong>O3 / Universal Version</strong></p>\n<ul>\n<li>1 x Frame Kit\n<ul>\n<li>1 x Bottom Plate</li>\n<li>2 x Cam Brace Plates</li>\n<li>1 x Mid Plate</li>\n<li>1 x Top Plate</li>\n</ul>\n</li>\n<li>2 x Camera Plates (O3/Universal)</li>\n<li>1 x Arm Kit (Includes 5 arms)</li>\n<li>Hardware Kit<br>\n<ul>\n<li>1 * M2 x 23mm Aluminum Standoff (Dark Blue)</li>\n<li>5<meta charset=\"utf-8\"> * M3 x 20mm Aluminum Standoffs (Dark Blue)</li>\n<li>6 * M3 x 5mm Steel Countersunk Screws</li>\n<li>2<meta charset=\"utf-8\"> * M3 x 6mm Steel Buttonhead Screws</li>\n<li>4<meta charset=\"utf-8\"> * M3 x 12mm Steel Buttonhead Stack Screws </li>\n<li>5<meta charset=\"utf-8\"> * M3 x 5mm Steel Button Head Screws</li>\n<li>16 * M2 x 6mm Steel Button Head Motor Screws</li>\n</ul>\n</li>\n<li>TPU Kit (7pcs)<meta charset=\"utf-8\">\n<ul>\n<li>2 x TPU DJI O3 Inserts</li>\n<li>2 x TPU Analog / Universal Inserts</li>\n<li>2 x TPU Cam Protector Inserts</li>\n<li>1 x TPU Folding Antenna Mount for O3 / Universal version</li>\n</ul>\n</li>\n<li>1 x WREKD® Standard Issue Battery Strap - 180 x 12.5mm</li>\n<li>1 x Diamond File For Perfect Fitment</li>\n<li>1 x Ummagrip Lite Battery Pad (1\" x 1\")</li>\n</ul>"
+     },
+     "handle": "vannystyle-mini",
+     "id": "gid://shopify/p/1GFhnevfQX2lkL9QgOtf2Z",
+     "media": [
+      {
+       "alt_text": "Vannystyle Mini 3.5\" Frame Kit - Choose Style",
+       "height": 3024,
+       "preview": {
+        "height": 3024,
+        "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/files/MiniO4__0007_IMG_3315.jpg",
+        "width": 3024
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/files/MiniO4__0007_IMG_3315.jpg",
+       "width": 3024
+      },
+      {
+       "alt_text": "Vannystyle Mini 3.5\" Frame Kit - Choose Style",
+       "duration": 20,
+       "preview": {
+        "height": 3840,
+        "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/files/preview_images/3f12aaddf68f4253b7472630ae72cf97.thumbnail.0000000000.jpg",
+        "width": 2160
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 1920,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/3f12aaddf68f4253b7472630ae72cf97/3f12aaddf68f4253b7472630ae72cf97.m3u8",
+         "width": 1080
+        },
+        {
+         "format": "mp4",
+         "height": 1920,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/3f12aaddf68f4253b7472630ae72cf97/3f12aaddf68f4253b7472630ae72cf97.HD-1080p-7.2Mbps-44746463.mp4",
+         "width": 1080
+        },
+        {
+         "format": "mp4",
+         "height": 1280,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/3f12aaddf68f4253b7472630ae72cf97/3f12aaddf68f4253b7472630ae72cf97.HD-720p-4.5Mbps-44746463.mp4",
+         "width": 720
+        },
+        {
+         "format": "mp4",
+         "height": 852,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/3f12aaddf68f4253b7472630ae72cf97/3f12aaddf68f4253b7472630ae72cf97.SD-480p-1.5Mbps-44746463.mp4",
+         "width": 480
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/3f12aaddf68f4253b7472630ae72cf97/3f12aaddf68f4253b7472630ae72cf97.m3u8"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Ultra-compact 3.5 inch frame enables agile maneuverability in tight spaces",
+       "Compatible with DJI O4 and O3 analog walksnail camera plates for versatile setup",
+       "3K twill carbon fiber construction provides durability and lightweight handling",
+       "Multiple motor mount options (9mm x 9mm or 12mm x 12mm) for custom builds",
+       "Includes essential hardware and accessories for a complete DIY build"
+      ],
+      "unique_selling_points": [
+       "Exceptional flight performance in a compact, lightweight 3.5 inch frame with universal camera plate compatibility."
+      ]
+     },
+     "options": [
+      {
+       "name": "Style",
+       "values": [
+        {
+         "label": "Dji O3 / Universal"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4599,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 31,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "Vannystyle Mini 3.5\" Frame Kit - Choose Style",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://wrekd.com/buy/49501775626544:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The <strong>Vannystyle Mini Frame Kit</strong> is an ultra tiny version of the legendary Vannystyle Pro frame, designed specifically for 3.5\" props. With the DJI O4 camera on board, this is the perfect little cinema drone or a great neighborhood backyard ripper! Built for those who want extreme agility and control without sacrificing durability or flight feel. The Vannystyle Mini offers exceptional flight performance in a compact, lightweight frame.</p>\n<p>Choose between the <strong>Universal Camera Plates</strong> (DJI O3, Analog, Walksnail, etc.) or the <strong>DJI O4 Pro Camera Plates</strong>.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/y2fpE-MjQEI?si=Fo_j-6_0Y3EiifTq\" title=\"YouTube video player\"></iframe></p>\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/YRny3v4jCsE?si=m4IF45PLfVcPtUfT\" height=\"315\" width=\"560\"></iframe></p>\n<p>Great video from <a href=\"https://www.youtube.com/@spidersugar_fpv\">@Spider Sugar_FPV</a>!</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uJBmEOLAvbo?si=9MRm075-Au5RhKR-\" title=\"YouTube video player\"></iframe></p>\n<h3>Another great tutorial by @TalonFPV</h3>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qL9YCWX-6Vo?si=Qs03Z8yN-T881HkI\" title=\"YouTube video player\"></iframe></p>\n<h3>Recommendations</h3>\n<p>Do not use heavy motors on the arms as this will negatively affect flight performance.<br>We're recommending smaller motors like 1604 or 1606 currently.</p>\n<p>Flight Controller (20x20)</p>\n<ul>\n<ul>\n<li><a href=\"https://wrekd.com/products/kiss-ultra-mini-v2-fpv-drone-flight-controller-20x20mm\">KISS Ultra V2 Mini + Voltera</a></li>\n<li>\n</li>\n</ul>\n</ul>\n\n<ul>\n<li>\n<p><a href=\"https://wrekd.com/products/t-motor-mini-f7-3-6s-20x20-stack-combo-for-dji-f7-fc-45a-4in1-esc?pr_prod_strat=e5_desc&amp;pr_rec_id=abb54f9ee&amp;pr_rec_pid=8933731762480&amp;pr_ref_pid=8156009922864&amp;pr_seq=uniform\">T-Motor Mini F7 3-6S 20x20 Stack</a></p>\n</li>\n<li>Foxeer Mini 20x20</li>\n<li>Hobbywing 20x20</li>\n</ul>\n<p>4-in-1 ESC:</p>\n\n<ul>\n<li><a href=\"https://wrekd.com/products/t-motor-mini-f7-3-6s-20x20-stack-combo-for-dji-f7-fc-45a-4in1-esc?pr_prod_strat=e5_desc&amp;pr_rec_id=abb54f9ee&amp;pr_rec_pid=8933731762480&amp;pr_ref_pid=8156009922864&amp;pr_seq=uniform\">T-Motor Mini F7 3-6S 20x20 Stack</a></li>\n<li>Foxeer Reaper Mini 45A 20 x 20</li>\n</ul>\n<p>AIO</p>\n<ul>\n<li>\n<a href=\"https://wrekd.com/products/iflight-blitz-e55-mini-v1-3-32bit-55a-2-6s-20x20-4in1-esc?_pos=2&amp;_sid=927ed1913&amp;_ss=r&amp;_fid=c422693f4\">iFlight Blitz E55A (20x20)</a> (Untested but looks promising)</li>\n</ul>\n<p> Motors:</p>\n<ul>\n<li>\n<a href=\"https://wrekd.com/products/fpvcycle-16mm-motor-4100kv\">FPVCycle 16mm Motor - 4100Kv</a> (4S)</li>\n<li>\n<a href=\"https://wrekd.com/products/vci-1606-motor-choose-kv\">VCI 1606 2850Kv </a>(4S)</li>\n<li>\n<a href=\"https://wrekd.com/products/t-motor-pacer-1604-2850kv-motor\">T-Hobby Pacer 1604 2850Kv </a>(6S)</li>\n<li>\n<a href=\"https://wrekd.com/products/t-motor-pacer-1604-3800kv-motor\">T-Hobby Pacer 1604 3800Kv </a>(4S)</li>\n</ul>\n<p>As folks build out their own builds, we will be updating the recommendations list.</p>\n<h3>Available Accessories</h3>\n<h4>Your Way Add-on Kit</h4>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0722/5661/8800/files/VannystyleMiniGif.gif?v=1742965143\"></p>\n<p>View More Details about Vannystyle Mini Your Way Add-on Kit</p>\n<h4>3D Printed Parts</h4>\n<ul>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-front-bumper\">Front Bumper</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-protection-pack-choose-style?_pos=5&amp;_sid=92945eaa8&amp;_ss=r\">Protection Pack</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dipole-antenna-mount-choose-color?_pos=6&amp;_sid=92945eaa8&amp;_ss=r\">Dipole Antenna Mount</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dual-antenna-mount-straight-choose-color?_pos=7&amp;_sid=92945eaa8&amp;_ss=r\">Dual Antenna Mount - Straight</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dual-antenna-mount-angled-choose-color?_pos=8&amp;_sid=92945eaa8&amp;_ss=r\">Dual Antenna Mount - Angled</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dji-o4-camera-protection-mount-choose-color?_pos=10&amp;_sid=92945eaa8&amp;_ss=r\">DJI O4 Pro Camera Protector &amp; Mount</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-soft-mount-arm-end-protectors-choose-color?_pos=11&amp;_sid=92945eaa8&amp;_ss=r\">Soft Mount Arm Protector</a></li>\n<li><a href=\"https://wrekd.com/products/vannystyle-mini-dji-o4-camera-plate-inserts-4pcs-choose-color?_pos=12&amp;_sid=92945eaa8&amp;_ss=r\">DJI O4 Pro Camera Plate Inserts</a></li>\n</ul>\n<h3><strong>Specifications</strong></h3>\n<ul>\n<ul>\n<li>\n<strong>Material</strong>: 3K Twill Carbon Fiber</li>\n<li>\n<strong>Prop Size</strong>: 3.5\"</li>\n<li>\n<strong>Motor Mount</strong>: 9mm x 9mm or 12mm x 12mm</li>\n<li>\n<strong>Top Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>Bottom Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>Arm Thickness</strong>: 4mm</li>\n<li>\n<strong>Camera Plate Thickness</strong>: 2mm</li>\n<li>\n<strong>CamWiggle Thickness</strong>: 1.5mm</li>\n<li>\n<strong>Mid Plate Thickness</strong>: 1.5mm</li>\n<li>\n<strong>Stack Size: </strong>20x20 or 25.5x25.5</li>\n<li><strong>Weight:</strong></li>\n</ul>\n</ul>\n<ul>\n<li style=\"list-style-type: none;\">\n<ul>\n<li>\n<strong>72g</strong>: With Battery Strap, Battery Pad, TPU Antenna Mount, Camera Inserts</li>\n<li>\n<strong>250g</strong>: Fully built with Battery, WREKD Standard Issue Strap, KISS Ultra V2 Mini, ESC, DJI O4 Pro, Motors,  Props, etc.<br>Your weight may vary depending on build decisions. <br>Alex's build is sitting at 253g with the BEAST strap. Would be at 250g with Standard Issue strap.<br>\n<div style=\"text-align: left;\"><img style=\"margin-bottom: 16px; float: none;\" src=\"https://cdn.shopify.com/s/files/1/0722/5661/8800/files/A8DA5E29-CE3C-45D7-9DBA-F26D5773D235.png?v=1743004789\"></div>\n</li>\n</ul>\n</li>\n</ul>\n<h3><strong>Includes</strong></h3>\n<p><strong>DJI O4 Version</strong></p>\n<ul>\n<li>1 x Frame Kit\n<ul>\n<li>1 x Bottom Plate</li>\n<li>2 x Cam Brace Plates</li>\n<li>1 x Mid Plate</li>\n<li>1 x Top Plate</li>\n</ul>\n</li>\n<li>2 x Camera Plates (O4)</li>\n<li>1 x Arm Kit (Includes 5 arms)</li>\n<li>Hardware Kit<br>\n<ul>\n<li>1 x M2 x 23mm Aluminum Standoff (Dark Blue)</li>\n<li>5 x M3 x 20mm Aluminum Standoffs (Dark Blue)</li>\n<li>3 x M3 x 5mm Steel Countersunk Screws</li>\n<li>2 x M3 x 10mm Steel Countersunk Screws</li>\n<li>4 x M3 x 12mm Steel Countersunk Screws</li>\n<li>5 x M3 x 5mm Steel Button Head Screws</li>\n</ul>\n</li>\n<li>TPU Kit (7pcs)\n<ul>\n<li>4 x TPU Cam Plate Inserts</li>\n<li>2 x TPU Cam Protector Inserts (optional)</li>\n<li>1 x TPU Dual Antenna Mount</li>\n</ul>\n</li>\n<li>1 x WREKD® Standard Issue Battery Strap - 180 x 12.5mm</li>\n<li>1 x Diamond File For Perfect Fitment</li>\n<li>1 x Ummagrip Lite Battery Pad (1\" x 1\")<br>\n</li>\n</ul>\n<p><strong>O3 / Universal Version</strong></p>\n<ul>\n<li>1 x Frame Kit\n<ul>\n<li>1 x Bottom Plate</li>\n<li>2 x Cam Brace Plates</li>\n<li>1 x Mid Plate</li>\n<li>1 x Top Plate</li>\n</ul>\n</li>\n<li>2 x Camera Plates (O3/Universal)</li>\n<li>1 x Arm Kit (Includes 5 arms)</li>\n<li>Hardware Kit<br>\n<ul>\n<li>1 * M2 x 23mm Aluminum Standoff (Dark Blue)</li>\n<li>5<meta charset=\"utf-8\"> * M3 x 20mm Aluminum Standoffs (Dark Blue)</li>\n<li>6 * M3 x 5mm Steel Countersunk Screws</li>\n<li>2<meta charset=\"utf-8\"> * M3 x 6mm Steel Buttonhead Screws</li>\n<li>4<meta charset=\"utf-8\"> * M3 x 12mm Steel Buttonhead Stack Screws </li>\n<li>5<meta charset=\"utf-8\"> * M3 x 5mm Steel Button Head Screws</li>\n<li>16 * M2 x 6mm Steel Button Head Motor Screws</li>\n</ul>\n</li>\n<li>TPU Kit (7pcs)<meta charset=\"utf-8\">\n<ul>\n<li>2 x TPU DJI O3 Inserts</li>\n<li>2 x TPU Analog / Universal Inserts</li>\n<li>2 x TPU Cam Protector Inserts</li>\n<li>1 x TPU Folding Antenna Mount for O3 / Universal version</li>\n</ul>\n</li>\n<li>1 x WREKD® Standard Issue Battery Strap - 180 x 12.5mm</li>\n<li>1 x Diamond File For Perfect Fitment</li>\n<li>1 x Ummagrip Lite Battery Pad (1\" x 1\")</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "vannystyle-mini",
+       "id": "gid://shopify/ProductVariant/49501775626544",
+       "list_price": {
+        "amount": 6499,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Vannystyle Mini 3.5\" Frame Kit - Choose Style",
+         "height": 3024,
+         "preview": {
+          "height": 3024,
+          "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/files/MiniO4__0007_IMG_3315.jpg",
+          "width": 3024
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/files/MiniO4__0007_IMG_3315.jpg",
+         "width": 3024
+        }
+       ],
+       "options": [
+        {
+         "label": "Dji O3 / Universal",
+         "name": "Style"
+        }
+       ],
+       "price": {
+        "amount": 4599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 20,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "kaack.myshopify.com",
+        "id": "gid://shopify/Shop/72256618800",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121820464.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121853232.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121787696.html"
+         }
+        ],
+        "name": "WREKD Co.",
+        "url": "https://wrekd.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9515806032176",
+       "source": "shopify",
+       "title": "Vannystyle Mini 3.5\" Frame Kit - Choose Style",
+       "url": "https://wrekd.com/products/vannystyle-mini?variant=49501775626544&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>This frame is cut from really nice carbon.</strong></p>\n<p><br>Low weight, excellent balance, easy to use, easy to service, respectable component protection, and DJI Vista ready. These were the goals of the Tooth Fairy 2. The low weight of this design will satisfy those 250g builds but it's really designed to handle ~325g AUW 5\" to 5.21\" build. Of course you can always run past that weight like we do so it's really up to you. We regularly carry GoPro's on our builds.</p>\n<p><meta charset=\"utf-8\">The most unique feature of this frame is that the Vista is integrated into the structure. The entire rear standoff is the Vista. Also, the 3\" is designed with the option to use <a href=\"https://fpvcycle.com/products/geprc-2-prop-guard-ring-4-pack\" data-mce-href=\"https://fpvcycle.com/products/geprc-2-prop-guard-ring-4-pack\" target=\"_blank\">these prop guards</a> if desired.</p>\n<p>Light frames suffer from vibrational noise and resonance.  These complications get worse as you increase the power of the quad.  In order to improve reliability of these matters, t<span>his design has a unique vibration management arm mounting mechanism pointed out by Chris Rosser (YouTube: Chris Rosser).  The mechanism introduces friction without the loss of rigidity.  As a result, the 4mm arm version of this frame will be able to handle more powerful motors than it should.  However because the frame does have somewhat long skinny arms, the 5mm version is STRONGLY recommended to use for any build that has motors larger than 2303 or otherwise 23mm short motors.  The 5mm version should be selected for use with our 23mm tall motors.<br><br>Furthermore, there is an optional included carbon shim for ease of use with damping grease.  This shim</span> is intended to be used with Nyogel 767a, Nyogel pg-44A or some other vibration damping grease (or tape if you wish). The point is to put the grease between the shim and the main deck so you can swap arms easily without dealing with gooey grease all over the arms. The included arm screws should fit with the shim and grease but they could be 1mm longer. You may want to acquire 12mm M2 screws if you wish. Future batches will include slightly longer screws.</p>\n<p><span><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oHONikUxCcw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><br><br></span></p>\n<h2><a href=\"https://fpvcycle.com/products/toothfairy-2-antenna-and-gopro-mount-options\" target=\"_blank\"><strong>Gopro and antenna mounts CLICK HERE</strong></a></h2>\n<h2><span> Specifications of each version:</span></h2>\n<h4><span>5\" ToothFairy 2:</span></h4>\n<ul>\n<li><span>Fits up to 5.25\" props</span></li>\n<li><span>~52g built (56g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with two screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span><strong>4mm arms</strong>, 2mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>5\" ToothFairy 2 with 5mm arms:</span></h4>\n<ul>\n<li>4 arms included with kit</li>\n<li><span>Fits up to 5.25\" props</span></li>\n<li><span>~61g built (65g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with four screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>5mm arms, 2mm body, 1.5mm top and cam plates</span></li>\n<li><strong>To use carbon shim, you will need four M2x12mm screws.  Sorry for the oversight.</strong></li>\n</ul>\n<h4><span>ToothFairy 2 - 3\" Cinewhoop:</span></h4>\n<ul>\n<li>4 arms included with kit</li>\n<li><span>Use the following <a href=\"https://fpvcycle.com/products/cinesplore-v3-duct-set-of-4?_pos=1&amp;_sid=27906aa30&amp;_ss=r\">duct </a> or print your own</span></li>\n<li><span>~109g built (113g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with four screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>4mm arms, 2mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>3\" ToothFairy 2:</span></h4>\n<ul>\n<li><span>4 arms included with kit</span></li>\n<li><span>Optional prop guards and 2\" props</span></li>\n<li><span>~42g built (46g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 9x9 M2 and 12x12 M2</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>4mm arms, 1.5mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>3.5\" ToothFairy 2 arms + Guard option:</span></h4>\n<ul>\n<li><span>3.5\" arms for the Tooth Fairy 2 - set of 4</span></li>\n<li>Light guards are an option for an open prop Cinewhoop alternative.</li>\n<li>The <a href=\"https://fpvcycle.com/products/fpvcycle-2203-motor-choose-kv?_pos=1&amp;_sid=881cebe50&amp;_ss=r\">23mm short</a> motor or comparable is recommended for 3.5\" props.</li>\n<li><span>In time, we will have a 3.5\" kit as well but not until June or July</span></li>\n<li><span>HQ 8 blade 89mm prop + guards is as silent as I've ever heard a Cinewhoop </span></li>\n</ul>\n<h3><span style=\"font-size: 16.38px;\" mce-data-marked=\"1\">Recommended Parts for 5\":</span></h3>\n<ul>\n<li><span>2004 - 2306 motor size</span></li>\n<li><span>Gemfan F3 prop</span></li>\n<li><span>~90-130g battery</span></li>\n<li><span>AIO Whoop board</span></li>\n<li><span>2004 motors if available- must be kept as light as possible</span></li>\n</ul>\n<h3><span style=\"font-size: 16.38px;\">Recommended Parts for 3\":</span></h3>\n<ul>\n<li><span>1404 minimum, 160X motor size recommended</span></li>\n<li><span>Moderately aggressive prop</span></li>\n<li><span>AIO Whoop board</span></li>\n<li><span>~60-100g battery</span></li>\n</ul>\n<p><span><meta charset=\"utf-8\"> <strong>About vibration management options for any build:</strong> </span></p>\n<p><span>Damping grease between frame joints and under motors has been shown to make a significant improvement in quad resonance management. The difference can be as significant as going from completely un-flyable mess to beautifully flyable. More commonly it's just a minor improvement and only if you're at least somewhat versed in tuning filters. To those that don't burden themselves with tuning, there may not be any benefit other than consistency of performance across several builds. Other damping options such as electrical tape, TPU or some other solid material are only sometimes helpful and only on some quad builds (YMMV). Damping grease will improve ALL quads resonance profile without exception. The difference is that grease is a liquid and tape or some other material is a solid. Solids have elasticity while liquids do not. In fact if electrical tape helps, it's the sticky liquid glue attached to the solid electrical tape that is doing the work. The solid component of the tape is making it worse because it has elasticity. Regardless, if you're looking for performance improvements, vibration management and reducing filters are the easiest way to go. At this point it is recommended to use some sort of damping grease on every build because of how significant the benefits can be. That being said, we will also be the first to point out that vibration management is not at all required the vast majority of the time because of the software management in all flight code today.</span></p>"
+     },
+     "handle": "fpvcycle-toothfairy-2-frame",
+     "id": "gid://shopify/p/1drXWPbPYPOX1OgfTfqFWH",
+     "media": [
+      {
+       "alt_text": "FPVCycle ToothFairy 2 Frame",
+       "height": 2250,
+       "preview": {
+        "height": 2250,
+        "url": "https://cdn.shopify.com/s/files/1/0172/6051/1286/products/20210618_185242-2_Custom_-BobKabab.jpg",
+        "width": 3000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0172/6051/1286/products/20210618_185242-2_Custom_-BobKabab.jpg",
+       "width": 3000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated DJI Vista mounting: Enables seamless compatibility with DJI Vista accessories for improved camera stability",
+       "Vibration management arm mounting mechanism: Reduces vibrational noise and resonance for smoother flight",
+       "Lightweight carbon construction: Minimizes overall drone weight for better performance and agility",
+       "Multiple arm length options: Accommodates various motor sizes and power levels for optimal balance",
+       "Optional carbon shim: Allows easy vibration damping and improved reliability with damping grease"
+      ],
+      "unique_selling_points": [
+       "Integrated DJI Vista mounting and advanced vibration management arm system for enhanced stability and reliability."
+      ]
+     },
+     "options": [
+      {
+       "name": "Choose",
+       "values": [
+        {
+         "label": "3\" Spare Arms (4 Pack)"
+        },
+        {
+         "label": "3\" ToothFairy 2 - Cinewhoop (NO DUCTS)"
+        },
+        {
+         "label": "5\" Spare Arms 4mm (4 Pack)"
+        },
+        {
+         "label": "5\" ToothFairy 2 with 4mm Arms"
+        },
+        {
+         "label": "Carbon Prop Guards for 3.5\" Arms (Set of 4)"
+        },
+        {
+         "label": "Spare M2 Pressnuts (4mm press OD) for ToothFairy 2"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1099,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 38,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "FPVCycle ToothFairy 2 Frame",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://fpvcycle.com/buy/39823973351535:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>This frame is cut from really nice carbon.</strong></p>\n<p><br>Low weight, excellent balance, easy to use, easy to service, respectable component protection, and DJI Vista ready. These were the goals of the Tooth Fairy 2. The low weight of this design will satisfy those 250g builds but it's really designed to handle ~325g AUW 5\" to 5.21\" build. Of course you can always run past that weight like we do so it's really up to you. We regularly carry GoPro's on our builds.</p>\n<p><meta charset=\"utf-8\">The most unique feature of this frame is that the Vista is integrated into the structure. The entire rear standoff is the Vista. Also, the 3\" is designed with the option to use <a href=\"https://fpvcycle.com/products/geprc-2-prop-guard-ring-4-pack\" data-mce-href=\"https://fpvcycle.com/products/geprc-2-prop-guard-ring-4-pack\" target=\"_blank\">these prop guards</a> if desired.</p>\n<p>Light frames suffer from vibrational noise and resonance.  These complications get worse as you increase the power of the quad.  In order to improve reliability of these matters, t<span>his design has a unique vibration management arm mounting mechanism pointed out by Chris Rosser (YouTube: Chris Rosser).  The mechanism introduces friction without the loss of rigidity.  As a result, the 4mm arm version of this frame will be able to handle more powerful motors than it should.  However because the frame does have somewhat long skinny arms, the 5mm version is STRONGLY recommended to use for any build that has motors larger than 2303 or otherwise 23mm short motors.  The 5mm version should be selected for use with our 23mm tall motors.<br><br>Furthermore, there is an optional included carbon shim for ease of use with damping grease.  This shim</span> is intended to be used with Nyogel 767a, Nyogel pg-44A or some other vibration damping grease (or tape if you wish). The point is to put the grease between the shim and the main deck so you can swap arms easily without dealing with gooey grease all over the arms. The included arm screws should fit with the shim and grease but they could be 1mm longer. You may want to acquire 12mm M2 screws if you wish. Future batches will include slightly longer screws.</p>\n<p><span><br><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oHONikUxCcw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe><br><br></span></p>\n<h2><a href=\"https://fpvcycle.com/products/toothfairy-2-antenna-and-gopro-mount-options\" target=\"_blank\"><strong>Gopro and antenna mounts CLICK HERE</strong></a></h2>\n<h2><span> Specifications of each version:</span></h2>\n<h4><span>5\" ToothFairy 2:</span></h4>\n<ul>\n<li><span>Fits up to 5.25\" props</span></li>\n<li><span>~52g built (56g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with two screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span><strong>4mm arms</strong>, 2mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>5\" ToothFairy 2 with 5mm arms:</span></h4>\n<ul>\n<li>4 arms included with kit</li>\n<li><span>Fits up to 5.25\" props</span></li>\n<li><span>~61g built (65g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with four screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>5mm arms, 2mm body, 1.5mm top and cam plates</span></li>\n<li><strong>To use carbon shim, you will need four M2x12mm screws.  Sorry for the oversight.</strong></li>\n</ul>\n<h4><span>ToothFairy 2 - 3\" Cinewhoop:</span></h4>\n<ul>\n<li>4 arms included with kit</li>\n<li><span>Use the following <a href=\"https://fpvcycle.com/products/cinesplore-v3-duct-set-of-4?_pos=1&amp;_sid=27906aa30&amp;_ss=r\">duct </a> or print your own</span></li>\n<li><span>~109g built (113g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 12x12 M2 with four screw holes</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>4mm arms, 2mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>3\" ToothFairy 2:</span></h4>\n<ul>\n<li><span>4 arms included with kit</span></li>\n<li><span>Optional prop guards and 2\" props</span></li>\n<li><span>~42g built (46g with electronic mounting hardware)</span></li>\n<li><span>Central 20x20 and Whoop mount pattern (~25.5x25.5)</span></li>\n<li><span>Motor mounting: 9x9 M2 and 12x12 M2</span></li>\n<li><span>Rear 20x20 mount pattern for Vista or other items</span></li>\n<li><span>Nylon spacers included for 20x20 VTX board or otherwise</span></li>\n<li><span>15mm build height</span></li>\n<li><span>All steel hardware</span></li>\n<li><span>Integrated Vista into frame design</span></li>\n<li><span>Top mounted battery</span></li>\n<li><span>20mm cam mounting width</span></li>\n<li><span>4mm arms, 1.5mm body, 1.5mm top and cam plates</span></li>\n</ul>\n<h4><span>3.5\" ToothFairy 2 arms + Guard option:</span></h4>\n<ul>\n<li><span>3.5\" arms for the Tooth Fairy 2 - set of 4</span></li>\n<li>Light guards are an option for an open prop Cinewhoop alternative.</li>\n<li>The <a href=\"https://fpvcycle.com/products/fpvcycle-2203-motor-choose-kv?_pos=1&amp;_sid=881cebe50&amp;_ss=r\">23mm short</a> motor or comparable is recommended for 3.5\" props.</li>\n<li><span>In time, we will have a 3.5\" kit as well but not until June or July</span></li>\n<li><span>HQ 8 blade 89mm prop + guards is as silent as I've ever heard a Cinewhoop </span></li>\n</ul>\n<h3><span style=\"font-size: 16.38px;\" mce-data-marked=\"1\">Recommended Parts for 5\":</span></h3>\n<ul>\n<li><span>2004 - 2306 motor size</span></li>\n<li><span>Gemfan F3 prop</span></li>\n<li><span>~90-130g battery</span></li>\n<li><span>AIO Whoop board</span></li>\n<li><span>2004 motors if available- must be kept as light as possible</span></li>\n</ul>\n<h3><span style=\"font-size: 16.38px;\">Recommended Parts for 3\":</span></h3>\n<ul>\n<li><span>1404 minimum, 160X motor size recommended</span></li>\n<li><span>Moderately aggressive prop</span></li>\n<li><span>AIO Whoop board</span></li>\n<li><span>~60-100g battery</span></li>\n</ul>\n<p><span><meta charset=\"utf-8\"> <strong>About vibration management options for any build:</strong> </span></p>\n<p><span>Damping grease between frame joints and under motors has been shown to make a significant improvement in quad resonance management. The difference can be as significant as going from completely un-flyable mess to beautifully flyable. More commonly it's just a minor improvement and only if you're at least somewhat versed in tuning filters. To those that don't burden themselves with tuning, there may not be any benefit other than consistency of performance across several builds. Other damping options such as electrical tape, TPU or some other solid material are only sometimes helpful and only on some quad builds (YMMV). Damping grease will improve ALL quads resonance profile without exception. The difference is that grease is a liquid and tape or some other material is a solid. Solids have elasticity while liquids do not. In fact if electrical tape helps, it's the sticky liquid glue attached to the solid electrical tape that is doing the work. The solid component of the tape is making it worse because it has elasticity. Regardless, if you're looking for performance improvements, vibration management and reducing filters are the easiest way to go. At this point it is recommended to use some sort of damping grease on every build because of how significant the benefits can be. That being said, we will also be the first to point out that vibration management is not at all required the vast majority of the time because of the software management in all flight code today.</span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "fpvcycle-toothfairy-2-frame",
+       "id": "gid://shopify/ProductVariant/39823973351535",
+       "list_price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "FPVCycle ToothFairy 2 Frame",
+         "height": 2250,
+         "preview": {
+          "height": 2250,
+          "url": "https://cdn.shopify.com/s/files/1/0172/6051/1286/products/20210618_185242-2_Custom_-BobKabab.jpg",
+          "width": 3000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0172/6051/1286/products/20210618_185242-2_Custom_-BobKabab.jpg",
+         "width": 3000
+        }
+       ],
+       "options": [
+        {
+         "label": "3\" Spare Arms (4 Pack)",
+         "name": "Choose"
+        }
+       ],
+       "price": {
+        "amount": 1099,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 27,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "fpv-cycle.myshopify.com",
+        "id": "gid://shopify/Shop/17260511286",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17260511286/policies/10287284278.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17260511286/policies/10287317046.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17260511286/policies/10287251510.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17260511286/policies/10287349814.html"
+         }
+        ],
+        "name": "FPVCycle",
+        "url": "https://fpvcycle.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6708063305839",
+       "source": "shopify",
+       "title": "FPVCycle ToothFairy 2 Frame",
+       "url": "https://fpvcycle.com/products/fpvcycle-toothfairy-2-frame?variant=39823973351535&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>NewBeeDrone LionBee 3inch Frame</h2>\n<p class=\"p3\">The <span class=\"s2\"><b>NewBeeDrone LionBee Long Range Frame</b></span> introduces a completely new structural concept designed specifically for 1S long-range FPV platforms. Unlike traditional micro-long-range frames, the LionBee Frame is engineered around a dedicated <span class=\"s2\"><b>18650 battery chamber</b></span>, creating a rigid, optimized layout that enhances balance, reduces vibration, and increases endurance.</p>\n<p class=\"p3\">This frame was built to support the innovative LionBee AIO flight controller and its extended mounting architecture. With a unique <span class=\"s2\"><b>25.5 × 82mm FC mounting pattern</b></span>, the LionBee Frame allows the AIO board to integrate directly with the battery chamber, forming a unified structural module that improves both electrical and mechanical performance.</p>\n<p class=\"p3\">Constructed from lightweight, high-strength carbon fiber, the LionBee Frame delivers stability and durability while maintaining the efficiency required for long-range missions. The stretched body layout provides smoother airflow and improved propeller efficiency, making it ideal for endurance flying, GPS-assisted missions, and ultra-light exploration builds.</p>\n<p class=\"p3\">With a modular, replaceable battery chamber design, field maintenance becomes simple and reliable—allowing fast swaps after impacts without requiring soldering. Combined with a clean top-mount component layout, the LionBee Frame is built for developers, explorers, and pilots who want to push 1S long-range performance into a new generation.</p>\n<p class=\"p1\"> </p>\n<h4><b>Key Features</b></h4>\n<ul>\n<li>\n<p class=\"p1\">Designed specifically for 1S long-range FPV builds</p>\n</li>\n<li>\n<p class=\"p1\">Structural integration with 18650 battery chamber</p>\n</li>\n<li>\n<p class=\"p1\">Supports the LionBee AIO FC with <span class=\"s1\"><b>25.5 × 82mm mounting pattern</b><b></b></span></p>\n</li>\n<li>\n<p class=\"p1\">Lightweight, high-strength carbon fiber construction</p>\n</li>\n<li>\n<p class=\"p1\">Stretched body layout for improved aerodynamic efficiency</p>\n</li>\n<li>\n<p class=\"p1\">Modular, replaceable 18650 battery chamber design</p>\n</li>\n<li>\n<p class=\"p1\">Optimized center-of-gravity placement for stable cruising</p>\n</li>\n<li>\n<p class=\"p1\">Compatible with M10Q GPS modules and long-range accessories</p>\n</li>\n<li>\n<p class=\"p1\">Clean top-mounted electronics layout for simplified wiring</p>\n</li>\n<li>\n<p class=\"p1\">Engineered for developers, innovators, and long-range explorers</p>\n</li>\n</ul>\n<p class=\"p1\"> </p>\n<p class=\"p1\"> </p>\n<h4><b>Specifications</b></h4>\n<ul>\n<li>\n<p class=\"p1\"><b>Frame Material:</b><span class=\"s1\"> Carbon Fiber</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Wheelbase:</b></span> 3-inch class</p>\n</li>\n<li>\n<p class=\"p1\"><b>FC Mounting Pattern:</b><span class=\"s1\"> </span><b>25.5 × 82mm</b><span class=\"s1\"> (LionBee AIO format)</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Motor Mounting:</b></span> 9mm / 1202 class motors</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Battery Type:</b></span> 1× 18650 Li-ion cell (JP30 recommended)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Battery Mounting:</b></span> Integrated replaceable battery chamber</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Antenna Mounting:</b></span> Supports IPEX1, IPEX3, and TPU brackets</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Camera Mounting:</b></span> Micro-FPV camera compatible</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Weight:</b></span> Ultra-light optimized for endurance</p>\n</li>\n</ul>\n<p class=\"p1\"> </p>\n<h4><b>What’s Included</b></h4>\n<ul>\n<li>\n<p class=\"p1\"><b>1× Carbon Fiber LionBee Frame Plate Set</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>1× TPU Camera Mount</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>1× TPU GPS Mount</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>Full Screw &amp; Hardware Kit</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>Adhesive pads and mounting accessories</b></p>\n</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "newbeedrone-lionbee-3inch-frame",
+     "id": "gid://shopify/p/173wpyfiASI7BcFv3y3OHD",
+     "media": [
+      {
+       "alt_text": "NewBeeDrone LionBee 3inch Frame NewBeeDrone",
+       "height": 2268,
+       "preview": {
+        "height": 2268,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-LionBee-3inch-Frame-NewBeeDrone-155621958.jpg",
+        "width": 2268
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-LionBee-3inch-Frame-NewBeeDrone-155621958.jpg",
+       "width": 2268
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dedicated 18650 battery chamber: Enhances balance, reduces vibration, and increases endurance for long range flights",
+       "Lightweight high-strength carbon fiber construction: Provides stability and durability while maintaining efficiency",
+       "Modular replaceable battery chamber design: Allows fast, solder-free battery swaps for field maintenance",
+       "25.5/82mm FC mounting pattern: Supports direct integration with the LionBee AIO flight controller for improved performance",
+       "S stretched body layout: Improves aerodynamic efficiency and propeller performance for smoother flight"
+      ],
+      "unique_selling_points": [
+       "Dedicated 18650 battery chamber and modular design enable fast, solder-free battery swaps and unified structural integration with the LionBee AIO flight controller."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1424,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1424,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4
+     },
+     "title": "NewBeeDrone LionBee 3inch Frame",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/52725296464240:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>NewBeeDrone LionBee 3inch Frame</h2>\n<p class=\"p3\">The <span class=\"s2\"><b>NewBeeDrone LionBee Long Range Frame</b></span> introduces a completely new structural concept designed specifically for 1S long-range FPV platforms. Unlike traditional micro-long-range frames, the LionBee Frame is engineered around a dedicated <span class=\"s2\"><b>18650 battery chamber</b></span>, creating a rigid, optimized layout that enhances balance, reduces vibration, and increases endurance.</p>\n<p class=\"p3\">This frame was built to support the innovative LionBee AIO flight controller and its extended mounting architecture. With a unique <span class=\"s2\"><b>25.5 × 82mm FC mounting pattern</b></span>, the LionBee Frame allows the AIO board to integrate directly with the battery chamber, forming a unified structural module that improves both electrical and mechanical performance.</p>\n<p class=\"p3\">Constructed from lightweight, high-strength carbon fiber, the LionBee Frame delivers stability and durability while maintaining the efficiency required for long-range missions. The stretched body layout provides smoother airflow and improved propeller efficiency, making it ideal for endurance flying, GPS-assisted missions, and ultra-light exploration builds.</p>\n<p class=\"p3\">With a modular, replaceable battery chamber design, field maintenance becomes simple and reliable—allowing fast swaps after impacts without requiring soldering. Combined with a clean top-mount component layout, the LionBee Frame is built for developers, explorers, and pilots who want to push 1S long-range performance into a new generation.</p>\n<p class=\"p1\"> </p>\n<h4><b>Key Features</b></h4>\n<ul>\n<li>\n<p class=\"p1\">Designed specifically for 1S long-range FPV builds</p>\n</li>\n<li>\n<p class=\"p1\">Structural integration with 18650 battery chamber</p>\n</li>\n<li>\n<p class=\"p1\">Supports the LionBee AIO FC with <span class=\"s1\"><b>25.5 × 82mm mounting pattern</b><b></b></span></p>\n</li>\n<li>\n<p class=\"p1\">Lightweight, high-strength carbon fiber construction</p>\n</li>\n<li>\n<p class=\"p1\">Stretched body layout for improved aerodynamic efficiency</p>\n</li>\n<li>\n<p class=\"p1\">Modular, replaceable 18650 battery chamber design</p>\n</li>\n<li>\n<p class=\"p1\">Optimized center-of-gravity placement for stable cruising</p>\n</li>\n<li>\n<p class=\"p1\">Compatible with M10Q GPS modules and long-range accessories</p>\n</li>\n<li>\n<p class=\"p1\">Clean top-mounted electronics layout for simplified wiring</p>\n</li>\n<li>\n<p class=\"p1\">Engineered for developers, innovators, and long-range explorers</p>\n</li>\n</ul>\n<p class=\"p1\"> </p>\n<p class=\"p1\"> </p>\n<h4><b>Specifications</b></h4>\n<ul>\n<li>\n<p class=\"p1\"><b>Frame Material:</b><span class=\"s1\"> Carbon Fiber</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Wheelbase:</b></span> 3-inch class</p>\n</li>\n<li>\n<p class=\"p1\"><b>FC Mounting Pattern:</b><span class=\"s1\"> </span><b>25.5 × 82mm</b><span class=\"s1\"> (LionBee AIO format)</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Motor Mounting:</b></span> 9mm / 1202 class motors</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Battery Type:</b></span> 1× 18650 Li-ion cell (JP30 recommended)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Battery Mounting:</b></span> Integrated replaceable battery chamber</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Antenna Mounting:</b></span> Supports IPEX1, IPEX3, and TPU brackets</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Camera Mounting:</b></span> Micro-FPV camera compatible</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><b>Weight:</b></span> Ultra-light optimized for endurance</p>\n</li>\n</ul>\n<p class=\"p1\"> </p>\n<h4><b>What’s Included</b></h4>\n<ul>\n<li>\n<p class=\"p1\"><b>1× Carbon Fiber LionBee Frame Plate Set</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>1× TPU Camera Mount</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>1× TPU GPS Mount</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>Full Screw &amp; Hardware Kit</b><b></b></p>\n</li>\n<li>\n<p class=\"p1\"><b>Adhesive pads and mounting accessories</b></p>\n</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "newbeedrone-lionbee-3inch-frame",
+       "id": "gid://shopify/ProductVariant/52725296464240",
+       "list_price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "NewBeeDrone LionBee 3inch Frame NewBeeDrone",
+         "height": 2268,
+         "preview": {
+          "height": 2268,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-LionBee-3inch-Frame-NewBeeDrone-155621958.jpg",
+          "width": 2268
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-LionBee-3inch-Frame-NewBeeDrone-155621958.jpg",
+         "width": 2268
+        }
+       ],
+       "price": {
+        "amount": 1424,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.5
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14960026288496",
+       "source": "shopify",
+       "title": "NewBeeDrone LionBee 3inch Frame",
+       "url": "https://newbeedrone.com/products/newbeedrone-lionbee-3inch-frame?variant=52725296464240&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>Introducing the FlyfishRC Volador VX3 frame Kit—Compact yet powerful design that delivers a true 5-inch flight experience in a smaller footprint. Featuring a Squashed X layout for precise control and DJI O4 Pro system compatibility these frames are built with premium T700 carbon fiber and CNC aluminum for durability and sleek aesthetics.</span></p>\n<p>Check out our other <a href=\"https://www.racedayquads.com/collections/2-3-frames\" target=\"_blank\">3\" frames</a>, as well as the rest of our <a href=\"https://www.racedayquads.com/collections/flyfish-rc-products\" title=\"All FlyFishRC Products for sale at RaceDayQuads!\" target=\"_blank\">FlyFishRC products</a> selection!</p>\n<h3>Features</h3>\n<ul>\n<li>Supports DJI O4 Pro</li>\n<li>Reinforced, thickened arm design for improved impact resistance</li>\n<li>Grade 12.9 hardware pre-coated with Loctite for extra reliability</li>\n<li>Precision-molded TPU components for a clean, integrated build</li>\n<li>Premium T700 carbon fiber plates for strength and durability</li>\n<li>7075 aluminum alloy camera mounts for added protection</li>\n<li>Custom anti-slip battery pad for secure battery placement</li>\n</ul>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/vx3O4Infographic_2.jpg?v=1752786571\" alt='FlyFishRC Volador VX3 3.5\" O4 Frame Kit - Black' style=\"margin-bottom: 16px; float: none;\"></div>\n<h3>Specifications</h3>\n<ul>\n<li>Arm Thickness: 3.5mm</li>\n<li>Top plate thickness: 2mm</li>\n<li>Middle plate thickness: 2.4mm</li>\n<li>Bottom plate thickness: 2.4mm</li>\n<li>Keystone thickness: 3.5mm</li>\n<li>CNC Side plate thickness: 5mm</li>\n<li>Propeller size: 3 inch</li>\n<li>Material: T700 carbon plate</li>\n<li>FPV cam spacing: 19mm/20mm</li>\n<li>VX3 Weight: 68.3g(with TPU parts)</li>\n<li>Color: Black</li>\n<li>VX3 Total Dimensions:118mm x 135mm</li>\n<li>Wheelbase: 144mm</li>\n<li>Stack mounting holes: 20mm x 20mm / 25.5mm x 25.5mm(M2)</li>\n<li>VTX mounting holes: 20mm x 20mm / 25.5mm x 25.5mm(M2)</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li><span>1x FlyFishRC Volador VX3 3\" O4 Pro Frame Kit - Black</span></li>\n</ul>"
+     },
+     "handle": "flyfishrc-volador-vx3-3-o4-pro-frame-kit-black",
+     "id": "gid://shopify/p/5IsGrDkkmyho4TKo0lHJcP",
+     "media": [
+      {
+       "alt_text": "FLYFISH Frame FlyFishRC Volador VX3 3.5\" O4 Frame Kit - Black",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flyfishrc-volador-vx3-3-5-o4-frame-kit-black-frame-1178723945.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flyfishrc-volador-vx3-3-5-o4-frame-kit-black-frame-1178723945.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Squashed X layout enables precise control for advanced FPV maneuvers",
+       "Reinforced thickened arm design improves impact resistance for long-lasting durability",
+       "Premium T700 carbon fiber plates provide strength and a sleek appearance",
+       "CNC aluminum alloy components ensure lightweight yet robust construction",
+       "Custom anti-slip battery pad and silicone damping board plugin enhance safety and camera stability"
+      ],
+      "unique_selling_points": [
+       "Squashed X layout and reinforced T700 carbon fiber construction deliver a true 5-inch flight experience in a smaller, durable frame."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4549,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4549,
+       "currency": "USD"
+      }
+     },
+     "title": "FlyFishRC Volador VX3 3\" O4 Pro Freestyle Frame Kit - Black",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/42202680197233:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>Introducing the FlyfishRC Volador VX3 frame Kit—Compact yet powerful design that delivers a true 5-inch flight experience in a smaller footprint. Featuring a Squashed X layout for precise control and DJI O4 Pro system compatibility these frames are built with premium T700 carbon fiber and CNC aluminum for durability and sleek aesthetics.</span></p>\n<p>Check out our other <a href=\"https://www.racedayquads.com/collections/2-3-frames\" target=\"_blank\">3\" frames</a>, as well as the rest of our <a href=\"https://www.racedayquads.com/collections/flyfish-rc-products\" title=\"All FlyFishRC Products for sale at RaceDayQuads!\" target=\"_blank\">FlyFishRC products</a> selection!</p>\n<h3>Features</h3>\n<ul>\n<li>Supports DJI O4 Pro</li>\n<li>Reinforced, thickened arm design for improved impact resistance</li>\n<li>Grade 12.9 hardware pre-coated with Loctite for extra reliability</li>\n<li>Precision-molded TPU components for a clean, integrated build</li>\n<li>Premium T700 carbon fiber plates for strength and durability</li>\n<li>7075 aluminum alloy camera mounts for added protection</li>\n<li>Custom anti-slip battery pad for secure battery placement</li>\n</ul>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/vx3O4Infographic_2.jpg?v=1752786571\" alt='FlyFishRC Volador VX3 3.5\" O4 Frame Kit - Black' style=\"margin-bottom: 16px; float: none;\"></div>\n<h3>Specifications</h3>\n<ul>\n<li>Arm Thickness: 3.5mm</li>\n<li>Top plate thickness: 2mm</li>\n<li>Middle plate thickness: 2.4mm</li>\n<li>Bottom plate thickness: 2.4mm</li>\n<li>Keystone thickness: 3.5mm</li>\n<li>CNC Side plate thickness: 5mm</li>\n<li>Propeller size: 3 inch</li>\n<li>Material: T700 carbon plate</li>\n<li>FPV cam spacing: 19mm/20mm</li>\n<li>VX3 Weight: 68.3g(with TPU parts)</li>\n<li>Color: Black</li>\n<li>VX3 Total Dimensions:118mm x 135mm</li>\n<li>Wheelbase: 144mm</li>\n<li>Stack mounting holes: 20mm x 20mm / 25.5mm x 25.5mm(M2)</li>\n<li>VTX mounting holes: 20mm x 20mm / 25.5mm x 25.5mm(M2)</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li><span>1x FlyFishRC Volador VX3 3\" O4 Pro Frame Kit - Black</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "flyfishrc-volador-vx3-3-o4-pro-frame-kit-black",
+       "id": "gid://shopify/ProductVariant/42202680197233",
+       "media": [
+        {
+         "alt_text": "FLYFISH Frame FlyFishRC Volador VX3 3.5\" O4 Frame Kit - Black",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flyfishrc-volador-vx3-3-5-o4-frame-kit-black-frame-1178723945.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flyfishrc-volador-vx3-3-5-o4-frame-kit-black-frame-1178723945.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 4549,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7422292951153",
+       "source": "shopify",
+       "title": "FlyFishRC Volador VX3 3\" O4 Pro Freestyle Frame Kit - Black",
+       "url": "https://www.racedayquads.com/products/flyfishrc-volador-vx3-3-o4-pro-frame-kit-black?variant=42202680197233&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">The Kintek S3 is yet another great quadcopter kit in the exclusive, Volare line of frames. Great for freestyle and cruising, the X-Frame design allows for clean airflow around the propellers for a smooth flight. This frame also has two sets of 20x20mm mounting holes and an additional 25x25mm set, making it easy to install an FC &amp; ESC stack, along with additional 20x20mm components to be mounted side-by-side, like a DJI Vista Unit.</span></p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">FEATURES:</strong></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Full 3K High-Quality Carbon Fiber</li>\n<li data-mce-fragment=\"1\">Multiple-Sized Hole Patterns for Various Board-Mounting Options</li>\n<li data-mce-fragment=\"1\">Fits 3\" Propellers</li>\n<li data-mce-fragment=\"1\">Fits Micro FPV Cameras</li>\n<li data-mce-fragment=\"1\">Fits 25x25mm Digital Video Transmitters</li>\n</ul>\n<p data-mce-fragment=\"1\"> </p>\n<ul data-mce-fragment=\"1\"></ul>\n<ul data-mce-fragment=\"1\"></ul>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">SPECIFICATIONS:</strong></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Wheelbase: 150mm</li>\n<li data-mce-fragment=\"1\">Plate Thickness: 2mm</li>\n<li data-mce-fragment=\"1\">Arm Thickness: 3mm</li>\n<li data-mce-fragment=\"1\">FC Mounting Holes: 20x20mm &amp; 25x25mm</li>\n<li data-mce-fragment=\"1\">Additional Rear Mounting Holes: 20x20mm</li>\n<li data-mce-fragment=\"1\">Battery Position: Top Mount</li>\n<li data-mce-fragment=\"1\">Camera Size: 19x19mm Micro FPV Cameras</li>\n<li data-mce-fragment=\"1\">Mounting Motor Hole Pattern: 9mm to 12mm</li>\n<li data-mce-fragment=\"1\">Propeller Size: 3\"</li>\n</ul>\n<p> </p>\n<p><strong data-mce-fragment=\"1\">HELPFUL LINKS:</strong></p>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/1751/0217/files/Kin_Diagram.pdf?v=1680116846\" target=\"_blank\"><strong>Exploded View - Diagram</strong></a></li>\n</ul>\n<p data-mce-fragment=\"1\">  </p>\n<ul data-mce-fragment=\"1\"></ul>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">INCLUDES:</strong></p>\n<p data-mce-fragment=\"1\">(1) Kintek Quadcopter Frame Kit<br>(2) Volare 16 x 170mm Battery Straps  <br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">(1) Antenna Mount (3D Printed with TPU)<br></span>(4) Arm Bumpers (3D Printed with TPU)<br data-mce-fragment=\"1\">(1) Battery Pad</p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong>NOTES:</strong></p>\n<ul>\n<li><em data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Always apply <span style=\"color: #027aff;\">blue </span>threadlocker to <span style=\"text-decoration: underline;\">all</span> screws to keep them from falling out.<br><br></span></strong></em></li>\n</ul>\n<p>Have a 3D printer and want to print some accessories for this product? Then <strong><a title=\"Kintek TPU\" href=\"https://www.thingiverse.com/rcngo/collections/37782114/things\" target=\"_blank\">click here</a></strong>  to see all your options at Thingiverse.com</p>"
+     },
+     "handle": "volare-kintek-s3-fpv-drone-frame-kit-3-150mm",
+     "id": "gid://shopify/p/6VYNPc2bHezOBNb1r21GPq",
+     "media": [
+      {
+       "alt_text": "Volare Kintek S3 FPV Drone Frame Kit (3\" / 150mm)",
+       "height": 1063,
+       "preview": {
+        "height": 1063,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/products/volare_kintek_frame_1.png",
+        "width": 1063
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/products/volare_kintek_frame_1.png",
+       "width": 1063
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "X-frame design enables clean airflow for smoother, more stable flight",
+       "Full 3K high-quality carbon fiber construction increases strength and reduces weight",
+       "Multiple mounting hole patterns accommodate various FC, ESC, and camera setups",
+       "Fits 3 inch propellers and micro FPV cameras for versatile compatibility",
+       "Includes essential accessories for immediate drone assembly"
+      ],
+      "unique_selling_points": [
+       "Exclusive X-frame design with multiple mounting options and full 3K carbon fiber construction for superior performance and durability."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3999,
+       "currency": "USD"
+      }
+     },
+     "title": "Volare Kintek S3 FPV Drone Frame Kit (3\" / 150mm)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/44036056088790:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">The Kintek S3 is yet another great quadcopter kit in the exclusive, Volare line of frames. Great for freestyle and cruising, the X-Frame design allows for clean airflow around the propellers for a smooth flight. This frame also has two sets of 20x20mm mounting holes and an additional 25x25mm set, making it easy to install an FC &amp; ESC stack, along with additional 20x20mm components to be mounted side-by-side, like a DJI Vista Unit.</span></p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">FEATURES:</strong></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Full 3K High-Quality Carbon Fiber</li>\n<li data-mce-fragment=\"1\">Multiple-Sized Hole Patterns for Various Board-Mounting Options</li>\n<li data-mce-fragment=\"1\">Fits 3\" Propellers</li>\n<li data-mce-fragment=\"1\">Fits Micro FPV Cameras</li>\n<li data-mce-fragment=\"1\">Fits 25x25mm Digital Video Transmitters</li>\n</ul>\n<p data-mce-fragment=\"1\"> </p>\n<ul data-mce-fragment=\"1\"></ul>\n<ul data-mce-fragment=\"1\"></ul>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">SPECIFICATIONS:</strong></p>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Wheelbase: 150mm</li>\n<li data-mce-fragment=\"1\">Plate Thickness: 2mm</li>\n<li data-mce-fragment=\"1\">Arm Thickness: 3mm</li>\n<li data-mce-fragment=\"1\">FC Mounting Holes: 20x20mm &amp; 25x25mm</li>\n<li data-mce-fragment=\"1\">Additional Rear Mounting Holes: 20x20mm</li>\n<li data-mce-fragment=\"1\">Battery Position: Top Mount</li>\n<li data-mce-fragment=\"1\">Camera Size: 19x19mm Micro FPV Cameras</li>\n<li data-mce-fragment=\"1\">Mounting Motor Hole Pattern: 9mm to 12mm</li>\n<li data-mce-fragment=\"1\">Propeller Size: 3\"</li>\n</ul>\n<p> </p>\n<p><strong data-mce-fragment=\"1\">HELPFUL LINKS:</strong></p>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/1751/0217/files/Kin_Diagram.pdf?v=1680116846\" target=\"_blank\"><strong>Exploded View - Diagram</strong></a></li>\n</ul>\n<p data-mce-fragment=\"1\">  </p>\n<ul data-mce-fragment=\"1\"></ul>\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">INCLUDES:</strong></p>\n<p data-mce-fragment=\"1\">(1) Kintek Quadcopter Frame Kit<br>(2) Volare 16 x 170mm Battery Straps  <br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">(1) Antenna Mount (3D Printed with TPU)<br></span>(4) Arm Bumpers (3D Printed with TPU)<br data-mce-fragment=\"1\">(1) Battery Pad</p>\n<p data-mce-fragment=\"1\"> </p>\n<p data-mce-fragment=\"1\"><strong>NOTES:</strong></p>\n<ul>\n<li><em data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Always apply <span style=\"color: #027aff;\">blue </span>threadlocker to <span style=\"text-decoration: underline;\">all</span> screws to keep them from falling out.<br><br></span></strong></em></li>\n</ul>\n<p>Have a 3D printer and want to print some accessories for this product? Then <strong><a title=\"Kintek TPU\" href=\"https://www.thingiverse.com/rcngo/collections/37782114/things\" target=\"_blank\">click here</a></strong>  to see all your options at Thingiverse.com</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "volare-kintek-s3-fpv-drone-frame-kit-3-150mm",
+       "id": "gid://shopify/ProductVariant/44036056088790",
+       "list_price": {
+        "amount": 4299,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Volare Kintek S3 FPV Drone Frame Kit (3\" / 150mm)",
+         "height": 1063,
+         "preview": {
+          "height": 1063,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/products/volare_kintek_frame_1.png",
+          "width": 1063
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/products/volare_kintek_frame_1.png",
+         "width": 1063
+        }
+       ],
+       "price": {
+        "amount": 3999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8003567288534",
+       "source": "shopify",
+       "title": "Volare Kintek S3 FPV Drone Frame Kit (3\" / 150mm)",
+       "url": "https://www.rc-n-go.com/products/volare-kintek-s3-fpv-drone-frame-kit-3-150mm?variant=44036056088790&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>NewBeeDrone SavageBee 3\" Frame V1.7</h2>\n<p>The <strong>NewBeeDrone SavageBee 3\" Frame </strong> is a durable, lightweight option for micro FPV pilots looking for a budget-friendly frame. This 3-inch frame excels in both freestyle and racing, providing superior maneuverability, stability, and strength. Even though it's the older version, the SavageBee 3\" frame delivers the performance that pilots need to handle tight turns, flips, and fast movements. Its lightweight build allows for excellent control and agility during flights, making it ideal for navigating challenging environments.</p>\n<p>For drone enthusiasts looking for an affordable and reliable solution, this frame offers exceptional durability, making it resistant to crashes and impacts. Whether you’re upgrading an old build or starting a new one, this frame is the perfect foundation for your drone setup at a discounted price.</p>\n<p><strong>Key Features</strong>:</p>\n<ul>\n<li>\n<strong>3-inch Frame</strong>: Optimized for both freestyle and racing.</li>\n<li>\n<strong>Lightweight Construction</strong>: Enhances control and agility.</li>\n<li>\n<strong>Durability</strong>: Built to withstand impact during intense flights.</li>\n<li>\n<strong>Blowout Price</strong>: Great deal for FPV builders on a budget.</li>\n</ul>\n<p><em>Add to your drone build today and enjoy top-tier performance with the NewBeeDrone SavageBee 3\" Frame!</em></p>\n<p>Click here for <a rel=\"noopener\" href=\"https://newbeedrone.com/products/savagebee-frame\" title='NewBeeDrone SavageBee 3\" Micro Toothpick Frame' target=\"_blank\">more information about the SavageBee</a>!</p>"
+     },
+     "handle": "newbeedrone-savagebee-3-frame-old-version-blowout",
+     "id": "gid://shopify/p/23JZdEyWSI5ly9zSf9xDK",
+     "media": [
+      {
+       "alt_text": "NewBeeDrone SavageBee 3\" Frame - Old Version Blowout - NewBeeDrone",
+       "height": 3915,
+       "preview": {
+        "height": 3915,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/products/image_ddfe7105-6b3b-43cd-a7aa-30af7af1cbeb.jpg",
+        "width": 3915
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/products/image_ddfe7105-6b3b-43cd-a7aa-30af7af1cbeb.jpg",
+       "width": 3915
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Lightweight construction enhances control and agility for precise maneuvers",
+       "Durable build withstands crashes and impacts for long-lasting use",
+       "Optimized design provides superior stability during tight turns and flips",
+       "Versatile performance suitable for both freestyle and racing drone activities",
+       "Affordable solution for upgrading or starting a new FPV drone build"
+      ],
+      "unique_selling_points": [
+       "Budget-friendly, impact-resistant 3 inch frame optimized for both freestyle and racing performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1614,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1614,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 6,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "NewBeeDrone SavageBee 3\" Frame V1.7",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/32169641672787:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=5dXtrgQ9EMEp&_gsid=5dXtrgQ9EMEp",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>NewBeeDrone SavageBee 3\" Frame V1.7</h2>\n<p>The <strong>NewBeeDrone SavageBee 3\" Frame </strong> is a durable, lightweight option for micro FPV pilots looking for a budget-friendly frame. This 3-inch frame excels in both freestyle and racing, providing superior maneuverability, stability, and strength. Even though it's the older version, the SavageBee 3\" frame delivers the performance that pilots need to handle tight turns, flips, and fast movements. Its lightweight build allows for excellent control and agility during flights, making it ideal for navigating challenging environments.</p>\n<p>For drone enthusiasts looking for an affordable and reliable solution, this frame offers exceptional durability, making it resistant to crashes and impacts. Whether you’re upgrading an old build or starting a new one, this frame is the perfect foundation for your drone setup at a discounted price.</p>\n<p><strong>Key Features</strong>:</p>\n<ul>\n<li>\n<strong>3-inch Frame</strong>: Optimized for both freestyle and racing.</li>\n<li>\n<strong>Lightweight Construction</strong>: Enhances control and agility.</li>\n<li>\n<strong>Durability</strong>: Built to withstand impact during intense flights.</li>\n<li>\n<strong>Blowout Price</strong>: Great deal for FPV builders on a budget.</li>\n</ul>\n<p><em>Add to your drone build today and enjoy top-tier performance with the NewBeeDrone SavageBee 3\" Frame!</em></p>\n<p>Click here for <a rel=\"noopener\" href=\"https://newbeedrone.com/products/savagebee-frame\" title='NewBeeDrone SavageBee 3\" Micro Toothpick Frame' target=\"_blank\">more information about the SavageBee</a>!</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "newbeedrone-savagebee-3-frame-old-version-blowout",
+       "id": "gid://shopify/ProductVariant/32169641672787",
+       "list_price": {
+        "amount": 1699,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "NewBeeDrone SavageBee 3\" Frame - Old Version Blowout - NewBeeDrone",
+         "height": 3915,
+         "preview": {
+          "height": 3915,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/products/image_ddfe7105-6b3b-43cd-a7aa-30af7af1cbeb.jpg",
+          "width": 3915
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/products/image_ddfe7105-6b3b-43cd-a7aa-30af7af1cbeb.jpg",
+         "width": 3915
+        }
+       ],
+       "price": {
+        "amount": 1614,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 6,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4645677334611",
+       "source": "shopify",
+       "title": "NewBeeDrone SavageBee 3\" Frame V1.7",
+       "url": "https://newbeedrone.com/products/newbeedrone-savagebee-3-frame-old-version-blowout?variant=32169641672787&_gsid=5dXtrgQ9EMEp&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

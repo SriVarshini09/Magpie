@@ -1,0 +1,199 @@
+{
+  "bom_line_id": "b2",
+  "name": "Brushless motor",
+  "qty": 4,
+  "line_kind": "part",
+  "status": "warning",
+  "mesh_keys": [
+    "motor"
+  ],
+  "provenance": {
+    "check": "pass",
+    "supports": [],
+    "type": "template_row",
+    "kb_ref": "kb://tpl_quadcopter#motor",
+    "template_id": "tpl_quadcopter",
+    "row_id": "motor",
+    "variant": "3in_4s",
+    "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+    "basis": "rule_of_thumb",
+    "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+  },
+  "spec": "1404, 3500–4500 KV for 3-inch props on 4S",
+  "attrs": {
+    "kv": "3500-4500",
+    "cells": "4S"
+  },
+  "confidence": 0.7,
+  "method": "kb",
+  "offers": [
+    {
+      "offer_id": "d20",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "1404 3800KV brushless motor, 4 pcs",
+      "url": "https://mock.invalid/mock_store/d20",
+      "price_usd": 39.99,
+      "units_per_pack": 4,
+      "packs_needed": 1,
+      "line_usd": 39.99,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:20:14-08:00",
+      "evidence_sha256": "92c6670835f65f5a4b6fb4bf16545d5feca8be3cde763cc28262ac30bfc1218e",
+      "status": "chosen",
+      "rerank_score": 0.9,
+      "simulated": true
+    },
+    {
+      "offer_id": "d21",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "1404 4000KV brushless motor set of 4",
+      "url": "https://mock.invalid/amazon/d21",
+      "price_usd": 44.99,
+      "units_per_pack": 4,
+      "packs_needed": 1,
+      "line_usd": 44.99,
+      "stock": "in_stock",
+      "rating": 4.3,
+      "reviews": 96,
+      "action_level": "prefilled_cart",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:20:20-08:00",
+      "evidence_sha256": "ea17594320ea17c93a80fb0d8252bf4c1e21bae5244a9a4d3e8c92f01c9f4385",
+      "status": "alternative",
+      "rerank_score": 0.86,
+      "vs_chosen_usd": 5.0,
+      "simulated": true
+    },
+    {
+      "offer_id": "d22",
+      "store_id": "seeed",
+      "store_name": "Seeed Studio",
+      "title": "1404 3800KV brushless motor, 1 pc",
+      "url": "https://mock.invalid/seeed/d22",
+      "price_usd": 12.5,
+      "units_per_pack": 1,
+      "packs_needed": 4,
+      "line_usd": 50.0,
+      "stock": "in_stock",
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:20:22-08:00",
+      "evidence_sha256": "bc63680903524622bb9cab16ac14f60390652ecf90ca2fa4cc9b9fe91f53da68",
+      "status": "alternative",
+      "rerank_score": 0.84,
+      "vs_chosen_usd": 10.01,
+      "simulated": true
+    },
+    {
+      "offer_id": "d23",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "2207 2400KV brushless motor, 4 pcs",
+      "url": "https://mock.invalid/mock_store/d23",
+      "price_usd": 54.99,
+      "units_per_pack": 4,
+      "packs_needed": 1,
+      "line_usd": 54.99,
+      "stock": "in_stock",
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:20:14-08:00",
+      "evidence_sha256": "5d517c36b6449739f8e39a8e7a7bb10c2fc7baa46f98891ee86e23f1f395db64",
+      "status": "rejected",
+      "reason": "G7: 2207 2400 KV is a 5-inch motor, outside 3500–4500 KV",
+      "rerank_score": 0.52,
+      "simulated": true
+    },
+    {
+      "offer_id": "d24",
+      "store_id": "ebay",
+      "store_name": "eBay",
+      "title": "1404 3800KV motors x4, new",
+      "url": "https://mock.invalid/ebay/d24",
+      "price_usd": 31.0,
+      "units_per_pack": 4,
+      "packs_needed": 1,
+      "line_usd": 31.0,
+      "stock": "in_stock",
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "serpapi:ebay",
+      "seen_at": "2026-11-20T13:20:25-08:00",
+      "evidence_sha256": "b9dbe47bb469b2823f2746e700ac5b698a25d2b279a97cf6870c7e805bcc2b9d",
+      "status": "refused",
+      "reason": "constraints.allowed_merchants",
+      "simulated": true
+    }
+  ],
+  "why": {
+    "tier": "cheapest",
+    "reason_codes": [
+      "cheapest_allowed",
+      "agent_cart_at_equal_price"
+    ],
+    "explanation": "The 4-pack at the mock store is the cheapest allowed set of four 1404 motors inside the template's KV range.",
+    "edited_by_user": false
+  },
+  "checks": [
+    {
+      "rule_id": "G7 KV_PROP_CELLS",
+      "result": "warn",
+      "message": "3800 KV on 4S with 3-inch props is inside the template's 3500–4500 KV range. Rule of thumb: no source was read for 3-inch. Needs your check.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g7",
+        "kb://tpl_quadcopter#motor"
+      ],
+      "bom_line_ids": [
+        "b2",
+        "b5",
+        "b7"
+      ],
+      "needs_ack": true
+    },
+    {
+      "rule_id": "G3 CELL_COUNT",
+      "result": "pass",
+      "message": "4S battery is inside the board's 2–4S range.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g3"
+      ],
+      "bom_line_ids": [
+        "b4",
+        "b7"
+      ],
+      "needs_ack": false
+    }
+  ],
+  "refusals": [
+    {
+      "rule": "merchant_allowed",
+      "clause": "constraints.allowed_merchants",
+      "attempted": "ebay",
+      "triggered_by": "store_listing",
+      "count": 1
+    }
+  ],
+  "kb": [
+    {
+      "kb_ref": "kb://tpl_quadcopter#motor",
+      "doc_title": "Template: small camera quadcopter",
+      "line_from": 1,
+      "line_to": 1,
+      "text": "Quadcopter template, row motor: 4 brushless motors, 1404, 3500–4500 KV for 3-inch props on 4S (rule of thumb; no source read for 3-inch).",
+      "score": 0.033,
+      "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ..."
+    }
+  ],
+  "needs_confirmation": false,
+  "record_hash": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+  "source_api": "mock",
+  "simulated": true
+}

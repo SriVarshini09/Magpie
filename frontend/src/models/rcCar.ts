@@ -1,0 +1,105 @@
+// The 1/16 RC car as data (PLAN Appendix C.3, Donkey Car proportions). X is the length, Y up.
+// Mesh names: chassis, printed, usb_battery, sbc, servo_driver, camera, jumpers.
+import type { PartDef } from "./types";
+
+const wheels: Array<[number, number]> = [
+  [1, 1],
+  [1, -1],
+  [-1, 1],
+  [-1, -1],
+];
+
+export const rcCar: PartDef[] = [
+  { mesh: "chassis", label: "chassis plate", shape: "roundedBox", size: [260, 4, 100], pos: [0, 30, 0], material: "plastic", explode: [0, 0, 0], order: 1 },
+  {
+    mesh: "chassis",
+    label: "wheel",
+    shape: "cylinder",
+    size: [32, 26],
+    pos: [0, 0, 0],
+    rot: [90, 0, 0],
+    material: "rubber",
+    // A lighter hub so the wheel reads as a wheel.
+    instances: wheels.map(([sx, sz]) => ({ pos: [sx * 85, 32, sz * 64], rot: [90, 0, 0], explode: [0, 0, sz * 35] })),
+    explode: [0, 0, 35],
+    order: 1,
+  },
+  {
+    mesh: "chassis",
+    label: "wheel hub",
+    shape: "cylinder",
+    size: [14, 27],
+    pos: [0, 0, 0],
+    material: "metal",
+    instances: wheels.map(([sx, sz]) => ({ pos: [sx * 85, 32, sz * 64], rot: [90, 0, 0], explode: [0, 0, sz * 35] })),
+    explode: [0, 0, 35],
+    order: 1,
+  },
+  { mesh: "chassis", label: "drive motor", shape: "cylinder", size: [18, 50], pos: [-95, 50, 0], rot: [0, 0, 90], material: "metal", explode: [0, 30, 0], order: 2 },
+  { mesh: "chassis", label: "ESC", shape: "box", size: [35, 15, 30], pos: [-45, 39.5, 30], material: "plastic", colour: "--b2c-mat-pcb-blue", explode: [0, 30, 30], order: 2 },
+  { mesh: "chassis", label: "steering servo", shape: "box", size: [40, 30, 20], pos: [100, 47, 0], material: "plastic", extras: [{ shape: "cylinder", size: [8, 5], pos: [10, 17, 0] }], explode: [0, 30, 0], order: 2 },
+  { mesh: "chassis", label: "drive battery", shape: "roundedBox", size: [110, 20, 40], pos: [10, 42, -26], material: "battery", explode: [0, 20, -60], order: 2 },
+  { mesh: "printed", label: "top plate", shape: "roundedBox", size: [200, 3, 90], pos: [0, 80.5, 0], material: "plastic", colour: "--b2c-mat-printed", explode: [0, 60, 0], order: 3 },
+  {
+    mesh: "printed",
+    label: "standoff",
+    shape: "cylinder",
+    size: [3, 47],
+    pos: [0, 0, 0],
+    material: "plastic",
+    colour: "--b2c-mat-printed",
+    instances: wheels.map(([sx, sz]) => ({ pos: [sx * 92, 55.5, sz * 40] })),
+    explode: [0, 30, 0],
+    order: 3,
+  },
+  { mesh: "usb_battery", shape: "roundedBox", size: [100, 22, 60], pos: [-30, 67, 14], material: "battery", extras: [{ shape: "box", size: [4, 8, 14], pos: [51, 0, 0] }], explode: [0, 35, 70], order: 4 },
+  {
+    mesh: "sbc",
+    shape: "box",
+    size: [85, 3, 56],
+    pos: [30, 86, 0],
+    material: "pcb",
+    // Four ports along one edge and the processor.
+    extras: [
+      { shape: "box", size: [17, 14, 14], pos: [34, 8.5, -18] },
+      { shape: "box", size: [17, 14, 14], pos: [34, 8.5, 0] },
+      { shape: "box", size: [21, 13, 16], pos: [32, 8, 19] },
+      { shape: "box", size: [14, 3, 14], pos: [-10, 3, 0] },
+      { shape: "box", size: [50, 8, 5], pos: [-12, 5.5, -24] },
+    ],
+    explode: [0, 95, 0],
+    order: 5,
+  },
+  { mesh: "servo_driver", shape: "box", size: [62, 3, 25], pos: [-60, 86, 26], material: "pcb", colour: "--b2c-mat-pcb-blue", extras: [{ shape: "box", size: [50, 9, 8], pos: [0, 6, -6] }], explode: [0, 85, 40], order: 5 },
+  {
+    mesh: "printed",
+    label: "roll cage",
+    shape: "box",
+    size: [8, 62, 8],
+    pos: [70, 113, -41],
+    material: "plastic",
+    colour: "--b2c-mat-printed",
+    extras: [
+      { shape: "box", size: [8, 62, 8], pos: [0, 0, 82] },
+      { shape: "box", size: [8, 8, 90], pos: [0, 35, 41] },
+    ],
+    explode: [0, 120, 0],
+    order: 6,
+  },
+  { mesh: "camera", shape: "box", size: [9, 24, 25], pos: [79, 158, 0], rot: [0, 0, -20], material: "pcb", extras: [{ shape: "cylinder", size: [7, 8], pos: [8, 0, 0], rot: [0, 0, 90] }], explode: [30, 140, 0], order: 7 },
+  {
+    mesh: "jumpers",
+    shape: "capsule",
+    size: [1.2, 46],
+    pos: [-22, 96, 16],
+    rot: [70, 0, 62],
+    material: "plastic",
+    colour: "--b2c-mat-accent",
+    extras: [
+      { shape: "capsule", size: [1.2, 46], pos: [0, 2, 5], rot: [0, 0, 0] },
+      { shape: "capsule", size: [1.2, 46], pos: [0, 4, 10], rot: [0, 0, 0] },
+    ],
+    explode: [0, 110, 0],
+    order: 8,
+  },
+];

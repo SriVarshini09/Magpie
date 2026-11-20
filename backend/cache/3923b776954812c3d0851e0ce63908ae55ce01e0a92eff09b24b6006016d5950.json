@@ -1,0 +1,947 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "FireBeetle 2 ESP32-E"
+  }
+ },
+ "key": "3923b776954812c3d0851e0ce63908ae55ce01e0a92eff09b24b6006016d5950",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:05-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description DFRobot Terminal Block Board Designed for FireBeetle 2 ESP32-e IoT Microcontroller Features stable, reliable connections with terminal block wiring Includes LED status indicators for each terminal block Offers an external voltage input of 7-24 V and a GDI port The Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller is an expansion shield specifically designed to be compatible with the FireBeetle 2 ESP32-E IoT Microcontroller, supporting both Wi-Fi and Bluetooth. However, it is important to note that it is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board. This expansion shield is ideally suited for those who prefer to use terminal blocks for wiring their projects. It is equipped with an additional 7-24V external voltage input and a GDI port. The use of terminal blocks ensures that wires are secured, resulting in more stable and reliable connections. Each terminal block, with the exception of GND, is fitted with an LED for status indication. A switch is incorporated into the design of the board, allowing users to turn off the LED when it is not needed. The terminal block board is characterized by its stable and reliable connections, with all pins of the mainboard broken out. The board also features an external Voltage Input of 7-24V, a GDI for connecting the display, a clear colorful silkscreen, a terminal block status indicator, and a terminal block status indicator switch. This makes it suitable for use in applications such as Smart Soil conditioners and Multiple Relays Projects. Please note that this expansion shield is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board. View more What's Included 1x Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller Dimensions 61 x 93.5 mm / 2.40 x 3.68 inch Links PDF File DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Schematics Website DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Wiki Specifications External Voltage Input: 7-24 V Screen Port: GDI 5V Port x3 3.3V Port x3 GND Port x6 Digital Port x12 Analog Port x5 I2C x3 SPI x1 Port Indicator x34 Port Indicator Color: blue, red Default ON Port Indicator: 5V, 3.3V, D0, D1, D5, D6, A4, RST"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller",
+     "id": "gid://shopify/Product/7777205158049",
+     "list_price_range": {
+      "max": {
+       "amount": 2094,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2094,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp?v=1763546579"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2094,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2094,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Interface Adapters & Converters",
+      "category:Internet of Things (IoT)",
+      "category:IO Expansion & ADCs Interfaces",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+     "url": "https://www.robotshop.com/products/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43309072580769:1",
+       "description": {
+        "html": "Description DFRobot Terminal Block Board Designed for FireBeetle 2 ESP32-e IoT Microcontroller Features stable, reliable connections with terminal block wiring Includes LED status indicators for each terminal block Offers an external voltage input of 7-24 V and a GDI port The Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller is an expansion shield specifically designed to be compatible with the FireBeetle 2 ESP32-E IoT Microcontroller, supporting both Wi-Fi and Bluetooth. However, it is important to note that it is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board. This expansion shield is ideally suited for those who prefer to use terminal blocks for wiring their projects. It is equipped with an additional 7-24V external voltage input and a GDI port. The use of terminal blocks ensures that wires are secured, resulting in more stable and reliable connections. Each terminal block, with the exception of GND, is fitted with an LED for status indication. A switch is incorporated into the design of the board, allowing users to turn off the LED when it is not needed. The terminal block board is characterized by its stable and reliable connections, with all pins of the mainboard broken out. The board also features an external Voltage Input of 7-24V, a GDI for connecting the display, a clear colorful silkscreen, a terminal block status indicator, and a terminal block status indicator switch. This makes it suitable for use in applications such as Smart Soil conditioners and Multiple Relays Projects. Please note that this expansion shield is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board. View more What's Included 1x Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller Dimensions 61 x 93.5 mm / 2.40 x 3.68 inch Links PDF File DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Schematics Website DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Wiki Specifications External Voltage Input: 7-24 V Screen Port: GDI 5V Port x3 3.3V Port x3 GND Port x6 Digital Port x12 Analog Port x5 I2C x3 SPI x1 Port Indicator x34 Port Indicator Color: blue, red Default ON Port Indicator: 5V, 3.3V, D0, D1, D5, D6, A4, RST"
+       },
+       "id": "gid://shopify/ProductVariant/43309072580769",
+       "list_price": {
+        "amount": 2094,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp?v=1763546579"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2094,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1324",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Discover an array of versatile microcontroller boards perfect for a diverse range of applications. From tiny, power-efficient units like the Adafruit Feather RP2040 to advanced, feature-rich boards such as the Ai-Thinker WiFi 6 and BLE 5.3 Development Boards, we have the right microcontroller solution for your project. Enhance your IoT, robotics, or home automation projects with powerful CPUs, low power consumption, and rich peripheral interfaces, ensuring optimal performance and flexibility."
+       },
+       "handle": "miscellaneous-microcontrollers",
+       "id": "gid://shopify/Collection/290212348065",
+       "title": "Miscellaneous Microcontrollers"
+      },
+      {
+       "description": {
+        "html": "Harness the capabilities of our comprehensive Internet of Things (IoT) selection featuring versatile development boards, sensors, and communication modules. These products support a wide range of protocols such as Wi-Fi, BLE, and LoRa, enabling innovative IoT applications from smart homes to industrial automation. Whether you're looking to build a new IoT solution or enhance an existing system, our collection provides reliable, efficient components for seamless integration and development."
+       },
+       "handle": "internet-of-things-iot",
+       "id": "gid://shopify/Collection/290215362721",
+       "title": "Internet of Things (IoT)"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Microcontroller and FPGA boards offer versatile solutions for robotics enthusiasts and developers. Our selection includes powerful microcontroller boards like the Arduino Mega 2560, Raspberry Pi Pico, and Adafruit Feather series, as well as high-performance FPGA boards from Devantech and Digilent. With features ranging from extensive I/O capabilities to advanced processing power, these boards are ideal for a wide variety of robotics and embedded applications."
+       },
+       "handle": "microcontrollers",
+       "id": "gid://shopify/Collection/290229878945",
+       "title": "Microcontroller & FPGA Boards"
+      }
+     ],
+     "description": {
+      "html": "Description Compatible with products in the DFRobot FireBeetle serials Low-power consumption Quick Response(the top frequency is 400KHz) Small size, convenient to install The FireBeetle ESP32 IOT Microcontroller is the low-power consumption micro-controller intentionally designed for Internet of Things (IoT) projects. FireBeetle Board - ESP32 integrates a Dual-Core ESP-WROOM-32 module supports MCU and Wi-Fi and Bluetooth dual-mode communication. The electric current is just 10μA in the deep-sleep mode. The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly. FireBeetle Board-ESP32 has made a special hardware design for Arduino IDE. You can make a download without switching booth-mode manually. View more Dimensions 24 × 53(mm)/0.94 x 2.09(inches) Mounting hole: inner diameter 3.1mm; outside diameter 6mm Specifications Working voltage: 3.3V Input voltage: 3.3V~5V Support electric current of low power consumption: 10 μA Support maximum discharge current: 600mA Support maximum charge current: 500mA Support USB charging. Processer: Tensilica LX6 dual core processer (One for high speed connection; one for independent programing). Frequency: 240MHz SRAM：520KB Flash：16Mbit Wi-Fi standard：FCC/CE/TELEC/KCC Wi-Fi protocol: 802.11 b/g/n/d/e/I/k/r (802.11n, high speed can reach to 150 Mbps), converge A-MPDU and A-MSDU, supporting 0.4us protecting interval. Frequency range: 2.4~2.5 GHz Bluetooth protocol: Comply with BR/EDR/BLE standard of Bluetooth v4.2. Bluetooth audio: the current under low power consumption of CVSD and SBC is 10μA Working current: 80mA in average Frequency range: 2.4~2.5GHz Support one-key downloading. Support micropython. On-chip clock: 40MHz crystal and 32.768 KHz crystal. Digital I/O: 10 (default setting of arduino) Simulative input: 5(default setting of arduino) SPI: 1 (default setting of arduino) I2C: 1 (default setting of arduino) I2S: 1 (default setting of arduino) LED_BUILTIN：D9 Interface: FireBeetle series compatible Working temperature: -40℃~+85℃"
+     },
+     "gift_card": false,
+     "handle": "firebeetle-esp32-iot-microcontroller",
+     "id": "gid://shopify/Product/7487331008673",
+     "list_price_range": {
+      "max": {
+       "amount": 949,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 949,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FireBeetle ESP32 IOT Microcontroller",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp?v=1778527472"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 949,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 949,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Internet of Things (IoT)",
+      "category:Microcontroller & FPGA Boards",
+      "category:Miscellaneous Microcontrollers",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "FireBeetle ESP32 IOT Microcontroller",
+     "url": "https://www.robotshop.com/products/firebeetle-esp32-iot-microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42361108791457:1",
+       "description": {
+        "html": "Description Compatible with products in the DFRobot FireBeetle serials Low-power consumption Quick Response(the top frequency is 400KHz) Small size, convenient to install The FireBeetle ESP32 IOT Microcontroller is the low-power consumption micro-controller intentionally designed for Internet of Things (IoT) projects. FireBeetle Board - ESP32 integrates a Dual-Core ESP-WROOM-32 module supports MCU and Wi-Fi and Bluetooth dual-mode communication. The electric current is just 10μA in the deep-sleep mode. The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly. FireBeetle Board-ESP32 has made a special hardware design for Arduino IDE. You can make a download without switching booth-mode manually. View more Dimensions 24 × 53(mm)/0.94 x 2.09(inches) Mounting hole: inner diameter 3.1mm; outside diameter 6mm Specifications Working voltage: 3.3V Input voltage: 3.3V~5V Support electric current of low power consumption: 10 μA Support maximum discharge current: 600mA Support maximum charge current: 500mA Support USB charging. Processer: Tensilica LX6 dual core processer (One for high speed connection; one for independent programing). Frequency: 240MHz SRAM：520KB Flash：16Mbit Wi-Fi standard：FCC/CE/TELEC/KCC Wi-Fi protocol: 802.11 b/g/n/d/e/I/k/r (802.11n, high speed can reach to 150 Mbps), converge A-MPDU and A-MSDU, supporting 0.4us protecting interval. Frequency range: 2.4~2.5 GHz Bluetooth protocol: Comply with BR/EDR/BLE standard of Bluetooth v4.2. Bluetooth audio: the current under low power consumption of CVSD and SBC is 10μA Working current: 80mA in average Frequency range: 2.4~2.5GHz Support one-key downloading. Support micropython. On-chip clock: 40MHz crystal and 32.768 KHz crystal. Digital I/O: 10 (default setting of arduino) Simulative input: 5(default setting of arduino) SPI: 1 (default setting of arduino) I2C: 1 (default setting of arduino) I2S: 1 (default setting of arduino) LED_BUILTIN：D9 Interface: FireBeetle series compatible Working temperature: -40℃~+85℃"
+       },
+       "id": "gid://shopify/ProductVariant/42361108791457",
+       "list_price": {
+        "amount": 949,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp?v=1778527472"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 949,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-755",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Harness the capabilities of our comprehensive Internet of Things (IoT) selection featuring versatile development boards, sensors, and communication modules. These products support a wide range of protocols such as Wi-Fi, BLE, and LoRa, enabling innovative IoT applications from smart homes to industrial automation. Whether you're looking to build a new IoT solution or enhance an existing system, our collection provides reliable, efficient components for seamless integration and development."
+       },
+       "handle": "internet-of-things-iot",
+       "id": "gid://shopify/Collection/290215362721",
+       "title": "Internet of Things (IoT)"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our comprehensive range of Arduino and compatible boards, perfect for your next innovative project. Whether you need the Arduino Uno Rev3 for robust basic functionalities or the advanced Arduino MKR series for IoT applications, our selection boasts versatile options. These boards support various programming environments, including Arduino IDE, and offer multiple connectivity options such as Wi-Fi, Bluetooth, and LoRa. Perfect for educators, hobbyists, and professionals seeking to bring their electronic projects to life with open-source platforms and extensive community support."
+       },
+       "handle": "arduino-microcontroller",
+       "id": "gid://shopify/Collection/290227323041",
+       "title": "Arduino & Compatible Boards"
+      },
+      {
+       "description": {
+        "html": "Microcontroller and FPGA boards offer versatile solutions for robotics enthusiasts and developers. Our selection includes powerful microcontroller boards like the Arduino Mega 2560, Raspberry Pi Pico, and Adafruit Feather series, as well as high-performance FPGA boards from Devantech and Digilent. With features ranging from extensive I/O capabilities to advanced processing power, these boards are ideal for a wide variety of robotics and embedded applications."
+       },
+       "handle": "microcontrollers",
+       "id": "gid://shopify/Collection/290229878945",
+       "title": "Microcontroller & FPGA Boards"
+      }
+     ],
+     "description": {
+      "html": "Description FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Camera Features high-performance ESP32-S3-U module Includes 2-megapixel OV2640 camera for image recognition Supports dual-mode communication with WiFi and Bluetooth 5 Designed with user-friendly onboard GDI screen interface The FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Camera is a high-performance primary controller, constructed around the ESP32-S3-U-WROOM-1-N16R8 module. This microcontroller comes with an OV2640 camera, making it highly suitable for applications that require image recognition. The ESP32-S3-U module is known for its generous storage capacity and a comprehensive set of communication interfaces, making it adaptable to a broad spectrum of application requirements. The included OV2640 camera, with its 2-megapixel capacity, a 68° field of view, and a resolution of up to 1600 x 1200, can be employed for home monitoring purposes. It can automatically send notifications and store image data when movement is detected. The ESP32-S3-U chip accelerates neural network computing and signal processing workloads, making the module a preferred choice for various applications, including speech and image recognition. The FireBeetle 2 ESP32-S3-U supports dual-mode communication with WiFi and Bluetooth 5 (LE), simplifying the networking process. It also supports Bluetooth Mesh protocol and Espressif WiFi Mesh, ensuring more stable communication and a larger coverage area. This development board is designed with user-friendliness in mind, addressing the intricacies of screen wiring through its onboard GDI screen interface. It also integrates power management features, including battery charging and hardware power control. The FireBeetle 2 ESP32-S3-U is compatible with programming through the Arduino IDE, ESP-IDF, and MicroPython, allowing developers to use both C and Python to interact with the hardware. View more What's Included 1x FireBeetle 2 Board ESP32-S3-U (N16R8) 1x OV2640 Camera 1x 2.4GHz WIFI&BLE Antenna 1x 18pin-2.54mm Pin Header 1x 18pin-2.54mm Female Header 1x 14pin-2.54mm Pin Header 1x 14pin-2.54mm Female Header Dimensions 25.4 x 60 mm / 1 x 2.36 inch Links PDF File FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam - Schematics Website FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam - Wiki Specifications Operating Voltage: 3.3 V Type-C Input Voltage: 5V DC VCC Input Voltage: 5V DC Max Charging Current: 1A Operating Temperature: -20 to 70 ℃ Processor: Xtensa dual-core 32-bit LX7 microprocessor Main Frequency: 240 MHz SRAM: 512 KB ROM: 384 KB Flash: 16 MB PSRAM: 8 MB RTC SRAM: 16 KB USB 2.0 OTG full-speed WIFI Protocol: IEEE 802.11b/g/n Bandwidth: Support 20 MHz and 40 MHz at 2.4 GHz band WIFI Mode: Station, SoftAP+Station combined mode WIFI Frequency: 2.4 GHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5, Bluetooth mesh Bluetooth Frequency: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps Ports: Digital I/O x26, LED PWM Controller 8 Channels, SPI x2, UART x3, I2C x2, I2S x2 IR Transceiver: transmit channel x5, receive channel x5 2×12-bit SAR ADC, 20 Channels DMA Controller: transmit channel x5, receive channel x5"
+     },
+     "gift_card": false,
+     "handle": "firebeetle-2-esp32-s3-u-n16r8-aiot-microcontroller-board-w-wi-fi-bluetooth-cam",
+     "id": "gid://shopify/Product/7777204469921",
+     "list_price_range": {
+      "max": {
+       "amount": 2202,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2202,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/firebeetle-2-esp32-s3-u-n16r8-aiot-microcontroller-board-w-wi-fi-bluetooth-cam-img01.webp?v=1763542984"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2202,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2202,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino & Compatible Boards",
+      "category:Internet of Things (IoT)",
+      "category:Microcontroller & FPGA Boards",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam",
+     "url": "https://www.robotshop.com/products/firebeetle-2-esp32-s3-u-n16r8-aiot-microcontroller-board-w-wi-fi-bluetooth-cam",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43309064716449:1",
+       "description": {
+        "html": "Description FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Camera Features high-performance ESP32-S3-U module Includes 2-megapixel OV2640 camera for image recognition Supports dual-mode communication with WiFi and Bluetooth 5 Designed with user-friendly onboard GDI screen interface The FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Camera is a high-performance primary controller, constructed around the ESP32-S3-U-WROOM-1-N16R8 module. This microcontroller comes with an OV2640 camera, making it highly suitable for applications that require image recognition. The ESP32-S3-U module is known for its generous storage capacity and a comprehensive set of communication interfaces, making it adaptable to a broad spectrum of application requirements. The included OV2640 camera, with its 2-megapixel capacity, a 68° field of view, and a resolution of up to 1600 x 1200, can be employed for home monitoring purposes. It can automatically send notifications and store image data when movement is detected. The ESP32-S3-U chip accelerates neural network computing and signal processing workloads, making the module a preferred choice for various applications, including speech and image recognition. The FireBeetle 2 ESP32-S3-U supports dual-mode communication with WiFi and Bluetooth 5 (LE), simplifying the networking process. It also supports Bluetooth Mesh protocol and Espressif WiFi Mesh, ensuring more stable communication and a larger coverage area. This development board is designed with user-friendliness in mind, addressing the intricacies of screen wiring through its onboard GDI screen interface. It also integrates power management features, including battery charging and hardware power control. The FireBeetle 2 ESP32-S3-U is compatible with programming through the Arduino IDE, ESP-IDF, and MicroPython, allowing developers to use both C and Python to interact with the hardware. View more What's Included 1x FireBeetle 2 Board ESP32-S3-U (N16R8) 1x OV2640 Camera 1x 2.4GHz WIFI&BLE Antenna 1x 18pin-2.54mm Pin Header 1x 18pin-2.54mm Female Header 1x 14pin-2.54mm Pin Header 1x 14pin-2.54mm Female Header Dimensions 25.4 x 60 mm / 1 x 2.36 inch Links PDF File FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam - Schematics Website FireBeetle 2 ESP32-S3-U (N16R8) AIoT Microcontroller Board w/ Wi-Fi, Bluetooth & Cam - Wiki Specifications Operating Voltage: 3.3 V Type-C Input Voltage: 5V DC VCC Input Voltage: 5V DC Max Charging Current: 1A Operating Temperature: -20 to 70 ℃ Processor: Xtensa dual-core 32-bit LX7 microprocessor Main Frequency: 240 MHz SRAM: 512 KB ROM: 384 KB Flash: 16 MB PSRAM: 8 MB RTC SRAM: 16 KB USB 2.0 OTG full-speed WIFI Protocol: IEEE 802.11b/g/n Bandwidth: Support 20 MHz and 40 MHz at 2.4 GHz band WIFI Mode: Station, SoftAP+Station combined mode WIFI Frequency: 2.4 GHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5, Bluetooth mesh Bluetooth Frequency: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps Ports: Digital I/O x26, LED PWM Controller 8 Channels, SPI x2, UART x3, I2C x2, I2S x2 IR Transceiver: transmit channel x5, receive channel x5 2×12-bit SAR ADC, 20 Channels DMA Controller: transmit channel x5, receive channel x5"
+       },
+       "id": "gid://shopify/ProductVariant/43309064716449",
+       "list_price": {
+        "amount": 2202,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/firebeetle-2-esp32-s3-u-n16r8-aiot-microcontroller-board-w-wi-fi-bluetooth-cam-img01.webp?v=1763542984"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2202,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1322",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) Enables real-time environmental monitoring Versatile for various application scenarios Transforms spaces into data-driven environments Provides innovative introduction to Arduino-based hardware Ideal for observing natural phenomena through data The Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) enables the construction of functional devices designed for real-time environmental monitoring of soil moisture and air quality. The versatility of this kit allows for its application in a myriad of scenarios. Equipped with these sensors, it is possible to transform a garden or a classroom into a data-driven smart environment, thereby providing an opportunity to observe natural phenomena through the lens of real-time data. This kit serves as an exciting and innovative introduction to the world of Arduino-based hardware. View more What's Included 1x FireBeetle 2 ESP32-E IoT Microcontroller with Header (Supports Wi-Fi & Bluetooth) 1x Gravity: Analog Waterproof Capacitive Soil Moisture Sensor 1x Gravity: IO Shield for FireBeetle 2 (ESP32-E/M0) 1x Gravity: Digital 10A Relay Module 1x Gravity: I2C HUB 1x Gravity: LED Button (White) 1x Gravity: LED Button (Yellow) 1x Gravity: SGP40 Air Quality Sensor 1x Fermion: Multifunctional Environmental Sensor Links Website Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) - Wiki Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Cost-effective and environmentally friendly Application-specific peripherals Easy to Get Started Quick prototyping Ideal for exploring nature applications Easily customizable and expandable Practical Waterproof soil moisture sensor Multifunctional"
+     },
+     "gift_card": false,
+     "handle": "hackster-dfrobot-eedu-environmental-sensor-kit-esp32",
+     "id": "gid://shopify/Product/7744260079777",
+     "list_price_range": {
+      "max": {
+       "amount": 9640,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9640,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hackster-dfrobot-eedu-environmental-sensor-kit-esp32-img01.webp?v=1767077935"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 9640,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9640,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino Kits",
+      "category:Gas Sensors",
+      "category:Internet of Things (IoT)",
+      "category:Microcontroller Kits",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32)",
+     "url": "https://www.robotshop.com/products/hackster-dfrobot-eedu-environmental-sensor-kit-esp32",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43148156174497:1",
+       "description": {
+        "html": "Description Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) Enables real-time environmental monitoring Versatile for various application scenarios Transforms spaces into data-driven environments Provides innovative introduction to Arduino-based hardware Ideal for observing natural phenomena through data The Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) enables the construction of functional devices designed for real-time environmental monitoring of soil moisture and air quality. The versatility of this kit allows for its application in a myriad of scenarios. Equipped with these sensors, it is possible to transform a garden or a classroom into a data-driven smart environment, thereby providing an opportunity to observe natural phenomena through the lens of real-time data. This kit serves as an exciting and innovative introduction to the world of Arduino-based hardware. View more What's Included 1x FireBeetle 2 ESP32-E IoT Microcontroller with Header (Supports Wi-Fi & Bluetooth) 1x Gravity: Analog Waterproof Capacitive Soil Moisture Sensor 1x Gravity: IO Shield for FireBeetle 2 (ESP32-E/M0) 1x Gravity: Digital 10A Relay Module 1x Gravity: I2C HUB 1x Gravity: LED Button (White) 1x Gravity: LED Button (Yellow) 1x Gravity: SGP40 Air Quality Sensor 1x Fermion: Multifunctional Environmental Sensor Links Website Hackster & DFRobot EEDU Environmental Sensor Kit (ESP32) - Wiki Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Cost-effective and environmentally friendly Application-specific peripherals Easy to Get Started Quick prototyping Ideal for exploring nature applications Easily customizable and expandable Practical Waterproof soil moisture sensor Multifunctional"
+       },
+       "id": "gid://shopify/ProductVariant/43148156174497",
+       "list_price": {
+        "amount": 9640,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hackster-dfrobot-eedu-environmental-sensor-kit-esp32-img01.webp?v=1767077935"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 9640,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1253",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description Hackster & DFRobot AI Starter EEDU Kit Meticulously designed for easy initiation into AI and IoT Features a FireBeetle board compatible with Arduino Includes the recognized DFRobot camera HuskyLens Allows for easy customization and expansion Cost-effective and environmentally friendly kit The Hackster & DFRobot AI Starter EEDU Kit is a meticulously designed kit that simplifies the initiation into the realms of Artificial Intelligence (AI), Internet of Things (IoT), and environmental sensing through programming hardware. The kit is centered around a FireBeetle board, which is compatible with Arduino and based on ESP32. It also includes application-specific peripherals. This kit is not only cost-effective and environmentally friendly, but it also serves as an excellent platform for delving into AI applications. Its design allows for easy customization and expansion, enabling the integration of new peripherals and sensors as one's proficiency improves. Included in the kit is the widely recognized DFRobot camera HuskyLens, which facilitates the exploration of both classic and practical applications of AI in a straightforward manner. View more What's Included 1x Gravity: Huskylens - An Easy-to-use AI Camera 1x FireBeetle 2 ESP32-E IoT Microcontroller with Header (Supports Wi-Fi & Bluetooth) 1x Gravity: IO Shield for FireBeetle 2 (ESP32-E/M0) 1x Gravity: Digital 10 A Relay Module 1x Fermion: DFPlayer Pro - A mini MP3 Player with On-board 128 MB Storage (Breakout) 1x Stereo Enclosed Speaker - 3 W 8 Ω 10x Jumper Wires 9 inch F/F Links Website Hackster & DFRobot AI Starter EEDU Kit - Wiki Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+     },
+     "gift_card": false,
+     "handle": "hackster-dfrobot-ai-starter-eedu-kit",
+     "id": "gid://shopify/Product/7744260866209",
+     "list_price_range": {
+      "max": {
+       "amount": 9770,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9770,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Hackster & DFRobot AI Starter EEDU Kit",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hackster-dfrobot-ai-starter-eedu-kit-img1b.webp?v=1720492079"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 9770,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9770,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino Kits",
+      "category:Internet of Things (IoT)",
+      "category:Microcontroller Kits",
+      "category:Parts for AI",
+      "category:Robot Parts",
+      "category:Robot Sensor Kits",
+      "category:Robot Sensors",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Hackster & DFRobot AI Starter EEDU Kit",
+     "url": "https://www.robotshop.com/products/hackster-dfrobot-ai-starter-eedu-kit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43148158468257:1",
+       "description": {
+        "html": "Description Hackster & DFRobot AI Starter EEDU Kit Meticulously designed for easy initiation into AI and IoT Features a FireBeetle board compatible with Arduino Includes the recognized DFRobot camera HuskyLens Allows for easy customization and expansion Cost-effective and environmentally friendly kit The Hackster & DFRobot AI Starter EEDU Kit is a meticulously designed kit that simplifies the initiation into the realms of Artificial Intelligence (AI), Internet of Things (IoT), and environmental sensing through programming hardware. The kit is centered around a FireBeetle board, which is compatible with Arduino and based on ESP32. It also includes application-specific peripherals. This kit is not only cost-effective and environmentally friendly, but it also serves as an excellent platform for delving into AI applications. Its design allows for easy customization and expansion, enabling the integration of new peripherals and sensors as one's proficiency improves. Included in the kit is the widely recognized DFRobot camera HuskyLens, which facilitates the exploration of both classic and practical applications of AI in a straightforward manner. View more What's Included 1x Gravity: Huskylens - An Easy-to-use AI Camera 1x FireBeetle 2 ESP32-E IoT Microcontroller with Header (Supports Wi-Fi & Bluetooth) 1x Gravity: IO Shield for FireBeetle 2 (ESP32-E/M0) 1x Gravity: Digital 10 A Relay Module 1x Fermion: DFPlayer Pro - A mini MP3 Player with On-board 128 MB Storage (Breakout) 1x Stereo Enclosed Speaker - 3 W 8 Ω 10x Jumper Wires 9 inch F/F Links Website Hackster & DFRobot AI Starter EEDU Kit - Wiki Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+       },
+       "id": "gid://shopify/ProductVariant/43148158468257",
+       "list_price": {
+        "amount": 9770,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/hackster-dfrobot-ai-starter-eedu-kit-img1b.webp?v=1720492079"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 9770,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1250",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller with Camera (Wi-Fi & Bluetooth on Board) Equipped with an OV2640 camera for image recognition Supports dual-mode communication via WiFi and Bluetooth 5 Features user-friendly design with onboard GDI screen interface Compatible with Arduino IDE, ESP-IDF, and MicroPython The FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller with Camera (Wi-Fi & Bluetooth on Board) is a high-performance primary controller, constructed around the ESP32-S3-WROOM-1-N16R8 module. This microcontroller is furnished with an OV2640 camera, making it highly suitable for applications that require image recognition. The ESP32-S3 module is characterized by its substantial storage capacity and a comprehensive set of communication interfaces, making it adaptable to a broad spectrum of application requirements. The board is equipped with an OV2640 camera that provides 2 megapixels, a 68°FOV, and a resolution of up to 1600 x 1200. The ESP32-S3 chip enhances the module's performance by accelerating neural network computing and signal processing workloads. This makes the module an optimal choice for a variety of applications, including speech recognition and image recognition. The FireBeetle 2 ESP32-S3 supports dual-mode communication via WiFi and Bluetooth 5 (LE), simplifying the networking process. It also supports both Bluetooth Mesh protocol and Espressif WiFi Mesh, ensuring more stable communication and a larger coverage area. This development board is designed with user-friendliness in mind, addressing the complexity of screen wiring through its onboard GDI screen interface. It also incorporates power management features, including battery charging and hardware power control. The FireBeetle 2 ESP32-S3 is compatible with the Arduino IDE, ESP-IDF, and MicroPython, allowing developers to use both C and Python to interact with the hardware. View more What's Included 1x FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller (Supports Wi-Fi & Bluetooth) 1x OV2640 Camera 1x 18pin-2.54mm Pin Header 1x 18pin-2.54mm Female Header 1x 14pin-2.54mm Pin Header 1x 14pin-2.54mm Female Header Dimensions 25.4 x 60 mm / 1 x 2.36 inch Links PDF File FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth) - Schematics Website FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth) - Wiki Specifications Operating Voltage: 3.3 V Type-C Input Voltage: 5V DC VCC Input Voltage: 5V DC Max Charging Current: 1A Operating Temperature: -20 to 70 ℃ Processor: Xtensa® dual-core 32-bit LX7 microprocessor Main Frequency: 240 MHz SRAM: 512 KB ROM: 384 KB Flash: 16 MB PSRAM: 8 MB RTC SRAM: 16 KB USB 2.0 OTG full-speed WIFI Protocol: IEEE 802.11b/g/n Bandwidth: Support 20 MHz and 40 MHz at 2.4 GHz band WIFI Mode: Station, SoftAP+Station combined mode WIFI Frequency: 2.4 GHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5, Bluetooth mesh Bluetooth Frequency: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps"
+     },
+     "gift_card": false,
+     "handle": "firebeetle-2-board-esp32-s3-n16r8-aiot-microcontroller-w-camera-wi-fi-bluetooth",
+     "id": "gid://shopify/Product/7777204404385",
+     "list_price_range": {
+      "max": {
+       "amount": 2511,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2511,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/firebeetle-2-board-esp32-s3-n16r8-aiot-microcontroller-w-camera-wi-fi-bluetooth-img01.webp?v=1763542357"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2511,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2511,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino & Compatible Boards",
+      "category:Internet of Things (IoT)",
+      "category:Microcontroller & FPGA Boards",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth)",
+     "url": "https://www.robotshop.com/products/firebeetle-2-board-esp32-s3-n16r8-aiot-microcontroller-w-camera-wi-fi-bluetooth",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43309064323233:1",
+       "description": {
+        "html": "Description FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller with Camera (Wi-Fi & Bluetooth on Board) Equipped with an OV2640 camera for image recognition Supports dual-mode communication via WiFi and Bluetooth 5 Features user-friendly design with onboard GDI screen interface Compatible with Arduino IDE, ESP-IDF, and MicroPython The FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller with Camera (Wi-Fi & Bluetooth on Board) is a high-performance primary controller, constructed around the ESP32-S3-WROOM-1-N16R8 module. This microcontroller is furnished with an OV2640 camera, making it highly suitable for applications that require image recognition. The ESP32-S3 module is characterized by its substantial storage capacity and a comprehensive set of communication interfaces, making it adaptable to a broad spectrum of application requirements. The board is equipped with an OV2640 camera that provides 2 megapixels, a 68°FOV, and a resolution of up to 1600 x 1200. The ESP32-S3 chip enhances the module's performance by accelerating neural network computing and signal processing workloads. This makes the module an optimal choice for a variety of applications, including speech recognition and image recognition. The FireBeetle 2 ESP32-S3 supports dual-mode communication via WiFi and Bluetooth 5 (LE), simplifying the networking process. It also supports both Bluetooth Mesh protocol and Espressif WiFi Mesh, ensuring more stable communication and a larger coverage area. This development board is designed with user-friendliness in mind, addressing the complexity of screen wiring through its onboard GDI screen interface. It also incorporates power management features, including battery charging and hardware power control. The FireBeetle 2 ESP32-S3 is compatible with the Arduino IDE, ESP-IDF, and MicroPython, allowing developers to use both C and Python to interact with the hardware. View more What's Included 1x FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller (Supports Wi-Fi & Bluetooth) 1x OV2640 Camera 1x 18pin-2.54mm Pin Header 1x 18pin-2.54mm Female Header 1x 14pin-2.54mm Pin Header 1x 14pin-2.54mm Female Header Dimensions 25.4 x 60 mm / 1 x 2.36 inch Links PDF File FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth) - Schematics Website FireBeetle 2 Board ESP32-S3 (N16R8) AIoT Microcontroller w/ Camera (Wi-Fi & Bluetooth) - Wiki Specifications Operating Voltage: 3.3 V Type-C Input Voltage: 5V DC VCC Input Voltage: 5V DC Max Charging Current: 1A Operating Temperature: -20 to 70 ℃ Processor: Xtensa® dual-core 32-bit LX7 microprocessor Main Frequency: 240 MHz SRAM: 512 KB ROM: 384 KB Flash: 16 MB PSRAM: 8 MB RTC SRAM: 16 KB USB 2.0 OTG full-speed WIFI Protocol: IEEE 802.11b/g/n Bandwidth: Support 20 MHz and 40 MHz at 2.4 GHz band WIFI Mode: Station, SoftAP+Station combined mode WIFI Frequency: 2.4 GHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5, Bluetooth mesh Bluetooth Frequency: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps"
+       },
+       "id": "gid://shopify/ProductVariant/43309064323233",
+       "list_price": {
+        "amount": 2511,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/firebeetle-2-board-esp32-s3-n16r8-aiot-microcontroller-w-camera-wi-fi-bluetooth-img01.webp?v=1763542357"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2511,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1321",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

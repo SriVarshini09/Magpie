@@ -1,0 +1,637 @@
+{
+  "open_mandate": {
+    "type": "b2c.mandate.open",
+    "version": "0.4",
+    "note": "AP2-inspired (v0.2 open Checkout Mandate shape); not AP2-compliant",
+    "mandate_id": "m_mock_so101",
+    "run_id": "r_mock_so101",
+    "user_id": "demo_user",
+    "created_at": "2026-11-20T13:00:05-08:00",
+    "expires_at": "2026-11-20T19:00:00-08:00",
+    "scope": {
+      "build_type": "robot_arm",
+      "build_type_set_by": "classifier",
+      "goal": "one SO-101 follower arm",
+      "intake_sha256": "27284ec65e362961cb347a81292159d02b00eddfea8b398c373f2aadde89708a",
+      "inputs": {
+        "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "text_sha256": "d5cd6f0f2745e2ea2734aea4f71b325148f8fd0bd6f13928e465333d00819fc5",
+        "image_sha256": []
+      },
+      "template_id": "tpl_robot_arm",
+      "reference_search": true
+    },
+    "constraints": {
+      "budget_usd": 160.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "wowrobo",
+        "armdojo",
+        "geekworm",
+        "amazon",
+        "seeed",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      },
+      "actions": {
+        "search": true,
+        "create_cart": true,
+        "build_cart_link": true,
+        "checkout": false,
+        "pay": false,
+        "message_seller": false
+      }
+    },
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..86Svwx90lJi-RsYJifswHbYRgp3egGouMmMR0rwnD2RxjpxFFHbq2zQPdvj6MyQ40VIEcKfnZxqNozHozjTK4Q"
+    },
+    "simulated": true
+  },
+  "closed_mandate": {
+    "type": "b2c.mandate.closed",
+    "version": "0.4",
+    "open_mandate_sha256": "572058a8b55cf7fc61457530e69945e8e1b6d085064ece000cb2a6d72de9bafb",
+    "plan_id": "p_mock_so101_cheapest",
+    "plan_sha256": "8fe4604e0d0f42d5804f68b0c4941d0226f26bac1d136b476cbbec379bbe41b5",
+    "tier": "cheapest",
+    "handoffs": [
+      {
+        "store_id": "wowrobo",
+        "action_level": "agent_cart",
+        "cart_id": "c_mock_wowrobo",
+        "url": "https://mock.invalid/wowrobo/cart/c_mock_wowrobo",
+        "url_sha256": "b1db93ca8f8fa2d5fee4b9feb5ddec349d88fbc01d01b3382efd1f6d51ba0f5c",
+        "subtotal_usd": 90.94,
+        "items": [
+          {
+            "offer_id": "o17",
+            "ids": {
+              "variant_gid": "gid://shopify/ProductVariant/48037575065817"
+            },
+            "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+            "qty": 1,
+            "unit_price_usd": 74.95,
+            "seen_at": "2026-11-20T13:04:10-08:00",
+            "source_api": "mock",
+            "evidence_sha256": "d86e481af0469e3e68b37a24de0edcad5e839f72541f4f02be3b4ff3bfa24200",
+            "edited_by_user": false
+          },
+          {
+            "offer_id": "o18",
+            "ids": {
+              "variant_gid": "gid://shopify/ProductVariant/48037575033049"
+            },
+            "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+            "qty": 1,
+            "unit_price_usd": 15.99,
+            "seen_at": "2026-11-20T13:04:10-08:00",
+            "source_api": "mock",
+            "evidence_sha256": "e9d08e360994ce7be8713c6e40a8a45453bd8d41e6ba5affad4cf9a4ecdf9a22",
+            "edited_by_user": false
+          }
+        ],
+        "simulated": true
+      },
+      {
+        "store_id": "geekworm",
+        "action_level": "agent_cart",
+        "cart_id": "c_mock_geekworm",
+        "url": "https://mock.invalid/geekworm/cart/c_mock_geekworm",
+        "url_sha256": "2a70e373816c748f320bc462dd459d15c3d7460596cf57fc66e730df080cb39c",
+        "subtotal_usd": 17.0,
+        "items": [
+          {
+            "offer_id": "o40",
+            "ids": {
+              "variant_gid": "gid://shopify/ProductVariant/MOCK-GEEKWORM-12V5A"
+            },
+            "title": "12V 5A Power Supply, DC5521 (5.5x2.1mm), US plug",
+            "qty": 1,
+            "unit_price_usd": 17.0,
+            "seen_at": "2026-11-20T13:05:20-08:00",
+            "source_api": "mock",
+            "evidence_sha256": "e12289b02638eeba5c3bd4a86e55d0cc7e3e537dc112f3bfff15181c4e7f15af",
+            "edited_by_user": false
+          }
+        ],
+        "simulated": true
+      },
+      {
+        "store_id": "armdojo",
+        "action_level": "agent_cart",
+        "cart_id": "c_mock_armdojo",
+        "url": "https://mock.invalid/armdojo/cart/c_mock_armdojo",
+        "url_sha256": "93c87b763005e5527da655cdd50af366fc7a829ae8dbbd9139f1e48d19317a20",
+        "subtotal_usd": 11.99,
+        "items": [
+          {
+            "offer_id": "o30",
+            "ids": {
+              "variant_gid": "gid://shopify/ProductVariant/50874126958831"
+            },
+            "title": "Waveshare Bus Servo Adapter (A), USB-C",
+            "qty": 1,
+            "unit_price_usd": 11.99,
+            "seen_at": "2026-11-20T13:04:40-08:00",
+            "source_api": "mock",
+            "evidence_sha256": "1ae36037ae8dcb48e90099f5ad6dcf663f4f9fa4c60c48a36f3201efc1f7be4a",
+            "edited_by_user": false
+          }
+        ],
+        "simulated": true
+      },
+      {
+        "store_id": "amazon",
+        "action_level": "prefilled_cart",
+        "url": "https://mock.invalid/amazon/cart/add?item.1=o50&qty.1=1",
+        "url_sha256": "fecb65ddbc4924d9c4dcf39fdd7852d4796dc336f3d541d7b2594a7a53dca9a6",
+        "subtotal_usd": 12.48,
+        "caveat": "Amazon asks you to sign in first",
+        "items": [
+          {
+            "offer_id": "o50",
+            "ids": {
+              "asin": "B092L925J4"
+            },
+            "title": "Table clamp 6 inch, 2 pcs (README link; PLACEHOLDER price from the PLAN §3.7 example)",
+            "qty": 1,
+            "unit_price_usd": 12.48,
+            "seen_at": "2026-11-20T13:05:40-08:00",
+            "source_api": "mock",
+            "evidence_sha256": "1a93fe13aa24f46eea4f69f5264fcebbc27af033fca4868e1268a04ca7b264c7",
+            "edited_by_user": false
+          }
+        ],
+        "simulated": true
+      }
+    ],
+    "total_usd": 132.41,
+    "prices_checked_at": "2026-11-20T13:06:10-08:00",
+    "approved_by": "ui_button",
+    "approved_at": "2026-11-20T13:08:00-08:00",
+    "approval_token_sha256": "e5151f6084d4eaae5ef58d808a766e231fb81ee85f82c9c1c01eb195f9d75fbc",
+    "chain_head": "sha256:f4fab2c96fabf18d9acf5dec583dfc196f03c3708c31fb495b3b6fc750fd1015",
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..os6nkZXortCeChzVGwKRTonFI_B8c_jA04-lvY9rizA3WHuZkxth67kqS2_MCIdjxnBfajfV3NajrjbDkU0Rpg"
+    },
+    "simulated": true
+  },
+  "records": [
+    {
+      "run_id": "r_mock_so101",
+      "seq": 1,
+      "ts": "2026-11-20T13:00:02-08:00",
+      "kind": "intake",
+      "prev_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "sha256:a259ffaf1c3107877d579687996ae71b44d5f54afa15959e3308b52f7759d21e",
+      "intake_id": "in_mock_so101",
+      "build_type": "robot_arm",
+      "confidence": 0.97,
+      "input_hashes": {
+        "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "text_sha256": "d5cd6f0f2745e2ea2734aea4f71b325148f8fd0bd6f13928e465333d00819fc5",
+        "image_sha256": []
+      },
+      "answers": {
+        "voltage_class": "12v",
+        "own_printer": "yes"
+      },
+      "changed_by_user": false,
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 2,
+      "ts": "2026-11-20T13:00:05-08:00",
+      "kind": "mandate_open",
+      "prev_hash": "sha256:a259ffaf1c3107877d579687996ae71b44d5f54afa15959e3308b52f7759d21e",
+      "hash": "sha256:3fef67c784bd6387fdf66c759c10240c5268db3af543d71c148910f49cf6fdd4",
+      "mandate_id": "m_mock_so101",
+      "mandate_sha256": "572058a8b55cf7fc61457530e69945e8e1b6d085064ece000cb2a6d72de9bafb",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 3,
+      "ts": "2026-11-20T13:00:09-08:00",
+      "kind": "source_fetch",
+      "prev_hash": "sha256:3fef67c784bd6387fdf66c759c10240c5268db3af543d71c148910f49cf6fdd4",
+      "hash": "sha256:bfa1c868acbe5945f9b89b53b69fe7cbaefca1cc9884fa5b5345edbf354b9372",
+      "via": "airbyte.github",
+      "entity": "file_content",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "path": "README.md",
+      "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+      "bytes": 26605,
+      "sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 4,
+      "ts": "2026-11-20T13:00:11-08:00",
+      "kind": "template_load",
+      "prev_hash": "sha256:bfa1c868acbe5945f9b89b53b69fe7cbaefca1cc9884fa5b5345edbf354b9372",
+      "hash": "sha256:378a3bf55b1198a71caaaf022a7dbadd8248015c4153e0cc68e608cb44c15d4b",
+      "template_id": "tpl_robot_arm",
+      "variant": "12v",
+      "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ...",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 5,
+      "ts": "2026-11-20T13:03:50-08:00",
+      "kind": "kb_search",
+      "prev_hash": "sha256:378a3bf55b1198a71caaaf022a7dbadd8248015c4153e0cc68e608cb44c15d4b",
+      "hash": "sha256:4cce1d3921cde267ec92e566957c6a59752a1b29c2c3c6c45e8c3a035a487fb1",
+      "query": "12V servo power supply",
+      "kb_refs": [
+        "kb://so101_readme#L73"
+      ],
+      "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ...",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 6,
+      "ts": "2026-11-20T13:04:35-08:00",
+      "kind": "part_decision",
+      "prev_hash": "sha256:4cce1d3921cde267ec92e566957c6a59752a1b29c2c3c6c45e8c3a035a487fb1",
+      "hash": "sha256:1de856af60f8eb2ec6cec623a2cb9576de02994b3620410de2146a89a7064a9d",
+      "part": {
+        "bom_line_id": "b1",
+        "raw_name": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+        "qty": 6,
+        "line_kind": "part",
+        "provenance": {
+          "type": "readme_quote",
+          "check": "pass",
+          "url": "https://github.com/TheRobotStudio/SO-ARM100",
+          "path": "README.md",
+          "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+          "via": "airbyte.github",
+          "quote": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+          "span": [
+            12192,
+            12229
+          ],
+          "line_from": 96,
+          "line_to": 96,
+          "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e"
+        }
+      },
+      "resolution": {
+        "spec": "Feetech STS3215 12V 30kg (C018)",
+        "attrs": {
+          "voltage": "12V",
+          "torque": "30kg.cm"
+        },
+        "confidence": 0.95,
+        "method": "kb",
+        "trusted_context": [
+          {
+            "provider": "singlestore",
+            "kb_ref": "kb://so101_readme#L73",
+            "query": "12V servo power supply",
+            "snippet": "you will also have to buy a 12V 5A+ power supply instead of a 5V one",
+            "score": 0.031
+          }
+        ]
+      },
+      "owned_check": {
+        "provider": "cognee",
+        "matched": null,
+        "action": "keep"
+      },
+      "candidates": [
+        {
+          "offer_id": "o17",
+          "store_id": "wowrobo",
+          "action_level": "agent_cart",
+          "url": "https://mock.invalid/wowrobo/o17",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+          "price": 74.95,
+          "units_per_pack": 5,
+          "stock": "in_stock",
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "d86e481af0469e3e68b37a24de0edcad5e839f72541f4f02be3b4ff3bfa24200",
+          "simulated": true
+        },
+        {
+          "offer_id": "o18",
+          "store_id": "wowrobo",
+          "action_level": "agent_cart",
+          "url": "https://mock.invalid/wowrobo/o18",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+          "price": 15.99,
+          "units_per_pack": 1,
+          "stock": "in_stock",
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "e9d08e360994ce7be8713c6e40a8a45453bd8d41e6ba5affad4cf9a4ecdf9a22",
+          "simulated": true
+        },
+        {
+          "offer_id": "o19",
+          "store_id": "wowrobo",
+          "action_level": "agent_cart",
+          "url": "https://mock.invalid/wowrobo/o19",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 10 pcs",
+          "price": 139.9,
+          "units_per_pack": 10,
+          "stock": "in_stock",
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "d3d2450a328ebc5fbfd723ea077c9c0b373bd1fa998f77d650622f78cf775b1c",
+          "simulated": true
+        },
+        {
+          "offer_id": "o20",
+          "store_id": "amazon",
+          "action_level": "prefilled_cart",
+          "url": "https://mock.invalid/amazon/o20",
+          "title": "6PCS STS3215 12V 30KG serial bus servo (PLACEHOLDER listing and price)",
+          "price": 109.99,
+          "units_per_pack": 6,
+          "stock": "in_stock",
+          "seen_at": "2026-11-20T13:04:31-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "584433798641a5a271bb4e84d49a7292286c7a5dcf9417d369368068ee1e333a",
+          "simulated": true
+        },
+        {
+          "offer_id": "o21",
+          "store_id": "seeed",
+          "action_level": "product_link",
+          "url": "https://mock.invalid/seeed/o21",
+          "title": "Feetech STS3215 12V servo (C047: variant needs a check)",
+          "price": 22.0,
+          "units_per_pack": 1,
+          "stock": "in_stock",
+          "seen_at": "2026-11-20T13:04:22-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "b5b2e1d264047736ead694d3a98ab1ec28927999c422b838841fed474ecf1556",
+          "simulated": true
+        }
+      ],
+      "rejected": [
+        {
+          "offer_id": "o22",
+          "reason": "variant_mismatch: 7.4V C001, need 12V C018"
+        },
+        {
+          "offer_id": "o23",
+          "reason": "variant_mismatch: 7.4V C001, need 12V C018"
+        }
+      ],
+      "mandate_checks": [
+        {
+          "rule": "merchant_allowed",
+          "result": "refused",
+          "attempted": "alibaba.com",
+          "clause": "constraints.allowed_merchants"
+        },
+        {
+          "rule": "merchant_allowed",
+          "result": "refused",
+          "attempted": "robotshop",
+          "clause": "constraints.allowed_merchants"
+        },
+        {
+          "rule": "merchant_allowed",
+          "result": "refused",
+          "attempted": "openelab",
+          "clause": "constraints.allowed_merchants"
+        }
+      ],
+      "compatibility": [
+        {
+          "rule_id": "R9 PACK_COVERS_QTY",
+          "result": "pass",
+          "message": "5 + 1 covers 6",
+          "kb_ref": null,
+          "fix": null
+        }
+      ],
+      "decision": {
+        "chosen": [
+          {
+            "offer_id": "o17",
+            "packs": 1
+          },
+          {
+            "offer_id": "o18",
+            "packs": 1
+          }
+        ],
+        "tier": "cheapest",
+        "reason_codes": [
+          "cheapest_allowed",
+          "pack_break",
+          "agent_cart_at_equal_price"
+        ],
+        "explanation": "A 5-pack plus one single from WowRobo is the cheapest allowed way to get 6 of the 12V servo.",
+        "edited_by_user": false
+      },
+      "model": {
+        "name": "mock",
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 7,
+      "ts": "2026-11-20T13:04:36-08:00",
+      "kind": "refusal",
+      "prev_hash": "sha256:1de856af60f8eb2ec6cec623a2cb9576de02994b3620410de2146a89a7064a9d",
+      "hash": "sha256:eedfd2244231a2df0d133e84d50e19a24958abd0c6d5743f6ee21899cd9b3d2b",
+      "refusal": {
+        "kind": "refusal",
+        "rule": "merchant_allowed",
+        "attempted": {
+          "tool": "search_offers",
+          "value": "alibaba.com"
+        },
+        "clause": "constraints.allowed_merchants",
+        "triggered_by": "source_document",
+        "ts": "2026-11-20T13:04:36-08:00"
+      },
+      "bom_line_id": "b1",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 8,
+      "ts": "2026-11-20T13:05:18-08:00",
+      "kind": "compat_fix",
+      "prev_hash": "sha256:eedfd2244231a2df0d133e84d50e19a24958abd0c6d5743f6ee21899cd9b3d2b",
+      "hash": "sha256:060be1a145fc2c7dceede6143a6662bbc4c69211474f227781d4c646a679f01b",
+      "rule_id": "R1 PSU_VOLTAGE_MATCH",
+      "bom_line_id": "b4",
+      "before": "5V supply (README BOM)",
+      "after": "12V 5A+ supply, 5.5x2.1 mm",
+      "kb_ref": "kb://so101_readme#L73",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 9,
+      "ts": "2026-11-20T13:06:02-08:00",
+      "kind": "refusal",
+      "prev_hash": "sha256:060be1a145fc2c7dceede6143a6662bbc4c69211474f227781d4c646a679f01b",
+      "hash": "sha256:82c15ac0ed14345d31809463a3a79ef3485b57fd33c7ed6abf65b909b6a2c25b",
+      "refusal": {
+        "kind": "refusal",
+        "rule": "data_sharing",
+        "attempted": {
+          "tool": "create_carts",
+          "field": "buyer.email"
+        },
+        "clause": "constraints.data_sharing.email=false",
+        "triggered_by": "user_chat",
+        "ts": "2026-11-20T13:06:02-08:00"
+      },
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 10,
+      "ts": "2026-11-20T13:06:03-08:00",
+      "kind": "refusal",
+      "prev_hash": "sha256:82c15ac0ed14345d31809463a3a79ef3485b57fd33c7ed6abf65b909b6a2c25b",
+      "hash": "sha256:406d9a90c15d86e27b77746241c6ebf878011de8a2e2a95ded7892aceef93a45",
+      "refusal": {
+        "kind": "refusal",
+        "rule": "action_allowed",
+        "attempted": {
+          "tool": "pay"
+        },
+        "clause": "constraints.actions.pay=false",
+        "triggered_by": "user_chat",
+        "ts": "2026-11-20T13:06:02-08:00"
+      },
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 11,
+      "ts": "2026-11-20T13:06:10-08:00",
+      "kind": "plan",
+      "prev_hash": "sha256:406d9a90c15d86e27b77746241c6ebf878011de8a2e2a95ded7892aceef93a45",
+      "hash": "sha256:f793256b542984149fd6d15859658127f5aeb76fc0d4d384f71b34404ec99821",
+      "plan_id": "p_mock_so101_cheapest",
+      "tier": "cheapest",
+      "total_usd": 132.41,
+      "plan_sha256": "8fe4604e0d0f42d5804f68b0c4941d0226f26bac1d136b476cbbec379bbe41b5",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 12,
+      "ts": "2026-11-20T13:08:00-08:00",
+      "kind": "approval",
+      "prev_hash": "sha256:f793256b542984149fd6d15859658127f5aeb76fc0d4d384f71b34404ec99821",
+      "hash": "sha256:f4fab2c96fabf18d9acf5dec583dfc196f03c3708c31fb495b3b6fc750fd1015",
+      "plan_id": "p_mock_so101_cheapest",
+      "approved_by": "ui_button",
+      "acknowledged_warnings": [
+        "R10 BOARD_INPUT_VOLTAGE"
+      ],
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 13,
+      "ts": "2026-11-20T13:08:01-08:00",
+      "kind": "mandate_closed",
+      "prev_hash": "sha256:f4fab2c96fabf18d9acf5dec583dfc196f03c3708c31fb495b3b6fc750fd1015",
+      "hash": "sha256:5a21fdd8e3a6f3761f0e7e07524d520e607c0ee6f808ad8db16189fb90e6c1a3",
+      "mandate_sha256": "7ae05f7e65da3a2da9e1338ffc04ab9f0dcbf34fe9e082a8a0646bc22cdd963f",
+      "total_usd": 132.41,
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 14,
+      "ts": "2026-11-20T13:08:02-08:00",
+      "kind": "handoff",
+      "prev_hash": "sha256:5a21fdd8e3a6f3761f0e7e07524d520e607c0ee6f808ad8db16189fb90e6c1a3",
+      "hash": "sha256:3295cbd8c50688179224419882d4cf2ca8a5d54b1754e7acfb2da3857eb288fd",
+      "store_id": "wowrobo",
+      "level": "agent_cart",
+      "state": "ready",
+      "url_sha256": "b1db93ca8f8fa2d5fee4b9feb5ddec349d88fbc01d01b3382efd1f6d51ba0f5c",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 15,
+      "ts": "2026-11-20T13:08:02-08:00",
+      "kind": "handoff",
+      "prev_hash": "sha256:3295cbd8c50688179224419882d4cf2ca8a5d54b1754e7acfb2da3857eb288fd",
+      "hash": "sha256:befdff2175568e6c9b1bb84a09eed4637cb4af38e2ddff1dca15d2f9079ddd48",
+      "store_id": "geekworm",
+      "level": "agent_cart",
+      "state": "ready",
+      "url_sha256": "2a70e373816c748f320bc462dd459d15c3d7460596cf57fc66e730df080cb39c",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 16,
+      "ts": "2026-11-20T13:08:02-08:00",
+      "kind": "handoff",
+      "prev_hash": "sha256:befdff2175568e6c9b1bb84a09eed4637cb4af38e2ddff1dca15d2f9079ddd48",
+      "hash": "sha256:7f7bd9e154035d32ea38294c92b741ddf54e02a635c69221e24b82b21e45986e",
+      "store_id": "armdojo",
+      "level": "agent_cart",
+      "state": "ready",
+      "url_sha256": "93c87b763005e5527da655cdd50af366fc7a829ae8dbbd9139f1e48d19317a20",
+      "simulated": true
+    },
+    {
+      "run_id": "r_mock_so101",
+      "seq": 17,
+      "ts": "2026-11-20T13:08:02-08:00",
+      "kind": "handoff",
+      "prev_hash": "sha256:7f7bd9e154035d32ea38294c92b741ddf54e02a635c69221e24b82b21e45986e",
+      "hash": "sha256:00698d3adb04668a4ccc23af2f55a34f3e2522718a6d613f213b19bba47adb24",
+      "store_id": "amazon",
+      "level": "prefilled_cart",
+      "state": "ready",
+      "url_sha256": "fecb65ddbc4924d9c4dcf39fdd7852d4796dc336f3d541d7b2594a7a53dca9a6",
+      "simulated": true
+    }
+  ],
+  "head_hash": "sha256:00698d3adb04668a4ccc23af2f55a34f3e2522718a6d613f213b19bba47adb24",
+  "public_key_jwk": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "Notgr6RTel0GF_QAzUhIElpykmtStblPKDARuaQE4lQ",
+    "y": "l3EtDZF8mXHJ4XyVSKpTnz7hR1N2IJ0EDFvEDejN-1w",
+    "alg": "ES256",
+    "use": "sig",
+    "kid": "fixture-key-1",
+    "note": "fixture key derived from a public seed: these signatures only show the format"
+  },
+  "source_api": "mock",
+  "simulated": true
+}

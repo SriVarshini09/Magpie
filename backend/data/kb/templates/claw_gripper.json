@@ -1,0 +1,227 @@
+{
+  "template_id": "tpl_claw_gripper",
+  "build_type": "claw_gripper",
+  "version": "0.1",
+  "title": "Servo gripper (claw)",
+  "summary": "Claw template: a robot claw, gripper, servo gripper, end effector, pincer, two-finger claw for a desk or a robot arm, modelled on the gripper end of the SO-101. Rows: one gripper servo (STS3215 bus servo, or a hobby servo), the motor control board, a power supply, a USB-C cable, printed jaw and wrist parts, screws and a table clamp. Detection labels: servo motor, gripper, claw, motor control board, power supply, clamp. The gripper is not sold as its own BOM, so quantities are derived from the arm and the screw counts are assumptions.",
+  "references": [
+    {
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "title": "SO-ARM100 / SO-101 README (TheRobotStudio), the gripper end of the arm",
+      "licence": "Apache-2.0",
+      "used_for": "servo, board, supply, cable, clamp and print settings; quantities for a gripper alone are derived"
+    },
+    {
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "title": "LeRobot docs: SO-101 assembly",
+      "licence": "[unverified]; cited, not copied",
+      "used_for": "the gripper is motor ID 6; assembly order of the gripper parts"
+    }
+  ],
+  "questions": [
+    {
+      "id": "servo_type",
+      "text": "Which servo?",
+      "chips": [
+        {"value": "bus", "label": "Bus servo (STS3215)"},
+        {"value": "hobby", "label": "Hobby servo (SG90 or MG996R)"}
+      ],
+      "default": "bus",
+      "skip_if": ["text_mentions_servo"]
+    },
+    {
+      "id": "own_printer",
+      "text": "Do you have a 3D printer?",
+      "chips": [
+        {"value": "yes", "label": "Yes, I'll print the parts"},
+        {"value": "no", "label": "No"}
+      ],
+      "default": "yes",
+      "skip_if": ["memory_answers"]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bus_servo",
+      "label": "STS3215 bus servo (SO-101 gripper)",
+      "when": {"servo_type": "bus"},
+      "overrides": {}
+    },
+    {
+      "id": "hobby_servo",
+      "label": "Hobby servo and an Arduino (rule of thumb)",
+      "when": {"servo_type": "hobby"},
+      "overrides": {
+        "servo": {
+          "typical_spec": "One SG90 or MG996R hobby servo; the SG90 4.8–6 V range is unverified, no official sheet found (rule of thumb)",
+          "attrs": {"voltage_range": "4.8-6", "voltage_v": null, "variant": null},
+          "search_query": "MG996R metal gear servo",
+          "rules": ["G1", "G10", "G11"],
+          "basis": "rule_of_thumb",
+          "source": null
+        },
+        "controller": {
+          "name": "Microcontroller board",
+          "typical_spec": "Arduino Uno: 5 V logic, VIN 7–12 V (rule of thumb for this variant; datasheet line in electrical_notes)",
+          "attrs": {"logic_v": "5", "voltage_range": "7-12"},
+          "search_query": "Arduino Uno R3",
+          "rules": ["G1", "G11"],
+          "basis": "rule_of_thumb",
+          "source": null
+        },
+        "psu": {
+          "typical_spec": "Separate 5–6 V supply for the servo, not the board's 5 V pin (rule of thumb)",
+          "attrs": {"voltage_range": "5-6", "voltage_v": null, "current_a": null, "connector": null},
+          "search_query": "5V 3A power supply for servos",
+          "rules": ["G1", "G10"],
+          "basis": "rule_of_thumb",
+          "source": null
+        },
+        "usb_cable": {
+          "typical_spec": "USB cable whose plug matches the Arduino (rule of thumb)",
+          "attrs": {"connector": null},
+          "search_query": "USB A to B cable",
+          "basis": "rule_of_thumb",
+          "source": null
+        },
+        "printed": {
+          "typical_spec": "Printed two-finger claw for a hobby servo (rule of thumb)",
+          "basis": "rule_of_thumb",
+          "source": null
+        }
+      }
+    }
+  ],
+  "parts": [
+    {
+      "row_id": "servo",
+      "name": "Gripper servo",
+      "category": "motor",
+      "qty": 1,
+      "qty_note": "Derived: one of the arm's six servos; the gripper is motor ID 6",
+      "line_kind": "part",
+      "typical_spec": "STS3215 Servo 7.4V, 1/345 gear (C001); the gripper is motor ID 6",
+      "attrs": {"voltage_v": "7.4", "variant": "C001"},
+      "search_query": "STS3215 7.4V C001 servo",
+      "rules": ["R1", "G1", "G10"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "STS3215 Servo 7.4V, 1/345 gear (C001)"},
+      "mesh": "servo"
+    },
+    {
+      "row_id": "controller",
+      "name": "Motor control board",
+      "category": "board",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "Waveshare bus servo adapter",
+      "attrs": {"voltage_range": null},
+      "search_query": "Waveshare bus servo adapter A",
+      "rules": ["R5", "R10"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Motor Control Board"},
+      "mesh": "controller"
+    },
+    {
+      "row_id": "psu",
+      "name": "Power supply",
+      "category": "power",
+      "qty": 1,
+      "line_kind": "part",
+      "typical_spec": "5V supply for the 7.4V servo, 5.5×2.1 mm plug",
+      "attrs": {"voltage_v": "5", "current_a": null, "connector": "barrel 5.5x2.1"},
+      "search_query": "5V power supply 5.5x2.1mm",
+      "rules": ["R1", "R6", "R11", "G1", "G5"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "5V power supply"},
+      "mesh": "psu"
+    },
+    {
+      "row_id": "usb_cable",
+      "name": "USB-C cable",
+      "category": "cable",
+      "qty": 1,
+      "qty_note": "Derived: the arm's README lists a 2-pack",
+      "line_kind": "part",
+      "typical_spec": "Data-capable USB-C cable",
+      "attrs": {"connector": "USB-C"},
+      "search_query": "USB-C data cable",
+      "rules": ["R8"],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "USB-C Cable 2 pcs"},
+      "mesh": null
+    },
+    {
+      "row_id": "printed",
+      "name": "Printed claw and wrist parts",
+      "category": "printed",
+      "qty": 1,
+      "qty_note": "1 set: fixed jaw, moving jaw, wrist",
+      "line_kind": "part",
+      "typical_spec": "PLA+ (print settings from the arm's README)",
+      "attrs": {},
+      "search_query": null,
+      "rules": [],
+      "own_question": "own_printer",
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Material: PLA+"},
+      "mesh": "wrist"
+    },
+    {
+      "row_id": "screws",
+      "name": "Screws",
+      "category": "mechanical",
+      "qty": 9,
+      "qty_note": "About 4 + 5 (assumed: counts are not in the BOM)",
+      "line_kind": "part",
+      "typical_spec": "M2x6 for the motor mount, M3x6 for the horn and links (counts are assumptions; confirm them)",
+      "attrs": {},
+      "search_query": "M2x6 M3x6 screw assortment",
+      "rules": [],
+      "own_question": null,
+      "basis": "assumption",
+      "source": null,
+      "mesh": "screws"
+    },
+    {
+      "row_id": "clamp",
+      "name": "Table clamp",
+      "category": "mechanical",
+      "qty": 1,
+      "qty_note": "Derived: the arm's README lists a 2-pack",
+      "line_kind": "part",
+      "typical_spec": "Small table clamp",
+      "attrs": {},
+      "search_query": "small table clamp",
+      "rules": [],
+      "own_question": null,
+      "basis": "reference",
+      "source": {"url": "https://github.com/TheRobotStudio/SO-ARM100", "quote": "Table Clamp 2pcs"},
+      "mesh": "clamp"
+    }
+  ],
+  "rule_packs": ["generic_electrical", "robot_arm"],
+  "view": {
+    "kind": "procedural",
+    "model": "claw",
+    "parts": [
+      {"mesh": "wrist", "row_id": "printed", "instances": 1, "explode": [0, 0, 0], "order": 1},
+      {"mesh": "servo", "row_id": "servo", "instances": 1, "explode": [0, 45, 0], "order": 2},
+      {"mesh": "jaw_fixed", "row_id": "printed", "instances": 1, "explode": [-50, 40, 0], "order": 3},
+      {"mesh": "jaw_moving", "row_id": "printed", "instances": 1, "explode": [50, 40, 0], "order": 3},
+      {"mesh": "screws", "row_id": "screws", "instances": 4, "explode": [0, 70, 30], "order": 4},
+      {"mesh": "controller", "row_id": "controller", "instances": 1, "explode": [40, 0, 0], "order": 5},
+      {"mesh": "psu", "row_id": "psu", "instances": 1, "explode": [70, 0, 0], "order": 5},
+      {"mesh": "clamp", "row_id": "clamp", "instances": 1, "explode": [0, -40, 0], "order": 5}
+    ]
+  },
+  "edges": [
+    {"from": "psu", "to": "controller", "label": "5.5×2.1 mm barrel, 5V", "rules": ["R1", "R6", "R10", "G1", "G5"]},
+    {"from": "controller", "to": "servo", "label": "3-pin bus", "rules": ["R5", "G10"]},
+    {"from": "usb_cable", "to": "controller", "label": "USB-C data", "rules": ["R8"]}
+  ]
+}

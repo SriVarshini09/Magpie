@@ -1,0 +1,1236 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "LiPo balance charger 4S"
+  }
+ },
+ "key": "4b238b7130e0ab2dd8d212ec39a186593b36870abdc9b357ce15ef65a3aa5e80",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:28-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 630); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6NjMwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 630
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">EFFECTIVE</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">SIMPLE TO USE</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">Large BATTERY READ OUT</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">EASY READY NOTIFICATION ALERT</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">BALANCE PLUG CHARGER</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">2s, 3s and 4s Lipo Batteries</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\"><br></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"font-size: xx-large;\" size=\"6\"><span style=\"color: #343434;\" color=\"#343434\">Here it is ladies and gentlemen, an </span><i><u><span style=\"color: #9e6d49;\" color=\"#9e6d49\">extremely easy and simple to use</span></u></i><span style=\"color: #343434;\" color=\"#343434\"> Lipo Battery Charger.  Use it on the go, in the field,  with included <i><u>12v battery connectors</u></i> or at home with included <i><u>wall power adapter</u></i>. I've been using this now for 16 months and my units are still performing fantastic.  As Always I use all the items that I sell, so I can stand behind them, and I offer free 30 day returns if you are unsatisfied.  This is a nice, durable and easy to use charger.  It is also nice and compact.  Works with 2s 8.4 v Lipo, 3s 12.6v Lipo and 4s 16.8v Lipo Batteries with ease. </span></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\"><br></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\">\n<b style=\"color: #ff715c;\"><span style=\"font-size: xx-large;\" size=\"6\">All Items are always tested and shipped fast</span></b><span style=\"font-size: xx-large;\" size=\"6\"><b><span style=\"color: #ff715c;\" color=\"#ff715c\"> locally within the Continental USA. I also ship to </span><span style=\"color: #00b8ef;\" color=\"#00b8ef\">Alaska</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #62bc5b;\" color=\"#62bc5b\">Hawaii</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #416aad;\" color=\"#416aad\">Puerto Rico</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #fb0034;\" color=\"#fb0034\">Canada</span><span style=\"color: #ff715c;\" color=\"#ff715c\"> and other </span><span style=\"color: #421e6c;\" color=\"#421e6c\">world</span><span style=\"color: #ff715c;\" color=\"#ff715c\"> location.  Delivery times will Vary Greatly Outside the USA. </span></b></span>\n</div>\n<div style=\"font-family: Arial; text-align: center;\"><span style=\"font-size: xx-large;\" size=\"6\"><b><span style=\"color: #ff715c;\" color=\"#ff715c\"><br></span></b></span></div>\n<div style=\"text-align: center;\">\n<div style=\"box-sizing: border-box; margin: 0px; padding: 8px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; color: #333333; text-align: start;\" data-section-title=\"Product Description\" data-section=\"AliPostDhMb-teg4w\" class=\"mceSectionContainer\" id=\"ali-anchor-AliPostDhMb-teg4w\">\n<div style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; text-align: center; box-sizing: border-box; margin: 0px; padding: 10px 0px; border: 0px; vertical-align: baseline;\"><span style=\"box-sizing: border-box; font-weight: bold;\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 24px; vertical-align: baseline;\" data-spm-anchor-id=\"a2700.wholesale.0.i37.662b6956FBjzG9\"><span face=\"Verdana\" style=\"font-family: Verdana; font-size: xx-large;\" size=\"6\">Features:</span></span></span></div>\n</div>\n<p style=\"font-family: Arial, Helvetica, sans-senif; box-sizing: border-box; line-height: inherit; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; vertical-align: baseline; color: #333333; text-align: start;\"> </p>\n<div style=\"font-size: 12px; text-align: center;\"><span style=\"color: #ff0000; font-family: inherit; font-size: 16px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">High quality materials. Aluminum Construction</span></div>\n<div style=\"text-align: center;\">\n<span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\"><b>One step</b></span><span style=\"font-weight: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">  Charge and Balance process, Just Plug and GO</span>\n</div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Display the voltage at any time, see voltage of each cell and total voltage</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">High charge accuracy, ±10mV(max) Multi-protection to keep charging safe</span></div>\n<div style=\"text-align: center;\"><br></div>\n<div style=\"text-align: center;\"><br></div>\n<br style=\"box-sizing: border-box;\">\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\">Specification:</span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\"><br></span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\"></span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Operating Voltage Range: 9V-16V DC 2Amps</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Materials: High Quality Durable ABS</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Operating Temperature: -20-45℃</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Cells Type Supported: 2-4 cells Li-lon/Li-poly</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Input Power Request: Recommended 30W Max</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Power: 20W</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Current: 1000mA</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Accuracy: ±10mV</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Balance Current: 1000mA</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Display Accuracy: ±10mV</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Weight: 54g</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Size: 80mmx50mmx20mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">5.5mm MALE DC POWER PLUG cable to DUAL ALLIGATOR CLIPS: DC Power Plug Connector</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">With Cable and alligator clips</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Full Length: about 25cm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Type: 5.5x2.1mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Outside Diameter: 5.5mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Inside diameter: 2.1mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Wire: 22AWG</span></div>\n<p> </p>\n<p style=\"font-family: Arial, Helvetica, sans-senif; box-sizing: border-box; font-size: 12px; line-height: inherit; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; vertical-align: baseline; color: #333333; text-align: start;\" data-spm-anchor-id=\"a2700.wholesale.0.i36.662b6956FBjzG9\"> </p>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-size: 16px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Package includes</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">1pc * Charger with Adapter</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">For RC Batteries Lipo, RC Car, RC Boat, RC Plane, RC Helicopter, RC Motorcycle, RC Airboat, RC hovercraft, Deans, XT60, XT 30, Sailboats, All Lipo Batteries with balance ports, Spektrum Radio Batteries, Futaba Radio Batteries, RadioLink, Radio Master, Horizon Hobby, DX3e and more, DX6, DX7, DX8 , tatoo, Flitetest and more</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<p> </p>\n</div>"
+     },
+     "handle": "bc-4s10-lipo-balance-charger-for-2s-3s-4s-li-lon-li-poly",
+     "id": "gid://shopify/p/6Wgwt000qFPBaHPVnoVHWg",
+     "media": [
+      {
+       "alt_text": "BC-4S10 Lipo Balance Charger For 2s 3s 4s Li-lon/Li-poly",
+       "height": 725,
+       "preview": {
+        "height": 725,
+        "url": "https://cdn.shopify.com/s/files/1/0619/5239/3459/products/BC-4s10j-582470.jpg",
+        "width": 621
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0619/5239/3459/products/BC-4s10j-582470.jpg",
+       "width": 621
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "One-step charge and balance process simplifies charging and ensures optimal battery health",
+       "Display shows voltage of each cell and total voltage for precise monitoring",
+       "High-charge accuracy of 10mV max guarantees reliable charging results",
+       "Multi-protection system enhances safety during charging",
+       "Compact and durable aluminum construction for portability and longevity"
+      ],
+      "unique_selling_points": [
+       "One-step charge and balance process with high-accuracy voltage display and multi-protection for safe charging."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "title": "BC-4S10 Lipo Balance Charger For 2s 3s 4s Li-lon/Li-poly",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://totsrc.com/buy/42253357449459:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "secondhand"
+       ],
+       "description": {
+        "plain": "<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">EFFECTIVE</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">SIMPLE TO USE</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">Large BATTERY READ OUT</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">EASY READY NOTIFICATION ALERT</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">BALANCE PLUG CHARGER</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\">2s, 3s and 4s Lipo Batteries</span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\"><br></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"font-size: xx-large;\" size=\"6\"><span style=\"color: #343434;\" color=\"#343434\">Here it is ladies and gentlemen, an </span><i><u><span style=\"color: #9e6d49;\" color=\"#9e6d49\">extremely easy and simple to use</span></u></i><span style=\"color: #343434;\" color=\"#343434\"> Lipo Battery Charger.  Use it on the go, in the field,  with included <i><u>12v battery connectors</u></i> or at home with included <i><u>wall power adapter</u></i>. I've been using this now for 16 months and my units are still performing fantastic.  As Always I use all the items that I sell, so I can stand behind them, and I offer free 30 day returns if you are unsatisfied.  This is a nice, durable and easy to use charger.  It is also nice and compact.  Works with 2s 8.4 v Lipo, 3s 12.6v Lipo and 4s 16.8v Lipo Batteries with ease. </span></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\"><b><span style=\"color: #0080bc; font-size: xx-large;\" color=\"#0080bc\" size=\"6\"><br></span></b></div>\n<div style=\"font-family: Arial; text-align: center;\">\n<b style=\"color: #ff715c;\"><span style=\"font-size: xx-large;\" size=\"6\">All Items are always tested and shipped fast</span></b><span style=\"font-size: xx-large;\" size=\"6\"><b><span style=\"color: #ff715c;\" color=\"#ff715c\"> locally within the Continental USA. I also ship to </span><span style=\"color: #00b8ef;\" color=\"#00b8ef\">Alaska</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #62bc5b;\" color=\"#62bc5b\">Hawaii</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #416aad;\" color=\"#416aad\">Puerto Rico</span><span style=\"color: #ff715c;\" color=\"#ff715c\">, </span><span style=\"color: #fb0034;\" color=\"#fb0034\">Canada</span><span style=\"color: #ff715c;\" color=\"#ff715c\"> and other </span><span style=\"color: #421e6c;\" color=\"#421e6c\">world</span><span style=\"color: #ff715c;\" color=\"#ff715c\"> location.  Delivery times will Vary Greatly Outside the USA. </span></b></span>\n</div>\n<div style=\"font-family: Arial; text-align: center;\"><span style=\"font-size: xx-large;\" size=\"6\"><b><span style=\"color: #ff715c;\" color=\"#ff715c\"><br></span></b></span></div>\n<div style=\"text-align: center;\">\n<div style=\"box-sizing: border-box; margin: 0px; padding: 8px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline; color: #333333; text-align: start;\" data-section-title=\"Product Description\" data-section=\"AliPostDhMb-teg4w\" class=\"mceSectionContainer\" id=\"ali-anchor-AliPostDhMb-teg4w\">\n<div style=\"font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; text-align: center; box-sizing: border-box; margin: 0px; padding: 10px 0px; border: 0px; vertical-align: baseline;\"><span style=\"box-sizing: border-box; font-weight: bold;\"><span style=\"box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 24px; vertical-align: baseline;\" data-spm-anchor-id=\"a2700.wholesale.0.i37.662b6956FBjzG9\"><span face=\"Verdana\" style=\"font-family: Verdana; font-size: xx-large;\" size=\"6\">Features:</span></span></span></div>\n</div>\n<p style=\"font-family: Arial, Helvetica, sans-senif; box-sizing: border-box; line-height: inherit; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; vertical-align: baseline; color: #333333; text-align: start;\"> </p>\n<div style=\"font-size: 12px; text-align: center;\"><span style=\"color: #ff0000; font-family: inherit; font-size: 16px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">High quality materials. Aluminum Construction</span></div>\n<div style=\"text-align: center;\">\n<span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\"><b>One step</b></span><span style=\"font-weight: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">  Charge and Balance process, Just Plug and GO</span>\n</div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Display the voltage at any time, see voltage of each cell and total voltage</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">High charge accuracy, ±10mV(max) Multi-protection to keep charging safe</span></div>\n<div style=\"text-align: center;\"><br></div>\n<div style=\"text-align: center;\"><br></div>\n<br style=\"box-sizing: border-box;\">\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\">Specification:</span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\"><br></span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><span style=\"font-size: x-large;\" size=\"5\"></span></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Operating Voltage Range: 9V-16V DC 2Amps</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Materials: High Quality Durable ABS</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Operating Temperature: -20-45℃</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Cells Type Supported: 2-4 cells Li-lon/Li-poly</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Input Power Request: Recommended 30W Max</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Power: 20W</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Current: 1000mA</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Charge Accuracy: ±10mV</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Balance Current: 1000mA</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Display Accuracy: ±10mV</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Weight: 54g</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Size: 80mmx50mmx20mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">5.5mm MALE DC POWER PLUG cable to DUAL ALLIGATOR CLIPS: DC Power Plug Connector</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">With Cable and alligator clips</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Full Length: about 25cm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Type: 5.5x2.1mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Outside Diameter: 5.5mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Inside diameter: 2.1mm</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">- Wire: 22AWG</span></div>\n<p> </p>\n<p style=\"font-family: Arial, Helvetica, sans-senif; box-sizing: border-box; font-size: 12px; line-height: inherit; margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; vertical-align: baseline; color: #333333; text-align: start;\" data-spm-anchor-id=\"a2700.wholesale.0.i36.662b6956FBjzG9\"> </p>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-size: 16px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">Package includes</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">1pc * Charger with Adapter</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">For RC Batteries Lipo, RC Car, RC Boat, RC Plane, RC Helicopter, RC Motorcycle, RC Airboat, RC hovercraft, Deans, XT60, XT 30, Sailboats, All Lipo Batteries with balance ports, Spektrum Radio Batteries, Futaba Radio Batteries, RadioLink, Radio Master, Horizon Hobby, DX3e and more, DX6, DX7, DX8 , tatoo, Flitetest and more</span></div>\n<div style=\"text-align: center;\"><span style=\"font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\"><br></span></div>\n<p> </p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bc-4s10-lipo-balance-charger-for-2s-3s-4s-li-lon-li-poly",
+       "id": "gid://shopify/ProductVariant/42253357449459",
+       "list_price": {
+        "amount": 2899,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "BC-4S10 Lipo Balance Charger For 2s 3s 4s Li-lon/Li-poly",
+         "height": 725,
+         "preview": {
+          "height": 725,
+          "url": "https://cdn.shopify.com/s/files/1/0619/5239/3459/products/BC-4s10j-582470.jpg",
+          "width": 621
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0619/5239/3459/products/BC-4s10j-582470.jpg",
+         "width": 621
+        }
+       ],
+       "price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "totsrc.myshopify.com",
+        "id": "gid://shopify/Shop/61952393459",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/61952393459/policies/25756696819.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/61952393459/policies/25756729587.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/61952393459/policies/25756664051.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/61952393459/policies/25756762355.html"
+         }
+        ],
+        "name": "ToTsRC/ToTsRETRO",
+        "url": "https://totsrc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7504225272051",
+       "source": "shopify",
+       "title": "BC-4S10 Lipo Balance Charger For 2s 3s 4s Li-lon/Li-poly",
+       "url": "https://totsrc.com/products/bc-4s10-lipo-balance-charger-for-2s-3s-4s-li-lon-li-poly?variant=42253357449459&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">The iSDT PD60 60W 6A 1-4S USB-C Input Battery Charger includes a USB-C Power input that supports QC 2.0/3.0 and USB PD 2.0/3.0 and 5-20V voltage input.</p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">This battery charger can charge up to 4S LiPo batteries.   </span></p>\n<h2 class=\"pro-h\">Specifications</h2>\n<div class=\"wow fadeInUp animated animated\">\n<table class=\"table  success\">\n<tbody>\n<tr>\n<td align=\"right\" width=\"50%\">Model No:</td>\n<td align=\"left\" width=\"50%\">PD60</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Input voltage:</td>\n<td align=\"left\" width=\"50%\">5~20V</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Output voltage:</td>\n<td align=\"left\" width=\"50%\">DC 1~20V</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Max. input current:</td>\n<td align=\"left\" width=\"50%\">DC 3A</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Charging current:</td>\n<td align=\"left\" width=\"50%\">1A/2A/3A/6A</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Balance current:</td>\n<td align=\"left\" width=\"50%\">0.5A/Cell Max</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Supported Quick-charge:</td>\n<td align=\"left\" width=\"50%\">QC2.0/3.0 PD2.0/3.0<br>This charger supports fast charge protocol<br>(But 5V/1A adapter input is not supported)</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Max. charging power:</td>\n<td align=\"left\" width=\"50%\">60W</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Abnormal voltage alarm:</td>\n<td align=\"left\" width=\"50%\">Support</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Incorrect cell count setting alarm:</td>\n<td align=\"left\" width=\"50%\">Support</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Supported battery types and cell count:</td>\n<td align=\"left\" width=\"50%\">LiFe, LiPo 1~4S, LiHv 1-4S, NiMH, Cd 1-12S</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Working temperature:</td>\n<td align=\"left\" width=\"50%\">0~40℃</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Storage temperature:</td>\n<td align=\"left\" width=\"50%\">-20℃~60℃</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Dimension:</td>\n<td align=\"left\" width=\"50%\">56×85×21mm</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Weight:</td>\n<td align=\"left\" width=\"50%\">About 87g</td>\n</tr>\n</tbody>\n</table>\n</div>\n<div class=\"wow fadeInUp animated animated\">\n<h2>Includes</h2>\n<ul>\n<li>1 x iSDT PD60 60W 6A 1-4S USB-C Input Battery Charger</li>\n</ul>\n</div>"
+     },
+     "handle": "isdt-pd60-60w-6a-1-4s-usb-c-input-battery-charger",
+     "id": "gid://shopify/p/3wVOPJKf4HYDVOVamijJlA",
+     "media": [
+      {
+       "alt_text": "ISDT PD60 60W 6A 1-4S USB-C Input Battery Charger - Buddy RC",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/products/isdt_pd60_60w_6a_1-4s_usb-c_input_pocket_charger.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/products/isdt_pd60_60w_6a_1-4s_usb-c_input_pocket_charger.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "USB-C input supports QC 2.0/3.0 and USB PD 2.0/3.0 for versatile charging from multiple power sources",
+       "Smart balance charging ensures safe and efficient charging of 1-4S LiPo batteries",
+       "Compact, lightweight design with natural convection cooling for silent, quiet operation",
+       "Clear status indicators and two operation buttons for easy, intuitive use",
+       "Firmware upgradeable via USB-C for ongoing performance and feature updates"
+      ],
+      "unique_selling_points": [
+       "Supports both QC 2.0/3.0 and USB PD 2.0/3.0 fast charging protocols with smart balance for 1-4S LiPo batteries."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 5,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4
+     },
+     "title": "ISDT PD60 60W 6A 1-4S USB-C Input Battery Charger",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.buddyrc.com/buy/37105317314748:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">The iSDT PD60 60W 6A 1-4S USB-C Input Battery Charger includes a USB-C Power input that supports QC 2.0/3.0 and USB PD 2.0/3.0 and 5-20V voltage input.</p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">This battery charger can charge up to 4S LiPo batteries.   </span></p>\n<h2 class=\"pro-h\">Specifications</h2>\n<div class=\"wow fadeInUp animated animated\">\n<table class=\"table  success\">\n<tbody>\n<tr>\n<td align=\"right\" width=\"50%\">Model No:</td>\n<td align=\"left\" width=\"50%\">PD60</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Input voltage:</td>\n<td align=\"left\" width=\"50%\">5~20V</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Output voltage:</td>\n<td align=\"left\" width=\"50%\">DC 1~20V</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Max. input current:</td>\n<td align=\"left\" width=\"50%\">DC 3A</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Charging current:</td>\n<td align=\"left\" width=\"50%\">1A/2A/3A/6A</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Balance current:</td>\n<td align=\"left\" width=\"50%\">0.5A/Cell Max</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Supported Quick-charge:</td>\n<td align=\"left\" width=\"50%\">QC2.0/3.0 PD2.0/3.0<br>This charger supports fast charge protocol<br>(But 5V/1A adapter input is not supported)</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Max. charging power:</td>\n<td align=\"left\" width=\"50%\">60W</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Abnormal voltage alarm:</td>\n<td align=\"left\" width=\"50%\">Support</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Incorrect cell count setting alarm:</td>\n<td align=\"left\" width=\"50%\">Support</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Supported battery types and cell count:</td>\n<td align=\"left\" width=\"50%\">LiFe, LiPo 1~4S, LiHv 1-4S, NiMH, Cd 1-12S</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Working temperature:</td>\n<td align=\"left\" width=\"50%\">0~40℃</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Storage temperature:</td>\n<td align=\"left\" width=\"50%\">-20℃~60℃</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Dimension:</td>\n<td align=\"left\" width=\"50%\">56×85×21mm</td>\n</tr>\n<tr>\n<td align=\"right\" width=\"50%\">Weight:</td>\n<td align=\"left\" width=\"50%\">About 87g</td>\n</tr>\n</tbody>\n</table>\n</div>\n<div class=\"wow fadeInUp animated animated\">\n<h2>Includes</h2>\n<ul>\n<li>1 x iSDT PD60 60W 6A 1-4S USB-C Input Battery Charger</li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "isdt-pd60-60w-6a-1-4s-usb-c-input-battery-charger",
+       "id": "gid://shopify/ProductVariant/37105317314748",
+       "media": [
+        {
+         "alt_text": "ISDT PD60 60W 6A 1-4S USB-C Input Battery Charger - Buddy RC",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/products/isdt_pd60_60w_6a_1-4s_usb-c_input_pocket_charger.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/products/isdt_pd60_60w_6a_1-4s_usb-c_input_pocket_charger.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3.7
+       },
+       "seller": {
+        "domain": "buddyrc.myshopify.com",
+        "id": "gid://shopify/Shop/26247462998",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708230742.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708263510.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708197974.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708296278.html"
+         }
+        ],
+        "name": "Buddy RC",
+        "url": "https://www.buddyrc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/5956748705980",
+       "source": "shopify",
+       "title": "ISDT PD60 60W 6A 1-4S USB-C Input Battery Charger",
+       "url": "https://www.buddyrc.com/products/isdt-pd60-60w-6a-1-4s-usb-c-input-battery-charger?variant=37105317314748&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2 class=\"a-size-base-plus a-text-bold\" data-mce-fragment=\"1\">About this item</h2>\n<ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[High Power Density]30W Compact lipo balance charger, small in size, yet high in power density.Compared with similar sized products,the power performance is increased by 33%-66%,speed up the charging time.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Battery Type]Charge and balance management of 1-4S LiPo, LiHV, LiFe &amp; LiPo-Storage batteries. LiPo-Storage: charge the battery in half, convenient for long-term storage, protect battery better and extend battery life.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Balance Charger]Each cell is charged by independent line, which make sure each power supply is always fully charged, extending battery life.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Convenient To Read]IPS wide viewing angle display,show more parameters: voltage,current,charging status and charging time. Easy to read and charge.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Easy to operate and Safe]Long Press Type/Current key to select battery type,short press Type/current key to select the charging current,then connect the battery to start charging.M4AC Balance Charger adopted high technology support 100% safe charging with advanced over-current, over-discharge, over-voltage and short-circuit protection for the battery pack.</span></li>\n</ul>\n<h3>\n<span class=\"a-text-bold\" style=\"font-size: 0.875rem;\">Note</span><span style=\"font-size: 0.875rem;\">: </span>\n</h3>\n<p><span style=\"font-size: 0.875rem;\">Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.</span><br></p>"
+     },
+     "handle": "supulse-m4ac-lipo-charger",
+     "id": "gid://shopify/p/5T1B3Cr3DUSKtZYESKs9NL",
+     "media": [
+      {
+       "alt_text": "SUPULSE M4AC Lipo Balance Charger-30W 1-4S AC 100-240V for LiPo/LiHV/LiFe Batteries-EXHOBBY LIMITED.",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/0538/4971/8974/files/M4ACmaster_1.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0538/4971/8974/files/M4ACmaster_1.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Independent charging lines for each cell ensure full charge for every battery cell, extending battery life",
+       "Wide viewing angle IPS display provides clear voltage, current, and charging status readings",
+       "Advanced overcurrent, over-discharge, over-voltage, and short-circuit protection for safe charging",
+       "Supports 1-4S LiPo, LiHV, and LiFe battery types for versatile use",
+       "Compact design with high power density for efficient charging without bulk"
+      ],
+      "unique_selling_points": [
+       "High power density in a compact form with independent charging lines for each cell, ensuring optimal battery health and fast charging."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 21,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "SUPULSE M4AC Lipo Balance Charger-30W 1-4S AC 100-240V for LiPo/LiHV/LiFe Batteries",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://exhobby.com/buy/43377406902462:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2 class=\"a-size-base-plus a-text-bold\" data-mce-fragment=\"1\">About this item</h2>\n<ul class=\"a-unordered-list a-vertical a-spacing-mini\">\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[High Power Density]30W Compact lipo balance charger, small in size, yet high in power density.Compared with similar sized products,the power performance is increased by 33%-66%,speed up the charging time.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Battery Type]Charge and balance management of 1-4S LiPo, LiHV, LiFe &amp; LiPo-Storage batteries. LiPo-Storage: charge the battery in half, convenient for long-term storage, protect battery better and extend battery life.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Balance Charger]Each cell is charged by independent line, which make sure each power supply is always fully charged, extending battery life.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Convenient To Read]IPS wide viewing angle display,show more parameters: voltage,current,charging status and charging time. Easy to read and charge.</span></li>\n<li class=\"a-spacing-mini\"><span class=\"a-list-item\">[Easy to operate and Safe]Long Press Type/Current key to select battery type,short press Type/current key to select the charging current,then connect the battery to start charging.M4AC Balance Charger adopted high technology support 100% safe charging with advanced over-current, over-discharge, over-voltage and short-circuit protection for the battery pack.</span></li>\n</ul>\n<h3>\n<span class=\"a-text-bold\" style=\"font-size: 0.875rem;\">Note</span><span style=\"font-size: 0.875rem;\">: </span>\n</h3>\n<p><span style=\"font-size: 0.875rem;\">Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.</span><br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "supulse-m4ac-lipo-charger",
+       "id": "gid://shopify/ProductVariant/43377406902462",
+       "media": [
+        {
+         "alt_text": "SUPULSE M4AC Lipo Balance Charger-30W 1-4S AC 100-240V for LiPo/LiHV/LiFe Batteries-EXHOBBY LIMITED.",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/0538/4971/8974/files/M4ACmaster_1.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0538/4971/8974/files/M4ACmaster_1.jpg",
+         "width": 1500
+        }
+       ],
+       "price": {
+        "amount": 3299,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "exhobbyrc.myshopify.com",
+        "id": "gid://shopify/Shop/53849718974",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/53849718974/policies/24172396734.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/53849718974/policies/24172429502.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/53849718974/policies/24172363966.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/53849718974/policies/24172462270.html"
+         }
+        ],
+        "name": "EXHOBBY LIMITED",
+        "url": "https://exhobby.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7850407100606",
+       "source": "shopify",
+       "title": "SUPULSE M4AC Lipo Balance Charger-30W 1-4S AC 100-240V for LiPo/LiHV/LiFe Batteries",
+       "url": "https://exhobby.com/products/supulse-m4ac-lipo-charger?variant=43377406902462&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"z\">\n<span data-mce-fragment=\"1\">The acclaimed</span><strong data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"> </span>ToolkitRC M4 Pocket Charger</strong><span data-mce-fragment=\"1\"> is perfect for all of your on-the-go FPV charging needs! With 80 Watts of Power, Dual Inputs, Built-In USB-C Input and Output, and an IPS Wide-Angle Color Display, this charger will keep you powered up anywhere you go!</span>\n</div>\n<div class=\"z\"></div>\n<div class=\"z\"></div>\n<div class=\"z\">\n<span data-mce-fragment=\"1\">C</span><span data-mce-fragment=\"1\">heck out all our </span><a href=\"https://pyrodrone.com/collections/chargers-1\" title=\"FPV LiPo Battery Charger sold by PyroDrone\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/chargers-1\">Chargers</a><span data-mce-fragment=\"1\"> and the rest of our </span><a title=\"Tool Kit RC Products sold by PyroDrone\" href=\"https://pyrodrone.com/collections/toolkitrc-products\" data-mce-fragment=\"1\" data-mce-href=\"https://pyrodrone.com/collections/toolkitrc-products\" target=\"_blank\">ToolKitRC Products!</a>\n</div>\n<div class=\"z\">\n<p> <br></p>\n<p><strong>VIDEO: 2 Things every FPV PILOT NEEDS: ToolKitRc M4 Pocket</strong></p>\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/_E8kpdgS84A\" frameborder=\"0\"></iframe></p>\n<p> </p>\n<h2>Features</h2>\n<ul>\n<li>Dual Inputs - Type C and XT-60 DC</li>\n<li>Built-In USB-C Input and Output </li>\n<li>IPS Wide-Angle Color Display</li>\n<li>Fast Charging Support</li>\n<li>80 Watts of Power</li>\n<li>Pocket-Sized</li>\n</ul>\n<h2>Specifications</h2>\n<ul>\n<li>Input Voltage: XT60 7.0-25.0V MAX 5.0A, USB-C 7.0-20.0V</li>\n<li>Type of battery: LiPo LiHv LiFe Lipo Storage 1-4S</li>\n<li>USB-C protocol: QC,PD,AFC,FCP Protocol</li>\n<li>Screen: IPS 1.54inch LCD 240*240 Pixel</li>\n<li>Charge power: 1.0-5.0A@MAX 80W</li>\n<li>Balance current: 400mA @4.20V</li>\n<li>Balance accuracy: &lt;0.005V @ 4.2V</li>\n<li>USB-C output: 1.0A @5.0V</li>\n<li>Dimensions: 80x40x30</li>\n<li>Weight: 75g</li>\n</ul>\n<h2>Manual</h2>\n<ul>\n<li><a href=\"https://www.toolkitrc.com/filedownload/73005\" target=\"_blank\">ToolKitRC M4 Pocket Charger</a></li>\n</ul>\n<h2>Includes</h2>\n<ul>\n<li>1x ToolkitRC M4 Pocket 80W 5A 1-4S Compact DC Charger</li>\n</ul>\n<p> </p>\n<p><img src=\"https://cdn.getfpv.com/media/wysiwyg/Chargers/ToolkitRC-M4-Pocket-80W-5A-1-4S-Compact-DC-Charger-w-Built-In-USB-C-InputOutput-Inforgraphic.jpg\"></p>\n<p> </p>\n<h2><br></h2>\n<p> </p>\n</div>"
+     },
+     "handle": "toolkitrc-m4-pocket-80w-5a-1-4s-compact-balance-charger-w-built-in-usb-c-input-output",
+     "id": "gid://shopify/p/sqEa4jLDPXZLo0vVmhN8r",
+     "media": [
+      {
+       "alt_text": "ToolkitRC M4 Pocket 80W 5A 1-4S Compact Balance Charger w/ Built-In USB-C Input/Output",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/toolkitrc_m4_pocket_chargerm4-low_res-width-1000px.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/toolkitrc_m4_pocket_chargerm4-low_res-width-1000px.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual USB-C input and output enables fast charging and data transfer for multiple devices",
+       "80W power output supports rapid charging of 1-4S LiPo batteries",
+       "Built-in IPS 1.54-inch color display provides real-time charging status and balance information",
+       "Compact and lightweight design fits easily in pockets or bags for portability",
+       "Supports a wide range of LiPo, LiHV, LiFePO4, and Li-ion battery chemistries for versatile use"
+      ],
+      "unique_selling_points": [
+       "Dual USB-C input and output with 80W power and built-in IPS color display in a pocket-sized design."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 9,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "ToolkitRC M4 Pocket 80W 5A 1-4S Compact Balance Charger w/ Built-In USB-C Input/Output",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/39775867306027:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"z\">\n<span data-mce-fragment=\"1\">The acclaimed</span><strong data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"> </span>ToolkitRC M4 Pocket Charger</strong><span data-mce-fragment=\"1\"> is perfect for all of your on-the-go FPV charging needs! With 80 Watts of Power, Dual Inputs, Built-In USB-C Input and Output, and an IPS Wide-Angle Color Display, this charger will keep you powered up anywhere you go!</span>\n</div>\n<div class=\"z\"></div>\n<div class=\"z\"></div>\n<div class=\"z\">\n<span data-mce-fragment=\"1\">C</span><span data-mce-fragment=\"1\">heck out all our </span><a href=\"https://pyrodrone.com/collections/chargers-1\" title=\"FPV LiPo Battery Charger sold by PyroDrone\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://pyrodrone.com/collections/chargers-1\">Chargers</a><span data-mce-fragment=\"1\"> and the rest of our </span><a title=\"Tool Kit RC Products sold by PyroDrone\" href=\"https://pyrodrone.com/collections/toolkitrc-products\" data-mce-fragment=\"1\" data-mce-href=\"https://pyrodrone.com/collections/toolkitrc-products\" target=\"_blank\">ToolKitRC Products!</a>\n</div>\n<div class=\"z\">\n<p> <br></p>\n<p><strong>VIDEO: 2 Things every FPV PILOT NEEDS: ToolKitRc M4 Pocket</strong></p>\n<p><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/_E8kpdgS84A\" frameborder=\"0\"></iframe></p>\n<p> </p>\n<h2>Features</h2>\n<ul>\n<li>Dual Inputs - Type C and XT-60 DC</li>\n<li>Built-In USB-C Input and Output </li>\n<li>IPS Wide-Angle Color Display</li>\n<li>Fast Charging Support</li>\n<li>80 Watts of Power</li>\n<li>Pocket-Sized</li>\n</ul>\n<h2>Specifications</h2>\n<ul>\n<li>Input Voltage: XT60 7.0-25.0V MAX 5.0A, USB-C 7.0-20.0V</li>\n<li>Type of battery: LiPo LiHv LiFe Lipo Storage 1-4S</li>\n<li>USB-C protocol: QC,PD,AFC,FCP Protocol</li>\n<li>Screen: IPS 1.54inch LCD 240*240 Pixel</li>\n<li>Charge power: 1.0-5.0A@MAX 80W</li>\n<li>Balance current: 400mA @4.20V</li>\n<li>Balance accuracy: &lt;0.005V @ 4.2V</li>\n<li>USB-C output: 1.0A @5.0V</li>\n<li>Dimensions: 80x40x30</li>\n<li>Weight: 75g</li>\n</ul>\n<h2>Manual</h2>\n<ul>\n<li><a href=\"https://www.toolkitrc.com/filedownload/73005\" target=\"_blank\">ToolKitRC M4 Pocket Charger</a></li>\n</ul>\n<h2>Includes</h2>\n<ul>\n<li>1x ToolkitRC M4 Pocket 80W 5A 1-4S Compact DC Charger</li>\n</ul>\n<p> </p>\n<p><img src=\"https://cdn.getfpv.com/media/wysiwyg/Chargers/ToolkitRC-M4-Pocket-80W-5A-1-4S-Compact-DC-Charger-w-Built-In-USB-C-InputOutput-Inforgraphic.jpg\"></p>\n<p> </p>\n<h2><br></h2>\n<p> </p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "toolkitrc-m4-pocket-80w-5a-1-4s-compact-balance-charger-w-built-in-usb-c-input-output",
+       "id": "gid://shopify/ProductVariant/39775867306027",
+       "media": [
+        {
+         "alt_text": "ToolkitRC M4 Pocket 80W 5A 1-4S Compact Balance Charger w/ Built-In USB-C Input/Output",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/toolkitrc_m4_pocket_chargerm4-low_res-width-1000px.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/toolkitrc_m4_pocket_chargerm4-low_res-width-1000px.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 16,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.6
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6738005983275",
+       "source": "shopify",
+       "title": "ToolkitRC M4 Pocket 80W 5A 1-4S Compact Balance Charger w/ Built-In USB-C Input/Output",
+       "url": "https://pyrodrone.com/products/toolkitrc-m4-pocket-80w-5a-1-4s-compact-balance-charger-w-built-in-usb-c-input-output?variant=39775867306027&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>Charge 2-4S batteries by plugging this charger right into the wall, no need for a bulky power supply.</span></p>\n<p><span>Check out our other </span><a href=\"https://www.racedayquads.com/collections/battery-chargers-accessories\" target=\"_blank\">Battery Chargers and Accessories</a><span>, and all our </span><a href=\"https://www.racedayquads.com/collections/toolkitrc-products\" title=\"toolkitrc products for sale at racedayquads\" target=\"_blank\">ToolkitRC products</a><span>!</span></p>\n<h3>Specifications</h3>\n<ul>\n<li>Input: AC100-240V@MAX30W</li>\n<li>Battery Type: LiPo LiHV LiFe @2-4S</li>\n<li>Charging Power: 0.5-2.5A@25W</li>\n<li>Bal Cur. : 200mA @2-4S</li>\n<li>Charging accuracy: &lt;0.005V</li>\n<li>Display: LCD IPS 1.54 inch 240x240 resolution</li>\n<li>Size: 75mm x 54mm</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60</li>\n</ul>"
+     },
+     "handle": "toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60",
+     "id": "gid://shopify/p/48ldOU1Gs4a7lwEV3eIeW3",
+     "media": [
+      {
+       "alt_text": "TOOLKITRC Charger ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/toolkitrc-toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60-charger-15693184204913.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/toolkitrc-toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60-charger-15693184204913.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Supports 2-4S LiPo and LiFe batteries for versatile charging needs",
+       "High balancing current of 200mA ensures accurate battery balancing",
+       "Charging accuracy under 0.005V for reliable battery health",
+       "LCD display with 1.54-inch IPS screen for easy monitoring",
+       "Compact and lightweight design for convenient portability"
+      ],
+      "unique_selling_points": [
+       "Balances and charges 2-4S LiPo and LiFe batteries with high accuracy and compact design, supporting XT60 and XT30 outputs."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3599,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 19,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/32114730762353:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>Charge 2-4S batteries by plugging this charger right into the wall, no need for a bulky power supply.</span></p>\n<p><span>Check out our other </span><a href=\"https://www.racedayquads.com/collections/battery-chargers-accessories\" target=\"_blank\">Battery Chargers and Accessories</a><span>, and all our </span><a href=\"https://www.racedayquads.com/collections/toolkitrc-products\" title=\"toolkitrc products for sale at racedayquads\" target=\"_blank\">ToolkitRC products</a><span>!</span></p>\n<h3>Specifications</h3>\n<ul>\n<li>Input: AC100-240V@MAX30W</li>\n<li>Battery Type: LiPo LiHV LiFe @2-4S</li>\n<li>Charging Power: 0.5-2.5A@25W</li>\n<li>Bal Cur. : 200mA @2-4S</li>\n<li>Charging accuracy: &lt;0.005V</li>\n<li>Display: LCD IPS 1.54 inch 240x240 resolution</li>\n<li>Size: 75mm x 54mm</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60",
+       "id": "gid://shopify/ProductVariant/32114730762353",
+       "media": [
+        {
+         "alt_text": "TOOLKITRC Charger ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/toolkitrc-toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60-charger-15693184204913.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/toolkitrc-toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60-charger-15693184204913.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 18,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4587396726897",
+       "source": "shopify",
+       "title": "ToolkitRC M4AC 30W 2.5A 2-4S AC Smart Charger- XT60",
+       "url": "https://www.racedayquads.com/products/toolkitrc-m4ac-30w-2-5a-2-4s-ac-smart-charger-xt60?variant=32114730762353&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP Hitec's RDX4 Mini is the latest innovation in radio control battery charging technology designed for the discerning RC enthusiasts. This compact yet powerful charger is set to revolutionize the way you power your devices. Boasting an impressive dual charging capability, delivering an astonishing 100 watts on AC and a remarkable 240 watts on DC with four charging ports, it provides up to 6 amps of charging current, ensuring that bashers, park fliers and avid RC enthusiasts can fully maximize their experience without waiting for long charge times. Its customizable settings allow you to tailor your charging experience with your unique preferences and its cutting-edge safety features provide the confidence and peace of mind you deserve. Engineered to handle a wide variety of battery chemistries, the RDX4 Mini is your versatile battery charging solution, whether you are a casual weekend hobbyist or a serious competitor. Unlock the full potential of your RC charging needs with the latest from Hitec. Charge Smart. Play Hard. FEATURES: 4 port AC/DC Charger delivers up to 100W AC / 240W DC Balance, Standard, Storage and Discharge Modes for All Lithium Battery Chemistries Re-Peak Charge Mode and Delta-Peak Sensitivity for NiMH/NiCd Batteries Capacity Cut-Off Limit Smart Ventilation Fan Built-in Power Supply Function for Powering Devices up to 30V @ 6A SPECIFICATIONS: 100V – 240V AC Operating Voltage Range LiPo, LiFe &amp; LiIon Cell Count: 1-4 Cells NiCd/NiMH Cell Count: 1-8 Cells Pb Lead-Acid Based Cell Count: 3/6 Cells Charge Circuit Power: 100W AC / 240W DC Discharge Circuit Power: 5W Dimensions: 5.51 x 4.25 x 1.71 in. Weight: 1.08 lbs"
+     },
+     "handle": "hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp",
+     "id": "gid://shopify/p/xTjXVAoVBvxeVJSiJGIdH",
+     "media": [
+      {
+       "alt_text": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP",
+       "height": 651,
+       "preview": {
+        "height": 651,
+        "url": "https://cdn.shopify.com/s/files/1/0520/1972/4454/files/hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp.jpg",
+        "width": 896
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0520/1972/4454/files/hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp.jpg",
+       "width": 896
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Smart balance charging ensures even current distribution across all LiPo cells for improved safety and longevity",
+       "Dual AC/DC input supports a wide range of charging needs and device compatibility",
+       "Supports up to 4S LiPo, LiFePO4, Li-ion, NiMH, and NiCd batteries for maximum versatility",
+       "Customizable charging modes and settings allow users to tailor the charging process to their specific requirements",
+       "Compact design fits easily into tight spaces, ideal for mini and micro quadcopters"
+      ],
+      "unique_selling_points": [
+       "Delivers up to 240W DC and 100W AC charging with smart balance for 4S LiPo batteries in a compact form factor."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 13999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 13999,
+       "currency": "USD"
+      }
+     },
+     "title": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.whiterosehobbies.com/buy/54077539123413:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP Hitec's RDX4 Mini is the latest innovation in radio control battery charging technology designed for the discerning RC enthusiasts. This compact yet powerful charger is set to revolutionize the way you power your devices. Boasting an impressive dual charging capability, delivering an astonishing 100 watts on AC and a remarkable 240 watts on DC with four charging ports, it provides up to 6 amps of charging current, ensuring that bashers, park fliers and avid RC enthusiasts can fully maximize their experience without waiting for long charge times. Its customizable settings allow you to tailor your charging experience with your unique preferences and its cutting-edge safety features provide the confidence and peace of mind you deserve. Engineered to handle a wide variety of battery chemistries, the RDX4 Mini is your versatile battery charging solution, whether you are a casual weekend hobbyist or a serious competitor. Unlock the full potential of your RC charging needs with the latest from Hitec. Charge Smart. Play Hard. FEATURES: 4 port AC/DC Charger delivers up to 100W AC / 240W DC Balance, Standard, Storage and Discharge Modes for All Lithium Battery Chemistries Re-Peak Charge Mode and Delta-Peak Sensitivity for NiMH/NiCd Batteries Capacity Cut-Off Limit Smart Ventilation Fan Built-in Power Supply Function for Powering Devices up to 30V @ 6A SPECIFICATIONS: 100V – 240V AC Operating Voltage Range LiPo, LiFe &amp; LiIon Cell Count: 1-4 Cells NiCd/NiMH Cell Count: 1-8 Cells Pb Lead-Acid Based Cell Count: 3/6 Cells Charge Circuit Power: 100W AC / 240W DC Discharge Circuit Power: 5W Dimensions: 5.51 x 4.25 x 1.71 in. Weight: 1.08 lbs"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp",
+       "id": "gid://shopify/ProductVariant/54077539123413",
+       "media": [
+        {
+         "alt_text": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP",
+         "height": 651,
+         "preview": {
+          "height": 651,
+          "url": "https://cdn.shopify.com/s/files/1/0520/1972/4454/files/hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp.jpg",
+          "width": 896
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0520/1972/4454/files/hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp.jpg",
+         "width": 896
+        }
+       ],
+       "price": {
+        "amount": 13999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "white-rose-hobbies-llc.myshopify.com",
+        "id": "gid://shopify/Shop/52019724454",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/52019724454/policies/25076400294.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/52019724454/policies/25076433062.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/52019724454/policies/25076367526.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/52019724454/policies/25076465830.html"
+         }
+        ],
+        "name": "White Rose Hobbies",
+        "url": "https://www.whiterosehobbies.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9424274489557",
+       "source": "shopify",
+       "title": "HiTEC 44350 RDX4 Mini Quad Smart LiPo Battery Balance Charger 4S 6AMP",
+       "url": "https://www.whiterosehobbies.com/products/hitec-44350-rdx4-mini-quad-smart-lipo-battery-balance-charger-4s-6amp?variant=54077539123413&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Charging has never been easier! Our Lectron Pro AC-3A features a 3A charge rate and automatically balances your battery when charging. Setting up the charge is simple, just plug the balance connector from your 2S, 3S, or 4S LiPo battery into the charger, and the charger does the rest! With 35W of charging power, you'll have your battery charged in no time. This charger also has LEDs on the front that show you the charge status.</p>\n<h4>Specifications:</h4>\n<ul>\n<li>\n<b>Input Voltage:</b><span> </span>AC 100-240V</li>\n<li>\n<b>Charging Circuit Power:</b><span> </span>35 watts max</li>\n<li>\n<b>No. of Lithium Cells:</b><span> </span>2S-4S</li>\n<li>\n<b>Charge Rate:</b><span> </span>3.0A</li>\n<li>\n<b>Balance Current:</b><span> </span>300mAh/cell</li>\n<li>\n<b>Dimensions:</b><span> </span>4.75\" L x 2.75\" W x 1.5\" H</li>\n<li>\n<b>Weight:</b><span> </span>6.3 oz</li>\n</ul>"
+     },
+     "handle": "common-sense-rc-ac-3a-lipo-balancing-charger-2s-4s-35w-3a",
+     "id": "gid://shopify/p/3eMZNoJRUd05mrbC4gQkri",
+     "media": [
+      {
+       "alt_text": "Common Sense RC AC-3A Lipo Balancing Charger - 2S-4S, 35W, 3A - stpatty - Common Sense RC",
+       "height": 872,
+       "preview": {
+        "height": 872,
+        "url": "https://cdn.shopify.com/s/files/1/0583/6413/3582/files/AC-3A_1000.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0583/6413/3582/files/AC-3A_1000.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Automatic LiPo balancing ensures safe and consistent battery performance",
+       "3A charge rate enables rapid charging for multiple batteries simultaneously",
+       "LED indicators provide clear charge status for user confidence",
+       "Supports 2S to 4S LiPo batteries for versatile compatibility",
+       "Compact design fits easily in any workspace"
+      ],
+      "unique_selling_points": [
+       "Combines high 3A charge rate with automatic balancing for efficient and safe LiPo charging."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3499,
+       "currency": "USD"
+      }
+     },
+     "title": "Common Sense RC AC-3A Lipo Balancing Charger - 2S-4S, 35W, 3A",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rcvisions.com/buy/42987560730830:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Charging has never been easier! Our Lectron Pro AC-3A features a 3A charge rate and automatically balances your battery when charging. Setting up the charge is simple, just plug the balance connector from your 2S, 3S, or 4S LiPo battery into the charger, and the charger does the rest! With 35W of charging power, you'll have your battery charged in no time. This charger also has LEDs on the front that show you the charge status.</p>\n<h4>Specifications:</h4>\n<ul>\n<li>\n<b>Input Voltage:</b><span> </span>AC 100-240V</li>\n<li>\n<b>Charging Circuit Power:</b><span> </span>35 watts max</li>\n<li>\n<b>No. of Lithium Cells:</b><span> </span>2S-4S</li>\n<li>\n<b>Charge Rate:</b><span> </span>3.0A</li>\n<li>\n<b>Balance Current:</b><span> </span>300mAh/cell</li>\n<li>\n<b>Dimensions:</b><span> </span>4.75\" L x 2.75\" W x 1.5\" H</li>\n<li>\n<b>Weight:</b><span> </span>6.3 oz</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "common-sense-rc-ac-3a-lipo-balancing-charger-2s-4s-35w-3a",
+       "id": "gid://shopify/ProductVariant/42987560730830",
+       "media": [
+        {
+         "alt_text": "Common Sense RC AC-3A Lipo Balancing Charger - 2S-4S, 35W, 3A - stpatty - Common Sense RC",
+         "height": 872,
+         "preview": {
+          "height": 872,
+          "url": "https://cdn.shopify.com/s/files/1/0583/6413/3582/files/AC-3A_1000.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0583/6413/3582/files/AC-3A_1000.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3499,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robsrchobbies.myshopify.com",
+        "id": "gid://shopify/Shop/58364133582",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/58364133582/policies/25489113294.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/58364133582/policies/25489146062.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/58364133582/policies/25489080526.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/58364133582/policies/25489178830.html"
+         }
+        ],
+        "name": "RC Visions",
+        "url": "https://rcvisions.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7558478463182",
+       "source": "shopify",
+       "title": "Common Sense RC AC-3A Lipo Balancing Charger - 2S-4S, 35W, 3A",
+       "url": "https://rcvisions.com/products/common-sense-rc-ac-3a-lipo-balancing-charger-2s-4s-35w-3a?variant=42987560730830&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Meet the Tosiicop LiPo Battery Charger, a compact balance charger designed for 2S, 3S, and 4S LiPo and LiHV packs. With an 18W, 2A output, it facilitates balanced charging across all cells, helping each pack reach a clean, even voltage. The lightweight 128 g chassis fits easily in a backpack or workshop setup, making routine battery maintenance simple between sessions.</p><p>Built for versatile RC gear, this charger supports a wide range of applications—from RC cars and monster trucks to boats, airplanes, FPV drones, quadcopters, and even airsoft gear that uses common XH connectors. It covers LiPo packs at 7.4–14.8V and LiHV packs at 8.7–17.4V, across 2S–4S configurations, with XH3P, XH4P, and XH5P plug compatibility for flexible setup.</p><h3>Smart protections and clear status</h3><ul>\n<li>Intelligent IC-based charging guards against overvoltage, overload, overheating, and overcharging, helping protect both the battery and charger over time.</li>\n<li>Charging indicators provide clear feedback: a flashing light during charging, a steady light when idle, and a steady light when complete. Use the start/stop button to control charging sessions.</li>\n</ul><h3>Specifications at a glance</h3><ul>\n<li>Input: AC 100–240V; Output: 18W 2A; Battery types: LiPo/LiHV (2–4S)</li>\n<li>Weight: ~128 g; Compact footprint makes it easy to store or travel with.</li>\n</ul><h3>What’s included</h3><ul>\n<li>1 × LiPo/LiHV Balance Charger</li>\n<li>1 × User Manual</li>\n<li>1 × XH3P-XH5P Fast Charging Cable</li>\n</ul><p>Notes: Please verify battery interfaces match before ordering and always consult the manual before use. This charger aims to provide balanced charging for your LiPo and LiHV packs, supporting a variety of RC setups with reliable, practical performance.</p>\n<section class=\"product-faq-snippet\"><h3>FAQ</h3>\n<div class=\"faq-item\">\n<p class=\"faq-q\">Q: Is this charger compatible with LiPo/LiHV packs and 2S-4S cells?</p>\n<p class=\"faq-a\">A: Yes, designed for LiPo/LiHV 2S-4S packs with XH3P-XH5P connectors; ensure battery interface matches.</p>\n</div>\n<div class=\"faq-item\">\n<p class=\"faq-q\">Q: How can I tell charging is finished?</p>\n<p class=\"faq-a\">A: The indicator flashes while charging, stays solid when complete; press the start/stop button to control sessions.</p>\n</div></section>"
+     },
+     "handle": "tosiicop-lipo-battery-charger-2s-4s-18w-2a-balance-charger-for-rc-cars-boats-drones",
+     "id": "gid://shopify/p/1K1waGC4NL3W9h4GhMX98g",
+     "media": [
+      {
+       "alt_text": "Tosiicop LiPo balance charger front view showing compact design for safe multi-cell charging",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0780/2355/7319/files/tosiicop-lipo-balance-charger-front-view.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0780/2355/7319/files/tosiicop-lipo-balance-charger-front-view.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Smart protection circuit prevents overvoltage, overload, overheating, and overcharging for battery and charger safety",
+       "Supports both LiPo and LiHV 2S-4S packs for versatile compatibility",
+       "Compact 128 g chassis fits easily in backpacks or workshops for convenient portability",
+       "Clear charging indicators provide real-time feedback on charging status",
+       "Fast charging capability with XH3P and XH5P plug compatibility"
+      ],
+      "unique_selling_points": [
+       "Supports both LiPo and LiHV 2S-4S packs with smart protection and compact design."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2765,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2765,
+       "currency": "USD"
+      }
+     },
+     "title": "Tosiicop LiPo Battery Charger 2S-4S | 18W 2A Balance Charger for RC Cars, Boats, Drones",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://toyterrax.com/buy/46523585921223:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Meet the Tosiicop LiPo Battery Charger, a compact balance charger designed for 2S, 3S, and 4S LiPo and LiHV packs. With an 18W, 2A output, it facilitates balanced charging across all cells, helping each pack reach a clean, even voltage. The lightweight 128 g chassis fits easily in a backpack or workshop setup, making routine battery maintenance simple between sessions.</p><p>Built for versatile RC gear, this charger supports a wide range of applications—from RC cars and monster trucks to boats, airplanes, FPV drones, quadcopters, and even airsoft gear that uses common XH connectors. It covers LiPo packs at 7.4–14.8V and LiHV packs at 8.7–17.4V, across 2S–4S configurations, with XH3P, XH4P, and XH5P plug compatibility for flexible setup.</p><h3>Smart protections and clear status</h3><ul>\n<li>Intelligent IC-based charging guards against overvoltage, overload, overheating, and overcharging, helping protect both the battery and charger over time.</li>\n<li>Charging indicators provide clear feedback: a flashing light during charging, a steady light when idle, and a steady light when complete. Use the start/stop button to control charging sessions.</li>\n</ul><h3>Specifications at a glance</h3><ul>\n<li>Input: AC 100–240V; Output: 18W 2A; Battery types: LiPo/LiHV (2–4S)</li>\n<li>Weight: ~128 g; Compact footprint makes it easy to store or travel with.</li>\n</ul><h3>What’s included</h3><ul>\n<li>1 × LiPo/LiHV Balance Charger</li>\n<li>1 × User Manual</li>\n<li>1 × XH3P-XH5P Fast Charging Cable</li>\n</ul><p>Notes: Please verify battery interfaces match before ordering and always consult the manual before use. This charger aims to provide balanced charging for your LiPo and LiHV packs, supporting a variety of RC setups with reliable, practical performance.</p>\n<section class=\"product-faq-snippet\"><h3>FAQ</h3>\n<div class=\"faq-item\">\n<p class=\"faq-q\">Q: Is this charger compatible with LiPo/LiHV packs and 2S-4S cells?</p>\n<p class=\"faq-a\">A: Yes, designed for LiPo/LiHV 2S-4S packs with XH3P-XH5P connectors; ensure battery interface matches.</p>\n</div>\n<div class=\"faq-item\">\n<p class=\"faq-q\">Q: How can I tell charging is finished?</p>\n<p class=\"faq-a\">A: The indicator flashes while charging, stays solid when complete; press the start/stop button to control sessions.</p>\n</div></section>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tosiicop-lipo-battery-charger-2s-4s-18w-2a-balance-charger-for-rc-cars-boats-drones",
+       "id": "gid://shopify/ProductVariant/46523585921223",
+       "media": [
+        {
+         "alt_text": "Tosiicop LiPo balance charger front view showing compact design for safe multi-cell charging",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0780/2355/7319/files/tosiicop-lipo-balance-charger-front-view.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0780/2355/7319/files/tosiicop-lipo-balance-charger-front-view.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 2765,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "cxitdj-id.myshopify.com",
+        "id": "gid://shopify/Shop/78023557319",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/78023557319/policies/42401267911.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/78023557319/policies/42401759431.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/78023557319/policies/42401726663.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/78023557319/policies/42401792199.html"
+         }
+        ],
+        "name": "ToyTerrax",
+        "url": "https://toyterrax.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8702544773319",
+       "source": "shopify",
+       "title": "Tosiicop LiPo Battery Charger 2S-4S | 18W 2A Balance Charger for RC Cars, Boats, Drones",
+       "url": "https://toyterrax.com/products/tosiicop-lipo-battery-charger-2s-4s-18w-2a-balance-charger-for-rc-cars-boats-drones?variant=46523585921223&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "Prepare for battle with Elite Force Airsoft and their high-performance 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger. Every airsoft owner needs this pinnacle of charging convenience and safety - the Elite Force 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger\r\n\r\nCharge up your AEG's batteries quickly and safely with the Elite Fore Balance Charger and Voltage Detector. This charger can handle 7.4v, 11.1v, and 14.8v LiPo and Li-Ion batteries and features a digital readout. An 11.1v battery will fully charge in 1.5 hours. Just remember, it’s still the best idea to place your batteries in a battery charging bag. With its advanced balance charging technology, this charger actively monitors and balances each cell within your airsoft battery pack. This ensures that they all charge evenly and to their maximum capacity."
+     },
+     "handle": "elite-force-2-4s-li-poly-li-ion-smart-battery-balance-charger",
+     "id": "gid://shopify/p/6TAUNeZMZsQaOcu1Toiw7K",
+     "media": [
+      {
+       "alt_text": "EF 2-4S LI-POLY-LI-ION BATTERY BALANCE CHARGER & VOLTAGE DET",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0626/2223/6742/files/EF-2-4S-LI-POLY-LI-ION-BATTERY-BALANCE-CHARGER-VOLTAGE-DET.jpg",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0626/2223/6742/files/EF-2-4S-LI-POLY-LI-ION-BATTERY-BALANCE-CHARGER-VOLTAGE-DET.jpg",
+       "width": 1200
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Smart balance charging technology: Ensures all cells in Li-Poly and Li-Ion batteries are charged evenly for longer battery life",
+       "Supports 2-4S battery packs: Compatible with a wide range of airsoft and electronics batteries for versatile use",
+       "Digital readout display: Provides clear, real-time charging status for easy monitoring",
+       "Fast charging capability: 11.1V batteries can be fully charged in 1.5 hours, reducing downtime",
+       "Multiple input voltage support: Charges 7.4V, 11.1V, and 14.8V batteries for broad compatibility"
+      ],
+      "unique_selling_points": [
+       "Advanced balance charging technology ensures even charging and maximum capacity for multiple battery types."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Elite Force 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://laairsoft.com/buy/43599804694598:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "Prepare for battle with Elite Force Airsoft and their high-performance 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger. Every airsoft owner needs this pinnacle of charging convenience and safety - the Elite Force 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger\r\n\r\nCharge up your AEG's batteries quickly and safely with the Elite Fore Balance Charger and Voltage Detector. This charger can handle 7.4v, 11.1v, and 14.8v LiPo and Li-Ion batteries and features a digital readout. An 11.1v battery will fully charge in 1.5 hours. Just remember, it’s still the best idea to place your batteries in a battery charging bag. With its advanced balance charging technology, this charger actively monitors and balances each cell within your airsoft battery pack. This ensures that they all charge evenly and to their maximum capacity."
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "elite-force-2-4s-li-poly-li-ion-smart-battery-balance-charger",
+       "id": "gid://shopify/ProductVariant/43599804694598",
+       "media": [
+        {
+         "alt_text": "EF 2-4S LI-POLY-LI-ION BATTERY BALANCE CHARGER & VOLTAGE DET",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0626/2223/6742/files/EF-2-4S-LI-POLY-LI-ION-BATTERY-BALANCE-CHARGER-VOLTAGE-DET.jpg",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0626/2223/6742/files/EF-2-4S-LI-POLY-LI-ION-BATTERY-BALANCE-CHARGER-VOLTAGE-DET.jpg",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 4499,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "la-airsoft.myshopify.com",
+        "id": "gid://shopify/Shop/62622236742",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62622236742/policies/28048916550.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62622236742/policies/33709391942.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62622236742/policies/33709326406.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62622236742/policies/33709424710.html"
+         }
+        ],
+        "name": "LA Airsoft",
+        "url": "https://laairsoft.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7907061366854",
+       "source": "shopify",
+       "title": "Elite Force 2-4S Li-Poly/Li-Ion SMART Battery Balance Charger",
+       "url": "https://laairsoft.com/products/elite-force-2-4s-li-poly-li-ion-smart-battery-balance-charger?variant=43599804694598&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><meta charset=\"UTF-8\">The GensAce iMARS Mini Smart Balance Charger is a portable and versatile battery charger from the makers of Tattu LiPo batteries. Featuring a simple two-button design and a compact, lightweight form factor, the iMARS Mini is the perfect travel LiPo charger. With its included 65-Watt power supply or any other USB-C PD Input, this device can charge and storage discharge batteries in minutes.  Additionally, this charger features the GensAce G-Tech Smart JST balance plug, which allows for effortless care of batteries with compatible circuitry.<br></p>\n<p><strong>*An <a href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter?_pos=1&amp;_sid=662e1ea62&amp;_ss=r\">XT30M-XT60F adapter</a> is required to charge batteries with an XT30 lead, such as the ones used for the Nightingale.</strong></p>\n<p><strong>FEATURES:</strong><br><span>• GensAce iMars Mini Smart Balance Charger<br>• Portable USB-C PD LiPo charger<br>• Gens Ace Tattu guaranteed reliability<br>• 2-4S compatible</span><br><span>• Balance Charge and Storage Modes</span><br><span>• Smart charge automatic current control</span><br><span>• USB-C PD input <br>• Compatible with select USB-C battery power banks<br>• Bonus compatibility with G-Tech Smart JST balance plugs<br></span></p>\n<p><strong>INCLUDES:<br></strong>• 1 IMARS Mini charger<br>• 1 65W USB-C power supply<br><span>• Battery Terminal Adapters*<br></span></p>\n<p><em>*An <a title=\"XT30 Male to XT60 Female Adapter\" href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter\">XT30M-XT60F adapter</a> is not included</em></p>\n<p><strong>SPECS:</strong><br><span>• Output:<br>     • Chemistries: LiPo, LiHV, LiFE, NiMH<br>     • Configurations: 2-4S (7.4-14.8V)<br>     • Charge Rate: 1-1.5C (1-5A, automatic)<br>     • Charge Power: 60W max<br>     • Charge Voltage: 18V max<br>     • Connector: XT60<br>• Input<br>     • Current: 3A<br></span>     • Power: 60-65W<br>     • Voltage: 5-20V DC<br>     • Connector: USB-C PD<br><span>• Dimensions: 85 x 55 x 21mm</span><br><meta charset=\"UTF-8\"><span>• </span>Weight: 64g<br>• SKU: CHG GENS ACE IMARS MINI_<img><span>GEA60WC2</span><br></p>\n<p><strong>LINKS:</strong><br>• <a href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter\" title=\"XT30 Male to XT60 Female Adapter (For Charging)\">XT30 to XT60 Adapter</a><br>• <a href=\"https://a.co/d/eVrWCu9\" title=\"Anker 12,000 mAh 65W USB-C Power Bank\">Compatible USB-C Power Bank</a><br>• <a href=\"https://outofdarts.com/collections/chargers\" title=\"CHARGERS\">More Battery Chargers</a></p>"
+     },
+     "handle": "gensace-imars-mini-smart-balance-charger",
+     "id": "gid://shopify/p/aAk2iQMvk06Z0gBrRDZ8T",
+     "media": [
+      {
+       "alt_text": "GensAce IMARS Mini Smart Balance Charger - Out of Darts",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/2568/1226/files/Out-of-Darts-Batteries-Chargers-GensAce-IMARS-Mini-Smart-Balance-Charger.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2568/1226/files/Out-of-Darts-Batteries-Chargers-GensAce-IMARS-Mini-Smart-Balance-Charger.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Smart JST balance plug enables precise and safe battery charging for optimal health",
+       "USB-C PD input allows fast charging from compatible power banks and adapters",
+       "Supports 2-4S LiPo, LiHV, and NiMH batteries for versatile use",
+       "Automatic current control ensures safe and efficient charging",
+       "Compact and lightweight design makes it perfect for travel"
+      ],
+      "unique_selling_points": [
+       "Features GensAce G Tech Smart JST balance plug for effortless battery care and compatibility with multiple battery chemistries."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 15,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "GensAce iMARS Mini Smart Balance Charger",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://outofdarts.com/buy/40532980858922:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=E14b1egK984L&_gsid=E14b1egK984L",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><meta charset=\"UTF-8\">The GensAce iMARS Mini Smart Balance Charger is a portable and versatile battery charger from the makers of Tattu LiPo batteries. Featuring a simple two-button design and a compact, lightweight form factor, the iMARS Mini is the perfect travel LiPo charger. With its included 65-Watt power supply or any other USB-C PD Input, this device can charge and storage discharge batteries in minutes.  Additionally, this charger features the GensAce G-Tech Smart JST balance plug, which allows for effortless care of batteries with compatible circuitry.<br></p>\n<p><strong>*An <a href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter?_pos=1&amp;_sid=662e1ea62&amp;_ss=r\">XT30M-XT60F adapter</a> is required to charge batteries with an XT30 lead, such as the ones used for the Nightingale.</strong></p>\n<p><strong>FEATURES:</strong><br><span>• GensAce iMars Mini Smart Balance Charger<br>• Portable USB-C PD LiPo charger<br>• Gens Ace Tattu guaranteed reliability<br>• 2-4S compatible</span><br><span>• Balance Charge and Storage Modes</span><br><span>• Smart charge automatic current control</span><br><span>• USB-C PD input <br>• Compatible with select USB-C battery power banks<br>• Bonus compatibility with G-Tech Smart JST balance plugs<br></span></p>\n<p><strong>INCLUDES:<br></strong>• 1 IMARS Mini charger<br>• 1 65W USB-C power supply<br><span>• Battery Terminal Adapters*<br></span></p>\n<p><em>*An <a title=\"XT30 Male to XT60 Female Adapter\" href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter\">XT30M-XT60F adapter</a> is not included</em></p>\n<p><strong>SPECS:</strong><br><span>• Output:<br>     • Chemistries: LiPo, LiHV, LiFE, NiMH<br>     • Configurations: 2-4S (7.4-14.8V)<br>     • Charge Rate: 1-1.5C (1-5A, automatic)<br>     • Charge Power: 60W max<br>     • Charge Voltage: 18V max<br>     • Connector: XT60<br>• Input<br>     • Current: 3A<br></span>     • Power: 60-65W<br>     • Voltage: 5-20V DC<br>     • Connector: USB-C PD<br><span>• Dimensions: 85 x 55 x 21mm</span><br><meta charset=\"UTF-8\"><span>• </span>Weight: 64g<br>• SKU: CHG GENS ACE IMARS MINI_<img><span>GEA60WC2</span><br></p>\n<p><strong>LINKS:</strong><br>• <a href=\"https://outofdarts.com/products/xt30-male-to-xt60-female-adapter\" title=\"XT30 Male to XT60 Female Adapter (For Charging)\">XT30 to XT60 Adapter</a><br>• <a href=\"https://a.co/d/eVrWCu9\" title=\"Anker 12,000 mAh 65W USB-C Power Bank\">Compatible USB-C Power Bank</a><br>• <a href=\"https://outofdarts.com/collections/chargers\" title=\"CHARGERS\">More Battery Chargers</a></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gensace-imars-mini-smart-balance-charger",
+       "id": "gid://shopify/ProductVariant/40532980858922",
+       "media": [
+        {
+         "alt_text": "GensAce IMARS Mini Smart Balance Charger - Out of Darts",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/2568/1226/files/Out-of-Darts-Batteries-Chargers-GensAce-IMARS-Mini-Smart-Balance-Charger.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2568/1226/files/Out-of-Darts-Batteries-Chargers-GensAce-IMARS-Mini-Smart-Balance-Charger.jpg",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 3899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 26,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "outofdarts.myshopify.com",
+        "id": "gid://shopify/Shop/25681226",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/25681226/policies/6786908202.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/25681226/policies/6786940970.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/25681226/policies/6786875434.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/25681226/policies/24346165290.html"
+         }
+        ],
+        "name": "Out of Darts",
+        "url": "https://outofdarts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6931708411946",
+       "source": "shopify",
+       "title": "GensAce iMARS Mini Smart Balance Charger",
+       "url": "https://outofdarts.com/products/gensace-imars-mini-smart-balance-charger?variant=40532980858922&_gsid=E14b1egK984L&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

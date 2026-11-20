@@ -1,0 +1,66 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": [
+        "run",
+        "--directory",
+        "backend",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8000",
+        "--reload",
+        "--reload-dir",
+        "app"
+      ],
+      "port": 8000
+    },
+    {
+      "name": "backend-pipeline",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": [
+        "run",
+        "--directory",
+        "backend",
+        "python",
+        "scripts/dev_pipeline.py",
+        "--port",
+        "8000"
+      ],
+      "port": 8000
+    },
+    {
+      "name": "backend-live-sponsors",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": [
+        "run",
+        "--directory",
+        "backend",
+        "python",
+        "scripts/dev_pipeline.py",
+        "--port",
+        "8000",
+        "--live",
+        "auto",
+        "--claude"
+      ],
+      "port": 8000
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "frontend",
+        "run",
+        "dev"
+      ],
+      "port": 5173
+    }
+  ]
+}

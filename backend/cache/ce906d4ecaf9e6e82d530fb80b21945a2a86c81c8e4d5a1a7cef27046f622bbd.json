@@ -1,0 +1,1377 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Waveshare 7.5 inch e-paper raw panel"
+  }
+ },
+ "key": "ce906d4ecaf9e6e82d530fb80b21945a2a86c81c8e4d5a1a7cef27046f622bbd",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:20-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNOak15TlRBME9UUTJPRFE1TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 7.5\" e-Paper Raw Panel Case Protects 7.5-inch e-Paper panels Made from high-quality ABS plastic Secured with high-strength magnet Features micro USB port cut-out Includes space for custom driver board The Waveshare 7.5\" e-Paper Raw Panel Case is designed to protect 7.5-inch e-Paper panels, including models B and C. Constructed from high-quality ABS plastic, it offers enhanced strength and flexibility. The case is secured with a high-strength magnet, facilitating easy installation and removal. It features a reserved inner space for custom driver board installations and includes a micro USB port cut-out. Note: This case is not compatible with the HAT versions of the 7.5-inch e-Paper. View more What's Included 1x Waveshare 7.5\" e-Paper Raw Panel Case Specifications Compatible with 7.5-inch e-Paper, 7.5-inch e-Paper (B), 7.5-inch HD e-Paper (B), 7.5-inch e-Paper (C) Constructed from high-quality ABS plastic for enhanced strength and flexibility Secured with a high-strength magnet for easy installation and removal Includes reserved inner space Allows users to customize their own driver board Recommended to add polyfoam padding if only the raw panel is fitted inside Features a micro USB port cut-out Not compatible with 7.5-inch e-Paper HAT versions (B), HD (B), (C)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-75-e-paper-raw-panel-case",
+     "id": "gid://shopify/Product/14682906624364",
+     "list_price_range": {
+      "max": {
+       "amount": 584,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 584,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 7.5\" e-Paper Raw Panel Case",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3884265.webp?v=1774366212"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 584,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 584,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "no-cps-warranty",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 7.5\" e-Paper Raw Panel Case",
+     "url": "https://www.robotshop.com/products/waveshare-75-e-paper-raw-panel-case",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51840171508076:1",
+       "description": {
+        "html": "Description Waveshare 7.5\" e-Paper Raw Panel Case Protects 7.5-inch e-Paper panels Made from high-quality ABS plastic Secured with high-strength magnet Features micro USB port cut-out Includes space for custom driver board The Waveshare 7.5\" e-Paper Raw Panel Case is designed to protect 7.5-inch e-Paper panels, including models B and C. Constructed from high-quality ABS plastic, it offers enhanced strength and flexibility. The case is secured with a high-strength magnet, facilitating easy installation and removal. It features a reserved inner space for custom driver board installations and includes a micro USB port cut-out. Note: This case is not compatible with the HAT versions of the 7.5-inch e-Paper. View more What's Included 1x Waveshare 7.5\" e-Paper Raw Panel Case Specifications Compatible with 7.5-inch e-Paper, 7.5-inch e-Paper (B), 7.5-inch HD e-Paper (B), 7.5-inch e-Paper (C) Constructed from high-quality ABS plastic for enhanced strength and flexibility Secured with a high-strength magnet for easy installation and removal Includes reserved inner space Allows users to customize their own driver board Recommended to add polyfoam padding if only the raw panel is fitted inside Features a micro USB port cut-out Not compatible with 7.5-inch e-Paper HAT versions (B), HD (B), (C)"
+       },
+       "id": "gid://shopify/ProductVariant/51840171508076",
+       "list_price": {
+        "amount": 584,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3884265.webp?v=1774366212"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 584,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-1064",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Our LCD & Display collection features a variety of high-quality display solutions including TFT, OLED, and e-paper screens. From small OLED displays to large capacitive touchscreens, these products are ideal for enhancing your projects with vibrant visuals and interactive functionality. Compatible with major microcontroller platforms such as Raspberry Pi and Arduino, these displays offer diverse uses ranging from educational tools to advanced IoT applications. Equip your next project with the perfect display to achieve outstanding visual performance."
+       },
+       "handle": "lcd-display",
+       "id": "gid://shopify/Collection/290222440609",
+       "title": "LCD & Display"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB Offers paper-like viewing experience Supports red, black, and white colors Reflects ambient light, needs no backlight Integrates with Raspberry Pi/Arduino Ultra-low power, retains content when off The Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB is an advanced display solution that offers a paper-like viewing experience. This display features a resolution of 800×480 pixels and supports three colors: red, black, and white. It operates using a SPI interface and is designed without a printed circuit board, making it suitable for integration into various projects. This e-paper display is characterized by its low power consumption, as it only requires power during the refreshing process. It maintains the last displayed content even when powered down, thanks to its passive reflective display type. The display is ideal for applications such as price tags, shelf labels, and industrial instruments, where a wide viewing angle of over 170 degrees is beneficial. The display utilizes microcapsule electrophoretic technology, which allows it to reflect ambient light, similar to traditional printed paper. This technology ensures clear visibility under both natural and artificial lighting conditions, without the need for a backlight. The display supports partial refresh, allowing for quick updates in black and white. Development resources and manuals are available, providing examples for integration with platforms such as Raspberry Pi, Jetson Nano, Arduino, and STM32. This makes the display a versatile choice for developers seeking to incorporate e-paper technology into their projects. View more What's Included 1x Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB Dimensions Outline Dimensions: 170.2 x 111.2 x 1.18 mm Display Size: 163.2 x 97.92 mm Specifications Resolution: 800×480 pixels Viewing Angle: >170° Display Color: Red / Black / White Grey Scale: 2 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Refreshing: Black & White Color, Partial Refresh Support No backlight, retains last content for a long time even when powered down Ultra-low power consumption, power required only for refreshing Includes development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full Refresh Time: 26s Fast Refresh Time: 16s Black & White Partial Refresh Time: 1.5s Refresh Power: 48mW (typical) Standby Current: <0.01uA (almost none) Dot Pitch: 0.205 × 0.204mm E-paper display utilizes microcapsule electrophoretic technology Charged particles in clear fluid move to sides of microcapsule when electric field is applied Microcapsule becomes visible by reflecting ambient light, similar to traditional printed paper Clearly displays images/texts under lamplight or natural light Requires no backlight Features nearly up to 180° viewing angle Commonly used as an e-reader due to its paper-like effect"
+     },
+     "gift_card": false,
+     "handle": "waveshare-75-e-paper-b-e-ink-raw-display-800480-red-black-white-spi-w-o-pcb",
+     "id": "gid://shopify/Product/14682298581356",
+     "list_price_range": {
+      "max": {
+       "amount": 5655,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5655,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/waveshare_7_5_e_paper_b_e_ink_raw_display_800_480_1.webp?v=1739808633"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5655,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5655,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand"
+     ],
+     "title": "Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB",
+     "url": "https://www.robotshop.com/products/waveshare-75-e-paper-b-e-ink-raw-display-800480-red-black-white-spi-w-o-pcb",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51838055252332:1",
+       "description": {
+        "html": "Description Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB Offers paper-like viewing experience Supports red, black, and white colors Reflects ambient light, needs no backlight Integrates with Raspberry Pi/Arduino Ultra-low power, retains content when off The Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB is an advanced display solution that offers a paper-like viewing experience. This display features a resolution of 800×480 pixels and supports three colors: red, black, and white. It operates using a SPI interface and is designed without a printed circuit board, making it suitable for integration into various projects. This e-paper display is characterized by its low power consumption, as it only requires power during the refreshing process. It maintains the last displayed content even when powered down, thanks to its passive reflective display type. The display is ideal for applications such as price tags, shelf labels, and industrial instruments, where a wide viewing angle of over 170 degrees is beneficial. The display utilizes microcapsule electrophoretic technology, which allows it to reflect ambient light, similar to traditional printed paper. This technology ensures clear visibility under both natural and artificial lighting conditions, without the need for a backlight. The display supports partial refresh, allowing for quick updates in black and white. Development resources and manuals are available, providing examples for integration with platforms such as Raspberry Pi, Jetson Nano, Arduino, and STM32. This makes the display a versatile choice for developers seeking to incorporate e-paper technology into their projects. View more What's Included 1x Waveshare 7.5\" E-Paper (B) E-Ink Raw Display, 800×480, Red/Black/White, SPI, w/o PCB Dimensions Outline Dimensions: 170.2 x 111.2 x 1.18 mm Display Size: 163.2 x 97.92 mm Specifications Resolution: 800×480 pixels Viewing Angle: >170° Display Color: Red / Black / White Grey Scale: 2 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Refreshing: Black & White Color, Partial Refresh Support No backlight, retains last content for a long time even when powered down Ultra-low power consumption, power required only for refreshing Includes development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full Refresh Time: 26s Fast Refresh Time: 16s Black & White Partial Refresh Time: 1.5s Refresh Power: 48mW (typical) Standby Current: <0.01uA (almost none) Dot Pitch: 0.205 × 0.204mm E-paper display utilizes microcapsule electrophoretic technology Charged particles in clear fluid move to sides of microcapsule when electric field is applied Microcapsule becomes visible by reflecting ambient light, similar to traditional printed paper Clearly displays images/texts under lamplight or natural light Requires no backlight Features nearly up to 180° viewing angle Commonly used as an e-reader due to its paper-like effect"
+       },
+       "id": "gid://shopify/ProductVariant/51838055252332",
+       "list_price": {
+        "amount": 5655,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/waveshare_7_5_e_paper_b_e_ink_raw_display_800_480_1.webp?v=1739808633"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5655,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-1063",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 800×480, 7.5\" E-Ink Raw Display Reflects ambient light for paper-like experience Supports Raspberry Pi, Arduino, Jetson Nano Offers ultra-low power consumption Displays with over 170° wide viewing angle Compatible with SPI interface The Waveshare 800×480, 7.5\" E-Ink Raw Display is an advanced e-paper display designed for applications requiring low power consumption and a wide viewing angle. This 7.5-inch display offers a resolution of 800×480 pixels and utilizes microcapsule electrophoretic technology, which allows it to reflect ambient light similar to traditional printed paper. This feature ensures clear visibility of images and text under both lamplight and natural light conditions, without the need for a backlight. The display supports partial refresh, enabling it to maintain the last displayed content even when powered down, thus conserving energy. It is particularly suitable for use in environments where ambient light is available, making it ideal for applications such as price tags, shelf labels, and industrial instruments. The display's passively reflective nature and paper-like experience make it a preferred choice for e-readers and other devices where prolonged viewing is required. This raw display operates via an SPI interface and is compatible with various development platforms, including Raspberry Pi, Jetson Nano, RDK X3, Arduino, and STM32. It comes with online development resources and a manual to facilitate integration into projects. The absence of a driver board allows for greater flexibility in custom applications. View more What's Included 1x Waveshare 800×480, 7.5\" E-Ink Raw Display 1x 7.5-inch E-paper Dimensions Outline Dimensions: 170.20 x 111.20 x 0.98 mm Display Size: 163.2 x 97.92 mm Specifications Resolution: 800×480 Viewing Angle: >170° Display Color: Black/White Grey Scale: 4 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Supports Partial Refresh No backlight; retains last content display even when powered down Ultra-low power consumption; power needed only for refreshing Includes online development resources and manual (examples for Raspberry Pi/Jetson Nano/RDK X3/Arduino/STM32) Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Dot Pitch: 0.205 × 0.204mm Full Refresh Time: 4s Fast Refresh Time: 1.5s Partial Refresh Time: 0.4s 4 Grey Refresh Time: 2.1s Refresh Power: 26.4mW (typical) Standby Current: <0.01uA (almost none) Utilizes microcapsule electrophoretic technology for display Clearly displays images/texts under lamplight or natural light Raw display without driver board"
+     },
+     "gift_card": false,
+     "handle": "waveshare-800480-75-e-ink-raw-display",
+     "id": "gid://shopify/Product/14682305364332",
+     "list_price_range": {
+      "max": {
+       "amount": 5655,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5655,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 800×480, 7.5\" E-Ink Raw Display",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881239.webp?v=1774366230"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5655,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5655,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 800×480, 7.5\" E-Ink Raw Display",
+     "url": "https://www.robotshop.com/products/waveshare-800480-75-e-ink-raw-display",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51838078484844:1",
+       "description": {
+        "html": "Description Waveshare 800×480, 7.5\" E-Ink Raw Display Reflects ambient light for paper-like experience Supports Raspberry Pi, Arduino, Jetson Nano Offers ultra-low power consumption Displays with over 170° wide viewing angle Compatible with SPI interface The Waveshare 800×480, 7.5\" E-Ink Raw Display is an advanced e-paper display designed for applications requiring low power consumption and a wide viewing angle. This 7.5-inch display offers a resolution of 800×480 pixels and utilizes microcapsule electrophoretic technology, which allows it to reflect ambient light similar to traditional printed paper. This feature ensures clear visibility of images and text under both lamplight and natural light conditions, without the need for a backlight. The display supports partial refresh, enabling it to maintain the last displayed content even when powered down, thus conserving energy. It is particularly suitable for use in environments where ambient light is available, making it ideal for applications such as price tags, shelf labels, and industrial instruments. The display's passively reflective nature and paper-like experience make it a preferred choice for e-readers and other devices where prolonged viewing is required. This raw display operates via an SPI interface and is compatible with various development platforms, including Raspberry Pi, Jetson Nano, RDK X3, Arduino, and STM32. It comes with online development resources and a manual to facilitate integration into projects. The absence of a driver board allows for greater flexibility in custom applications. View more What's Included 1x Waveshare 800×480, 7.5\" E-Ink Raw Display 1x 7.5-inch E-paper Dimensions Outline Dimensions: 170.20 x 111.20 x 0.98 mm Display Size: 163.2 x 97.92 mm Specifications Resolution: 800×480 Viewing Angle: >170° Display Color: Black/White Grey Scale: 4 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Supports Partial Refresh No backlight; retains last content display even when powered down Ultra-low power consumption; power needed only for refreshing Includes online development resources and manual (examples for Raspberry Pi/Jetson Nano/RDK X3/Arduino/STM32) Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Dot Pitch: 0.205 × 0.204mm Full Refresh Time: 4s Fast Refresh Time: 1.5s Partial Refresh Time: 0.4s 4 Grey Refresh Time: 2.1s Refresh Power: 26.4mW (typical) Standby Current: <0.01uA (almost none) Utilizes microcapsule electrophoretic technology for display Clearly displays images/texts under lamplight or natural light Raw display without driver board"
+       },
+       "id": "gid://shopify/ProductVariant/51838078484844",
+       "list_price": {
+        "amount": 5655,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881239.webp?v=1774366230"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5655,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-1065",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 296x128, 2.9\" E-Ink Raw Display Panel Offers paper-like viewing experience Features ultra-low power consumption Supports partial refresh, keeps last content Utilizes e-paper display with 170° viewing angle Ideal for price tags and shelf labels The Waveshare 296x128, 2.9\" E-Ink Raw Display Panel offers a paper-like viewing experience with its black and white e-paper display. It features a resolution of 296x128 pixels and a wide viewing angle of over 170 degrees, making it ideal for applications such as price tags, shelf labels, and industrial instruments. This display operates with ultra-low power consumption, requiring energy primarily for refreshing the content. It supports partial refresh and maintains the last displayed content even when powered down, thanks to its passively reflective nature. View more What's Included 1x Waveshare 296x128, 2.9\" E-Ink Raw Display Panel Dimensions Outline Dimensions: 79.00 x 36.70 x 1.05 mm Display Size: 66.89 x 29.05 mm Links Website 296x128, 2.9inch E-Ink raw display panel - E-Paper Module Specifications Resolution: 296×128 pixels Viewing Angle: >170° Display Color: Black/White Grey Scale: 4 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Refreshing: Partial Refresh Support No backlight, retains last content for a long time even when powered down Ultra-low power consumption, power required only for refreshing Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full Refresh Time: 3 seconds Partial Refresh Time: 0.6 seconds Refresh Power: 26.4mW (typical) Standby Current: <0.01µA (almost none) Dot Pitch: 0.226 × 0.227mm E-paper display uses microcapsule electrophoretic technology Charged particles in clear fluid move to sides of microcapsule when electric field is applied Microcapsule becomes visible by reflecting ambient light, similar to printed paper E-paper display shows images/texts clearly under lamplight or natural light Requires no backlight Features nearly 180° viewing angle Commonly used as an e-reader due to its paper-like effect"
+     },
+     "gift_card": false,
+     "handle": "waveshare-296x128-29-e-ink-raw-display-panel",
+     "id": "gid://shopify/Product/14682295566700",
+     "list_price_range": {
+      "max": {
+       "amount": 1285,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1285,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 296x128, 2.9\" E-Ink Raw Display Panel",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881062.webp?v=1776279387"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1285,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1285,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 296x128, 2.9\" E-Ink Raw Display Panel",
+     "url": "https://www.robotshop.com/products/waveshare-296x128-29-e-ink-raw-display-panel",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51838048502124:1",
+       "description": {
+        "html": "Description Waveshare 296x128, 2.9\" E-Ink Raw Display Panel Offers paper-like viewing experience Features ultra-low power consumption Supports partial refresh, keeps last content Utilizes e-paper display with 170° viewing angle Ideal for price tags and shelf labels The Waveshare 296x128, 2.9\" E-Ink Raw Display Panel offers a paper-like viewing experience with its black and white e-paper display. It features a resolution of 296x128 pixels and a wide viewing angle of over 170 degrees, making it ideal for applications such as price tags, shelf labels, and industrial instruments. This display operates with ultra-low power consumption, requiring energy primarily for refreshing the content. It supports partial refresh and maintains the last displayed content even when powered down, thanks to its passively reflective nature. View more What's Included 1x Waveshare 296x128, 2.9\" E-Ink Raw Display Panel Dimensions Outline Dimensions: 79.00 x 36.70 x 1.05 mm Display Size: 66.89 x 29.05 mm Links Website 296x128, 2.9inch E-Ink raw display panel - E-Paper Module Specifications Resolution: 296×128 pixels Viewing Angle: >170° Display Color: Black/White Grey Scale: 4 Communication: SPI Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Refreshing: Partial Refresh Support No backlight, retains last content for a long time even when powered down Ultra-low power consumption, power required only for refreshing Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full Refresh Time: 3 seconds Partial Refresh Time: 0.6 seconds Refresh Power: 26.4mW (typical) Standby Current: <0.01µA (almost none) Dot Pitch: 0.226 × 0.227mm E-paper display uses microcapsule electrophoretic technology Charged particles in clear fluid move to sides of microcapsule when electric field is applied Microcapsule becomes visible by reflecting ambient light, similar to printed paper E-paper display shows images/texts clearly under lamplight or natural light Requires no backlight Features nearly 180° viewing angle Commonly used as an e-reader due to its paper-like effect"
+       },
+       "id": "gid://shopify/ProductVariant/51838048502124",
+       "list_price": {
+        "amount": 1285,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881062.webp?v=1776279387"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1285,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-997",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Our LCD & Display collection features a variety of high-quality display solutions including TFT, OLED, and e-paper screens. From small OLED displays to large capacitive touchscreens, these products are ideal for enhancing your projects with vibrant visuals and interactive functionality. Compatible with major microcontroller platforms such as Raspberry Pi and Arduino, these displays offer diverse uses ranging from educational tools to advanced IoT applications. Equip your next project with the perfect display to achieve outstanding visual performance."
+       },
+       "handle": "lcd-display",
+       "id": "gid://shopify/Collection/290222440609",
+       "title": "LCD & Display"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description e-Paper E-Ink Raw Display Panel, Black/White Offers 2.66-inch e-Paper display panel Features a resolution of 296 x 152 pixel Comes with development resources and manual Keeps displaying the last content till power down Ultra-low power consumption Ideal for price tags, shelf labels, industrial instruments, etc. The 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White features a resolution of 296 x 152 pixels. Comes with development resources and a manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32). No backlight keeps displaying the last content for a long time even when power is down. Provides ultra-low power consumption. E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in the clear fluid will move to sides of microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. View more What's Included 1x 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White Dimensions Size 71.820 x 36.304 mm (L x W) Display Size: 30.704 x 60.088 mm Dot Pitch: 0.202 x 0.203 mm Links PDF File 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White - Schematics Specifications Operating Voltage: 3.3 V / 5 V (The raw panel only support 3.3 V) Resolution: 296 x 152 pixel Display Color: Black, White Grayscale: 2 Partial Refresh Time: 0.3s Full Refresh Time: 6s Refresh Power: 42.4 mW (Typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Interface: SPI Weight: 0.005 kg"
+     },
+     "gift_card": false,
+     "handle": "296x152-266-inch-e-paper-e-ink-raw-display-panel-black-white",
+     "id": "gid://shopify/Product/7487177687201",
+     "list_price_range": {
+      "max": {
+       "amount": 820,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 820,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/296152-266inch-e-paper-e-ink-raw-display-panel-black---white.webp?v=1720530081"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 820,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 820,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White",
+     "url": "https://www.robotshop.com/products/296x152-266-inch-e-paper-e-ink-raw-display-panel-black-white",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360477319329:1",
+       "description": {
+        "html": "Description e-Paper E-Ink Raw Display Panel, Black/White Offers 2.66-inch e-Paper display panel Features a resolution of 296 x 152 pixel Comes with development resources and manual Keeps displaying the last content till power down Ultra-low power consumption Ideal for price tags, shelf labels, industrial instruments, etc. The 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White features a resolution of 296 x 152 pixels. Comes with development resources and a manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32). No backlight keeps displaying the last content for a long time even when power is down. Provides ultra-low power consumption. E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in the clear fluid will move to sides of microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. View more What's Included 1x 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White Dimensions Size 71.820 x 36.304 mm (L x W) Display Size: 30.704 x 60.088 mm Dot Pitch: 0.202 x 0.203 mm Links PDF File 296x152, 2.66-inch e-Paper E-Ink Raw Display Panel, Black/White - Schematics Specifications Operating Voltage: 3.3 V / 5 V (The raw panel only support 3.3 V) Resolution: 296 x 152 pixel Display Color: Black, White Grayscale: 2 Partial Refresh Time: 0.3s Full Refresh Time: 6s Refresh Power: 42.4 mW (Typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Interface: SPI Weight: 0.005 kg"
+       },
+       "id": "gid://shopify/ProductVariant/42360477319329",
+       "list_price": {
+        "amount": 820,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/296152-266inch-e-paper-e-ink-raw-display-panel-black---white.webp?v=1720530081"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 820,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-424",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description 4.37inch E-Paper (G) Raw Display, Red/Yellow/Black/White Features a resolution of 512 x 368 pixel No backlight keeps displaying the last content till the power down Ultra-low power consumption Ideal for price tags, shelf labels, industrial instruments The 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White offers a 4.37-inch E-Paper display. Comes with development resources and a manual (driver board schematic, examples for Raspberry Pi/Arduino/STM32). No backlight keeps displaying the last content for a long time even when powered down. Ultra-low power consumption, basically power is only required for refreshing. E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in the clear fluid will move to the sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. View more What's Included 1x 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White Dimensions Outline: 99.5 x 79.5 x 0.85 mm (L x W x H) Display: 90.11 x 64.77 mm (L x W) DOT Pitch: 0.176 x 0.176 mm Screen: 4.37 inch Links PDF File 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White - Schematics Website 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White - Wiki Specifications Resolution: 512 x 368 pixels Display Color: Red / Yellow / Black / White Grey Scale: 2 Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Operating Voltage: 3.3 V Full Refresh Time: 14s Refresh Power: <61.7 mW (typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Interface: 3-wire SPI, 4-wire SPI Weight: 14 g"
+     },
+     "gift_card": false,
+     "handle": "waveshare-437inch-e-paper-g-raw-display-512x368-red-yellowblackwhite",
+     "id": "gid://shopify/Product/7632504750241",
+     "list_price_range": {
+      "max": {
+       "amount": 2529,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2529,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 4.37inch E-Paper (G) Raw Display, 512x368, Red/Yellow/Black/White",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/437inch-e-paper-g-raw-display-512--368-red-yellow-black-white-img2.webp?v=1720530796"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2529,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2529,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 4.37inch E-Paper (G) Raw Display, 512x368, Red/Yellow/Black/White",
+     "url": "https://www.robotshop.com/products/waveshare-437inch-e-paper-g-raw-display-512x368-red-yellowblackwhite",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42816627900577:1",
+       "description": {
+        "html": "Description 4.37inch E-Paper (G) Raw Display, Red/Yellow/Black/White Features a resolution of 512 x 368 pixel No backlight keeps displaying the last content till the power down Ultra-low power consumption Ideal for price tags, shelf labels, industrial instruments The 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White offers a 4.37-inch E-Paper display. Comes with development resources and a manual (driver board schematic, examples for Raspberry Pi/Arduino/STM32). No backlight keeps displaying the last content for a long time even when powered down. Ultra-low power consumption, basically power is only required for refreshing. E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is: charged particles suspended in the clear fluid will move to the sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. E-paper display will clearly display images/texts under lamplight or natural light, requires no backlight, and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. View more What's Included 1x 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White Dimensions Outline: 99.5 x 79.5 x 0.85 mm (L x W x H) Display: 90.11 x 64.77 mm (L x W) DOT Pitch: 0.176 x 0.176 mm Screen: 4.37 inch Links PDF File 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White - Schematics Website 4.37inch E-Paper (G) Raw Display, 512 x 368, Red/Yellow/Black/White - Wiki Specifications Resolution: 512 x 368 pixels Display Color: Red / Yellow / Black / White Grey Scale: 2 Display Panel: E-paper Experience: Paper-like Environment: Ambient Light Required Display Type: Passively Reflective Operating Voltage: 3.3 V Full Refresh Time: 14s Refresh Power: <61.7 mW (typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Interface: 3-wire SPI, 4-wire SPI Weight: 14 g"
+       },
+       "id": "gid://shopify/ProductVariant/42816627900577",
+       "list_price": {
+        "amount": 2529,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/437inch-e-paper-g-raw-display-512--368-red-yellow-black-white-img2.webp?v=1720530796"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2529,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-616",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Our LCD & Display collection features a variety of high-quality display solutions including TFT, OLED, and e-paper screens. From small OLED displays to large capacitive touchscreens, these products are ideal for enhancing your projects with vibrant visuals and interactive functionality. Compatible with major microcontroller platforms such as Raspberry Pi and Arduino, these displays offer diverse uses ranging from educational tools to advanced IoT applications. Equip your next project with the perfect display to achieve outstanding visual performance."
+       },
+       "handle": "lcd-display",
+       "id": "gid://shopify/Collection/290222440609",
+       "title": "LCD & Display"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description 7.5in e-Paper (G) E-Ink Fully Laminated Display, Black/White, SPI w/o PCB Offers 7.5-inch e-Paper display Features a resolution of 800 x 480 pixel Comes with development resources and manual Keeps displaying the last content till power down Ultra-low power consumption The 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB comes with development resources and manual (driver board schematic, examples for Raspberry Pi/Jetson Nano/Arduino/STM32). Ultra-low power consumption, basically power is only required for refreshing. No backlight keeps displaying the last content for a long time even when power is down. Ideal for price tags, shelf labels, industrial instruments E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is - charged particles suspended in the clear fluid will move to the sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. E-paper display will clearly display images/texts under lamplight or natural light requires no backlight and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. View more What's Included 1x 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB Dimensions Size 177.2 x 118.2 mm (L x W) Display: 163.2 x 97.92 mm Screen: 7.5 inch Outline (raw panel): 170.2 x 111.2 x 1.18 mm Outline (driver board): 65 x 30.2 mm Pixel pitch: 0.205 x 0.204 Links Website 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB - Wiki Specifications Working Voltage: 3.3 V / 5 V Communication interfaces: SPI Resolution: 800 x 480 Display color: Black, White Panel Material: Anti-glare Glass Panel Tech: Fully Laminated Viewing Angle: >170° Gray level: 2 Full refresh: 5 s Refresh Power: 26.4 mW (typ.) Standby current: < 0.01 uA (close to 0) Weight: 0.1635 kg"
+     },
+     "gift_card": false,
+     "handle": "75in-e-paper-g-e-ink-fully-laminated-display-800x480-black-white-spi-wo-pcb",
+     "id": "gid://shopify/Product/7487097864353",
+     "list_price_range": {
+      "max": {
+       "amount": 6706,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6706,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1816680.webp?v=1794316179"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6706,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6706,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB",
+     "url": "https://www.robotshop.com/products/75in-e-paper-g-e-ink-fully-laminated-display-800x480-black-white-spi-wo-pcb",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360010440865:1",
+       "description": {
+        "html": "Description 7.5in e-Paper (G) E-Ink Fully Laminated Display, Black/White, SPI w/o PCB Offers 7.5-inch e-Paper display Features a resolution of 800 x 480 pixel Comes with development resources and manual Keeps displaying the last content till power down Ultra-low power consumption The 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB comes with development resources and manual (driver board schematic, examples for Raspberry Pi/Jetson Nano/Arduino/STM32). Ultra-low power consumption, basically power is only required for refreshing. No backlight keeps displaying the last content for a long time even when power is down. Ideal for price tags, shelf labels, industrial instruments E-paper display utilizes microcapsule electrophoretic technology for displaying, the principle is - charged particles suspended in the clear fluid will move to the sides of the microcapsule when an electric field is applied, making the microcapsule become visible by reflecting ambient light, just as traditional printed paper. E-paper display will clearly display images/texts under lamplight or natural light requires no backlight and features nearly up to 180° viewing angle. It is usually used as an e-reader due to its paper-like effect. View more What's Included 1x 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB Dimensions Size 177.2 x 118.2 mm (L x W) Display: 163.2 x 97.92 mm Screen: 7.5 inch Outline (raw panel): 170.2 x 111.2 x 1.18 mm Outline (driver board): 65 x 30.2 mm Pixel pitch: 0.205 x 0.204 Links Website 7.5in e-Paper (G) E-Ink Fully Laminated Display, 800x480, Black/White, SPI w/o PCB - Wiki Specifications Working Voltage: 3.3 V / 5 V Communication interfaces: SPI Resolution: 800 x 480 Display color: Black, White Panel Material: Anti-glare Glass Panel Tech: Fully Laminated Viewing Angle: >170° Gray level: 2 Full refresh: 5 s Refresh Power: 26.4 mW (typ.) Standby current: < 0.01 uA (close to 0) Weight: 0.1635 kg"
+       },
+       "id": "gid://shopify/ProductVariant/42360010440865",
+       "list_price": {
+        "amount": 6706,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1816680.webp?v=1794316179"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6706,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-455",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White Supports 4 colors: red, yellow, black, white Consumes ultra-low power, only during refresh Provides wide >170° viewing angle Includes examples for Raspberry Pi/Jetson Nano Requires no power to maintain last content The Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White offers a paper-like viewing experience with its passively reflective e-paper technology. It features a resolution of 250x122 pixels and supports four colors: red, yellow, black, and white. The display is designed for low power consumption, requiring energy only during refresh cycles, and maintains the last displayed content without power. Its wide viewing angle exceeds 170 degrees, making it suitable for various applications such as price tags and shelf labels. This raw display requires ambient light for optimal performance. View more What's Included 1x Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White Dimensions Size: 2.13\" Outline Dimensions: 59.20 x 29.20 x 1.00 mm Display Size: 48.55 x 23.70 mm Specifications Resolution: 250×122 pixels Viewing angle: >170° Display color: Red/Yellow/Black/White Grey scale: 2 Communication: SPI Display panel: E-paper Experience: Paper-like Environment: Ambient light required Display type: Passively reflective No backlight; retains last content for a long time even when powered down Ultra-low power consumption; power required only for refreshing Includes online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full refresh time: 25 seconds Refresh power: <10mW Dot pitch: 0.1943 × 0.1942 mm Standby current: <0.01 µA (almost none)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-213-e-paper-g-raw-display-250x122-red-yellow-black-white",
+     "id": "gid://shopify/Product/14683154710892",
+     "list_price_range": {
+      "max": {
+       "amount": 824,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 824,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3884219.webp?v=1776958566"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 824,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 824,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "no-cps-warranty",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White",
+     "url": "https://www.robotshop.com/products/waveshare-213-e-paper-g-raw-display-250x122-red-yellow-black-white",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51841206714732:1",
+       "description": {
+        "html": "Description Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White Supports 4 colors: red, yellow, black, white Consumes ultra-low power, only during refresh Provides wide >170° viewing angle Includes examples for Raspberry Pi/Jetson Nano Requires no power to maintain last content The Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White offers a paper-like viewing experience with its passively reflective e-paper technology. It features a resolution of 250x122 pixels and supports four colors: red, yellow, black, and white. The display is designed for low power consumption, requiring energy only during refresh cycles, and maintains the last displayed content without power. Its wide viewing angle exceeds 170 degrees, making it suitable for various applications such as price tags and shelf labels. This raw display requires ambient light for optimal performance. View more What's Included 1x Waveshare 2.13\" E-Paper (G) Raw Display, 250x122, Red/Yellow/Black/White Dimensions Size: 2.13\" Outline Dimensions: 59.20 x 29.20 x 1.00 mm Display Size: 48.55 x 23.70 mm Specifications Resolution: 250×122 pixels Viewing angle: >170° Display color: Red/Yellow/Black/White Grey scale: 2 Communication: SPI Display panel: E-paper Experience: Paper-like Environment: Ambient light required Display type: Passively reflective No backlight; retains last content for a long time even when powered down Ultra-low power consumption; power required only for refreshing Includes online development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Full refresh time: 25 seconds Refresh power: <10mW Dot pitch: 0.1943 × 0.1942 mm Standby current: <0.01 µA (almost none)"
+       },
+       "id": "gid://shopify/ProductVariant/51841206714732",
+       "list_price": {
+        "amount": 824,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3884219.webp?v=1776958566"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 824,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-967",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-6-24-4"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 2.9\" e-Paper Raw Panel Case Crafted from high-quality ABS plastic Features side clamping design for easy use Includes reserved space for DIY driver board Offers clear top cover for elegant, dust-free look Not compatible with module versions The Waveshare 2.9\" e-Paper Raw Panel Case is crafted from high-quality ABS plastic, offering enhanced strength and flexibility. It features a side clamping design, facilitating easy placement on shelves. The case includes reserved inner space, allowing for customization with a DIY driver board. Its clear top cover provides an elegant appearance while keeping the contents dust-free. This case is specifically designed for use with 2.9-inch e-paper raw panels and is not compatible with module versions. View more What's Included 1x Waveshare 2.9\" e-Paper Raw Panel Case 1x 2.9-inch e-Paper Case Specifications Compatible with 2.9-inch e-Paper, 2.9-inch e-Paper (B), 2.9-inch e-Paper (C) Made from high-quality ABS plastic for enhanced strength and flexibility Features a side clamping design for easy use on shelves Includes reserved inner space Allows users to customize their own driver board Recommended to add polyfoam padding if only the raw panel is fitted inside Equipped with a clear top cover for an elegant appearance and dust protection Not compatible with 2.9-inch e-Paper Module versions (B) and (C)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-29-e-paper-raw-panel-case",
+     "id": "gid://shopify/Product/14682397507948",
+     "list_price_range": {
+      "max": {
+       "amount": 241,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 241,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 2.9\" e-Paper Raw Panel Case",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881885.webp?v=1776287455"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 241,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 241,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Cases & Boxes",
+      "category:Robots",
+      "category:Tools & Equipment",
+      "no-cps-warranty",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 2.9\" e-Paper Raw Panel Case",
+     "url": "https://www.robotshop.com/products/waveshare-29-e-paper-raw-panel-case",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51838247076204:1",
+       "description": {
+        "html": "Description Waveshare 2.9\" e-Paper Raw Panel Case Crafted from high-quality ABS plastic Features side clamping design for easy use Includes reserved space for DIY driver board Offers clear top cover for elegant, dust-free look Not compatible with module versions The Waveshare 2.9\" e-Paper Raw Panel Case is crafted from high-quality ABS plastic, offering enhanced strength and flexibility. It features a side clamping design, facilitating easy placement on shelves. The case includes reserved inner space, allowing for customization with a DIY driver board. Its clear top cover provides an elegant appearance while keeping the contents dust-free. This case is specifically designed for use with 2.9-inch e-paper raw panels and is not compatible with module versions. View more What's Included 1x Waveshare 2.9\" e-Paper Raw Panel Case 1x 2.9-inch e-Paper Case Specifications Compatible with 2.9-inch e-Paper, 2.9-inch e-Paper (B), 2.9-inch e-Paper (C) Made from high-quality ABS plastic for enhanced strength and flexibility Features a side clamping design for easy use on shelves Includes reserved inner space Allows users to customize their own driver board Recommended to add polyfoam padding if only the raw panel is fitted inside Equipped with a clear top cover for an elegant appearance and dust protection Not compatible with 2.9-inch e-Paper Module versions (B) and (C)"
+       },
+       "id": "gid://shopify/ProductVariant/51838247076204",
+       "list_price": {
+        "amount": 241,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3881885.webp?v=1776287455"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 241,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-993",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 2.36inch E-Paper (G) Raw Display Display Colors: Red/Yellow/Black/White Low-power, paper-like display for various applications Wide 170° viewing angle and 2 grey scales Ultra-low power consumption and minimal standby current High resolution of 296x168 pixels Comprehensive development resources and manual provided The Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White offers a low-power, wide viewing angle, and paper-like display without the need for electricity. This display is suitable for price tags, shelf labels, industrial instruments, and more. It boasts a 170° viewing angle, 2 grey scales, and SPI communication, with ultra-low power consumption, requiring power only for refreshing. Development resources and a manual, including driver board schematic and examples for Raspberry Pi, Arduino, and STM32, are provided. View more What's Included 1x Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White Dimensions 68.1 x 37.9 x 0.85 mm Display: 52.096 x 29.568 mm Dot Pitch: 0.176 x 0.176 mm Links Website Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White - Wiki Specifications Resolution: 296 x 168 pixels Display Color: Red / Yellow / Black / White Interface: 3-wire SPI, 4-wire SPI Grey Scale: 2 Full Refresh Time: 12s Refresh Power: <57 mW (typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Operating Voltage: 3.3 V Weight: 5 g"
+     },
+     "gift_card": false,
+     "handle": "waveshare-236inch-e-paper-g-raw-display-296x168-red-yellowblackwhite",
+     "id": "gid://shopify/Product/7632504946849",
+     "list_price_range": {
+      "max": {
+       "amount": 1014,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1014,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1850318.webp?v=1789146318"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1014,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1014,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White",
+     "url": "https://www.robotshop.com/products/waveshare-236inch-e-paper-g-raw-display-296x168-red-yellowblackwhite",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42816629276833:1",
+       "description": {
+        "html": "Description Waveshare 2.36inch E-Paper (G) Raw Display Display Colors: Red/Yellow/Black/White Low-power, paper-like display for various applications Wide 170° viewing angle and 2 grey scales Ultra-low power consumption and minimal standby current High resolution of 296x168 pixels Comprehensive development resources and manual provided The Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White offers a low-power, wide viewing angle, and paper-like display without the need for electricity. This display is suitable for price tags, shelf labels, industrial instruments, and more. It boasts a 170° viewing angle, 2 grey scales, and SPI communication, with ultra-low power consumption, requiring power only for refreshing. Development resources and a manual, including driver board schematic and examples for Raspberry Pi, Arduino, and STM32, are provided. View more What's Included 1x Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White Dimensions 68.1 x 37.9 x 0.85 mm Display: 52.096 x 29.568 mm Dot Pitch: 0.176 x 0.176 mm Links Website Waveshare 2.36inch E-Paper (G) Raw Display, 296x168, Red/Yellow/Black/White - Wiki Specifications Resolution: 296 x 168 pixels Display Color: Red / Yellow / Black / White Interface: 3-wire SPI, 4-wire SPI Grey Scale: 2 Full Refresh Time: 12s Refresh Power: <57 mW (typ.) Standby Current: <0.01 uA (almost none) Viewing Angle: >170° Operating Voltage: 3.3 V Weight: 5 g"
+       },
+       "id": "gid://shopify/ProductVariant/42816629276833",
+       "list_price": {
+        "amount": 1014,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1850318.webp?v=1789146318"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1014,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-638",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

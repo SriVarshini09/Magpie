@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "records": 5,
+  "head_hash": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+  "broken_at": null,
+  "signatures_ok": true,
+  "checks": [
+    {
+      "name": "chain",
+      "ok": true,
+      "detail": "5 records recompute"
+    },
+    {
+      "name": "open_mandate.signature",
+      "ok": true,
+      "detail": "ES256 signature valid"
+    },
+    {
+      "name": "open_mandate.chain",
+      "ok": true,
+      "detail": "mandate_open record seq 2"
+    }
+  ],
+  "simulated": true
+}

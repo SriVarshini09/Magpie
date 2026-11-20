@@ -1,0 +1,1305 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "ELRS 2.4GHz receiver"
+  }
+ },
+ "key": "670aa798b26177cb0f2b816cde863b00481f2c00ebb2a42165454c5a1cbb8c96",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:16-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 735); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6NzM1LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 735
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>Featuring dual-channel 2.4GHz radios, the RP4TD excels in signal sensitivity, signal-to-noise ratio, and overall performance due to its optimized circuit design. The reliable DCDC power supply circuit ensures lower operating temperatures during extended usage. Additionally, the dual TCXO contributes to the utmost frequency stability and makes the RP4TD a leader in its class. The RP4TD features built in WIFI,<span> </span>allowing<span> </span>you<span> </span>to<span> </span>wirelessly upgrade firmware to configure the receiver via the built-in WebUI with your PC or mobile phone.<br><br>Suitable for drones and fixed-wing models, the receiver can be installed in virtually any application that requires a serial receiver!</p>\n<p><span>Check out the rest of our </span><a data-mce-fragment=\"1\" title=\"all rc receivers for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-receivers\">RC receivers</a><span> and all our </span><a data-mce-fragment=\"1\" title=\"all fpv freestyle racing drone rc radio control system transmitters for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-radio-transmitters\">RC transmitters, modules, and accessories</a><span>!</span></p>\n<h3>Features</h3>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"float: none;\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_01_2f95634a-c6e_1024x1024.jpg?v=1704823764\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_01_2f95634a-c6e_1024x1024.jpg?v=1704823764\" data-mce-style=\"float: none;\"></div>\n<h3>Dual TCXO (temperature compensated crystal oscillator)</h3>\n<p>The TCXO ensures high stability and accuracy in frequency control, compensating for temperature variations. This results in consistent and reliable signal reception, even in extreme temperature conditions. It also reduces frequency drift over time, providing long-term frequency stability and preventing signal degradation. In our testing, we found that two TCXOs offer better advantages in true diversity receivers.</p>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_02_1024x1024_af74d34c-0da7-4c3b-bedc-f97f02d0b40a_1024x1024.jpg?v=1704824218\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-bottom: -24px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_03_1024x1024_dde3ca86-290f-4dd6-80be-3d2c9e7bc7d4_1024x1024.jpg?v=1704824254\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_04_1024x1024_0931fae0-add5-4b23-abe4-4d3e6540d002_1024x1024.jpg?v=1704824276\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_05_1f7b7987-cb2_1024x1024.jpg?v=1704824299\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: 16px; float: none;\"></div>\n<h3>Specifications</h3>\n<ul>\n<li>Item: RP4TD ExpressLRS 2.4GHz Diversity Receiver</li>\n<li>Type: ISM</li>\n<li>MCU: ESP32</li>\n<li>RF Chip: SX1281 x 2</li>\n<li>Antenna: 65mm 2.4GHz T Antenna x 2</li>\n<li>Frequency Range: 2.4GHz</li>\n<li>Maximum Refresh Rate: 500Hz / F1000Hz</li>\n<li>Telemetry RF Power: Max 2x 100mW</li>\n<li>Working Voltage: DC 4.5-12.0V</li>\n<li>Weight: 1.4g (without antenna)</li>\n<li>Dimension: 23.7x16.3x4.0mm</li>\n<li>Firmware Version: ExpressLRS V3.3.0 pre-installed</li>\n<li>FW Target: RadioMaster RP4TD 2400 RX</li>\n<li>Bus interface: CRSF</li>\n<li>Extend interface: UART</li>\n</ul>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"float: none;\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_06_600x600_724d0879-89d3-4b84-ba67-8fae61ab5fef_1024x1024.jpg?v=1704824142\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_06_600x600_724d0879-89d3-4b84-ba67-8fae61ab5fef_1024x1024.jpg?v=1704824142\" data-mce-style=\"float: none;\"></div>\n<h3>Includes</h3>\n<ul>\n<li>1x RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver</li>\n<li>1x CRSF wire</li>\n<li>3x Heat-Shrinkable Tube</li>\n<li>2x 65mm 2.4GHz T Antenna (Installed on receiver)</li>\n<li>1x User Manual</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "radiomaster-rp4td-expresslrs-2-4ghz-nano-receiver",
+     "id": "gid://shopify/p/6hMSzbqsNRwrv7BMkCEovt",
+     "media": [
+      {
+       "alt_text": "HOBBYPORTER RC RX RadioMaster RP4TD 2.4GHz ELRS Nano Diversity Receiver",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hobbyporter-radiomaster-rp4td-2-4ghz-elrs-nano-diversity-receiver-rc-rx-30996046643313.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hobbyporter-radiomaster-rp4td-2-4ghz-elrs-nano-diversity-receiver-rc-rx-30996046643313.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual TCXO temperature-compensated crystal oscillators provide exceptional frequency stability for reliable signal reception",
+       "Gemini mode compatibility enables advanced multi-channel control for complex RC applications",
+       "Reliable DCDC power supply circuit reduces operating temperature and extends device lifespan",
+       "Built-in WiFi allows wireless firmware upgrades and configuration via webUI",
+       "Upgraded antennas and optimized PCB design enhance durability and signal performance"
+      ],
+      "unique_selling_points": [
+       "Dual TCXO frequency stabilization and built-in WiFi for firmware upgrades, ensuring consistent, long-term signal performance and easy configuration."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3249,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3249,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 19,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "RadioMaster RP4TD 2.4GHz ELRS Nano Diversity Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40474467172465:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Featuring dual-channel 2.4GHz radios, the RP4TD excels in signal sensitivity, signal-to-noise ratio, and overall performance due to its optimized circuit design. The reliable DCDC power supply circuit ensures lower operating temperatures during extended usage. Additionally, the dual TCXO contributes to the utmost frequency stability and makes the RP4TD a leader in its class. The RP4TD features built in WIFI,<span> </span>allowing<span> </span>you<span> </span>to<span> </span>wirelessly upgrade firmware to configure the receiver via the built-in WebUI with your PC or mobile phone.<br><br>Suitable for drones and fixed-wing models, the receiver can be installed in virtually any application that requires a serial receiver!</p>\n<p><span>Check out the rest of our </span><a data-mce-fragment=\"1\" title=\"all rc receivers for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-receivers\">RC receivers</a><span> and all our </span><a data-mce-fragment=\"1\" title=\"all fpv freestyle racing drone rc radio control system transmitters for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-radio-transmitters\">RC transmitters, modules, and accessories</a><span>!</span></p>\n<h3>Features</h3>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"float: none;\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_01_2f95634a-c6e_1024x1024.jpg?v=1704823764\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_01_2f95634a-c6e_1024x1024.jpg?v=1704823764\" data-mce-style=\"float: none;\"></div>\n<h3>Dual TCXO (temperature compensated crystal oscillator)</h3>\n<p>The TCXO ensures high stability and accuracy in frequency control, compensating for temperature variations. This results in consistent and reliable signal reception, even in extreme temperature conditions. It also reduces frequency drift over time, providing long-term frequency stability and preventing signal degradation. In our testing, we found that two TCXOs offer better advantages in true diversity receivers.</p>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_02_1024x1024_af74d34c-0da7-4c3b-bedc-f97f02d0b40a_1024x1024.jpg?v=1704824218\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-bottom: -24px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_03_1024x1024_dde3ca86-290f-4dd6-80be-3d2c9e7bc7d4_1024x1024.jpg?v=1704824254\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_04_1024x1024_0931fae0-add5-4b23-abe4-4d3e6540d002_1024x1024.jpg?v=1704824276\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_05_1f7b7987-cb2_1024x1024.jpg?v=1704824299\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" style=\"margin-top: -23px; margin-bottom: 16px; float: none;\"></div>\n<h3>Specifications</h3>\n<ul>\n<li>Item: RP4TD ExpressLRS 2.4GHz Diversity Receiver</li>\n<li>Type: ISM</li>\n<li>MCU: ESP32</li>\n<li>RF Chip: SX1281 x 2</li>\n<li>Antenna: 65mm 2.4GHz T Antenna x 2</li>\n<li>Frequency Range: 2.4GHz</li>\n<li>Maximum Refresh Rate: 500Hz / F1000Hz</li>\n<li>Telemetry RF Power: Max 2x 100mW</li>\n<li>Working Voltage: DC 4.5-12.0V</li>\n<li>Weight: 1.4g (without antenna)</li>\n<li>Dimension: 23.7x16.3x4.0mm</li>\n<li>Firmware Version: ExpressLRS V3.3.0 pre-installed</li>\n<li>FW Target: RadioMaster RP4TD 2400 RX</li>\n<li>Bus interface: CRSF</li>\n<li>Extend interface: UART</li>\n</ul>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"float: none;\" alt=\"RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_06_600x600_724d0879-89d3-4b84-ba67-8fae61ab5fef_1024x1024.jpg?v=1704824142\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP4TD-Details-PC_06_600x600_724d0879-89d3-4b84-ba67-8fae61ab5fef_1024x1024.jpg?v=1704824142\" data-mce-style=\"float: none;\"></div>\n<h3>Includes</h3>\n<ul>\n<li>1x RadioMaster RP4TD ExpressLRS 2.4GHz Nano Receiver</li>\n<li>1x CRSF wire</li>\n<li>3x Heat-Shrinkable Tube</li>\n<li>2x 65mm 2.4GHz T Antenna (Installed on receiver)</li>\n<li>1x User Manual</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-rp4td-expresslrs-2-4ghz-nano-receiver",
+       "id": "gid://shopify/ProductVariant/40474467172465",
+       "media": [
+        {
+         "alt_text": "HOBBYPORTER RC RX RadioMaster RP4TD 2.4GHz ELRS Nano Diversity Receiver",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hobbyporter-radiomaster-rp4td-2-4ghz-elrs-nano-diversity-receiver-rc-rx-30996046643313.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hobbyporter-radiomaster-rp4td-2-4ghz-elrs-nano-diversity-receiver-rc-rx-30996046643313.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3249,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 16,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6952409923697",
+       "source": "shopify",
+       "title": "RadioMaster RP4TD 2.4GHz ELRS Nano Diversity Receiver",
+       "url": "https://www.racedayquads.com/products/radiomaster-rp4td-expresslrs-2-4ghz-nano-receiver?variant=40474467172465&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<meta charset=\"UTF-8\">\n<p data-mce-fragment=\"1\">Introducing the RadioMaster ER5C-i receiver, built on the cutting-edge ExpressLRS system for outstanding performance. Experience unparalleled reliability, remarkable flexibility in configuration, lightning-fast response times, and an extended receiving range that redefines your usage expectations.</p>\n<p data-mce-fragment=\"1\">The ER5C-i ELRS receiver empowers your setup by controlling up to 5 servos and includes integrated receiver voltage telemetry and battery telemetry. Its intelligent design automatically detects the appropriate voltage input, streamlining your experience. With a built-in high-sensitivity ceramic antenna, the ER5C-i ensures a seamless installation for all surface models, eliminating concerns about antenna wires. Upgrade to a new level of precision and convenience with the RadioMaster ER5C-i.</p>\n<p data-mce-fragment=\"1\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_01_1024x1024.jpg?v=1698388207\"><meta charset=\"UTF-8\"></p>\n<p>Key Features:</p>\n<ol>\n<li>\n<p><strong>High-Sensitivity Ceramic Antenna:</strong> Enhanced signal reception.</p>\n</li>\n<li>\n<p><strong>ExpressLRS System:</strong> High performance, reliability, and extended range.</p>\n</li>\n<li>\n<p><strong>PWM Channel Support:</strong> Control up to 5 channels.</p>\n</li>\n<li>\n<p><strong>Auto Voltage Telemetry Detection:</strong> Monitors external/receiver/ESC battery voltage.</p>\n</li>\n<li>\n<p><strong>Optimized PCB Design:</strong> Efficient and reliable performance.</p>\n</li>\n<li>\n<p><strong>Wi-Fi Updates &amp; WEBUI Configuration:</strong> Easy updates and intuitive settings.</p>\n</li>\n<li>\n<p><strong>TCXO Technology:</strong> Stable and precise performance in any environment.</p>\n</li>\n<li>\n<p><strong>Versatile Model Compatibility:</strong> Suitable for all surface models.</p>\n</li>\n<li>\n<p><strong>ExpressLRS Module Compatibility:</strong> Integrates seamlessly with 2.4GHz ExpressLRS modules and transmitters.</p>\n</li>\n</ol>\n<p>Upgrade your RC experience with the RadioMaster ER5C-i: compact, powerful, and feature-packed.</p>\n<h2 data-mce-fragment=\"1\">Specifications</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Item: ER5C-i 2.4GHz ELRS PWM Receiver</li>\n<li data-mce-fragment=\"1\">Power supply: DC 4.5 - 8.4V</li>\n<li data-mce-fragment=\"1\">Antenna type: Built-in high-sensitivity ceramic antenna</li>\n<li data-mce-fragment=\"1\">Wireless protocol: ExpressLRS 3.3.0 pre-installed</li>\n<li data-mce-fragment=\"1\">Output channel: 5CH PWM</li>\n<li data-mce-fragment=\"1\">Telemetry power: 10mW</li>\n<li data-mce-fragment=\"1\">Battery voltage detection range: DC 4.0 - 35V</li>\n<li data-mce-fragment=\"1\">Weight: 5.0 grams</li>\n<li data-mce-fragment=\"1\">Dimensions: 30.0*18.5*13.0 mm</li>\n<li data-mce-fragment=\"1\">Firmware: Device Category: Radiomaster 2.4Ghz / Device: RadioMaster ER5C-i</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_02_4a8b7ab5-ad61-4835-8d3f-2aee79611af1_1024x1024.jpg?v=1698820284\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_03_1024x1024.jpg?v=1698388467\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_03_1024x1024.jpg?v=1698388467\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_04_1024x1024.jpg?v=1698388556\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_04_1024x1024.jpg?v=1698388556\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_11_1024x1024.jpg?v=1698388624\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_11_1024x1024.jpg?v=1698388624\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER5CI-1000x1000-9_480x480.jpg?v=1698804047\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER5CI-1000x1000-9_480x480.jpg?v=1698804047\"></p>\n<h2 data-mce-fragment=\"1\">Package Includes</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1 * ER5C-i 2.4GHz ELRS PWM Receiver</li>\n<li data-mce-fragment=\"1\">1 * Voltage telemetry wire</li>\n<li data-mce-fragment=\"1\">1 * User Card</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "radiomaster-er5c-i-2-4ghz-elrs-pwm-receiver",
+     "id": "gid://shopify/p/52jHmTz2ORDAjPOAZoDLPd",
+     "media": [
+      {
+       "alt_text": "RadioMaster ER5C-i 2.4GHz ELRS PWM Receiver",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/ER3CI-1000x1000-3_1_1800x1800_jpg.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/ER3CI-1000x1000-3_1_1800x1800_jpg.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Built-in high-sensitivity ceramic antenna enables clean installation without external wires for hassle-free setup",
+       "ExpressLRS 3.3.0 protocol delivers high reliability, flexible configuration, and ultra-fast response times for demanding RC applications",
+       "Supports up to 5 PWM channels, allowing simultaneous control of multiple servos for advanced maneuvers",
+       "Integrated receiver voltage and battery telemetry automatically detects and displays external or internal battery voltages for real-time monitoring",
+       "TCXO temperature-compensated crystal oscillator ensures stable and accurate performance in any environment"
+      ],
+      "unique_selling_points": [
+       "Built-in high-sensitivity ceramic antenna and ExpressLRS protocol for reliable, long-range, low-latency control of up to 5 servos."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 8,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "RadioMaster ER5C-i 2.4GHz ELRS PWM Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.buddyrc.com/buy/44560090104046:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<meta charset=\"UTF-8\">\n<p data-mce-fragment=\"1\">Introducing the RadioMaster ER5C-i receiver, built on the cutting-edge ExpressLRS system for outstanding performance. Experience unparalleled reliability, remarkable flexibility in configuration, lightning-fast response times, and an extended receiving range that redefines your usage expectations.</p>\n<p data-mce-fragment=\"1\">The ER5C-i ELRS receiver empowers your setup by controlling up to 5 servos and includes integrated receiver voltage telemetry and battery telemetry. Its intelligent design automatically detects the appropriate voltage input, streamlining your experience. With a built-in high-sensitivity ceramic antenna, the ER5C-i ensures a seamless installation for all surface models, eliminating concerns about antenna wires. Upgrade to a new level of precision and convenience with the RadioMaster ER5C-i.</p>\n<p data-mce-fragment=\"1\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_01_1024x1024.jpg?v=1698388207\"><meta charset=\"UTF-8\"></p>\n<p>Key Features:</p>\n<ol>\n<li>\n<p><strong>High-Sensitivity Ceramic Antenna:</strong> Enhanced signal reception.</p>\n</li>\n<li>\n<p><strong>ExpressLRS System:</strong> High performance, reliability, and extended range.</p>\n</li>\n<li>\n<p><strong>PWM Channel Support:</strong> Control up to 5 channels.</p>\n</li>\n<li>\n<p><strong>Auto Voltage Telemetry Detection:</strong> Monitors external/receiver/ESC battery voltage.</p>\n</li>\n<li>\n<p><strong>Optimized PCB Design:</strong> Efficient and reliable performance.</p>\n</li>\n<li>\n<p><strong>Wi-Fi Updates &amp; WEBUI Configuration:</strong> Easy updates and intuitive settings.</p>\n</li>\n<li>\n<p><strong>TCXO Technology:</strong> Stable and precise performance in any environment.</p>\n</li>\n<li>\n<p><strong>Versatile Model Compatibility:</strong> Suitable for all surface models.</p>\n</li>\n<li>\n<p><strong>ExpressLRS Module Compatibility:</strong> Integrates seamlessly with 2.4GHz ExpressLRS modules and transmitters.</p>\n</li>\n</ol>\n<p>Upgrade your RC experience with the RadioMaster ER5C-i: compact, powerful, and feature-packed.</p>\n<h2 data-mce-fragment=\"1\">Specifications</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Item: ER5C-i 2.4GHz ELRS PWM Receiver</li>\n<li data-mce-fragment=\"1\">Power supply: DC 4.5 - 8.4V</li>\n<li data-mce-fragment=\"1\">Antenna type: Built-in high-sensitivity ceramic antenna</li>\n<li data-mce-fragment=\"1\">Wireless protocol: ExpressLRS 3.3.0 pre-installed</li>\n<li data-mce-fragment=\"1\">Output channel: 5CH PWM</li>\n<li data-mce-fragment=\"1\">Telemetry power: 10mW</li>\n<li data-mce-fragment=\"1\">Battery voltage detection range: DC 4.0 - 35V</li>\n<li data-mce-fragment=\"1\">Weight: 5.0 grams</li>\n<li data-mce-fragment=\"1\">Dimensions: 30.0*18.5*13.0 mm</li>\n<li data-mce-fragment=\"1\">Firmware: Device Category: Radiomaster 2.4Ghz / Device: RadioMaster ER5C-i</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_02_4a8b7ab5-ad61-4835-8d3f-2aee79611af1_1024x1024.jpg?v=1698820284\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_03_1024x1024.jpg?v=1698388467\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_03_1024x1024.jpg?v=1698388467\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_04_1024x1024.jpg?v=1698388556\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_04_1024x1024.jpg?v=1698388556\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_11_1024x1024.jpg?v=1698388624\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER3CI_ER5CI-Detail-PC_11_1024x1024.jpg?v=1698388624\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER5CI-1000x1000-9_480x480.jpg?v=1698804047\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER5CI-1000x1000-9_480x480.jpg?v=1698804047\"></p>\n<h2 data-mce-fragment=\"1\">Package Includes</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1 * ER5C-i 2.4GHz ELRS PWM Receiver</li>\n<li data-mce-fragment=\"1\">1 * Voltage telemetry wire</li>\n<li data-mce-fragment=\"1\">1 * User Card</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-er5c-i-2-4ghz-elrs-pwm-receiver",
+       "id": "gid://shopify/ProductVariant/44560090104046",
+       "media": [
+        {
+         "alt_text": "RadioMaster ER5C-i 2.4GHz ELRS PWM Receiver",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/ER3CI-1000x1000-3_1_1800x1800_jpg.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/ER3CI-1000x1000-3_1_1800x1800_jpg.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "buddyrc.myshopify.com",
+        "id": "gid://shopify/Shop/26247462998",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708230742.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708263510.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708197974.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708296278.html"
+         }
+        ],
+        "name": "Buddy RC",
+        "url": "https://www.buddyrc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8211125534958",
+       "source": "shopify",
+       "title": "RadioMaster ER5C-i 2.4GHz ELRS PWM Receiver",
+       "url": "https://www.buddyrc.com/products/radiomaster-er5c-i-2-4ghz-elrs-pwm-receiver?variant=44560090104046&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver<br><br>\n</h2>\n<p>The XR2 Receiver is a nano-sized powerhouse engineered for 2.4GHz ExpressLRS, featuring an integrated tower antenna that delivers exceptional reception within its ultra-compact design. With a footprint of just 16x12mm and a lightweight of only 0.8g, it fits seamlessly into even the most space-constrained builds. Driven by the advanced Semtech LR1121 transceiver (third generation), the XR2 offers compatibility with all ELRS 2.4GHz transmitters and unlocks the benefits of DK500Hz mode for LR1121-based systems, ensuring unparalleled reliability and responsiveness. The built-in Wi-Fi module simplifies firmware updates and configuration via a WebUI on your PC or mobile device. With ultra-low latency and high refresh rates, the XR2 stands out in Whoops, micro drones, and fixed-wing models, where every gram and millimeter counts for peak performance.</p>\n<p>For more details and support, visit <a href=\"https://www.expresslrs.org/\" rel=\"noopener\" target=\"_blank\">expresslrs.org.</a></p>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/01_b8869e3d-927d-4d19-9336-a89a96b9306c.jpg?v=1734662443\"></p>\n<h2>Features</h2>\n<ul>\n<li>Integrated 2.4GHz tower antenna</li>\n<li>ExpressLRS 2.4GHz</li>\n<li>ESP32C3 high-performance MCU</li>\n<li>Semtech LR1121 Transceiver</li>\n<li>Secondary UART port for advanced functionality</li>\n<li>Castled pads for easy soldering</li>\n</ul>\n<h2>Specification</h2>\n<ul>\n<li>Item: XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>Type: ISM2.4</li>\n<li>MCU: ESP32C3</li>\n<li>RF Chip: Semtech LR1121</li>\n<li>Antenna: Integrated 2.4GHz Tower Antenna</li>\n<li>Frequency Range: 2.400 - 2.479GHz</li>\n<li>Telemetry Power: 10mW</li>\n<li>Maximum Packet rate: DK500Hz</li>\n<li>Minimum Packet refresh rate: 50Hz</li>\n<li>Working voltage: 5V</li>\n<li>Weight: 0.8g</li>\n<li>Dimension: 16mm * 12mm * 6mm</li>\n<li>Firmware Version: ExpressLRS v3.5.1 pre-installed</li>\n<li>FW Target:  RadioMaster XR2 2.4 RX</li>\n<li>Bus interface 1: CRSF</li>\n<li>Bus interface 2: UART</li>\n</ul>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/02_4c0b9bb1-ea35-4341-ba39-766c1e866940.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/03_9e0b7f49-f300-4c40-b413-b0ab106ced73.jpg?v=1734662444\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/04_14aceae2-7d33-4151-916e-6b68ed7f8d5c.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/05_42c6595e-a93b-4cc4-8339-59f119bf894f.jpg?v=1734662444\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/06_298d2197-96f9-4302-b30f-750e4f032f26.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/07_2d22f3de-80e5-439e-be5b-f564e67ea0e4.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/11_bd58cfc9-d3bf-4369-9778-1b7b04d5700c.jpg?v=1734662444\"></p>\n<h2>Weight</h2>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/08_c0b879ca-18d5-4bf7-a14c-a5c1e42d331d.jpg?v=1734662898\"></p>\n<h2>Dimensions</h2>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/09_afd8f154-9793-42b6-8ae5-bfb9522ada74_480x480.jpg?v=1734662899\"></p>\n<h2>Associated Products</h2>\n<ul>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr1-nano-multi-frequency-expresslrs-receiver\" target=\"_blank\">XR1 Nano Multi-Frequency ExpressLRS Receiver</a></li>\n<li>\n<a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr3-nano-multi-frequency-antenna-diversity-expresslrs-receiver\" target=\"_blank\">XR3 Nano Multi-Frequency ExpressLRS Receiver</a><br>\n</li>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr4-gemini-xrossband-dual-band-expresslrs-receiver\" target=\"_blank\">XR4 Gemini Xrossband Dual-Band ExpressLRS Receiver</a></li>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/ipex1-2-4ghz-sub-g-900mhz-dual-band-t-antenna\" target=\"_blank\">2.4GHz / Sub-G 900MHz Dual-Band T Antenna</a></li>\n<li><a href=\"https://www.radiomasterrc.com/collections/antenna/products/ufl-2-4ghz-t-antenna-65mm-95mm-for-elrs-receivers\" rel=\"noopener\" target=\"_blank\">UFL 2.4Ghz T Antenna 65mm/95mm for ELRS Receivers</a></li>\n<li><a href=\"https://www.radiomasterrc.com/products/ufl-915mhz-t-y-antenna-for-br-series-receivers\" rel=\"noopener\" target=\"_blank\">UFL 915/868MHz T &amp; Y Antenna for BR Series Receivers</a></li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1 * XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>1 * CRSF Wire</li>\n<li>3 * Heat-Shrinkable Tube</li>\n<li>1 * Manual Card</li>\n</ul>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/10_70804514-a950-4465-ba17-7309a5d04863.jpg?v=1734675466\"></p>"
+     },
+     "handle": "radiomaster-xr2-nano-2-4ghz-expresslrs-receiver",
+     "id": "gid://shopify/p/7AukTm76OysMFbk9Gla4XW",
+     "media": [
+      {
+       "alt_text": "RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver RadioMaster",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/RadioMaster-XR2-Nano-2.4GHz-ExpressLRS-Receiver-RadioMaster-143045131.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/RadioMaster-XR2-Nano-2.4GHz-ExpressLRS-Receiver-RadioMaster-143045131.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated 2.4GHz tower antenna ensures excellent reception in compact builds",
+       "Built-in Wi-Fi module enables easy firmware updates and configuration via webUI",
+       "Ultra-low latency and high refresh rates deliver precise, responsive control",
+       "DK500Hz mode supports high-reliability, high-speed communication",
+       "Lightweight and compact design fits into tight RC and drone builds"
+      ],
+      "unique_selling_points": [
+       "Smallest ExpressLRS receiver with integrated tower antenna and built-in Wi-Fi for easy firmware updates and ultra-low latency control."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1234,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1234,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 18,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/51869476553072:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver<br><br>\n</h2>\n<p>The XR2 Receiver is a nano-sized powerhouse engineered for 2.4GHz ExpressLRS, featuring an integrated tower antenna that delivers exceptional reception within its ultra-compact design. With a footprint of just 16x12mm and a lightweight of only 0.8g, it fits seamlessly into even the most space-constrained builds. Driven by the advanced Semtech LR1121 transceiver (third generation), the XR2 offers compatibility with all ELRS 2.4GHz transmitters and unlocks the benefits of DK500Hz mode for LR1121-based systems, ensuring unparalleled reliability and responsiveness. The built-in Wi-Fi module simplifies firmware updates and configuration via a WebUI on your PC or mobile device. With ultra-low latency and high refresh rates, the XR2 stands out in Whoops, micro drones, and fixed-wing models, where every gram and millimeter counts for peak performance.</p>\n<p>For more details and support, visit <a href=\"https://www.expresslrs.org/\" rel=\"noopener\" target=\"_blank\">expresslrs.org.</a></p>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/01_b8869e3d-927d-4d19-9336-a89a96b9306c.jpg?v=1734662443\"></p>\n<h2>Features</h2>\n<ul>\n<li>Integrated 2.4GHz tower antenna</li>\n<li>ExpressLRS 2.4GHz</li>\n<li>ESP32C3 high-performance MCU</li>\n<li>Semtech LR1121 Transceiver</li>\n<li>Secondary UART port for advanced functionality</li>\n<li>Castled pads for easy soldering</li>\n</ul>\n<h2>Specification</h2>\n<ul>\n<li>Item: XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>Type: ISM2.4</li>\n<li>MCU: ESP32C3</li>\n<li>RF Chip: Semtech LR1121</li>\n<li>Antenna: Integrated 2.4GHz Tower Antenna</li>\n<li>Frequency Range: 2.400 - 2.479GHz</li>\n<li>Telemetry Power: 10mW</li>\n<li>Maximum Packet rate: DK500Hz</li>\n<li>Minimum Packet refresh rate: 50Hz</li>\n<li>Working voltage: 5V</li>\n<li>Weight: 0.8g</li>\n<li>Dimension: 16mm * 12mm * 6mm</li>\n<li>Firmware Version: ExpressLRS v3.5.1 pre-installed</li>\n<li>FW Target:  RadioMaster XR2 2.4 RX</li>\n<li>Bus interface 1: CRSF</li>\n<li>Bus interface 2: UART</li>\n</ul>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/02_4c0b9bb1-ea35-4341-ba39-766c1e866940.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/03_9e0b7f49-f300-4c40-b413-b0ab106ced73.jpg?v=1734662444\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/04_14aceae2-7d33-4151-916e-6b68ed7f8d5c.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/05_42c6595e-a93b-4cc4-8339-59f119bf894f.jpg?v=1734662444\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/06_298d2197-96f9-4302-b30f-750e4f032f26.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/07_2d22f3de-80e5-439e-be5b-f564e67ea0e4.jpg?v=1734662443\"><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/11_bd58cfc9-d3bf-4369-9778-1b7b04d5700c.jpg?v=1734662444\"></p>\n<h2>Weight</h2>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/08_c0b879ca-18d5-4bf7-a14c-a5c1e42d331d.jpg?v=1734662898\"></p>\n<h2>Dimensions</h2>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/09_afd8f154-9793-42b6-8ae5-bfb9522ada74_480x480.jpg?v=1734662899\"></p>\n<h2>Associated Products</h2>\n<ul>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr1-nano-multi-frequency-expresslrs-receiver\" target=\"_blank\">XR1 Nano Multi-Frequency ExpressLRS Receiver</a></li>\n<li>\n<a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr3-nano-multi-frequency-antenna-diversity-expresslrs-receiver\" target=\"_blank\">XR3 Nano Multi-Frequency ExpressLRS Receiver</a><br>\n</li>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/xr4-gemini-xrossband-dual-band-expresslrs-receiver\" target=\"_blank\">XR4 Gemini Xrossband Dual-Band ExpressLRS Receiver</a></li>\n<li><a rel=\"noopener\" href=\"https://www.radiomasterrc.com/products/ipex1-2-4ghz-sub-g-900mhz-dual-band-t-antenna\" target=\"_blank\">2.4GHz / Sub-G 900MHz Dual-Band T Antenna</a></li>\n<li><a href=\"https://www.radiomasterrc.com/collections/antenna/products/ufl-2-4ghz-t-antenna-65mm-95mm-for-elrs-receivers\" rel=\"noopener\" target=\"_blank\">UFL 2.4Ghz T Antenna 65mm/95mm for ELRS Receivers</a></li>\n<li><a href=\"https://www.radiomasterrc.com/products/ufl-915mhz-t-y-antenna-for-br-series-receivers\" rel=\"noopener\" target=\"_blank\">UFL 915/868MHz T &amp; Y Antenna for BR Series Receivers</a></li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1 * XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>1 * CRSF Wire</li>\n<li>3 * Heat-Shrinkable Tube</li>\n<li>1 * Manual Card</li>\n</ul>\n<p><img alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/10_70804514-a950-4465-ba17-7309a5d04863.jpg?v=1734675466\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-xr2-nano-2-4ghz-expresslrs-receiver",
+       "id": "gid://shopify/ProductVariant/51869476553072",
+       "list_price": {
+        "amount": 1299,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver RadioMaster",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/RadioMaster-XR2-Nano-2.4GHz-ExpressLRS-Receiver-RadioMaster-143045131.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/RadioMaster-XR2-Nano-2.4GHz-ExpressLRS-Receiver-RadioMaster-143045131.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1234,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 5,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14671100576112",
+       "source": "shopify",
+       "title": "RadioMaster XR2 Nano 2.4GHz ExpressLRS Receiver",
+       "url": "https://newbeedrone.com/products/radiomaster-xr2-nano-2-4ghz-expresslrs-receiver?variant=51869476553072&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"Polaris-Box_375yx\">\n<div id=\"Polarispopover98\" class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\">\n<div class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\">\n<div class=\"_Container_b3ydm_1\">\n<div class=\"_OutputSection_1nvpl_1\" aria-live=\"polite\">\n<div class=\"_Content_1nvpl_11 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\">\n<div class=\"Polaris-Box_375yx\">\n<div class=\"Polaris-HorizontalStack_dv6q6\">\n<div class=\"_TextOutput_4ulde_1\">\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\"><strong><span style=\"color: #ff2a00;\" data-mce-style=\"color: #ff2a00;\">Note: The packaging in this product will mention V2, however the software is confirmed ELRS V3.</span></strong></p>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\">The Nano receivers, developed by Jye Smith of ExpressLRS, have ESP8285 MCU and SX1280 RF chip. RP1 has a UFL antenna socket while RP2 has a built-in ceramic antenna, making it super light and small. Both have WIFI built in, allowing you to upgrade firmware and configure the Receiver via WebUI. Both RP1 and RP2 have low-latency, high-refresh-rate RF module, making them ideal for FPV and long-range. Furthermore, their ultra-light Nano size allows you to fit them anywhere, from whoops to fixed-wing models. The EP1 comes with ELRS Firmware V3 pre-installed and a <span>TCXO </span>oscillator for solid connection &amp; reliability.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p><span data-mce-fragment=\"1\">Check out the <a href=\"https://www.racedayquads.com/products/radiomaster-rp2-2-4ghz-elrs-nano-receiver-ceramic-antenna\" title=\"RP2\" data-mce-href=\"https://www.racedayquads.com/products/radiomaster-rp2-2-4ghz-elrs-nano-receiver-ceramic-antenna\">RP2 </a>if that fits your needs more!</span></p>\n<p>Check out the rest of our <a href=\"https://www.racedayquads.com/collections/all-receivers\" title=\"all rc receivers for Sale at RaceDayQuads\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\">RC receivers</a> and all our <a href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" title=\"all fpv freestyle racing drone rc radio control system transmitters for sale at racedayquads\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" target=\"_blank\">RC transmitters, modules, and accessories</a>!</p>\n<h3>Features</h3>\n<ul>\n<li>\n<span>TCXO </span>oscillator for solid connection &amp; reliability.</li>\n<li data-mce-fragment=\"1\">Improved PCB design is better for heat dissipation.</li>\n<li data-mce-fragment=\"1\">ELRS Firmware V3 (<span data-mce-fragment=\"1\">pre-installed)</span>\n</li>\n<li>LED on the top side of PCB.<br>\n</li>\n<li data-mce-fragment=\"1\">Solder pads are improved and easier to solder to.</li>\n<li>Open-source receiver based on ExpressLRS</li>\n<li>Upgraded rigid antenna with greater durability and performance</li>\n</ul>\n<p><iframe title=\"RadioMaster UFL 2.4Ghz T Antenna  - 1 Minute Overview\" src=\"https://www.youtube.com/embed/s0jMqUIRywc\" height=\"811\" width=\"456\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe width=\"1280\" height=\"720\" src=\"https://www.youtube.com/embed/9yn60I6fUe4\" title=\"Radiomaster RP1 &amp; RP2 ExpressLRS Receiver - New Design\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"></iframe><br></p>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/FB-RP1-V2-_-RP2-V2_260f0020-bb28-41f7-a7f0-37e3b927a6ba.jpg?v=1693338721\" style=\"margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP-V2-Detail-Page-EN-PC-Shared.jpg?v=1693338679\" style=\"margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/1_5835b68e-2389-4449-b1e3-b7a7fe.jpg?v=1680712717\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/1_5835b68e-2389-4449-b1e3-b7a7fe.jpg?v=1680712717\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3><br></h3>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/a90424a5c073bc2dea4cf238c2937228_1.jpg?v=1680712819\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/a90424a5c073bc2dea4cf238c2937228_1.jpg?v=1680712819\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3><br></h3>\n<h3>Specifications</h3>\n<ul>\n<li>Item: RP1 Nano ExpressLRS 2.4ghz Receiver</li>\n<li>Type: ISM</li>\n<li>Antenna: 65mm 2.4ghz T Antenna</li>\n<li>Maximum receive refresh rate: 500Hz / F1000Hz</li>\n<li>Minimum receiver refresh rate: 25Hz</li>\n<li>Working voltage: 5v</li>\n<li>Weight: 2.2g (Including antenna)</li>\n<li>Dimension: 13mmx11mmx3mm</li>\n<li>Firmware Version: ExpressLRS v3.0 pre-installed</li>\n<li>FW Target: RadioMaster RP1/2 2400 RX</li>\n<li>Bus interface: CRSF</li>\n</ul>\n<h3>User Manual</h3>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/RP1.pdf?v=1669084468\" target=\"_blank\" data-mce-href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/RP1.pdf?v=1669084468\">RP1<span> </span>Receiver User Manual</a></li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver</li>\n<li>1x 65mm UFL 2.4Ghz T Antenna</li>\n<li>1x User Manual</li>\n</ul>\n<ol></ol>"
+     },
+     "handle": "radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver",
+     "id": "gid://shopify/p/5BJAxBUErAswGcqIREXz8P",
+     "media": [
+      {
+       "alt_text": "HOBBYPORTER RC RX RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hobbyporter-radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver-rc-rx-30668572065905.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hobbyporter-radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver-rc-rx-30668572065905.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "TCXO oscillator ensures solid connection reliability for stable signal transmission",
+       "Pre-installed ELRS v3 firmware enables immediate use and easy upgrades",
+       "WiFi built-in for firmware updates and receiver configuration via webUI",
+       "Ultra-lightweight and compact design fits a wide range of RC models",
+       "Upgraded rigid antenna with improved durability and performance"
+      ],
+      "unique_selling_points": [
+       "Pre-installed ELRS v3 firmware and WiFi-enabled firmware upgrade via webUI for easy configuration and reliable performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 65,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40165752045681:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"Polaris-Box_375yx\">\n<div id=\"Polarispopover98\" class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\">\n<div class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\">\n<div class=\"_Container_b3ydm_1\">\n<div class=\"_OutputSection_1nvpl_1\" aria-live=\"polite\">\n<div class=\"_Content_1nvpl_11 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\">\n<div class=\"Polaris-Box_375yx\">\n<div class=\"Polaris-HorizontalStack_dv6q6\">\n<div class=\"_TextOutput_4ulde_1\">\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\"><strong><span style=\"color: #ff2a00;\" data-mce-style=\"color: #ff2a00;\">Note: The packaging in this product will mention V2, however the software is confirmed ELRS V3.</span></strong></p>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\">The Nano receivers, developed by Jye Smith of ExpressLRS, have ESP8285 MCU and SX1280 RF chip. RP1 has a UFL antenna socket while RP2 has a built-in ceramic antenna, making it super light and small. Both have WIFI built in, allowing you to upgrade firmware and configure the Receiver via WebUI. Both RP1 and RP2 have low-latency, high-refresh-rate RF module, making them ideal for FPV and long-range. Furthermore, their ultra-light Nano size allows you to fit them anywhere, from whoops to fixed-wing models. The EP1 comes with ELRS Firmware V3 pre-installed and a <span>TCXO </span>oscillator for solid connection &amp; reliability.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p><span data-mce-fragment=\"1\">Check out the <a href=\"https://www.racedayquads.com/products/radiomaster-rp2-2-4ghz-elrs-nano-receiver-ceramic-antenna\" title=\"RP2\" data-mce-href=\"https://www.racedayquads.com/products/radiomaster-rp2-2-4ghz-elrs-nano-receiver-ceramic-antenna\">RP2 </a>if that fits your needs more!</span></p>\n<p>Check out the rest of our <a href=\"https://www.racedayquads.com/collections/all-receivers\" title=\"all rc receivers for Sale at RaceDayQuads\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\">RC receivers</a> and all our <a href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" title=\"all fpv freestyle racing drone rc radio control system transmitters for sale at racedayquads\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-radio-transmitters\" target=\"_blank\">RC transmitters, modules, and accessories</a>!</p>\n<h3>Features</h3>\n<ul>\n<li>\n<span>TCXO </span>oscillator for solid connection &amp; reliability.</li>\n<li data-mce-fragment=\"1\">Improved PCB design is better for heat dissipation.</li>\n<li data-mce-fragment=\"1\">ELRS Firmware V3 (<span data-mce-fragment=\"1\">pre-installed)</span>\n</li>\n<li>LED on the top side of PCB.<br>\n</li>\n<li data-mce-fragment=\"1\">Solder pads are improved and easier to solder to.</li>\n<li>Open-source receiver based on ExpressLRS</li>\n<li>Upgraded rigid antenna with greater durability and performance</li>\n</ul>\n<p><iframe title=\"RadioMaster UFL 2.4Ghz T Antenna  - 1 Minute Overview\" src=\"https://www.youtube.com/embed/s0jMqUIRywc\" height=\"811\" width=\"456\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe width=\"1280\" height=\"720\" src=\"https://www.youtube.com/embed/9yn60I6fUe4\" title=\"Radiomaster RP1 &amp; RP2 ExpressLRS Receiver - New Design\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"></iframe><br></p>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/FB-RP1-V2-_-RP2-V2_260f0020-bb28-41f7-a7f0-37e3b927a6ba.jpg?v=1693338721\" style=\"margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/RP-V2-Detail-Page-EN-PC-Shared.jpg?v=1693338679\" style=\"margin-bottom: -23px; float: none;\"></div>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/1_5835b68e-2389-4449-b1e3-b7a7fe.jpg?v=1680712717\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/1_5835b68e-2389-4449-b1e3-b7a7fe.jpg?v=1680712717\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3><br></h3>\n<div style=\"text-align: left;\" data-mce-style=\"text-align: left;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/a90424a5c073bc2dea4cf238c2937228_1.jpg?v=1680712819\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/a90424a5c073bc2dea4cf238c2937228_1.jpg?v=1680712819\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3><br></h3>\n<h3>Specifications</h3>\n<ul>\n<li>Item: RP1 Nano ExpressLRS 2.4ghz Receiver</li>\n<li>Type: ISM</li>\n<li>Antenna: 65mm 2.4ghz T Antenna</li>\n<li>Maximum receive refresh rate: 500Hz / F1000Hz</li>\n<li>Minimum receiver refresh rate: 25Hz</li>\n<li>Working voltage: 5v</li>\n<li>Weight: 2.2g (Including antenna)</li>\n<li>Dimension: 13mmx11mmx3mm</li>\n<li>Firmware Version: ExpressLRS v3.0 pre-installed</li>\n<li>FW Target: RadioMaster RP1/2 2400 RX</li>\n<li>Bus interface: CRSF</li>\n</ul>\n<h3>User Manual</h3>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/RP1.pdf?v=1669084468\" target=\"_blank\" data-mce-href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/RP1.pdf?v=1669084468\">RP1<span> </span>Receiver User Manual</a></li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver</li>\n<li>1x 65mm UFL 2.4Ghz T Antenna</li>\n<li>1x User Manual</li>\n</ul>\n<ol></ol>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver",
+       "id": "gid://shopify/ProductVariant/40165752045681",
+       "media": [
+        {
+         "alt_text": "HOBBYPORTER RC RX RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hobbyporter-radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver-rc-rx-30668572065905.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hobbyporter-radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver-rc-rx-30668572065905.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 67,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6853224759409",
+       "source": "shopify",
+       "title": "RadioMaster RP1 V2 2.4GHz ELRS Nano Receiver",
+       "url": "https://www.racedayquads.com/products/radiomaster-rp1-v2-2-4ghz-elrs-nano-receiver?variant=40165752045681&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">The RadioMaster ER series of PWM receivers are based on the revolutionary ExpressLRS system. It offers high performance, high reliability, flexible configuration, fast response speed and ultra-long range bringing you brand new experience with your hobby.</p>\n<p data-mce-fragment=\"1\">The<span data-mce-fragment=\"1\"> </span><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6 ELRS receiver</a><span data-mce-fragment=\"1\"> </span>has been specially designed for fixed-wing users. It can drive up to 6 servos and has built-in receiver voltage telemetry and flight battery telemetry with the ability to automatically detect which voltage input to use. A 4-wire CRSF interface is provided to facilitate later expansion of telemetry sensors. The ER6 features a dual-antenna with telemetry power up to 100mw. The receiver shell adopts one-piece molding process with high structural strength.</p>\n<p data-mce-fragment=\"1\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_01_1024x1024.jpg?v=1686558086\" style=\"float: none;\"></p>\n<div data-mce-fragment=\"1\" style=\"text-align: left;\"><br data-mce-fragment=\"1\"></div>\n<h2 data-mce-fragment=\"1\">Launch Video</h2>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TKwAzfBGLPQ?si=jADDP00ZW9dZ0NFZ\" title=\"YouTube video player\"></iframe></p>\n<h2 data-mce-fragment=\"1\">Features</h2>\n<ul>\n<li>Based on the Revolutionary ExpressLRS System</li>\n<li>High performance, high reliability, flexible configuration, fast response speed and ultra-long range</li>\n<li>Support 6 PWM Channels</li>\n<li>Optimized ground up PCB design</li>\n<li>Automatically voltage telemetry of external battery voltage or built-in receiver voltage</li>\n<li>Supports Wi-Fi updates and WEBUI configuration</li>\n<li>High quality 2.54 mm connector</li>\n<li>Standard 20 cm High Sensitivity Antenna</li>\n<li>Reserve 4pin CRSF input port</li>\n<li>The shell adopts one-piece molding process with high structural strength</li>\n<li>For fixed-wing aircraft and more</li>\n<li>Compatible with all 2.4GHz ExpressLRS modules and transmitters with built in 2.4GHz ExpressLRS</li>\n</ul>\n<h2 data-mce-fragment=\"1\">Specification</h2>\n<ul>\n<li>Item: ER6 2.4GHz ELRS PWM Receiver</li>\n<li>Power supply: DC 4.5 - 8.4V</li>\n<li>Antenna type: 20cm high sensitivity dual antenna</li>\n<li>Wireless protocol: ExpressLRS<span> </span><span data-mce-fragment=\"1\">3.3.0</span><span> </span>pre-installed</li>\n<li>Output channel: 6CH PWM</li>\n<li>Serial Output: CRSF / Sbus</li>\n<li>Telemetry power: maximum 100mw (LUA Adjustable)</li>\n<li>Telemetry Battery voltage detection range: DC 4.0 - 35V</li>\n<li>Bus interface: CRSF</li>\n<li>Weight: 14.5 grams</li>\n<li>Dimensions: 43*25*15mm</li>\n<li>Firmware: Device Category: Radiomaster 2.4Ghz / Device: ER6 2.4GHz Diversity+6xPWM RX</li>\n</ul>\n<p style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_02_1024x1024.jpg?v=1686558321\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_05_1024x1024.jpg?v=1686561423\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_04_1024x1024.jpg?v=1686558337\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_06_1024x1024.jpg?v=1686561461\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_07_1024x1024.jpg?v=1686558354\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_08_1024x1024.jpg?v=1686558361\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_09_1024x1024.jpg?v=1686561487\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_10_1024x1024.jpg?v=1686558372\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_03_1024x1024.jpg?v=1686558330\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"></p>\n<h2 data-mce-fragment=\"1\">Size</h2>\n<div data-mce-fragment=\"1\" style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-10_635b65ba-0ed2-41ec-bd89-5cd99930013b_480x480.jpg?v=1686640468\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\"></div>\n<h2 data-mce-fragment=\"1\">RadioMaster ER Series Receivers</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er4-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER4 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er8-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER8 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a href=\"https://www.radiomasterrc.com/products/er6g-er6gv-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6G/ER6GV ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a href=\"https://www.radiomasterrc.com/products/er8g-er8gv-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER8G/ER8GV ELRS PWM Receiver</a></li>\n</ul>\n<h2 data-mce-fragment=\"1\">Package Includes</h2>\n<ul>\n<li>1 * ER6 2.4GHz ELRS PWM Receiver</li>\n<li>1 * Voltage telemetry wire (Type-B)</li>\n<li>1 * CRSF wire</li>\n<li>1 * ELRS- RX- SBUS wire</li>\n<li>1 * User Card</li>\n</ul>\n<div><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6_480x480.jpg?v=1686641495\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\"></div>\n<div>\n<h2>Download</h2>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6_Receiver_User_Manual.pdf?v=1687324760\" rel=\"noopener\" target=\"_blank\">ER6 Receiver User Manual</a></li>\n</ul>\n</div>"
+     },
+     "handle": "radiomaster-er6-2-4ghz-elrs-pwm-receiver",
+     "id": "gid://shopify/p/3cFFVYz0J5WgU9nrOc9DcK",
+     "media": [
+      {
+       "alt_text": "RadioMaster ER6 2.4GHz ELRS PWM Receiver - HeliDirect",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/0087/9050/7597/files/HP0157.RX-ER6-1.jpg",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0087/9050/7597/files/HP0157.RX-ER6-1.jpg",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual antenna design with telemetry power up to 100mW ensures stable, long-range signal for demanding RC and drone applications",
+       "Automatic voltage telemetry detects and reports external battery or receiver voltage for precise power management",
+       "Supports up to 6 PWM channels for complex multi-servo control",
+       "One-piece molded shell provides high structural strength and durability",
+       "Wi-Fi update and webUI configuration enable easy firmware and setup management"
+      ],
+      "unique_selling_points": [
+       "Supports up to 6 PWM channels with automatic voltage telemetry and dual antenna for reliable, long-range control."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 40,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "RadioMaster ER6 2.4GHz ELRS PWM Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.helidirect.com/buy/40724989444173:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">The RadioMaster ER series of PWM receivers are based on the revolutionary ExpressLRS system. It offers high performance, high reliability, flexible configuration, fast response speed and ultra-long range bringing you brand new experience with your hobby.</p>\n<p data-mce-fragment=\"1\">The<span data-mce-fragment=\"1\"> </span><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6 ELRS receiver</a><span data-mce-fragment=\"1\"> </span>has been specially designed for fixed-wing users. It can drive up to 6 servos and has built-in receiver voltage telemetry and flight battery telemetry with the ability to automatically detect which voltage input to use. A 4-wire CRSF interface is provided to facilitate later expansion of telemetry sensors. The ER6 features a dual-antenna with telemetry power up to 100mw. The receiver shell adopts one-piece molding process with high structural strength.</p>\n<p data-mce-fragment=\"1\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_01_1024x1024.jpg?v=1686558086\" style=\"float: none;\"></p>\n<div data-mce-fragment=\"1\" style=\"text-align: left;\"><br data-mce-fragment=\"1\"></div>\n<h2 data-mce-fragment=\"1\">Launch Video</h2>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TKwAzfBGLPQ?si=jADDP00ZW9dZ0NFZ\" title=\"YouTube video player\"></iframe></p>\n<h2 data-mce-fragment=\"1\">Features</h2>\n<ul>\n<li>Based on the Revolutionary ExpressLRS System</li>\n<li>High performance, high reliability, flexible configuration, fast response speed and ultra-long range</li>\n<li>Support 6 PWM Channels</li>\n<li>Optimized ground up PCB design</li>\n<li>Automatically voltage telemetry of external battery voltage or built-in receiver voltage</li>\n<li>Supports Wi-Fi updates and WEBUI configuration</li>\n<li>High quality 2.54 mm connector</li>\n<li>Standard 20 cm High Sensitivity Antenna</li>\n<li>Reserve 4pin CRSF input port</li>\n<li>The shell adopts one-piece molding process with high structural strength</li>\n<li>For fixed-wing aircraft and more</li>\n<li>Compatible with all 2.4GHz ExpressLRS modules and transmitters with built in 2.4GHz ExpressLRS</li>\n</ul>\n<h2 data-mce-fragment=\"1\">Specification</h2>\n<ul>\n<li>Item: ER6 2.4GHz ELRS PWM Receiver</li>\n<li>Power supply: DC 4.5 - 8.4V</li>\n<li>Antenna type: 20cm high sensitivity dual antenna</li>\n<li>Wireless protocol: ExpressLRS<span> </span><span data-mce-fragment=\"1\">3.3.0</span><span> </span>pre-installed</li>\n<li>Output channel: 6CH PWM</li>\n<li>Serial Output: CRSF / Sbus</li>\n<li>Telemetry power: maximum 100mw (LUA Adjustable)</li>\n<li>Telemetry Battery voltage detection range: DC 4.0 - 35V</li>\n<li>Bus interface: CRSF</li>\n<li>Weight: 14.5 grams</li>\n<li>Dimensions: 43*25*15mm</li>\n<li>Firmware: Device Category: Radiomaster 2.4Ghz / Device: ER6 2.4GHz Diversity+6xPWM RX</li>\n</ul>\n<p style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_02_1024x1024.jpg?v=1686558321\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_05_1024x1024.jpg?v=1686561423\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_04_1024x1024.jpg?v=1686558337\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_06_1024x1024.jpg?v=1686561461\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_07_1024x1024.jpg?v=1686558354\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_08_1024x1024.jpg?v=1686558361\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_09_1024x1024.jpg?v=1686561487\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"><img data-mce-fragment=\"1\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_10_1024x1024.jpg?v=1686558372\" style=\"float: none;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-Details-Page-EN-PC_03_1024x1024.jpg?v=1686558330\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\" style=\"float: none;\"></p>\n<h2 data-mce-fragment=\"1\">Size</h2>\n<div data-mce-fragment=\"1\" style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6-10_635b65ba-0ed2-41ec-bd89-5cd99930013b_480x480.jpg?v=1686640468\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\"></div>\n<h2 data-mce-fragment=\"1\">RadioMaster ER Series Receivers</h2>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er4-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER4 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a data-mce-fragment=\"1\" href=\"https://www.radiomasterrc.com/products/er8-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER8 ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a href=\"https://www.radiomasterrc.com/products/er6g-er6gv-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER6G/ER6GV ELRS PWM Receiver</a></li>\n<li data-mce-fragment=\"1\"><a href=\"https://www.radiomasterrc.com/products/er8g-er8gv-2-4ghz-elrs-pwm-receiver\" rel=\"noopener\" target=\"_blank\">ER8G/ER8GV ELRS PWM Receiver</a></li>\n</ul>\n<h2 data-mce-fragment=\"1\">Package Includes</h2>\n<ul>\n<li>1 * ER6 2.4GHz ELRS PWM Receiver</li>\n<li>1 * Voltage telemetry wire (Type-B)</li>\n<li>1 * CRSF wire</li>\n<li>1 * ELRS- RX- SBUS wire</li>\n<li>1 * User Card</li>\n</ul>\n<div><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6_480x480.jpg?v=1686641495\" alt=\"RadioMaster ER6 2.4GHz ELRS PWM Receiver\"></div>\n<div>\n<h2>Download</h2>\n<ul>\n<li><a href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/ER6_Receiver_User_Manual.pdf?v=1687324760\" rel=\"noopener\" target=\"_blank\">ER6 Receiver User Manual</a></li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-er6-2-4ghz-elrs-pwm-receiver",
+       "id": "gid://shopify/ProductVariant/40724989444173",
+       "media": [
+        {
+         "alt_text": "RadioMaster ER6 2.4GHz ELRS PWM Receiver - HeliDirect",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/0087/9050/7597/files/HP0157.RX-ER6-1.jpg",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0087/9050/7597/files/HP0157.RX-ER6-1.jpg",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 2899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "helidirectrc.myshopify.com",
+        "id": "gid://shopify/Shop/8790507597",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/8790507597/policies/11947901005.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/8790507597/policies/11947933773.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/8790507597/policies/11947868237.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/8790507597/policies/11947966541.html"
+         }
+        ],
+        "name": "HeliDirect",
+        "url": "https://www.helidirect.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7078141034573",
+       "source": "shopify",
+       "title": "RadioMaster ER6 2.4GHz ELRS PWM Receiver",
+       "url": "https://www.helidirect.com/products/radiomaster-er6-2-4ghz-elrs-pwm-receiver?variant=40724989444173&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The XR2 Receiver is a nano-sized powerhouse engineered for 2.4GHz ExpressLRS, featuring an integrated tower antenna that delivers exceptional reception within its ultra-compact design. With a footprint of just 16x12mm and a lightweight of only 0.8g, it fits seamlessly into even the most space-constrained builds. Driven by the advanced Semtech LR1121 transceiver (third generation), the XR2 offers compatibility with all ELRS 2.4GHz transmitters and unlocks the benefits of DK500Hz mode for LR1121-based systems, ensuring unparalleled reliability and responsiveness. The built-in Wi-Fi module simplifies firmware updates and configuration via a WebUI on your PC or mobile device. With ultra-low latency and high refresh rates, the XR2 stands out in Whoops, micro drones, and fixed-wing models, where every gram and millimeter counts for peak performance.</p>\n<p>For more details and support, visit<span> </span><a rel=\"noopener\" href=\"https://www.expresslrs.org/\" target=\"_blank\">expresslrs.org.</a></p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/01_b8869e3d-927d-4d19-9336-a89a96b9306c.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Features</h2>\n<ul>\n<li>Integrated 2.4GHz tower antenna</li>\n<li>ExpressLRS 2.4GHz</li>\n<li>ESP32C3 high-performance MCU</li>\n<li>Semtech LR1121 Transceiver</li>\n<li>Secondary UART port for advanced functionality</li>\n<li>Castled pads for easy soldering</li>\n</ul>\n<h2>Specification</h2>\n<ul>\n<li>Item: XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>Type: ISM2.4</li>\n<li>MCU: ESP32C3</li>\n<li>RF Chip: Semtech LR1121</li>\n<li>Antenna: Integrated 2.4GHz Tower Antenna</li>\n<li>Frequency Range: 2.400 - 2.479GHz</li>\n<li>Telemetry Power: 10mW</li>\n<li>Maximum Packet rate: DK500Hz</li>\n<li>Minimum Packet refresh rate: 50Hz</li>\n<li>Working voltage: 5V</li>\n<li>Weight: 0.8g</li>\n<li>Dimension: 16mm * 12mm * 6mm</li>\n<li>Firmware Version: ExpressLRS v3.5.1 pre-installed</li>\n<li>FW Target:  RadioMaster XR2 2.4 RX</li>\n<li>Bus interface 1: CRSF</li>\n<li>Bus interface 2: UART</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/02_4c0b9bb1-ea35-4341-ba39-766c1e866940.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/03_9e0b7f49-f300-4c40-b413-b0ab106ced73.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/04_14aceae2-7d33-4151-916e-6b68ed7f8d5c.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/05_42c6595e-a93b-4cc4-8339-59f119bf894f.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/06_298d2197-96f9-4302-b30f-750e4f032f26.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/07_2d22f3de-80e5-439e-be5b-f564e67ea0e4.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/11_bd58cfc9-d3bf-4369-9778-1b7b04d5700c.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Weight</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/08_c0b879ca-18d5-4bf7-a14c-a5c1e42d331d.jpg?v=1734662898\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Dimensions</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/09_afd8f154-9793-42b6-8ae5-bfb9522ada74_480x480.jpg?v=1734662899\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<p> </p>\n<h2>Download</h2>\n<ul>\n<li><a rel=\"noopener\" href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/XR2.pdf?v=1739432398\" target=\"_blank\">XR2 Receiver User Manual</a></li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1 * XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>1 * CRSF Wire</li>\n<li>3 * Heat-Shrinkable Tube</li>\n<li>1 * Manual Card</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/10_70804514-a950-4465-ba17-7309a5d04863.jpg?v=1734675466\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>"
+     },
+     "handle": "radiomaster-xr2-2-4elrs-receiver",
+     "id": "gid://shopify/p/63Er8edA4yEmohGrWiReAZ",
+     "media": [
+      {
+       "alt_text": "RadioMaster XR2 2.4ELRS Receiver",
+       "height": 720,
+       "preview": {
+        "height": 720,
+        "url": "https://cdn.shopify.com/s/files/1/0268/0628/8573/files/07_720x_0b57d1f1-12c6-4e4c-8211-f7370da7379a.webp",
+        "width": 720
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0268/0628/8573/files/07_720x_0b57d1f1-12c6-4e4c-8211-f7370da7379a.webp",
+       "width": 720
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated 2.4GHz tower antenna ensures exceptional reception in compact spaces",
+       "Semtech LR1121 third-generation transceiver provides compatibility with all 2.4GHz ELRS transmitters and DK500Hz mode for reliability",
+       "Ultra-low latency and high refresh rates optimize performance in micro drones and fixed-wing models",
+       "Built-in Wi-Fi module enables easy firmware updates and configuration via webUI",
+       "Secondary UART port supports advanced functionality for custom setups"
+      ],
+      "unique_selling_points": [
+       "Nano-sized receiver with integrated tower antenna and Semtech LR1121 transceiver for unmatched reliability and responsiveness in space-constrained builds."
+      ]
+     },
+     "options": [
+      {
+       "name": "How many",
+       "values": [
+        {
+         "label": "1x RadioMaster XR2 $12.99"
+        },
+        {
+         "label": "3x RadioMaster XR2 + $11.99 Each"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1299,
+       "currency": "USD"
+      }
+     },
+     "title": "RadioMaster XR2 2.4ELRS Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://flyhighfpv.com/buy/45099866128573:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The XR2 Receiver is a nano-sized powerhouse engineered for 2.4GHz ExpressLRS, featuring an integrated tower antenna that delivers exceptional reception within its ultra-compact design. With a footprint of just 16x12mm and a lightweight of only 0.8g, it fits seamlessly into even the most space-constrained builds. Driven by the advanced Semtech LR1121 transceiver (third generation), the XR2 offers compatibility with all ELRS 2.4GHz transmitters and unlocks the benefits of DK500Hz mode for LR1121-based systems, ensuring unparalleled reliability and responsiveness. The built-in Wi-Fi module simplifies firmware updates and configuration via a WebUI on your PC or mobile device. With ultra-low latency and high refresh rates, the XR2 stands out in Whoops, micro drones, and fixed-wing models, where every gram and millimeter counts for peak performance.</p>\n<p>For more details and support, visit<span> </span><a rel=\"noopener\" href=\"https://www.expresslrs.org/\" target=\"_blank\">expresslrs.org.</a></p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/01_b8869e3d-927d-4d19-9336-a89a96b9306c.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Features</h2>\n<ul>\n<li>Integrated 2.4GHz tower antenna</li>\n<li>ExpressLRS 2.4GHz</li>\n<li>ESP32C3 high-performance MCU</li>\n<li>Semtech LR1121 Transceiver</li>\n<li>Secondary UART port for advanced functionality</li>\n<li>Castled pads for easy soldering</li>\n</ul>\n<h2>Specification</h2>\n<ul>\n<li>Item: XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>Type: ISM2.4</li>\n<li>MCU: ESP32C3</li>\n<li>RF Chip: Semtech LR1121</li>\n<li>Antenna: Integrated 2.4GHz Tower Antenna</li>\n<li>Frequency Range: 2.400 - 2.479GHz</li>\n<li>Telemetry Power: 10mW</li>\n<li>Maximum Packet rate: DK500Hz</li>\n<li>Minimum Packet refresh rate: 50Hz</li>\n<li>Working voltage: 5V</li>\n<li>Weight: 0.8g</li>\n<li>Dimension: 16mm * 12mm * 6mm</li>\n<li>Firmware Version: ExpressLRS v3.5.1 pre-installed</li>\n<li>FW Target:  RadioMaster XR2 2.4 RX</li>\n<li>Bus interface 1: CRSF</li>\n<li>Bus interface 2: UART</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/02_4c0b9bb1-ea35-4341-ba39-766c1e866940.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/03_9e0b7f49-f300-4c40-b413-b0ab106ced73.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/04_14aceae2-7d33-4151-916e-6b68ed7f8d5c.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/05_42c6595e-a93b-4cc4-8339-59f119bf894f.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/06_298d2197-96f9-4302-b30f-750e4f032f26.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/07_2d22f3de-80e5-439e-be5b-f564e67ea0e4.jpg?v=1734662443\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/11_bd58cfc9-d3bf-4369-9778-1b7b04d5700c.jpg?v=1734662444\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Weight</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/08_c0b879ca-18d5-4bf7-a14c-a5c1e42d331d.jpg?v=1734662898\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<h2>Dimensions</h2>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/09_afd8f154-9793-42b6-8ae5-bfb9522ada74_480x480.jpg?v=1734662899\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>\n<p> </p>\n<h2>Download</h2>\n<ul>\n<li><a rel=\"noopener\" href=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/XR2.pdf?v=1739432398\" target=\"_blank\">XR2 Receiver User Manual</a></li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1 * XR2 Nano 2.4GHz ExpressLRS Receiver</li>\n<li>1 * CRSF Wire</li>\n<li>3 * Heat-Shrinkable Tube</li>\n<li>1 * Manual Card</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0609/8324/7079/files/10_70804514-a950-4465-ba17-7309a5d04863.jpg?v=1734675466\" alt=\"XR2 Nano 2.4GHz ExpressLRS Receiver\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-xr2-2-4elrs-receiver",
+       "id": "gid://shopify/ProductVariant/45099866128573",
+       "media": [
+        {
+         "alt_text": "RadioMaster XR2 2.4ELRS Receiver",
+         "height": 720,
+         "preview": {
+          "height": 720,
+          "url": "https://cdn.shopify.com/s/files/1/0268/0628/8573/files/07_720x_0b57d1f1-12c6-4e4c-8211-f7370da7379a.webp",
+          "width": 720
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0268/0628/8573/files/07_720x_0b57d1f1-12c6-4e4c-8211-f7370da7379a.webp",
+         "width": 720
+        }
+       ],
+       "options": [
+        {
+         "label": "1x RadioMaster XR2 $12.99",
+         "name": "How many"
+        }
+       ],
+       "price": {
+        "amount": 1299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "fly-high-fpv.myshopify.com",
+        "id": "gid://shopify/Shop/26806288573",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/26806288573/policies/27076231357.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/26806288573/policies/27076264125.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/26806288573/policies/27076198589.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/26806288573/policies/27076296893.html"
+         }
+        ],
+        "name": "Fly High FPV",
+        "url": "https://flyhighfpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8013804404925",
+       "source": "shopify",
+       "title": "RadioMaster XR2 2.4ELRS Receiver",
+       "url": "https://flyhighfpv.com/products/radiomaster-xr2-2-4elrs-receiver?variant=45099866128573&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>The RP1 </span><span>2.4GHz ELRS nano series receivers are open-source receivers based on the ExpressLRS receiver protocol. It features WIFI built in so you can upgrade firmware by WIFI and configure the Receiver via the built-in WebUI with your PC or mobile phone. Thanks to the low-latency and high-refresh-rate RF module, the RP1 is ideal for FPV races or Long Range. Suitable for Whoops, drones, and fixed-wing models due to the ultra-light and Nano size, these receivers can fit just about anywhere!</span></p>\n<h3><span>Specifications</span></h3>\n<ul>\n<li><span>Antenna: 65mm 2.4ghz T Antenna</span></li>\n<li><span>Maximum receive refresh rate: 500Hz / F1000Hz</span></li>\n<li><span>Minimum receiver refresh rate: 25Hz</span></li>\n<li><span>Working voltage: 5v</span></li>\n<li><span>Weight: 2.2g (Including antenna)</span></li>\n<li><span>Dimension: 13x11x3mm</span></li>\n<li><span>Firmware Version: ExpressLRS v2.4 pre-installed</span></li>\n<li><span>FW Target: RadioMaster RP1/2 2400 RX</span></li>\n<li><span>Bus interface: CRSF </span></li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x RP1 2.4GHz Receiver For ELRS Protocol</li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0123/4406/6148/files/RP1-RX-Wiring.png?v=1674068853\" alt=\"\"></p>"
+     },
+     "handle": "rp1-2-4ghz-receiver-for-elrs-protocol",
+     "id": "gid://shopify/p/7hnnNJ7QlBBQ5Jsq7BX1JP",
+     "media": [
+      {
+       "alt_text": "RP1 2.4GHz Receiver For ELRS Protocol",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0123/4406/6148/products/RP1-9_1800x1800_5e5d835c-c491-4fb7-b83d-951aa8fc90d2.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0123/4406/6148/products/RP1-9_1800x1800_5e5d835c-c491-4fb7-b83d-951aa8fc90d2.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Open-source ExpressLRS protocol receiver enables flexible integration and customization",
+       "WiFi-enabled firmware updates and webUI configuration simplify setup and maintenance",
+       "Built-in TCXO ensures frequency accuracy across temperature variations",
+       "Ultra-lightweight and compact design fits into tight spaces on drones and fixed-wing models",
+       "65mm UFL 2.4GHz T-antenna provides reliable long-range communication"
+      ],
+      "unique_selling_points": [
+       "Nano-sized, open-source ELRS receiver with WiFi-enabled firmware updates and built-in TCXO for temperature stability."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 25,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "RP1 2.4GHz Receiver For ELRS Protocol",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rotorriot.com/buy/43532747243750:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>The RP1 </span><span>2.4GHz ELRS nano series receivers are open-source receivers based on the ExpressLRS receiver protocol. It features WIFI built in so you can upgrade firmware by WIFI and configure the Receiver via the built-in WebUI with your PC or mobile phone. Thanks to the low-latency and high-refresh-rate RF module, the RP1 is ideal for FPV races or Long Range. Suitable for Whoops, drones, and fixed-wing models due to the ultra-light and Nano size, these receivers can fit just about anywhere!</span></p>\n<h3><span>Specifications</span></h3>\n<ul>\n<li><span>Antenna: 65mm 2.4ghz T Antenna</span></li>\n<li><span>Maximum receive refresh rate: 500Hz / F1000Hz</span></li>\n<li><span>Minimum receiver refresh rate: 25Hz</span></li>\n<li><span>Working voltage: 5v</span></li>\n<li><span>Weight: 2.2g (Including antenna)</span></li>\n<li><span>Dimension: 13x11x3mm</span></li>\n<li><span>Firmware Version: ExpressLRS v2.4 pre-installed</span></li>\n<li><span>FW Target: RadioMaster RP1/2 2400 RX</span></li>\n<li><span>Bus interface: CRSF </span></li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x RP1 2.4GHz Receiver For ELRS Protocol</li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0123/4406/6148/files/RP1-RX-Wiring.png?v=1674068853\" alt=\"\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "rp1-2-4ghz-receiver-for-elrs-protocol",
+       "id": "gid://shopify/ProductVariant/43532747243750",
+       "media": [
+        {
+         "alt_text": "RP1 2.4GHz Receiver For ELRS Protocol",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0123/4406/6148/products/RP1-9_1800x1800_5e5d835c-c491-4fb7-b83d-951aa8fc90d2.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0123/4406/6148/products/RP1-9_1800x1800_5e5d835c-c491-4fb7-b83d-951aa8fc90d2.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 38,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "store-rotorriot-com.myshopify.com",
+        "id": "gid://shopify/Shop/12344066148",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12344066148/policies/8707670116.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12344066148/policies/8707702884.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12344066148/policies/8707637348.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/12344066148/policies/8707735652.html"
+         }
+        ],
+        "name": "Rotor Riot",
+        "url": "https://rotorriot.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8058084622566",
+       "source": "shopify",
+       "title": "RP1 2.4GHz Receiver For ELRS Protocol",
+       "url": "https://rotorriot.com/products/rp1-2-4ghz-receiver-for-elrs-protocol?variant=43532747243750&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">The RadioMaster RP series of receivers are designed with size, ease of use, and range in mind. Utilizing ExpressLRS 2.4GHz open-source firmware the RP series of nano receivers delivers the features and range today’s pilots have come to expect.</p>\n<p data-mce-fragment=\"1\">Developed around the ESP8285 MCU and SX1280IMLTRT RF Chip the RP series offer Lora and FLRC 2.4GHz RF links offering incredible range and low latency. With WiFi built-in, firmware updates can be done on your aircraft without the need to remove the receiver. Binding can be done using a bind phrase meaning no more bind plugs or fiddly button presses while trying to plug in your battery.</p>\n<p data-mce-fragment=\"1\">The RP3 receiver features a Skyworks SE2431L providing an LNA for improved receiver performance, a PA providing up to 100mw of telemetry performance, and antenna switching for antenna diversity.</p>"
+     },
+     "handle": "radiomaster-rp3-elrs-2-4ghz-receiver",
+     "id": "gid://shopify/p/1der3UnlOauP8gotuEEDV6",
+     "media": [
+      {
+       "alt_text": "RadioMaster RP3 V2 ELRS 2.4GHz Receiver",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0322/0783/1175/products/RadioMaster-RP3-ELRS-Receiver-Product-4_1800x1800_ad95dae5-fefa-497c-89b6-9aab6d1ba580.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0322/0783/1175/products/RadioMaster-RP3-ELRS-Receiver-Product-4_1800x1800_ad95dae5-fefa-497c-89b6-9aab6d1ba580.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "ExpressLRS 2.4GHz open source firmware enables easy customization and improved reliability",
+       "LoRa and FLC 2.4GHz RF links provide extended range and low latency for real-time control",
+       "Built-in WiFi allows firmware updates without removing the receiver",
+       "Skyworks SE2431L LNA and PA deliver up to 100mW telemetry performance for clear signal",
+       "Antenna switching supports antenna diversity for enhanced signal stability"
+      ],
+      "unique_selling_points": [
+       "ExpressLRS 2.4GHz open source firmware and integrated LoRa and FLC for superior range and low latency."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2199,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 3,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "RadioMaster RP3 V2 ELRS 2.4GHz Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.progressiverc.com/buy/40189132537991:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">The RadioMaster RP series of receivers are designed with size, ease of use, and range in mind. Utilizing ExpressLRS 2.4GHz open-source firmware the RP series of nano receivers delivers the features and range today’s pilots have come to expect.</p>\n<p data-mce-fragment=\"1\">Developed around the ESP8285 MCU and SX1280IMLTRT RF Chip the RP series offer Lora and FLRC 2.4GHz RF links offering incredible range and low latency. With WiFi built-in, firmware updates can be done on your aircraft without the need to remove the receiver. Binding can be done using a bind phrase meaning no more bind plugs or fiddly button presses while trying to plug in your battery.</p>\n<p data-mce-fragment=\"1\">The RP3 receiver features a Skyworks SE2431L providing an LNA for improved receiver performance, a PA providing up to 100mw of telemetry performance, and antenna switching for antenna diversity.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "radiomaster-rp3-elrs-2-4ghz-receiver",
+       "id": "gid://shopify/ProductVariant/40189132537991",
+       "media": [
+        {
+         "alt_text": "RadioMaster RP3 V2 ELRS 2.4GHz Receiver",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0322/0783/1175/products/RadioMaster-RP3-ELRS-Receiver-Product-4_1800x1800_ad95dae5-fefa-497c-89b6-9aab6d1ba580.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0322/0783/1175/products/RadioMaster-RP3-ELRS-Receiver-Product-4_1800x1800_ad95dae5-fefa-497c-89b6-9aab6d1ba580.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2199,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "progressiverc.myshopify.com",
+        "id": "gid://shopify/Shop/32207831175",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/32207831175/policies/24959156359.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/32207831175/policies/24959189127.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/32207831175/policies/24959123591.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/32207831175/policies/24959221895.html"
+         }
+        ],
+        "name": "ProgressiveRC",
+        "url": "https://www.progressiverc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6807452385415",
+       "source": "shopify",
+       "title": "RadioMaster RP3 V2 ELRS 2.4GHz Receiver",
+       "url": "https://www.progressiverc.com/products/radiomaster-rp3-elrs-2-4ghz-receiver?variant=40189132537991&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>BETAFPV Nano receiver is based on the ExpressLRS project, an open-source RC link for RC applications. ExpressLRS aims to achieve the best possible link performance in both speeds, latency, and range. This makes ExpressLRS one of the fastest RC links available while still offering long-range performance.</p>\n<p><span data-mce-fragment=\"1\">Check out <a title=\"all receivers for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\">all our receivers</a>, and our entire </span><a data-mce-fragment=\"1\" href=\"https://www.racedayquads.com/collections/betafpv-products\" title=\"all betafpv products for Sale at RaceDayQuads\" data-mce-href=\"https://www.racedayquads.com/collections/betafpv-products\" target=\"_blank\">BetaFPV selection</a><span data-mce-fragment=\"1\">!</span></p>\n<ul></ul>\n<h3>Specifications</h3>\n<ul>\n<li>Input voltage: 5V<br>\n</li>\n<li>Telemetry power: 20dbm (100mW, 2.4G Version)<br>\n</li>\n<li>Frequency bands (Nano receiver 2.4G version): 2.4GHz ISM</li>\n<li>Frequency bands (Nano receiver 915MHz/868MHz version): 915MHz FCC/868MHz EU</li>\n<li>Antenna Connector: IPEX MHF (IPEX 1 / U.FL)</li>\n<li>Size: 12x19mm<br>\n</li>\n<li>Weight: 0.7g (receiver only)</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/c64abdf160319a144386c138470c9ecb_600x600_598293c9-0186-44d0-ba97-60db6f8bb2ca.jpg?v=1636136270\" alt=\"\"></p>\n<p>Note: <span data-mce-fragment=\"1\">The firmware version of the Nano receiver and module manufactured by our company is ELRS 1.0.0-RC5 (the fifth test version before release);</span><br>ELRS Innovative team has officially released version 1.0.0. Based on the version, we have some updates:<br></p>\n<ul>\n<li>2.4G Nano TX Module supports 500Hz refresh rate；</li>\n<li>Short press the button on the Nano module 3 times to get into the binding status.</li>\n</ul>\n<p><span style=\"color: #ff2a00;\">We suggest our customers upgrade their modules and receivers' ELRS version to 1.0.0. Significantly, the module and receiver have to be in the same ELRS version, otherwise, the frequency cannot match successfully.</span></p>\n<p><span style=\"color: #ff2a00;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/XbKpWI0YJ5I\" height=\"315\" width=\"560\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" frameborder=\"0\"></iframe></span></p>\n<h3>Includes</h3>\n<ul>\n<li>1x Beta FPV ELRS Nano 2.4GHz Receiver </li>\n<li>1x BetaFPV T Antenna</li>\n<li>2x Spare Shrink Tube</li>\n<li>4x 30awg Silicon Connection Wires (1 black, 1 red, 1 white, 1 yellow)</li>\n<li>1x Pin Header 1x4</li>\n</ul>"
+     },
+     "handle": "betafpv-elrs-nano-2-4ghz-receiver",
+     "id": "gid://shopify/p/50VSdUAvtbLbNBfkuTOrTs",
+     "media": [
+      {
+       "alt_text": "BETAFPV RC RX BetaFPV ELRS Nano 2.4GHz Receiver",
+       "height": 540,
+       "preview": {
+        "height": 540,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/betafpv-betafpv-elrs-nano-2-4ghz-receiver-rc-rx-29209406668913.jpg",
+        "width": 540
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/betafpv-betafpv-elrs-nano-2-4ghz-receiver-rc-rx-29209406668913.jpg",
+       "width": 540
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Open-source ExpressLRS protocol: Delivers fast data transfer and low latency for responsive FPV racing",
+       "2.4GHz ISM frequency support: Ensures compatibility with a wide range of RC transmitters and receivers",
+       "Nano size (12mm x 19mm): Compact design for easy installation in tight drone bays",
+       "IPEX MHF antenna connector: Secure and reliable antenna connection for stable signal",
+       "CROSSFIRE serial protocol: Simplifies integration with flight controllers using CRFS protocol"
+      ],
+      "unique_selling_points": [
+       "Open-source ExpressLRS protocol enables one of the fastest and longest-range RC link performances at 2.4GHz."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1199,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 81,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "BetaFPV ELRS Nano 2.4GHz Receiver",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/39581614145649:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>BETAFPV Nano receiver is based on the ExpressLRS project, an open-source RC link for RC applications. ExpressLRS aims to achieve the best possible link performance in both speeds, latency, and range. This makes ExpressLRS one of the fastest RC links available while still offering long-range performance.</p>\n<p><span data-mce-fragment=\"1\">Check out <a title=\"all receivers for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-receivers\" target=\"_blank\">all our receivers</a>, and our entire </span><a data-mce-fragment=\"1\" href=\"https://www.racedayquads.com/collections/betafpv-products\" title=\"all betafpv products for Sale at RaceDayQuads\" data-mce-href=\"https://www.racedayquads.com/collections/betafpv-products\" target=\"_blank\">BetaFPV selection</a><span data-mce-fragment=\"1\">!</span></p>\n<ul></ul>\n<h3>Specifications</h3>\n<ul>\n<li>Input voltage: 5V<br>\n</li>\n<li>Telemetry power: 20dbm (100mW, 2.4G Version)<br>\n</li>\n<li>Frequency bands (Nano receiver 2.4G version): 2.4GHz ISM</li>\n<li>Frequency bands (Nano receiver 915MHz/868MHz version): 915MHz FCC/868MHz EU</li>\n<li>Antenna Connector: IPEX MHF (IPEX 1 / U.FL)</li>\n<li>Size: 12x19mm<br>\n</li>\n<li>Weight: 0.7g (receiver only)</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/c64abdf160319a144386c138470c9ecb_600x600_598293c9-0186-44d0-ba97-60db6f8bb2ca.jpg?v=1636136270\" alt=\"\"></p>\n<p>Note: <span data-mce-fragment=\"1\">The firmware version of the Nano receiver and module manufactured by our company is ELRS 1.0.0-RC5 (the fifth test version before release);</span><br>ELRS Innovative team has officially released version 1.0.0. Based on the version, we have some updates:<br></p>\n<ul>\n<li>2.4G Nano TX Module supports 500Hz refresh rate；</li>\n<li>Short press the button on the Nano module 3 times to get into the binding status.</li>\n</ul>\n<p><span style=\"color: #ff2a00;\">We suggest our customers upgrade their modules and receivers' ELRS version to 1.0.0. Significantly, the module and receiver have to be in the same ELRS version, otherwise, the frequency cannot match successfully.</span></p>\n<p><span style=\"color: #ff2a00;\"><iframe title=\"YouTube video player\" src=\"https://www.youtube.com/embed/XbKpWI0YJ5I\" height=\"315\" width=\"560\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" frameborder=\"0\"></iframe></span></p>\n<h3>Includes</h3>\n<ul>\n<li>1x Beta FPV ELRS Nano 2.4GHz Receiver </li>\n<li>1x BetaFPV T Antenna</li>\n<li>2x Spare Shrink Tube</li>\n<li>4x 30awg Silicon Connection Wires (1 black, 1 red, 1 white, 1 yellow)</li>\n<li>1x Pin Header 1x4</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "betafpv-elrs-nano-2-4ghz-receiver",
+       "id": "gid://shopify/ProductVariant/39581614145649",
+       "media": [
+        {
+         "alt_text": "BETAFPV RC RX BetaFPV ELRS Nano 2.4GHz Receiver",
+         "height": 540,
+         "preview": {
+          "height": 540,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/betafpv-betafpv-elrs-nano-2-4ghz-receiver-rc-rx-29209406668913.jpg",
+          "width": 540
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/betafpv-betafpv-elrs-nano-2-4ghz-receiver-rc-rx-29209406668913.jpg",
+         "width": 540
+        }
+       ],
+       "price": {
+        "amount": 1199,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 72,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6651455144049",
+       "source": "shopify",
+       "title": "BetaFPV ELRS Nano 2.4GHz Receiver",
+       "url": "https://www.racedayquads.com/products/betafpv-elrs-nano-2-4ghz-receiver?variant=39581614145649&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-start=\"382\" data-end=\"779\"><strong data-start=\"382\" data-end=\"428\">The Flywoo TCXO 2.4GHz ELRS EL24P Receiver</strong> is an <strong data-start=\"435\" data-end=\"501\">ultra-lightweight, high-performance ExpressLRS (ELRS) receiver</strong>, designed for <strong data-start=\"516\" data-end=\"564\">freestyle, racing, and long-range FPV drones</strong>. Featuring <strong data-start=\"576\" data-end=\"640\">TCXO (Temperature-Compensated Crystal Oscillator) technology</strong>, this receiver ensures <strong data-start=\"664\" data-end=\"750\">stable signal performance, ultra-low latency, and reliable long-range connectivity</strong>, even in extreme conditions.</p>\n<h3 data-start=\"781\" data-end=\"802\"><strong data-start=\"785\" data-end=\"802\">Key Features:</strong></h3>\n<ul data-start=\"803\" data-end=\"1557\">\n<li data-start=\"803\" data-end=\"930\">\n<strong data-start=\"805\" data-end=\"834\">ExpressLRS 2.4GHz (EL24P)</strong> – Delivers <strong data-start=\"846\" data-end=\"907\">ultra-low latency, high refresh rates, and extended range</strong> for precise control.</li>\n<li data-start=\"931\" data-end=\"1068\">\n<strong data-start=\"933\" data-end=\"997\">TCXO Technology (Temperature-Compensated Crystal Oscillator)</strong> – Provides <strong data-start=\"1009\" data-end=\"1065\">exceptional signal stability in varying temperatures</strong>.</li>\n<li data-start=\"1069\" data-end=\"1196\">\n<strong data-start=\"1071\" data-end=\"1099\">Diversity Antenna Design</strong> – Dual antennas ensure <strong data-start=\"1123\" data-end=\"1163\">stronger, more reliable connectivity</strong> for interference-free flights.</li>\n<li data-start=\"1197\" data-end=\"1310\">\n<strong data-start=\"1199\" data-end=\"1231\">Ultra-Lightweight 0.4g Build</strong> – Optimized for <strong data-start=\"1248\" data-end=\"1307\">sub-250g drones, micro quads, and long-range FPV builds</strong>.</li>\n<li data-start=\"1311\" data-end=\"1439\">\n<strong data-start=\"1313\" data-end=\"1342\">Plug &amp; Play Compatibility</strong> – Works seamlessly with <strong data-start=\"1367\" data-end=\"1414\">Betaflight, EdgeTX, and OpenTX-based radios</strong>supporting ExpressLRS.</li>\n<li data-start=\"1440\" data-end=\"1557\">\n<strong data-start=\"1442\" data-end=\"1467\">Low Power Consumption</strong> – Enhances battery efficiency while maintaining <strong data-start=\"1516\" data-end=\"1554\">strong, uninterrupted connectivity</strong>.</li>\n</ul>\n<h3 data-start=\"1559\" data-end=\"1582\"><strong data-start=\"1563\" data-end=\"1582\">Specifications:</strong></h3>\n<ul data-start=\"1583\" data-end=\"1798\">\n<li data-start=\"1583\" data-end=\"1631\">\n<strong data-start=\"1585\" data-end=\"1603\">Receiver Type:</strong> ExpressLRS 2.4GHz (EL24P)</li>\n<li data-start=\"1632\" data-end=\"1660\">\n<strong data-start=\"1634\" data-end=\"1654\">TCXO Technology:</strong> Yes</li>\n<li data-start=\"1661\" data-end=\"1701\">\n<strong data-start=\"1663\" data-end=\"1675\">Antenna:</strong> Dual Diversity Antennas</li>\n<li data-start=\"1702\" data-end=\"1734\">\n<strong data-start=\"1704\" data-end=\"1722\">Input Voltage:</strong> 3.3V - 5V</li>\n<li data-start=\"1735\" data-end=\"1763\">\n<strong data-start=\"1737\" data-end=\"1748\">Weight:</strong> Approx. 0.4g</li>\n<li data-start=\"1764\" data-end=\"1798\">\n<strong data-start=\"1766\" data-end=\"1775\">Size:</strong> Ultra-compact design</li>\n</ul>\n<p data-start=\"1800\" data-end=\"2021\">The <strong data-start=\"1804\" data-end=\"1846\">Flywoo TCXO 2.4GHz ELRS EL24P Receiver</strong> is an <strong data-start=\"1853\" data-end=\"1884\">ideal choice for FPV pilots</strong> looking for <strong data-start=\"1897\" data-end=\"2020\">a high-performance, lightweight receiver with rock-solid signal stability for freestyle, racing, and long-range flights</strong>.</p>\n<p data-start=\"2023\" data-end=\"2061\">🔗 <strong data-start=\"2026\" data-end=\"2059\">Explore More FPV Electronics:</strong></p>\n<ul data-start=\"2062\" data-end=\"2233\">\n<li data-start=\"2062\" data-end=\"2146\"><a data-start=\"2064\" data-end=\"2144\" rel=\"noopener\">ELRS &amp; Radio Receivers</a></li>\n<li data-start=\"2147\" data-end=\"2233\"><a data-start=\"2149\" data-end=\"2231\" rel=\"noopener\">FPV Electronics &amp; Accessories</a></li>\n</ul>\n<p data-start=\"2235\" data-end=\"2288\"><strong data-start=\"2235\" data-end=\"2288\">Order now at Zencopter.com for fast USA shipping!</strong></p>"
+     },
+     "handle": "flywoo-tcxo-2-4ghz-elrs-el24p-receiver",
+     "id": "gid://shopify/p/5pizsmBsvhcwmrLBIPK3yp",
+     "media": [
+      {
+       "alt_text": "Flywoo TCXO 2.4GHz ELRS EL24P Receiver – Ultra-Light ExpressLRS Receiver for FPV Drones\n",
+       "height": 1512,
+       "preview": {
+        "height": 1512,
+        "url": "https://cdn.shopify.com/s/files/1/0603/3309/7095/files/flywoo-tcxo-2-4ghz-elrs-el24p-receiver-5.webp",
+        "width": 1512
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0603/3309/7095/files/flywoo-tcxo-2-4ghz-elrs-el24p-receiver-5.webp",
+       "width": 1512
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "TCXO temperature-compensated crystal oscillator: Delivers precise and stable clock frequency for reliable RC link performance",
+       "Ultra-lightweight 0.4g build: Optimized for sub-250g drones and micro quads, minimizing added weight",
+       "Dual diversity antenna design: Enhances connectivity and reliability, reducing interference for smoother flights",
+       "Low latency and high refresh rates: Enables real-time, seamless control for advanced FPV and freestyle racing",
+       "Upgradeable via WiFi: Allows future-proof firmware updates for continued performance"
+      ],
+      "unique_selling_points": [
+       "Temperature-compensated crystal oscillator (TCXO) ensures stable, high-precision clocking for superior RC link performance and extended control distances."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Flywoo TCXO 2.4GHz ELRS EL24P Receiver – Ultra-Light 0.4g",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://zencopter.com/buy/42367467683975:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=A6jHGQTasx1C&_gsid=A6jHGQTasx1C",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-start=\"382\" data-end=\"779\"><strong data-start=\"382\" data-end=\"428\">The Flywoo TCXO 2.4GHz ELRS EL24P Receiver</strong> is an <strong data-start=\"435\" data-end=\"501\">ultra-lightweight, high-performance ExpressLRS (ELRS) receiver</strong>, designed for <strong data-start=\"516\" data-end=\"564\">freestyle, racing, and long-range FPV drones</strong>. Featuring <strong data-start=\"576\" data-end=\"640\">TCXO (Temperature-Compensated Crystal Oscillator) technology</strong>, this receiver ensures <strong data-start=\"664\" data-end=\"750\">stable signal performance, ultra-low latency, and reliable long-range connectivity</strong>, even in extreme conditions.</p>\n<h3 data-start=\"781\" data-end=\"802\"><strong data-start=\"785\" data-end=\"802\">Key Features:</strong></h3>\n<ul data-start=\"803\" data-end=\"1557\">\n<li data-start=\"803\" data-end=\"930\">\n<strong data-start=\"805\" data-end=\"834\">ExpressLRS 2.4GHz (EL24P)</strong> – Delivers <strong data-start=\"846\" data-end=\"907\">ultra-low latency, high refresh rates, and extended range</strong> for precise control.</li>\n<li data-start=\"931\" data-end=\"1068\">\n<strong data-start=\"933\" data-end=\"997\">TCXO Technology (Temperature-Compensated Crystal Oscillator)</strong> – Provides <strong data-start=\"1009\" data-end=\"1065\">exceptional signal stability in varying temperatures</strong>.</li>\n<li data-start=\"1069\" data-end=\"1196\">\n<strong data-start=\"1071\" data-end=\"1099\">Diversity Antenna Design</strong> – Dual antennas ensure <strong data-start=\"1123\" data-end=\"1163\">stronger, more reliable connectivity</strong> for interference-free flights.</li>\n<li data-start=\"1197\" data-end=\"1310\">\n<strong data-start=\"1199\" data-end=\"1231\">Ultra-Lightweight 0.4g Build</strong> – Optimized for <strong data-start=\"1248\" data-end=\"1307\">sub-250g drones, micro quads, and long-range FPV builds</strong>.</li>\n<li data-start=\"1311\" data-end=\"1439\">\n<strong data-start=\"1313\" data-end=\"1342\">Plug &amp; Play Compatibility</strong> – Works seamlessly with <strong data-start=\"1367\" data-end=\"1414\">Betaflight, EdgeTX, and OpenTX-based radios</strong>supporting ExpressLRS.</li>\n<li data-start=\"1440\" data-end=\"1557\">\n<strong data-start=\"1442\" data-end=\"1467\">Low Power Consumption</strong> – Enhances battery efficiency while maintaining <strong data-start=\"1516\" data-end=\"1554\">strong, uninterrupted connectivity</strong>.</li>\n</ul>\n<h3 data-start=\"1559\" data-end=\"1582\"><strong data-start=\"1563\" data-end=\"1582\">Specifications:</strong></h3>\n<ul data-start=\"1583\" data-end=\"1798\">\n<li data-start=\"1583\" data-end=\"1631\">\n<strong data-start=\"1585\" data-end=\"1603\">Receiver Type:</strong> ExpressLRS 2.4GHz (EL24P)</li>\n<li data-start=\"1632\" data-end=\"1660\">\n<strong data-start=\"1634\" data-end=\"1654\">TCXO Technology:</strong> Yes</li>\n<li data-start=\"1661\" data-end=\"1701\">\n<strong data-start=\"1663\" data-end=\"1675\">Antenna:</strong> Dual Diversity Antennas</li>\n<li data-start=\"1702\" data-end=\"1734\">\n<strong data-start=\"1704\" data-end=\"1722\">Input Voltage:</strong> 3.3V - 5V</li>\n<li data-start=\"1735\" data-end=\"1763\">\n<strong data-start=\"1737\" data-end=\"1748\">Weight:</strong> Approx. 0.4g</li>\n<li data-start=\"1764\" data-end=\"1798\">\n<strong data-start=\"1766\" data-end=\"1775\">Size:</strong> Ultra-compact design</li>\n</ul>\n<p data-start=\"1800\" data-end=\"2021\">The <strong data-start=\"1804\" data-end=\"1846\">Flywoo TCXO 2.4GHz ELRS EL24P Receiver</strong> is an <strong data-start=\"1853\" data-end=\"1884\">ideal choice for FPV pilots</strong> looking for <strong data-start=\"1897\" data-end=\"2020\">a high-performance, lightweight receiver with rock-solid signal stability for freestyle, racing, and long-range flights</strong>.</p>\n<p data-start=\"2023\" data-end=\"2061\">🔗 <strong data-start=\"2026\" data-end=\"2059\">Explore More FPV Electronics:</strong></p>\n<ul data-start=\"2062\" data-end=\"2233\">\n<li data-start=\"2062\" data-end=\"2146\"><a data-start=\"2064\" data-end=\"2144\" rel=\"noopener\">ELRS &amp; Radio Receivers</a></li>\n<li data-start=\"2147\" data-end=\"2233\"><a data-start=\"2149\" data-end=\"2231\" rel=\"noopener\">FPV Electronics &amp; Accessories</a></li>\n</ul>\n<p data-start=\"2235\" data-end=\"2288\"><strong data-start=\"2235\" data-end=\"2288\">Order now at Zencopter.com for fast USA shipping!</strong></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "flywoo-tcxo-2-4ghz-elrs-el24p-receiver",
+       "id": "gid://shopify/ProductVariant/42367467683975",
+       "list_price": {
+        "amount": 2199,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Flywoo TCXO 2.4GHz ELRS EL24P Receiver – Ultra-Light ExpressLRS Receiver for FPV Drones\n",
+         "height": 1512,
+         "preview": {
+          "height": 1512,
+          "url": "https://cdn.shopify.com/s/files/1/0603/3309/7095/files/flywoo-tcxo-2-4ghz-elrs-el24p-receiver-5.webp",
+          "width": 1512
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0603/3309/7095/files/flywoo-tcxo-2-4ghz-elrs-el24p-receiver-5.webp",
+         "width": 1512
+        }
+       ],
+       "price": {
+        "amount": 1899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "20cd88-56.myshopify.com",
+        "id": "gid://shopify/Shop/60333097095",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/60333097095/policies/26309787783.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/60333097095/policies/26309820551.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/60333097095/policies/26309886087.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/60333097095/policies/30961795207.html"
+         }
+        ],
+        "name": "Zencopter",
+        "url": "https://zencopter.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8041289285767",
+       "source": "shopify",
+       "title": "Flywoo TCXO 2.4GHz ELRS EL24P Receiver – Ultra-Light 0.4g",
+       "url": "https://zencopter.com/products/flywoo-tcxo-2-4ghz-elrs-el24p-receiver?variant=42367467683975&_gsid=A6jHGQTasx1C&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

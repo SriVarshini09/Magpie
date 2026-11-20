@@ -1,0 +1,159 @@
+{
+  "type": "b2c.mandate.closed",
+  "version": "0.4",
+  "open_mandate_sha256": "40cba2447322675e5aa3c5518677d5a86b1248e831cc3685ce319f67f16055eb",
+  "plan_id": "p_mock_drone_cheapest",
+  "plan_sha256": "c0a413e855a69c3914d1a7864da3f072449b729bb24c25e74c6f47972049bb76",
+  "tier": "cheapest",
+  "handoffs": [
+    {
+      "store_id": "mock_store",
+      "action_level": "agent_cart",
+      "cart_id": "c_mock_mock_store",
+      "url": "https://mock.invalid/mock_store/cart/c_mock_mock_store",
+      "url_sha256": "8060bf0f54ef5aab2f65464d356595e0a761e4eadbbfa16e2e000a1ccc80e20b",
+      "subtotal_usd": 144.44,
+      "items": [
+        {
+          "offer_id": "d20",
+          "ids": {},
+          "title": "1404 3800KV brushless motor, 4 pcs",
+          "qty": 1,
+          "unit_price_usd": 39.99,
+          "seen_at": "2026-11-20T13:20:14-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "92c6670835f65f5a4b6fb4bf16545d5feca8be3cde763cc28262ac30bfc1218e",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d40",
+          "ids": {},
+          "title": "All-in-one F4 flight controller + 20A 4-in-1 ESC, 25.5x25.5, 2-4S",
+          "qty": 1,
+          "unit_price_usd": 46.99,
+          "seen_at": "2026-11-20T13:20:30-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "2943b080367414658a2e35b32ef4e877f872e972cadcd4c540eb1f85229a9dc1",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d100",
+          "ids": {},
+          "title": "5.8GHz VTX 20x20 with antenna",
+          "qty": 1,
+          "unit_price_usd": 21.99,
+          "seen_at": "2026-11-20T13:20:52-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "113d5699c2686fa923be3708e327a31da5158cd33d015bdb4268578e8f53f728",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d10",
+          "ids": {},
+          "title": "3-inch FPV frame, ~140 mm wheelbase",
+          "qty": 1,
+          "unit_price_usd": 18.99,
+          "seen_at": "2026-11-20T13:20:10-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "76219e2bc1cb5cead29149f07fa6af5b81dc75f6c95b46521b9edcc89a2d3aa5",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d80",
+          "ids": {},
+          "title": "ELRS 2.4GHz nano receiver",
+          "qty": 1,
+          "unit_price_usd": 12.99,
+          "seen_at": "2026-11-20T13:20:44-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "f2bc7766c5f74ec8e8073adc3f75f0c74f86b7eaa755ce545d7381e64d9b2a2b",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d50",
+          "ids": {},
+          "title": "3-inch 3-blade propellers, 2 CW + 2 CCW",
+          "qty": 1,
+          "unit_price_usd": 3.49,
+          "seen_at": "2026-11-20T13:20:33-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "47f0e8360d9c6f97f6ea76a128c6e99e5381a9c11f778276c5155b852e7dc7ff",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "store_id": "amazon",
+      "action_level": "prefilled_cart",
+      "url": "https://mock.invalid/amazon/cart/add?item.1=d110&qty.1=1&item.2=d70&qty.2=1",
+      "url_sha256": "a57cb8afd2e39c39cdc32502a91c0da986d2339493ed23613ba156f81b7ed658",
+      "subtotal_usd": 37.98,
+      "caveat": "Amazon asks you to sign in first",
+      "items": [
+        {
+          "offer_id": "d110",
+          "ids": {
+            "asin": "B0MOCKCHRG"
+          },
+          "title": "LiPo balance charger, 1-4S",
+          "qty": 1,
+          "unit_price_usd": 19.99,
+          "seen_at": "2026-11-20T13:20:56-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "8f72c2feff8a04a0164bc4e6c509cd361d173deecbea1eddd61f072279543ea7",
+          "edited_by_user": false
+        },
+        {
+          "offer_id": "d70",
+          "ids": {
+            "asin": "B0MOCK4S85"
+          },
+          "title": "4S 850mAh LiPo battery, XT30",
+          "qty": 1,
+          "unit_price_usd": 17.99,
+          "seen_at": "2026-11-20T13:20:40-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "e7f3393559728f5c99ea4a3f56bc6b79f5b30606e61b5dcca07920ce3a057b55",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    },
+    {
+      "store_id": "adafruit",
+      "action_level": "product_link",
+      "url": "https://mock.invalid/adafruit/products",
+      "url_sha256": "d3598d0af9523b4fa6bc537c92d1d49c6c5a3869aaf30024445d67af4f209ed7",
+      "subtotal_usd": 17.5,
+      "items": [
+        {
+          "offer_id": "d90",
+          "ids": {
+            "sku": "MOCK-CAM"
+          },
+          "title": "FPV camera, 19 mm (PLACEHOLDER product)",
+          "qty": 1,
+          "unit_price_usd": 17.5,
+          "seen_at": "2026-11-20T13:20:48-08:00",
+          "source_api": "mock",
+          "evidence_sha256": "c5b9219f410f072be1c6c527909a41fb9a74840507537b4126fc85c45c69ec63",
+          "edited_by_user": false
+        }
+      ],
+      "simulated": true
+    }
+  ],
+  "total_usd": 199.92,
+  "prices_checked_at": "2026-11-20T13:21:00-08:00",
+  "approved_by": "ui_button",
+  "approved_at": "2026-11-20T13:23:00-08:00",
+  "approval_token_sha256": "c2ea7e0d66eeeac731855bd692c123d9d97ac014ed346c134b7de561a4eb9f65",
+  "chain_head": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+  "simulated": true,
+  "signature": {
+    "alg": "ES256",
+    "kid": "fixture-key-1",
+    "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..Ncbw7sME6Zm7riV1dM-JImnPXi6q8YDzD-5uOdvSTaABemeHOhNNumyWIKurphUvSqPBL8KneKzVYZhDx3URog"
+  }
+}

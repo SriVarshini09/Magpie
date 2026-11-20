@@ -1,0 +1,1368 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "Enclosure"
+  }
+ },
+ "key": "e044f9ca4ea5957c785b54f5e6d71eeff6ae462d43c6c3aff3017597f7e3b6b8",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:46-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 898); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODk4LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 898
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p data-start=\"313\" data-end=\"648\">The 12\" bioactive PVC mini reptile enclosure is the perfect habitat for keepers who want a compact, durable, and naturalistic environment for small reptiles and invertebrates. Designed for long-term stability, the 12\" bioactive PVC mini reptile enclosure offers excellent insulation, humidity retention, and structural strength. Its small footprint makes the 12\" bioactive PVC mini reptile enclosure ideal for desktops, racks, and display shelves without sacrificing functionality.</p>\n\n<p data-start=\"313\" data-end=\"648\"></p>\n\n<p data-start=\"313\" data-end=\"648\">Ideal for dart frogs, small geckos, juvenile reptiles, and invertebrates, the 12\" bioactive PVC mini reptile enclosure supports bioactive substrates, live plants, moss, and beneficial clean-up crews. The front-opening design of the 12\" bioactive PVC mini reptile enclosure makes feeding, misting, and maintenance simple while minimizing stress for your animals. Because PVC performs exceptionally well in humid environments, the 12\" bioactive PVC mini reptile enclosure is perfect for tropical and semi-humid species.</p>\n\n<p data-start=\"650\" data-end=\"947\">Perfect for hatchlings, small reptiles, amphibians, and invertebrates, this mini habitat holds heat and humidity effortlessly. Every enclosure is <strong>laser-cut, hand-assembled, and sealed with silicone</strong>, ensuring a leak-free, long-lasting design that arrives <strong>fully assembled</strong> and ready to use.</p>\n\n<hr data-start=\"949\" data-end=\"952\">\n\n<h3 data-start=\"954\" data-end=\"989\"><strong>🔥 Premium Build Features for 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"990\" data-end=\"1359\">\n<li><p data-start=\"992\" data-end=\"1051\">Constructed from <strong>½\" thick PVC</strong> for superior insulation</p></li>\n<li><p data-start=\"1054\" data-end=\"1124\"><strong>Ball-bearing tempered glass doors</strong> for easy sliding and long life</p></li>\n<li><p data-start=\"1127\" data-end=\"1178\"><strong>Laser-cut panels</strong> for precision and durability</p></li>\n<li><p data-start=\"1181\" data-end=\"1246\"><strong>Silicone-sealed joints</strong> to retain humidity and prevent leaks</p></li>\n<li><p data-start=\"1249\" data-end=\"1298\">Lightweight, waterproof, and chemical-resistant</p></li>\n<li><p data-start=\"1301\" data-end=\"1359\">Available in multiple widths, depths, and color finishes</p></li>\n</ul>\n\n<hr data-start=\"1361\" data-end=\"1364\">\n\n<h3 data-start=\"1366\" data-end=\"1393\"><strong>🌿 Why Choose 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1394\" data-end=\"1702\">\n<li><p data-start=\"1396\" data-end=\"1448\"><strong>75% lighter than wood</strong> yet exceptionally strong</p></li>\n<li><p data-start=\"1451\" data-end=\"1516\"><strong>Waterproof and easy to clean</strong> — perfect for bioactive setups</p></li>\n<li><p data-start=\"1519\" data-end=\"1584\"><strong>Maintains temperature and humidity</strong> with minimal fluctuation</p></li>\n<li><p data-start=\"1587\" data-end=\"1643\"><strong>Non-reflective interior</strong> reduces stress for animals</p></li>\n<li><p data-start=\"1646\" data-end=\"1702\"><strong>Resistant to warping, cracking, or chemical damage</strong></p></li>\n</ul>\n\n<hr data-start=\"1704\" data-end=\"1707\">\n\n<h3 data-start=\"1709\" data-end=\"1731\"><strong>🐍 Ideal For 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1732\" data-end=\"1911\">\n<li><p data-start=\"1734\" data-end=\"1779\">Hatchling snakes (colubrids, pythons, boas)</p></li>\n<li><p data-start=\"1782\" data-end=\"1829\">Small lizards like geckos, skinks, and anoles</p></li>\n<li><p data-start=\"1832\" data-end=\"1878\">Dart frogs, tree frogs, and other amphibians</p></li>\n<li><p data-start=\"1881\" data-end=\"1911\">Invertebrates and tarantulas</p></li>\n</ul>\n\n<hr data-start=\"1913\" data-end=\"1916\">\n\n<h3 data-start=\"1918\" data-end=\"1945\"><strong>⚙️ Specifications for 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1946\" data-end=\"2190\">\n<li><p data-start=\"1948\" data-end=\"1965\"><strong>Length:</strong> 12\"</p></li>\n<li><p data-start=\"1968\" data-end=\"1998\"><strong>Material:</strong> ½\" PVC plastic</p></li>\n<li><p data-start=\"2001\" data-end=\"2062\"><strong>Doors:</strong> ¼\" tempered or plexiglass (ball-bearing rolling)</p></li>\n<li><p data-start=\"2065\" data-end=\"2106\"><strong>Assembly:</strong> Ships <strong>fully assembled</strong></p></li>\n<li><p data-start=\"2109\" data-end=\"2190\"><strong>Customization:</strong> Lighting, heating, venting, and door style options available</p></li>\n</ul>\n\n<hr data-start=\"2192\" data-end=\"2195\">\n\n<h3 data-start=\"2197\" data-end=\"2226\"><strong>💡 Optional Add-Ons</strong></h3>\n\n<ul data-start=\"2227\" data-end=\"2527\">\n<li><p data-start=\"2229\" data-end=\"2300\">Single or dual <strong>6\" screen cutouts</strong> (for heat domes 5.5\" or smaller)</p></li>\n<li><p data-start=\"2303\" data-end=\"2373\"><strong>Ceiling-mounted 24\" or 48\" T5 HO grow lights</strong> with UVB capability</p></li>\n<li><p data-start=\"2376\" data-end=\"2423\"><strong>11\" × 16\" heat tape</strong> (requires thermostat)</p></li>\n<li><p data-start=\"2426\" data-end=\"2475\"><strong>Radiant Heat Panels:</strong> 28W, 40W, 80W, or 120W</p></li>\n<li><p data-start=\"2478\" data-end=\"2527\">Vents, casters, or door customization available</p></li>\n</ul>\n\n<hr data-start=\"2529\" data-end=\"2532\">\n\n<h3 data-start=\"2534\" data-end=\"2568\"><strong>📦 Production &amp; Delivery</strong></h3>\n\n<ul data-start=\"2569\" data-end=\"2743\">\n<li><p data-start=\"2571\" data-end=\"2647\">Each enclosure is <strong>built to order</strong> and subject to current <strong>lead times</strong></p></li>\n<li><p data-start=\"2650\" data-end=\"2699\"><strong>Local pickup and delivery</strong> available in Ohio</p></li>\n<li><p data-start=\"2702\" data-end=\"2743\">Freight shipping available upon request</p></li>\n</ul>\n\n<hr data-start=\"2745\" data-end=\"2748\">\n\n<h3 data-start=\"2750\" data-end=\"2777\"><strong>⚠ Safety Reminder</strong></h3>\n\n<p data-start=\"2778\" data-end=\"2919\">Always use a <strong>thermostat</strong> with heat tape or heat panels. Stumps Custom Wood is not responsible for damage caused by improper heating use.</p>\n\n<hr data-start=\"2921\" data-end=\"2924\">\n\n<h3 data-start=\"2926\" data-end=\"2939\"><strong>FAQ</strong></h3>\n\n<p data-start=\"2941\" data-end=\"3082\"><strong>Q: Do these enclosures come fully assembled?</strong><br>A: Yes, all 12 Series enclosures are <strong>assembled, sealed, and ready to use</strong> on arrival.</p>\n\n<p data-start=\"3084\" data-end=\"3257\"><strong>Q: Can I request specific color or lighting options?</strong><br>A: Absolutely — every enclosure is custom-built. Choose from several finishes, lighting setups, and door styles.</p>\n\n<p data-start=\"3259\" data-end=\"3367\"><strong>Q: What animals fit best?</strong><br>A: Perfect for hatchlings, small snakes, geckos, frogs, and invertebrates.</p>\n\n<p data-start=\"3369\" data-end=\"3517\"><strong>Q: Is PVC safe for high humidity?</strong><br>A: Yes, PVC is <strong>waterproof and mold-resistant</strong>, making it ideal for bioactive and tropical environments.</p>\n\n<p data-start=\"3519\" data-end=\"3644\"><strong>Q: Do you offer other sizes?</strong><br>A: Yes — check out our <strong>18\", 24\", 36\", and 48\" Series Enclosures</strong> for larger habitats.</p>"
+     },
+     "handle": "12-bioactive-pvc-mini-reptile-enclosure",
+     "id": "gid://shopify/p/2wq9GYtdcQvwccdXOAZgeC",
+     "media": [
+      {
+       "alt_text": "12\" Bioactive PVC Mini Reptile Enclosure | Compact Habitat - Stumps Custom Wood",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0747/1552/9273/files/12-bioactive-pvc-mini-reptile-enclosure-compact-habitat-2382184.jpg",
+        "width": 1536
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0747/1552/9273/files/12-bioactive-pvc-mini-reptile-enclosure-compact-habitat-2382184.jpg",
+       "width": 1536
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "1/2 inch thick PVC panels provide excellent insulation and humidity retention for stable environments",
+       "Ball bearing tempered glass doors allow easy access and sliding with long life",
+       "Laser-cut panels and silicone-sealed joints ensure precision fit and prevent leaks",
+       "Lightweight, waterproof, and chemical-resistant build for easy cleaning and durability",
+       "Customizable options for lighting, heating, venting, and door styles to suit various needs"
+      ],
+      "unique_selling_points": [
+       "Laser-cut, silicone-sealed 1/2 inch PVC construction with ball bearing tempered glass doors for a leak-free, long-lasting, and customizable mini habitat."
+      ]
+     },
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "12x12x12"
+        },
+        {
+         "label": "12x12x18"
+        }
+       ]
+      },
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Black"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6000,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 3
+     },
+     "title": "12\" Bioactive PVC Mini Reptile Enclosure | Compact Habitat",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://stumpscustomwood.shop/buy/44965291851833:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-start=\"313\" data-end=\"648\">The 12\" bioactive PVC mini reptile enclosure is the perfect habitat for keepers who want a compact, durable, and naturalistic environment for small reptiles and invertebrates. Designed for long-term stability, the 12\" bioactive PVC mini reptile enclosure offers excellent insulation, humidity retention, and structural strength. Its small footprint makes the 12\" bioactive PVC mini reptile enclosure ideal for desktops, racks, and display shelves without sacrificing functionality.</p>\n\n<p data-start=\"313\" data-end=\"648\"></p>\n\n<p data-start=\"313\" data-end=\"648\">Ideal for dart frogs, small geckos, juvenile reptiles, and invertebrates, the 12\" bioactive PVC mini reptile enclosure supports bioactive substrates, live plants, moss, and beneficial clean-up crews. The front-opening design of the 12\" bioactive PVC mini reptile enclosure makes feeding, misting, and maintenance simple while minimizing stress for your animals. Because PVC performs exceptionally well in humid environments, the 12\" bioactive PVC mini reptile enclosure is perfect for tropical and semi-humid species.</p>\n\n<p data-start=\"650\" data-end=\"947\">Perfect for hatchlings, small reptiles, amphibians, and invertebrates, this mini habitat holds heat and humidity effortlessly. Every enclosure is <strong>laser-cut, hand-assembled, and sealed with silicone</strong>, ensuring a leak-free, long-lasting design that arrives <strong>fully assembled</strong> and ready to use.</p>\n\n<hr data-start=\"949\" data-end=\"952\">\n\n<h3 data-start=\"954\" data-end=\"989\"><strong>🔥 Premium Build Features for 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"990\" data-end=\"1359\">\n<li><p data-start=\"992\" data-end=\"1051\">Constructed from <strong>½\" thick PVC</strong> for superior insulation</p></li>\n<li><p data-start=\"1054\" data-end=\"1124\"><strong>Ball-bearing tempered glass doors</strong> for easy sliding and long life</p></li>\n<li><p data-start=\"1127\" data-end=\"1178\"><strong>Laser-cut panels</strong> for precision and durability</p></li>\n<li><p data-start=\"1181\" data-end=\"1246\"><strong>Silicone-sealed joints</strong> to retain humidity and prevent leaks</p></li>\n<li><p data-start=\"1249\" data-end=\"1298\">Lightweight, waterproof, and chemical-resistant</p></li>\n<li><p data-start=\"1301\" data-end=\"1359\">Available in multiple widths, depths, and color finishes</p></li>\n</ul>\n\n<hr data-start=\"1361\" data-end=\"1364\">\n\n<h3 data-start=\"1366\" data-end=\"1393\"><strong>🌿 Why Choose 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1394\" data-end=\"1702\">\n<li><p data-start=\"1396\" data-end=\"1448\"><strong>75% lighter than wood</strong> yet exceptionally strong</p></li>\n<li><p data-start=\"1451\" data-end=\"1516\"><strong>Waterproof and easy to clean</strong> — perfect for bioactive setups</p></li>\n<li><p data-start=\"1519\" data-end=\"1584\"><strong>Maintains temperature and humidity</strong> with minimal fluctuation</p></li>\n<li><p data-start=\"1587\" data-end=\"1643\"><strong>Non-reflective interior</strong> reduces stress for animals</p></li>\n<li><p data-start=\"1646\" data-end=\"1702\"><strong>Resistant to warping, cracking, or chemical damage</strong></p></li>\n</ul>\n\n<hr data-start=\"1704\" data-end=\"1707\">\n\n<h3 data-start=\"1709\" data-end=\"1731\"><strong>🐍 Ideal For 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1732\" data-end=\"1911\">\n<li><p data-start=\"1734\" data-end=\"1779\">Hatchling snakes (colubrids, pythons, boas)</p></li>\n<li><p data-start=\"1782\" data-end=\"1829\">Small lizards like geckos, skinks, and anoles</p></li>\n<li><p data-start=\"1832\" data-end=\"1878\">Dart frogs, tree frogs, and other amphibians</p></li>\n<li><p data-start=\"1881\" data-end=\"1911\">Invertebrates and tarantulas</p></li>\n</ul>\n\n<hr data-start=\"1913\" data-end=\"1916\">\n\n<h3 data-start=\"1918\" data-end=\"1945\"><strong>⚙️ Specifications for 12\" bioactive PVC mini reptile enclosure</strong></h3>\n\n<ul data-start=\"1946\" data-end=\"2190\">\n<li><p data-start=\"1948\" data-end=\"1965\"><strong>Length:</strong> 12\"</p></li>\n<li><p data-start=\"1968\" data-end=\"1998\"><strong>Material:</strong> ½\" PVC plastic</p></li>\n<li><p data-start=\"2001\" data-end=\"2062\"><strong>Doors:</strong> ¼\" tempered or plexiglass (ball-bearing rolling)</p></li>\n<li><p data-start=\"2065\" data-end=\"2106\"><strong>Assembly:</strong> Ships <strong>fully assembled</strong></p></li>\n<li><p data-start=\"2109\" data-end=\"2190\"><strong>Customization:</strong> Lighting, heating, venting, and door style options available</p></li>\n</ul>\n\n<hr data-start=\"2192\" data-end=\"2195\">\n\n<h3 data-start=\"2197\" data-end=\"2226\"><strong>💡 Optional Add-Ons</strong></h3>\n\n<ul data-start=\"2227\" data-end=\"2527\">\n<li><p data-start=\"2229\" data-end=\"2300\">Single or dual <strong>6\" screen cutouts</strong> (for heat domes 5.5\" or smaller)</p></li>\n<li><p data-start=\"2303\" data-end=\"2373\"><strong>Ceiling-mounted 24\" or 48\" T5 HO grow lights</strong> with UVB capability</p></li>\n<li><p data-start=\"2376\" data-end=\"2423\"><strong>11\" × 16\" heat tape</strong> (requires thermostat)</p></li>\n<li><p data-start=\"2426\" data-end=\"2475\"><strong>Radiant Heat Panels:</strong> 28W, 40W, 80W, or 120W</p></li>\n<li><p data-start=\"2478\" data-end=\"2527\">Vents, casters, or door customization available</p></li>\n</ul>\n\n<hr data-start=\"2529\" data-end=\"2532\">\n\n<h3 data-start=\"2534\" data-end=\"2568\"><strong>📦 Production &amp; Delivery</strong></h3>\n\n<ul data-start=\"2569\" data-end=\"2743\">\n<li><p data-start=\"2571\" data-end=\"2647\">Each enclosure is <strong>built to order</strong> and subject to current <strong>lead times</strong></p></li>\n<li><p data-start=\"2650\" data-end=\"2699\"><strong>Local pickup and delivery</strong> available in Ohio</p></li>\n<li><p data-start=\"2702\" data-end=\"2743\">Freight shipping available upon request</p></li>\n</ul>\n\n<hr data-start=\"2745\" data-end=\"2748\">\n\n<h3 data-start=\"2750\" data-end=\"2777\"><strong>⚠ Safety Reminder</strong></h3>\n\n<p data-start=\"2778\" data-end=\"2919\">Always use a <strong>thermostat</strong> with heat tape or heat panels. Stumps Custom Wood is not responsible for damage caused by improper heating use.</p>\n\n<hr data-start=\"2921\" data-end=\"2924\">\n\n<h3 data-start=\"2926\" data-end=\"2939\"><strong>FAQ</strong></h3>\n\n<p data-start=\"2941\" data-end=\"3082\"><strong>Q: Do these enclosures come fully assembled?</strong><br>A: Yes, all 12 Series enclosures are <strong>assembled, sealed, and ready to use</strong> on arrival.</p>\n\n<p data-start=\"3084\" data-end=\"3257\"><strong>Q: Can I request specific color or lighting options?</strong><br>A: Absolutely — every enclosure is custom-built. Choose from several finishes, lighting setups, and door styles.</p>\n\n<p data-start=\"3259\" data-end=\"3367\"><strong>Q: What animals fit best?</strong><br>A: Perfect for hatchlings, small snakes, geckos, frogs, and invertebrates.</p>\n\n<p data-start=\"3369\" data-end=\"3517\"><strong>Q: Is PVC safe for high humidity?</strong><br>A: Yes, PVC is <strong>waterproof and mold-resistant</strong>, making it ideal for bioactive and tropical environments.</p>\n\n<p data-start=\"3519\" data-end=\"3644\"><strong>Q: Do you offer other sizes?</strong><br>A: Yes — check out our <strong>18\", 24\", 36\", and 48\" Series Enclosures</strong> for larger habitats.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "12-bioactive-pvc-mini-reptile-enclosure",
+       "id": "gid://shopify/ProductVariant/44965291851833",
+       "media": [
+        {
+         "alt_text": "12\" Bioactive PVC Mini Reptile Enclosure | Compact Habitat - Stumps Custom Wood",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0747/1552/9273/files/12-bioactive-pvc-mini-reptile-enclosure-compact-habitat-2382184.jpg",
+          "width": 1536
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0747/1552/9273/files/12-bioactive-pvc-mini-reptile-enclosure-compact-habitat-2382184.jpg",
+         "width": 1536
+        }
+       ],
+       "options": [
+        {
+         "label": "Black",
+         "name": "Color"
+        },
+        {
+         "label": "12x12x12",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 6000,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3.7
+       },
+       "seller": {
+        "domain": "q0anzn-dy.myshopify.com",
+        "id": "gid://shopify/Shop/74715529273",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/74715529273/policies/38230982713.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/74715529273/policies/39071285305.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/74715529273/policies/39071154233.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/74715529273/policies/39071318073.html"
+         }
+        ],
+        "name": "Stumps Custom Wood ",
+        "url": "https://stumpscustomwood.shop"
+       },
+       "seller_product_id": "gid://shopify/Product/8040969764921",
+       "source": "shopify",
+       "title": "12\" Bioactive PVC Mini Reptile Enclosure | Compact Habitat",
+       "url": "https://stumpscustomwood.shop/products/12-bioactive-pvc-mini-reptile-enclosure?variant=44965291851833&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>For Boxco P-Series,Ultraviolet Stabilizer is added to protect the enclosures for outdoor usage. Few colour changes will be noticed even after a long time of use.\nAnti-static material is used to protect sensitive electronic instruments from static electricity.\nIt is made of high impact resistant material which is very strong against external impact and also prevents breakage during hole and press processing.\nSpecial spec can be added besides standard specification. We can supply optimized products with the spec and material you choose.</p>\n<h3>Features</h3>\n<ul>\n<li>Latch - Main part of the draw latch is made of stainless steel so it is very strong. </li> <li>\nPre-molded Mounting Screw Nuts – You can easily fix DIN RAIL or other equipment on to the pre molded Screw nuts</li> <li>\nRoof Protection – Both ends of the P series are protruded to protect against penetration of water when using it outdoor and penetration of dust when opening/closing the cover</li> <li>\nGasket – The gasket in injected by super precise CNC robot machine to product excellent waterproof and dust-proof performance</li> <li>\nMounting Plate Attachment Point – Internal mounting plate can be fixed tightly onto the brass inserted injection molding to handle heavy equipment installed inside the enclosure</li> <li>\nIntegrated Hinge – Hinge is made of plastic and is integrated with the enclosure. Bearing is made of stainless steel to increase the life span.</li> </ul>"
+     },
+     "handle": "boxco-p-series-7-87-x-11-81-x-7-09-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type",
+     "id": "gid://shopify/p/3wOlViGGkGyKdaBCGutrbH",
+     "media": [
+      {
+       "alt_text": "Boxco P - Series 7.87 x 11.81 x 7.09 Inches(200 x 300 x 180mm) Plastic Enclosure, IP67, IK08, ABS, Grey Cover, Molded Hinge and Latch Type - BC-AGP-203018 - powersupplymall.com",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0678/9791/7725/files/boxco-p-series-787-x-1181-x-709-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type-1697459.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0678/9791/7725/files/boxco-p-series-787-x-1181-x-709-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type-1697459.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "IP67 waterproof and dustproof rating ensures reliable protection for sensitive electronics in harsh environments",
+       "High-impact resistant ABS plastic construction withstands external impacts and prevents breakage during processing",
+       "Integrated stainless steel draw latch provides secure and durable closure",
+       "Pre-molded screw nuts allow easy DIN rail or equipment mounting",
+       "Super-precise CNC-gasket injection ensures excellent waterproof and dustproof performance"
+      ],
+      "unique_selling_points": [
+       "Combines IP67 waterproof and dustproof rating with high-impact ABS construction and integrated stainless steel hinge for reliable outdoor protection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2694,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2694,
+       "currency": "USD"
+      }
+     },
+     "title": "Boxco P-Series 7.87 x 11.81 x 7.09 Inches(200 x 300 x 180mm) Plastic Enclosure, IP67, IK08, ABS, Grey Cover, Molded Hinge and Latch Type",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://powersupplymall.com/buy/46344466891037:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>For Boxco P-Series,Ultraviolet Stabilizer is added to protect the enclosures for outdoor usage. Few colour changes will be noticed even after a long time of use.\nAnti-static material is used to protect sensitive electronic instruments from static electricity.\nIt is made of high impact resistant material which is very strong against external impact and also prevents breakage during hole and press processing.\nSpecial spec can be added besides standard specification. We can supply optimized products with the spec and material you choose.</p>\n<h3>Features</h3>\n<ul>\n<li>Latch - Main part of the draw latch is made of stainless steel so it is very strong. </li> <li>\nPre-molded Mounting Screw Nuts – You can easily fix DIN RAIL or other equipment on to the pre molded Screw nuts</li> <li>\nRoof Protection – Both ends of the P series are protruded to protect against penetration of water when using it outdoor and penetration of dust when opening/closing the cover</li> <li>\nGasket – The gasket in injected by super precise CNC robot machine to product excellent waterproof and dust-proof performance</li> <li>\nMounting Plate Attachment Point – Internal mounting plate can be fixed tightly onto the brass inserted injection molding to handle heavy equipment installed inside the enclosure</li> <li>\nIntegrated Hinge – Hinge is made of plastic and is integrated with the enclosure. Bearing is made of stainless steel to increase the life span.</li> </ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "boxco-p-series-7-87-x-11-81-x-7-09-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type",
+       "id": "gid://shopify/ProductVariant/46344466891037",
+       "media": [
+        {
+         "alt_text": "Boxco P - Series 7.87 x 11.81 x 7.09 Inches(200 x 300 x 180mm) Plastic Enclosure, IP67, IK08, ABS, Grey Cover, Molded Hinge and Latch Type - BC-AGP-203018 - powersupplymall.com",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0678/9791/7725/files/boxco-p-series-787-x-1181-x-709-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type-1697459.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0678/9791/7725/files/boxco-p-series-787-x-1181-x-709-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type-1697459.jpg",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 2694,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "powersupplymall-com.myshopify.com",
+        "id": "gid://shopify/Shop/67897917725",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/67897917725/policies/29360914717.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/67897917725/policies/29360947485.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/67897917725/policies/29360881949.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/67897917725/policies/29360980253.html"
+         }
+        ],
+        "name": "powersupplymall.com",
+        "url": "https://powersupplymall.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8612788240669",
+       "source": "shopify",
+       "title": "Boxco P-Series 7.87 x 11.81 x 7.09 Inches(200 x 300 x 180mm) Plastic Enclosure, IP67, IK08, ABS, Grey Cover, Molded Hinge and Latch Type",
+       "url": "https://powersupplymall.com/products/boxco-p-series-7-87-x-11-81-x-7-09-inches200-x-300-x-180mm-plastic-enclosure-ip67-ik08-abs-grey-cover-molded-hinge-and-latch-type?variant=46344466891037&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p class=\"p1\"><span class=\"s1\">This Breadboard enclosure is <b>stackable</b>, <b>modular</b>, <b>extensible</b> and <b>hackable</b>! Use it to quickly convert your prototype into a functional and good-looking product! </span></p>\n<p class=\"p1\"><span class=\"s1\">Works with any breadboard-friendly micro-controllers or single-board computers like the Arduino Nano, Adafruit Feather, Particle Argon, Raspberry Pi Pico and so on. <meta charset=\"utf-8\"> <span data-mce-fragment=\"1\">A microUSB/USB plug cutout makes it great to power these and the rest of your circuitry.</span> </span></p>\n<p class=\"p1\"><span class=\"s1\">This case fits a 1/2 sized breadboard, or 3 tiny/mini-sized ones. You can fit a full-sized breadboard by horizontally stacking two enclosures. </span></p>\n<p class=\"p1\"><span class=\"s1\"></span><span class=\"s1\">The case has an internal clearance of over 1.2 inches, which gives you ample room for components &amp; wiring!</span></p>\n<p class=\"p1\"><span class=\"s1\">You can use this vanilla enclosure to house <em><strong>any</strong></em> custom board that fits its dimensions (see below).</span></p>\n<p class=\"p1\"><span class=\"s1\">The acrylic material &amp; modular design make it eminently hackable. Drill cutouts or mounting holes into the side walls, top or base plate. You can modify a single side without affecting the others pieces (working with a single flat piece of acrylic is also easier). The modular design makes assembly a snap.</span></p>\n<p class=\"p1\"><span><meta charset=\"utf-8\">Extension kits and add-ons are available to add functionality to your enclosure - add , switches, ultrasonic sensor, DB9/RS232 port, micro-servo and more! </span><a href=\"https://www.protostax.com/collections/all/breadboard\">Check out our extension kits and add-ons</a>!</p>\n<h3 class=\"p1\"><span class=\"s1\"><b>Features</b></span></h3>\n<ul class=\"ul1\">\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Fits half-sized breadboard, or 3 tiny/mini-sized breadboards (4 if the side walls are omitted)</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Use with any breadboard-friendly micro-controller thanks to the micro-USB/USB cutout</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Internal clearance of over 1.2 in, which gives you ample room for components and wiring for your breadboard!</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Made from high quality cast acrylic</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Clear acrylic provides a beautiful finish with a modern visual design with full view of your electronics </span>\n</li>\n<li class=\"li2\"><span class=\"s1\">Our Obsidian black acrylic gives you a sleek and attractive option when you want to keep your brains and sinew under the covers and just highlight the peripherals<br></span></li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Metal standoffs and screws provide solid and durable support </span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Rubber Feet protect your table surface while providing maximum airflow by elevating the enclosure</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\"><i>Cable Management</i>: Easily accessible cable management cutouts in the side walls allow you to smoothly insert your cables &amp; access wiring to external systems. In the Open Configuration, the Wall slots on the top and bottom plates (where the side walls usually insert into) can also be used for cable management for even more accessibility and organization.</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">You can mix, match, customize, and expand your project enclosure because ProtoStax enclosures are modular and stackable and work with each other.</span>\n</li>\n<li class=\"li2\">Extension kits and add-ons help add functionality to your enclosure, such as adding switches, displays, sensor peripherals, etc.<br>\n</li>\n</ul>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>\n<ul class=\"ul1\"></ul>\n<ul class=\"ul1\"></ul>\n<h3 class=\"p1\"><span class=\"s1\"><b>List of Compatible Devices</b></span></h3>\n<h4 class=\"p1\"><span class=\"s1\">Arduino Nano/MKR/Portenta boards like</span></h4>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td style=\"width: 541px;\">\n<span class=\"s2\"><a href=\"https://store.arduino.cc/usa/arduino-nano\"><span class=\"s3\">Arduino Nano</span></a></span><span class=\"s4\"> / <a href=\"https://store.arduino.cc/usa/nano-33-iot-with-headers\"><span class=\"s5\">33 IOT</span></a> / <a href=\"https://store.arduino.cc/usa/nano-every-with-headers\"><span class=\"s5\">Every</span></a> / <a href=\"https://store.arduino.cc/usa/nano-33-ble\"><span class=\"s5\">33 BLE</span></a> / <a href=\"https://store.arduino.cc/usa/nano-33-ble-sense\"><span class=\"s5\">Sense</span></a></span>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.arduino.cc/usa/arduino-micro\"><span class=\"s3\">Arduino Micro</span></a>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<p><span class=\"s3\"><span class=\"s2\"><a href=\"https://store.arduino.cc/usa/mkr-gsm-1400\">Arduino MKR GSM 1400</a></span><span class=\"s4\"> / <a href=\"https://store.arduino.cc/usa/arduino-mkr1000\"><span class=\"s5\">1000 WIFI</span></a> / <a href=\"https://store.arduino.cc/usa/mkr-wan-1300\"><span class=\"s5\">WAN 1300</span></a> </span></span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<p><a href=\"https://store.arduino.cc/usa/portenta-h7\"><span class=\"s3\"><span class=\"s2\">Arduino Portenta H7</span></span></a></p>\n</td>\n</tr>\n</tbody>\n</table>\n<br>\n<h4 class=\"p1\"><span class=\"s1\"> Feather boards like</span></h4>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3405\"><span class=\"s3\">Adafruit HUZZAH32 – ESP32 Feather Board</span></a>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/2821\"><span class=\"s3\">Adafruit Feather HUZZAH -ESP8266</span></a>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3010\"><span class=\"s3\">Adafruit Feather M0 WiFi</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.adafruit.com/product/2829\">Adafruit Feather 32u4 Bluefruit LE</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3079\"><span class=\"s3\">Adafruit Feather 32u4 RFM96 LoRa Radio</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3458\"><span class=\"s3\">Adafruit Feather 328P</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.adafruit.com/product/3177\">Adafruit Feather M0 RFM69HCW Packet Radio</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/products/argon-kit\"><span class=\"s3\">Particle Argon</span></a><br>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/products/boron-lte-kit\"><span class=\"s3\">Particle Boron LTE</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://store.particle.io/products/xenon-kit\">Particle Xenon</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/collections/wifi/products/photon\"><span class=\"s3\">Particle Photon</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.pjrc.com/store/index.html\"><span class=\"s3\">Teensy boards</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.sparkfun.com/products/15411\">BlackBoard Artemis Nano</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/12640\"><span class=\"s3\">SparkFun Pro Micro</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/14713\"><span class=\"s3\">SparkFun Thing Plus</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.sparkfun.com/products/13664\">SparkFun SAMD21 Mini Breakout</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/13614\"><span class=\"s3\">Qduino Micro</span></a><span class=\"s3\"></span>\n</td>\n<td>and more!<span class=\"s3\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<br>\n<p class=\"p1\"><span class=\"s1\">Basically, any Breadboard friendly micro-controller or single board computer! 😊</span></p>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>"
+     },
+     "handle": "protostax-for-breadboard",
+     "id": "gid://shopify/p/5cP9RMm7biGfpH8ZlRQzNm",
+     "media": [
+      {
+       "alt_text": "ProtoStax Enclosure for Breadboards/Custom - with Breadboard-friendly MCU (Particle Photon)",
+       "height": 3264,
+       "preview": {
+        "height": 3264,
+        "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/products/fullsizeoutput_270a.jpg",
+        "width": 4928
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/products/fullsizeoutput_270a.jpg",
+       "width": 4928
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stackable modular design enables easy expansion and customization for various project sizes",
+       "Clear acrylic construction provides full visibility of internal electronics while maintaining a modern look",
+       "Internal clearance over 1/2 inch allows ample space for components and wiring",
+       "Micro USB plug cutout simplifies powering of compatible microcontrollers and peripherals",
+       "Easily accessible cable management cutouts and slots enhance organization and airflow"
+      ],
+      "unique_selling_points": [
+       "Stackable, modular acrylic case with customizable drill cutouts and USB power access for breadboard-friendly microcontrollers and single board computers."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Crystal"
+        },
+        {
+         "label": "Obsidian"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "ProtoStax Enclosure for Breadboards/Custom",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.protostax.com/buy/42413852655782:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p class=\"p1\"><span class=\"s1\">This Breadboard enclosure is <b>stackable</b>, <b>modular</b>, <b>extensible</b> and <b>hackable</b>! Use it to quickly convert your prototype into a functional and good-looking product! </span></p>\n<p class=\"p1\"><span class=\"s1\">Works with any breadboard-friendly micro-controllers or single-board computers like the Arduino Nano, Adafruit Feather, Particle Argon, Raspberry Pi Pico and so on. <meta charset=\"utf-8\"> <span data-mce-fragment=\"1\">A microUSB/USB plug cutout makes it great to power these and the rest of your circuitry.</span> </span></p>\n<p class=\"p1\"><span class=\"s1\">This case fits a 1/2 sized breadboard, or 3 tiny/mini-sized ones. You can fit a full-sized breadboard by horizontally stacking two enclosures. </span></p>\n<p class=\"p1\"><span class=\"s1\"></span><span class=\"s1\">The case has an internal clearance of over 1.2 inches, which gives you ample room for components &amp; wiring!</span></p>\n<p class=\"p1\"><span class=\"s1\">You can use this vanilla enclosure to house <em><strong>any</strong></em> custom board that fits its dimensions (see below).</span></p>\n<p class=\"p1\"><span class=\"s1\">The acrylic material &amp; modular design make it eminently hackable. Drill cutouts or mounting holes into the side walls, top or base plate. You can modify a single side without affecting the others pieces (working with a single flat piece of acrylic is also easier). The modular design makes assembly a snap.</span></p>\n<p class=\"p1\"><span><meta charset=\"utf-8\">Extension kits and add-ons are available to add functionality to your enclosure - add , switches, ultrasonic sensor, DB9/RS232 port, micro-servo and more! </span><a href=\"https://www.protostax.com/collections/all/breadboard\">Check out our extension kits and add-ons</a>!</p>\n<h3 class=\"p1\"><span class=\"s1\"><b>Features</b></span></h3>\n<ul class=\"ul1\">\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Fits half-sized breadboard, or 3 tiny/mini-sized breadboards (4 if the side walls are omitted)</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Use with any breadboard-friendly micro-controller thanks to the micro-USB/USB cutout</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Internal clearance of over 1.2 in, which gives you ample room for components and wiring for your breadboard!</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Made from high quality cast acrylic</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Clear acrylic provides a beautiful finish with a modern visual design with full view of your electronics </span>\n</li>\n<li class=\"li2\"><span class=\"s1\">Our Obsidian black acrylic gives you a sleek and attractive option when you want to keep your brains and sinew under the covers and just highlight the peripherals<br></span></li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Metal standoffs and screws provide solid and durable support </span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">Rubber Feet protect your table surface while providing maximum airflow by elevating the enclosure</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\"><i>Cable Management</i>: Easily accessible cable management cutouts in the side walls allow you to smoothly insert your cables &amp; access wiring to external systems. In the Open Configuration, the Wall slots on the top and bottom plates (where the side walls usually insert into) can also be used for cable management for even more accessibility and organization.</span>\n</li>\n<li class=\"li2\">\n<span class=\"s2\"></span><span class=\"s1\">You can mix, match, customize, and expand your project enclosure because ProtoStax enclosures are modular and stackable and work with each other.</span>\n</li>\n<li class=\"li2\">Extension kits and add-ons help add functionality to your enclosure, such as adding switches, displays, sensor peripherals, etc.<br>\n</li>\n</ul>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>\n<ul class=\"ul1\"></ul>\n<ul class=\"ul1\"></ul>\n<h3 class=\"p1\"><span class=\"s1\"><b>List of Compatible Devices</b></span></h3>\n<h4 class=\"p1\"><span class=\"s1\">Arduino Nano/MKR/Portenta boards like</span></h4>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td style=\"width: 541px;\">\n<span class=\"s2\"><a href=\"https://store.arduino.cc/usa/arduino-nano\"><span class=\"s3\">Arduino Nano</span></a></span><span class=\"s4\"> / <a href=\"https://store.arduino.cc/usa/nano-33-iot-with-headers\"><span class=\"s5\">33 IOT</span></a> / <a href=\"https://store.arduino.cc/usa/nano-every-with-headers\"><span class=\"s5\">Every</span></a> / <a href=\"https://store.arduino.cc/usa/nano-33-ble\"><span class=\"s5\">33 BLE</span></a> / <a href=\"https://store.arduino.cc/usa/nano-33-ble-sense\"><span class=\"s5\">Sense</span></a></span>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.arduino.cc/usa/arduino-micro\"><span class=\"s3\">Arduino Micro</span></a>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<p><span class=\"s3\"><span class=\"s2\"><a href=\"https://store.arduino.cc/usa/mkr-gsm-1400\">Arduino MKR GSM 1400</a></span><span class=\"s4\"> / <a href=\"https://store.arduino.cc/usa/arduino-mkr1000\"><span class=\"s5\">1000 WIFI</span></a> / <a href=\"https://store.arduino.cc/usa/mkr-wan-1300\"><span class=\"s5\">WAN 1300</span></a> </span></span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 541px;\">\n<div><meta charset=\"utf-8\"></div>\n<p><a href=\"https://store.arduino.cc/usa/portenta-h7\"><span class=\"s3\"><span class=\"s2\">Arduino Portenta H7</span></span></a></p>\n</td>\n</tr>\n</tbody>\n</table>\n<br>\n<h4 class=\"p1\"><span class=\"s1\"> Feather boards like</span></h4>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3405\"><span class=\"s3\">Adafruit HUZZAH32 – ESP32 Feather Board</span></a>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/2821\"><span class=\"s3\">Adafruit Feather HUZZAH -ESP8266</span></a>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3010\"><span class=\"s3\">Adafruit Feather M0 WiFi</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.adafruit.com/product/2829\">Adafruit Feather 32u4 Bluefruit LE</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3079\"><span class=\"s3\">Adafruit Feather 32u4 RFM96 LoRa Radio</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.adafruit.com/product/3458\"><span class=\"s3\">Adafruit Feather 328P</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.adafruit.com/product/3177\">Adafruit Feather M0 RFM69HCW Packet Radio</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/products/argon-kit\"><span class=\"s3\">Particle Argon</span></a><br>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/products/boron-lte-kit\"><span class=\"s3\">Particle Boron LTE</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://store.particle.io/products/xenon-kit\">Particle Xenon</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://store.particle.io/collections/wifi/products/photon\"><span class=\"s3\">Particle Photon</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.pjrc.com/store/index.html\"><span class=\"s3\">Teensy boards</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.sparkfun.com/products/15411\">BlackBoard Artemis Nano</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/12640\"><span class=\"s3\">SparkFun Pro Micro</span></a><span class=\"s3\"></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/14713\"><span class=\"s3\">SparkFun Thing Plus</span></a><span class=\"s3\"></span>\n</td>\n</tr>\n<tr>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<span class=\"s3\"><a href=\"https://www.sparkfun.com/products/13664\">SparkFun SAMD21 Mini Breakout</a></span>\n</td>\n<td>\n<div><meta charset=\"utf-8\"></div>\n<a href=\"https://www.sparkfun.com/products/13614\"><span class=\"s3\">Qduino Micro</span></a><span class=\"s3\"></span>\n</td>\n<td>and more!<span class=\"s3\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<br>\n<p class=\"p1\"><span class=\"s1\">Basically, any Breadboard friendly micro-controller or single board computer! 😊</span></p>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>\n<h3 class=\"p1\"><span class=\"s1\"><b></b></span></h3>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "protostax-for-breadboard",
+       "id": "gid://shopify/ProductVariant/42413852655782",
+       "media": [
+        {
+         "alt_text": "ProtoStax Enclosure for Breadboards/Custom - with Breadboard-friendly MCU (Particle Photon)",
+         "height": 3264,
+         "preview": {
+          "height": 3264,
+          "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/products/fullsizeoutput_270a.jpg",
+          "width": 4928
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/products/fullsizeoutput_270a.jpg",
+         "width": 4928
+        }
+       ],
+       "options": [
+        {
+         "label": "Crystal",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "protostax.myshopify.com",
+        "id": "gid://shopify/Shop/8262484004",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421419044.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421451812.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421386276.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421484580.html"
+         }
+        ],
+        "name": "ProtoStax",
+        "url": "https://www.protostax.com"
+       },
+       "seller_product_id": "gid://shopify/Product/1331100418084",
+       "source": "shopify",
+       "title": "ProtoStax Enclosure for Breadboards/Custom",
+       "url": "https://www.protostax.com/products/protostax-for-breadboard?variant=42413852655782&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></p>\n<style>\n        body {\n            font-family: Helvetica, Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n            color: black;\n            overflow-x: hidden;\n        }\n\n        a {\n            color: blue;\n            text-decoration: none;\n        }\n\n        a:hover {\n            text-decoration: underline;\n        }\n\n        .tab-links {\n            display: flex;\n            justify-content: space-between;\n            margin-bottom: 0;\n            background: #fff;\n            padding: 0;\n        }\n\n        .tab-links button {\n            flex-grow: 1;\n            padding: 12px 20px;\n            border: none;\n            background-color: #f2f2f2;\n            cursor: pointer;\n            outline: none;\n            border-top-left-radius: 8px;\n            border-top-right-radius: 8px;\n            transition: background-color 0.3s;\n            border-bottom: 2px solid transparent;\n            color: black;\n        }\n\n        .tab-links button:hover {\n            background-color: orange;\n        }\n\n        .tab-links button.active {\n            background-color: #ccc;\n            border-bottom-color: #ccc;\n            font-weight: bold;\n        }\n\n        .tab-content {\n            display: none;\n            padding: 20px;\n            border: 1px solid #ccc;\n            border-radius: 8px;\n            border-top-left-radius: 0;\n            border-top-right-radius: 0;\n        }\n\n        .tab-content.active {\n            display: block;\n        }\n\n        .collapsible {\n            background-color: #f2f2f2;\n            color: black;\n            cursor: pointer;\n            padding: 10px;\n            width: 100%;\n            border: none;\n            text-align: left;\n            outline: none;\n            font-size: 15px;\n            display: flex;\n            justify-content: flex-start;\n            align-items: center;\n            transition: background-color 0.3s;\n            border-top: 1px solid white;\n            border-radius: 8px;\n        }\n\n        .collapsible:first-of-type {\n            border-top: none;\n        }\n\n        .collapsible.active {\n            background-color: #e2e2e2;\n        }\n\n        .collapsible span {\n            font-size: 18px;\n            margin-right: 10px;\n            transition: transform 0.3s ease;\n        }\n\n        .collapsible.active span {\n            transform: rotate(45deg);\n        }\n\n        .collapsible-content {\n            max-height: 0;\n            padding: 0 18px;\n            overflow: hidden;\n            background-color: white;\n            border-top: none;\n            border-radius: 8px;\n            transition: max-height 0.3s ease-out, padding 0.3s ease-out;\n        }\n\n        .collapsible-content.active {\n            max-height: 1000px;\n            padding: 18px;\n        }\n\n        @media (max-width: 600px) {\n            .tab-links button {\n                padding: 15px 10px;\n            }\n\n            .tab-content {\n                padding: 15px;\n            }\n        }\n\n\n        @media (max-width: 600px) {\n            .tab-content img {\n                width: 100%;\n                height: auto;\n                object-fit: contain;\n                max-width: 100%;\n            }\n        }\n\n        /* Add styling for video size */\n        .video-wrapper {\n            position: relative;\n            padding-bottom: 56.25%; /* 16:9 aspect ratio */\n            height: 0;\n            overflow: hidden;\n            max-width: 100%;\n            background: #000;\n        }\n\n        .video-wrapper iframe {\n            position: absolute;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n        }\n\n        /* Grey box styling for downloads */\n        .gray-box {\n            background-color: #f2f2f2;\n            padding: 10px;\n            border-radius: 8px;\n            margin-bottom: 10px;\n            display: inline-block;\n        }\n\n        .gray-box a {\n            color: black;\n            text-decoration: none;\n        }\n\n        .gray-box a:hover {\n            text-decoration: underline;\n        }\n    </style>\n<p><b>Fits: Bambu Lab X1/P1 Series</b><br><br></p>\n<div class=\"tab-links\">\n<button class=\"tab-link active\">Description</button> <button class=\"tab-link\">Install &amp; Use</button> <button class=\"tab-link\">Files &amp; Videos</button>\n</div>\n<div class=\"tab-content active\" id=\"description\">\n<p>This X1/P1 HotBox® enclosure is crafted to fit your Bambu Lab X1/P1 seamlessly. If you want to print ABS, Nylon, PC, and other high-temperature filaments, an enclosure is one of the best upgrades for your machine. The X1/P1 Series HotBox® is your solution for stable interior temperature, fume and odor control, reduced printer noise (20%), and convenient access to your Bambu Lab P1P and tools. Check out our <a href=\"https://www.youtube.com/watch?v=oFMZw1OJk-g\" title=\"YouTube P1P HotBox Overview\" target=\"_blank\"> YouTube P1P HotBox® Overview</a> or read on to learn how the P1/X1 Series HotBox® accomplishes these 4 main properties:</p>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Stable, Thermally Insulated, Interior Temperature</button>\n<div class=\"collapsible-content\">\n<p>The HotBox® is made of a sandwich of 3 materials selected to create structure and excellent insulating properties. The result is a lightweight semi-rigid construction, so structural that you can place a few spool holders or even the AMS on top of the unit. The exterior is made of a flame retardant, ballistic Nylon 600D, the center is a structural honeycomb polymer panel selected for its insulation properties, and the interior is a metal lining that reflects and maintains optimal temperatures (between 35-60°C) for the duration of the print. <a href=\"https://www.youtube.com/watch?v=uOE6ZOcFf98\" title=\"Watch our temp testing video on YouTube\" target=\"_blank\"> Watch our temp testing video on YouTube</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Fume and Odor Control</button>\n<div class=\"collapsible-content\">\n<p>Our entire HotBox® line comes with an optional vent port where you can mount a fan to either filter or pipe the fumes out a window. An easy-to-make fume extractor, 3D models, parts lists, and instructions can be found on Cults <a href=\"https://cults3d.com/en/3d-model/tool/wham-bam-exhaust-fan-for-resin-hotbox\" title=\"Wham Bam Exhaust Fan for Resin Hotbox\" target=\"_blank\"> here</a>. A Video Short showing the build is <a href=\"https://www.youtube.com/shorts/bdKS05QcFiU\" title=\"Video Short\" target=\"_blank\"> here</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Reduce Machine Noise</button>\n<div class=\"collapsible-content\">\n<p>The HotBox® was able to achieve a nearly 20% reduction of noise in comparison to bare P1/X1 Series, with Bambu plastic panels, and even the X Series with their metal enclosure. See the machine noise comparison video <a href=\"https://www.youtube.com/watch?v=HvBpUYNc-q0\" title=\"Video\" target=\"_blank\"> here</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Easy Access </button>\n<div class=\"collapsible-content\">\n<p>Unlike other solutions, the X1/P1 HotBox® allows you to access either side of your Bambu Lab printer easily by just unzipping the side and swinging it open. The front door allows full access to the build plate and interior. And the whole unit is removable in less than 10 seconds should you need to work on your printer.</p>\n<p>Other great features:</p>\n<ul>\n<li>A built-in thermometer (two LR44 batteries not included) to easily view the internal temperature.</li>\n<li>The front panel has a large clear window for maximum visibility which is a fully openable door that remains fixed to the side when you need front access. No more glass breakages, no more obstructions!</li>\n<li>The right side panel touts tool pouches and elastic straps to keep your most needed tools at arm's reach.</li>\n<li>The rear has openings for venting, the poop chute, the power chord, and the switch.</li>\n<li>A removable patch should you ever mount a rear panel with an extra CPU fan.</li>\n<li>A line of printable accessories is available on cults. A <a href=\"https://cults3d.com/en/3d-model/tool/poop-bucket-for-p1p-hotbox\" title=\"Custom Poop Bucket for P1P HotBox\" target=\"_blank\">custom poop bucket</a> for use with the P1P HotBox® and an <a href=\"https://cults3d.com/en/3d-model/tool/ams-buffer-mount-for-p1p-in-hotbox\" title=\"AMS Buffer Mount for P1P in HotBox\" target=\"_blank\">AMS buffer mount</a> that allows you to use an upgraded buffer with the P1P HotBox®.</li>\n</ul>\n</div>\n<br>\n<p>Protect your home and workspace from fire with <a href=\"https://www.whambamsystems.com/products/the-cloud-personal-printer-sentry\" title=\"View the entire HotBox line and accessories\" target=\"_blank\"> the Cloud®</a> - Personal Printer Sentry.</p>\n<p><a href=\"https://www.whambamsystems.com/collections/frontpage?pf_pt_product_type=HotBox\" title=\"View the entire HotBox line and accessories\" target=\"_blank\">View the entire HotBox® line and accessories</a>.</p>\n</div>\n<div class=\"tab-content\" id=\"specifications\">\n<b>Printer Fits</b>:<br>\n<ul>\n<li>Bambu Lab X1 Series</li>\n<li>Bambu LAB P1 Series</li>\n</ul>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Content &amp; Tech Info</button>\n<div class=\"collapsible-content\">\n<b>Includes</b>: 1 X1/P1 Series HotBox®<br><br><b>Included features</b>:<br>\n<ul>\n<li>Lightweight semi-rigid construction</li>\n<li>Excellent insulating properties</li>\n<li>3 cable exits, one each on the left, right, and back panels</li>\n<li>Large opening for front access with transparent front window</li>\n<li>Side zippers allow for full access when needed</li>\n<li>2 large spool holder access ports with repositionable covers</li>\n<li>Front-mounted thermometer (two LR44 batteries not included)</li>\n<li>Passage with cover for user-added aspiration and air filtering</li>\n<li>Folds up flat, is easy to store and transport</li>\n<li>2 sets of loops to hold a LED light bar</li>\n</ul>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Upgrades</button>\n<div class=\"collapsible-content\">\n<ul>\n<li>Add a <a href=\"https://www.whambamsystems.com/collections/frontpage/products/hotbox-laser-window-1\" target=\"_blank\"> Laser and UV-safe window</a> upgrade to your HotBox® and protect yourself when using your laser attachment or printing and curing resin.</li>\n<li>Brighten your HotBox®! This HotBox® has loops to add two <a href=\"https://www.whambamsystems.com/collections/frontpage/products/led-usb-bar\" target=\"_blank\">LED lights</a> inside.</li>\n<li>Protect your home and workspace from fire with <a href=\"https://www.whambamsystems.com/products/the-cloud-personal-printer-sentry\" target=\"_blank\"> the Cloud®</a> - Personal Printer Sentry.</li>\n</ul>\n</div>\n</div>\n<div class=\"tab-content\" id=\"reviews\">\n<p>See our <a href=\"https://www.whambamsystems.com/pages/hotbox-supportpage\" target=\"_blank\"> HotBox® Support Page</a>.</p>\n<b>Build instructions</b>:<br><a href=\"https://www.youtube.com/watch?v=oFMZw1OJk-g&amp;t=17s\" target=\"_blank\">Video Install of the P1P HotBox®</a><br><br>\n<ol>\n<li>Unpack all components from the enclosure’s box, ensuring all parts are included.</li>\n<li>Remove your HotBox® from its packaging, unfold, and lay flat with the metallic side upward.</li>\n<li>Locate the small rectangular rear of the thermometer. Push the cover in the direction of the arrow and swing it upward. You will need to purchase 2 LR44 Batteries (also listed as A76 or 357) and Insert 2 LR44 batteries with the + side up (large smooth side). Push each down so it clicks in. Now swing down the cover and slide it in the other direction to close.</li>\n</ol>\n<br>\n<div class=\"image-wrapper\"><img src=\"https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PUnfolding.jpg?v=1714060544\" alt=\"P1P HotBox\"></div>\n<br>\n</div>\n<div class=\"tab-content\" id=\"shipping\">\n<button class=\"collapsible\" type=\"button\"><span>+</span>Other Downloads</button>\n<div class=\"collapsible-content\">\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/poop-bucket-for-p1p-hotbox\" style=\"color: blue;\" target=\"_blank\"> Poop Bucket for P1P HotBox®</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/ams-buffer-mount-for-p1p-in-hotbox\" style=\"color: blue;\" target=\"_blank\">AMS Buffer Mount For P1P HotBox®</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/grommet-for-pass-through-hole-in-wham-bam-hotbox\" style=\"color: blue;\" target=\"_blank\">Grommet To Create Pass Through Hole</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/wham-bam-exhaust-fan-for-resin-hotbox\" style=\"color: blue;\" target=\"_blank\">DIY HotBox® Exhaust Fan</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/fumes-extraction-unit-from-wainlux-adapter-for-wham-bam-exhaust-opening\" style=\"color: blue;\" target=\"_blank\"> Bambu Lab P1P Fumes Extraction Unit (From Wainlux) Adapter</a></div>\n<br>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Helpful Videos</button>\n<div class=\"collapsible-content\">\n<p>To see the HotBox® in action, please check out our<a href=\"https://www.youtube.com/playlist?list=PLSlhFLYCaWuLTd-_aORsz_yAu9UTcaHb5\" target=\"_blank\"> HotBox® YouTube Playlist</a>.</p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=TVXLtAkSKqk\" target=\"_blank\">Adding a Hole and Grommet to a Wham Bam HotBox® </a></li>\n<li><a href=\"https://www.youtube.com/watch?v=uOE6ZOcFf98\" target=\"_blank\">Temperature Testing our Bambu Lab P1P Enclosure</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=HvBpUYNc-q0\" target=\"_blank\">Noise Testing Bambu Lab Machines vs P1P HotBox®</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=bdKS05QcFiU\" target=\"_blank\"> Print and assemble this DIY Exhaust Fan to use on any FDM or Resin version</a></li>\n</ul>\n</div>\n<script>\n(function () {\n  var me = document.currentScript;\n  var root = (me && me.parentNode && me.parentNode.querySelector('.tab-links')) ? me.parentNode : document;\n\n\n  root.querySelectorAll('.tab-links').forEach(function (links) {\n    if (links.getAttribute('data-wb-tabs')) return;\n    links.setAttribute('data-wb-tabs', '1');\n    var box = links.parentNode;\n    var buttons = links.querySelectorAll('.tab-link');\n    var panels = [];\n    for (var i = 0; i < box.children.length; i++) {\n      if (box.children[i].classList.contains('tab-content')) panels.push(box.children[i]);\n    }\n    buttons.forEach(function (btn, n) {\n      btn.addEventListener('click', function (e) {\n        e.preventDefault();\n        buttons.forEach(function (b) { b.classList.remove('active'); });\n        panels.forEach(function (p) { p.classList.remove('active'); p.style.display = ''; });\n        btn.classList.add('active');\n        if (panels[n]) panels[n].classList.add('active');\n      });\n    });\n  });\n\n\n  root.querySelectorAll('.collapsible').forEach(function (btn) {\n    if (btn.getAttribute('data-wb-col')) return;\n    btn.setAttribute('data-wb-col', '1');\n    btn.addEventListener('click', function (e) {\n      e.preventDefault();\n      var content = btn.nextElementSibling;\n      btn.classList.toggle('active');\n      if (content && content.classList.contains('collapsible-content')) content.classList.toggle('active');\n    });\n  });\n})();\n</script>\n</div>"
+     },
+     "handle": "p1p-hotbox-3d-printer-enclosure",
+     "id": "gid://shopify/p/1t5tWmzIt43KmumMlERGIs",
+     "media": [
+      {
+       "alt_text": "X1/P1 Series HotBox - 3D Printer Enclosure",
+       "height": 3913,
+       "preview": {
+        "height": 3913,
+        "url": "https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PwithAMSandtools.jpg",
+        "width": 3913
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PwithAMSandtools.jpg",
+       "width": 3913
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Lightweight semi-rigid construction: Provides structural integrity while remaining easy to move and store",
+       "Excellent insulation: Maintains optimal internal temperature for consistent print quality",
+       "Integrated fume and odor control: Reduces harmful fumes and odors during printing",
+       "Noise reduction by nearly 20 percent: Minimizes printer noise for a quieter workspace",
+       "Easy access design: Allows quick front and side access to the printer and tools"
+      ],
+      "unique_selling_points": [
+       "Combines excellent insulation, fume and odor control, and noise reduction in a collapsible, easy-access enclosure for the Bambu Lab P1P."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 13900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 13900,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 41,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.3
+     },
+     "title": "X1/P1 Series HotBox - 3D Printer Enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.whambamsystems.com/buy/40484057088098:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></p>\n<style>\n        body {\n            font-family: Helvetica, Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n            color: black;\n            overflow-x: hidden;\n        }\n\n        a {\n            color: blue;\n            text-decoration: none;\n        }\n\n        a:hover {\n            text-decoration: underline;\n        }\n\n        .tab-links {\n            display: flex;\n            justify-content: space-between;\n            margin-bottom: 0;\n            background: #fff;\n            padding: 0;\n        }\n\n        .tab-links button {\n            flex-grow: 1;\n            padding: 12px 20px;\n            border: none;\n            background-color: #f2f2f2;\n            cursor: pointer;\n            outline: none;\n            border-top-left-radius: 8px;\n            border-top-right-radius: 8px;\n            transition: background-color 0.3s;\n            border-bottom: 2px solid transparent;\n            color: black;\n        }\n\n        .tab-links button:hover {\n            background-color: orange;\n        }\n\n        .tab-links button.active {\n            background-color: #ccc;\n            border-bottom-color: #ccc;\n            font-weight: bold;\n        }\n\n        .tab-content {\n            display: none;\n            padding: 20px;\n            border: 1px solid #ccc;\n            border-radius: 8px;\n            border-top-left-radius: 0;\n            border-top-right-radius: 0;\n        }\n\n        .tab-content.active {\n            display: block;\n        }\n\n        .collapsible {\n            background-color: #f2f2f2;\n            color: black;\n            cursor: pointer;\n            padding: 10px;\n            width: 100%;\n            border: none;\n            text-align: left;\n            outline: none;\n            font-size: 15px;\n            display: flex;\n            justify-content: flex-start;\n            align-items: center;\n            transition: background-color 0.3s;\n            border-top: 1px solid white;\n            border-radius: 8px;\n        }\n\n        .collapsible:first-of-type {\n            border-top: none;\n        }\n\n        .collapsible.active {\n            background-color: #e2e2e2;\n        }\n\n        .collapsible span {\n            font-size: 18px;\n            margin-right: 10px;\n            transition: transform 0.3s ease;\n        }\n\n        .collapsible.active span {\n            transform: rotate(45deg);\n        }\n\n        .collapsible-content {\n            max-height: 0;\n            padding: 0 18px;\n            overflow: hidden;\n            background-color: white;\n            border-top: none;\n            border-radius: 8px;\n            transition: max-height 0.3s ease-out, padding 0.3s ease-out;\n        }\n\n        .collapsible-content.active {\n            max-height: 1000px;\n            padding: 18px;\n        }\n\n        @media (max-width: 600px) {\n            .tab-links button {\n                padding: 15px 10px;\n            }\n\n            .tab-content {\n                padding: 15px;\n            }\n        }\n\n\n        @media (max-width: 600px) {\n            .tab-content img {\n                width: 100%;\n                height: auto;\n                object-fit: contain;\n                max-width: 100%;\n            }\n        }\n\n        /* Add styling for video size */\n        .video-wrapper {\n            position: relative;\n            padding-bottom: 56.25%; /* 16:9 aspect ratio */\n            height: 0;\n            overflow: hidden;\n            max-width: 100%;\n            background: #000;\n        }\n\n        .video-wrapper iframe {\n            position: absolute;\n            top: 0;\n            left: 0;\n            width: 100%;\n            height: 100%;\n        }\n\n        /* Grey box styling for downloads */\n        .gray-box {\n            background-color: #f2f2f2;\n            padding: 10px;\n            border-radius: 8px;\n            margin-bottom: 10px;\n            display: inline-block;\n        }\n\n        .gray-box a {\n            color: black;\n            text-decoration: none;\n        }\n\n        .gray-box a:hover {\n            text-decoration: underline;\n        }\n    </style>\n<p><b>Fits: Bambu Lab X1/P1 Series</b><br><br></p>\n<div class=\"tab-links\">\n<button class=\"tab-link active\">Description</button> <button class=\"tab-link\">Install &amp; Use</button> <button class=\"tab-link\">Files &amp; Videos</button>\n</div>\n<div class=\"tab-content active\" id=\"description\">\n<p>This X1/P1 HotBox® enclosure is crafted to fit your Bambu Lab X1/P1 seamlessly. If you want to print ABS, Nylon, PC, and other high-temperature filaments, an enclosure is one of the best upgrades for your machine. The X1/P1 Series HotBox® is your solution for stable interior temperature, fume and odor control, reduced printer noise (20%), and convenient access to your Bambu Lab P1P and tools. Check out our <a href=\"https://www.youtube.com/watch?v=oFMZw1OJk-g\" title=\"YouTube P1P HotBox Overview\" target=\"_blank\"> YouTube P1P HotBox® Overview</a> or read on to learn how the P1/X1 Series HotBox® accomplishes these 4 main properties:</p>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Stable, Thermally Insulated, Interior Temperature</button>\n<div class=\"collapsible-content\">\n<p>The HotBox® is made of a sandwich of 3 materials selected to create structure and excellent insulating properties. The result is a lightweight semi-rigid construction, so structural that you can place a few spool holders or even the AMS on top of the unit. The exterior is made of a flame retardant, ballistic Nylon 600D, the center is a structural honeycomb polymer panel selected for its insulation properties, and the interior is a metal lining that reflects and maintains optimal temperatures (between 35-60°C) for the duration of the print. <a href=\"https://www.youtube.com/watch?v=uOE6ZOcFf98\" title=\"Watch our temp testing video on YouTube\" target=\"_blank\"> Watch our temp testing video on YouTube</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Fume and Odor Control</button>\n<div class=\"collapsible-content\">\n<p>Our entire HotBox® line comes with an optional vent port where you can mount a fan to either filter or pipe the fumes out a window. An easy-to-make fume extractor, 3D models, parts lists, and instructions can be found on Cults <a href=\"https://cults3d.com/en/3d-model/tool/wham-bam-exhaust-fan-for-resin-hotbox\" title=\"Wham Bam Exhaust Fan for Resin Hotbox\" target=\"_blank\"> here</a>. A Video Short showing the build is <a href=\"https://www.youtube.com/shorts/bdKS05QcFiU\" title=\"Video Short\" target=\"_blank\"> here</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Reduce Machine Noise</button>\n<div class=\"collapsible-content\">\n<p>The HotBox® was able to achieve a nearly 20% reduction of noise in comparison to bare P1/X1 Series, with Bambu plastic panels, and even the X Series with their metal enclosure. See the machine noise comparison video <a href=\"https://www.youtube.com/watch?v=HvBpUYNc-q0\" title=\"Video\" target=\"_blank\"> here</a>.</p>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Easy Access </button>\n<div class=\"collapsible-content\">\n<p>Unlike other solutions, the X1/P1 HotBox® allows you to access either side of your Bambu Lab printer easily by just unzipping the side and swinging it open. The front door allows full access to the build plate and interior. And the whole unit is removable in less than 10 seconds should you need to work on your printer.</p>\n<p>Other great features:</p>\n<ul>\n<li>A built-in thermometer (two LR44 batteries not included) to easily view the internal temperature.</li>\n<li>The front panel has a large clear window for maximum visibility which is a fully openable door that remains fixed to the side when you need front access. No more glass breakages, no more obstructions!</li>\n<li>The right side panel touts tool pouches and elastic straps to keep your most needed tools at arm's reach.</li>\n<li>The rear has openings for venting, the poop chute, the power chord, and the switch.</li>\n<li>A removable patch should you ever mount a rear panel with an extra CPU fan.</li>\n<li>A line of printable accessories is available on cults. A <a href=\"https://cults3d.com/en/3d-model/tool/poop-bucket-for-p1p-hotbox\" title=\"Custom Poop Bucket for P1P HotBox\" target=\"_blank\">custom poop bucket</a> for use with the P1P HotBox® and an <a href=\"https://cults3d.com/en/3d-model/tool/ams-buffer-mount-for-p1p-in-hotbox\" title=\"AMS Buffer Mount for P1P in HotBox\" target=\"_blank\">AMS buffer mount</a> that allows you to use an upgraded buffer with the P1P HotBox®.</li>\n</ul>\n</div>\n<br>\n<p>Protect your home and workspace from fire with <a href=\"https://www.whambamsystems.com/products/the-cloud-personal-printer-sentry\" title=\"View the entire HotBox line and accessories\" target=\"_blank\"> the Cloud®</a> - Personal Printer Sentry.</p>\n<p><a href=\"https://www.whambamsystems.com/collections/frontpage?pf_pt_product_type=HotBox\" title=\"View the entire HotBox line and accessories\" target=\"_blank\">View the entire HotBox® line and accessories</a>.</p>\n</div>\n<div class=\"tab-content\" id=\"specifications\">\n<b>Printer Fits</b>:<br>\n<ul>\n<li>Bambu Lab X1 Series</li>\n<li>Bambu LAB P1 Series</li>\n</ul>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Content &amp; Tech Info</button>\n<div class=\"collapsible-content\">\n<b>Includes</b>: 1 X1/P1 Series HotBox®<br><br><b>Included features</b>:<br>\n<ul>\n<li>Lightweight semi-rigid construction</li>\n<li>Excellent insulating properties</li>\n<li>3 cable exits, one each on the left, right, and back panels</li>\n<li>Large opening for front access with transparent front window</li>\n<li>Side zippers allow for full access when needed</li>\n<li>2 large spool holder access ports with repositionable covers</li>\n<li>Front-mounted thermometer (two LR44 batteries not included)</li>\n<li>Passage with cover for user-added aspiration and air filtering</li>\n<li>Folds up flat, is easy to store and transport</li>\n<li>2 sets of loops to hold a LED light bar</li>\n</ul>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Upgrades</button>\n<div class=\"collapsible-content\">\n<ul>\n<li>Add a <a href=\"https://www.whambamsystems.com/collections/frontpage/products/hotbox-laser-window-1\" target=\"_blank\"> Laser and UV-safe window</a> upgrade to your HotBox® and protect yourself when using your laser attachment or printing and curing resin.</li>\n<li>Brighten your HotBox®! This HotBox® has loops to add two <a href=\"https://www.whambamsystems.com/collections/frontpage/products/led-usb-bar\" target=\"_blank\">LED lights</a> inside.</li>\n<li>Protect your home and workspace from fire with <a href=\"https://www.whambamsystems.com/products/the-cloud-personal-printer-sentry\" target=\"_blank\"> the Cloud®</a> - Personal Printer Sentry.</li>\n</ul>\n</div>\n</div>\n<div class=\"tab-content\" id=\"reviews\">\n<p>See our <a href=\"https://www.whambamsystems.com/pages/hotbox-supportpage\" target=\"_blank\"> HotBox® Support Page</a>.</p>\n<b>Build instructions</b>:<br><a href=\"https://www.youtube.com/watch?v=oFMZw1OJk-g&amp;t=17s\" target=\"_blank\">Video Install of the P1P HotBox®</a><br><br>\n<ol>\n<li>Unpack all components from the enclosure’s box, ensuring all parts are included.</li>\n<li>Remove your HotBox® from its packaging, unfold, and lay flat with the metallic side upward.</li>\n<li>Locate the small rectangular rear of the thermometer. Push the cover in the direction of the arrow and swing it upward. You will need to purchase 2 LR44 Batteries (also listed as A76 or 357) and Insert 2 LR44 batteries with the + side up (large smooth side). Push each down so it clicks in. Now swing down the cover and slide it in the other direction to close.</li>\n</ol>\n<br>\n<div class=\"image-wrapper\"><img src=\"https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PUnfolding.jpg?v=1714060544\" alt=\"P1P HotBox\"></div>\n<br>\n</div>\n<div class=\"tab-content\" id=\"shipping\">\n<button class=\"collapsible\" type=\"button\"><span>+</span>Other Downloads</button>\n<div class=\"collapsible-content\">\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/poop-bucket-for-p1p-hotbox\" style=\"color: blue;\" target=\"_blank\"> Poop Bucket for P1P HotBox®</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/ams-buffer-mount-for-p1p-in-hotbox\" style=\"color: blue;\" target=\"_blank\">AMS Buffer Mount For P1P HotBox®</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/grommet-for-pass-through-hole-in-wham-bam-hotbox\" style=\"color: blue;\" target=\"_blank\">Grommet To Create Pass Through Hole</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/wham-bam-exhaust-fan-for-resin-hotbox\" style=\"color: blue;\" target=\"_blank\">DIY HotBox® Exhaust Fan</a></div>\n<br>\n<div class=\"gray-box\"><a href=\"https://cults3d.com/en/3d-model/tool/fumes-extraction-unit-from-wainlux-adapter-for-wham-bam-exhaust-opening\" style=\"color: blue;\" target=\"_blank\"> Bambu Lab P1P Fumes Extraction Unit (From Wainlux) Adapter</a></div>\n<br>\n</div>\n<button class=\"collapsible\" type=\"button\"><span>+</span>Helpful Videos</button>\n<div class=\"collapsible-content\">\n<p>To see the HotBox® in action, please check out our<a href=\"https://www.youtube.com/playlist?list=PLSlhFLYCaWuLTd-_aORsz_yAu9UTcaHb5\" target=\"_blank\"> HotBox® YouTube Playlist</a>.</p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=TVXLtAkSKqk\" target=\"_blank\">Adding a Hole and Grommet to a Wham Bam HotBox® </a></li>\n<li><a href=\"https://www.youtube.com/watch?v=uOE6ZOcFf98\" target=\"_blank\">Temperature Testing our Bambu Lab P1P Enclosure</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=HvBpUYNc-q0\" target=\"_blank\">Noise Testing Bambu Lab Machines vs P1P HotBox®</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=bdKS05QcFiU\" target=\"_blank\"> Print and assemble this DIY Exhaust Fan to use on any FDM or Resin version</a></li>\n</ul>\n</div>\n<script>\n(function () {\n  var me = document.currentScript;\n  var root = (me && me.parentNode && me.parentNode.querySelector('.tab-links')) ? me.parentNode : document;\n\n\n  root.querySelectorAll('.tab-links').forEach(function (links) {\n    if (links.getAttribute('data-wb-tabs')) return;\n    links.setAttribute('data-wb-tabs', '1');\n    var box = links.parentNode;\n    var buttons = links.querySelectorAll('.tab-link');\n    var panels = [];\n    for (var i = 0; i < box.children.length; i++) {\n      if (box.children[i].classList.contains('tab-content')) panels.push(box.children[i]);\n    }\n    buttons.forEach(function (btn, n) {\n      btn.addEventListener('click', function (e) {\n        e.preventDefault();\n        buttons.forEach(function (b) { b.classList.remove('active'); });\n        panels.forEach(function (p) { p.classList.remove('active'); p.style.display = ''; });\n        btn.classList.add('active');\n        if (panels[n]) panels[n].classList.add('active');\n      });\n    });\n  });\n\n\n  root.querySelectorAll('.collapsible').forEach(function (btn) {\n    if (btn.getAttribute('data-wb-col')) return;\n    btn.setAttribute('data-wb-col', '1');\n    btn.addEventListener('click', function (e) {\n      e.preventDefault();\n      var content = btn.nextElementSibling;\n      btn.classList.toggle('active');\n      if (content && content.classList.contains('collapsible-content')) content.classList.toggle('active');\n    });\n  });\n})();\n</script>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "p1p-hotbox-3d-printer-enclosure",
+       "id": "gid://shopify/ProductVariant/40484057088098",
+       "media": [
+        {
+         "alt_text": "X1/P1 Series HotBox - 3D Printer Enclosure",
+         "height": 3913,
+         "preview": {
+          "height": 3913,
+          "url": "https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PwithAMSandtools.jpg",
+          "width": 3913
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0016/6179/6450/files/P1PwithAMSandtools.jpg",
+         "width": 3913
+        }
+       ],
+       "price": {
+        "amount": 13900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 10,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3.9
+       },
+       "seller": {
+        "domain": "wham-bam-systems.myshopify.com",
+        "id": "gid://shopify/Shop/1661796450",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/1661796450/policies/6553698402.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/1661796450/policies/6553731170.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/1661796450/policies/6553665634.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/1661796450/policies/8767602786.html"
+         }
+        ],
+        "name": "Wham Bam Systems",
+        "url": "https://www.whambamsystems.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6910055514210",
+       "source": "shopify",
+       "title": "X1/P1 Series HotBox - 3D Printer Enclosure",
+       "url": "https://www.whambamsystems.com/products/p1p-hotbox-3d-printer-enclosure?variant=40484057088098&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h5 class=\"tw-my-2 first:tw-mt-0 lg:tw-text-[14px] md:tw-text-[12px] lg:tw-leading-[27px] last:tw-mb-0 product-info__block\" data-mce-fragment=\"1\"><span style=\"color: #000000;\">Dustproof and Smokeproof</span></h5>\n<div class=\"product_sales_points tw-my-[15px] lg:tw-leading-[32px]\" data-mce-fragment=\"1\">\n<ul>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Enclosed Design to Isolate Smoke and Dust</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Exhaust Smoke and Dust Purify the Air</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Waterproof and Fireproof Stable and Reliable</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Dual-view Window Design for Easy Observation</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Folding Storage Easy to Operate</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Larger Size Wider Compatibility</span></li>\n</ul>\n</div>"
+     },
+     "handle": "laser-engraver-protection-enclosure-pro",
+     "id": "gid://shopify/p/tLa90YZiSDMky2ywKCK4",
+     "media": [
+      {
+       "alt_text": "The black Creality Falcon Protection Enclosure Pro for Falcon Laser Engravers features smokeproof, dustproof design, a large orange-tinted dual-view window, visible side vent with flexible gray hose, and an illuminated CREALITY logo on the front.",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0799/8714/7049/files/Protection_Enclosure_Pro_for_Falcon_Laser.png",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0799/8714/7049/files/Protection_Enclosure_Pro_for_Falcon_Laser.png",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dustproof and smokeproof enclosure isolates smoke and dust to maintain a cleaner workspace",
+       "Waterproof and fireproof construction ensures long-term stability and safety",
+       "Dual view windows provide clear visibility for easy monitoring of print jobs",
+       "Folding storage design allows for convenient and compact storage",
+       "Wider compatibility accommodates various 3D printer models"
+      ],
+      "unique_selling_points": [
+       "Dual view window and waterproof, fireproof construction for enhanced safety and visibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 5900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5900,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 6,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Creality FalconProtection Enclosure Pro",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.crealityfalcon.com/buy/46995516784937:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h5 class=\"tw-my-2 first:tw-mt-0 lg:tw-text-[14px] md:tw-text-[12px] lg:tw-leading-[27px] last:tw-mb-0 product-info__block\" data-mce-fragment=\"1\"><span style=\"color: #000000;\">Dustproof and Smokeproof</span></h5>\n<div class=\"product_sales_points tw-my-[15px] lg:tw-leading-[32px]\" data-mce-fragment=\"1\">\n<ul>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Enclosed Design to Isolate Smoke and Dust</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Exhaust Smoke and Dust Purify the Air</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Waterproof and Fireproof Stable and Reliable</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Dual-view Window Design for Easy Observation</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Folding Storage Easy to Operate</span></li>\n<li><span class=\"sale-family\" data-mce-fragment=\"1\">Larger Size Wider Compatibility</span></li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "laser-engraver-protection-enclosure-pro",
+       "id": "gid://shopify/ProductVariant/46995516784937",
+       "list_price": {
+        "amount": 10900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "The black Creality Falcon Protection Enclosure Pro for Falcon Laser Engravers features smokeproof, dustproof design, a large orange-tinted dual-view window, visible side vent with flexible gray hose, and an illuminated CREALITY logo on the front.",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0799/8714/7049/files/Protection_Enclosure_Pro_for_Falcon_Laser.png",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0799/8714/7049/files/Protection_Enclosure_Pro_for_Falcon_Laser.png",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 5900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 8,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "1d0af8-2.myshopify.com",
+        "id": "gid://shopify/Shop/79987147049",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/79987147049/policies/36061118761.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/79987147049/policies/36061151529.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/79987147049/policies/36061085993.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/79987147049/policies/36061184297.html"
+         }
+        ],
+        "name": "CrealityFalcon | US",
+        "url": "https://www.crealityfalcon.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8785695605033",
+       "source": "shopify",
+       "title": "Creality FalconProtection Enclosure Pro",
+       "url": "https://www.crealityfalcon.com/products/laser-engraver-protection-enclosure-pro?variant=46995516784937&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3 data-start=\"67\" data-end=\"133\"><strong data-start=\"71\" data-end=\"133\">AD5X Enclosure Kit – Perfect Protection for Your 3D Prints</strong></h3>\n<p data-start=\"135\" data-end=\"507\">The AD5X Enclosure Kit is specifically designed to enhance the printing stability, safety, and overall performance of your Flashforge AD5X. By creating a controlled environment, the enclosure helps shield your prints from dust, drafts, and temperature fluctuations—ensuring consistently high-quality results, especially with temperature-sensitive materials like ABS or PC.</p>\n<p data-start=\"509\" data-end=\"737\">Its durable construction and quick installation make it a practical addition to any workspace. The sleek, space-efficient design integrates seamlessly with the AD5X while offering full visibility and easy access during printing.</p>\n<h3 data-start=\"739\" data-end=\"762\">🔧 <strong data-start=\"746\" data-end=\"762\">Key Benefits</strong>\n</h3>\n<ul data-start=\"764\" data-end=\"1308\">\n<li data-start=\"764\" data-end=\"875\">\n<p data-start=\"766\" data-end=\"875\"><strong data-start=\"766\" data-end=\"794\">Improved Print Stability</strong> – Maintains a consistent internal temperature to prevent warping and cracking.</p>\n</li>\n<li data-start=\"876\" data-end=\"988\">\n<p data-start=\"878\" data-end=\"988\"><strong data-start=\"878\" data-end=\"917\">Protects from External Interference</strong> – Keeps out dust and air currents for cleaner, more reliable prints.</p>\n</li>\n<li data-start=\"989\" data-end=\"1114\">\n<p data-start=\"991\" data-end=\"1114\"><strong data-start=\"991\" data-end=\"1023\">Ideal for Advanced Filaments</strong> – Supports successful printing with ABS, ASA, and other temperature-sensitive materials.</p>\n</li>\n<li data-start=\"1115\" data-end=\"1201\">\n<p data-start=\"1117\" data-end=\"1201\"><strong data-start=\"1117\" data-end=\"1142\">Easy to Install &amp; Use</strong> – Tool-free setup with optimized fit for the AD5X frame.</p>\n</li>\n<li data-start=\"1202\" data-end=\"1308\">\n<p data-start=\"1204\" data-end=\"1308\"><strong data-start=\"1204\" data-end=\"1233\">Professional-Grade Design</strong> – Sturdy, enclosed structure with clear panels for monitoring your prints.</p>\n</li>\n</ul>\n<p data-start=\"1310\" data-end=\"1457\">Whether you're a hobbyist or a professional, the AD5X Enclosure Kit is the perfect upgrade to achieve more precise, stable, and flawless 3D prints.</p>"
+     },
+     "handle": "ad5x-enclosure-kit",
+     "id": "gid://shopify/p/7tA7AYhZh1hmDpQRmrDkrr",
+     "media": [
+      {
+       "alt_text": "Flashforge AD5X DIY Enclosure kit box for FDM 3D printer.",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0591/8641/3646/files/ef759a6142f77f598dfc484950535f94.png",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0591/8641/3646/files/ef759a6142f77f598dfc484950535f94.png",
+       "width": 1200
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Full enclosure system with frame, panels, doors, and mounting hardware for complete protection",
+       "Maintains consistent internal temperature to prevent warping and cracking, especially with temperature-sensitive materials",
+       "Shields print area from dust, drafts, and temperature fluctuations for cleaner, more reliable prints",
+       "Reduces printing noise from 65 dB to 55 dB for a quieter workspace",
+       "Odor control by containing fumes and particles, improving workspace comfort"
+      ],
+      "unique_selling_points": [
+       "Custom-engineered enclosure kit specifically designed for the Flashforge AD5X, providing enhanced thermal stability, dust protection, and user safety."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4900,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 137,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "Enclosure Kit for Flashforge AD5X",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.flashforge.com/buy/42664518942798:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3 data-start=\"67\" data-end=\"133\"><strong data-start=\"71\" data-end=\"133\">AD5X Enclosure Kit – Perfect Protection for Your 3D Prints</strong></h3>\n<p data-start=\"135\" data-end=\"507\">The AD5X Enclosure Kit is specifically designed to enhance the printing stability, safety, and overall performance of your Flashforge AD5X. By creating a controlled environment, the enclosure helps shield your prints from dust, drafts, and temperature fluctuations—ensuring consistently high-quality results, especially with temperature-sensitive materials like ABS or PC.</p>\n<p data-start=\"509\" data-end=\"737\">Its durable construction and quick installation make it a practical addition to any workspace. The sleek, space-efficient design integrates seamlessly with the AD5X while offering full visibility and easy access during printing.</p>\n<h3 data-start=\"739\" data-end=\"762\">🔧 <strong data-start=\"746\" data-end=\"762\">Key Benefits</strong>\n</h3>\n<ul data-start=\"764\" data-end=\"1308\">\n<li data-start=\"764\" data-end=\"875\">\n<p data-start=\"766\" data-end=\"875\"><strong data-start=\"766\" data-end=\"794\">Improved Print Stability</strong> – Maintains a consistent internal temperature to prevent warping and cracking.</p>\n</li>\n<li data-start=\"876\" data-end=\"988\">\n<p data-start=\"878\" data-end=\"988\"><strong data-start=\"878\" data-end=\"917\">Protects from External Interference</strong> – Keeps out dust and air currents for cleaner, more reliable prints.</p>\n</li>\n<li data-start=\"989\" data-end=\"1114\">\n<p data-start=\"991\" data-end=\"1114\"><strong data-start=\"991\" data-end=\"1023\">Ideal for Advanced Filaments</strong> – Supports successful printing with ABS, ASA, and other temperature-sensitive materials.</p>\n</li>\n<li data-start=\"1115\" data-end=\"1201\">\n<p data-start=\"1117\" data-end=\"1201\"><strong data-start=\"1117\" data-end=\"1142\">Easy to Install &amp; Use</strong> – Tool-free setup with optimized fit for the AD5X frame.</p>\n</li>\n<li data-start=\"1202\" data-end=\"1308\">\n<p data-start=\"1204\" data-end=\"1308\"><strong data-start=\"1204\" data-end=\"1233\">Professional-Grade Design</strong> – Sturdy, enclosed structure with clear panels for monitoring your prints.</p>\n</li>\n</ul>\n<p data-start=\"1310\" data-end=\"1457\">Whether you're a hobbyist or a professional, the AD5X Enclosure Kit is the perfect upgrade to achieve more precise, stable, and flawless 3D prints.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ad5x-enclosure-kit",
+       "id": "gid://shopify/ProductVariant/42664518942798",
+       "media": [
+        {
+         "alt_text": "Flashforge AD5X DIY Enclosure kit box for FDM 3D printer.",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0591/8641/3646/files/ef759a6142f77f598dfc484950535f94.png",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0591/8641/3646/files/ef759a6142f77f598dfc484950535f94.png",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 4900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 71,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.3
+       },
+       "seller": {
+        "domain": "b91b69-07.myshopify.com",
+        "id": "gid://shopify/Shop/59186413646",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/59186413646/policies/25692274766.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/59186413646/policies/25692307534.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/59186413646/policies/25692241998.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/59186413646/policies/25692340302.html"
+         }
+        ],
+        "name": "Flashforge",
+        "url": "https://www.flashforge.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7650453585998",
+       "source": "shopify",
+       "title": "Enclosure Kit for Flashforge AD5X",
+       "url": "https://www.flashforge.com/products/ad5x-enclosure-kit?variant=42664518942798&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p> </p>\n<p>A high-impact polycarbonate enclosure with a hinged opaque cover and molded mounting flanges. Its stainless-steel locking latch offers a polished look and corrosion resistance, making it perfect for any environment for years. Providing robust protection with a UL/cUL NEMA Type 4X and IP66 rating. Bosses on the rear wall and lid provide multiple mounting options for components. This light gray enclosure includes a hydro-phobic urethane gasket for a secure seal. Designed to withstand a wide temperature Range: -31°F up to 266°F ( -35°C up to 130°C), it also offers excellent resistance to impacts and UV exposure, making it suitable for various demanding applications.</p>\n<p>Protection Rating: UL/cUL NEMA TYPE 4X IP66</p>"
+     },
+     "handle": "integra-impact-series-polycarbonate-enclosure-opaque-cover-stainless-steel-locking-latch-mounting-feet",
+     "id": "gid://shopify/p/2Q7990JcwtvIt9dW7FR79x",
+     "media": [
+      {
+       "alt_text": "Integra Impact Series Polycarbonate Enclosure With Stainless Steel Locking Latch and Opaque Cover - Nema Supply",
+       "height": 600,
+       "preview": {
+        "height": 600,
+        "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/products/integra-impact-series-polycarbonate-enclosure-with-stainless-steel-locking-latch-and-opaque-cover-1306527.jpg",
+        "width": 600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/products/integra-impact-series-polycarbonate-enclosure-with-stainless-steel-locking-latch-and-opaque-cover-1306527.jpg",
+       "width": 600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High-impact polycarbonate body ensures robust protection against impacts and UV exposure",
+       "Stainless steel locking latch provides secure closure and corrosion resistance",
+       "Opaque cover with hydrophobic urethane gasket delivers a secure, weather-resistant seal",
+       "UL, cUL, NEMA Type 4X, and IP66 rated for maximum electrical safety and protection",
+       "Multiple mounting options via rear wall and lid bosses for versatile installation"
+      ],
+      "unique_selling_points": [
+       "Combines high-impact polycarbonate construction with a stainless steel locking latch and IP66-rated sealing for superior protection and durability."
+      ]
+     },
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "10X8X4"
+        },
+        {
+         "label": "10X8X6"
+        },
+        {
+         "label": "12X10X4"
+        },
+        {
+         "label": "4X4X3"
+        },
+        {
+         "label": "5X5X3"
+        },
+        {
+         "label": "6X4X4"
+        },
+        {
+         "label": "6X6X3"
+        },
+        {
+         "label": "8X6X3"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5199,
+       "currency": "USD"
+      }
+     },
+     "title": "Integra Impact Series Polycarbonate Enclosure With Stainless Steel Locking Latch and Opaque Cover",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://nemasupply.com/buy/19541350416453:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p> </p>\n<p>A high-impact polycarbonate enclosure with a hinged opaque cover and molded mounting flanges. Its stainless-steel locking latch offers a polished look and corrosion resistance, making it perfect for any environment for years. Providing robust protection with a UL/cUL NEMA Type 4X and IP66 rating. Bosses on the rear wall and lid provide multiple mounting options for components. This light gray enclosure includes a hydro-phobic urethane gasket for a secure seal. Designed to withstand a wide temperature Range: -31°F up to 266°F ( -35°C up to 130°C), it also offers excellent resistance to impacts and UV exposure, making it suitable for various demanding applications.</p>\n<p>Protection Rating: UL/cUL NEMA TYPE 4X IP66</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "integra-impact-series-polycarbonate-enclosure-opaque-cover-stainless-steel-locking-latch-mounting-feet",
+       "id": "gid://shopify/ProductVariant/19541350416453",
+       "media": [
+        {
+         "alt_text": "Integra Impact Series Polycarbonate Enclosure With Stainless Steel Locking Latch and Opaque Cover - Nema Supply",
+         "height": 600,
+         "preview": {
+          "height": 600,
+          "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/products/integra-impact-series-polycarbonate-enclosure-with-stainless-steel-locking-latch-and-opaque-cover-1306527.jpg",
+          "width": 600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/products/integra-impact-series-polycarbonate-enclosure-with-stainless-steel-locking-latch-and-opaque-cover-1306527.jpg",
+         "width": 600
+        }
+       ],
+       "options": [
+        {
+         "label": "4X4X3",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 5199,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "nema-supply.myshopify.com",
+        "id": "gid://shopify/Shop/2020409413",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808469573.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808502341.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808436805.html"
+         }
+        ],
+        "name": "Nema Supply",
+        "url": "https://nemasupply.com"
+       },
+       "seller_product_id": "gid://shopify/Product/2000356474949",
+       "source": "shopify",
+       "title": "Integra Impact Series Polycarbonate Enclosure With Stainless Steel Locking Latch and Opaque Cover",
+       "url": "https://nemasupply.com/products/integra-impact-series-polycarbonate-enclosure-opaque-cover-stainless-steel-locking-latch-mounting-feet?variant=19541350416453&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<ul>\n<li>Plug &amp; Play, Hot-Swappable. Tool free design, easy to install.</li>\n<li>Hi-Speed USB 3.0 to SATA interface.</li>\n<li>Compatible with 2.5\" SATA hard drives. Optimized for SSD, Supports UASP SATA III.</li>\n<li>Supports 7mm/9.5mm thickness HDD.</li>\n<li>No driver needed.</li>\n</ul>"
+     },
+     "handle": "ec-ocub",
+     "id": "gid://shopify/p/BwWPCkl29kPLzPqQIpxjE",
+     "media": [
+      {
+       "alt_text": "2.5-Inch SATA to USB 3.0 Enclosure",
+       "height": 3000,
+       "preview": {
+        "height": 3000,
+        "url": "https://cdn.shopify.com/s/files/1/0604/2461/8241/products/EC-OCUB-Main-New.jpg",
+        "width": 3000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0604/2461/8241/products/EC-OCUB-Main-New.jpg",
+       "width": 3000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Plug and play hot-swappable design: Allows easy installation and removal of drives without tools for maximum convenience",
+       "High-speed USB 3.0 to SATA III interface: Delivers fast data transfer for improved workflow efficiency",
+       "Supports SSD and HDD: Compatible with a wide range of storage devices for flexible use",
+       "Tool-less locking mechanism: Enhances security and simplifies drive removal",
+       "No driver needed: Instantly recognized by the system for seamless operation"
+      ],
+      "unique_selling_points": [
+       "Tool-free, hot-swappable design enables quick, hassle-free installation and removal of 2.5 inch SATA drives."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1199,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 8862,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "2.5-Inch SATA to USB 3.0 Enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://sabrent.com/buy/42192369189121:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<ul>\n<li>Plug &amp; Play, Hot-Swappable. Tool free design, easy to install.</li>\n<li>Hi-Speed USB 3.0 to SATA interface.</li>\n<li>Compatible with 2.5\" SATA hard drives. Optimized for SSD, Supports UASP SATA III.</li>\n<li>Supports 7mm/9.5mm thickness HDD.</li>\n<li>No driver needed.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ec-ocub",
+       "id": "gid://shopify/ProductVariant/42192369189121",
+       "media": [
+        {
+         "alt_text": "2.5-Inch SATA to USB 3.0 Enclosure",
+         "height": 3000,
+         "preview": {
+          "height": 3000,
+          "url": "https://cdn.shopify.com/s/files/1/0604/2461/8241/products/EC-OCUB-Main-New.jpg",
+          "width": 3000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0604/2461/8241/products/EC-OCUB-Main-New.jpg",
+         "width": 3000
+        }
+       ],
+       "price": {
+        "amount": 1199,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4
+       },
+       "seller": {
+        "domain": "sabrentstore.myshopify.com",
+        "id": "gid://shopify/Shop/60424618241",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/60424618241/policies/26484375809.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/60424618241/policies/26484408577.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/60424618241/policies/26484343041.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/60424618241/policies/26484441345.html"
+         }
+        ],
+        "name": "Sabrent",
+        "url": "https://sabrent.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7500830703873",
+       "source": "shopify",
+       "title": "2.5-Inch SATA to USB 3.0 Enclosure",
+       "url": "https://sabrent.com/products/ec-ocub?variant=42192369189121&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<ul class=\"tabs\">\n<li class=\"active\">Description</li>\n</ul>\n<p><br><meta charset=\"utf-8\"><span>The </span><strong>Altelix NP120907A1C</strong><span> NEMA 4X enclosure is simple to install because no wiring is required. Simply mount the enclosure and plug the pre-wired 5 foot power cord into a nearby outlet. Two internal pre-wired 120VAC power outlets are provided to power your equipment.</span><br><br><meta charset=\"utf-8\"><strong>Polycarbonate + ABS Protection Built to Last</strong><br><span>This enclosure is molded out of UV resistant Polycarbonate + ABS, an industrial grade plastic with greater strength and durability than standard ABS. This enclosure can be easily drilled and modified by the installer to suit unique site requirements </span><span>It meets or exceeds NEMA 1, 2, 4, 4X, 12, 13 and IEC 529 IP65, IP66</span><span>.</span><br><br><br><br><strong>Power</strong><br><span>This configuration consists of the PC+ABS NEMA enclosure with hinged lid and a 120VAC power outlet. A 5 foot pre-wired power cord is included to power the enclosure, so no additional wiring is required. A cable grommet on the enclosure allows cables to be connected to internal devices. Knock-outs are also provided on the enclosure for additional wiring. Extra cable grommets are included with the accessory kit.</span><br><br><meta charset=\"utf-8\"><strong>Complete with Cable Grommets and Wire Management Accessories</strong><span></span><br><span>This enclosure includes an assortment of cable grommets and cable glands that can be installed in the knock-out holes for a weather resistant seal. Also included in the accessory kit are wall anchors, zip ties, wire management loops, hook-n-loop tape, ground wire, (2) door locking keys and more.</span><br><br></p>"
+     },
+     "handle": "12x9x7-nema-4x-pc-abs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord",
+     "id": "gid://shopify/p/3QC2o68l1ugCxLLb8s6jSi",
+     "media": [
+      {
+       "alt_text": "Altelix 12x9x7 NEMA 4X PC+ABS Weatherproof Utility Box NEMA Enclosure with Aluminum Mounting Plate, 120 VAC Outlet & Power Cord - Nema Supply",
+       "height": 608,
+       "preview": {
+        "height": 608,
+        "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/files/altelix-12x9x7-nema-4x-pcabs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord-1913720.jpg",
+        "width": 608
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/files/altelix-12x9x7-nema-4x-pcabs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord-1913720.jpg",
+       "width": 608
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "UV-resistant polycarbonate ABS construction ensures long-lasting durability in harsh environments",
+       "Pre-wired 120V AC outlets allow immediate powering of equipment without additional wiring",
+       "Includes 5-foot pre-wired power cord for convenient installation",
+       "Comes with cable grommets and wire management accessories for flexible cable routing",
+       "Hinged lid and knockouts enable easy access and customization"
+      ],
+      "unique_selling_points": [
+       "No wiring required—mounts directly and includes pre-wired 120V outlets and 5-foot power cord for immediate installation."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 15499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 15499,
+       "currency": "USD"
+      }
+     },
+     "title": "Altelix 12x9x7 NEMA 4X Polycarbonate Enclosure with 120 VAC Outlets & Power Cord",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://nemasupply.com/buy/44581536694553:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<ul class=\"tabs\">\n<li class=\"active\">Description</li>\n</ul>\n<p><br><meta charset=\"utf-8\"><span>The </span><strong>Altelix NP120907A1C</strong><span> NEMA 4X enclosure is simple to install because no wiring is required. Simply mount the enclosure and plug the pre-wired 5 foot power cord into a nearby outlet. Two internal pre-wired 120VAC power outlets are provided to power your equipment.</span><br><br><meta charset=\"utf-8\"><strong>Polycarbonate + ABS Protection Built to Last</strong><br><span>This enclosure is molded out of UV resistant Polycarbonate + ABS, an industrial grade plastic with greater strength and durability than standard ABS. This enclosure can be easily drilled and modified by the installer to suit unique site requirements </span><span>It meets or exceeds NEMA 1, 2, 4, 4X, 12, 13 and IEC 529 IP65, IP66</span><span>.</span><br><br><br><br><strong>Power</strong><br><span>This configuration consists of the PC+ABS NEMA enclosure with hinged lid and a 120VAC power outlet. A 5 foot pre-wired power cord is included to power the enclosure, so no additional wiring is required. A cable grommet on the enclosure allows cables to be connected to internal devices. Knock-outs are also provided on the enclosure for additional wiring. Extra cable grommets are included with the accessory kit.</span><br><br><meta charset=\"utf-8\"><strong>Complete with Cable Grommets and Wire Management Accessories</strong><span></span><br><span>This enclosure includes an assortment of cable grommets and cable glands that can be installed in the knock-out holes for a weather resistant seal. Also included in the accessory kit are wall anchors, zip ties, wire management loops, hook-n-loop tape, ground wire, (2) door locking keys and more.</span><br><br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "12x9x7-nema-4x-pc-abs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord",
+       "id": "gid://shopify/ProductVariant/44581536694553",
+       "media": [
+        {
+         "alt_text": "Altelix 12x9x7 NEMA 4X PC+ABS Weatherproof Utility Box NEMA Enclosure with Aluminum Mounting Plate, 120 VAC Outlet & Power Cord - Nema Supply",
+         "height": 608,
+         "preview": {
+          "height": 608,
+          "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/files/altelix-12x9x7-nema-4x-pcabs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord-1913720.jpg",
+          "width": 608
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0020/2040/9413/files/altelix-12x9x7-nema-4x-pcabs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord-1913720.jpg",
+         "width": 608
+        }
+       ],
+       "price": {
+        "amount": 15499,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "nema-supply.myshopify.com",
+        "id": "gid://shopify/Shop/2020409413",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808469573.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808502341.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/2020409413/policies/6808436805.html"
+         }
+        ],
+        "name": "Nema Supply",
+        "url": "https://nemasupply.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8122160546073",
+       "source": "shopify",
+       "title": "Altelix 12x9x7 NEMA 4X Polycarbonate Enclosure with 120 VAC Outlets & Power Cord",
+       "url": "https://nemasupply.com/products/12x9x7-nema-4x-pc-abs-weatherproof-utility-box-nema-enclosure-with-aluminum-mounting-plate-120-vac-outlet-power-cord?variant=44581536694553&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p class=\"p1\"><span class=\"s1\">This Arduino Uno &amp; Mega case is <strong>stackable</strong>, <strong>modular</strong>, <strong>extensible</strong> and <strong>hackable</strong>! </span></p>\n<p class=\"p1\"><span class=\"s1\">It fits both Uno/Leonardo AND Mega footprints, and can accommodate any boards that have an Arduino footprint like SparkFun RedBoard, BlackBoard Artemis, etc. (see list of compatible devices below). </span></p>\n<p class=\"p1\"><span class=\"s1\">As of August 10th, 2026, it also fits the new Arduino Uno Q! It has cutouts on the base plate to accommodate the new headers on the <strong>bottom</strong> of the board, and a cutout on the side plate to match the reset button (also found on the Arduino Uno Rev 4. Any new boards you purchase now will include support for UNO Rev 4 and UNO Q!</span></p>\n<p class=\"p1\"><span class=\"s1\"><span>The case has an internal clearance of over 1.2 inches, which gives you ample room to install a shield (or two) of your choice!</span></span></p>\n<p class=\"p1\">Extension kits and add-ons are available to add functionality to your enclosure - add , switches, ultrasonic sensor, DB9/RS232 port, micro-servo and more!<span> </span><a href=\"https://www.protostax.com/collections/all/arduino\">Check out our extension kits and add-ons</a>!</p>\n<h3 class=\"p1\"><span class=\"s1\"><b>Features</b></span></h3>\n<ul class=\"ul1\">\n<li class=\"li2\">Fits both Uno/Leonardo AND Mega footprints!</li>\n<li class=\"li2\">New! Fits UNO Q with cutouts on the base plate to accommodate bottom headers!</li>\n<li class=\"li2\">Internal clearance of over 1.2 inches, which gives you ample room for a shield (or even two!)</li>\n<li class=\"li2\">Made from high quality cast acrylic</li>\n<li class=\"li2\">Clear acrylic provides a beautiful finish with a modern visual design with full view of your electronics</li>\n<li class=\"li2\">Our Obsidian black acrylic gives you a sleek and attractive option when you want to keep your brains and sinew under the covers and just highlight the peripherals</li>\n<li class=\"li2\">Pre-drilled and threaded mounting holes in the base plate allow you to directly screw the board in without needing additional nuts, making it very easy and elegant for you to use. A thoughtful feature that you will surely appreciate if you have larger hands and dealing with tiny M2.5 nuts!  </li>\n<li class=\"li2\">Acrylic risers raise your board off the base plate for improved airflow and firm level mounting</li>\n<li class=\"li2\">Metal standoffs and screws provide solid and durable support </li>\n<li class=\"li2\">Rubber Feet protect your table surface while providing maximum airflow by elevating the enclosure</li>\n<li class=\"li2\">Cutouts leave USB and power ports accessible </li>\n<li class=\"li2\">\n<i>Cable Management</i>: Easily accessible cable management cutouts in the side walls allow you to smoothly insert your cables and access wiring to external systems. In the Open Configuration, the Wall slots on the top and bottom plates (where the side walls usually insert into) can also be used for cable management for even more accessibility and organization.</li>\n<li class=\"li2\">You can mix, match, customize, and expand your project enclosure because ProtoStax enclosures are modular and stackable and work with each other. </li>\n<li class=\"li2\">Extension kits and add-ons help add functionality to your enclosure, such as adding switches, displays, sensor peripherals, etc.<br>\n</li>\n</ul>\n<p><br></p>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>\n<h3 class=\"p1\"><span class=\"s1\"><b>List of Compatible Devices</b></span></h3>\n<table style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', Roboto, 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 1.4em;\" width=\"100%\">\n<tbody>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/products/uno-r4-minima\"><span class=\"s4\">Arduino UNO R4 Minima</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/products/uno-r4-wifi\"><span class=\"s4\">Arduino UNO R4 WiFi</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/pages/uno-q\"><span class=\"s4\">Arduino UNO Q</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-rev3\"><span class=\"s4\">Arduino Uno</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-wifi-rev2\"><span class=\"s4\">Arduino Uno WiFi</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-wifi-rev2\"><span class=\"s4\">Arduino Uno WiFi</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-101\"><span class=\"s4\">Arduino 101</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-zero\"><span class=\"s4\">Arduino Zero</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/mega-2560-r3\"><span class=\"s4\">Arduino Mega 2560</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-yun-rev-2\"><span class=\"s4\">Arduino Yùn</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/due\"><span class=\"s4\">Arduino Due</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-starter-kit\"><span class=\"s4\">Arduino Start Kit</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/13975\"><span class=\"s4\">SparkFun RedBoard</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/15412\"><span class=\"s4\">BlackBoard Artemis ATP</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/15332\"><span class=\"s4\">BlackBoard Artemis</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<span class=\"s4\"><a href=\"https://www.sparkfun.com/products/15123\">SparkFun RedBoard Qwiic</a></span>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/14812\"><span class=\"s4\">SparkFun RedBoard Turbo</span></a><span class=\"s4\"></span>\n</td>\n<td>and more!<span class=\"s4\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<h3 class=\"p1\"><br></h3>\n<h3 class=\"p1\">\n<a title=\"Visualize in your space using AR\" href=\"https://size.link?l=4.84&amp;w=3.24&amp;h=1.8&amp;units=in\"><span class=\"s1\"><b></b></span></a><br>\n</h3>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>"
+     },
+     "handle": "protostax-for-arduino",
+     "id": "gid://shopify/p/2vphPXPQgbxIoNH8Vco24f",
+     "media": [
+      {
+       "alt_text": "ProtoStax Enclosure for Arduino with Arduino UNO Q in Fully Closed Configuration",
+       "height": 3024,
+       "preview": {
+        "height": 3024,
+        "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/files/IMG_4175.jpg",
+        "width": 4032
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/files/IMG_4175.jpg",
+       "width": 4032
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stackable modular design enables easy expansion and customization for various projects",
+       "Fits both Arduino Uno and Mega footprints, as well as newer boards like Uno Q and Uno R4",
+       "Clear acrylic construction provides full visibility of electronics and a modern look",
+       "Pre-drilled and threaded mounting holes allow direct screw-in installation without additional nuts",
+       "Cable management cutouts and wall slots offer organized, accessible wiring for external systems"
+      ],
+      "unique_selling_points": [
+       "Fits multiple Arduino board footprints and offers modular, stackable design for easy expansion and customization."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Crystal"
+        },
+        {
+         "label": "Obsidian"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 3,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "ProtoStax Enclosure for Arduino",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.protostax.com/buy/42413840892070:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=JSs73KMxu1WL&_gsid=JSs73KMxu1WL",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p class=\"p1\"><span class=\"s1\">This Arduino Uno &amp; Mega case is <strong>stackable</strong>, <strong>modular</strong>, <strong>extensible</strong> and <strong>hackable</strong>! </span></p>\n<p class=\"p1\"><span class=\"s1\">It fits both Uno/Leonardo AND Mega footprints, and can accommodate any boards that have an Arduino footprint like SparkFun RedBoard, BlackBoard Artemis, etc. (see list of compatible devices below). </span></p>\n<p class=\"p1\"><span class=\"s1\">As of August 10th, 2026, it also fits the new Arduino Uno Q! It has cutouts on the base plate to accommodate the new headers on the <strong>bottom</strong> of the board, and a cutout on the side plate to match the reset button (also found on the Arduino Uno Rev 4. Any new boards you purchase now will include support for UNO Rev 4 and UNO Q!</span></p>\n<p class=\"p1\"><span class=\"s1\"><span>The case has an internal clearance of over 1.2 inches, which gives you ample room to install a shield (or two) of your choice!</span></span></p>\n<p class=\"p1\">Extension kits and add-ons are available to add functionality to your enclosure - add , switches, ultrasonic sensor, DB9/RS232 port, micro-servo and more!<span> </span><a href=\"https://www.protostax.com/collections/all/arduino\">Check out our extension kits and add-ons</a>!</p>\n<h3 class=\"p1\"><span class=\"s1\"><b>Features</b></span></h3>\n<ul class=\"ul1\">\n<li class=\"li2\">Fits both Uno/Leonardo AND Mega footprints!</li>\n<li class=\"li2\">New! Fits UNO Q with cutouts on the base plate to accommodate bottom headers!</li>\n<li class=\"li2\">Internal clearance of over 1.2 inches, which gives you ample room for a shield (or even two!)</li>\n<li class=\"li2\">Made from high quality cast acrylic</li>\n<li class=\"li2\">Clear acrylic provides a beautiful finish with a modern visual design with full view of your electronics</li>\n<li class=\"li2\">Our Obsidian black acrylic gives you a sleek and attractive option when you want to keep your brains and sinew under the covers and just highlight the peripherals</li>\n<li class=\"li2\">Pre-drilled and threaded mounting holes in the base plate allow you to directly screw the board in without needing additional nuts, making it very easy and elegant for you to use. A thoughtful feature that you will surely appreciate if you have larger hands and dealing with tiny M2.5 nuts!  </li>\n<li class=\"li2\">Acrylic risers raise your board off the base plate for improved airflow and firm level mounting</li>\n<li class=\"li2\">Metal standoffs and screws provide solid and durable support </li>\n<li class=\"li2\">Rubber Feet protect your table surface while providing maximum airflow by elevating the enclosure</li>\n<li class=\"li2\">Cutouts leave USB and power ports accessible </li>\n<li class=\"li2\">\n<i>Cable Management</i>: Easily accessible cable management cutouts in the side walls allow you to smoothly insert your cables and access wiring to external systems. In the Open Configuration, the Wall slots on the top and bottom plates (where the side walls usually insert into) can also be used for cable management for even more accessibility and organization.</li>\n<li class=\"li2\">You can mix, match, customize, and expand your project enclosure because ProtoStax enclosures are modular and stackable and work with each other. </li>\n<li class=\"li2\">Extension kits and add-ons help add functionality to your enclosure, such as adding switches, displays, sensor peripherals, etc.<br>\n</li>\n</ul>\n<p><br></p>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>\n<h3 class=\"p1\"><span class=\"s1\"><b>List of Compatible Devices</b></span></h3>\n<table style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', Roboto, 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 1.4em;\" width=\"100%\">\n<tbody>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/products/uno-r4-minima\"><span class=\"s4\">Arduino UNO R4 Minima</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/products/uno-r4-wifi\"><span class=\"s4\">Arduino UNO R4 WiFi</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store-usa.arduino.cc/pages/uno-q\"><span class=\"s4\">Arduino UNO Q</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-rev3\"><span class=\"s4\">Arduino Uno</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-wifi-rev2\"><span class=\"s4\">Arduino Uno WiFi</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-uno-wifi-rev2\"><span class=\"s4\">Arduino Uno WiFi</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-101\"><span class=\"s4\">Arduino 101</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-zero\"><span class=\"s4\">Arduino Zero</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/mega-2560-r3\"><span class=\"s4\">Arduino Mega 2560</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-yun-rev-2\"><span class=\"s4\">Arduino Yùn</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/due\"><span class=\"s4\">Arduino Due</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://store.arduino.cc/usa/arduino-starter-kit\"><span class=\"s4\">Arduino Start Kit</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/13975\"><span class=\"s4\">SparkFun RedBoard</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/15412\"><span class=\"s4\">BlackBoard Artemis ATP</span></a>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/15332\"><span class=\"s4\">BlackBoard Artemis</span></a>\n</td>\n</tr>\n<tr>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<span class=\"s4\"><a href=\"https://www.sparkfun.com/products/15123\">SparkFun RedBoard Qwiic</a></span>\n</td>\n<td>\n<div>\n<meta charset=\"utf-8\"> <br>\n</div>\n<a href=\"https://www.sparkfun.com/products/14812\"><span class=\"s4\">SparkFun RedBoard Turbo</span></a><span class=\"s4\"></span>\n</td>\n<td>and more!<span class=\"s4\"></span>\n</td>\n</tr>\n</tbody>\n</table>\n<h3 class=\"p1\"><br></h3>\n<h3 class=\"p1\">\n<a title=\"Visualize in your space using AR\" href=\"https://size.link?l=4.84&amp;w=3.24&amp;h=1.8&amp;units=in\"><span class=\"s1\"><b></b></span></a><br>\n</h3>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>\n<h3 class=\"p1\">\n<span class=\"s1\"><b></b></span><br>\n</h3>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "protostax-for-arduino",
+       "id": "gid://shopify/ProductVariant/42413840892070",
+       "media": [
+        {
+         "alt_text": "ProtoStax Enclosure for Arduino with Arduino UNO Q in Fully Closed Configuration",
+         "height": 3024,
+         "preview": {
+          "height": 3024,
+          "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/files/IMG_4175.jpg",
+          "width": 4032
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0082/6248/4004/files/IMG_4175.jpg",
+         "width": 4032
+        }
+       ],
+       "options": [
+        {
+         "label": "Crystal",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "protostax.myshopify.com",
+        "id": "gid://shopify/Shop/8262484004",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421419044.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421451812.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421386276.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/8262484004/policies/4421484580.html"
+         }
+        ],
+        "name": "ProtoStax",
+        "url": "https://www.protostax.com"
+       },
+       "seller_product_id": "gid://shopify/Product/1328057843748",
+       "source": "shopify",
+       "title": "ProtoStax Enclosure for Arduino",
+       "url": "https://www.protostax.com/products/protostax-for-arduino?variant=42413840892070&_gsid=JSs73KMxu1WL&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

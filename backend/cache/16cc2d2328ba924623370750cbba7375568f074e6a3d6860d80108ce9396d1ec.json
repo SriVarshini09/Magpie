@@ -1,0 +1,560 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Push button reset button"
+  }
+ },
+ "key": "16cc2d2328ba924623370750cbba7375568f074e6a3d6860d80108ce9396d1ec",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:11-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is an authorized distributor for RAKwireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. WisBlock Base Board (RAK19003) is the base block for RAK WisBlock. It is the carrier for the WisBlock Core MCU module and two WisBlock modules with 24 pin WisConnector. It enables the engineers and makers to build with low-effort prototypes, test different types of sensors, and develop the application. And because all components and modules of WisBlock are industrial rated the step from development to mass production is no problem.WisBlock Base Board supports as standard 3 different power supplies. Depending on the application either 5V USB, 3.7V LiPo batteries, and 5V solar panels or a combination can be chosen. WisBlock Base Board enables low power consumption applications with the option to switch on and off the power supply for the WisBlock Sensor.WisBlock Base Board has a size of only 30 x 35mm which lets you create solutions that fit into the smallest housings. Product Features Easy Plug'n'Play slots for WisBlock Core MCU, small WisBlock Sensor, WisBlock Extra, small WisBlock Storage and WisBlock Power modules Small form factor Supports 3 different power supply sources Optimized for low power consumption applications I2C, UART, GPIO's an analog input accessible with solder contacts 2 user-definable LED's Reset button USB Type C debug port 1 slot for WisBlock Core MCU 2 slots for modules with 24pin WisConnector Package Inclusion 1pc RAK19003 1pc USB type C cable 1set screws (kit) Documentation RAK19003 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK19003 3D Model(opens new window) 24-Pin Female Connector 3D File (Sensor Slot)(opens new window) 40-Pin Female Connector 3D File (Core Slot) Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake How to Create Custom WisBlock Sensor or WisBlock IO Module Check Hackster Projects Articles Choosing Between WisBlock Modules For Your Next IoT Project? Take A Quiz! Why We Make WisBlock: The Story Behind RAK’s Modular IoT Platform Build your IoT Breakthroughs Fast with the WisBlock System! RAKwireless Announces Partnership with One Planet Education Network (OPEN) to Launch STEM IoT Sensor Kits for Schools Worldwide RAKwireless Launches New Modular Product Series - WisBlock New WisBlock Modules in RAK Autumn Launch WisBlock Success Stories Enology + IoT = Great Wine A winery modernization by Enotek Saving the Wetlands with a Solution from The Group Lab Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-wisblock-mini-base-board-rak19003-ver-b-pid-306024",
+     "id": "gid://shopify/Product/6872310087763",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/RAK19003.png?v=1664296097"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1397,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1397,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-base-boards"
+     ],
+     "title": "RAK Wireless WisBlock Mini Base Board RAK19003 ver B PID: 110035",
+     "url": "https://store.rokland.com/products/rak-wireless-wisblock-mini-base-board-rak19003-ver-b-pid-306024",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40320213385299:1",
+       "description": {
+        "html": "Rokland is an authorized distributor for RAKwireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. WisBlock Base Board (RAK19003) is the base block for RAK WisBlock. It is the carrier for the WisBlock Core MCU module and two WisBlock modules with 24 pin WisConnector. It enables the engineers and makers to build with low-effort prototypes, test different types of sensors, and develop the application. And because all components and modules of WisBlock are industrial rated the step from development to mass production is no problem.WisBlock Base Board supports as standard 3 different power supplies. Depending on the application either 5V USB, 3.7V LiPo batteries, and 5V solar panels or a combination can be chosen. WisBlock Base Board enables low power consumption applications with the option to switch on and off the power supply for the WisBlock Sensor.WisBlock Base Board has a size of only 30 x 35mm which lets you create solutions that fit into the smallest housings. Product Features Easy Plug'n'Play slots for WisBlock Core MCU, small WisBlock Sensor, WisBlock Extra, small WisBlock Storage and WisBlock Power modules Small form factor Supports 3 different power supply sources Optimized for low power consumption applications I2C, UART, GPIO's an analog input accessible with solder contacts 2 user-definable LED's Reset button USB Type C debug port 1 slot for WisBlock Core MCU 2 slots for modules with 24pin WisConnector Package Inclusion 1pc RAK19003 1pc USB type C cable 1set screws (kit) Documentation RAK19003 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK19003 3D Model(opens new window) 24-Pin Female Connector 3D File (Sensor Slot)(opens new window) 40-Pin Female Connector 3D File (Core Slot) Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake How to Create Custom WisBlock Sensor or WisBlock IO Module Check Hackster Projects Articles Choosing Between WisBlock Modules For Your Next IoT Project? Take A Quiz! Why We Make WisBlock: The Story Behind RAK’s Modular IoT Platform Build your IoT Breakthroughs Fast with the WisBlock System! RAKwireless Announces Partnership with One Planet Education Network (OPEN) to Launch STEM IoT Sensor Kits for Schools Worldwide RAKwireless Launches New Modular Product Series - WisBlock New WisBlock Modules in RAK Autumn Launch WisBlock Success Stories Enology + IoT = Great Wine A winery modernization by Enotek Saving the Wetlands with a Solution from The Group Lab Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/40320213385299",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/RAK19003.png?v=1664296097"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "alfa-network",
+       "id": "gid://shopify/Collection/3975332",
+       "title": "Alfa Network"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "power-over-ethernet-poe",
+       "id": "gid://shopify/Collection/8712016",
+       "title": "Power over Ethernet (PoE)"
+      }
+     ],
+     "description": {
+      "html": "Tube-AHM outdoor allows building long-range WiFi networks in sub 1 GHz unlicensed band, utilizing a compact, mast-mounted waterproof enclosure.Tube-AHM is suitable for many applications such as IP cameras, sensors, etc. 802.11ah Morse Micro chipset IP66 waterproof resistance Fast Ethernet with standard PoE Outdoor N female antenna connector LED indicator Variant/version notes:Tube-AHM: power supply passive PoE (12-24 V DC) inputTube-AHM POE: power supply 802.3at/af PoETube-AHM EU 868: power supply Passive PoE (12-24 V DC) input + 868 Mhz radio for EU/UK use only Specifications CPU MT7628 HaLow chipset Morse Micro MM6108 RAM 128 MB Flash 16 MB Frequency 915 MHz (US) Data rate Up to 32.5 Mbps Channel bandwidth 1/2/4/8 MHz Antenna connector N female Ethernet Fast Ethernet with ESD protection Button Reset push-button Power supply Passive PoE (12-24 V DC) input Support for optional 802.3at/af standard Operating temperature -20°C - 60°C Dimensions 176 x 38 mm Weight 125 g Additional resources: Tube-AHM setup guide Specialty Item Return Policy Applies:You may return this item due to any defect within 30 days or we can exchange it for you. Used Tube-AHM units are not returnable except in cases of defect. Any expedited shipping charges paid, including return shipping, are non-refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+     },
+     "gift_card": false,
+     "handle": "alfa-network-tube-ahm-802-11ah-sub-1-ghz-outdoor-ap-cpe-morse-micro-chip",
+     "id": "gid://shopify/Product/7409066442835",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/tube-ahm.png?v=1721314755"
+      }
+     ],
+     "options": [
+      {
+       "name": "Band",
+       "values": [
+        {
+         "label": "Tube-AHM US 915 Mhz"
+        },
+        {
+         "label": "Tube-AHM PoE US 915 Mhz"
+        },
+        {
+         "label": "Tube-AHM EU 868 Mhz"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 18900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 16400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "LoRa"
+     ],
+     "title": "ALFA Network Tube-AHM 802.11ah sub 1 GHz outdoor AP/CPE Morse Micro chip",
+     "url": "https://store.rokland.com/products/alfa-network-tube-ahm-802-11ah-sub-1-ghz-outdoor-ap-cpe-morse-micro-chip",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42256066347091:1",
+       "description": {
+        "html": "Tube-AHM outdoor allows building long-range WiFi networks in sub 1 GHz unlicensed band, utilizing a compact, mast-mounted waterproof enclosure.Tube-AHM is suitable for many applications such as IP cameras, sensors, etc. 802.11ah Morse Micro chipset IP66 waterproof resistance Fast Ethernet with standard PoE Outdoor N female antenna connector LED indicator Variant/version notes:Tube-AHM: power supply passive PoE (12-24 V DC) inputTube-AHM POE: power supply 802.3at/af PoETube-AHM EU 868: power supply Passive PoE (12-24 V DC) input + 868 Mhz radio for EU/UK use only Specifications CPU MT7628 HaLow chipset Morse Micro MM6108 RAM 128 MB Flash 16 MB Frequency 915 MHz (US) Data rate Up to 32.5 Mbps Channel bandwidth 1/2/4/8 MHz Antenna connector N female Ethernet Fast Ethernet with ESD protection Button Reset push-button Power supply Passive PoE (12-24 V DC) input Support for optional 802.3at/af standard Operating temperature -20°C - 60°C Dimensions 176 x 38 mm Weight 125 g Additional resources: Tube-AHM setup guide Specialty Item Return Policy Applies:You may return this item due to any defect within 30 days or we can exchange it for you. Used Tube-AHM units are not returnable except in cases of defect. Any expedited shipping charges paid, including return shipping, are non-refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/42256066347091",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/tube-ahm.png?v=1721314755"
+        }
+       ],
+       "options": [
+        {
+         "label": "Tube-AHM US 915 Mhz",
+         "name": "Band"
+        }
+       ],
+       "price": {
+        "amount": 16900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "US-TUBE-AHM",
+       "title": "Tube-AHM US 915 Mhz"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43409245012051:1",
+       "description": {
+        "html": "Tube-AHM outdoor allows building long-range WiFi networks in sub 1 GHz unlicensed band, utilizing a compact, mast-mounted waterproof enclosure.Tube-AHM is suitable for many applications such as IP cameras, sensors, etc. 802.11ah Morse Micro chipset IP66 waterproof resistance Fast Ethernet with standard PoE Outdoor N female antenna connector LED indicator Variant/version notes:Tube-AHM: power supply passive PoE (12-24 V DC) inputTube-AHM POE: power supply 802.3at/af PoETube-AHM EU 868: power supply Passive PoE (12-24 V DC) input + 868 Mhz radio for EU/UK use only Specifications CPU MT7628 HaLow chipset Morse Micro MM6108 RAM 128 MB Flash 16 MB Frequency 915 MHz (US) Data rate Up to 32.5 Mbps Channel bandwidth 1/2/4/8 MHz Antenna connector N female Ethernet Fast Ethernet with ESD protection Button Reset push-button Power supply Passive PoE (12-24 V DC) input Support for optional 802.3at/af standard Operating temperature -20°C - 60°C Dimensions 176 x 38 mm Weight 125 g Additional resources: Tube-AHM setup guide Specialty Item Return Policy Applies:You may return this item due to any defect within 30 days or we can exchange it for you. Used Tube-AHM units are not returnable except in cases of defect. Any expedited shipping charges paid, including return shipping, are non-refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/43409245012051",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/tube-ahm.png?v=1721314755"
+        }
+       ],
+       "options": [
+        {
+         "label": "Tube-AHM PoE US 915 Mhz",
+         "name": "Band"
+        }
+       ],
+       "price": {
+        "amount": 18900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "title": "Tube-AHM PoE US 915 Mhz"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42256066379859:1",
+       "description": {
+        "html": "Tube-AHM outdoor allows building long-range WiFi networks in sub 1 GHz unlicensed band, utilizing a compact, mast-mounted waterproof enclosure.Tube-AHM is suitable for many applications such as IP cameras, sensors, etc. 802.11ah Morse Micro chipset IP66 waterproof resistance Fast Ethernet with standard PoE Outdoor N female antenna connector LED indicator Variant/version notes:Tube-AHM: power supply passive PoE (12-24 V DC) inputTube-AHM POE: power supply 802.3at/af PoETube-AHM EU 868: power supply Passive PoE (12-24 V DC) input + 868 Mhz radio for EU/UK use only Specifications CPU MT7628 HaLow chipset Morse Micro MM6108 RAM 128 MB Flash 16 MB Frequency 915 MHz (US) Data rate Up to 32.5 Mbps Channel bandwidth 1/2/4/8 MHz Antenna connector N female Ethernet Fast Ethernet with ESD protection Button Reset push-button Power supply Passive PoE (12-24 V DC) input Support for optional 802.3at/af standard Operating temperature -20°C - 60°C Dimensions 176 x 38 mm Weight 125 g Additional resources: Tube-AHM setup guide Specialty Item Return Policy Applies:You may return this item due to any defect within 30 days or we can exchange it for you. Used Tube-AHM units are not returnable except in cases of defect. Any expedited shipping charges paid, including return shipping, are non-refundable. If you opt for an exchange, we will pay to ship the replacement to you. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/42256066379859",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/tube-ahm.png?v=1721314755"
+        }
+       ],
+       "options": [
+        {
+         "label": "Tube-AHM EU 868 Mhz",
+         "name": "Band"
+        }
+       ],
+       "price": {
+        "amount": 16400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "EU-TUBE-AHM",
+       "title": "Tube-AHM EU 868 Mhz"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

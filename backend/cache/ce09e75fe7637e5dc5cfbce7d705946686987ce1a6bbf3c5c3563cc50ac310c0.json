@@ -1,0 +1,1542 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Computer Linux, Windows or MacOS"
+  }
+ },
+ "key": "ce09e75fe7637e5dc5cfbce7d705946686987ce1a6bbf3c5c3563cc50ac310c0",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:36-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hORGMzTkRZeE9EUXlNelkyTUN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our comprehensive range of Arduino and compatible boards, perfect for your next innovative project. Whether you need the Arduino Uno Rev3 for robust basic functionalities or the advanced Arduino MKR series for IoT applications, our selection boasts versatile options. These boards support various programming environments, including Arduino IDE, and offer multiple connectivity options such as Wi-Fi, Bluetooth, and LoRa. Perfect for educators, hobbyists, and professionals seeking to bring their electronic projects to life with open-source platforms and extensive community support."
+       },
+       "handle": "arduino-microcontroller",
+       "id": "gid://shopify/Collection/290227323041",
+       "title": "Arduino & Compatible Boards"
+      },
+      {
+       "description": {
+        "html": "Microcontroller and FPGA boards offer versatile solutions for robotics enthusiasts and developers. Our selection includes powerful microcontroller boards like the Arduino Mega 2560, Raspberry Pi Pico, and Adafruit Feather series, as well as high-performance FPGA boards from Devantech and Digilent. With features ranging from extensive I/O capabilities to advanced processing power, these boards are ideal for a wide variety of robotics and embedded applications."
+       },
+       "handle": "microcontrollers",
+       "id": "gid://shopify/Collection/290229878945",
+       "title": "Microcontroller & FPGA Boards"
+      }
+     ],
+     "description": {
+      "html": "Description Arduino Uno Q 2GB Bridge high-performance with real-time control Enable advanced features like voice commands Support multi-display and high-resolution video Include dual-band Wi-Fi and Bluetooth 5.1 Run Linux Debian OS and Arduino Core The Arduino Uno Q 2GB bridges high-performance computing with real-time control, making it suitable for advanced applications such as object recognition, voice commands, and motion detection. This 2-GB variant offers a cost-effective solution for coding when connected to a computer, enabling the creation of projects that operate independently of a monitor or keyboard. View more What's Included 1x Arduino Uno Q 2GB Dimensions 68.85 x 53.34 mm Links PDF Files Arduino Uno QB 2GB - Schematics Arduino Uno Q 2GB - Datasheet Specifications Microprocessor: Qualcomm Dragonwing QRB2210, Quad-core Arm Cortex-A53 at 2.0 GHz, Adreno GPU 3D graphics accelerator, 2x ISP (13 MP + 13 MP or 25 MP) at 30 fps Microcontroller: STM32U585 Arm Cortex-M33 up to 160 MHz, 2 MB flash memory, 786 KB SRAM RAM: 2GB LPDDR4 Storage: 16GB eMMC Power Supply: From USB-C connector 5 V max at 3 A, Input Voltage (VIN): 7-24 V Connectivity: Dual-band Wi-Fi 5 (2.4/5 GHz), Bluetooth 5.1 Interfaces: I2C/I3C, SPI, PWM, CAN, UART, PSSI, GPIO, JTAG, ADC Video: Video output support via USB-C, MIPI DSI pins on JMEDIA header Extra: 4x RGB user-controllable LEDs, 8x13 Blue LED Matrix, 1x Qwiic connector voltage 3V3, I2C, 1x User push-button, JCTL: MPU Remote Debug connector Operating System: Linux Debian OS with upstream support, Arduino Core on Zephyr OS Containerization: Docker and Docker Compose support Supported Operating Systems for Arduino App Lab: Windows 10 or later (64-bit), macOS 11 or later (64-bit), Ubuntu 22.04 or later, and Debian Trixie (64-bit)"
+     },
+     "gift_card": false,
+     "handle": "arduino-uno-q-2gb",
+     "id": "gid://shopify/Product/15078777553260",
+     "list_price_range": {
+      "max": {
+       "amount": 5144,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5144,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Arduino Uno Q 2GB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4501651.webp?v=1775591122"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5144,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5144,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino & Compatible Boards",
+      "category:Microcontroller & FPGA Boards",
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers"
+     ],
+     "title": "Arduino Uno Q 2GB",
+     "url": "https://www.robotshop.com/products/arduino-uno-q-2gb",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/53536683819372:1",
+       "description": {
+        "html": "Description Arduino Uno Q 2GB Bridge high-performance with real-time control Enable advanced features like voice commands Support multi-display and high-resolution video Include dual-band Wi-Fi and Bluetooth 5.1 Run Linux Debian OS and Arduino Core The Arduino Uno Q 2GB bridges high-performance computing with real-time control, making it suitable for advanced applications such as object recognition, voice commands, and motion detection. This 2-GB variant offers a cost-effective solution for coding when connected to a computer, enabling the creation of projects that operate independently of a monitor or keyboard. View more What's Included 1x Arduino Uno Q 2GB Dimensions 68.85 x 53.34 mm Links PDF Files Arduino Uno QB 2GB - Schematics Arduino Uno Q 2GB - Datasheet Specifications Microprocessor: Qualcomm Dragonwing QRB2210, Quad-core Arm Cortex-A53 at 2.0 GHz, Adreno GPU 3D graphics accelerator, 2x ISP (13 MP + 13 MP or 25 MP) at 30 fps Microcontroller: STM32U585 Arm Cortex-M33 up to 160 MHz, 2 MB flash memory, 786 KB SRAM RAM: 2GB LPDDR4 Storage: 16GB eMMC Power Supply: From USB-C connector 5 V max at 3 A, Input Voltage (VIN): 7-24 V Connectivity: Dual-band Wi-Fi 5 (2.4/5 GHz), Bluetooth 5.1 Interfaces: I2C/I3C, SPI, PWM, CAN, UART, PSSI, GPIO, JTAG, ADC Video: Video output support via USB-C, MIPI DSI pins on JMEDIA header Extra: 4x RGB user-controllable LEDs, 8x13 Blue LED Matrix, 1x Qwiic connector voltage 3V3, I2C, 1x User push-button, JCTL: MPU Remote Debug connector Operating System: Linux Debian OS with upstream support, Arduino Core on Zephyr OS Containerization: Docker and Docker Compose support Supported Operating Systems for Arduino App Lab: Windows 10 or later (64-bit), macOS 11 or later (64-bit), Ubuntu 22.04 or later, and Debian Trixie (64-bit)"
+       },
+       "id": "gid://shopify/ProductVariant/53536683819372",
+       "list_price": {
+        "amount": 5144,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4501651.webp?v=1775591122"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5144,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Mbi-14",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Harness the capabilities of our comprehensive Internet of Things (IoT) selection featuring versatile development boards, sensors, and communication modules. These products support a wide range of protocols such as Wi-Fi, BLE, and LoRa, enabling innovative IoT applications from smart homes to industrial automation. Whether you're looking to build a new IoT solution or enhance an existing system, our collection provides reliable, efficient components for seamless integration and development."
+       },
+       "handle": "internet-of-things-iot",
+       "id": "gid://shopify/Collection/290215362721",
+       "title": "Internet of Things (IoT)"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "M5Stack is a leading brand in modular IoT development, providing versatile products that allow for rapid prototyping and scalability. Their offerings include a variety of development kits, sensors, communication modules, and accessories that cater to both beginners and professionals. M5Stack products are known for their ease of use, flexibility, and extensive ecosystem support, making them ideal for DIY projects and industrial applications."
+       },
+       "handle": "m5stack",
+       "id": "gid://shopify/Collection/290257961121",
+       "title": "M5Stack"
+      }
+     ],
+     "description": {
+      "html": "Description M5Stack Cardputer Adv (ESP32-S3) Empowers with dual-core ESP32-S3 at 240MHz Features a 1.14-inch LCD and 56-key keyboard Enhances audio with ES8311 and 1W speaker Includes 1750 mAh battery for long usage Integrates IMU sensor for motion detection The M5Stack Cardputer Adv (ESP32-S3) is a compact, programmable computing device designed for versatile applications. It is powered by the Stamp-S3A core module, which is based on the ESP32-S3FN8, and features a 1.14-inch LCD alongside a 56-key minimalist keyboard, facilitating user interaction and input operations. The device is equipped with an ES8311 audio codec, a high signal-to-noise ratio MEMS microphone, an NS4150B amplifier, and a 1W speaker, ensuring superior audio input and output capabilities. Additionally, it includes a 3.5mm audio output jack for connecting external audio devices. The Cardputer Adv is powered by a 1750mAh lithium battery and incorporates a 6-axis motion sensor, an infrared emitter, and a microSD card slot for external storage. It also provides a HY2.0-4P Grove port and an EXT 2.54-14P expansion bus, allowing for the connection of various sensors and peripherals. The base of the device contains magnets for easy attachment to metal surfaces and is compatible with LEGO hole extensions, making it suitable for quick function prototyping, industrial control, and home automation scenarios. View more What's Included 1x M5Stack Cardputer Adv (ESP32-S3) Dimensions 84 x 54 x 19.6 mm Links Websites M5Stack Cardputer Adv Version (ESP32-S3) - Factory Firmware M5Stack Cardputer Adv Version (ESP32-S3) - Arduino Driver Library PDF Files M5Stack Cardputer Adv (ESP32-S3) - Schematics M5Stack Cardputer Adv (ESP32-S3) - Model Size Specifications SoC: ESP32-S3FN8 with Dual-core Xtensa LX7, up to 240 MHz Flash Memory: 8 MB External Storage: microSD Display: ST7789V2, 240 x 135 pixels Keyboard: 56 keys (4 x 14) Key Actuation Force: 160gf Expansion Ports: HY2.0-4P and EXT 2.54-14P Infrared: 1 IR emitter Audio Codec: ES8311 Speaker: NS4150B amplifier with 8Ω, 1W speaker Microphone: MEMS microphone, SNR: 65 dB Inertial Measurement Unit: BMI270 Battery Capacity: 1750mAh Operating Temperature: 0 to 40 °C Weight: 98.5 g"
+     },
+     "gift_card": false,
+     "handle": "m5stack-cardputer-adv-esp32-s3",
+     "id": "gid://shopify/Product/14992996696428",
+     "list_price_range": {
+      "max": {
+       "amount": 3599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3599,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "M5Stack Cardputer Adv (ESP32-S3)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/m5stack_cardputer_adv_esp32_s3_7.webp?v=1767794402"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3599,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Internet of Things (IoT)",
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers"
+     ],
+     "title": "M5Stack Cardputer Adv (ESP32-S3)",
+     "url": "https://www.robotshop.com/products/m5stack-cardputer-adv-esp32-s3",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/53049188221292:1",
+       "description": {
+        "html": "Description M5Stack Cardputer Adv (ESP32-S3) Empowers with dual-core ESP32-S3 at 240MHz Features a 1.14-inch LCD and 56-key keyboard Enhances audio with ES8311 and 1W speaker Includes 1750 mAh battery for long usage Integrates IMU sensor for motion detection The M5Stack Cardputer Adv (ESP32-S3) is a compact, programmable computing device designed for versatile applications. It is powered by the Stamp-S3A core module, which is based on the ESP32-S3FN8, and features a 1.14-inch LCD alongside a 56-key minimalist keyboard, facilitating user interaction and input operations. The device is equipped with an ES8311 audio codec, a high signal-to-noise ratio MEMS microphone, an NS4150B amplifier, and a 1W speaker, ensuring superior audio input and output capabilities. Additionally, it includes a 3.5mm audio output jack for connecting external audio devices. The Cardputer Adv is powered by a 1750mAh lithium battery and incorporates a 6-axis motion sensor, an infrared emitter, and a microSD card slot for external storage. It also provides a HY2.0-4P Grove port and an EXT 2.54-14P expansion bus, allowing for the connection of various sensors and peripherals. The base of the device contains magnets for easy attachment to metal surfaces and is compatible with LEGO hole extensions, making it suitable for quick function prototyping, industrial control, and home automation scenarios. View more What's Included 1x M5Stack Cardputer Adv (ESP32-S3) Dimensions 84 x 54 x 19.6 mm Links Websites M5Stack Cardputer Adv Version (ESP32-S3) - Factory Firmware M5Stack Cardputer Adv Version (ESP32-S3) - Arduino Driver Library PDF Files M5Stack Cardputer Adv (ESP32-S3) - Schematics M5Stack Cardputer Adv (ESP32-S3) - Model Size Specifications SoC: ESP32-S3FN8 with Dual-core Xtensa LX7, up to 240 MHz Flash Memory: 8 MB External Storage: microSD Display: ST7789V2, 240 x 135 pixels Keyboard: 56 keys (4 x 14) Key Actuation Force: 160gf Expansion Ports: HY2.0-4P and EXT 2.54-14P Infrared: 1 IR emitter Audio Codec: ES8311 Speaker: NS4150B amplifier with 8Ω, 1W speaker Microphone: MEMS microphone, SNR: 65 dB Inertial Measurement Unit: BMI270 Battery Capacity: 1750mAh Operating Temperature: 0 to 40 °C Weight: 98.5 g"
+       },
+       "id": "gid://shopify/ProductVariant/53049188221292",
+       "list_price": {
+        "amount": 3599,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/m5stack_cardputer_adv_esp32_s3_7.webp?v=1767794402"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3599,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Mst-443",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Discover our range of ROS Compatible Controllers designed for seamless integration and high-performance computing. These controllers offer extensive compatibility with various sensors and actuators, perfect for developing advanced robotics applications. With features such as built-in IMUs, high-speed processing capabilities, and versatile connectivity options, they cater to both educational and professional projects. Whether you're working with DYNAMIXEL servos or exploring AI deep learning with NVIDIA boards, our selection ensures reliable and robust control solutions."
+       },
+       "handle": "ros-compatible-parts-ros-compatible-controllers",
+       "id": "gid://shopify/Collection/290215985313",
+       "title": "ROS Compatible Controllers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our collection of ROS-compatible robots and parts, which includes a wide range of robotic systems and components designed to integrate seamlessly with the Robot Operating System (ROS). From advanced underwater vehicles like the BlueROV2 to versatile mobile robots such as the TurtleBot 4, our products support various applications in research, education, and industry. Each item in this selection is engineered for compatibility with ROS, ensuring easy programming, robust performance, and expandability."
+       },
+       "handle": "ros-compatible-robots-parts",
+       "id": "gid://shopify/Collection/290229846177",
+       "title": "ROS Compatible Robots And Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Seeedstudio ODYSSEY X86J4125864 V2 (TELEC) w/ 64GB Emmc, Linux & RP2040 Core Windows 11 Pro pre-installed Quad-core Intel Celeron J4125 Dual 2.5GbE connectivity, supports 4K output Built-in cooling fan The Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core is a versatile computing device powered by a Quad-core Intel Celeron J4125 and an RP2040 co-processor. This mini PC is equipped with dual 2.5GbE interfaces and offers a variety of wireless connectivity options. It is capable of supporting 4K video output and boasts ample storage capacity and expandability options. The system is designed to operate efficiently with multiple operating systems and features a fan for heat dissipation. Its flexibility allows it to serve as an ideal mini PC, a functional router, a media center, or for various development purposes according to individual needs. Please note that the system comes with Windows 11 Pro pre-installed. View more What's Included 1x ODYSSEY - X86J4125864 v2 1x SATA Cable 2x Antenna 1x RTC Battery 1x Heat Sink (Assembled) 1x Cooling Fan (Assembled) 1x User Manual Dimensions 110 x 110 mm Links PDF File Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core - User Manual Specifications Processor: Intel Celeron J4125 (Frequency: 2.0 - 2.7 GHz) Coprocessor: Raspberry Pi RP2040 32bit ARM Dual-Core Cortex M0+ Graphics: Intel UHD Graphics 600 (Frequency: 250 - 750 MHz) Memory: LPDDR4 8GB Wireless: Wi-Fi 802.11 a/b/g/n/ac at 2.4/5 GHz HT160 Networking: Intel I226-V PCIe 2.5GbE LAN, Supports Wake-On-LAN, Supports PXE Audio: Microphone + headphone Combo Connector USB: USB 2.0 Type-A x2, USB 3.1 Type-A x1, USB 3.1 Type-C x1 Video Interfaces: HDMI2.0a: Up to 4096 x 2160 at 60Hz 24bpp / DP1.2a: Up to 4096 x 2160 at 60Hz 24bpp Expansion Slots: M.2 (Key B, 2242/2280): SATA III, USB2.0, UIM; M.2 (Key M, 2242/2280): PCIe 2.0 x4; Micro SD card Socket; SIM Card Socket; SATA III RTC: JST 1.0 CR2032 3V TPM: Built-in fTPM (2.0), optional external TPM 2.0 Power: DC Jack 5.5 / 2.1 mm or Type-C PD | DC Jack input: 12-19V DC | Type-C input: 15V DC Operating temperature: 0 ~ 75 °C Headers 1x 40-Pin header compatible with Raspberry Pi 1x 28-Pin header (RP2040) 1x Front Panel Audio Connector 1x 4-Pin header (UART function from RP2040) 1x Fan Port (4 pins 1.25 mm PWM 5V） 3x 4-Pin SATA Power Connector 1x 4-Pin header (Power and Switch)"
+     },
+     "gift_card": false,
+     "handle": "seeedstudio-odyssey-x86j4125864-v2-win11-pro-telec-64gb-emmc-linux-rp2040-core",
+     "id": "gid://shopify/Product/7805793108129",
+     "list_price_range": {
+      "max": {
+       "amount": 31202,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 31202,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1856818.webp?v=1776701359"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 31202,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 31202,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:ROS Compatible Controllers",
+      "category:ROS Compatible Robots And Parts",
+      "category:Single Board Computers",
+      "special-order"
+     ],
+     "title": "Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core",
+     "url": "https://www.robotshop.com/products/seeedstudio-odyssey-x86j4125864-v2-win11-pro-telec-64gb-emmc-linux-rp2040-core",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/43409011540129:1",
+       "description": {
+        "html": "Description Seeedstudio ODYSSEY X86J4125864 V2 (TELEC) w/ 64GB Emmc, Linux & RP2040 Core Windows 11 Pro pre-installed Quad-core Intel Celeron J4125 Dual 2.5GbE connectivity, supports 4K output Built-in cooling fan The Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core is a versatile computing device powered by a Quad-core Intel Celeron J4125 and an RP2040 co-processor. This mini PC is equipped with dual 2.5GbE interfaces and offers a variety of wireless connectivity options. It is capable of supporting 4K video output and boasts ample storage capacity and expandability options. The system is designed to operate efficiently with multiple operating systems and features a fan for heat dissipation. Its flexibility allows it to serve as an ideal mini PC, a functional router, a media center, or for various development purposes according to individual needs. Please note that the system comes with Windows 11 Pro pre-installed. View more What's Included 1x ODYSSEY - X86J4125864 v2 1x SATA Cable 2x Antenna 1x RTC Battery 1x Heat Sink (Assembled) 1x Cooling Fan (Assembled) 1x User Manual Dimensions 110 x 110 mm Links PDF File Seeedstudio ODYSSEY X86J4125864 V2 (Win11 Pro, TELEC) 64GB eMMC, Linux, RP2040 Core - User Manual Specifications Processor: Intel Celeron J4125 (Frequency: 2.0 - 2.7 GHz) Coprocessor: Raspberry Pi RP2040 32bit ARM Dual-Core Cortex M0+ Graphics: Intel UHD Graphics 600 (Frequency: 250 - 750 MHz) Memory: LPDDR4 8GB Wireless: Wi-Fi 802.11 a/b/g/n/ac at 2.4/5 GHz HT160 Networking: Intel I226-V PCIe 2.5GbE LAN, Supports Wake-On-LAN, Supports PXE Audio: Microphone + headphone Combo Connector USB: USB 2.0 Type-A x2, USB 3.1 Type-A x1, USB 3.1 Type-C x1 Video Interfaces: HDMI2.0a: Up to 4096 x 2160 at 60Hz 24bpp / DP1.2a: Up to 4096 x 2160 at 60Hz 24bpp Expansion Slots: M.2 (Key B, 2242/2280): SATA III, USB2.0, UIM; M.2 (Key M, 2242/2280): PCIe 2.0 x4; Micro SD card Socket; SIM Card Socket; SATA III RTC: JST 1.0 CR2032 3V TPM: Built-in fTPM (2.0), optional external TPM 2.0 Power: DC Jack 5.5 / 2.1 mm or Type-C PD | DC Jack input: 12-19V DC | Type-C input: 15V DC Operating temperature: 0 ~ 75 °C Headers 1x 40-Pin header compatible with Raspberry Pi 1x 28-Pin header (RP2040) 1x Front Panel Audio Connector 1x 4-Pin header (UART function from RP2040) 1x Fan Port (4 pins 1.25 mm PWM 5V） 3x 4-Pin SATA Power Connector 1x 4-Pin header (Power and Switch)"
+       },
+       "id": "gid://shopify/ProductVariant/43409011540129",
+       "list_price": {
+        "amount": 31202,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1856818.webp?v=1776701359"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 31202,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-See-1086",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description LattePanda 2 Alpha 800s Windows/Linux Single Board Computer Supports Windows 10, Linux, and Android Features Intel Core m3-8100Y CPU and UHD Graphics 615 Includes 8GB RAM, dual-band Wi-Fi, Bluetooth 4.2 Offers multiple USB ports and M.2 PCIe connectors Integrated with Arduino coprocessor ATMEL 32U4 The LattePanda 2 Alpha 800s Windows/Linux Single Board Computer (8GB RAM) is a high-performance, compact single board computer designed for low power consumption while running full Windows 10, Linux, and Android operating systems. It is widely applicable in edge computing, vending, advertising machines, and industrial automation. This development board is ideal for DIY makers, IoT developers, system integrators, and solution providers, offering a robust platform to enhance productivity and creativity. Powered by an Intel Core™ m3-8100Y Dual-Core CPU with speeds ranging from 1.1GHz to 3.4GHz and integrated Intel® UHD Graphics 615, it supports 4K Ultra HD video and efficient media conversion. The device features dual-band Wi-Fi, Bluetooth 4.2, Gigabit Ethernet, multiple USB ports, and M.2 PCIe connectors for expandable capabilities such as SSDs and GPUs. The integrated Arduino coprocessor and support for various interfaces, including eDP and Type-C, make it versatile for numerous applications. The LattePanda 2 Alpha 800s is pre-installed with Windows 10 Pro but also supports Linux and Android, providing flexibility for different project requirements. Note: Ensure proper handling of power sources to avoid electrical hazards. View more What's Included 1x LattePanda Alpha 800s 1x Active cooling fan (Assembled) 1x 45W PD Power adapter (with EU & US standard power cord) 2x Dual-band antenna 1x RTC Battery (Assembled) 1x User Manual Dimensions 115 x 78 x 14 mm Specifications CPU: Intel Core m3-8100y Core: 1.1-3.4 GHz Dual-Core, Four-Thread Benchmark (PassMark): Up to 4128, double computing power compared with same price range products in the market Graphics: Intel HD Graphics 615, 300-900 MHz RAM: 8GB LPDDR3 External Memory: 1x M.2 M Key, PCIe 4x, Supports NVMe SSD and SATA SSD 1x M.2 E Key, PCIe 2x, Supports USB2.0, UART, PCM Connectivity: WIFI 802.11 AC, 2.4G & 5G Dual-Band Bluetooth 4.2 Gigabit Ethernet USB Ports: 3x USB 3.0 Type A 1x USB Type C, supports PD, DP, USB 3.0 Display: HDMI Output Type-C DP Support Extendable eDP touch displays Co-processor: Arduino Leonardo GPIO & Other Features: 2x 50p GPIOs including I2C, I2S, USB, RS232, UART, RTC, Power Management, Extendable power button, everything you need OS Support: Windows 10 Pro Linux Ubuntu Android"
+     },
+     "gift_card": false,
+     "handle": "lattepanda-2-alpha-800s-windows-linux-single-board-computer-8gb-ram",
+     "id": "gid://shopify/Product/8124252586145",
+     "list_price_range": {
+      "max": {
+       "amount": 41225,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 41225,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "LattePanda 2 Alpha 800s Windows/Linux Single Board Computer (8GB RAM)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/lattepanda-2-alpha-800s-windows-linux-single-board-computer-8gb-ram-img01.webp?v=1764565585"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 41225,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 41225,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "LattePanda 2 Alpha 800s Windows/Linux Single Board Computer (8GB RAM)",
+     "url": "https://www.robotshop.com/products/lattepanda-2-alpha-800s-windows-linux-single-board-computer-8gb-ram",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/44595590660257:1",
+       "description": {
+        "html": "Description LattePanda 2 Alpha 800s Windows/Linux Single Board Computer Supports Windows 10, Linux, and Android Features Intel Core m3-8100Y CPU and UHD Graphics 615 Includes 8GB RAM, dual-band Wi-Fi, Bluetooth 4.2 Offers multiple USB ports and M.2 PCIe connectors Integrated with Arduino coprocessor ATMEL 32U4 The LattePanda 2 Alpha 800s Windows/Linux Single Board Computer (8GB RAM) is a high-performance, compact single board computer designed for low power consumption while running full Windows 10, Linux, and Android operating systems. It is widely applicable in edge computing, vending, advertising machines, and industrial automation. This development board is ideal for DIY makers, IoT developers, system integrators, and solution providers, offering a robust platform to enhance productivity and creativity. Powered by an Intel Core™ m3-8100Y Dual-Core CPU with speeds ranging from 1.1GHz to 3.4GHz and integrated Intel® UHD Graphics 615, it supports 4K Ultra HD video and efficient media conversion. The device features dual-band Wi-Fi, Bluetooth 4.2, Gigabit Ethernet, multiple USB ports, and M.2 PCIe connectors for expandable capabilities such as SSDs and GPUs. The integrated Arduino coprocessor and support for various interfaces, including eDP and Type-C, make it versatile for numerous applications. The LattePanda 2 Alpha 800s is pre-installed with Windows 10 Pro but also supports Linux and Android, providing flexibility for different project requirements. Note: Ensure proper handling of power sources to avoid electrical hazards. View more What's Included 1x LattePanda Alpha 800s 1x Active cooling fan (Assembled) 1x 45W PD Power adapter (with EU & US standard power cord) 2x Dual-band antenna 1x RTC Battery (Assembled) 1x User Manual Dimensions 115 x 78 x 14 mm Specifications CPU: Intel Core m3-8100y Core: 1.1-3.4 GHz Dual-Core, Four-Thread Benchmark (PassMark): Up to 4128, double computing power compared with same price range products in the market Graphics: Intel HD Graphics 615, 300-900 MHz RAM: 8GB LPDDR3 External Memory: 1x M.2 M Key, PCIe 4x, Supports NVMe SSD and SATA SSD 1x M.2 E Key, PCIe 2x, Supports USB2.0, UART, PCM Connectivity: WIFI 802.11 AC, 2.4G & 5G Dual-Band Bluetooth 4.2 Gigabit Ethernet USB Ports: 3x USB 3.0 Type A 1x USB Type C, supports PD, DP, USB 3.0 Display: HDMI Output Type-C DP Support Extendable eDP touch displays Co-processor: Arduino Leonardo GPIO & Other Features: 2x 50p GPIOs including I2C, I2S, USB, RS232, UART, RTC, Power Management, Extendable power button, everything you need OS Support: Windows 10 Pro Linux Ubuntu Android"
+       },
+       "id": "gid://shopify/ProductVariant/44595590660257",
+       "list_price": {
+        "amount": 41225,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/lattepanda-2-alpha-800s-windows-linux-single-board-computer-8gb-ram-img01.webp?v=1764565585"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 41225,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-1476",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Phidgets specializes in creating user-friendly, affordable, and highly versatile sensors and control modules that empower makers, engineers, and hobbyists. Their products, which include a variety of sensors, motor controllers, and I/O boards, are known for their plug and play simplicity and reliable performance. Phidgets' commitment to quality and innovation makes them an invaluable resource for both DIY enthusiasts and professionals working on complex projects."
+       },
+       "handle": "phidgets-en",
+       "id": "gid://shopify/Collection/290240528545",
+       "title": "Phidgets"
+      }
+     ],
+     "description": {
+      "html": "Description @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Poppins:wght@700;800;900&display=swap'); .pwiz-24htn .rs-section.ai-food-robotshop{ background: var(--rsaf-bg,#fff); border-radius: var(--rsaf-radius,12px); padding: var(--rsaf-pad,18px); color: var(--rsaf-tc,#222); --rsaf-gap: 2px; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-heading{ margin: 0 0 10px; text-align: center; font-weight: 700; font-size: clamp(16px, 1.6vw, 20px); letter-spacing: .15px; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; align-items: stretch; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ min-width: 0; padding: var(--rsaf-col-pad, 12px 16px); text-align: left; display: flex; flex-direction: column; justify-content: flex-start; gap: var(--rsaf-gap,2px) !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col + .cc-col{ border-left: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-row{ display: flex; align-items: center; justify-content: flex-start; gap: 10px; line-height: 1 !important; padding: 0 !important; margin: 0 !important; min-height: 0 !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-row img.cc-icon{ width: var(--rsaf-icon,28px); height: var(--rsaf-icon,28px); display: block !important; line-height: 0 !important; vertical-align: middle !important; margin: 0 !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-title{ margin: 0 !important; padding: 0 !important; font-weight: 700; font-size: clamp(13px, 1.05vw, 15px); line-height: 1.05 !important; } .pwiz-24htn .rs-section.ai-food-robotshop p.cc-desc{ margin: 0 !important; padding: 0 !important; margin-top: var(--rsaf-gap,2px) !important; font-size: clamp(11.5px, .95vw, 12.5px); line-height: 1.3 !important; color: var(--rsaf-muted,#6f7888); max-width: 36ch; } @media (max-width:900px) { .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col + .cc-col{ border-left: 0; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ border-top: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(1), .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(2){ border-top: 0; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(2), .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(4){ border-left: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop p.cc-desc{ max-width: 60ch; } } @media (max-width:650px) { .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ grid-template-columns: 1fr; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ padding: 12px 12px; border-left: 0 !important; border-top: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:first-child{ border-top: 0; } } .pwiz-fm5hb .rs-section.rs-image-feature img{display:block;max-width:100%;margin:0;padding:0;border:0} .pwiz-fm5hb .rs-section.rs-image-feature{font-family:'Arimo',Arial,sans-serif;color:#0b1220;border-radius:15px} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on{background:#f8f8f8} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-off{background:transparent} .pwiz-fm5hb .rs-section.rs-image-feature .if-shell{box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on .if-shell{padding:28px 24px} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-off .if-shell{padding:0} .pwiz-fm5hb .rs-section.rs-image-feature .if-heading{font-family:'Poppins',Arial,sans-serif;font-weight:800;font-size:20px;text-align:center;color:#0b1220;margin:0 0 16px} .pwiz-fm5hb .rs-section.rs-image-feature .if-row{display:flex;align-items:stretch;gap:clamp(12px,3vw,40px)} .pwiz-fm5hb .rs-section.rs-image-feature.if-side-right .if-row{flex-direction:row-reverse} .pwiz-fm5hb .rs-section.rs-image-feature .if-box{background:#ffffff;border:1px solid rgba(11,18,32,.1);border-radius:12px;overflow:hidden;box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box{flex:1 1 40%;min-width:0;display:flex;align-items:center;justify-content:center} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box img{width:auto;max-width:100%;height:auto;max-height:300px;object-fit:contain;padding:12px;box-sizing:border-box} /* Picture = Fill: the image covers the whole box (the box takes the list's height) */ .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box{position:relative;min-height:220px} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box img{position:absolute;top:0;left:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;padding:0} .pwiz-fm5hb .rs-section.rs-image-feature .if-text-box{flex:1 1 60%;min-width:0;min-height:200px;padding:16px 20px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature .if-eyebrow{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(11,18,32,.45);margin:0 0 10px} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(11,18,32,.07)} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item:last-child{border-bottom:none} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item:nth-child(n+6){display:none} .pwiz-fm5hb .rs-section.rs-image-feature .if-dot{width:7px;height:7px;border-radius:50%;background:#00446a;flex-shrink:0;margin-top:4px} .pwiz-fm5hb .rs-section.rs-image-feature .if-name{font-size:13px;font-weight:700;color:#0b1220;margin:0 0 2px} .pwiz-fm5hb .rs-section.rs-image-feature .if-desc{font-size:12px;color:rgba(11,18,32,.55);margin:0;line-height:1.4} @media(max-width:768px){ .pwiz-fm5hb .rs-section.rs-image-feature .if-row, .pwiz-fm5hb .rs-section.rs-image-feature.if-side-right .if-row{flex-direction:column} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box, .pwiz-fm5hb .rs-section.rs-image-feature .if-text-box{flex:1 1 auto;width:100%} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box img{max-height:320px;width:auto;max-width:100%} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box{min-height:0;aspect-ratio:4/3} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box img{max-height:none;width:100%;max-width:none} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on .if-shell{padding:24px 12px} } .pwiz-7tge8 .rs-section.rs-text-section{font-family:'Arimo',Arial,sans-serif;color:#0b1220;border-radius:15px} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on{background:#f8f8f8} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-off{background:transparent} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline{background:#ffffff;border:1px solid rgba(11,18,32,.14);box-shadow:0 4px 16px rgba(11,18,32,.06)} .pwiz-7tge8 .rs-section.rs-text-section .ts-shell{box-sizing:border-box;text-align:left} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on .ts-shell, .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline .ts-shell{padding:28px 24px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list{margin:0 0 10px;padding:0 0 0 20px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list li{font-size:14px;line-height:1.6;color:rgba(11,18,32,.75);margin:0 0 6px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list li:last-child{margin-bottom:0} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-off .ts-shell{padding:0} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec{margin:0 0 22px} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec:last-child{margin-bottom:0} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec:nth-child(n+2){display:none} .pwiz-7tge8 .rs-section.rs-text-section h3.ts-title{font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-align:left;color:#0b1220;margin:0 0 8px;padding:0} .pwiz-7tge8 .rs-section.rs-text-section p.ts-body{font-size:14px;line-height:1.6;color:rgba(11,18,32,.75);margin:0 0 10px;padding:0} .pwiz-7tge8 .rs-section.rs-text-section p.ts-body:last-child{margin-bottom:0} @media(max-width:768px){ .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on .ts-shell, .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline .ts-shell{padding:22px 14px} .pwiz-7tge8 .rs-section.rs-text-section h3.ts-title{font-size:16px} } Phidget SBC4 Debian GNU/Linux Single Board Computer Allwinner A20 Dual-Core ARM Cortex-A7 CPU up to 960 MHz with 512 MiB SDRAM Six built-in VINT ports for VINT devices, 0-5V sensors or digital I/O Three High Speed USB ports supplying 500 mA each 10/100BASE-T Ethernet, HDMI output and an 8 to 30 V DC power input Debian and the Phidgets drivers pre-loaded on the supplied 8GB card The Phidget SBC4 Debian GNU/Linux Single Board Computer from Phidgets is a single board computer with its own integrated VINT ports. Each of these ports can take on one of four roles: talking to an intelligent VINT device, reading a voltage or ratiometric sensor, driving a digital output, or sensing switches as a digital input. Why Buy From RobotShop Authorized Distributor Full manufacturer-backed warranty coverage and dedicated product support Hassle-Free Delivery Complete end-to-end logistics management, including customs clearance Single Point of Contact All pre-sales and post-sales support handled by our dedicated team Documentation & Resources Full access to detailed technical guides and a comprehensive knowledge base Key Features At a Glance Ready-to-Run Software Ships with Debian GNU/Linux and the Phidgets drivers already installed Six VINT Ports Each of the six ports can run a VINT device or a sensor, or serve as digital I/O Three USB Ports Three USB ports accept peripherals, storage devices or USB Phidgets Network Connectivity Joins a network over Ethernet, or wirelessly with a USB Wi-Fi adapter (sold separately) HDMI Port An HDMI port connects a monitor directly to show the Linux terminal Running Debian GNU/Linux, the SBC4 is an embedded computer well suited to Phidgets applications that must run for long periods, or to projects that need to be more portable. A keyboard and monitor can be plugged in to work on the board directly through its pre-installed Linux terminal. Alternatively, an external computer can be used to configure and launch custom applications through the SBC's web interface. The SBC4 can even act as a remote server, so programs running on other computers or devices on the network can reach the Phidgets attached to it. Out of the box, the SBC4 comes with an 8GB card already loaded with Debian and the Phidgets drivers. When more storage space is needed, the OS image can be flashed onto a higher capacity card. View more What's Included .rs-inc{ padding-top:18px; --inc-bg:#f8f8f8; --inc-line:rgba(11,18,32,.14); --inc-txt:#0b1220; --inc-muted:rgba(11,18,32,.70); --inc-accent:#00446a; --inc-radius:15px; --inc-pad:16px; --inc-indent:18px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--inc-txt); } .rs-inc, .rs-inc *{ box-sizing:border-box; } .rs-inc .wrap{ border-radius:var(--inc-radius); background:var(--inc-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--inc-pad); } .rs-inc .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-inc .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--inc-txt) !important; letter-spacing:.2px; } .rs-inc .badge{ margin:0 !important; color:var(--inc-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-inc .badge b{ color:var(--inc-accent); } .rs-inc .card{ border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-inc .rowhead{ display:flex; align-items:center; gap:10px; margin:0 0 10px 0; } .rs-inc .label{ margin:0 !important; font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.2px; text-transform:uppercase; font-size:12px; color:rgba(11,18,32,.70) !important; } .rs-inc .bul{ width:100%; border-collapse:collapse !important; border-spacing:0 !important; border:0 !important; margin:0; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-inc .bul tbody, .rs-inc .bul tr, .rs-inc .bul td{ border:0 !important; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-inc .bul td{ padding:0; vertical-align:top; } .rs-inc .bul .b{ width:var(--inc-indent); padding-right:10px; color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-inc .bul .t{ font-size:14px; font-weight:500; line-height:1.5; color:var(--inc-txt); padding-bottom:6px; } .rs-inc .bul tr:last-child .t{ padding-bottom:0; } .rs-inc .note{ margin:10px 0 0 0; color:var(--inc-muted); font-size:12px; line-height:1.35; } @media (max-width: 640px){ .rs-inc .wrap{ padding:14px; } .rs-inc .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-inc .title{ font-size:16px; line-height:1.3; } .rs-inc .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 • Phidget SBC4 Debian GNU/Linux Single Board Computer Dimensions .rs-dims{ padding-top:18px; --dims-bg:#f8f8f8; --dims-line:rgba(11,18,32,.14); --dims-txt:#0b1220; --dims-muted:rgba(11,18,32,.70); --dims-accent:#00446a; --dims-radius:15px; --dims-pad:16px; --dims-indent:18px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--dims-txt); } .rs-dims, .rs-dims *{ box-sizing:border-box; } .rs-dims .wrap{ border-radius:var(--dims-radius); background:var(--dims-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--dims-pad); } .rs-dims .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-dims .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--dims-txt) !important; letter-spacing:.2px; } .rs-dims .badge{ margin:0 !important; color:var(--dims-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-dims .badge b{ color:var(--dims-accent); } .rs-dims .hi{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:10px; } .rs-dims .tile{ grid-column:span 6; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-dims .tile b{ display:block; font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:.2px; color:rgba(11,18,32,.65); margin-bottom:8px; line-height:1.15; font-weight:600; text-transform:uppercase; } .rs-dims .bul{ width:100%; border-collapse:collapse !important; border-spacing:0 !important; border:0 !important; margin:0; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-dims .bul tbody, .rs-dims .bul tr, .rs-dims .bul td{ border:0 !important; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-dims .bul td{ padding:0; vertical-align:top; } .rs-dims .bul .b{ width:var(--dims-indent); padding-right:10px; color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-dims .bul .t{ font-size:14px; font-weight:500; line-height:1.5; color:var(--dims-txt); } .rs-dims .note{ margin:10px 0 0 0; color:var(--dims-muted); font-size:12px; line-height:1.35; } .rs-dims .thumbs{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; } .rs-dims a.thumb{ display:block; width:170px; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:8px; text-decoration:none !important; } .rs-dims a.thumb img{ display:block; width:100%; height:120px; object-fit:contain; margin:0 0 6px; } .rs-dims a.thumb span{ display:block; font-size:11.5px; line-height:1.3; text-align:center; color:var(--dims-muted); } .rs-dims a.thumb:hover{ border-color:var(--dims-accent); } @media (max-width: 640px){ .rs-dims .wrap{ padding:14px; } .rs-dims .tile{ grid-column:1 / -1; } .rs-dims a.thumb{ width:calc(50% - 5px); } .rs-dims .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-dims .title{ font-size:16px; line-height:1.3; } .rs-dims .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 Length • 86.102 mm Width • 71.120 mm Mounting Hole Spacing • 66.040 x 47.625 mm Mounting Hole Diameter • 3.175 mm Sizes are read from Phidgets' mechanical drawing (mm). Links /* gp-layout: columns set in the GlowUp Manager */ .rs-links .rsln-grid.gp-cols-1 .rsln-card{grid-column:1 / -1}.rs-links .rsln-grid.gp-cols-2 .rsln-card{grid-column:span 6}.rs-links .rsln-grid.gp-cols-2 .rsln-card:last-child:nth-child(odd){grid-column:1 / -1}@media (max-width:640px){.rs-links .rsln-grid .rsln-card{grid-column:1 / -1 !important}} .rs-links{ padding-top:18px; --links-bg:#f8f8f8; --links-txt:#0b1220; --links-muted:rgba(11,18,32,.70); --links-accent:#00446a; --links-radius:15px; --links-pad:16px; --links-indent:18px; --links-gap:10px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--links-txt); } .rs-links, .rs-links *{ box-sizing:border-box; } .rs-links hr{ display:none !important; } .rs-links .rsln-wrap{ border-radius:var(--links-radius); background:var(--links-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--links-pad); } .rs-links .rsln-titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-links .rsln-title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--links-txt) !important; letter-spacing:.2px; } .rs-links .rsln-badge{ margin:0 !important; color:var(--links-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-links .rsln-badge b{ color:var(--links-accent); } .rs-links .rsln-grid{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:10px; } .rs-links .rsln-card{ grid-column:span 12; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-links .rsln-head{ margin:0 0 10px 0 !important; font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.2px; text-transform:uppercase; font-size:12px; color:rgba(11,18,32,.70) !important; } .rs-links .rsln-item{ display:flex; align-items:flex-start; gap:var(--links-gap); margin:6px 0; padding:0; } .rs-links .rsln-item:first-child{ margin-top:0; } .rs-links .rsln-item:last-child{ margin-bottom:0; } .rs-links .rsln-bullet{ width:var(--links-indent); flex:0 0 var(--links-indent); color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-links .rsln-text{ min-width:0; font-size:14px; font-weight:500; line-height:1.5; color:var(--links-txt) !important; overflow-wrap:anywhere; } .rs-links .rsln-text a, .rs-links .rsln-text a:link, .rs-links .rsln-text a:visited{ display:inline !important; font-size:inherit !important; line-height:inherit !important; font-weight:500 !important; color:var(--links-txt) !important; text-decoration:none !important; text-indent:0 !important; letter-spacing:normal !important; white-space:normal !important; background:none !important; border:0 !important; padding:0 !important; margin:0 !important; opacity:1 !important; visibility:visible !important; overflow:visible !important; } .rs-links .rsln-text a:before, .rs-links .rsln-text a:after{ content:none !important; } .rs-links .rsln-text a:hover{ text-decoration:underline !important; text-underline-offset:2px; } .rs-links .rsln-grid, .rs-links .rsln-card{ background-image:none !important; box-shadow:none !important; outline:0 !important; } @media (max-width: 640px){ .rs-links .rsln-wrap{ padding:14px; } .rs-links .rsln-titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-links .rsln-title{ font-size:16px; line-height:1.3; } .rs-links .rsln-badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 Guides • SBC3003 User Guide • Digital Output Guide • Digital Input Guide • Voltage Input Guide • Voltage Ratio Input Guide • What is VINT? • VINT Upgrades • VINT Communication Speed Guide • Cable Length Calculator Guide CAD & Mechanical Files • Mechanical Drawings • Download 3D Step File Compliance • RoHS Compliance Certification • EU REACH Compliance Certification Specifications .rs-spec{ padding-top:18px; --spec-bg:#f8f8f8; --spec-line:rgba(11,18,32,.14); --spec-txt:#0b1220; --spec-muted:rgba(11,18,32,.70); --spec-accent:#00446a; --spec-radius:15px; --spec-pad:16px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--spec-txt); } .rs-spec, .rs-spec *{ box-sizing:border-box; } .rs-spec .wrap{ border-radius:var(--spec-radius); background:var(--spec-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--spec-pad); } .rs-spec .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-spec .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--spec-txt) !important; letter-spacing:.2px; } .rs-spec .badge{ margin:0 !important; color:var(--spec-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-spec .badge b{ color:var(--spec-accent); } .rs-spec .rows{ margin-top:0; padding-top:0; } .rs-spec .row{ display:grid; grid-template-columns:1.2fr .9fr; gap:14px; padding:10px 0; border-bottom:1px solid rgba(11,18,32,.08); } .rs-spec .row:last-child{ border-bottom:none; } .rs-spec .k{ font-size:14px; color:var(--spec-muted); font-weight:500; } .rs-spec .v{ font-size:14px; color:var(--spec-txt); font-weight:500; overflow-wrap:anywhere; } .rs-spec .muted{ color:var(--spec-muted); font-weight:500; } .rs-spec .row.one{ grid-template-columns:1fr; } .rs-spec .row.one .k{ color:var(--spec-txt); } .rs-spec .grp{ font-family:'Poppins',sans-serif; font-size:12px; font-weight:600; letter-spacing:.2px; text-transform:uppercase; color:var(--spec-accent); padding:14px 0 6px; border-bottom:1px solid rgba(11,18,32,.08); } @media (max-width: 640px){ .rs-spec .wrap{ padding:14px; } .rs-spec .row{ grid-template-columns:1fr; gap:6px; } .rs-spec .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-spec .title{ font-size:16px; line-height:1.3; } .rs-spec .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 SBC CPU Allwinner A20 Core Dual-Core ARM Cortex-A7 CPU Speed **Up to 960 MHz SDRAM Size 512 MiB Boot Time 20 s Ethernet Cable 10/100BASE-T Electrical Properties Supply Voltage Min 8 V DC Supply Voltage Max 30 V DC Power Consumption Min 1 W Available External Voltage 5 V DC Available External Current 500 mA USB Hub Number of USB Ports 3 USB Speed High Speed Available Current per USB Port 500 mA Board Properties Number of VINT Ports 6 VINT Communication Speed Max 100 kbit/s Power Jack 5.5x2.1mm, Center Positive Operating Temperature Min 0 °C Operating Temperature Max 70 °C Driver Support Phidget22 Voltage Inputs Number of Voltage Inputs 6 (Shared) Voltage Input Resolution (bits) * 16 bit Sensor Input Impedance 324 kΩ Input Voltage Min (DC) 0 V DC Input Voltage Max (DC) 5 V DC Voltage Input Noise ± 630 µV DC Sampling Interval Max 60 s/sample Sampling Interval Min 1 ms/sample Digital Inputs Number of Digital Inputs 6 (Shared) Pull-up Resistance 124 kΩ Low Voltage Max (True) 1 V DC High Voltage Min (False) 1.8 V DC High Voltage Trigger Length Min 3 ms Low Voltage Trigger Length Min 3 ms Digital Input Voltage Max 5.5 V DC Digital Input Type Switch (Active Low) Digital Outputs Number of Digital Outputs 6 (Shared) Series Resistance 510 Ω Digital Output Available Current 81 mA Digital Output Voltage Min 0 V DC Digital Output Voltage Max 3.3 V DC PWM Frequency Max 50 kHz Duty Cycle Resolution 0.8 % Software Channels (Phidget22 API) Digital Input DigitalInput (channel 0) Digital Output DigitalOutput (channel 0) Voltage Input VoltageInput (channel 0) Voltage Ratio Input VoltageRatioInput (channel 0) VINT Hub Hub (channel 0) *Voltage measured with a 10-bit ADC, oversampled to 16-bits. **This processor supports dynamic frequency scaling , which lowers the clock speed to save power depending on processing load."
+     },
+     "gift_card": false,
+     "handle": "phidget-sbc4-debian-gnu-linux-single-board-computer",
+     "id": "gid://shopify/Product/7486845845665",
+     "list_price_range": {
+      "max": {
+       "amount": 14438,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 14438,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Phidget SBC4 Debian GNU/Linux Single Board Computer",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4531100.webp?v=1793110608"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 14438,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 14438,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers"
+     ],
+     "title": "Phidget SBC4 Debian GNU/Linux Single Board Computer",
+     "url": "https://www.robotshop.com/products/phidget-sbc4-debian-gnu-linux-single-board-computer",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358942924961:1",
+       "description": {
+        "html": "Description @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Poppins:wght@700;800;900&display=swap'); .pwiz-24htn .rs-section.ai-food-robotshop{ background: var(--rsaf-bg,#fff); border-radius: var(--rsaf-radius,12px); padding: var(--rsaf-pad,18px); color: var(--rsaf-tc,#222); --rsaf-gap: 2px; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-heading{ margin: 0 0 10px; text-align: center; font-weight: 700; font-size: clamp(16px, 1.6vw, 20px); letter-spacing: .15px; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; align-items: stretch; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ min-width: 0; padding: var(--rsaf-col-pad, 12px 16px); text-align: left; display: flex; flex-direction: column; justify-content: flex-start; gap: var(--rsaf-gap,2px) !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col + .cc-col{ border-left: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-row{ display: flex; align-items: center; justify-content: flex-start; gap: 10px; line-height: 1 !important; padding: 0 !important; margin: 0 !important; min-height: 0 !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-row img.cc-icon{ width: var(--rsaf-icon,28px); height: var(--rsaf-icon,28px); display: block !important; line-height: 0 !important; vertical-align: middle !important; margin: 0 !important; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-title{ margin: 0 !important; padding: 0 !important; font-weight: 700; font-size: clamp(13px, 1.05vw, 15px); line-height: 1.05 !important; } .pwiz-24htn .rs-section.ai-food-robotshop p.cc-desc{ margin: 0 !important; padding: 0 !important; margin-top: var(--rsaf-gap,2px) !important; font-size: clamp(11.5px, .95vw, 12.5px); line-height: 1.3 !important; color: var(--rsaf-muted,#6f7888); max-width: 36ch; } @media (max-width:900px) { .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col + .cc-col{ border-left: 0; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ border-top: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(1), .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(2){ border-top: 0; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(2), .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:nth-child(4){ border-left: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop p.cc-desc{ max-width: 60ch; } } @media (max-width:650px) { .pwiz-24htn .rs-section.ai-food-robotshop .cc-grid{ grid-template-columns: 1fr; } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col{ padding: 12px 12px; border-left: 0 !important; border-top: 1px solid var(--rsaf-sep,#e6e8ee); } .pwiz-24htn .rs-section.ai-food-robotshop .cc-col:first-child{ border-top: 0; } } .pwiz-fm5hb .rs-section.rs-image-feature img{display:block;max-width:100%;margin:0;padding:0;border:0} .pwiz-fm5hb .rs-section.rs-image-feature{font-family:'Arimo',Arial,sans-serif;color:#0b1220;border-radius:15px} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on{background:#f8f8f8} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-off{background:transparent} .pwiz-fm5hb .rs-section.rs-image-feature .if-shell{box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on .if-shell{padding:28px 24px} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-off .if-shell{padding:0} .pwiz-fm5hb .rs-section.rs-image-feature .if-heading{font-family:'Poppins',Arial,sans-serif;font-weight:800;font-size:20px;text-align:center;color:#0b1220;margin:0 0 16px} .pwiz-fm5hb .rs-section.rs-image-feature .if-row{display:flex;align-items:stretch;gap:clamp(12px,3vw,40px)} .pwiz-fm5hb .rs-section.rs-image-feature.if-side-right .if-row{flex-direction:row-reverse} .pwiz-fm5hb .rs-section.rs-image-feature .if-box{background:#ffffff;border:1px solid rgba(11,18,32,.1);border-radius:12px;overflow:hidden;box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box{flex:1 1 40%;min-width:0;display:flex;align-items:center;justify-content:center} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box img{width:auto;max-width:100%;height:auto;max-height:300px;object-fit:contain;padding:12px;box-sizing:border-box} /* Picture = Fill: the image covers the whole box (the box takes the list's height) */ .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box{position:relative;min-height:220px} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box img{position:absolute;top:0;left:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;padding:0} .pwiz-fm5hb .rs-section.rs-image-feature .if-text-box{flex:1 1 60%;min-width:0;min-height:200px;padding:16px 20px;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box} .pwiz-fm5hb .rs-section.rs-image-feature .if-eyebrow{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(11,18,32,.45);margin:0 0 10px} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(11,18,32,.07)} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item:last-child{border-bottom:none} .pwiz-fm5hb .rs-section.rs-image-feature .if-item-list .if-item:nth-child(n+6){display:none} .pwiz-fm5hb .rs-section.rs-image-feature .if-dot{width:7px;height:7px;border-radius:50%;background:#00446a;flex-shrink:0;margin-top:4px} .pwiz-fm5hb .rs-section.rs-image-feature .if-name{font-size:13px;font-weight:700;color:#0b1220;margin:0 0 2px} .pwiz-fm5hb .rs-section.rs-image-feature .if-desc{font-size:12px;color:rgba(11,18,32,.55);margin:0;line-height:1.4} @media(max-width:768px){ .pwiz-fm5hb .rs-section.rs-image-feature .if-row, .pwiz-fm5hb .rs-section.rs-image-feature.if-side-right .if-row{flex-direction:column} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box, .pwiz-fm5hb .rs-section.rs-image-feature .if-text-box{flex:1 1 auto;width:100%} .pwiz-fm5hb .rs-section.rs-image-feature .if-image-box img{max-height:320px;width:auto;max-width:100%} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box{min-height:0;aspect-ratio:4/3} .pwiz-fm5hb .rs-section.rs-image-feature.if-img-fill .if-image-box img{max-height:none;width:100%;max-width:none} .pwiz-fm5hb .rs-section.rs-image-feature.rs-card-on .if-shell{padding:24px 12px} } .pwiz-7tge8 .rs-section.rs-text-section{font-family:'Arimo',Arial,sans-serif;color:#0b1220;border-radius:15px} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on{background:#f8f8f8} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-off{background:transparent} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline{background:#ffffff;border:1px solid rgba(11,18,32,.14);box-shadow:0 4px 16px rgba(11,18,32,.06)} .pwiz-7tge8 .rs-section.rs-text-section .ts-shell{box-sizing:border-box;text-align:left} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on .ts-shell, .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline .ts-shell{padding:28px 24px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list{margin:0 0 10px;padding:0 0 0 20px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list li{font-size:14px;line-height:1.6;color:rgba(11,18,32,.75);margin:0 0 6px} .pwiz-7tge8 .rs-section.rs-text-section ul.ts-list li:last-child{margin-bottom:0} .pwiz-7tge8 .rs-section.rs-text-section.rs-card-off .ts-shell{padding:0} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec{margin:0 0 22px} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec:last-child{margin-bottom:0} .pwiz-7tge8 .rs-section.rs-text-section .ts-sec:nth-child(n+2){display:none} .pwiz-7tge8 .rs-section.rs-text-section h3.ts-title{font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-align:left;color:#0b1220;margin:0 0 8px;padding:0} .pwiz-7tge8 .rs-section.rs-text-section p.ts-body{font-size:14px;line-height:1.6;color:rgba(11,18,32,.75);margin:0 0 10px;padding:0} .pwiz-7tge8 .rs-section.rs-text-section p.ts-body:last-child{margin-bottom:0} @media(max-width:768px){ .pwiz-7tge8 .rs-section.rs-text-section.rs-card-on .ts-shell, .pwiz-7tge8 .rs-section.rs-text-section.rs-card-outline .ts-shell{padding:22px 14px} .pwiz-7tge8 .rs-section.rs-text-section h3.ts-title{font-size:16px} } Phidget SBC4 Debian GNU/Linux Single Board Computer Allwinner A20 Dual-Core ARM Cortex-A7 CPU up to 960 MHz with 512 MiB SDRAM Six built-in VINT ports for VINT devices, 0-5V sensors or digital I/O Three High Speed USB ports supplying 500 mA each 10/100BASE-T Ethernet, HDMI output and an 8 to 30 V DC power input Debian and the Phidgets drivers pre-loaded on the supplied 8GB card The Phidget SBC4 Debian GNU/Linux Single Board Computer from Phidgets is a single board computer with its own integrated VINT ports. Each of these ports can take on one of four roles: talking to an intelligent VINT device, reading a voltage or ratiometric sensor, driving a digital output, or sensing switches as a digital input. Why Buy From RobotShop Authorized Distributor Full manufacturer-backed warranty coverage and dedicated product support Hassle-Free Delivery Complete end-to-end logistics management, including customs clearance Single Point of Contact All pre-sales and post-sales support handled by our dedicated team Documentation & Resources Full access to detailed technical guides and a comprehensive knowledge base Key Features At a Glance Ready-to-Run Software Ships with Debian GNU/Linux and the Phidgets drivers already installed Six VINT Ports Each of the six ports can run a VINT device or a sensor, or serve as digital I/O Three USB Ports Three USB ports accept peripherals, storage devices or USB Phidgets Network Connectivity Joins a network over Ethernet, or wirelessly with a USB Wi-Fi adapter (sold separately) HDMI Port An HDMI port connects a monitor directly to show the Linux terminal Running Debian GNU/Linux, the SBC4 is an embedded computer well suited to Phidgets applications that must run for long periods, or to projects that need to be more portable. A keyboard and monitor can be plugged in to work on the board directly through its pre-installed Linux terminal. Alternatively, an external computer can be used to configure and launch custom applications through the SBC's web interface. The SBC4 can even act as a remote server, so programs running on other computers or devices on the network can reach the Phidgets attached to it. Out of the box, the SBC4 comes with an 8GB card already loaded with Debian and the Phidgets drivers. When more storage space is needed, the OS image can be flashed onto a higher capacity card. View more What's Included .rs-inc{ padding-top:18px; --inc-bg:#f8f8f8; --inc-line:rgba(11,18,32,.14); --inc-txt:#0b1220; --inc-muted:rgba(11,18,32,.70); --inc-accent:#00446a; --inc-radius:15px; --inc-pad:16px; --inc-indent:18px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--inc-txt); } .rs-inc, .rs-inc *{ box-sizing:border-box; } .rs-inc .wrap{ border-radius:var(--inc-radius); background:var(--inc-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--inc-pad); } .rs-inc .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-inc .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--inc-txt) !important; letter-spacing:.2px; } .rs-inc .badge{ margin:0 !important; color:var(--inc-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-inc .badge b{ color:var(--inc-accent); } .rs-inc .card{ border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-inc .rowhead{ display:flex; align-items:center; gap:10px; margin:0 0 10px 0; } .rs-inc .label{ margin:0 !important; font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.2px; text-transform:uppercase; font-size:12px; color:rgba(11,18,32,.70) !important; } .rs-inc .bul{ width:100%; border-collapse:collapse !important; border-spacing:0 !important; border:0 !important; margin:0; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-inc .bul tbody, .rs-inc .bul tr, .rs-inc .bul td{ border:0 !important; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-inc .bul td{ padding:0; vertical-align:top; } .rs-inc .bul .b{ width:var(--inc-indent); padding-right:10px; color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-inc .bul .t{ font-size:14px; font-weight:500; line-height:1.5; color:var(--inc-txt); padding-bottom:6px; } .rs-inc .bul tr:last-child .t{ padding-bottom:0; } .rs-inc .note{ margin:10px 0 0 0; color:var(--inc-muted); font-size:12px; line-height:1.35; } @media (max-width: 640px){ .rs-inc .wrap{ padding:14px; } .rs-inc .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-inc .title{ font-size:16px; line-height:1.3; } .rs-inc .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 • Phidget SBC4 Debian GNU/Linux Single Board Computer Dimensions .rs-dims{ padding-top:18px; --dims-bg:#f8f8f8; --dims-line:rgba(11,18,32,.14); --dims-txt:#0b1220; --dims-muted:rgba(11,18,32,.70); --dims-accent:#00446a; --dims-radius:15px; --dims-pad:16px; --dims-indent:18px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--dims-txt); } .rs-dims, .rs-dims *{ box-sizing:border-box; } .rs-dims .wrap{ border-radius:var(--dims-radius); background:var(--dims-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--dims-pad); } .rs-dims .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-dims .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--dims-txt) !important; letter-spacing:.2px; } .rs-dims .badge{ margin:0 !important; color:var(--dims-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-dims .badge b{ color:var(--dims-accent); } .rs-dims .hi{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:10px; } .rs-dims .tile{ grid-column:span 6; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-dims .tile b{ display:block; font-family:'Poppins',sans-serif; font-size:12px; letter-spacing:.2px; color:rgba(11,18,32,.65); margin-bottom:8px; line-height:1.15; font-weight:600; text-transform:uppercase; } .rs-dims .bul{ width:100%; border-collapse:collapse !important; border-spacing:0 !important; border:0 !important; margin:0; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-dims .bul tbody, .rs-dims .bul tr, .rs-dims .bul td{ border:0 !important; box-shadow:none !important; background-image:none !important; outline:0 !important; } .rs-dims .bul td{ padding:0; vertical-align:top; } .rs-dims .bul .b{ width:var(--dims-indent); padding-right:10px; color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-dims .bul .t{ font-size:14px; font-weight:500; line-height:1.5; color:var(--dims-txt); } .rs-dims .note{ margin:10px 0 0 0; color:var(--dims-muted); font-size:12px; line-height:1.35; } .rs-dims .thumbs{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; } .rs-dims a.thumb{ display:block; width:170px; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:8px; text-decoration:none !important; } .rs-dims a.thumb img{ display:block; width:100%; height:120px; object-fit:contain; margin:0 0 6px; } .rs-dims a.thumb span{ display:block; font-size:11.5px; line-height:1.3; text-align:center; color:var(--dims-muted); } .rs-dims a.thumb:hover{ border-color:var(--dims-accent); } @media (max-width: 640px){ .rs-dims .wrap{ padding:14px; } .rs-dims .tile{ grid-column:1 / -1; } .rs-dims a.thumb{ width:calc(50% - 5px); } .rs-dims .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-dims .title{ font-size:16px; line-height:1.3; } .rs-dims .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 Length • 86.102 mm Width • 71.120 mm Mounting Hole Spacing • 66.040 x 47.625 mm Mounting Hole Diameter • 3.175 mm Sizes are read from Phidgets' mechanical drawing (mm). Links /* gp-layout: columns set in the GlowUp Manager */ .rs-links .rsln-grid.gp-cols-1 .rsln-card{grid-column:1 / -1}.rs-links .rsln-grid.gp-cols-2 .rsln-card{grid-column:span 6}.rs-links .rsln-grid.gp-cols-2 .rsln-card:last-child:nth-child(odd){grid-column:1 / -1}@media (max-width:640px){.rs-links .rsln-grid .rsln-card{grid-column:1 / -1 !important}} .rs-links{ padding-top:18px; --links-bg:#f8f8f8; --links-txt:#0b1220; --links-muted:rgba(11,18,32,.70); --links-accent:#00446a; --links-radius:15px; --links-pad:16px; --links-indent:18px; --links-gap:10px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--links-txt); } .rs-links, .rs-links *{ box-sizing:border-box; } .rs-links hr{ display:none !important; } .rs-links .rsln-wrap{ border-radius:var(--links-radius); background:var(--links-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--links-pad); } .rs-links .rsln-titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-links .rsln-title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--links-txt) !important; letter-spacing:.2px; } .rs-links .rsln-badge{ margin:0 !important; color:var(--links-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-links .rsln-badge b{ color:var(--links-accent); } .rs-links .rsln-grid{ display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:10px; } .rs-links .rsln-card{ grid-column:span 12; border:1px solid rgba(11,18,32,.14); border-radius:12px; background:#ffffff; padding:12px; min-width:0; } .rs-links .rsln-head{ margin:0 0 10px 0 !important; font-family:'Poppins',sans-serif; font-weight:600; letter-spacing:.2px; text-transform:uppercase; font-size:12px; color:rgba(11,18,32,.70) !important; } .rs-links .rsln-item{ display:flex; align-items:flex-start; gap:var(--links-gap); margin:6px 0; padding:0; } .rs-links .rsln-item:first-child{ margin-top:0; } .rs-links .rsln-item:last-child{ margin-bottom:0; } .rs-links .rsln-bullet{ width:var(--links-indent); flex:0 0 var(--links-indent); color:rgba(11,18,32,.35); font-size:14px; line-height:1.5; } .rs-links .rsln-text{ min-width:0; font-size:14px; font-weight:500; line-height:1.5; color:var(--links-txt) !important; overflow-wrap:anywhere; } .rs-links .rsln-text a, .rs-links .rsln-text a:link, .rs-links .rsln-text a:visited{ display:inline !important; font-size:inherit !important; line-height:inherit !important; font-weight:500 !important; color:var(--links-txt) !important; text-decoration:none !important; text-indent:0 !important; letter-spacing:normal !important; white-space:normal !important; background:none !important; border:0 !important; padding:0 !important; margin:0 !important; opacity:1 !important; visibility:visible !important; overflow:visible !important; } .rs-links .rsln-text a:before, .rs-links .rsln-text a:after{ content:none !important; } .rs-links .rsln-text a:hover{ text-decoration:underline !important; text-underline-offset:2px; } .rs-links .rsln-grid, .rs-links .rsln-card{ background-image:none !important; box-shadow:none !important; outline:0 !important; } @media (max-width: 640px){ .rs-links .rsln-wrap{ padding:14px; } .rs-links .rsln-titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-links .rsln-title{ font-size:16px; line-height:1.3; } .rs-links .rsln-badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 Guides • SBC3003 User Guide • Digital Output Guide • Digital Input Guide • Voltage Input Guide • Voltage Ratio Input Guide • What is VINT? • VINT Upgrades • VINT Communication Speed Guide • Cable Length Calculator Guide CAD & Mechanical Files • Mechanical Drawings • Download 3D Step File Compliance • RoHS Compliance Certification • EU REACH Compliance Certification Specifications .rs-spec{ padding-top:18px; --spec-bg:#f8f8f8; --spec-line:rgba(11,18,32,.14); --spec-txt:#0b1220; --spec-muted:rgba(11,18,32,.70); --spec-accent:#00446a; --spec-radius:15px; --spec-pad:16px; font-family:'Arimo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--spec-txt); } .rs-spec, .rs-spec *{ box-sizing:border-box; } .rs-spec .wrap{ border-radius:var(--spec-radius); background:var(--spec-bg); border:0; box-shadow:0 4px 16px rgba(11,18,32,.08), 0 1px 4px rgba(11,18,32,.06); overflow:hidden; padding:var(--spec-pad); } .rs-spec .titlebar{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin:0 0 12px 0; padding:0 0 10px 0; border-bottom:1px solid rgba(11,18,32,.10); } .rs-spec .title{ margin:0 !important; font-family:'Poppins',sans-serif; font-size:18px; font-weight:550; color:var(--spec-txt) !important; letter-spacing:.2px; } .rs-spec .badge{ margin:0 !important; color:var(--spec-muted) !important; font-weight:500; font-size:12px; letter-spacing:.2px; white-space:nowrap; } .rs-spec .badge b{ color:var(--spec-accent); } .rs-spec .rows{ margin-top:0; padding-top:0; } .rs-spec .row{ display:grid; grid-template-columns:1.2fr .9fr; gap:14px; padding:10px 0; border-bottom:1px solid rgba(11,18,32,.08); } .rs-spec .row:last-child{ border-bottom:none; } .rs-spec .k{ font-size:14px; color:var(--spec-muted); font-weight:500; } .rs-spec .v{ font-size:14px; color:var(--spec-txt); font-weight:500; overflow-wrap:anywhere; } .rs-spec .muted{ color:var(--spec-muted); font-weight:500; } .rs-spec .row.one{ grid-template-columns:1fr; } .rs-spec .row.one .k{ color:var(--spec-txt); } .rs-spec .grp{ font-family:'Poppins',sans-serif; font-size:12px; font-weight:600; letter-spacing:.2px; text-transform:uppercase; color:var(--spec-accent); padding:14px 0 6px; border-bottom:1px solid rgba(11,18,32,.08); } @media (max-width: 640px){ .rs-spec .wrap{ padding:14px; } .rs-spec .row{ grid-template-columns:1fr; gap:6px; } .rs-spec .titlebar{ flex-direction:column; align-items:flex-start; gap:5px; } .rs-spec .title{ font-size:16px; line-height:1.3; } .rs-spec .badge{ white-space:normal; overflow-wrap:anywhere; } } Phidget SBC4 Debian GNU/Linux Single Board Computer Model: SBC3003_0 SBC CPU Allwinner A20 Core Dual-Core ARM Cortex-A7 CPU Speed **Up to 960 MHz SDRAM Size 512 MiB Boot Time 20 s Ethernet Cable 10/100BASE-T Electrical Properties Supply Voltage Min 8 V DC Supply Voltage Max 30 V DC Power Consumption Min 1 W Available External Voltage 5 V DC Available External Current 500 mA USB Hub Number of USB Ports 3 USB Speed High Speed Available Current per USB Port 500 mA Board Properties Number of VINT Ports 6 VINT Communication Speed Max 100 kbit/s Power Jack 5.5x2.1mm, Center Positive Operating Temperature Min 0 °C Operating Temperature Max 70 °C Driver Support Phidget22 Voltage Inputs Number of Voltage Inputs 6 (Shared) Voltage Input Resolution (bits) * 16 bit Sensor Input Impedance 324 kΩ Input Voltage Min (DC) 0 V DC Input Voltage Max (DC) 5 V DC Voltage Input Noise ± 630 µV DC Sampling Interval Max 60 s/sample Sampling Interval Min 1 ms/sample Digital Inputs Number of Digital Inputs 6 (Shared) Pull-up Resistance 124 kΩ Low Voltage Max (True) 1 V DC High Voltage Min (False) 1.8 V DC High Voltage Trigger Length Min 3 ms Low Voltage Trigger Length Min 3 ms Digital Input Voltage Max 5.5 V DC Digital Input Type Switch (Active Low) Digital Outputs Number of Digital Outputs 6 (Shared) Series Resistance 510 Ω Digital Output Available Current 81 mA Digital Output Voltage Min 0 V DC Digital Output Voltage Max 3.3 V DC PWM Frequency Max 50 kHz Duty Cycle Resolution 0.8 % Software Channels (Phidget22 API) Digital Input DigitalInput (channel 0) Digital Output DigitalOutput (channel 0) Voltage Input VoltageInput (channel 0) Voltage Ratio Input VoltageRatioInput (channel 0) VINT Hub Hub (channel 0) *Voltage measured with a 10-bit ADC, oversampled to 16-bits. **This processor supports dynamic frequency scaling , which lowers the clock speed to save power depending on processing load."
+       },
+       "id": "gid://shopify/ProductVariant/42358942924961",
+       "list_price": {
+        "amount": 14438,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_4531100.webp?v=1793110608"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 14438,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Phi-348",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SeeedStudio is a leading hardware innovation platform, offering a wide array of products like sensors, microcontroller kits, communication modules, and more. At RobotShop, we showcase SeeedStudio's excellently engineered and highly versatile Grove system, renowned for its easy customization and integration capabilities. Explore SeeedStudio's smart home solutions, robotics components, and IoT devices, all designed to inspire creativity and efficient problem-solving."
+       },
+       "handle": "seeedstudio-en",
+       "id": "gid://shopify/Collection/290240856225",
+       "title": "SeeedStudio"
+      }
+     ],
+     "description": {
+      "html": "Description SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC Features a Quad-core Intel® Celeron® J4125, 8GB LPDDR4 RAM High-definition 4K Video Output Sufficient Capability and Expandability: Incl onboard 64GB eMMC The SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC features a Quad-core Intel® Celeron® J4125 and RP2040 co-processor, equipping dual 2.5GbE interfaces and multiple wireless connectivities, supporting 4K output, carrying sufficient storage capability, equipment expandability, and fan heat dissipation, operated by multiple OS (pre-installed Win 11 Enterprise), all of which indicate that it can be an ideal mini PC, a functional router, a media center or other development applications by your definition. You can access fast speed network with equipped dual 2.5GbE interfaces which increases the network performance and helps you with daily work efficiency. Meanwhile, there is dual-band Wi-Fi onboard which improves throughput capability and connection flexibility. This board also supports 4G LTE communication where you can insert a Micro-SIM card and input a 4G module. With enhanced interconnectivity, this little box can implement the function of a high-speed router and IoT gateway. This mini desktop PC comes with Intel® UHD Graphics 600, and an HDMI 2.0a interface which offers 4K@60Hz immersive visual output. Furthermore, the USB3.1 Type-C also supports media stream which means it can be converted to a DP interface. You can connect two monitors at the same time and perform different tasks. It can be utilized to realize a home theater for entertainment or a conferencing video for business trips, functioning well both indoors and outdoors. There equips one SATA and dual M.2 PCIe (B Key and M Key) interfaces for high storage extension. Not only with onboard 64GB eMMC, but you can also input NVME SSD (M.2 M-Key) or use an M.2 to SATA Converter to enable the computer to connect with up to three hard drivers. It even provides 1x SD card slot, 1x 3.5mm audio Jack, 1x USB 3.1, and 2x USB 2.0 ports for equipment expandability. You can utilize it to build a NAS (Network-Attached Storage) or an NVR (Network Video Recorder). Seeed Studio elaborates and establishes this development board by inserting the RP2040 co-processor, presenting compatible Raspberry Pi 40-Pin and compatible RP2040 28-Pin for high standards of operation of the development. Supported by Seeed Studio's entire electronics Grove ecosystem and enhanced SenseCAP platform, you are able to manage hundreds of sensors in your projects. Whether applying it as an HTPC(Home Theater Personal Computer) for home entertainment, or a travel PC for outdoor and business trips, you can choose to install Windows, Linux, and OpenWRT OS and define this board in your way. View more What's Included 1x SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC Dimensions Size 110 x 110 mm Specifications Components: ODYSSEY - X86J4125864 v2 Processor: Intel® Celeron® J4125 (Frequency: 2.0 - 2.7GHz) Coprocessor: Raspberry Pi ® RP2040 32bit ARM® Dual-Core Cortex® M0+ Graphics: Intel® UHD Graphics 600 (Frequency: 250 – 750MHz) Memory: LPDDR4 8GB Wireless: Wi-Fi 802.11 a/b/g/n/ac @ 2.4/5 GHz HT160 Networking: Intel I211AT PCIe Gigabit LAN, Supports Wake-On-LAN, Supports PXE Audio: Microphone + headphone Combo Connector USB: USB 2.0 Type-A x2, USB 3.1 Type-A x1, USB 3.1 Type-C x1 Video Interfaces: HDMI2.0a: Up to 4096x2160 @ 60Hz 24bpp / DP1.2a: Up to 4096x2160 @ 60Hz 24bpp Expansion Slots: M.2(Key B, 2242/2280): SATA III, USB2.0, UIM; M.2 (Key M, 2242/2280): PCIe 2.0 x4; Micro SD card Socket; SIM Card Socket; SATA III RTC: JST 1.0 CR2032 3V TPM: Built-in TPM (2.0), optional external TPM Power: DC Jack 5.5/2.1mm or Type-C PD, DC Jack input: 12-19V DC, Type-C input: 15V DC Certifications: FCC, CE, TELEC, UKCA Operating temperature: 0 ~75 °C Headers 1x 40-Pin header compatible with Raspberry Pi 1x 28-Pin header (RP2040) 1x Front Panel Audio Connector 1x 4-Pin header (UART function from RP2040) 1x Fan Port (4 pins 1.25mm PWM 5V） 3x 4-Pin SATA Power Connector 1x 4-Pin header (Power and Switch)"
+     },
+     "gift_card": false,
+     "handle": "seeedstudio-odyssey-x86j4125864-v2-win11-enterprise-activated-mini-pc",
+     "id": "gid://shopify/Product/7487143346337",
+     "list_price_range": {
+      "max": {
+       "amount": 30267,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 30267,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1838742.webp?v=1794231581"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 30267,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 30267,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers"
+     ],
+     "title": "SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC",
+     "url": "https://www.robotshop.com/products/seeedstudio-odyssey-x86j4125864-v2-win11-enterprise-activated-mini-pc",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360311087265:1",
+       "description": {
+        "html": "Description SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC Features a Quad-core Intel® Celeron® J4125, 8GB LPDDR4 RAM High-definition 4K Video Output Sufficient Capability and Expandability: Incl onboard 64GB eMMC The SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC features a Quad-core Intel® Celeron® J4125 and RP2040 co-processor, equipping dual 2.5GbE interfaces and multiple wireless connectivities, supporting 4K output, carrying sufficient storage capability, equipment expandability, and fan heat dissipation, operated by multiple OS (pre-installed Win 11 Enterprise), all of which indicate that it can be an ideal mini PC, a functional router, a media center or other development applications by your definition. You can access fast speed network with equipped dual 2.5GbE interfaces which increases the network performance and helps you with daily work efficiency. Meanwhile, there is dual-band Wi-Fi onboard which improves throughput capability and connection flexibility. This board also supports 4G LTE communication where you can insert a Micro-SIM card and input a 4G module. With enhanced interconnectivity, this little box can implement the function of a high-speed router and IoT gateway. This mini desktop PC comes with Intel® UHD Graphics 600, and an HDMI 2.0a interface which offers 4K@60Hz immersive visual output. Furthermore, the USB3.1 Type-C also supports media stream which means it can be converted to a DP interface. You can connect two monitors at the same time and perform different tasks. It can be utilized to realize a home theater for entertainment or a conferencing video for business trips, functioning well both indoors and outdoors. There equips one SATA and dual M.2 PCIe (B Key and M Key) interfaces for high storage extension. Not only with onboard 64GB eMMC, but you can also input NVME SSD (M.2 M-Key) or use an M.2 to SATA Converter to enable the computer to connect with up to three hard drivers. It even provides 1x SD card slot, 1x 3.5mm audio Jack, 1x USB 3.1, and 2x USB 2.0 ports for equipment expandability. You can utilize it to build a NAS (Network-Attached Storage) or an NVR (Network Video Recorder). Seeed Studio elaborates and establishes this development board by inserting the RP2040 co-processor, presenting compatible Raspberry Pi 40-Pin and compatible RP2040 28-Pin for high standards of operation of the development. Supported by Seeed Studio's entire electronics Grove ecosystem and enhanced SenseCAP platform, you are able to manage hundreds of sensors in your projects. Whether applying it as an HTPC(Home Theater Personal Computer) for home entertainment, or a travel PC for outdoor and business trips, you can choose to install Windows, Linux, and OpenWRT OS and define this board in your way. View more What's Included 1x SeeedStudio ODYSSEY X86J4125864 v2 Win11 Enterprise Activated Mini PC Dimensions Size 110 x 110 mm Specifications Components: ODYSSEY - X86J4125864 v2 Processor: Intel® Celeron® J4125 (Frequency: 2.0 - 2.7GHz) Coprocessor: Raspberry Pi ® RP2040 32bit ARM® Dual-Core Cortex® M0+ Graphics: Intel® UHD Graphics 600 (Frequency: 250 – 750MHz) Memory: LPDDR4 8GB Wireless: Wi-Fi 802.11 a/b/g/n/ac @ 2.4/5 GHz HT160 Networking: Intel I211AT PCIe Gigabit LAN, Supports Wake-On-LAN, Supports PXE Audio: Microphone + headphone Combo Connector USB: USB 2.0 Type-A x2, USB 3.1 Type-A x1, USB 3.1 Type-C x1 Video Interfaces: HDMI2.0a: Up to 4096x2160 @ 60Hz 24bpp / DP1.2a: Up to 4096x2160 @ 60Hz 24bpp Expansion Slots: M.2(Key B, 2242/2280): SATA III, USB2.0, UIM; M.2 (Key M, 2242/2280): PCIe 2.0 x4; Micro SD card Socket; SIM Card Socket; SATA III RTC: JST 1.0 CR2032 3V TPM: Built-in TPM (2.0), optional external TPM Power: DC Jack 5.5/2.1mm or Type-C PD, DC Jack input: 12-19V DC, Type-C input: 15V DC Certifications: FCC, CE, TELEC, UKCA Operating temperature: 0 ~75 °C Headers 1x 40-Pin header compatible with Raspberry Pi 1x 28-Pin header (RP2040) 1x Front Panel Audio Connector 1x 4-Pin header (UART function from RP2040) 1x Fan Port (4 pins 1.25mm PWM 5V） 3x 4-Pin SATA Power Connector 1x 4-Pin header (Power and Switch)"
+       },
+       "id": "gid://shopify/ProductVariant/42360311087265",
+       "list_price": {
+        "amount": 30267,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1838742.webp?v=1794231581"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 30267,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-See-867",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Roboworks excels in delivering advanced programming and educational robots ideal for research and development. Their product line, available at Robotshop, includes versatile ROS-compatible robots like the Rosbot and Mecabot series, which come equipped with LiDAR, depth cameras, and various controllers, offering robust platforms for prototyping, educational purposes, and practical applications in industries like agriculture, delivery, and room service."
+       },
+       "handle": "roboworks",
+       "id": "gid://shopify/Collection/290266874017",
+       "title": "Roboworks"
+      },
+      {
+       "description": {
+        "html": "RoboWorks desarrolla robots, software y servicios innovadores para ayudar a personas comunes como usted y yo a resolver problemas reales en el hogar, en el trabajo, en la escuela o sobre el terreno. Ponemos la robótica al servicio de su trabajo y de su creatividad, ya sea para disfrutar, aprender o desarrollar actividades profesionales."
+       },
+       "handle": "vendor-roboworks",
+       "id": "gid://shopify/Collection/290594324641",
+       "title": "RoboWorks"
+      }
+     ],
+     "description": {
+      "html": "Description Jetson Orin NX MiROS Visual Programming Software. Plug-and-play on your robot easily. Expansion with 14” touch screen, wireless keyboard and mouse. Sync your project and code over the cloud. MiROS PC is a robotics computer powered by Jetson Orin and MiROS. MiROS PC is your pocket-sized PC, allowing you to develop A.I. and Robotic applications directly on the robot, on your desktop, or on-the-go. With the 14” touchscreen, wireless keyboard, and mouse, you can easily access your projects while working with your robot in the field. Plus, you can continue coding seamlessly when you take the MiROS PC home or on the go. MiROS is a cloud-based visual programming tool for ROS. The MiROS PC comes pre-installed with the MiROS and RoboCloud Services, enabling you to develop, save, and sync your projects anytime, anywhere. Why MiROS PC? Mobile Robotics Computer Audio and Vision AI Kits Visual ROS Programming Who are the users? Robotic developers - need mobility for project development and testing. A.I. researchers - need sensors and GPU power on their desktop. Students - need an affordable kit to study A.I. and Robotics. What is MiROS: MiROS is the Ultimate Visual Programming Tool for ROS! MiROS empowers users from all computer platforms to develop, test and deploy ROS directly from their web browsers. Say goodbye to Virtual Machines, Mac and Windows users can save the troubles to install ROS on a Virtual Machine. With zero configuration required, MiROS offers a lightning-fast setup experience. Effortlessly create ROS code with drag-and-drop visual programming, generating robust code in no time. MiROS integrates Gazebo and Rviz into a unified, browser-based environment, streamlining every step of your cloud-based development journey. Build and run ROS code instantly and wirelessly on your robot for a truly connected experience. Designed to lower barriers for beginners and boost productivity for experts, MiROS is the ultimate tool for ROS developers, saving time, reducing costs, and making innovation easier than ever. View more What's Included Ubuntu 22.04 ROS 2 Humble Jetson Orin NX or Jetson Orin Nano board. Preinstalled MiROS DevKit and RoboCloud Services. 14” touch screen. Wireless keyboard and mouse. Wifi module and antena. 128G SSD Type-C data cable Power cable and adaptor RGB camera (MiROS PC Pro only) Gemini Pro Depth camera (MiROS PC Pro only) N10P LiDAR (MiROS PC Pro only) Dimensions Length: 119mm Width: 89mm Height: 42mm Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+     },
+     "gift_card": false,
+     "handle": "roboworks-miros-pc-lite-orin-nx",
+     "id": "gid://shopify/Product/14639410970988",
+     "list_price_range": {
+      "max": {
+       "amount": 247900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 247900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "MiROS PC Lite - Orin NX",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/8433f2dd_miros_pc_1.webp?v=1733214615"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 247900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 247900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers",
+      "no-cps-warranty",
+      "rbm",
+      "rbmVendor_RBWO",
+      "special-order"
+     ],
+     "title": "MiROS PC Lite - Orin NX",
+     "url": "https://www.robotshop.com/products/roboworks-miros-pc-lite-orin-nx",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51701899592044:1",
+       "description": {
+        "html": "Description Jetson Orin NX MiROS Visual Programming Software. Plug-and-play on your robot easily. Expansion with 14” touch screen, wireless keyboard and mouse. Sync your project and code over the cloud. MiROS PC is a robotics computer powered by Jetson Orin and MiROS. MiROS PC is your pocket-sized PC, allowing you to develop A.I. and Robotic applications directly on the robot, on your desktop, or on-the-go. With the 14” touchscreen, wireless keyboard, and mouse, you can easily access your projects while working with your robot in the field. Plus, you can continue coding seamlessly when you take the MiROS PC home or on the go. MiROS is a cloud-based visual programming tool for ROS. The MiROS PC comes pre-installed with the MiROS and RoboCloud Services, enabling you to develop, save, and sync your projects anytime, anywhere. Why MiROS PC? Mobile Robotics Computer Audio and Vision AI Kits Visual ROS Programming Who are the users? Robotic developers - need mobility for project development and testing. A.I. researchers - need sensors and GPU power on their desktop. Students - need an affordable kit to study A.I. and Robotics. What is MiROS: MiROS is the Ultimate Visual Programming Tool for ROS! MiROS empowers users from all computer platforms to develop, test and deploy ROS directly from their web browsers. Say goodbye to Virtual Machines, Mac and Windows users can save the troubles to install ROS on a Virtual Machine. With zero configuration required, MiROS offers a lightning-fast setup experience. Effortlessly create ROS code with drag-and-drop visual programming, generating robust code in no time. MiROS integrates Gazebo and Rviz into a unified, browser-based environment, streamlining every step of your cloud-based development journey. Build and run ROS code instantly and wirelessly on your robot for a truly connected experience. Designed to lower barriers for beginners and boost productivity for experts, MiROS is the ultimate tool for ROS developers, saving time, reducing costs, and making innovation easier than ever. View more What's Included Ubuntu 22.04 ROS 2 Humble Jetson Orin NX or Jetson Orin Nano board. Preinstalled MiROS DevKit and RoboCloud Services. 14” touch screen. Wireless keyboard and mouse. Wifi module and antena. 128G SSD Type-C data cable Power cable and adaptor RGB camera (MiROS PC Pro only) Gemini Pro Depth camera (MiROS PC Pro only) N10P LiDAR (MiROS PC Pro only) Dimensions Length: 119mm Width: 89mm Height: 42mm Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})});"
+       },
+       "id": "gid://shopify/ProductVariant/51701899592044",
+       "list_price": {
+        "amount": 247900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/8433f2dd_miros_pc_1.webp?v=1733214615"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 247900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RM-RBWO-06A",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Chengdu Ebyte Electronic Technology Co., Ltd. was established in 2012, with an office area of over 6,000 square meters. It is a high-tech enterprise integrating R&D, production and sales, with a complete industrial chain, focusing on Internet of Things communication applications. Products cover LoRa, WiFi, Bluetooth, ZigBee, CAN bus modules, data transmission radio stations, industrial routers/gateways, LORAWAN, remote I/O modules,Industrial signal transmission, etc. Since its establishment, the company has obtained over 120 patents and certifications including SRRC, FCC, CE, MIC, KC, and NCC. Our products are sold in over 50 countries and regions worldwide, receiving widespread acclaim.Our company is committed to providing professional communication solutions for customers in industries such as artificial intelligence, industrial control, energy conservation and environmental protection, and rail transit. Ebyte adheres to the principle of \"Four Highs\": High Efficiency, High Professionalism, High Stability, and High Cost Performance."
+       },
+       "handle": "vendor-ebyte",
+       "id": "gid://shopify/Collection/633336791404",
+       "title": "EBYTE"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "ebyte",
+       "id": "gid://shopify/Collection/633336824172",
+       "title": "EBYTE"
+      }
+     ],
+     "description": {
+      "html": "Description Allwinner T527 Single-board Support Gigabit Ethernet, Wi-Fi & BT, USB, MIPI The ECB32-PB series of single-board computers (SBCs) from Ebyte are carefully designed based on Allwinner's T527/A527 series processors. They support MIPI DSI video interface, MIPI CSI camera interface, HDMI video interface, PCIe interface, USB Host interface, USB OTG interface, Ethernet interface, audio interface, TF card expansion interface, Wi-Fi and Bluetooth, UART debug serial port, and a rich set of extended GPIO interfaces. They can be widely used in content sharing and self-service terminals, smart manufacturing, and other electronic business and industrial equipment. View more Dimensions 85*56mm Specifications [Processor Model]：T527MN [Processor Frequency]： 1.8GHz [Memory]：4GB [Storage]：32GB [Dimensions]：85*56mm [Product weight]：45g"
+     },
+     "gift_card": false,
+     "handle": "ebyte-ecb32-pbtn4e32-n-cost-effective-arm-embedded-system-allwinner-t527-single-board-computer-4k-uhd-linux-technical-support-rich-interfaces-support-gigabit-ethernet-wi-fi-bt-usb-mipi",
+     "id": "gid://shopify/Product/15007573672300",
+     "list_price_range": {
+      "max": {
+       "amount": 8800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8800,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "ECB32-PBTN4E32-N Cost-effective ARM embedded system Allwinner T527 Single-board Computer 4K UHD Linux Technical Support Rich Interfaces support Gigabit Ethernet, Wi-Fi &amp; BT, USB, MIPI",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/d7a64669_202510201741504316.webp?v=1769566922"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 8800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers",
+      "no-cps-warranty",
+      "rbm",
+      "rbmVendor_EBYT"
+     ],
+     "title": "ECB32-PBTN4E32-N Cost-effective ARM embedded system Allwinner T527 Single-board Computer 4K UHD Linux Technical Support Rich Interfaces support Gigabit Ethernet, Wi-Fi &amp; BT, USB, MIPI",
+     "url": "https://www.robotshop.com/products/ebyte-ecb32-pbtn4e32-n-cost-effective-arm-embedded-system-allwinner-t527-single-board-computer-4k-uhd-linux-technical-support-rich-interfaces-support-gigabit-ethernet-wi-fi-bt-usb-mipi",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/53118030741868:1",
+       "description": {
+        "html": "Description Allwinner T527 Single-board Support Gigabit Ethernet, Wi-Fi & BT, USB, MIPI The ECB32-PB series of single-board computers (SBCs) from Ebyte are carefully designed based on Allwinner's T527/A527 series processors. They support MIPI DSI video interface, MIPI CSI camera interface, HDMI video interface, PCIe interface, USB Host interface, USB OTG interface, Ethernet interface, audio interface, TF card expansion interface, Wi-Fi and Bluetooth, UART debug serial port, and a rich set of extended GPIO interfaces. They can be widely used in content sharing and self-service terminals, smart manufacturing, and other electronic business and industrial equipment. View more Dimensions 85*56mm Specifications [Processor Model]：T527MN [Processor Frequency]： 1.8GHz [Memory]：4GB [Storage]：32GB [Dimensions]：85*56mm [Product weight]：45g"
+       },
+       "id": "gid://shopify/ProductVariant/53118030741868",
+       "list_price": {
+        "amount": 8800,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/d7a64669_202510201741504316.webp?v=1769566922"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 8800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RM-EBYT-0QT",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Elecrow specializes in providing high-quality electronics and open-source hardware for makers, educators, and hobbyists. At RobotShop, Elecrow offers an extensive range of products from development boards and kits to sensors and displays, supporting versatile DIY projects and educational endeavors. Elecrow's products are known for ease-of-use, innovative design, and robust functionality, making electronics accessible to all levels of expertise."
+       },
+       "handle": "elecrow",
+       "id": "gid://shopify/Collection/290255208609",
+       "title": "Elecrow"
+      }
+     ],
+     "description": {
+      "html": "Description Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) Transform devices into a laptop experience Integrates screen, keyboard, touchpad, and speakers Operates 1-2 hours with a built-in 5000mAh battery Compatible with smartphones and SBCs Supports Windows, MacOS, Android, and Linux The Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) is an innovative portable monitor designed to transform various devices into a laptop-like experience. This all-in-one solution integrates a screen, keyboard, touchpad, and speakers, providing a seamless and organized workspace that enhances productivity in diverse environments. It is compatible with smartphones, single-board computers such as the Raspberry Pi and Jetson Nano, mini PCs, and gaming consoles, making it a versatile tool for both professional and personal use. The CrowView Note features a built-in 5000mAh battery, allowing it to operate independently for 1-2 hours without an external power source. This capability also enables it to power connected devices like smartphones and single-board computers. Its design supports a wide range of operating systems, including Windows, MacOS, Android, and Linux, ensuring broad compatibility and ease of use across different platforms. Manufactured by Elecrow, the CrowView Note is a testament to modern design and functionality, offering a portable and efficient solution for those who require flexibility in their computing needs. It is important to note that this device does not include a CPU, RAM, HDD/SDD, or camera, and it does not support certain iPhone models with USB 2.0 interfaces. Note: Ensure compatibility with your device's interface before use. View more What's Included 1x Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) 1x Power Adapter (12V-4A) 1x USB C Cable 1x HD Cable 1x USB A Cable 1x User Manual Dimensions 335 x 220 x 17 mm Links PDF Files Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) - User Manual Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) - Datasheet Specifications Screen Size: 14 inch Resolution: 1920*1080 Refresh Rate: 60Hz Brightness: 300nit Panel Type: IPS Panel Aspect Ratio: 16:9 Battery: 5000mAh Product Color: Grey Material: ABS+PC Net Weight: 1153g Operating Systems: Windows, MAC, Linux, Android Devices: Android Phone, Laptop, Xbox, Nintendo Switch, PS4, PS5"
+     },
+     "gift_card": false,
+     "handle": "elecrow-crowview-note-en-jetson-nano-bridge-us-plug-no-sbc",
+     "id": "gid://shopify/Product/14645795488108",
+     "list_price_range": {
+      "max": {
+       "amount": 20090,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 20090,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/crowview_note-all_in_one_portable_monitor-us-3.webp?v=1738693124"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 20090,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 20090,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC)",
+     "url": "https://www.robotshop.com/products/elecrow-crowview-note-en-jetson-nano-bridge-us-plug-no-sbc",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51722250715500:1",
+       "description": {
+        "html": "Description Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) Transform devices into a laptop experience Integrates screen, keyboard, touchpad, and speakers Operates 1-2 hours with a built-in 5000mAh battery Compatible with smartphones and SBCs Supports Windows, MacOS, Android, and Linux The Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) is an innovative portable monitor designed to transform various devices into a laptop-like experience. This all-in-one solution integrates a screen, keyboard, touchpad, and speakers, providing a seamless and organized workspace that enhances productivity in diverse environments. It is compatible with smartphones, single-board computers such as the Raspberry Pi and Jetson Nano, mini PCs, and gaming consoles, making it a versatile tool for both professional and personal use. The CrowView Note features a built-in 5000mAh battery, allowing it to operate independently for 1-2 hours without an external power source. This capability also enables it to power connected devices like smartphones and single-board computers. Its design supports a wide range of operating systems, including Windows, MacOS, Android, and Linux, ensuring broad compatibility and ease of use across different platforms. Manufactured by Elecrow, the CrowView Note is a testament to modern design and functionality, offering a portable and efficient solution for those who require flexibility in their computing needs. It is important to note that this device does not include a CPU, RAM, HDD/SDD, or camera, and it does not support certain iPhone models with USB 2.0 interfaces. Note: Ensure compatibility with your device's interface before use. View more What's Included 1x Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) 1x Power Adapter (12V-4A) 1x USB C Cable 1x HD Cable 1x USB A Cable 1x User Manual Dimensions 335 x 220 x 17 mm Links PDF Files Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) - User Manual Elecrow CrowView Note (EN, Jetson Nano Bridge, US Plug, no SBC) - Datasheet Specifications Screen Size: 14 inch Resolution: 1920*1080 Refresh Rate: 60Hz Brightness: 300nit Panel Type: IPS Panel Aspect Ratio: 16:9 Battery: 5000mAh Product Color: Grey Material: ABS+PC Net Weight: 1153g Operating Systems: Windows, MAC, Linux, Android Devices: Android Phone, Laptop, Xbox, Nintendo Switch, PS4, PS5"
+       },
+       "id": "gid://shopify/ProductVariant/51722250715500",
+       "list_price": {
+        "amount": 20090,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/crowview_note-all_in_one_portable_monitor-us-3.webp?v=1738693124"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 20090,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Ecw-257",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-7-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Single Board Computers (SBCs) provide compact, powerful solutions ideal for various applications, from educational projects to industrial automation. Popular models include Raspberry Pi, NVIDIA Jetson, and BIGTREETECH boards, offering varied specifications and features like Wi-Fi, Bluetooth, multiple I/O options, and impressive processing capabilities. Whether you're developing a media center, AI projects, or controlling a robot, these SBCs offer flexibility and performance to meet your needs."
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/290215297185",
+       "title": "Single Board Computers"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "SunFounder is a dynamic company specializing in STEAM education kits and robotics solutions, offering a wide range of products including open-source robots, Arduino & Raspberry Pi kits, and smart devices. Their products are designed to enhance hands-on practice and problem-solving skills, benefiting students, hobbyists, and professionals. With a strong emphasis on educational value and innovation, SunFounder provides detailed tutorials and visual programming tools to ease the learning process. Discover the joy of building and programming with SunFounder's diverse and engaging products."
+       },
+       "handle": "sunfounder",
+       "id": "gid://shopify/Collection/290246099105",
+       "title": "Sunfounder"
+      }
+     ],
+     "description": {
+      "html": "Description Sunfounder Raspberry Pi 4 Model B 2GB Offers enhanced processing power and multimedia capabilities Maintains backward compatibility with Raspberry Pi 3 Model B+ Supports dual 4K display output through micro-HDMI ports Ensures robust connectivity with dual-band Wi-Fi and Bluetooth 5.0 Designed for efficient operation from 0 to 50°C The Sunfounder Raspberry Pi 4 Model B 2GB is a versatile computing device that offers enhanced processing power and multimedia capabilities compared to its predecessor, the Raspberry Pi 3 Model B+. It maintains backward compatibility while delivering desktop-level performance akin to entry-level x86 PC systems. This model is equipped with a high-performance 64-bit quad-core processor and supports dual-display output at resolutions up to 4K through its micro-HDMI ports. It also features hardware video decoding capabilities for 4Kp60 content. Connectivity options are robust, with dual-band 2.4/5.0 GHz wireless LAN, Bluetooth 5.0, and Gigabit Ethernet, ensuring seamless integration into various network environments. The device includes USB 3.0 ports for high-speed data transfer and is compatible with Power over Ethernet (PoE) through an additional PoE HAT. The modular compliance certification of its wireless components facilitates easier integration into end products, reducing compliance testing requirements. The Raspberry Pi 4 Model B 2GB is designed to operate efficiently within a temperature range of 0 to 50 degrees Celsius, making it suitable for a wide range of applications. Its compact form factor and extensive connectivity options make it an ideal choice for developers and hobbyists seeking a powerful yet flexible computing platform. View more What's Included 1x Sunfounder Raspberry Pi 4 Model B 2GB Specifications 1.5GHz 64-bit quad-core CPU 2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE 2 USB 3.0 ports; 2 USB 2.0 ports Raspberry Pi standard 40-pin GPIO header 2 micro-HDMI ports (supports up to 4kp60) 2-lane MIPI DSI display port 2-lane MIPI CSI camera port 4-pole stereo audio and composite video port H.265 (4kp60 decode), H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 graphics Micro-SD card slot for operating system and data storage 5V DC via USB-C connector (minimum 3A) 5V DC via GPIO header (minimum 3A)"
+     },
+     "gift_card": false,
+     "handle": "sunfounder-raspberry-pi-4-model-b-2gb",
+     "id": "gid://shopify/Product/14774618423660",
+     "list_price_range": {
+      "max": {
+       "amount": 9815,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9815,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Sunfounder Raspberry Pi 4 Model B 2GB",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sunfounder_raspberry_pi_4_model_b_2gb_1.webp?v=1752602529"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 9815,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9815,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Robot Parts",
+      "category:Robots",
+      "category:Single Board Computers"
+     ],
+     "title": "Sunfounder Raspberry Pi 4 Model B 2GB",
+     "url": "https://www.robotshop.com/products/sunfounder-raspberry-pi-4-model-b-2gb",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/52371857899884:1",
+       "description": {
+        "html": "Description Sunfounder Raspberry Pi 4 Model B 2GB Offers enhanced processing power and multimedia capabilities Maintains backward compatibility with Raspberry Pi 3 Model B+ Supports dual 4K display output through micro-HDMI ports Ensures robust connectivity with dual-band Wi-Fi and Bluetooth 5.0 Designed for efficient operation from 0 to 50°C The Sunfounder Raspberry Pi 4 Model B 2GB is a versatile computing device that offers enhanced processing power and multimedia capabilities compared to its predecessor, the Raspberry Pi 3 Model B+. It maintains backward compatibility while delivering desktop-level performance akin to entry-level x86 PC systems. This model is equipped with a high-performance 64-bit quad-core processor and supports dual-display output at resolutions up to 4K through its micro-HDMI ports. It also features hardware video decoding capabilities for 4Kp60 content. Connectivity options are robust, with dual-band 2.4/5.0 GHz wireless LAN, Bluetooth 5.0, and Gigabit Ethernet, ensuring seamless integration into various network environments. The device includes USB 3.0 ports for high-speed data transfer and is compatible with Power over Ethernet (PoE) through an additional PoE HAT. The modular compliance certification of its wireless components facilitates easier integration into end products, reducing compliance testing requirements. The Raspberry Pi 4 Model B 2GB is designed to operate efficiently within a temperature range of 0 to 50 degrees Celsius, making it suitable for a wide range of applications. Its compact form factor and extensive connectivity options make it an ideal choice for developers and hobbyists seeking a powerful yet flexible computing platform. View more What's Included 1x Sunfounder Raspberry Pi 4 Model B 2GB Specifications 1.5GHz 64-bit quad-core CPU 2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE 2 USB 3.0 ports; 2 USB 2.0 ports Raspberry Pi standard 40-pin GPIO header 2 micro-HDMI ports (supports up to 4kp60) 2-lane MIPI DSI display port 2-lane MIPI CSI camera port 4-pole stereo audio and composite video port H.265 (4kp60 decode), H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 graphics Micro-SD card slot for operating system and data storage 5V DC via USB-C connector (minimum 3A) 5V DC via GPIO header (minimum 3A)"
+       },
+       "id": "gid://shopify/ProductVariant/52371857899884",
+       "list_price": {
+        "amount": 9815,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/sunfounder_raspberry_pi_4_model_b_2gb_1.webp?v=1752602529"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 9815,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Suf-239",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

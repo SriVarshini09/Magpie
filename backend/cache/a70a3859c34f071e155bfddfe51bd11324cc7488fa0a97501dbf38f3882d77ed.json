@@ -1,0 +1,1636 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "e-paper display"
+  }
+ },
+ "key": "a70a3859c34f071e155bfddfe51bd11324cc7488fa0a97501dbf38f3882d77ed",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:32:10-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVE0xTmpJNU9UWTNNemszT1N3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "What's better than a tri-color E-Paper display? Quad-color, of course! This is a 3.52\" 340x180 Quad-Color eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element plus an adapter cable. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. This is a 3.52\" quad-color (red, black, yellow, and white) display. It has 340x180 black, red and yellow ink pixels and a white-ish background. It uses the JD79667 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Unlike the vast majority of e-Ink displays, this one has a 'flipped' connector, with bottom contacts instead of top. You can use it with standard 24-pin E-Ink driver boards, but you need to attach the included extender and Flex A-B cable, which will flip the contacts over and make it work as expected. Note that you cannot overlay/mix pixels: each point can be one of the four colors, but you can't, like, mix the red and yellow to make an orange. Instead, check out our guide on dithering! Includes: 3.52\" 340x180 Quad-Color eInk / ePaper - Bare Display 24-pin 0.5mm pitch FPC Flex A-B (D) type Cable - 50mm long 24-pin 0.5mm FFC / FPC Extender Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "adafruit-3-52-340x180-quad-color-eink-epaper-bare-display",
+     "id": "gid://shopify/Product/15356284862843",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6414-00.jpg?v=1773333927"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "Adafruit 3.52\" 340x180 Quad-Color eInk / ePaper - Bare Display",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-3-52-340x180-quad-color-eink-epaper-bare-display",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151677600123:1",
+       "description": {
+        "html": "What's better than a tri-color E-Paper display? Quad-color, of course! This is a 3.52\" 340x180 Quad-Color eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element plus an adapter cable. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. This is a 3.52\" quad-color (red, black, yellow, and white) display. It has 340x180 black, red and yellow ink pixels and a white-ish background. It uses the JD79667 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Unlike the vast majority of e-Ink displays, this one has a 'flipped' connector, with bottom contacts instead of top. You can use it with standard 24-pin E-Ink driver boards, but you need to attach the included extender and Flex A-B cable, which will flip the contacts over and make it work as expected. Note that you cannot overlay/mix pixels: each point can be one of the four colors, but you can't, like, mix the red and yellow to make an orange. Instead, check out our guide on dithering! Includes: 3.52\" 340x180 Quad-Color eInk / ePaper - Bare Display 24-pin 0.5mm pitch FPC Flex A-B (D) type Cable - 50mm long 24-pin 0.5mm FFC / FPC Extender Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151677600123",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6414-00.jpg?v=1773333927"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6414",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "For folks who want to DIY their own E-Ink setups, this is a 3.7\" 416x240 Pixel Monochrome Black/White EPD - Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 3.7\" Monochrome Black/White display. It has 416x240 black ink pixels and a white-ish background. It uses the UC8253 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you; you can just interface with it as if it were an Adafruit_GFX compatible display. Despite having only monochromatic pixels, it's possible to get nice looking graphics on eInk displays: Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "3-7-416x240-monochrome-black-white-eink-epaper-bare-display-uc8253-chipset",
+     "id": "gid://shopify/Product/15356303016315",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6395-03.png?v=1773332004"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "3.7\" 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253",
+     "url": "https://shop.pimoroni.com/en-us/products/3-7-416x240-monochrome-black-white-eink-epaper-bare-display-uc8253-chipset",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151719838075:1",
+       "description": {
+        "html": "For folks who want to DIY their own E-Ink setups, this is a 3.7\" 416x240 Pixel Monochrome Black/White EPD - Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 3.7\" Monochrome Black/White display. It has 416x240 black ink pixels and a white-ish background. It uses the UC8253 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you; you can just interface with it as if it were an Adafruit_GFX compatible display. Despite having only monochromatic pixels, it's possible to get nice looking graphics on eInk displays: Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151719838075",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6395-03.png?v=1773332004"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6395",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "What's better than a tri-color E-Paper display? Quad-color, of course! This is a 2.13\" 250x122 Quad-Color eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element plus an adapter cable. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.13\" quad-color (red, black, yellow and white) display. It has 250x122 black, red and yellow ink pixels and a white-ish background. It uses the JD79661 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you cannot overlay/mix pixels: each point can be one of the four colors, but you can't, like, mix the red and yellow to make an orange. Instead, check out our guide on dithering! Technical Details eInk Display Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "2-13-250x122-quad-color-eink-epaper-bare-display",
+     "id": "gid://shopify/Product/15356288827771",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6373-00.jpg?v=1773337213"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "2.13\" 250x122 Quad-Color eInk / ePaper - Bare Display",
+     "url": "https://shop.pimoroni.com/en-us/products/2-13-250x122-quad-color-eink-epaper-bare-display",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151686709627:1",
+       "description": {
+        "html": "What's better than a tri-color E-Paper display? Quad-color, of course! This is a 2.13\" 250x122 Quad-Color eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element plus an adapter cable. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.13\" quad-color (red, black, yellow and white) display. It has 250x122 black, red and yellow ink pixels and a white-ish background. It uses the JD79661 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you cannot overlay/mix pixels: each point can be one of the four colors, but you can't, like, mix the red and yellow to make an orange. Instead, check out our guide on dithering! Technical Details eInk Display Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151686709627",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6373-00.jpg?v=1773337213"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6373",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "For folks who want to DIY their own E-Ink setups, this is a 4.2\" diagonal Monochrome or 4-level Grayscale eInk / ePaper Bare Display with 400 x 300 pixels. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 4.2\" monochrome/4gray display. It has 400x300 black ink pixels and a white-ish background. It uses the SSD1683 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two extra monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "4-2-300x400-monochrome-or-4-gray-eink-epaper-bare-display-ssd1683",
+     "id": "gid://shopify/Product/15356313796987",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6381-00.jpg?v=1773332242"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "4.2\" 300x400 Monochrome or 4-Gray eInk / ePaper - Bare Display - SSD1683",
+     "url": "https://shop.pimoroni.com/en-us/products/4-2-300x400-monochrome-or-4-gray-eink-epaper-bare-display-ssd1683",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151755686267:1",
+       "description": {
+        "html": "For folks who want to DIY their own E-Ink setups, this is a 4.2\" diagonal Monochrome or 4-level Grayscale eInk / ePaper Bare Display with 400 x 300 pixels. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 4.2\" monochrome/4gray display. It has 400x300 black ink pixels and a white-ish background. It uses the SSD1683 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two extra monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151755686267",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6381-00.jpg?v=1773332242"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6381",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "This breakout makes it a breeze to add a quad-color eInk display to your microcontroller project. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! We've liked these displays for a long time, but breakouts were never designed for makers to use. Finally, Adafruit decided to make their own! This is a 2.13\" quad-color (red, black, yellow and white) display. It has 250x122 black, red and yellow ink pixels and a white-ish background. It uses the JD79661 chipset, so make sure whatever firmware code you are planning to use has support for it. Using our CircuitPython or Arduino libraries, you can create a 'frame buffer' with what pixels you want to have activated and then write that out to the display. Most simple breakouts leave it at that. But if you do the math, 250 x 122 pixels x 2 bits = 7.5 KBytes. Which won't fit into many microcontroller memories. Heck, even if you do have 32KB of RAM, why waste 8KB? So Adafruit did you a favor and tossed a small SRAM chip on the back. This chip shares the SPI port the eInk display uses, so you only need one extra pin. And, no more frame-buffering! You can use the SRAM to set up whatever you want to display, then shuffle data from SRAM to eInk when you're ready. The library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. There's also a MicroSD socket so you can store images, text files, whatever you like to display. Everything is 3 or 5V logic safe so you can use it with any and all microcontrollers. For ultra-low power usages, the onboard 3.3V regulator has the Enable pin brought out so you can shut down the power to the SRAM, MicroSD, and display. This display breakout also features an 18-pin \"EYE SPI\" standard FPC connector with flip-top connector. You can use an 18-pin 0.5mm pitch FPC cable to connect to all the GPIO pins, for when you want to skip the soldering. Comes assembled and tested, with some header. You'll need a soldering iron to attach the header for breadboarding or installing it into your project. Technical Details Learn Primary Guide: Adafruit 2.13\" 250x122 Quad-Color eInk eInk with four colors! See All Guides"
+     },
+     "gift_card": false,
+     "handle": "adafruit-2-13-250x122-quad-color-eink-epaper-display-w-sram",
+     "id": "gid://shopify/Product/15356317958523",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6366-07.jpg?v=1773336213"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "e-ink Displays",
+      "EYESPI"
+     ],
+     "title": "Adafruit 2.13\" 250x122 Quad-Color eInk / ePaper Display w/ SRAM",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-2-13-250x122-quad-color-eink-epaper-display-w-sram",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151765942651:1",
+       "description": {
+        "html": "This breakout makes it a breeze to add a quad-color eInk display to your microcontroller project. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! We've liked these displays for a long time, but breakouts were never designed for makers to use. Finally, Adafruit decided to make their own! This is a 2.13\" quad-color (red, black, yellow and white) display. It has 250x122 black, red and yellow ink pixels and a white-ish background. It uses the JD79661 chipset, so make sure whatever firmware code you are planning to use has support for it. Using our CircuitPython or Arduino libraries, you can create a 'frame buffer' with what pixels you want to have activated and then write that out to the display. Most simple breakouts leave it at that. But if you do the math, 250 x 122 pixels x 2 bits = 7.5 KBytes. Which won't fit into many microcontroller memories. Heck, even if you do have 32KB of RAM, why waste 8KB? So Adafruit did you a favor and tossed a small SRAM chip on the back. This chip shares the SPI port the eInk display uses, so you only need one extra pin. And, no more frame-buffering! You can use the SRAM to set up whatever you want to display, then shuffle data from SRAM to eInk when you're ready. The library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. There's also a MicroSD socket so you can store images, text files, whatever you like to display. Everything is 3 or 5V logic safe so you can use it with any and all microcontrollers. For ultra-low power usages, the onboard 3.3V regulator has the Enable pin brought out so you can shut down the power to the SRAM, MicroSD, and display. This display breakout also features an 18-pin \"EYE SPI\" standard FPC connector with flip-top connector. You can use an 18-pin 0.5mm pitch FPC cable to connect to all the GPIO pins, for when you want to skip the soldering. Comes assembled and tested, with some header. You'll need a soldering iron to attach the header for breadboarding or installing it into your project. Technical Details Learn Primary Guide: Adafruit 2.13\" 250x122 Quad-Color eInk eInk with four colors! See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151765942651",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6366-07.jpg?v=1773336213"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6366",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "For folks who want to DIY their own E-Ink setups, this is a 5.83\" Monochrome Black/White EPD - Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 5.83\" Monochrome Black/White Display. It has 648x480 black ink pixels and a white-ish background. It uses the UC8179 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you; you can just interface with it as if it were an Adafruit_GFX compatible display. Despite having only monochromatic pixels, it's possible to get nice-looking graphics on eInk displays: Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "5-83-648x480-monochrome-black-white-eink-epaper-bare-display-uc8179-chipset",
+     "id": "gid://shopify/Product/15356295840123",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6397-04.png?v=1773332647"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "5.83\" 648x480 Monochrome Black / White eInk / ePaper - Bare Display - UC8179",
+     "url": "https://shop.pimoroni.com/en-us/products/5-83-648x480-monochrome-black-white-eink-epaper-bare-display-uc8179-chipset",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151699521915:1",
+       "description": {
+        "html": "For folks who want to DIY their own E-Ink setups, this is a 5.83\" Monochrome Black/White EPD - Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 5.83\" Monochrome Black/White Display. It has 648x480 black ink pixels and a white-ish background. It uses the UC8179 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you; you can just interface with it as if it were an Adafruit_GFX compatible display. Despite having only monochromatic pixels, it's possible to get nice-looking graphics on eInk displays: Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151699521915",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6397-04.png?v=1773332647"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6397",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "An extensive selection of add-on boards designed especially for the Raspberry Pi - hi res displays, sensors, amps and DACs and ALL the LEDs!"
+       },
+       "handle": "hats",
+       "id": "gid://shopify/Collection/28055585",
+       "title": "HATs & pHATs for Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Turn your Raspberry Pi into a colourful e-paper picture frame, dashboard or display with Inky Impression. Our Inky Impression E Ink® displays are super crisp, low power and look great from a variety of viewing angles. They have high pixel density and bright vivid colours, perfect for showing off gorgeous dithered images (we've put a lot of effort into our dithering code and we hope you love it). They also include: The appropriate hardware to attach to your Raspberry Pi computer and fix it securely in place. If your Pi has a 40 pin header attached, you won't need to do any soldering. Four rear mounted buttons, for interacting with the screen. Qw/ST connectors, so you can easily connect up breakouts and other I2C devices. Inky Impression is available in 4.0\" (600 x 400), 7.3” (800 x 480 pixel) and 13.3” (1600 x 1200 pixel) sizes. Why We 💚 E Ink® Multi-colour EPD displays use electrophoresis to pull coloured particles up and down on the display. The coloured particles reflect light, unlike most display types, meaning that they're visible under bright light. They don’t use a backlight like LCDs do, so they’re easy on the eyes and don’t introduce unwanted light into your environment. Electronic paper displays only consume power whilst they're refreshing, so they're a great choice for projects like home automation dashboards and electronic photo frames that need to be always on. They take a little while to refresh, so are best suited to projects that don't require constant screen updates. Spectra 6® Technology 🌈 The six colour display panels that we now use on Inky Impression bring a number of improvements over previous panels - notably a shorter refresh time and more saturated colours. They also come in an extended range of sizes, so we’ve been able to make a huge 13.3” (1600 x 1200 pixel) version - that’s almost A4 size! Features 4.0\" (600 x 400), 7.3” (800 x 480 pixel) or 13.3” (1600 x 1200 pixel) ePaper display E Ink Spectra 6® technology Ultra wide viewing angles Ultra low power consumption Four rear mounted buttons M2 mounting holes at the corners 40-pin extension header included to boost height for full-size Raspberry Pi. Standoffs included to securely attach to your Pi Qw/ST (Qwiic/STEMMA QT) connectors for adding breakouts Expansion header for adding other hardware Compatible with all 40-pin header Raspberry Pi computers, including Zero variants. Python library Comes fully assembled, with no soldering required (as long as your Pi has a 40-pin header attached). The display is securely stuck down to the Inky Impression PCB and connected via a ribbon cable, and it comes with mounting hardware to attach your Raspberry Pi securely in place. Just pop Inky Impression on your Pi and run our installer to get everything set up! Software Our Python library takes the stress out of displaying text and images on Inky Impression. Check out our Learn guide for a beginner friendly introduction: Learn: Getting Started with Inky Impression Tech Specs Product Name Inky Impression - 4.0” (Spectra 6 Edition) Inky Impression - 7.3” (Spectra 6 Edition) Inky Impression - 13.3” (Spectra 6 Edition) SKU PIM789 PIM773 PIM774 Resolution 600 x 400 pixels 800 x 480 pixels 1600 x 1200 pixels Technology E Ink Spectra 6® E Ink Spectra 6® E Ink Spectra 6® Colours 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) Dot Pitch (mm) 0.141 x 0.141 0.20 x 0.20 0.169 x 0.169 Aspect Ratio 3:2 5:3 4:3 Pixels Per Inch (PPI) 180 127 150 Board Dimensions (mm) 103.4 x 78 (W x H) 174.2 x 123.2 (W x H) 297 x 210 (W x H) Usable Area Dimensions (mm) 84.6 x 56.4 (W x H) 160 x 96 (W x H) 270.40 x 202.80 (W x H) Refresh Time 12 seconds* 28 seconds** 12 seconds* Recommended Temperature 0 ~ 50°C 0 ~ 50°C 0 ~ 50°C Schematic Link Link Link Dimensional Drawing Link Link Link Notes The Inky Impression display is made from glass so it's pretty fragile. Be careful not to drop it or press too hard on it, or it will crack. When fitting it to your Pi, grip at the edges of the board rather than pressing on top of the screen. This is not a touchscreen! The Inky Impression 7.3” board size is 174 x 123mm, which fits conveniently within a 180 x 130mm Ikea picture frame (though not with the screen perfectly centred).The Inky Impression 13.3” board size is 297 x 210mm, so it should be possible to install it in A4 sized picture frames. * This is the manufacturer's core refresh time at 25°C - 50°C - cooler temperatures may make the refresh take longer. It also takes a few seconds for the display to report a ready state and for data to be sent from the Raspberry Pi over SPI. You can expect a complete 'real world' refresh cycle to take between 20 and 35 seconds, depending the speed of your Pi and what variety of panel you have. Revision History Inky Impressions made from November 2025 onwards have rear mounted buttons instead of side mounted ones. This should hopefully help resolve issues with the buttons getting knocked off during transit! ** 7.3\" Inky Impressions made from April 2026 onwards use a new 'AC waveform' Spectra 6 display panel. These panels have a slightly longer core refresh time than previous panels, in exchange for some colour improvements and reduced ghosting."
+     },
+     "gift_card": false,
+     "handle": "inky-impression",
+     "id": "gid://shopify/Product/6937856278611",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-4-1_fb465dc7-ac08-4865-a046-7d1ef2045717.jpg?v=1769614584"
+      }
+     ],
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "4.0\""
+        },
+        {
+         "label": "7.3\""
+        },
+        {
+         "label": "13.3\""
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 25500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_customs",
+      "e-ink Displays",
+      "HATs & Addons",
+      "Raspberry Pi"
+     ],
+     "title": "Inky Impression",
+     "url": "https://shop.pimoroni.com/en-us/products/inky-impression",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56039376912763:1",
+       "description": {
+        "html": "Turn your Raspberry Pi into a colourful e-paper picture frame, dashboard or display with Inky Impression. Our Inky Impression E Ink® displays are super crisp, low power and look great from a variety of viewing angles. They have high pixel density and bright vivid colours, perfect for showing off gorgeous dithered images (we've put a lot of effort into our dithering code and we hope you love it). They also include: The appropriate hardware to attach to your Raspberry Pi computer and fix it securely in place. If your Pi has a 40 pin header attached, you won't need to do any soldering. Four rear mounted buttons, for interacting with the screen. Qw/ST connectors, so you can easily connect up breakouts and other I2C devices. Inky Impression is available in 4.0\" (600 x 400), 7.3” (800 x 480 pixel) and 13.3” (1600 x 1200 pixel) sizes. Why We 💚 E Ink® Multi-colour EPD displays use electrophoresis to pull coloured particles up and down on the display. The coloured particles reflect light, unlike most display types, meaning that they're visible under bright light. They don’t use a backlight like LCDs do, so they’re easy on the eyes and don’t introduce unwanted light into your environment. Electronic paper displays only consume power whilst they're refreshing, so they're a great choice for projects like home automation dashboards and electronic photo frames that need to be always on. They take a little while to refresh, so are best suited to projects that don't require constant screen updates. Spectra 6® Technology 🌈 The six colour display panels that we now use on Inky Impression bring a number of improvements over previous panels - notably a shorter refresh time and more saturated colours. They also come in an extended range of sizes, so we’ve been able to make a huge 13.3” (1600 x 1200 pixel) version - that’s almost A4 size! Features 4.0\" (600 x 400), 7.3” (800 x 480 pixel) or 13.3” (1600 x 1200 pixel) ePaper display E Ink Spectra 6® technology Ultra wide viewing angles Ultra low power consumption Four rear mounted buttons M2 mounting holes at the corners 40-pin extension header included to boost height for full-size Raspberry Pi. Standoffs included to securely attach to your Pi Qw/ST (Qwiic/STEMMA QT) connectors for adding breakouts Expansion header for adding other hardware Compatible with all 40-pin header Raspberry Pi computers, including Zero variants. Python library Comes fully assembled, with no soldering required (as long as your Pi has a 40-pin header attached). The display is securely stuck down to the Inky Impression PCB and connected via a ribbon cable, and it comes with mounting hardware to attach your Raspberry Pi securely in place. Just pop Inky Impression on your Pi and run our installer to get everything set up! Software Our Python library takes the stress out of displaying text and images on Inky Impression. Check out our Learn guide for a beginner friendly introduction: Learn: Getting Started with Inky Impression Tech Specs Product Name Inky Impression - 4.0” (Spectra 6 Edition) Inky Impression - 7.3” (Spectra 6 Edition) Inky Impression - 13.3” (Spectra 6 Edition) SKU PIM789 PIM773 PIM774 Resolution 600 x 400 pixels 800 x 480 pixels 1600 x 1200 pixels Technology E Ink Spectra 6® E Ink Spectra 6® E Ink Spectra 6® Colours 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) Dot Pitch (mm) 0.141 x 0.141 0.20 x 0.20 0.169 x 0.169 Aspect Ratio 3:2 5:3 4:3 Pixels Per Inch (PPI) 180 127 150 Board Dimensions (mm) 103.4 x 78 (W x H) 174.2 x 123.2 (W x H) 297 x 210 (W x H) Usable Area Dimensions (mm) 84.6 x 56.4 (W x H) 160 x 96 (W x H) 270.40 x 202.80 (W x H) Refresh Time 12 seconds* 28 seconds** 12 seconds* Recommended Temperature 0 ~ 50°C 0 ~ 50°C 0 ~ 50°C Schematic Link Link Link Dimensional Drawing Link Link Link Notes The Inky Impression display is made from glass so it's pretty fragile. Be careful not to drop it or press too hard on it, or it will crack. When fitting it to your Pi, grip at the edges of the board rather than pressing on top of the screen. This is not a touchscreen! The Inky Impression 7.3” board size is 174 x 123mm, which fits conveniently within a 180 x 130mm Ikea picture frame (though not with the screen perfectly centred).The Inky Impression 13.3” board size is 297 x 210mm, so it should be possible to install it in A4 sized picture frames. * This is the manufacturer's core refresh time at 25°C - 50°C - cooler temperatures may make the refresh take longer. It also takes a few seconds for the display to report a ready state and for data to be sent from the Raspberry Pi over SPI. You can expect a complete 'real world' refresh cycle to take between 20 and 35 seconds, depending the speed of your Pi and what variety of panel you have. Revision History Inky Impressions made from November 2025 onwards have rear mounted buttons instead of side mounted ones. This should hopefully help resolve issues with the buttons getting knocked off during transit! ** 7.3\" Inky Impressions made from April 2026 onwards use a new 'AC waveform' Spectra 6 display panel. These panels have a slightly longer core refresh time than previous panels, in exchange for some colour improvements and reduced ghosting."
+       },
+       "id": "gid://shopify/ProductVariant/56039376912763",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-4-1.jpg?v=1774459747"
+        }
+       ],
+       "options": [
+        {
+         "label": "4.0\"",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 5500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM789",
+       "title": "4.0\""
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55186435244411:1",
+       "description": {
+        "html": "Turn your Raspberry Pi into a colourful e-paper picture frame, dashboard or display with Inky Impression. Our Inky Impression E Ink® displays are super crisp, low power and look great from a variety of viewing angles. They have high pixel density and bright vivid colours, perfect for showing off gorgeous dithered images (we've put a lot of effort into our dithering code and we hope you love it). They also include: The appropriate hardware to attach to your Raspberry Pi computer and fix it securely in place. If your Pi has a 40 pin header attached, you won't need to do any soldering. Four rear mounted buttons, for interacting with the screen. Qw/ST connectors, so you can easily connect up breakouts and other I2C devices. Inky Impression is available in 4.0\" (600 x 400), 7.3” (800 x 480 pixel) and 13.3” (1600 x 1200 pixel) sizes. Why We 💚 E Ink® Multi-colour EPD displays use electrophoresis to pull coloured particles up and down on the display. The coloured particles reflect light, unlike most display types, meaning that they're visible under bright light. They don’t use a backlight like LCDs do, so they’re easy on the eyes and don’t introduce unwanted light into your environment. Electronic paper displays only consume power whilst they're refreshing, so they're a great choice for projects like home automation dashboards and electronic photo frames that need to be always on. They take a little while to refresh, so are best suited to projects that don't require constant screen updates. Spectra 6® Technology 🌈 The six colour display panels that we now use on Inky Impression bring a number of improvements over previous panels - notably a shorter refresh time and more saturated colours. They also come in an extended range of sizes, so we’ve been able to make a huge 13.3” (1600 x 1200 pixel) version - that’s almost A4 size! Features 4.0\" (600 x 400), 7.3” (800 x 480 pixel) or 13.3” (1600 x 1200 pixel) ePaper display E Ink Spectra 6® technology Ultra wide viewing angles Ultra low power consumption Four rear mounted buttons M2 mounting holes at the corners 40-pin extension header included to boost height for full-size Raspberry Pi. Standoffs included to securely attach to your Pi Qw/ST (Qwiic/STEMMA QT) connectors for adding breakouts Expansion header for adding other hardware Compatible with all 40-pin header Raspberry Pi computers, including Zero variants. Python library Comes fully assembled, with no soldering required (as long as your Pi has a 40-pin header attached). The display is securely stuck down to the Inky Impression PCB and connected via a ribbon cable, and it comes with mounting hardware to attach your Raspberry Pi securely in place. Just pop Inky Impression on your Pi and run our installer to get everything set up! Software Our Python library takes the stress out of displaying text and images on Inky Impression. Check out our Learn guide for a beginner friendly introduction: Learn: Getting Started with Inky Impression Tech Specs Product Name Inky Impression - 4.0” (Spectra 6 Edition) Inky Impression - 7.3” (Spectra 6 Edition) Inky Impression - 13.3” (Spectra 6 Edition) SKU PIM789 PIM773 PIM774 Resolution 600 x 400 pixels 800 x 480 pixels 1600 x 1200 pixels Technology E Ink Spectra 6® E Ink Spectra 6® E Ink Spectra 6® Colours 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) Dot Pitch (mm) 0.141 x 0.141 0.20 x 0.20 0.169 x 0.169 Aspect Ratio 3:2 5:3 4:3 Pixels Per Inch (PPI) 180 127 150 Board Dimensions (mm) 103.4 x 78 (W x H) 174.2 x 123.2 (W x H) 297 x 210 (W x H) Usable Area Dimensions (mm) 84.6 x 56.4 (W x H) 160 x 96 (W x H) 270.40 x 202.80 (W x H) Refresh Time 12 seconds* 28 seconds** 12 seconds* Recommended Temperature 0 ~ 50°C 0 ~ 50°C 0 ~ 50°C Schematic Link Link Link Dimensional Drawing Link Link Link Notes The Inky Impression display is made from glass so it's pretty fragile. Be careful not to drop it or press too hard on it, or it will crack. When fitting it to your Pi, grip at the edges of the board rather than pressing on top of the screen. This is not a touchscreen! The Inky Impression 7.3” board size is 174 x 123mm, which fits conveniently within a 180 x 130mm Ikea picture frame (though not with the screen perfectly centred).The Inky Impression 13.3” board size is 297 x 210mm, so it should be possible to install it in A4 sized picture frames. * This is the manufacturer's core refresh time at 25°C - 50°C - cooler temperatures may make the refresh take longer. It also takes a few seconds for the display to report a ready state and for data to be sent from the Raspberry Pi over SPI. You can expect a complete 'real world' refresh cycle to take between 20 and 35 seconds, depending the speed of your Pi and what variety of panel you have. Revision History Inky Impressions made from November 2025 onwards have rear mounted buttons instead of side mounted ones. This should hopefully help resolve issues with the buttons getting knocked off during transit! ** 7.3\" Inky Impressions made from April 2026 onwards use a new 'AC waveform' Spectra 6 display panel. These panels have a slightly longer core refresh time than previous panels, in exchange for some colour improvements and reduced ghosting."
+       },
+       "id": "gid://shopify/ProductVariant/55186435244411",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-7-1.jpg?v=1774459747"
+        }
+       ],
+       "options": [
+        {
+         "label": "7.3\"",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 8900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM773",
+       "title": "7.3\""
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55186435277179:1",
+       "description": {
+        "html": "Turn your Raspberry Pi into a colourful e-paper picture frame, dashboard or display with Inky Impression. Our Inky Impression E Ink® displays are super crisp, low power and look great from a variety of viewing angles. They have high pixel density and bright vivid colours, perfect for showing off gorgeous dithered images (we've put a lot of effort into our dithering code and we hope you love it). They also include: The appropriate hardware to attach to your Raspberry Pi computer and fix it securely in place. If your Pi has a 40 pin header attached, you won't need to do any soldering. Four rear mounted buttons, for interacting with the screen. Qw/ST connectors, so you can easily connect up breakouts and other I2C devices. Inky Impression is available in 4.0\" (600 x 400), 7.3” (800 x 480 pixel) and 13.3” (1600 x 1200 pixel) sizes. Why We 💚 E Ink® Multi-colour EPD displays use electrophoresis to pull coloured particles up and down on the display. The coloured particles reflect light, unlike most display types, meaning that they're visible under bright light. They don’t use a backlight like LCDs do, so they’re easy on the eyes and don’t introduce unwanted light into your environment. Electronic paper displays only consume power whilst they're refreshing, so they're a great choice for projects like home automation dashboards and electronic photo frames that need to be always on. They take a little while to refresh, so are best suited to projects that don't require constant screen updates. Spectra 6® Technology 🌈 The six colour display panels that we now use on Inky Impression bring a number of improvements over previous panels - notably a shorter refresh time and more saturated colours. They also come in an extended range of sizes, so we’ve been able to make a huge 13.3” (1600 x 1200 pixel) version - that’s almost A4 size! Features 4.0\" (600 x 400), 7.3” (800 x 480 pixel) or 13.3” (1600 x 1200 pixel) ePaper display E Ink Spectra 6® technology Ultra wide viewing angles Ultra low power consumption Four rear mounted buttons M2 mounting holes at the corners 40-pin extension header included to boost height for full-size Raspberry Pi. Standoffs included to securely attach to your Pi Qw/ST (Qwiic/STEMMA QT) connectors for adding breakouts Expansion header for adding other hardware Compatible with all 40-pin header Raspberry Pi computers, including Zero variants. Python library Comes fully assembled, with no soldering required (as long as your Pi has a 40-pin header attached). The display is securely stuck down to the Inky Impression PCB and connected via a ribbon cable, and it comes with mounting hardware to attach your Raspberry Pi securely in place. Just pop Inky Impression on your Pi and run our installer to get everything set up! Software Our Python library takes the stress out of displaying text and images on Inky Impression. Check out our Learn guide for a beginner friendly introduction: Learn: Getting Started with Inky Impression Tech Specs Product Name Inky Impression - 4.0” (Spectra 6 Edition) Inky Impression - 7.3” (Spectra 6 Edition) Inky Impression - 13.3” (Spectra 6 Edition) SKU PIM789 PIM773 PIM774 Resolution 600 x 400 pixels 800 x 480 pixels 1600 x 1200 pixels Technology E Ink Spectra 6® E Ink Spectra 6® E Ink Spectra 6® Colours 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) 6 (red, green, blue, yellow, black, white) Dot Pitch (mm) 0.141 x 0.141 0.20 x 0.20 0.169 x 0.169 Aspect Ratio 3:2 5:3 4:3 Pixels Per Inch (PPI) 180 127 150 Board Dimensions (mm) 103.4 x 78 (W x H) 174.2 x 123.2 (W x H) 297 x 210 (W x H) Usable Area Dimensions (mm) 84.6 x 56.4 (W x H) 160 x 96 (W x H) 270.40 x 202.80 (W x H) Refresh Time 12 seconds* 28 seconds** 12 seconds* Recommended Temperature 0 ~ 50°C 0 ~ 50°C 0 ~ 50°C Schematic Link Link Link Dimensional Drawing Link Link Link Notes The Inky Impression display is made from glass so it's pretty fragile. Be careful not to drop it or press too hard on it, or it will crack. When fitting it to your Pi, grip at the edges of the board rather than pressing on top of the screen. This is not a touchscreen! The Inky Impression 7.3” board size is 174 x 123mm, which fits conveniently within a 180 x 130mm Ikea picture frame (though not with the screen perfectly centred).The Inky Impression 13.3” board size is 297 x 210mm, so it should be possible to install it in A4 sized picture frames. * This is the manufacturer's core refresh time at 25°C - 50°C - cooler temperatures may make the refresh take longer. It also takes a few seconds for the display to report a ready state and for data to be sent from the Raspberry Pi over SPI. You can expect a complete 'real world' refresh cycle to take between 20 and 35 seconds, depending the speed of your Pi and what variety of panel you have. Revision History Inky Impressions made from November 2025 onwards have rear mounted buttons instead of side mounted ones. This should hopefully help resolve issues with the buttons getting knocked off during transit! ** 7.3\" Inky Impressions made from April 2026 onwards use a new 'AC waveform' Spectra 6 display panel. These panels have a slightly longer core refresh time than previous panels, in exchange for some colour improvements and reduced ghosting."
+       },
+       "id": "gid://shopify/ProductVariant/55186435277179",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/inky-impression-spectra-13-1.jpg?v=1774459747"
+        }
+       ],
+       "options": [
+        {
+         "label": "13.3\"",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 25500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM774",
+       "title": "13.3\""
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "For folks who want to DIY their own E-Ink setups, this is a 2.13\" diagonal 250x122 Monochrome or Gray eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.13\" monochrome/4gray display. It has 250x122 black ink pixels and a white-ish background. It uses the SSD1680Z chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "2-13-250x122-monochrome-or-gray-eink-epaper-bare-display-ssd1680z-chip",
+     "id": "gid://shopify/Product/15356311306619",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6383-00.jpg?v=1773331735"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "2.13\" 250x122 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680Z",
+     "url": "https://shop.pimoroni.com/en-us/products/2-13-250x122-monochrome-or-gray-eink-epaper-bare-display-ssd1680z-chip",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151749591419:1",
+       "description": {
+        "html": "For folks who want to DIY their own E-Ink setups, this is a 2.13\" diagonal 250x122 Monochrome or Gray eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.13\" monochrome/4gray display. It has 250x122 black ink pixels and a white-ish background. It uses the SSD1680Z chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151749591419",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6383-00.jpg?v=1773331735"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6383",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "An extensive selection of add-on boards designed especially for the Raspberry Pi - hi res displays, sensors, amps and DACs and ALL the LEDs!"
+       },
+       "handle": "hats",
+       "id": "gid://shopify/Collection/28055585",
+       "title": "HATs & pHATs for Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "This add-on makes it a breeze to add any 'standard' pinout 24-pin flex-connector E-Ink display to your Raspberry Pi computer. This bonnet handles all the extra components needed to make E-Paper interfacing easy for Pi and Pi-compatible boards. There's also extras like two user buttons, Stemma QT I2C port, and a 3W I2S speaker so you can also have audio playback. Insert your favorite E-Paper display to the connector and you'll have a powerful Linux-powered display for your desk or wall. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note that this does NOT come with the raw display itself - we stock a wide variety of bare displays that will work great. Don't forget to verify that each display needs driver code to match the driver chip. For displays Adafruit sell, there are examples in their E-Ink Python library you can use to craft your own project. Often times the E-Paper display has a short cable, in which case we suggest using an extender cable. Comes completely pre-assembled and tested so you can plug it in and install Python code! Works with any Raspberry Pi computer that has a 2x20 connector, such as the Pi B+, Pi 2, Pi 3, Pi 4, Pi 5, and Pi Zero (and any others that have a 2x20 connector!) For installing on Pi's where you need to clear a case or you don't want it against the board, grab a 2x20 socket riser. Since there was some space on the bonnet Adafruit added a MAX98357 3W 4-8Ω speaker driver which has digital I2S input for great sounding audio. This makes it easy to add audio alerts and feedback to your E-Paper projects. Note you'll have to add a 4-8Ω speaker to the terminal blocks. On the bottom, there is a Qwiic/STEMMA QT connector for I2C sensors and devices so you can plug and play any STEMMA QT devices. To summarize, you will probably want some accessories to build a full project: A matching 'bare' E-Paper display with standard 24-pin connector - we stock a wide variety of bare displays here An extender cable so you have plenty of maneuvering room A 4-8Ω speaker if you want to use the onboard amplifier And of course a Raspberry Pi or other 2x20-connector'd single-board Linux computer! Technical Details Product Dimensions: 65.0mm x 30.7mm x 14.0mm / 2.6\" x 1.2\" x 0.6\" Product Weight: 10.6g / 0.4oz Learn Primary Guide: Adafruit E-Ink Bonnet for Raspberry Pi Easy e-paper finally comes to Raspberry Pi See All Guides"
+     },
+     "gift_card": false,
+     "handle": "adafruit-e-ink-bonnet-for-raspberry-pi-24-pin-e-paper-displays",
+     "id": "gid://shopify/Product/15356165259643",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6418-01.jpg?v=1773335866"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "e-ink Displays",
+      "HATs & Addons",
+      "Raspberry Pi",
+      "thinkink"
+     ],
+     "title": "Adafruit E-Ink Bonnet for Raspberry Pi - 24-pin E-Paper Displays",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-e-ink-bonnet-for-raspberry-pi-24-pin-e-paper-displays",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151399334267:1",
+       "description": {
+        "html": "This add-on makes it a breeze to add any 'standard' pinout 24-pin flex-connector E-Ink display to your Raspberry Pi computer. This bonnet handles all the extra components needed to make E-Paper interfacing easy for Pi and Pi-compatible boards. There's also extras like two user buttons, Stemma QT I2C port, and a 3W I2S speaker so you can also have audio playback. Insert your favorite E-Paper display to the connector and you'll have a powerful Linux-powered display for your desk or wall. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note that this does NOT come with the raw display itself - we stock a wide variety of bare displays that will work great. Don't forget to verify that each display needs driver code to match the driver chip. For displays Adafruit sell, there are examples in their E-Ink Python library you can use to craft your own project. Often times the E-Paper display has a short cable, in which case we suggest using an extender cable. Comes completely pre-assembled and tested so you can plug it in and install Python code! Works with any Raspberry Pi computer that has a 2x20 connector, such as the Pi B+, Pi 2, Pi 3, Pi 4, Pi 5, and Pi Zero (and any others that have a 2x20 connector!) For installing on Pi's where you need to clear a case or you don't want it against the board, grab a 2x20 socket riser. Since there was some space on the bonnet Adafruit added a MAX98357 3W 4-8Ω speaker driver which has digital I2S input for great sounding audio. This makes it easy to add audio alerts and feedback to your E-Paper projects. Note you'll have to add a 4-8Ω speaker to the terminal blocks. On the bottom, there is a Qwiic/STEMMA QT connector for I2C sensors and devices so you can plug and play any STEMMA QT devices. To summarize, you will probably want some accessories to build a full project: A matching 'bare' E-Paper display with standard 24-pin connector - we stock a wide variety of bare displays here An extender cable so you have plenty of maneuvering room A 4-8Ω speaker if you want to use the onboard amplifier And of course a Raspberry Pi or other 2x20-connector'd single-board Linux computer! Technical Details Product Dimensions: 65.0mm x 30.7mm x 14.0mm / 2.6\" x 1.2\" x 0.6\" Product Weight: 10.6g / 0.4oz Learn Primary Guide: Adafruit E-Ink Bonnet for Raspberry Pi Easy e-paper finally comes to Raspberry Pi See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151399334267",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6418-01.jpg?v=1773335866"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6418",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Displays for Raspberry Pi and Pico, from LCD breakouts to touchscreens, e-paper panels and LED matrices, with the official Raspberry Pi displays."
+       },
+       "handle": "displays",
+       "id": "gid://shopify/Collection/80835329",
+       "title": "Displays"
+      },
+      {
+       "description": {
+        "html": "Wire, headers, breadboards, switches, LEDs, speakers, motors, batteries and fixings, sold as individual parts or in small packs."
+       },
+       "handle": "components",
+       "id": "gid://shopify/Collection/175217799",
+       "title": "Components"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "For folks who want to DIY their own E-Ink setups, this is a 2.66\" diagonal 296x152 Monochrome or Gray eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.66\" Monochrome Black/White display. It has 296x152 black ink pixels and a white-ish background. It uses the SSD1680 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two extra monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+     },
+     "gift_card": false,
+     "handle": "2-66-296x152-monochrome-or-gray-eink-epaper-bare-display-ssd1680",
+     "id": "gid://shopify/Product/15356299673979",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6392-00.jpg?v=1773331895"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Components",
+      "e-ink Displays",
+      "thinkink"
+     ],
+     "title": "2.66\" 296x152 Monochrome or Gray eInk / ePaper - Bare Display - SSD1680",
+     "url": "https://shop.pimoroni.com/en-us/products/2-66-296x152-monochrome-or-gray-eink-epaper-bare-display-ssd1680",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56151709876603:1",
+       "description": {
+        "html": "For folks who want to DIY their own E-Ink setups, this is a 2.66\" diagonal 296x152 Monochrome or Gray eInk / ePaper Bare Display. E-Ink/E-Paper displays make for great low-power displays that are daylight visible and keep their image even when depowered. Chances are you've seen one of those new-fangled 'e-readers' like the Kindle or Nook. They have gigantic electronic paper 'static' displays - that means the image stays on the display even when power is completely disconnected. The image is also high contrast and very daylight readable. It really does look just like printed paper! Please note: this is the bare display element. You need to plug it into a board with a 'standard' 24-pin FPC e-paper connector. We recommend checking out and picking up a matching driver board: Feather RP2040 ThinkInk - solderless plug-and-play solution with Arduino or CircuitPython support. Definitely the easiest way to get started, and is what we show in the demo above eInk Feather Friend - FeatherWing add-on for any Feather board) eInk Breakout Friend - breadboard-friendly adapter that gives you level-shifting and components for quick eInk connectivity. 24-pin eInk / ePaper Extension Cable + 24-pin FPC adapter - both together will give your eInk display a stretch so you can place it anywhere. This is a 2.66\" Monochrome Black/White display. It has 296x152 black ink pixels and a white-ish background. It uses the SSD1680 chipset, so make sure whatever firmware code you are planning to use has support for it. The Arduino library we wrote does all the work for you, you can just interface with it as if it were an Adafruit_GFX compatible display. Note that you can put this display into a '4-gray' mode, where you get two extra monochromatic shades. It's not officially supported by the display but it does kinda work. Check out our guide on dithering for how to get the best output from these panels. Technical Details Datasheet Learn Primary Guide: Bare E-Ink Displays Crash Course What's the deal with all of these eInk displays? See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56151709876603",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6392-00.jpg?v=1773331895"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6392",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

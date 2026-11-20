@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "crease": 38,
+  "meshes": {
+    "Handle_SO101": {
+      "vertices": 5542,
+      "indices": 28356,
+      "index": 16,
+      "bytes": 156468
+    },
+    "Trigger_SO101": {
+      "vertices": 15776,
+      "indices": 84702,
+      "index": 16,
+      "bytes": 453372
+    },
+    "Wrist_Roll_SO101": {
+      "vertices": 10669,
+      "indices": 41748,
+      "index": 16,
+      "bytes": 275540
+    },
+    "base_motor_holder_so101_v1": {
+      "vertices": 19939,
+      "indices": 112620,
+      "index": 16,
+      "bytes": 584144
+    },
+    "base_so101_v2": {
+      "vertices": 7493,
+      "indices": 28290,
+      "index": 16,
+      "bytes": 191456
+    },
+    "motor_holder_so101_base_v1": {
+      "vertices": 13104,
+      "indices": 67758,
+      "index": 16,
+      "bytes": 371388
+    },
+    "motor_holder_so101_wrist_v1": {
+      "vertices": 12690,
+      "indices": 63126,
+      "index": 16,
+      "bytes": 354672
+    },
+    "moving_jaw_so101_v1": {
+      "vertices": 19216,
+      "indices": 84810,
+      "index": 16,
+      "bytes": 515508
+    },
+    "rotation_pitch_so101_v1": {
+      "vertices": 13118,
+      "indices": 53016,
+      "index": 16,
+      "bytes": 342156
+    },
+    "sts3215_03a_no_horn_v1": {
+      "vertices": 12933,
+      "indices": 51948,
+      "index": 16,
+      "bytes": 336692
+    },
+    "sts3215_03a_v1": {
+      "vertices": 14679,
+      "indices": 57240,
+      "index": 16,
+      "bytes": 378704
+    },
+    "under_arm_so101_v1": {
+      "vertices": 23590,
+      "indices": 118548,
+      "index": 16,
+      "bytes": 661716
+    },
+    "upper_arm_so101_v1": {
+      "vertices": 17620,
+      "indices": 78204,
+      "index": 16,
+      "bytes": 473568
+    },
+    "waveshare_mounting_plate_so101_v2": {
+      "vertices": 1273,
+      "indices": 3762,
+      "index": 16,
+      "bytes": 30440
+    },
+    "wrist_camera_mount_so101_v1": {
+      "vertices": 2800,
+      "indices": 10428,
+      "index": 16,
+      "bytes": 71256
+    },
+    "wrist_camera_so101_v1": {
+      "vertices": 2134,
+      "indices": 7731,
+      "index": 16,
+      "bytes": 53874
+    },
+    "wrist_roll_follower_so101_v1": {
+      "vertices": 20891,
+      "indices": 86388,
+      "index": 16,
+      "bytes": 548816
+    },
+    "wrist_roll_pitch_so101_v2": {
+      "vertices": 32374,
+      "indices": 161982,
+      "index": 16,
+      "bytes": 906696
+    }
+  }
+}

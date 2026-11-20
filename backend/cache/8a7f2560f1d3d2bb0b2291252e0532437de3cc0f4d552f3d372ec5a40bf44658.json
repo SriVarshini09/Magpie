@@ -1,0 +1,1368 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Computer Linux, Windows or MacOS"
+  }
+ },
+ "key": "8a7f2560f1d3d2bb0b2291252e0532437de3cc0f4d552f3d372ec5a40bf44658",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:41-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Audio boards, amplifiers, speakers and microphones for Raspberry Pi and Pico, for music players, sound effects and recording."
+       },
+       "handle": "audio",
+       "id": "gid://shopify/Collection/80834625",
+       "title": "Audio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "rp2350",
+       "id": "gid://shopify/Collection/284581822547",
+       "title": "RP2350"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "This ADABOX takes its inspiration from our childhoods-weekends spent with computers like the Apple ] [, 286 PC, ZX Spectrum, Commodore 64, Mac Plus, and TRS-80. These machines plugged into TVs and blazed our eyes with 8-bit glory as we played games, typed in programs from magazines, and patiently waited our turn while siblings loaded the latest software from cartridges or floppies. We didn't mind the limited memory, chunky graphics, or bleepy tunes-it was a self-contained electronic wonderland that could do almost anything. We turned those memories into a new design we call Fruit Jam. Inspired by IchigoJam DIY computer kit, this credit-card-sized computer drives an HDMI monitor and mini speaker, with USB keyboard and mouse input. But instead of running macOS, Windows, or Linux, it's programmable directly-like a microcontroller. That means you can write your own games and apps using interpreted Python scripts that live on the built-in 16MB flash disk-no complex APIs or compilers required. As always, we thank DigiKey for their unending support. This year has been a rollercoaster managing tariffs and inventory, and DigiKey has been a rock-solid partner in sourcing and logistics. Who is this for?Anyone who is interested in learning how to program and build interactive projects, and with access to a modern web browser. That's pretty much the minimum. You don't need to know a lot of physics or math, and just like an Art Degree isn't required for making art and being creative, you don't need to have a computer science or mechanical engineering degree. It helps if you're comfortable using computers but that's a skill most people pick up through life. If you know how to program already - great! If not, don't worry, we'll teach you enough to be dangerous, yet effective! Includes: Adafruit Fruit Jam, Fruit Jam Protective Top Plate & Hardware Kit and Mini 8 Ohm Speaker USB Keyboard USB Mouse USB Gamepad Visit learn.adafruit.com/adabox022 for AdaBox tutorials. Visit forums.adafruit.com/adabox to discuss your projects. Learn Primary Guide: AdaBox 022 Explore and use the contents of your AdaBox 022 See All Guides"
+     },
+     "gift_card": false,
+     "handle": "adabox-022-fruit-jam-mini-computer-kit",
+     "id": "gid://shopify/Product/15425856045435",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6429-02.png?v=1787235660"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Audio",
+      "CircuitPython",
+      "HDMI",
+      "Kits",
+      "microSD",
+      "Neopixel",
+      "Qw/ST",
+      "RP2350",
+      "USB"
+     ],
+     "title": "ADABOX 022 - Fruit Jam Mini-Computer Kit",
+     "url": "https://shop.pimoroni.com/en-us/products/adabox-022-fruit-jam-mini-computer-kit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56387153133947:1",
+       "description": {
+        "html": "This ADABOX takes its inspiration from our childhoods-weekends spent with computers like the Apple ] [, 286 PC, ZX Spectrum, Commodore 64, Mac Plus, and TRS-80. These machines plugged into TVs and blazed our eyes with 8-bit glory as we played games, typed in programs from magazines, and patiently waited our turn while siblings loaded the latest software from cartridges or floppies. We didn't mind the limited memory, chunky graphics, or bleepy tunes-it was a self-contained electronic wonderland that could do almost anything. We turned those memories into a new design we call Fruit Jam. Inspired by IchigoJam DIY computer kit, this credit-card-sized computer drives an HDMI monitor and mini speaker, with USB keyboard and mouse input. But instead of running macOS, Windows, or Linux, it's programmable directly-like a microcontroller. That means you can write your own games and apps using interpreted Python scripts that live on the built-in 16MB flash disk-no complex APIs or compilers required. As always, we thank DigiKey for their unending support. This year has been a rollercoaster managing tariffs and inventory, and DigiKey has been a rock-solid partner in sourcing and logistics. Who is this for?Anyone who is interested in learning how to program and build interactive projects, and with access to a modern web browser. That's pretty much the minimum. You don't need to know a lot of physics or math, and just like an Art Degree isn't required for making art and being creative, you don't need to have a computer science or mechanical engineering degree. It helps if you're comfortable using computers but that's a skill most people pick up through life. If you know how to program already - great! If not, don't worry, we'll teach you enough to be dangerous, yet effective! Includes: Adafruit Fruit Jam, Fruit Jam Protective Top Plate & Hardware Kit and Mini 8 Ohm Speaker USB Keyboard USB Mouse USB Gamepad Visit learn.adafruit.com/adabox022 for AdaBox tutorials. Visit forums.adafruit.com/adabox to discuss your projects. Learn Primary Guide: AdaBox 022 Explore and use the contents of your AdaBox 022 See All Guides"
+       },
+       "id": "gid://shopify/ProductVariant/56387153133947",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6429-02.png?v=1787235660"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6429",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/263507312723",
+       "title": "Single Board Computers"
+      }
+     ],
+     "description": {
+      "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-4",
+     "id": "gid://shopify/Product/3855360327763",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1_2746b87e-3a72-4282-8be0-f1a788f1fae2.jpg?v=1738658804"
+      }
+     ],
+     "options": [
+      {
+       "name": "Memory",
+       "values": [
+        {
+         "label": "1GB RAM"
+        },
+        {
+         "label": "2GB RAM"
+        },
+        {
+         "label": "3GB RAM"
+        },
+        {
+         "label": "4GB RAM"
+        },
+        {
+         "label": "8GB RAM"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 17600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Raspberry Pi",
+      "Single Board Computer"
+     ],
+     "title": "Raspberry Pi 4 Model B",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-4",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39576373690451:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/39576373690451",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "1GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 3800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0192",
+       "title": "1GB RAM"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/29157087412307:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/29157087412307",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "2GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 7200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0193",
+       "title": "2GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56184185815419:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/56184185815419",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "3GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 9000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC2337",
+       "title": "3GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/29157087445075:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/29157087445075",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "4GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 10700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0194",
+       "title": "4GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/31856486416467:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/31856486416467",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "8GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 17600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0195",
+       "title": "8GB RAM"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-400",
+     "id": "gid://shopify/Product/4701595238483",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+      }
+     ],
+     "options": [
+      {
+       "name": "Region",
+       "values": [
+        {
+         "label": "UK"
+        },
+        {
+         "label": "US"
+        },
+        {
+         "label": "Germany"
+        },
+        {
+         "label": "France"
+        },
+        {
+         "label": "Italy"
+        },
+        {
+         "label": "Spain"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Keyboards & Mice",
+      "Raspberry Pi"
+     ],
+     "title": "Raspberry Pi 400",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-400",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738005075:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738005075",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0372",
+       "title": "UK"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738037843:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738037843",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "US",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0373",
+       "title": "US"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738070611:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738070611",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "Germany",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0374",
+       "title": "Germany"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738103379:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738103379",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "France",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0375",
+       "title": "France"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738136147:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738136147",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "Italy",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0376",
+       "title": "Italy"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32280738168915:1",
+       "description": {
+        "html": "Raspberry Pi 400 is a complete Raspberry Pi 4-based personal computer, fully integrated into a keyboard for ease of setup and use. Featuring a quad-core 64-bit processor, wireless networking, dual-display output and 4K video playback it is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. Includes Raspberry Pi 400 keyboard unit only. If you'd prefer a complete kit including mouse, pre-loaded microSD card, micro HDMI cable, power supply, and getting started guide, check out the Raspberry Pi 400 Personal Computer Kit! If you're planning on using HATs or mini HATs with your Pi 400 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras tab for more options. Specification Processor: Quad-core 1.8GHz Cortex-A72 (ARM v8) 64-bit (BCM2711) RAM: 4GB (LPDDR4-3200) Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac wireless LAN, Bluetooth 5.0, BLE Gigabit Ethernet 2 × USB 3.0 and 1 × USB 2.0 ports Horizontal 40-pin GPIO header 2 × micro HDMI ports (supports up to 4Kp60) H.265 (4Kp60 decode) / H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.0 microSD card slot for operating system and data storage 78- or 79-key compact keyboard (depending on regional variant) USB-C power connector Dimensions: 286mm × 122mm × 23mm Desktop-level performance With an even faster 1.8GHz 64-bit quad-core CPU (thanks to the substantial heatsink inside), coupled with the 4GB of RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 400 uses a USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. Significantly faster IO The Raspberry Pi 400 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There is also one USB 2.0 ports ideal for connecting less speed-dependent peripherals like a mouse. The ethernet jack on the Raspberry Pi 400 is true gigabit speed, for super-speedy wired networking. 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 400 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. If you need a micro-HDMI adapter to use your existing HDMI cable with the Raspberry Pi 400 then we've got you covered! Bluetooth 5.0 and wireless LAN The chipset supports Bluetooth 5.0 and also dual-band 802.11 b/g/n/ac wireless LAN for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/32280738168915",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/RPI400BACK2WHITE_b6e1cf95-a388-4e60-98b0-c4ddba5c2b26.jpg?v=1604306144"
+        }
+       ],
+       "options": [
+        {
+         "label": "Spain",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 6400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0377",
+       "title": "Spain"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Picade arcade cabinet kits for Raspberry Pi, plus arcade buttons, joysticks and screens for building a machine of your own."
+       },
+       "handle": "gaming-and-arcade",
+       "id": "gid://shopify/Collection/13148789",
+       "title": "Retro Gaming & Arcade"
+      },
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi Pico, Pico W, Pico 2 and Pico 2 W, plus our own RP2040 and RP2350 boards, bases and packs, displays and accessories."
+       },
+       "handle": "pico",
+       "id": "gid://shopify/Collection/163356213331",
+       "title": "Raspberry Pi Pico"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "circuitpython",
+       "id": "gid://shopify/Collection/687076802939",
+       "title": "CircuitPython"
+      }
+     ],
+     "description": {
+      "html": "A tiny hackable dev handheld with RP2040 at its heart ❤ PicoSystem is a pocket sized handheld games console, built around Raspberry Pi's RP2040 chip (that's the little fella that's the core of a Raspberry Pi Pico). We've taken these lucky bits of silicon to the component spa and treated them to the full works: a big chunk of flash memory, a vibrant 240x240 screen and a nice D-pad and buttons picked out by our most particular arcade enthusiasts. There's also a piezo speaker for discreet retro bleeps and chirps and a rechargeable LiPo battery so you can take your homebrew games on the bus. The finished product looks and feels great - so we couldn't resist going all out on the build quality by adding a custom matt black anodised aluminium case with a handy wrist strap. We think RP2040 has tons of potential as an experimental gaming platform, and we're really looking forward to seeing what folks create. Features Powered by RP2040 (Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM) 16MB of QSPI flash supporting XiP 1.54\" colour SPI IPS LCD (240 x 240 pixels) D-pad and buttons 525mAh LiPo battery (should be good for at least 6 hours of on-time) Piezo buzzer/speaker On/off power button RGB LED CNC milled aluminium case *swoon* Wrist strap Programmable and rechargeable via USB-C (cable not included) Comes fully assembled. C++/MicroPython API Schematic Games Want to try out some pre-built games while you wait for inspiration to strike? Give these a go! Super Square Bros. by Scorpion Games - A bouncy quadrilateral platformer. Dots - Dot popping puzzler. Create chains of two or more and race to get the biggest score. Rocks and Diamonds - Classic game of dodging rocks and grabbing diamonds. Geometry - Smash up space boulders with lasers to make smaller space boulders! Rainbow Ascent - The Dark Souls of procedurally generated vertical jumping puzzles. Good luck. Super Blit Kart by Daft_Freak - A \"Mode7\"-based racing game. To get into bootloader mode so you can flash a new .uf2, turn your PicoSystem on whilst holding down the X button - it should then show up as a drive called RPI-RP2 on your computer. PicoSystem ships flashed with the mighty Super Square Bros. by Scorpion Games - if you like it as much as we do check out their itch.io page and show them some love. Software As PicoSystem is RP2040-powered, you've got an array of options for making your own games. Here's a quick rundown! Our official PicoSystem API is available in C++ and MicroPython flavours. It's designed to be lightweight, easy to use and to stay out of the way while you're developing games. PicoSystem API PicoSystem wiki C++ and MicroPython getting started API cheatsheet Download latest MicroPython firmware Make simple games in CircuitPython using the Stage library (thanks to deshipu!). Download PicoSystem flavoured CircuitPython Stage library tutorial It's also possible to use the fully featured 32blit SDK and C/C++ to make games for PicoSystem, thanks to the efforts of the 32blit community. Developing with the 32blit SDK means you can compile your games for multiple platforms (currently Linux, Windows, macOS, 32blit and PicoSystem) - great for if you want to share them on itch.io! 32blit SDK 32blit x PicoSystem getting started Boilerplate template 32blit discord Notes Dimensions: 96.6 x 42.7 x 15.5mm (L x W x H, including buttons) There are broken out debug pins on the PCB for if you want to program PicoSystem with an external debugger but you'll have to remove the case (with the screws on the back) to get at them. If you want to have a look at PicoSystem's insides without having to take yours apart take a look at HackSpace's dissection report. Check out ETA Prime's review for unboxing, teardown and gameplay footage! About RP2040 Raspberry Pi's RP2040 microcontroller is a dual core ARM Cortex M0+ running at up to 133Mhz. It bundles in 264kB of SRAM, 30 multifunction GPIO pins (including a four channel 12-bit ADC), a heap of standard peripherals (I2C, SPI, UART, PWM, clocks, etc), and USB support. One very exciting feature of RP2040 is the programmable IOs which allow you to execute custom programs that can manipulate GPIO pins and transfer data between peripherals - they can offload tasks that require high data transfer rates or precise timing that traditionally would have required a lot of heavy lifting from the CPU."
+     },
+     "gift_card": false,
+     "handle": "picosystem",
+     "id": "gid://shopify/Product/4733430726739",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/picosystem-dark-square-1.jpg?v=1632843358"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Arcade",
+      "CircuitPython",
+      "MicroPython",
+      "Pico"
+     ],
+     "title": "PicoSystem",
+     "url": "https://shop.pimoroni.com/en-us/products/picosystem",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32369546985555:1",
+       "description": {
+        "html": "A tiny hackable dev handheld with RP2040 at its heart ❤ PicoSystem is a pocket sized handheld games console, built around Raspberry Pi's RP2040 chip (that's the little fella that's the core of a Raspberry Pi Pico). We've taken these lucky bits of silicon to the component spa and treated them to the full works: a big chunk of flash memory, a vibrant 240x240 screen and a nice D-pad and buttons picked out by our most particular arcade enthusiasts. There's also a piezo speaker for discreet retro bleeps and chirps and a rechargeable LiPo battery so you can take your homebrew games on the bus. The finished product looks and feels great - so we couldn't resist going all out on the build quality by adding a custom matt black anodised aluminium case with a handy wrist strap. We think RP2040 has tons of potential as an experimental gaming platform, and we're really looking forward to seeing what folks create. Features Powered by RP2040 (Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM) 16MB of QSPI flash supporting XiP 1.54\" colour SPI IPS LCD (240 x 240 pixels) D-pad and buttons 525mAh LiPo battery (should be good for at least 6 hours of on-time) Piezo buzzer/speaker On/off power button RGB LED CNC milled aluminium case *swoon* Wrist strap Programmable and rechargeable via USB-C (cable not included) Comes fully assembled. C++/MicroPython API Schematic Games Want to try out some pre-built games while you wait for inspiration to strike? Give these a go! Super Square Bros. by Scorpion Games - A bouncy quadrilateral platformer. Dots - Dot popping puzzler. Create chains of two or more and race to get the biggest score. Rocks and Diamonds - Classic game of dodging rocks and grabbing diamonds. Geometry - Smash up space boulders with lasers to make smaller space boulders! Rainbow Ascent - The Dark Souls of procedurally generated vertical jumping puzzles. Good luck. Super Blit Kart by Daft_Freak - A \"Mode7\"-based racing game. To get into bootloader mode so you can flash a new .uf2, turn your PicoSystem on whilst holding down the X button - it should then show up as a drive called RPI-RP2 on your computer. PicoSystem ships flashed with the mighty Super Square Bros. by Scorpion Games - if you like it as much as we do check out their itch.io page and show them some love. Software As PicoSystem is RP2040-powered, you've got an array of options for making your own games. Here's a quick rundown! Our official PicoSystem API is available in C++ and MicroPython flavours. It's designed to be lightweight, easy to use and to stay out of the way while you're developing games. PicoSystem API PicoSystem wiki C++ and MicroPython getting started API cheatsheet Download latest MicroPython firmware Make simple games in CircuitPython using the Stage library (thanks to deshipu!). Download PicoSystem flavoured CircuitPython Stage library tutorial It's also possible to use the fully featured 32blit SDK and C/C++ to make games for PicoSystem, thanks to the efforts of the 32blit community. Developing with the 32blit SDK means you can compile your games for multiple platforms (currently Linux, Windows, macOS, 32blit and PicoSystem) - great for if you want to share them on itch.io! 32blit SDK 32blit x PicoSystem getting started Boilerplate template 32blit discord Notes Dimensions: 96.6 x 42.7 x 15.5mm (L x W x H, including buttons) There are broken out debug pins on the PCB for if you want to program PicoSystem with an external debugger but you'll have to remove the case (with the screws on the back) to get at them. If you want to have a look at PicoSystem's insides without having to take yours apart take a look at HackSpace's dissection report. Check out ETA Prime's review for unboxing, teardown and gameplay footage! About RP2040 Raspberry Pi's RP2040 microcontroller is a dual core ARM Cortex M0+ running at up to 133Mhz. It bundles in 264kB of SRAM, 30 multifunction GPIO pins (including a four channel 12-bit ADC), a heap of standard peripherals (I2C, SPI, UART, PWM, clocks, etc), and USB support. One very exciting feature of RP2040 is the programmable IOs which allow you to execute custom programs that can manipulate GPIO pins and transfer data between peripherals - they can offload tasks that require high data transfer rates or precise timing that traditionally would have required a lot of heavy lifting from the CPU."
+       },
+       "id": "gid://shopify/ProductVariant/32369546985555",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/picosystem-dark-square-1.jpg?v=1632843358"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM559",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "A fast, powerful computer built into a high-quality keyboard, for the ultimate compact PC experience. Raspberry Pi 500 features the same quad-core 64-bit Arm processor and RP1 I/O controller found in Raspberry Pi 5. With a one-piece aluminium heatsink built in for improved thermal performance, your Raspberry Pi 500 will run fast and smoothly even under heavy load, while delivering glorious dual 4K display output. It is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. If you're upgrading from a Pi 400 you can expect to see big performance improvements! With 8GB RAM as standard it's well equipped to handle memory intensive tasks like tabbed web browsing and the improved CPU and GPU should keep everything zipping along quickly whilst feeling nice and responsive. What else do I need? The Raspberry Pi 500 keyboard unit comes with a 32GB microSD card pre-loaded with Raspberry Pi OS, so it's super quick to get going. It doesn't include a power supply, so you'll probably want to add one of those to your cart. For those looking for the complete Raspberry Pi 500 setup, the Raspberry Pi 500 Desktop Kit comes with a mouse, a USB-C power supply and an HDMI cable, along with the Official Raspberry Pi Beginner’s Guide, to help you get the most out of your new computer. If you're planning on using HATs or mini HATs with your Pi 500 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras for more options. Features 2.4GHz quad-core, 64-bit Arm Cortex-A76 CPU, with 512KB L2 caches and a 2MB shared L3 cache VideoCore VII GPU 8GB LPDDR4X-4267 SDRAM 2.4 GHz and 5.0 GHz 802.11ac Wi-Fi Bluetooth 5.0 / Bluetooth Low Energy (BLE) Micro SD card slot, with support for high-speed SDR104 mode and the command queuing extension 2 × USB 3.0 ports, supporting simultaneous 5Gbpsoperation 1 × USB 2.0 port Gigabit Ethernet Dual micro-HDMI ports 40-pin GPIO header Kensington lock 5V/5A DC power – via USB-C power supply (sold separately) Power button on the keyboard UK keyboard layout Notes Dimensions: 122mm (D) x 286mm (L) x 22mm (H) Resources Product brief"
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-500",
+     "id": "gid://shopify/Product/14859811848571",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/RaspberryPi500front-square.png?v=1733402367"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "UK"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 19200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Keyboards & Mice",
+      "Raspberry Pi"
+     ],
+     "title": "Raspberry Pi 500 (UK layout)",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-500",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54857395995003:1",
+       "description": {
+        "html": "A fast, powerful computer built into a high-quality keyboard, for the ultimate compact PC experience. Raspberry Pi 500 features the same quad-core 64-bit Arm processor and RP1 I/O controller found in Raspberry Pi 5. With a one-piece aluminium heatsink built in for improved thermal performance, your Raspberry Pi 500 will run fast and smoothly even under heavy load, while delivering glorious dual 4K display output. It is ideal for surfing the web, creating and editing documents, watching videos, and learning to program using the Raspberry Pi OS desktop environment. If you're upgrading from a Pi 400 you can expect to see big performance improvements! With 8GB RAM as standard it's well equipped to handle memory intensive tasks like tabbed web browsing and the improved CPU and GPU should keep everything zipping along quickly whilst feeling nice and responsive. What else do I need? The Raspberry Pi 500 keyboard unit comes with a 32GB microSD card pre-loaded with Raspberry Pi OS, so it's super quick to get going. It doesn't include a power supply, so you'll probably want to add one of those to your cart. For those looking for the complete Raspberry Pi 500 setup, the Raspberry Pi 500 Desktop Kit comes with a mouse, a USB-C power supply and an HDMI cable, along with the Official Raspberry Pi Beginner’s Guide, to help you get the most out of your new computer. If you're planning on using HATs or mini HATs with your Pi 500 you'll probably want to pick up either a Flat HAT Hacker or a GPIO extension cable, take a look at the extras for more options. Features 2.4GHz quad-core, 64-bit Arm Cortex-A76 CPU, with 512KB L2 caches and a 2MB shared L3 cache VideoCore VII GPU 8GB LPDDR4X-4267 SDRAM 2.4 GHz and 5.0 GHz 802.11ac Wi-Fi Bluetooth 5.0 / Bluetooth Low Energy (BLE) Micro SD card slot, with support for high-speed SDR104 mode and the command queuing extension 2 × USB 3.0 ports, supporting simultaneous 5Gbpsoperation 1 × USB 2.0 port Gigabit Ethernet Dual micro-HDMI ports 40-pin GPIO header Kensington lock 5V/5A DC power – via USB-C power supply (sold separately) Power button on the keyboard UK keyboard layout Notes Dimensions: 122mm (D) x 286mm (L) x 22mm (H) Resources Product brief"
+       },
+       "id": "gid://shopify/ProductVariant/54857395995003",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/RaspberryPi500front-square.png?v=1733402367"
+        }
+       ],
+       "options": [
+        {
+         "label": "UK",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 19200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1230",
+       "title": "UK"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-16"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Smart home sensors, plugs, switches, lights and hubs from Sonoff, Innr and Home Assistant, with Zigbee, Wi-Fi and Matter options."
+       },
+       "handle": "smart-home",
+       "id": "gid://shopify/Collection/665836618107",
+       "title": "Smart Home"
+      },
+      {
+       "description": {
+        "html": "What is Zigbee? Zigbee is a wireless standard enabling low-power, secure connections between smart devices. Widely used in home automation for devices like thermostats, sensors, and locks, its energy efficiency allows some devices to run for years on a single coin cell battery. With an indoor range of 10–100 meters and extended outdoor coverage, Zigbee’s mesh networking ensures reliable communication, even if some devices go offline. Security features, including encryption and key protection, safeguard your smart home, keeping it secure and under your control."
+       },
+       "handle": "zigbee",
+       "id": "gid://shopify/Collection/665837994363",
+       "title": "Zigbee"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "sonoff",
+       "id": "gid://shopify/Collection/667518239099",
+       "title": "Sonoff"
+      }
+     ],
+     "description": {
+      "html": "Your gateway to a smarter, Zigbee-controlled home! Say hello to the Sonoff Zigbee 3.0 USB Dongle Plus, a sleek Zigbee 3.0 USB dongle designed for open-source automation enthusiasts. Why clutter your home with multiple brand-specific Zigbee hubs when you can streamline your smart home setup with this compact marvel? It integrates seamlessly with Home Assistant, desktop computers, or even a Raspberry Pi! Wave goodbye to multiple hubs and embrace effortless smart home control at an impressively affordable price. Ready to Roll: Pre-flashed with Zigbee coordinator firmware (EZNet 6.10.3) for instant, out-of-the-box use. Super Compatible: Works effortlessly with platforms like Home Assistant, Zigbee2MQTT, openHAB, and more! Powered by EFR32MG21: Equipped with robust performance and reliability. Boosted Signal: +20dBm output gain ensures strong and reliable Zigbee connectivity. Sleek & Strong: Aluminium housing minimises interference for smooth, uninterrupted communication. Take charge of your smart home setup with the Dongle Plus – the perfect choice for DIY tinkerers and automation enthusiasts alike. Tech Specs Connectivity: Zigbee 3.0 / USB Type-A Environment: -10°C to 40°C Power: 5V (100mA max) Compatibility: Windows, macOS, Linux (Ubuntu / Raspberry Pi OS) Dimensions: 75×25.5×13.5 mm* Resources Check out the ZBDongle-E knowledge centre for technical details, compatibility, troubleshooting and setup tips. Notes * The metal casing of this adaptor is quite large - if there's not a lot of clearance around your USB ports (as is the case with Home Assistant Green) you may need to use a USB-A extender or hub to plug it in. What Is Zigbee? Zigbee is a wireless standard enabling low-power, secure connections between smart devices. Widely used in home automation for devices such as thermostats, sensors, and locks, its energy efficiency allows some devices to run for years on a single coin cell battery. The key advantage of Zigbee is its local operation – no cloud subscriptions or even an internet connection are required. Everything can remain within your home, ensuring both high security and resilience against internet outages. Major brands like IKEA, Philips Hue, Tuya, and Sonoff support Zigbee devices. This means you can integrate products from different manufacturers into one smart home setup, giving you the freedom to avoid being locked into a single vendor – brilliant! With an indoor range of 10–100 metres and extended outdoor coverage, Zigbee’s mesh networking ensures reliable communication, even if some devices go offline. Its robust security features, including encryption and key protection, safeguard your smart home, keeping it secure and under your control. Learn more about Zigbee on the official Zigbee website."
+     },
+     "gift_card": false,
+     "handle": "sonoff-zigbee-3-0-usb-dongle-plus",
+     "id": "gid://shopify/Product/14880331202939",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Dongle-E.jpg?v=1735924220"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_uksmarthome",
+      "Smart Home",
+      "Zigbee"
+     ],
+     "title": "Sonoff Zigbee 3.0 USB Dongle Plus",
+     "url": "https://shop.pimoroni.com/en-us/products/sonoff-zigbee-3-0-usb-dongle-plus",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54923349098875:1",
+       "description": {
+        "html": "Your gateway to a smarter, Zigbee-controlled home! Say hello to the Sonoff Zigbee 3.0 USB Dongle Plus, a sleek Zigbee 3.0 USB dongle designed for open-source automation enthusiasts. Why clutter your home with multiple brand-specific Zigbee hubs when you can streamline your smart home setup with this compact marvel? It integrates seamlessly with Home Assistant, desktop computers, or even a Raspberry Pi! Wave goodbye to multiple hubs and embrace effortless smart home control at an impressively affordable price. Ready to Roll: Pre-flashed with Zigbee coordinator firmware (EZNet 6.10.3) for instant, out-of-the-box use. Super Compatible: Works effortlessly with platforms like Home Assistant, Zigbee2MQTT, openHAB, and more! Powered by EFR32MG21: Equipped with robust performance and reliability. Boosted Signal: +20dBm output gain ensures strong and reliable Zigbee connectivity. Sleek & Strong: Aluminium housing minimises interference for smooth, uninterrupted communication. Take charge of your smart home setup with the Dongle Plus – the perfect choice for DIY tinkerers and automation enthusiasts alike. Tech Specs Connectivity: Zigbee 3.0 / USB Type-A Environment: -10°C to 40°C Power: 5V (100mA max) Compatibility: Windows, macOS, Linux (Ubuntu / Raspberry Pi OS) Dimensions: 75×25.5×13.5 mm* Resources Check out the ZBDongle-E knowledge centre for technical details, compatibility, troubleshooting and setup tips. Notes * The metal casing of this adaptor is quite large - if there's not a lot of clearance around your USB ports (as is the case with Home Assistant Green) you may need to use a USB-A extender or hub to plug it in. What Is Zigbee? Zigbee is a wireless standard enabling low-power, secure connections between smart devices. Widely used in home automation for devices such as thermostats, sensors, and locks, its energy efficiency allows some devices to run for years on a single coin cell battery. The key advantage of Zigbee is its local operation – no cloud subscriptions or even an internet connection are required. Everything can remain within your home, ensuring both high security and resilience against internet outages. Major brands like IKEA, Philips Hue, Tuya, and Sonoff support Zigbee devices. This means you can integrate products from different manufacturers into one smart home setup, giving you the freedom to avoid being locked into a single vendor – brilliant! With an indoor range of 10–100 metres and extended outdoor coverage, Zigbee’s mesh networking ensures reliable communication, even if some devices go offline. Its robust security features, including encryption and key protection, safeguard your smart home, keeping it secure and under your control. Learn more about Zigbee on the official Zigbee website."
+       },
+       "id": "gid://shopify/ProductVariant/54923349098875",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Dongle-E.jpg?v=1735924220"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ZBDongle-E",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "Long gone are the days of parallel ports and serial ports. Now the USB port reigns supreme! But USB is hard, and you just want to transfer your everyday serial data from a microcontroller to computer. What now? Enter the Adafruit CH9102F Friend, a version of the popular USB-Serial 'friend' breakouts that uses the affordable (and available) CH9102F - a 'near pin-compatible' to the CP2102N. This board features the CH9102F USB-Serial chip that can upload code at 3Mbit/s for fast development time. It also has auto-reset for Arduino/ATmega328 boards so no noodling with pins and reset button pressings. The CH9102F has fairly good driver support, and for 99% of use cases is a fine replacement of the FTR232, FT231x or CP210x series. With a modern USB Type C connector, it's ready to rock on any kind of computer. Some things Adafruit have noted as they have been working with this board: The RX LED blinks as you expect when data is received, however the TX LED does not blink constantly. Instead after a few seconds of data transmission the LED will blink slowly. On Linux, the CTS pin is not supported by the built in Linux kernel driver. Oddly enough, all the other flow control pins work perfectly fine - its just CTS that doesn't. You can fix it by installing an out-of-tree driver which Adafruit did on a Raspberry Pi. Fortunately, for uploading code to microcontrollers, almost all of them use RTS/DTR for auto-resetting so not having CTS isn't a big deal. By default, Adafruit have set it up so that it matches their FTDI cables. The 6th pin is RTS, the power wire is +5V, and the signal levels are 3.3V (they are 5V compliant and should work in the vast majority of 3.3V and 5V signal systems). Works excellently with any Arduino, ESP8266, ESP32, or any other microcontroller that uses an 'FTDI port' for communications and upload. There's also a full collection of all the modem control pins you may need on the side, in case you need the DTR, RI, DSR, etc. pins. Each order comes with a fully assembled and tested board. Adafruit give you a right-angle socket header and some male header strip. You can solder in the socket header on the edge to make it 'FTDI-like' or solder the male headers in to plug it into a breadboard and get access to all the pins. For Linux, you won't need a driver (unless you happen to need CTS support, see above). For Windows and MacOS X, check our tutorial page on how to install drivers. Technical Details Github Repo with PCB files Product Dimensions: 29.0mm x 17.8mm x 4.9mm / 1.1\" x 0.7\" x 0.2\" Product Weight: 2.2g / 0.1oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-wch-ch9102f-friend-usb-to-serial-converter",
+     "id": "gid://shopify/Product/6876502523987",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5568-00.jpg?v=1664898919"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "USB"
+     ],
+     "title": "Adafruit WCH CH9102F Friend - USB to Serial Converter",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-wch-ch9102f-friend-usb-to-serial-converter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40336536764499:1",
+       "description": {
+        "html": "Long gone are the days of parallel ports and serial ports. Now the USB port reigns supreme! But USB is hard, and you just want to transfer your everyday serial data from a microcontroller to computer. What now? Enter the Adafruit CH9102F Friend, a version of the popular USB-Serial 'friend' breakouts that uses the affordable (and available) CH9102F - a 'near pin-compatible' to the CP2102N. This board features the CH9102F USB-Serial chip that can upload code at 3Mbit/s for fast development time. It also has auto-reset for Arduino/ATmega328 boards so no noodling with pins and reset button pressings. The CH9102F has fairly good driver support, and for 99% of use cases is a fine replacement of the FTR232, FT231x or CP210x series. With a modern USB Type C connector, it's ready to rock on any kind of computer. Some things Adafruit have noted as they have been working with this board: The RX LED blinks as you expect when data is received, however the TX LED does not blink constantly. Instead after a few seconds of data transmission the LED will blink slowly. On Linux, the CTS pin is not supported by the built in Linux kernel driver. Oddly enough, all the other flow control pins work perfectly fine - its just CTS that doesn't. You can fix it by installing an out-of-tree driver which Adafruit did on a Raspberry Pi. Fortunately, for uploading code to microcontrollers, almost all of them use RTS/DTR for auto-resetting so not having CTS isn't a big deal. By default, Adafruit have set it up so that it matches their FTDI cables. The 6th pin is RTS, the power wire is +5V, and the signal levels are 3.3V (they are 5V compliant and should work in the vast majority of 3.3V and 5V signal systems). Works excellently with any Arduino, ESP8266, ESP32, or any other microcontroller that uses an 'FTDI port' for communications and upload. There's also a full collection of all the modem control pins you may need on the side, in case you need the DTR, RI, DSR, etc. pins. Each order comes with a fully assembled and tested board. Adafruit give you a right-angle socket header and some male header strip. You can solder in the socket header on the edge to make it 'FTDI-like' or solder the male headers in to plug it into a breadboard and get access to all the pins. For Linux, you won't need a driver (unless you happen to need CTS support, see above). For Windows and MacOS X, check our tutorial page on how to install drivers. Technical Details Github Repo with PCB files Product Dimensions: 29.0mm x 17.8mm x 4.9mm / 1.1\" x 0.7\" x 0.2\" Product Weight: 2.2g / 0.1oz"
+       },
+       "id": "gid://shopify/ProductVariant/40336536764499",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5568-00.jpg?v=1664898919"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA5568",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

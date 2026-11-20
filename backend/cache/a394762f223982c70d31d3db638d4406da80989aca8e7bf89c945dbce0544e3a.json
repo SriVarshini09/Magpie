@@ -1,0 +1,1248 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "FireBeetle 2 ESP32-E"
+  }
+ },
+ "key": "a394762f223982c70d31d3db638d4406da80989aca8e7bf89c945dbce0544e3a",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:00-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 835); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODM1LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 835
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p data-start=\"279\" data-end=\"720\" class=\"\">DFRobot <strong data-start=\"283\" data-end=\"307\">FireBeetle 2 ESP32-E</strong> is an advanced <strong data-start=\"323\" data-end=\"346\">IoT microcontroller</strong> based on the <strong data-start=\"360\" data-end=\"384\">ESP-WROOM-32E module</strong>, equipped with <strong data-start=\"400\" data-end=\"426\">dual-core ECO V3 chips</strong>, offering improved stability, lower power consumption, and powerful wireless communication. As a versatile ESP32 development board, it supports <strong data-start=\"531\" data-end=\"561\">WiFi + Bluetooth dual-mode</strong>, <strong data-start=\"563\" data-end=\"572\">USB-C</strong> charging, and<a href=\"https://openelab.io/collections/arduino\" rel=\"noopener\" target=\"_blank\"> <span style=\"color: rgb(43, 0, 255);\"><strong data-start=\"587\" data-end=\"610\">Arduino</strong></span></a> programming, making it ideal for <strong data-start=\"632\" data-end=\"657\">smart home automation</strong>, <strong data-start=\"659\" data-end=\"672\">wearables</strong>, <strong data-start=\"674\" data-end=\"693\">DIY IoT systems</strong>, and <strong data-start=\"699\" data-end=\"719\">wireless sensors</strong>.</p>\n<p><iframe title=\"FireBeetle 2 ESP32-E: The Ultimate Development Board for Wireless Projects\" src=\"https://www.youtube.com/embed/3SQd9WDmmT4\" height=\"729\" width=\"1296\"></iframe></p>\n<p data-start=\"722\" data-end=\"989\" class=\"\">With a <strong data-start=\"729\" data-end=\"758\">compact stamp-hole design</strong>, the board fits perfectly into embedded applications while supporting rich I/O including <strong data-start=\"848\" data-end=\"866\"><span style=\"color: rgb(43, 0, 255);\"><a href=\"https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter\" style=\"color: rgb(43, 0, 255);\" rel=\"noopener\" target=\"_blank\">UART</a></span>, I2C, SPI</strong>, and more. Whether you're a developer or hobbyist using an ESP32-E module, it provides flexibility and performance with minimal power consumption for any Arduino ESP32 project.</p>\n<div style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Board-Overview.jpg?v=1753081544\" alt=\"Board Overview\" style=\"float: none;\"></div>\n<p style=\"text-align: center;\" data-start=\"722\" data-end=\"989\" class=\"\"><strong>Figure 1. Board Overview</strong></p>\n<div style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Pinout_397fde1b-a3f6-42ed-8bbd-9b2ac557ff09.jpg?v=1753081284\" alt=\"Pinout\" style=\"margin-bottom: 16px; float: none;\"></div>\n<p style=\"text-align: center;\" data-start=\"722\" data-end=\"989\" class=\"\"><strong>Figure 2.Pinout</strong></p>\n<p> </p>\n<p>Espressif has recently released one wafer-level change on ESP32 Series of products (ECO V3). Below are the main design changes in ECO V3 Series of chips for your ESP32 WiFi Bluetooth applications:</p>\n<p>1. PSRAM Cache Bug Fix: Fixed “When the CPU accesses the external SRAM in a certain sequence, read &amp; write errors can occur”.</p>\n<p>2. Fixed “When each CPU reads certain different address spaces simultaneously, a read error can occur.”</p>\n<p>3. Optimized 32.768 KHz crystal oscillator stability, the issue was reported by the client that there is a low probability that under ECO V1 hardware, the 32.768 KHz crystal oscillator couldn’t start properly.</p>\n<p>4. Fixed Fault injection issues regarding secure boot and flash encryption are fixed.</p>\n<p>5. Improvement: Changed the minimum baud rate supported by the CAN module from 25 kHz to 12.5 kHz.</p>\n<p> </p>\n<h2 data-start=\"991\" data-end=\"1007\">Key Features</h2>\n<ul data-start=\"1008\" data-end=\"1653\">\n<li data-start=\"1008\" data-end=\"1109\" class=\"\">\n<p data-start=\"1010\" data-end=\"1109\" class=\"\"><strong data-start=\"1010\" data-end=\"1056\">ESP32-E dual-core microcontroller (ECO V3)</strong> with improved PSRAM stability and fault protection for IoT development</p>\n</li>\n<li data-start=\"1110\" data-end=\"1190\" class=\"\">\n<p data-start=\"1112\" data-end=\"1190\" class=\"\">Supports <strong data-start=\"1121\" data-end=\"1152\">WiFi (802.11 b/g/n/e/i/k/r)</strong> up to 150 Mbps &amp; <strong data-start=\"1170\" data-end=\"1188\">Bluetooth v4.2</strong> connectivity</p>\n</li>\n<li data-start=\"1191\" data-end=\"1272\" class=\"\">\n<p data-start=\"1193\" data-end=\"1272\" class=\"\"><strong data-start=\"1193\" data-end=\"1210\">USB-C powered</strong>, onboard charging circuit &amp; PH2.0 lithium battery interface for this IoT microcontroller</p>\n</li>\n<li data-start=\"1273\" data-end=\"1338\" class=\"\">\n<p data-start=\"1275\" data-end=\"1338\" class=\"\"><strong data-start=\"1275\" data-end=\"1306\">Ultra-low power consumption</strong>: average 2mA, deep sleep 10µA, ideal for battery-powered ESP32 development board projects</p>\n</li>\n<li data-start=\"1339\" data-end=\"1419\" class=\"\">\n<p data-start=\"1341\" data-end=\"1419\" class=\"\"><strong data-start=\"1341\" data-end=\"1370\">RGB LED, GDI Display Port</strong>, and onboard <strong data-start=\"1384\" data-end=\"1396\">side key</strong> for user interaction with your ESP32-E</p>\n</li>\n<li data-start=\"1420\" data-end=\"1487\" class=\"\">\n<p data-start=\"1422\" data-end=\"1487\" class=\"\">Pre-soldered <strong data-start=\"1435\" data-end=\"1453\">header version</strong> for plug-and-play compatibility with Arduino ESP32 setups</p>\n</li>\n<li data-start=\"1488\" data-end=\"1562\" class=\"\">\n<p data-start=\"1490\" data-end=\"1562\" class=\"\">Compatible with <strong data-start=\"1506\" data-end=\"1543\">Arduino, MicroPython, and Scratch</strong> (future support)</p>\n</li>\n<li data-start=\"1563\" data-end=\"1653\" class=\"\">\n<p data-start=\"1565\" data-end=\"1653\" class=\"\">Ideal for integration with <strong data-start=\"1592\" data-end=\"1611\">Gravity sensors</strong>, IFTTT platforms, and wearable IoT microcontroller projects</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"1655\" data-end=\"1675\">Specifications</h2>\n<table class=\"!mb-0 w-fit !max-w-none\">\n<tbody>\n<tr>\n<td>Processor</td>\n<td>Tensilica LX6 dual-core, 240MHz ESP32 development board</td>\n</tr>\n<tr>\n<td>Flash</td>\n<td>4MB</td>\n</tr>\n<tr>\n<td>SRAM</td>\n<td>520KB</td>\n</tr>\n<tr>\n<td>Digital I/O</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Analog Input</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Interfaces</td>\n<td>UART x1, SPI x1, I2C x1 (ESP32-E)</td>\n</tr>\n<tr>\n<td>Wi-Fi Protocols</td>\n<td>802.11 b/g/n/e/i/k/r (ESP32 WiFi Bluetooth)</td>\n</tr>\n<tr>\n<td>Bluetooth Protocols</td>\n<td>v4.2 BR/EDR, BLE</td>\n</tr>\n<tr>\n<td>Operating Voltage</td>\n<td>3.3V</td>\n</tr>\n<tr>\n<td>Input Voltage</td>\n<td>3.3V–5.5V</td>\n</tr>\n<tr>\n<td>Operating Temp</td>\n<td>-40℃ to +85℃</td>\n</tr>\n<tr>\n<td>Module Size</td>\n<td>25.4mm × 60mm / 1\" × 2.36\"</td>\n</tr>\n<tr>\n<td>Mount Hole Inner Diameter</td>\n<td>2mm</td>\n</tr>\n<tr>\n<td>Weight</td>\n<td>23g</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2 data-start=\"2154\" data-end=\"2177\">What’s in the Box</h2>\n<ul data-start=\"2178\" data-end=\"2383\">\n<li data-start=\"2178\" data-end=\"2229\" class=\"\">\n<p data-start=\"2180\" data-end=\"2229\" class=\"\">1x <strong data-start=\"2183\" data-end=\"2227\">FireBeetle 2 Board ESP32-E (with Header)</strong></p>\n</li>\n<li data-start=\"2230\" data-end=\"2267\" class=\"\">\n<p data-start=\"2232\" data-end=\"2267\" class=\"\">1x 18-pin 2.54mm Pitch Pin (Male)</p>\n</li>\n<li data-start=\"2268\" data-end=\"2307\" class=\"\">\n<p data-start=\"2270\" data-end=\"2307\" class=\"\">1x 18-pin 2.54mm Pitch Pin (Female)</p>\n</li>\n<li data-start=\"2308\" data-end=\"2345\" class=\"\">\n<p data-start=\"2310\" data-end=\"2345\" class=\"\">1x 14-pin 2.54mm Pitch Pin (Male)</p>\n</li>\n<li data-start=\"2346\" data-end=\"2383\" class=\"\">\n<p data-start=\"2348\" data-end=\"2383\" class=\"\">1x 14-pin 2.54mm Pitch Pin (Female)</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"2385\" data-end=\"2411\">Compatibility Notice</h2>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\">Please note: <strong data-start=\"2425\" data-end=\"2441\">FireBeetle 2</strong> is not compatible with original <strong data-start=\"2474\" data-end=\"2496\">FireBeetle shields</strong> or their expansion boards due to different pin layouts and dimensions.</p>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\"> </p>\n<h2 data-start=\"2412\" data-end=\"2567\">Reference</h2>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\"><span style=\"color: rgb(43, 0, 255);\"><a href=\"https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654\" style=\"color: rgb(43, 0, 255);\" target=\"_blank\">Product wiki</a></span></p>"
+     },
+     "handle": "dfrobot-firebeetle-2-esp32-e",
+     "id": "gid://shopify/p/IPlEwBbkJSkfDE2ptGapV",
+     "media": [
+      {
+       "alt_text": "DFRobot FireBeetle 2 ESP32-E IoT Microcontroller with Header-1",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual-core Tensilica LX6 processor delivers enhanced processing power for complex IoT tasks",
+       "Eco V3 chip with improved PSRAM stability prevents runtime errors and enhances reliability",
+       "Supports both WiFi 802.11 b/g/n/e/i/k/r up to 150 Mbps and Bluetooth v4.2 for versatile wireless connectivity",
+       "Ultra-low power consumption (average 2 mA, deep sleep 10 μA) ideal for battery-powered applications",
+       "Pre-soldered header and compatibility with Arduino, Micropython, and Scratch for easy prototyping"
+      ],
+      "unique_selling_points": [
+       "Dual-core ESP32-E Eco V3 chip with improved PSRAM stability and ultra-low power consumption, supporting both WiFi and Bluetooth in a compact, Arduino-compatible board."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1929,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1929,
+       "currency": "USD"
+      }
+     },
+     "title": "FireBeetle 2 ESP32-E IoT Microcontroller with Header - Arduino IDE",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/56279890690372:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-start=\"279\" data-end=\"720\" class=\"\">DFRobot <strong data-start=\"283\" data-end=\"307\">FireBeetle 2 ESP32-E</strong> is an advanced <strong data-start=\"323\" data-end=\"346\">IoT microcontroller</strong> based on the <strong data-start=\"360\" data-end=\"384\">ESP-WROOM-32E module</strong>, equipped with <strong data-start=\"400\" data-end=\"426\">dual-core ECO V3 chips</strong>, offering improved stability, lower power consumption, and powerful wireless communication. As a versatile ESP32 development board, it supports <strong data-start=\"531\" data-end=\"561\">WiFi + Bluetooth dual-mode</strong>, <strong data-start=\"563\" data-end=\"572\">USB-C</strong> charging, and<a href=\"https://openelab.io/collections/arduino\" rel=\"noopener\" target=\"_blank\"> <span style=\"color: rgb(43, 0, 255);\"><strong data-start=\"587\" data-end=\"610\">Arduino</strong></span></a> programming, making it ideal for <strong data-start=\"632\" data-end=\"657\">smart home automation</strong>, <strong data-start=\"659\" data-end=\"672\">wearables</strong>, <strong data-start=\"674\" data-end=\"693\">DIY IoT systems</strong>, and <strong data-start=\"699\" data-end=\"719\">wireless sensors</strong>.</p>\n<p><iframe title=\"FireBeetle 2 ESP32-E: The Ultimate Development Board for Wireless Projects\" src=\"https://www.youtube.com/embed/3SQd9WDmmT4\" height=\"729\" width=\"1296\"></iframe></p>\n<p data-start=\"722\" data-end=\"989\" class=\"\">With a <strong data-start=\"729\" data-end=\"758\">compact stamp-hole design</strong>, the board fits perfectly into embedded applications while supporting rich I/O including <strong data-start=\"848\" data-end=\"866\"><span style=\"color: rgb(43, 0, 255);\"><a href=\"https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter\" style=\"color: rgb(43, 0, 255);\" rel=\"noopener\" target=\"_blank\">UART</a></span>, I2C, SPI</strong>, and more. Whether you're a developer or hobbyist using an ESP32-E module, it provides flexibility and performance with minimal power consumption for any Arduino ESP32 project.</p>\n<div style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Board-Overview.jpg?v=1753081544\" alt=\"Board Overview\" style=\"float: none;\"></div>\n<p style=\"text-align: center;\" data-start=\"722\" data-end=\"989\" class=\"\"><strong>Figure 1. Board Overview</strong></p>\n<div style=\"text-align: start;\"><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Pinout_397fde1b-a3f6-42ed-8bbd-9b2ac557ff09.jpg?v=1753081284\" alt=\"Pinout\" style=\"margin-bottom: 16px; float: none;\"></div>\n<p style=\"text-align: center;\" data-start=\"722\" data-end=\"989\" class=\"\"><strong>Figure 2.Pinout</strong></p>\n<p> </p>\n<p>Espressif has recently released one wafer-level change on ESP32 Series of products (ECO V3). Below are the main design changes in ECO V3 Series of chips for your ESP32 WiFi Bluetooth applications:</p>\n<p>1. PSRAM Cache Bug Fix: Fixed “When the CPU accesses the external SRAM in a certain sequence, read &amp; write errors can occur”.</p>\n<p>2. Fixed “When each CPU reads certain different address spaces simultaneously, a read error can occur.”</p>\n<p>3. Optimized 32.768 KHz crystal oscillator stability, the issue was reported by the client that there is a low probability that under ECO V1 hardware, the 32.768 KHz crystal oscillator couldn’t start properly.</p>\n<p>4. Fixed Fault injection issues regarding secure boot and flash encryption are fixed.</p>\n<p>5. Improvement: Changed the minimum baud rate supported by the CAN module from 25 kHz to 12.5 kHz.</p>\n<p> </p>\n<h2 data-start=\"991\" data-end=\"1007\">Key Features</h2>\n<ul data-start=\"1008\" data-end=\"1653\">\n<li data-start=\"1008\" data-end=\"1109\" class=\"\">\n<p data-start=\"1010\" data-end=\"1109\" class=\"\"><strong data-start=\"1010\" data-end=\"1056\">ESP32-E dual-core microcontroller (ECO V3)</strong> with improved PSRAM stability and fault protection for IoT development</p>\n</li>\n<li data-start=\"1110\" data-end=\"1190\" class=\"\">\n<p data-start=\"1112\" data-end=\"1190\" class=\"\">Supports <strong data-start=\"1121\" data-end=\"1152\">WiFi (802.11 b/g/n/e/i/k/r)</strong> up to 150 Mbps &amp; <strong data-start=\"1170\" data-end=\"1188\">Bluetooth v4.2</strong> connectivity</p>\n</li>\n<li data-start=\"1191\" data-end=\"1272\" class=\"\">\n<p data-start=\"1193\" data-end=\"1272\" class=\"\"><strong data-start=\"1193\" data-end=\"1210\">USB-C powered</strong>, onboard charging circuit &amp; PH2.0 lithium battery interface for this IoT microcontroller</p>\n</li>\n<li data-start=\"1273\" data-end=\"1338\" class=\"\">\n<p data-start=\"1275\" data-end=\"1338\" class=\"\"><strong data-start=\"1275\" data-end=\"1306\">Ultra-low power consumption</strong>: average 2mA, deep sleep 10µA, ideal for battery-powered ESP32 development board projects</p>\n</li>\n<li data-start=\"1339\" data-end=\"1419\" class=\"\">\n<p data-start=\"1341\" data-end=\"1419\" class=\"\"><strong data-start=\"1341\" data-end=\"1370\">RGB LED, GDI Display Port</strong>, and onboard <strong data-start=\"1384\" data-end=\"1396\">side key</strong> for user interaction with your ESP32-E</p>\n</li>\n<li data-start=\"1420\" data-end=\"1487\" class=\"\">\n<p data-start=\"1422\" data-end=\"1487\" class=\"\">Pre-soldered <strong data-start=\"1435\" data-end=\"1453\">header version</strong> for plug-and-play compatibility with Arduino ESP32 setups</p>\n</li>\n<li data-start=\"1488\" data-end=\"1562\" class=\"\">\n<p data-start=\"1490\" data-end=\"1562\" class=\"\">Compatible with <strong data-start=\"1506\" data-end=\"1543\">Arduino, MicroPython, and Scratch</strong> (future support)</p>\n</li>\n<li data-start=\"1563\" data-end=\"1653\" class=\"\">\n<p data-start=\"1565\" data-end=\"1653\" class=\"\">Ideal for integration with <strong data-start=\"1592\" data-end=\"1611\">Gravity sensors</strong>, IFTTT platforms, and wearable IoT microcontroller projects</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"1655\" data-end=\"1675\">Specifications</h2>\n<table class=\"!mb-0 w-fit !max-w-none\">\n<tbody>\n<tr>\n<td>Processor</td>\n<td>Tensilica LX6 dual-core, 240MHz ESP32 development board</td>\n</tr>\n<tr>\n<td>Flash</td>\n<td>4MB</td>\n</tr>\n<tr>\n<td>SRAM</td>\n<td>520KB</td>\n</tr>\n<tr>\n<td>Digital I/O</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Analog Input</td>\n<td>5</td>\n</tr>\n<tr>\n<td>Interfaces</td>\n<td>UART x1, SPI x1, I2C x1 (ESP32-E)</td>\n</tr>\n<tr>\n<td>Wi-Fi Protocols</td>\n<td>802.11 b/g/n/e/i/k/r (ESP32 WiFi Bluetooth)</td>\n</tr>\n<tr>\n<td>Bluetooth Protocols</td>\n<td>v4.2 BR/EDR, BLE</td>\n</tr>\n<tr>\n<td>Operating Voltage</td>\n<td>3.3V</td>\n</tr>\n<tr>\n<td>Input Voltage</td>\n<td>3.3V–5.5V</td>\n</tr>\n<tr>\n<td>Operating Temp</td>\n<td>-40℃ to +85℃</td>\n</tr>\n<tr>\n<td>Module Size</td>\n<td>25.4mm × 60mm / 1\" × 2.36\"</td>\n</tr>\n<tr>\n<td>Mount Hole Inner Diameter</td>\n<td>2mm</td>\n</tr>\n<tr>\n<td>Weight</td>\n<td>23g</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2 data-start=\"2154\" data-end=\"2177\">What’s in the Box</h2>\n<ul data-start=\"2178\" data-end=\"2383\">\n<li data-start=\"2178\" data-end=\"2229\" class=\"\">\n<p data-start=\"2180\" data-end=\"2229\" class=\"\">1x <strong data-start=\"2183\" data-end=\"2227\">FireBeetle 2 Board ESP32-E (with Header)</strong></p>\n</li>\n<li data-start=\"2230\" data-end=\"2267\" class=\"\">\n<p data-start=\"2232\" data-end=\"2267\" class=\"\">1x 18-pin 2.54mm Pitch Pin (Male)</p>\n</li>\n<li data-start=\"2268\" data-end=\"2307\" class=\"\">\n<p data-start=\"2270\" data-end=\"2307\" class=\"\">1x 18-pin 2.54mm Pitch Pin (Female)</p>\n</li>\n<li data-start=\"2308\" data-end=\"2345\" class=\"\">\n<p data-start=\"2310\" data-end=\"2345\" class=\"\">1x 14-pin 2.54mm Pitch Pin (Male)</p>\n</li>\n<li data-start=\"2346\" data-end=\"2383\" class=\"\">\n<p data-start=\"2348\" data-end=\"2383\" class=\"\">1x 14-pin 2.54mm Pitch Pin (Female)</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"2385\" data-end=\"2411\">Compatibility Notice</h2>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\">Please note: <strong data-start=\"2425\" data-end=\"2441\">FireBeetle 2</strong> is not compatible with original <strong data-start=\"2474\" data-end=\"2496\">FireBeetle shields</strong> or their expansion boards due to different pin layouts and dimensions.</p>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\"> </p>\n<h2 data-start=\"2412\" data-end=\"2567\">Reference</h2>\n<p data-start=\"2412\" data-end=\"2567\" class=\"\"><span style=\"color: rgb(43, 0, 255);\"><a href=\"https://wiki.dfrobot.com/FireBeetle_Board_ESP32_E_SKU_DFR0654\" style=\"color: rgb(43, 0, 255);\" target=\"_blank\">Product wiki</a></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-2-esp32-e",
+       "id": "gid://shopify/ProductVariant/56279890690372",
+       "media": [
+        {
+         "alt_text": "DFRobot FireBeetle 2 ESP32-E IoT Microcontroller with Header-1",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 1929,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15440461005124",
+       "source": "shopify",
+       "title": "FireBeetle 2 ESP32-E IoT Microcontroller with Header - Arduino IDE",
+       "url": "https://openelab.com/products/dfrobot-firebeetle-2-esp32-e?variant=56279890690372&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h1>FireBeetle 2 ESP32-E – Battery-Ready IoT Microcontroller with Wi-Fi &amp; Bluetooth</h1>\n<h2>Easy-to-Use ESP32 Development Board for Everyday Makers</h2>\n<p>The FireBeetle 2 ESP32-E is a compact and affordable IoT microcontroller designed for anyone looking to build smart devices and connected projects. Featuring built-in Wi-Fi and Bluetooth, this battery-ready ESP32 microcontroller is perfect for smart home automation, wearable electronics, DIY sensors, and other Internet of Things solutions.</p>\n<p>Built on the trusted ESP-WROOM-32E module, FireBeetle 2 is easy for beginners and advanced users alike, letting you connect to the cloud and control your projects wirelessly with very low power consumption.</p>\n<h2>Wireless Connectivity with Wi-Fi &amp; Bluetooth</h2>\n<p>Enjoy reliable wireless connections with dual-mode Wi-Fi (802.11 b/g/n) and Bluetooth 4.2. Easily connect your FireBeetle 2 ESP32-E to your smartphone, tablet, or IoT platforms like IFTTT, and control or monitor your smart devices from anywhere at home.</p>\n<h2>Designed for Low Power and Battery Projects</h2>\n<p>The FireBeetle 2 ESP32-E consumes just 10μA in deep sleep, making it ideal for battery-operated IoT gadgets. The on-board charging circuit and dedicated PH2.0 lithium battery interface make powering your projects straightforward and safe. Charge via USB-C for fast and convenient charging.</p>\n<h2>Beginner-Friendly Coding &amp; Maker Support</h2>\n<p>This user-friendly ESP32 board supports Arduino programming out of the box. Very soon, it will also offer Scratch graphical coding and MicroPython support—great for kids, educators, and hobbyists. Thanks to detailed online tutorials, a huge community, and plug-and-play compatibility with DFRobot Gravity sensors (no soldering required!), getting started is easy.</p>\n<h2>Key Features:</h2>\n<ul>\n<li>ESP32 dual-core, low-power main controller with 10μA power consumption</li>\n<li>Wi-Fi and Bluetooth 4.2 dual-mode</li>\n<li>Onboard USB-C charging circuit, PH2.0 battery interface</li>\n<li>Ultra-compact: only 25.4 x 60 mm, weighs just 23g</li>\n<li>Support for Arduino, Scratch, and MicroPython programming</li>\n<li>Easy expansion with plug-and-play Gravity sensors and actuators</li>\n<li>RGB LED and user button for interactive projects</li>\n<li>Fool-proof circuit protection and two-sided silkscreen for easy pinouts</li>\n<li>GDI display port for connecting compatible screens</li>\n<li>FCC/CE/TELEC/KCC certified Wi-Fi module</li>\n</ul>\n<h2>Technical Specifications</h2>\n<ul>\n<li>\n<strong>SKU:</strong> DFR0654 | <strong>Vetco Product Number:</strong> VUPN2235</li>\n<li>\n<strong>Microcontroller:</strong> ESP32-E, Tensilica LX6 dual-core, 240MHz</li>\n<li>\n<strong>Operating Voltage:</strong> 3.3V (input 3.3V ~ 5.5V)</li>\n<li>\n<strong>SRAM:</strong> 520KB, <strong>Flash:</strong> 32Mbit (4MB)</li>\n<li>\n<strong>Wireless:</strong> Wi-Fi (802.11 b/g/n), Bluetooth 4.2 BR/EDR and BLE</li>\n<li>\n<strong>Power:</strong> USB-C charging; max charge current 500mA; max discharge current 600mA</li>\n<li>\n<strong>I/O:</strong> 10 Digital, 5 Analog, 1 UART, 1 I2C, 1 SPI, 1 I2S</li>\n<li>\n<strong>Special Features:</strong> RGB_LED, fool-proof pinout, DisplayPort (GDI), stamp hole for easy PCB embedding</li>\n<li>\n<strong>Mount Hole Size:</strong> 2.0mm inner diameter</li>\n<li>\n<strong>Operating Temp:</strong> -40℃ to +85℃</li>\n<li>\n<strong>Dimensions:</strong> 25.4 x 60 mm</li>\n<li>\n<strong>Weight:</strong> 23g</li>\n</ul>\n<h2>What’s New in FireBeetle 2 ESP32-E?</h2>\n<ul>\n<li>Data encryption chip for extra program security</li>\n<li>New GDI display port for easy screen connection</li>\n<li>Fool-proof hardware design and improved power management</li>\n<li>Upgraded silkscreen labeling for easy wiring</li>\n</ul>\n<p>Note: FireBeetle 2 is not pin-compatible with original FireBeetle boards or their expansion boards.</p>\n<h2>Get Creative with the FireBeetle 2 ESP32-E</h2>\n<p>Start your IoT project today with the FireBeetle 2 ESP32-E—an easy-to-use battery-ready ESP32 development board packed with features for wireless connectivity, smart automation, and fun experimentation. Need help getting started? Detailed guides and community support are always available.</p>"
+     },
+     "handle": "vupn2235_firebeetle_2_esp32-e_battery_ready_-_iot_microcontroller_supports_wi-fi__bluetooth_d74",
+     "id": "gid://shopify/p/3C7AF7a8WRB8TgBcakCMnE",
+     "media": [
+      {
+       "alt_text": "FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi & Bluetooth) (D74)",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/vupn2235_a_iot_dual-mode_microcontroller_2.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/vupn2235_a_iot_dual-mode_microcontroller_2.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual-core ESP32-E main controller delivers fast, low-power processing for IoT applications",
+       "Integrated Wi-Fi 802.11 b/g/n and Bluetooth 4.2 enable reliable wireless connectivity",
+       "Ultra-compact 25.4 x 60 mm size and lightweight 23 g design ideal for battery-powered gadgets",
+       "Supports Arduino, Scratch, and MicroPython for versatile coding and easy learning",
+       "Onboard USB-C charging and PH2.0 lithium battery interface for convenient, safe power management"
+      ],
+      "unique_selling_points": [
+       "Ultra-compact, battery-ready ESP32-E board with dual Wi-Fi and Bluetooth, USB-C charging, and Arduino, Scratch, and MicroPython support."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1495,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1495,
+       "currency": "USD"
+      }
+     },
+     "title": "FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi & Bluetooth) (D74)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://vetco.net/buy/42879359516809:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h1>FireBeetle 2 ESP32-E – Battery-Ready IoT Microcontroller with Wi-Fi &amp; Bluetooth</h1>\n<h2>Easy-to-Use ESP32 Development Board for Everyday Makers</h2>\n<p>The FireBeetle 2 ESP32-E is a compact and affordable IoT microcontroller designed for anyone looking to build smart devices and connected projects. Featuring built-in Wi-Fi and Bluetooth, this battery-ready ESP32 microcontroller is perfect for smart home automation, wearable electronics, DIY sensors, and other Internet of Things solutions.</p>\n<p>Built on the trusted ESP-WROOM-32E module, FireBeetle 2 is easy for beginners and advanced users alike, letting you connect to the cloud and control your projects wirelessly with very low power consumption.</p>\n<h2>Wireless Connectivity with Wi-Fi &amp; Bluetooth</h2>\n<p>Enjoy reliable wireless connections with dual-mode Wi-Fi (802.11 b/g/n) and Bluetooth 4.2. Easily connect your FireBeetle 2 ESP32-E to your smartphone, tablet, or IoT platforms like IFTTT, and control or monitor your smart devices from anywhere at home.</p>\n<h2>Designed for Low Power and Battery Projects</h2>\n<p>The FireBeetle 2 ESP32-E consumes just 10μA in deep sleep, making it ideal for battery-operated IoT gadgets. The on-board charging circuit and dedicated PH2.0 lithium battery interface make powering your projects straightforward and safe. Charge via USB-C for fast and convenient charging.</p>\n<h2>Beginner-Friendly Coding &amp; Maker Support</h2>\n<p>This user-friendly ESP32 board supports Arduino programming out of the box. Very soon, it will also offer Scratch graphical coding and MicroPython support—great for kids, educators, and hobbyists. Thanks to detailed online tutorials, a huge community, and plug-and-play compatibility with DFRobot Gravity sensors (no soldering required!), getting started is easy.</p>\n<h2>Key Features:</h2>\n<ul>\n<li>ESP32 dual-core, low-power main controller with 10μA power consumption</li>\n<li>Wi-Fi and Bluetooth 4.2 dual-mode</li>\n<li>Onboard USB-C charging circuit, PH2.0 battery interface</li>\n<li>Ultra-compact: only 25.4 x 60 mm, weighs just 23g</li>\n<li>Support for Arduino, Scratch, and MicroPython programming</li>\n<li>Easy expansion with plug-and-play Gravity sensors and actuators</li>\n<li>RGB LED and user button for interactive projects</li>\n<li>Fool-proof circuit protection and two-sided silkscreen for easy pinouts</li>\n<li>GDI display port for connecting compatible screens</li>\n<li>FCC/CE/TELEC/KCC certified Wi-Fi module</li>\n</ul>\n<h2>Technical Specifications</h2>\n<ul>\n<li>\n<strong>SKU:</strong> DFR0654 | <strong>Vetco Product Number:</strong> VUPN2235</li>\n<li>\n<strong>Microcontroller:</strong> ESP32-E, Tensilica LX6 dual-core, 240MHz</li>\n<li>\n<strong>Operating Voltage:</strong> 3.3V (input 3.3V ~ 5.5V)</li>\n<li>\n<strong>SRAM:</strong> 520KB, <strong>Flash:</strong> 32Mbit (4MB)</li>\n<li>\n<strong>Wireless:</strong> Wi-Fi (802.11 b/g/n), Bluetooth 4.2 BR/EDR and BLE</li>\n<li>\n<strong>Power:</strong> USB-C charging; max charge current 500mA; max discharge current 600mA</li>\n<li>\n<strong>I/O:</strong> 10 Digital, 5 Analog, 1 UART, 1 I2C, 1 SPI, 1 I2S</li>\n<li>\n<strong>Special Features:</strong> RGB_LED, fool-proof pinout, DisplayPort (GDI), stamp hole for easy PCB embedding</li>\n<li>\n<strong>Mount Hole Size:</strong> 2.0mm inner diameter</li>\n<li>\n<strong>Operating Temp:</strong> -40℃ to +85℃</li>\n<li>\n<strong>Dimensions:</strong> 25.4 x 60 mm</li>\n<li>\n<strong>Weight:</strong> 23g</li>\n</ul>\n<h2>What’s New in FireBeetle 2 ESP32-E?</h2>\n<ul>\n<li>Data encryption chip for extra program security</li>\n<li>New GDI display port for easy screen connection</li>\n<li>Fool-proof hardware design and improved power management</li>\n<li>Upgraded silkscreen labeling for easy wiring</li>\n</ul>\n<p>Note: FireBeetle 2 is not pin-compatible with original FireBeetle boards or their expansion boards.</p>\n<h2>Get Creative with the FireBeetle 2 ESP32-E</h2>\n<p>Start your IoT project today with the FireBeetle 2 ESP32-E—an easy-to-use battery-ready ESP32 development board packed with features for wireless connectivity, smart automation, and fun experimentation. Need help getting started? Detailed guides and community support are always available.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "vupn2235_firebeetle_2_esp32-e_battery_ready_-_iot_microcontroller_supports_wi-fi__bluetooth_d74",
+       "id": "gid://shopify/ProductVariant/42879359516809",
+       "media": [
+        {
+         "alt_text": "FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi & Bluetooth) (D74)",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/vupn2235_a_iot_dual-mode_microcontroller_2.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/vupn2235_a_iot_dual-mode_microcontroller_2.jpg",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 1495,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "8da295-18.myshopify.com",
+        "id": "gid://shopify/Shop/64692912265",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928494217.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/64692912265/policies/30226677897.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928461449.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928625289.html"
+         }
+        ],
+        "name": "Vetco Electronics",
+        "url": "https://vetco.net"
+       },
+       "seller_product_id": "gid://shopify/Product/7822523793545",
+       "source": "shopify",
+       "title": "FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi & Bluetooth) (D74)",
+       "url": "https://vetco.net/products/vupn2235_firebeetle_2_esp32-e_battery_ready_-_iot_microcontroller_supports_wi-fi__bluetooth_d74?variant=42879359516809&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>DFRobot Terminal Block Board</li>\n\t<li>Designed for FireBeetle 2 ESP32-e IoT Microcontroller</li>\n\t<li>Features stable, reliable connections with terminal block wiring</li>\n\t<li>Includes LED status indicators for each terminal block</li>\n\t<li>Offers an external voltage input of 7-24 V and a GDI port</li>\n</ul>\n\n<p>The <strong>Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller</strong> is an expansion shield specifically designed to be compatible with the FireBeetle 2 ESP32-E IoT Microcontroller, supporting both Wi-Fi and Bluetooth. However, it is important to note that it is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board.</p>\n\n<p>This expansion shield is ideally suited for those who prefer to use terminal blocks for wiring their projects. It is equipped with an additional 7-24V external voltage input and a GDI port. The use of terminal blocks ensures that wires are secured, resulting in more stable and reliable connections.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-1324/img/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-desc.webp\"></p>\n\n<p>Each terminal block, with the exception of GND, is fitted with an LED for status indication. A switch is incorporated into the design of the board, allowing users to turn off the LED when it is not needed. The terminal block board is characterized by its stable and reliable connections, with all pins of the mainboard broken out.</p>\n\n<p>The board also features an external Voltage Input of 7-24V, a GDI for connecting the display, a clear colorful silkscreen, a terminal block status indicator, and a terminal block status indicator switch. This makes it suitable for use in applications such as Smart Soil conditioners and Multiple Relays Projects.</p>\n\n<p><em>Please note that this expansion shield is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board.</em></p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-1324/img/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-dime.webp\"></p>\n\n<ul>\n\t<li>61 x 93.5 mm / 2.40 x 3.68 inch</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF File</strong></p>\n\n<ul>\n\t<li><a href=\"https://cdn.robotshop.com/media/D/Dfr/RB-Dfr-1324/pdf/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-schematics.PDF\" target=\"_blank\">DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Schematics</a></li>\n</ul>\n\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://wiki.dfrobot.com/SKU_DFR0923_Terminal_Block_Board_for_FireBeetle_2\" target=\"_blank\">DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Wiki</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>External Voltage Input: 7-24 V</li>\n\t<li>Screen Port: GDI</li>\n\t<li>5V Port x3</li>\n\t<li>3.3V Port x3</li>\n\t<li>GND Port x6</li>\n\t<li>Digital Port x12</li>\n\t<li>Analog Port x5</li>\n\t<li>I2C x3</li>\n\t<li>SPI x1</li>\n\t<li>Port Indicator x34</li>\n\t<li>Port Indicator Color: blue, red</li>\n\t<li>Default ON Port Indicator: 5V, 3.3V, D0, D1, D5, D6, A4, RST</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller",
+     "id": "gid://shopify/p/ovjQxpHLmAzNg4dNEC66H",
+     "media": [
+      {
+       "alt_text": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Terminal block connections ensure stable and secure wiring for reliable project assembly",
+       "External 7-24V voltage input and GDI port enable flexible power and display connectivity",
+       "Each terminal block (except GND) includes an LED for status indication, improving troubleshooting",
+       "LED switch allows users to disable non-essential LEDs, reducing power consumption",
+       "All mainboard ports are broken out for comprehensive I/O access"
+      ],
+      "unique_selling_points": [
+       "Features 7-24V external voltage input, GDI port, and all mainboard ports broken out in terminal blocks with LED status indicators for enhanced reliability and visibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2094,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2094,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/43309072580769:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n\t<li>DFRobot Terminal Block Board</li>\n\t<li>Designed for FireBeetle 2 ESP32-e IoT Microcontroller</li>\n\t<li>Features stable, reliable connections with terminal block wiring</li>\n\t<li>Includes LED status indicators for each terminal block</li>\n\t<li>Offers an external voltage input of 7-24 V and a GDI port</li>\n</ul>\n\n<p>The <strong>Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller</strong> is an expansion shield specifically designed to be compatible with the FireBeetle 2 ESP32-E IoT Microcontroller, supporting both Wi-Fi and Bluetooth. However, it is important to note that it is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board.</p>\n\n<p>This expansion shield is ideally suited for those who prefer to use terminal blocks for wiring their projects. It is equipped with an additional 7-24V external voltage input and a GDI port. The use of terminal blocks ensures that wires are secured, resulting in more stable and reliable connections.</p>\n\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-1324/img/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-desc.webp\"></p>\n\n<p>Each terminal block, with the exception of GND, is fitted with an LED for status indication. A switch is incorporated into the design of the board, allowing users to turn off the LED when it is not needed. The terminal block board is characterized by its stable and reliable connections, with all pins of the mainboard broken out.</p>\n\n<p>The board also features an external Voltage Input of 7-24V, a GDI for connecting the display, a clear colorful silkscreen, a terminal block status indicator, and a terminal block status indicator switch. This makes it suitable for use in applications such as Smart Soil conditioners and Multiple Relays Projects.</p>\n\n<p><em>Please note that this expansion shield is not compatible with the FireBeetle 2 Board ESP32-S3 Microcontroller and Firebeetle 2 M0 Development Board.</em></p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>1x Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p style=\"text-align: center;\"><img style=\"width: 500px;  \" alt src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-1324/img/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-dime.webp\"></p>\n\n<ul>\n\t<li>61 x 93.5 mm / 2.40 x 3.68 inch</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF File</strong></p>\n\n<ul>\n\t<li><a href=\"https://cdn.robotshop.com/media/D/Dfr/RB-Dfr-1324/pdf/terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-schematics.PDF\" target=\"_blank\">DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Schematics</a></li>\n</ul>\n\n<p><strong>Website</strong></p>\n\n<ul>\n\t<li><a href=\"https://wiki.dfrobot.com/SKU_DFR0923_Terminal_Block_Board_for_FireBeetle_2\" target=\"_blank\">DFRobot Terminal Block Board for FireBeetle 2 ESP32-e IoT Microcontroller - Wiki</a></li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n\t<li>External Voltage Input: 7-24 V</li>\n\t<li>Screen Port: GDI</li>\n\t<li>5V Port x3</li>\n\t<li>3.3V Port x3</li>\n\t<li>GND Port x6</li>\n\t<li>Digital Port x12</li>\n\t<li>Analog Port x5</li>\n\t<li>I2C x3</li>\n\t<li>SPI x1</li>\n\t<li>Port Indicator x34</li>\n\t<li>Port Indicator Color: blue, red</li>\n\t<li>Default ON Port Indicator: 5V, 3.3V, D0, D1, D5, D6, A4, RST</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller",
+       "id": "gid://shopify/ProductVariant/43309072580769",
+       "media": [
+        {
+         "alt_text": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller-img01.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2094,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7777205158049",
+       "source": "shopify",
+       "title": "DFRobot Terminal Block Board for FireBeetle 2 ESP32-E IoT Microcontroller",
+       "url": "https://www.robotshop.com/products/dfrobot-terminal-block-board-firebeetle-2-esp32-e-iot-microcontroller?variant=43309072580769&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The DFRobot FireBeetle 2 ESP32-S3-U is a compact IoT development board built on the ESP32-S3-U chip, featuring Wi-Fi, Bluetooth 5 LE, 8MB PSRAM, 16MB Flash, native USB OTG, and a U.FL connector for an external antenna. Designed in the FireBeetle 2 form factor with LiPo battery charging built in, it targets battery-powered Wi-Fi and BLE IoT applications where deep-sleep power efficiency, expanded memory for edge AI, and strong wireless connectivity are all required simultaneously.</p>\n<h2>Specifications</h2>\n<ul>\n<li>\n<strong>MCU</strong>: ESP32-S3-U (Xtensa LX7 dual-core @ 240MHz)</li>\n<li>\n<strong>Wi-Fi</strong>: 802.11 b/g/n (Wi-Fi 4)</li>\n<li>\n<strong>Bluetooth</strong>: Bluetooth 5.0 LE</li>\n<li>\n<strong>RAM</strong>: 512KB SRAM + 8MB PSRAM</li>\n<li>\n<strong>Flash</strong>: 16MB</li>\n<li>\n<strong>GPIO</strong>: 26 usable GPIO pins</li>\n<li>\n<strong>Interfaces</strong>: UART, SPI, I2C, I2S, USB OTG</li>\n<li>\n<strong>USB</strong>: Native USB OTG (no CH340 chip required)</li>\n<li>\n<strong>Power</strong>: 3.3V / 5V; LiPo battery charging via onboard charger</li>\n<li>\n<strong>Dimensions</strong>: 25.4mm × 48mm (FireBeetle 2 form factor)</li>\n</ul>\n<h2>Key Features</h2>\n<ul>\n<li>ESP32-S3-U with U-shaped antenna footprint for external antenna support</li>\n<li>8MB PSRAM enables large buffer operations and TensorFlow Lite inference</li>\n<li>Native USB OTG — acts as USB device without external USB-UART chip</li>\n<li>FireBeetle 2 pinout is backward-compatible with FireBeetle ecosystem shields</li>\n<li>Integrated LiPo charger for battery-powered IoT builds</li>\n<li>Ultra-low deep sleep current for long battery life</li>\n<li>Supports Arduino, MicroPython, ESP-IDF frameworks</li>\n<li>AI acceleration unit for edge machine learning applications</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Wi-Fi + Bluetooth IoT sensor nodes</li>\n<li>Wearable devices with external antenna</li>\n<li>Edge AI inference with TensorFlow Lite Micro</li>\n<li>USB HID and serial device firmware</li>\n<li>Smart home automation controllers</li>\n<li>Battery-powered data loggers with deep sleep</li>\n<li>BLE beacon and mesh networking nodes</li>\n<li>MQTT IoT gateways</li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1x DFRobot FireBeetle 2 ESP32-S3-U Development Board</li>\n<li>Note: LiPo battery and antenna sold separately</li>\n</ul>\n<h2>FAQ</h2>\n<ul>\n<li>\n<strong>Q: What is the difference between ESP32-S3 and ESP32-S3-U?</strong> A: The -U variant has a U.FL connector for an external antenna, which improves Wi-Fi/BLE range significantly.</li>\n<li>\n<strong>Q: Can I program it with Arduino IDE?</strong> A: Yes — install the ESP32 Arduino core (v2.x or later) and select the ESP32-S3 board.</li>\n<li>\n<strong>Q: Does it support MicroPython?</strong> A: Yes — flash official MicroPython for ESP32-S3 and use Thonny or rshell.</li>\n<li>\n<strong>Q: How long can it run on a LiPo battery?</strong> A: In deep sleep, current drops below 20μA. A 1000mAh LiPo can power it for months in light-duty sleep cycles.</li>\n<li>\n<strong>Q: Is it compatible with FireBeetle shields?</strong> A: Yes — the FireBeetle 2 pinout is backward-compatible with DFRobot FireBeetle shields and expansions.</li>\n</ul>"
+     },
+     "handle": "dfrobot-firebeetle-aiot-camera",
+     "id": "gid://shopify/p/jIMLgZhV8QMozZRVdA394",
+     "media": [
+      {
+       "alt_text": "DFRobot FireBeetle 2 ESP32-S3-U Development Board — Wi-Fi Bluetooth 5 Low-Power IoT Dev Board",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "ESP32 S3 U dual-core 240 MHz processor delivers fast processing for IoT tasks",
+       "Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE provide robust wireless connectivity",
+       "8 MB PSRAM enables large buffer operations and TensorFlow Lite inference",
+       "Ultra-low deep sleep current extends battery life for portable devices",
+       "Integrated LiPo battery charging supports battery-powered IoT builds"
+      ],
+      "unique_selling_points": [
+       "Combines Wi-Fi, Bluetooth 5, and ultra-low power in a FireBeetle 2 form factor with built-in LiPo charging."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2409,
+       "currency": "EUR"
+      },
+      "min": {
+       "amount": 2409,
+       "currency": "EUR"
+      }
+     },
+     "title": "DFRobot FireBeetle 2 ESP32-S3-U Development Board — Wi-Fi Bluetooth 5 Low-Power IoT Dev Board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.io/buy/44868528537798:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The DFRobot FireBeetle 2 ESP32-S3-U is a compact IoT development board built on the ESP32-S3-U chip, featuring Wi-Fi, Bluetooth 5 LE, 8MB PSRAM, 16MB Flash, native USB OTG, and a U.FL connector for an external antenna. Designed in the FireBeetle 2 form factor with LiPo battery charging built in, it targets battery-powered Wi-Fi and BLE IoT applications where deep-sleep power efficiency, expanded memory for edge AI, and strong wireless connectivity are all required simultaneously.</p>\n<h2>Specifications</h2>\n<ul>\n<li>\n<strong>MCU</strong>: ESP32-S3-U (Xtensa LX7 dual-core @ 240MHz)</li>\n<li>\n<strong>Wi-Fi</strong>: 802.11 b/g/n (Wi-Fi 4)</li>\n<li>\n<strong>Bluetooth</strong>: Bluetooth 5.0 LE</li>\n<li>\n<strong>RAM</strong>: 512KB SRAM + 8MB PSRAM</li>\n<li>\n<strong>Flash</strong>: 16MB</li>\n<li>\n<strong>GPIO</strong>: 26 usable GPIO pins</li>\n<li>\n<strong>Interfaces</strong>: UART, SPI, I2C, I2S, USB OTG</li>\n<li>\n<strong>USB</strong>: Native USB OTG (no CH340 chip required)</li>\n<li>\n<strong>Power</strong>: 3.3V / 5V; LiPo battery charging via onboard charger</li>\n<li>\n<strong>Dimensions</strong>: 25.4mm × 48mm (FireBeetle 2 form factor)</li>\n</ul>\n<h2>Key Features</h2>\n<ul>\n<li>ESP32-S3-U with U-shaped antenna footprint for external antenna support</li>\n<li>8MB PSRAM enables large buffer operations and TensorFlow Lite inference</li>\n<li>Native USB OTG — acts as USB device without external USB-UART chip</li>\n<li>FireBeetle 2 pinout is backward-compatible with FireBeetle ecosystem shields</li>\n<li>Integrated LiPo charger for battery-powered IoT builds</li>\n<li>Ultra-low deep sleep current for long battery life</li>\n<li>Supports Arduino, MicroPython, ESP-IDF frameworks</li>\n<li>AI acceleration unit for edge machine learning applications</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>Wi-Fi + Bluetooth IoT sensor nodes</li>\n<li>Wearable devices with external antenna</li>\n<li>Edge AI inference with TensorFlow Lite Micro</li>\n<li>USB HID and serial device firmware</li>\n<li>Smart home automation controllers</li>\n<li>Battery-powered data loggers with deep sleep</li>\n<li>BLE beacon and mesh networking nodes</li>\n<li>MQTT IoT gateways</li>\n</ul>\n<h2>Package Includes</h2>\n<ul>\n<li>1x DFRobot FireBeetle 2 ESP32-S3-U Development Board</li>\n<li>Note: LiPo battery and antenna sold separately</li>\n</ul>\n<h2>FAQ</h2>\n<ul>\n<li>\n<strong>Q: What is the difference between ESP32-S3 and ESP32-S3-U?</strong> A: The -U variant has a U.FL connector for an external antenna, which improves Wi-Fi/BLE range significantly.</li>\n<li>\n<strong>Q: Can I program it with Arduino IDE?</strong> A: Yes — install the ESP32 Arduino core (v2.x or later) and select the ESP32-S3 board.</li>\n<li>\n<strong>Q: Does it support MicroPython?</strong> A: Yes — flash official MicroPython for ESP32-S3 and use Thonny or rshell.</li>\n<li>\n<strong>Q: How long can it run on a LiPo battery?</strong> A: In deep sleep, current drops below 20μA. A 1000mAh LiPo can power it for months in light-duty sleep cycles.</li>\n<li>\n<strong>Q: Is it compatible with FireBeetle shields?</strong> A: Yes — the FireBeetle 2 pinout is backward-compatible with DFRobot FireBeetle shields and expansions.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-aiot-camera",
+       "id": "gid://shopify/ProductVariant/44868528537798",
+       "media": [
+        {
+         "alt_text": "DFRobot FireBeetle 2 ESP32-S3-U Development Board — Wi-Fi Bluetooth 5 Low-Power IoT Dev Board",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 2409,
+        "currency": "EUR"
+       },
+       "seller": {
+        "domain": "38c3cf-92.myshopify.com",
+        "id": "gid://shopify/Shop/62100504774",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301169862.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301202630.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301137094.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301235398.html"
+         }
+        ],
+        "name": "OpenELAB Technology Ltd.",
+        "url": "https://openelab.io"
+       },
+       "seller_product_id": "gid://shopify/Product/8587848777926",
+       "source": "shopify",
+       "title": "DFRobot FireBeetle 2 ESP32-S3-U Development Board — Wi-Fi Bluetooth 5 Low-Power IoT Dev Board",
+       "url": "https://openelab.io/products/dfrobot-firebeetle-aiot-camera?variant=44868528537798&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>Compatible with products in the DFRobot FireBeetle serials</li>\n<li>Low-power consumption</li>\n<li>Quick Response(the top frequency is 400KHz)</li>\n<li>Small size, convenient to install</li>\n</ul>\n<p>The<strong> FireBeetle ESP32 IOT Microcontroller</strong> is the low-power consumption micro-controller intentionally designed for Internet of Things (IoT) projects. FireBeetle Board - ESP32 integrates a Dual-Core ESP-WROOM-32 module supports MCU and Wi-Fi and Bluetooth dual-mode communication. The electric current is just 10μA in the deep-sleep mode. The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly.</p>\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-1.jpg\"><img title=\"FireBeetle ESP32 IOT Microcontroller\" src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-1.webp\" alt=\"FireBeetle ESP32 IOT Microcontroller\" width=\"500\" height=\"334\" loading=\"lazy\"></a></p>\n<p>FireBeetle Board-ESP32 has made a special hardware design for Arduino IDE. You can make a download without switching booth-mode manually.</p>\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-2.jpg\"><img title=\"FireBeetle ESP32 IOT Microcontroller\" src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-2.webp\" alt=\"FireBeetle ESP32 IOT Microcontroller\" width=\"500\" height=\"334\" loading=\"lazy\"></a></p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>24 × 53(mm)/0.94 x 2.09(inches)</li>\r\n<li>Mounting hole: inner diameter 3.1mm; outside diameter 6mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Working voltage: 3.3V</li>\r\n<li>Input voltage: 3.3V~5V</li>\r\n<li>Support electric current of low power consumption: 10 μA</li>\r\n<li>Support maximum discharge current: 600mA</li>\r\n<li>Support maximum charge current: 500mA</li>\r\n<li>Support USB charging.</li>\r\n<li>Processer: Tensilica LX6 dual core processer (One for high speed connection; one for independent programing).</li>\r\n<li>Frequency: 240MHz</li>\r\n<li>SRAM：520KB</li>\r\n<li>Flash：16Mbit</li>\r\n<li>Wi-Fi standard：FCC/CE/TELEC/KCC</li>\r\n<li>Wi-Fi protocol: 802.11 b/g/n/d/e/I/k/r (802.11n, high speed can reach to 150 Mbps), converge A-MPDU and A-MSDU, supporting 0.4us protecting interval.</li>\r\n<li>Frequency range: 2.4~2.5 GHz</li>\r\n<li>Bluetooth protocol: Comply with BR/EDR/BLE standard of Bluetooth v4.2.</li>\r\n<li>Bluetooth audio: the current under low power consumption of CVSD and SBC is 10μA</li>\r\n<li>Working current: 80mA in average</li>\r\n<li>Frequency range: 2.4~2.5GHz</li>\r\n<li>Support one-key downloading.</li>\r\n<li>Support micropython.</li>\r\n<li>On-chip clock: 40MHz crystal and 32.768 KHz crystal.</li>\r\n<li>Digital I/O: 10 (default setting of arduino)</li>\r\n<li>Simulative input: 5(default setting of arduino)</li>\r\n<li>SPI: 1 (default setting of arduino)</li>\r\n<li>I2C: 1 (default setting of arduino)</li>\r\n<li>I2S: 1 (default setting of arduino)</li>\r\n<li>LED_BUILTIN：D9</li>\r\n<li>Interface: FireBeetle series compatible</li>\r\n<li>Working temperature: -40℃~+85℃</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "firebeetle-esp32-iot-microcontroller",
+     "id": "gid://shopify/p/1yuaZoGq4D6A1LQSihPNb2",
+     "media": [
+      {
+       "alt_text": "FireBeetle ESP32 IOT Microcontroller",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual-core Tensilica LX6 processor enables fast processing and independent programming for efficient multitasking",
+       "Ultra-low power consumption of 10 μA in deep sleep mode extends battery life in IoT devices",
+       "Supports both USB and external 3.7V lithium battery power for flexible deployment",
+       "Special hardware design allows manual Arduino IDE download without switching boot mode, simplifying development",
+       "Pin mapping for Arduino IDE reduces entry barrier and enables quick prototyping"
+      ],
+      "unique_selling_points": [
+       "Ultra-low power consumption with dual-core processing and broad Arduino compatibility."
+      ]
+     },
+     "options": [
+      {
+       "name": "Maximum operating temperature",
+       "values": [
+        {
+         "label": "85 °C"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 949,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 949,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 30,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "FireBeetle ESP32 IOT Microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42361108791457:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>Compatible with products in the DFRobot FireBeetle serials</li>\n<li>Low-power consumption</li>\n<li>Quick Response(the top frequency is 400KHz)</li>\n<li>Small size, convenient to install</li>\n</ul>\n<p>The<strong> FireBeetle ESP32 IOT Microcontroller</strong> is the low-power consumption micro-controller intentionally designed for Internet of Things (IoT) projects. FireBeetle Board - ESP32 integrates a Dual-Core ESP-WROOM-32 module supports MCU and Wi-Fi and Bluetooth dual-mode communication. The electric current is just 10μA in the deep-sleep mode. The main controller supports two power supply methods: USB and 3.7V external lithium battery. And both USB and external DC can charge the Lipo battery directly.</p>\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-1.jpg\"><img title=\"FireBeetle ESP32 IOT Microcontroller\" src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-1.webp\" alt=\"FireBeetle ESP32 IOT Microcontroller\" width=\"500\" height=\"334\" loading=\"lazy\"></a></p>\n<p>FireBeetle Board-ESP32 has made a special hardware design for Arduino IDE. You can make a download without switching booth-mode manually.</p>\n<p style=\"text-align: center;\"><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-2.jpg\"><img title=\"FireBeetle ESP32 IOT Microcontroller\" src=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-755/img/firebeetle-esp32-iot-microcontroller-descimage-2.webp\" alt=\"FireBeetle ESP32 IOT Microcontroller\" width=\"500\" height=\"334\" loading=\"lazy\"></a></p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>24 × 53(mm)/0.94 x 2.09(inches)</li>\r\n<li>Mounting hole: inner diameter 3.1mm; outside diameter 6mm</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Working voltage: 3.3V</li>\r\n<li>Input voltage: 3.3V~5V</li>\r\n<li>Support electric current of low power consumption: 10 μA</li>\r\n<li>Support maximum discharge current: 600mA</li>\r\n<li>Support maximum charge current: 500mA</li>\r\n<li>Support USB charging.</li>\r\n<li>Processer: Tensilica LX6 dual core processer (One for high speed connection; one for independent programing).</li>\r\n<li>Frequency: 240MHz</li>\r\n<li>SRAM：520KB</li>\r\n<li>Flash：16Mbit</li>\r\n<li>Wi-Fi standard：FCC/CE/TELEC/KCC</li>\r\n<li>Wi-Fi protocol: 802.11 b/g/n/d/e/I/k/r (802.11n, high speed can reach to 150 Mbps), converge A-MPDU and A-MSDU, supporting 0.4us protecting interval.</li>\r\n<li>Frequency range: 2.4~2.5 GHz</li>\r\n<li>Bluetooth protocol: Comply with BR/EDR/BLE standard of Bluetooth v4.2.</li>\r\n<li>Bluetooth audio: the current under low power consumption of CVSD and SBC is 10μA</li>\r\n<li>Working current: 80mA in average</li>\r\n<li>Frequency range: 2.4~2.5GHz</li>\r\n<li>Support one-key downloading.</li>\r\n<li>Support micropython.</li>\r\n<li>On-chip clock: 40MHz crystal and 32.768 KHz crystal.</li>\r\n<li>Digital I/O: 10 (default setting of arduino)</li>\r\n<li>Simulative input: 5(default setting of arduino)</li>\r\n<li>SPI: 1 (default setting of arduino)</li>\r\n<li>I2C: 1 (default setting of arduino)</li>\r\n<li>I2S: 1 (default setting of arduino)</li>\r\n<li>LED_BUILTIN：D9</li>\r\n<li>Interface: FireBeetle series compatible</li>\r\n<li>Working temperature: -40℃~+85℃</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "firebeetle-esp32-iot-microcontroller",
+       "id": "gid://shopify/ProductVariant/42361108791457",
+       "media": [
+        {
+         "alt_text": "FireBeetle ESP32 IOT Microcontroller",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1331433.webp",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "85 °C",
+         "name": "Maximum operating temperature"
+        }
+       ],
+       "price": {
+        "amount": 949,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7487331008673",
+       "source": "shopify",
+       "title": "FireBeetle ESP32 IOT Microcontroller",
+       "url": "https://www.robotshop.com/products/firebeetle-esp32-iot-microcontroller?variant=42361108791457&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h1>DFRobot FireBeetle 2 ESP32-P4 AI Kit</h1>\n<p>Bring edge AI processing and multimedia capabilities to local workbench setups with the DFRobot FireBeetle 2 ESP32-P4 AI Kit. Built around a dual-core RISC-V processor, this development platform handles hardware-accelerated video encoding and smart display management for custom Human-Machine Interface (HMI) panels or local AI cameras. It bridges the gap between basic microcontrollers and heavy single-board computers, making it an excellent choice for smart home automation builds.</p>\n<h2>Edge AI Processing with the ESP32-P4</h2>\n<p>At the heart of this kit is the ESP32-P4 dual-core RISC-V 32-bit processor running at 360 MHz, backed by 768KB of L2 cache. This provides the computational overhead needed for intensive edge AI processing without relying on cloud servers. Whether you are building a responsive HMI development rig or a local video streaming node, the integrated hardware H.264 encoding supports up to 1080p at 30fps, ensuring smooth multimedia performance.</p>\n<h2>Wi-Fi 6 and Bluetooth 5 Connectivity</h2>\n<p>Wireless communication is offloaded to a dedicated ESP32-C6 co-processor, freeing up the main RISC-V cores for your application logic. This co-processor adds robust Wi-Fi 6 and Bluetooth 5 LE capabilities, turning the board into a highly capable IoT gateway. It is ideal for smart home automation networks where reliable, high-speed data transfer is required alongside local video or AI processing.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Dual-core RISC-V 32-bit processor running at 360 MHz for edge AI tasks</li>\n<li>Integrated ESP32-C6 co-processor handling Wi-Fi 6 and Bluetooth 5 LE connectivity</li>\n<li>Hardware-accelerated H.264 video encoding up to 1080p at 30fps</li>\n<li>Includes both the main MCU board and a dedicated IO Expansion Board</li>\n<li>Generous memory footprint with 32MB PSRAM and 16MB Flash</li>\n</ul>\n<h2>Technical Data</h2>\n<ul>\n<li>Main Processor: ESP32-P4 (Dual-core RISC-V 32-bit @ 360 MHz)</li>\n<li>Wireless Co-processor: ESP32-C6 (Wi-Fi 6 + Bluetooth 5 LE)</li>\n<li>Memory (PSRAM): 32MB</li>\n<li>Memory (Flash): 16MB</li>\n<li>L2 Cache: 768KB</li>\n<li>Video Encoding: Hardware H.264 up to 1080p @ 30fps</li>\n<li>ADC: 7-channel 12-bit SAR ADC</li>\n<li>USB Interface: 1x High-Speed USB OTG 2.0 (Type-C), 1x USB CDC (Type-C)</li>\n<li>Operating Temperature: -10°C to 60°C</li>\n<li>Board Dimensions: 25.4 x 60 mm</li>\n</ul>\n<h2>HMI and Smart Home Applications</h2>\n<p>This kit swaps in wherever local vision processing or interactive smart displays are required. It fits the gap between standard IoT nodes and full-scale Linux boards, making it highly effective for custom AI cameras, multimedia applications, and responsive HMI development. By including the dedicated IO Expansion Board right in the box, it reduces wiring headaches and gets vision or display prototypes up and running faster.</p>\n<p><strong>What's Included:</strong> 1 DFRobot FireBeetle 2 ESP32-P4 AI Development Kit (main board and IO Expansion Board). DFRobot part number DFR1237.</p>"
+     },
+     "handle": "dfrobot-firebeetle-2-esp32-p4-ai-kit",
+     "id": "gid://shopify/p/3LrHDY6D2ymObpHKcB9hRM",
+     "media": [
+      {
+       "alt_text": "ESP32-P4 DFRobot FireBeetle 2 AI Kit (D103)",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/DFR1237_IO_Expansion_FireBeetle_A.png",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/DFR1237_IO_Expansion_FireBeetle_A.png",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual-core RISC-V 32-bit 360 MHz processor enables intensive edge AI processing for custom applications",
+       "Integrated ESP32-C6 co-processor handles Wi-Fi 6 and Bluetooth 5 LE for high-speed wireless connectivity",
+       "Hardware H.264 video acceleration supports up to 1080p at 30 fps for smooth multimedia performance",
+       "Includes dedicated I/O expansion board to simplify wiring and accelerate prototyping",
+       "Generous memory (32 MB PSRAM, 16 MB Flash) supports complex AI and multimedia tasks"
+      ],
+      "unique_selling_points": [
+       "Combines a powerful dual-core RISC-V processor with dedicated Wi-Fi 6 and Bluetooth 5 co-processor for local AI and multimedia processing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2995,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2995,
+       "currency": "USD"
+      }
+     },
+     "title": "ESP32-P4 DFRobot FireBeetle 2 AI Kit (D103)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://vetco.net/buy/45605094654089:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h1>DFRobot FireBeetle 2 ESP32-P4 AI Kit</h1>\n<p>Bring edge AI processing and multimedia capabilities to local workbench setups with the DFRobot FireBeetle 2 ESP32-P4 AI Kit. Built around a dual-core RISC-V processor, this development platform handles hardware-accelerated video encoding and smart display management for custom Human-Machine Interface (HMI) panels or local AI cameras. It bridges the gap between basic microcontrollers and heavy single-board computers, making it an excellent choice for smart home automation builds.</p>\n<h2>Edge AI Processing with the ESP32-P4</h2>\n<p>At the heart of this kit is the ESP32-P4 dual-core RISC-V 32-bit processor running at 360 MHz, backed by 768KB of L2 cache. This provides the computational overhead needed for intensive edge AI processing without relying on cloud servers. Whether you are building a responsive HMI development rig or a local video streaming node, the integrated hardware H.264 encoding supports up to 1080p at 30fps, ensuring smooth multimedia performance.</p>\n<h2>Wi-Fi 6 and Bluetooth 5 Connectivity</h2>\n<p>Wireless communication is offloaded to a dedicated ESP32-C6 co-processor, freeing up the main RISC-V cores for your application logic. This co-processor adds robust Wi-Fi 6 and Bluetooth 5 LE capabilities, turning the board into a highly capable IoT gateway. It is ideal for smart home automation networks where reliable, high-speed data transfer is required alongside local video or AI processing.</p>\n<h2>Key Features</h2>\n<ul>\n<li>Dual-core RISC-V 32-bit processor running at 360 MHz for edge AI tasks</li>\n<li>Integrated ESP32-C6 co-processor handling Wi-Fi 6 and Bluetooth 5 LE connectivity</li>\n<li>Hardware-accelerated H.264 video encoding up to 1080p at 30fps</li>\n<li>Includes both the main MCU board and a dedicated IO Expansion Board</li>\n<li>Generous memory footprint with 32MB PSRAM and 16MB Flash</li>\n</ul>\n<h2>Technical Data</h2>\n<ul>\n<li>Main Processor: ESP32-P4 (Dual-core RISC-V 32-bit @ 360 MHz)</li>\n<li>Wireless Co-processor: ESP32-C6 (Wi-Fi 6 + Bluetooth 5 LE)</li>\n<li>Memory (PSRAM): 32MB</li>\n<li>Memory (Flash): 16MB</li>\n<li>L2 Cache: 768KB</li>\n<li>Video Encoding: Hardware H.264 up to 1080p @ 30fps</li>\n<li>ADC: 7-channel 12-bit SAR ADC</li>\n<li>USB Interface: 1x High-Speed USB OTG 2.0 (Type-C), 1x USB CDC (Type-C)</li>\n<li>Operating Temperature: -10°C to 60°C</li>\n<li>Board Dimensions: 25.4 x 60 mm</li>\n</ul>\n<h2>HMI and Smart Home Applications</h2>\n<p>This kit swaps in wherever local vision processing or interactive smart displays are required. It fits the gap between standard IoT nodes and full-scale Linux boards, making it highly effective for custom AI cameras, multimedia applications, and responsive HMI development. By including the dedicated IO Expansion Board right in the box, it reduces wiring headaches and gets vision or display prototypes up and running faster.</p>\n<p><strong>What's Included:</strong> 1 DFRobot FireBeetle 2 ESP32-P4 AI Development Kit (main board and IO Expansion Board). DFRobot part number DFR1237.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-2-esp32-p4-ai-kit",
+       "id": "gid://shopify/ProductVariant/45605094654089",
+       "media": [
+        {
+         "alt_text": "ESP32-P4 DFRobot FireBeetle 2 AI Kit (D103)",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/DFR1237_IO_Expansion_FireBeetle_A.png",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/DFR1237_IO_Expansion_FireBeetle_A.png",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 2995,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "8da295-18.myshopify.com",
+        "id": "gid://shopify/Shop/64692912265",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928494217.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/64692912265/policies/30226677897.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928461449.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928625289.html"
+         }
+        ],
+        "name": "Vetco Electronics",
+        "url": "https://vetco.net"
+       },
+       "seller_product_id": "gid://shopify/Product/8559074771081",
+       "source": "shopify",
+       "title": "ESP32-P4 DFRobot FireBeetle 2 AI Kit (D103)",
+       "url": "https://vetco.net/products/dfrobot-firebeetle-2-esp32-p4-ai-kit?variant=45605094654089&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"flex flex-1 flex-row overflow-hidden\">\n<div class=\"flex flex-1 flex-col w-full relative mb-2 mt-0\">\n<div class=\"chat-list custom-scrollbar-reset-margin custom-scrollbar custom-scrollbar-hidden custom-scrollbar-float relative flex-1 overflow-y-auto pb-9 rounded-xl\">\n<div class=\"mx-auto max-w-[790px]\">\n<div class=\"message-item-outer group/outer relative mb-4 px-4 large-mode\" data-id=\"686dec2bcb0d54b3f72f732e\">\n<div class=\"message-item large-mode\">\n<div class=\"message-inner\">\n<div class=\"content-area py-[2px]\">\n<div class=\"flex flex-col gap-2\">\n<div class=\"answer-markdown-box custom-scrollbar select-text overflow-x-auto\">\n<div class=\"markdown-body\">\n<p>The<span> </span><strong>DFRobot FireBeetle 2 ESP32-S3</strong><span> </span>is a high-performance<span> </span><strong>AIoT microcontroller</strong><span> </span>designed for smart applications. Powered by a<span> </span><strong>240 MHz Xtensa dual-core LX7 processor</strong>, it features<span> </span><strong>16MB Flash</strong><span> </span>and<span> </span><strong>8MB PSRAM</strong><span> </span>for enhanced storage. The board includes an onboard<span> </span><strong>OV2640 2MP camera</strong><span> </span>with an independent power supply, enabling<span> </span><strong>image recognition</strong><span> </span>and<span> </span><strong>smart monitoring</strong>. Supporting<span> </span><strong>WiFi (802.11 b/g/n)</strong><span> </span>and<span> </span><strong>Bluetooth 5 (LE)</strong><span> </span>plus<span> </span><strong>Mesh</strong><span> </span>and<span> </span><strong>Matter protocols</strong>, it offers reliable dual-mode communication. Integrated<span> </span><strong>power management</strong><span> </span>supports Li-ion battery charging and hardware control. Programmable via<span> </span><strong>Arduino IDE, ESP-IDF, and MicroPython</strong>, it is ideal for flexible, AI-powered IoT developments. This ESP32-S3 development board with camera is the perfect AI microcontroller for image recognition projects.</p>\n<h2>Key Features</h2>\n<ul>\n<li>\n<strong>Onboard 2MP OV2640 camera</strong><span> </span>with independent power supply for AI camera applications</li>\n<li>\n<strong>Dual-mode WiFi and Bluetooth 5</strong><span> </span>connectivity with Mesh and Matter support for IoT</li>\n<li>\n<strong>Powerful 240 MHz dual-core Xtensa processor</strong><span> </span>with AI acceleration and ESP32-S3 performance</li>\n<li>\n<strong>16MB Flash and 8MB PSRAM</strong><span> </span>for greater storage capacity in this microcontroller board</li>\n<li>Integrated<span> </span><strong>Li-ion battery charging</strong><span> </span>&amp; hardware power management for portable AIoT</li>\n<li>Onboard<span> </span><strong>GDI interface</strong><span> </span>for easy screen connection to your ESP32-S3 board</li>\n<li>Compatible with<span> </span><strong>Arduino, ESP-IDF, and MicroPython</strong> for flexible programming\n</li>\n</ul>\n<h2>Technical Specifications</h2>\n<ul>\n<li>CPU: Xtensa® dual-core 32-bit LX7 @ 240 MHz (ESP32-S3)</li>\n<li>Flash: 16MB; PSRAM: 8MB; SRAM: 512KB; Storage: High-capacity development board</li>\n<li>Camera: OV2640, 2MP, 68° FOV, 1600x1200 resolution AI camera module</li>\n<li>Connectivity: WiFi 802.11 b/g/n (2.4 GHz), Bluetooth 5 (LE), Mesh, Matter IoT protocol</li>\n<li>Ports: 26 Digital I/O, SPI x2, UART x3, I2C x2, I2S x2, ADC 12-bit x20 channels</li>\n<li>Input Voltage: 3.3V (operating), 5V (Type-C and VCC)</li>\n<li>Dimensions: 25.4 x 60 mm compact ESP32-S3 form factor</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>AIoT and smart home devices using ESP32-S3</li>\n<li>Speech and image recognition with AI camera</li>\n<li>Industrial IoT solutions and Matter-compatible systems</li>\n<li>Smart monitoring and automation systems with WiFi Bluetooth</li>\n</ul>\n<h2>Why Choose DFRobot FireBeetle 2 Board ESP32-S3 AIoT Microcontroller with Camera?</h2>\n<p>The FireBeetle 2 ESP32-S3 combines<span> </span><strong>powerful AI processing</strong>,<span> </span><strong>dual-mode wireless communication</strong>, and an easy-to-use<span> </span><strong>camera interface</strong><span> </span>in a compact, energy-efficient package. Its support for<span> </span><strong>multiple programming frameworks</strong><span> </span>like Arduino and ESP-IDF, combined with integrated<span> </span><strong>power management</strong>, makes it perfect for developers aiming to build fast, reliable, and scalable AIoT applications with minimal hassle. Whether for smart homes, industrial automation, or AI-powered projects, this ESP32-S3 development board provides a comprehensive, ready-to-use AI camera solution.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+     },
+     "handle": "dfrobot-firebeetle-2-board-esp32",
+     "id": "gid://shopify/p/39ZealPt0e6aDc6hPz8eX2",
+     "media": [
+      {
+       "alt_text": "FireBeetle 2 ESP32-S3 AI Camera Board | Matter IoT Microcontroller",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Onboard 2MP OV2640 camera with independent power supply enables advanced image recognition and smart monitoring",
+       "Dual mode WiFi 802.11 b/g/n and Bluetooth 5 LE provide reliable wireless connectivity with Matter and Mesh support",
+       "Powerful 240 MHz dual core Xtensa processor with AI acceleration delivers high performance for complex AIoT tasks",
+       "Integrated Li-ion battery charging and hardware power management support portable, battery-powered IoT devices",
+       "Compatible with Arduino, ESP-IDF, and MicroPython for flexible programming and rapid prototyping"
+      ],
+      "unique_selling_points": [
+       "Combines powerful AI acceleration, dual mode wireless connectivity, and an integrated 2MP OV2640 camera in a compact, energy-efficient board."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2679,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2679,
+       "currency": "USD"
+      }
+     },
+     "title": "FireBeetle 2 ESP32-S3 AI Camera Board | Matter IoT Microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/56281995477316:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"flex flex-1 flex-row overflow-hidden\">\n<div class=\"flex flex-1 flex-col w-full relative mb-2 mt-0\">\n<div class=\"chat-list custom-scrollbar-reset-margin custom-scrollbar custom-scrollbar-hidden custom-scrollbar-float relative flex-1 overflow-y-auto pb-9 rounded-xl\">\n<div class=\"mx-auto max-w-[790px]\">\n<div class=\"message-item-outer group/outer relative mb-4 px-4 large-mode\" data-id=\"686dec2bcb0d54b3f72f732e\">\n<div class=\"message-item large-mode\">\n<div class=\"message-inner\">\n<div class=\"content-area py-[2px]\">\n<div class=\"flex flex-col gap-2\">\n<div class=\"answer-markdown-box custom-scrollbar select-text overflow-x-auto\">\n<div class=\"markdown-body\">\n<p>The<span> </span><strong>DFRobot FireBeetle 2 ESP32-S3</strong><span> </span>is a high-performance<span> </span><strong>AIoT microcontroller</strong><span> </span>designed for smart applications. Powered by a<span> </span><strong>240 MHz Xtensa dual-core LX7 processor</strong>, it features<span> </span><strong>16MB Flash</strong><span> </span>and<span> </span><strong>8MB PSRAM</strong><span> </span>for enhanced storage. The board includes an onboard<span> </span><strong>OV2640 2MP camera</strong><span> </span>with an independent power supply, enabling<span> </span><strong>image recognition</strong><span> </span>and<span> </span><strong>smart monitoring</strong>. Supporting<span> </span><strong>WiFi (802.11 b/g/n)</strong><span> </span>and<span> </span><strong>Bluetooth 5 (LE)</strong><span> </span>plus<span> </span><strong>Mesh</strong><span> </span>and<span> </span><strong>Matter protocols</strong>, it offers reliable dual-mode communication. Integrated<span> </span><strong>power management</strong><span> </span>supports Li-ion battery charging and hardware control. Programmable via<span> </span><strong>Arduino IDE, ESP-IDF, and MicroPython</strong>, it is ideal for flexible, AI-powered IoT developments. This ESP32-S3 development board with camera is the perfect AI microcontroller for image recognition projects.</p>\n<h2>Key Features</h2>\n<ul>\n<li>\n<strong>Onboard 2MP OV2640 camera</strong><span> </span>with independent power supply for AI camera applications</li>\n<li>\n<strong>Dual-mode WiFi and Bluetooth 5</strong><span> </span>connectivity with Mesh and Matter support for IoT</li>\n<li>\n<strong>Powerful 240 MHz dual-core Xtensa processor</strong><span> </span>with AI acceleration and ESP32-S3 performance</li>\n<li>\n<strong>16MB Flash and 8MB PSRAM</strong><span> </span>for greater storage capacity in this microcontroller board</li>\n<li>Integrated<span> </span><strong>Li-ion battery charging</strong><span> </span>&amp; hardware power management for portable AIoT</li>\n<li>Onboard<span> </span><strong>GDI interface</strong><span> </span>for easy screen connection to your ESP32-S3 board</li>\n<li>Compatible with<span> </span><strong>Arduino, ESP-IDF, and MicroPython</strong> for flexible programming\n</li>\n</ul>\n<h2>Technical Specifications</h2>\n<ul>\n<li>CPU: Xtensa® dual-core 32-bit LX7 @ 240 MHz (ESP32-S3)</li>\n<li>Flash: 16MB; PSRAM: 8MB; SRAM: 512KB; Storage: High-capacity development board</li>\n<li>Camera: OV2640, 2MP, 68° FOV, 1600x1200 resolution AI camera module</li>\n<li>Connectivity: WiFi 802.11 b/g/n (2.4 GHz), Bluetooth 5 (LE), Mesh, Matter IoT protocol</li>\n<li>Ports: 26 Digital I/O, SPI x2, UART x3, I2C x2, I2S x2, ADC 12-bit x20 channels</li>\n<li>Input Voltage: 3.3V (operating), 5V (Type-C and VCC)</li>\n<li>Dimensions: 25.4 x 60 mm compact ESP32-S3 form factor</li>\n</ul>\n<h2>Applications</h2>\n<ul>\n<li>AIoT and smart home devices using ESP32-S3</li>\n<li>Speech and image recognition with AI camera</li>\n<li>Industrial IoT solutions and Matter-compatible systems</li>\n<li>Smart monitoring and automation systems with WiFi Bluetooth</li>\n</ul>\n<h2>Why Choose DFRobot FireBeetle 2 Board ESP32-S3 AIoT Microcontroller with Camera?</h2>\n<p>The FireBeetle 2 ESP32-S3 combines<span> </span><strong>powerful AI processing</strong>,<span> </span><strong>dual-mode wireless communication</strong>, and an easy-to-use<span> </span><strong>camera interface</strong><span> </span>in a compact, energy-efficient package. Its support for<span> </span><strong>multiple programming frameworks</strong><span> </span>like Arduino and ESP-IDF, combined with integrated<span> </span><strong>power management</strong>, makes it perfect for developers aiming to build fast, reliable, and scalable AIoT applications with minimal hassle. Whether for smart homes, industrial automation, or AI-powered projects, this ESP32-S3 development board provides a comprehensive, ready-to-use AI camera solution.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-2-board-esp32",
+       "id": "gid://shopify/ProductVariant/56281995477316",
+       "media": [
+        {
+         "alt_text": "FireBeetle 2 ESP32-S3 AI Camera Board | Matter IoT Microcontroller",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 2679,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15441111318852",
+       "source": "shopify",
+       "title": "FireBeetle 2 ESP32-S3 AI Camera Board | Matter IoT Microcontroller",
+       "url": "https://openelab.com/products/dfrobot-firebeetle-2-board-esp32?variant=56281995477316&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-start=\"210\" data-end=\"605\" class=\"\">The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is a <strong data-start=\"245\" data-end=\"296\">compact, energy-efficient IoT development board</strong> built for <strong data-start=\"307\" data-end=\"332\">smart home automation</strong>, <strong data-start=\"334\" data-end=\"353\">sensor networks</strong>, and <strong data-start=\"359\" data-end=\"384\">wireless connectivity</strong>. As a high-performance controller, the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> features a <strong data-start=\"400\" data-end=\"427\">160MHz RISC-V processor</strong> and supports <strong data-start=\"441\" data-end=\"452\">Wi-Fi 6</strong>, <strong data-start=\"454\" data-end=\"469\">Bluetooth 5</strong>, <strong data-start=\"471\" data-end=\"485\">Zigbee 3.0</strong>, <strong data-start=\"487\" data-end=\"501\">Thread 1.3</strong>, and the <strong data-start=\"511\" data-end=\"530\">Matter protocol</strong>. This makes the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> highly adaptable for both personal and industrial IoT projects.</p>\n<p data-start=\"609\" data-end=\"707\" class=\"\"><strong>Note:</strong> <a rel=\"noopener\" href=\"https://drive.google.com/file/d/10F1uqEaljw5_7mz3jMYJUG2fsZdB9etx/view?usp=sharing\" target=\"_blank\">DFR1075 Product Change Notification 20260528</a></p>\n<h2 data-start=\"714\" data-end=\"730\">Key Features</h2>\n<ul data-start=\"732\" data-end=\"1684\">\n<li data-start=\"732\" data-end=\"844\" class=\"\">\n<p data-start=\"734\" data-end=\"844\" class=\"\"><strong data-start=\"734\" data-end=\"758\">Ultra-Low Power Mode</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> has a deep sleep current as low as <strong data-start=\"789\" data-end=\"797\">16μA</strong>, perfect for <strong data-start=\"811\" data-end=\"843\">battery-operated IoT devices</strong>.</p>\n</li>\n<li data-start=\"845\" data-end=\"1000\" class=\"\">\n<p data-start=\"847\" data-end=\"1000\" class=\"\"><strong data-start=\"847\" data-end=\"873\">Multi-Protocol Support</strong>: <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> enables <strong data-start=\"883\" data-end=\"894\">Wi-Fi 6</strong>, <strong data-start=\"896\" data-end=\"903\">BLE</strong>, <strong data-start=\"905\" data-end=\"923\">Bluetooth Mesh</strong>, <strong data-start=\"925\" data-end=\"939\">Zigbee 3.0</strong>, and <strong data-start=\"945\" data-end=\"959\">Thread 1.3</strong> for <strong data-start=\"964\" data-end=\"999\">seamless smart home integration</strong>.</p>\n</li>\n<li data-start=\"1001\" data-end=\"1139\" class=\"\">\n<p data-start=\"1003\" data-end=\"1139\" class=\"\"><strong data-start=\"1003\" data-end=\"1025\">Support for Matter</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is compatible with <strong data-start=\"1043\" data-end=\"1060\">Apple HomeKit</strong>, <strong data-start=\"1062\" data-end=\"1077\">Google Home</strong>, <strong data-start=\"1079\" data-end=\"1095\">Amazon Alexa</strong>, and other <strong data-start=\"1107\" data-end=\"1138\">Matter-certified ecosystems</strong>.</p>\n</li>\n<li data-start=\"1140\" data-end=\"1275\" class=\"\">\n<p data-start=\"1142\" data-end=\"1275\" class=\"\"><strong data-start=\"1142\" data-end=\"1175\">Multiple Power Supply Options</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> includes <strong data-start=\"1186\" data-end=\"1200\">USB Type-C</strong>, <strong data-start=\"1202\" data-end=\"1211\">5V DC</strong>, and <strong data-start=\"1217\" data-end=\"1235\">solar charging</strong>, with real-time <strong data-start=\"1252\" data-end=\"1274\">battery monitoring</strong>.</p>\n</li>\n<li data-start=\"1276\" data-end=\"1436\" class=\"\">\n<p data-start=\"1278\" data-end=\"1436\" class=\"\"><strong data-start=\"1278\" data-end=\"1297\">High-Speed Data</strong>: <strong data-start=\"1299\" data-end=\"1310\">Wi-Fi 6</strong> on the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> delivers up to <strong data-start=\"1326\" data-end=\"1338\">9.6 Gbps</strong>, while <strong data-start=\"1346\" data-end=\"1361\">Bluetooth 5</strong> supports up to <strong data-start=\"1377\" data-end=\"1387\">2 Mbps</strong>.</p>\n</li>\n<li data-start=\"1437\" data-end=\"1577\" class=\"\">\n<p data-start=\"1439\" data-end=\"1577\" class=\"\"><strong data-start=\"1439\" data-end=\"1463\">Open Source Friendly</strong>: <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is programmable with <strong data-start=\"1483\" data-end=\"1498\">Arduino IDE</strong> and <strong data-start=\"1503\" data-end=\"1518\">MicroPython</strong>.</p>\n</li>\n<li data-start=\"1578\" data-end=\"1684\" class=\"\">\n<p data-start=\"1580\" data-end=\"1684\" class=\"\"><strong data-start=\"1580\" data-end=\"1603\">GDI Display Support</strong>: Easily connect the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> to <strong data-start=\"1616\" data-end=\"1631\">TFT screens</strong> for visual interfaces.</p>\n</li>\n</ul>\n<p data-start=\"1688\" data-end=\"1774\" class=\"\"><br></p>\n<h2 data-start=\"1781\" data-end=\"1805\">Typical Applications</h2>\n<ul data-start=\"1807\" data-end=\"1999\">\n<li data-start=\"1807\" data-end=\"1842\" class=\"\">\n<p data-start=\"1809\" data-end=\"1842\" class=\"\"><strong data-start=\"1809\" data-end=\"1842\">Indoor Air Quality Monitoring</strong> with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1843\" data-end=\"1873\" class=\"\">\n<p data-start=\"1845\" data-end=\"1873\" class=\"\"><strong data-start=\"1845\" data-end=\"1873\">Ambient Lighting Systems</strong> using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1874\" data-end=\"1927\" class=\"\">\n<p data-start=\"1876\" data-end=\"1927\" class=\"\"><strong data-start=\"1876\" data-end=\"1927\">Smart Plant Watering (Soil Moisture Monitoring)</strong></p>\n</li>\n<li data-start=\"1928\" data-end=\"1958\" class=\"\">\n<p data-start=\"1930\" data-end=\"1958\" class=\"\"><strong data-start=\"1930\" data-end=\"1958\">Outdoor Weather Stations</strong> powered by <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1959\" data-end=\"1999\" class=\"\">\n<p data-start=\"1961\" data-end=\"1999\" class=\"\"><strong data-start=\"1961\" data-end=\"1999\">Smart Appliance Control via Matter</strong> with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n</ul>\n<p data-start=\"2003\" data-end=\"2092\" class=\"\"><br></p>\n<h2 data-start=\"2099\" data-end=\"2127\">Technical Specifications</h2>\n<ul data-start=\"2129\" data-end=\"2470\">\n<li data-start=\"2129\" data-end=\"2160\" class=\"\">\n<p data-start=\"2131\" data-end=\"2160\" class=\"\"><strong data-start=\"2131\" data-end=\"2144\">Processor</strong>: 160 MHz RISC-V (on the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong>)</p>\n</li>\n<li data-start=\"2161\" data-end=\"2207\" class=\"\">\n<p data-start=\"2163\" data-end=\"2207\" class=\"\"><strong data-start=\"2163\" data-end=\"2173\">Memory</strong>: 512KB SRAM, 320KB ROM, 4MB Flash</p>\n</li>\n<li data-start=\"2208\" data-end=\"2240\" class=\"\">\n<p data-start=\"2210\" data-end=\"2240\" class=\"\"><strong data-start=\"2210\" data-end=\"2227\">Sleep Current</strong>: 16μA (V1.0 for <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong>)</p>\n</li>\n<li data-start=\"2241\" data-end=\"2316\" class=\"\">\n<p data-start=\"2243\" data-end=\"2316\" class=\"\"><strong data-start=\"2243\" data-end=\"2259\">Connectivity</strong>: Wi-Fi 6 / Bluetooth 5 / Zigbee / Thread / IEEE 802.15.4</p>\n</li>\n<li data-start=\"2317\" data-end=\"2369\" class=\"\">\n<p data-start=\"2319\" data-end=\"2369\" class=\"\"><strong data-start=\"2319\" data-end=\"2336\">Input Voltage</strong>: 5V DC or 4.5–6V via Solar Panel</p>\n</li>\n<li data-start=\"2370\" data-end=\"2402\" class=\"\">\n<p data-start=\"2372\" data-end=\"2402\" class=\"\"><strong data-start=\"2372\" data-end=\"2392\">Charging Current</strong>: Max 0.5A</p>\n</li>\n<li data-start=\"2403\" data-end=\"2445\" class=\"\">\n<p data-start=\"2405\" data-end=\"2445\" class=\"\"><strong data-start=\"2405\" data-end=\"2430\">Operating Temperature</strong>: -10°C to 60°C</p>\n</li>\n<li data-start=\"2446\" data-end=\"2470\" class=\"\">\n<p data-start=\"2448\" data-end=\"2470\" class=\"\"><strong data-start=\"2448\" data-end=\"2456\">Size</strong>: 25.4 x 60 mm</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"2546\" data-end=\"2567\">What's in the Box</h2>\n<ul data-start=\"2569\" data-end=\"2649\">\n<li data-start=\"2569\" data-end=\"2616\" class=\"\">\n<p data-start=\"2571\" data-end=\"2616\" class=\"\">1 × <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> Development Board</p>\n</li>\n<li data-start=\"2617\" data-end=\"2649\" class=\"\">\n<p data-start=\"2619\" data-end=\"2649\" class=\"\">2 × 20-pin 2.54mm Pin Header</p>\n</li>\n</ul>\n<p> </p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.hackster.io/pradeeplogu0/building-an-environmental-monitoring-node-with-dfrobot-8576d0\" rel=\"noopener\" target=\"_blank\">Building an Environmental Monitoring Node using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://www.hackster.io/pradeeplogu0/building-an-environmental-monitoring-node-with-dfrobot-8576d0\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/project-1_0x0_jpg.webp?v=1745476309\" alt=\"\" class=\"photoshow-image-loading--fail\"></b></a></p>\n<p><b>Project. <span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-313735.html\" target=\"_blank\">How to Connect <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> to the Matter Network</a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-313735.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/project-3_0x0_jpg.webp?v=1745476311\" alt=\"\"></b></a></p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-314391.html\" target=\"_blank\">Smart Planter Monitoring with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-314391.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/c67f47f9060d249f5e549a671f27fcdc_924x560_jpg.webp?v=1745476315\" alt=\"\"></b></a></p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-314392.html\" target=\"_blank\">Home Temperature and Air Quality Monitoring via <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-314392.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/AIR_QUALITY_0x0_jpg.webp?v=1745476307\" alt=\"\"></b></a></p>\n<p><b><span>Project. </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.youtube.com/watch?v=FnxPXA5hPxo\" target=\"_blank\">DIY GPS Speed-meter with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><b><iframe width=\"1080\" height=\"580\" src=\"https://www.youtube.com/embed/FnxPXA5hPxo?si=Vr_7NPgXg7233xIQ\" title=\"YouTube video player\"></iframe></b></p>\n<p><b>Project:<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.youtube.com/watch?v=iNOXndLQzNA\" target=\"_blank\">Perfect Temperature Tea using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><b><iframe width=\"1080\" height=\"580\" src=\"https://www.youtube.com/embed/iNOXndLQzNA?si=u9_bs9Nmrtw6PFqK\" title=\"YouTube video player\"></iframe></b></p>\n<p> </p>\n<h2>Reference</h2>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Product wiki</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://docs.espressif.com/projects/esp-zigbee-sdk/en/latest/esp32/introduction.html\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Zigbee Solution Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6#target_3\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Board Overview and Pin Diagram</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6#target_9\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">FAQ</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6_Basic_Tutorial\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Basic Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6_Advanced_Tutorial\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Advanced Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/5eeffd974782b6cc442f7a2ee7f00577.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">ESP32-C6 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/65df25004a7d1e8bc128894c75ce4089.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">V1.0 Schematics</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/bed69691f668193cd504fca7d44d4dd1.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">V1.1 Schematics</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/fc5aabe8620a8c9519643a7e8c997ecb.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Dimension</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/85759bb076bf6bb24fd8ca5683f19603.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">CN3165 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/6f630301d84caf0e92266e3c5cf11edc.PDF\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">HM6245 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/e98b6467f3636d6d33c8d894b29bad89.zip\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Make your own case (shell stl file)</a></strong></span></p>\n<p> </p>"
+     },
+     "handle": "dfrobot-firebeetle-2-esp32-c6-iot",
+     "id": "gid://shopify/p/2sRUuApWzbv8fxETW9RjmQ",
+     "media": [
+      {
+       "alt_text": "ESP32-C6 FireBeetle 2: Wi-Fi 6, Matter, Zigbee 3.0, Thread & Solar",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Ultra-low power mode with 16μA deep sleep current enables battery-operated IoT devices",
+       "Supports Wi-Fi 6, Bluetooth 5, Zigbee 3.0, Thread, and Matter for seamless smart home integration",
+       "Multiple power supply options including USB Type-C, 5V DC, and solar charging with real-time battery monitoring",
+       "High-speed Wi-Fi 6 up to 9.6 Gbps and Bluetooth 5 up to 2 Mbps for fast data transfer",
+       "Open source friendly with Arduino IDE and MicroPython support for easy prototyping"
+      ],
+      "unique_selling_points": [
+       "Ultra-low power mode with multi-protocol support and Matter compatibility for versatile IoT applications."
+      ]
+     },
+     "options": [
+      {
+       "name": "Maximum frequency",
+       "values": [
+        {
+         "label": "160 MHz"
+        }
+       ]
+      },
+      {
+       "name": "Maximum operating temperature",
+       "values": [
+        {
+         "label": "60 °C"
+        }
+       ]
+      },
+      {
+       "name": "Memory capacity",
+       "values": [
+        {
+         "label": "4 MB"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1054,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1054,
+       "currency": "USD"
+      }
+     },
+     "title": "ESP32-C6 FireBeetle 2: Wi-Fi 6, Matter, Zigbee 3.0, Thread & Solar",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/55703549083972:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-start=\"210\" data-end=\"605\" class=\"\">The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is a <strong data-start=\"245\" data-end=\"296\">compact, energy-efficient IoT development board</strong> built for <strong data-start=\"307\" data-end=\"332\">smart home automation</strong>, <strong data-start=\"334\" data-end=\"353\">sensor networks</strong>, and <strong data-start=\"359\" data-end=\"384\">wireless connectivity</strong>. As a high-performance controller, the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> features a <strong data-start=\"400\" data-end=\"427\">160MHz RISC-V processor</strong> and supports <strong data-start=\"441\" data-end=\"452\">Wi-Fi 6</strong>, <strong data-start=\"454\" data-end=\"469\">Bluetooth 5</strong>, <strong data-start=\"471\" data-end=\"485\">Zigbee 3.0</strong>, <strong data-start=\"487\" data-end=\"501\">Thread 1.3</strong>, and the <strong data-start=\"511\" data-end=\"530\">Matter protocol</strong>. This makes the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> highly adaptable for both personal and industrial IoT projects.</p>\n<p data-start=\"609\" data-end=\"707\" class=\"\"><strong>Note:</strong> <a rel=\"noopener\" href=\"https://drive.google.com/file/d/10F1uqEaljw5_7mz3jMYJUG2fsZdB9etx/view?usp=sharing\" target=\"_blank\">DFR1075 Product Change Notification 20260528</a></p>\n<h2 data-start=\"714\" data-end=\"730\">Key Features</h2>\n<ul data-start=\"732\" data-end=\"1684\">\n<li data-start=\"732\" data-end=\"844\" class=\"\">\n<p data-start=\"734\" data-end=\"844\" class=\"\"><strong data-start=\"734\" data-end=\"758\">Ultra-Low Power Mode</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> has a deep sleep current as low as <strong data-start=\"789\" data-end=\"797\">16μA</strong>, perfect for <strong data-start=\"811\" data-end=\"843\">battery-operated IoT devices</strong>.</p>\n</li>\n<li data-start=\"845\" data-end=\"1000\" class=\"\">\n<p data-start=\"847\" data-end=\"1000\" class=\"\"><strong data-start=\"847\" data-end=\"873\">Multi-Protocol Support</strong>: <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> enables <strong data-start=\"883\" data-end=\"894\">Wi-Fi 6</strong>, <strong data-start=\"896\" data-end=\"903\">BLE</strong>, <strong data-start=\"905\" data-end=\"923\">Bluetooth Mesh</strong>, <strong data-start=\"925\" data-end=\"939\">Zigbee 3.0</strong>, and <strong data-start=\"945\" data-end=\"959\">Thread 1.3</strong> for <strong data-start=\"964\" data-end=\"999\">seamless smart home integration</strong>.</p>\n</li>\n<li data-start=\"1001\" data-end=\"1139\" class=\"\">\n<p data-start=\"1003\" data-end=\"1139\" class=\"\"><strong data-start=\"1003\" data-end=\"1025\">Support for Matter</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is compatible with <strong data-start=\"1043\" data-end=\"1060\">Apple HomeKit</strong>, <strong data-start=\"1062\" data-end=\"1077\">Google Home</strong>, <strong data-start=\"1079\" data-end=\"1095\">Amazon Alexa</strong>, and other <strong data-start=\"1107\" data-end=\"1138\">Matter-certified ecosystems</strong>.</p>\n</li>\n<li data-start=\"1140\" data-end=\"1275\" class=\"\">\n<p data-start=\"1142\" data-end=\"1275\" class=\"\"><strong data-start=\"1142\" data-end=\"1175\">Multiple Power Supply Options</strong>: The <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> includes <strong data-start=\"1186\" data-end=\"1200\">USB Type-C</strong>, <strong data-start=\"1202\" data-end=\"1211\">5V DC</strong>, and <strong data-start=\"1217\" data-end=\"1235\">solar charging</strong>, with real-time <strong data-start=\"1252\" data-end=\"1274\">battery monitoring</strong>.</p>\n</li>\n<li data-start=\"1276\" data-end=\"1436\" class=\"\">\n<p data-start=\"1278\" data-end=\"1436\" class=\"\"><strong data-start=\"1278\" data-end=\"1297\">High-Speed Data</strong>: <strong data-start=\"1299\" data-end=\"1310\">Wi-Fi 6</strong> on the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> delivers up to <strong data-start=\"1326\" data-end=\"1338\">9.6 Gbps</strong>, while <strong data-start=\"1346\" data-end=\"1361\">Bluetooth 5</strong> supports up to <strong data-start=\"1377\" data-end=\"1387\">2 Mbps</strong>.</p>\n</li>\n<li data-start=\"1437\" data-end=\"1577\" class=\"\">\n<p data-start=\"1439\" data-end=\"1577\" class=\"\"><strong data-start=\"1439\" data-end=\"1463\">Open Source Friendly</strong>: <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> is programmable with <strong data-start=\"1483\" data-end=\"1498\">Arduino IDE</strong> and <strong data-start=\"1503\" data-end=\"1518\">MicroPython</strong>.</p>\n</li>\n<li data-start=\"1578\" data-end=\"1684\" class=\"\">\n<p data-start=\"1580\" data-end=\"1684\" class=\"\"><strong data-start=\"1580\" data-end=\"1603\">GDI Display Support</strong>: Easily connect the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> to <strong data-start=\"1616\" data-end=\"1631\">TFT screens</strong> for visual interfaces.</p>\n</li>\n</ul>\n<p data-start=\"1688\" data-end=\"1774\" class=\"\"><br></p>\n<h2 data-start=\"1781\" data-end=\"1805\">Typical Applications</h2>\n<ul data-start=\"1807\" data-end=\"1999\">\n<li data-start=\"1807\" data-end=\"1842\" class=\"\">\n<p data-start=\"1809\" data-end=\"1842\" class=\"\"><strong data-start=\"1809\" data-end=\"1842\">Indoor Air Quality Monitoring</strong> with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1843\" data-end=\"1873\" class=\"\">\n<p data-start=\"1845\" data-end=\"1873\" class=\"\"><strong data-start=\"1845\" data-end=\"1873\">Ambient Lighting Systems</strong> using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1874\" data-end=\"1927\" class=\"\">\n<p data-start=\"1876\" data-end=\"1927\" class=\"\"><strong data-start=\"1876\" data-end=\"1927\">Smart Plant Watering (Soil Moisture Monitoring)</strong></p>\n</li>\n<li data-start=\"1928\" data-end=\"1958\" class=\"\">\n<p data-start=\"1930\" data-end=\"1958\" class=\"\"><strong data-start=\"1930\" data-end=\"1958\">Outdoor Weather Stations</strong> powered by <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n<li data-start=\"1959\" data-end=\"1999\" class=\"\">\n<p data-start=\"1961\" data-end=\"1999\" class=\"\"><strong data-start=\"1961\" data-end=\"1999\">Smart Appliance Control via Matter</strong> with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></p>\n</li>\n</ul>\n<p data-start=\"2003\" data-end=\"2092\" class=\"\"><br></p>\n<h2 data-start=\"2099\" data-end=\"2127\">Technical Specifications</h2>\n<ul data-start=\"2129\" data-end=\"2470\">\n<li data-start=\"2129\" data-end=\"2160\" class=\"\">\n<p data-start=\"2131\" data-end=\"2160\" class=\"\"><strong data-start=\"2131\" data-end=\"2144\">Processor</strong>: 160 MHz RISC-V (on the <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong>)</p>\n</li>\n<li data-start=\"2161\" data-end=\"2207\" class=\"\">\n<p data-start=\"2163\" data-end=\"2207\" class=\"\"><strong data-start=\"2163\" data-end=\"2173\">Memory</strong>: 512KB SRAM, 320KB ROM, 4MB Flash</p>\n</li>\n<li data-start=\"2208\" data-end=\"2240\" class=\"\">\n<p data-start=\"2210\" data-end=\"2240\" class=\"\"><strong data-start=\"2210\" data-end=\"2227\">Sleep Current</strong>: 16μA (V1.0 for <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong>)</p>\n</li>\n<li data-start=\"2241\" data-end=\"2316\" class=\"\">\n<p data-start=\"2243\" data-end=\"2316\" class=\"\"><strong data-start=\"2243\" data-end=\"2259\">Connectivity</strong>: Wi-Fi 6 / Bluetooth 5 / Zigbee / Thread / IEEE 802.15.4</p>\n</li>\n<li data-start=\"2317\" data-end=\"2369\" class=\"\">\n<p data-start=\"2319\" data-end=\"2369\" class=\"\"><strong data-start=\"2319\" data-end=\"2336\">Input Voltage</strong>: 5V DC or 4.5–6V via Solar Panel</p>\n</li>\n<li data-start=\"2370\" data-end=\"2402\" class=\"\">\n<p data-start=\"2372\" data-end=\"2402\" class=\"\"><strong data-start=\"2372\" data-end=\"2392\">Charging Current</strong>: Max 0.5A</p>\n</li>\n<li data-start=\"2403\" data-end=\"2445\" class=\"\">\n<p data-start=\"2405\" data-end=\"2445\" class=\"\"><strong data-start=\"2405\" data-end=\"2430\">Operating Temperature</strong>: -10°C to 60°C</p>\n</li>\n<li data-start=\"2446\" data-end=\"2470\" class=\"\">\n<p data-start=\"2448\" data-end=\"2470\" class=\"\"><strong data-start=\"2448\" data-end=\"2456\">Size</strong>: 25.4 x 60 mm</p>\n</li>\n</ul>\n<p> </p>\n<h2 data-start=\"2546\" data-end=\"2567\">What's in the Box</h2>\n<ul data-start=\"2569\" data-end=\"2649\">\n<li data-start=\"2569\" data-end=\"2616\" class=\"\">\n<p data-start=\"2571\" data-end=\"2616\" class=\"\">1 × <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> Development Board</p>\n</li>\n<li data-start=\"2617\" data-end=\"2649\" class=\"\">\n<p data-start=\"2619\" data-end=\"2649\" class=\"\">2 × 20-pin 2.54mm Pin Header</p>\n</li>\n</ul>\n<p> </p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.hackster.io/pradeeplogu0/building-an-environmental-monitoring-node-with-dfrobot-8576d0\" rel=\"noopener\" target=\"_blank\">Building an Environmental Monitoring Node using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://www.hackster.io/pradeeplogu0/building-an-environmental-monitoring-node-with-dfrobot-8576d0\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/project-1_0x0_jpg.webp?v=1745476309\" alt=\"\" class=\"photoshow-image-loading--fail\"></b></a></p>\n<p><b>Project. <span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-313735.html\" target=\"_blank\">How to Connect <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong> to the Matter Network</a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-313735.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/project-3_0x0_jpg.webp?v=1745476311\" alt=\"\"></b></a></p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-314391.html\" target=\"_blank\">Smart Planter Monitoring with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-314391.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/c67f47f9060d249f5e549a671f27fcdc_924x560_jpg.webp?v=1745476315\" alt=\"\"></b></a></p>\n<p><b>Project.<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://community.dfrobot.com/makelog-314392.html\" target=\"_blank\">Home Temperature and Air Quality Monitoring via <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><a href=\"https://community.dfrobot.com/makelog-314392.html\" rel=\"noopener\" target=\"_blank\"><b><img src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/AIR_QUALITY_0x0_jpg.webp?v=1745476307\" alt=\"\"></b></a></p>\n<p><b><span>Project. </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.youtube.com/watch?v=FnxPXA5hPxo\" target=\"_blank\">DIY GPS Speed-meter with <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><b><iframe width=\"1080\" height=\"580\" src=\"https://www.youtube.com/embed/FnxPXA5hPxo?si=Vr_7NPgXg7233xIQ\" title=\"YouTube video player\"></iframe></b></p>\n<p><b>Project:<span> </span><span style=\"color: rgb(0, 170, 255);\"><a style=\"color: rgb(0, 170, 255);\" href=\"https://www.youtube.com/watch?v=iNOXndLQzNA\" target=\"_blank\">Perfect Temperature Tea using <strong data-start=\"214\" data-end=\"239\">FireBeetle 2 ESP32-C6</strong></a></span></b></p>\n<p><b><iframe width=\"1080\" height=\"580\" src=\"https://www.youtube.com/embed/iNOXndLQzNA?si=u9_bs9Nmrtw6PFqK\" title=\"YouTube video player\"></iframe></b></p>\n<p> </p>\n<h2>Reference</h2>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Product wiki</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://docs.espressif.com/projects/esp-zigbee-sdk/en/latest/esp32/introduction.html\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Zigbee Solution Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6#target_3\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Board Overview and Pin Diagram</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6#target_9\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">FAQ</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6_Basic_Tutorial\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Basic Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://wiki.dfrobot.com/SKU_DFR1075_FireBeetle_2_Board_ESP32_C6_Advanced_Tutorial\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Advanced Tutorial</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/5eeffd974782b6cc442f7a2ee7f00577.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">ESP32-C6 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/65df25004a7d1e8bc128894c75ce4089.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">V1.0 Schematics</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/bed69691f668193cd504fca7d44d4dd1.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">V1.1 Schematics</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/fc5aabe8620a8c9519643a7e8c997ecb.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Dimension</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/85759bb076bf6bb24fd8ca5683f19603.pdf\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">CN3165 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/6f630301d84caf0e92266e3c5cf11edc.PDF\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">HM6245 Chip Datasheet</a></strong></span></p>\n<p><span style=\"color: rgb(0, 170, 255);\"><strong><a href=\"https://dfimg.dfrobot.com/5d57611a3416442fa39bffca/wiki/e98b6467f3636d6d33c8d894b29bad89.zip\" style=\"color: rgb(0, 170, 255);\" target=\"_blank\">Make your own case (shell stl file)</a></strong></span></p>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-2-esp32-c6-iot",
+       "id": "gid://shopify/ProductVariant/55703549083972",
+       "list_price": {
+        "amount": 1077,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "ESP32-C6 FireBeetle 2: Wi-Fi 6, Matter, Zigbee 3.0, Thread & Solar",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp",
+         "width": 700
+        }
+       ],
+       "options": [
+        {
+         "label": "160 MHz",
+         "name": "Maximum frequency"
+        },
+        {
+         "label": "60 °C",
+         "name": "Maximum operating temperature"
+        },
+        {
+         "label": "4 MB",
+         "name": "Memory capacity"
+        }
+       ],
+       "price": {
+        "amount": 1054,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15299145990468",
+       "source": "shopify",
+       "title": "ESP32-C6 FireBeetle 2: Wi-Fi 6, Matter, Zigbee 3.0, Thread & Solar",
+       "url": "https://openelab.com/products/dfrobot-firebeetle-2-esp32-c6-iot?variant=55703549083972&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The <strong>FireBeetle 2 ESP32-S3-U</strong> is a high-performance IoT controller built around the <strong>ESP32-S3-U-WROOM-1-N16R8 module</strong>. It features a <strong>240MHz dual-core processor</strong> with <strong>AI acceleration</strong>, <strong>16MB Flash</strong>, and <strong>8MB PSRAM</strong> for demanding edge-computing tasks like speech/image recognition. The board includes a detachable <strong>OV2640 camera</strong> (2MP, 1600×1200 resolution) and supports <strong>Wi-Fi 4</strong> (802.11 b/g/n) and <strong>Bluetooth 5 (LE)</strong> dual-mode communication—including <strong>Bluetooth Mesh</strong> and <strong>Matter protocols</strong> for industrial smart home applications. Integrated power management enables <strong>Li-ion battery charging</strong>, while the <strong>GDI display interface</strong> simplifies screen integration.</p>\n<p><img style=\"display: block; margin: auto;\" src=\"https://dfimg.dfrobot.com/enshop/image/cache3/data/DFR0975/image-recognition.webp\" alt=\"FireBeetle 2 Board ESP32-S3-U Image recognition\"></p>\n<p><strong>Image recognition</strong></p>\n<p><img style=\"display: block; margin: auto;\" src=\"https://dfimg.dfrobot.com/enshop/image/cache3/data/DFR0975/video-picture-transmission.webp\" alt=\"FireBeetle 2 Board ESP32-S3-U Video picture transmission\"></p>\n<p><strong>Video picture transmission</strong></p>\n<p> </p>\n<h2>⚡ <strong>Features</strong>\n</h2>\n<ul>\n<li>\n<strong>AI Edge Computing</strong>:\n<ul>\n<li>\n<strong>ESP32-S3-U chip</strong> accelerates neural networks for <strong>real-time image/speech recognition</strong>.</li>\n<li>Stores more facial models (e.g., smart home security) for faster data comparisons.</li>\n</ul>\n</li>\n<li>\n<strong>Camera System</strong>:\n<ul>\n<li>\n<strong>OV2640 sensor</strong> (68° FOV) with <strong>independent power circuit</strong> to reduce signal interference.</li>\n<li>Captures 1600×1200 images for monitoring/alert systems (e.g., intrusion detection).</li>\n</ul>\n</li>\n<li>\n<strong>Connectivity</strong>:\n<ul>\n<li>\n<strong>Wi-Fi Mesh</strong> and <strong>Bluetooth 5</strong> support long-range, multi-device networks.</li>\n<li>\n<strong>Matter protocol</strong> ensures cross-brand smart home compatibility.</li>\n</ul>\n</li>\n<li>\n<strong>User-Friendly Design</strong>:\n<ul>\n<li>\n<strong>Plug-and-play peripherals</strong>: 26x digital I/O, 3x UART, 2x I2C, and GDI display port.</li>\n<li>\n<strong>Programmable</strong> via Arduino IDE, ESP-IDF, or MicroPython (C/Python support).</li>\n</ul>\n</li>\n</ul>\n<p> </p>\n<h2>📊 <strong>Specifications</strong>\n</h2>\n<table>\n<thead>\n<tr>\n<th><strong>Category</strong></th>\n<th><strong>Details</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Model</strong></td>\n<td>FireBeetle 2 ESP32-S3-U (<strong>SKU: DFR0975-U</strong>)</td>\n</tr>\n<tr>\n<td><strong>Processor</strong></td>\n<td>Xtensa® dual-core LX7 @ <strong>240MHz</strong>\n</td>\n</tr>\n<tr>\n<td><strong>Memory</strong></td>\n<td>\n<strong>16MB Flash</strong> + <strong>8MB PSRAM</strong> + 512KB SRAM</td>\n</tr>\n<tr>\n<td><strong>Camera</strong></td>\n<td>\n<strong>OV2640</strong> (2MP, 1600×1200, 68° FOV)</td>\n</tr>\n<tr>\n<td><strong>Wireless</strong></td>\n<td>\n<strong>Wi-Fi 4</strong> (802.11 b/g/n), <strong>Bluetooth 5 LE/Mesh</strong>, <strong>Matter protocol</strong>\n</td>\n</tr>\n<tr>\n<td><strong>Power</strong></td>\n<td>\n<strong>5V USB-C</strong> input • <strong>Li-ion charging</strong> (3.7V) • <strong>1A max current</strong>\n</td>\n</tr>\n<tr>\n<td><strong>I/O Interfaces</strong></td>\n<td>\n<strong>26x GPIO</strong> • 3x UART • 2x I2C • 2x SPI • 20x ADC channels</td>\n</tr>\n<tr>\n<td><strong>Dimensions</strong></td>\n<td>\n<strong>25.4 × 60mm</strong> (1 × 2.36\")</td>\n</tr>\n<tr>\n<td><strong>Operating Temp.</strong></td>\n<td><strong>-20°C to 70°C</strong></td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>🚀 <strong>Applications</strong>\n</h2>\n<ul>\n<li>\n<strong>Smart Home</strong>: Intrusion alerts via camera + <strong>Matter</strong>-enabled automation.</li>\n<li>\n<strong>Industrial IoT</strong>: Machine vision (defect detection) with <strong>edge AI processing</strong>.</li>\n<li>\n<strong>Remote Monitoring</strong>: <strong>Wi-Fi Mesh</strong> networks for wide-area sensor deployments.</li>\n<li>\n<strong>Education</strong>: <strong>MicroPython</strong>-based AI/robotics prototyping.</li>\n</ul>\n<p> </p>\n<h2>📦 <strong>Package Contents</strong>\n</h2>\n<ul>\n<li>FireBeetle 2 ESP32-S3-U Board ×1</li>\n<li>\n<strong>OV2640 Camera Module</strong> ×1</li>\n<li>\n<strong>External IPEX Antenna</strong> ×1</li>\n<li>Pin Headers (18-pin ×2, 14-pin ×2)</li>\n<li>Female Headers (18-pin ×1, 14-pin ×1)</li>\n</ul>\n<p> </p>\n<h2>💡 <strong>Advantages</strong>\n</h2>\n<ul>\n<li>\n<strong>Expandable Storage</strong>: MicroSD slot logs image/audio data for offline AI training.</li>\n<li>\n<strong>Rapid Prototyping</strong>: Pre-soldered headers + Arduino libraries reduce setup time to minutes.</li>\n<li>\n<strong>Low-Power Operation</strong>: Deep sleep (10μA) enables months of battery life for field sensors.</li>\n<li>\n<strong>Enhanced Signal</strong>: <strong>External antenna</strong> (vs. PCB antenna) extends Wi-Fi/Bluetooth range by <strong>~30%</strong> in obstructed areas.</li>\n</ul>"
+     },
+     "handle": "dfrobot-firebeetle-board-esp32-s3",
+     "id": "gid://shopify/p/6V4GSVwn0KY4YSzXiR66Cy",
+     "media": [
+      {
+       "alt_text": "DFRobot FireBeetle 2 Board ESP32-S3-U AIoT Microcontroller with Camera",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "AI acceleration for real-time image and speech recognition enables advanced security and automation",
+       "2MP Ov2640 camera with 68° field of view provides high-resolution monitoring and alert systems",
+       "Dual Wi-Fi (802.11 b/g/n) and Bluetooth 5 LE (Mesh, Matter) support ensures flexible, long-range connectivity",
+       "Integrated power management supports Li-ion battery charging for extended field deployment",
+       "Plug-and-play peripherals and pre-soldered headers minimize setup time for rapid prototyping"
+      ],
+      "unique_selling_points": [
+       "Combines AI acceleration, 2MP camera, and Matter protocol support in a compact, plug-and-play development board for rapid prototyping."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2696,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2696,
+       "currency": "USD"
+      }
+     },
+     "title": "DFRobot FireBeetle 2 Board ESP32-S3-U AIoT Microcontroller with Camera",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/56087640899908:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The <strong>FireBeetle 2 ESP32-S3-U</strong> is a high-performance IoT controller built around the <strong>ESP32-S3-U-WROOM-1-N16R8 module</strong>. It features a <strong>240MHz dual-core processor</strong> with <strong>AI acceleration</strong>, <strong>16MB Flash</strong>, and <strong>8MB PSRAM</strong> for demanding edge-computing tasks like speech/image recognition. The board includes a detachable <strong>OV2640 camera</strong> (2MP, 1600×1200 resolution) and supports <strong>Wi-Fi 4</strong> (802.11 b/g/n) and <strong>Bluetooth 5 (LE)</strong> dual-mode communication—including <strong>Bluetooth Mesh</strong> and <strong>Matter protocols</strong> for industrial smart home applications. Integrated power management enables <strong>Li-ion battery charging</strong>, while the <strong>GDI display interface</strong> simplifies screen integration.</p>\n<p><img style=\"display: block; margin: auto;\" src=\"https://dfimg.dfrobot.com/enshop/image/cache3/data/DFR0975/image-recognition.webp\" alt=\"FireBeetle 2 Board ESP32-S3-U Image recognition\"></p>\n<p><strong>Image recognition</strong></p>\n<p><img style=\"display: block; margin: auto;\" src=\"https://dfimg.dfrobot.com/enshop/image/cache3/data/DFR0975/video-picture-transmission.webp\" alt=\"FireBeetle 2 Board ESP32-S3-U Video picture transmission\"></p>\n<p><strong>Video picture transmission</strong></p>\n<p> </p>\n<h2>⚡ <strong>Features</strong>\n</h2>\n<ul>\n<li>\n<strong>AI Edge Computing</strong>:\n<ul>\n<li>\n<strong>ESP32-S3-U chip</strong> accelerates neural networks for <strong>real-time image/speech recognition</strong>.</li>\n<li>Stores more facial models (e.g., smart home security) for faster data comparisons.</li>\n</ul>\n</li>\n<li>\n<strong>Camera System</strong>:\n<ul>\n<li>\n<strong>OV2640 sensor</strong> (68° FOV) with <strong>independent power circuit</strong> to reduce signal interference.</li>\n<li>Captures 1600×1200 images for monitoring/alert systems (e.g., intrusion detection).</li>\n</ul>\n</li>\n<li>\n<strong>Connectivity</strong>:\n<ul>\n<li>\n<strong>Wi-Fi Mesh</strong> and <strong>Bluetooth 5</strong> support long-range, multi-device networks.</li>\n<li>\n<strong>Matter protocol</strong> ensures cross-brand smart home compatibility.</li>\n</ul>\n</li>\n<li>\n<strong>User-Friendly Design</strong>:\n<ul>\n<li>\n<strong>Plug-and-play peripherals</strong>: 26x digital I/O, 3x UART, 2x I2C, and GDI display port.</li>\n<li>\n<strong>Programmable</strong> via Arduino IDE, ESP-IDF, or MicroPython (C/Python support).</li>\n</ul>\n</li>\n</ul>\n<p> </p>\n<h2>📊 <strong>Specifications</strong>\n</h2>\n<table>\n<thead>\n<tr>\n<th><strong>Category</strong></th>\n<th><strong>Details</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Model</strong></td>\n<td>FireBeetle 2 ESP32-S3-U (<strong>SKU: DFR0975-U</strong>)</td>\n</tr>\n<tr>\n<td><strong>Processor</strong></td>\n<td>Xtensa® dual-core LX7 @ <strong>240MHz</strong>\n</td>\n</tr>\n<tr>\n<td><strong>Memory</strong></td>\n<td>\n<strong>16MB Flash</strong> + <strong>8MB PSRAM</strong> + 512KB SRAM</td>\n</tr>\n<tr>\n<td><strong>Camera</strong></td>\n<td>\n<strong>OV2640</strong> (2MP, 1600×1200, 68° FOV)</td>\n</tr>\n<tr>\n<td><strong>Wireless</strong></td>\n<td>\n<strong>Wi-Fi 4</strong> (802.11 b/g/n), <strong>Bluetooth 5 LE/Mesh</strong>, <strong>Matter protocol</strong>\n</td>\n</tr>\n<tr>\n<td><strong>Power</strong></td>\n<td>\n<strong>5V USB-C</strong> input • <strong>Li-ion charging</strong> (3.7V) • <strong>1A max current</strong>\n</td>\n</tr>\n<tr>\n<td><strong>I/O Interfaces</strong></td>\n<td>\n<strong>26x GPIO</strong> • 3x UART • 2x I2C • 2x SPI • 20x ADC channels</td>\n</tr>\n<tr>\n<td><strong>Dimensions</strong></td>\n<td>\n<strong>25.4 × 60mm</strong> (1 × 2.36\")</td>\n</tr>\n<tr>\n<td><strong>Operating Temp.</strong></td>\n<td><strong>-20°C to 70°C</strong></td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>🚀 <strong>Applications</strong>\n</h2>\n<ul>\n<li>\n<strong>Smart Home</strong>: Intrusion alerts via camera + <strong>Matter</strong>-enabled automation.</li>\n<li>\n<strong>Industrial IoT</strong>: Machine vision (defect detection) with <strong>edge AI processing</strong>.</li>\n<li>\n<strong>Remote Monitoring</strong>: <strong>Wi-Fi Mesh</strong> networks for wide-area sensor deployments.</li>\n<li>\n<strong>Education</strong>: <strong>MicroPython</strong>-based AI/robotics prototyping.</li>\n</ul>\n<p> </p>\n<h2>📦 <strong>Package Contents</strong>\n</h2>\n<ul>\n<li>FireBeetle 2 ESP32-S3-U Board ×1</li>\n<li>\n<strong>OV2640 Camera Module</strong> ×1</li>\n<li>\n<strong>External IPEX Antenna</strong> ×1</li>\n<li>Pin Headers (18-pin ×2, 14-pin ×2)</li>\n<li>Female Headers (18-pin ×1, 14-pin ×1)</li>\n</ul>\n<p> </p>\n<h2>💡 <strong>Advantages</strong>\n</h2>\n<ul>\n<li>\n<strong>Expandable Storage</strong>: MicroSD slot logs image/audio data for offline AI training.</li>\n<li>\n<strong>Rapid Prototyping</strong>: Pre-soldered headers + Arduino libraries reduce setup time to minutes.</li>\n<li>\n<strong>Low-Power Operation</strong>: Deep sleep (10μA) enables months of battery life for field sensors.</li>\n<li>\n<strong>Enhanced Signal</strong>: <strong>External antenna</strong> (vs. PCB antenna) extends Wi-Fi/Bluetooth range by <strong>~30%</strong> in obstructed areas.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-firebeetle-board-esp32-s3",
+       "id": "gid://shopify/ProductVariant/56087640899908",
+       "media": [
+        {
+         "alt_text": "DFRobot FireBeetle 2 Board ESP32-S3-U AIoT Microcontroller with Camera",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 2696,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15396422517060",
+       "source": "shopify",
+       "title": "DFRobot FireBeetle 2 Board ESP32-S3-U AIoT Microcontroller with Camera",
+       "url": "https://openelab.com/products/dfrobot-firebeetle-board-esp32-s3?variant=56087640899908&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h1>Gravity IO Shield for FireBeetle 2</h1>\n<h2>Easy No-Solder Expansion for FireBeetle 2 Projects</h2>\n<p>The Gravity IO Shield for FireBeetle 2 makes it easy to connect sensors, displays, and modules to your FireBeetle 2 development board without soldering. Designed for the FireBeetle 2 ESP32-E and FireBeetle 2 M0, this compact expansion board brings the main IO pins out to convenient headers and DFRobot Gravity-style ports.</p>\n<p>Vetco carries this FireBeetle 2 IO shield because it solves a common problem for hobbyists, students, and makers: connecting modules quickly without messy wiring or custom soldering. It helps turn a FireBeetle 2 board into a cleaner, easier-to-use project platform.</p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_DFR0762.webp?v=1781116440\" alt=\"\"></p>\n<h2>FireBeetle 2 Expansion Board for Sensors and Modules</h2>\n<p>This Gravity IO Shield is built to work with a wide range of DFRobot Gravity sensors and modules. It includes digital, analog, I2C, UART, SPI, and GDI connections, making it useful for sensor testing, small robots, environmental monitors, IoT devices, and display-based projects.</p>\n<p>The shield gives you access to the FireBeetle 2 pins through female headers, making it easier to connect jumper wires, modules, and accessories while keeping your project neat and organized.</p>\n<h2>Why Buy This FireBeetle 2 IO Shield?</h2>\n<p>If you are building with a FireBeetle 2 board, this shield can save time and reduce wiring mistakes. Instead of tracking down pinouts for every connection or building a temporary breadboard layout, you can plug compatible Gravity modules directly into the shield and focus on the project itself.</p>\n<p>It is especially useful for beginners who want an easier way to connect sensors, as well as experienced users who want faster prototyping and cleaner wiring on repeat projects.</p>\n<h2>No-Solder IO Shield with External Power Input</h2>\n<p>The Gravity IO Shield for FireBeetle 2 is designed for quick setup. No soldering is required, which makes it a good choice for classroom projects, hobby electronics, and quick testing at the workbench.</p>\n<p>A PH2.0 power port supports 3.3V to 5.5V input, making the board useful for portable projects powered by an external supply or battery setup. The shield also includes an EN pin connection that can be used to cut power to the main board when needed.</p>\n<h2>GDI Display Interface for FireBeetle 2 ESP32-E Projects</h2>\n<p>This FireBeetle 2 IO Shield includes a DFRobot GDI display interface for connecting compatible DFRobot GDI display modules. This helps simplify display wiring by using a dedicated screen connector instead of requiring many separate jumper wires.</p>\n<p>For display projects, the GDI interface is especially useful when working with the FireBeetle 2 ESP32-E and compatible DFRobot GDI screens.</p>\n<h2>Technical Specifications</h2>\n<table>\n<tbody>\n<tr>\n<th>Product Name</th>\n<td>Gravity: IO Shield for <a rel=\"noopener\" title=\"FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi &amp; Bluetooth)\" href=\"https://vetco.net/products/vupn2235_firebeetle_2_esp32-e_battery_ready_-_iot_microcontroller_supports_wi-fi__bluetooth_d74?_pos=1&amp;_sid=bedaec7a8&amp;_ss=r\" target=\"_blank\">FireBeetle 2 (ESP32-E/M0)</a>\n</td>\n</tr>\n<tr>\n<th>SKU / Product ID</th>\n<td>DFR0762</td>\n</tr>\n<tr>\n<th>Compatible Boards</th>\n<td>FireBeetle 2 ESP32-E and FireBeetle 2 M0</td>\n</tr>\n<tr>\n<th>Digital IO</th>\n<td>12 ports: GP0-3, GP5-7, GP9-13</td>\n</tr>\n<tr>\n<th>Analog IO</th>\n<td>5 ports: A0-A4</td>\n</tr>\n<tr>\n<th>I2C Ports</th>\n<td>3 ports, connected in parallel</td>\n</tr>\n<tr>\n<th>UART</th>\n<td>1 port</td>\n</tr>\n<tr>\n<th>SPI</th>\n<td>1 port</td>\n</tr>\n<tr>\n<th>Power Port</th>\n<td>PH2.0 power input, 3.3V to 5.5V</td>\n</tr>\n<tr>\n<th>Display Interface</th>\n<td>DFRobot GDI interface</td>\n</tr>\n<tr>\n<th>Board Connections</th>\n<td>All pins brought out to female headers</td>\n</tr>\n<tr>\n<th>Dimensions</th>\n<td>60 x 25.4mm / 2.36 x 1.00 in.</td>\n</tr>\n<tr>\n<th>Included</th>\n<td>Gravity IO Shield for FireBeetle 2 x1</td>\n</tr>\n</tbody>\n</table>\n<h2>Important Compatibility Note</h2>\n<p>This expansion board is specifically designed for the FireBeetle 2 controller series, including FireBeetle 2 ESP32-E and FireBeetle 2 M0. It is not intended for the original FireBeetle series.</p>\n<h2>Why Choose Vetco Electronics for FireBeetle and Gravity Parts?</h2>\n<p>Vetco carries useful electronics parts that help customers actually finish their projects. This Gravity IO Shield is a good example: it is small, practical, easy to use, and makes the FireBeetle 2 platform more accessible for real-world builds.</p>\n<p>Whether you are experimenting at home, building a classroom project, testing sensors, or putting together an IoT prototype, this FireBeetle 2 expansion board gives you a cleaner and more reliable way to connect your hardware.</p>\n<p> </p>\n<p>IN STORE LOCATION: Aisle 4 &gt; Glass Raspberry Pi Case &gt; Top shelf &gt; Left side.</p>"
+     },
+     "handle": "dfrobot-gravity-io-shield-for-firebeetle-2-esp32",
+     "id": "gid://shopify/p/1WuwRBB0B4ZYeeXFDbzqJW",
+     "media": [
+      {
+       "alt_text": "FireBeetle 2 ESP32 Expansion Shield - DFRobot Gravity IO Shield",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_FireBeetle_IO_B.png",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_FireBeetle_IO_B.png",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Plug-in design enables quick, solderless connections for easy prototyping",
+       "Supports digital, analog, I2C, UART, and SPI interfaces for versatile sensor and module integration",
+       "DFRobot Gravity Display interface simplifies GDI screen connections for display-based projects",
+       "External power input (3.3V–5.5V) allows portable or battery-powered applications",
+       "Female header pins keep wiring organized and projects cleaner"
+      ],
+      "unique_selling_points": [
+       "No-solder, solderless expansion with multiple I/O and GDI interface for FireBeetle 2 boards."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1295,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1295,
+       "currency": "USD"
+      }
+     },
+     "title": "FireBeetle 2 ESP32 Expansion Shield - DFRobot Gravity IO Shield",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://vetco.net/buy/46855970619529:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=SQp7c1M7brPi&_gsid=SQp7c1M7brPi",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h1>Gravity IO Shield for FireBeetle 2</h1>\n<h2>Easy No-Solder Expansion for FireBeetle 2 Projects</h2>\n<p>The Gravity IO Shield for FireBeetle 2 makes it easy to connect sensors, displays, and modules to your FireBeetle 2 development board without soldering. Designed for the FireBeetle 2 ESP32-E and FireBeetle 2 M0, this compact expansion board brings the main IO pins out to convenient headers and DFRobot Gravity-style ports.</p>\n<p>Vetco carries this FireBeetle 2 IO shield because it solves a common problem for hobbyists, students, and makers: connecting modules quickly without messy wiring or custom soldering. It helps turn a FireBeetle 2 board into a cleaner, easier-to-use project platform.</p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_DFR0762.webp?v=1781116440\" alt=\"\"></p>\n<h2>FireBeetle 2 Expansion Board for Sensors and Modules</h2>\n<p>This Gravity IO Shield is built to work with a wide range of DFRobot Gravity sensors and modules. It includes digital, analog, I2C, UART, SPI, and GDI connections, making it useful for sensor testing, small robots, environmental monitors, IoT devices, and display-based projects.</p>\n<p>The shield gives you access to the FireBeetle 2 pins through female headers, making it easier to connect jumper wires, modules, and accessories while keeping your project neat and organized.</p>\n<h2>Why Buy This FireBeetle 2 IO Shield?</h2>\n<p>If you are building with a FireBeetle 2 board, this shield can save time and reduce wiring mistakes. Instead of tracking down pinouts for every connection or building a temporary breadboard layout, you can plug compatible Gravity modules directly into the shield and focus on the project itself.</p>\n<p>It is especially useful for beginners who want an easier way to connect sensors, as well as experienced users who want faster prototyping and cleaner wiring on repeat projects.</p>\n<h2>No-Solder IO Shield with External Power Input</h2>\n<p>The Gravity IO Shield for FireBeetle 2 is designed for quick setup. No soldering is required, which makes it a good choice for classroom projects, hobby electronics, and quick testing at the workbench.</p>\n<p>A PH2.0 power port supports 3.3V to 5.5V input, making the board useful for portable projects powered by an external supply or battery setup. The shield also includes an EN pin connection that can be used to cut power to the main board when needed.</p>\n<h2>GDI Display Interface for FireBeetle 2 ESP32-E Projects</h2>\n<p>This FireBeetle 2 IO Shield includes a DFRobot GDI display interface for connecting compatible DFRobot GDI display modules. This helps simplify display wiring by using a dedicated screen connector instead of requiring many separate jumper wires.</p>\n<p>For display projects, the GDI interface is especially useful when working with the FireBeetle 2 ESP32-E and compatible DFRobot GDI screens.</p>\n<h2>Technical Specifications</h2>\n<table>\n<tbody>\n<tr>\n<th>Product Name</th>\n<td>Gravity: IO Shield for <a rel=\"noopener\" title=\"FireBeetle 2 ESP32-E Battery Ready - IoT Microcontroller (Supports Wi-Fi &amp; Bluetooth)\" href=\"https://vetco.net/products/vupn2235_firebeetle_2_esp32-e_battery_ready_-_iot_microcontroller_supports_wi-fi__bluetooth_d74?_pos=1&amp;_sid=bedaec7a8&amp;_ss=r\" target=\"_blank\">FireBeetle 2 (ESP32-E/M0)</a>\n</td>\n</tr>\n<tr>\n<th>SKU / Product ID</th>\n<td>DFR0762</td>\n</tr>\n<tr>\n<th>Compatible Boards</th>\n<td>FireBeetle 2 ESP32-E and FireBeetle 2 M0</td>\n</tr>\n<tr>\n<th>Digital IO</th>\n<td>12 ports: GP0-3, GP5-7, GP9-13</td>\n</tr>\n<tr>\n<th>Analog IO</th>\n<td>5 ports: A0-A4</td>\n</tr>\n<tr>\n<th>I2C Ports</th>\n<td>3 ports, connected in parallel</td>\n</tr>\n<tr>\n<th>UART</th>\n<td>1 port</td>\n</tr>\n<tr>\n<th>SPI</th>\n<td>1 port</td>\n</tr>\n<tr>\n<th>Power Port</th>\n<td>PH2.0 power input, 3.3V to 5.5V</td>\n</tr>\n<tr>\n<th>Display Interface</th>\n<td>DFRobot GDI interface</td>\n</tr>\n<tr>\n<th>Board Connections</th>\n<td>All pins brought out to female headers</td>\n</tr>\n<tr>\n<th>Dimensions</th>\n<td>60 x 25.4mm / 2.36 x 1.00 in.</td>\n</tr>\n<tr>\n<th>Included</th>\n<td>Gravity IO Shield for FireBeetle 2 x1</td>\n</tr>\n</tbody>\n</table>\n<h2>Important Compatibility Note</h2>\n<p>This expansion board is specifically designed for the FireBeetle 2 controller series, including FireBeetle 2 ESP32-E and FireBeetle 2 M0. It is not intended for the original FireBeetle series.</p>\n<h2>Why Choose Vetco Electronics for FireBeetle and Gravity Parts?</h2>\n<p>Vetco carries useful electronics parts that help customers actually finish their projects. This Gravity IO Shield is a good example: it is small, practical, easy to use, and makes the FireBeetle 2 platform more accessible for real-world builds.</p>\n<p>Whether you are experimenting at home, building a classroom project, testing sensors, or putting together an IoT prototype, this FireBeetle 2 expansion board gives you a cleaner and more reliable way to connect your hardware.</p>\n<p> </p>\n<p>IN STORE LOCATION: Aisle 4 &gt; Glass Raspberry Pi Case &gt; Top shelf &gt; Left side.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dfrobot-gravity-io-shield-for-firebeetle-2-esp32",
+       "id": "gid://shopify/ProductVariant/46855970619529",
+       "media": [
+        {
+         "alt_text": "FireBeetle 2 ESP32 Expansion Shield - DFRobot Gravity IO Shield",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_FireBeetle_IO_B.png",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0646/9291/2265/files/VUPN2951_FireBeetle_IO_B.png",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 1295,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "8da295-18.myshopify.com",
+        "id": "gid://shopify/Shop/64692912265",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928494217.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/64692912265/policies/30226677897.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928461449.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/64692912265/policies/27928625289.html"
+         }
+        ],
+        "name": "Vetco Electronics",
+        "url": "https://vetco.net"
+       },
+       "seller_product_id": "gid://shopify/Product/8656377282697",
+       "source": "shopify",
+       "title": "FireBeetle 2 ESP32 Expansion Shield - DFRobot Gravity IO Shield",
+       "url": "https://vetco.net/products/dfrobot-gravity-io-shield-for-firebeetle-2-esp32?variant=46855970619529&_gsid=SQp7c1M7brPi&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

@@ -1,0 +1,851 @@
+{
+  "run_id": "r_mock_so101",
+  "build_type": "robot_arm",
+  "build_type_set_by": "classifier",
+  "intake": {
+    "intake_id": "in_mock_so101",
+    "ready": true,
+    "summary": "One SO-101 follower arm, from the project's README",
+    "build_type": "robot_arm",
+    "confidence": 0.97,
+    "alternatives": [
+      {
+        "build_type": "claw_gripper",
+        "confidence": 0.02
+      }
+    ],
+    "inputs": {
+      "text": "https://github.com/TheRobotStudio/SO-ARM100",
+      "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "images": []
+    },
+    "constraints": {},
+    "questions": [
+      {
+        "id": "voltage_class",
+        "text": "Which servo voltage?",
+        "chips": [
+          {
+            "value": "7v4",
+            "label": "7.4V (standard)"
+          },
+          {
+            "value": "12v",
+            "label": "12V (more torque)"
+          }
+        ],
+        "default": "7v4",
+        "answer": "12v"
+      },
+      {
+        "id": "own_printer",
+        "text": "Do you have a 3D printer?",
+        "chips": [
+          {
+            "value": "yes",
+            "label": "Yes, I'll print the parts"
+          },
+          {
+            "value": "no",
+            "label": "No"
+          }
+        ],
+        "default": "yes",
+        "answer": "yes"
+      }
+    ],
+    "template_id": "tpl_robot_arm",
+    "mandate_preset": {
+      "budget_usd": 160.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "wowrobo",
+        "armdojo",
+        "geekworm",
+        "amazon",
+        "seeed",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "source_api": "mock",
+    "simulated": true
+  },
+  "view": {
+    "kind": "urdf",
+    "model": "so101",
+    "urdf_url": "/so101/so101_new_calib.urdf",
+    "parts": [
+      {
+        "mesh": "sts3215_03a_v1",
+        "bom_line_id": "b1",
+        "instances": 5,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 2
+      },
+      {
+        "mesh": "sts3215_03a_no_horn_v1",
+        "bom_line_id": "b1",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 2
+      },
+      {
+        "mesh": "base_motor_holder_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "base_so101_v2",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "motor_holder_so101_base_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "motor_holder_so101_wrist_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "moving_jaw_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "rotation_pitch_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "under_arm_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "upper_arm_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "waveshare_mounting_plate_so101_v2",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "wrist_roll_follower_so101_v1",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "wrist_roll_pitch_so101_v2",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      }
+    ],
+    "tray": [
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "b6"
+    ],
+    "note": "Model from the project's own repository.",
+    "simulated": true
+  },
+  "status": "waiting_approval",
+  "mandate": {
+    "type": "b2c.mandate.open",
+    "version": "0.4",
+    "note": "AP2-inspired (v0.2 open Checkout Mandate shape); not AP2-compliant",
+    "mandate_id": "m_mock_so101",
+    "run_id": "r_mock_so101",
+    "user_id": "demo_user",
+    "created_at": "2026-11-20T13:00:05-08:00",
+    "expires_at": "2026-11-20T19:00:00-08:00",
+    "scope": {
+      "build_type": "robot_arm",
+      "build_type_set_by": "classifier",
+      "goal": "one SO-101 follower arm",
+      "intake_sha256": "27284ec65e362961cb347a81292159d02b00eddfea8b398c373f2aadde89708a",
+      "inputs": {
+        "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "text_sha256": "d5cd6f0f2745e2ea2734aea4f71b325148f8fd0bd6f13928e465333d00819fc5",
+        "image_sha256": []
+      },
+      "template_id": "tpl_robot_arm",
+      "reference_search": true
+    },
+    "constraints": {
+      "budget_usd": 160.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "wowrobo",
+        "armdojo",
+        "geekworm",
+        "amazon",
+        "seeed",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      },
+      "actions": {
+        "search": true,
+        "create_cart": true,
+        "build_cart_link": true,
+        "checkout": false,
+        "pay": false,
+        "message_seller": false
+      }
+    },
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..86Svwx90lJi-RsYJifswHbYRgp3egGouMmMR0rwnD2RxjpxFFHbq2zQPdvj6MyQ40VIEcKfnZxqNozHozjTK4Q"
+    },
+    "simulated": true
+  },
+  "source": {
+    "url": "https://github.com/TheRobotStudio/SO-ARM100",
+    "path": "README.md",
+    "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+    "sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+    "fetched_at": "2026-11-20T13:00:09-08:00",
+    "via": "airbyte.github"
+  },
+  "template": {
+    "template_id": "tpl_robot_arm",
+    "variant": "12v",
+    "kb_ref": "kb://tpl_robot_arm",
+    "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ..."
+  },
+  "provenance_counts": {
+    "readme_quote": 7,
+    "reference_project": 0,
+    "template_row": 0,
+    "photo_region": 0,
+    "assumption": 0
+  },
+  "open_assumptions": [],
+  "bom": [
+    {
+      "bom_line_id": "b1",
+      "raw_name": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+      "qty": 6,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "STS3215 Servo 7.4V, 1/345 gear (C001)",
+        "span": [
+          12192,
+          12229
+        ],
+        "line_from": 96,
+        "line_to": 96,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "motor",
+      "mesh_keys": [
+        "sts3215_03a_v1",
+        "sts3215_03a_no_horn_v1"
+      ],
+      "spec": "Feetech STS3215 12V 30kg (C018), switched from 7.4V C001 by you",
+      "confidence": 0.95,
+      "stores_count": 4,
+      "chosen": [
+        {
+          "offer_id": "o17",
+          "store_id": "wowrobo",
+          "store_name": "WowRobo",
+          "action_level": "agent_cart",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 5 pcs",
+          "packs": 1,
+          "price": 74.95,
+          "url": "https://mock.invalid/wowrobo/o17",
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "simulated": true
+        },
+        {
+          "offer_id": "o18",
+          "store_id": "wowrobo",
+          "store_name": "WowRobo",
+          "action_level": "agent_cart",
+          "title": "Feetech STS3215 Servo C018 12V 30kg, 1 pc",
+          "packs": 1,
+          "price": 15.99,
+          "url": "https://mock.invalid/wowrobo/o18",
+          "seen_at": "2026-11-20T13:04:10-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b2",
+      "raw_name": "Motor Control Board",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "Motor Control Board",
+        "span": [
+          12771,
+          12790
+        ],
+        "line_from": 97,
+        "line_to": 97,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "warning",
+      "category": "board",
+      "mesh_keys": [],
+      "spec": "Waveshare Bus Servo Adapter (A)",
+      "confidence": 0.9,
+      "stores_count": 3,
+      "chosen": [
+        {
+          "offer_id": "o30",
+          "store_id": "armdojo",
+          "store_name": "ArmDojo",
+          "action_level": "agent_cart",
+          "title": "Waveshare Bus Servo Adapter (A), USB-C",
+          "packs": 1,
+          "price": 11.99,
+          "url": "https://mock.invalid/armdojo/o30",
+          "seen_at": "2026-11-20T13:04:40-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b3",
+      "raw_name": "USB-C Cable 2 pcs",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "USB-C Cable 2 pcs",
+        "span": [
+          13350,
+          13367
+        ],
+        "line_from": 98,
+        "line_to": 98,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "owned",
+      "category": "cable",
+      "mesh_keys": [],
+      "spec": "USB-C cable, data-capable, 2 pcs",
+      "confidence": 0.9,
+      "owned_note": "owns two USB-C data cables"
+    },
+    {
+      "bom_line_id": "b4",
+      "raw_name": "Power Supply",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "Power Supply",
+        "span": [
+          13913,
+          13925
+        ],
+        "line_from": 99,
+        "line_to": 99,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "power",
+      "mesh_keys": [],
+      "spec": "12V 5A+ power supply, 5.5x2.1 mm, US plug (README lists 5V; swapped for the 12V servos)",
+      "confidence": 0.92,
+      "stores_count": 5,
+      "chosen": [
+        {
+          "offer_id": "o40",
+          "store_id": "geekworm",
+          "store_name": "Geekworm",
+          "action_level": "agent_cart",
+          "title": "12V 5A Power Supply, DC5521 (5.5x2.1mm), US plug",
+          "packs": 1,
+          "price": 17.0,
+          "url": "https://mock.invalid/geekworm/o40",
+          "seen_at": "2026-11-20T13:05:20-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b5",
+      "raw_name": "Table Clamp 2pcs",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "Table Clamp 2pcs",
+        "span": [
+          14464,
+          14480
+        ],
+        "line_from": 100,
+        "line_to": 100,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "mechanical",
+      "mesh_keys": [],
+      "spec": "Table clamp, 2 pcs",
+      "confidence": 0.85,
+      "stores_count": 2,
+      "chosen": [
+        {
+          "offer_id": "o50",
+          "store_id": "amazon",
+          "store_name": "Amazon",
+          "action_level": "prefilled_cart",
+          "title": "Table clamp 6 inch, 2 pcs (README link; PLACEHOLDER price from the PLAN §3.7 example)",
+          "packs": 1,
+          "price": 12.48,
+          "url": "https://mock.invalid/amazon/o50",
+          "seen_at": "2026-11-20T13:05:40-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b6",
+      "raw_name": "Screwdriver Set",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "Screwdriver Set",
+        "span": [
+          15027,
+          15042
+        ],
+        "line_from": 101,
+        "line_to": 101,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "tool",
+      "status": "owned",
+      "category": "tool",
+      "mesh_keys": [],
+      "spec": "Phillips #0 and #1",
+      "confidence": 0.9,
+      "owned_note": "owns a precision screwdriver set"
+    },
+    {
+      "bom_line_id": "b7",
+      "raw_name": "3D-printed parts (11)",
+      "qty": 1,
+      "qty_note": "1 set of 11 printed parts",
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "readme_quote",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100",
+        "path": "README.md",
+        "commit_sha": "a758567c3978dfeefe282ede0500085a48fe8f78",
+        "via": "airbyte.github",
+        "quote": "All the parts for the leader or follower are for easy 3D printing already contained in a **single file**",
+        "span": [
+          19059,
+          19163
+        ],
+        "line_from": 136,
+        "line_to": 136,
+        "doc_sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "more_quotes": []
+      },
+      "line_kind": "part",
+      "status": "skipped",
+      "category": "printed",
+      "mesh_keys": [
+        "base_motor_holder_so101_v1",
+        "base_so101_v2",
+        "motor_holder_so101_base_v1",
+        "motor_holder_so101_wrist_v1",
+        "moving_jaw_so101_v1",
+        "rotation_pitch_so101_v1",
+        "under_arm_so101_v1",
+        "upper_arm_so101_v1",
+        "waveshare_mounting_plate_so101_v2",
+        "wrist_roll_follower_so101_v1",
+        "wrist_roll_pitch_so101_v2"
+      ],
+      "spec": "PLA+, printed at home",
+      "confidence": 0.8,
+      "owned_note": "Print at home: owns a 3D printer and PLA"
+    }
+  ],
+  "checks": [
+    {
+      "rule_id": "R1 PSU_VOLTAGE_MATCH",
+      "result": "pass",
+      "message": "12V servos need a 12V supply. The README's 5V supply failed; the 12V 5A supply passes.",
+      "fix": "Swapped the 5V supply for a 12V 5A+ supply (README line 73)",
+      "kb_refs": [
+        "kb://so101_readme#L73"
+      ],
+      "bom_line_ids": [
+        "b1",
+        "b4"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R2 PSU_CURRENT_MIN",
+      "result": "pass",
+      "message": "5 A meets the 12V build's 5 A minimum.",
+      "kb_refs": [
+        "kb://so101_readme#L73"
+      ],
+      "bom_line_ids": [
+        "b4"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R4 SERVO_COUNT",
+      "result": "pass",
+      "message": "6 servos match the 6 servo meshes in the URDF.",
+      "kb_refs": [],
+      "bom_line_ids": [
+        "b1"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R6 BARREL_PLUG",
+      "result": "pass",
+      "message": "DC5521 is a 5.5x2.1 mm plug, matching the board's jack.",
+      "kb_refs": [
+        "kb://waveshare_adapter#dc_jack"
+      ],
+      "bom_line_ids": [
+        "b2",
+        "b4"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R9 PACK_COVERS_QTY",
+      "result": "pass",
+      "message": "A 5-pack plus 1 single covers 6 servos.",
+      "kb_refs": [],
+      "bom_line_ids": [
+        "b1"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "R10 BOARD_INPUT_VOLTAGE",
+      "result": "warn",
+      "message": "Sources disagree: the README runs 7.4V servos from a 5V supply; the Waveshare wiki says the board takes 9~12.6V. Needs your check.",
+      "kb_refs": [
+        "kb://so101_readme#L73",
+        "kb://waveshare_adapter#input_voltage"
+      ],
+      "bom_line_ids": [
+        "b2"
+      ],
+      "needs_ack": true
+    },
+    {
+      "rule_id": "R11 PLUG_AND_MAINS",
+      "result": "pass",
+      "message": "US plug, 120V input. UK-plug and 220V listings were rejected.",
+      "kb_refs": [],
+      "bom_line_ids": [
+        "b4"
+      ],
+      "needs_ack": false
+    }
+  ],
+  "plans": {
+    "cheapest": {
+      "plan_id": "p_mock_so101_cheapest",
+      "tier": "cheapest",
+      "total_usd": 132.41,
+      "stores": [
+        "wowrobo",
+        "geekworm",
+        "armdojo",
+        "amazon"
+      ],
+      "checkouts": 4,
+      "by_level": {
+        "agent_cart": 3,
+        "prefilled_cart": 1,
+        "product_link": 0
+      },
+      "items_by_hand": 0,
+      "feasible": true,
+      "plan_sha256": "8fe4604e0d0f42d5804f68b0c4941d0226f26bac1d136b476cbbec379bbe41b5",
+      "lines": [
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o17",
+          "store_id": "wowrobo",
+          "packs": 1,
+          "qty": 5,
+          "line_usd": 74.95
+        },
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o18",
+          "store_id": "wowrobo",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 15.99
+        },
+        {
+          "bom_line_id": "b2",
+          "offer_id": "o30",
+          "store_id": "armdojo",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 11.99
+        },
+        {
+          "bom_line_id": "b4",
+          "offer_id": "o40",
+          "store_id": "geekworm",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 17.0
+        },
+        {
+          "bom_line_id": "b5",
+          "offer_id": "o50",
+          "store_id": "amazon",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 12.48
+        }
+      ],
+      "simulated": true
+    },
+    "fewest_checkouts": {
+      "plan_id": "p_mock_so101_fewest",
+      "tier": "fewest_checkouts",
+      "total_usd": 131.02,
+      "stores": [
+        "wowrobo",
+        "geekworm",
+        "amazon"
+      ],
+      "checkouts": 3,
+      "by_level": {
+        "agent_cart": 2,
+        "prefilled_cart": 1,
+        "product_link": 0
+      },
+      "items_by_hand": 0,
+      "feasible": true,
+      "plan_sha256": "6c1a5a704049b13a1fe396bb7b65b7dfd92eb046b5e1a63e9f7486ef122a41af",
+      "lines": [
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o17",
+          "store_id": "wowrobo",
+          "packs": 1,
+          "qty": 5,
+          "line_usd": 74.95
+        },
+        {
+          "bom_line_id": "b1",
+          "offer_id": "o18",
+          "store_id": "wowrobo",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 15.99
+        },
+        {
+          "bom_line_id": "b2",
+          "offer_id": "o31",
+          "store_id": "amazon",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 10.6
+        },
+        {
+          "bom_line_id": "b4",
+          "offer_id": "o40",
+          "store_id": "geekworm",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 17.0
+        },
+        {
+          "bom_line_id": "b5",
+          "offer_id": "o50",
+          "store_id": "amazon",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 12.48
+        }
+      ],
+      "simulated": true
+    }
+  },
+  "active_tier": "cheapest",
+  "refusals": 6,
+  "head_hash": "sha256:f793256b542984149fd6d15859658127f5aeb76fc0d4d384f71b34404ec99821",
+  "stats": {
+    "claude_calls": 0,
+    "sie_calls": 0,
+    "sie_median_ms": 0,
+    "kb_queries": 2,
+    "serpapi_calls": 0,
+    "stores_searched": 7
+  },
+  "source_api": "mock",
+  "simulated": true
+}

@@ -1,0 +1,31 @@
+/*
+ * Colours of the 3D stage's lights (PLAN §11.12, quality bar Q1: no literal colours in components).
+ * Read in three.js through token(). They sit beside the stage because only the stage uses them; they follow
+ * the naming of styles/tokens.css and can move there unchanged.
+ */
+:root {
+  --b2c-light-sky: #dbeafe; /* blue-100: hemisphere light from above */
+  --b2c-light-ground: #18181b; /* zinc-900: hemisphere light from the floor */
+  --b2c-light-rim: #93c5fd; /* blue-300: cool rim light from behind */
+}
+
+/* The landing hero's chips drift a few pixels, out of step with each other. */
+@keyframes b2c-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -7px;
+  }
+}
+
+.b2c-float {
+  animation: b2c-float 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .b2c-float {
+    animation: none;
+  }
+}

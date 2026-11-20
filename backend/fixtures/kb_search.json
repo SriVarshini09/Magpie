@@ -1,0 +1,23 @@
+{
+  "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ...",
+  "took_ms": 0,
+  "chunks": [
+    {
+      "kb_ref": "kb://so101_readme#L73",
+      "doc_title": "SO-ARM100 README",
+      "line_from": 73,
+      "line_to": 73,
+      "text": "The STS3215 motors for the follower arm comes in two sizes. The 7.4V has a stall torque of 16.5kg.cm at 6V (and likely slightly less for a 5V power supply). The 12V version has a stall torque of 30kg.cm. While we found the 7.4V to be sufficient, if you would like more powerful motors you can buy the 12V version [here](<link>). Note if you do this, you will also have to buy a 12V 5A+ power supply instead of a 5V one. The leader arm is always 7.4V for the SO101.",
+      "score": 0.031
+    },
+    {
+      "kb_ref": "kb://waveshare_adapter#input_voltage",
+      "doc_title": "Waveshare Bus Servo Adapter (A) wiki notes",
+      "line_from": 1,
+      "line_to": 1,
+      "text": "9~12.6V (should match servo voltage)",
+      "score": 0.027
+    }
+  ],
+  "simulated": true
+}

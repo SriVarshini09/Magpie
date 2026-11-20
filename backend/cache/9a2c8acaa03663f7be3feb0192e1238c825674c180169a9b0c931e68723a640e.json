@@ -1,0 +1,1286 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "AIO flight controller 25.5x25.5 ELRS"
+  }
+ },
+ "key": "9a2c8acaa03663f7be3feb0192e1238c825674c180169a9b0c931e68723a640e",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:05-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 880); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODgwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 880
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<div class=\"product-description\">\n<h2>HDZero Gamma 45A HD-Ready AIO</h2>\n<p><strong>25.5×25.5mm for 2.5–4in Digital FPV Builds (3-6s)</strong></p>\n<p>The <strong>HDZero Gamma 45A HD-Ready AIO</strong> is a compact, digital-first all-in-one flight controller designed for <strong>2.5–4 inch FPV drones</strong> using the popular <strong>25.5×25.5mm Whoop / Toothpick mounting pattern</strong>.</p>\n<p>Built around the <strong>STM32G473 MCU</strong>, Gamma delivers strong processing headroom for modern Betaflight features while keeping builds clean, simple, and reliable.</p>\n<h3>Integrated ExpressLRS Receiver</h3>\n<p>Gamma includes a <strong>built-in serial ExpressLRS 2.4GHz receiver</strong>, eliminating the need for a separate RX. This reduces wiring, saves space, and removes one of the most frustrating steps in small digital builds.</p>\n<h3>Designed for Digital Video</h3>\n<p>Gamma is purpose-built for digital FPV systems. A <strong>standard digital VTX plug</strong> and a <strong>protected 8V / 3A high-power BEC</strong> make it easy to run modern digital transmitters, including HDZero, DJI, Walksnail, and OpenIPC. A secondary <strong>5V / 3A BEC</strong> is available for LEDs and peripherals.</p>\n<p>The analog OSD chip is intentionally removed to save space and optimize the board for digital-only setups, making Gamma an excellent match for compact digital stacks using VTX's like the <strong>HDZero Whoop V2</strong> or <strong>HDZero Freestyle V2</strong>.</p>\n<h3>High-Performance 32-bit AM32 ESC</h3>\n<p>The onboard <strong>32-bit 4-in-1 AM32 ESC</strong> provides clean, stable power delivery and improved transient response during rapid throttle changes. Each motor output supports <strong>45A continuous</strong> with <strong>60A burst capability</strong>, helping reduce voltage spikes, brownouts, and component stress. Supports<strong> 3-6s batteries</strong> for high performance flying.</p>\n<h3>Builder-Friendly Layout</h3>\n<p>All motor and I/O pads are <strong>castellated and edge-mounted</strong>, making soldering easier and improving serviceability in tight frames - you can even mount the AIO upside down and still access all of the IO pads. The layout is optimized for clean wiring and straightforward integration of additional peripherals such as GPS, LEDs, or buzzers.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/p5q3wQdyfuc?si=top-jOD9X6e5E8tv\" title=\"YouTube video player\"></iframe></p>\n<h3>Key Features</h3>\n<ul>\n<li>25.5×25.5mm Whoop / Toothpick mounting pattern</li>\n<li>Optimized for 2.5–4 inch digital FPV builds</li>\n<li>STM32G473 MCU with ICM gyro</li>\n<li>Integrated serial ExpressLRS 2.4GHz receiver</li>\n<li>45A continuous / 60A burst 32-bit AM32 4-in-1 ESC</li>\n<li>8V / 3A protected BEC for digital VTXs</li>\n<li>5V / 3A BEC for LEDs and peripherals</li>\n<li>Standard digital VTX plug</li>\n<li>Castellated edge pads for clean, easy soldering</li>\n</ul>\n<h3>At-a-Glance Specs</h3>\n<div style=\"overflow-x: auto;\">\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Mounting</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">25.5×25.5mm (Whoop / Toothpick), 8.4g</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Recommended Builds</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">2.5–4 inch digital FPV</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>MCU</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">STM32G473</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Receiver</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Integrated serial ExpressLRS 2.4GHz</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>ESC Firmware</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">AM32 (32-bit 4-in-1)</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Motor Output</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">45A continuous / 60A burst (per output), 3-6s</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Digital VTX Power</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Protected 8V / 3A BEC</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Peripheral Power</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">5V / 3A BEC</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Video Integration</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Standard digital VTX plug</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>OSD</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Analog OSD chip removed (digital-optimized)</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3><br></h3>\n<h3>Included in the Box</h3>\n<ul>\n<li>HDZero Gamma 45A HD-Ready AIO</li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">1x ELRS T-sharp short antenna (40mm) </span></li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">5x M2 Rubber Grommet(5.6mm)</span></li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">1x XT30 cable with 330uF/35V capacitor (70mm)</span></li>\n</ul>\n<h3>Recommended Use</h3>\n<p>Ideal for <strong>2.5–4 inch digital FPV drones</strong>, including freestyle, racing, training, and drone soccer platforms. <strong>Not recommended for heavy 5-inch builds.</strong></p>\n<details open=\"\">\n<summary><strong>Notes</strong></summary>\n<ul>\n<li>Designed for digital video systems using a standard digital VTX plug and an 8V / 3A regulated rail.</li>\n<li>5V rail is intended for peripherals (LEDs, etc.). Use appropriate protection if your wiring could be shorted.</li>\n</ul>\n</details>\n</div>"
+     },
+     "handle": "hdzero-gamma-45a-hd-ready-aio",
+     "id": "gid://shopify/p/5aCF90M4JardqbVSdCMQgr",
+     "media": [
+      {
+       "alt_text": "HDZero Gamma 45A HD-Ready AIO with Built-in ELRS (25.5×25.5mm for 2.5–4in Digital Builds)",
+       "height": 2416,
+       "preview": {
+        "height": 2416,
+        "url": "https://cdn.shopify.com/s/files/1/0717/8302/2741/files/3_ba10096e-4f02-4ba6-ab99-90b1e5fa4b23.png",
+        "width": 2415
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0717/8302/2741/files/3_ba10096e-4f02-4ba6-ab99-90b1e5fa4b23.png",
+       "width": 2415
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated 2.4GHz ELRS receiver eliminates need for separate receiver, simplifying wiring and saving space",
+       "Purpose-built for digital FPV systems with standard digital VTX plug and high-power BEC for modern digital transmitters",
+       "32-bit AM32 ESC provides clean, stable power and improved transient response during rapid throttle changes",
+       "Castellated edge-mounted pads and upside-down mounting for easy soldering and serviceability",
+       "Optimized layout for 2.5–4 inch digital builds, supporting 3–6S battery packs and high current outputs"
+      ],
+      "unique_selling_points": [
+       "Integrated 2.4GHz ELRS receiver and 45A ESC in a compact 25.5×25.5mm whoop toothpick mount for streamlined digital FPV builds."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 22,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "HDZero Gamma 45A HD-Ready AIO with Built-in ELRS (25.5×25.5mm for 2.5–4in Digital Builds)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://hdzero.us/buy/46753559249045:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-description\">\n<h2>HDZero Gamma 45A HD-Ready AIO</h2>\n<p><strong>25.5×25.5mm for 2.5–4in Digital FPV Builds (3-6s)</strong></p>\n<p>The <strong>HDZero Gamma 45A HD-Ready AIO</strong> is a compact, digital-first all-in-one flight controller designed for <strong>2.5–4 inch FPV drones</strong> using the popular <strong>25.5×25.5mm Whoop / Toothpick mounting pattern</strong>.</p>\n<p>Built around the <strong>STM32G473 MCU</strong>, Gamma delivers strong processing headroom for modern Betaflight features while keeping builds clean, simple, and reliable.</p>\n<h3>Integrated ExpressLRS Receiver</h3>\n<p>Gamma includes a <strong>built-in serial ExpressLRS 2.4GHz receiver</strong>, eliminating the need for a separate RX. This reduces wiring, saves space, and removes one of the most frustrating steps in small digital builds.</p>\n<h3>Designed for Digital Video</h3>\n<p>Gamma is purpose-built for digital FPV systems. A <strong>standard digital VTX plug</strong> and a <strong>protected 8V / 3A high-power BEC</strong> make it easy to run modern digital transmitters, including HDZero, DJI, Walksnail, and OpenIPC. A secondary <strong>5V / 3A BEC</strong> is available for LEDs and peripherals.</p>\n<p>The analog OSD chip is intentionally removed to save space and optimize the board for digital-only setups, making Gamma an excellent match for compact digital stacks using VTX's like the <strong>HDZero Whoop V2</strong> or <strong>HDZero Freestyle V2</strong>.</p>\n<h3>High-Performance 32-bit AM32 ESC</h3>\n<p>The onboard <strong>32-bit 4-in-1 AM32 ESC</strong> provides clean, stable power delivery and improved transient response during rapid throttle changes. Each motor output supports <strong>45A continuous</strong> with <strong>60A burst capability</strong>, helping reduce voltage spikes, brownouts, and component stress. Supports<strong> 3-6s batteries</strong> for high performance flying.</p>\n<h3>Builder-Friendly Layout</h3>\n<p>All motor and I/O pads are <strong>castellated and edge-mounted</strong>, making soldering easier and improving serviceability in tight frames - you can even mount the AIO upside down and still access all of the IO pads. The layout is optimized for clean wiring and straightforward integration of additional peripherals such as GPS, LEDs, or buzzers.</p>\n<p><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/p5q3wQdyfuc?si=top-jOD9X6e5E8tv\" title=\"YouTube video player\"></iframe></p>\n<h3>Key Features</h3>\n<ul>\n<li>25.5×25.5mm Whoop / Toothpick mounting pattern</li>\n<li>Optimized for 2.5–4 inch digital FPV builds</li>\n<li>STM32G473 MCU with ICM gyro</li>\n<li>Integrated serial ExpressLRS 2.4GHz receiver</li>\n<li>45A continuous / 60A burst 32-bit AM32 4-in-1 ESC</li>\n<li>8V / 3A protected BEC for digital VTXs</li>\n<li>5V / 3A BEC for LEDs and peripherals</li>\n<li>Standard digital VTX plug</li>\n<li>Castellated edge pads for clean, easy soldering</li>\n</ul>\n<h3>At-a-Glance Specs</h3>\n<div style=\"overflow-x: auto;\">\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Mounting</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">25.5×25.5mm (Whoop / Toothpick), 8.4g</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Recommended Builds</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">2.5–4 inch digital FPV</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>MCU</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">STM32G473</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Receiver</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Integrated serial ExpressLRS 2.4GHz</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>ESC Firmware</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">AM32 (32-bit 4-in-1)</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Motor Output</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">45A continuous / 60A burst (per output), 3-6s</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Digital VTX Power</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Protected 8V / 3A BEC</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Peripheral Power</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">5V / 3A BEC</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>Video Integration</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Standard digital VTX plug</td>\n</tr>\n<tr>\n<td style=\"padding: 8px; border: 1px solid #ddd;\"><strong>OSD</strong></td>\n<td style=\"padding: 8px; border: 1px solid #ddd;\">Analog OSD chip removed (digital-optimized)</td>\n</tr>\n</tbody>\n</table>\n</div>\n<h3><br></h3>\n<h3>Included in the Box</h3>\n<ul>\n<li>HDZero Gamma 45A HD-Ready AIO</li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">1x ELRS T-sharp short antenna (40mm) </span></li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">5x M2 Rubber Grommet(5.6mm)</span></li>\n<li><span lang=\"EN\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-fareast-font-family: Calibri; mso-ansi-language: EN; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\">1x XT30 cable with 330uF/35V capacitor (70mm)</span></li>\n</ul>\n<h3>Recommended Use</h3>\n<p>Ideal for <strong>2.5–4 inch digital FPV drones</strong>, including freestyle, racing, training, and drone soccer platforms. <strong>Not recommended for heavy 5-inch builds.</strong></p>\n<details open=\"\">\n<summary><strong>Notes</strong></summary>\n<ul>\n<li>Designed for digital video systems using a standard digital VTX plug and an 8V / 3A regulated rail.</li>\n<li>5V rail is intended for peripherals (LEDs, etc.). Use appropriate protection if your wiring could be shorted.</li>\n</ul>\n</details>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hdzero-gamma-45a-hd-ready-aio",
+       "id": "gid://shopify/ProductVariant/46753559249045",
+       "media": [
+        {
+         "alt_text": "HDZero Gamma 45A HD-Ready AIO with Built-in ELRS (25.5×25.5mm for 2.5–4in Digital Builds)",
+         "height": 2416,
+         "preview": {
+          "height": 2416,
+          "url": "https://cdn.shopify.com/s/files/1/0717/8302/2741/files/3_ba10096e-4f02-4ba6-ab99-90b1e5fa4b23.png",
+          "width": 2415
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0717/8302/2741/files/3_ba10096e-4f02-4ba6-ab99-90b1e5fa4b23.png",
+         "width": 2415
+        }
+       ],
+       "price": {
+        "amount": 8999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 12,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.2
+       },
+       "seller": {
+        "domain": "5hq0nb-uj.myshopify.com",
+        "id": "gid://shopify/Shop/71783022741",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71783022741/policies/34995241109.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71783022741/policies/35022438549.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71783022741/policies/35022504085.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71783022741/policies/35022373013.html"
+         }
+        ],
+        "name": "HDZero Shop(US)",
+        "url": "https://hdzero.us"
+       },
+       "seller_product_id": "gid://shopify/Product/8996305010837",
+       "source": "shopify",
+       "title": "HDZero Gamma 45A HD-Ready AIO with Built-in ELRS (25.5×25.5mm for 2.5–4in Digital Builds)",
+       "url": "https://hdzero.us/products/hdzero-gamma-45a-hd-ready-aio?variant=46753559249045&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX<br>\n</h2>\n<p><span style=\"color: rgb(255, 42, 0);\"><strong><meta charset=\"utf-8\"> <span style=\"color: #fa0707;\">Notice: This product is a replacement part specifically designed for the Hummingbird V4 BNF drone. It is not intended for any DIY projects. Utilizing this product in DIY activities, including but not limited to integration with non-NewBeeDrone brand frames/motors or any soldering processes, will void the NewBeeDrone warranty. Any inadvertent damage to the flight controller resulting from such DIY activities will not be covered, and all associated costs will be the responsibility of the user.</span></strong></span></p>\n<p><strong>Specification:</strong></p>\n<p>MCU: STM32F411 <br>GYRO：BMI270<br>VTX:  25mw for Racing/ 100mw and up to 400mw SmartMax temperature control with<span> </span><a href=\"https://newbeedrone.com/products/beetx-5-8ghz-antenna\" title=\"NewBeeDrone BeeTX 5.8Ghz Antenna\" rel=\"noopener noreferrer\" target=\"_blank\">BeeTX 5.8Ghz Antenna</a><a href=\"https://4n863bdiuwu43fhk-11269610.shopifypreview.com/collections/all/products/beetx-5-8ghz-antenna\"><br></a>ESC: 12A BLHeliS pre-flashed with Bluejay 0.19.2 Target: <u>O-H-10 48kHz</u><br>ESC Connector: <a href=\"https://newbeedrone.com/products/newbeedrone-jst1-0-jst1-25-motor-plug-replacements-cable-50mm?variant=32327606698067\">JST-1.0 3Pin</a><br>OSD: NBD7456 Graphical OSD compatible with Betaflight OSD<br>Receiver:<span> </span><a href=\"https://newbeedrone.com/collections/all/products/newbeedrone-2-4g-replacement-receiver-antennas-60mm-for-beebrain-blv3-blv4-hmb-f4-v2\">2.4G Antenna with MHF3 connector</a><br>Flight Controller Weight: 4.57g(Include antennas and battery connector) <br>Flight Controller Size: Outer dimensions: 29x29x7.6mm<br>Flight Controller Holes: 25.5x25.5mm<br>Battery input: 1S Only<br>Uart1: free<br>Uart2: free<br>Power Plug:<span> </span><a rel=\"noopener\" title=\"NewBeeDrone NX69 Pigtail\" href=\"https://newbeedrone.com/products/newbeedrone-nx69-whoop-power-cable-20awg-43mm-x2\" target=\"_blank\">NewBeeDrone NX69 Connector</a></p>\n<p>SPI ELRS3.x receiver (Binding instruction: power on the drone, push the bind button under the flight controller to get into bind mode. If your remote control is not ELRS3.x or above version. You will need to update your remote controller ELRS to 3.x version because betaflight 4.5 will no longer support any lower version of 3.0)<br>Please read through the<span> </span><a rel=\"noopener noreferrer\" title=\"ELRS SPI Receiver support type\" href=\"https://www.expresslrs.org/hardware/spi-receivers/?h=spi\" target=\"_blank\">SPI base information</a><span> </span>if you have difficulty with binding<br></p>\n<p><span>Hummingbird V4 Betaflight firmware: </span><br><a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_2025.12.1_STM32F411_HUMMINGBIRD_F4_V4_ed665ed4b_ELRS_V3.hex?v=1772722851\">Betaflight_HMBV4 2025.12 SPI Elrs 3.X</a><br><a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_2025.12.1_STM32F411_HUMMINGBIRD_F4_V4_ed665ed4b_ELRS_V4.hex?v=1772722852\">Betaflight_HMBV4 2025.12 SPI Elrs 4.X</a><br><meta charset=\"utf-8\"></p>\n<h2>\n<img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/Hummingbird_V4-_v1.0__2.jpg?v=1741662116\" alt=\"\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/Hummingbird_V4-_v1.0__1.jpg?v=1741662116\" alt=\"\">\n</h2>\n<p><meta charset=\"utf-8\"><span>* </span><b>Amateur (HAM) radio license is required for operation on amateur radio channels or higher power levels. </b><b>The integrated VTX ships with default, region-compliant channels and power settings enabled.</b></p>"
+     },
+     "handle": "hummingbird-v4-flight-controller",
+     "id": "gid://shopify/p/2d6eZw9W6lrO2k7EozJeTS",
+     "media": [
+      {
+       "alt_text": "HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX Hummingbird",
+       "height": 2268,
+       "preview": {
+        "height": 2268,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/HummingBird-V4-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-Hummingbird-144501824.jpg",
+        "width": 2268
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/HummingBird-V4-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-Hummingbird-144501824.jpg",
+       "width": 2268
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Pre-flashed Bluejay 0.19.2 target O H 10.48kHz ESC for reliable drone operation",
+       "Integrated 2.4g ELRS VTX with default region-compliant channels for easy setup",
+       "Temperature control with BeetX 5.8GHz antenna for stable performance",
+       "Graphical OSD compatible with Betaflight OSD for user-friendly interface",
+       "Includes antennas and battery connector for complete installation"
+      ],
+      "unique_selling_points": [
+       "Pre-flashed, ready-to-use flight controller with integrated VTX and 2.4g ELRS for Hummingbird V4 BNF drones, supporting up to 400mw power."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4464,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4464,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 32,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/51895747674480:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX<br>\n</h2>\n<p><span style=\"color: rgb(255, 42, 0);\"><strong><meta charset=\"utf-8\"> <span style=\"color: #fa0707;\">Notice: This product is a replacement part specifically designed for the Hummingbird V4 BNF drone. It is not intended for any DIY projects. Utilizing this product in DIY activities, including but not limited to integration with non-NewBeeDrone brand frames/motors or any soldering processes, will void the NewBeeDrone warranty. Any inadvertent damage to the flight controller resulting from such DIY activities will not be covered, and all associated costs will be the responsibility of the user.</span></strong></span></p>\n<p><strong>Specification:</strong></p>\n<p>MCU: STM32F411 <br>GYRO：BMI270<br>VTX:  25mw for Racing/ 100mw and up to 400mw SmartMax temperature control with<span> </span><a href=\"https://newbeedrone.com/products/beetx-5-8ghz-antenna\" title=\"NewBeeDrone BeeTX 5.8Ghz Antenna\" rel=\"noopener noreferrer\" target=\"_blank\">BeeTX 5.8Ghz Antenna</a><a href=\"https://4n863bdiuwu43fhk-11269610.shopifypreview.com/collections/all/products/beetx-5-8ghz-antenna\"><br></a>ESC: 12A BLHeliS pre-flashed with Bluejay 0.19.2 Target: <u>O-H-10 48kHz</u><br>ESC Connector: <a href=\"https://newbeedrone.com/products/newbeedrone-jst1-0-jst1-25-motor-plug-replacements-cable-50mm?variant=32327606698067\">JST-1.0 3Pin</a><br>OSD: NBD7456 Graphical OSD compatible with Betaflight OSD<br>Receiver:<span> </span><a href=\"https://newbeedrone.com/collections/all/products/newbeedrone-2-4g-replacement-receiver-antennas-60mm-for-beebrain-blv3-blv4-hmb-f4-v2\">2.4G Antenna with MHF3 connector</a><br>Flight Controller Weight: 4.57g(Include antennas and battery connector) <br>Flight Controller Size: Outer dimensions: 29x29x7.6mm<br>Flight Controller Holes: 25.5x25.5mm<br>Battery input: 1S Only<br>Uart1: free<br>Uart2: free<br>Power Plug:<span> </span><a rel=\"noopener\" title=\"NewBeeDrone NX69 Pigtail\" href=\"https://newbeedrone.com/products/newbeedrone-nx69-whoop-power-cable-20awg-43mm-x2\" target=\"_blank\">NewBeeDrone NX69 Connector</a></p>\n<p>SPI ELRS3.x receiver (Binding instruction: power on the drone, push the bind button under the flight controller to get into bind mode. If your remote control is not ELRS3.x or above version. You will need to update your remote controller ELRS to 3.x version because betaflight 4.5 will no longer support any lower version of 3.0)<br>Please read through the<span> </span><a rel=\"noopener noreferrer\" title=\"ELRS SPI Receiver support type\" href=\"https://www.expresslrs.org/hardware/spi-receivers/?h=spi\" target=\"_blank\">SPI base information</a><span> </span>if you have difficulty with binding<br></p>\n<p><span>Hummingbird V4 Betaflight firmware: </span><br><a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_2025.12.1_STM32F411_HUMMINGBIRD_F4_V4_ed665ed4b_ELRS_V3.hex?v=1772722851\">Betaflight_HMBV4 2025.12 SPI Elrs 3.X</a><br><a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_2025.12.1_STM32F411_HUMMINGBIRD_F4_V4_ed665ed4b_ELRS_V4.hex?v=1772722852\">Betaflight_HMBV4 2025.12 SPI Elrs 4.X</a><br><meta charset=\"utf-8\"></p>\n<h2>\n<img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/Hummingbird_V4-_v1.0__2.jpg?v=1741662116\" alt=\"\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/Hummingbird_V4-_v1.0__1.jpg?v=1741662116\" alt=\"\">\n</h2>\n<p><meta charset=\"utf-8\"><span>* </span><b>Amateur (HAM) radio license is required for operation on amateur radio channels or higher power levels. </b><b>The integrated VTX ships with default, region-compliant channels and power settings enabled.</b></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hummingbird-v4-flight-controller",
+       "id": "gid://shopify/ProductVariant/51895747674480",
+       "list_price": {
+        "amount": 4699,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX Hummingbird",
+         "height": 2268,
+         "preview": {
+          "height": 2268,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/HummingBird-V4-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-Hummingbird-144501824.jpg",
+          "width": 2268
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/HummingBird-V4-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-Hummingbird-144501824.jpg",
+         "width": 2268
+        }
+       ],
+       "price": {
+        "amount": 4464,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 35,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14676212285808",
+       "source": "shopify",
+       "title": "HummingBird V4 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+       "url": "https://newbeedrone.com/products/hummingbird-v4-flight-controller?variant=51895747674480&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Introducing a new 1S AIO from T-Motor which is perfect for small whoops and toothpick quads! Featuring Bluejay ESC Firmware which gives you access to features like bidirectional DShot for RPM filtering and up to 96KHz PWM frequency for increased flight time and motor smoothness. The AIO also is equipped with a built in ELRS 2.4GHz SPI receiver so you have all the latest features of this long range and low latency system and a 50mW Analog VTX making setup a breeze. Just connect your motors with the included connector plugs and solder in a camera and your up and flying. Pick up yours today!</p>\n<p>Check out the rest of our <a title=\"Whoop Style AIO Flight Controllers for FPV Drone Racing and Freestyle Sold At Pyrodrone\" href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" target=\"_blank\">AIO Flight Controllers</a> <span>and all our </span><a title=\"T-Motor products sold by Pyrodrone\" href=\"https://pyrodrone.com/collections/t-motor-products\" target=\"_blank\">T-Motor Products!</a><span>  </span></p>\n<p> <img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779672104.jpg?v=1669920226\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779672104.jpg?v=1669920226\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779865902.jpg?v=1669920234\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779865902.jpg?v=1669920234\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779545148.jpg?v=1669920243\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779545148.jpg?v=1669920243\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780232062.jpg?v=1669920249\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780232062.jpg?v=1669920249\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780931196.jpg?v=1669920261\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780931196.jpg?v=1669920261\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781569534.jpg?v=1669920268\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781569534.jpg?v=1669920268\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781587302.jpg?v=1669920280\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781587302.jpg?v=1669920280\" data-mce-fragment=\"1\"></p>\n<h3 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">MCU: STM32F411</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Input Voltage: 1S</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Continuous Current: 6A</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Peak Current: 7A</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">ESC Firmware: Bluejay </span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Blackbox: No</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Gyro: BMI270</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">PWM Frequency: 24-96KHz</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Receiver: SPI ELRS 2.4GHz V2.0</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">VTX: 37CH 50mW Smartaudio 1.0</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Stack Mounting 25.5x25.5mm</span></li>\n<li data-mce-fragment=\"1\">Weight: 6.7g</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1 x T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780623557.jpg?v=1669920292\" alt=\"\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780623557.jpg?v=1669920292\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780481434.jpg?v=1669920304\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780481434.jpg?v=1669920304\" data-mce-fragment=\"1\"></p>\n<h2 class=\"icon-head head-products\"></h2>"
+     },
+     "handle": "t-motor-f411-1s-6a-bluejay-aio-flight-controller-w-onboard-elrs-2-4g-rx-and-analog-vtx-25-5x25-5mm",
+     "id": "gid://shopify/p/5FFAxi3Hy4Gm5w7xZhvsi9",
+     "media": [
+      {
+       "alt_text": "T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/1668752715889745346.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/1668752715889745346.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Bluejay ESC firmware enables bidirectional DShot for RPM filtering and up to 96kHz PWM frequency for longer flight time and smoother motors",
+       "Onboard ELRS 2.4G RX provides long-range, low-latency communication for stable FPV connections",
+       "Analog VTX with 37 channels and 50mW power output simplifies setup and supports a wide range of FPV cameras",
+       "Compact 25.5x25.5mm stack mounting design ideal for small drones and toothpick quads",
+       "Includes T-Motor F411 1S 6A for reliable power delivery"
+      ],
+      "unique_selling_points": [
+       "Integrated Bluejay ESC firmware and onboard ELRS 2.4G RX for advanced features and seamless FPV control."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8499,
+       "currency": "USD"
+      }
+     },
+     "title": "T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40601776947243:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Introducing a new 1S AIO from T-Motor which is perfect for small whoops and toothpick quads! Featuring Bluejay ESC Firmware which gives you access to features like bidirectional DShot for RPM filtering and up to 96KHz PWM frequency for increased flight time and motor smoothness. The AIO also is equipped with a built in ELRS 2.4GHz SPI receiver so you have all the latest features of this long range and low latency system and a 50mW Analog VTX making setup a breeze. Just connect your motors with the included connector plugs and solder in a camera and your up and flying. Pick up yours today!</p>\n<p>Check out the rest of our <a title=\"Whoop Style AIO Flight Controllers for FPV Drone Racing and Freestyle Sold At Pyrodrone\" href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" target=\"_blank\">AIO Flight Controllers</a> <span>and all our </span><a title=\"T-Motor products sold by Pyrodrone\" href=\"https://pyrodrone.com/collections/t-motor-products\" target=\"_blank\">T-Motor Products!</a><span>  </span></p>\n<p> <img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779672104.jpg?v=1669920226\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779672104.jpg?v=1669920226\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779865902.jpg?v=1669920234\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779865902.jpg?v=1669920234\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779545148.jpg?v=1669920243\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752779545148.jpg?v=1669920243\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780232062.jpg?v=1669920249\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780232062.jpg?v=1669920249\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780931196.jpg?v=1669920261\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780931196.jpg?v=1669920261\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781569534.jpg?v=1669920268\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781569534.jpg?v=1669920268\" data-mce-fragment=\"1\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781587302.jpg?v=1669920280\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752781587302.jpg?v=1669920280\" data-mce-fragment=\"1\"></p>\n<h3 data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">MCU: STM32F411</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Input Voltage: 1S</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Continuous Current: 6A</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Peak Current: 7A</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">ESC Firmware: Bluejay </span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Blackbox: No</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Gyro: BMI270</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">PWM Frequency: 24-96KHz</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Receiver: SPI ELRS 2.4GHz V2.0</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">VTX: 37CH 50mW Smartaudio 1.0</span></li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Stack Mounting 25.5x25.5mm</span></li>\n<li data-mce-fragment=\"1\">Weight: 6.7g</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1 x T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm</li>\n</ul>\n<p><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780623557.jpg?v=1669920292\" alt=\"\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780623557.jpg?v=1669920292\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780481434.jpg?v=1669920304\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/181668752780481434.jpg?v=1669920304\" data-mce-fragment=\"1\"></p>\n<h2 class=\"icon-head head-products\"></h2>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "t-motor-f411-1s-6a-bluejay-aio-flight-controller-w-onboard-elrs-2-4g-rx-and-analog-vtx-25-5x25-5mm",
+       "id": "gid://shopify/ProductVariant/40601776947243",
+       "media": [
+        {
+         "alt_text": "T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/1668752715889745346.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/1668752715889745346.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 8499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 6,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7033318768683",
+       "source": "shopify",
+       "title": "T-Motor F411 1S 6A Bluejay AIO Flight Controller W/ Onboard ELRS 2.4G RX and Analog VTX - 25.5x25.5mm",
+       "url": "https://pyrodrone.com/products/t-motor-f411-1s-6a-bluejay-aio-flight-controller-w-onboard-elrs-2-4g-rx-and-analog-vtx-25-5x25-5mm?variant=40601776947243&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>With the rise of digital transmission, FLYWOO presents an innovative solution for 1-2S HD Micro Drones. The GOKU F405 HD V2 AIO integrates a Type-C interface, a high-performance F405 BGA MCU, and multiple UARTs. It features a built-in 9V 2A BEC module to prevent power cuts in the O3 Air unit. It also includes a serial ELRS 2.4G receiver, an 8MB black box, a barometer, and a current sensor for HD VTX. The socket-style motor connections and plug-and-play O3 design simplify installation and debugging, ensuring efficiency and convenience.</span></p>\n<p><span style=\"color: rgb(255, 42, 0);\" data-darkreader-inline-color=\"\">July 2026: Gyro changed to BMI270.</span></p>\n<p><span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/flight-controllers-inductrix-tinywhoop\" title=\"all whoop flight controllers for sale at racedayquads\">Whoop/AIO Flight Controllers</a><span> and our other </span>great products from <a href=\"https://www.racedayquads.com/collections/flywoo-products\" title=\"All Flywoo Products for sale at RaceDayQuads!\">Flywoo</a>!</p>\n<h3>Features</h3>\n<ul>\n<li>Multifunctional Design<br>\n</li>\n<li>Plug-and-Play O3 Port<br>\n</li>\n<li>Motor Socket Design<br>\n</li>\n<li>New Power Supply<br>\n</li>\n<li>Type-C Design</li>\n</ul>\n<div style=\"text-align: start;\"><img style=\"float: none;\" alt=\"Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/Flywoo_GOKU_F4_V2_AIO-_F405_FC_1.jpg?v=1723051899\"></div>\n<p><strong>SERIAL ELRS 2.4GHz RX</strong></p>\n<p>1. Receiver protocol Serial ELRS 2.4G RX uses the Crossfire serial (CRSF) protocol to communicate between the receiver and the flight controller board. So, the Serial ELRS 2.4G RX supports upgrading to ELRS Configurator with no need to flash Betaflight flight controller firmware.</p>\n<p>2. Binding steps     <br></p>\n<ul>\n<li>To enter the binding mode, unplug and plug the power/data cable three times;<br>\n</li>\n<li>The RX LED will flash rapidly twice, indicating the receiver is in binding mode;<br>\n</li>\n<li>Ensure the TX module or wireless transmitter enters binding mode;<br>\n</li>\n<li>If the receiver's light stays on constantly, it's bound.</li>\n</ul>\n<p>3. Upgrade steps</p>\n<ul>\n<li>The Serial ELRS 2.4G RX can be updated via Wi-Fi or Betaflight serial passthrough. <br>\n</li>\n<li>Insert the FC into the computer, but do not connect to the Betaflight configurator.<br>\n</li>\n<li>Select the target \"FLYWOO 2.4Ghz EL24P\"<br>\n</li>\n<li>Use the BetaflightPassthrough option in the ExpressLRS configurator for the upgrade.<br>\n</li>\n</ul>\n<p><strong>9V ELECTRONIC SWITCH</strong></p>\n<p>By controlling the switch of USER2, it is possible to control all 9V power supplies to the flight controller, temporarily shutting off the image transmission to avoid damage to the equipment due to prolonged high temperatures. Connect the flight controller to the BF configurator and switch to the Modes interface. Scroll down to find USER2, select \"Add Range,\" then move the joystick switch on the remote controller you wish to configure. Afterward, save the motor settings. Activate USER2.</p>\n<p><strong>ESC FIRMWARE</strong></p>\n<p>The ESC firmware defaults to Bluejay 0.19.2 48KHz.<br>Supports bidirectional D-shot and RPM filtering in Betaflight<br>It doesn’t recommend upgrading the 96KHz, or it might cause an error in the motor idle setting, not spinning when disarmed.<br>DO NOT flash the firmware at a shorter interval; otherwise, there will be a certain chance of stalling and burning the flight controller.</p>\n<h3>Specifications</h3>\n<p><strong>ONBOARD 4-in-1 ESC</strong><br></p>\n<ul>\n<li>Support: Oneshot125, Oneshot42, Multishot, Dshot150, Dshot300, Dshot600<br>\n</li>\n<li>Built-in: 1S/2S 12A BL_S 4-in-1 ESC<br>\n</li>\n<li>Firmware: Z_H_30_REV16.7<br>\n</li>\n<li>Input Voltage: 1-2S Lipo<br>\n</li>\n<li>Firmware: BLHELI_S</li>\n</ul>\n<p><strong>FLIGHT CONTROLLER</strong><br></p>\n<ul>\n<li>BF Flight Controller Firmware: FLYWOOF405S_AIO<br>\n</li>\n<li>Mounting Pattern: 25.5x25.5-3mm<br>\n</li>\n<li>INAV Firmware: FLYWOOF405HD<br>\n</li>\n<li>Barometer: DPS310 / SPL06<br>\n</li>\n<li>Motor: M1-M4 OUTPUT<br>\n</li>\n<li>MCU: STM32F405BGA<br>\n</li>\n<li>UARTs: 1, 2, 3, 4, 5, 6<br>\n</li>\n<li>BEC: 5V 2A / 9V 2A<br>\n</li>\n<li>Connector: Type-C<br>\n</li>\n<li>Gyro: BMI270<br>\n</li>\n<li>LED: 2WS2812<br>\n</li>\n<li>Size: 30x30mm<br>\n</li>\n<li>I2C: SCL/SDA<br>\n</li>\n<li>Weight: 4.9g<br>\n</li>\n<li>Flash: 8M<br>\n</li>\n<li>OSD: NO</li>\n</ul>\n<p><strong>ELRS 2.4G RX</strong><br></p>\n<ul>\n<li>Frequency Range: 2400 MHz to 2500 MHz<br>\n</li>\n<li>Maximum Receive Refresh Rate: 500Hz<br>\n</li>\n<li>Minimum Receiver Refresh Rate: 25Hz<br>\n</li>\n<li>Firmware: Flywoo EL24P 2400 RX<br>\n</li>\n<li>RF Module: SX1280IMLTRT <br>\n</li>\n<li>MCU: ESP8285 <br>\n</li>\n<li>Serial: UART 1<br>\n</li>\n<li>Version: 3.X.X</li>\n</ul>\n<p><a href=\"https://preview.esc-configurator.com/\" title=\"ESC Configurator\" rel=\"noopener\" target=\"_blank\">ESC Configurator</a></p>\n<h3>Includes</h3>\n<ul>\n<li>1x Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz </li>\n<li>1x DJI O3 Connection Cable<br>\n</li>\n<li>1x PH 2.0 Battery Lead<br>\n</li>\n<li>4x JST Straight Socket<br>\n</li>\n<li>1x XT30 Power Cable<br>\n</li>\n<li>1x Hardware Set<br>\n</li>\n<li>1x Capacitor</li>\n</ul>\n<!---->"
+     },
+     "handle": "flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli_s-4in1-esc-elrs-2-4-ghz",
+     "id": "gid://shopify/p/6HDk5jcHBPPrJkZmtqYCC7",
+     "media": [
+      {
+       "alt_text": "FLYWOO AIO FC Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flywoo-flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli-s-4in1-esc-elrs-2-4-ghz-aio-fc-31953631182961.jpg",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flywoo-flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli-s-4in1-esc-elrs-2-4-ghz-aio-fc-31953631182961.jpg",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Plug-and-play O3 port motor socket design simplifies installation and debugging",
+       "Built-in 9V 2A BEC module prevents power cuts in the O3 air unit for reliable operation",
+       "Serial ELRS 2.4 GHz receiver supports firmware upgrades without flashing Betaflight, streamlining configuration",
+       "Onboard 4-in-1 ESC with multiple ESC firmware options enables versatile motor control",
+       "Integrated barometer and current sensor provide enhanced flight stability and safety"
+      ],
+      "unique_selling_points": [
+       "Integrated 4-in-1 ESC and serial ELRS 2.4 GHz receiver with plug-and-play O3 design for easy installation and configuration."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/41284925259889:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>With the rise of digital transmission, FLYWOO presents an innovative solution for 1-2S HD Micro Drones. The GOKU F405 HD V2 AIO integrates a Type-C interface, a high-performance F405 BGA MCU, and multiple UARTs. It features a built-in 9V 2A BEC module to prevent power cuts in the O3 Air unit. It also includes a serial ELRS 2.4G receiver, an 8MB black box, a barometer, and a current sensor for HD VTX. The socket-style motor connections and plug-and-play O3 design simplify installation and debugging, ensuring efficiency and convenience.</span></p>\n<p><span style=\"color: rgb(255, 42, 0);\" data-darkreader-inline-color=\"\">July 2026: Gyro changed to BMI270.</span></p>\n<p><span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/flight-controllers-inductrix-tinywhoop\" title=\"all whoop flight controllers for sale at racedayquads\">Whoop/AIO Flight Controllers</a><span> and our other </span>great products from <a href=\"https://www.racedayquads.com/collections/flywoo-products\" title=\"All Flywoo Products for sale at RaceDayQuads!\">Flywoo</a>!</p>\n<h3>Features</h3>\n<ul>\n<li>Multifunctional Design<br>\n</li>\n<li>Plug-and-Play O3 Port<br>\n</li>\n<li>Motor Socket Design<br>\n</li>\n<li>New Power Supply<br>\n</li>\n<li>Type-C Design</li>\n</ul>\n<div style=\"text-align: start;\"><img style=\"float: none;\" alt=\"Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz\" src=\"https://cdn.shopify.com/s/files/1/1285/4651/files/Flywoo_GOKU_F4_V2_AIO-_F405_FC_1.jpg?v=1723051899\"></div>\n<p><strong>SERIAL ELRS 2.4GHz RX</strong></p>\n<p>1. Receiver protocol Serial ELRS 2.4G RX uses the Crossfire serial (CRSF) protocol to communicate between the receiver and the flight controller board. So, the Serial ELRS 2.4G RX supports upgrading to ELRS Configurator with no need to flash Betaflight flight controller firmware.</p>\n<p>2. Binding steps     <br></p>\n<ul>\n<li>To enter the binding mode, unplug and plug the power/data cable three times;<br>\n</li>\n<li>The RX LED will flash rapidly twice, indicating the receiver is in binding mode;<br>\n</li>\n<li>Ensure the TX module or wireless transmitter enters binding mode;<br>\n</li>\n<li>If the receiver's light stays on constantly, it's bound.</li>\n</ul>\n<p>3. Upgrade steps</p>\n<ul>\n<li>The Serial ELRS 2.4G RX can be updated via Wi-Fi or Betaflight serial passthrough. <br>\n</li>\n<li>Insert the FC into the computer, but do not connect to the Betaflight configurator.<br>\n</li>\n<li>Select the target \"FLYWOO 2.4Ghz EL24P\"<br>\n</li>\n<li>Use the BetaflightPassthrough option in the ExpressLRS configurator for the upgrade.<br>\n</li>\n</ul>\n<p><strong>9V ELECTRONIC SWITCH</strong></p>\n<p>By controlling the switch of USER2, it is possible to control all 9V power supplies to the flight controller, temporarily shutting off the image transmission to avoid damage to the equipment due to prolonged high temperatures. Connect the flight controller to the BF configurator and switch to the Modes interface. Scroll down to find USER2, select \"Add Range,\" then move the joystick switch on the remote controller you wish to configure. Afterward, save the motor settings. Activate USER2.</p>\n<p><strong>ESC FIRMWARE</strong></p>\n<p>The ESC firmware defaults to Bluejay 0.19.2 48KHz.<br>Supports bidirectional D-shot and RPM filtering in Betaflight<br>It doesn’t recommend upgrading the 96KHz, or it might cause an error in the motor idle setting, not spinning when disarmed.<br>DO NOT flash the firmware at a shorter interval; otherwise, there will be a certain chance of stalling and burning the flight controller.</p>\n<h3>Specifications</h3>\n<p><strong>ONBOARD 4-in-1 ESC</strong><br></p>\n<ul>\n<li>Support: Oneshot125, Oneshot42, Multishot, Dshot150, Dshot300, Dshot600<br>\n</li>\n<li>Built-in: 1S/2S 12A BL_S 4-in-1 ESC<br>\n</li>\n<li>Firmware: Z_H_30_REV16.7<br>\n</li>\n<li>Input Voltage: 1-2S Lipo<br>\n</li>\n<li>Firmware: BLHELI_S</li>\n</ul>\n<p><strong>FLIGHT CONTROLLER</strong><br></p>\n<ul>\n<li>BF Flight Controller Firmware: FLYWOOF405S_AIO<br>\n</li>\n<li>Mounting Pattern: 25.5x25.5-3mm<br>\n</li>\n<li>INAV Firmware: FLYWOOF405HD<br>\n</li>\n<li>Barometer: DPS310 / SPL06<br>\n</li>\n<li>Motor: M1-M4 OUTPUT<br>\n</li>\n<li>MCU: STM32F405BGA<br>\n</li>\n<li>UARTs: 1, 2, 3, 4, 5, 6<br>\n</li>\n<li>BEC: 5V 2A / 9V 2A<br>\n</li>\n<li>Connector: Type-C<br>\n</li>\n<li>Gyro: BMI270<br>\n</li>\n<li>LED: 2WS2812<br>\n</li>\n<li>Size: 30x30mm<br>\n</li>\n<li>I2C: SCL/SDA<br>\n</li>\n<li>Weight: 4.9g<br>\n</li>\n<li>Flash: 8M<br>\n</li>\n<li>OSD: NO</li>\n</ul>\n<p><strong>ELRS 2.4G RX</strong><br></p>\n<ul>\n<li>Frequency Range: 2400 MHz to 2500 MHz<br>\n</li>\n<li>Maximum Receive Refresh Rate: 500Hz<br>\n</li>\n<li>Minimum Receiver Refresh Rate: 25Hz<br>\n</li>\n<li>Firmware: Flywoo EL24P 2400 RX<br>\n</li>\n<li>RF Module: SX1280IMLTRT <br>\n</li>\n<li>MCU: ESP8285 <br>\n</li>\n<li>Serial: UART 1<br>\n</li>\n<li>Version: 3.X.X</li>\n</ul>\n<p><a href=\"https://preview.esc-configurator.com/\" title=\"ESC Configurator\" rel=\"noopener\" target=\"_blank\">ESC Configurator</a></p>\n<h3>Includes</h3>\n<ul>\n<li>1x Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz </li>\n<li>1x DJI O3 Connection Cable<br>\n</li>\n<li>1x PH 2.0 Battery Lead<br>\n</li>\n<li>4x JST Straight Socket<br>\n</li>\n<li>1x XT30 Power Cable<br>\n</li>\n<li>1x Hardware Set<br>\n</li>\n<li>1x Capacitor</li>\n</ul>\n<!---->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli_s-4in1-esc-elrs-2-4-ghz",
+       "id": "gid://shopify/ProductVariant/41284925259889",
+       "media": [
+        {
+         "alt_text": "FLYWOO AIO FC Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flywoo-flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli-s-4in1-esc-elrs-2-4-ghz-aio-fc-31953631182961.jpg",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/flywoo-flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli-s-4in1-esc-elrs-2-4-ghz-aio-fc-31953631182961.jpg",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 8999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7224850448497",
+       "source": "shopify",
+       "title": "Flywoo GOKU F405 V2 1-2S AIO Whoop/Toothpick Flight Controller (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz",
+       "url": "https://www.racedayquads.com/products/flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli_s-4in1-esc-elrs-2-4-ghz?variant=41284925259889&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The EMAX Tinyhawk III Plus AIO (All-In-One) Flight Controller is a compact and powerful upgrade for the Tinyhawk III Plus series drones. It combines a receiver, ESCs, and power distribution into a single unit, reducing clutter. The ESCs are rated at 6A, with a peak of 6.7A, and support protocols like D-Shot and PWM.</p>\n<p>The built-in receiver uses ELRS (2.4G) technology with a ceramic antenna, providing stable communication in the 2400-2480MHz range. Weighing 50 grams, it's a lightweight but robust addition to the Tinyhawk III Plus series, ideal for enhancing drone performance.</p>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>ESC: 6A continuous, with a peak of 6.7A</li>\n<li>ESC Firmware: JESC_SH90_48_2_3.HEX</li>\n<li>Signal Protocols: Supports D-Shot150, D-Shot300, D-Shot600, Multishot, OneShot125, PWM</li>\n<li>Input Voltage: Supports 1-2S</li>\n<li>Operating Frequency: 2400-2480MHz</li>\n<li>Receiver: ELRS V3.0<br>\n</li>\n<li>MCU: STM32F411CEU6 (100MHz)</li>\n<li>MPU: ICM20689 or ICM42688 (connected via SPI)</li>\n<li>Weight: 50g</li>\n<li>Dimensions: 4×4×2cm</li>\n<li>Power Lead Connector: JST-PH2.0</li>\n</ul>\n<p> </p>\n<p><strong>INCLUDES:</strong></p>\n<p>(1) Emax Tinyhawk III Plus AIO Flight Controller *<em>Select Your Version</em><br>(1) Power Lead w/ Capacitor<br>(1) Nano VTX Connector Cable</p>"
+     },
+     "handle": "emax-tinyhawk-iii-aio-flight-controller-w-esc-elrs-6a-2s",
+     "id": "gid://shopify/p/2wEZZBbNtCCNIJSvXhBQqX",
+     "media": [
+      {
+       "alt_text": "Emax TH3 Plus / 6A / 25x25 AIO Flight Controller w/ ELRS (BlHeli_S / 1-2S) V2 (Wire Antenna)",
+       "height": 841,
+       "preview": {
+        "height": 841,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/emax_aio_tinyhawk_3_plus-1.webp",
+        "width": 841
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/emax_aio_tinyhawk_3_plus-1.webp",
+       "width": 841
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "All-in-one design reduces cable clutter for a cleaner build",
+       "6A ESC with peak of 6.7A delivers reliable power for demanding drones",
+       "ELRS 2.4G receiver with ceramic antenna ensures stable 2400-2480 MHz communication",
+       "Supports multiple ESC firmware and signal protocols for compatibility",
+       "Lightweight 50 g build enhances maneuverability without adding bulk"
+      ],
+      "unique_selling_points": [
+       "Combines receiver, ESC, and power distribution in a single lightweight unit with 6A ESC and ELRS 2.4G technology."
+      ]
+     },
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "V2 (Wire Antenna)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5599,
+       "currency": "USD"
+      }
+     },
+     "title": "Emax TH3 Plus / 6A / 25x25 AIO Flight Controller w/ ELRS (BlHeli_S / 1-2S)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/46138079477974:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The EMAX Tinyhawk III Plus AIO (All-In-One) Flight Controller is a compact and powerful upgrade for the Tinyhawk III Plus series drones. It combines a receiver, ESCs, and power distribution into a single unit, reducing clutter. The ESCs are rated at 6A, with a peak of 6.7A, and support protocols like D-Shot and PWM.</p>\n<p>The built-in receiver uses ELRS (2.4G) technology with a ceramic antenna, providing stable communication in the 2400-2480MHz range. Weighing 50 grams, it's a lightweight but robust addition to the Tinyhawk III Plus series, ideal for enhancing drone performance.</p>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>ESC: 6A continuous, with a peak of 6.7A</li>\n<li>ESC Firmware: JESC_SH90_48_2_3.HEX</li>\n<li>Signal Protocols: Supports D-Shot150, D-Shot300, D-Shot600, Multishot, OneShot125, PWM</li>\n<li>Input Voltage: Supports 1-2S</li>\n<li>Operating Frequency: 2400-2480MHz</li>\n<li>Receiver: ELRS V3.0<br>\n</li>\n<li>MCU: STM32F411CEU6 (100MHz)</li>\n<li>MPU: ICM20689 or ICM42688 (connected via SPI)</li>\n<li>Weight: 50g</li>\n<li>Dimensions: 4×4×2cm</li>\n<li>Power Lead Connector: JST-PH2.0</li>\n</ul>\n<p> </p>\n<p><strong>INCLUDES:</strong></p>\n<p>(1) Emax Tinyhawk III Plus AIO Flight Controller *<em>Select Your Version</em><br>(1) Power Lead w/ Capacitor<br>(1) Nano VTX Connector Cable</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "emax-tinyhawk-iii-aio-flight-controller-w-esc-elrs-6a-2s",
+       "id": "gid://shopify/ProductVariant/46138079477974",
+       "media": [
+        {
+         "alt_text": "Emax TH3 Plus / 6A / 25x25 AIO Flight Controller w/ ELRS (BlHeli_S / 1-2S) V2 (Wire Antenna)",
+         "height": 841,
+         "preview": {
+          "height": 841,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/emax_aio_tinyhawk_3_plus-1.webp",
+          "width": 841
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/emax_aio_tinyhawk_3_plus-1.webp",
+         "width": 841
+        }
+       ],
+       "options": [
+        {
+         "label": "V2 (Wire Antenna)",
+         "name": "Version"
+        }
+       ],
+       "price": {
+        "amount": 5599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8499536527574",
+       "source": "shopify",
+       "title": "Emax TH3 Plus / 6A / 25x25 AIO Flight Controller w/ ELRS (BlHeli_S / 1-2S)",
+       "url": "https://www.rc-n-go.com/products/emax-tinyhawk-iii-aio-flight-controller-w-esc-elrs-6a-2s?variant=46138079477974&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>\n<meta charset=\"utf-8\"> <span>NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX</span>\n</h2>\n<p> </p>\n<p class=\"p1\"><strong>🎯BeeBrain Brushed V2.5 AIO Flight Controller– Integrated ELRS &amp; SmartMAX VTX for 65mm Whoops</strong></p>\n<p>NewBeeDrone’s <strong>BeeBrain Brushed V2.5 AIO Flight Controller</strong> is a compact, all-in-one solution designed for 65mm brushed whoop builds. Featuring an integrated ExpressLRS 2.4GHz SPI receiver and SmartMAX 25–400mW VTX, it delivers low-latency control, intelligent power management, and clean video transmission — all in a lightweight, ready-to-fly design.</p>\n<p>Engineered for precise indoor performance and ultra-responsive handling, the BeeBrain Brushed V2.5 includes Turtle Mode and Active Braking ESCs to help you recover faster and maintain better control.</p>\n<p class=\"p2\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/NBD-BeeBrain_BRUSHED_v2.5_AIO_Flight_Controller_-_v1.1__1_4.jpg?v=1781509053\" alt=\"\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/NBD-BeeBrain_BRUSHED_v2.5_AIO_Flight_Controller_-_v1.1__1_5.jpg?v=1781509159\" alt=\"\"></p>\n<hr>\n<h4><strong>✅ Key Features:</strong></h4>\n<ul>\n<li>\n<p class=\"p1\"><strong>Integrated ExpressLRS 2.4GHz SPI Receiver</strong><span class=\"s1\"> – <span>SPI-based, supporting ELRS 3.0 and above for low-latency, long-range control.</span></span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>SmartMAX Adjustable VTX</strong></span> – Selectable 25mW / 100mW / 400mW output</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Turtle Mode Support</strong></span> – <span>Flip your drone over after a crash without walking over to rescue it.</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Active Braking Brushed ESCs</strong></span> – <span>For more precise, locked-in flight feel.</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Betaflight Compatible</strong></span> – Full support for CLI tuning and firmware updates</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Compact &amp; Lightweight</strong></span> – Perfect for 65mm brushed whoop frames<br><br><strong>Firmware:</strong> <a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_4.5.2_BEEBRAIN_BRUSHED_V2_ELRS.hex?v=1787907238\">Betaflight_4.5.2_BEEBRAIN_BRUSHED_V2_ELRS</a></p>\n</li>\n</ul>\n<hr>\n<h4>🔧 Technical Specification</h4>\n<ul>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>MCU:</strong></span> STM32F411</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Gyro:</strong></span> BMI270</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>ESC:</strong></span> 4x brushed 12A ESC with Turtle Mode</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Receiver:</strong></span> Built-in ELRS 2.4GHz SPI (ELRS 3.0+ compatible)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>VTX:</strong></span> SmartMAX 25mW / 100mW / 400mW (thermal auto-boost)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Antenna:</strong></span> IPEX connector</p>\n</li>\n<li>\n<p class=\"p1\"><strong>Weight:</strong><span class=\"s1\"> ~4.5g</span></p>\n</li>\n<li>\n<p class=\"p1\"><strong>Input Voltage:</strong><span class=\"s1\"> 1S LiPo</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Mounting:</strong></span> 25.5 x 25.5mm<br><br></p>\n</li>\n</ul>\n<p>✅ <strong>Ready to Build Smarter?</strong><br><br>Upgrade your next build with the BeeBrain Brushed V2.5 — cleaner integration, smarter features, and unmatched performance in a compact, lightweight design.<br></p>\n<hr>\n<p><br><strong>📦 What's in the Box?</strong><br><br>BeeBrain Brushed V2.5 AIO Flight Controller x1</p>\n<p>M1.2*4Screw x5<br></p>\n<p>M2*2.2Grommets x1</p>\n<p><br><strong>💬 Have Questions?</strong><br><br>Got a question? Drop us a line at <strong>support@newbeedrone.com</strong> — we’re always here to help!</p>"
+     },
+     "handle": "newbeedrone-beebrain-brushed-v2-aio-flight-controller-expresslrselrs2-4g-with-25-400mw-vtx",
+     "id": "gid://shopify/p/4kpIdGgWIdF8MvCXNzJks7",
+     "media": [
+      {
+       "alt_text": "NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+       "height": 2268,
+       "preview": {
+        "height": 2268,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-BeeBrain-Brushed-V2.5-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-NewBeeDrone-162142541.jpg",
+        "width": 2268
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-BeeBrain-Brushed-V2.5-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-NewBeeDrone-162142541.jpg",
+       "width": 2268
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated ExpressLRS 2.4GHz SPI receiver enables low-latency, long-range control for responsive FPV experiences",
+       "SmartMax VTX with selectable 25mW, 100mW, and 400mW output delivers clean video transmission and intelligent power management",
+       "Turtle mode and active braking ESCs provide fast recovery and precise locked-in flight feel",
+       "Compact, lightweight design optimized for 65mm brushed whoop frames, ensuring easy integration and portability",
+       "Betaflight compatibility allows full support for CLI tuning and firmware updates for easy customization"
+      ],
+      "unique_selling_points": [
+       "Integrated ExpressLRS 2.4GHz SPI receiver and SmartMax adjustable VTX in a lightweight, ready-to-fly design for 65mm brushed whoop frames."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4749,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4749,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/52268669731184:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>\n<meta charset=\"utf-8\"> <span>NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX</span>\n</h2>\n<p> </p>\n<p class=\"p1\"><strong>🎯BeeBrain Brushed V2.5 AIO Flight Controller– Integrated ELRS &amp; SmartMAX VTX for 65mm Whoops</strong></p>\n<p>NewBeeDrone’s <strong>BeeBrain Brushed V2.5 AIO Flight Controller</strong> is a compact, all-in-one solution designed for 65mm brushed whoop builds. Featuring an integrated ExpressLRS 2.4GHz SPI receiver and SmartMAX 25–400mW VTX, it delivers low-latency control, intelligent power management, and clean video transmission — all in a lightweight, ready-to-fly design.</p>\n<p>Engineered for precise indoor performance and ultra-responsive handling, the BeeBrain Brushed V2.5 includes Turtle Mode and Active Braking ESCs to help you recover faster and maintain better control.</p>\n<p class=\"p2\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/NBD-BeeBrain_BRUSHED_v2.5_AIO_Flight_Controller_-_v1.1__1_4.jpg?v=1781509053\" alt=\"\"><img src=\"https://cdn.shopify.com/s/files/1/1126/9610/files/NBD-BeeBrain_BRUSHED_v2.5_AIO_Flight_Controller_-_v1.1__1_5.jpg?v=1781509159\" alt=\"\"></p>\n<hr>\n<h4><strong>✅ Key Features:</strong></h4>\n<ul>\n<li>\n<p class=\"p1\"><strong>Integrated ExpressLRS 2.4GHz SPI Receiver</strong><span class=\"s1\"> – <span>SPI-based, supporting ELRS 3.0 and above for low-latency, long-range control.</span></span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>SmartMAX Adjustable VTX</strong></span> – Selectable 25mW / 100mW / 400mW output</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Turtle Mode Support</strong></span> – <span>Flip your drone over after a crash without walking over to rescue it.</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Active Braking Brushed ESCs</strong></span> – <span>For more precise, locked-in flight feel.</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Betaflight Compatible</strong></span> – Full support for CLI tuning and firmware updates</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Compact &amp; Lightweight</strong></span> – Perfect for 65mm brushed whoop frames<br><br><strong>Firmware:</strong> <a href=\"https://cdn.shopify.com/s/files/1/1126/9610/files/betaflight_4.5.2_BEEBRAIN_BRUSHED_V2_ELRS.hex?v=1787907238\">Betaflight_4.5.2_BEEBRAIN_BRUSHED_V2_ELRS</a></p>\n</li>\n</ul>\n<hr>\n<h4>🔧 Technical Specification</h4>\n<ul>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>MCU:</strong></span> STM32F411</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Gyro:</strong></span> BMI270</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>ESC:</strong></span> 4x brushed 12A ESC with Turtle Mode</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Receiver:</strong></span> Built-in ELRS 2.4GHz SPI (ELRS 3.0+ compatible)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>VTX:</strong></span> SmartMAX 25mW / 100mW / 400mW (thermal auto-boost)</p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Antenna:</strong></span> IPEX connector</p>\n</li>\n<li>\n<p class=\"p1\"><strong>Weight:</strong><span class=\"s1\"> ~4.5g</span></p>\n</li>\n<li>\n<p class=\"p1\"><strong>Input Voltage:</strong><span class=\"s1\"> 1S LiPo</span></p>\n</li>\n<li>\n<p class=\"p1\"><span class=\"s1\"><strong>Mounting:</strong></span> 25.5 x 25.5mm<br><br></p>\n</li>\n</ul>\n<p>✅ <strong>Ready to Build Smarter?</strong><br><br>Upgrade your next build with the BeeBrain Brushed V2.5 — cleaner integration, smarter features, and unmatched performance in a compact, lightweight design.<br></p>\n<hr>\n<p><br><strong>📦 What's in the Box?</strong><br><br>BeeBrain Brushed V2.5 AIO Flight Controller x1</p>\n<p>M1.2*4Screw x5<br></p>\n<p>M2*2.2Grommets x1</p>\n<p><br><strong>💬 Have Questions?</strong><br><br>Got a question? Drop us a line at <strong>support@newbeedrone.com</strong> — we’re always here to help!</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "newbeedrone-beebrain-brushed-v2-aio-flight-controller-expresslrselrs2-4g-with-25-400mw-vtx",
+       "id": "gid://shopify/ProductVariant/52268669731184",
+       "list_price": {
+        "amount": 4999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+         "height": 2268,
+         "preview": {
+          "height": 2268,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-BeeBrain-Brushed-V2.5-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-NewBeeDrone-162142541.jpg",
+          "width": 2268
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/NewBeeDrone-BeeBrain-Brushed-V2.5-AIO-Flight-Controller-ExpressLRS_ELRS_2.4g-with-25-400mw-VTX-NewBeeDrone-162142541.jpg",
+         "width": 2268
+        }
+       ],
+       "price": {
+        "amount": 4749,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14805276655984",
+       "source": "shopify",
+       "title": "NewBeeDrone BeeBrain Brushed V2.5 AIO Flight Controller ExpressLRS(ELRS)2.4g with 25-400mw VTX",
+       "url": "https://newbeedrone.com/products/newbeedrone-beebrain-brushed-v2-aio-flight-controller-expresslrselrs2-4g-with-25-400mw-vtx?variant=52268669731184&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The T-Motor F7 35A All-In-One (AIO) is the ideal electronic speed controller for advanced RC pilots. Boasting 35 amp maximum continuous current, it provides superior power and performance for modern multi-rotors. This easy-to-install unit also includes a redundant power supply for added protection.</p>\n<p>Check out the rest of our <a title=\"Whoop style AIO boards sold by Pyrodrone\" href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" target=\"_blank\">Whoop Style AIO Boards</a> <span>and all our </span><a href=\"https://pyrodrone.com/collections/t-motor-products\" title=\"T-Motor products sold by Pyrodrone\" target=\"_blank\">T-Motor Products!</a><span>  </span></p>\n<h3>Wiring Diagram:</h3>\n<p><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/FRONT_480x480.png?v=1683839763\" alt=\"\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/BACK_480x480.png?v=1683839778\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/BACK_480x480.png?v=1683839778\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651748130421.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651750934232.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651750651667.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651751321546.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651752883796.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651752179966.jpg\"></p>\n<h3>Specifications:</h3>\n<ul>\n<li>MCU：STM32F722</li>\n<li>Gyro：MPU6500</li>\n<li>Barometer：BMP280</li>\n<li>OSD：AT7456&amp;HD</li>\n<li>Black box：16MB</li>\n<li>BEC：5V/1.5A</li>\n<li>Input voltage：3-6S</li>\n<li>Continuous current：35A</li>\n<li>Peak current：40A</li>\n<li>ESC firmware：BLS\\Bluejay</li>\n<li>Size: 39*39mm</li>\n<li>Mounting hole:25.5*25.5/φ3mm</li>\n<li>Supports HD and Analog</li>\n<li>Recommendation: P1804/F2004/F2203.5</li>\n</ul>\n<h3>Package Includes: </h3>\n<ul>\n<li>1 x T-Motor F7 35A AIO Flight Controller - 25.5x25.5</li>\n</ul>\n<p> </p>"
+     },
+     "handle": "t-motor-f7-35a-aio",
+     "id": "gid://shopify/p/6X968jZVhYkxHhYblZnLbm",
+     "media": [
+      {
+       "alt_text": "T-Motor F7 35A AIO Flight Controller - 25.5x25.5",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/1_1_77daa09f-fc20-4b45-8599-8d99ba47d762.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/1_1_77daa09f-fc20-4b45-8599-8d99ba47d762.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "35A continuous current output enables high-performance flight for advanced RC drones",
+       "Redundant power supply provides added protection against power loss",
+       "Easy installation simplifies setup for users",
+       "Includes HD and analog OSD for enhanced flight data display",
+       "Compatible with popular ESCs for flexible upgrade options"
+      ],
+      "unique_selling_points": [
+       "Redundant power supply and high 35A continuous current for superior drone performance and protection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 11299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 11299,
+       "currency": "USD"
+      }
+     },
+     "title": "T-Motor F7 35A AIO Flight Controller - 25.5x25.5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40776075378731:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The T-Motor F7 35A All-In-One (AIO) is the ideal electronic speed controller for advanced RC pilots. Boasting 35 amp maximum continuous current, it provides superior power and performance for modern multi-rotors. This easy-to-install unit also includes a redundant power supply for added protection.</p>\n<p>Check out the rest of our <a title=\"Whoop style AIO boards sold by Pyrodrone\" href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" target=\"_blank\">Whoop Style AIO Boards</a> <span>and all our </span><a href=\"https://pyrodrone.com/collections/t-motor-products\" title=\"T-Motor products sold by Pyrodrone\" target=\"_blank\">T-Motor Products!</a><span>  </span></p>\n<h3>Wiring Diagram:</h3>\n<p><img src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/FRONT_480x480.png?v=1683839763\" alt=\"\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/BACK_480x480.png?v=1683839778\" data-mce-fragment=\"1\" data-mce-src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/BACK_480x480.png?v=1683839778\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651748130421.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651750934232.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651750651667.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651751321546.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651752883796.jpg\"></p>\n<p><img src=\"https://store.tmotor.com/images/202304/281682651752179966.jpg\"></p>\n<h3>Specifications:</h3>\n<ul>\n<li>MCU：STM32F722</li>\n<li>Gyro：MPU6500</li>\n<li>Barometer：BMP280</li>\n<li>OSD：AT7456&amp;HD</li>\n<li>Black box：16MB</li>\n<li>BEC：5V/1.5A</li>\n<li>Input voltage：3-6S</li>\n<li>Continuous current：35A</li>\n<li>Peak current：40A</li>\n<li>ESC firmware：BLS\\Bluejay</li>\n<li>Size: 39*39mm</li>\n<li>Mounting hole:25.5*25.5/φ3mm</li>\n<li>Supports HD and Analog</li>\n<li>Recommendation: P1804/F2004/F2203.5</li>\n</ul>\n<h3>Package Includes: </h3>\n<ul>\n<li>1 x T-Motor F7 35A AIO Flight Controller - 25.5x25.5</li>\n</ul>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "t-motor-f7-35a-aio",
+       "id": "gid://shopify/ProductVariant/40776075378731",
+       "media": [
+        {
+         "alt_text": "T-Motor F7 35A AIO Flight Controller - 25.5x25.5",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/1_1_77daa09f-fc20-4b45-8599-8d99ba47d762.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/1_1_77daa09f-fc20-4b45-8599-8d99ba47d762.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 11299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 6,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7106235301931",
+       "source": "shopify",
+       "title": "T-Motor F7 35A AIO Flight Controller - 25.5x25.5",
+       "url": "https://pyrodrone.com/products/t-motor-f7-35a-aio?variant=40776075378731&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div>GHF745AIO adopts STM32F745+MPU6000 gyroscope to achieve stable flight performance, with built-in 5V/2.5A, 10V/2A BEC, built-in OSD module, barometer, and black box.</div>\n<div> </div>\n<div>The brushless electrical adjustment part adopts ST G071's 32-bit matched with imported high-power MOS, with a built-in TVS module, eliminating the need to weld TVS modules on the outer part.</div>\n<p><br>Checkout all our <a href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" title=\"Whoop style AIO boards sold by Pyrodrone\" target=\"_blank\">Whoop Style AIO Boards</a> and the rest of our <a href=\"https://pyrodrone.com/collections/jhemcu-products\" title=\"JHEMCU Product sold by Pyrodrone\" target=\"_blank\">JHEMCU Products!</a><br></p>\n<p> <img data-mce-fragment=\"1\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/2023-07-16-22-04-292.jpg?v=1691145056\"></p>\n<h3>Specifications:</h3>\n<div style=\"font-size: 0.875rem; display: inline !important;\">\n<ul>\n<li>\n<div style=\"font-size: 0.875rem; display: inline !important;\">Brand name：     JHEMCU</div>\n</li>\n<li>Model:            GHF745AIO</li>\n<li>MCU：            STM32F745/216MHZ</li>\n<li>IMU:            MPU6000/Gyro/Accel</li>\n<li>OSD：            AT7456E</li>\n<li>Baro：            YES</li>\n<li>Blackbox：         8MB</li>\n<li>Input voltage:    3S-6S（11.5V-26V）</li>\n<li>5V-BEC：            5V/2.5A ±0.1V </li>\n<li>10V-BEC:           10V/2A ±0.1V</li>\n<li>Receiver：          ELRS(CRSF), TBS(CRSF) ,SBUS,IBUS,DSM2,DSMX</li>\n<li>HD接口：           YES</li>\n<li>USART:           UART1,UART2,UART3,UART4,UART5,UART6</li>\n<li>IIC：           IIC1</li>\n<li>Led_Strip:           YES</li>\n<li>Buzzer:           5V</li>\n<li>ESC signal:        Dshot150，Dshot300，Dshot600</li>\n<li>USB:          Micro USB</li>\n<li>Current port：  YES</li>\n<li>Voltage sensor：YES</li>\n<li>DFU button：   YES</li>\n<li>FC Firmware:     betaflight_4.4.2 JHEF745.HEX</li>\n<li>Size:          33*33MM</li>\n<li>Mounting Hole:25.5*25.5*3MM</li>\n<li>Weight:          7.3g</li>\n</ul>\n</div>\n<div style=\"font-size: 0.875rem;\"> </div>\n<ul></ul>\n<h3>ESC Specifications:</h3>\n<ul>\n<li>ESC Current:      40A/50A</li>\n<li>ESC MCU：        STM32G071</li>\n<li>ESC TYPE:           AM32</li>\n<li>ESC Firmware:   JHEMCU_G071_ESC_Multi_32_9.HEX</li>\n</ul>\n<h3><br></h3>\n<h3>Package Includes:<br>\n</h3>\n<div style=\"font-size: 0.875rem; display: inline !important;\">\n<ul>\n<li>\n<div style=\"font-size: 0.875rem; display: inline !important;\">1x GHF745AIO -40A</div>\n</li>\n<li>1x XT60</li>\n<li>4x M2 * 6.5MM shock absorber</li>\n<li>2x 40A-16AWG wire</li>\n<li>1x O3 connecting line 5P to 6P</li>\n<li>1x 470UF/35V capacitor</li>\n<li>1x TYPE-C adapter board</li>\n<li>4x 28AWG Wire</li>\n<li>1x Welding practice board</li>\n</ul>\n</div>"
+     },
+     "handle": "jhemcu-ghf745-aio-f7-osd-flight-controller-and-built-in-40a-blheli32-3-6s-4in1-esc-25x25mm",
+     "id": "gid://shopify/p/Btw6KJz6TsNGs1rnRYdRf",
+     "media": [
+      {
+       "alt_text": "JHEMCU GHF745 HD AIO F7 OSD Flight Controller and Built-In 40A AM32 3-6S 4IN1 ESC - 25x25mm",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/66_0_63989857-3da4-40eb-b3b0-16291328b817.jpg",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/66_0_63989857-3da4-40eb-b3b0-16291328b817.jpg",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "STM32F745 MPU6000 gyroscope delivers stable and precise flight performance",
+       "Built-in OSD module enables real-time flight data display for enhanced monitoring",
+       "Integrated barometer and black box provide advanced safety and crash recovery features",
+       "AM32 40A ESC supports high-power motors for demanding drone builds",
+       "Multiple communication interfaces including HD-USB and UART for versatile connectivity"
+      ],
+      "unique_selling_points": [
+       "Integrated STM32F745 MPU6000 flight controller with built-in OSD, barometer, and black box, paired with a high-power AM32 ESC for advanced drone performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 10299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 10299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "JHEMCU GHF745 HD AIO F7 OSD Flight Controller and Built-In 40A AM32 3-6S 4IN1 ESC - 25x25mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40863465275435:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div>GHF745AIO adopts STM32F745+MPU6000 gyroscope to achieve stable flight performance, with built-in 5V/2.5A, 10V/2A BEC, built-in OSD module, barometer, and black box.</div>\n<div> </div>\n<div>The brushless electrical adjustment part adopts ST G071's 32-bit matched with imported high-power MOS, with a built-in TVS module, eliminating the need to weld TVS modules on the outer part.</div>\n<p><br>Checkout all our <a href=\"https://pyrodrone.com/collections/whoop-style-aio-flight-controllers\" title=\"Whoop style AIO boards sold by Pyrodrone\" target=\"_blank\">Whoop Style AIO Boards</a> and the rest of our <a href=\"https://pyrodrone.com/collections/jhemcu-products\" title=\"JHEMCU Product sold by Pyrodrone\" target=\"_blank\">JHEMCU Products!</a><br></p>\n<p> <img data-mce-fragment=\"1\" alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/2023-07-16-22-04-292.jpg?v=1691145056\"></p>\n<h3>Specifications:</h3>\n<div style=\"font-size: 0.875rem; display: inline !important;\">\n<ul>\n<li>\n<div style=\"font-size: 0.875rem; display: inline !important;\">Brand name：     JHEMCU</div>\n</li>\n<li>Model:            GHF745AIO</li>\n<li>MCU：            STM32F745/216MHZ</li>\n<li>IMU:            MPU6000/Gyro/Accel</li>\n<li>OSD：            AT7456E</li>\n<li>Baro：            YES</li>\n<li>Blackbox：         8MB</li>\n<li>Input voltage:    3S-6S（11.5V-26V）</li>\n<li>5V-BEC：            5V/2.5A ±0.1V </li>\n<li>10V-BEC:           10V/2A ±0.1V</li>\n<li>Receiver：          ELRS(CRSF), TBS(CRSF) ,SBUS,IBUS,DSM2,DSMX</li>\n<li>HD接口：           YES</li>\n<li>USART:           UART1,UART2,UART3,UART4,UART5,UART6</li>\n<li>IIC：           IIC1</li>\n<li>Led_Strip:           YES</li>\n<li>Buzzer:           5V</li>\n<li>ESC signal:        Dshot150，Dshot300，Dshot600</li>\n<li>USB:          Micro USB</li>\n<li>Current port：  YES</li>\n<li>Voltage sensor：YES</li>\n<li>DFU button：   YES</li>\n<li>FC Firmware:     betaflight_4.4.2 JHEF745.HEX</li>\n<li>Size:          33*33MM</li>\n<li>Mounting Hole:25.5*25.5*3MM</li>\n<li>Weight:          7.3g</li>\n</ul>\n</div>\n<div style=\"font-size: 0.875rem;\"> </div>\n<ul></ul>\n<h3>ESC Specifications:</h3>\n<ul>\n<li>ESC Current:      40A/50A</li>\n<li>ESC MCU：        STM32G071</li>\n<li>ESC TYPE:           AM32</li>\n<li>ESC Firmware:   JHEMCU_G071_ESC_Multi_32_9.HEX</li>\n</ul>\n<h3><br></h3>\n<h3>Package Includes:<br>\n</h3>\n<div style=\"font-size: 0.875rem; display: inline !important;\">\n<ul>\n<li>\n<div style=\"font-size: 0.875rem; display: inline !important;\">1x GHF745AIO -40A</div>\n</li>\n<li>1x XT60</li>\n<li>4x M2 * 6.5MM shock absorber</li>\n<li>2x 40A-16AWG wire</li>\n<li>1x O3 connecting line 5P to 6P</li>\n<li>1x 470UF/35V capacitor</li>\n<li>1x TYPE-C adapter board</li>\n<li>4x 28AWG Wire</li>\n<li>1x Welding practice board</li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "jhemcu-ghf745-aio-f7-osd-flight-controller-and-built-in-40a-blheli32-3-6s-4in1-esc-25x25mm",
+       "id": "gid://shopify/ProductVariant/40863465275435",
+       "media": [
+        {
+         "alt_text": "JHEMCU GHF745 HD AIO F7 OSD Flight Controller and Built-In 40A AM32 3-6S 4IN1 ESC - 25x25mm",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/66_0_63989857-3da4-40eb-b3b0-16291328b817.jpg",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/66_0_63989857-3da4-40eb-b3b0-16291328b817.jpg",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 10299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 8,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.1
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7139205120043",
+       "source": "shopify",
+       "title": "JHEMCU GHF745 HD AIO F7 OSD Flight Controller and Built-In 40A AM32 3-6S 4IN1 ESC - 25x25mm",
+       "url": "https://pyrodrone.com/products/jhemcu-ghf745-aio-f7-osd-flight-controller-and-built-in-40a-blheli32-3-6s-4in1-esc-25x25mm?variant=40863465275435&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Feature：<br>Suitable for Gofilm 20<br>AIO flight control with integrated ELRS receiver<br>supporting 3S-4S batteries<br>Net weight 5.3g, gross weight 13.4g</p>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0036/3921/4169/files/4_b3bd0bcf-4a61-4fdf-bda7-b751b57c0d77.jpg?v=1711953963\"></p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0036/3921/4169/files/95a489b3f80efcbc821b6b4761c5c309.jpg?v=1713515852\" alt=\"\"></p>\n<p> </p>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td><strong>FC Parameters</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>MCU</td>\n<td>STM32F405RGT6</td>\n</tr>\n<tr>\n<td>GYRO and IMU</td>\n<td>ICM42688</td>\n</tr>\n<tr>\n<td>Barometer</td>\n<td>BMP280</td>\n</tr>\n<tr>\n<td>ExpressLRS receiver</td>\n<td>ELRS V3.0 UART</td>\n</tr>\n<tr>\n<td>ESC</td>\n<td>20A 4-IN-1</td>\n</tr>\n<tr>\n<td>Blackbox</td>\n<td>8MBp</td>\n</tr>\n<tr>\n<td>Support Power</td>\n<td>3~4S Lipo/Lihv</td>\n</tr>\n<tr>\n<td>Mounting hole Distance</td>\n<td>25.5×25.5mm</td>\n</tr>\n<tr>\n<td>Firmware target</td>\n<td><span>CADDXF4_AIO_ELRS</span></td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+     },
+     "handle": "caddx-fpv-f4_aio_elrs",
+     "id": "gid://shopify/p/5ombdudKufYgfEKWWgkt7M",
+     "media": [
+      {
+       "alt_text": "Caddx FPV F4_AIO_ELRS",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/F4_-1.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/F4_-1.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Integrated ELRS receiver enables reliable remote control operation",
+       "Supports both 3S and 4S LiPo/LiHV batteries for flexible power options",
+       "STM32F405RGT6 MCU provides robust processing power for FPV applications",
+       "ICM42688 IMU and BMP280 barometer ensure accurate flight data and altitude sensing",
+       "20A 4-in-1 ESC delivers high current for demanding motors"
+      ],
+      "unique_selling_points": [
+       "Combines STM32F405RGT6 MCU, ICM42688 IMU, and ExpressLRS ELRS receiver in a compact, lightweight design."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 6999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Caddx FPV F4_AIO_ELRS",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.buddyrc.com/buy/48111498100974:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Feature：<br>Suitable for Gofilm 20<br>AIO flight control with integrated ELRS receiver<br>supporting 3S-4S batteries<br>Net weight 5.3g, gross weight 13.4g</p>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0036/3921/4169/files/4_b3bd0bcf-4a61-4fdf-bda7-b751b57c0d77.jpg?v=1711953963\"></p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0036/3921/4169/files/95a489b3f80efcbc821b6b4761c5c309.jpg?v=1713515852\" alt=\"\"></p>\n<p> </p>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td><strong>FC Parameters</strong></td>\n<td></td>\n</tr>\n<tr>\n<td>MCU</td>\n<td>STM32F405RGT6</td>\n</tr>\n<tr>\n<td>GYRO and IMU</td>\n<td>ICM42688</td>\n</tr>\n<tr>\n<td>Barometer</td>\n<td>BMP280</td>\n</tr>\n<tr>\n<td>ExpressLRS receiver</td>\n<td>ELRS V3.0 UART</td>\n</tr>\n<tr>\n<td>ESC</td>\n<td>20A 4-IN-1</td>\n</tr>\n<tr>\n<td>Blackbox</td>\n<td>8MBp</td>\n</tr>\n<tr>\n<td>Support Power</td>\n<td>3~4S Lipo/Lihv</td>\n</tr>\n<tr>\n<td>Mounting hole Distance</td>\n<td>25.5×25.5mm</td>\n</tr>\n<tr>\n<td>Firmware target</td>\n<td><span>CADDXF4_AIO_ELRS</span></td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "caddx-fpv-f4_aio_elrs",
+       "id": "gid://shopify/ProductVariant/48111498100974",
+       "media": [
+        {
+         "alt_text": "Caddx FPV F4_AIO_ELRS",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/F4_-1.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0262/4746/2998/files/F4_-1.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 6999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "buddyrc.myshopify.com",
+        "id": "gid://shopify/Shop/26247462998",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708230742.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708263510.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708197974.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/26247462998/policies/13708296278.html"
+         }
+        ],
+        "name": "Buddy RC",
+        "url": "https://www.buddyrc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9298901762286",
+       "source": "shopify",
+       "title": "Caddx FPV F4_AIO_ELRS",
+       "url": "https://www.buddyrc.com/products/caddx-fpv-f4_aio_elrs?variant=48111498100974&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5</li>\n<li>Integrates 2.4G CC2500 receiver for seamless connectivity</li>\n<li>Supports BLHeliSuite for customizable flight settings</li>\n<li>Weighs only 4.8g, ideal for lightweight drone builds</li>\n<li>Features BMI270 gyro for precise stabilization</li>\n<li>Offers VTX with 48 channels and Smart Audio protocol</li>\n</ul>\n<p>The <strong>iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5</strong> is a sophisticated all-in-one flight controller designed for drone enthusiasts seeking lightweight and efficient performance. Weighing only 4.8 grams, this compact unit integrates a 2.4G CC2500 receiver, making it an ideal choice for streamlined drone builds.</p>\n<p>Equipped with an STM32F411 microcontroller, the flight controller supports BLHeliSuite programming, allowing for customizable flight configurations. The unit operates on a 1S power supply and features a BMI270 gyro for precise flight stabilization. The mounting pattern measures 25.5x25.5mm, ensuring compatibility with a variety of drone frames.</p>\n<p>The electronic speed controller (ESC) supports multiple signal protocols, including Dshot, Oneshot, and Multishot, with a continuous current capacity of 5A and a peak of 6A. The ESC firmware options include O-H-30 BLS 16.8 (BlheliS) and Bluejay Q-H-50 (Bluejay), providing flexibility in performance tuning.</p>\n<p>The video transmitter (VTX) operates on the Smart Audio protocol, offering power options of PIT, 25mW, and 50mW across 48 channels. The VTX is equipped with a UFL/IPEX connector and requires a 5V input voltage.</p>\n<p>Note: F.PORT protocol RX input is supported, but telemetry is not supported.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>1x BLITZ F411 1S 5A Whoop AIO Board with Built-in 2.4G CC2500 Receiver / 2.4G ELRS w/SMD Antenna</li>\n<li>4x M2 Rubber Ball</li>\n<li>1x Whip antenna</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>29 x 29 mm</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>Supports BLHeliSuite programmable</li>\n<li>Built-in 2.4GHz CC2500 receiver</li>\n<li>5A continuous current</li>\n<li>MCU: STM32F411</li>\n<li>Power supply: 1S</li>\n<li>Gyro: BMI270</li>\n<li>Mounting pattern: 25.5x25.5mm/φ3mm (half-hole)</li>\n<li>Supported protocols: CC2500, SPI, D8, S-FHSS</li>\n<li>FC firmware: IFLIGHT_F4SX1280</li>\n<li>BEC output: 5V 500mA</li>\n<li>Connector: Micro-USB</li>\n<li>INA pad: n uart2</li>\n<li>No barometer</li>\n<li>No blackbox</li>\n<li>ESC: 5A</li>\n<li>Signal support: Dshot, Oneshot, Multishot</li>\n<li>Current: 5A continuous, peak 6A</li>\n<li>ESC firmware: O-H-30 BLS 16.8 (BlheliS) / Bluejay Q-H-50 (Bluejay)</li>\n<li>Current sensor: Yes</li>\n<li>No ESC telemetry</li>\n<li>Current scale: 400</li>\n<li>Input: 1S</li>\n<li>VTX protocol: Smart audio</li>\n<li>VTX power: PIT/25/50mW</li>\n<li>VTX connector: UFL/IPEX</li>\n<li>VTX input voltage: 5V</li>\n<li>VTX channels: 48CH</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "iflight-blitz-f411-1s-5a-whoop-aio-build-in-elrs-24ghz-w-sma-antenna-255x255",
+     "id": "gid://shopify/p/4lSZMoV12vIUuIrF8JuWSB",
+     "media": [
+      {
+       "alt_text": "iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3594487.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3594487.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Built-in 2.4GHz CC2500 receiver enables seamless drone connectivity",
+       "Supports BLHeliSuite for customizable flight configurations",
+       "Ultra-lightweight 4.8g design ideal for lightweight drone builds",
+       "BMI270 gyro provides precise stabilization",
+       "Multiple ESC signal protocols and 5A continuous ESC support flexible tuning"
+      ],
+      "unique_selling_points": [
+       "Weighs only 4.8g and integrates a built-in 2.4GHz CC2500 receiver for streamlined, customizable drone builds."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8024,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8024,
+       "currency": "USD"
+      }
+     },
+     "title": "iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/51648756416876:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=XeD7vuqEaL8E&_gsid=XeD7vuqEaL8E",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\n<li>iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5</li>\n<li>Integrates 2.4G CC2500 receiver for seamless connectivity</li>\n<li>Supports BLHeliSuite for customizable flight settings</li>\n<li>Weighs only 4.8g, ideal for lightweight drone builds</li>\n<li>Features BMI270 gyro for precise stabilization</li>\n<li>Offers VTX with 48 channels and Smart Audio protocol</li>\n</ul>\n<p>The <strong>iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5</strong> is a sophisticated all-in-one flight controller designed for drone enthusiasts seeking lightweight and efficient performance. Weighing only 4.8 grams, this compact unit integrates a 2.4G CC2500 receiver, making it an ideal choice for streamlined drone builds.</p>\n<p>Equipped with an STM32F411 microcontroller, the flight controller supports BLHeliSuite programming, allowing for customizable flight configurations. The unit operates on a 1S power supply and features a BMI270 gyro for precise flight stabilization. The mounting pattern measures 25.5x25.5mm, ensuring compatibility with a variety of drone frames.</p>\n<p>The electronic speed controller (ESC) supports multiple signal protocols, including Dshot, Oneshot, and Multishot, with a continuous current capacity of 5A and a peak of 6A. The ESC firmware options include O-H-30 BLS 16.8 (BlheliS) and Bluejay Q-H-50 (Bluejay), providing flexibility in performance tuning.</p>\n<p>The video transmitter (VTX) operates on the Smart Audio protocol, offering power options of PIT, 25mW, and 50mW across 48 channels. The VTX is equipped with a UFL/IPEX connector and requires a 5V input voltage.</p>\n<p>Note: F.PORT protocol RX input is supported, but telemetry is not supported.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>1x BLITZ F411 1S 5A Whoop AIO Board with Built-in 2.4G CC2500 Receiver / 2.4G ELRS w/SMD Antenna</li>\n<li>4x M2 Rubber Ball</li>\n<li>1x Whip antenna</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-3\">\r\n<span class=\"card__title heading h3\">Dimensions</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-3\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>29 x 29 mm</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\n<li>Supports BLHeliSuite programmable</li>\n<li>Built-in 2.4GHz CC2500 receiver</li>\n<li>5A continuous current</li>\n<li>MCU: STM32F411</li>\n<li>Power supply: 1S</li>\n<li>Gyro: BMI270</li>\n<li>Mounting pattern: 25.5x25.5mm/φ3mm (half-hole)</li>\n<li>Supported protocols: CC2500, SPI, D8, S-FHSS</li>\n<li>FC firmware: IFLIGHT_F4SX1280</li>\n<li>BEC output: 5V 500mA</li>\n<li>Connector: Micro-USB</li>\n<li>INA pad: n uart2</li>\n<li>No barometer</li>\n<li>No blackbox</li>\n<li>ESC: 5A</li>\n<li>Signal support: Dshot, Oneshot, Multishot</li>\n<li>Current: 5A continuous, peak 6A</li>\n<li>ESC firmware: O-H-30 BLS 16.8 (BlheliS) / Bluejay Q-H-50 (Bluejay)</li>\n<li>Current sensor: Yes</li>\n<li>No ESC telemetry</li>\n<li>Current scale: 400</li>\n<li>Input: 1S</li>\n<li>VTX protocol: Smart audio</li>\n<li>VTX power: PIT/25/50mW</li>\n<li>VTX connector: UFL/IPEX</li>\n<li>VTX input voltage: 5V</li>\n<li>VTX channels: 48CH</li>\n</ul>\n\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "iflight-blitz-f411-1s-5a-whoop-aio-build-in-elrs-24ghz-w-sma-antenna-255x255",
+       "id": "gid://shopify/ProductVariant/51648756416876",
+       "media": [
+        {
+         "alt_text": "iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3594487.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3594487.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 8024,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/14625846821228",
+       "source": "shopify",
+       "title": "iFlight BLITZ F411 1S 5A Whoop AIO Build-in ELRS 2.4GHz W/SMA Antenna 25.5x25.5",
+       "url": "https://www.robotshop.com/products/iflight-blitz-f411-1s-5a-whoop-aio-build-in-elrs-24ghz-w-sma-antenna-255x255?variant=51648756416876&_gsid=XeD7vuqEaL8E&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

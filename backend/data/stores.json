@@ -1,0 +1,398 @@
+{
+  "_note": "Store registry (PLAN §3.16). Owner: B. `store_id` is what the mandate's allowed_merchants lists. cart_link_verified: null = nobody has opened this store's prefilled link in a real browser yet (it is shown as a product link), false = a human opened it and it failed (product link), true = a human opened it and it worked (prefilled cart). Only a human sets it, after the 1:15 browser check (PLAN §2.1, §3.16 rule 2); CART_LINKS_VERIFIED=amazon,bestbuy does the same from .env. shopify_domains: the seller's myshopify domain first (passed to ucp --business, Appendix A.1), then public domains.",
+  "stores": [
+    {
+      "store_id": "wowrobo",
+      "display_name": "WowRobo",
+      "domain": "shop.wowrobo.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "f0c6d4-21.myshopify.com",
+        "shop.wowrobo.com"
+      ],
+      "business_url": "https://f0c6d4-21.myshopify.com",
+      "merchant_names": [
+        "WowRobo",
+        "WowRobo Robotics"
+      ]
+    },
+    {
+      "store_id": "armdojo",
+      "display_name": "ArmDojo",
+      "domain": "xee8tz-dc.myshopify.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "xee8tz-dc.myshopify.com"
+      ],
+      "business_url": "https://xee8tz-dc.myshopify.com",
+      "merchant_names": [
+        "ArmDojo"
+      ]
+    },
+    {
+      "store_id": "geekworm",
+      "display_name": "Geekworm",
+      "domain": "geekworm.myshopify.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "geekworm.myshopify.com",
+        "geekworm.com"
+      ],
+      "business_url": "https://geekworm.myshopify.com",
+      "merchant_names": [
+        "Geekworm"
+      ]
+    },
+    {
+      "store_id": "openelab",
+      "display_name": "OpenELAB",
+      "domain": "openelab.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "9irjdt-u1.myshopify.com",
+        "openelab.io",
+        "openelab.com"
+      ],
+      "business_url": "https://9irjdt-u1.myshopify.com",
+      "merchant_names": [
+        "OpenELAB",
+        "OpenELAB Inc."
+      ]
+    },
+    {
+      "store_id": "robotshop",
+      "display_name": "RobotShop USA",
+      "domain": "robotshop-us.myshopify.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "robotshop-us.myshopify.com"
+      ],
+      "business_url": "https://robotshop-us.myshopify.com",
+      "merchant_names": [
+        "RobotShop",
+        "RobotShop USA"
+      ]
+    },
+    {
+      "store_id": "rokland",
+      "display_name": "Rokland",
+      "domain": "store.rokland.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "rokland.myshopify.com",
+        "store.rokland.com"
+      ],
+      "business_url": "https://rokland.myshopify.com",
+      "merchant_names": [
+        "Rokland"
+      ]
+    },
+    {
+      "store_id": "thepihut",
+      "display_name": "The Pi Hut",
+      "domain": "thepihut.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": "UK store, GBP: off unless US shipping in USD is confirmed",
+      "enabled": false,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "thepihut.com"
+      ],
+      "business_url": "https://thepihut.com",
+      "merchant_names": [
+        "The Pi Hut"
+      ]
+    },
+    {
+      "store_id": "pimoroni",
+      "display_name": "Pimoroni",
+      "domain": "shop.pimoroni.com",
+      "action_level": "agent_cart",
+      "search_source": "shopify_ucp",
+      "caveat": "UK store: Shopify quotes USD prices to a US buyer (checked Nov 20); ships from the UK, so delivery is slower",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "shopify_domains": [
+        "shop.pimoroni.com"
+      ],
+      "business_url": "https://shop.pimoroni.com",
+      "merchant_names": [
+        "Pimoroni"
+      ]
+    },
+    {
+      "store_id": "amazon",
+      "display_name": "Amazon",
+      "domain": "amazon.com",
+      "action_level": "prefilled_cart",
+      "search_source": "serpapi:amazon",
+      "caveat": "Amazon asks you to sign in first",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "cart_link_format": "amazon",
+      "item_id_key": "asin",
+      "merchant_names": [
+        "Amazon",
+        "Amazon.com",
+        "Amazon.com - Seller"
+      ]
+    },
+    {
+      "store_id": "digikey",
+      "display_name": "Digi-Key",
+      "domain": "digikey.com",
+      "action_level": "prefilled_cart",
+      "search_source": "digikey",
+      "caveat": "Needs Digi-Key part numbers (API key)",
+      "enabled": false,
+      "cart_link_verified": null,
+      "simulated": false,
+      "cart_link_format": "digikey_fastadd",
+      "item_id_key": "digikey_pn",
+      "enabled_if_env": [
+        "DIGIKEY_CLIENT_ID",
+        "DIGIKEY_CLIENT_SECRET"
+      ],
+      "merchant_names": [
+        "DigiKey",
+        "Digi-Key",
+        "Digi-Key Electronics"
+      ]
+    },
+    {
+      "store_id": "bestbuy",
+      "display_name": "Best Buy",
+      "domain": "bestbuy.com",
+      "action_level": "prefilled_cart",
+      "search_source": "serpapi:google_shopping",
+      "caveat": "Best Buy adds one of each",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "cart_link_format": "bestbuy_click",
+      "item_id_key": "bestbuy_sku",
+      "max_qty_per_item": 1,
+      "merchant_names": [
+        "Best Buy"
+      ]
+    },
+    {
+      "store_id": "walmart",
+      "display_name": "Walmart",
+      "domain": "walmart.com",
+      "action_level": "prefilled_cart",
+      "search_source": "serpapi:walmart",
+      "caveat": "Prefilled cart unverified in a real browser (C21): shown as product links until a human checks it",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "cart_link_format": "walmart_affil",
+      "item_id_key": "walmart_id",
+      "merchant_names": [
+        "Walmart",
+        "Walmart.com",
+        "Walmart - Seller"
+      ]
+    },
+    {
+      "store_id": "adafruit",
+      "display_name": "Adafruit",
+      "domain": "adafruit.com",
+      "action_level": "product_link",
+      "search_source": "adafruit",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "Adafruit",
+        "Adafruit Industries"
+      ]
+    },
+    {
+      "store_id": "seeed",
+      "display_name": "Seeed Studio",
+      "domain": "seeedstudio.com",
+      "action_level": "product_link",
+      "search_source": "magento",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "Seeed Studio",
+        "Seeed"
+      ],
+      "magento_host": "www.seeedstudio.com"
+    },
+    {
+      "store_id": "sparkfun",
+      "display_name": "SparkFun",
+      "domain": "sparkfun.com",
+      "action_level": "product_link",
+      "search_source": "magento",
+      "caveat": null,
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "SparkFun",
+        "SparkFun Electronics"
+      ],
+      "magento_host": "www.sparkfun.com"
+    },
+    {
+      "store_id": "ebay",
+      "display_name": "eBay",
+      "domain": "ebay.com",
+      "action_level": "product_link",
+      "search_source": "serpapi:ebay",
+      "caveat": "New, fixed-price listings only",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "eBay",
+        "eBay - Seller"
+      ]
+    },
+    {
+      "store_id": "dfrobot",
+      "display_name": "DFRobot",
+      "domain": "dfrobot.com",
+      "action_level": "product_link",
+      "search_source": "jsonld",
+      "caveat": "Stretch 7",
+      "enabled": false,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "DFRobot"
+      ],
+      "jsonld_host": "www.dfrobot.com"
+    },
+    {
+      "store_id": "waveshare",
+      "display_name": "Waveshare",
+      "domain": "waveshare.com",
+      "action_level": "product_link",
+      "search_source": "jsonld",
+      "caveat": "Stretch 7",
+      "enabled": false,
+      "cart_link_verified": null,
+      "simulated": false,
+      "merchant_names": [
+        "Waveshare"
+      ],
+      "jsonld_host": "www.waveshare.com"
+    },
+    {
+      "store_id": "mock_store",
+      "display_name": "Mock Hobby Store (simulated)",
+      "domain": "mock.invalid",
+      "action_level": "product_link",
+      "search_source": "mock",
+      "caveat": "Simulated store: not a real merchant. Its listings carry no cart ids, so it hands off product links (mock.invalid)",
+      "enabled": true,
+      "cart_link_verified": null,
+      "simulated": true
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "airbyte.github",
+      "used_for": "project README; READMEs of reference repos",
+      "key": "AIRBYTE_GITHUB_TOKEN",
+      "yields": [
+        "readme_quote",
+        "reference_project"
+      ]
+    },
+    {
+      "source_id": "keenable",
+      "used_for": "reference-design search and page text",
+      "key": "KEENABLE_API_KEY",
+      "yields": [
+        "reference_project"
+      ]
+    },
+    {
+      "source_id": "exa_airbyte",
+      "used_for": "reference-design search with contents, through the Airbyte SDK",
+      "key": "EXA_API_KEY",
+      "yields": [
+        "reference_project"
+      ]
+    },
+    {
+      "source_id": "claude_web_search",
+      "used_for": "finding a reference page on allowed domains (pointer only)",
+      "key": "ANTHROPIC_API_KEY",
+      "yields": []
+    },
+    {
+      "source_id": "github_search",
+      "used_for": "finding a reference repo (pointer only)",
+      "key": null,
+      "yields": []
+    },
+    {
+      "source_id": "claude_vision",
+      "used_for": "parts in the user's photo",
+      "key": "ANTHROPIC_API_KEY",
+      "yields": [
+        "photo_region"
+      ]
+    },
+    {
+      "source_id": "sie_detect",
+      "used_for": "boxes for parts in the user's photo",
+      "key": "SIE_API_KEY",
+      "yields": [
+        "photo_region"
+      ]
+    },
+    {
+      "source_id": "singlestore.templates",
+      "used_for": "template rows",
+      "key": "S2_URL",
+      "yields": [
+        "template_row"
+      ]
+    }
+  ]
+}

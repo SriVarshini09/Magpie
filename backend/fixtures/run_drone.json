@@ -1,0 +1,908 @@
+{
+  "run_id": "r_mock_drone",
+  "build_type": "quadcopter",
+  "build_type_set_by": "classifier",
+  "intake": {
+    "intake_id": "in_mock_drone",
+    "ready": true,
+    "summary": "A palm-size camera quadcopter, about $200",
+    "build_type": "quadcopter",
+    "confidence": 0.93,
+    "alternatives": [
+      {
+        "build_type": "rc_car",
+        "confidence": 0.03
+      }
+    ],
+    "inputs": {
+      "text": "a small camera drone under $200",
+      "images": []
+    },
+    "constraints": {
+      "budget_usd": 200.0
+    },
+    "questions": [
+      {
+        "id": "size_class",
+        "text": "What size?",
+        "chips": [
+          {
+            "value": "3in",
+            "label": "Palm-size (3-inch)"
+          },
+          {
+            "value": "5in",
+            "label": "5-inch"
+          },
+          {
+            "value": "x500",
+            "label": "10-inch dev kit"
+          }
+        ],
+        "default": "3in",
+        "answer": "3in"
+      },
+      {
+        "id": "own_radio",
+        "text": "Have a radio and goggles?",
+        "chips": [
+          {
+            "value": "yes",
+            "label": "Yes"
+          },
+          {
+            "value": "no",
+            "label": "No"
+          }
+        ],
+        "default": "yes",
+        "answer": "yes"
+      },
+      {
+        "id": "own_soldering_iron",
+        "text": "Have a soldering iron?",
+        "chips": [
+          {
+            "value": "yes",
+            "label": "Yes"
+          },
+          {
+            "value": "no",
+            "label": "No"
+          }
+        ],
+        "default": "yes",
+        "answer": "yes"
+      }
+    ],
+    "template_id": "tpl_quadcopter",
+    "mandate_preset": {
+      "budget_usd": 200.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "mock_store",
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "source_api": "mock",
+    "simulated": true
+  },
+  "view": {
+    "kind": "procedural",
+    "model": "quadcopter",
+    "variant": "3in_4s",
+    "scale": 0.65,
+    "parts": [
+      {
+        "mesh": "frame",
+        "bom_line_id": "b1",
+        "instances": 1,
+        "explode": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "order": 1
+      },
+      {
+        "mesh": "motor",
+        "bom_line_id": "b2",
+        "instances": 4,
+        "explode": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "order": 2
+      },
+      {
+        "mesh": "esc",
+        "bom_line_id": "b3",
+        "instances": 1,
+        "explode": [
+          0.0,
+          18.0,
+          0.0
+        ],
+        "order": 3
+      },
+      {
+        "mesh": "fc",
+        "bom_line_id": "b4",
+        "instances": 1,
+        "explode": [
+          0.0,
+          38.0,
+          0.0
+        ],
+        "order": 4
+      },
+      {
+        "mesh": "receiver",
+        "bom_line_id": "b8",
+        "instances": 1,
+        "explode": [
+          0.0,
+          10.0,
+          -45.0
+        ],
+        "order": 5
+      },
+      {
+        "mesh": "vtx",
+        "bom_line_id": "b10",
+        "instances": 1,
+        "explode": [
+          0.0,
+          25.0,
+          -60.0
+        ],
+        "order": 5
+      },
+      {
+        "mesh": "camera",
+        "bom_line_id": "b9",
+        "instances": 1,
+        "explode": [
+          0.0,
+          10.0,
+          55.0
+        ],
+        "order": 6
+      },
+      {
+        "mesh": "props",
+        "bom_line_id": "b5",
+        "instances": 4,
+        "explode": [
+          0.0,
+          65.0,
+          0.0
+        ],
+        "order": 8
+      },
+      {
+        "mesh": "battery",
+        "bom_line_id": "b7",
+        "instances": 1,
+        "explode": [
+          0.0,
+          100.0,
+          0.0
+        ],
+        "order": 9
+      }
+    ],
+    "tray": [
+      "b6",
+      "b11",
+      "b12"
+    ],
+    "note": "Illustrative model. Proportions are typical, not your exact parts.",
+    "simulated": true
+  },
+  "status": "waiting_approval",
+  "mandate": {
+    "type": "b2c.mandate.open",
+    "version": "0.4",
+    "note": "AP2-inspired (v0.2 open Checkout Mandate shape); not AP2-compliant",
+    "mandate_id": "m_mock_drone",
+    "run_id": "r_mock_drone",
+    "user_id": "demo_user",
+    "created_at": "2026-11-20T13:20:02-08:00",
+    "expires_at": "2026-11-20T19:00:00-08:00",
+    "scope": {
+      "build_type": "quadcopter",
+      "build_type_set_by": "classifier",
+      "goal": "a small camera drone under $200",
+      "intake_sha256": "398489eb722bd0348ee0830e10413a0b346b74e8edb31bb582315377fd606d0c",
+      "inputs": {
+        "text_sha256": "cae5a3601afc2c982b2fdd5717102db7fbe7ffaeeac35ad7bd668fd22162b6e3",
+        "image_sha256": []
+      },
+      "template_id": "tpl_quadcopter",
+      "reference_search": true
+    },
+    "constraints": {
+      "budget_usd": 200.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "mock_store",
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      },
+      "actions": {
+        "search": true,
+        "create_cart": true,
+        "build_cart_link": true,
+        "checkout": false,
+        "pay": false,
+        "message_seller": false
+      }
+    },
+    "signature": {
+      "alg": "ES256",
+      "kid": "fixture-key-1",
+      "jws": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il0sImtpZCI6ImZpeHR1cmUta2V5LTEiLCJ0eXAiOiJiMmMtbWFuZGF0ZSJ9..2d998umB60ZxIPKzIybCoOZQCmc9nNdluzfL0gQ4G67ufLKnEN1e9TaEDqClCudRoN4ejEphDr1bi_jVnEfSkg"
+    },
+    "simulated": true
+  },
+  "template": {
+    "template_id": "tpl_quadcopter",
+    "variant": "3in_4s",
+    "kb_ref": "kb://tpl_quadcopter",
+    "sql": "-- MOCK: sketch from PLAN §3.14, never run against SingleStore\nWITH ft AS (SELECT chunk_id, MATCH (TABLE kb_chunks) AGAINST ('body:(12V AND supply)') AS s FROM kb_chunks ...),\n     vs AS (SELECT chunk_id, emb <*> @q AS s FROM kb_chunks ORDER BY s DESC LIMIT 20)\nSELECT ... 0.7 * 1/(60 + vector_rank) + 0.3 * 1/(60 + fulltext_rank) AS score ..."
+  },
+  "provenance_counts": {
+    "readme_quote": 0,
+    "reference_project": 0,
+    "template_row": 11,
+    "photo_region": 0,
+    "assumption": 1
+  },
+  "open_assumptions": [
+    "b12"
+  ],
+  "bom": [
+    {
+      "bom_line_id": "b1",
+      "raw_name": "Frame",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#frame",
+        "template_id": "tpl_quadcopter",
+        "row_id": "frame",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "mechanical",
+      "mesh_keys": [
+        "frame"
+      ],
+      "spec": "3-inch, ~140 mm",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d10",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "3-inch FPV frame, ~140 mm wheelbase",
+          "packs": 1,
+          "price": 18.99,
+          "url": "https://mock.invalid/mock_store/d10",
+          "seen_at": "2026-11-20T13:20:10-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b2",
+      "raw_name": "Brushless motor",
+      "qty": 4,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#motor",
+        "template_id": "tpl_quadcopter",
+        "row_id": "motor",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "warning",
+      "category": "motor",
+      "mesh_keys": [
+        "motor"
+      ],
+      "spec": "1404, 3500–4500 KV on 4S",
+      "confidence": 0.7,
+      "stores_count": 4,
+      "chosen": [
+        {
+          "offer_id": "d20",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "1404 3800KV brushless motor, 4 pcs",
+          "packs": 1,
+          "price": 39.99,
+          "url": "https://mock.invalid/mock_store/d20",
+          "seen_at": "2026-11-20T13:20:14-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b3",
+      "raw_name": "ESC",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#esc",
+        "template_id": "tpl_quadcopter",
+        "row_id": "esc",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "skipped",
+      "category": "esc_driver",
+      "mesh_keys": [
+        "esc"
+      ],
+      "spec": "Part of the all-in-one board (line b4), 20 A or more, 2–4S",
+      "confidence": 0.7,
+      "owned_note": "On the all-in-one flight controller board"
+    },
+    {
+      "bom_line_id": "b4",
+      "raw_name": "Flight controller",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#fc",
+        "template_id": "tpl_quadcopter",
+        "row_id": "fc",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "board",
+      "mesh_keys": [
+        "fc"
+      ],
+      "spec": "All-in-one FC + ESC, 25.5×25.5",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d40",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "All-in-one F4 flight controller + 20A 4-in-1 ESC, 25.5x25.5, 2-4S",
+          "packs": 1,
+          "price": 46.99,
+          "url": "https://mock.invalid/mock_store/d40",
+          "seen_at": "2026-11-20T13:20:30-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b5",
+      "raw_name": "Propellers",
+      "qty": 4,
+      "qty_note": "2 CW + 2 CCW",
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#props",
+        "template_id": "tpl_quadcopter",
+        "row_id": "props",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "mechanical",
+      "mesh_keys": [
+        "props"
+      ],
+      "spec": "3-inch",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d50",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "3-inch 3-blade propellers, 2 CW + 2 CCW",
+          "packs": 1,
+          "price": 3.49,
+          "url": "https://mock.invalid/mock_store/d50",
+          "seen_at": "2026-11-20T13:20:33-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b6",
+      "raw_name": "Power distribution",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#pdb",
+        "template_id": "tpl_quadcopter",
+        "row_id": "pdb",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "skipped",
+      "category": "power",
+      "mesh_keys": [],
+      "spec": "On the all-in-one board (line b4)",
+      "confidence": 0.7,
+      "owned_note": "On the all-in-one flight controller board"
+    },
+    {
+      "bom_line_id": "b7",
+      "raw_name": "LiPo battery",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#battery",
+        "template_id": "tpl_quadcopter",
+        "row_id": "battery",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "battery",
+      "mesh_keys": [
+        "battery"
+      ],
+      "spec": "4S 650–850 mAh, XT30",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d70",
+          "store_id": "amazon",
+          "store_name": "Amazon",
+          "action_level": "prefilled_cart",
+          "title": "4S 850mAh LiPo battery, XT30",
+          "packs": 1,
+          "price": 17.99,
+          "url": "https://mock.invalid/amazon/d70",
+          "seen_at": "2026-11-20T13:20:40-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b8",
+      "raw_name": "RC receiver",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#receiver",
+        "template_id": "tpl_quadcopter",
+        "row_id": "receiver",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "radio",
+      "mesh_keys": [
+        "receiver"
+      ],
+      "spec": "ELRS 2.4 GHz",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d80",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "ELRS 2.4GHz nano receiver",
+          "packs": 1,
+          "price": 12.99,
+          "url": "https://mock.invalid/mock_store/d80",
+          "seen_at": "2026-11-20T13:20:44-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b9",
+      "raw_name": "Camera",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#camera",
+        "template_id": "tpl_quadcopter",
+        "row_id": "camera",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "camera",
+      "mesh_keys": [
+        "camera"
+      ],
+      "spec": "FPV camera, 14–19 mm",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d90",
+          "store_id": "adafruit",
+          "store_name": "Adafruit",
+          "action_level": "product_link",
+          "title": "FPV camera, 19 mm (PLACEHOLDER product)",
+          "packs": 1,
+          "price": 17.5,
+          "url": "https://mock.invalid/adafruit/d90",
+          "seen_at": "2026-11-20T13:20:48-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b10",
+      "raw_name": "Video transmitter + antenna",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#vtx",
+        "template_id": "tpl_quadcopter",
+        "row_id": "vtx",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "part",
+      "status": "chosen",
+      "category": "radio",
+      "mesh_keys": [
+        "vtx"
+      ],
+      "spec": "5.8 GHz VTX, 20×20",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d100",
+          "store_id": "mock_store",
+          "store_name": "Mock Hobby Store (simulated)",
+          "action_level": "agent_cart",
+          "title": "5.8GHz VTX 20x20 with antenna",
+          "packs": 1,
+          "price": 21.99,
+          "url": "https://mock.invalid/mock_store/d100",
+          "seen_at": "2026-11-20T13:20:52-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b11",
+      "raw_name": "LiPo balance charger",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [],
+        "type": "template_row",
+        "kb_ref": "kb://tpl_quadcopter#charger",
+        "template_id": "tpl_quadcopter",
+        "row_id": "charger",
+        "variant": "3in_4s",
+        "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+        "basis": "rule_of_thumb",
+        "derived_from": "https://docs.px4.io/v1.14/en/frames_multicopter/holybro_x500V2_pixhawk5x"
+      },
+      "line_kind": "tool",
+      "status": "chosen",
+      "category": "tool",
+      "mesh_keys": [],
+      "spec": "Balance charger for 4S",
+      "confidence": 0.7,
+      "stores_count": 1,
+      "chosen": [
+        {
+          "offer_id": "d110",
+          "store_id": "amazon",
+          "store_name": "Amazon",
+          "action_level": "prefilled_cart",
+          "title": "LiPo balance charger, 1-4S",
+          "packs": 1,
+          "price": 19.99,
+          "url": "https://mock.invalid/amazon/d110",
+          "seen_at": "2026-11-20T13:20:56-08:00",
+          "source_api": "mock",
+          "simulated": true
+        }
+      ]
+    },
+    {
+      "bom_line_id": "b12",
+      "raw_name": "Radio transmitter, goggles",
+      "qty": 1,
+      "provenance": {
+        "check": "pass",
+        "supports": [
+          {
+            "check": "pass",
+            "supports": [],
+            "type": "template_row",
+            "kb_ref": "kb://tpl_quadcopter#radio",
+            "template_id": "tpl_quadcopter",
+            "row_id": "radio",
+            "variant": "3in_4s",
+            "template_sha256": "bc0d8965e3e423ab6124de3d8fa8858b34b1f39b80c8b08cb52efc88f2d502e1",
+            "basis": "rule_of_thumb"
+          }
+        ],
+        "type": "assumption",
+        "statement": "You already have a radio transmitter and goggles, so none are in the cart.",
+        "basis": "chip defaulted: own_radio = yes",
+        "confirmed_by_user": false
+      },
+      "line_kind": "tool",
+      "status": "owned",
+      "category": "tool",
+      "mesh_keys": [],
+      "spec": "Assumed owned",
+      "confidence": 0.7,
+      "owned_note": "Assumed: you already have a radio and goggles. Confirm before you approve."
+    }
+  ],
+  "checks": [
+    {
+      "rule_id": "G1 SUPPLY_VOLTAGE",
+      "result": "needs_human",
+      "message": "The flight controller's input range was not in its listing text. Needs your check.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g1"
+      ],
+      "bom_line_ids": [
+        "b4",
+        "b7"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "G3 CELL_COUNT",
+      "result": "pass",
+      "message": "4S battery is inside the board's 2–4S range.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g3"
+      ],
+      "bom_line_ids": [
+        "b4",
+        "b7"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "G5 CONNECTOR_MATCH",
+      "result": "pass",
+      "message": "XT30 on the battery and on the board.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g5"
+      ],
+      "bom_line_ids": [
+        "b4",
+        "b7"
+      ],
+      "needs_ack": false
+    },
+    {
+      "rule_id": "G7 KV_PROP_CELLS",
+      "result": "warn",
+      "message": "3800 KV on 4S with 3-inch props is inside the template's 3500–4500 KV range. Rule of thumb: no source was read for 3-inch. Needs your check.",
+      "kb_refs": [
+        "kb://compat_rules_generic#g7",
+        "kb://tpl_quadcopter#motor"
+      ],
+      "bom_line_ids": [
+        "b2",
+        "b5",
+        "b7"
+      ],
+      "needs_ack": true
+    }
+  ],
+  "plans": {
+    "cheapest": {
+      "plan_id": "p_mock_drone_cheapest",
+      "tier": "cheapest",
+      "total_usd": 199.92,
+      "stores": [
+        "mock_store",
+        "amazon",
+        "adafruit"
+      ],
+      "checkouts": 3,
+      "by_level": {
+        "agent_cart": 1,
+        "prefilled_cart": 1,
+        "product_link": 1
+      },
+      "items_by_hand": 1,
+      "feasible": true,
+      "plan_sha256": "c0a413e855a69c3914d1a7864da3f072449b729bb24c25e74c6f47972049bb76",
+      "lines": [
+        {
+          "bom_line_id": "b1",
+          "offer_id": "d10",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 18.99
+        },
+        {
+          "bom_line_id": "b2",
+          "offer_id": "d20",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 4,
+          "line_usd": 39.99
+        },
+        {
+          "bom_line_id": "b4",
+          "offer_id": "d40",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 46.99
+        },
+        {
+          "bom_line_id": "b5",
+          "offer_id": "d50",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 4,
+          "line_usd": 3.49
+        },
+        {
+          "bom_line_id": "b7",
+          "offer_id": "d70",
+          "store_id": "amazon",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 17.99
+        },
+        {
+          "bom_line_id": "b8",
+          "offer_id": "d80",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 12.99
+        },
+        {
+          "bom_line_id": "b9",
+          "offer_id": "d90",
+          "store_id": "adafruit",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 17.5
+        },
+        {
+          "bom_line_id": "b10",
+          "offer_id": "d100",
+          "store_id": "mock_store",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 21.99
+        },
+        {
+          "bom_line_id": "b11",
+          "offer_id": "d110",
+          "store_id": "amazon",
+          "packs": 1,
+          "qty": 1,
+          "line_usd": 19.99
+        }
+      ],
+      "simulated": true
+    }
+  },
+  "active_tier": "cheapest",
+  "refusals": 1,
+  "head_hash": "sha256:74850c37ec994f8c8128f983f4160baaad5cbed732bf7ada1876982bd4b919b9",
+  "stats": {
+    "claude_calls": 0,
+    "sie_calls": 0,
+    "sie_median_ms": 0,
+    "kb_queries": 1,
+    "serpapi_calls": 0,
+    "stores_searched": 5
+  },
+  "source_api": "mock",
+  "simulated": true
+}

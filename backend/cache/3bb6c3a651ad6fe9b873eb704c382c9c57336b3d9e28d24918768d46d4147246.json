@@ -1,0 +1,1605 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "BME280 sensor module"
+  }
+ },
+ "key": "3bb6c3a651ad6fe9b873eb704c382c9c57336b3d9e28d24918768d46d4147246",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:50-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFF5TlRFNU16QTRNamsyTXl3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK1906 is a WisBlock Sensor that is based on the popular BOSCH BME680 environment sensor chip which monitors environmental air quality. A ready to use SW library and tutorial makes it easy to build up motion data acquisition system. RAK1906 is not only measuring air temperature, humidity, and barometric pressure. It has as well an integrated gas sensor to acquire information about air quality. RAK1906 combined with the RAK4631 WisBlock Core is ready to go system for air quality and condition system. It's use cases are personal air quality tracker, weather stations, or gas detection, The acquired data can be send using LoRaWan® communication, LoRa® point to point connections, and BLE. RAK1906 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more. Key Features Using the Bosch BME680 environment sensor Low power consumption Small form factor Temperature range: -40°C to +85°C Humidity range: 0% to 100% Pressure range: 300 to1100 hPa Gas sensor response time < 1s Gas sensor direct output of IAQ: Index for Air Quality Package Inclusion 1pc RAK1906 Documentation RAK1906 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1906 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1906(opens new window) For WisBlock Core RAK4630: Sample Code: Environment Monitoring(opens new window) For WisBlock Core RAK11200: Sample Code: Weather Display(opens new window) For WisBlock Core RAK11300: Sample Code: Environment Monitoring Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-rak1906-wisblock-environment-sensor-bosch-bme680",
+     "id": "gid://shopify/Product/7113923756115",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK1906.png?v=1701892402"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-sensors"
+     ],
+     "title": "RAK Wireless RAK1906 WisBlock Environment Sensor BOSCH BME680 100008",
+     "url": "https://store.rokland.com/products/rak-wireless-rak1906-wisblock-environment-sensor-bosch-bme680",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41208475975763:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK1906 is a WisBlock Sensor that is based on the popular BOSCH BME680 environment sensor chip which monitors environmental air quality. A ready to use SW library and tutorial makes it easy to build up motion data acquisition system. RAK1906 is not only measuring air temperature, humidity, and barometric pressure. It has as well an integrated gas sensor to acquire information about air quality. RAK1906 combined with the RAK4631 WisBlock Core is ready to go system for air quality and condition system. It's use cases are personal air quality tracker, weather stations, or gas detection, The acquired data can be send using LoRaWan® communication, LoRa® point to point connections, and BLE. RAK1906 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more. Key Features Using the Bosch BME680 environment sensor Low power consumption Small form factor Temperature range: -40°C to +85°C Humidity range: 0% to 100% Pressure range: 300 to1100 hPa Gas sensor response time < 1s Gas sensor direct output of IAQ: Index for Air Quality Package Inclusion 1pc RAK1906 Documentation RAK1906 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1906 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1906(opens new window) For WisBlock Core RAK4630: Sample Code: Environment Monitoring(opens new window) For WisBlock Core RAK11200: Sample Code: Weather Display(opens new window) For WisBlock Core RAK11300: Sample Code: Environment Monitoring Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/41208475975763",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK1906.png?v=1701892402"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100008",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK16000 is a 3A DC Current Sensor based on Texas Instruments INA219BID. This module can measure DC current between 0 to 3A on a DC voltage of 0 to 26V. Multiply the voltage and current values and you can get the power consumption. Product Features Texas Instrument INA219 sensor Measure DC voltage in the range of 0 to 26 V Measure DC current in the range of 0 to 3 A DC current has an accuracy of 0.5% 100mΩ shunt resistor can implement 0.1 mA Current_LSB I2C interface 3.3 V Power supply Module Size: 15 x 25 mm Documentation RAK16000 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK16000 3D Model(opens new window) 40-Pin Male Connector 3D file(opens new window) WisBlock Sensor Tutorial Example Sample Code: Get DC current from sensor Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rak16000-dc-current-sensor-3a-texas-instruments-ina219bid-pid-100047",
+     "id": "gid://shopify/Product/7423981224019",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK16000.png?v=1723218526"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1297,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-modules"
+     ],
+     "title": "RAK16000 DC Current Sensor 3A Texas Instruments INA219BID PID: 100047",
+     "url": "https://store.rokland.com/products/rak16000-dc-current-sensor-3a-texas-instruments-ina219bid-pid-100047",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42102108553299:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK16000 is a 3A DC Current Sensor based on Texas Instruments INA219BID. This module can measure DC current between 0 to 3A on a DC voltage of 0 to 26V. Multiply the voltage and current values and you can get the power consumption. Product Features Texas Instrument INA219 sensor Measure DC voltage in the range of 0 to 26 V Measure DC current in the range of 0 to 3 A DC current has an accuracy of 0.5% 100mΩ shunt resistor can implement 0.1 mA Current_LSB I2C interface 3.3 V Power supply Module Size: 15 x 25 mm Documentation RAK16000 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK16000 3D Model(opens new window) 40-Pin Male Connector 3D file(opens new window) WisBlock Sensor Tutorial Example Sample Code: Get DC current from sensor Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/42102108553299",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK16000.png?v=1723218526"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100047",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-14-13"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply.RAK1901 is a WisBlock Sensor based on Sensirion SHTC3 which extends the WisBlock system with temperature and humidity sensing capabilities. A ready to use SW library and tutorial makes it easy to build up an environmental temperature and humidity data acquisition system.See product videoRAK1901's temperature range from -40 to +125 °C enables its use in nearly any environment. The temperature accuracy of ±2.0 °C is su­cient for most applications RAK1901 combined with the RAK4631 WisBlock Core is ready to go system to collect environment data. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections and BLE.RAK1901 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more.RAK1901 temperature and humidity sensor can be joined with other WisBlock sensors like a barometric pressure sensor module to create a weather station. Key Features Using the Sensirion SHTC3 temperature & humidity sensor Low power consumption Small form factor ±2.0 °C temperature accuracy -40 to +125 °C temperature range ±2.0 % RH humidity accuracy 0 to 100% humidity range Package Inclusions 1pc RAK1901 Documentation RAK1901 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1901 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1901(opens new window) For WisBlock Core RAK4630: Sample Code: Weather Monitoring(opens new window) LoRaWAN Weather Monitoring Kit with WisBlock RAK1901 LoRaWAN Weather Monitoring Kit Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-rak1901-temperature-and-humidity-sensor-sensirion-shtc3-pid-100001",
+     "id": "gid://shopify/Product/6936612044883",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/rak1901_1.png?v=1739229345"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 797,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 797,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-sensors"
+     ],
+     "title": "RAK Wireless RAK1901 Temperature and Humidity Sensor Sensirion SHTC3 PID: 100001",
+     "url": "https://store.rokland.com/products/rak-wireless-rak1901-temperature-and-humidity-sensor-sensirion-shtc3-pid-100001",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40510319525971:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply.RAK1901 is a WisBlock Sensor based on Sensirion SHTC3 which extends the WisBlock system with temperature and humidity sensing capabilities. A ready to use SW library and tutorial makes it easy to build up an environmental temperature and humidity data acquisition system.See product videoRAK1901's temperature range from -40 to +125 °C enables its use in nearly any environment. The temperature accuracy of ±2.0 °C is su­cient for most applications RAK1901 combined with the RAK4631 WisBlock Core is ready to go system to collect environment data. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections and BLE.RAK1901 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more.RAK1901 temperature and humidity sensor can be joined with other WisBlock sensors like a barometric pressure sensor module to create a weather station. Key Features Using the Sensirion SHTC3 temperature & humidity sensor Low power consumption Small form factor ±2.0 °C temperature accuracy -40 to +125 °C temperature range ±2.0 % RH humidity accuracy 0 to 100% humidity range Package Inclusions 1pc RAK1901 Documentation RAK1901 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1901 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1901(opens new window) For WisBlock Core RAK4630: Sample Code: Weather Monitoring(opens new window) LoRaWAN Weather Monitoring Kit with WisBlock RAK1901 LoRaWAN Weather Monitoring Kit Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+       },
+       "id": "gid://shopify/ProductVariant/40510319525971",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/rak1901_1.png?v=1739229345"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 797,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "1901",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK1904 is a WisBlock Sensor based on STMicroelectronics LIS3DH chip which extends the WisBlock system to have a 3-axis acceleration sensing capabilities. A ready to use SW library and tutorial makes it easy to build up motion data acquisition system. RAK1904's scale from ±2g to ±16g can be adjusted to the requirements of your application. Depending on the application the data rates can be adjusted from 1Hz to 5.3kHz. RAK1904 combined with the RAK4631 WisBlock Core is ready to go system for a motion tracking system, detecting and monitor vibrations in rotating machinery or even to monitor active volcanoes. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections and BLE. RAK1904 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more. RAK1904 acceleration sensor can be joined with other WisBlock sensors like a GPS module to create an inertial navigation system. Key Features Using the ST LIS3DH acceleration sensor Low power consumption Small form factor User-selectable scales of ±2g/±4g/±8g/±16g Data acquisition rates from 1Hz to 5.3kHz. Internal buffer for 32 levels of 16-bit data Package Inclusions 1pc RAK1904 Documentation RAK1904 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1904 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1904(opens new window) For WisBlock Core RAK4630: Sample Code: GPS Tracker Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Make a Helium Mapper with the WisBlock Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-rak1904-3-axis-acceleration-sensor-stmicroelectronics-lis3dh-pid-100013",
+     "id": "gid://shopify/Product/7119618834515",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK1904.png?v=1702669356"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-sensors"
+     ],
+     "title": "RAKwireless RAK1904 3-Axis Acceleration Sensor STMicroelectronics LIS3DH PID: 100013",
+     "url": "https://store.rokland.com/products/rak-wireless-rak1904-3-axis-acceleration-sensor-stmicroelectronics-lis3dh-pid-100013",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41225859694675:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK1904 is a WisBlock Sensor based on STMicroelectronics LIS3DH chip which extends the WisBlock system to have a 3-axis acceleration sensing capabilities. A ready to use SW library and tutorial makes it easy to build up motion data acquisition system. RAK1904's scale from ±2g to ±16g can be adjusted to the requirements of your application. Depending on the application the data rates can be adjusted from 1Hz to 5.3kHz. RAK1904 combined with the RAK4631 WisBlock Core is ready to go system for a motion tracking system, detecting and monitor vibrations in rotating machinery or even to monitor active volcanoes. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections and BLE. RAK1904 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module complete to reduce the power consumption of the system even more. RAK1904 acceleration sensor can be joined with other WisBlock sensors like a GPS module to create an inertial navigation system. Key Features Using the ST LIS3DH acceleration sensor Low power consumption Small form factor User-selectable scales of ±2g/±4g/±8g/±16g Data acquisition rates from 1Hz to 5.3kHz. Internal buffer for 32 levels of 16-bit data Package Inclusions 1pc RAK1904 Documentation RAK1904 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK1904 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples For All WisBlock Core Modules: Sample Code: RAK1904(opens new window) For WisBlock Core RAK4630: Sample Code: GPS Tracker Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Make a Helium Mapper with the WisBlock Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+       },
+       "id": "gid://shopify/ProductVariant/41225859694675",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK1904.png?v=1702669356"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100013",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "WisMesh High Power Booster Starter Kit brings more Tx power and better reception to Meshtastic networks. Powered by the RAK3401 WisBlock Core module with the Nordic nRF52840 MCU and a RAK13302 High Power LoRa transceiver module, mounted on a RAK19007 Base Board. Unlike common solutions, the RAK13302 integrates a dedicated RF filter stage, which not only enables high-power transmission but also significantly enhances receiver sensitivity. This means longer range, more stable links, and stronger mesh reliability. This is ideal for outdoor adventures, emergency communications, or wide-area IoT coverage, positioning it as some of the best hardware for long-range Meshtastic networks. Notes: Transmit power limits and allowable frequency plans differ by country and region. This product supports high power operation, but users must configure transmit power, antenna gain, and frequency settings to comply with local regulations. There are two variants of the RAK13302 LoRa module that have different power requirements: (116256 Battery Powered) - The booster module gets all of its power from the JST 2.0 Battery Port on the RAK19007 Base Board. A battery is required for this setup. USB and Solar work to charge the battery. This variant works best for solar repeaters/mobile nodes. (116257 External 5V Powered) - The booster module requires a 5V power input using the connector on the underside of the RAK13302 module. You will also need to power the RAK3400 Core Module using either USB-C or Battery Power. This variant works best for deployments with stable grid-based power supplies. The RAK13302 module features hardware capable of higher Tx power than traditional radios, enabled by the integrated Skyworks SKY66122 power amplifier. This device is FCC-certified (FCC ID: 2AF6B-13302) for a maximum conducted output power of 290 mW (approximately 24.6 dBm) in the United States. 290mw is almost 3x the power of most standard LoRa and Meshtastic radios, so there will be a noticeable improvement in Tx power and transmit distance at FCC approved settings. Under FCC rules, operation of this device in the United States must not exceed the power levels authorized under its FCC grant of certification. Devices will ship with compliant power settings. Why choose the WisMesh High Power Booster Starter Kit for your Meshtastic network? Whether upgrading a Meshtastic High Power node or building a fresh deployment, this kit is engineered specifically for users who need reliable, long-range mesh communication in off-grid, outdoor, or emergency setups. The use of the nRF52840 MCU ensures modern BLE and firmware compatibility, while the WisBlock modular ecosystem allows you to expand with sensors, displays, trackers, or repeater nodes with ease. Compared to typical Meshtastic kits (~100 mw output) our DIY High Power builds (which may lack RF filtering or stability), this kit delivers a proven, stable high-power solution—all while managing power, heat and regulatory concerns in a single product. Key Features WisBlock RAK3401 Core module Nordic nRF52840 MCU ARM Cortex-M4F 1MB Flash and 348KB SRAM I/O ports: UART/I2C/SPI/ADC/GPIO WisBlock RAK13302 LoRa transceiver module (FCC limit 290mW) Semtech SX1262 LoRa transceiver SKY66122 signal booster Integrated RF filter for enhanced reception performance IPEX antenna connector for LoRa Support for 9xx MHz frequency band RAK19007 WisBlock Base Board 4 sensor slots for WisBlock Sensor Modules Supply voltage 5V over USB 5V over Solar Panel connector Rechargeable battery Range & RF Performance: SX1262 + SKY66122 Amplified Path The WisMesh High Power Booster Starter Kit delivers exceptional performance for users needing a long-range Meshtastic solution. This is done by combining the Semtech SX1262 LoRa transceiver with the Skyworks SKY66122 high-power amplifier and a dedicated SAW filter. Unlike typical high-power boards that boost TX but degrade RX, this filtered RF chain, including an RF filter and PA for improved receiver sensitivity, preserves receiver performance while increasing output power. The result is a cleaner signal, reduced self-interference, and significantly stronger SNR across real-world deployments. Users can expect more reliable two-way links, improved packet retention at long distances, and stable mesh coverage even in semi-obstructed environments. Power Requirements & Thermal Notes The High Power RF stage in the RAK13302 demands a stable 5V supply, as 3.3V sources cannot deliver the surge current required for high-power LoRa transmission. For reliable operation, users should power the module through USB, a regulated 5V adapter, or the WisBlock Base Board’s battery system—especially when using an SX1262 LoRa module in continuous or high-duty-cycle deployments. How the High Power RF Chain Works (nRF52840 → SX1262 → PA/Filter) The WisMesh High Power Booster Starter Kit uses a staged RF architecture to deliver clean, long-range LoRa performance. The nRF52840 MCU manages firmware and communicates with the SX1262 transceiver, which generates the sub-GHz LoRa signal, making the architecture suitable for a nRF52840 Meshtastic deployment. That signal is then boosted by the SKY66122 power amplifier, a SKY66122 LoRa amplifier module, and passed through an integrated SAW filter to remove noise and harmonics. This ensures both high transmit power and excellent receiver sensitivity, enabling stable two-way communication even at long distances, as shown in the diagram below. Warranty & Support:1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+     },
+     "gift_card": false,
+     "handle": "wismesh-high-power-booster-starter-kit-with-nrf52840-sx1262-and-sky66122-pa-for-extended-meshtastic-range",
+     "id": "gid://shopify/Product/7788882165843",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_f1e719c3-c088-4767-8f02-f8fa894e5d00.png?v=1790787535"
+      }
+     ],
+     "options": [
+      {
+       "name": "Package",
+       "values": [
+        {
+         "label": "116256- Battery Powered"
+        },
+        {
+         "label": "116257- 5V powered (power supply not included)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-kits"
+     ],
+     "title": "WisMesh High Power Booster Starter Kit- with nRF52840, SX1262, and SKY66122 PA for extended Meshtastic range",
+     "url": "https://store.rokland.com/products/wismesh-high-power-booster-starter-kit-with-nrf52840-sx1262-and-sky66122-pa-for-extended-meshtastic-range",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/46046639652947:1",
+       "description": {
+        "html": "WisMesh High Power Booster Starter Kit brings more Tx power and better reception to Meshtastic networks. Powered by the RAK3401 WisBlock Core module with the Nordic nRF52840 MCU and a RAK13302 High Power LoRa transceiver module, mounted on a RAK19007 Base Board. Unlike common solutions, the RAK13302 integrates a dedicated RF filter stage, which not only enables high-power transmission but also significantly enhances receiver sensitivity. This means longer range, more stable links, and stronger mesh reliability. This is ideal for outdoor adventures, emergency communications, or wide-area IoT coverage, positioning it as some of the best hardware for long-range Meshtastic networks. Notes: Transmit power limits and allowable frequency plans differ by country and region. This product supports high power operation, but users must configure transmit power, antenna gain, and frequency settings to comply with local regulations. There are two variants of the RAK13302 LoRa module that have different power requirements: (116256 Battery Powered) - The booster module gets all of its power from the JST 2.0 Battery Port on the RAK19007 Base Board. A battery is required for this setup. USB and Solar work to charge the battery. This variant works best for solar repeaters/mobile nodes. (116257 External 5V Powered) - The booster module requires a 5V power input using the connector on the underside of the RAK13302 module. You will also need to power the RAK3400 Core Module using either USB-C or Battery Power. This variant works best for deployments with stable grid-based power supplies. The RAK13302 module features hardware capable of higher Tx power than traditional radios, enabled by the integrated Skyworks SKY66122 power amplifier. This device is FCC-certified (FCC ID: 2AF6B-13302) for a maximum conducted output power of 290 mW (approximately 24.6 dBm) in the United States. 290mw is almost 3x the power of most standard LoRa and Meshtastic radios, so there will be a noticeable improvement in Tx power and transmit distance at FCC approved settings. Under FCC rules, operation of this device in the United States must not exceed the power levels authorized under its FCC grant of certification. Devices will ship with compliant power settings. Why choose the WisMesh High Power Booster Starter Kit for your Meshtastic network? Whether upgrading a Meshtastic High Power node or building a fresh deployment, this kit is engineered specifically for users who need reliable, long-range mesh communication in off-grid, outdoor, or emergency setups. The use of the nRF52840 MCU ensures modern BLE and firmware compatibility, while the WisBlock modular ecosystem allows you to expand with sensors, displays, trackers, or repeater nodes with ease. Compared to typical Meshtastic kits (~100 mw output) our DIY High Power builds (which may lack RF filtering or stability), this kit delivers a proven, stable high-power solution—all while managing power, heat and regulatory concerns in a single product. Key Features WisBlock RAK3401 Core module Nordic nRF52840 MCU ARM Cortex-M4F 1MB Flash and 348KB SRAM I/O ports: UART/I2C/SPI/ADC/GPIO WisBlock RAK13302 LoRa transceiver module (FCC limit 290mW) Semtech SX1262 LoRa transceiver SKY66122 signal booster Integrated RF filter for enhanced reception performance IPEX antenna connector for LoRa Support for 9xx MHz frequency band RAK19007 WisBlock Base Board 4 sensor slots for WisBlock Sensor Modules Supply voltage 5V over USB 5V over Solar Panel connector Rechargeable battery Range & RF Performance: SX1262 + SKY66122 Amplified Path The WisMesh High Power Booster Starter Kit delivers exceptional performance for users needing a long-range Meshtastic solution. This is done by combining the Semtech SX1262 LoRa transceiver with the Skyworks SKY66122 high-power amplifier and a dedicated SAW filter. Unlike typical high-power boards that boost TX but degrade RX, this filtered RF chain, including an RF filter and PA for improved receiver sensitivity, preserves receiver performance while increasing output power. The result is a cleaner signal, reduced self-interference, and significantly stronger SNR across real-world deployments. Users can expect more reliable two-way links, improved packet retention at long distances, and stable mesh coverage even in semi-obstructed environments. Power Requirements & Thermal Notes The High Power RF stage in the RAK13302 demands a stable 5V supply, as 3.3V sources cannot deliver the surge current required for high-power LoRa transmission. For reliable operation, users should power the module through USB, a regulated 5V adapter, or the WisBlock Base Board’s battery system—especially when using an SX1262 LoRa module in continuous or high-duty-cycle deployments. How the High Power RF Chain Works (nRF52840 → SX1262 → PA/Filter) The WisMesh High Power Booster Starter Kit uses a staged RF architecture to deliver clean, long-range LoRa performance. The nRF52840 MCU manages firmware and communicates with the SX1262 transceiver, which generates the sub-GHz LoRa signal, making the architecture suitable for a nRF52840 Meshtastic deployment. That signal is then boosted by the SKY66122 power amplifier, a SKY66122 LoRa amplifier module, and passed through an integrated SAW filter to remove noise and harmonics. This ensures both high transmit power and excellent receiver sensitivity, enabling stable two-way communication even at long distances, as shown in the diagram below. Warranty & Support:1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/46046639652947",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/4_f1dc81dd-71e0-4371-b32a-328c9ace5f6d.png?v=1790787535"
+        }
+       ],
+       "options": [
+        {
+         "label": "116256- Battery Powered",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 4997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "1W-Mesh-1",
+       "title": "116256- Battery Powered"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/46046639685715:1",
+       "description": {
+        "html": "WisMesh High Power Booster Starter Kit brings more Tx power and better reception to Meshtastic networks. Powered by the RAK3401 WisBlock Core module with the Nordic nRF52840 MCU and a RAK13302 High Power LoRa transceiver module, mounted on a RAK19007 Base Board. Unlike common solutions, the RAK13302 integrates a dedicated RF filter stage, which not only enables high-power transmission but also significantly enhances receiver sensitivity. This means longer range, more stable links, and stronger mesh reliability. This is ideal for outdoor adventures, emergency communications, or wide-area IoT coverage, positioning it as some of the best hardware for long-range Meshtastic networks. Notes: Transmit power limits and allowable frequency plans differ by country and region. This product supports high power operation, but users must configure transmit power, antenna gain, and frequency settings to comply with local regulations. There are two variants of the RAK13302 LoRa module that have different power requirements: (116256 Battery Powered) - The booster module gets all of its power from the JST 2.0 Battery Port on the RAK19007 Base Board. A battery is required for this setup. USB and Solar work to charge the battery. This variant works best for solar repeaters/mobile nodes. (116257 External 5V Powered) - The booster module requires a 5V power input using the connector on the underside of the RAK13302 module. You will also need to power the RAK3400 Core Module using either USB-C or Battery Power. This variant works best for deployments with stable grid-based power supplies. The RAK13302 module features hardware capable of higher Tx power than traditional radios, enabled by the integrated Skyworks SKY66122 power amplifier. This device is FCC-certified (FCC ID: 2AF6B-13302) for a maximum conducted output power of 290 mW (approximately 24.6 dBm) in the United States. 290mw is almost 3x the power of most standard LoRa and Meshtastic radios, so there will be a noticeable improvement in Tx power and transmit distance at FCC approved settings. Under FCC rules, operation of this device in the United States must not exceed the power levels authorized under its FCC grant of certification. Devices will ship with compliant power settings. Why choose the WisMesh High Power Booster Starter Kit for your Meshtastic network? Whether upgrading a Meshtastic High Power node or building a fresh deployment, this kit is engineered specifically for users who need reliable, long-range mesh communication in off-grid, outdoor, or emergency setups. The use of the nRF52840 MCU ensures modern BLE and firmware compatibility, while the WisBlock modular ecosystem allows you to expand with sensors, displays, trackers, or repeater nodes with ease. Compared to typical Meshtastic kits (~100 mw output) our DIY High Power builds (which may lack RF filtering or stability), this kit delivers a proven, stable high-power solution—all while managing power, heat and regulatory concerns in a single product. Key Features WisBlock RAK3401 Core module Nordic nRF52840 MCU ARM Cortex-M4F 1MB Flash and 348KB SRAM I/O ports: UART/I2C/SPI/ADC/GPIO WisBlock RAK13302 LoRa transceiver module (FCC limit 290mW) Semtech SX1262 LoRa transceiver SKY66122 signal booster Integrated RF filter for enhanced reception performance IPEX antenna connector for LoRa Support for 9xx MHz frequency band RAK19007 WisBlock Base Board 4 sensor slots for WisBlock Sensor Modules Supply voltage 5V over USB 5V over Solar Panel connector Rechargeable battery Range & RF Performance: SX1262 + SKY66122 Amplified Path The WisMesh High Power Booster Starter Kit delivers exceptional performance for users needing a long-range Meshtastic solution. This is done by combining the Semtech SX1262 LoRa transceiver with the Skyworks SKY66122 high-power amplifier and a dedicated SAW filter. Unlike typical high-power boards that boost TX but degrade RX, this filtered RF chain, including an RF filter and PA for improved receiver sensitivity, preserves receiver performance while increasing output power. The result is a cleaner signal, reduced self-interference, and significantly stronger SNR across real-world deployments. Users can expect more reliable two-way links, improved packet retention at long distances, and stable mesh coverage even in semi-obstructed environments. Power Requirements & Thermal Notes The High Power RF stage in the RAK13302 demands a stable 5V supply, as 3.3V sources cannot deliver the surge current required for high-power LoRa transmission. For reliable operation, users should power the module through USB, a regulated 5V adapter, or the WisBlock Base Board’s battery system—especially when using an SX1262 LoRa module in continuous or high-duty-cycle deployments. How the High Power RF Chain Works (nRF52840 → SX1262 → PA/Filter) The WisMesh High Power Booster Starter Kit uses a staged RF architecture to deliver clean, long-range LoRa performance. The nRF52840 MCU manages firmware and communicates with the SX1262 transceiver, which generates the sub-GHz LoRa signal, making the architecture suitable for a nRF52840 Meshtastic deployment. That signal is then boosted by the SKY66122 power amplifier, a SKY66122 LoRa amplifier module, and passed through an integrated SAW filter to remove noise and harmonics. This ensures both high transmit power and excellent receiver sensitivity, enabling stable two-way communication even at long distances, as shown in the diagram below. Warranty & Support:1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/46046639685715",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/3_fb797516-a576-495b-b571-b580b8161ae5.png?v=1790787535"
+        }
+       ],
+       "options": [
+        {
+         "label": "116257- 5V powered (power supply not included)",
+         "name": "Package"
+        }
+       ],
+       "price": {
+        "amount": 4997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "1W-Mesh-2",
+       "title": "116257- 5V powered (power supply not included)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK18001 is a WisBlock buzzer module based on MLT-5020 from Jiangsu. The sound and loudness can be controlled over a PWM signal from the WisBlock core. The buzzer can be used as an alarm signal or as audible feedback to the user. It is even possible to play a small melody with the buzzer.This item works with RAK19007 baseboard, but is not working currently inside RAK WisMesh Pocket custom board. RAK18001 can be mount to slots A, B, C, or D of RAK19007, it is controlled by an IO pin.Note: On the default Meshtastic Configuration, the buzzer will only work when using Slot C. Key Features 3V input voltage, on/off control by the WisBlock Core module 75dB sound output at 10cm distance PWM controlled 10x10mm size Documentation RAK18001 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK18001 Buzzer Module 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples: For WisBlock Core RAK4630: Sample Code: Play a funny song(opens new window) For WisBlock Core RAK11200: Sample Code: Play a funny song Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping except in cases of defect or advertisement problem. RAK 1 year limited warranty."
+     },
+     "gift_card": false,
+     "handle": "buzzer-module-jiangsu-mlt-5020-rak18001-pid-100019",
+     "id": "gid://shopify/Product/7176248950867",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK18001.png?v=1709665559"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-modules"
+     ],
+     "title": "Buzzer Module Jiangsu MLT-5020 RAK18001 PID: 100019",
+     "url": "https://store.rokland.com/products/buzzer-module-jiangsu-mlt-5020-rak18001-pid-100019",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41440549863507:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK18001 is a WisBlock buzzer module based on MLT-5020 from Jiangsu. The sound and loudness can be controlled over a PWM signal from the WisBlock core. The buzzer can be used as an alarm signal or as audible feedback to the user. It is even possible to play a small melody with the buzzer.This item works with RAK19007 baseboard, but is not working currently inside RAK WisMesh Pocket custom board. RAK18001 can be mount to slots A, B, C, or D of RAK19007, it is controlled by an IO pin.Note: On the default Meshtastic Configuration, the buzzer will only work when using Slot C. Key Features 3V input voltage, on/off control by the WisBlock Core module 75dB sound output at 10cm distance PWM controlled 10x10mm size Documentation RAK18001 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK18001 Buzzer Module 3D Model(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Examples: For WisBlock Core RAK4630: Sample Code: Play a funny song(opens new window) For WisBlock Core RAK11200: Sample Code: Play a funny song Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, buyer pays return shipping except in cases of defect or advertisement problem. RAK 1 year limited warranty."
+       },
+       "id": "gid://shopify/ProductVariant/41440549863507",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK18001.png?v=1709665559"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100019",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK5802 is a WisBlock RS485 interface module based on TP8485 from 3PEAK that extends the WisBlock system with an industrial RS485 data transmission interface. A ready-to-use SW library and tutorial makes it easy to connect any sensor that is using the RS485 interface. RAK5802 supports one RS485 interface and has a battery and 3.3V power output to supply sensors. In addition, an I2C interface connection is available on the crimping terminal. RAK5802 combined with the RAK4631 WisBlock Core gives your solution for an interface to industrial sensors and actuators that support the RS485 interface. This interface is the bridge between such sensors and LoRaWan® communication, LoRa® point to point connections or BLE. RAK5802 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module completely to reduce the power consumption of the system even more. Key Features The converter of industry-standard RS485 interface to serial. Low power consumption Small form factor Battery and 3.3V output for sensors 18kV ESD protection 1 RS485 port Package Inclusion 1pc RAK5802 Documentation RAK5802 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK5802 3D Model(opens new window) 40-Pin Male Connector 3D File(opens new window) WisBlock IO Tutorial Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-rak5802-rs485-module-3peak-tp8485e-100003",
+     "id": "gid://shopify/Product/7134883709011",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK5802.png?v=1705421771"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 597,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 597,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-modules"
+     ],
+     "title": "RAKwireless RAK5802 RS485 Module 3PEAK TP8485E 100003",
+     "url": "https://store.rokland.com/products/rakwireless-rak5802-rs485-module-3peak-tp8485e-100003",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41302845358163:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. QTY discounts available. RAK5802 is a WisBlock RS485 interface module based on TP8485 from 3PEAK that extends the WisBlock system with an industrial RS485 data transmission interface. A ready-to-use SW library and tutorial makes it easy to connect any sensor that is using the RS485 interface. RAK5802 supports one RS485 interface and has a battery and 3.3V power output to supply sensors. In addition, an I2C interface connection is available on the crimping terminal. RAK5802 combined with the RAK4631 WisBlock Core gives your solution for an interface to industrial sensors and actuators that support the RS485 interface. This interface is the bridge between such sensors and LoRaWan® communication, LoRa® point to point connections or BLE. RAK5802 is ideal for battery-powered applications because of its low power consumption. In addition, the WisBlock system allows to power down the module completely to reduce the power consumption of the system even more. Key Features The converter of industry-standard RS485 interface to serial. Low power consumption Small form factor Battery and 3.3V output for sensors 18kV ESD protection 1 RS485 port Package Inclusion 1pc RAK5802 Documentation RAK5802 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK5802 3D Model(opens new window) 40-Pin Male Connector 3D File(opens new window) WisBlock IO Tutorial Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Due to the high demand for this product, all sales for this product are final and we don’t accept returns or cancelations, and we are not able to issue a refund."
+       },
+       "id": "gid://shopify/ProductVariant/41302845358163",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK5802.png?v=1705421771"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 597,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100003",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 27% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. Contact us for QTY discounts. The RAK12501 WisBlock GNSS Location Tracker Module uses the Quectel L76K and is designed to be part of a production-ready IoT solution in a modular way. It must be combined with a WisBlock Base board and core module to work as an LPWAN tracker device.Use with Meshtastic- compatible with RAK Meshtastic Starter Kit and Starter Kit Mini versions. The RAK12501 supports a wide variety of satellite data protocols, such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs. It works with standard protocols over UART connection to the MCU. Track your assets, devices, or outdoor sensors with high-precision GNSS using the cost-effective RAK12501 module. It’s built for Meshtastic GPS tracker projects and other LPWAN-based solutions, offering accurate location data without breaking the bank. Why it’s useful: Built for budget-conscious tracking – Lower cost alternative for GNSS-enabled devices Fast location updates – Starts tracking in under 15 seconds Global satellite support – Works with GPS, GLONASS, BeiDou, Galileo, and QZSS Compact and efficient – Small size, low power draw, and UART-only simplicity Reliable performance – High sensitivity ensures strong signal even in tough environments Key Features of WisBlock RAK12501 GNSS Module Uses the GNSS Module: Quectel L76K Supports 33 tracking channels, 99 acquisition channels, and 210 PRN channels Log position information to internal flash memory Supports GPS, GLONASS, Galileo, BDS and QZSS satellite systems Serial communication to WisBlock Core support with NMEA 0183 protocol High sensitivity, -165 dBm @ Tracking, -148 dBm @ Acquisition 1Hz update rate Fast acquisition times: Cold Start: < 15 s Warm Start: < 5 s Hot Start: < 1 s Module Size: 10 mm x 23 mm Key Benefits of WisBlock RAK12501 GNSS Module Easily integrate GNSS tracking into your IoT projects with this compact and cost-effective WisBlock location tracking module. Lower-cost GNSS solution: Ideal for budget-sensitive tracking applications UART-based connectivity: Simple integration with WisBlock Core via serial protocol Multi-system satellite support: GPS, GLONASS, BeiDou, QZSS, and Galileo included Comparison Table: RAK12500 vs. RAK12501 Feature RAK12500 GNS Module RAK12501 GNSS Module Location chip u-blox ZOE-M8Q Quectel L76K Connection I2C and UART UART only Supported GNSS systems GPS, GLONASS, Galileo, BDS, QZSS GPS, GLONASS, Galileo, BDS, QZSS Protocols NMEA NMEA Update Rate 10Hz 1Hz Startup times: Cold Start < 45s < 15s Warm Start < 7s < 5s Hot Start < 1s < 1s Sensitivity-148dBm: Acquisition -148dBm -148dBm Tracking -167dBm -165dBm Reacquisition -160dBm -160dBm Power consumption Acquisition mode 22mA 25mA Tracking mode 21mA 18mA Power save mode 15uA in Backup Mode 7uA in Backup Mode What’s in the Box 1 pc. RAK12501 1 pc. GNSS antenna How to Get Started with WisBlock RAK12501 GNSS Module RAK12501 Quick Start Guide RAK12501 Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window)(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Frequently Asked Questions What is the RAK12501 GNSS Module used for? The RAK12501 is used to track the location of devices in IoT projects. It receives satellite signals and calculates precise geographic coordinates. It’s ideal for low-power LPWAN applications like Meshtastic trackers, asset monitoring, or outdoor sensors. Why does the RAK12501 only support UART and not I2C? The RAK12501 is designed around the Quectel L76K module, which supports UART communication only (unlike RAK12500, which supports both UART and I2C). This simplifies the hardware interface and is sufficient for serial GNSS data exchange using NMEA 0183 protocol. Compared to I2C, UART is often easier to implement and debug for IoT GPS modules with continuous data streams. How do I connect the RAK12501 to a WisBlock Core? To use the RAK12501, you’ll need a WisBlock Base and a WisBlock Core. Plug the RAK12501 into a slot on the WisBlock Base Board that supports UART. Make sure your WisBlock Core Use the UART pins defined by the WisBlock Base to read GNSS data via NMEA sentences. In your firmware, set up UART communication and parse the NMEA data for position information. How fast does the RAK12501 get a satellite fix? The RAK12501 features very fast startup times: Cold start: under 15 seconds Warm start: under 5 seconds Hot start: under 1 second This ensures you get location data quickly, even after powering down. Can I use the RAK12501 in battery-powered projects? Yes, the RAK12501 is built for low-power applications. It uses only 7µA in backup mode and 18–25mA during tracking or acquisition, making it a great choice for portable or long-deployment devices. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 days. Buyer pays return shipping unless faulty or wrong item shipped."
+     },
+     "gift_card": false,
+     "handle": "rak-wireless-l76k-rak12501-compact-gnss-module-with-uart-ideal-for-low-power-tracking",
+     "id": "gid://shopify/Product/7639870177363",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12501_2.png?v=1751045218"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1397,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1397,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "GPS-antennas-cat",
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "RAK-GPS-GNSS"
+     ],
+     "title": "RAKwireless L76K RAK12501 Compact GNSS Module with UART PID 110218",
+     "url": "https://store.rokland.com/products/rak-wireless-l76k-rak12501-compact-gnss-module-with-uart-ideal-for-low-power-tracking",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42846530437203:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 27% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. Contact us for QTY discounts. The RAK12501 WisBlock GNSS Location Tracker Module uses the Quectel L76K and is designed to be part of a production-ready IoT solution in a modular way. It must be combined with a WisBlock Base board and core module to work as an LPWAN tracker device.Use with Meshtastic- compatible with RAK Meshtastic Starter Kit and Starter Kit Mini versions. The RAK12501 supports a wide variety of satellite data protocols, such as GPS, GLONASS, QZSS, and BeiDou. This ensures the retrieval of precise location data. The module features exceptional performance, high sensitivity, and minimal acquisition time. A very suitable module for your low-power IoT solution needs. It works with standard protocols over UART connection to the MCU. Track your assets, devices, or outdoor sensors with high-precision GNSS using the cost-effective RAK12501 module. It’s built for Meshtastic GPS tracker projects and other LPWAN-based solutions, offering accurate location data without breaking the bank. Why it’s useful: Built for budget-conscious tracking – Lower cost alternative for GNSS-enabled devices Fast location updates – Starts tracking in under 15 seconds Global satellite support – Works with GPS, GLONASS, BeiDou, Galileo, and QZSS Compact and efficient – Small size, low power draw, and UART-only simplicity Reliable performance – High sensitivity ensures strong signal even in tough environments Key Features of WisBlock RAK12501 GNSS Module Uses the GNSS Module: Quectel L76K Supports 33 tracking channels, 99 acquisition channels, and 210 PRN channels Log position information to internal flash memory Supports GPS, GLONASS, Galileo, BDS and QZSS satellite systems Serial communication to WisBlock Core support with NMEA 0183 protocol High sensitivity, -165 dBm @ Tracking, -148 dBm @ Acquisition 1Hz update rate Fast acquisition times: Cold Start: < 15 s Warm Start: < 5 s Hot Start: < 1 s Module Size: 10 mm x 23 mm Key Benefits of WisBlock RAK12501 GNSS Module Easily integrate GNSS tracking into your IoT projects with this compact and cost-effective WisBlock location tracking module. Lower-cost GNSS solution: Ideal for budget-sensitive tracking applications UART-based connectivity: Simple integration with WisBlock Core via serial protocol Multi-system satellite support: GPS, GLONASS, BeiDou, QZSS, and Galileo included Comparison Table: RAK12500 vs. RAK12501 Feature RAK12500 GNS Module RAK12501 GNSS Module Location chip u-blox ZOE-M8Q Quectel L76K Connection I2C and UART UART only Supported GNSS systems GPS, GLONASS, Galileo, BDS, QZSS GPS, GLONASS, Galileo, BDS, QZSS Protocols NMEA NMEA Update Rate 10Hz 1Hz Startup times: Cold Start < 45s < 15s Warm Start < 7s < 5s Hot Start < 1s < 1s Sensitivity-148dBm: Acquisition -148dBm -148dBm Tracking -167dBm -165dBm Reacquisition -160dBm -160dBm Power consumption Acquisition mode 22mA 25mA Tracking mode 21mA 18mA Power save mode 15uA in Backup Mode 7uA in Backup Mode What’s in the Box 1 pc. RAK12501 1 pc. GNSS antenna How to Get Started with WisBlock RAK12501 GNSS Module RAK12501 Quick Start Guide RAK12501 Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window)(opens new window) 24-Pin Male Connector 3D File(opens new window) WisBlock Sensor Tutorial Frequently Asked Questions What is the RAK12501 GNSS Module used for? The RAK12501 is used to track the location of devices in IoT projects. It receives satellite signals and calculates precise geographic coordinates. It’s ideal for low-power LPWAN applications like Meshtastic trackers, asset monitoring, or outdoor sensors. Why does the RAK12501 only support UART and not I2C? The RAK12501 is designed around the Quectel L76K module, which supports UART communication only (unlike RAK12500, which supports both UART and I2C). This simplifies the hardware interface and is sufficient for serial GNSS data exchange using NMEA 0183 protocol. Compared to I2C, UART is often easier to implement and debug for IoT GPS modules with continuous data streams. How do I connect the RAK12501 to a WisBlock Core? To use the RAK12501, you’ll need a WisBlock Base and a WisBlock Core. Plug the RAK12501 into a slot on the WisBlock Base Board that supports UART. Make sure your WisBlock Core Use the UART pins defined by the WisBlock Base to read GNSS data via NMEA sentences. In your firmware, set up UART communication and parse the NMEA data for position information. How fast does the RAK12501 get a satellite fix? The RAK12501 features very fast startup times: Cold start: under 15 seconds Warm start: under 5 seconds Hot start: under 1 second This ensures you get location data quickly, even after powering down. Can I use the RAK12501 in battery-powered projects? Yes, the RAK12501 is built for low-power applications. It uses only 7µA in backup mode and 18–25mA during tracking or acquisition, making it a great choice for portable or long-deployment devices. Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 days. Buyer pays return shipping unless faulty or wrong item shipped."
+       },
+       "id": "gid://shopify/ProductVariant/42846530437203",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12501_2.png?v=1751045218"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "110218-AMZ",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK12006 PIR module is based on the AM312 sensor module and detects motion using PIR technology. This motion detection sensor can detect humans and pets in the sensing range of 3-5m. It can be used as security system to detect intruders or for light automation. Product Features AM312 PIR sensor from Senba Sensing Technology Co., Ltd. Digital signal processing Built-in filter, screen the interference by other frequency Schmitt Trigger Output REL 3.3 V Power supply Module size: 15 X 25 mm Documentation RAK12006 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK12006 3D Model(opens new window) 40-Pin Male Connector 3D file(opens new window) WisBlock Sensor Tutorial Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+     },
+     "gift_card": false,
+     "handle": "rakwireless-rak12006-pir-motion-sensor-senba-sensing-am312",
+     "id": "gid://shopify/Product/7253437186131",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12006.png?v=1713456402"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-sensors"
+     ],
+     "title": "RAKwireless RAK12006 PIR Motion Sensor Senba Sensing AM312 PID: 100041",
+     "url": "https://store.rokland.com/products/rakwireless-rak12006-pir-motion-sensor-senba-sensing-am312",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/41655462658131:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. RAK12006 PIR module is based on the AM312 sensor module and detects motion using PIR technology. This motion detection sensor can detect humans and pets in the sensing range of 3-5m. It can be used as security system to detect intruders or for light automation. Product Features AM312 PIR sensor from Senba Sensing Technology Co., Ltd. Digital signal processing Built-in filter, screen the interference by other frequency Schmitt Trigger Output REL 3.3 V Power supply Module size: 15 X 25 mm Documentation RAK12006 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository(opens new window) RAK12006 3D Model(opens new window) 40-Pin Male Connector 3D file(opens new window) WisBlock Sensor Tutorial Tutorials WisBlock Starter Kit and RAK Edge Gateway Complete LoRaWAN Guide Installation of Board Support Package in Arduino IDE The Icing on the Cake: A Template to Innovate Custom IoT Applications with RAKwireless and Datacake Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day returns, must be in new or like new condition. A restock fee of 10% will apply on free shipping orders to help cover original ship cost. This is waived for defective or not as described orders. Bulk orders have different return policy, see here."
+       },
+       "id": "gid://shopify/ProductVariant/41655462658131",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12006.png?v=1713456402"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100041",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA & no tariffs apply. RAK12033 is a WisBlock Accelerometer Sensor based on the TDK InvenSense IIM-42652 which extends the WisBlock system with a motion tracking sensor. It combines a 3-axis accelerometer and a 3-axis gyroscope in a small package.RAK12033's scale from ±2g to ±16g and ±15 to ±2000 degrees/sec can be adjusted to the requirements of your application. RAK12033 combined with any WisBlock Core module is a ready to go system for navigation, orientaton measurement, tilt sensing, platform stabilization and robotic systems. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections, BLE or WiFi, depending on the Core module. RAK12033 is ideal for battery-powered applications because of its low power consumption. Features Based on TDK InvenSense IIM-42652 Digital-output X-, Y-, and Z-axis angular rate sensors (gyroscopes) with programmable fullscale range of ±15.625, ±31.25, ±62.5, ±125, ±250, ±500, ±1000, and ±2000 degrees/sec Digital-output X-, Y-, and Z-axis accelerometer with programmable full-scale range of ±2g, ±4g, ±8g and ±16g 20,000 g shock tolerant I2C digital interfaces 3.3V Power supply Operating Temperature: -40° C ~ 105° C Size 10x23mm Documentation RAK12033 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository RAK12033 3D Model 24-Pin Male Connector 3D File Examples For All WisBlock Core Modules: Sample Code: RAK12033 Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day return or exchange. Buyer pays return shipping except in cases of defect or advertisement problem. 15% fee charged on non-defective returns to help cover original ship cost."
+     },
+     "gift_card": false,
+     "handle": "rak12033-6-axis-accelerometer-sensor-module-pid-100093",
+     "id": "gid://shopify/Product/15425193082963",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12033.png?v=1792683739"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1297,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-modules"
+     ],
+     "title": "RAK12033 6-axis Accelerometer Sensor Module TDK InvenSense IIM-42652 PID 100093",
+     "url": "https://store.rokland.com/products/rak12033-6-axis-accelerometer-sensor-module-pid-100093",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/67822769438803:1",
+       "description": {
+        "html": "Rokland is a Gold Level distributor for RAK Wireless. Please note when comparing to price on RAK web site, RAK price is not inclusive of shipping to USA or 25% import tariffs. When buying from Rokland, items ship from USA & no tariffs apply. RAK12033 is a WisBlock Accelerometer Sensor based on the TDK InvenSense IIM-42652 which extends the WisBlock system with a motion tracking sensor. It combines a 3-axis accelerometer and a 3-axis gyroscope in a small package.RAK12033's scale from ±2g to ±16g and ±15 to ±2000 degrees/sec can be adjusted to the requirements of your application. RAK12033 combined with any WisBlock Core module is a ready to go system for navigation, orientaton measurement, tilt sensing, platform stabilization and robotic systems. The acquired data can be send using LoRaWan® communication, LoRa® point to point connections, BLE or WiFi, depending on the Core module. RAK12033 is ideal for battery-powered applications because of its low power consumption. Features Based on TDK InvenSense IIM-42652 Digital-output X-, Y-, and Z-axis angular rate sensors (gyroscopes) with programmable fullscale range of ±15.625, ±31.25, ±62.5, ±125, ±250, ±500, ±1000, and ±2000 degrees/sec Digital-output X-, Y-, and Z-axis accelerometer with programmable full-scale range of ±2g, ±4g, ±8g and ±16g 20,000 g shock tolerant I2C digital interfaces 3.3V Power supply Operating Temperature: -40° C ~ 105° C Size 10x23mm Documentation RAK12033 Quick Start Guide Datasheet WisBlock Quick Start Guide WisBlock Source Code Repository RAK12033 3D Model 24-Pin Male Connector 3D File Examples For All WisBlock Core Modules: Sample Code: RAK12033 Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 day return or exchange. Buyer pays return shipping except in cases of defect or advertisement problem. 15% fee charged on non-defective returns to help cover original ship cost."
+       },
+       "id": "gid://shopify/ProductVariant/67822769438803",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK12033.png?v=1792683739"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "100093",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

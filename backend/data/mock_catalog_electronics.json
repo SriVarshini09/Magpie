@@ -1,0 +1,1018 @@
+{
+  "_note": "MOCK DATA for pipeline mode (owner B). Offers for the electronics_mcu and generic templates and the esp32-weather-epd README lines, so those runs reach a cart with mock stores. EVERY price is a PLACEHOLDER: no listing or price here was checked anywhere. Every offer carries source_api 'mock', simulated true and a mock.invalid URL. A part is matched by its exact name (words, any order); when query_any is set, one of those words must also be in the part's name or search query. Listed after the arm and drone fixtures, so it never changes what those runs find. Lines with 'extends' add other-size listings (5-inch drone parts) to a hero fixture line; the size rule (G7) picks the one that fits the build.",
+  "lines": [
+    {
+      "line_id": "e1",
+      "names": [
+        "ESP32",
+        "ESP32 board",
+        "Microcontroller board",
+        "Controller board"
+      ],
+      "query_any": [
+        "esp32",
+        "firebeetle",
+        "devkitc",
+        "esp32e"
+      ]
+    },
+    {
+      "line_id": "e2",
+      "names": [
+        "Microcontroller board",
+        "Controller board"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e3",
+      "names": [
+        "E-Paper Display",
+        "E-paper display"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e4",
+      "names": [
+        "Display"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e5",
+      "names": [
+        "Adapter Board",
+        "E-paper adapter board"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e6",
+      "names": [
+        "Sensor"
+      ],
+      "query_any": [
+        "bme280"
+      ]
+    },
+    {
+      "line_id": "e7",
+      "names": [
+        "Sensor",
+        "Sensors"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e8",
+      "names": [
+        "Battery"
+      ],
+      "query_any": [
+        "lipo",
+        "jst",
+        "1s"
+      ]
+    },
+    {
+      "line_id": "e9",
+      "names": [
+        "Battery"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e10",
+      "names": [
+        "Power source",
+        "Power supply"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e11",
+      "names": [
+        "USB cable"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e12",
+      "names": [
+        "Breadboard"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e13",
+      "names": [
+        "Jumper wires",
+        "Cables and connectors"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e14",
+      "names": [
+        "Servo or DC motor",
+        "Motor or actuator"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e15",
+      "names": [
+        "LEDs, resistors, buttons, potentiometers"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "e16",
+      "names": [
+        "Mechanical parts and fasteners"
+      ],
+      "query_any": []
+    },
+    {
+      "line_id": "q1",
+      "extends": "drone:b1",
+      "names": [
+        "Frame"
+      ],
+      "query_any": [
+        "5",
+        "220mm"
+      ]
+    },
+    {
+      "line_id": "q3",
+      "extends": "drone:b3",
+      "names": [
+        "ESC"
+      ],
+      "query_any": [
+        "45a",
+        "30x30"
+      ]
+    },
+    {
+      "line_id": "q4",
+      "extends": "drone:b4",
+      "names": [
+        "Flight controller"
+      ],
+      "query_any": [
+        "f7",
+        "30x30"
+      ]
+    },
+    {
+      "line_id": "q5",
+      "extends": "drone:b5",
+      "names": [
+        "Propellers"
+      ],
+      "query_any": [
+        "5"
+      ]
+    },
+    {
+      "line_id": "q7",
+      "extends": "drone:b7",
+      "names": [
+        "LiPo battery"
+      ],
+      "query_any": [
+        "1300mah",
+        "xt60"
+      ]
+    },
+    {
+      "line_id": "q10",
+      "extends": "drone:b10",
+      "names": [
+        "Video transmitter + antenna"
+      ],
+      "query_any": [
+        "30x30"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "offer_id": "e1o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "ESP32-E low-power board with JST-PH 2.0 LiPo connector and charger",
+      "url": "https://mock.invalid/mock_store/e1o1",
+      "price_usd": 9.9,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "7267d0463a85979363a79b481570521dd194c4c4f7342344a0ce926e13492fde",
+      "simulated": true,
+      "bom_line_id": "e1"
+    },
+    {
+      "offer_id": "e1o2",
+      "store_id": "sparkfun",
+      "store_name": "SparkFun",
+      "title": "ESP32 Thing Plus with JST-PH 2.0 LiPo connector",
+      "url": "https://mock.invalid/sparkfun/e1o2",
+      "price_usd": 24.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E1O2"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "8e397ce0c58d090d18247fd22270b1a7055d823fbebbc6483e15427998adc114",
+      "simulated": true,
+      "bom_line_id": "e1"
+    },
+    {
+      "offer_id": "e2o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "Uno R3 compatible microcontroller board",
+      "url": "https://mock.invalid/adafruit/e2o1",
+      "price_usd": 24.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E2O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "1fc5ebdd8bd494a4a928ab876cda27d35ab0848bd89ecd5d500409045f5ebc98",
+      "simulated": true,
+      "bom_line_id": "e2"
+    },
+    {
+      "offer_id": "e2o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "Uno R3 compatible board with USB cable",
+      "url": "https://mock.invalid/mock_store/e2o2",
+      "price_usd": 15.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "3c988fea1f3d7443cd2381cf9b79946fa5de9f38e99472a5113269567b3cb5f7",
+      "simulated": true,
+      "bom_line_id": "e2"
+    },
+    {
+      "offer_id": "e3o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "7.5 inch e-paper raw panel, 800x480, black/white",
+      "url": "https://mock.invalid/mock_store/e3o1",
+      "price_usd": 49.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "4cb0c167ed3e5a78b2b4a332b6b6a6a37e37148aeb08785dd55174ea0f3938dd",
+      "simulated": true,
+      "bom_line_id": "e3"
+    },
+    {
+      "offer_id": "e3o2",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "7.5 inch e-ink display panel 800x480, SPI",
+      "url": "https://mock.invalid/amazon/e3o2",
+      "price_usd": 56.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "asin": "B0MOCKE3O2"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "ba87fc393c5f92b74f7d85c67b5112e67f8503e2adbbcf84e7540a33e6552301",
+      "simulated": true,
+      "bom_line_id": "e3"
+    },
+    {
+      "offer_id": "e4o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "16x2 character LCD, blue and white",
+      "url": "https://mock.invalid/adafruit/e4o1",
+      "price_usd": 9.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E4O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "fd6b06628ce476094bc8daee825beb0480c2318e1c131dcda1bc266fa72bee1e",
+      "simulated": true,
+      "bom_line_id": "e4"
+    },
+    {
+      "offer_id": "e4o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "16x2 LCD module with I2C backpack",
+      "url": "https://mock.invalid/mock_store/e4o2",
+      "price_usd": 7.49,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "c077a98f9f34845fea7017172b1fcc99c182748708324fc98d673757d2e44743",
+      "simulated": true,
+      "bom_line_id": "e4"
+    },
+    {
+      "offer_id": "e5o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "E-paper adapter board, 24-pin FPC to SPI breakout",
+      "url": "https://mock.invalid/mock_store/e5o1",
+      "price_usd": 6.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "186e30a2b0f8dae29e64484c33bf5481b60cd87296fe168fe56569b61e709b69",
+      "simulated": true,
+      "bom_line_id": "e5"
+    },
+    {
+      "offer_id": "e6o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "BME280 temperature, humidity and pressure sensor breakout",
+      "url": "https://mock.invalid/adafruit/e6o1",
+      "price_usd": 14.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E6O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "b18ee9641a016bf6060dd86d6c48c0674b3264650ce771803c074ae0b0badb7a",
+      "simulated": true,
+      "bom_line_id": "e6"
+    },
+    {
+      "offer_id": "e6o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "BME280 sensor module, I2C, 3.3 V",
+      "url": "https://mock.invalid/mock_store/e6o2",
+      "price_usd": 5.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "a1fd8fcb04269ec7a7025c1ce7ecf2b718b202da625099a420dcf8641fa7e5e8",
+      "simulated": true,
+      "bom_line_id": "e6"
+    },
+    {
+      "offer_id": "e7o1",
+      "store_id": "sparkfun",
+      "store_name": "SparkFun",
+      "title": "Temperature and humidity sensor module (DHT22-type)",
+      "url": "https://mock.invalid/sparkfun/e7o1",
+      "price_usd": 9.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E7O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "43d5aea36d72b1c4a4e6eedaa5592605764e4af3cf3d591e09cb7042467c6b5d",
+      "simulated": true,
+      "bom_line_id": "e7"
+    },
+    {
+      "offer_id": "e7o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "Sensor starter pack: temperature, light, tilt",
+      "url": "https://mock.invalid/mock_store/e7o2",
+      "price_usd": 11.49,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "d51260127ebf5b19e2939d9b03807df032db7672115f5485f91373d6c38e230d",
+      "simulated": true,
+      "bom_line_id": "e7"
+    },
+    {
+      "offer_id": "e8o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "Lithium-ion polymer battery 3.7 V 2500 mAh, JST-PH 2.0",
+      "url": "https://mock.invalid/adafruit/e8o1",
+      "price_usd": 14.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E8O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "7e152737701965156c806548efab03f34c887b850078db5ee9a25b95de8fc029",
+      "simulated": true,
+      "bom_line_id": "e8"
+    },
+    {
+      "offer_id": "e8o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "3.7 V LiPo 5000 mAh, JST-PH 2.0 plug",
+      "url": "https://mock.invalid/mock_store/e8o2",
+      "price_usd": 12.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "00bacd00117a74d69af1768c36faff9d39700785d547ffce9f668cb08cb6998e",
+      "simulated": true,
+      "bom_line_id": "e8"
+    },
+    {
+      "offer_id": "e9o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "9 V battery snap with 5.5x2.1 mm barrel plug",
+      "url": "https://mock.invalid/mock_store/e9o1",
+      "price_usd": 3.49,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "eedd9f8e6190c5dec6fd3abb40517ef0a650fce092e04f576b755250903caaac",
+      "simulated": true,
+      "bom_line_id": "e9"
+    },
+    {
+      "offer_id": "e9o2",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "9 V battery clip to barrel jack, 2 pcs",
+      "url": "https://mock.invalid/amazon/e9o2",
+      "price_usd": 6.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "asin": "B0MOCKE9O2"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "a482bf032c81fea1c46daac7980d0f7fdfcf951a422e9ea7962400ca08692b82",
+      "simulated": true,
+      "bom_line_id": "e9"
+    },
+    {
+      "offer_id": "e10o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "5 V 2 A USB wall adapter",
+      "url": "https://mock.invalid/adafruit/e10o1",
+      "price_usd": 7.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E10O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "0ce7e14b615114bcd8b99d8fefbb71b07426c2ad2534daad3f7e16a1a86ceb0a",
+      "simulated": true,
+      "bom_line_id": "e10"
+    },
+    {
+      "offer_id": "e10o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "5 V 2 A USB power supply, US plug",
+      "url": "https://mock.invalid/mock_store/e10o2",
+      "price_usd": 6.49,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "c9a9edb0018816157b6d44e452a5b65ac410dad221e7388fdad2a980d51929d8",
+      "simulated": true,
+      "bom_line_id": "e10"
+    },
+    {
+      "offer_id": "e11o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "USB A to B cable, 1 m",
+      "url": "https://mock.invalid/mock_store/e11o1",
+      "price_usd": 3.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "7f4d4b0c5da0169243ada46b319d0b3da2475b32eb28def410bada31a332f7af",
+      "simulated": true,
+      "bom_line_id": "e11"
+    },
+    {
+      "offer_id": "e11o2",
+      "store_id": "sparkfun",
+      "store_name": "SparkFun",
+      "title": "USB cable A to B, 6 foot",
+      "url": "https://mock.invalid/sparkfun/e11o2",
+      "price_usd": 4.5,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E11O2"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "f8da3c4afec9c13900869557a648639a55a1e87b5cbe51042989a090979d6bb6",
+      "simulated": true,
+      "bom_line_id": "e11"
+    },
+    {
+      "offer_id": "e12o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "Half-size breadboard, 400 tie points",
+      "url": "https://mock.invalid/adafruit/e12o1",
+      "price_usd": 5.0,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E12O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "bfbfd8bd10b707dc21fd36285b4c23d22311a64cf7fcbab990a20859eaaf687c",
+      "simulated": true,
+      "bom_line_id": "e12"
+    },
+    {
+      "offer_id": "e12o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "400 tie point solderless breadboard",
+      "url": "https://mock.invalid/mock_store/e12o2",
+      "price_usd": 3.49,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "0b9ded9af1fa35bfff76a623dd197664441804fd1bcb5b6be45aa0c2bc028e6b",
+      "simulated": true,
+      "bom_line_id": "e12"
+    },
+    {
+      "offer_id": "e13o1",
+      "store_id": "sparkfun",
+      "store_name": "SparkFun",
+      "title": "Jumper wire kit, 140 pieces, solid core",
+      "url": "https://mock.invalid/sparkfun/e13o1",
+      "price_usd": 6.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E13O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "f60412f3460846c50516c7473006feb6716813b1797237f7f5b1919e0f85dbec",
+      "simulated": true,
+      "bom_line_id": "e13"
+    },
+    {
+      "offer_id": "e13o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "Jumper wires, male to male, 65 pcs",
+      "url": "https://mock.invalid/mock_store/e13o2",
+      "price_usd": 4.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "47ade0f33498bb5aa6ed92ade8cf82db46bf8d3b00fda493ef2836ff4888504a",
+      "simulated": true,
+      "bom_line_id": "e13"
+    },
+    {
+      "offer_id": "e14o1",
+      "store_id": "adafruit",
+      "store_name": "Adafruit",
+      "title": "Micro servo, 180 degree",
+      "url": "https://mock.invalid/adafruit/e14o1",
+      "price_usd": 5.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E14O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "adafruit",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "7f0970821d8b9ab825dd85aa96a3ba344812baf841f09cc94c5193c9c4f6f5ea",
+      "simulated": true,
+      "bom_line_id": "e14"
+    },
+    {
+      "offer_id": "e14o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "Micro servo 9 g, 4.8-6 V",
+      "url": "https://mock.invalid/mock_store/e14o2",
+      "price_usd": 3.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "cd7767fcbeadc0bfdcd01467a2b96c78cfd713906de59ee37209f72efcc47fde",
+      "simulated": true,
+      "bom_line_id": "e14"
+    },
+    {
+      "offer_id": "e15o1",
+      "store_id": "sparkfun",
+      "store_name": "SparkFun",
+      "title": "Basic components kit: LEDs, resistors, buttons, potentiometers",
+      "url": "https://mock.invalid/sparkfun/e15o1",
+      "price_usd": 12.95,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {
+        "sku": "MOCK-E15O1"
+      },
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "magento",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "9b978efab6acf1a0ae47208a9835c948cb1169de63340786486f08306893f74b",
+      "simulated": true,
+      "bom_line_id": "e15"
+    },
+    {
+      "offer_id": "e15o2",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "LED, resistor and pushbutton assortment",
+      "url": "https://mock.invalid/mock_store/e15o2",
+      "price_usd": 8.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "9859d17711d582e794c4d72075e270c8b96e2d35d6ac12aca4cf2f20e1d8d89b",
+      "simulated": true,
+      "bom_line_id": "e15"
+    },
+    {
+      "offer_id": "e16o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "M2/M3 screw and standoff assortment",
+      "url": "https://mock.invalid/mock_store/e16o1",
+      "price_usd": 9.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "product_link",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "33e477781092d0044383df443d8942640147b4ed9b008b6992c48b30b0d154c3",
+      "simulated": true,
+      "bom_line_id": "e16"
+    },
+    {
+      "offer_id": "q1o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "5-inch FPV frame, 220 mm wheelbase, 5 mm arms",
+      "url": "https://mock.invalid/mock_store/q1o1",
+      "price_usd": 34.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "1e7de037e373eaf0301b247c88169efde81b42ff7389b1500d4242b424cef2b9",
+      "simulated": true,
+      "bom_line_id": "q1"
+    },
+    {
+      "offer_id": "q1o2",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "5-inch freestyle FPV frame kit, 225 mm",
+      "url": "https://mock.invalid/amazon/q1o2",
+      "price_usd": 39.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "prefilled_cart",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "dd8634dd03bde5f0eeaee9ae3292e3896b6171a988dbdb66c5c164f3f01ce436",
+      "simulated": true,
+      "bom_line_id": "q1",
+      "rating": 4.5,
+      "reviews": 212
+    },
+    {
+      "offer_id": "q3o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "4-in-1 ESC 45A BLHeli_32, 4-6S, 30x30 mm, XT60 lead",
+      "url": "https://mock.invalid/mock_store/q3o1",
+      "price_usd": 49.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "129048f8d78e9cc8afd1ae40c2af9b72ee33af6b41deebb3f4fafccfe7741b38",
+      "simulated": true,
+      "bom_line_id": "q3"
+    },
+    {
+      "offer_id": "q4o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "F7 flight controller, 30x30 mm stack, 4-6S input",
+      "url": "https://mock.invalid/mock_store/q4o1",
+      "price_usd": 44.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "3853b33953d2974ba05dd162f34e52417b725dd79efa2be2be6e1a1edfcd742e",
+      "simulated": true,
+      "bom_line_id": "q4"
+    },
+    {
+      "offer_id": "q5o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "5-inch 3-blade propellers, 2 CW + 2 CCW",
+      "url": "https://mock.invalid/mock_store/q5o1",
+      "price_usd": 4.99,
+      "currency": "USD",
+      "units_per_pack": 4,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "1d96cc65365e37d0e248cbec3614c4d7a992f867881d9febdb1f8ef83cf14fa8",
+      "simulated": true,
+      "bom_line_id": "q5"
+    },
+    {
+      "offer_id": "q5o2",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "5-inch tri-blade FPV props, 8 pcs (2 sets)",
+      "url": "https://mock.invalid/amazon/q5o2",
+      "price_usd": 8.99,
+      "currency": "USD",
+      "units_per_pack": 8,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "prefilled_cart",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "b42fc6ffa18c5e229e745161c1c0c07ee5f2b55bb337e0e7fb0cbd6509846bbc",
+      "simulated": true,
+      "bom_line_id": "q5",
+      "rating": 4.6,
+      "reviews": 540
+    },
+    {
+      "offer_id": "q7o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "4S 1300mAh 100C LiPo battery, XT60",
+      "url": "https://mock.invalid/mock_store/q7o1",
+      "price_usd": 24.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "1fed4d199ada449c4050a413f59acd0cd497387372708155a44e2adea7e7ec46",
+      "simulated": true,
+      "bom_line_id": "q7"
+    },
+    {
+      "offer_id": "q7o2",
+      "store_id": "amazon",
+      "store_name": "Amazon",
+      "title": "4S 1300mAh LiPo battery, XT60, 2 pack",
+      "url": "https://mock.invalid/amazon/q7o2",
+      "price_usd": 44.99,
+      "currency": "USD",
+      "units_per_pack": 2,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "prefilled_cart",
+      "source_api": "mock",
+      "mock_of": "serpapi:amazon",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "b00a62252ba988ccfc4c3350aa447407ed1502164ec459facf0ef772be912fe9",
+      "simulated": true,
+      "bom_line_id": "q7",
+      "rating": 4.4,
+      "reviews": 389
+    },
+    {
+      "offer_id": "q10o1",
+      "store_id": "mock_store",
+      "store_name": "Mock Hobby Store (simulated)",
+      "title": "5.8GHz VTX 30x30 with antenna, 25-400 mW",
+      "url": "https://mock.invalid/mock_store/q10o1",
+      "price_usd": 24.99,
+      "currency": "USD",
+      "units_per_pack": 1,
+      "stock": "in_stock",
+      "condition": "new",
+      "ids": {},
+      "action_level": "agent_cart",
+      "source_api": "mock",
+      "mock_of": "mock",
+      "seen_at": "2026-11-20T13:30:00-08:00",
+      "evidence_sha256": "aa169e910871b62a9265d588d7b750bdd25a369e21a5c4fc342a6d282faf97b4",
+      "simulated": true,
+      "bom_line_id": "q10"
+    }
+  ]
+}

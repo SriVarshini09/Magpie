@@ -1,0 +1,1391 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "DESPI-C02 e-paper adapter"
+  }
+ },
+ "key": "c2da4233d47559bc59c42697177274167b446eab9b42a30ab6b88e5717eadffd",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:29-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 910); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6OTEwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 910
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<h2><span><strong>Basic Function</strong></span></h2>\n<ul>\n<li><span>Driver circuit: Peripheral Boost Circuit</span></li>\n<li><span>Supporting screen: 5.79 inch</span></li>\n<li><span>Matching motherboard: <u>STM32</u>、<u>ESP32-L</u>、<u>ESP8266-L</u>、<u>Arduino UNO-L</u></span></li>\n</ul>\n<p> </p>\n<h2><span><strong>Basic Parameters</strong></span></h2>\n<ul>\n<li><span>Outline size: 41x22mm</span></li>\n<li><span>Communication Interface: SPI</span></li>\n<li><span>Screen Interface: 24PIN 0.5mm</span></li>\n<li><span>Key Components: SI1308EDL, MBR0530</span></li>\n<li><span>DIP Switch: None</span></li>\n<li><span>Operating Voltage: 3.3V</span></li>\n<li><span>Operating Temperature: -20~70℃</span></li>\n</ul>\n<p> </p>\n<h2><span><strong>Auxiliary Functions</strong></span></h2>\n<ul>\n<li><span>Boost Detection: Reserved boost detection points for convenient fault diagnosis.</span></li>\n<li><span>Design Reference: Initial design reference for user product design.</span></li>\n</ul>\n<p> </p>\n<p><span><img src=\"https://www.good-display.com/repository/image/7c20088d-15e2-4404-a3c0-1caed1d54f41.jpg?t=1701934671522\"></span></p>"
+     },
+     "handle": "79-inch-e-paper-hat",
+     "id": "gid://shopify/p/5X5d0euJXp8wKyEK4ECgPO",
+     "media": [
+      {
+       "alt_text": "5.79-inch E-Paper HAT Adapter Board-01",
+       "height": 546,
+       "preview": {
+        "height": 546,
+        "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg",
+        "width": 640
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg",
+       "width": 640
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Driver circuit for E-paper display enables straightforward integration into projects",
+       "Supports 5.79 inch display for larger, more visible output",
+       "SPI communication interface ensures compatibility with a wide range of microcontrollers",
+       "Boost detection feature allows for convenient fault diagnosis and system reliability",
+       "Rigid PCB construction provides durability for long-term use"
+      ],
+      "unique_selling_points": [
+       "Supports 5.79 inch E-paper displays with advanced configuration and boost detection for reliable performance and easy fault diagnosis."
+      ]
+     },
+     "options": [
+      {
+       "name": "Maximum operating temperature",
+       "values": [
+        {
+         "label": "70 °C"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 839,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 839,
+       "currency": "USD"
+      }
+     },
+     "title": "5.79-inch E-Paper HAT Adapter Board DESPI-C579",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.com/buy/56364467552580:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2><span><strong>Basic Function</strong></span></h2>\n<ul>\n<li><span>Driver circuit: Peripheral Boost Circuit</span></li>\n<li><span>Supporting screen: 5.79 inch</span></li>\n<li><span>Matching motherboard: <u>STM32</u>、<u>ESP32-L</u>、<u>ESP8266-L</u>、<u>Arduino UNO-L</u></span></li>\n</ul>\n<p> </p>\n<h2><span><strong>Basic Parameters</strong></span></h2>\n<ul>\n<li><span>Outline size: 41x22mm</span></li>\n<li><span>Communication Interface: SPI</span></li>\n<li><span>Screen Interface: 24PIN 0.5mm</span></li>\n<li><span>Key Components: SI1308EDL, MBR0530</span></li>\n<li><span>DIP Switch: None</span></li>\n<li><span>Operating Voltage: 3.3V</span></li>\n<li><span>Operating Temperature: -20~70℃</span></li>\n</ul>\n<p> </p>\n<h2><span><strong>Auxiliary Functions</strong></span></h2>\n<ul>\n<li><span>Boost Detection: Reserved boost detection points for convenient fault diagnosis.</span></li>\n<li><span>Design Reference: Initial design reference for user product design.</span></li>\n</ul>\n<p> </p>\n<p><span><img src=\"https://www.good-display.com/repository/image/7c20088d-15e2-4404-a3c0-1caed1d54f41.jpg?t=1701934671522\"></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "79-inch-e-paper-hat",
+       "id": "gid://shopify/ProductVariant/56364467552580",
+       "media": [
+        {
+         "alt_text": "5.79-inch E-Paper HAT Adapter Board-01",
+         "height": 546,
+         "preview": {
+          "height": 546,
+          "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg",
+          "width": 640
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg",
+         "width": 640
+        }
+       ],
+       "options": [
+        {
+         "label": "70 °C",
+         "name": "Maximum operating temperature"
+        }
+       ],
+       "price": {
+        "amount": 839,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "9irjdt-u1.myshopify.com",
+        "id": "gid://shopify/Shop/93537272132",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/47739208004.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281452868.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281354564.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/93537272132/policies/48281518404.html"
+         }
+        ],
+        "name": "OpenELAB Inc.",
+        "url": "https://openelab.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15461443502404",
+       "source": "shopify",
+       "title": "5.79-inch E-Paper HAT Adapter Board DESPI-C579",
+       "url": "https://openelab.com/products/79-inch-e-paper-hat?variant=56364467552580&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h5>Description</h5>\n<p>Throw it back with the Dipstick Party Shirt. Featuring a deep blue base covered in an all-over assortment of retro Dixxon logos in red, yellow, orange, and white, this button-up celebrates the brand with a vintage-inspired twist. Crafted from Dixxon’s signature Party Blend, the Dipstick delivers lightweight comfort, added stretch, and wrinkle-resistant performance for an easy statement piece that's unmistakably Dixxon. Quantity limit: 4 per customer.</p>\n\n<h5>Product Details</h5>\n<ul>\n  <li>Men’s blue short sleeve party shirt</li>\n  <li>Multicolor vintage-inspired Dixxon logo print throughout</li>\n  <li>Full button closure</li>\n  <li>Dixxon brand tag on the left chest pocket</li>\n  <li>Hidden collar-stay buttons</li>\n  <li>Fold down collar</li>\n  <li>Straight back yoke</li>\n  <li>Machine wash cold with like colors</li>\n  <li>Hang to dry or tumble dry on low</li>\n  <li>Signature Party Blend material</li>\n  <li>Imported</li>\n</ul>\n\n<h5>Size &amp; Fit</h5>\n<ul>\n  <li>Sized directly off our flannels, for a slimmer fit size down</li>\n  <li>Similar fit to our bamboo short sleeve, but with added stretch</li>\n  <li>Relaxed fit</li>\n</ul>"
+     },
+     "handle": "dip-stick-party-shirt",
+     "id": "gid://shopify/p/34dJj4EWsz7ui326rBWDnz",
+     "media": [
+      {
+       "alt_text": "Dipstick Party Shirt - Dixxon Flannel Co.",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/1008/2786/files/dipstick-party-shirt-3640976.png",
+        "width": 1638
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1008/2786/files/dipstick-party-shirt-3640976.png",
+       "width": 1638
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "All-over multicolor Dixxon logo print: Showcases a unique retro look with standout brand style",
+       "Signature party blend material: Provides lightweight comfort and added stretch for ease of movement",
+       "Wrinkle-resistant fabric: Ensures a smooth, polished appearance with minimal maintenance",
+       "Full button closure: Offers classic style and easy wear",
+       "Hidden collar and stay buttons: Enhances fit and comfort"
+      ],
+      "unique_selling_points": [
+       "Features an all-over multicolor Dixxon logo print on a vintage-inspired blue shirt, made from signature party blend for lightweight comfort and wrinkle resistance."
+      ]
+     },
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "Extra small (XS)"
+        },
+        {
+         "label": "Small (S)"
+        },
+        {
+         "label": "Medium (M)"
+        },
+        {
+         "label": "Large (L)"
+        },
+        {
+         "label": "Extra large (XL)"
+        },
+        {
+         "label": "Double extra large (XXL)"
+        },
+        {
+         "label": "Triple extra large (XXXL)"
+        },
+        {
+         "label": "Four extra large (4XL)"
+        },
+        {
+         "label": "Five extra large (5XL)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 11626,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "Dipstick Party Shirt",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.dixxon.com/buy/45605330550837:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h5>Description</h5>\n<p>Throw it back with the Dipstick Party Shirt. Featuring a deep blue base covered in an all-over assortment of retro Dixxon logos in red, yellow, orange, and white, this button-up celebrates the brand with a vintage-inspired twist. Crafted from Dixxon’s signature Party Blend, the Dipstick delivers lightweight comfort, added stretch, and wrinkle-resistant performance for an easy statement piece that's unmistakably Dixxon. Quantity limit: 4 per customer.</p>\n\n<h5>Product Details</h5>\n<ul>\n  <li>Men’s blue short sleeve party shirt</li>\n  <li>Multicolor vintage-inspired Dixxon logo print throughout</li>\n  <li>Full button closure</li>\n  <li>Dixxon brand tag on the left chest pocket</li>\n  <li>Hidden collar-stay buttons</li>\n  <li>Fold down collar</li>\n  <li>Straight back yoke</li>\n  <li>Machine wash cold with like colors</li>\n  <li>Hang to dry or tumble dry on low</li>\n  <li>Signature Party Blend material</li>\n  <li>Imported</li>\n</ul>\n\n<h5>Size &amp; Fit</h5>\n<ul>\n  <li>Sized directly off our flannels, for a slimmer fit size down</li>\n  <li>Similar fit to our bamboo short sleeve, but with added stretch</li>\n  <li>Relaxed fit</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dip-stick-party-shirt",
+       "id": "gid://shopify/ProductVariant/45605330550837",
+       "list_price": {
+        "amount": 3999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Dipstick Party Shirt - Dixxon Flannel Co.",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/1008/2786/files/dipstick-party-shirt-3640976.png",
+          "width": 1638
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1008/2786/files/dipstick-party-shirt-3640976.png",
+         "width": 1638
+        }
+       ],
+       "options": [
+        {
+         "label": "Extra small (XS)",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 2499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 31,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "dixxon-flannel-co.myshopify.com",
+        "id": "gid://shopify/Shop/10082786",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/10082786/policies/12102659.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/10082786/policies/12102723.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/10082786/policies/12102595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/10082786/policies/13297287221.html"
+         }
+        ],
+        "name": "Dixxon Flannel Co.",
+        "url": "https://www.dixxon.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8161028538421",
+       "source": "shopify",
+       "title": "Dipstick Party Shirt",
+       "url": "https://www.dixxon.com/products/dip-stick-party-shirt?variant=45605330550837&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "This USB Power Adapter features a USB-A port for charging via wall outlet. It is designed for use in North America.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\"><em>Compatible with all USB cables for current Kobo eReaders. Charging cable not included.</em>"
+     },
+     "handle": "usb-power-adapter",
+     "id": "gid://shopify/p/3sF6OpuaCx8MYpHaWFD6pA",
+     "media": [
+      {
+       "alt_text": "10W USB power adapter front view. |markets: [ca,us,au,nz,sg]|",
+       "height": 3000,
+       "preview": {
+        "height": 3000,
+        "url": "https://cdn.shopify.com/s/files/1/0894/8758/files/20240822-NAadapter-frontview.1776copy_1_5.png",
+        "width": 3000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0894/8758/files/20240822-NAadapter-frontview.1776copy_1_5.png",
+       "width": 3000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "10W USB output enables fast charging for Kobo eReaders",
+       "Compatible with both US and EU USB cables for versatile use",
+       "Designed for use in North America and Europe",
+       "Solid black construction for a sleek, unobtrusive look",
+       "AC-powered for reliable, continuous charging"
+      ],
+      "unique_selling_points": [
+       "Compatible with both US and EU USB cables, supporting Kobo eReaders with a 10W output for fast charging."
+      ]
+     },
+     "options": [
+      {
+       "name": "Region",
+       "values": [
+        {
+         "label": "North America"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "10W USB Power Adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ereader.kobo.com/buy/47019756552246:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "This USB Power Adapter features a USB-A port for charging via wall outlet. It is designed for use in North America.<br data-mce-fragment=\"1\"><br data-mce-fragment=\"1\"><em>Compatible with all USB cables for current Kobo eReaders. Charging cable not included.</em>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "usb-power-adapter",
+       "id": "gid://shopify/ProductVariant/47019756552246",
+       "media": [
+        {
+         "alt_text": "10W USB power adapter front view. |markets: [ca,us,au,nz,sg]|",
+         "height": 3000,
+         "preview": {
+          "height": 3000,
+          "url": "https://cdn.shopify.com/s/files/1/0894/8758/files/20240822-NAadapter-frontview.1776copy_1_5.png",
+          "width": 3000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0894/8758/files/20240822-NAadapter-frontview.1776copy_1_5.png",
+         "width": 3000
+        }
+       ],
+       "options": [
+        {
+         "label": "North America",
+         "name": "Region"
+        }
+       ],
+       "price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 7,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "kobo-nz.myshopify.com",
+        "id": "gid://shopify/Shop/8948758",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/8948758/policies/7546883.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/8948758/policies/7546947.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/8948758/policies/7546819.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/8948758/policies/24002560054.html"
+         }
+        ],
+        "name": "Rakuten Kobo eReader Store",
+        "url": "https://ereader.kobo.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9070770389046",
+       "source": "shopify",
+       "title": "10W USB Power Adapter",
+       "url": "https://ereader.kobo.com/products/usb-power-adapter?variant=47019756552246&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<ul>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">Filmed with PVC material</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">Only 15g/0.03lb,</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">14A maximum current and 100V maximum voltage.</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">This cable is fitted for E1000 series, E708 series, E500 series, E400 series, E290 series, E240 series</span></li>\n</ul>\n<!---->"
+     },
+     "handle": "jackery-adapter-dc8020-to-dc7909",
+     "id": "gid://shopify/p/BuBT8hla1PT7JKKT94TbY",
+     "media": [
+      {
+       "alt_text": "Jackery Adapter DC8020 to DC7909 - Jackery",
+       "height": 3372,
+       "preview": {
+        "height": 3372,
+        "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/jackery-adapter-dc8020-to-dc7909-1353959.png",
+        "width": 6000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/jackery-adapter-dc8020-to-dc7909-1353959.png",
+       "width": 6000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Supports up to 14A maximum current and 100V maximum voltage for efficient power transfer",
+       "Compatible with multiple Jackery solarSaga models including E240, E500, E1000, E400, E290, and E240",
+       "Lightweight PVC construction at only 15g for easy portability",
+       "Available in black and orange color versions for user preference",
+       "One-year full warranty for added peace of mind"
+      ],
+      "unique_selling_points": [
+       "Supports high current and voltage transfers between Jackery solarSaga panels and car chargers with a lightweight PVC build."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2990,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2990,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 17,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "Jackery Adapter DC8020 to DC7909",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.jackery.com/buy/40972690325591:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<ul>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">Filmed with PVC material</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">Only 15g/0.03lb,</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">14A maximum current and 100V maximum voltage.</span></li>\n<li style=\"color: rgb(64, 64, 64);\"><span style=\"color: rgb(64, 64, 64);\">This cable is fitted for E1000 series, E708 series, E500 series, E400 series, E290 series, E240 series</span></li>\n</ul>\n<!---->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "jackery-adapter-dc8020-to-dc7909",
+       "id": "gid://shopify/ProductVariant/40972690325591",
+       "media": [
+        {
+         "alt_text": "Jackery Adapter DC8020 to DC7909 - Jackery",
+         "height": 3372,
+         "preview": {
+          "height": 3372,
+          "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/jackery-adapter-dc8020-to-dc7909-1353959.png",
+          "width": 6000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/jackery-adapter-dc8020-to-dc7909-1353959.png",
+         "width": 6000
+        }
+       ],
+       "price": {
+        "amount": 2990,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 26,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.7
+       },
+       "seller": {
+        "domain": "jackery.myshopify.com",
+        "id": "gid://shopify/Shop/9709262",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/9709262/policies/6823045.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/9709262/policies/6823109.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/9709262/policies/6822981.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/9709262/policies/6643581015.html"
+         }
+        ],
+        "name": "Jackery",
+        "url": "https://www.jackery.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7178766778455",
+       "source": "shopify",
+       "title": "Jackery Adapter DC8020 to DC7909",
+       "url": "https://www.jackery.com/products/jackery-adapter-dc8020-to-dc7909?variant=40972690325591&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p class=\"p1\">Open box; condition may vary</p>"
+     },
+     "handle": "apple-20w-usb-c-power-adapter",
+     "id": "gid://shopify/p/1smX4Z4SJIIB7ZNibqmDyf",
+     "media": [
+      {
+       "alt_text": "Apple AUTHENTIC 20W USB-C Power Adapter",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/0363/0301/1973/files/apple-20w-usb-c-power-adapter.jpg",
+        "width": 2000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0363/0301/1973/files/apple-20w-usb-c-power-adapter.jpg",
+       "width": 2000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "20W power output delivers fast charging for Apple devices",
+       "USB-C connector supports versatile device compatibility",
+       "Plug-and-play design enables quick and easy setup",
+       "Durable plastic construction ensures long-lasting use"
+      ],
+      "unique_selling_points": [
+       "Authentic Apple USB-C adapter ensures safe and efficient charging for compatible devices."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1000,
+       "currency": "USD"
+      }
+     },
+     "title": "Apple AUTHENTIC 20W USB-C Power Adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://harrisonnevel.com/buy/49538807529731:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "secondhand"
+       ],
+       "description": {
+        "plain": "<p class=\"p1\">Open box; condition may vary</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "apple-20w-usb-c-power-adapter",
+       "id": "gid://shopify/ProductVariant/49538807529731",
+       "media": [
+        {
+         "alt_text": "Apple AUTHENTIC 20W USB-C Power Adapter",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/0363/0301/1973/files/apple-20w-usb-c-power-adapter.jpg",
+          "width": 2000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0363/0301/1973/files/apple-20w-usb-c-power-adapter.jpg",
+         "width": 2000
+        }
+       ],
+       "price": {
+        "amount": 1000,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 5,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.2
+       },
+       "seller": {
+        "domain": "harrison-nevel-shop.myshopify.com",
+        "id": "gid://shopify/Shop/36303011973",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/36303011973/policies/27392147715.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/36303011973/policies/27392180483.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/36303011973/policies/27392114947.html"
+         }
+        ],
+        "name": "HN Shop",
+        "url": "https://harrisonnevel.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9616739533059",
+       "source": "shopify",
+       "title": "Apple AUTHENTIC 20W USB-C Power Adapter",
+       "url": "https://harrisonnevel.com/products/apple-20w-usb-c-power-adapter?variant=49538807529731&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p class=\"product-title-text\" data-spm-anchor-id=\"a2g0o.detail.1000016.i2.2c2050caeKZPWh\"><span style=\"color: #00aaff;\">Due to the problem of the characteristics of the ink screen, it cannot be partially refreshed for a long time, otherwise, it will leave residual images and lead to irreversible damage.</span></p>\n<h2 class=\"product-title-text\" data-spm-anchor-id=\"a2g0o.detail.1000016.i2.2c2050caeKZPWh\"><span style=\"color: #000000;\"><strong>Specifications</strong></span></h2>\n<table width=\"100%\" style=\"height: 137.157px;\">\n<tbody>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">MCU</td>\n<td style=\"height: 19.5938px;\">ESP32-S3-WROOM-1-N16R8</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Wireless Connectivity</td>\n<td style=\"height: 19.5938px;\">Wi-fi Bluetooth V5.0</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Programming Environment</td>\n<td style=\"height: 19.5938px;\">Arduino-ide VS Code</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\"><strong>Onboard Functions</strong></td>\n<td style=\"height: 19.5938px;\"></td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\"><span>Flash</span></td>\n<td style=\"height: 19.5938px;\"><span>16MB</span></td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">PSRAM</td>\n<td style=\"height: 19.5938px;\">8MB</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Support PCF8563 RTC</td>\n<td style=\"height: 19.5938px;\">Battery capacity detection</td>\n</tr>\n</tbody>\n</table>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td><strong> 4 . 7-inch Ultra-low Power E-paper</strong></td>\n</tr>\n</tbody>\n</table>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td>Driver IC</td>\n<td> EDO47TC1</td>\n</tr>\n<tr>\n<td>Size</td>\n<td>4.7 inch</td>\n</tr>\n<tr>\n<td>Gray levels</td>\n<td>16</td>\n</tr>\n<tr>\n<td>Resolution</td>\n<td><strong><span style=\"color: rgb(255, 42, 0);\">540 x 950pixels</span></strong></td>\n</tr>\n<tr>\n<td>Ultra Wide viewing angle</td>\n<td>low power consumption</td>\n</tr>\n</tbody>\n</table>\n<h2><br></h2>\n<h2><strong><span>Sample Code For Reference [<span style=\"color: #ff2a00;\">Github</span>]</span></strong></h2>\n<p><span>If you need technical support please check the link below for more details.</span></p>\n<p><span style=\"color: #2b00ff;\"><strong><a style=\"color: #2b00ff;\" rel=\"noopener\" title=\"https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/tree/esp32s3\" href=\"https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/tree/esp32s3\" target=\"_blank\">T5 4.7 </a></strong></span></p>\n<div style=\"text-align: left;\"><span style=\"color: rgb(255, 42, 0);\"><strong>Touch Version</strong></span></div>\n<div style=\"text-align: left;\"><strong><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4.7_1.jpg?v=1711592882\"></strong></div>\n<div style=\"text-align: left;\">\n<strong></strong><br>\n</div>\n<div style=\"text-align: left;\">\n<span style=\"color: rgb(255, 42, 0);\"><strong>Basic Version</strong></span><br><br>\n</div>\n<div style=\"text-align: left;\"><img style=\"margin-bottom: 16px; float: none;\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4.7_8a9a24db-26f2-4f6e-b3c7-d1293de0e30b.jpg?v=1704249359\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4_3.jpg?v=1711593088\" alt=\"\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5_4.7_Inch_E-paper_V2.34_1024x1024.jpg?v=1664003623\" alt=\"\" style=\"float: none;\"></div>\n<div style=\"text-align: left;\">\n<h2 style=\"text-align: left;\"><strong>What's in the box</strong></h2>\n<p> </p>\n</div>\n<div style=\"text-align: left;\"><strong>Touch Version</strong></div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/LILYGO-T5-E-PAPER_2.jpg?v=1715581355\"></div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><strong>Basic Version</strong></div>\n<div style=\"text-align: left;\">\n<strong></strong><br>\n</div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5_4.7_Inch_E-paper_V2.39_1024x1024.jpg?v=1664003661\" alt=\"\" style=\"float: none;\"></div>"
+     },
+     "handle": "t5-4-7-inch-e-paper-v2-3",
+     "id": "gid://shopify/p/5KwdrVWPLmFcfMbLGX4Ve2",
+     "media": [
+      {
+       "alt_text": "T5 e-Paper",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0617/7190/7253/products/T54.7InchE-paperV2.36.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0617/7190/7253/products/T54.7InchE-paperV2.36.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "4.7-inch e-Paper display with 16 gray levels and 540 x 950 pixels for clear, energy-efficient visuals",
+       "Wi-Fi and Bluetooth v5.0 connectivity enable seamless wireless data transfer and device integration",
+       "Ultra low power consumption supports battery-powered applications and extended operation",
+       "Touch version available for interactive user input in addition to display functionality",
+       "Supports Arduino IDE, VS Code, and PCF8563 RTC for flexible development and real-time clock integration"
+      ],
+      "unique_selling_points": [
+       "Ultra-low power 4.7-inch e-Paper display with touch and wireless connectivity for versatile embedded applications."
+      ]
+     },
+     "options": [
+      {
+       "name": "Version",
+       "values": [
+        {
+         "label": "Basic Non-Soldered Female pin [H578]"
+        },
+        {
+         "label": "Basic Soldered Female pin [H580]"
+        },
+        {
+         "label": "Touch Non-Soldered Female pin [H716]"
+        }
+       ]
+      },
+      {
+       "name": "Warehouse",
+       "values": [
+        {
+         "label": "China [For Worldwide]"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 21,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.1
+     },
+     "title": "T5 e-Paper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://lilygo.cc/buy/42400829898933:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p class=\"product-title-text\" data-spm-anchor-id=\"a2g0o.detail.1000016.i2.2c2050caeKZPWh\"><span style=\"color: #00aaff;\">Due to the problem of the characteristics of the ink screen, it cannot be partially refreshed for a long time, otherwise, it will leave residual images and lead to irreversible damage.</span></p>\n<h2 class=\"product-title-text\" data-spm-anchor-id=\"a2g0o.detail.1000016.i2.2c2050caeKZPWh\"><span style=\"color: #000000;\"><strong>Specifications</strong></span></h2>\n<table width=\"100%\" style=\"height: 137.157px;\">\n<tbody>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">MCU</td>\n<td style=\"height: 19.5938px;\">ESP32-S3-WROOM-1-N16R8</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Wireless Connectivity</td>\n<td style=\"height: 19.5938px;\">Wi-fi Bluetooth V5.0</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Programming Environment</td>\n<td style=\"height: 19.5938px;\">Arduino-ide VS Code</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\"><strong>Onboard Functions</strong></td>\n<td style=\"height: 19.5938px;\"></td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\"><span>Flash</span></td>\n<td style=\"height: 19.5938px;\"><span>16MB</span></td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">PSRAM</td>\n<td style=\"height: 19.5938px;\">8MB</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"height: 19.5938px;\">Support PCF8563 RTC</td>\n<td style=\"height: 19.5938px;\">Battery capacity detection</td>\n</tr>\n</tbody>\n</table>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td><strong> 4 . 7-inch Ultra-low Power E-paper</strong></td>\n</tr>\n</tbody>\n</table>\n<table width=\"100%\">\n<tbody>\n<tr>\n<td>Driver IC</td>\n<td> EDO47TC1</td>\n</tr>\n<tr>\n<td>Size</td>\n<td>4.7 inch</td>\n</tr>\n<tr>\n<td>Gray levels</td>\n<td>16</td>\n</tr>\n<tr>\n<td>Resolution</td>\n<td><strong><span style=\"color: rgb(255, 42, 0);\">540 x 950pixels</span></strong></td>\n</tr>\n<tr>\n<td>Ultra Wide viewing angle</td>\n<td>low power consumption</td>\n</tr>\n</tbody>\n</table>\n<h2><br></h2>\n<h2><strong><span>Sample Code For Reference [<span style=\"color: #ff2a00;\">Github</span>]</span></strong></h2>\n<p><span>If you need technical support please check the link below for more details.</span></p>\n<p><span style=\"color: #2b00ff;\"><strong><a style=\"color: #2b00ff;\" rel=\"noopener\" title=\"https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/tree/esp32s3\" href=\"https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/tree/esp32s3\" target=\"_blank\">T5 4.7 </a></strong></span></p>\n<div style=\"text-align: left;\"><span style=\"color: rgb(255, 42, 0);\"><strong>Touch Version</strong></span></div>\n<div style=\"text-align: left;\"><strong><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4.7_1.jpg?v=1711592882\"></strong></div>\n<div style=\"text-align: left;\">\n<strong></strong><br>\n</div>\n<div style=\"text-align: left;\">\n<span style=\"color: rgb(255, 42, 0);\"><strong>Basic Version</strong></span><br><br>\n</div>\n<div style=\"text-align: left;\"><img style=\"margin-bottom: 16px; float: none;\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4.7_8a9a24db-26f2-4f6e-b3c7-d1293de0e30b.jpg?v=1704249359\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5-S3V4_3.jpg?v=1711593088\" alt=\"\"></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5_4.7_Inch_E-paper_V2.34_1024x1024.jpg?v=1664003623\" alt=\"\" style=\"float: none;\"></div>\n<div style=\"text-align: left;\">\n<h2 style=\"text-align: left;\"><strong>What's in the box</strong></h2>\n<p> </p>\n</div>\n<div style=\"text-align: left;\"><strong>Touch Version</strong></div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/LILYGO-T5-E-PAPER_2.jpg?v=1715581355\"></div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><strong>Basic Version</strong></div>\n<div style=\"text-align: left;\">\n<strong></strong><br>\n</div>\n<div style=\"text-align: left;\"><br></div>\n<div style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0617/7190/7253/files/T5_4.7_Inch_E-paper_V2.39_1024x1024.jpg?v=1664003661\" alt=\"\" style=\"float: none;\"></div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "t5-4-7-inch-e-paper-v2-3",
+       "id": "gid://shopify/ProductVariant/42400829898933",
+       "media": [
+        {
+         "alt_text": "T5 e-Paper",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0617/7190/7253/products/T54.7InchE-paperV2.36.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0617/7190/7253/products/T54.7InchE-paperV2.36.jpg",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Basic Non-Soldered Female pin [H578]",
+         "name": "Version"
+        },
+        {
+         "label": "China [For Worldwide]",
+         "name": "Warehouse"
+        }
+       ],
+       "price": {
+        "amount": 3899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 20,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3.6
+       },
+       "seller": {
+        "domain": "lilygo-6b57.myshopify.com",
+        "id": "gid://shopify/Shop/61771907253",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/61771907253/policies/25978142901.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/61771907253/policies/25978175669.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/61771907253/policies/25978110133.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/61771907253/policies/25978208437.html"
+         }
+        ],
+        "name": "LILYGO®",
+        "url": "https://lilygo.cc"
+       },
+       "seller_product_id": "gid://shopify/Product/7325766582453",
+       "source": "shopify",
+       "title": "T5 e-Paper",
+       "url": "https://lilygo.cc/products/t5-4-7-inch-e-paper-v2-3?variant=42400829898933&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with HAT</strong> is a high-definition e-paper kit built around the <strong>IT8951 controller</strong> and a <strong>Raspberry Pi-oriented HAT architecture</strong>. With its <strong>1448 x 1072 resolution</strong>, <strong>2-16 grayscale support</strong>, and <strong>USB / SPI / I80 / I2C interfaces</strong>, it is a strong fit for <strong>electronic shelf labels, industrial instruments, information panels, asset tags, and other low-power embedded display projects</strong> that need sharper text and richer grayscale rendering than standard e-paper modules.</p>\n<p>Compared with a raw panel, this version is much easier to evaluate and integrate because it already includes the <strong>6 inch HD e-Paper panel, e-Paper IT8951 Driver HAT (B), 6 inch e-Paper Adapter (B), interface cable set, and Raspberry Pi mounting hardware</strong>. Waveshare provides the official <a href=\"https://www.waveshare.com/wiki/6inch_HD_e-Paper_HAT\">6 inch HD e-Paper HAT wiki</a>, the detailed <a href=\"https://files.waveshare.com/upload/e/e9/6inch_HD_e-Paper_Specification.pdf\">specification PDF</a>, and the official <a href=\"https://files.waveshare.com/upload/8/80/IT8951_20200319_Release.7z\">IT8951 driver package</a> for development reference.</p>\n<p><img alt=\"Waveshare 6 inch HD e-paper HAT front view\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp?v=1770806368\"></p>\n<h2>Features</h2>\n<ul>\n  <li>\n<strong>6 inch HD e-paper HAT kit</strong> for Raspberry Pi and other supported host platforms.</li>\n  <li>\n<strong>1448 x 1072 high-definition resolution</strong> for sharp text, diagrams, and dense information layouts.</li>\n  <li>\n<strong>2-16 grayscale support</strong> for richer image detail than basic monochrome e-paper screens.</li>\n  <li>\n<strong>IT8951 embedded controller</strong> for flexible host-side communication and control.</li>\n  <li>\n<strong>USB / SPI / I80 / I2C interfaces</strong> for connection with Raspberry Pi, STM32, Nucleo, and other host boards.</li>\n  <li>\n<strong>No backlight</strong>, with the last image retained after power-off.</li>\n  <li>\n<strong>Partial refresh support</strong> for more practical update behavior in embedded display workflows.</li>\n</ul>\n<h2>Specifications</h2>\n<table>\n  <tr>\n<td><strong>Display Size</strong></td>\n<td>6 inch</td>\n</tr>\n  <tr>\n<td><strong>Resolution</strong></td>\n<td>1448 x 1072 pixels</td>\n</tr>\n  <tr>\n<td><strong>Display Color</strong></td>\n<td>Black / White</td>\n</tr>\n  <tr>\n<td><strong>Grayscale</strong></td>\n<td>2-16 (1-4 bit)</td>\n</tr>\n  <tr>\n<td><strong>Controller</strong></td>\n<td>IT8951</td>\n</tr>\n  <tr>\n<td><strong>Interface</strong></td>\n<td>USB / SPI / I80 / I2C</td>\n</tr>\n  <tr>\n<td><strong>Operating Voltage</strong></td>\n<td>5V</td>\n</tr>\n  <tr>\n<td><strong>Full Refresh Time</strong></td>\n<td>&lt;1s</td>\n</tr>\n  <tr>\n<td><strong>Outline Dimensions</strong></td>\n<td>138.4 x 101.8 x 0.67 mm</td>\n</tr>\n  <tr>\n<td><strong>Display Area</strong></td>\n<td>122.356 x 90.584 mm</td>\n</tr>\n  <tr>\n<td><strong>Dot Pitch</strong></td>\n<td>0.0845 x 0.0845 mm</td>\n</tr>\n  <tr>\n<td><strong>Refresh Power</strong></td>\n<td>0.6W typ.</td>\n</tr>\n  <tr>\n<td><strong>Standby Power</strong></td>\n<td>0.3W typ.</td>\n</tr>\n  <tr>\n<td><strong>Viewing Angle</strong></td>\n<td>&gt;170 degrees</td>\n</tr>\n</table>\n<p><img alt=\"Waveshare 6 inch HD e-paper HAT application examples\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi_2ae1f567-23f9-479b-a054-21894d8c2219.webp?v=1770806372\"></p>\n<h2>Applications</h2>\n<ul>\n  <li>\n<strong>Electronic shelf labels</strong> with high-resolution product information and sharp text output.</li>\n  <li>\n<strong>Industrial instruments</strong> and embedded control systems that need a clear reflective display.</li>\n  <li>\n<strong>Low-power information panels</strong> for Raspberry Pi and STM32 projects.</li>\n  <li>\n<strong>Asset and equipment tags</strong> that benefit from denser layouts and better grayscale rendering.</li>\n  <li>\n<strong>Custom embedded terminals</strong> that need a ready-to-develop high-definition e-paper kit.</li>\n</ul>\n<h2>Packing List</h2>\n<ul>\n  <li>6 inch HD e-Paper x1</li>\n  <li>e-Paper IT8951 Driver HAT (B) x1</li>\n  <li>6 inch e-Paper Adapter (B) x1</li>\n  <li>40PIN FFC (same side contact) x1</li>\n  <li>USB Type-A plug to Micro-B plug cable x1</li>\n  <li>PH2.0 20cm 8Pin cable x1</li>\n  <li>RPi screws pack (2pcs) x1</li>\n</ul>\n<h2>Other Content</h2>\n<p>This SKU is a <strong>high-definition display plus IT8951 HAT kit</strong>, so it is much easier to evaluate than a raw HD panel. It is especially suitable when you need better grayscale detail, higher pixel density, and ready-to-use host interfaces for Raspberry Pi or other embedded platforms.</p>\n<p>The combination of <strong>high resolution, partial refresh support, multiple host interfaces, and IT8951 control</strong> makes it useful for detailed labels, industrial HMIs, embedded dashboards, and low-power information products that need sharp rendering without a backlight.</p>\n<p><img alt=\"Waveshare e-Paper IT8951 Driver HAT dimensions\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/e-Paper-IT8951-Driver-HAT-B-size.jpg?v=1735897442\"></p>\n<h2>Resources</h2>\n<ul>\n  <li><a href=\"https://www.waveshare.com/wiki/6inch_HD_e-Paper_HAT\">Waveshare wiki</a></li>\n  <li><a href=\"https://files.waveshare.com/upload/e/e9/6inch_HD_e-Paper_Specification.pdf\">Waveshare specification PDF</a></li>\n  <li><a href=\"https://files.waveshare.com/upload/8/80/IT8951_20200319_Release.7z\">Waveshare IT8951 driver package</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Is this a raw panel or a complete HAT kit?</h3>\n<p>This SKU is a <strong>complete 6 inch HD e-paper HAT kit</strong> that includes the display, IT8951 driver HAT, adapter board, and required cables.</p>\n<h3>What makes it different from lower-resolution e-paper modules?</h3>\n<p>Its <strong>1448 x 1072 resolution</strong> and <strong>2-16 grayscale support</strong> make it better suited for dense text, detailed UI layouts, and richer embedded display content.</p>\n<h3>Which host interfaces are supported?</h3>\n<p>The IT8951-based design supports <strong>USB, SPI, I80, and I2C</strong>, giving more flexibility than simpler e-paper boards.</p>\n<h3>What kinds of projects is it best for?</h3>\n<p>It is a strong fit for <strong>shelf labels, industrial instruments, embedded dashboards, and other low-power information displays</strong> that need high-resolution output.</p>"
+     },
+     "handle": "6inche-inkdisplaywithhat",
+     "id": "gid://shopify/p/1jkoKNNmE2Ra1aqHs9SWi4",
+     "media": [
+      {
+       "alt_text": "Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with Hat - OpenELAB",
+       "height": 770,
+       "preview": {
+        "height": 770,
+        "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp",
+        "width": 805
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp",
+       "width": 805
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "1448 x 1072 high-definition resolution enables sharp text and dense information layouts",
+       "2:16 grayscale support provides richer image detail than standard E Ink screens",
+       "IT8951 embedded controller allows flexible host-side communication and control",
+       "Multiple interfaces (USB SPI, I2C) support a wide range of host platforms",
+       "No backlight design retains last image after power loss for long-lasting display"
+      ],
+      "unique_selling_points": [
+       "Includes a complete HD 6 inch E Ink display and IT8951 driver hat, ready for integration with Raspberry Pi and other embedded hosts."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 14933,
+       "currency": "EUR"
+      },
+      "min": {
+       "amount": 14933,
+       "currency": "EUR"
+      }
+     },
+     "rating": {
+      "count": 5,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with Hat",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://openelab.io/buy/44018605588678:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with HAT</strong> is a high-definition e-paper kit built around the <strong>IT8951 controller</strong> and a <strong>Raspberry Pi-oriented HAT architecture</strong>. With its <strong>1448 x 1072 resolution</strong>, <strong>2-16 grayscale support</strong>, and <strong>USB / SPI / I80 / I2C interfaces</strong>, it is a strong fit for <strong>electronic shelf labels, industrial instruments, information panels, asset tags, and other low-power embedded display projects</strong> that need sharper text and richer grayscale rendering than standard e-paper modules.</p>\n<p>Compared with a raw panel, this version is much easier to evaluate and integrate because it already includes the <strong>6 inch HD e-Paper panel, e-Paper IT8951 Driver HAT (B), 6 inch e-Paper Adapter (B), interface cable set, and Raspberry Pi mounting hardware</strong>. Waveshare provides the official <a href=\"https://www.waveshare.com/wiki/6inch_HD_e-Paper_HAT\">6 inch HD e-Paper HAT wiki</a>, the detailed <a href=\"https://files.waveshare.com/upload/e/e9/6inch_HD_e-Paper_Specification.pdf\">specification PDF</a>, and the official <a href=\"https://files.waveshare.com/upload/8/80/IT8951_20200319_Release.7z\">IT8951 driver package</a> for development reference.</p>\n<p><img alt=\"Waveshare 6 inch HD e-paper HAT front view\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp?v=1770806368\"></p>\n<h2>Features</h2>\n<ul>\n  <li>\n<strong>6 inch HD e-paper HAT kit</strong> for Raspberry Pi and other supported host platforms.</li>\n  <li>\n<strong>1448 x 1072 high-definition resolution</strong> for sharp text, diagrams, and dense information layouts.</li>\n  <li>\n<strong>2-16 grayscale support</strong> for richer image detail than basic monochrome e-paper screens.</li>\n  <li>\n<strong>IT8951 embedded controller</strong> for flexible host-side communication and control.</li>\n  <li>\n<strong>USB / SPI / I80 / I2C interfaces</strong> for connection with Raspberry Pi, STM32, Nucleo, and other host boards.</li>\n  <li>\n<strong>No backlight</strong>, with the last image retained after power-off.</li>\n  <li>\n<strong>Partial refresh support</strong> for more practical update behavior in embedded display workflows.</li>\n</ul>\n<h2>Specifications</h2>\n<table>\n  <tr>\n<td><strong>Display Size</strong></td>\n<td>6 inch</td>\n</tr>\n  <tr>\n<td><strong>Resolution</strong></td>\n<td>1448 x 1072 pixels</td>\n</tr>\n  <tr>\n<td><strong>Display Color</strong></td>\n<td>Black / White</td>\n</tr>\n  <tr>\n<td><strong>Grayscale</strong></td>\n<td>2-16 (1-4 bit)</td>\n</tr>\n  <tr>\n<td><strong>Controller</strong></td>\n<td>IT8951</td>\n</tr>\n  <tr>\n<td><strong>Interface</strong></td>\n<td>USB / SPI / I80 / I2C</td>\n</tr>\n  <tr>\n<td><strong>Operating Voltage</strong></td>\n<td>5V</td>\n</tr>\n  <tr>\n<td><strong>Full Refresh Time</strong></td>\n<td>&lt;1s</td>\n</tr>\n  <tr>\n<td><strong>Outline Dimensions</strong></td>\n<td>138.4 x 101.8 x 0.67 mm</td>\n</tr>\n  <tr>\n<td><strong>Display Area</strong></td>\n<td>122.356 x 90.584 mm</td>\n</tr>\n  <tr>\n<td><strong>Dot Pitch</strong></td>\n<td>0.0845 x 0.0845 mm</td>\n</tr>\n  <tr>\n<td><strong>Refresh Power</strong></td>\n<td>0.6W typ.</td>\n</tr>\n  <tr>\n<td><strong>Standby Power</strong></td>\n<td>0.3W typ.</td>\n</tr>\n  <tr>\n<td><strong>Viewing Angle</strong></td>\n<td>&gt;170 degrees</td>\n</tr>\n</table>\n<p><img alt=\"Waveshare 6 inch HD e-paper HAT application examples\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi_2ae1f567-23f9-479b-a054-21894d8c2219.webp?v=1770806372\"></p>\n<h2>Applications</h2>\n<ul>\n  <li>\n<strong>Electronic shelf labels</strong> with high-resolution product information and sharp text output.</li>\n  <li>\n<strong>Industrial instruments</strong> and embedded control systems that need a clear reflective display.</li>\n  <li>\n<strong>Low-power information panels</strong> for Raspberry Pi and STM32 projects.</li>\n  <li>\n<strong>Asset and equipment tags</strong> that benefit from denser layouts and better grayscale rendering.</li>\n  <li>\n<strong>Custom embedded terminals</strong> that need a ready-to-develop high-definition e-paper kit.</li>\n</ul>\n<h2>Packing List</h2>\n<ul>\n  <li>6 inch HD e-Paper x1</li>\n  <li>e-Paper IT8951 Driver HAT (B) x1</li>\n  <li>6 inch e-Paper Adapter (B) x1</li>\n  <li>40PIN FFC (same side contact) x1</li>\n  <li>USB Type-A plug to Micro-B plug cable x1</li>\n  <li>PH2.0 20cm 8Pin cable x1</li>\n  <li>RPi screws pack (2pcs) x1</li>\n</ul>\n<h2>Other Content</h2>\n<p>This SKU is a <strong>high-definition display plus IT8951 HAT kit</strong>, so it is much easier to evaluate than a raw HD panel. It is especially suitable when you need better grayscale detail, higher pixel density, and ready-to-use host interfaces for Raspberry Pi or other embedded platforms.</p>\n<p>The combination of <strong>high resolution, partial refresh support, multiple host interfaces, and IT8951 control</strong> makes it useful for detailed labels, industrial HMIs, embedded dashboards, and low-power information products that need sharp rendering without a backlight.</p>\n<p><img alt=\"Waveshare e-Paper IT8951 Driver HAT dimensions\" src=\"https://cdn.shopify.com/s/files/1/0621/0050/4774/files/e-Paper-IT8951-Driver-HAT-B-size.jpg?v=1735897442\"></p>\n<h2>Resources</h2>\n<ul>\n  <li><a href=\"https://www.waveshare.com/wiki/6inch_HD_e-Paper_HAT\">Waveshare wiki</a></li>\n  <li><a href=\"https://files.waveshare.com/upload/e/e9/6inch_HD_e-Paper_Specification.pdf\">Waveshare specification PDF</a></li>\n  <li><a href=\"https://files.waveshare.com/upload/8/80/IT8951_20200319_Release.7z\">Waveshare IT8951 driver package</a></li>\n</ul>\n<h2>FAQ</h2>\n<h3>Is this a raw panel or a complete HAT kit?</h3>\n<p>This SKU is a <strong>complete 6 inch HD e-paper HAT kit</strong> that includes the display, IT8951 driver HAT, adapter board, and required cables.</p>\n<h3>What makes it different from lower-resolution e-paper modules?</h3>\n<p>Its <strong>1448 x 1072 resolution</strong> and <strong>2-16 grayscale support</strong> make it better suited for dense text, detailed UI layouts, and richer embedded display content.</p>\n<h3>Which host interfaces are supported?</h3>\n<p>The IT8951-based design supports <strong>USB, SPI, I80, and I2C</strong>, giving more flexibility than simpler e-paper boards.</p>\n<h3>What kinds of projects is it best for?</h3>\n<p>It is a strong fit for <strong>shelf labels, industrial instruments, embedded dashboards, and other low-power information displays</strong> that need high-resolution output.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "6inche-inkdisplaywithhat",
+       "id": "gid://shopify/ProductVariant/44018605588678",
+       "media": [
+        {
+         "alt_text": "Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with Hat - OpenELAB",
+         "height": 770,
+         "preview": {
+          "height": 770,
+          "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp",
+          "width": 805
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0621/0050/4774/files/Waveshare-6inch-HD-e-Paper-HAT-1448-1072-high-definition-E-Ink-display-for-Raspberry-Pi.webp",
+         "width": 805
+        }
+       ],
+       "price": {
+        "amount": 14933,
+        "currency": "EUR"
+       },
+       "seller": {
+        "domain": "38c3cf-92.myshopify.com",
+        "id": "gid://shopify/Shop/62100504774",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301169862.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301202630.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301137094.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/62100504774/policies/26301235398.html"
+         }
+        ],
+        "name": "OpenELAB Technology Ltd.",
+        "url": "https://openelab.io"
+       },
+       "seller_product_id": "gid://shopify/Product/8293450776774",
+       "source": "shopify",
+       "title": "Waveshare 6 inch E-Ink Display 1448x1072 E-Paper with Hat",
+       "url": "https://openelab.io/products/6inche-inkdisplaywithhat?variant=44018605588678&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span style='font-size: 14px; font-family: \"Quattrocento Sans\";'>Stick it right on the fridge to jot down notes!</span></p>"
+     },
+     "handle": "magnetic-list-pad-may-your-week-be-filled-with",
+     "id": "gid://shopify/p/26xsBnTsefRTzBS2kBNxJX",
+     "media": [
+      {
+       "alt_text": "DSK000102-view 1",
+       "height": 2840,
+       "preview": {
+        "height": 2840,
+        "url": "https://cdn.shopify.com/s/files/1/0409/9656/9251/files/DSK000102.webp",
+        "width": 2130
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0409/9656/9251/files/DSK000102.webp",
+       "width": 2130
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1000,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 328,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Magnetic List Pad - May Your Week Be Filled With",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.naturallife.com/buy/46431509545133:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span style='font-size: 14px; font-family: \"Quattrocento Sans\";'>Stick it right on the fridge to jot down notes!</span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "magnetic-list-pad-may-your-week-be-filled-with",
+       "id": "gid://shopify/ProductVariant/46431509545133",
+       "media": [
+        {
+         "alt_text": "DSK000102-view 1",
+         "height": 2840,
+         "preview": {
+          "height": 2840,
+          "url": "https://cdn.shopify.com/s/files/1/0409/9656/9251/files/DSK000102.webp",
+          "width": 2130
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0409/9656/9251/files/DSK000102.webp",
+         "width": 2130
+        }
+       ],
+       "price": {
+        "amount": 1000,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 5,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "twinoakstest.myshopify.com",
+        "id": "gid://shopify/Shop/40996569251",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/40996569251/policies/19138085027.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/40996569251/policies/19138117795.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/40996569251/policies/19138052259.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/40996569251/policies/19138150563.html"
+         }
+        ],
+        "name": "Natural Life",
+        "url": "https://www.naturallife.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8636405776557",
+       "source": "shopify",
+       "title": "Magnetic List Pad - May Your Week Be Filled With",
+       "url": "https://www.naturallife.com/products/magnetic-list-pad-may-your-week-be-filled-with?variant=46431509545133&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<meta charset=\"utf-8\"><strong data-mce-fragment=\"1\">Standard:</strong><span data-mce-fragment=\"1\">The Ceptics PAK travel adapter set packs even more in an ultra compact size: 2x Standard US sockets, 1x USB port, 1x USB-C port &amp; Voltage Indicator LEDs. PAK-WS includes 6 most common SWadAPt plug attachments - Swap N' Adapt interchangeable adapters compatible in over 200 countries around the world. Charge up to 4 devices at once!<br><br>Questions about travel adapter?<a href=\"https://www.ceptics.com/pages/help\"> Read our help page</a> <br><br> Do I need a voltage converter?<a href=\"https://www.ceptics.com/pages/dual-voltage-vs-single-voltage\"> Read here</a><br><br></span>"
+     },
+     "handle": "world-way-6-travel-plug-adapter-set-1-usb-1-usb-c-3-1a-2-usa-socket",
+     "id": "gid://shopify/p/70JJu8tX9hUapZjKKAJ6Ic",
+     "media": [
+      {
+       "alt_text": "Travel Adapter Set | Type A, B, C, E/F, G, I - USB & USB-C Ports + 2 US Outlets (PAK-WS)",
+       "height": 1473,
+       "preview": {
+        "height": 1473,
+        "url": "https://cdn.shopify.com/s/files/1/1480/0534/files/61det9CuhUL._AC_SL1500.jpg",
+        "width": 1446
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1480/0534/files/61det9CuhUL._AC_SL1500.jpg",
+       "width": 1446
+      },
+      {
+       "alt_text": "Travel Adapter Set | Type A, B, C, E/F, G, I - USB & USB-C Ports + 2 US Outlets (PAK-WS)",
+       "preview": {
+        "height": 360,
+        "url": "https://cdn.shopify.com/s/files/1/1480/0534/files/preview_images/hqdefault_5d4782db-6f68-4cae-ba01-6b9b5590a8f3.jpg",
+        "width": 480
+       },
+       "type": "external_video",
+       "url": "https://www.youtube.com/embed/6tUmOWkkXpg"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Six interchangeable adapters: Enables use in over 200 countries for maximum travel flexibility",
+       "Dual US outlets: Powers two devices simultaneously for efficient charging",
+       "USB and USB-C ports: Supports a wide range of modern devices for versatile charging",
+       "Voltage indicator LEDs: Confirms correct plug and outlet settings for safe use",
+       "Compact and durable design: Easy to carry and built for reliable performance abroad"
+      ],
+      "unique_selling_points": [
+       "Includes six interchangeable adapters and voltage indicator LEDs for global compatibility and device charging."
+      ]
+     },
+     "options": [
+      {
+       "name": "Pack quantity",
+       "values": [
+        {
+         "label": "6 attachments"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 53,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "Travel Adapter Set | Type A, B, C, E/F, G, I - USB & USB-C Ports + 2 US Outlets (PAK-WS)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.ceptics.com/buy/31508897300539:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<meta charset=\"utf-8\"><strong data-mce-fragment=\"1\">Standard:</strong><span data-mce-fragment=\"1\">The Ceptics PAK travel adapter set packs even more in an ultra compact size: 2x Standard US sockets, 1x USB port, 1x USB-C port &amp; Voltage Indicator LEDs. PAK-WS includes 6 most common SWadAPt plug attachments - Swap N' Adapt interchangeable adapters compatible in over 200 countries around the world. Charge up to 4 devices at once!<br><br>Questions about travel adapter?<a href=\"https://www.ceptics.com/pages/help\"> Read our help page</a> <br><br> Do I need a voltage converter?<a href=\"https://www.ceptics.com/pages/dual-voltage-vs-single-voltage\"> Read here</a><br><br></span>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "world-way-6-travel-plug-adapter-set-1-usb-1-usb-c-3-1a-2-usa-socket",
+       "id": "gid://shopify/ProductVariant/31508897300539",
+       "media": [
+        {
+         "alt_text": "Travel Adapter Set | Type A, B, C, E/F, G, I - USB & USB-C Ports + 2 US Outlets (PAK-WS)",
+         "height": 1473,
+         "preview": {
+          "height": 1473,
+          "url": "https://cdn.shopify.com/s/files/1/1480/0534/files/61det9CuhUL._AC_SL1500.jpg",
+          "width": 1446
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1480/0534/files/61det9CuhUL._AC_SL1500.jpg",
+         "width": 1446
+        }
+       ],
+       "options": [
+        {
+         "label": "6 attachments",
+         "name": "Pack quantity"
+        }
+       ],
+       "price": {
+        "amount": 2999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "ceptics.myshopify.com",
+        "id": "gid://shopify/Shop/14800534",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/14800534/policies/30821006.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/14800534/policies/30821070.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/14800534/policies/30820942.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/14800534/policies/9112059963.html"
+         }
+        ],
+        "name": "Ceptics",
+        "url": "https://www.ceptics.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4313731006523",
+       "source": "shopify",
+       "title": "Travel Adapter Set | Type A, B, C, E/F, G, I - USB & USB-C Ports + 2 US Outlets (PAK-WS)",
+       "url": "https://www.ceptics.com/products/world-way-6-travel-plug-adapter-set-1-usb-1-usb-c-3-1a-2-usa-socket?variant=31508897300539&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<table data-mce-fragment=\"1\">\n<tbody data-mce-fragment=\"1\">\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Battery Connector:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">UMX (PH3)</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Charger Connector:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">2S JST-XH</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Wire Length:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">5CM / ~2in</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Wire Gauge:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">26awg</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Used For:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">Used to convert the UMX plug found on E-flite's 130X, UMX Beast, Sbach 342, Parkzone UM F-27Q &amp; Stryker 180 batteries to a standard 2S JST-XH plug allowing you to charge the battery on your JST-XH compatible charger.</p>\n</td>\n</tr>\n</tbody>\n</table>"
+     },
+     "handle": "e-flite-blade-130x-umx-to-2s-jst-xh-lipo-charger-adapter",
+     "id": "gid://shopify/p/AtzeehW0aE0IZWFyEBps2",
+     "media": [
+      {
+       "alt_text": "E-Flite UMX (PH3) to 2S JST-XH Lipo Charger Adapter",
+       "height": 837,
+       "preview": {
+        "height": 837,
+        "url": "https://cdn.shopify.com/s/files/1/0550/4794/6487/products/145.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0550/4794/6487/products/145.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "UMX PH3 to JST-XH connector adapter: Allows charging of E-Flite UMX batteries with JST-XH compatible chargers for convenience",
+       "26 AWG thick wire: Ensures safe and reliable current flow during charging",
+       "5 cm (2 in) wire length: Provides compact and easy installation",
+       "Durable construction: Built to withstand repeated charging cycles",
+       "Universal fit: Compatible with multiple E-Flite UMX battery models"
+      ],
+      "unique_selling_points": [
+       "Enables charging of E-Flite UMX PH3 batteries using standard JST-XH chargers by providing a direct connector bridge."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 4,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "E-Flite UMX (PH3) to 2S JST-XH Lipo Charger Adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://backbayrc.com/buy/42214704709879:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=ABEKqL4Utyjf&_gsid=ABEKqL4Utyjf",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<table data-mce-fragment=\"1\">\n<tbody data-mce-fragment=\"1\">\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Battery Connector:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">UMX (PH3)</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Charger Connector:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">2S JST-XH</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Wire Length:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">5CM / ~2in</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Wire Gauge:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">26awg</p>\n</td>\n</tr>\n<tr data-mce-fragment=\"1\">\n<td width=\"157\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">Used For:</strong></p>\n</td>\n<td width=\"324\" data-mce-fragment=\"1\">\n<p data-mce-fragment=\"1\">Used to convert the UMX plug found on E-flite's 130X, UMX Beast, Sbach 342, Parkzone UM F-27Q &amp; Stryker 180 batteries to a standard 2S JST-XH plug allowing you to charge the battery on your JST-XH compatible charger.</p>\n</td>\n</tr>\n</tbody>\n</table>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "e-flite-blade-130x-umx-to-2s-jst-xh-lipo-charger-adapter",
+       "id": "gid://shopify/ProductVariant/42214704709879",
+       "media": [
+        {
+         "alt_text": "E-Flite UMX (PH3) to 2S JST-XH Lipo Charger Adapter",
+         "height": 837,
+         "preview": {
+          "height": 837,
+          "url": "https://cdn.shopify.com/s/files/1/0550/4794/6487/products/145.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0550/4794/6487/products/145.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "backbayrc.myshopify.com",
+        "id": "gid://shopify/Shop/55047946487",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/55047946487/policies/25448218871.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/55047946487/policies/25448251639.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/55047946487/policies/25448186103.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/55047946487/policies/25448284407.html"
+         }
+        ],
+        "name": "BackBayRC",
+        "url": "https://backbayrc.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7485285302519",
+       "source": "shopify",
+       "title": "E-Flite UMX (PH3) to 2S JST-XH Lipo Charger Adapter",
+       "url": "https://backbayrc.com/products/e-flite-blade-130x-umx-to-2s-jst-xh-lipo-charger-adapter?variant=42214704709879&_gsid=ABEKqL4Utyjf&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

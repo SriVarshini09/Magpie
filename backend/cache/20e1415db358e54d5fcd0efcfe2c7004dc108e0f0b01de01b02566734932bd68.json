@@ -1,0 +1,1721 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Computer Linux, Windows or MacOS"
+  }
+ },
+ "key": "20e1415db358e54d5fcd0efcfe2c7004dc108e0f0b01de01b02566734932bd68",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:33-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFkxTURVM01ERTBNakF5TUN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-6-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "LattePanda is a powerful single-board computer developed by DFRobot, designed to run Windows 10 and Linux, while providing Arduino compatibility for makers, developers, and IoT enthusiasts."
+       },
+       "handle": "dfrobot-lattepanda",
+       "id": "gid://shopify/Collection/648151957828",
+       "title": "DFRobot - LattePanda"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "LattePanda Sigma is a hackable x86 Windows / Linux single board server with mighty power. It features an Intel Core i5-1340P processor with Intel Iris Xe Graphics, and up to 32GB Dual-Channel LPDDR5 memory. This powerful single board computer can be used as a home server, streaming server, game server, IoT, AI Inference, edge computing, and more. Ultimate Performance LattePanda Sigma is equipped with the 13th Intel Core i5-1340P processor, which features 12 cores and 16 threads with the turbo frequency up to 4.6GHz, offering ultimate performance and multitasking capabilities. This single board computer features Intel Iris Xe Graphics with 80 execution units (EUs) capable of reaching dynamic frequency up to 1.4GHz, delivering superior graphics performance and rendering quality. Lightning-Fast Memory LattePanda Sigma boasts up to 32GB of dual-channel LPDDR5-6000 memory, with an impressive bandwidth speed of up to 102.4GB/s - doubling the speed of the previous generation. Rapid Chill with Silent Whisper Thanks to its robust cooling capabilities, the LattePanda Sigma's processor consistently maintains a high-performance 44W TDP (Thermal Design Power), delivering stable and sustained performance without degradation. Complementing this, the cooling fan's silent operation at just 35 decibels in idle mode provides a tranquil environment. Perfect Balance Between Performance and Energy The Intel Core i5-1340P processor delivers high energy efficiency with impressive performance. For example: It achieves comparable performance to the Intel Core i9-9900K but with half the power consumption. This efficient energy consumption does not sacrifice computing power, offering an exemplary balance ideal for diverse applications. Compact Size, Mighty Power This mini PC is just slightly larger than a traditional mouse, with dimensions of 102mm*146mm. Its compact size allows for easy portability or convenient integration in the devices with limited spaces. Quad 4K Displays LattePanda Sigma allows for seamless multitasking with its ability to simultaneously connect up to four 4K screens. This feature enables users to effortlessly handle multiple tasks. Rich Interfaces LattePanda Sigma boasts an array of interfaces, including USB, HDMI, RS232, GPIO, Ethernet, eDP, and more, accommodating a wide variety of applications. Moreover, it offers four M.2 slots and dual Thunderbolt 4 ports, enabling high-speed connections and extensive expansion possibilities for M.2 SSDs, 4G/5G modules, Wi-Fi modules, HD displays, eGPU, Type-C docks, and beyond. Diverse OS Support LattePanda Sigma single board server supports a variety of operating systems: Windows 10, Windows 11, Ubuntu, ensuring that there is always one that suits your needs. Professional and Instant Technical Support To meet the needs of industry users, LattePanda team provides fast and efficient technical support services. Whether it's installation and configuration, troubleshooting, or system integration, the dedicated technical team at LattePanda is always here to ensure the stability and smoothness of your project. Kindly reach out to techsupport@lattepanda.com. Customized Solutions LattePanda series single board computer supports special customization, including hardware and interface modifications, customized boot screens, BIOS feature adjustments, customized operating systems, and so on. If you have any specific requirements, please feel free to contact lattepanda@outlook.com. The LattePanda team is dedicated to providing prompt and professional support to cater to your customization needs. Rigorous Certifications LattePanda Sigma single board server has obtained multiple international certifications, such as CE, FCC, KC, UKCA and RoHS, ensuring device safety and reliability. These certifications not only enhance the market competitiveness of the products but also simplify the certification process for the whole system. Features Ultimate Performance: The Intel Core i5-1340P processor has 12 cores and 16 threads with a maximum turbo frequency of 4.60 GHz (performance-core) and 3.4 GHz (efficient-core), making it a powerful and efficient processor for multitasking and demanding applications.Lightning-fast Memory: The dual-channel LPDDR5-6000 RAM with a capacity of 32GB ensures smooth and fast performance.High-level Graphics Capability: as it features the Intel Iris Xe Graphics, LattePanda Sigma Single Board Server supports multiple display outputs with high resolutions and refresh rates.Quad 4K displays: Experience unparalleled visual clarity with support for quad 4K displays, bringing your content to life like never before.User-friendly Interface Layout: plug and play with easeRich Interfaces: Unlock limitless possibilities with rich interfaces, offering seamless connectivity and enhanced user experience.Diverse OS Support: Support Windows 10, Windows 11, and Ubuntu operating systems Applications Specification Processor CPU: Intel® Core™ i5-1340PCores / Threads: 12C(4P+8E) / 16TMax Turbo Frequency: 4.60 GHz(Performance-core), 3.4 GHz(Efficient-core)L2 Cache: 12 MBBase Power: 28 WGraphics: Intel® Iris® Xe GraphicsMax Dynamic Frequency: 1.45 GHzExecution Units: 80Co-processor: Microchip® ATmega32U4-MU MemoryDual-Channel 32GB LPDDR5-6000 StorageDrive Form Factor: M.2 SSD (NVMe/SATA), SATA Drive WirelessWireless Form Factor: M.2 Wireless Module (PCIe/CNVio) DisplayHDMI Port: HDMI 2.1, Up to 4096 x 2304 @ 60HzUSB Type-C Port: DP 1.4a, Up to 7680 x 4320 @ 60Hz (One Monitor)Embedded Display Port: eDP 1.4b, Up to 4096 x 2304 @ 120Hz External I/OUSB Type-A: 2 x USB2.0 (480Mbps) 2 x USB3.2 Gen 2 (10Gbps)USB Type-C: 2 x Thunderbolt™ 4 (40Gbps)HDMI: HDMI 2.1Ethernet: 2 x 2.5GbE RJ45 Ports (Intel® i225-V Gigabit Ethernet Controller, Supports 10/100/1000/2500 Mbps, WOL)Power: 5.5mm x 2.5mm DC JackAudio: 3.5mm Microphone Headphone Combo ConnectorSim Card: Micro Sim Card Slot Internal I/OUSB 2.0: 2.0mm Pitch 4-Pin Connector, 480MbpsFan: 1.27mm Pitch,12V 4-Wire Fan Connector, PWM ControlSATA: SATA 6.0 Gb/s Data Connector, 2.0mm Pitch 4-Pin Power ConnectorFront Panel: 2.54mm Pitch 9-Pin Header, Supports Power, Reset, Power LED, HDD LEDFront Audio Panel: 2.54mm Pitch 9-Pin Header, Supports High Definition Audio (HD), Line-Out, Mic-inCOM: 2.54mm Pitch 9-Pin Header,Supports RS232, RS485GPIO: 2.54mm Pitch 34-Pin Header, Including ATmega32U4 I/O Pins, 5V Power Pins, S0/S3/S4 State PinseDP: 0.5mm Pitch 40-Pin Connector, 4 Lanes Expansion SlotM.2 M Key: Type 2280, Supports PCIe 3.0 x4 Type 2280, Supports PCIe 4.0 x4M.2 B Key: Type 2242/2252/2280, Supports SATA III/PCIe 3.0 x1, USB2.0, USB3.0, SIMM.2 E Key: Type 2230, Supports PCIe 3.0 x1,USB2.0, Intel CNVio SecurityTPM: Built-in TPM (2.0) PowerPower Input: 5.5mm x 2.5mm DC Jack: DC 12~20V USB Type C: PD 20VPower Adapter: 19V DC, 4.74A, 90WRTC Battery: CR1220 Battery Holder: 3V1.27mm Pitch 2-Pin Connector: 3V Operating SystemMicrosoft Windows: Windows 10, Windows 11Linux: Ubuntu 22.04 EnvironmentOperating Temperature: 0~45℃Relative Humidity: 0%~80% DimensionForm Factor: 3.5\", 146 x 102 mm Shipping List LattePanda Sigma Single Board Server x1 Active Cooling Fan (Assembled) x1 Thermal Pads for M.2 SSD (one is pre-installed on the M.2 SSD) x2 Thermal Pads for M.2 SSD x2 M.2 NVMe WD SN770 SSD 500GB (Pre-installed Win11 Pro Unactivated) x1 M.2 Intel AX211 WiFi 6E Module x1Power Adapter with DC cable x1 AC Cable(EU & US & UK) for power adapter x3RTC Battery (Assembled）x 1 User Manual x 1Safety Information x 1"
+     },
+     "gift_card": false,
+     "handle": "lattepanda-sigma-x86-windows-linux-single-board-computer",
+     "id": "gid://shopify/Product/15398323355972",
+     "list_price_range": {
+      "max": {
+       "amount": 119900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 119900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFR1091_Dim_02_1220x813.jpg_1.jpg?v=1765444923"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 167181,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 167181,
+       "currency": "USD"
+      }
+     },
+     "title": "DFRobot LattePanda Sigma x86 Windows Linux Single Board Computer Server 32GB RAM 500GB SSD WiFi 6E",
+     "url": "https://openelab.com/products/lattepanda-sigma-x86-windows-linux-single-board-computer",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56095425593668:1",
+       "description": {
+        "html": "LattePanda Sigma is a hackable x86 Windows / Linux single board server with mighty power. It features an Intel Core i5-1340P processor with Intel Iris Xe Graphics, and up to 32GB Dual-Channel LPDDR5 memory. This powerful single board computer can be used as a home server, streaming server, game server, IoT, AI Inference, edge computing, and more. Ultimate Performance LattePanda Sigma is equipped with the 13th Intel Core i5-1340P processor, which features 12 cores and 16 threads with the turbo frequency up to 4.6GHz, offering ultimate performance and multitasking capabilities. This single board computer features Intel Iris Xe Graphics with 80 execution units (EUs) capable of reaching dynamic frequency up to 1.4GHz, delivering superior graphics performance and rendering quality. Lightning-Fast Memory LattePanda Sigma boasts up to 32GB of dual-channel LPDDR5-6000 memory, with an impressive bandwidth speed of up to 102.4GB/s - doubling the speed of the previous generation. Rapid Chill with Silent Whisper Thanks to its robust cooling capabilities, the LattePanda Sigma's processor consistently maintains a high-performance 44W TDP (Thermal Design Power), delivering stable and sustained performance without degradation. Complementing this, the cooling fan's silent operation at just 35 decibels in idle mode provides a tranquil environment. Perfect Balance Between Performance and Energy The Intel Core i5-1340P processor delivers high energy efficiency with impressive performance. For example: It achieves comparable performance to the Intel Core i9-9900K but with half the power consumption. This efficient energy consumption does not sacrifice computing power, offering an exemplary balance ideal for diverse applications. Compact Size, Mighty Power This mini PC is just slightly larger than a traditional mouse, with dimensions of 102mm*146mm. Its compact size allows for easy portability or convenient integration in the devices with limited spaces. Quad 4K Displays LattePanda Sigma allows for seamless multitasking with its ability to simultaneously connect up to four 4K screens. This feature enables users to effortlessly handle multiple tasks. Rich Interfaces LattePanda Sigma boasts an array of interfaces, including USB, HDMI, RS232, GPIO, Ethernet, eDP, and more, accommodating a wide variety of applications. Moreover, it offers four M.2 slots and dual Thunderbolt 4 ports, enabling high-speed connections and extensive expansion possibilities for M.2 SSDs, 4G/5G modules, Wi-Fi modules, HD displays, eGPU, Type-C docks, and beyond. Diverse OS Support LattePanda Sigma single board server supports a variety of operating systems: Windows 10, Windows 11, Ubuntu, ensuring that there is always one that suits your needs. Professional and Instant Technical Support To meet the needs of industry users, LattePanda team provides fast and efficient technical support services. Whether it's installation and configuration, troubleshooting, or system integration, the dedicated technical team at LattePanda is always here to ensure the stability and smoothness of your project. Kindly reach out to techsupport@lattepanda.com. Customized Solutions LattePanda series single board computer supports special customization, including hardware and interface modifications, customized boot screens, BIOS feature adjustments, customized operating systems, and so on. If you have any specific requirements, please feel free to contact lattepanda@outlook.com. The LattePanda team is dedicated to providing prompt and professional support to cater to your customization needs. Rigorous Certifications LattePanda Sigma single board server has obtained multiple international certifications, such as CE, FCC, KC, UKCA and RoHS, ensuring device safety and reliability. These certifications not only enhance the market competitiveness of the products but also simplify the certification process for the whole system. Features Ultimate Performance: The Intel Core i5-1340P processor has 12 cores and 16 threads with a maximum turbo frequency of 4.60 GHz (performance-core) and 3.4 GHz (efficient-core), making it a powerful and efficient processor for multitasking and demanding applications.Lightning-fast Memory: The dual-channel LPDDR5-6000 RAM with a capacity of 32GB ensures smooth and fast performance.High-level Graphics Capability: as it features the Intel Iris Xe Graphics, LattePanda Sigma Single Board Server supports multiple display outputs with high resolutions and refresh rates.Quad 4K displays: Experience unparalleled visual clarity with support for quad 4K displays, bringing your content to life like never before.User-friendly Interface Layout: plug and play with easeRich Interfaces: Unlock limitless possibilities with rich interfaces, offering seamless connectivity and enhanced user experience.Diverse OS Support: Support Windows 10, Windows 11, and Ubuntu operating systems Applications Specification Processor CPU: Intel® Core™ i5-1340PCores / Threads: 12C(4P+8E) / 16TMax Turbo Frequency: 4.60 GHz(Performance-core), 3.4 GHz(Efficient-core)L2 Cache: 12 MBBase Power: 28 WGraphics: Intel® Iris® Xe GraphicsMax Dynamic Frequency: 1.45 GHzExecution Units: 80Co-processor: Microchip® ATmega32U4-MU MemoryDual-Channel 32GB LPDDR5-6000 StorageDrive Form Factor: M.2 SSD (NVMe/SATA), SATA Drive WirelessWireless Form Factor: M.2 Wireless Module (PCIe/CNVio) DisplayHDMI Port: HDMI 2.1, Up to 4096 x 2304 @ 60HzUSB Type-C Port: DP 1.4a, Up to 7680 x 4320 @ 60Hz (One Monitor)Embedded Display Port: eDP 1.4b, Up to 4096 x 2304 @ 120Hz External I/OUSB Type-A: 2 x USB2.0 (480Mbps) 2 x USB3.2 Gen 2 (10Gbps)USB Type-C: 2 x Thunderbolt™ 4 (40Gbps)HDMI: HDMI 2.1Ethernet: 2 x 2.5GbE RJ45 Ports (Intel® i225-V Gigabit Ethernet Controller, Supports 10/100/1000/2500 Mbps, WOL)Power: 5.5mm x 2.5mm DC JackAudio: 3.5mm Microphone Headphone Combo ConnectorSim Card: Micro Sim Card Slot Internal I/OUSB 2.0: 2.0mm Pitch 4-Pin Connector, 480MbpsFan: 1.27mm Pitch,12V 4-Wire Fan Connector, PWM ControlSATA: SATA 6.0 Gb/s Data Connector, 2.0mm Pitch 4-Pin Power ConnectorFront Panel: 2.54mm Pitch 9-Pin Header, Supports Power, Reset, Power LED, HDD LEDFront Audio Panel: 2.54mm Pitch 9-Pin Header, Supports High Definition Audio (HD), Line-Out, Mic-inCOM: 2.54mm Pitch 9-Pin Header,Supports RS232, RS485GPIO: 2.54mm Pitch 34-Pin Header, Including ATmega32U4 I/O Pins, 5V Power Pins, S0/S3/S4 State PinseDP: 0.5mm Pitch 40-Pin Connector, 4 Lanes Expansion SlotM.2 M Key: Type 2280, Supports PCIe 3.0 x4 Type 2280, Supports PCIe 4.0 x4M.2 B Key: Type 2242/2252/2280, Supports SATA III/PCIe 3.0 x1, USB2.0, USB3.0, SIMM.2 E Key: Type 2230, Supports PCIe 3.0 x1,USB2.0, Intel CNVio SecurityTPM: Built-in TPM (2.0) PowerPower Input: 5.5mm x 2.5mm DC Jack: DC 12~20V USB Type C: PD 20VPower Adapter: 19V DC, 4.74A, 90WRTC Battery: CR1220 Battery Holder: 3V1.27mm Pitch 2-Pin Connector: 3V Operating SystemMicrosoft Windows: Windows 10, Windows 11Linux: Ubuntu 22.04 EnvironmentOperating Temperature: 0~45℃Relative Humidity: 0%~80% DimensionForm Factor: 3.5\", 146 x 102 mm Shipping List LattePanda Sigma Single Board Server x1 Active Cooling Fan (Assembled) x1 Thermal Pads for M.2 SSD (one is pre-installed on the M.2 SSD) x2 Thermal Pads for M.2 SSD x2 M.2 NVMe WD SN770 SSD 500GB (Pre-installed Win11 Pro Unactivated) x1 M.2 Intel AX211 WiFi 6E Module x1Power Adapter with DC cable x1 AC Cable(EU & US & UK) for power adapter x3RTC Battery (Assembled）x 1 User Manual x 1Safety Information x 1"
+       },
+       "id": "gid://shopify/ProductVariant/56095425593668",
+       "list_price": {
+        "amount": 119900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFR1091_Dim_02_1220x813.jpg_1.jpg?v=1765444923"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 167181,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR1091",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "M5Stack is a modular IoT and smart device development platform that combines compact design with powerful hardware. Featuring a high-performance microcontroller and multiple integrated modules, its plug-and-play architecture simplifies prototyping and development. Ideal for creating home automation systems, wearable tech, and smart sensor networks, M5Stack offers exceptional versatility for makers, educators, and professionals. Backed by comprehensive documentation, strong community support, and an extensive ecosystem of accessories, it provides everything needed to turn innovative ideas into reality with maximum efficiency. Want to learn how to build interactive IoT projects with this round AMOLED screen? Read our complete M5Stack StopWatch Hands-on Guide & Review."
+       },
+       "handle": "m5stack",
+       "id": "gid://shopify/Collection/647046988100",
+       "title": "M5Stack"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-m5stack",
+       "id": "gid://shopify/Collection/647304806724",
+       "title": "Brands - M5Stack"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "M5Stack Controllers are versatile microcontroller units designed for various applications. With robust processing capabilities, integrated Wi-Fi and Bluetooth functionality, and a modular design, these controllers are perfect for makers, educators, and professionals. They boast extensive documentation and a supportive community, facilitating rapid prototyping and smooth integration into any project. Explore the M5Stack Controllers Selection Guide Stamp Shop Collection ↗ Atom Shop Collection ↗ Stick Shop Collection ↗ Core Shop Collection ↗"
+       },
+       "handle": "m5stack-controllers",
+       "id": "gid://shopify/Collection/648089764164",
+       "title": "M5Stack - Controllers"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "bestseller",
+       "id": "gid://shopify/Collection/648185545028",
+       "title": "Bestseller"
+      }
+     ],
+     "description": {
+      "html": "Description M5Stack Cardputer-Adv: A Portable ESP32-S3 Computer The M5Stack Cardputer-Adv is a compact, programmable ESP32-S3 computer with an integrated keyboard and display. Powered by the Stamp-S3A module with an ESP32-S3FN8 processor and 8MB Flash, it combines a 56-key keyboard, a 1.14-inch colour LCD, onboard audio and a BMI270 motion sensor in a card-sized device. Its built-in input, display and expansion interfaces make it suitable for embedded programming, interactive prototypes, portable control interfaces and IoT projects. The current version features a 1500mAh rechargeable battery, a magnetic base and LEGO-compatible mounting holes. Features ESP32-S3 processor: Dual-core Xtensa LX7 processor running at up to 240MHz, with 8MB Flash. Integrated keyboard and display: A 56-key keyboard and a 1.14-inch, 240 × 135 LCD provide local input and visual output for your applications. Onboard audio: An ES8311 audio codec, MEMS microphone, NS4150B amplifier and 1W speaker support audio input and output. A 3.5mm audio output jack allows connection to external headphones or speakers. Motion sensing: The BMI270 six-axis IMU supports projects involving movement, orientation and motion-based interaction. Expansion and storage: An HY2.0-4P Grove port, EXT 2.54-14P expansion bus and microSD card slot provide options for peripherals and additional storage. Wireless and infrared: Wi-Fi, Bluetooth and an infrared emitter support compatible communication and control projects. Portable power and mounting: A 1500mAh rechargeable battery, independent power switch, magnetic base and LEGO-compatible mounting holes support portable and mounted builds. Specifications These Cardputer Adv specs describe the current hardware version. Check the official documentation linked below before designing peripherals. Specification Detail SKU M5-K132-Adv Product name M5Stack Cardputer-Adv Product type Programmable portable ESP32-S3 computer Core module Stamp-S3A Processor ESP32-S3FN8, dual-core Xtensa LX7, up to 240MHz Flash 8MB Display 1.14-inch ST7789V2 LCD, 240 × 135 pixels Keyboard 56 keys, 4 × 14 layout Key actuation force 160gf Keyboard controller TCA8418RTWR Audio codec ES8311 Microphone MEMS microphone, 65dB SNR Speaker NS4150B amplifier with 8Ω, 1W speaker Audio output 3.5mm jack Motion sensor BMI270 six-axis IMU Infrared IR emitter External storage microSD card slot Expansion interfaces HY2.0-4P Grove + EXT 2.54-14P Battery 1500mAh rechargeable lithium battery Development platforms Arduino, UiFlow2, ESP-IDF and PlatformIO; use firmware and libraries for Cardputer-Adv Operating temperature 0–40°C Dimensions 84.0 × 54.0 × 19.6mm Product weight 81.0g Applications Development options documented by M5Stack include Arduino, UiFlow2, ESP-IDF and PlatformIO. The integrated display and keyboard let you build interfaces that do not depend on a separate input device. Portable sensor displays and data-entry interfaces. Embedded programming and hardware prototyping. Motion-controlled interfaces using the onboard BMI270. Audio experiments using the microphone, codec and speaker. Infrared control projects for compatible devices. Custom Wi-Fi or Bluetooth applications. Project capabilities depend on the installed firmware, libraries and connected hardware. Integrations with third-party systems, including Home Assistant or ESPHome, require verified support for this hardware or additional development; they are not promised as ready-to-use features. What's Included 1 × M5Stack Cardputer-Adv unit. External sensors, microSD cards, headphones and other pictured peripherals are not included unless separately specified. Cardputer-Adv vs Cardputer: Hardware and Setup Cardputer-Adv vs Cardputer v1.1 vs Original Cardputer The Cardputer-Adv adds an updated audio system, a 3.5mm audio output jack, a BMI270 motion sensor and a 14-pin expansion bus. The table below highlights the main hardware differences. Feature Cardputer-Adv — Current Version Cardputer v1.1 Original Cardputer Core module Stamp-S3A Stamp-S3A Stamp-S3 Battery capacity 1500mAh 120mAh + 1400mAh 120mAh + 1400mAh Audio hardware ES8311 + NS4150B NS4168 + SPM1423 NS4168 + SPM1423 3.5mm audio output Yes No No Motion sensor BMI270 No No Keyboard controller TCA8418RTWR 74HC138 74HC138 Expansion interfaces HY2.0-4P + EXT 2.54-14P HY2.0-4P HY2.0-4P Lanyard hole Yes No No Earlier Cardputer-Adv units used a 1750mAh battery. M5Stack records a change to 1500mAh on July 13, 2026. This listing describes the current 1500mAh version. Cardputer-Adv Pinout and Expansion Ports The Cardputer-Adv provides an HY2.0-4P Grove connector and an EXT 2.54-14P expansion bus for compatible peripherals. The expansion bus exposes power and signal connections, including pins assigned to SPI, I²C and UART functions. Check the official Cardputer-Adv pin map before wiring external hardware. Confirm voltage requirements, GPIO assignments and any shared peripheral connections for your project. The motion-sensor illustration below identifies the onboard BMI270 axes to help you interpret orientation and movement data. Battery and Charging The current Cardputer-Adv includes a 1500mAh rechargeable battery. Actual runtime depends on display brightness, wireless activity, audio use, connected peripherals and the running application. Set the device’s power switch to ON when charging, as instructed in the official M5Stack documentation. Dimensions and Mounting Use the mechanical drawing to check the 84.0 × 54.0 × 19.6mm enclosure and mounting geometry before designing a holder or installing the device. Operation and Video Tutorial The animation shows the device controls used during the documented startup and download-mode procedure. For flashing, follow the official quick start and distinguish the download-mode switch position from the ON setting used for charging. The M5Stack UiFlow2 tutorial demonstrates the Cardputer-Adv interface and basic setup workflow. Resources Use these official resources to prepare your development environment, check hardware connections and restore factory firmware when needed. Official Cardputer-Adv documentation and pin map Arduino Quick Start for Cardputer / Cardputer-Adv UiFlow2 Quick Start for Cardputer-Adv M5Cardputer Arduino library Cardputer-Adv factory firmware source Cardputer-Adv factory Easyloader Cardputer-Adv schematics (PDF) Stamp-S3A schematics (PDF) Cardputer-Adv mechanical dimensions (PDF) Cardputer-Adv structure files Certificates and Supporting Documents 2025 REACH- 2025.03.17 (PDF) AiTDG-251013004E1 EN 301489 EMC (PDF) AiTDG-251013004H1 EN 62479 test report (PDF) AiTDG-251013004S-CE NB TRF (PDF) AiTDG-251013004W4 EN 300 328 BLE (PDF) AiTDG-251013004W5 EN 300 328 2.4g WIFI (PDF) Appendix B (PDF) Appendix C (PDF) CANEC24029302101 GZP24-039254 - NCM (PDF) CANEC24029302102 GZP24-039254 - NCM (PDF) CANEC24029302103 GZP24-039254 - NCM- PAHs (PDF) CANEC24029302104 GZP24-039254 - NCM- PAHs (PDF) CANEC24029302105 GZP24-039254 - NCM-RoHS (PDF) CANEC24029302106 GZP24-039254 - NCM-RoHS (PDF) CANEC24029302107 GZP24-039254 - NCM-REACH SVHC (PDF) CANEC24029302108 GZP24-039254 - NCM-REACH SVHC (PDF) CANEC25004508702 CQP25-002322 -Final-ROHS2.0 2025.03.17 (PDF) CANEC25004508710 CQP25-002322 -Final-TSCA- 2025.03.17 (PDF) DGCTL202509080022A- -603075-UN38.3 (PDF) DGCTL202509080022A- -603075-UN38.3 (PDF) DGCTL202509080022B- -603075-965-MSDS- 1 (PDF) DGCTL202509080022C- -603075-965 (PDF) DGCTL202509080022D- -603075-965-1.2m (PDF) DGCTL202509080022E- -603075-965 (PDF) EMC EFGX25100392-IE-01 RED Evaluation (PDF) External PHOTO (PDF) Internal PHOTO (PDF) PTC25021310501C-CN01 CMA CNAS (PDF) PTC25021310502C-CN01 (PDF) PTC25021310503C-CN01 (PDF) SKM C226i25091916100 0003 (PDF) Test Setup (PDF) 3.ED.007.0118--603075 (PDF) 3.ED.007.0118-LGTKJ2509093-DGCTL202509160022A- -603075-IEC 62133-2 2 (PDF) FAQ What is the difference between Cardputer-Adv and the original Cardputer?The Adv version adds updated audio hardware, a 3.5mm audio output jack, a BMI270 motion sensor and a 14-pin expansion bus. See the comparison table above for the main differences. Does the Cardputer-Adv include a battery?Yes. The current version includes a built-in 1500mAh rechargeable battery. How long does the battery last?Runtime varies with the application and operating settings. Display brightness, Wi-Fi or Bluetooth activity, audio output and external peripherals all affect power consumption. Where can I find the Cardputer-Adv pinout?The official M5Stack documentation includes the pin assignments for the display, audio, IMU, keyboard, microSD slot, Grove connector and expansion bus. Can I program it with Arduino?Yes. M5Stack provides an Arduino Quick Start and the M5Cardputer library. Follow the instructions for the Cardputer-Adv hardware. What is included?The package includes one M5Stack Cardputer-Adv unit. External sensors, microSD cards and headphones are not included unless explicitly listed."
+     },
+     "gift_card": false,
+     "handle": "m5stack-cardputer-adv-mechanical-keyboard",
+     "id": "gid://shopify/Product/15267201122628",
+     "list_price_range": {
+      "max": {
+       "amount": 4189,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4189,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "M5Stack Cardputer-Adv angled front view with keyboard and display",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/M5Stack_Cardputer-Adv_with_StampS3A_ESP32-S3FN8_Mechanical_Keyboard-1.webp?v=1757056091"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3499,
+       "currency": "USD"
+      }
+     },
+     "title": "M5Stack Cardputer-Adv ESP32-S3 Pocket Computer with Keyboard & Display",
+     "url": "https://openelab.com/products/m5stack-cardputer-adv-mechanical-keyboard",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55581962109252:1",
+       "description": {
+        "html": "Description M5Stack Cardputer-Adv: A Portable ESP32-S3 Computer The M5Stack Cardputer-Adv is a compact, programmable ESP32-S3 computer with an integrated keyboard and display. Powered by the Stamp-S3A module with an ESP32-S3FN8 processor and 8MB Flash, it combines a 56-key keyboard, a 1.14-inch colour LCD, onboard audio and a BMI270 motion sensor in a card-sized device. Its built-in input, display and expansion interfaces make it suitable for embedded programming, interactive prototypes, portable control interfaces and IoT projects. The current version features a 1500mAh rechargeable battery, a magnetic base and LEGO-compatible mounting holes. Features ESP32-S3 processor: Dual-core Xtensa LX7 processor running at up to 240MHz, with 8MB Flash. Integrated keyboard and display: A 56-key keyboard and a 1.14-inch, 240 × 135 LCD provide local input and visual output for your applications. Onboard audio: An ES8311 audio codec, MEMS microphone, NS4150B amplifier and 1W speaker support audio input and output. A 3.5mm audio output jack allows connection to external headphones or speakers. Motion sensing: The BMI270 six-axis IMU supports projects involving movement, orientation and motion-based interaction. Expansion and storage: An HY2.0-4P Grove port, EXT 2.54-14P expansion bus and microSD card slot provide options for peripherals and additional storage. Wireless and infrared: Wi-Fi, Bluetooth and an infrared emitter support compatible communication and control projects. Portable power and mounting: A 1500mAh rechargeable battery, independent power switch, magnetic base and LEGO-compatible mounting holes support portable and mounted builds. Specifications These Cardputer Adv specs describe the current hardware version. Check the official documentation linked below before designing peripherals. Specification Detail SKU M5-K132-Adv Product name M5Stack Cardputer-Adv Product type Programmable portable ESP32-S3 computer Core module Stamp-S3A Processor ESP32-S3FN8, dual-core Xtensa LX7, up to 240MHz Flash 8MB Display 1.14-inch ST7789V2 LCD, 240 × 135 pixels Keyboard 56 keys, 4 × 14 layout Key actuation force 160gf Keyboard controller TCA8418RTWR Audio codec ES8311 Microphone MEMS microphone, 65dB SNR Speaker NS4150B amplifier with 8Ω, 1W speaker Audio output 3.5mm jack Motion sensor BMI270 six-axis IMU Infrared IR emitter External storage microSD card slot Expansion interfaces HY2.0-4P Grove + EXT 2.54-14P Battery 1500mAh rechargeable lithium battery Development platforms Arduino, UiFlow2, ESP-IDF and PlatformIO; use firmware and libraries for Cardputer-Adv Operating temperature 0–40°C Dimensions 84.0 × 54.0 × 19.6mm Product weight 81.0g Applications Development options documented by M5Stack include Arduino, UiFlow2, ESP-IDF and PlatformIO. The integrated display and keyboard let you build interfaces that do not depend on a separate input device. Portable sensor displays and data-entry interfaces. Embedded programming and hardware prototyping. Motion-controlled interfaces using the onboard BMI270. Audio experiments using the microphone, codec and speaker. Infrared control projects for compatible devices. Custom Wi-Fi or Bluetooth applications. Project capabilities depend on the installed firmware, libraries and connected hardware. Integrations with third-party systems, including Home Assistant or ESPHome, require verified support for this hardware or additional development; they are not promised as ready-to-use features. What's Included 1 × M5Stack Cardputer-Adv unit. External sensors, microSD cards, headphones and other pictured peripherals are not included unless separately specified. Cardputer-Adv vs Cardputer: Hardware and Setup Cardputer-Adv vs Cardputer v1.1 vs Original Cardputer The Cardputer-Adv adds an updated audio system, a 3.5mm audio output jack, a BMI270 motion sensor and a 14-pin expansion bus. The table below highlights the main hardware differences. Feature Cardputer-Adv — Current Version Cardputer v1.1 Original Cardputer Core module Stamp-S3A Stamp-S3A Stamp-S3 Battery capacity 1500mAh 120mAh + 1400mAh 120mAh + 1400mAh Audio hardware ES8311 + NS4150B NS4168 + SPM1423 NS4168 + SPM1423 3.5mm audio output Yes No No Motion sensor BMI270 No No Keyboard controller TCA8418RTWR 74HC138 74HC138 Expansion interfaces HY2.0-4P + EXT 2.54-14P HY2.0-4P HY2.0-4P Lanyard hole Yes No No Earlier Cardputer-Adv units used a 1750mAh battery. M5Stack records a change to 1500mAh on July 13, 2026. This listing describes the current 1500mAh version. Cardputer-Adv Pinout and Expansion Ports The Cardputer-Adv provides an HY2.0-4P Grove connector and an EXT 2.54-14P expansion bus for compatible peripherals. The expansion bus exposes power and signal connections, including pins assigned to SPI, I²C and UART functions. Check the official Cardputer-Adv pin map before wiring external hardware. Confirm voltage requirements, GPIO assignments and any shared peripheral connections for your project. The motion-sensor illustration below identifies the onboard BMI270 axes to help you interpret orientation and movement data. Battery and Charging The current Cardputer-Adv includes a 1500mAh rechargeable battery. Actual runtime depends on display brightness, wireless activity, audio use, connected peripherals and the running application. Set the device’s power switch to ON when charging, as instructed in the official M5Stack documentation. Dimensions and Mounting Use the mechanical drawing to check the 84.0 × 54.0 × 19.6mm enclosure and mounting geometry before designing a holder or installing the device. Operation and Video Tutorial The animation shows the device controls used during the documented startup and download-mode procedure. For flashing, follow the official quick start and distinguish the download-mode switch position from the ON setting used for charging. The M5Stack UiFlow2 tutorial demonstrates the Cardputer-Adv interface and basic setup workflow. Resources Use these official resources to prepare your development environment, check hardware connections and restore factory firmware when needed. Official Cardputer-Adv documentation and pin map Arduino Quick Start for Cardputer / Cardputer-Adv UiFlow2 Quick Start for Cardputer-Adv M5Cardputer Arduino library Cardputer-Adv factory firmware source Cardputer-Adv factory Easyloader Cardputer-Adv schematics (PDF) Stamp-S3A schematics (PDF) Cardputer-Adv mechanical dimensions (PDF) Cardputer-Adv structure files Certificates and Supporting Documents 2025 REACH- 2025.03.17 (PDF) AiTDG-251013004E1 EN 301489 EMC (PDF) AiTDG-251013004H1 EN 62479 test report (PDF) AiTDG-251013004S-CE NB TRF (PDF) AiTDG-251013004W4 EN 300 328 BLE (PDF) AiTDG-251013004W5 EN 300 328 2.4g WIFI (PDF) Appendix B (PDF) Appendix C (PDF) CANEC24029302101 GZP24-039254 - NCM (PDF) CANEC24029302102 GZP24-039254 - NCM (PDF) CANEC24029302103 GZP24-039254 - NCM- PAHs (PDF) CANEC24029302104 GZP24-039254 - NCM- PAHs (PDF) CANEC24029302105 GZP24-039254 - NCM-RoHS (PDF) CANEC24029302106 GZP24-039254 - NCM-RoHS (PDF) CANEC24029302107 GZP24-039254 - NCM-REACH SVHC (PDF) CANEC24029302108 GZP24-039254 - NCM-REACH SVHC (PDF) CANEC25004508702 CQP25-002322 -Final-ROHS2.0 2025.03.17 (PDF) CANEC25004508710 CQP25-002322 -Final-TSCA- 2025.03.17 (PDF) DGCTL202509080022A- -603075-UN38.3 (PDF) DGCTL202509080022A- -603075-UN38.3 (PDF) DGCTL202509080022B- -603075-965-MSDS- 1 (PDF) DGCTL202509080022C- -603075-965 (PDF) DGCTL202509080022D- -603075-965-1.2m (PDF) DGCTL202509080022E- -603075-965 (PDF) EMC EFGX25100392-IE-01 RED Evaluation (PDF) External PHOTO (PDF) Internal PHOTO (PDF) PTC25021310501C-CN01 CMA CNAS (PDF) PTC25021310502C-CN01 (PDF) PTC25021310503C-CN01 (PDF) SKM C226i25091916100 0003 (PDF) Test Setup (PDF) 3.ED.007.0118--603075 (PDF) 3.ED.007.0118-LGTKJ2509093-DGCTL202509160022A- -603075-IEC 62133-2 2 (PDF) FAQ What is the difference between Cardputer-Adv and the original Cardputer?The Adv version adds updated audio hardware, a 3.5mm audio output jack, a BMI270 motion sensor and a 14-pin expansion bus. See the comparison table above for the main differences. Does the Cardputer-Adv include a battery?Yes. The current version includes a built-in 1500mAh rechargeable battery. How long does the battery last?Runtime varies with the application and operating settings. Display brightness, Wi-Fi or Bluetooth activity, audio output and external peripherals all affect power consumption. Where can I find the Cardputer-Adv pinout?The official M5Stack documentation includes the pin assignments for the display, audio, IMU, keyboard, microSD slot, Grove connector and expansion bus. Can I program it with Arduino?Yes. M5Stack provides an Arduino Quick Start and the M5Cardputer library. Follow the instructions for the Cardputer-Adv hardware. What is included?The package includes one M5Stack Cardputer-Adv unit. External sensors, microSD cards and headphones are not included unless explicitly listed."
+       },
+       "id": "gid://shopify/ProductVariant/55581962109252",
+       "list_price": {
+        "amount": 4189,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/M5Stack_Cardputer-Adv_with_StampS3A_ESP32-S3FN8_Mechanical_Keyboard-1.webp?v=1757056091"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3499,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "M5-K132-Adv",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "raspberry-pi-5",
+       "id": "gid://shopify/Collection/655487664452",
+       "title": "Raspberry Pi 5"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-raspberry-pi",
+       "id": "gid://shopify/Collection/658193318212",
+       "title": "Waveshare - Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "DescriptionThe Waveshare PocketTerm35 portable handheld Linux terminal is a compact handheld system for Raspberry Pi 4B and Raspberry Pi 5. It combines a 3.5 inch 640 x 480 IPS touch display, a 67-key QWERTY keyboard, integrated UPS power management and a rugged enclosure for mobile development, debugging and Linux terminal work.This product is listed as four variants: two complete PocketTerm35 hosts with built-in Raspberry Pi hardware, plus two RPI accessory kits with or without a 5000mAh lithium battery. That makes PocketTerm35 useful either as a ready handheld terminal or as an enclosure/accessory base for existing Raspberry Pi projects.Features Portable Linux terminal: handheld format for Raspberry Pi 4B / 5 workflows. 3.5 inch touch display: 640 x 480 IPS panel with optical bonding. 67-key QWERTY keyboard: for terminal commands, code entry and mobile maintenance. Built-in RP2040 MCU: controls keyboard, brightness and volume functions. UPS power management: supports charging and using simultaneously. Battery support: variants with 5000mAh lithium battery are available. Multiple kit options: Pi4, Pi5, accessory kit with battery and accessory kit without battery. Specifications Product Series PocketTerm35 Product Type Portable Linux terminal / Raspberry Pi handheld enclosure Display 3.5 inch IPS display, 640 x 480 resolution, HDMI interface Touchscreen 5-point capacitive touch, optical bonding, G+G toughened glass, 6H hardness, I2C header Compatible Boards Raspberry Pi 4B / Raspberry Pi 5 MCU Built-in RP2040 MCU for keyboard, brightness and volume control Keyboard 67-key QWERTY silicone keyboard Audio Built-in 8 ohm 2W speaker, 4PIN PH1.25 header, 3.5mm audio output Power External USB-C charging port, 2PIN PH2.0 battery header, UPS power management Power Control Short press to power on, double click to power off Case Material CNC-machined aluminum front cover, PC + ABS rear cover Dimensions 93.5 x 168.5 x 37 mm Variants Waveshare-34033: PocketTerm35-Pi4; Waveshare-34034: PocketTerm35-Pi5; Waveshare-34032: PocketTerm35-RPI-ACCE (with Lithium Batt); Waveshare-34031: PocketTerm35-RPI-ACCE (without Lithium Batt) Applications Mobile Linux development: terminal commands and debugging in a handheld format. Raspberry Pi prototyping: compact development platform for Pi4 and Pi5 projects. Education and makerspaces: demonstrate Linux, electronics and embedded systems hands-on. Field maintenance: portable terminal for testing, diagnostics and device control. RetroPie and demos: handheld format for demonstrations and portable experiments. Product List PocketTerm35-Pi4 Built-in Raspberry Pi 4B-2GB, pre-installed 64GB system TF card, PI4-HEATSINK-SET and 5000mAh lithium battery. PocketTerm35-Pi5 Built-in Raspberry Pi 5-1GB, pre-installed 64GB system TF card, Pi5-Active-Cooler-B heat sink and 5000mAh lithium battery. PocketTerm35-RPI-ACCE (with Lithium Batt) Accessory Kit B without Raspberry Pi board, heat sink and TF card, with 5000mAh lithium battery. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A without Raspberry Pi board, TF card, heat sink and 5000mAh lithium battery. PocketTerm35-Pi4 PocketTerm35-Pi4 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-Pi5 PocketTerm35-Pi5 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-RPI-ACCE (with Lithium Batt) PocketTerm35 host x1; Pi 4 mounting plate x1; Pi 5 mounting plate x1; Micro HDMI adapter x1; Type-C male to 4PIN PH1.25 female adapter x1; 1.27H 4PIN cable x1; HDMI cable 120mm x1; 3.7V 5000mAh Lithium Batt x1; screws pack x1; screwdriver x1; silicone keycap x1; packaging box x1. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A as above, but without the 5000mAh lithium battery. Other ContentThe detail images show the display, keyboard, UPS power system, interfaces, pin definitions, dimensions and package content of the Waveshare PocketTerm35. The variants mainly differ by whether a Raspberry Pi 4B, Raspberry Pi 5 or only the RPI accessory kit is included.The 3.5 inch 640 x 480 IPS touch display is designed for terminal work, GUI browsing and mobile debugging.The 67-key QWERTY silicone keyboard makes PocketTerm35 practical for Linux commands, code entry and maintenance work away from the bench.UPS power management and battery support improve reliability for portable projects, demos and field tests.The interface and pin images help plan extensions and check connections before assembly.ResourcesOfficial Waveshare documentation for PocketTerm35FAQWhich variants are available?The product has PocketTerm35-Pi4, PocketTerm35-Pi5, an RPI accessory kit with lithium battery and an RPI accessory kit without lithium battery.Is Raspberry Pi always included?No. Only the Pi4 and Pi5 variants include a Raspberry Pi board. The RPI-ACCE variants are accessory kits.What display resolution does PocketTerm35 use?It uses a 3.5 inch IPS touch display with 640 x 480 resolution.Does it support battery-powered use?Yes. PocketTerm35 includes UPS power management and battery support; check the selected variant because the no-battery accessory kit does not include the lithium battery.Can PocketTerm35 be used for mobile development?Yes. It is designed for portable Linux use, Raspberry Pi development, debugging and electronics demos."
+     },
+     "gift_card": false,
+     "handle": "waveshare-pocketterm35-portable-handheld-linux-terminal",
+     "id": "gid://shopify/Product/15631642755396",
+     "list_price_range": {
+      "max": {
+       "amount": 27963,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 12279,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare PocketTerm35 portable handheld Linux terminal white background front and back view",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-pocketterm35-us-media-01-20260806.webp?v=1785997789"
+      }
+     ],
+     "options": [
+      {
+       "name": "Type",
+       "values": [
+        {
+         "label": "PocketTerm35-Pi4"
+        },
+        {
+         "label": "PocketTerm35-Pi5"
+        },
+        {
+         "label": "PocketTerm35-RPI-ACCE (with Lithium Batt)"
+        },
+        {
+         "label": "PocketTerm35-RPI-ACCE (without Lithium Batt)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 21900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 9900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Handheld Terminal",
+      "PocketTerm35",
+      "Portable Linux Terminal",
+      "Raspberry Pi Terminal",
+      "Touch Display",
+      "Waveshare"
+     ],
+     "title": "Waveshare Portable Handheld Linux Terminal With 3.5inch Touch Display",
+     "url": "https://openelab.com/products/waveshare-pocketterm35-portable-handheld-linux-terminal",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57077321466180:1",
+       "description": {
+        "html": "DescriptionThe Waveshare PocketTerm35 portable handheld Linux terminal is a compact handheld system for Raspberry Pi 4B and Raspberry Pi 5. It combines a 3.5 inch 640 x 480 IPS touch display, a 67-key QWERTY keyboard, integrated UPS power management and a rugged enclosure for mobile development, debugging and Linux terminal work.This product is listed as four variants: two complete PocketTerm35 hosts with built-in Raspberry Pi hardware, plus two RPI accessory kits with or without a 5000mAh lithium battery. That makes PocketTerm35 useful either as a ready handheld terminal or as an enclosure/accessory base for existing Raspberry Pi projects.Features Portable Linux terminal: handheld format for Raspberry Pi 4B / 5 workflows. 3.5 inch touch display: 640 x 480 IPS panel with optical bonding. 67-key QWERTY keyboard: for terminal commands, code entry and mobile maintenance. Built-in RP2040 MCU: controls keyboard, brightness and volume functions. UPS power management: supports charging and using simultaneously. Battery support: variants with 5000mAh lithium battery are available. Multiple kit options: Pi4, Pi5, accessory kit with battery and accessory kit without battery. Specifications Product Series PocketTerm35 Product Type Portable Linux terminal / Raspberry Pi handheld enclosure Display 3.5 inch IPS display, 640 x 480 resolution, HDMI interface Touchscreen 5-point capacitive touch, optical bonding, G+G toughened glass, 6H hardness, I2C header Compatible Boards Raspberry Pi 4B / Raspberry Pi 5 MCU Built-in RP2040 MCU for keyboard, brightness and volume control Keyboard 67-key QWERTY silicone keyboard Audio Built-in 8 ohm 2W speaker, 4PIN PH1.25 header, 3.5mm audio output Power External USB-C charging port, 2PIN PH2.0 battery header, UPS power management Power Control Short press to power on, double click to power off Case Material CNC-machined aluminum front cover, PC + ABS rear cover Dimensions 93.5 x 168.5 x 37 mm Variants Waveshare-34033: PocketTerm35-Pi4; Waveshare-34034: PocketTerm35-Pi5; Waveshare-34032: PocketTerm35-RPI-ACCE (with Lithium Batt); Waveshare-34031: PocketTerm35-RPI-ACCE (without Lithium Batt) Applications Mobile Linux development: terminal commands and debugging in a handheld format. Raspberry Pi prototyping: compact development platform for Pi4 and Pi5 projects. Education and makerspaces: demonstrate Linux, electronics and embedded systems hands-on. Field maintenance: portable terminal for testing, diagnostics and device control. RetroPie and demos: handheld format for demonstrations and portable experiments. Product List PocketTerm35-Pi4 Built-in Raspberry Pi 4B-2GB, pre-installed 64GB system TF card, PI4-HEATSINK-SET and 5000mAh lithium battery. PocketTerm35-Pi5 Built-in Raspberry Pi 5-1GB, pre-installed 64GB system TF card, Pi5-Active-Cooler-B heat sink and 5000mAh lithium battery. PocketTerm35-RPI-ACCE (with Lithium Batt) Accessory Kit B without Raspberry Pi board, heat sink and TF card, with 5000mAh lithium battery. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A without Raspberry Pi board, TF card, heat sink and 5000mAh lithium battery. PocketTerm35-Pi4 PocketTerm35-Pi4 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-Pi5 PocketTerm35-Pi5 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-RPI-ACCE (with Lithium Batt) PocketTerm35 host x1; Pi 4 mounting plate x1; Pi 5 mounting plate x1; Micro HDMI adapter x1; Type-C male to 4PIN PH1.25 female adapter x1; 1.27H 4PIN cable x1; HDMI cable 120mm x1; 3.7V 5000mAh Lithium Batt x1; screws pack x1; screwdriver x1; silicone keycap x1; packaging box x1. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A as above, but without the 5000mAh lithium battery. Other ContentThe detail images show the display, keyboard, UPS power system, interfaces, pin definitions, dimensions and package content of the Waveshare PocketTerm35. The variants mainly differ by whether a Raspberry Pi 4B, Raspberry Pi 5 or only the RPI accessory kit is included.The 3.5 inch 640 x 480 IPS touch display is designed for terminal work, GUI browsing and mobile debugging.The 67-key QWERTY silicone keyboard makes PocketTerm35 practical for Linux commands, code entry and maintenance work away from the bench.UPS power management and battery support improve reliability for portable projects, demos and field tests.The interface and pin images help plan extensions and check connections before assembly.ResourcesOfficial Waveshare documentation for PocketTerm35FAQWhich variants are available?The product has PocketTerm35-Pi4, PocketTerm35-Pi5, an RPI accessory kit with lithium battery and an RPI accessory kit without lithium battery.Is Raspberry Pi always included?No. Only the Pi4 and Pi5 variants include a Raspberry Pi board. The RPI-ACCE variants are accessory kits.What display resolution does PocketTerm35 use?It uses a 3.5 inch IPS touch display with 640 x 480 resolution.Does it support battery-powered use?Yes. PocketTerm35 includes UPS power management and battery support; check the selected variant because the no-battery accessory kit does not include the lithium battery.Can PocketTerm35 be used for mobile development?Yes. It is designed for portable Linux use, Raspberry Pi development, debugging and electronics demos."
+       },
+       "id": "gid://shopify/ProductVariant/57077321466180",
+       "list_price": {
+        "amount": 27963,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-pocketterm35-us-media-01-20260806.webp?v=1785997789"
+        }
+       ],
+       "options": [
+        {
+         "label": "PocketTerm35-Pi4",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 21900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-34033",
+       "title": "PocketTerm35-Pi4"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57077321498948:1",
+       "description": {
+        "html": "DescriptionThe Waveshare PocketTerm35 portable handheld Linux terminal is a compact handheld system for Raspberry Pi 4B and Raspberry Pi 5. It combines a 3.5 inch 640 x 480 IPS touch display, a 67-key QWERTY keyboard, integrated UPS power management and a rugged enclosure for mobile development, debugging and Linux terminal work.This product is listed as four variants: two complete PocketTerm35 hosts with built-in Raspberry Pi hardware, plus two RPI accessory kits with or without a 5000mAh lithium battery. That makes PocketTerm35 useful either as a ready handheld terminal or as an enclosure/accessory base for existing Raspberry Pi projects.Features Portable Linux terminal: handheld format for Raspberry Pi 4B / 5 workflows. 3.5 inch touch display: 640 x 480 IPS panel with optical bonding. 67-key QWERTY keyboard: for terminal commands, code entry and mobile maintenance. Built-in RP2040 MCU: controls keyboard, brightness and volume functions. UPS power management: supports charging and using simultaneously. Battery support: variants with 5000mAh lithium battery are available. Multiple kit options: Pi4, Pi5, accessory kit with battery and accessory kit without battery. Specifications Product Series PocketTerm35 Product Type Portable Linux terminal / Raspberry Pi handheld enclosure Display 3.5 inch IPS display, 640 x 480 resolution, HDMI interface Touchscreen 5-point capacitive touch, optical bonding, G+G toughened glass, 6H hardness, I2C header Compatible Boards Raspberry Pi 4B / Raspberry Pi 5 MCU Built-in RP2040 MCU for keyboard, brightness and volume control Keyboard 67-key QWERTY silicone keyboard Audio Built-in 8 ohm 2W speaker, 4PIN PH1.25 header, 3.5mm audio output Power External USB-C charging port, 2PIN PH2.0 battery header, UPS power management Power Control Short press to power on, double click to power off Case Material CNC-machined aluminum front cover, PC + ABS rear cover Dimensions 93.5 x 168.5 x 37 mm Variants Waveshare-34033: PocketTerm35-Pi4; Waveshare-34034: PocketTerm35-Pi5; Waveshare-34032: PocketTerm35-RPI-ACCE (with Lithium Batt); Waveshare-34031: PocketTerm35-RPI-ACCE (without Lithium Batt) Applications Mobile Linux development: terminal commands and debugging in a handheld format. Raspberry Pi prototyping: compact development platform for Pi4 and Pi5 projects. Education and makerspaces: demonstrate Linux, electronics and embedded systems hands-on. Field maintenance: portable terminal for testing, diagnostics and device control. RetroPie and demos: handheld format for demonstrations and portable experiments. Product List PocketTerm35-Pi4 Built-in Raspberry Pi 4B-2GB, pre-installed 64GB system TF card, PI4-HEATSINK-SET and 5000mAh lithium battery. PocketTerm35-Pi5 Built-in Raspberry Pi 5-1GB, pre-installed 64GB system TF card, Pi5-Active-Cooler-B heat sink and 5000mAh lithium battery. PocketTerm35-RPI-ACCE (with Lithium Batt) Accessory Kit B without Raspberry Pi board, heat sink and TF card, with 5000mAh lithium battery. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A without Raspberry Pi board, TF card, heat sink and 5000mAh lithium battery. PocketTerm35-Pi4 PocketTerm35-Pi4 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-Pi5 PocketTerm35-Pi5 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-RPI-ACCE (with Lithium Batt) PocketTerm35 host x1; Pi 4 mounting plate x1; Pi 5 mounting plate x1; Micro HDMI adapter x1; Type-C male to 4PIN PH1.25 female adapter x1; 1.27H 4PIN cable x1; HDMI cable 120mm x1; 3.7V 5000mAh Lithium Batt x1; screws pack x1; screwdriver x1; silicone keycap x1; packaging box x1. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A as above, but without the 5000mAh lithium battery. Other ContentThe detail images show the display, keyboard, UPS power system, interfaces, pin definitions, dimensions and package content of the Waveshare PocketTerm35. The variants mainly differ by whether a Raspberry Pi 4B, Raspberry Pi 5 or only the RPI accessory kit is included.The 3.5 inch 640 x 480 IPS touch display is designed for terminal work, GUI browsing and mobile debugging.The 67-key QWERTY silicone keyboard makes PocketTerm35 practical for Linux commands, code entry and maintenance work away from the bench.UPS power management and battery support improve reliability for portable projects, demos and field tests.The interface and pin images help plan extensions and check connections before assembly.ResourcesOfficial Waveshare documentation for PocketTerm35FAQWhich variants are available?The product has PocketTerm35-Pi4, PocketTerm35-Pi5, an RPI accessory kit with lithium battery and an RPI accessory kit without lithium battery.Is Raspberry Pi always included?No. Only the Pi4 and Pi5 variants include a Raspberry Pi board. The RPI-ACCE variants are accessory kits.What display resolution does PocketTerm35 use?It uses a 3.5 inch IPS touch display with 640 x 480 resolution.Does it support battery-powered use?Yes. PocketTerm35 includes UPS power management and battery support; check the selected variant because the no-battery accessory kit does not include the lithium battery.Can PocketTerm35 be used for mobile development?Yes. It is designed for portable Linux use, Raspberry Pi development, debugging and electronics demos."
+       },
+       "id": "gid://shopify/ProductVariant/57077321498948",
+       "list_price": {
+        "amount": 24453,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-pocketterm35-us-media-01-20260806.webp?v=1785997789"
+        }
+       ],
+       "options": [
+        {
+         "label": "PocketTerm35-Pi5",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 21900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-34034",
+       "title": "PocketTerm35-Pi5"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57077321531716:1",
+       "description": {
+        "html": "DescriptionThe Waveshare PocketTerm35 portable handheld Linux terminal is a compact handheld system for Raspberry Pi 4B and Raspberry Pi 5. It combines a 3.5 inch 640 x 480 IPS touch display, a 67-key QWERTY keyboard, integrated UPS power management and a rugged enclosure for mobile development, debugging and Linux terminal work.This product is listed as four variants: two complete PocketTerm35 hosts with built-in Raspberry Pi hardware, plus two RPI accessory kits with or without a 5000mAh lithium battery. That makes PocketTerm35 useful either as a ready handheld terminal or as an enclosure/accessory base for existing Raspberry Pi projects.Features Portable Linux terminal: handheld format for Raspberry Pi 4B / 5 workflows. 3.5 inch touch display: 640 x 480 IPS panel with optical bonding. 67-key QWERTY keyboard: for terminal commands, code entry and mobile maintenance. Built-in RP2040 MCU: controls keyboard, brightness and volume functions. UPS power management: supports charging and using simultaneously. Battery support: variants with 5000mAh lithium battery are available. Multiple kit options: Pi4, Pi5, accessory kit with battery and accessory kit without battery. Specifications Product Series PocketTerm35 Product Type Portable Linux terminal / Raspberry Pi handheld enclosure Display 3.5 inch IPS display, 640 x 480 resolution, HDMI interface Touchscreen 5-point capacitive touch, optical bonding, G+G toughened glass, 6H hardness, I2C header Compatible Boards Raspberry Pi 4B / Raspberry Pi 5 MCU Built-in RP2040 MCU for keyboard, brightness and volume control Keyboard 67-key QWERTY silicone keyboard Audio Built-in 8 ohm 2W speaker, 4PIN PH1.25 header, 3.5mm audio output Power External USB-C charging port, 2PIN PH2.0 battery header, UPS power management Power Control Short press to power on, double click to power off Case Material CNC-machined aluminum front cover, PC + ABS rear cover Dimensions 93.5 x 168.5 x 37 mm Variants Waveshare-34033: PocketTerm35-Pi4; Waveshare-34034: PocketTerm35-Pi5; Waveshare-34032: PocketTerm35-RPI-ACCE (with Lithium Batt); Waveshare-34031: PocketTerm35-RPI-ACCE (without Lithium Batt) Applications Mobile Linux development: terminal commands and debugging in a handheld format. Raspberry Pi prototyping: compact development platform for Pi4 and Pi5 projects. Education and makerspaces: demonstrate Linux, electronics and embedded systems hands-on. Field maintenance: portable terminal for testing, diagnostics and device control. RetroPie and demos: handheld format for demonstrations and portable experiments. Product List PocketTerm35-Pi4 Built-in Raspberry Pi 4B-2GB, pre-installed 64GB system TF card, PI4-HEATSINK-SET and 5000mAh lithium battery. PocketTerm35-Pi5 Built-in Raspberry Pi 5-1GB, pre-installed 64GB system TF card, Pi5-Active-Cooler-B heat sink and 5000mAh lithium battery. PocketTerm35-RPI-ACCE (with Lithium Batt) Accessory Kit B without Raspberry Pi board, heat sink and TF card, with 5000mAh lithium battery. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A without Raspberry Pi board, TF card, heat sink and 5000mAh lithium battery. PocketTerm35-Pi4 PocketTerm35-Pi4 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-Pi5 PocketTerm35-Pi5 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-RPI-ACCE (with Lithium Batt) PocketTerm35 host x1; Pi 4 mounting plate x1; Pi 5 mounting plate x1; Micro HDMI adapter x1; Type-C male to 4PIN PH1.25 female adapter x1; 1.27H 4PIN cable x1; HDMI cable 120mm x1; 3.7V 5000mAh Lithium Batt x1; screws pack x1; screwdriver x1; silicone keycap x1; packaging box x1. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A as above, but without the 5000mAh lithium battery. Other ContentThe detail images show the display, keyboard, UPS power system, interfaces, pin definitions, dimensions and package content of the Waveshare PocketTerm35. The variants mainly differ by whether a Raspberry Pi 4B, Raspberry Pi 5 or only the RPI accessory kit is included.The 3.5 inch 640 x 480 IPS touch display is designed for terminal work, GUI browsing and mobile debugging.The 67-key QWERTY silicone keyboard makes PocketTerm35 practical for Linux commands, code entry and maintenance work away from the bench.UPS power management and battery support improve reliability for portable projects, demos and field tests.The interface and pin images help plan extensions and check connections before assembly.ResourcesOfficial Waveshare documentation for PocketTerm35FAQWhich variants are available?The product has PocketTerm35-Pi4, PocketTerm35-Pi5, an RPI accessory kit with lithium battery and an RPI accessory kit without lithium battery.Is Raspberry Pi always included?No. Only the Pi4 and Pi5 variants include a Raspberry Pi board. The RPI-ACCE variants are accessory kits.What display resolution does PocketTerm35 use?It uses a 3.5 inch IPS touch display with 640 x 480 resolution.Does it support battery-powered use?Yes. PocketTerm35 includes UPS power management and battery support; check the selected variant because the no-battery accessory kit does not include the lithium battery.Can PocketTerm35 be used for mobile development?Yes. It is designed for portable Linux use, Raspberry Pi development, debugging and electronics demos."
+       },
+       "id": "gid://shopify/ProductVariant/57077321531716",
+       "list_price": {
+        "amount": 12753,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-pocketterm35-us-media-01-20260806.webp?v=1785997789"
+        }
+       ],
+       "options": [
+        {
+         "label": "PocketTerm35-RPI-ACCE (with Lithium Batt)",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 10900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-34032",
+       "title": "PocketTerm35-RPI-ACCE (with Lithium Batt)"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57077321564484:1",
+       "description": {
+        "html": "DescriptionThe Waveshare PocketTerm35 portable handheld Linux terminal is a compact handheld system for Raspberry Pi 4B and Raspberry Pi 5. It combines a 3.5 inch 640 x 480 IPS touch display, a 67-key QWERTY keyboard, integrated UPS power management and a rugged enclosure for mobile development, debugging and Linux terminal work.This product is listed as four variants: two complete PocketTerm35 hosts with built-in Raspberry Pi hardware, plus two RPI accessory kits with or without a 5000mAh lithium battery. That makes PocketTerm35 useful either as a ready handheld terminal or as an enclosure/accessory base for existing Raspberry Pi projects.Features Portable Linux terminal: handheld format for Raspberry Pi 4B / 5 workflows. 3.5 inch touch display: 640 x 480 IPS panel with optical bonding. 67-key QWERTY keyboard: for terminal commands, code entry and mobile maintenance. Built-in RP2040 MCU: controls keyboard, brightness and volume functions. UPS power management: supports charging and using simultaneously. Battery support: variants with 5000mAh lithium battery are available. Multiple kit options: Pi4, Pi5, accessory kit with battery and accessory kit without battery. Specifications Product Series PocketTerm35 Product Type Portable Linux terminal / Raspberry Pi handheld enclosure Display 3.5 inch IPS display, 640 x 480 resolution, HDMI interface Touchscreen 5-point capacitive touch, optical bonding, G+G toughened glass, 6H hardness, I2C header Compatible Boards Raspberry Pi 4B / Raspberry Pi 5 MCU Built-in RP2040 MCU for keyboard, brightness and volume control Keyboard 67-key QWERTY silicone keyboard Audio Built-in 8 ohm 2W speaker, 4PIN PH1.25 header, 3.5mm audio output Power External USB-C charging port, 2PIN PH2.0 battery header, UPS power management Power Control Short press to power on, double click to power off Case Material CNC-machined aluminum front cover, PC + ABS rear cover Dimensions 93.5 x 168.5 x 37 mm Variants Waveshare-34033: PocketTerm35-Pi4; Waveshare-34034: PocketTerm35-Pi5; Waveshare-34032: PocketTerm35-RPI-ACCE (with Lithium Batt); Waveshare-34031: PocketTerm35-RPI-ACCE (without Lithium Batt) Applications Mobile Linux development: terminal commands and debugging in a handheld format. Raspberry Pi prototyping: compact development platform for Pi4 and Pi5 projects. Education and makerspaces: demonstrate Linux, electronics and embedded systems hands-on. Field maintenance: portable terminal for testing, diagnostics and device control. RetroPie and demos: handheld format for demonstrations and portable experiments. Product List PocketTerm35-Pi4 Built-in Raspberry Pi 4B-2GB, pre-installed 64GB system TF card, PI4-HEATSINK-SET and 5000mAh lithium battery. PocketTerm35-Pi5 Built-in Raspberry Pi 5-1GB, pre-installed 64GB system TF card, Pi5-Active-Cooler-B heat sink and 5000mAh lithium battery. PocketTerm35-RPI-ACCE (with Lithium Batt) Accessory Kit B without Raspberry Pi board, heat sink and TF card, with 5000mAh lithium battery. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A without Raspberry Pi board, TF card, heat sink and 5000mAh lithium battery. PocketTerm35-Pi4 PocketTerm35-Pi4 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-Pi5 PocketTerm35-Pi5 host x1; 27W power x1; screwdriver x1; packaging box x1. Batt inside. PocketTerm35-RPI-ACCE (with Lithium Batt) PocketTerm35 host x1; Pi 4 mounting plate x1; Pi 5 mounting plate x1; Micro HDMI adapter x1; Type-C male to 4PIN PH1.25 female adapter x1; 1.27H 4PIN cable x1; HDMI cable 120mm x1; 3.7V 5000mAh Lithium Batt x1; screws pack x1; screwdriver x1; silicone keycap x1; packaging box x1. PocketTerm35-RPI-ACCE (without Lithium Batt) Accessory Kit A as above, but without the 5000mAh lithium battery. Other ContentThe detail images show the display, keyboard, UPS power system, interfaces, pin definitions, dimensions and package content of the Waveshare PocketTerm35. The variants mainly differ by whether a Raspberry Pi 4B, Raspberry Pi 5 or only the RPI accessory kit is included.The 3.5 inch 640 x 480 IPS touch display is designed for terminal work, GUI browsing and mobile debugging.The 67-key QWERTY silicone keyboard makes PocketTerm35 practical for Linux commands, code entry and maintenance work away from the bench.UPS power management and battery support improve reliability for portable projects, demos and field tests.The interface and pin images help plan extensions and check connections before assembly.ResourcesOfficial Waveshare documentation for PocketTerm35FAQWhich variants are available?The product has PocketTerm35-Pi4, PocketTerm35-Pi5, an RPI accessory kit with lithium battery and an RPI accessory kit without lithium battery.Is Raspberry Pi always included?No. Only the Pi4 and Pi5 variants include a Raspberry Pi board. The RPI-ACCE variants are accessory kits.What display resolution does PocketTerm35 use?It uses a 3.5 inch IPS touch display with 640 x 480 resolution.Does it support battery-powered use?Yes. PocketTerm35 includes UPS power management and battery support; check the selected variant because the no-battery accessory kit does not include the lithium battery.Can PocketTerm35 be used for mobile development?Yes. It is designed for portable Linux use, Raspberry Pi development, debugging and electronics demos."
+       },
+       "id": "gid://shopify/ProductVariant/57077321564484",
+       "list_price": {
+        "amount": 12279,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-pocketterm35-us-media-01-20260806.webp?v=1785997789"
+        }
+       ],
+       "options": [
+        {
+         "label": "PocketTerm35-RPI-ACCE (without Lithium Batt)",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 9900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-34031",
+       "title": "PocketTerm35-RPI-ACCE (without Lithium Batt)"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "The Wireless & IoT product series provides advanced solutions for seamless connectivity, enabling smart communication across various applications. Designed for developers and businesses, these products integrate technologies like Wi-Fi, Bluetooth, Zigbee, and LoRa for reliable performance. Focused on IoT (Internet of Things), these solutions allow users to create interconnected systems that gather and analyze real-time data. From smart homes to industrial automation, our Wireless & IoT offerings feature low power consumption, secure communications, and easy integration with platforms like Arduino and MicroPython. With extensive documentation and a supportive community, the Wireless & IoT series simplifies rapid prototyping, making it easier to bring innovative ideas to life."
+       },
+       "handle": "wireless-iot",
+       "id": "gid://shopify/Collection/648194031940",
+       "title": "Wireless & IoT"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "meshtastic",
+       "id": "gid://shopify/Collection/648395522372",
+       "title": "Meshtastic"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wireless-iot-meshtastic",
+       "id": "gid://shopify/Collection/651158782276",
+       "title": "Wireless & IoT - Meshtastic"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "brands-elecrow",
+       "id": "gid://shopify/Collection/651379769668",
+       "title": "Brands - Elecrow"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wireless-iot-lora-zigbee",
+       "id": "gid://shopify/Collection/651470176580",
+       "title": "Wireless & IoT - LoRa/Zigbee"
+      }
+     ],
+     "description": {
+      "html": "DescriptionThe Elecrow Meshstick LoRa USB Adapter is a compact USB-To-SPI SX1262 TCXO LoRa USB stick for Linux, macOS and Windows hosts. It combines a CH341A bridge, SX1262 radio chip, TCXO and SMA antenna connector in a USB-powered enclosure, so an existing computer can work as a radio gateway, repeater or Meshtastic node.The adapter is suitable for Raspberry Pi boards, industrial hosts, OpenWRT routers, soft routers, Steam Deck and x86 computers. With meshtasticd and web UI management, a compatible Linux system can join a LoRa network without a separate gateway device.Features USB plug and play: bus-powered through USB, with no external power supply required. CH341A + SX1262: USB-To-SPI bridge with TCXO-stabilized radio hardware for dependable applications. Meshtastic compatibility: works with meshtasticd and web UI management on supported host systems. EU868 / US915: supports the frequency bands listed on the official page. SMA antenna connector: external antenna support for flexible placement and better coverage. Unique device identification: onboard 24C02 I2C EEPROM with a pre-programmed serial-number concept. Specifications SKU ELECROW-LMM15202D Product Name Meshstick USB-To-SPI SX1262 TCXO LoRa USB Stick Product Type LoRa USB adapter / gateway adapter Interface USB 2.0 Bridge Chip CH341A Radio Chip SX1262 with TCXO Frequency EU868 MHz / US915 MHz TX Power +22 dBm max. Antenna Connector SMA for external antenna Enclosure Translucent black plastic housing Power Supply USB bus-powered, no external power required Compatibility Linux, macOS, Windows; Raspberry Pi, industrial hosts, OpenWRT routers, Steam Deck and x86 computers Dimensions 88 x 30 x 18mm, excluding antenna Weight 36.6g including antenna Applications Gateway or LoRa mesh node for Raspberry Pi and Linux hosts. Repeater for local off-grid communication, maker projects and IoT testing. OpenWRT router, soft router or industrial PC conversion into a wireless network node. Portable radio and emergency-communication demos for developers and radio enthusiasts. Product List Meshstick USB-To-SPI SX1262 TCXO LoRa USB Stick 1 Antenna, round and flat antennas ship randomly according to the official page 1 Quick Start Guide 1 Other ContentThe official detail images show feature layout, long-range communication, compatible host devices, unique ID, web management, application scenes, hardware overview and package contents.Resources Official Elecrow Wiki Meshtasticd documentation GitHub repository Official user manual FAQWhat is the Elecrow Meshstick used for?It connects compatible Linux, macOS or Windows devices to a LoRa network and can act as a gateway or node.Which chips are used?The stick uses a CH341A USB-To-SPI bridge and an SX1262 radio chip with TCXO.Does it require external power?No. The LoRa USB Adapter is powered from the USB bus.Which frequencies are supported?The official specification lists EU868 MHz / US915 MHz.What is included in the package?The package includes one Meshstick, one antenna and one Quick Start Guide."
+     },
+     "gift_card": false,
+     "handle": "elecrow-meshstick-usb-to-spi-sx1262-tcxo-lora-usb-stick",
+     "id": "gid://shopify/Product/15634584076612",
+     "list_price_range": {
+      "max": {
+       "amount": 2568,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2568,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Elecrow Meshstick LoRa USB Adapter white background",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-elecrow-lmm15202d-01-meshstick.webp?v=1786352516"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2799,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2799,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CH341A",
+      "Elecrow",
+      "EU868",
+      "IoT",
+      "Linux LoRa dongle",
+      "LoRa Mesh",
+      "LoRa USB Adapter",
+      "Meshstick",
+      "Meshtastic",
+      "SX1262",
+      "TCXO",
+      "US915",
+      "USB-To-SPI",
+      "Wireless IoT"
+     ],
+     "title": "Elecrow Meshstick USB-To-SPI SX1262 TCXO LoRa USB Stick",
+     "url": "https://openelab.com/products/elecrow-meshstick-usb-to-spi-sx1262-tcxo-lora-usb-stick",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57089877442884:1",
+       "description": {
+        "html": "DescriptionThe Elecrow Meshstick LoRa USB Adapter is a compact USB-To-SPI SX1262 TCXO LoRa USB stick for Linux, macOS and Windows hosts. It combines a CH341A bridge, SX1262 radio chip, TCXO and SMA antenna connector in a USB-powered enclosure, so an existing computer can work as a radio gateway, repeater or Meshtastic node.The adapter is suitable for Raspberry Pi boards, industrial hosts, OpenWRT routers, soft routers, Steam Deck and x86 computers. With meshtasticd and web UI management, a compatible Linux system can join a LoRa network without a separate gateway device.Features USB plug and play: bus-powered through USB, with no external power supply required. CH341A + SX1262: USB-To-SPI bridge with TCXO-stabilized radio hardware for dependable applications. Meshtastic compatibility: works with meshtasticd and web UI management on supported host systems. EU868 / US915: supports the frequency bands listed on the official page. SMA antenna connector: external antenna support for flexible placement and better coverage. Unique device identification: onboard 24C02 I2C EEPROM with a pre-programmed serial-number concept. Specifications SKU ELECROW-LMM15202D Product Name Meshstick USB-To-SPI SX1262 TCXO LoRa USB Stick Product Type LoRa USB adapter / gateway adapter Interface USB 2.0 Bridge Chip CH341A Radio Chip SX1262 with TCXO Frequency EU868 MHz / US915 MHz TX Power +22 dBm max. Antenna Connector SMA for external antenna Enclosure Translucent black plastic housing Power Supply USB bus-powered, no external power required Compatibility Linux, macOS, Windows; Raspberry Pi, industrial hosts, OpenWRT routers, Steam Deck and x86 computers Dimensions 88 x 30 x 18mm, excluding antenna Weight 36.6g including antenna Applications Gateway or LoRa mesh node for Raspberry Pi and Linux hosts. Repeater for local off-grid communication, maker projects and IoT testing. OpenWRT router, soft router or industrial PC conversion into a wireless network node. Portable radio and emergency-communication demos for developers and radio enthusiasts. Product List Meshstick USB-To-SPI SX1262 TCXO LoRa USB Stick 1 Antenna, round and flat antennas ship randomly according to the official page 1 Quick Start Guide 1 Other ContentThe official detail images show feature layout, long-range communication, compatible host devices, unique ID, web management, application scenes, hardware overview and package contents.Resources Official Elecrow Wiki Meshtasticd documentation GitHub repository Official user manual FAQWhat is the Elecrow Meshstick used for?It connects compatible Linux, macOS or Windows devices to a LoRa network and can act as a gateway or node.Which chips are used?The stick uses a CH341A USB-To-SPI bridge and an SX1262 radio chip with TCXO.Does it require external power?No. The LoRa USB Adapter is powered from the USB bus.Which frequencies are supported?The official specification lists EU868 MHz / US915 MHz.What is included in the package?The package includes one Meshstick, one antenna and one Quick Start Guide."
+       },
+       "id": "gid://shopify/ProductVariant/57089877442884",
+       "list_price": {
+        "amount": 2568,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-elecrow-lmm15202d-01-meshstick.webp?v=1786352516"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2799,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ELECROW-LMM15202D",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-6-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio reComputer Series consists of high-performance edge computing devices designed for AI, IoT, and industrial applications. These compact yet powerful units incorporate NVIDIA Jetson modules or Raspberry Pi CM4, providing robust processing capabilities for tasks such as computer vision, robotics, and smart automation. For instance, the reComputer R1000 is built on the Raspberry Pi CM4 platform and features a quad-core Cortex-A72 processor, dual Ethernet interfaces, and multiple RS485 channels that support BACnet and Modbus protocols. It also offers wireless connectivity options like 4G, LoRa®, Wi-Fi, and BLE, making it ideal for smart building and energy management applications."
+       },
+       "handle": "seeed-studio-recomputer",
+       "id": "gid://shopify/Collection/648146616644",
+       "title": "Seeed Studio - reComputer"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Seeed Studio reComputer Super J4012 is a compact edge AI system built on the NVIDIA® Jetson™ Orin™ NX 16GB platform, capable of delivering up to 157 TOPS in Super MAXN mode. Designed for reliability, it operates across a wide temperature range from -20℃ to 65℃. With integrated Wi-Fi/BT/LTE and dual Ethernet ports, it ensures smooth connectivity for advanced AI deployments such as robotics, multimodal sensing, and video analytics. Features High AI Throughput: Achieves up to 157 TOPS in MAXN mode, perfect for vision AI, robotics, and generative workloads. Flexible Power Profiles: Adjustable consumption between 10W and 40W, balancing efficiency and performance. Advanced Cooling: Stable operation from -20°C to 60°C at 40W, and up to 65°C at 25W. Comprehensive I/O: Includes 2xRJ45, SIM slot, 4×USB 3.2, HDMI 2.1, CAN bus, plus M.2 Key E/M, Mini-PCIe, and 4xCSI camera interfaces. Deployment Ready: Ships with JetPack 6.2 and a 128GB NVMe SSD, supporting frameworks like NVIDIA Isaac, Hugging Face, and ROS2/1 for rapid AI application development. Jetson Modules Performance with Super Mode Enhanced power management Improved higher frame rate processing Reduced inference time Specification reComputer Super J4011 reComputer Super J4012 Applications Processor(AP) NVIDIA Orin™ NX 8GB NVIDIA Orin™ NX 16GB AI Performance Orin NX 8GB – 117 TOPS(MAXN) Orin NX 16GB – 157 TOPS(MAXN) GPU 1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores GPU Max Frequency 1173 MHz CPU 6-core NVIDIA Arm® Cortex A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3 8-core NVIDIA Arm® Cortex A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3 CPU Max Frequency 2.0 GHz DL Accelerator 1 x NVDLA v2.0 2 x NVDLA v2.0 DL Max Frequency 1.23 GHz Vision Accelerator 1 x PVA v2.0 Memory 8GB 128-bit wide LPDDR5 DRAM 102.4 GB/s 16GB 128-bit wide LPDDR5 DRAM 102.4GB/s Power 10W - 15W - 25W - 40W 10W - 15W - 25W -40W Video Encode 1x 4K60 (H.265) 3x 4K30 (H.265) 6x 1080p60 (H.265) 12x 1080p30 (H.265) Video Decode 1x 8K30 (H.265) 2x 4K60 (H.265) 4x 4K30 (H.265) 9x 1080p60 (H.265) 18x 1080p30 (H.265) CSI camera Up to 4 cameras (8 via virtual channels***) 8 lanes MIPI CSI-2 D-PHY 2.1 (up to 20Gbps) Mechanical 69.6mm x 45mm 260-pin SO-DIMM connector Carrier Board Storage 1x M.2 KEY M PCIe (M.2 NVMe 2280 SSD 128G included) Networking M.2 KEY E 1x M.2 Key E for WiFi/Bluetooth module Mini PCIe 1x mini-PCIe for LTE 4G module Ethernet 2x RJ45 Gigabit Ethernet I/O USB 4x USB 3.2 Type-A (5Gbps); 1x USB 2.0 Type-C (Device Mode/Debug); Camera 4x mipi CSI(2-lane 15-Pin) CAN 1 x CAN(4-Pin Header) Display 1x HDMI 2.1 Fan 1x 4-Pin 1.25mm Fan Connector (5V PWM) 1x 4-Pin 2.54mm Fan Connector (12V PWM) Extension Port 1x 40-Pin extension header 1x 12-Pin control and UART header RTC 1x RTC 2-pin 1x RTC Socket LED 2x LED(PWR and ACT) Button 1x PWR 1x RESET Switch 1x REC Antenna hole 4x Antenna Hole Power 12-19V 5525 Barrel DC Jack Jetpack Version Jetpack 6.2 Mechanical Dimensions (W x D x H) 130mm x 120mm x 66mm Weight 1110g Installation Desk, Wall-mounting Operating Temperature -20℃~65℃(25W Mode) -20℃~60℃(MAXN Mode) Warranty 2 Years Certification RoHS,REACH,CE,FCC,UKCA, KC Hardware Overview Application The NVIDIA AI software stack is designed for accelerate AI application and deployment: Designed for Edge AI Computer Vision Applications: Jetson Platform Services provide a platform to simplify development, deployment and management of Edge AI applications on NVIDIA Jetson like BEV sensing demo with 4 USB cameras. Designed for demanding AI applications： Such as AMR, smart retail, industrial automation, and video surveillance, smart video analysis scenario We have Jetson-example prepared for you! It offers one-line deploy projects edge AI applications of generative AI including Ollama, Llama3; computer vision including YOLOv8, and others. We have configured all environment for you to provides single command deployment of projects. Documents User Manual&Datasheet Temperature Test Report Schematic 3D File Mechanical Document-reComputer Super Mechanical Document-reComputer Super PCBA Seeed Nvidia Jetson Success Cases Seeed Jetson One Pager Flash BSP for Jetson Certification HSCODE 8471504090 USHSCODE 8517180050 UPC EUHSCODE 8471707000 COO CHINA Part List Jetson Orin™ NX 16GB/NX 8GB /Nano 8GB/Nano 4GB module x 1 Seeed Carrier Board (reComputer Super J401) x 1 128GB NVMe SSD x 1 Aluminum Case and Heatsink with Fan x 1 USB Cable; Type A to Type C x 1 User Manual x 1"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-recomputer-super-j4012",
+     "id": "gid://shopify/Product/15480832819524",
+     "list_price_range": {
+      "max": {
+       "amount": 173900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 173900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7_56acfe9f-51da-4243-a812-17321d02bedc.webp?v=1771927090"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 222183,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 222183,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "16GB",
+      "NVIDIA Jetson",
+      "reComputer",
+      "Seeed Studio",
+      "Standard",
+      "Ultra & Flagship"
+     ],
+     "title": "Seeed Studio reComputer Super J4012 - Advanced Edge AI Computer with NVIDIA® Jetson™ Orin™ NX 16GB",
+     "url": "https://openelab.com/products/seeed-studio-recomputer-super-j4012",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56430833402180:1",
+       "description": {
+        "html": "Seeed Studio reComputer Super J4012 is a compact edge AI system built on the NVIDIA® Jetson™ Orin™ NX 16GB platform, capable of delivering up to 157 TOPS in Super MAXN mode. Designed for reliability, it operates across a wide temperature range from -20℃ to 65℃. With integrated Wi-Fi/BT/LTE and dual Ethernet ports, it ensures smooth connectivity for advanced AI deployments such as robotics, multimodal sensing, and video analytics. Features High AI Throughput: Achieves up to 157 TOPS in MAXN mode, perfect for vision AI, robotics, and generative workloads. Flexible Power Profiles: Adjustable consumption between 10W and 40W, balancing efficiency and performance. Advanced Cooling: Stable operation from -20°C to 60°C at 40W, and up to 65°C at 25W. Comprehensive I/O: Includes 2xRJ45, SIM slot, 4×USB 3.2, HDMI 2.1, CAN bus, plus M.2 Key E/M, Mini-PCIe, and 4xCSI camera interfaces. Deployment Ready: Ships with JetPack 6.2 and a 128GB NVMe SSD, supporting frameworks like NVIDIA Isaac, Hugging Face, and ROS2/1 for rapid AI application development. Jetson Modules Performance with Super Mode Enhanced power management Improved higher frame rate processing Reduced inference time Specification reComputer Super J4011 reComputer Super J4012 Applications Processor(AP) NVIDIA Orin™ NX 8GB NVIDIA Orin™ NX 16GB AI Performance Orin NX 8GB – 117 TOPS(MAXN) Orin NX 16GB – 157 TOPS(MAXN) GPU 1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores GPU Max Frequency 1173 MHz CPU 6-core NVIDIA Arm® Cortex A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3 8-core NVIDIA Arm® Cortex A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3 CPU Max Frequency 2.0 GHz DL Accelerator 1 x NVDLA v2.0 2 x NVDLA v2.0 DL Max Frequency 1.23 GHz Vision Accelerator 1 x PVA v2.0 Memory 8GB 128-bit wide LPDDR5 DRAM 102.4 GB/s 16GB 128-bit wide LPDDR5 DRAM 102.4GB/s Power 10W - 15W - 25W - 40W 10W - 15W - 25W -40W Video Encode 1x 4K60 (H.265) 3x 4K30 (H.265) 6x 1080p60 (H.265) 12x 1080p30 (H.265) Video Decode 1x 8K30 (H.265) 2x 4K60 (H.265) 4x 4K30 (H.265) 9x 1080p60 (H.265) 18x 1080p30 (H.265) CSI camera Up to 4 cameras (8 via virtual channels***) 8 lanes MIPI CSI-2 D-PHY 2.1 (up to 20Gbps) Mechanical 69.6mm x 45mm 260-pin SO-DIMM connector Carrier Board Storage 1x M.2 KEY M PCIe (M.2 NVMe 2280 SSD 128G included) Networking M.2 KEY E 1x M.2 Key E for WiFi/Bluetooth module Mini PCIe 1x mini-PCIe for LTE 4G module Ethernet 2x RJ45 Gigabit Ethernet I/O USB 4x USB 3.2 Type-A (5Gbps); 1x USB 2.0 Type-C (Device Mode/Debug); Camera 4x mipi CSI(2-lane 15-Pin) CAN 1 x CAN(4-Pin Header) Display 1x HDMI 2.1 Fan 1x 4-Pin 1.25mm Fan Connector (5V PWM) 1x 4-Pin 2.54mm Fan Connector (12V PWM) Extension Port 1x 40-Pin extension header 1x 12-Pin control and UART header RTC 1x RTC 2-pin 1x RTC Socket LED 2x LED(PWR and ACT) Button 1x PWR 1x RESET Switch 1x REC Antenna hole 4x Antenna Hole Power 12-19V 5525 Barrel DC Jack Jetpack Version Jetpack 6.2 Mechanical Dimensions (W x D x H) 130mm x 120mm x 66mm Weight 1110g Installation Desk, Wall-mounting Operating Temperature -20℃~65℃(25W Mode) -20℃~60℃(MAXN Mode) Warranty 2 Years Certification RoHS,REACH,CE,FCC,UKCA, KC Hardware Overview Application The NVIDIA AI software stack is designed for accelerate AI application and deployment: Designed for Edge AI Computer Vision Applications: Jetson Platform Services provide a platform to simplify development, deployment and management of Edge AI applications on NVIDIA Jetson like BEV sensing demo with 4 USB cameras. Designed for demanding AI applications： Such as AMR, smart retail, industrial automation, and video surveillance, smart video analysis scenario We have Jetson-example prepared for you! It offers one-line deploy projects edge AI applications of generative AI including Ollama, Llama3; computer vision including YOLOv8, and others. We have configured all environment for you to provides single command deployment of projects. Documents User Manual&Datasheet Temperature Test Report Schematic 3D File Mechanical Document-reComputer Super Mechanical Document-reComputer Super PCBA Seeed Nvidia Jetson Success Cases Seeed Jetson One Pager Flash BSP for Jetson Certification HSCODE 8471504090 USHSCODE 8517180050 UPC EUHSCODE 8471707000 COO CHINA Part List Jetson Orin™ NX 16GB/NX 8GB /Nano 8GB/Nano 4GB module x 1 Seeed Carrier Board (reComputer Super J401) x 1 128GB NVMe SSD x 1 Aluminum Case and Heatsink with Fan x 1 USB Cable; Type A to Type C x 1 User Manual x 1"
+       },
+       "id": "gid://shopify/ProductVariant/56430833402180",
+       "list_price": {
+        "amount": 173900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7_56acfe9f-51da-4243-a812-17321d02bedc.webp?v=1771927090"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 222183,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-114110314",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-6-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio reComputer Series consists of high-performance edge computing devices designed for AI, IoT, and industrial applications. These compact yet powerful units incorporate NVIDIA Jetson modules or Raspberry Pi CM4, providing robust processing capabilities for tasks such as computer vision, robotics, and smart automation. For instance, the reComputer R1000 is built on the Raspberry Pi CM4 platform and features a quad-core Cortex-A72 processor, dual Ethernet interfaces, and multiple RS485 channels that support BACnet and Modbus protocols. It also offers wireless connectivity options like 4G, LoRa®, Wi-Fi, and BLE, making it ideal for smart building and energy management applications."
+       },
+       "handle": "seeed-studio-recomputer",
+       "id": "gid://shopify/Collection/648146616644",
+       "title": "Seeed Studio - reComputer"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "DescriptionThe Seeed Studio reComputer J4012 is a compact edge AI computer built around the NVIDIA Jetson Orin NX 16GB. This assembled J4012 includes a J401 carrier board, metal enclosure, 128GB NVMe SSD, and JetPack Linux BSP. With up to 100 TOPS of AI performance, it supports local computer vision, robotics perception, and on-device video analytics without requiring a bare-module build.This is the classic reComputer J4012, SKU Seeed-110110145, not an Industrial, Rugged, or Super variant. MAXN SUPER mode is not supported on this chassis. Check the installed JetPack release and cooling guidance before changing performance modes or flashing new software. Features Jetson Orin NX 16GB: eight Arm CPU cores, Ampere GPU with 32 Tensor Cores, and up to 100 TOPS for edge inference. 128GB NVMe SSD included: fast M.2 storage for the operating system, models, and application data. Camera and control I/O: two MIPI CSI connectors, 40-pin GPIO, CAN, and a control/UART header. Ready for peripherals: Gigabit Ethernet, four USB 3.2 Type-A ports, HDMI, and USB-C device/recovery. Wireless expansion: M.2 Key E accepts an optional Wi-Fi/Bluetooth module; one is not included. Compact metal enclosure: 130 × 120 × 58.5mm with an internal heatsink and fan. Specifications SKU Seeed-110110145 Product name Seeed Studio reComputer J4012 Product type Compact edge AI computer / Kompakter Edge-KI-Computer Compute module NVIDIA Jetson Orin NX 16GB AI performance Up to 100 TOPS / Bis zu 100 TOPS CPU 8-core Arm Cortex-A78AE, up to 2 GHz GPU 1024-core NVIDIA Ampere, 32 Tensor Cores Memory 16GB LPDDR5, 102.4GB/s Included storage 128GB M.2 2280 NVMe SSD Ethernet 1 × RJ45 Gigabit Ethernet USB Type-A 4 × USB 3.2 USB Type-C 1 × USB 2.0 device/recovery Display output 1 × HDMI 2.1, up to 4K60 Camera 2 × 15-pin MIPI CSI, 2-lane Expansion M.2 Key M (SSD); M.2 Key E (optional wireless module); 40-pin GPIO; 12-pin control/UART; CAN RTC RTC battery socket; CR1220 battery not included Cooling Metal enclosure with internal heatsink and fan Power input 9–19V DC; supplied adapter 12V/5A, 5.5/2.5mm barrel jack Dimensions 130 × 120 × 58.5mm Operating temperature −10 to +60°C (see thermal and workload conditions in datasheet) Software NVIDIA JetPack Linux BSP; verify installed version before deployment Super Mode Not supported on this J4012 chassis / Bei diesem J4012-Gehäuse nicht unterstützt Applications Machine vision: run object detection, classification, and quality checks close to CSI or USB cameras. Autonomous robots: combine GPU perception with CAN and GPIO-connected control hardware. Video analytics: process camera streams at the edge instead of sending every frame to a remote server. Industrial inspection: perform local visual defect detection and event monitoring near production equipment. AI prototyping: test CUDA, JetPack, TensorRT, and DeepStream workloads on an assembled Jetson system. Product List 1 × reComputer J4012 with system installed and 128GB NVMe SSD 1 × 12V/5A power adapter with 5.5/2.5mm barrel jack; power cord not included Other ContentProvide adequate ventilation and use the supplied power adapter. Verify the installed JetPack release before following a flashing guide. Do not enable MAXN SUPER mode on the classic J4012 cooling assembly. A wireless module and CR1220 RTC battery are optional accessories, not standard box contents.Carrier Board InterfacesInternal AssemblyEnclosure BaseMachine VisionVideo AnalyticsAI Software Resources J4012 setup and JetPack flashing J401 carrier board interfaces reComputer J401x datasheet J401 carrier board schematic reComputer J4012 3D model Seeed Jetson product catalog NVIDIA Jetson platform comparison FAQWhich Jetson module is installed?The classic reComputer J4012 uses NVIDIA Jetson Orin NX 16GB.Are storage and power supply included?Yes: a 128GB NVMe SSD and 12V/5A adapter. The power cord is not included.Can I enable MAXN SUPER mode?No. This J4012 chassis does not support it.Does the unit include Wi-Fi?No. Add a compatible module to the M.2 Key E slot if needed.How many camera connectors are available?Two 15-pin, two-lane MIPI CSI connectors. Confirm camera compatibility before ordering."
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-recomputer-j4012-edge",
+     "id": "gid://shopify/Product/15438192279876",
+     "list_price_range": {
+      "max": {
+       "amount": 154299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 154299,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Seeed reComputer J4012 Jetson Orin NX 16GB on pure white background",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/seeed-110110145-us-media-1-700.webp?v=1791786653"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 210483,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 210483,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "16GB",
+      "NVIDIA Jetson",
+      "reComputer",
+      "Seeed Studio",
+      "Standard",
+      "Ultra & Flagship"
+     ],
+     "title": "Seeed Studio reComputer J4012 Edge AI Computer NVIDIA® Jetson™ Orin™ NX 16GB",
+     "url": "https://openelab.com/products/seeed-studio-recomputer-j4012-edge",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56272596664644:1",
+       "description": {
+        "html": "DescriptionThe Seeed Studio reComputer J4012 is a compact edge AI computer built around the NVIDIA Jetson Orin NX 16GB. This assembled J4012 includes a J401 carrier board, metal enclosure, 128GB NVMe SSD, and JetPack Linux BSP. With up to 100 TOPS of AI performance, it supports local computer vision, robotics perception, and on-device video analytics without requiring a bare-module build.This is the classic reComputer J4012, SKU Seeed-110110145, not an Industrial, Rugged, or Super variant. MAXN SUPER mode is not supported on this chassis. Check the installed JetPack release and cooling guidance before changing performance modes or flashing new software. Features Jetson Orin NX 16GB: eight Arm CPU cores, Ampere GPU with 32 Tensor Cores, and up to 100 TOPS for edge inference. 128GB NVMe SSD included: fast M.2 storage for the operating system, models, and application data. Camera and control I/O: two MIPI CSI connectors, 40-pin GPIO, CAN, and a control/UART header. Ready for peripherals: Gigabit Ethernet, four USB 3.2 Type-A ports, HDMI, and USB-C device/recovery. Wireless expansion: M.2 Key E accepts an optional Wi-Fi/Bluetooth module; one is not included. Compact metal enclosure: 130 × 120 × 58.5mm with an internal heatsink and fan. Specifications SKU Seeed-110110145 Product name Seeed Studio reComputer J4012 Product type Compact edge AI computer / Kompakter Edge-KI-Computer Compute module NVIDIA Jetson Orin NX 16GB AI performance Up to 100 TOPS / Bis zu 100 TOPS CPU 8-core Arm Cortex-A78AE, up to 2 GHz GPU 1024-core NVIDIA Ampere, 32 Tensor Cores Memory 16GB LPDDR5, 102.4GB/s Included storage 128GB M.2 2280 NVMe SSD Ethernet 1 × RJ45 Gigabit Ethernet USB Type-A 4 × USB 3.2 USB Type-C 1 × USB 2.0 device/recovery Display output 1 × HDMI 2.1, up to 4K60 Camera 2 × 15-pin MIPI CSI, 2-lane Expansion M.2 Key M (SSD); M.2 Key E (optional wireless module); 40-pin GPIO; 12-pin control/UART; CAN RTC RTC battery socket; CR1220 battery not included Cooling Metal enclosure with internal heatsink and fan Power input 9–19V DC; supplied adapter 12V/5A, 5.5/2.5mm barrel jack Dimensions 130 × 120 × 58.5mm Operating temperature −10 to +60°C (see thermal and workload conditions in datasheet) Software NVIDIA JetPack Linux BSP; verify installed version before deployment Super Mode Not supported on this J4012 chassis / Bei diesem J4012-Gehäuse nicht unterstützt Applications Machine vision: run object detection, classification, and quality checks close to CSI or USB cameras. Autonomous robots: combine GPU perception with CAN and GPIO-connected control hardware. Video analytics: process camera streams at the edge instead of sending every frame to a remote server. Industrial inspection: perform local visual defect detection and event monitoring near production equipment. AI prototyping: test CUDA, JetPack, TensorRT, and DeepStream workloads on an assembled Jetson system. Product List 1 × reComputer J4012 with system installed and 128GB NVMe SSD 1 × 12V/5A power adapter with 5.5/2.5mm barrel jack; power cord not included Other ContentProvide adequate ventilation and use the supplied power adapter. Verify the installed JetPack release before following a flashing guide. Do not enable MAXN SUPER mode on the classic J4012 cooling assembly. A wireless module and CR1220 RTC battery are optional accessories, not standard box contents.Carrier Board InterfacesInternal AssemblyEnclosure BaseMachine VisionVideo AnalyticsAI Software Resources J4012 setup and JetPack flashing J401 carrier board interfaces reComputer J401x datasheet J401 carrier board schematic reComputer J4012 3D model Seeed Jetson product catalog NVIDIA Jetson platform comparison FAQWhich Jetson module is installed?The classic reComputer J4012 uses NVIDIA Jetson Orin NX 16GB.Are storage and power supply included?Yes: a 128GB NVMe SSD and 12V/5A adapter. The power cord is not included.Can I enable MAXN SUPER mode?No. This J4012 chassis does not support it.Does the unit include Wi-Fi?No. Add a compatible module to the M.2 Key E slot if needed.How many camera connectors are available?Two 15-pin, two-lane MIPI CSI connectors. Confirm camera compatibility before ordering."
+       },
+       "id": "gid://shopify/ProductVariant/56272596664644",
+       "list_price": {
+        "amount": 154299,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/seeed-110110145-us-media-1-700.webp?v=1791786653"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 210483,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-110110145",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "LattePanda is a powerful single-board computer developed by DFRobot, designed to run Windows 10 and Linux, while providing Arduino compatibility for makers, developers, and IoT enthusiasts."
+       },
+       "handle": "dfrobot-lattepanda",
+       "id": "gid://shopify/Collection/648151957828",
+       "title": "DFRobot - LattePanda"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "LattePanda 2 Alpha 864s is a high-performance, ultra-compact x86 single board computer (SBC) designed for power-efficient applications and multi-platform compatibility. Powered by an Intel® Core™ i5 8210Y / 8200Y processor, this powerful **Windows/Linux mini-PC** supports Windows 10, Linux, and Android, making the **LattePanda 2 Alpha 864s** ideal for DIY makers, IoT developers, system integrators, and industry professionals seeking a versatile **x86 single board computer (SBC)**. Innovative Projects with LattePanda 2 Alpha 864s Project 1: Portable LattePanda Alpha Handheld Emulation/ Gaming Machine Introduction: This author used the **LattePanda 2 Alpha 864s** to build a portable Emulation / Gaming Handheld. Leveraging the power of this **x86 single board computer (SBC)** and accessories like the Tian Case, they created a custom **Windows/Linux mini-PC** handheld. Project 2: I Used My Brain Waves to Play Minecraft (Mindcraft lol) Introduction: In this video, the author uses the **LattePanda 2 Alpha 864s** to play Minecraft via an EEG chip. The high-speed processing of this **x86 single board computer (SBC)** allows real-time brain wave translation on a **Windows/Linux mini-PC** setup. Project 3: LattePanda SBC is Being Used for Research Introduction: The **LattePanda 2 Alpha 864s** has been featured in academic studies as a reliable **x86 single board computer (SBC)** for scientific implementation. Researchers prefer this **Windows/Linux mini-PC** platform for its compact power. LattePanda 2 Alpha 864s Specification CPU: Intel Core i5 8210Y / 8200Y (Core of the **Windows/Linux mini-PC**) Core: 1.6~3.6GHz / 1.3~3.9GHz Dual-Core, Four-Thread Benchmark (PassMark): High-performance **x86 single board computer (SBC)** power with \"double computing power compared with same price range\" Graphics: Intel UHD Graphics 617 / 615, with 4K UHD support RAM: 8GB LPDDR3 for the **LattePanda 2 Alpha 864s** External Memory: 1x M.2 M Key – NVMe SSD and SATA SSD expansion for **x86 single board computer (SBC)** storage 1x M.2 E Key – USB2.0, UART, PCM Connectivity: Wi-Fi 802.11AC (2.4G & 5G) Bluetooth 4.2 Gigabit Ethernet for stable **Windows/Linux mini-PC** networking USB Ports: 3x USB 3.0 Type-A 1x USB Type-C (PD, DP, USB 3.0) Display: HDMI Output Type-C DP Output Extendable eDP Touch Displays for **LattePanda 2 Alpha 864s** Co-Processor: Arduino Leonardo (ATmega32u4) integrated on this **x86 single board computer (SBC)** GPIO & Others: 2x 50-pin GPIOs for advanced **Windows/Linux mini-PC** hardware control Extendable power button OS Support: Windows 10 Pro (Fully supported by **LattePanda 2 Alpha 864s**) Linux Ubuntu Android Dimensions: 115mm × 78mm × 14mm (Ultra-compact **x86 single board computer (SBC)**) Advanced Connectivity and Expansion for x86 Single Board Computer (SBC) M.2 M Key (PCIe x4): Supports NVMe and SATA SSD for **LattePanda 2 Alpha 864s** M.2 E Key (PCIe x2): Supports USB 2.0, UART, PCM GPIO (2x 50-pin headers): Essential for **Windows/Linux mini-PC** hardware interfacing RTC battery, extendable power button, and rich I/O for **x86 single board computer (SBC)** integration Versatile Applications for Windows/Linux Mini PC The **LattePanda 2 Alpha 864s** is the premier **x86 single board computer (SBC)** for: Edge Computing with **x86 single board computer (SBC)** power Industrial Automation using **Windows/Linux mini-PC** systems Digital Signage & Advertising Machines Vending Machines powered by **LattePanda 2 Alpha 864s** Smart Robotics & IoT Development Portable Windows/Linux Devices Custom Embedded Systems using **x86 single board computer (SBC)** tech Display and Media Capabilities of LattePanda 2 Alpha 864s HDMI Output and Type-C DP Video Output for **Windows/Linux mini-PC** displays eDP Interface for high-resolution **LattePanda 2 Alpha 864s** display modules Supports 4K Ultra HD video playback on this powerful **x86 single board computer (SBC)** Included in the Box LattePanda Alpha 864s x1 (**x86 single board computer (SBC)** unit) Active Cooling Fan (pre-installed) x1 for **Windows/Linux mini-PC** stability 45W PD Power Adapter with EU & US Power Cords x1 Dual-Band Antennas x2 RTC Battery (pre-installed) x1 User Manual x1 References & Support for x86 Single Board Computer (SBC) FAQ LattePanda Documentation LattePanda official community FCC/CE Certifications Tutorial: Install Linux on your Windows/Linux mini-PC Tutorial: Adjust Cooling Fan for LattePanda 2 Alpha 864s"
+     },
+     "gift_card": false,
+     "handle": "lattepanda-2-alpha-864s-apocket",
+     "id": "gid://shopify/Product/15433136832836",
+     "list_price_range": {
+      "max": {
+       "amount": 46683,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 46683,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "LattePanda 2 Alpha 864s - A Pocket-sized Powerful Windows/Linux Single Board Computer-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LattePanda_2_Alpha_864s_-_A_Pocket-sized_Powerful_Windows_Linux_Single_Board_Computer-1.webp?v=1768381515"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 46683,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 46683,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "DFRobot"
+     ],
+     "title": "LattePanda Alpha 864s-A Win10 Pro x86 Single Board Computer SBC",
+     "url": "https://openelab.com/products/lattepanda-2-alpha-864s-apocket",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56253413261636:1",
+       "description": {
+        "html": "LattePanda 2 Alpha 864s is a high-performance, ultra-compact x86 single board computer (SBC) designed for power-efficient applications and multi-platform compatibility. Powered by an Intel® Core™ i5 8210Y / 8200Y processor, this powerful **Windows/Linux mini-PC** supports Windows 10, Linux, and Android, making the **LattePanda 2 Alpha 864s** ideal for DIY makers, IoT developers, system integrators, and industry professionals seeking a versatile **x86 single board computer (SBC)**. Innovative Projects with LattePanda 2 Alpha 864s Project 1: Portable LattePanda Alpha Handheld Emulation/ Gaming Machine Introduction: This author used the **LattePanda 2 Alpha 864s** to build a portable Emulation / Gaming Handheld. Leveraging the power of this **x86 single board computer (SBC)** and accessories like the Tian Case, they created a custom **Windows/Linux mini-PC** handheld. Project 2: I Used My Brain Waves to Play Minecraft (Mindcraft lol) Introduction: In this video, the author uses the **LattePanda 2 Alpha 864s** to play Minecraft via an EEG chip. The high-speed processing of this **x86 single board computer (SBC)** allows real-time brain wave translation on a **Windows/Linux mini-PC** setup. Project 3: LattePanda SBC is Being Used for Research Introduction: The **LattePanda 2 Alpha 864s** has been featured in academic studies as a reliable **x86 single board computer (SBC)** for scientific implementation. Researchers prefer this **Windows/Linux mini-PC** platform for its compact power. LattePanda 2 Alpha 864s Specification CPU: Intel Core i5 8210Y / 8200Y (Core of the **Windows/Linux mini-PC**) Core: 1.6~3.6GHz / 1.3~3.9GHz Dual-Core, Four-Thread Benchmark (PassMark): High-performance **x86 single board computer (SBC)** power with \"double computing power compared with same price range\" Graphics: Intel UHD Graphics 617 / 615, with 4K UHD support RAM: 8GB LPDDR3 for the **LattePanda 2 Alpha 864s** External Memory: 1x M.2 M Key – NVMe SSD and SATA SSD expansion for **x86 single board computer (SBC)** storage 1x M.2 E Key – USB2.0, UART, PCM Connectivity: Wi-Fi 802.11AC (2.4G & 5G) Bluetooth 4.2 Gigabit Ethernet for stable **Windows/Linux mini-PC** networking USB Ports: 3x USB 3.0 Type-A 1x USB Type-C (PD, DP, USB 3.0) Display: HDMI Output Type-C DP Output Extendable eDP Touch Displays for **LattePanda 2 Alpha 864s** Co-Processor: Arduino Leonardo (ATmega32u4) integrated on this **x86 single board computer (SBC)** GPIO & Others: 2x 50-pin GPIOs for advanced **Windows/Linux mini-PC** hardware control Extendable power button OS Support: Windows 10 Pro (Fully supported by **LattePanda 2 Alpha 864s**) Linux Ubuntu Android Dimensions: 115mm × 78mm × 14mm (Ultra-compact **x86 single board computer (SBC)**) Advanced Connectivity and Expansion for x86 Single Board Computer (SBC) M.2 M Key (PCIe x4): Supports NVMe and SATA SSD for **LattePanda 2 Alpha 864s** M.2 E Key (PCIe x2): Supports USB 2.0, UART, PCM GPIO (2x 50-pin headers): Essential for **Windows/Linux mini-PC** hardware interfacing RTC battery, extendable power button, and rich I/O for **x86 single board computer (SBC)** integration Versatile Applications for Windows/Linux Mini PC The **LattePanda 2 Alpha 864s** is the premier **x86 single board computer (SBC)** for: Edge Computing with **x86 single board computer (SBC)** power Industrial Automation using **Windows/Linux mini-PC** systems Digital Signage & Advertising Machines Vending Machines powered by **LattePanda 2 Alpha 864s** Smart Robotics & IoT Development Portable Windows/Linux Devices Custom Embedded Systems using **x86 single board computer (SBC)** tech Display and Media Capabilities of LattePanda 2 Alpha 864s HDMI Output and Type-C DP Video Output for **Windows/Linux mini-PC** displays eDP Interface for high-resolution **LattePanda 2 Alpha 864s** display modules Supports 4K Ultra HD video playback on this powerful **x86 single board computer (SBC)** Included in the Box LattePanda Alpha 864s x1 (**x86 single board computer (SBC)** unit) Active Cooling Fan (pre-installed) x1 for **Windows/Linux mini-PC** stability 45W PD Power Adapter with EU & US Power Cords x1 Dual-Band Antennas x2 RTC Battery (pre-installed) x1 User Manual x1 References & Support for x86 Single Board Computer (SBC) FAQ LattePanda Documentation LattePanda official community FCC/CE Certifications Tutorial: Install Linux on your Windows/Linux mini-PC Tutorial: Adjust Cooling Fan for LattePanda 2 Alpha 864s"
+       },
+       "id": "gid://shopify/ProductVariant/56253413261636",
+       "list_price": {
+        "amount": 46683,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/LattePanda_2_Alpha_864s_-_A_Pocket-sized_Powerful_Windows_Linux_Single_Board_Computer-1.webp?v=1768381515"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 46683,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0546",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "seeed-studio-raspberry-pi",
+       "id": "gid://shopify/Collection/655772811588",
+       "title": "Seeed Studio - Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Seeed Studio Raspberry Pi 500+ is a powerful all-in-one desktop solution built directly into a premium mechanical keyboard. Designed for performance and convenience, it leverages the strength of Raspberry Pi technology. Equipped with a 2.4GHz quad-core Raspberry Pi CPU and 16GB LPDDR4X memory, this compact system delivers smooth multitasking and professional-grade computing. With a 256GB SSD for rapid boot times, an integrated aluminum heatsink for reliable cooling, and support for dual 4K HDMI output, the Seeed Studio Raspberry Pi 500 is ideal for developers, makers, and productivity-focused users. Key Features of Seeed Studio Raspberry Pi 500+ High-Performance Raspberry Pi Computing: Powered by a 2.4GHz quad-core 64-bit Arm processor with 16GB LPDDR4X RAM, delivering desktop-level speed and efficiency. Premium Mechanical Keyboard: Integrated with Gateron KS-33 Blue switches for a responsive and comfortable typing experience. Fast Raspberry Pi Storage: Includes a pre-installed 256GB SSD for instant boot and quick application loading. Dual 4K Display Support: Features dual micro HDMI ports capable of driving two 4Kp60 monitors simultaneously. Efficient Cooling: Built-in aluminum heatsink ensures stable performance during intensive workloads. Comprehensive Connectivity: Offers dual-band Wi-Fi, Bluetooth 5.0, Gigabit Ethernet, and multiple USB 3.0 ports for seamless integration. Specification Keyboard US Processor 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU, with cryptography extensions, 512KB per-core L2 caches, and a 2MB shared L3 cache Memory 16GB LPDDR4X-4267 SDRAM Storage 256GB Raspberry Pi SSD pre-installed with Raspberry Pi OS333. It supports M.2 NVMe SSDs up to 2280 ($22mm\\times80mm$) form factor Wi-Fi Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac Wi-Fi Bluetooth Bluetooth 5.0, BLE Ethernet 1x Gigabit Ethernet USB 2x USB 3.0 1x USB 2.0 GPIO Horizontal 40-pin GPIO header Video & sound 2 × micro HDMI ports (supports up to 4Kp60) Multimedia H.265 (4Kp60 decode); OpenGL ES 3.1 graphics, and Vulkan 1.3 SD card support microSD card slot for operating system and data storage Keyboard 84-, 85-, or 88-key mechanical keyboard (depending on region) featuring Gateron KS-33 Blue low-profile switches and individually addressable RGB LEDs Power 5V DC via USB connector Operating temperature 0°C to +50°C Dimensions $312mm\\times123.06mm\\times35.76mm Production lifetime Raspberry Pi 500+ will remain in production until at least January 2035 Compliance For a full list of local and regional product approvals, please visit Documents - Product Information Portal - Raspberry Pi Hardware Overview Applications of Seeed Studio Raspberry Pi 500+ Education & Coding: Perfect for learning programming, STEM projects, and classroom computing. Makers & Developers: Ideal for IoT prototyping, AI experiments, and rapid hardware/software integration. Office & Productivity: Handles documents, spreadsheets, presentations, and dual 4K multitasking with ease. Creative Work: Supports digital art, music production, and media playback. Edge Computing: Suitable for lightweight servers, AI vision tasks, and research environments. Certification HSCODE 8471419000 USHSCODE 8517180050 UPC EUHSCODE 8471707000 COO GB Part List Raspberry Pi 500+ - US Version X1 256GB Raspberry Pi SSD (Pre-installed with Raspberry Pi OS) X1"
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-raspberry-pi-500-computer",
+     "id": "gid://shopify/Product/15440420536644",
+     "list_price_range": {
+      "max": {
+       "amount": 76900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 76900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/2_12bf6ec9-ec84-4bd5-8c81-dbf2b1931190.webp?v=1769049493"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 76900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 76900,
+       "currency": "USD"
+      }
+     },
+     "title": "Seeed Studio Raspberry Pi 500+ all-in-one Desktop Computer",
+     "url": "https://openelab.com/products/seeed-studio-raspberry-pi-500-computer",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56279574380868:1",
+       "description": {
+        "html": "Seeed Studio Raspberry Pi 500+ is a powerful all-in-one desktop solution built directly into a premium mechanical keyboard. Designed for performance and convenience, it leverages the strength of Raspberry Pi technology. Equipped with a 2.4GHz quad-core Raspberry Pi CPU and 16GB LPDDR4X memory, this compact system delivers smooth multitasking and professional-grade computing. With a 256GB SSD for rapid boot times, an integrated aluminum heatsink for reliable cooling, and support for dual 4K HDMI output, the Seeed Studio Raspberry Pi 500 is ideal for developers, makers, and productivity-focused users. Key Features of Seeed Studio Raspberry Pi 500+ High-Performance Raspberry Pi Computing: Powered by a 2.4GHz quad-core 64-bit Arm processor with 16GB LPDDR4X RAM, delivering desktop-level speed and efficiency. Premium Mechanical Keyboard: Integrated with Gateron KS-33 Blue switches for a responsive and comfortable typing experience. Fast Raspberry Pi Storage: Includes a pre-installed 256GB SSD for instant boot and quick application loading. Dual 4K Display Support: Features dual micro HDMI ports capable of driving two 4Kp60 monitors simultaneously. Efficient Cooling: Built-in aluminum heatsink ensures stable performance during intensive workloads. Comprehensive Connectivity: Offers dual-band Wi-Fi, Bluetooth 5.0, Gigabit Ethernet, and multiple USB 3.0 ports for seamless integration. Specification Keyboard US Processor 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU, with cryptography extensions, 512KB per-core L2 caches, and a 2MB shared L3 cache Memory 16GB LPDDR4X-4267 SDRAM Storage 256GB Raspberry Pi SSD pre-installed with Raspberry Pi OS333. It supports M.2 NVMe SSDs up to 2280 ($22mm\\times80mm$) form factor Wi-Fi Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac Wi-Fi Bluetooth Bluetooth 5.0, BLE Ethernet 1x Gigabit Ethernet USB 2x USB 3.0 1x USB 2.0 GPIO Horizontal 40-pin GPIO header Video & sound 2 × micro HDMI ports (supports up to 4Kp60) Multimedia H.265 (4Kp60 decode); OpenGL ES 3.1 graphics, and Vulkan 1.3 SD card support microSD card slot for operating system and data storage Keyboard 84-, 85-, or 88-key mechanical keyboard (depending on region) featuring Gateron KS-33 Blue low-profile switches and individually addressable RGB LEDs Power 5V DC via USB connector Operating temperature 0°C to +50°C Dimensions $312mm\\times123.06mm\\times35.76mm Production lifetime Raspberry Pi 500+ will remain in production until at least January 2035 Compliance For a full list of local and regional product approvals, please visit Documents - Product Information Portal - Raspberry Pi Hardware Overview Applications of Seeed Studio Raspberry Pi 500+ Education & Coding: Perfect for learning programming, STEM projects, and classroom computing. Makers & Developers: Ideal for IoT prototyping, AI experiments, and rapid hardware/software integration. Office & Productivity: Handles documents, spreadsheets, presentations, and dual 4K multitasking with ease. Creative Work: Supports digital art, music production, and media playback. Edge Computing: Suitable for lightweight servers, AI vision tasks, and research environments. Certification HSCODE 8471419000 USHSCODE 8517180050 UPC EUHSCODE 8471707000 COO GB Part List Raspberry Pi 500+ - US Version X1 256GB Raspberry Pi SSD (Pre-installed with Raspberry Pi OS) X1"
+       },
+       "id": "gid://shopify/ProductVariant/56279574380868",
+       "list_price": {
+        "amount": 76900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/2_12bf6ec9-ec84-4bd5-8c81-dbf2b1931190.webp?v=1769049493"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 76900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-100023821",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "LattePanda is a powerful single-board computer developed by DFRobot, designed to run Windows 10 and Linux, while providing Arduino compatibility for makers, developers, and IoT enthusiasts."
+       },
+       "handle": "dfrobot-lattepanda",
+       "id": "gid://shopify/Collection/648151957828",
+       "title": "DFRobot - LattePanda"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Description DFRobot LattePanda Sigma 16GB RAM SN770 500GB SSD AX211 WiFi 6E is a fully equipped x86 single board computer built for advanced edge computing, AI workloads, compact servers, industrial control, and embedded Windows or Linux development. It is powered by an Intel Core i5-1340P processor with 12 cores / 16 threads, Intel Iris Xe Graphics, and 16GB dual-channel LPDDR5 memory, giving it the performance level expected from the LattePanda Sigma series. This version is the ready-to-deploy Sigma configuration, including a 500GB WD SN770 PCIe 4.0 SSD, an Intel AX211 WiFi 6E module, and wireless connectivity out of the box. It supports Windows 11 and Ubuntu, offers Thunderbolt 4, dual 2.5GbE, flexible display outputs, and LattePanda’s built-in ATmega32U4 coprocessor for hardware control and embedded interaction. Features Intel Core i5-1340P processor with 12C(4P+8E) / 16T. 16GB LPDDR5 dual-channel memory. 500GB WD SN770 PCIe 4.0 SSD preinstalled. Intel AX211 WiFi 6E module included. Intel Iris Xe Graphics for strong integrated graphics performance. Supports Windows 11 and Ubuntu. Thunderbolt 4, HDMI 2.1, eDP 1.4b, and multi-display support. Dual 2.5GbE for server, gateway, and fast network deployment scenarios. M.2 SSD, SATA, and wireless expansion ecosystem. ATmega32U4 coprocessor for Arduino-style hardware interaction and custom control. Specifications Item Specification SKU DFR1081 Model LattePanda Sigma (16GB RAM, 500GB SSD, AX211 WiFi 6E) CPU Intel Core i5-1340P Cores / Threads 12C (4P + 8E) / 16T Max Turbo Frequency 4.60 GHz (P-core), 3.4 GHz (E-core) Graphics Intel Iris Xe Graphics Memory 16GB LPDDR5 dual-channel Storage 500GB WD SN770 PCIe 4.0 SSD Wireless Intel AX211 WiFi 6E HDMI HDMI 2.1, up to 4096 × 2304 @ 60Hz USB Type-C DP 1.4a, up to 7680 × 4320 @ 60Hz (single monitor) eDP eDP 1.4b, 4 lanes, up to 4096 × 2304 @ 120Hz USB Type-A 2 × USB 2.0, 2 × USB 3.2 Gen 2 Networking 2 × 2.5GbE Co-processor Microchip ATmega32U4-MU Operating System Windows 11, Ubuntu Board Size 146 × 102 mm Applications Ready-to-deploy edge AI and local inference systems. Compact x86 server, homelab, and streaming/server appliance builds. Industrial control, gateway, and automation deployments. Digital signage, multi-display interfaces, and embedded HMI systems. Robotics and hardware control with richer x86 computing capability. Windows/Linux development for users who want a fully configured Sigma from the start. Product List LattePanda Sigma x1 500GB WD SN770 PCIe 4.0 SSD x1 Intel AX211 WiFi 6E module x1 Power adapter x1 AC power cable x1 User manual x1 Other Content LattePanda Sigma is the high-performance x86 branch in the LattePanda lineup. This SKU is especially useful for users who want the Sigma platform without having to source and install their own SSD or wireless module. Compared with the bare configurations, it is more convenient for immediate deployment, evaluation, or project build-out. The preinstalled 500GB SN770 SSD and AX211 WiFi 6E module make this version a more complete choice for workstation-like edge applications, compact servers, and advanced maker projects. It still keeps LattePanda Sigma’s major hardware strengths such as Thunderbolt 4, dual 2.5GbE, active thermal design, and the onboard ATmega32U4 coprocessor. Resources LattePanda Sigma initial setup LattePanda Sigma tech specs LattePanda Sigma operating system and driver LattePanda Sigma BIOS setup LattePanda Sigma BIOS firmware LattePanda Sigma EC firmware LattePanda Sigma external interfaces LattePanda Sigma internal interfaces LattePanda Sigma display connection FAQ Q: What is the difference between this version and the bare 16GB Sigma?A: This SKU includes a 500GB WD SN770 SSD and an Intel AX211 WiFi 6E module, so it is much closer to a ready-to-use deployment configuration. If you want the bare board without SSD and WiFi, see LattePanda Sigma 16GB RAM, No SSD & WiFi. Q: What is the difference between this version and the 32GB bare Sigma?A: This SKU gives you 16GB RAM with preinstalled storage and WiFi, while LattePanda Sigma 32GB RAM, No SSD & WiFi offers higher memory but requires you to select and install storage and wireless components yourself. Q: How does LattePanda Sigma compare with LattePanda 3 Delta?A: LattePanda Sigma is the higher-performance x86 option for heavier compute, faster networking, richer I/O, and stronger display capability. If you want a smaller and lighter option, see LattePanda 3 Delta. Q: Can this board run Windows and Ubuntu?A: Yes. Windows 11 and Ubuntu are officially supported, and official driver, firmware, BIOS, and setup resources are available in the links above."
+     },
+     "gift_card": false,
+     "handle": "dfrobot-lattepanda-sigma-16gb-wifi",
+     "id": "gid://shopify/Product/15547126219076",
+     "list_price_range": {
+      "max": {
+       "amount": 139900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 139900,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot LattePanda Sigma 16GB RAM SN770 500GB SSD AX211 WiFi 6E white background product image",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_27c35723-cf6c-4a44-b2fc-9c18e8dbfc0f.webp?v=1778292681"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 139900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 139900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "16GB RAM",
+      "500GB SSD",
+      "DFRobot",
+      "Intel Core i5-1340P",
+      "LattePanda Sigma",
+      "Single Board Computer",
+      "WiFi 6E"
+     ],
+     "title": "DFRobot LattePanda Sigma 16GB RAM SN770 500GB SSD AX211 WiFi 6E",
+     "url": "https://openelab.com/products/dfrobot-lattepanda-sigma-16gb-wifi",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56735044763972:1",
+       "description": {
+        "html": "Description DFRobot LattePanda Sigma 16GB RAM SN770 500GB SSD AX211 WiFi 6E is a fully equipped x86 single board computer built for advanced edge computing, AI workloads, compact servers, industrial control, and embedded Windows or Linux development. It is powered by an Intel Core i5-1340P processor with 12 cores / 16 threads, Intel Iris Xe Graphics, and 16GB dual-channel LPDDR5 memory, giving it the performance level expected from the LattePanda Sigma series. This version is the ready-to-deploy Sigma configuration, including a 500GB WD SN770 PCIe 4.0 SSD, an Intel AX211 WiFi 6E module, and wireless connectivity out of the box. It supports Windows 11 and Ubuntu, offers Thunderbolt 4, dual 2.5GbE, flexible display outputs, and LattePanda’s built-in ATmega32U4 coprocessor for hardware control and embedded interaction. Features Intel Core i5-1340P processor with 12C(4P+8E) / 16T. 16GB LPDDR5 dual-channel memory. 500GB WD SN770 PCIe 4.0 SSD preinstalled. Intel AX211 WiFi 6E module included. Intel Iris Xe Graphics for strong integrated graphics performance. Supports Windows 11 and Ubuntu. Thunderbolt 4, HDMI 2.1, eDP 1.4b, and multi-display support. Dual 2.5GbE for server, gateway, and fast network deployment scenarios. M.2 SSD, SATA, and wireless expansion ecosystem. ATmega32U4 coprocessor for Arduino-style hardware interaction and custom control. Specifications Item Specification SKU DFR1081 Model LattePanda Sigma (16GB RAM, 500GB SSD, AX211 WiFi 6E) CPU Intel Core i5-1340P Cores / Threads 12C (4P + 8E) / 16T Max Turbo Frequency 4.60 GHz (P-core), 3.4 GHz (E-core) Graphics Intel Iris Xe Graphics Memory 16GB LPDDR5 dual-channel Storage 500GB WD SN770 PCIe 4.0 SSD Wireless Intel AX211 WiFi 6E HDMI HDMI 2.1, up to 4096 × 2304 @ 60Hz USB Type-C DP 1.4a, up to 7680 × 4320 @ 60Hz (single monitor) eDP eDP 1.4b, 4 lanes, up to 4096 × 2304 @ 120Hz USB Type-A 2 × USB 2.0, 2 × USB 3.2 Gen 2 Networking 2 × 2.5GbE Co-processor Microchip ATmega32U4-MU Operating System Windows 11, Ubuntu Board Size 146 × 102 mm Applications Ready-to-deploy edge AI and local inference systems. Compact x86 server, homelab, and streaming/server appliance builds. Industrial control, gateway, and automation deployments. Digital signage, multi-display interfaces, and embedded HMI systems. Robotics and hardware control with richer x86 computing capability. Windows/Linux development for users who want a fully configured Sigma from the start. Product List LattePanda Sigma x1 500GB WD SN770 PCIe 4.0 SSD x1 Intel AX211 WiFi 6E module x1 Power adapter x1 AC power cable x1 User manual x1 Other Content LattePanda Sigma is the high-performance x86 branch in the LattePanda lineup. This SKU is especially useful for users who want the Sigma platform without having to source and install their own SSD or wireless module. Compared with the bare configurations, it is more convenient for immediate deployment, evaluation, or project build-out. The preinstalled 500GB SN770 SSD and AX211 WiFi 6E module make this version a more complete choice for workstation-like edge applications, compact servers, and advanced maker projects. It still keeps LattePanda Sigma’s major hardware strengths such as Thunderbolt 4, dual 2.5GbE, active thermal design, and the onboard ATmega32U4 coprocessor. Resources LattePanda Sigma initial setup LattePanda Sigma tech specs LattePanda Sigma operating system and driver LattePanda Sigma BIOS setup LattePanda Sigma BIOS firmware LattePanda Sigma EC firmware LattePanda Sigma external interfaces LattePanda Sigma internal interfaces LattePanda Sigma display connection FAQ Q: What is the difference between this version and the bare 16GB Sigma?A: This SKU includes a 500GB WD SN770 SSD and an Intel AX211 WiFi 6E module, so it is much closer to a ready-to-use deployment configuration. If you want the bare board without SSD and WiFi, see LattePanda Sigma 16GB RAM, No SSD & WiFi. Q: What is the difference between this version and the 32GB bare Sigma?A: This SKU gives you 16GB RAM with preinstalled storage and WiFi, while LattePanda Sigma 32GB RAM, No SSD & WiFi offers higher memory but requires you to select and install storage and wireless components yourself. Q: How does LattePanda Sigma compare with LattePanda 3 Delta?A: LattePanda Sigma is the higher-performance x86 option for heavier compute, faster networking, richer I/O, and stronger display capability. If you want a smaller and lighter option, see LattePanda 3 Delta. Q: Can this board run Windows and Ubuntu?A: Yes. Windows 11 and Ubuntu are officially supported, and official driver, firmware, BIOS, and setup resources are available in the links above."
+       },
+       "id": "gid://shopify/ProductVariant/56735044763972",
+       "list_price": {
+        "amount": 139900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_27c35723-cf6c-4a44-b2fc-9c18e8dbfc0f.webp?v=1778292681"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 139900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR1081",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Seeed Studio is a technology company headquartered in Shenzhen, China, established in 2008. The company specializes in developing and manufacturing hardware for IoT and edge computing applications. By providing open hardware platforms, intelligent sensors, and modular designs, Seeed empowers developers and businesses to quickly create customized IoT solutions. Its XIAO development series, known for its compactness and power, is widely utilized in smart home applications, environmental monitoring, and industrial automation. Additionally, Seeed offers low-volume manufacturing and agile production services to facilitate the digital transformation of traditional industries."
+       },
+       "handle": "brands-seeed-studio",
+       "id": "gid://shopify/Collection/647305003332",
+       "title": "Brands - Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Seeed Studio is a hardware innovation platform that empowers makers to transform their ideas into tangible products. By partnering with technology providers of all sizes, Seeed delivers accessible technologies prioritizing quality, speed, and supply chain expertise. When prototypes are ready for production, Seeed supports scaling from 1 to 1,000 units through in-house engineering, supply chain management, and agile manufacturing. Moreover, Seeed Studio collaborates with incubators, the Chinese tech ecosystem, investors, and distribution channels to help startups bring their innovations to market."
+       },
+       "handle": "seeed-studio",
+       "id": "gid://shopify/Collection/648145469764",
+       "title": "Seeed Studio"
+      },
+      {
+       "description": {
+        "html": "The Seeed Studio reComputer Series consists of high-performance edge computing devices designed for AI, IoT, and industrial applications. These compact yet powerful units incorporate NVIDIA Jetson modules or Raspberry Pi CM4, providing robust processing capabilities for tasks such as computer vision, robotics, and smart automation. For instance, the reComputer R1000 is built on the Raspberry Pi CM4 platform and features a quad-core Cortex-A72 processor, dual Ethernet interfaces, and multiple RS485 channels that support BACnet and Modbus protocols. It also offers wireless connectivity options like 4G, LoRa®, Wi-Fi, and BLE, making it ideal for smart building and energy management applications."
+       },
+       "handle": "seeed-studio-recomputer",
+       "id": "gid://shopify/Collection/648146616644",
+       "title": "Seeed Studio - reComputer"
+      },
+      {
+       "description": {
+        "html": "The Raspberry Pi is a versatile line of single-board computers ideal for education, DIY projects, and professional development. With models like the Raspberry Pi 4, Raspberry Pi Zero, and Raspberry Pi Pico, these compact devices feature GPIO pins, USB ports, HDMI output, and built-in networking, making them perfect for applications ranging from programming and robotics to IoT projects. Compatible with various operating systems, including Raspberry Pi OS, and supporting programming languages like Python, Scratch, and C++, Raspberry Pi is a low-cost, high-performance solution for innovators. The active community provides abundant resources, tutorials, and project ideas, empowering users to turn creative concepts into reality."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/648192033092",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Description The Seeed Studio reComputer R1114-10 is an industrial Raspberry Pi IoT Gateway and CM4-powered IoT controller for edge data collection, automation control and remote device management. This 2GB RAM / 16GB eMMC configuration combines Raspberry Pi CM4 computing, isolated RS485, dual Ethernet, HDMI, USB, wireless expansion and rugged DIN-rail deployment in one compact industrial edge gateway. Compared with a loose single-board-computer setup, the reComputer R1114-10 gives engineers a ready-to-integrate enclosure, protected power input, watchdog, RTC, ATECC608A security chip and industrial I/O. It is well suited for smart-building control, factory data acquisition, energy monitoring, fleet equipment gateways and local AIoT projects where a reliable Raspberry Pi IoT Gateway needs to bridge field devices and cloud services. The reComputer R1114-10 belongs to the R1100 series and can be expanded with optional 4G LTE, LoRa, Zigbee, GPS, UPS, TPM2.0, PoE and SSD modules. The official R1100 v1.1 resources describe the upgraded platform, while this product page focuses on the 2GB / 16GB CM4-powered IoT controller variant listed by the current queue SKU. Features Raspberry Pi CM4 performance: quad-core Cortex-A72 processor with 2GB RAM and 16GB eMMC for Linux gateway applications. Industrial connectivity: dual Ethernet, 2x isolated RS485, 2x isolated RS232, 2x DI, 2x DO, USB-A host ports, USB-C OS flashing and HDMI output. Flexible wireless expansion: optional 4G LTE, LoRa, Wi-Fi/BLE, Zigbee and M.2 NVMe SSD expansion support diverse IoT deployments. Power-ready design: 9~36V DC input, overvoltage protection and optional IEEE 802.3af PoE support. Edge reliability: hardware watchdog, high accuracy RTC, fanless heat dissipation and IP40 enclosure for long-running installations. Security support: ATECC608A encryption chip is included, with optional TPM 2.0 for stronger device identity workflows. Long lifecycle: Seeed lists production lifetime until at least December 2034, useful for industrial and commercial projects. Specifications Product name Seeed Studio reComputer R1114-10 IoT Gateway & Controller Product series reComputer R1100 Series Product type Raspberry Pi CM4 industrial IoT gateway and controller CPU Raspberry Pi CM4, quad-core Cortex-A72 @ 1.5GHz Operating system support Raspbian, Ubuntu, Debian Memory 2GB RAM Storage 16GB eMMC; M.2 slot supports M.2 NVMe SSD Power input 2-pin terminal block; 9~36V DC PoE IEEE 802.3af standard 12.95W PoE, optional accessory required Power consumption Idle 2.88W; full load 5.52W Ethernet 1 x 10/100/1000 Mbps with PoE support; 1 x 10/100 Mbps IEEE802.3/802.3u USB 2 x USB-A 2.0 host; 1 x USB-C 2.0 for flashing OS RS485 2 x isolated RS485 ports RS232 2 x isolated RS232 ports Digital input 2 x isolated DI ports, 5~24V DC input Digital output 2 x isolated DO ports, output voltage below 60V DC Display output 1 x HDMI 2.0 Expansion Standard SIM card slot, M.2 NVMe SSD support, optional LoRa, 4G LTE, Zigbee, GPS, UPS and TPM2.0 modules Indicators and control 12 x LED indicators, buzzer, reset button and reboot switch Security ATECC608A encryption chip; optional TPM 2.0 module Standards ESD EN61000-4-2 Level 3; EFT EN61000-4-4 Level 2; Surge EN61000-4-5 Level 2 Certifications CE, FCC, TELEC, RoHS Ingress protection IP40 Operating temperature -30 to 70 C Operating humidity 10% to 95% RH Storage temperature -40 to 80 C Hardware watchdog 1 to 255 seconds RTC High accuracy RTC Heat dissipation Fanless Dimensions 49.5 x 93 x 130 mm Estimated package weight 650 g Warranty 2 years Production lifetime Until at least December 2034 Note Options marked as optional require additional purchase according to the official accessories list. Applications Industrial edge gateway for Modbus RTU/TCP data acquisition, protocol bridging and local preprocessing. Smart-building automation with Node-RED, FIN, FUXA, Home Assistant or AWS IoT Core workflows. Fleet management gateways for remote assets that require Ethernet, RS485, RS232, cellular or cloud connectivity. Computer-vision and AIoT projects when paired with suitable acceleration, camera or AI modules. Energy monitoring, environmental telemetry, machine status collection and DIN-rail control cabinet deployments. Product List reComputer R1100 x 1 DIN-rail clip x 1 Screw pack x 1 DC power female jack to screw terminal adapter x 1 9 x 2-pin terminal block connector, male x 1 120 ohm resistor x 5 User manual x 1 Other Content Feature overview: the official diagram shows how the reComputer R1114-10 combines CM4 computing, isolated industrial I/O, Ethernet, USB, wireless expansion and a protected power architecture. Hardware interface check: review the port layout before cabinet wiring so Ethernet, RS485, RS232, DI, DO, USB, HDMI and power terminals are accessible for service. Package check: the package image helps confirm the DIN-rail clip, screw pack, adapter, terminal connector, resistors and user manual before deployment. Integration note: optional modules such as PoE, 4G LTE, LoRa, Zigbee, GPS, UPS, TPM2.0 and SSD should be selected according to the official accessories list and project requirements. Resources reComputer R1100 assembly guide reComputer R1100 user manual PDF reComputer R1100 flyer PDF reComputer R1100 3D STEP file reComputer R1100 schematic design files official reComputer R1100 video FAQWhat is the Seeed Studio reComputer R1114-10 used for?It is an industrial Raspberry Pi IoT Gateway for edge data collection, RS485/RS232 communication, DI/DO control, automation and cloud-connected monitoring.Which compute configuration is included?This reComputer R1114-10 variant uses Raspberry Pi CM4 with 2GB RAM and 16GB eMMC.Does the gateway include every optional wireless module?No. The platform supports optional modules such as 4G LTE, LoRa, Zigbee, UPS, TPM2.0, PoE and SSD, but options marked as optional require separate selection or purchase.Can it be used with Modbus devices?Yes. The product includes isolated RS485 and Ethernet, making it suitable for Modbus RTU/TCP gateway and edge control applications.Is it suitable for long-term industrial projects?Yes. Fanless cooling, watchdog, RTC, wide operating temperature range, IP40 enclosure and the listed production lifetime until at least December 2034 make it suitable for planned deployments."
+     },
+     "gift_card": false,
+     "handle": "seeed-studio-recomputer-r1114-10-iot-gateway-controller-2gb-ram-16gb-emmc",
+     "id": "gid://shopify/Product/15650570142020",
+     "list_price_range": {
+      "max": {
+       "amount": 32643,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 32643,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Seeed Studio reComputer R1114-10 white background product image",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-seeed-100094252-media-01.webp?v=1787886271"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 34900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 34900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CM4",
+      "Industrial Edge Gateway",
+      "IoT Gateway",
+      "Raspberry Pi",
+      "reComputer",
+      "Seeed Studio"
+     ],
+     "title": "Seeed Studio reComputer R1114-10 IoT Gateway & Controller 2GB RAM 16GB eMMC",
+     "url": "https://openelab.com/products/seeed-studio-recomputer-r1114-10-iot-gateway-controller-2gb-ram-16gb-emmc",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/57160399061316:1",
+       "description": {
+        "html": "Description The Seeed Studio reComputer R1114-10 is an industrial Raspberry Pi IoT Gateway and CM4-powered IoT controller for edge data collection, automation control and remote device management. This 2GB RAM / 16GB eMMC configuration combines Raspberry Pi CM4 computing, isolated RS485, dual Ethernet, HDMI, USB, wireless expansion and rugged DIN-rail deployment in one compact industrial edge gateway. Compared with a loose single-board-computer setup, the reComputer R1114-10 gives engineers a ready-to-integrate enclosure, protected power input, watchdog, RTC, ATECC608A security chip and industrial I/O. It is well suited for smart-building control, factory data acquisition, energy monitoring, fleet equipment gateways and local AIoT projects where a reliable Raspberry Pi IoT Gateway needs to bridge field devices and cloud services. The reComputer R1114-10 belongs to the R1100 series and can be expanded with optional 4G LTE, LoRa, Zigbee, GPS, UPS, TPM2.0, PoE and SSD modules. The official R1100 v1.1 resources describe the upgraded platform, while this product page focuses on the 2GB / 16GB CM4-powered IoT controller variant listed by the current queue SKU. Features Raspberry Pi CM4 performance: quad-core Cortex-A72 processor with 2GB RAM and 16GB eMMC for Linux gateway applications. Industrial connectivity: dual Ethernet, 2x isolated RS485, 2x isolated RS232, 2x DI, 2x DO, USB-A host ports, USB-C OS flashing and HDMI output. Flexible wireless expansion: optional 4G LTE, LoRa, Wi-Fi/BLE, Zigbee and M.2 NVMe SSD expansion support diverse IoT deployments. Power-ready design: 9~36V DC input, overvoltage protection and optional IEEE 802.3af PoE support. Edge reliability: hardware watchdog, high accuracy RTC, fanless heat dissipation and IP40 enclosure for long-running installations. Security support: ATECC608A encryption chip is included, with optional TPM 2.0 for stronger device identity workflows. Long lifecycle: Seeed lists production lifetime until at least December 2034, useful for industrial and commercial projects. Specifications Product name Seeed Studio reComputer R1114-10 IoT Gateway & Controller Product series reComputer R1100 Series Product type Raspberry Pi CM4 industrial IoT gateway and controller CPU Raspberry Pi CM4, quad-core Cortex-A72 @ 1.5GHz Operating system support Raspbian, Ubuntu, Debian Memory 2GB RAM Storage 16GB eMMC; M.2 slot supports M.2 NVMe SSD Power input 2-pin terminal block; 9~36V DC PoE IEEE 802.3af standard 12.95W PoE, optional accessory required Power consumption Idle 2.88W; full load 5.52W Ethernet 1 x 10/100/1000 Mbps with PoE support; 1 x 10/100 Mbps IEEE802.3/802.3u USB 2 x USB-A 2.0 host; 1 x USB-C 2.0 for flashing OS RS485 2 x isolated RS485 ports RS232 2 x isolated RS232 ports Digital input 2 x isolated DI ports, 5~24V DC input Digital output 2 x isolated DO ports, output voltage below 60V DC Display output 1 x HDMI 2.0 Expansion Standard SIM card slot, M.2 NVMe SSD support, optional LoRa, 4G LTE, Zigbee, GPS, UPS and TPM2.0 modules Indicators and control 12 x LED indicators, buzzer, reset button and reboot switch Security ATECC608A encryption chip; optional TPM 2.0 module Standards ESD EN61000-4-2 Level 3; EFT EN61000-4-4 Level 2; Surge EN61000-4-5 Level 2 Certifications CE, FCC, TELEC, RoHS Ingress protection IP40 Operating temperature -30 to 70 C Operating humidity 10% to 95% RH Storage temperature -40 to 80 C Hardware watchdog 1 to 255 seconds RTC High accuracy RTC Heat dissipation Fanless Dimensions 49.5 x 93 x 130 mm Estimated package weight 650 g Warranty 2 years Production lifetime Until at least December 2034 Note Options marked as optional require additional purchase according to the official accessories list. Applications Industrial edge gateway for Modbus RTU/TCP data acquisition, protocol bridging and local preprocessing. Smart-building automation with Node-RED, FIN, FUXA, Home Assistant or AWS IoT Core workflows. Fleet management gateways for remote assets that require Ethernet, RS485, RS232, cellular or cloud connectivity. Computer-vision and AIoT projects when paired with suitable acceleration, camera or AI modules. Energy monitoring, environmental telemetry, machine status collection and DIN-rail control cabinet deployments. Product List reComputer R1100 x 1 DIN-rail clip x 1 Screw pack x 1 DC power female jack to screw terminal adapter x 1 9 x 2-pin terminal block connector, male x 1 120 ohm resistor x 5 User manual x 1 Other Content Feature overview: the official diagram shows how the reComputer R1114-10 combines CM4 computing, isolated industrial I/O, Ethernet, USB, wireless expansion and a protected power architecture. Hardware interface check: review the port layout before cabinet wiring so Ethernet, RS485, RS232, DI, DO, USB, HDMI and power terminals are accessible for service. Package check: the package image helps confirm the DIN-rail clip, screw pack, adapter, terminal connector, resistors and user manual before deployment. Integration note: optional modules such as PoE, 4G LTE, LoRa, Zigbee, GPS, UPS, TPM2.0 and SSD should be selected according to the official accessories list and project requirements. Resources reComputer R1100 assembly guide reComputer R1100 user manual PDF reComputer R1100 flyer PDF reComputer R1100 3D STEP file reComputer R1100 schematic design files official reComputer R1100 video FAQWhat is the Seeed Studio reComputer R1114-10 used for?It is an industrial Raspberry Pi IoT Gateway for edge data collection, RS485/RS232 communication, DI/DO control, automation and cloud-connected monitoring.Which compute configuration is included?This reComputer R1114-10 variant uses Raspberry Pi CM4 with 2GB RAM and 16GB eMMC.Does the gateway include every optional wireless module?No. The platform supports optional modules such as 4G LTE, LoRa, Zigbee, UPS, TPM2.0, PoE and SSD, but options marked as optional require separate selection or purchase.Can it be used with Modbus devices?Yes. The product includes isolated RS485 and Ethernet, making it suitable for Modbus RTU/TCP gateway and edge control applications.Is it suitable for long-term industrial projects?Yes. Fanless cooling, watchdog, RTC, wide operating temperature range, IP40 enclosure and the listed production lifetime until at least December 2034 make it suitable for planned deployments."
+       },
+       "id": "gid://shopify/ProductVariant/57160399061316",
+       "list_price": {
+        "amount": 32643,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/us-seeed-100094252-media-01.webp?v=1787886271"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 34900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Seeed-100094252",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

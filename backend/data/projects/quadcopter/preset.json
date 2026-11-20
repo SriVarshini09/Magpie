@@ -1,0 +1,50 @@
+{
+  "sample": {
+    "build_type": "quadcopter",
+    "title": "Small camera drone",
+    "example_text": "a small camera drone under $200",
+    "blurb": "Typed request, template rows, a procedural model",
+    "mandate_preset": {
+      "budget_usd": 200,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "procedural"
+  },
+  "template_id": "tpl_quadcopter",
+  "default_answers": {
+    "size_class": "3in",
+    "own_radio": "yes",
+    "own_soldering_iron": "yes"
+  },
+  "seed_memories": [
+    "owns a precision screwdriver set",
+    "owns two USB-C data cables",
+    "owns a 3D printer and PLA",
+    "owns a soldering iron and jumper wires",
+    "prefers US sellers; no Alibaba or AliExpress"
+  ],
+  "kb_docs": [
+    "template_sources",
+    "electrical_notes",
+    "compat_rules_generic",
+    "store_policies",
+    "tpl_quadcopter"
+  ],
+  "notes": "Hero text run (PLAN §6.2). The fixtures' store id mock_store is fixture-only and is not in this preset; no Shopify (agent-cart) store that carries FPV parts has been checked yet, so a human picks one from data/stores.json before the run if the demo needs an agent cart. The 3-inch rows are rules of thumb with no source read: every template line says so, and the KV rule only warns."
+}

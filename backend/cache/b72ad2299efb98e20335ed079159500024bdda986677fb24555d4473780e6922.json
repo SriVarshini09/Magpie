@@ -1,0 +1,1305 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "4S 650mAh LiPo XT30"
+  }
+ },
+ "key": "b72ad2299efb98e20335ed079159500024bdda986677fb24555d4473780e6922",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:12-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 786); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6Nzg2LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 786
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<h2>Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack</h2>\n<h3 data-start=\"289\" data-end=\"723\"><span style=\"color: rgb(255, 42, 0);\">We ship from our U.S. warehouse—due to battery shipping restrictions, please select <strong data-end=\"163\" data-start=\"154\">FedEx</strong> for international orders (<strong data-end=\"212\" data-start=\"190\">Canadian customers</strong> may use <strong data-end=\"235\" data-start=\"221\">UPS Ground</strong>).</span></h3>\n<p>The Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack comes in a very lightweight and very compact size. The long shape of this battery makes it works best on small drones.</p>\n<p>The 650mAh 15.2V HV 95C 4S Lipo Battery is packed with vibration-proof &amp; fire-proof material and our luxury battery box ensuring you get your battery in perfect condition. Tattu batteries are specifically made for UAV/FPV/drone market. It is coming in a lighter weight, smaller size simpler design but more flight time and more enjoyment.</p>\n<p><strong>Features:</strong></p>\n<p>- Remarkable stacking technology enables single-cell capacities of 650mAh.<br>- High discharge performance and high energy density.<br>- Superior Japan and Korea Lithium Polymer raw materials.<br>- Tattu batteries provide high quality, reliable power for your small drones.<br>- Local after-sales service San Diego Caliornia</p>\n<p><strong>Specifications:</strong></p>\n<p>- Minimum Capacity: 650mAh<br>- Configuration: 4S1P / 15.2V / 4 Cell<br>- Discharge Rate: 95C<br>- Max Burst Discharge Rate: 190C<br>- Net Weight(±5g): 60g<br>- Dimensions:74mm Length x 17mm Width x 24.5mm Height<br>- Discharge Plug: XT30</p>\n<p><strong>Our Advantage:</strong></p>\n<p>1. Your orders will be dispatched via FedEx or USPS from the USA directly.<br>2. Fast shipping and excellent local after-sale service guaranteed in the USA.<br>3. Service-priority in the online shop, like the long warranty period and the lower price.<br>4. Energy Density:Specially adapted to each UAV type and RC car/boat/heli type. Very High according to capacity/weight. In fact, we are specialists in High Power Lipo Batteries. It is our unique technology, the highest power of our battery is 100C. Another technology is our batteries are able to be stably discharged simultaneously.<br>5. Low IR: Provides stable voltage until the end of your mission.<br>6. Safety: Gens Ace and its' partners fulfill the ISO9001, ISO14001, standards.<br>7. See the battery instruction to the link: <a href=\"https://genstattu.com/bw/\">LiPo Battery Guide</a></p>\n<p><strong><img height=\"24\" width=\"28\" alt=\"?\" src=\"https://www.p65warnings.ca.gov/sites/default/files/warning.svg\">WARNING</strong>: This product can expose you to chemicals including nickel, which is known to the State of California to cause cancer and birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov.<br></p>"
+     },
+     "handle": "tattu-650mah-15-2v-high-voltage-95c-4s1p-lipo-battery-pack-with-xt30-plug-long-pack",
+     "id": "gid://shopify/p/7obCYW720ojwj4VVVnRDLd",
+     "media": [
+      {
+       "alt_text": "Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack - NewBeeDrone",
+       "height": 1280,
+       "preview": {
+        "height": 1280,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Tattu-650mAh-15.2V-High-Voltage-95C-4S1P-Lipo-Battery-Pack-with-XT30-Plug-Long-Pack-Tattu-53038252.jpg",
+        "width": 1280
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Tattu-650mAh-15.2V-High-Voltage-95C-4S1P-Lipo-Battery-Pack-with-XT30-Plug-Long-Pack-Tattu-53038252.jpg",
+       "width": 1280
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Remarkable stacking technology: Delivers high single-cell capacity and discharge performance for extended flight time",
+       "High discharge rate (95C): Provides powerful acceleration and rapid power delivery under load",
+       "Compact and lightweight design: Fits small drones and RC vehicles for improved maneuverability",
+       "Vibration and fireproof material: Enhances safety and durability during intense use",
+       "XT30 plug compatibility: Ensures secure and easy connection to compatible devices"
+      ],
+      "unique_selling_points": [
+       "Remarkable stacking technology enables high single-cell capacity and discharge rate for demanding FPV and RC applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1566,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1566,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 5,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Tattu 650mAh 4S 15.2V 95C Lipo Battery Long Pack with XT30 Plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/42098545557587:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack</h2>\n<h3 data-start=\"289\" data-end=\"723\"><span style=\"color: rgb(255, 42, 0);\">We ship from our U.S. warehouse—due to battery shipping restrictions, please select <strong data-end=\"163\" data-start=\"154\">FedEx</strong> for international orders (<strong data-end=\"212\" data-start=\"190\">Canadian customers</strong> may use <strong data-end=\"235\" data-start=\"221\">UPS Ground</strong>).</span></h3>\n<p>The Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack comes in a very lightweight and very compact size. The long shape of this battery makes it works best on small drones.</p>\n<p>The 650mAh 15.2V HV 95C 4S Lipo Battery is packed with vibration-proof &amp; fire-proof material and our luxury battery box ensuring you get your battery in perfect condition. Tattu batteries are specifically made for UAV/FPV/drone market. It is coming in a lighter weight, smaller size simpler design but more flight time and more enjoyment.</p>\n<p><strong>Features:</strong></p>\n<p>- Remarkable stacking technology enables single-cell capacities of 650mAh.<br>- High discharge performance and high energy density.<br>- Superior Japan and Korea Lithium Polymer raw materials.<br>- Tattu batteries provide high quality, reliable power for your small drones.<br>- Local after-sales service San Diego Caliornia</p>\n<p><strong>Specifications:</strong></p>\n<p>- Minimum Capacity: 650mAh<br>- Configuration: 4S1P / 15.2V / 4 Cell<br>- Discharge Rate: 95C<br>- Max Burst Discharge Rate: 190C<br>- Net Weight(±5g): 60g<br>- Dimensions:74mm Length x 17mm Width x 24.5mm Height<br>- Discharge Plug: XT30</p>\n<p><strong>Our Advantage:</strong></p>\n<p>1. Your orders will be dispatched via FedEx or USPS from the USA directly.<br>2. Fast shipping and excellent local after-sale service guaranteed in the USA.<br>3. Service-priority in the online shop, like the long warranty period and the lower price.<br>4. Energy Density:Specially adapted to each UAV type and RC car/boat/heli type. Very High according to capacity/weight. In fact, we are specialists in High Power Lipo Batteries. It is our unique technology, the highest power of our battery is 100C. Another technology is our batteries are able to be stably discharged simultaneously.<br>5. Low IR: Provides stable voltage until the end of your mission.<br>6. Safety: Gens Ace and its' partners fulfill the ISO9001, ISO14001, standards.<br>7. See the battery instruction to the link: <a href=\"https://genstattu.com/bw/\">LiPo Battery Guide</a></p>\n<p><strong><img height=\"24\" width=\"28\" alt=\"?\" src=\"https://www.p65warnings.ca.gov/sites/default/files/warning.svg\">WARNING</strong>: This product can expose you to chemicals including nickel, which is known to the State of California to cause cancer and birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov.<br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tattu-650mah-15-2v-high-voltage-95c-4s1p-lipo-battery-pack-with-xt30-plug-long-pack",
+       "id": "gid://shopify/ProductVariant/42098545557587",
+       "list_price": {
+        "amount": 1649,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Tattu 650mAh 15.2V High Voltage 95C 4S1P Lipo Battery Pack with XT30 Plug - Long Pack - NewBeeDrone",
+         "height": 1280,
+         "preview": {
+          "height": 1280,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Tattu-650mAh-15.2V-High-Voltage-95C-4S1P-Lipo-Battery-Pack-with-XT30-Plug-Long-Pack-Tattu-53038252.jpg",
+          "width": 1280
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Tattu-650mAh-15.2V-High-Voltage-95C-4S1P-Lipo-Battery-Pack-with-XT30-Plug-Long-Pack-Tattu-53038252.jpg",
+         "width": 1280
+        }
+       ],
+       "price": {
+        "amount": 1566,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 5,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7422643535955",
+       "source": "shopify",
+       "title": "Tattu 650mAh 4S 15.2V 95C Lipo Battery Long Pack with XT30 Plug",
+       "url": "https://newbeedrone.com/products/tattu-650mah-15-2v-high-voltage-95c-4s1p-lipo-battery-pack-with-xt30-plug-long-pack?variant=42098545557587&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<meta charset=\"utf-8\">\n<div data-section=\"AliMaya-5laqk\" data-section-title=\"Specification\">\n<strong>Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 plug</strong> has full capacity and discharge rate. It is a high discharge rate FPV racing lipo battery. The 95C gives you enough power under load. It is very compact in size and very light in weight. Works perfect with your Multirotor FPV from size 100 to 180. <br>\n</div>\n<p><strong>Tattu R-Line</strong> is a brand new product line specifically designed for professional FPV racing competitions. It's the selling version of Toppilot batteries. It's also a subsidiary of the Tattu brand. It's got higher capacity, lower internal resistance and lower landing temperatures. They are more powerful than any graphene battery. Generally, R-Line batteries have the same specs as our popular Toppilot batteries. There are different R-Line versions for the needs of different FPV racing competitions</p>\n<p><strong><br>Features:</strong></p>\n<p>- Remarkable stacking technology enables single-cell capacities of 650mAh.<br>- High discharge performance and high energy density.<br>- Superior Japan and Korea Lithium Polymer raw materials.<br></p>\n<p><strong>Specifications:</strong></p>\n<p>- Minimum Capacity: 650mAh<br>- Configuration: 4S1P / 14.8V / 4Cells<br>- Discharge Rate: 95C<br>- Max Burst discharge Rate: 190C<br>- Net Weight(±20g): 82g<br>- Dimensions: 61mm Length x 31mm Width x 25mm Height<br>- Charge Plug: JST-XHR-5P<br>- Discharge Plug: XT30</p>"
+     },
+     "handle": "tattu-r-line-650mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug",
+     "id": "gid://shopify/p/4JCNZVS2czVEtPcUvYjPc6",
+     "media": [
+      {
+       "alt_text": "Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 Plug",
+       "height": 350,
+       "preview": {
+        "height": 350,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/650-1.png",
+        "width": 350
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/650-1.png",
+       "width": 350
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "95C continuous discharge rate ensures rapid power output for high-speed racing",
+       "650mAh single cell capacity supports extended flight times and high-drain applications",
+       "Superior Japanese and Korean lithium polymer raw materials provide durability and long cycle life",
+       "Compact and lightweight design minimizes added weight for optimal drone performance",
+       "XT30 plug offers secure and efficient connection for reliable power transfer"
+      ],
+      "unique_selling_points": [
+       "Delivers 95C continuous and 190C burst discharge rates for rapid power delivery in demanding FPV racing applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1599,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1599,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 18,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 Plug",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/31509343698987:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<meta charset=\"utf-8\">\n<div data-section=\"AliMaya-5laqk\" data-section-title=\"Specification\">\n<strong>Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 plug</strong> has full capacity and discharge rate. It is a high discharge rate FPV racing lipo battery. The 95C gives you enough power under load. It is very compact in size and very light in weight. Works perfect with your Multirotor FPV from size 100 to 180. <br>\n</div>\n<p><strong>Tattu R-Line</strong> is a brand new product line specifically designed for professional FPV racing competitions. It's the selling version of Toppilot batteries. It's also a subsidiary of the Tattu brand. It's got higher capacity, lower internal resistance and lower landing temperatures. They are more powerful than any graphene battery. Generally, R-Line batteries have the same specs as our popular Toppilot batteries. There are different R-Line versions for the needs of different FPV racing competitions</p>\n<p><strong><br>Features:</strong></p>\n<p>- Remarkable stacking technology enables single-cell capacities of 650mAh.<br>- High discharge performance and high energy density.<br>- Superior Japan and Korea Lithium Polymer raw materials.<br></p>\n<p><strong>Specifications:</strong></p>\n<p>- Minimum Capacity: 650mAh<br>- Configuration: 4S1P / 14.8V / 4Cells<br>- Discharge Rate: 95C<br>- Max Burst discharge Rate: 190C<br>- Net Weight(±20g): 82g<br>- Dimensions: 61mm Length x 31mm Width x 25mm Height<br>- Charge Plug: JST-XHR-5P<br>- Discharge Plug: XT30</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tattu-r-line-650mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug",
+       "id": "gid://shopify/ProductVariant/31509343698987",
+       "media": [
+        {
+         "alt_text": "Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 Plug",
+         "height": 350,
+         "preview": {
+          "height": 350,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/650-1.png",
+          "width": 350
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/650-1.png",
+         "width": 350
+        }
+       ],
+       "price": {
+        "amount": 1599,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 64,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4387248373803",
+       "source": "shopify",
+       "title": "Tattu R-Line 650mAh 14.8V 95C 4S1P Lipo Battery Pack with XT30 Plug",
+       "url": "https://pyrodrone.com/products/tattu-r-line-650mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug?variant=31509343698987&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"_description-left\">\n<p class=\"isSelectedEnd\"><span>Power your compact FPV build with the </span><strong><span>Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery – TAA6504S95XT3</span></strong><span>.</span></p>\n<p class=\"isSelectedEnd\"><span>Designed for high-performance FPV racing applications, this compact 4S LiPo pack combines a </span><strong><span>650mAh capacity, 95C continuous discharge rating, and XT30 connector</span></strong><span> for strong power delivery in lightweight aircraft.</span></p>\n<p class=\"isSelectedEnd\"><span>The Tattu R-Line series is engineered for demanding racing use with high energy density, low internal resistance, and strong discharge performance.</span></p>\n<p class=\"isSelectedEnd\"><span>Its compact soft-pack design makes it well suited for smaller FPV multirotors and other compatible RC applications where weight and size are critical.</span></p>\n<h3><span>Key Features</span></h3>\n<ul>\n<li><span>Genuine Tattu R-Line LiPo battery</span></li>\n<li><span>650mAh capacity</span></li>\n<li><span>4S / 14.8V configuration</span></li>\n<li><span>95C continuous discharge rating</span></li>\n<li><span>Up to 190C burst discharge rating</span></li>\n<li><span>XT30 main connector</span></li>\n<li><span>JST-XHR balance connector</span></li>\n<li><span>Compact soft-pack design</span></li>\n<li><span>High energy density</span></li>\n<li><span>Designed for FPV racing applications</span></li>\n<li><span>Suitable for many 100–180 size multirotors</span></li>\n<li><span>Lightweight construction</span></li>\n</ul>\n<h2><span>What's Included</span></h2>\n<ul>\n<li><span>(1) Tattu R-Line 650mAh 4S 95C LiPo Battery with XT30 connector</span></li>\n</ul>\n</div>"
+     },
+     "handle": "tattu-r-line-650mah-4s-95c-lipo-xt30-taa6504s95xt3",
+     "id": "gid://shopify/p/6EK4XnFTy5JQIUJauRmSW9",
+     "media": [
+      {
+       "alt_text": "Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery w/ XT30 | TAA6504S95XT3",
+       "height": 960,
+       "preview": {
+        "height": 960,
+        "url": "https://cdn.shopify.com/s/files/1/0813/6340/3040/files/tat-6504s95xt3TheRCShopatDrDans.webp",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0813/6340/3040/files/tat-6504s95xt3TheRCShopatDrDans.webp",
+       "width": 1200
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "95C discharge rate provides rapid power delivery for demanding FPV racing",
+       "650mAh capacity ensures extended flight time between charges",
+       "Compact and lightweight design reduces drone weight for improved agility",
+       "XT30 connector offers secure and reliable charging and discharging",
+       "High burst voltage supports high-performance FPV multirotors"
+      ],
+      "unique_selling_points": [
+       "Delivers 95C discharge rate and high burst voltage in a lightweight, compact XT30 XT30 connector design for FPV racing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1899,
+       "currency": "USD"
+      }
+     },
+     "title": "Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery w/ XT30 | TAA6504S95XT3",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://thercshop.com/buy/51790515536160:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"_description-left\">\n<p class=\"isSelectedEnd\"><span>Power your compact FPV build with the </span><strong><span>Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery – TAA6504S95XT3</span></strong><span>.</span></p>\n<p class=\"isSelectedEnd\"><span>Designed for high-performance FPV racing applications, this compact 4S LiPo pack combines a </span><strong><span>650mAh capacity, 95C continuous discharge rating, and XT30 connector</span></strong><span> for strong power delivery in lightweight aircraft.</span></p>\n<p class=\"isSelectedEnd\"><span>The Tattu R-Line series is engineered for demanding racing use with high energy density, low internal resistance, and strong discharge performance.</span></p>\n<p class=\"isSelectedEnd\"><span>Its compact soft-pack design makes it well suited for smaller FPV multirotors and other compatible RC applications where weight and size are critical.</span></p>\n<h3><span>Key Features</span></h3>\n<ul>\n<li><span>Genuine Tattu R-Line LiPo battery</span></li>\n<li><span>650mAh capacity</span></li>\n<li><span>4S / 14.8V configuration</span></li>\n<li><span>95C continuous discharge rating</span></li>\n<li><span>Up to 190C burst discharge rating</span></li>\n<li><span>XT30 main connector</span></li>\n<li><span>JST-XHR balance connector</span></li>\n<li><span>Compact soft-pack design</span></li>\n<li><span>High energy density</span></li>\n<li><span>Designed for FPV racing applications</span></li>\n<li><span>Suitable for many 100–180 size multirotors</span></li>\n<li><span>Lightweight construction</span></li>\n</ul>\n<h2><span>What's Included</span></h2>\n<ul>\n<li><span>(1) Tattu R-Line 650mAh 4S 95C LiPo Battery with XT30 connector</span></li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tattu-r-line-650mah-4s-95c-lipo-xt30-taa6504s95xt3",
+       "id": "gid://shopify/ProductVariant/51790515536160",
+       "media": [
+        {
+         "alt_text": "Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery w/ XT30 | TAA6504S95XT3",
+         "height": 960,
+         "preview": {
+          "height": 960,
+          "url": "https://cdn.shopify.com/s/files/1/0813/6340/3040/files/tat-6504s95xt3TheRCShopatDrDans.webp",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0813/6340/3040/files/tat-6504s95xt3TheRCShopatDrDans.webp",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 1899,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "e9e246-2.myshopify.com",
+        "id": "gid://shopify/Shop/81363403040",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/81363403040/policies/40126841120.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/81363403040/policies/43932647712.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/81363403040/policies/43932614944.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/81363403040/policies/43932713248.html"
+         }
+        ],
+        "name": "THE RC SHOP ",
+        "url": "https://thercshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10364819570976",
+       "source": "shopify",
+       "title": "Tattu R-Line 650mAh 4S 14.8V 95C LiPo Battery w/ XT30 | TAA6504S95XT3",
+       "url": "https://thercshop.com/products/tattu-r-line-650mah-4s-95c-lipo-xt30-taa6504s95xt3?variant=51790515536160&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\"><span style=\"color: #ff2a00;\" data-mce-style=\"color: #ff2a00;\" data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">All batteries must be shipped by a ground shipping method.</strong></span></p>\n<p>The Gaoneng GNB 14.8V 4S 650 mAh 80C LiPo Battery is the perfect solution for your 4S quads. Boasting a capacity of 650 mAh and a discharge rate of 80C, it provides reliable, efficient power with a long flight time.  <span data-mce-fragment=\"1\">Including an XT30 connector ensures a secure connection, delivering reliable and consistent power.</span></p>\n<style type=\"text/css\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Check out our selection of <a href=\"https://www.racedayquads.com/collections/4s-batteries\" title=\"All 4s lipo batteries for sale at racedayquads\" data-mce-href=\"https://www.racedayquads.com/collections/4s-batteries\" target=\"_blank\" data-mce-fragment=\"1\">4S batteries</a> and our selection of</span><span data-mce-fragment=\"1\"> </span><a href=\"https://www.racedayquads.com/collections/gnb-gaonang-batteries\" title=\"Gaoneng batteries available at Racedayquads\" data-mce-href=\"https://www.racedayquads.com/collections/gnb-gaonang-batteries\" target=\"_blank\" data-mce-fragment=\"1\">Gaoneng Products</a><span data-mce-fragment=\"1\">!</span></p>\n<p data-mce-fragment=\"1\"><img src=\"https://img-va.myshopline.com/image/store/2000408386/1640672930478/35563ab9884d4c37a1eab171d6dba21f_1800x.jpeg?w=1000&amp;h=1000\"></p>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Model No.: GNB6504S80A<br>\n</li>\n<li data-mce-fragment=\"1\">Capacity: 650mAh<br>\n</li>\n<li data-mce-fragment=\"1\">Voltage: 14.8V<br>\n</li>\n<li data-mce-fragment=\"1\">Cells Configuration: 4S1P<br>\n</li>\n<li data-mce-fragment=\"1\">Pack Dimension: 26x28x64mm (HxWxL)<br>\n</li>\n<li data-mce-fragment=\"1\">Net Weight: 79g (+/-2g)<br>\n</li>\n<li data-mce-fragment=\"1\">Discharge Rate: 80C<br>\n</li>\n<li data-mce-fragment=\"1\">Charge Rate: 1C to 5C<br>\n</li>\n<li data-mce-fragment=\"1\">Discharge Connector: XT30</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1x Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30</li>\n</ul>"
+     },
+     "handle": "gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30",
+     "id": "gid://shopify/p/3hJJPx5ZDlkIVFCyldbHrm",
+     "media": [
+      {
+       "alt_text": "GNB Battery Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gnb-gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30-battery-30741855797361.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gnb-gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30-battery-30741855797361.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "650mAh capacity provides extended flight time for RC quadcopters",
+       "80C discharge rate ensures rapid power delivery for high-performance maneuvers",
+       "XT30 connector offers secure and reliable connection to compatible receivers",
+       "Compact square design fits micro and mini RC quadcopters efficiently",
+       "Rechargeable lithium polymer technology delivers consistent power and durability"
+      ],
+      "unique_selling_points": [
+       "Delivers 650mAh at 80C discharge rate for extended flight time and high-speed performance in 4S RC quadcopters."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2049,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2049,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40204359303281:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\"><span style=\"color: #ff2a00;\" data-mce-style=\"color: #ff2a00;\" data-mce-fragment=\"1\"><strong data-mce-fragment=\"1\">All batteries must be shipped by a ground shipping method.</strong></span></p>\n<p>The Gaoneng GNB 14.8V 4S 650 mAh 80C LiPo Battery is the perfect solution for your 4S quads. Boasting a capacity of 650 mAh and a discharge rate of 80C, it provides reliable, efficient power with a long flight time.  <span data-mce-fragment=\"1\">Including an XT30 connector ensures a secure connection, delivering reliable and consistent power.</span></p>\n<style type=\"text/css\"><!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--></style>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Check out our selection of <a href=\"https://www.racedayquads.com/collections/4s-batteries\" title=\"All 4s lipo batteries for sale at racedayquads\" data-mce-href=\"https://www.racedayquads.com/collections/4s-batteries\" target=\"_blank\" data-mce-fragment=\"1\">4S batteries</a> and our selection of</span><span data-mce-fragment=\"1\"> </span><a href=\"https://www.racedayquads.com/collections/gnb-gaonang-batteries\" title=\"Gaoneng batteries available at Racedayquads\" data-mce-href=\"https://www.racedayquads.com/collections/gnb-gaonang-batteries\" target=\"_blank\" data-mce-fragment=\"1\">Gaoneng Products</a><span data-mce-fragment=\"1\">!</span></p>\n<p data-mce-fragment=\"1\"><img src=\"https://img-va.myshopline.com/image/store/2000408386/1640672930478/35563ab9884d4c37a1eab171d6dba21f_1800x.jpeg?w=1000&amp;h=1000\"></p>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">Model No.: GNB6504S80A<br>\n</li>\n<li data-mce-fragment=\"1\">Capacity: 650mAh<br>\n</li>\n<li data-mce-fragment=\"1\">Voltage: 14.8V<br>\n</li>\n<li data-mce-fragment=\"1\">Cells Configuration: 4S1P<br>\n</li>\n<li data-mce-fragment=\"1\">Pack Dimension: 26x28x64mm (HxWxL)<br>\n</li>\n<li data-mce-fragment=\"1\">Net Weight: 79g (+/-2g)<br>\n</li>\n<li data-mce-fragment=\"1\">Discharge Rate: 80C<br>\n</li>\n<li data-mce-fragment=\"1\">Charge Rate: 1C to 5C<br>\n</li>\n<li data-mce-fragment=\"1\">Discharge Connector: XT30</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1x Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30",
+       "id": "gid://shopify/ProductVariant/40204359303281",
+       "media": [
+        {
+         "alt_text": "GNB Battery Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gnb-gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30-battery-30741855797361.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gnb-gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30-battery-30741855797361.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2049,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6865489100913",
+       "source": "shopify",
+       "title": "Gaoneng GNB 14.8V 4S 650mAh 80C LiPo Micro Battery (Square Type) - XT30",
+       "url": "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30?variant=40204359303281&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Specifications:</strong><br></p>\n<ul>\n<li>Stock Number: 65704G</li>\n<li>Capacity: 650mAh</li>\n<li>Voltage: 14.8V /4-Cell / 4S1P</li>\n<li>Discharge Rate: 70C Continual / 140C Burst</li>\n<li>Charge Rate: 5C Max</li>\n<li>Size(1-5mm difference): 27X30X58mm</li>\n<li>Approx Weight(±5g) : 87g</li>\n<li>Output Connector: XT30U</li>\n<li>Balance Connector: JST / XH</li>\n<li>Package include: 2 pack of MiniStar 650mAh 11.1V 4S 70C Lipo Battery with XT30U<br>\n</li>\n</ul>\n<h2>Ideal Power Match for GEPRC DarkStar22 &amp; High-Performance 4S CineWhoops</h2>\n<p>The <strong>CNHL MiniStar 650mAh 14.8V 4S 70C LiPo Battery with XT30U Plug</strong> is perfectly suited for compact 4S CineWhoops like the <strong>GEPRC DarkStar22</strong>, providing exceptional thrust-to-weight balance and consistent voltage output during fast indoor maneuvers and outdoor cinematic flights. Its compact dimensions and lightweight profile make it a go-to choice for 2–2.5-inch 4S FPV quads that demand both agility and endurance.</p>\n\n<h3>Key Advantages of CNHL MiniStar 650mAh 4S for CineWhoop FPV Drones</h3>\n<ul>\n  <li>\n<strong>High Burst Power:</strong> 70C discharge rate ensures responsive control and punchy acceleration for cinematic flight paths.</li>\n  <li>\n<strong>Lightweight Efficiency:</strong> Ideal for sub-100g builds where every gram matters, maintaining stability without voltage sag.</li>\n  <li>\n<strong>XT30U Connector:</strong> Reliable current delivery and tight fit for micro FPV drone wiring setups.</li>\n</ul>\n\n<p>Discover more <a href=\"https://chinahobbyline.com/collections/cinewhoop-lipo-batteries\" style=\"color: #E60073; text-decoration: underline;\">CineWhoop LiPo Batteries</a> from CNHL designed for GEPRC, BETAFPV, and iFlight drones, ensuring your FPV rig performs at its cinematic best.</p>\n\n<div style=\"text-align: left;\">\n<p><img src=\"https://cdn.shopifycdn.net/s/files/1/0633/0617/0582/files/61lIwmWTIyL._AC_SL1000_480x480.jpg?v=1676623617\" alt=\"\"></p>\n<p><strong>Notice:</strong><br></p>\n<ul>\n<li>For the RC battery, only if the voltage and the plug match, then it will fit.</li>\n<li>Please stop charging immediately when the cell voltage has been charged to 4.2V (Normal cell voltage is between 3.7V~4.2V).</li>\n<li>To double make sure safe, please check first whether the battery surface is alright when you get it and whether the voltage is normal before using.</li>\n<li>If the new battery won’t hold a full charge or loss the charge very quickly in a short time, please use the Balance Charger to charge and recycle several times first.</li>\n</ul>\n</div>"
+     },
+     "handle": "cnhl-ministar-series-650mah-14-8v-4s-70c-lipo-battery-with-xt30-plug",
+     "id": "gid://shopify/p/7EG3pM2260w2jeXNS8KztM",
+     "media": [
+      {
+       "alt_text": "CNHL MiniStar 650mAh 4S 70C LiPo battery with XT30U - 2 Pack",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0633/0617/0582/products/65704GC2_593b41a0-50ab-45e2-9d7f-07899a6b49da.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0633/0617/0582/products/65704GC2_593b41a0-50ab-45e2-9d7f-07899a6b49da.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "70C continuous and 140C burst discharge rates provide rapid acceleration and responsive control",
+       "XT30U output connector ensures reliable current delivery and secure fit for micro FPV drone wiring",
+       "Lightweight 650mAh capacity supports agile flight and reduces overall drone weight",
+       "Balanced JST-XH connectors maintain stable voltage output during high-speed maneuvers",
+       "Compact size fits 2.2–2.5 inch 4S FPV quadcopters for improved agility and endurance"
+      ],
+      "unique_selling_points": [
+       "Combines high burst power (70C) and lightweight design for optimal performance in compact 4S FPV drones."
+      ]
+     },
+     "options": [
+      {
+       "name": "Ship_from",
+       "values": [
+        {
+         "label": "Global"
+        },
+        {
+         "label": "US"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1598,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1598,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 57,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "[Combo] 2 Packs CNHL MiniStar 650mAh 14.8V 4S 70C Lipo Battery with XT30 For CineWhoop",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://chinahobbyline.com/buy/43585336344790:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Specifications:</strong><br></p>\n<ul>\n<li>Stock Number: 65704G</li>\n<li>Capacity: 650mAh</li>\n<li>Voltage: 14.8V /4-Cell / 4S1P</li>\n<li>Discharge Rate: 70C Continual / 140C Burst</li>\n<li>Charge Rate: 5C Max</li>\n<li>Size(1-5mm difference): 27X30X58mm</li>\n<li>Approx Weight(±5g) : 87g</li>\n<li>Output Connector: XT30U</li>\n<li>Balance Connector: JST / XH</li>\n<li>Package include: 2 pack of MiniStar 650mAh 11.1V 4S 70C Lipo Battery with XT30U<br>\n</li>\n</ul>\n<h2>Ideal Power Match for GEPRC DarkStar22 &amp; High-Performance 4S CineWhoops</h2>\n<p>The <strong>CNHL MiniStar 650mAh 14.8V 4S 70C LiPo Battery with XT30U Plug</strong> is perfectly suited for compact 4S CineWhoops like the <strong>GEPRC DarkStar22</strong>, providing exceptional thrust-to-weight balance and consistent voltage output during fast indoor maneuvers and outdoor cinematic flights. Its compact dimensions and lightweight profile make it a go-to choice for 2–2.5-inch 4S FPV quads that demand both agility and endurance.</p>\n\n<h3>Key Advantages of CNHL MiniStar 650mAh 4S for CineWhoop FPV Drones</h3>\n<ul>\n  <li>\n<strong>High Burst Power:</strong> 70C discharge rate ensures responsive control and punchy acceleration for cinematic flight paths.</li>\n  <li>\n<strong>Lightweight Efficiency:</strong> Ideal for sub-100g builds where every gram matters, maintaining stability without voltage sag.</li>\n  <li>\n<strong>XT30U Connector:</strong> Reliable current delivery and tight fit for micro FPV drone wiring setups.</li>\n</ul>\n\n<p>Discover more <a href=\"https://chinahobbyline.com/collections/cinewhoop-lipo-batteries\" style=\"color: #E60073; text-decoration: underline;\">CineWhoop LiPo Batteries</a> from CNHL designed for GEPRC, BETAFPV, and iFlight drones, ensuring your FPV rig performs at its cinematic best.</p>\n\n<div style=\"text-align: left;\">\n<p><img src=\"https://cdn.shopifycdn.net/s/files/1/0633/0617/0582/files/61lIwmWTIyL._AC_SL1000_480x480.jpg?v=1676623617\" alt=\"\"></p>\n<p><strong>Notice:</strong><br></p>\n<ul>\n<li>For the RC battery, only if the voltage and the plug match, then it will fit.</li>\n<li>Please stop charging immediately when the cell voltage has been charged to 4.2V (Normal cell voltage is between 3.7V~4.2V).</li>\n<li>To double make sure safe, please check first whether the battery surface is alright when you get it and whether the voltage is normal before using.</li>\n<li>If the new battery won’t hold a full charge or loss the charge very quickly in a short time, please use the Balance Charger to charge and recycle several times first.</li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "cnhl-ministar-series-650mah-14-8v-4s-70c-lipo-battery-with-xt30-plug",
+       "id": "gid://shopify/ProductVariant/43585336344790",
+       "list_price": {
+        "amount": 2398,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "CNHL MiniStar 650mAh 4S 70C LiPo battery with XT30U - 2 Pack",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0633/0617/0582/products/65704GC2_593b41a0-50ab-45e2-9d7f-07899a6b49da.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0633/0617/0582/products/65704GC2_593b41a0-50ab-45e2-9d7f-07899a6b49da.jpg",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Global",
+         "name": "Ship_from"
+        }
+       ],
+       "price": {
+        "amount": 1598,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 30,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.4
+       },
+       "seller": {
+        "domain": "cnhl-1.myshopify.com",
+        "id": "gid://shopify/Shop/63306170582",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/63306170582/policies/26184220886.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/63306170582/policies/26184253654.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/63306170582/policies/26184188118.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/63306170582/policies/26184286422.html"
+         }
+        ],
+        "name": "ChinaHobbyLine",
+        "url": "https://chinahobbyline.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7582200463574",
+       "source": "shopify",
+       "title": "[Combo] 2 Packs CNHL MiniStar 650mAh 14.8V 4S 70C Lipo Battery with XT30 For CineWhoop",
+       "url": "https://chinahobbyline.com/products/cnhl-ministar-series-650mah-14-8v-4s-70c-lipo-battery-with-xt30-plug?variant=43585336344790&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3 class=\"\" data-end=\"416\" data-start=\"350\">Power Your FPV Racing with Ovonic 4S 650mAh 80C 14.8V LiPo Battery</h3>\n<p class=\"\" data-end=\"890\" data-start=\"418\">Take your FPV racing and freestyle flying to the next level with <strong data-end=\"524\" data-start=\"487\">Ovonic 4S 650mAh 80C 14.8V LiPo battery</strong>. Engineered for <strong data-end=\"569\" data-start=\"541\">90mm to 150mm FPV drones</strong>, this battery delivers a <strong data-end=\"622\" data-start=\"595\">high 80C discharge rate</strong>, ensuring <strong data-end=\"706\" data-start=\"633\">quick throttle response, stable power output, and minimal voltage sag</strong> during intense maneuvers. Whether you're competing on the track or pushing your freestyle quad to its limits, <strong data-end=\"844\" data-start=\"821\">Ovonic LiPo battery</strong> provides the reliable performance you need.</p>\n<h3 class=\"\" data-end=\"914\" data-start=\"892\"><strong data-end=\"912\" data-start=\"896\">Key Features</strong></h3>\n<ul>\n<li>\n<strong data-end=\"963\" data-start=\"919\">High Discharge Rate for Peak Performance: </strong>Equipped with a <strong data-end=\"998\" data-start=\"970\">80C continuous discharge</strong> ensures rapid bursts of power, reducing voltage sag and providing a stable energy supply for high-speed <strong data-end=\"1138\" data-start=\"1103\">FPV racing and freestyle flying</strong>.</li>\n<li>\n<strong data-end=\"1193\" data-start=\"1147\">Compact &amp; Lightweight for Enhanced Agility: </strong>With a <strong data-end=\"1222\" data-start=\"1203\">650mAh capacity</strong> and a <strong data-end=\"1257\" data-start=\"1229\">4S (14.8V) configuration</strong>, this battery offers the perfect balance between power and flight time, <strong data-end=\"1360\" data-start=\"1330\">ideal for micro FPV drones</strong> where weight matters.</li>\n<li>\n<strong data-end=\"1429\" data-start=\"1388\">Secure and Efficient Power Connection: </strong>Equipped with a <strong data-end=\"1474\" data-start=\"1448\">durable XT30 connector</strong>, the battery ensures <strong data-end=\"1538\" data-start=\"1496\">low resistance and stable current flow</strong>, minimizing power loss during extreme flight maneuvers.</li>\n<li>\n<strong data-end=\"1646\" data-start=\"1600\">Reliable Performance &amp; Longer Battery Life: </strong>Designed with <strong data-end=\"1690\" data-start=\"1663\">low internal resistance</strong>, this LiPo battery provides <strong data-end=\"1748\" data-start=\"1719\">consistent voltage levels</strong>, reducing heat buildup and enhancing overall lifespan.</li>\n</ul>\n<p><img alt=\"Ovonic 4s 650mah lipo battery for FPV cinewhoop\" src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-2.jpg?v=1644992705\"> <img src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-1.jpg?v=1644992746\" alt=\"Ovonic 650mah 4s lipo battery for 3-inch FPV drone\"> <img src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-3.jpg?v=1644992800\" alt=\"Ovonic 4s 650mah lipo battery for FPV whoop\"></p>\n<h3>Spec of lipo 4s 650mah:</h3>\n<ul>\n<li>Brand: Ovonic</li>\n<li>Chemistry: Li-polymer</li>\n<li>Configuration: 4S</li>\n<li>Voltage(V): 14.8V</li>\n<li>Capacity(mAh): 650mAh</li>\n<li>Discharge Rate: 80C</li>\n<li>Max Burst discharge Rate: 160C</li>\n<li>Charge Plug: JST-XHR-5P</li>\n<li>Discharge Plug: XT30 Plug</li>\n<li>Net Weight(dev.20g): 54g/0.12lb per unite</li>\n<li>Dimension(±5mm): 59*31*17mm / 2.32*1.32*0.67inch(L*W*H)</li>\n</ul>\n<h3>More Choice for You:</h3>\n<p>If you require 4S lipo batteries with other capacities, here are more choices for you to pick.<br>Such as<a href=\"https://www.ampow.com/products/ovonic-14-8v-850mah-4s-80c-lipo-battery-with-xt30-4pcs\"> Lipo 4S 850mah</a>, <a href=\"https://www.ampow.com/products/ovonic-450mah-4s-14-8v-80c-xt30-lipo-battery-pack-for-whoops-4pcs\" rel=\"nofollow\">Lipo 4S 450mah</a>, and also has <a href=\"https://www.ampow.com/collections/lipo-battery-for-tiny-whoop\">2S&amp; 3S lipo batteries for whoops</a></p>\n<p>If your drone is 3S System,<a rel=\"nofollow\" href=\"https://www.ampow.com/products/ovonic-850mah-3s-11-1v-80c-lipo-battery-with-xt30-4pcs\"> 850mAh 3S 80C</a> and <a rel=\"nofollow\" href=\"https://www.ampow.com/products/ovonic-80c-11-1v-650mah-3s1p-xt30-lipo-battery\">650mah 3S 80C</a> are available, too.</p>\n<h3>Compatibility</h3>\n<p>Ovonic 650mAh 80C LiPo battery is a lightweight 4S battery for FPV drone, it perfect match for FPV drones that require a 4S configuration with an XT30 connector, including:</p>\n<ul>\n<li>FPV Racing Drones: BetaFPV X-Knight 4S, iFlight Alpha A85 4S, Emax Tinyhawk Freestyle 2.</li>\n<li>Freestyle Drones: GEPRC Smart 4S, Diatone Roma F3, Flywoo Firefly 1.6’’ 4S Nano.</li>\n<li>CineWhoop Drones: iFlight Protek25, BetaFPV Pavo30, Happymodel Crux35.</li>\n</ul>\n<h3>Package Content:</h3>\n<ul>\n<li>4 X Ovonic 650mah 80C FPV Battery 14.8V 4S Lipo Battery Pack with XT30 Plug.</li>\n<li>2 x Brand Stickers</li>\n<li>1x User Manual.</li>\n</ul>\n<h3>\n<strong>Please Note:</strong><br>\n</h3>\n<ol>\n<li>Use<a href=\"https://www.ampow.com/collections/ovonic-lipo-charger\"> </a><a href=\"https://us.ovonicshop.com/collections/lipo-battery-charger\" title=\"Ovonic charger guide\">Ovonic official RC Lipo Battery Chargers</a> for optimal charging performance.</li>\n<li>Ensure compatibility with both voltage and plug specifications for proper fit.</li>\n<li>Cease charging immediately upon reaching 4.2V per cell (normal voltage range: 3.7V~4.2V).</li>\n<li>Prioritize safety by inspecting battery condition before each use.</li>\n<li>If a new battery doesn't hold a full charge or loses charge rapidly, use a Balance Charger and cycle it several times.</li>\n<li>For more safety guidelines, please refer to our <a href=\"https://us.ovonicshop.com/pages/battery-safety-information\" rel=\"noopener\" data-end=\"667\" data-start=\"579\">Battery Safety Information</a>.</li>\n</ol>"
+     },
+     "handle": "ovonic-80c-650mah-4s1p-xt30-4pcs-lipo-battery",
+     "id": "gid://shopify/p/1OTusCXh41jlEVVKYmkQlL",
+     "media": [
+      {
+       "alt_text": "4x Ovonic 80C 14.8V 650mah 4S Lipo Battery with XT30 Plug for 90mm to 150mm FPV Racing Drone",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0908/7808/3352/files/O-80C-650-4S1P-XT30-4P.png",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0908/7808/3352/files/O-80C-650-4S1P-XT30-4P.png",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "80C continuous discharge rate enables rapid power output for high-speed FPV racing",
+       "Low internal resistance minimizes voltage sag and heat buildup for stable performance",
+       "XT30 plug ensures secure, efficient power connection even in high-vibration environments",
+       "Compact and lightweight design balances flight time and agility for micro drones",
+       "High cycle life supports extended use and reliable long-term performance"
+      ],
+      "unique_selling_points": [
+       "Delivers 80C continuous discharge rate for rapid power delivery and minimal voltage sag in demanding FPV racing applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3720,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3720,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 105,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "4x Ovonic 80C 14.8V 650mah 4S Lipo Battery with XT30 Plug for 90mm to 150mm FPV Racing Drone",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://us.ovonicshop.com/buy/49495642833176:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3 class=\"\" data-end=\"416\" data-start=\"350\">Power Your FPV Racing with Ovonic 4S 650mAh 80C 14.8V LiPo Battery</h3>\n<p class=\"\" data-end=\"890\" data-start=\"418\">Take your FPV racing and freestyle flying to the next level with <strong data-end=\"524\" data-start=\"487\">Ovonic 4S 650mAh 80C 14.8V LiPo battery</strong>. Engineered for <strong data-end=\"569\" data-start=\"541\">90mm to 150mm FPV drones</strong>, this battery delivers a <strong data-end=\"622\" data-start=\"595\">high 80C discharge rate</strong>, ensuring <strong data-end=\"706\" data-start=\"633\">quick throttle response, stable power output, and minimal voltage sag</strong> during intense maneuvers. Whether you're competing on the track or pushing your freestyle quad to its limits, <strong data-end=\"844\" data-start=\"821\">Ovonic LiPo battery</strong> provides the reliable performance you need.</p>\n<h3 class=\"\" data-end=\"914\" data-start=\"892\"><strong data-end=\"912\" data-start=\"896\">Key Features</strong></h3>\n<ul>\n<li>\n<strong data-end=\"963\" data-start=\"919\">High Discharge Rate for Peak Performance: </strong>Equipped with a <strong data-end=\"998\" data-start=\"970\">80C continuous discharge</strong> ensures rapid bursts of power, reducing voltage sag and providing a stable energy supply for high-speed <strong data-end=\"1138\" data-start=\"1103\">FPV racing and freestyle flying</strong>.</li>\n<li>\n<strong data-end=\"1193\" data-start=\"1147\">Compact &amp; Lightweight for Enhanced Agility: </strong>With a <strong data-end=\"1222\" data-start=\"1203\">650mAh capacity</strong> and a <strong data-end=\"1257\" data-start=\"1229\">4S (14.8V) configuration</strong>, this battery offers the perfect balance between power and flight time, <strong data-end=\"1360\" data-start=\"1330\">ideal for micro FPV drones</strong> where weight matters.</li>\n<li>\n<strong data-end=\"1429\" data-start=\"1388\">Secure and Efficient Power Connection: </strong>Equipped with a <strong data-end=\"1474\" data-start=\"1448\">durable XT30 connector</strong>, the battery ensures <strong data-end=\"1538\" data-start=\"1496\">low resistance and stable current flow</strong>, minimizing power loss during extreme flight maneuvers.</li>\n<li>\n<strong data-end=\"1646\" data-start=\"1600\">Reliable Performance &amp; Longer Battery Life: </strong>Designed with <strong data-end=\"1690\" data-start=\"1663\">low internal resistance</strong>, this LiPo battery provides <strong data-end=\"1748\" data-start=\"1719\">consistent voltage levels</strong>, reducing heat buildup and enhancing overall lifespan.</li>\n</ul>\n<p><img alt=\"Ovonic 4s 650mah lipo battery for FPV cinewhoop\" src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-2.jpg?v=1644992705\"> <img src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-1.jpg?v=1644992746\" alt=\"Ovonic 650mah 4s lipo battery for 3-inch FPV drone\"> <img src=\"https://cdn.shopify.com/s/files/1/0403/6516/2652/files/650-3.jpg?v=1644992800\" alt=\"Ovonic 4s 650mah lipo battery for FPV whoop\"></p>\n<h3>Spec of lipo 4s 650mah:</h3>\n<ul>\n<li>Brand: Ovonic</li>\n<li>Chemistry: Li-polymer</li>\n<li>Configuration: 4S</li>\n<li>Voltage(V): 14.8V</li>\n<li>Capacity(mAh): 650mAh</li>\n<li>Discharge Rate: 80C</li>\n<li>Max Burst discharge Rate: 160C</li>\n<li>Charge Plug: JST-XHR-5P</li>\n<li>Discharge Plug: XT30 Plug</li>\n<li>Net Weight(dev.20g): 54g/0.12lb per unite</li>\n<li>Dimension(±5mm): 59*31*17mm / 2.32*1.32*0.67inch(L*W*H)</li>\n</ul>\n<h3>More Choice for You:</h3>\n<p>If you require 4S lipo batteries with other capacities, here are more choices for you to pick.<br>Such as<a href=\"https://www.ampow.com/products/ovonic-14-8v-850mah-4s-80c-lipo-battery-with-xt30-4pcs\"> Lipo 4S 850mah</a>, <a href=\"https://www.ampow.com/products/ovonic-450mah-4s-14-8v-80c-xt30-lipo-battery-pack-for-whoops-4pcs\" rel=\"nofollow\">Lipo 4S 450mah</a>, and also has <a href=\"https://www.ampow.com/collections/lipo-battery-for-tiny-whoop\">2S&amp; 3S lipo batteries for whoops</a></p>\n<p>If your drone is 3S System,<a rel=\"nofollow\" href=\"https://www.ampow.com/products/ovonic-850mah-3s-11-1v-80c-lipo-battery-with-xt30-4pcs\"> 850mAh 3S 80C</a> and <a rel=\"nofollow\" href=\"https://www.ampow.com/products/ovonic-80c-11-1v-650mah-3s1p-xt30-lipo-battery\">650mah 3S 80C</a> are available, too.</p>\n<h3>Compatibility</h3>\n<p>Ovonic 650mAh 80C LiPo battery is a lightweight 4S battery for FPV drone, it perfect match for FPV drones that require a 4S configuration with an XT30 connector, including:</p>\n<ul>\n<li>FPV Racing Drones: BetaFPV X-Knight 4S, iFlight Alpha A85 4S, Emax Tinyhawk Freestyle 2.</li>\n<li>Freestyle Drones: GEPRC Smart 4S, Diatone Roma F3, Flywoo Firefly 1.6’’ 4S Nano.</li>\n<li>CineWhoop Drones: iFlight Protek25, BetaFPV Pavo30, Happymodel Crux35.</li>\n</ul>\n<h3>Package Content:</h3>\n<ul>\n<li>4 X Ovonic 650mah 80C FPV Battery 14.8V 4S Lipo Battery Pack with XT30 Plug.</li>\n<li>2 x Brand Stickers</li>\n<li>1x User Manual.</li>\n</ul>\n<h3>\n<strong>Please Note:</strong><br>\n</h3>\n<ol>\n<li>Use<a href=\"https://www.ampow.com/collections/ovonic-lipo-charger\"> </a><a href=\"https://us.ovonicshop.com/collections/lipo-battery-charger\" title=\"Ovonic charger guide\">Ovonic official RC Lipo Battery Chargers</a> for optimal charging performance.</li>\n<li>Ensure compatibility with both voltage and plug specifications for proper fit.</li>\n<li>Cease charging immediately upon reaching 4.2V per cell (normal voltage range: 3.7V~4.2V).</li>\n<li>Prioritize safety by inspecting battery condition before each use.</li>\n<li>If a new battery doesn't hold a full charge or loses charge rapidly, use a Balance Charger and cycle it several times.</li>\n<li>For more safety guidelines, please refer to our <a href=\"https://us.ovonicshop.com/pages/battery-safety-information\" rel=\"noopener\" data-end=\"667\" data-start=\"579\">Battery Safety Information</a>.</li>\n</ol>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "ovonic-80c-650mah-4s1p-xt30-4pcs-lipo-battery",
+       "id": "gid://shopify/ProductVariant/49495642833176",
+       "media": [
+        {
+         "alt_text": "4x Ovonic 80C 14.8V 650mah 4S Lipo Battery with XT30 Plug for 90mm to 150mm FPV Racing Drone",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0908/7808/3352/files/O-80C-650-4S1P-XT30-4P.png",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0908/7808/3352/files/O-80C-650-4S1P-XT30-4P.png",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 3720,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 9,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "p1ba7g-h1.myshopify.com",
+        "id": "gid://shopify/Shop/90878083352",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/90878083352/policies/42123067672.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/90878083352/policies/42658758936.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/90878083352/policies/42658693400.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/90878083352/policies/42658791704.html"
+         }
+        ],
+        "name": "us.ovonicshop",
+        "url": "https://us.ovonicshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9590538273048",
+       "source": "shopify",
+       "title": "4x Ovonic 80C 14.8V 650mah 4S Lipo Battery with XT30 Plug for 90mm to 150mm FPV Racing Drone",
+       "url": "https://us.ovonicshop.com/products/ovonic-80c-650mah-4s1p-xt30-4pcs-lipo-battery?variant=49495642833176&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>As a product of the Tattu R-Line series, the 650mAh 4S 15.2V 95C HV Lipo Battery Pack with XT30 plug offers maximum capacity and discharge performance. Designed specifically for FPV racing, this battery boasts a 95C discharge rate for optimal power under heavy use. Despite its high performance, it remains compact and lightweight, making it a top choice for professional racers. </p>\n<p>Check our <a title=\"RC-N-Go Adapters &amp; Connectors\" href=\"https://www.rc-n-go.com/collections/battery-adapters\" rel=\"noopener\" target=\"_blank\">Battery Adapters</a><span> </span>to find the right adapter for your vehicle. Just remember, the male end of the adapter is for the battery and the female end is for the vehicle/charger.</p>\n<p> </p>\n<p><strong>FEATURES:</strong></p>\n<ul>\n<li>Remarkable stacking technology enables single-cell capacities of 650mAh.</li>\n<li>High discharge performance and high energy density.</li>\n<li>Superior Japan and Korea Lithium Polymer raw materials.</li>\n</ul>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>Part #: TAA6504S95XT3L</li>\n<li>Minimum Capacity: 650mAh</li>\n<li>Configuration: 4S / 15.2V / 4Cells</li>\n<li>Discharge Rate: 95C</li>\n<li>Net Weight(±20g): 60g</li>\n<li>Dimensions: 74mm Length x 17mm Width x 24.5mm Height</li>\n<li>Balancer Connector Type: JST-XHR-5P</li>\n<li>Main Connector Type: XT30</li>\n</ul>\n<p> </p>\n<p><strong>INCLUDES:</strong></p>\n<p>(1) Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery</p>"
+     },
+     "handle": "tattu-r-line-4s-hv-650mah-95c-15-2v-xt30-long-pack-lipo-battery",
+     "id": "gid://shopify/p/7wdxV8WXnlQp41EsUTxx67",
+     "media": [
+      {
+       "alt_text": "Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/4s_lipo_battery.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/4s_lipo_battery.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "650mAh high-capacity cell delivers extended run times for demanding RC use",
+       "95C discharge rate ensures optimal power output during heavy loads",
+       "XT30 plug provides secure, reliable connection to compatible equipment",
+       "Compact and lightweight design fits tight spaces in RC vehicles",
+       "Stacking technology allows for easy capacity increases with additional cells"
+      ],
+      "unique_selling_points": [
+       "Combines high 650mAh capacity and 95C discharge rate in a compact, lightweight XT30-plug design for professional FPV racing."
+      ]
+     },
+     "options": [
+      {
+       "name": "Battery capacity",
+       "values": [
+        {
+         "label": "650 mAh"
+        }
+       ]
+      },
+      {
+       "name": "Voltage",
+       "values": [
+        {
+         "label": "15.2 V"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1699,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/46649839943894:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>As a product of the Tattu R-Line series, the 650mAh 4S 15.2V 95C HV Lipo Battery Pack with XT30 plug offers maximum capacity and discharge performance. Designed specifically for FPV racing, this battery boasts a 95C discharge rate for optimal power under heavy use. Despite its high performance, it remains compact and lightweight, making it a top choice for professional racers. </p>\n<p>Check our <a title=\"RC-N-Go Adapters &amp; Connectors\" href=\"https://www.rc-n-go.com/collections/battery-adapters\" rel=\"noopener\" target=\"_blank\">Battery Adapters</a><span> </span>to find the right adapter for your vehicle. Just remember, the male end of the adapter is for the battery and the female end is for the vehicle/charger.</p>\n<p> </p>\n<p><strong>FEATURES:</strong></p>\n<ul>\n<li>Remarkable stacking technology enables single-cell capacities of 650mAh.</li>\n<li>High discharge performance and high energy density.</li>\n<li>Superior Japan and Korea Lithium Polymer raw materials.</li>\n</ul>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>Part #: TAA6504S95XT3L</li>\n<li>Minimum Capacity: 650mAh</li>\n<li>Configuration: 4S / 15.2V / 4Cells</li>\n<li>Discharge Rate: 95C</li>\n<li>Net Weight(±20g): 60g</li>\n<li>Dimensions: 74mm Length x 17mm Width x 24.5mm Height</li>\n<li>Balancer Connector Type: JST-XHR-5P</li>\n<li>Main Connector Type: XT30</li>\n</ul>\n<p> </p>\n<p><strong>INCLUDES:</strong></p>\n<p>(1) Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tattu-r-line-4s-hv-650mah-95c-15-2v-xt30-long-pack-lipo-battery",
+       "id": "gid://shopify/ProductVariant/46649839943894",
+       "media": [
+        {
+         "alt_text": "Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/4s_lipo_battery.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/4s_lipo_battery.jpg",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "650 mAh",
+         "name": "Battery capacity"
+        },
+        {
+         "label": "15.2 V",
+         "name": "Voltage"
+        }
+       ],
+       "price": {
+        "amount": 1699,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8911579644118",
+       "source": "shopify",
+       "title": "Tattu R-Line 4S HV / 650mAh / 95C / 15.2V / XT30 Long-Pack LiPo Battery",
+       "url": "https://www.rc-n-go.com/products/tattu-r-line-4s-hv-650mah-95c-15-2v-xt30-long-pack-lipo-battery?variant=46649839943894&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span style=\"color: #ff0000;\"><strong>All batteries must be shipped by a ground shipping method.</strong></span></p>\n<p>The MiniStar Series by China Hobby Line is specifically made for the 2\" and 3\" quads in our life! Packed with tons of juice, and just the right size, you'll love this new battery. </p>\n<p data-mce-fragment=\"1\">Check out our selection of<span data-mce-fragment=\"1\"> </span><a title=\"All 4s lipo batteries for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/4s-batteries\" target=\"_blank\" rel=\"noopener noreferrer\" data-mce-href=\"https://www.racedayquads.com/collections/4s-batteries\" data-mce-fragment=\"1\">4S batteries</a>, and all our<span data-mce-fragment=\"1\"> </span><a title=\"all cnhl lipo battery products for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/cnhl-products\" target=\"_blank\" rel=\"noopener noreferrer\" data-mce-href=\"https://www.racedayquads.com/collections/cnhl-products\" data-mce-fragment=\"1\">CNHL products</a>! </p>\n<h3>Specifications</h3>\n<ul>\n<li>Capacity 650mAh</li>\n<li>Voltage 14.8V / 4-Cell / 4S1P</li>\n<li>Discharge Rate 70C Continual / 140C Burst</li>\n<li>Charge Rate 5C Max</li>\n<li>Size 27X30X58mm</li>\n<li>Weight 87g (Including wire and connector)</li>\n<li>Output Connector XT30</li>\n<li>Balance Connector JST / XH</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30</li>\n</ul>"
+     },
+     "handle": "cnhl-650mah-4s-70c-ministar-fpv-lipo-for-2-3-quads-xt30",
+     "id": "gid://shopify/p/5QCo2MB5V6J02bN0GPGqk0",
+     "media": [
+      {
+       "alt_text": "CNHL Battery CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30",
+       "height": 432,
+       "preview": {
+        "height": 432,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/cnhl-cnhl-ministar-14-8v-4s-650mah-70c-lipo-micro-battery-xt30-battery-679097008139.jpg",
+        "width": 432
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/cnhl-cnhl-ministar-14-8v-4s-650mah-70c-lipo-micro-battery-xt30-battery-679097008139.jpg",
+       "width": 432
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "70C continuous and 140C burst discharge rates enable rapid power delivery for high-performance racing",
+       "650mAh capacity provides extended flight time for endurance missions",
+       "XT30 output connector ensures secure and reliable connection to compatible motors",
+       "JST-XH balance connector supports precise voltage monitoring and safety",
+       "Compact XT30 size (27 x 30 x 58 mm) fits most standard drone builds"
+      ],
+      "unique_selling_points": [
+       "Delivers exceptional 70C continuous and 140C burst discharge rates for top-tier drone racing performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 97,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/2135354376203:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span style=\"color: #ff0000;\"><strong>All batteries must be shipped by a ground shipping method.</strong></span></p>\n<p>The MiniStar Series by China Hobby Line is specifically made for the 2\" and 3\" quads in our life! Packed with tons of juice, and just the right size, you'll love this new battery. </p>\n<p data-mce-fragment=\"1\">Check out our selection of<span data-mce-fragment=\"1\"> </span><a title=\"All 4s lipo batteries for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/4s-batteries\" target=\"_blank\" rel=\"noopener noreferrer\" data-mce-href=\"https://www.racedayquads.com/collections/4s-batteries\" data-mce-fragment=\"1\">4S batteries</a>, and all our<span data-mce-fragment=\"1\"> </span><a title=\"all cnhl lipo battery products for sale at racedayquads\" href=\"https://www.racedayquads.com/collections/cnhl-products\" target=\"_blank\" rel=\"noopener noreferrer\" data-mce-href=\"https://www.racedayquads.com/collections/cnhl-products\" data-mce-fragment=\"1\">CNHL products</a>! </p>\n<h3>Specifications</h3>\n<ul>\n<li>Capacity 650mAh</li>\n<li>Voltage 14.8V / 4-Cell / 4S1P</li>\n<li>Discharge Rate 70C Continual / 140C Burst</li>\n<li>Charge Rate 5C Max</li>\n<li>Size 27X30X58mm</li>\n<li>Weight 87g (Including wire and connector)</li>\n<li>Output Connector XT30</li>\n<li>Balance Connector JST / XH</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "cnhl-650mah-4s-70c-ministar-fpv-lipo-for-2-3-quads-xt30",
+       "id": "gid://shopify/ProductVariant/2135354376203",
+       "media": [
+        {
+         "alt_text": "CNHL Battery CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30",
+         "height": 432,
+         "preview": {
+          "height": 432,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/cnhl-cnhl-ministar-14-8v-4s-650mah-70c-lipo-micro-battery-xt30-battery-679097008139.jpg",
+          "width": 432
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/cnhl-cnhl-ministar-14-8v-4s-650mah-70c-lipo-micro-battery-xt30-battery-679097008139.jpg",
+         "width": 432
+        }
+       ],
+       "price": {
+        "amount": 1899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 30,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.6
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/253446553611",
+       "source": "shopify",
+       "title": "CNHL MiniStar 14.8V 4S 650mAh 70C LiPo Micro Battery - XT30",
+       "url": "https://www.racedayquads.com/products/cnhl-650mah-4s-70c-ministar-fpv-lipo-for-2-3-quads-xt30?variant=2135354376203&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p class=\"productname\"><strong>Tattu \"R-Line\" 4S LiPo Battery Pack 95C (14.8V/650mAh) w/XT-30 Connector</strong></p>\n<p><strong>TAT-6504S95XT3</strong></p>\n<p class=\"_description-left\"> </p>\n<p>This is the Tattu R-Line LiPo Battery Pack. What is R-Line? R-Line is specifically designed for professional FPV racing competitions. It's the selling version of Toppilot batteries. It's also a subsidiary of the Tattu brand. It's got higher capacity, lower internal resistance and lower landing temperatures. They are remarkably more powerful than other graphene batteries. Generally, R-Line batteries have the same specs as our popular Toppilot batteries.</p>\n<h3>Features:</h3>\n<ul class=\"product-page-features\">\n<li>High quality, reliable power</li>\n<li>Stable automatic stacking technology</li>\n<li>The most strict single cell capacity, voltage, resistance and discharge curve matching process</li>\n<li>Superior Japan and Korea Lithium Polymer raw materials</li>\n<li>Higher C-rating designed for professional FPV racing</li>\n<li>Higher capacity than comparable size packs</li>\n</ul>\n<h3>IMPORTANT LITHIUM POLYMER SAFETY INFORMATION</h3>\n<ul>\n<li>DO NOT leave a battery in your model when charging</li>\n<li>DO NOT leave lithium batteries unattended when charging</li>\n<li>ALWAYS balance charge lithium battery</li>\n<li>ALWAYS use a LiPo Safe charging bag/box</li>\n<li>YOU MUST use a Li-Poly specific charger to charge lithium batteries (NiMH or NiCD only chargers WILL NOT WORK!)</li>\n<li>YOU MUST not over discharge lithium battery packs</li>\n<li>READ &amp; UNDERSTAND the instructions carefully before operating this battery</li>\n</ul>\n<p><br><strong>NOTE:</strong> When using high energy Li-Polymer Batteries, please do not over-discharge or over-charge batteries as this will result in overheated batteries. Discharging capacity can't exceed 80% of the max capacity of the pack after full charging to ensure a good cycle performance. It is recommended to fully charge a brand new battery before using and only discharge the battery 50% for the first 5 cycles. Always monitor race time and/or set a low voltage warning on ESC (End voltage cannot be lower than 3.2v per cell). Do not use a battery that has too low a voltage. Do not expose batteries to sunshine or store/charge batteries at temperatures above 35°C or in a closed car. The high-temperature environment could cause damage to the pack or make it burst. If the battery becomes hot while fast charging, high current discharging, or racing, do not charge it until it has cooled completely. Wait about 20 mins, then inspect prior to recharging.</p>\n<p> </p>\n<div class=\"_description-right\">\n<p>Includes:</p>\n<ul>\n<li>\n<p>(1) \"R-Line\" 4S LiPo Battery Pack 95C</p>\n</li>\n</ul>\n<p id=\"product-page-specifications\"></p>\n<h3>Specifications</h3>\n<table>\n<tbody>\n<tr>\n<th>Nominal Voltage:</th>\n<td>14.8V (4S)</td>\n</tr>\n<tr>\n<th>Capacity:</th>\n<td>650mAh</td>\n</tr>\n<tr>\n<th>Maximum Charge Rate:</th>\n<td>1C (1.4A)</td>\n</tr>\n<tr>\n<th>Discharge Rates</th>\n<td></td>\n</tr>\n<tr>\n<th>Continuous:</th>\n<td>95C</td>\n</tr>\n<tr>\n<th>Peak:</th>\n<td>-</td>\n</tr>\n<tr>\n<th>Cell Configuration:</th>\n<td>4S1P</td>\n</tr>\n<tr>\n<th>Watt Hours:</th>\n<td>9.62Wh</td>\n</tr>\n<tr>\n<th>ROAR Approved:</th>\n<td>(Not Available)</td>\n</tr>\n<tr>\n<th>Connectors</th>\n<td></td>\n</tr>\n<tr>\n<th>Battery:</th>\n<td>XT30</td>\n</tr>\n<tr>\n<th>Balance:</th>\n<td>XH</td>\n</tr>\n<tr>\n<th>Dimensions (LxWxH):</th>\n<td>-</td>\n</tr>\n<tr>\n<th>Weight:</th>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n</div>"
+     },
+     "handle": "650mah-95c-4s-lipo-xt30",
+     "id": "gid://shopify/p/4LFLWSG7Lf8mWorx8RpaBr",
+     "media": [
+      {
+       "alt_text": "650mAh 95C 4S LiPO (XT30)",
+       "height": 960,
+       "preview": {
+        "height": 960,
+        "url": "https://cdn.shopify.com/s/files/1/0551/1764/3975/files/tat-6504s95xt3.jpg",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0551/1764/3975/files/tat-6504s95xt3.jpg",
+       "width": 1200
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Automatic stacking technology ensures stable and consistent power delivery for demanding RC applications",
+       "High C rating of 95C enables rapid discharge and high power output for racing",
+       "Lower internal resistance reduces heat buildup and landing temperatures for safer operation",
+       "Made with premium Japanese and Korean lithium polymer raw materials for enhanced safety and longevity",
+       "XT30 connector provides secure and reliable connection to compatible RC vehicles"
+      ],
+      "unique_selling_points": [
+       "R Line series offers higher capacity and lower internal resistance than standard graphene batteries, delivering superior power and reliability for competitive FPV racing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1699,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1699,
+       "currency": "USD"
+      }
+     },
+     "title": "650mAh 95C 4S LiPO (XT30)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.xlhobbies.com/buy/48611997843688:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p class=\"productname\"><strong>Tattu \"R-Line\" 4S LiPo Battery Pack 95C (14.8V/650mAh) w/XT-30 Connector</strong></p>\n<p><strong>TAT-6504S95XT3</strong></p>\n<p class=\"_description-left\"> </p>\n<p>This is the Tattu R-Line LiPo Battery Pack. What is R-Line? R-Line is specifically designed for professional FPV racing competitions. It's the selling version of Toppilot batteries. It's also a subsidiary of the Tattu brand. It's got higher capacity, lower internal resistance and lower landing temperatures. They are remarkably more powerful than other graphene batteries. Generally, R-Line batteries have the same specs as our popular Toppilot batteries.</p>\n<h3>Features:</h3>\n<ul class=\"product-page-features\">\n<li>High quality, reliable power</li>\n<li>Stable automatic stacking technology</li>\n<li>The most strict single cell capacity, voltage, resistance and discharge curve matching process</li>\n<li>Superior Japan and Korea Lithium Polymer raw materials</li>\n<li>Higher C-rating designed for professional FPV racing</li>\n<li>Higher capacity than comparable size packs</li>\n</ul>\n<h3>IMPORTANT LITHIUM POLYMER SAFETY INFORMATION</h3>\n<ul>\n<li>DO NOT leave a battery in your model when charging</li>\n<li>DO NOT leave lithium batteries unattended when charging</li>\n<li>ALWAYS balance charge lithium battery</li>\n<li>ALWAYS use a LiPo Safe charging bag/box</li>\n<li>YOU MUST use a Li-Poly specific charger to charge lithium batteries (NiMH or NiCD only chargers WILL NOT WORK!)</li>\n<li>YOU MUST not over discharge lithium battery packs</li>\n<li>READ &amp; UNDERSTAND the instructions carefully before operating this battery</li>\n</ul>\n<p><br><strong>NOTE:</strong> When using high energy Li-Polymer Batteries, please do not over-discharge or over-charge batteries as this will result in overheated batteries. Discharging capacity can't exceed 80% of the max capacity of the pack after full charging to ensure a good cycle performance. It is recommended to fully charge a brand new battery before using and only discharge the battery 50% for the first 5 cycles. Always monitor race time and/or set a low voltage warning on ESC (End voltage cannot be lower than 3.2v per cell). Do not use a battery that has too low a voltage. Do not expose batteries to sunshine or store/charge batteries at temperatures above 35°C or in a closed car. The high-temperature environment could cause damage to the pack or make it burst. If the battery becomes hot while fast charging, high current discharging, or racing, do not charge it until it has cooled completely. Wait about 20 mins, then inspect prior to recharging.</p>\n<p> </p>\n<div class=\"_description-right\">\n<p>Includes:</p>\n<ul>\n<li>\n<p>(1) \"R-Line\" 4S LiPo Battery Pack 95C</p>\n</li>\n</ul>\n<p id=\"product-page-specifications\"></p>\n<h3>Specifications</h3>\n<table>\n<tbody>\n<tr>\n<th>Nominal Voltage:</th>\n<td>14.8V (4S)</td>\n</tr>\n<tr>\n<th>Capacity:</th>\n<td>650mAh</td>\n</tr>\n<tr>\n<th>Maximum Charge Rate:</th>\n<td>1C (1.4A)</td>\n</tr>\n<tr>\n<th>Discharge Rates</th>\n<td></td>\n</tr>\n<tr>\n<th>Continuous:</th>\n<td>95C</td>\n</tr>\n<tr>\n<th>Peak:</th>\n<td>-</td>\n</tr>\n<tr>\n<th>Cell Configuration:</th>\n<td>4S1P</td>\n</tr>\n<tr>\n<th>Watt Hours:</th>\n<td>9.62Wh</td>\n</tr>\n<tr>\n<th>ROAR Approved:</th>\n<td>(Not Available)</td>\n</tr>\n<tr>\n<th>Connectors</th>\n<td></td>\n</tr>\n<tr>\n<th>Battery:</th>\n<td>XT30</td>\n</tr>\n<tr>\n<th>Balance:</th>\n<td>XH</td>\n</tr>\n<tr>\n<th>Dimensions (LxWxH):</th>\n<td>-</td>\n</tr>\n<tr>\n<th>Weight:</th>\n<td>-</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "650mah-95c-4s-lipo-xt30",
+       "id": "gid://shopify/ProductVariant/48611997843688",
+       "media": [
+        {
+         "alt_text": "650mAh 95C 4S LiPO (XT30)",
+         "height": 960,
+         "preview": {
+          "height": 960,
+          "url": "https://cdn.shopify.com/s/files/1/0551/1764/3975/files/tat-6504s95xt3.jpg",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0551/1764/3975/files/tat-6504s95xt3.jpg",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 1699,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "xl-hobbies.myshopify.com",
+        "id": "gid://shopify/Shop/55117643975",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/55117643975/policies/24086020295.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/55117643975/policies/24086053063.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/55117643975/policies/24085987527.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/55117643975/policies/24086085831.html"
+         }
+        ],
+        "name": "XL Hobbies",
+        "url": "https://www.xlhobbies.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9515296653544",
+       "source": "shopify",
+       "title": "650mAh 95C 4S LiPO (XT30)",
+       "url": "https://www.xlhobbies.com/products/650mah-95c-4s-lipo-xt30?variant=48611997843688&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p dir=\"ltr\"><span>MINI STAR</span></p>\n<p dir=\"ltr\"><span>Stock Number: 65704 </span></p>\n<p dir=\"ltr\"><span>Capacity: 650mAh </span></p>\n<p dir=\"ltr\"><span>Voltage: 14.8V / 4-Cell / 4S1P </span></p>\n<p dir=\"ltr\"><span>Discharge Rate: 70C Continual / 140C Burst </span></p>\n<p dir=\"ltr\"><span>Charge Rate: 5C Max Size: 27x30x58mm (H*W*L) </span></p>\n<p dir=\"ltr\"><span>Weight: 87g (Including wire and connector) </span></p>\n<p dir=\"ltr\"><span>Output Connector: XT30U </span></p>\n<p dir=\"ltr\"><span>Balance Connector: JST / XH </span></p>\n<p dir=\"ltr\"><span>Remarks: N/A</span></p>\n<p> </p>"
+     },
+     "handle": "cnhl-ministar-650mah-14-8v-4s-70c-lipo-battery-w-xt30-plug-65704g",
+     "id": "gid://shopify/p/74UKdhDKxk9AwZhrYeHMuk",
+     "media": [
+      {
+       "alt_text": "CNHL MiniStar 650mAh 4S 70C LiPo Battery – Box with Barcode Label",
+       "height": 3000,
+       "preview": {
+        "height": 3000,
+        "url": "https://cdn.shopify.com/s/files/1/0331/9391/8600/files/65704G_Battery_1_PHQ.jpg",
+        "width": 3000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0331/9391/8600/files/65704G_Battery_1_PHQ.jpg",
+       "width": 3000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "70C continuous and 140C burst discharge rates enable rapid power delivery for high-performance applications",
+       "XT30 plug provides secure and easy connection for quick charging and use",
+       "Compact 27x30x58 mm size fits a wide range of drones and aircraft",
+       "Rechargeable lithium polymer technology ensures long cycle life and consistent power",
+       "Includes balance connector JST-XH for safe and efficient charging"
+      ],
+      "unique_selling_points": [
+       "Delivers 70C continuous and 140C burst discharge rates for demanding performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1199,
+       "currency": "USD"
+      }
+     },
+     "title": "CNHL MiniStar 650mAh 14.8V 4S 70C Lipo Battery w/ XT30 Plug | 65704G",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.pilotshq.com/buy/40455249264776:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=vm5Qe1uNcyJ9&_gsid=vm5Qe1uNcyJ9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p dir=\"ltr\"><span>MINI STAR</span></p>\n<p dir=\"ltr\"><span>Stock Number: 65704 </span></p>\n<p dir=\"ltr\"><span>Capacity: 650mAh </span></p>\n<p dir=\"ltr\"><span>Voltage: 14.8V / 4-Cell / 4S1P </span></p>\n<p dir=\"ltr\"><span>Discharge Rate: 70C Continual / 140C Burst </span></p>\n<p dir=\"ltr\"><span>Charge Rate: 5C Max Size: 27x30x58mm (H*W*L) </span></p>\n<p dir=\"ltr\"><span>Weight: 87g (Including wire and connector) </span></p>\n<p dir=\"ltr\"><span>Output Connector: XT30U </span></p>\n<p dir=\"ltr\"><span>Balance Connector: JST / XH </span></p>\n<p dir=\"ltr\"><span>Remarks: N/A</span></p>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "cnhl-ministar-650mah-14-8v-4s-70c-lipo-battery-w-xt30-plug-65704g",
+       "id": "gid://shopify/ProductVariant/40455249264776",
+       "list_price": {
+        "amount": 1399,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "CNHL MiniStar 650mAh 4S 70C LiPo Battery – Box with Barcode Label",
+         "height": 3000,
+         "preview": {
+          "height": 3000,
+          "url": "https://cdn.shopify.com/s/files/1/0331/9391/8600/files/65704G_Battery_1_PHQ.jpg",
+          "width": 3000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0331/9391/8600/files/65704G_Battery_1_PHQ.jpg",
+         "width": 3000
+        }
+       ],
+       "price": {
+        "amount": 1199,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "pilotshq.myshopify.com",
+        "id": "gid://shopify/Shop/33193918600",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/33193918600/policies/15241248904.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/33193918600/policies/15241281672.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/33193918600/policies/15241216136.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/33193918600/policies/15241314440.html"
+         }
+        ],
+        "name": "Pilots HQ LLC.",
+        "url": "https://www.pilotshq.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6936576622728",
+       "source": "shopify",
+       "title": "CNHL MiniStar 650mAh 14.8V 4S 70C Lipo Battery w/ XT30 Plug | 65704G",
+       "url": "https://www.pilotshq.com/products/cnhl-ministar-650mah-14-8v-4s-70c-lipo-battery-w-xt30-plug-65704g?variant=40455249264776&_gsid=vm5Qe1uNcyJ9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

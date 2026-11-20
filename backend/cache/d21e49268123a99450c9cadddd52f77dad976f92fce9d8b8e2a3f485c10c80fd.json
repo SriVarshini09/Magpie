@@ -1,0 +1,691 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "FireBeetle 2 ESP32-E"
+  }
+ },
+ "key": "d21e49268123a99450c9cadddd52f77dad976f92fce9d8b8e2a3f485c10c80fd",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:08-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Most Recent Rokland Products"
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/265491742803",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-but-miners",
+       "id": "gid://shopify/Collection/265527689299",
+       "title": "All items but miners"
+      }
+     ],
+     "description": {
+      "html": "LILYGO® TTGO LoRa32 V2.1_1.6 VersionAt the TTGO LoRa V2.1 ,we added the SMA and IP5306 to the board, which allows it to do more things.In terms of the power switch, LILYGO has changed the switching interaction mode.The added SMA antenna can enhance signal transmission.(Notice: does not include battery and SD card)Compatible batteries with Micro JST available hereProduct DescriptionWorking voltage: 1.8~3.7vAcceptable current: 10~14mATransmit current: 120mA@+20dBm90mA@+17dBm29mA@+13dBmOperating frequency: 433/868/915MHzTransmit power: +20dBmReceive sensitivity: -139dBm@LoRa &62.5Khz&SF=12&146bps-136dBm@LoRa &125Khz&SF=12&293bps-118dBm@LoRa &125Khz&SF=6&9380bps-123dBm@FSK&5Khz&1.2KbpsFrequency error: +/-15KHzFIFO space: 64ByteData rate: 1.2K~300Kbps@FSK0.018K~37.5Kbps@LoRaModulation Mode: FSK,GFSK,MSK,GMSK,LoRa TM，OOKInterface form: SPIOperating temperature: -40℃- +85℃ Digital RSSI functionAutomatic frequency correctionAutomatic gain controlFast wake-up and frequency hoppingHighly configurable data packet handlerSMA AntennaIP5306 Github:https://github.com/Xinyuan-LilyGo/TTGO-LoRa-Serieshttps://github.com/LilyGO/ESP32-PaxcounterDev board return policyDevelopment boards are specialty items that generally cannot be resold on return, especially if the firmware has been flashed. Defective boards can be replaced or returned for refund within 30 days of purchase. Non-defective boards can be returned in the same time frame if in like-new condition with a 20 percent restocking fee applied. If the board has had altered firmware or became bricked due to a non-standard firmware flash, the board may not be eligible for return. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+     },
+     "gift_card": false,
+     "handle": "lilygo-ttgo-lora32-v2-1_1-6-version-915mhz-esp32-lora-oled-0-96-inch-sd-card-bluetooth-wifi-wireless-module-esp-32-sma-q211",
+     "id": "gid://shopify/Product/6816870891603",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/LILYGOT-Echo_28.png?v=1658851781"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "lilygo-boards"
+     ],
+     "title": "LILYGO® TTGO LoRa32 V2.1_1.6 Version 915Mhz ESP32 LoRa OLED 0.96 Inch SD Card Bluetooth WIFI Wireless Module ESP-32 SMA Q211",
+     "url": "https://store.rokland.com/products/lilygo-ttgo-lora32-v2-1_1-6-version-915mhz-esp32-lora-oled-0-96-inch-sd-card-bluetooth-wifi-wireless-module-esp-32-sma-q211",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40120155373651:1",
+       "description": {
+        "html": "LILYGO® TTGO LoRa32 V2.1_1.6 VersionAt the TTGO LoRa V2.1 ,we added the SMA and IP5306 to the board, which allows it to do more things.In terms of the power switch, LILYGO has changed the switching interaction mode.The added SMA antenna can enhance signal transmission.(Notice: does not include battery and SD card)Compatible batteries with Micro JST available hereProduct DescriptionWorking voltage: 1.8~3.7vAcceptable current: 10~14mATransmit current: 120mA@+20dBm90mA@+17dBm29mA@+13dBmOperating frequency: 433/868/915MHzTransmit power: +20dBmReceive sensitivity: -139dBm@LoRa &62.5Khz&SF=12&146bps-136dBm@LoRa &125Khz&SF=12&293bps-118dBm@LoRa &125Khz&SF=6&9380bps-123dBm@FSK&5Khz&1.2KbpsFrequency error: +/-15KHzFIFO space: 64ByteData rate: 1.2K~300Kbps@FSK0.018K~37.5Kbps@LoRaModulation Mode: FSK,GFSK,MSK,GMSK,LoRa TM，OOKInterface form: SPIOperating temperature: -40℃- +85℃ Digital RSSI functionAutomatic frequency correctionAutomatic gain controlFast wake-up and frequency hoppingHighly configurable data packet handlerSMA AntennaIP5306 Github:https://github.com/Xinyuan-LilyGo/TTGO-LoRa-Serieshttps://github.com/LilyGO/ESP32-PaxcounterDev board return policyDevelopment boards are specialty items that generally cannot be resold on return, especially if the firmware has been flashed. Defective boards can be replaced or returned for refund within 30 days of purchase. Non-defective boards can be returned in the same time frame if in like-new condition with a 20 percent restocking fee applied. If the board has had altered firmware or became bricked due to a non-standard firmware flash, the board may not be eligible for return. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/40120155373651",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/LILYGOT-Echo_28.png?v=1658851781"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Q211",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "featured-items",
+       "id": "gid://shopify/Collection/2576875529",
+       "title": "Featured Products"
+      },
+      {
+       "description": {
+        "html": "Wi-Fi HaLow™ is the designation for products incorporating IEEE 802.11ah technology. Wi-Fi HaLow™ augments Wi-Fi by operating in spectrum below one gigahertz (GHz) to offer longer range and lower power connectivity. Wi-Fi HaLow™ meets the unique requirements for the Internet of Things (IoT) to enable a variety of use cases in industrial, agricultural, smart building, and smart city environments."
+       },
+       "handle": "802-11ah-wi-fi-halow",
+       "id": "gid://shopify/Collection/163429875795",
+       "title": "802.11ah (Wi-Fi HaLow™)"
+      }
+     ],
+     "description": {
+      "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+     },
+     "gift_card": false,
+     "handle": "wismesh-rak3312-starter-kit-with-meshtastic-firmware",
+     "id": "gid://shopify/Product/7776445562963",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218.png?v=1766090258"
+      }
+     ],
+     "options": [
+      {
+       "name": "Type",
+       "values": [
+        {
+         "label": "SKU 116218- RAK19007 + RAK3312"
+        },
+        {
+         "label": "SKU 116230- RAK19001 + RAK3312"
+        },
+        {
+         "label": "SKU 116224- RAK19003 + RAK3312"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3297,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Helium Accessories",
+      "LoRa",
+      "RAK Nebra Indoor Bobcat Syncrobit",
+      "rak-kits"
+     ],
+     "title": "WisMesh RAK3312 ESP32-S3 Starter Kit Meshtastic Firmware",
+     "url": "https://store.rokland.com/products/wismesh-rak3312-starter-kit-with-meshtastic-firmware",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43356192145491:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43356192145491",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218.png?v=1766090258"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116218- RAK19007 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3397,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116218",
+       "title": "SKU 116218- RAK19007 + RAK3312"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43333191204947:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43333191204947",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RAK3312.png?v=1766090258"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116224- RAK19003 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3297,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116224",
+       "title": "SKU 116224- RAK19003 + RAK3312"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/43356251816019:1",
+       "description": {
+        "html": "This is the ESP32-S3 version. If you are looking for the NRF52840 version of this product, AKA the RAK Meshtastic Starter Kit or Mini Starter kit, please click here or here. Not sure what you need? Compare NRF52840 and ESP-32 here.Rokland is an authorized distributor for RAK Wireless. When comparing to price on RAK web site, it is not inclusive of shipping to USA or in some cases 25% import tariffs. When buying from Rokland, items ship from USA so no additional shipping or tariffs apply. The WisMesh RAK3312 Starter Kit for Meshtastic is a new base and core board combo using the Espressif ESP32-S3 Dual Core module designed for ultra-low power consumption. Includes:-Choice of RAK19007 (full size) or RAK19003 (mini) or RAK19001 (dual IO) base board-RAK3312 Core Module (RAK3312 core features 3112 model radio)-USB-C cable-MHF4 LoRa & BLE/WiFi antenna-MHF4 to SMA pigtail and stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options hereThis is the US915 MHz version Built for powerful, flexible LoRa mesh communication: Powered by the Espressif ESP32-S3 WiFi BLE Dual Core Module for LoRaWAN® with LoRa SX1262 - a dual-core WiFi + BLE module designed for high performance and low power use. Integrated SX1262 LoRa radio - enables long-range, reliable wireless messaging across nodes. Modular WisBlock design -easily expand with additional boards and sensors for custom setups. Meshtastic ready to go-pre-flashed firmware lets you build and deploy your private mesh network right out of the box. Powered by the ESP32-S3 dual-core with WiFi, BLE, and LoRa SX1262, this kit offers superior range, plug-and-play setup, and modular WisBlock expansion. No soldering or firmware flashing required. Designed for off-grid communication and professional-grade reliability. Why it's useful: Reliable Off-Grid Communication Device: Stay connected in remote or low-signal environments. Expandable Modular Design: Add supported WisBlock modules like sensors, displays, or GNSS for custom applications. Ready to Use: Pre-flashed firmware and included antenna simplify setup and testing. Global Frequency Support: Operates across 800–900 MHz for multi-region deployment. Protected Deployment: Compatible with Unify Enclosures for outdoor and rugged use. Key Features of the RAK3312 Meshtastic Starter Kit RAK3312 Espressif ESP32-S3 WisBlock Core module, pre-flashed with the Meshtastic firmware - an ESP32-S3 Meshtastic board with SX1262 radio for long-range LoRa communication and low-power mesh operation. Choose variant by cart button:RAK19007 Full Base Board, 30x60mm with 4 sensor slots + IO slotORRAK19003 Mini Base Board, 30x35mm with 2 sensor slots (no IO slot available)ORRAK19001 XL Base Board, 60x67mm with 6 sensor slots (Dual IO slots available) 1x LoRa, 1x WiFi/BLE antenna 1x MHF4 to SMA pigtail + stubby antenna (note MHF4 is not the same as IPEX- check our MHF4 pigtail options here Ideal for extending communication in outdoor, field, or emergency settings without relying on network infrastructure. Whether you’re setting up a DIY LoRa mesh kit for emergency response and overlanding or deploying field communication nodes for research and exploration, the WisMesh RAK3312 Starter Kit delivers reliable, off-grid connectivity when you need it most. Use Case #1: Trail Communication Network During a mountain trek, a research group deploys RAK3312 Meshtastic nodes across different elevations. Each node relays status updates and coordinates to others, maintaining communication despite zero mobile coverage. Use Case #2: Disaster Response Coordination A local emergency team configures RAK3312-based Tracker nodes inside Unify Enclosures. These devices transmit GPS locations and alerts through a LoRa mesh, ensuring stable communication across affected zones when networks fail. Warranty & Support: 1-year limited manufacturers warranty- click for more detailsBattery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector. Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: Unused or sets no longer needed can be returned for refund within 30 days of receipt if in like new condition. Defective parts can be returned for refund or exchange. Battery connector defects are not covered if using a battery not sourced from Rokland. We have encountered problems and polarity issues with cheaper batteries and suggest contacting your battery manufacturer if your battery sourced elsewhere damages the battery connector."
+       },
+       "id": "gid://shopify/ProductVariant/43356251816019",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/116218_1.png?v=1766092210"
+        }
+       ],
+       "options": [
+        {
+         "label": "SKU 116230- RAK19001 + RAK3312",
+         "name": "Type"
+        }
+       ],
+       "price": {
+        "amount": 3697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "116230",
+       "title": "SKU 116230- RAK19001 + RAK3312"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Most Recent Rokland Products"
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/265491742803",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-but-miners",
+       "id": "gid://shopify/Collection/265527689299",
+       "title": "All items but miners"
+      }
+     ],
+     "description": {
+      "html": "ESP32-WROOM-32 Development Board with CH340C (WiFi & Bluetooth) The ESP32-WROOM-32 development board is a powerful and versatile platform for building a wide range of connected projects, from simple IoT sensors to complex embedded systems. Powered by the Espressif ESP32-WROOM-32 module, this board combines a dual-core processor, WiFi, Bluetooth, and a rich set of peripherals in a compact and affordable package. The integrated CH340C USB-to-serial converter makes programming and debugging a breeze. Key Features and Specifications: Processor: Dual-core Xtensa LX6 processor (adjustable clock speed from 80 MHz to 240 MHz) Wireless Connectivity: WiFi: 802.11 b/g/n (up to 150 Mbps), 2.4 GHz - 2.5 GHz Bluetooth: Bluetooth v4.2 BR/EDR and BLE Memory: 448 KB ROM 520 KB on-chip SRAM 16 KB SRAM in RTC 4 MB SPI Flash Peripherals: Extensive set of GPIO pins, including UART, SPI, I2C, I2S, ADC, DAC, capacitive touch sensors, and more. USB-to-Serial: CH340C chip for easy programming and debugging via USB (drivers may be required). Power: Operating Voltage: 3.0V - 3.6V Average Operating Current: 80mA Sleep Current: < 5 μA (ideal for battery-powered applications) Operating Temperature: -40°C to +85°C Dimensions: [Insert Board Dimensions Here - from your document] Easy Programming Compatible with the Arduino IDE, ESP-IDF, and more. Benefits: Versatile: Suitable for a wide range of applications, from simple to complex. Powerful: Dual-core processor and ample memory handle demanding tasks. Connected: Built-in WiFi and Bluetooth for easy wireless communication. Easy to Use: CH340C simplifies programming; extensive online resources and community support. Cost-Effective: Provides exceptional value for its features and performance. Low Power: Ideal for battery-powered and wearable projects. Applications: Internet of Things (IoT): Smart home devices, sensor networks, industrial automation, smart agriculture. Wearable Technology: Fitness trackers, smartwatches, health monitors. Robotics and Automation: Control systems for robots, drones, and automated guided vehicles. Audio Projects: Internet radio, MP3 players, voice recognition. Wi-Fi Extenders and Access Points Bluetooth Beacons Education and Prototyping: A great platform for learning about embedded systems and electronics. Package Includes: 1 x ESP32-WROOM-32 Development Board with CH340C Dev board return policyDevelopment boards are specialty items that generally cannot be resold on return, especially if the firmware has been flashed. Defective boards can be replaced or returned for refund within 30 days of purchase. Non-defective boards can be returned in the same time frame if in like-new condition with a 20 percent restocking fee applied. If the board has had altered firmware or became bricked due to a non-standard firmware flash, the board may not be eligible for return. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+     },
+     "gift_card": false,
+     "handle": "esp32-wroom-32-development-board-type-c-wifi-bluetooth-4-2-ble-ultra-low-power-iot-module-ch340c",
+     "id": "gid://shopify/Product/7569853317203",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_79ff8979-906a-4cae-a260-e8ed4061c9a5.png?v=1742936758"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Seeed"
+     ],
+     "title": "ESP32-WROOM-32 Development Board (Type-C) – WiFi + Bluetooth 4.2 BLE Ultra-Low Power IoT Module (CH340C)",
+     "url": "https://store.rokland.com/products/esp32-wroom-32-development-board-type-c-wifi-bluetooth-4-2-ble-ultra-low-power-iot-module-ch340c",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42586059571283:1",
+       "description": {
+        "html": "ESP32-WROOM-32 Development Board with CH340C (WiFi & Bluetooth) The ESP32-WROOM-32 development board is a powerful and versatile platform for building a wide range of connected projects, from simple IoT sensors to complex embedded systems. Powered by the Espressif ESP32-WROOM-32 module, this board combines a dual-core processor, WiFi, Bluetooth, and a rich set of peripherals in a compact and affordable package. The integrated CH340C USB-to-serial converter makes programming and debugging a breeze. Key Features and Specifications: Processor: Dual-core Xtensa LX6 processor (adjustable clock speed from 80 MHz to 240 MHz) Wireless Connectivity: WiFi: 802.11 b/g/n (up to 150 Mbps), 2.4 GHz - 2.5 GHz Bluetooth: Bluetooth v4.2 BR/EDR and BLE Memory: 448 KB ROM 520 KB on-chip SRAM 16 KB SRAM in RTC 4 MB SPI Flash Peripherals: Extensive set of GPIO pins, including UART, SPI, I2C, I2S, ADC, DAC, capacitive touch sensors, and more. USB-to-Serial: CH340C chip for easy programming and debugging via USB (drivers may be required). Power: Operating Voltage: 3.0V - 3.6V Average Operating Current: 80mA Sleep Current: < 5 μA (ideal for battery-powered applications) Operating Temperature: -40°C to +85°C Dimensions: [Insert Board Dimensions Here - from your document] Easy Programming Compatible with the Arduino IDE, ESP-IDF, and more. Benefits: Versatile: Suitable for a wide range of applications, from simple to complex. Powerful: Dual-core processor and ample memory handle demanding tasks. Connected: Built-in WiFi and Bluetooth for easy wireless communication. Easy to Use: CH340C simplifies programming; extensive online resources and community support. Cost-Effective: Provides exceptional value for its features and performance. Low Power: Ideal for battery-powered and wearable projects. Applications: Internet of Things (IoT): Smart home devices, sensor networks, industrial automation, smart agriculture. Wearable Technology: Fitness trackers, smartwatches, health monitors. Robotics and Automation: Control systems for robots, drones, and automated guided vehicles. Audio Projects: Internet radio, MP3 players, voice recognition. Wi-Fi Extenders and Access Points Bluetooth Beacons Education and Prototyping: A great platform for learning about embedded systems and electronics. Package Includes: 1 x ESP32-WROOM-32 Development Board with CH340C Dev board return policyDevelopment boards are specialty items that generally cannot be resold on return, especially if the firmware has been flashed. Defective boards can be replaced or returned for refund within 30 days of purchase. Non-defective boards can be returned in the same time frame if in like-new condition with a 20 percent restocking fee applied. If the board has had altered firmware or became bricked due to a non-standard firmware flash, the board may not be eligible for return. Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department."
+       },
+       "id": "gid://shopify/ProductVariant/42586059571283",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/1_79ff8979-906a-4cae-a260-e8ed4061c9a5.png?v=1742936758"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "CH340C",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

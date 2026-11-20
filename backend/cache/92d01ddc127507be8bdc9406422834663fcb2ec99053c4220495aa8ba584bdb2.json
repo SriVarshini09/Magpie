@@ -1,0 +1,1602 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "BME280 sensor module"
+  }
+ },
+ "key": "92d01ddc127507be8bdc9406422834663fcb2ec99053c4220495aa8ba584bdb2",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:47-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNORGczTURZME5EY3pOell4TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Our selection of temperature and humidity sensors offers reliable solutions for precise environmental monitoring. These sensors are designed to measure a wide range of conditions, from basic temperature and humidity levels to advanced parameters like dew point and air quality. With options supporting various communication protocols such as UART, I2C, and LoRaWAN, these sensors are versatile and suitable for applications in agriculture, weather stations, and indoor air monitoring, ensuring accurate and consistent performance."
+       },
+       "handle": "temperature-sensors",
+       "id": "gid://shopify/Collection/290220408993",
+       "title": "Temperature & Humidity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      }
+     ],
+     "description": {
+      "html": "Description High accuracy Absolute accuracy of ±1.0 hPa for pressure ±1 accuracy for temperature and ±3% for humidity Easy-to-use Grove Compatible Interface Supports both I2C and SPI communication Can be used as an altimeter with accuracy of ±1 meter The Grove - Temperature & Barometer Sensor (BME280) is based on new BME280 sensor, which is even superior to BMP280 used in Grove – Barometer Sensor (BMP280), and any other former versions like BMP180 used in Grove – Barometer Sensor (BMP180). The module provides precise measurement of not only barometric pressure and temperature, but also the humidity in the environment. View more Dimensions Dimensions: 20mm x 40mm Weight: 4g Links PDF Files Datasheet Schematic 1 Schematic 2 Specifications Supply Voltage: 5V or 3.3V Current Consumption: 0.4 mA Humidity Accuracy: ±3% Interface: I2C and SPI Grove Port: I2C (selectable address at 0x77(default) and 0x76) Temperature Measurement: Range: -40 to 85 Accuracy: ±1 Barometric Pressure Measurement: Range: 300 – 1100 hPa Accuracy: ±1.0 hPa"
+     },
+     "gift_card": false,
+     "handle": "grove-temperature-barometer-sensor-bme280",
+     "id": "gid://shopify/Product/7487171854497",
+     "list_price_range": {
+      "max": {
+       "amount": 1875,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1875,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Grove - Temperature&Barometer Sensor (BME280)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp?v=1780426267"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1875,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1875,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Electronic Experimentation Parts",
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors"
+     ],
+     "title": "Grove - Temperature&Barometer Sensor (BME280)",
+     "url": "https://www.robotshop.com/products/grove-temperature-barometer-sensor-bme280",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360466079905:1",
+       "description": {
+        "html": "Description High accuracy Absolute accuracy of ±1.0 hPa for pressure ±1 accuracy for temperature and ±3% for humidity Easy-to-use Grove Compatible Interface Supports both I2C and SPI communication Can be used as an altimeter with accuracy of ±1 meter The Grove - Temperature & Barometer Sensor (BME280) is based on new BME280 sensor, which is even superior to BMP280 used in Grove – Barometer Sensor (BMP280), and any other former versions like BMP180 used in Grove – Barometer Sensor (BMP180). The module provides precise measurement of not only barometric pressure and temperature, but also the humidity in the environment. View more Dimensions Dimensions: 20mm x 40mm Weight: 4g Links PDF Files Datasheet Schematic 1 Schematic 2 Specifications Supply Voltage: 5V or 3.3V Current Consumption: 0.4 mA Humidity Accuracy: ±3% Interface: I2C and SPI Grove Port: I2C (selectable address at 0x77(default) and 0x76) Temperature Measurement: Range: -40 to 85 Accuracy: ±1 Barometric Pressure Measurement: Range: 300 – 1100 hPa Accuracy: ±1.0 hPa"
+       },
+       "id": "gid://shopify/ProductVariant/42360466079905",
+       "list_price": {
+        "amount": 1875,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1003568.webp?v=1780426267"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1875,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-See-528",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Enhance your robotics projects with our Microcontroller & SBC Accessories collection. This selection includes essential expansion boards, motor controllers, and connectivity modules designed to augment your microcontroller or single-board computer setups like Arduino and Raspberry Pi. From PWM motor drivers to advanced sensor interfaces, these accessories facilitate diverse functionality for robotics enthusiasts and professionals alike."
+       },
+       "handle": "microcontroller-accessories",
+       "id": "gid://shopify/Collection/290219458721",
+       "title": "Microcontroller & SBC Accessories"
+      },
+      {
+       "description": {
+        "html": "Our selection of temperature and humidity sensors offers reliable solutions for precise environmental monitoring. These sensors are designed to measure a wide range of conditions, from basic temperature and humidity levels to advanced parameters like dew point and air quality. With options supporting various communication protocols such as UART, I2C, and LoRaWAN, these sensors are versatile and suitable for applications in agriculture, weather stations, and indoor air monitoring, ensuring accurate and consistent performance."
+       },
+       "handle": "temperature-sensors",
+       "id": "gid://shopify/Collection/290220408993",
+       "title": "Temperature & Humidity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      }
+     ],
+     "description": {
+      "html": "Description BME280 Breakout Sensor Measures Temperature, Pressure and Humidity Versatile indoor/outdoor environmental monitoring Compatible with Raspberry Pi, Arduino, and Raspberry Pi Pico Features Bosch BME280 sensor for accurate measurements Easy integration with I2C interface and Qwiic/STEMMA QT connector The BME280 Breakout Sensor: Temperature, Pressure, Humidity is an excellent environmental sensor designed for indoor monitoring of temperature, pressure, and humidity. It can also be used outdoors with a suitable enclosure. This sensor is compatible with Raspberry Pi and Arduino systems. The BME280 Breakout features a Bosch BME280 temperature, pressure, and humidity sensor, an I2C interface, a Qwiic/STEMMA QT connector, and compatibility with both 3.3V and 5V power supplies. Additionally, it offers reverse polarity protection and is compatible with Raspberry Pi, Arduino, and Raspberry Pi Pico. View more What's Included 1x BME280 Breakout 1x 5-Pin Male Header 1x 5-Pin Female right-angle Header Dimensions 19 x 19 x 4.7 mm (L x W x H, incl. connectors) Links Websites BME280 Breakout Sensor Temperature, Pressure, Humidity Measurement - Python Library BME280 Breakout Sensor Temperature, Pressure, Humidity Measurement - Pimoroni Pico Specifications I2C interface, can be addressed via cuttable ADDR trace (0x76 or 0x77) Qwiic/STEMMA QT connector, compatible with 3.3V or 5V Reverse polarity protection on the Breakout Garden connector Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Arduino and Raspberry Pi (Python library) Compatible with Raspberry Pi Pico (C++/MicroPython libraries)"
+     },
+     "gift_card": false,
+     "handle": "bme280-breakout-temperature-pressure-humidity-sensor",
+     "id": "gid://shopify/Product/7616308838561",
+     "list_price_range": {
+      "max": {
+       "amount": 1753,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1753,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "BME280 Breakout Temperature, Pressure, Humidity Sensor",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1849219.webp?v=1780426350"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1753,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1753,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Arduino Compatible Parts",
+      "category:Microcontroller & SBC Accessories",
+      "category:Raspberry Pi Accessories / HATs",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors"
+     ],
+     "title": "BME280 Breakout Temperature, Pressure, Humidity Sensor",
+     "url": "https://www.robotshop.com/products/bme280-breakout-temperature-pressure-humidity-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42776214274209:1",
+       "description": {
+        "html": "Description BME280 Breakout Sensor Measures Temperature, Pressure and Humidity Versatile indoor/outdoor environmental monitoring Compatible with Raspberry Pi, Arduino, and Raspberry Pi Pico Features Bosch BME280 sensor for accurate measurements Easy integration with I2C interface and Qwiic/STEMMA QT connector The BME280 Breakout Sensor: Temperature, Pressure, Humidity is an excellent environmental sensor designed for indoor monitoring of temperature, pressure, and humidity. It can also be used outdoors with a suitable enclosure. This sensor is compatible with Raspberry Pi and Arduino systems. The BME280 Breakout features a Bosch BME280 temperature, pressure, and humidity sensor, an I2C interface, a Qwiic/STEMMA QT connector, and compatibility with both 3.3V and 5V power supplies. Additionally, it offers reverse polarity protection and is compatible with Raspberry Pi, Arduino, and Raspberry Pi Pico. View more What's Included 1x BME280 Breakout 1x 5-Pin Male Header 1x 5-Pin Female right-angle Header Dimensions 19 x 19 x 4.7 mm (L x W x H, incl. connectors) Links Websites BME280 Breakout Sensor Temperature, Pressure, Humidity Measurement - Python Library BME280 Breakout Sensor Temperature, Pressure, Humidity Measurement - Pimoroni Pico Specifications I2C interface, can be addressed via cuttable ADDR trace (0x76 or 0x77) Qwiic/STEMMA QT connector, compatible with 3.3V or 5V Reverse polarity protection on the Breakout Garden connector Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Arduino and Raspberry Pi (Python library) Compatible with Raspberry Pi Pico (C++/MicroPython libraries)"
+       },
+       "id": "gid://shopify/ProductVariant/42776214274209",
+       "list_price": {
+        "amount": 1753,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1849219.webp?v=1780426350"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1753,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Pim-152",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      },
+      {
+       "description": {
+        "html": "SparkFun Electronics is a leader in the development and distribution of open-source hardware and educational tools. Their range of products, including sensors, microcontrollers, and development kits, are designed to inspire innovation and creativity. SparkFun is dedicated to making electronics accessible and comprehensible, fostering a community of makers, engineers, and hobbyists."
+       },
+       "handle": "spark-fun-en",
+       "id": "gid://shopify/Collection/290238398625",
+       "title": "Sparkfun Electronics"
+      }
+     ],
+     "description": {
+      "html": "Description Operation Voltage: 3.3V I2C & SPI Communications Interface Temp Range: -40C to 85C Incredibly Small The Atmospheric Sensor Breakout Board - BME280 is the easy way to measure barometric pressure, humidity, and temperature readings all without taking up too much space. Basically, anything you need to know about atmospheric conditions you can find out from this tiny breakout. The BME280 Breakout has been design to be used in indoor/outdoor navigation, weather forecasting, home automation, and even personal health and wellness monitoring. View more Links ZIP File Documentation Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');$(\"#iframe-video-2\").html('');})});"
+     },
+     "gift_card": false,
+     "handle": "atmospheric-sensor-breakout-board-bme280",
+     "id": "gid://shopify/Product/7486559453345",
+     "list_price_range": {
+      "max": {
+       "amount": 2550,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2550,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Atmospheric Sensor Breakout Board - BME280",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/atmospheric-sensor-breakout-board-bme280.webp?v=1720525560"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2550,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2550,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots"
+     ],
+     "title": "Atmospheric Sensor Breakout Board - BME280",
+     "url": "https://www.robotshop.com/products/atmospheric-sensor-breakout-board-bme280",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358479945889:1",
+       "description": {
+        "html": "Description Operation Voltage: 3.3V I2C & SPI Communications Interface Temp Range: -40C to 85C Incredibly Small The Atmospheric Sensor Breakout Board - BME280 is the easy way to measure barometric pressure, humidity, and temperature readings all without taking up too much space. Basically, anything you need to know about atmospheric conditions you can find out from this tiny breakout. The BME280 Breakout has been design to be used in indoor/outdoor navigation, weather forecasting, home automation, and even personal health and wellness monitoring. View more Links ZIP File Documentation Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');$(\"#iframe-video-2\").html('');})});"
+       },
+       "id": "gid://shopify/ProductVariant/42358479945889",
+       "list_price": {
+        "amount": 2550,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/atmospheric-sensor-breakout-board-bme280.webp?v=1720525560"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2550,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Spa-1283",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure Measures temperature, humidity, and pressure Compatible with I2C and SPI interfaces Supports 3.3V and 5V voltage levels Ideal for IoT and environmental projects Includes resources for Raspberry Pi and Arduino The Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure is a compact sensor breakout designed to measure environmental temperature, humidity, and barometric pressure. It is compatible with both I2C and SPI interfaces and supports 3.3V and 5V voltage levels. This sensor is ideal for applications in environment monitoring, weather forecasting, altimetry, and IoT projects due to its small size, low power consumption, and high precision. It includes development resources and a manual for integration with platforms such as Raspberry Pi, Arduino, and STM32. View more What's Included 1x Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure 1x PH2.0 6pin wire 20cm Dimensions 27 x 20 mm Links Website BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure - BME280 Wiki Specifications Supports I2C (default) with configurable slave address Supports SPI, switchable via I/O setting Includes onboard voltage level translator, compatible with 3.3V/5V operating voltage Operating voltage: 3.3V/5V Communication interface: I2C/SPI Temperature sensing range: -40 to 85°C, resolution 0.01°C, accuracy ±1°C Humidity sensing range: 0 to 100% RH, resolution 0.008% RH, accuracy ±3% RH, response time 1s, delay ≤2% RH Barometric pressure sensing range: 300 to 1100 hPa, resolution 0.18 Pa, accuracy ±1 hPa Power consumption: <0.1 mA at 1 Hz (H, P, T)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-bme280-environmental-sensor-temperature-humidity-barometric-pressure",
+     "id": "gid://shopify/Product/14682767163756",
+     "list_price_range": {
+      "max": {
+       "amount": 1163,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1163,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/waveshare_bme280_environmental_sensor_temperature_1.webp?v=1739853926"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1163,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1163,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors",
+      "no-cps-warranty",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure",
+     "url": "https://www.robotshop.com/products/waveshare-bme280-environmental-sensor-temperature-humidity-barometric-pressure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51839510872428:1",
+       "description": {
+        "html": "Description Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure Measures temperature, humidity, and pressure Compatible with I2C and SPI interfaces Supports 3.3V and 5V voltage levels Ideal for IoT and environmental projects Includes resources for Raspberry Pi and Arduino The Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure is a compact sensor breakout designed to measure environmental temperature, humidity, and barometric pressure. It is compatible with both I2C and SPI interfaces and supports 3.3V and 5V voltage levels. This sensor is ideal for applications in environment monitoring, weather forecasting, altimetry, and IoT projects due to its small size, low power consumption, and high precision. It includes development resources and a manual for integration with platforms such as Raspberry Pi, Arduino, and STM32. View more What's Included 1x Waveshare BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure 1x PH2.0 6pin wire 20cm Dimensions 27 x 20 mm Links Website BME280 Environmental Sensor, Temperature, Humidity, Barometric Pressure - BME280 Wiki Specifications Supports I2C (default) with configurable slave address Supports SPI, switchable via I/O setting Includes onboard voltage level translator, compatible with 3.3V/5V operating voltage Operating voltage: 3.3V/5V Communication interface: I2C/SPI Temperature sensing range: -40 to 85°C, resolution 0.01°C, accuracy ±1°C Humidity sensing range: 0 to 100% RH, resolution 0.008% RH, accuracy ±3% RH, response time 1s, delay ≤2% RH Barometric pressure sensing range: 300 to 1100 hPa, resolution 0.18 Pa, accuracy ±1 hPa Power consumption: <0.1 mA at 1 Hz (H, P, T)"
+       },
+       "id": "gid://shopify/ProductVariant/51839510872428",
+       "list_price": {
+        "amount": 1163,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/waveshare_bme280_environmental_sensor_temperature_1.webp?v=1739853926"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1163,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-1111",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a leading innovator in the open-source hardware and robotics industry, offering a wide range of products designed for hobbyists, educators, and professionals. From microcontroller development boards to sensors, motor controllers, and robotics kits, DFRobot provides high-quality components that are reliable and easy-to-use. Explore their extensive selection to create, prototype, and bring your electronic and robotic projects to life."
+       },
+       "handle": "dfrobot-en",
+       "id": "gid://shopify/Collection/290232631457",
+       "title": "DFRobot"
+      }
+     ],
+     "description": {
+      "html": "Description DFRobot BMP280 Digital Pressure Sensor Module V1.0 Offers the highest flexibility to optimize the device Features high EMO robustness Communication through I2C Low Power Consumption Communication Interface: I2C (5 V compatible) The DFRobot BMP280 Digital Pressure Sensor Module V1.0 is a breakout version of the BMP280 Barometric Pressure Sensor from the DFRobot with temperature and pressure measurement functions, supporting Arduino code control. The BMP280 is based on Bosch’s proven Piezo-resistive pressure sensor technology featuring high EMO robustness, high accuracy and linearity, and long term stability. Numerous device operation options offer the highest flexibility to optimize the device regarding power consumption, resolution, and filter performance. Barometric sensors are usually used to measure barometric pressure and temperature. But besides that, they can also measure altitude and relative floor height due to the fact that there is a certain relationship between altitude and barometric pressure. As for navigation, the barometric pressure sensor can be used to enhance GPS positioning or realize 3D indoor navigation with the IMU sensor. View more What's Included 1 x BMP280 Digital pressure sensor module (V1.0) 1 x 2.54 Single Row 4PIN Connector Dimensions Size Outline: 18 x 11.5 mm / 0.71 x 0.45 inch Mounting Hole Position: 13 mm Mounting Hole: inner diameter 2 mm / outer diameter 3.7 mm Links Website DFRobot BMP280 Digital Pressure Sensor Module V1.0 - Wiki Specifications Operating Voltage: 3.3 - 5.5 V Communication Interface: I2C (5 V compatible) Default I2C Address: 0x76 Pressure Measuring Range: 300~1100 hPa Relative Accuracy: ±0.12 hPa (±1m) Absolute Accuracy: ±1 hPa (±8.33m) Temperature Measuring Range: 0 ~65 °C Temperature Measuring Accuracy: 0.01 °C"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-bmp280-digital-pressure-sensor-module-v10",
+     "id": "gid://shopify/Product/7486624465057",
+     "list_price_range": {
+      "max": {
+       "amount": 744,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 744,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot BMP280 Digital Pressure Sensor Module V1.0",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-bmp280-digital-pressure-sensor-module-v10-img01.webp?v=1766730747"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 744,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 744,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "no-cps-warranty"
+     ],
+     "title": "DFRobot BMP280 Digital Pressure Sensor Module V1.0",
+     "url": "https://www.robotshop.com/products/dfrobot-bmp280-digital-pressure-sensor-module-v10",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358565699745:1",
+       "description": {
+        "html": "Description DFRobot BMP280 Digital Pressure Sensor Module V1.0 Offers the highest flexibility to optimize the device Features high EMO robustness Communication through I2C Low Power Consumption Communication Interface: I2C (5 V compatible) The DFRobot BMP280 Digital Pressure Sensor Module V1.0 is a breakout version of the BMP280 Barometric Pressure Sensor from the DFRobot with temperature and pressure measurement functions, supporting Arduino code control. The BMP280 is based on Bosch’s proven Piezo-resistive pressure sensor technology featuring high EMO robustness, high accuracy and linearity, and long term stability. Numerous device operation options offer the highest flexibility to optimize the device regarding power consumption, resolution, and filter performance. Barometric sensors are usually used to measure barometric pressure and temperature. But besides that, they can also measure altitude and relative floor height due to the fact that there is a certain relationship between altitude and barometric pressure. As for navigation, the barometric pressure sensor can be used to enhance GPS positioning or realize 3D indoor navigation with the IMU sensor. View more What's Included 1 x BMP280 Digital pressure sensor module (V1.0) 1 x 2.54 Single Row 4PIN Connector Dimensions Size Outline: 18 x 11.5 mm / 0.71 x 0.45 inch Mounting Hole Position: 13 mm Mounting Hole: inner diameter 2 mm / outer diameter 3.7 mm Links Website DFRobot BMP280 Digital Pressure Sensor Module V1.0 - Wiki Specifications Operating Voltage: 3.3 - 5.5 V Communication Interface: I2C (5 V compatible) Default I2C Address: 0x76 Pressure Measuring Range: 300~1100 hPa Relative Accuracy: ±0.12 hPa (±1m) Absolute Accuracy: ±1 hPa (±8.33m) Temperature Measuring Range: 0 ~65 °C Temperature Measuring Accuracy: 0.01 °C"
+       },
+       "id": "gid://shopify/ProductVariant/42358565699745",
+       "list_price": {
+        "amount": 744,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/dfrobot-bmp280-digital-pressure-sensor-module-v10-img01.webp?v=1766730747"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 744,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Dfr-916",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Our selection of temperature and humidity sensors offers reliable solutions for precise environmental monitoring. These sensors are designed to measure a wide range of conditions, from basic temperature and humidity levels to advanced parameters like dew point and air quality. With options supporting various communication protocols such as UART, I2C, and LoRaWAN, these sensors are versatile and suitable for applications in agriculture, weather stations, and indoor air monitoring, ensuring accurate and consistent performance."
+       },
+       "handle": "temperature-sensors",
+       "id": "gid://shopify/Collection/290220408993",
+       "title": "Temperature & Humidity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      }
+     ],
+     "description": {
+      "html": "Description Octopus BME280 Pressure Sensor Offers low power consumption and small size Has a 3mm standard positioning hole Supports I2C and SPI protocol The Octopus BME280 Pressure Sensor is an electric brick, which has an integrated temperature sensor, air pressure sensor, and humidity sensor onboard. Its rated 3.3v power supply is enough to support micro:bit (not included. It can be used to measure humidity, temperature, and air pressure, or even to calculate the altitude according to the measured air pressure. View more What's Included 1 x Octopus BME280 Pressure Sensor Dimensions Size 31 x 23 mm Specifications Version No.: V1.0 Working Voltage: DC1.2V-3.6V Connectors: IIC (slavemode3.4MHz) orSPI (3-wireor4-wireslave modelOMHz) Relative Humidity Range: 0%- -100%, response time >1s Humidity Tolerance: ±2%; Humidity Hysteresis: ±1%; Resolution Rate: 0.8% Air Pressure Measure Range: 300 -HOOhPa Air Pressure Tolerance: ±lhPa, Resolution Rate: 0.18Pa Temperature Measure Range: 0 °C-65 °C Temperature Tolerance: ±0.5 °C; Max: ±1 °C; Resolution Rate: 0.1 °C"
+     },
+     "gift_card": false,
+     "handle": "octopus-bme280-pressure-sensor",
+     "id": "gid://shopify/Product/7487206981793",
+     "list_price_range": {
+      "max": {
+       "amount": 1174,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1174,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Octopus BME280 Pressure Sensor",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1599084.webp?v=1780426199"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1174,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1174,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Electronic Experimentation Parts",
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors"
+     ],
+     "title": "Octopus BME280 Pressure Sensor",
+     "url": "https://www.robotshop.com/products/octopus-bme280-pressure-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42360555864225:1",
+       "description": {
+        "html": "Description Octopus BME280 Pressure Sensor Offers low power consumption and small size Has a 3mm standard positioning hole Supports I2C and SPI protocol The Octopus BME280 Pressure Sensor is an electric brick, which has an integrated temperature sensor, air pressure sensor, and humidity sensor onboard. Its rated 3.3v power supply is enough to support micro:bit (not included. It can be used to measure humidity, temperature, and air pressure, or even to calculate the altitude according to the measured air pressure. View more What's Included 1 x Octopus BME280 Pressure Sensor Dimensions Size 31 x 23 mm Specifications Version No.: V1.0 Working Voltage: DC1.2V-3.6V Connectors: IIC (slavemode3.4MHz) orSPI (3-wireor4-wireslave modelOMHz) Relative Humidity Range: 0%- -100%, response time >1s Humidity Tolerance: ±2%; Humidity Hysteresis: ±1%; Resolution Rate: 0.8% Air Pressure Measure Range: 300 -HOOhPa Air Pressure Tolerance: ±lhPa, Resolution Rate: 0.18Pa Temperature Measure Range: 0 °C-65 °C Temperature Tolerance: ±0.5 °C; Max: ±1 °C; Resolution Rate: 0.1 °C"
+       },
+       "id": "gid://shopify/ProductVariant/42360555864225",
+       "list_price": {
+        "amount": 1174,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1599084.webp?v=1780426199"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1174,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Elf-326",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      },
+      {
+       "description": {
+        "html": "Browse our extensive range of Electronic Experimentation Parts, the essential components you need to fuel your innovative projects. From versatile sensors like the Gravity MEMS Gas Sensor and Grove Sound Sensor to robust control boards including the Makeblock Me Orion and Me Auriga Microcontrollers, this collection has everything you need for your next DIY electronics venture. Discover quality connectors, cables, and prototyping boards to bring your ideas to life with ease and precision."
+       },
+       "handle": "electronic-experimentation-parts",
+       "id": "gid://shopify/Collection/290228240545",
+       "title": "Electronic Experimentation Parts"
+      }
+     ],
+     "description": {
+      "html": "Description Absolute accuracy of ±1.0 hPa for pressure measurement ±1 accuracy for temperature measurement Easy-to-use Grove Compatible Interface Supports both I2C and SPI communication Can be used as an altimeter with accuracy of ±1 meter The Grove - Barometer Sensor (BMP280) is based on their new BMP280 sensor, which is an upgraded version of the old BMP180 used in Grove – Barometer Sensor (BMP180). View more Specifications Supply Voltage: 5V or 3.3V Current Consumption: 0.6 mA Interface: I2C and SPI Grove Port: I2C (selectable address at 0x77(default) and 0x76) Dimensions: 20mm x 40mm Weight: 3g Barometric Pressure Measure Range: 300 – 1100 hPa Accuracy: ±1.0 hPa Temperature Measurement Range: -40 to 85 Accuracy: ±1"
+     },
+     "gift_card": false,
+     "handle": "grove-barometer-sensor-bmp280",
+     "id": "gid://shopify/Product/7486814421153",
+     "list_price_range": {
+      "max": {
+       "amount": 1019,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1019,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Grove - Barometer Sensor (BMP280)",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1004530.webp?v=1780949521"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1019,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1019,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Electronic Experimentation Parts",
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots"
+     ],
+     "title": "Grove - Barometer Sensor (BMP280)",
+     "url": "https://www.robotshop.com/products/grove-barometer-sensor-bmp280",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358878601377:1",
+       "description": {
+        "html": "Description Absolute accuracy of ±1.0 hPa for pressure measurement ±1 accuracy for temperature measurement Easy-to-use Grove Compatible Interface Supports both I2C and SPI communication Can be used as an altimeter with accuracy of ±1 meter The Grove - Barometer Sensor (BMP280) is based on their new BMP280 sensor, which is an upgraded version of the old BMP180 used in Grove – Barometer Sensor (BMP180). View more Specifications Supply Voltage: 5V or 3.3V Current Consumption: 0.6 mA Interface: I2C and SPI Grove Port: I2C (selectable address at 0x77(default) and 0x76) Dimensions: 20mm x 40mm Weight: 3g Barometric Pressure Measure Range: 300 – 1100 hPa Accuracy: ±1.0 hPa Temperature Measurement Range: -40 to 85 Accuracy: ±1"
+       },
+       "id": "gid://shopify/ProductVariant/42358878601377",
+       "list_price": {
+        "amount": 1019,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1004530.webp?v=1780949521"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1019,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-See-546",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Enhance your robotics projects with our Microcontroller & SBC Accessories collection. This selection includes essential expansion boards, motor controllers, and connectivity modules designed to augment your microcontroller or single-board computer setups like Arduino and Raspberry Pi. From PWM motor drivers to advanced sensor interfaces, these accessories facilitate diverse functionality for robotics enthusiasts and professionals alike."
+       },
+       "handle": "microcontroller-accessories",
+       "id": "gid://shopify/Collection/290219458721",
+       "title": "Microcontroller & SBC Accessories"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide range of micro:bit accessories designed to extend the functionality of your micro:bit projects. From expansion boards and sensors to robotic kits and educational tools, our collection provides everything needed to enhance your coding and hardware skills. Perfect for STEAM education and hobby projects, these accessories are suitable for all skill levels and can be used to build innovative and creative solutions. Explore our selection to find the right components for your next micro:bit adventure."
+       },
+       "handle": "micro-bit-accessories",
+       "id": "gid://shopify/Collection/290224144545",
+       "title": "micro:bit Accessories"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover Pimoroni, the innovative brand behind some of the most exciting maker electronics. From Raspberry Pi accessories and micro:bit gadgets to their own microcontroller boards and unique kits, Pimoroni's products are designed to spark creativity and innovation. With a focus on high-quality manufacturing and user-friendly designs, Pimoroni makes it easier than ever to build and customize your projects. Explore their range and bring your ideas to life with Pimoroni's exceptional products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/290249605281",
+       "title": "Pimoroni"
+      }
+     ],
+     "description": {
+      "html": "Description Pimoroni enviro:bit Module for micro:bit Comes fully assembled and ready to use Features a BME280 temperature, pressure, and humidity sensor Offers a TCS3472 light and color sensor Supports Microsoft MakeCode and MicroPython Doesn't need soldering With the Pimoroni enviro:bit Module for micro:bit you will be able to sense the world around you. It's loaded with sensors for air and weather, color and light, and sound, and slots right onto your micro:bit. Just slot it in your micro:bit, then code enviro:bit with the block-based Microsoft MakeCode editor, or with MicroPython in the Mu code editor. The sensors go hand-in-hand really well with the LED matrix on micro:bit, letting you graph sensors readings or have the LEDs react to sound, for example. View more What's Included 1 x Pimoroni enviro:bit Module for micro:bit"
+     },
+     "gift_card": false,
+     "handle": "pimoroni-envirobit-module-microbit",
+     "id": "gid://shopify/Product/7486648025249",
+     "list_price_range": {
+      "max": {
+       "amount": 3148,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3148,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Pimoroni enviro:bit Module for micro:bit",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1613012.webp?v=1778289786"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2754,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2754,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:micro:bit Accessories",
+      "category:Microcontroller & SBC Accessories",
+      "category:Robot Parts",
+      "category:Robots",
+      "clearance-item",
+      "item-on-sale"
+     ],
+     "title": "Pimoroni enviro:bit Module for micro:bit",
+     "url": "https://www.robotshop.com/products/pimoroni-envirobit-module-microbit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358618030241:1",
+       "description": {
+        "html": "Description Pimoroni enviro:bit Module for micro:bit Comes fully assembled and ready to use Features a BME280 temperature, pressure, and humidity sensor Offers a TCS3472 light and color sensor Supports Microsoft MakeCode and MicroPython Doesn't need soldering With the Pimoroni enviro:bit Module for micro:bit you will be able to sense the world around you. It's loaded with sensors for air and weather, color and light, and sound, and slots right onto your micro:bit. Just slot it in your micro:bit, then code enviro:bit with the block-based Microsoft MakeCode editor, or with MicroPython in the Mu code editor. The sensors go hand-in-hand really well with the LED matrix on micro:bit, letting you graph sensors readings or have the LEDs react to sound, for example. View more What's Included 1 x Pimoroni enviro:bit Module for micro:bit"
+       },
+       "id": "gid://shopify/ProductVariant/42358618030241",
+       "list_price": {
+        "amount": 3148,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1613012.webp?v=1778289786"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2754,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Pim-63",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-11"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Discover high-quality gas sensors perfect for various applications, including environmental monitoring, industrial safety, and robotics projects. Our collection features reliable sensors for detecting a wide range of gases such as oxygen, carbon dioxide, methane, and more. These sensors offer excellent accuracy, fast response times, and multiple communication protocols including I2C and UART, making them suitable for diverse integration needs. Enhance your project's capabilities with dependable gas sensing technology that delivers precise and real-time data."
+       },
+       "handle": "gas-sensors",
+       "id": "gid://shopify/Collection/290217328801",
+       "title": "Gas Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover Whadda, the innovative electronics brand from Velleman, renowned for its educational soldering kits, programmable 3D LED cubes, and versatile IoT interfaces. Whadda's products are designed to engage hobbyists and professionals alike, offering easy-to-use kits that inspire creativity and learning in electronics. Explore Whadda's range on RobotShop.com to boost your projects with high-quality components and discover endless possibilities."
+       },
+       "handle": "whadda",
+       "id": "gid://shopify/Collection/290267168929",
+       "title": "Whadda"
+      }
+     ],
+     "description": {
+      "html": "Description Air Quality Sensor Combo Board by Velleman Senses the atmospheric-quality Provides a variety of environmental data Communication protocol: I2C Operation Voltage: 3.3 V Humidity Range: 0-100% RH The Velleman Air Quality Sensor Combo Board senses the atmospheric quality by using the popular CCS811 and BME280 ICs. It provides a variety of environmental data including barometric pressure, humidity, temperature, TVOCs, and equivalent CO2 (or eCO2) levels. Communication is possible through the I2C protocol. The CCS811 is an exceedingly popular sensor, providing readings for equivalent CO2 (or eCO2) in parts per million (PPM) and total volatile organic compounds in the parts per billion (PPB). The CCS811 also has a feature that allows it to fine-tune its readings if it has access to the current humidity and temperature. View more What's Included 1x Velleman Air Quality Sensor Combo Board Dimensions Size 51 x 30.4 x 5.4 mm (L x W x H) Specifications Operation Voltage: 3.3 V eCO2 sensing: from 400 to 8,192 parts per million Total Volatile Organic Compound (TVOC): from 0 to 1,187 parts per billion Temperature Range: -40 °C (-40 °F) to 85 °C (185 °F) Humidity Range: 0 - 100 % RH, =-3% from 20 - 80 % Pressure Range: 30,000 Pa to 110,000 Pa, relative accuracy of 12 Pa, absolute accuracy of 100 Pa Alltitude Range: 0 to 9.2 km (30,000 feet), relative accuracy of 1m (3.3 feet) at sea level, 2m (6.6 feet) at 9.2 km (30,000 feet) Weight: 4.80 g"
+     },
+     "gift_card": false,
+     "handle": "velleman-air-quality-sensor-combo-board",
+     "id": "gid://shopify/Product/7486579048609",
+     "list_price_range": {
+      "max": {
+       "amount": 4221,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4221,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Velleman Air Quality Sensor Combo Board",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1798346.webp?v=1778278869"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3925,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3925,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Gas Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "item-on-sale"
+     ],
+     "title": "Velleman Air Quality Sensor Combo Board",
+     "url": "https://www.robotshop.com/products/velleman-air-quality-sensor-combo-board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42358500229281:1",
+       "description": {
+        "html": "Description Air Quality Sensor Combo Board by Velleman Senses the atmospheric-quality Provides a variety of environmental data Communication protocol: I2C Operation Voltage: 3.3 V Humidity Range: 0-100% RH The Velleman Air Quality Sensor Combo Board senses the atmospheric quality by using the popular CCS811 and BME280 ICs. It provides a variety of environmental data including barometric pressure, humidity, temperature, TVOCs, and equivalent CO2 (or eCO2) levels. Communication is possible through the I2C protocol. The CCS811 is an exceedingly popular sensor, providing readings for equivalent CO2 (or eCO2) in parts per million (PPM) and total volatile organic compounds in the parts per billion (PPB). The CCS811 also has a feature that allows it to fine-tune its readings if it has access to the current humidity and temperature. View more What's Included 1x Velleman Air Quality Sensor Combo Board Dimensions Size 51 x 30.4 x 5.4 mm (L x W x H) Specifications Operation Voltage: 3.3 V eCO2 sensing: from 400 to 8,192 parts per million Total Volatile Organic Compound (TVOC): from 0 to 1,187 parts per billion Temperature Range: -40 °C (-40 °F) to 85 °C (185 °F) Humidity Range: 0 - 100 % RH, =-3% from 20 - 80 % Pressure Range: 30,000 Pa to 110,000 Pa, relative accuracy of 12 Pa, absolute accuracy of 100 Pa Alltitude Range: 0 to 9.2 km (30,000 feet), relative accuracy of 1m (3.3 feet) at sea level, 2m (6.6 feet) at 9.2 km (30,000 feet) Weight: 4.80 g"
+       },
+       "id": "gid://shopify/ProductVariant/42358500229281",
+       "list_price": {
+        "amount": 4221,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1798346.webp?v=1778278869"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3925,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Vel-322",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-15-36-14"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Delve into our Robot Sensors collection to discover a range of versatile sensors designed to enhance the functionality of your robotic projects. Our selection features sensor modules such as accelerometers, ultrasonic sensors, infrared sensors, and more, enabling precise measurements from orientation and distance to temperature and humidity. These sensors are essential for achieving accurate data collection and seamless interaction with the environment, making them ideal for robotics enthusiasts and professionals seeking reliable and advanced sensing solutions."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/290211365025",
+       "title": "Robot Sensors"
+      },
+      {
+       "description": {
+        "html": "Our selection of temperature and humidity sensors offers reliable solutions for precise environmental monitoring. These sensors are designed to measure a wide range of conditions, from basic temperature and humidity levels to advanced parameters like dew point and air quality. With options supporting various communication protocols such as UART, I2C, and LoRaWAN, these sensors are versatile and suitable for applications in agriculture, weather stations, and indoor air monitoring, ensuring accurate and consistent performance."
+       },
+       "handle": "temperature-sensors",
+       "id": "gid://shopify/Collection/290220408993",
+       "title": "Temperature & Humidity Sensors"
+      },
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Discover our range of Pressure Sensors, featuring high-resolution, durable sensors for accurate pressure measurements. Ideal for projects requiring precise environmental monitoring, our selection includes waterproof sensors, differential pressure sensors, and multifunctional units measuring air, water, and atmospheric pressure. Suitable for diverse applications from robotics to IoT, these sensors offer reliable performance with interfaces like I2C and SPI for seamless integration."
+       },
+       "handle": "pressure-sensors",
+       "id": "gid://shopify/Collection/290227945633",
+       "title": "Pressure Sensors"
+      }
+     ],
+     "description": {
+      "html": "Description BMP280 Temperature, Pressure, Altitude Sensor Breakout Board Features a temperature, pressure, and altitude sensor Is compatible with 3.3 V or 5 V Offers reverse polarity protection Compatible with Raspberry Pi 3B+, 3, 2, B+, A+, Zero, and Zero W The BMP280 Temperature, Pressure, Altitude Sensor Breakout Board is a fast and precise environmental sensor that can measure temperature, pressure, and altitude. The BMP280 breakout is Raspberry Pi and Arduino-compatible. If you're looking for a simple temperature and pressure sensor, then this is the one to pick. It's cheap and accurate (±1 hPa, ±1 °C, ±1 meter), and ideal for keeping track of temperatures around your home or even for measuring altitude in high-altitude balloon flights. View more What's Included BMP280 breakout 1 x 5 Male header 1 x 5 Female right angle header"
+     },
+     "gift_card": false,
+     "handle": "bmp280-temperature-pressure-altitude-sensor-breakout-board",
+     "id": "gid://shopify/Product/7487064473761",
+     "list_price_range": {
+      "max": {
+       "amount": 1077,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1077,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "BMP280 Temperature, Pressure, Altitude Sensor Breakout Board",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1621922.webp?v=1780426018"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1077,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1077,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:Pressure Sensors",
+      "category:Robot Parts",
+      "category:Robot Sensors",
+      "category:Robots",
+      "category:Temperature & Humidity Sensors"
+     ],
+     "title": "BMP280 Temperature, Pressure, Altitude Sensor Breakout Board",
+     "url": "https://www.robotshop.com/products/bmp280-temperature-pressure-altitude-sensor-breakout-board",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359776772257:1",
+       "description": {
+        "html": "Description BMP280 Temperature, Pressure, Altitude Sensor Breakout Board Features a temperature, pressure, and altitude sensor Is compatible with 3.3 V or 5 V Offers reverse polarity protection Compatible with Raspberry Pi 3B+, 3, 2, B+, A+, Zero, and Zero W The BMP280 Temperature, Pressure, Altitude Sensor Breakout Board is a fast and precise environmental sensor that can measure temperature, pressure, and altitude. The BMP280 breakout is Raspberry Pi and Arduino-compatible. If you're looking for a simple temperature and pressure sensor, then this is the one to pick. It's cheap and accurate (±1 hPa, ±1 °C, ±1 meter), and ideal for keeping track of temperatures around your home or even for measuring altitude in high-altitude balloon flights. View more What's Included BMP280 breakout 1 x 5 Male header 1 x 5 Female right angle header"
+       },
+       "id": "gid://shopify/ProductVariant/42359776772257",
+       "list_price": {
+        "amount": 1077,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1621922.webp?v=1780426018"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1077,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Pim-81",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

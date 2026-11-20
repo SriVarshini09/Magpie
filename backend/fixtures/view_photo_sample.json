@@ -1,0 +1,80 @@
+{
+  "kind": "diagram",
+  "parts": [],
+  "photo": {
+    "image_id": "img_mock1",
+    "url": "/api/uploads/img_mock1",
+    "w": 1024,
+    "h": 768,
+    "sha256": "cd933268af46798d873bcc675c8cf638fd174851c0d94781b8942fd72386c01d",
+    "regions": [
+      {
+        "bom_line_id": "b1",
+        "box_xyxy_px": [
+          96.0,
+          250.0,
+          430.0,
+          520.0
+        ],
+        "label": "arduino board",
+        "score": 0.88,
+        "approximate": false
+      },
+      {
+        "bom_line_id": "b3",
+        "box_xyxy_px": [
+          500.0,
+          220.0,
+          930.0,
+          470.0
+        ],
+        "label": "breadboard",
+        "score": 0.91,
+        "approximate": false
+      },
+      {
+        "bom_line_id": "b4",
+        "box_xyxy_px": [
+          380.0,
+          120.0,
+          640.0,
+          260.0
+        ],
+        "label": "jumper wires",
+        "score": 0.62,
+        "approximate": false
+      },
+      {
+        "bom_line_id": "b5",
+        "box_xyxy_px": [
+          700.0,
+          500.0,
+          860.0,
+          640.0
+        ],
+        "label": "sensor module",
+        "score": 0.57,
+        "approximate": false
+      },
+      {
+        "bom_line_id": "b8",
+        "box_xyxy_px": [
+          560.0,
+          300.0,
+          600.0,
+          350.0
+        ],
+        "label": "led",
+        "score": 0.41,
+        "approximate": true
+      }
+    ]
+  },
+  "tray": [
+    "b2",
+    "b6",
+    "b7"
+  ],
+  "note": "Boxes are approximate regions found in your photo.",
+  "simulated": true
+}

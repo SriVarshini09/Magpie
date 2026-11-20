@@ -1,0 +1,1546 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Enclosure"
+  }
+ },
+ "key": "5b166f5aa0185004b27957f1dc08ebe714837e5f1abc434440666d8366b54bd9",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:35:56-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVE0yTXpjeE1EY3hOREl6TlN3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "These semi-transparent plastic enclosures are handy for keeping electronics that need to live outside dry - great for nature cameras and greenhouse controllers 🍃 The tops of these boxes are made of clear polycarbonate (good for mounting a camera behind or for keeping an eye on screens or status indicators!) and the bottom halves are made from hardwearing ABS. They're IP66 rated which means they should stand up to dust, moisture and nasty weather (up to and including modest jets of water and 'heavy seas'), but they won't protect against total immersion. The tops of the small (65 x 95mm) and medium (125 x 125mm) boxes are secured with sturdy plastic screws (which can be operated with a large Philips screwdriver), while the large (220 x 170mm) box has a hinged lid that closes with clips. All the boxes have waterproof seals between the lid and the body of the box. If you need to route cables in or out of your waterproof enclosure, you could make a hole using a drill or dremel and install a waterproof cable gland! Notes Note that the lid of the medium (125 x 125mm) box will only seal properly if you have it the correct way round, make sure you have the nubbin in the base aligned with the indentation in the lid. The medium (125 x 125mm) and large (220 x 170mm) boxes have 2 x M4 threaded mounting points inside. Internal measurements (L x W x H, approx): Small - box: 88.6 x 58 x 35mm, lid: 83.8 x 53.8 x 11mm Medium - box: 117 x 117 x 55mm, lid: 114 x 114 x 17mm Large - box: 202 x 152.5 x 77mm, lid: 200 x 150.5 x 27mm Resources Dimensional drawings: Small / YX-AT-0609 Medium / YX-AT-1212-S Large / YX-AT-221711 Operating temperature: -20C to 70C"
+     },
+     "gift_card": false,
+     "handle": "ip66-plastic-enclosure",
+     "id": "gid://shopify/Product/6896918855763",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/WaterproofEnclosure_1of3.jpg?v=1668079598"
+      }
+     ],
+     "options": [
+      {
+       "name": "Size",
+       "values": [
+        {
+         "label": "220mm x 170mm x 110mm"
+        },
+        {
+         "label": "125mm x 125mm x 75mm"
+        },
+        {
+         "label": "65mm x 95mm x 55mm"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases"
+     ],
+     "title": "Waterproof Plastic Enclosure (IP66 rated)",
+     "url": "https://shop.pimoroni.com/en-us/products/ip66-plastic-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40401457446995:1",
+       "description": {
+        "html": "These semi-transparent plastic enclosures are handy for keeping electronics that need to live outside dry - great for nature cameras and greenhouse controllers 🍃 The tops of these boxes are made of clear polycarbonate (good for mounting a camera behind or for keeping an eye on screens or status indicators!) and the bottom halves are made from hardwearing ABS. They're IP66 rated which means they should stand up to dust, moisture and nasty weather (up to and including modest jets of water and 'heavy seas'), but they won't protect against total immersion. The tops of the small (65 x 95mm) and medium (125 x 125mm) boxes are secured with sturdy plastic screws (which can be operated with a large Philips screwdriver), while the large (220 x 170mm) box has a hinged lid that closes with clips. All the boxes have waterproof seals between the lid and the body of the box. If you need to route cables in or out of your waterproof enclosure, you could make a hole using a drill or dremel and install a waterproof cable gland! Notes Note that the lid of the medium (125 x 125mm) box will only seal properly if you have it the correct way round, make sure you have the nubbin in the base aligned with the indentation in the lid. The medium (125 x 125mm) and large (220 x 170mm) boxes have 2 x M4 threaded mounting points inside. Internal measurements (L x W x H, approx): Small - box: 88.6 x 58 x 35mm, lid: 83.8 x 53.8 x 11mm Medium - box: 117 x 117 x 55mm, lid: 114 x 114 x 17mm Large - box: 202 x 152.5 x 77mm, lid: 200 x 150.5 x 27mm Resources Dimensional drawings: Small / YX-AT-0609 Medium / YX-AT-1212-S Large / YX-AT-221711 Operating temperature: -20C to 70C"
+       },
+       "id": "gid://shopify/ProductVariant/40401457446995",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/WaterproofEnclosure_3of3.jpg?v=1668079598"
+        }
+       ],
+       "options": [
+        {
+         "label": "220mm x 170mm x 110mm",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 2500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "YX-AT-221711",
+       "title": "220mm x 170mm x 110mm"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40401457479763:1",
+       "description": {
+        "html": "These semi-transparent plastic enclosures are handy for keeping electronics that need to live outside dry - great for nature cameras and greenhouse controllers 🍃 The tops of these boxes are made of clear polycarbonate (good for mounting a camera behind or for keeping an eye on screens or status indicators!) and the bottom halves are made from hardwearing ABS. They're IP66 rated which means they should stand up to dust, moisture and nasty weather (up to and including modest jets of water and 'heavy seas'), but they won't protect against total immersion. The tops of the small (65 x 95mm) and medium (125 x 125mm) boxes are secured with sturdy plastic screws (which can be operated with a large Philips screwdriver), while the large (220 x 170mm) box has a hinged lid that closes with clips. All the boxes have waterproof seals between the lid and the body of the box. If you need to route cables in or out of your waterproof enclosure, you could make a hole using a drill or dremel and install a waterproof cable gland! Notes Note that the lid of the medium (125 x 125mm) box will only seal properly if you have it the correct way round, make sure you have the nubbin in the base aligned with the indentation in the lid. The medium (125 x 125mm) and large (220 x 170mm) boxes have 2 x M4 threaded mounting points inside. Internal measurements (L x W x H, approx): Small - box: 88.6 x 58 x 35mm, lid: 83.8 x 53.8 x 11mm Medium - box: 117 x 117 x 55mm, lid: 114 x 114 x 17mm Large - box: 202 x 152.5 x 77mm, lid: 200 x 150.5 x 27mm Resources Dimensional drawings: Small / YX-AT-0609 Medium / YX-AT-1212-S Large / YX-AT-221711 Operating temperature: -20C to 70C"
+       },
+       "id": "gid://shopify/ProductVariant/40401457479763",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/WaterproofEnclosure_2of3.jpg?v=1668079598"
+        }
+       ],
+       "options": [
+        {
+         "label": "125mm x 125mm x 75mm",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "YX-AT-1212-S",
+       "title": "125mm x 125mm x 75mm"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40401457512531:1",
+       "description": {
+        "html": "These semi-transparent plastic enclosures are handy for keeping electronics that need to live outside dry - great for nature cameras and greenhouse controllers 🍃 The tops of these boxes are made of clear polycarbonate (good for mounting a camera behind or for keeping an eye on screens or status indicators!) and the bottom halves are made from hardwearing ABS. They're IP66 rated which means they should stand up to dust, moisture and nasty weather (up to and including modest jets of water and 'heavy seas'), but they won't protect against total immersion. The tops of the small (65 x 95mm) and medium (125 x 125mm) boxes are secured with sturdy plastic screws (which can be operated with a large Philips screwdriver), while the large (220 x 170mm) box has a hinged lid that closes with clips. All the boxes have waterproof seals between the lid and the body of the box. If you need to route cables in or out of your waterproof enclosure, you could make a hole using a drill or dremel and install a waterproof cable gland! Notes Note that the lid of the medium (125 x 125mm) box will only seal properly if you have it the correct way round, make sure you have the nubbin in the base aligned with the indentation in the lid. The medium (125 x 125mm) and large (220 x 170mm) boxes have 2 x M4 threaded mounting points inside. Internal measurements (L x W x H, approx): Small - box: 88.6 x 58 x 35mm, lid: 83.8 x 53.8 x 11mm Medium - box: 117 x 117 x 55mm, lid: 114 x 114 x 17mm Large - box: 202 x 152.5 x 77mm, lid: 200 x 150.5 x 27mm Resources Dimensional drawings: Small / YX-AT-0609 Medium / YX-AT-1212-S Large / YX-AT-221711 Operating temperature: -20C to 70C"
+       },
+       "id": "gid://shopify/ProductVariant/40401457512531",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/WaterproofEnclosure_1of3.jpg?v=1668079598"
+        }
+       ],
+       "options": [
+        {
+         "label": "65mm x 95mm x 55mm",
+         "name": "Size"
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "YX-AT-0609",
+       "title": "65mm x 95mm x 55mm"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-16"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Smart home sensors, plugs, switches, lights and hubs from Sonoff, Innr and Home Assistant, with Zigbee, Wi-Fi and Matter options."
+       },
+       "handle": "smart-home",
+       "id": "gid://shopify/Collection/665836618107",
+       "title": "Smart Home"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "sonoff",
+       "id": "gid://shopify/Collection/667518239099",
+       "title": "Sonoff"
+      }
+     ],
+     "description": {
+      "html": "The Sonoff R2 Waterproof Enclosure is the ultimate solution for safeguarding your smart devices in humid, dusty, or other challenging environments. Made from high-quality polycarbonate material, this durable case offers superior protection against water splashes, dust, and impact, ensuring your devices stay safe and functional. Key Features Waterproof and Dustproof: Keep your devices dry and protected from water splashes, making it ideal for outdoor and humid spaces. Enhanced Durability: It is dust-proof, crush-resistant, and designed for a long service life, ensuring reliable performance in tough environments. Flexible Compatibility: Fits most Sonoff smart devices*, offering a convenient and functional housing. Durable and Stylish: A robust design that complements your devices and ensures lasting performance. Whether you're automating outdoor lighting, garden equipment, or other smart home devices, the Sonoff R2 Waterproof Enclosure provides the perfect blend of protection, space, and durability. Specification Model: Waterproof box R2 Material: PVC V0 Colour: Transparent tawny Dimensions: 152.5 x 100 x 48mm Includes 5x screws, 3x screw anchors and EVA tape Compatible with: TH Elite/Origin POW Elite/Origin BASIC Series NSPanel Series TX Series M5 Series"
+     },
+     "gift_card": false,
+     "handle": "sonoff-r2-waterproof-enclosure",
+     "id": "gid://shopify/Product/14882581414267",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Waterproof_1600_01.jpg?v=1736239023"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_uksmarthome",
+      "Enclosures",
+      "Smart Home"
+     ],
+     "title": "Sonoff R2 Waterproof Enclosure",
+     "url": "https://shop.pimoroni.com/en-us/products/sonoff-r2-waterproof-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54931433783675:1",
+       "description": {
+        "html": "The Sonoff R2 Waterproof Enclosure is the ultimate solution for safeguarding your smart devices in humid, dusty, or other challenging environments. Made from high-quality polycarbonate material, this durable case offers superior protection against water splashes, dust, and impact, ensuring your devices stay safe and functional. Key Features Waterproof and Dustproof: Keep your devices dry and protected from water splashes, making it ideal for outdoor and humid spaces. Enhanced Durability: It is dust-proof, crush-resistant, and designed for a long service life, ensuring reliable performance in tough environments. Flexible Compatibility: Fits most Sonoff smart devices*, offering a convenient and functional housing. Durable and Stylish: A robust design that complements your devices and ensures lasting performance. Whether you're automating outdoor lighting, garden equipment, or other smart home devices, the Sonoff R2 Waterproof Enclosure provides the perfect blend of protection, space, and durability. Specification Model: Waterproof box R2 Material: PVC V0 Colour: Transparent tawny Dimensions: 152.5 x 100 x 48mm Includes 5x screws, 3x screw anchors and EVA tape Compatible with: TH Elite/Origin POW Elite/Origin BASIC Series NSPanel Series TX Series M5 Series"
+       },
+       "id": "gid://shopify/ProductVariant/54931433783675",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Waterproof_1600_01.jpg?v=1736239023"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waterproof-Box-R2",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Adafruit Feather boards share one shape and pinout, so you can pick the processor and wireless you need, with FeatherWings to extend them."
+       },
+       "handle": "feather",
+       "id": "gid://shopify/Collection/408444170",
+       "title": "Adafruit Feather"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      }
+     ],
+     "description": {
+      "html": "Here is a cute and minimal enclosure for your Adafruit Feather RP2350 with HSTX Port (or the version with 8MB of PSRAM) to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripherals. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Adafruit Feather RP2350 with HSTX Port is sold separately. Technical Details 3D Render 3mf Bottom 3D Rendering Top 3mf"
+     },
+     "gift_card": false,
+     "handle": "enclosure-for-the-adafruit-feather-rp2350-with-hstx",
+     "id": "gid://shopify/Product/15341114589563",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6305-03.jpg?v=1770821395"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Feather"
+     ],
+     "title": "Enclosure for the Adafruit Feather RP2350 with HSTX",
+     "url": "https://shop.pimoroni.com/en-us/products/enclosure-for-the-adafruit-feather-rp2350-with-hstx",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56080512418171:1",
+       "description": {
+        "html": "Here is a cute and minimal enclosure for your Adafruit Feather RP2350 with HSTX Port (or the version with 8MB of PSRAM) to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripherals. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Adafruit Feather RP2350 with HSTX Port is sold separately. Technical Details 3D Render 3mf Bottom 3D Rendering Top 3mf"
+       },
+       "id": "gid://shopify/ProductVariant/56080512418171",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6305-03.jpg?v=1770821395"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6305",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Addressable RGB LED strip, wire and micro strip for lighting and animation, in NeoPixel and DotStar types, with the boards that drive them."
+       },
+       "handle": "flexible-rgb-led-strips",
+       "id": "gid://shopify/Collection/153243156563",
+       "title": "LED Strips"
+      }
+     ],
+     "description": {
+      "html": "A cute and minimal enclosure for your Adafruit TPS61169 Constant Current Boost Converter for LEDs to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Adafruit TPS61169 Constant Current Boost Converter for LEDs only. Technical Details 3D Case Files.zip"
+     },
+     "gift_card": false,
+     "handle": "snap-on-enclosure-for-adafruit-tps61169-breakout",
+     "id": "gid://shopify/Product/15310643364219",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6402-02.jpg?v=1765383674"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 300,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 300,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Filaments",
+      "LEDs"
+     ],
+     "title": "Snap-on Enclosure for Adafruit TPS61169 Breakout",
+     "url": "https://shop.pimoroni.com/en-us/products/snap-on-enclosure-for-adafruit-tps61169-breakout",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55969516355963:1",
+       "description": {
+        "html": "A cute and minimal enclosure for your Adafruit TPS61169 Constant Current Boost Converter for LEDs to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Adafruit TPS61169 Constant Current Boost Converter for LEDs only. Technical Details 3D Case Files.zip"
+       },
+       "id": "gid://shopify/ProductVariant/55969516355963",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6402-02.jpg?v=1765383674"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6402",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Addressable RGB LED strip, wire and micro strip for lighting and animation, in NeoPixel and DotStar types, with the boards that drive them."
+       },
+       "handle": "flexible-rgb-led-strips",
+       "id": "gid://shopify/Collection/153243156563",
+       "title": "LED Strips"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "A cute and minimal enclosure for your Adafruit Sparkle Motion board to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Adafruit Sparkle Motion - All-In-One WLED and xLights Board. It does not fit the smaller Sparkle Motion Mini board. Technical Details 3D Case Files Learn Butterfly Bench with Edge Lit Acrylic Transform your backyard or festival camp See all guides"
+     },
+     "gift_card": false,
+     "handle": "snap-on-enclosure-for-adafruit-sparkle-motion",
+     "id": "gid://shopify/Product/15310568063355",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6301-03.jpg?v=1765376897"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "LED Strip",
+      "Lighting",
+      "Qw/ST",
+      "Wireless"
+     ],
+     "title": "Snap-on Enclosure for Adafruit Sparkle Motion",
+     "url": "https://shop.pimoroni.com/en-us/products/snap-on-enclosure-for-adafruit-sparkle-motion",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55969319158139:1",
+       "description": {
+        "html": "A cute and minimal enclosure for your Adafruit Sparkle Motion board to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Adafruit Sparkle Motion - All-In-One WLED and xLights Board. It does not fit the smaller Sparkle Motion Mini board. Technical Details 3D Case Files Learn Butterfly Bench with Edge Lit Acrylic Transform your backyard or festival camp See all guides"
+       },
+       "id": "gid://shopify/ProductVariant/55969319158139",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6301-03.jpg?v=1765376897"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6301",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Addressable RGB LED strip, wire and micro strip for lighting and animation, in NeoPixel and DotStar types, with the boards that drive them."
+       },
+       "handle": "flexible-rgb-led-strips",
+       "id": "gid://shopify/Collection/153243156563",
+       "title": "LED Strips"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "A cute and minimal enclosure for your Mini Sparkle Motion board to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Mini Sparkle Motion - WLED-friendly ESP32 NeoPixel LED Driver only*. It does not fit the larger Sparkle Motion boards. Technical Details 3D Case Files Notes * Note that the lid of this enclosure won't fit if you have a terminal block attached to your Mini Sparkle Motion board, though it is possible to cut a hole for the terminal block using a Dremel or similar."
+     },
+     "gift_card": false,
+     "handle": "snap-on-enclosure-for-adafruit-mini-sparkle-motion",
+     "id": "gid://shopify/Product/15310577533307",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6299-03.jpg?v=1765377772"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "LED Strip",
+      "Lighting",
+      "Qw/ST",
+      "Wireless"
+     ],
+     "title": "Snap-on Enclosure for Adafruit Mini Sparkle Motion",
+     "url": "https://shop.pimoroni.com/en-us/products/snap-on-enclosure-for-adafruit-mini-sparkle-motion",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55969345503611:1",
+       "description": {
+        "html": "A cute and minimal enclosure for your Mini Sparkle Motion board to keep it safe during use and transport. This case has been custom-designed and 3D printed to accommodate all the peripheries. No screws or glue are required; simply snap the board into the bottom piece and assemble the top piece. Ear-mounts allow for quick attachment to any surface. It's made of translucent milky white plastic with an SLA process, so there are no lines or blobbiness to the print. No boards, cables, or accessories are included. Designed for the Mini Sparkle Motion - WLED-friendly ESP32 NeoPixel LED Driver only*. It does not fit the larger Sparkle Motion boards. Technical Details 3D Case Files Notes * Note that the lid of this enclosure won't fit if you have a terminal block attached to your Mini Sparkle Motion board, though it is possible to cut a hole for the terminal block using a Dremel or similar."
+       },
+       "id": "gid://shopify/ProductVariant/55969345503611",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/6299-03.jpg?v=1765377772"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA6299",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+     },
+     "gift_card": false,
+     "handle": "argon-one-v5-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/14893585826171",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_A_713x_1046d685-0530-4626-9561-d50f13882114.webp?v=1737460050"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "Case Only"
+        },
+        {
+         "label": "With M.2 NVMe Slot"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Raspberry Pi"
+     ],
+     "title": "Argon ONE V5 Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/argon-one-v5-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54967045063035:1",
+       "description": {
+        "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+       },
+       "id": "gid://shopify/ProductVariant/54967045063035",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_A_713x_1046d685-0530-4626-9561-d50f13882114.webp?v=1737460050"
+        }
+       ],
+       "options": [
+        {
+         "label": "Case Only",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 3800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-ONE-V5",
+       "title": "Case Only"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54967045095803:1",
+       "description": {
+        "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+       },
+       "id": "gid://shopify/ProductVariant/54967045095803",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_M.2NVMePCIeboard_713x_c59a5049-fba3-4267-a336-a0f0622d78c9.webp?v=1737462885"
+        }
+       ],
+       "options": [
+        {
+         "label": "With M.2 NVMe Slot",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 5200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-V5-NVME-S",
+       "title": "With M.2 NVMe Slot"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "A sleek, folded aluminium case that will accommodate a Raspberry Pi 5 plus an NVMe Base or NVMe Base Duo. This anodised aluminium case can be used to keep your hardworking Raspberry Pi 5 setup safe and protected whilst it goes about its important day to day business, be it a media server, Home Assistant box or desktop computer. It will work with NVMe Base or NVMe Base Duo and there's space to add an Active Cooler to make sure your Pi 5 stays nice and cool. There's also plenty of air vents to ensure that your solid state storage stays well ventilated and a power button so you can turn your Pi on and off from the outside of the case. Raspberry Pi 5, NVMe Base and accessories are sold separately Features Anodised aluminium top and bottom case Fixings included to mount NVMe Base or NVMe Base Duo External power button Rubber feet Slot for passing through a camera or display cable. Compatible with Raspberry Pi 5 Getting Started Learn: Assembling the NVMe Base Case Notes The case is made of metal and hence can be conductive, so be careful not to short any components on it. You should ensure that your Pi is powered off and unplugged when fitting the case. Note that the SD card slot is only accessible by removing the lid of the case. Dimensions: 95x60x37mm"
+     },
+     "gift_card": false,
+     "handle": "nvme-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/15041570210171",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvme-case-4.jpg?v=1744730217"
+      }
+     ],
+     "options": [
+      {
+       "name": "Colour",
+       "values": [
+        {
+         "label": "Graphite Black"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_customs",
+      "Cases",
+      "NVMe",
+      "Raspberry Pi"
+     ],
+     "title": "NVMe Base Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/nvme-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55335126663547:1",
+       "description": {
+        "html": "A sleek, folded aluminium case that will accommodate a Raspberry Pi 5 plus an NVMe Base or NVMe Base Duo. This anodised aluminium case can be used to keep your hardworking Raspberry Pi 5 setup safe and protected whilst it goes about its important day to day business, be it a media server, Home Assistant box or desktop computer. It will work with NVMe Base or NVMe Base Duo and there's space to add an Active Cooler to make sure your Pi 5 stays nice and cool. There's also plenty of air vents to ensure that your solid state storage stays well ventilated and a power button so you can turn your Pi on and off from the outside of the case. Raspberry Pi 5, NVMe Base and accessories are sold separately Features Anodised aluminium top and bottom case Fixings included to mount NVMe Base or NVMe Base Duo External power button Rubber feet Slot for passing through a camera or display cable. Compatible with Raspberry Pi 5 Getting Started Learn: Assembling the NVMe Base Case Notes The case is made of metal and hence can be conductive, so be careful not to short any components on it. You should ensure that your Pi is powered off and unplugged when fitting the case. Note that the SD card slot is only accessible by removing the lid of the case. Dimensions: 95x60x37mm"
+       },
+       "id": "gid://shopify/ProductVariant/55335126663547",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvme-case-4.jpg?v=1744730217"
+        }
+       ],
+       "options": [
+        {
+         "label": "Graphite Black",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM771",
+       "title": "Graphite Black"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "The official Raspberry Pi Case for Raspberry Pi 5 is a clip-together four-part enclosure with an active cooling fan. It keeps your Raspberry Pi 5 at a comfortable operating temperature even under heavy load. It includes an integrated variable-speed fan that's as clever as it is cool, which plugs into the dedicated connector on your Pi 5 board.The official case is now available in two colour ways: Raspberry Pi's signature red-and-white livery and a super swish black and grey option. Features Integrated, temperature-controlled cooling fan that connects to the fan connector on Raspberry Pi 5 2mm × 17mm × 4mm heatsink with self-adhesive pad improves heat transfer from the processor Easily removable lid exposes fan and breakout slot for cables and GPIO Integrated mounting features allow for case stacking HATs can be mounted to the enclosure with stand-offs and GPIO header extenders(not included) Four silicone feet for the case are included Specification Input voltage: 5V DC supplied via four-pin fan header on Raspberry Pi 5 Fan speed control: Pulse width modulation control with tachometer Maximum airflow: 2.79 CFM Maximum fan speed: 8000 RPM +/- 15% Case material: ABS (base, frame, lid) and PC (fan assembly) Assembly instructions Unpack the case from the box and remove the accessories envelope. Remove the heatsink from the envelope inside the case. Remove the heatsink backing and stick the heatsink to the raised section of the CPU on Raspberry Pi 5. Push down on the heatsink to achieve good adhesion of the heatsink to the CPU. Remove the four silicone feet from the accessories envelope and stick these to the underside of the base of the case in the lozenge-shaped areas provided. Unclip the white frame containing the fan assembly from the red base, and insert your Raspberry Pi 5 into the base. The board fits under the plastic tab at the microSD card end. Make sure that the board sits flat in the base and that the connectors are aligned to the holes. Lay the white frame containing the fan assembly upside-down next to the red base, and connect the fan cable to the four-pin connector labelled ‘FAN’ on Raspberry Pi 5. Take care to ensure that the cable’s connector is the correct way round when inserting it. Make sure that the fan cable is fully connected. Clip the white frame containing the fan assembly back onto the red base to complete the assembly. Now you can connect the necessary cables to your Raspberry Pi and turn on the power. The button on the case can be used to power up or power down your Raspberry Pi. Optionally, the lid can be unclipped to reveal the fan, mounting points, and cable breakout slots, such as GPIO. Holes for optional HAT and case mounting and for case stacking are provided in the transparent part of the fan assembly and in the underside of the base. Suitable stand-offs and GPIO header extenders (not included) are required to mount HATs on top of the case. The fan assembly with its transparent surround can be unclipped from the white frame if you wish to use the case without the fan. Resources Product brief Notes Please note that the Official Case is not compatible with NVMe Base or NVMe Base Duo."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-5-official-case",
+     "id": "gid://shopify/Product/7058820202579",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Casewhite_onwhite_square.png?v=1695740265"
+      }
+     ],
+     "options": [
+      {
+       "name": "Colour",
+       "values": [
+        {
+         "label": "Red/White"
+        },
+        {
+         "label": "Black/Grey"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Raspberry Pi"
+     ],
+     "title": "Raspberry Pi 5 Official Case with Fan",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-5-official-case",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41044517191763:1",
+       "description": {
+        "html": "The official Raspberry Pi Case for Raspberry Pi 5 is a clip-together four-part enclosure with an active cooling fan. It keeps your Raspberry Pi 5 at a comfortable operating temperature even under heavy load. It includes an integrated variable-speed fan that's as clever as it is cool, which plugs into the dedicated connector on your Pi 5 board.The official case is now available in two colour ways: Raspberry Pi's signature red-and-white livery and a super swish black and grey option. Features Integrated, temperature-controlled cooling fan that connects to the fan connector on Raspberry Pi 5 2mm × 17mm × 4mm heatsink with self-adhesive pad improves heat transfer from the processor Easily removable lid exposes fan and breakout slot for cables and GPIO Integrated mounting features allow for case stacking HATs can be mounted to the enclosure with stand-offs and GPIO header extenders(not included) Four silicone feet for the case are included Specification Input voltage: 5V DC supplied via four-pin fan header on Raspberry Pi 5 Fan speed control: Pulse width modulation control with tachometer Maximum airflow: 2.79 CFM Maximum fan speed: 8000 RPM +/- 15% Case material: ABS (base, frame, lid) and PC (fan assembly) Assembly instructions Unpack the case from the box and remove the accessories envelope. Remove the heatsink from the envelope inside the case. Remove the heatsink backing and stick the heatsink to the raised section of the CPU on Raspberry Pi 5. Push down on the heatsink to achieve good adhesion of the heatsink to the CPU. Remove the four silicone feet from the accessories envelope and stick these to the underside of the base of the case in the lozenge-shaped areas provided. Unclip the white frame containing the fan assembly from the red base, and insert your Raspberry Pi 5 into the base. The board fits under the plastic tab at the microSD card end. Make sure that the board sits flat in the base and that the connectors are aligned to the holes. Lay the white frame containing the fan assembly upside-down next to the red base, and connect the fan cable to the four-pin connector labelled ‘FAN’ on Raspberry Pi 5. Take care to ensure that the cable’s connector is the correct way round when inserting it. Make sure that the fan cable is fully connected. Clip the white frame containing the fan assembly back onto the red base to complete the assembly. Now you can connect the necessary cables to your Raspberry Pi and turn on the power. The button on the case can be used to power up or power down your Raspberry Pi. Optionally, the lid can be unclipped to reveal the fan, mounting points, and cable breakout slots, such as GPIO. Holes for optional HAT and case mounting and for case stacking are provided in the transparent part of the fan assembly and in the underside of the base. Suitable stand-offs and GPIO header extenders (not included) are required to mount HATs on top of the case. The fan assembly with its transparent surround can be unclipped from the white frame if you wish to use the case without the fan. Resources Product brief Notes Please note that the Official Case is not compatible with NVMe Base or NVMe Base Duo."
+       },
+       "id": "gid://shopify/ProductVariant/41044517191763",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Casewhite_onwhite_square.png?v=1695740265"
+        }
+       ],
+       "options": [
+        {
+         "label": "Red/White",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1159",
+       "title": "Red/White"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41120970473555:1",
+       "description": {
+        "html": "The official Raspberry Pi Case for Raspberry Pi 5 is a clip-together four-part enclosure with an active cooling fan. It keeps your Raspberry Pi 5 at a comfortable operating temperature even under heavy load. It includes an integrated variable-speed fan that's as clever as it is cool, which plugs into the dedicated connector on your Pi 5 board.The official case is now available in two colour ways: Raspberry Pi's signature red-and-white livery and a super swish black and grey option. Features Integrated, temperature-controlled cooling fan that connects to the fan connector on Raspberry Pi 5 2mm × 17mm × 4mm heatsink with self-adhesive pad improves heat transfer from the processor Easily removable lid exposes fan and breakout slot for cables and GPIO Integrated mounting features allow for case stacking HATs can be mounted to the enclosure with stand-offs and GPIO header extenders(not included) Four silicone feet for the case are included Specification Input voltage: 5V DC supplied via four-pin fan header on Raspberry Pi 5 Fan speed control: Pulse width modulation control with tachometer Maximum airflow: 2.79 CFM Maximum fan speed: 8000 RPM +/- 15% Case material: ABS (base, frame, lid) and PC (fan assembly) Assembly instructions Unpack the case from the box and remove the accessories envelope. Remove the heatsink from the envelope inside the case. Remove the heatsink backing and stick the heatsink to the raised section of the CPU on Raspberry Pi 5. Push down on the heatsink to achieve good adhesion of the heatsink to the CPU. Remove the four silicone feet from the accessories envelope and stick these to the underside of the base of the case in the lozenge-shaped areas provided. Unclip the white frame containing the fan assembly from the red base, and insert your Raspberry Pi 5 into the base. The board fits under the plastic tab at the microSD card end. Make sure that the board sits flat in the base and that the connectors are aligned to the holes. Lay the white frame containing the fan assembly upside-down next to the red base, and connect the fan cable to the four-pin connector labelled ‘FAN’ on Raspberry Pi 5. Take care to ensure that the cable’s connector is the correct way round when inserting it. Make sure that the fan cable is fully connected. Clip the white frame containing the fan assembly back onto the red base to complete the assembly. Now you can connect the necessary cables to your Raspberry Pi and turn on the power. The button on the case can be used to power up or power down your Raspberry Pi. Optionally, the lid can be unclipped to reveal the fan, mounting points, and cable breakout slots, such as GPIO. Holes for optional HAT and case mounting and for case stacking are provided in the transparent part of the fan assembly and in the underside of the base. Suitable stand-offs and GPIO header extenders (not included) are required to mount HATs on top of the case. The fan assembly with its transparent surround can be unclipped from the white frame if you wish to use the case without the fan. Resources Product brief Notes Please note that the Official Case is not compatible with NVMe Base or NVMe Base Duo."
+       },
+       "id": "gid://shopify/ProductVariant/41120970473555",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/Caseblack-square.jpg?v=1704991713"
+        }
+       ],
+       "options": [
+        {
+         "label": "Black/Grey",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1160",
+       "title": "Black/Grey"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/ha-11-16"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Smart home sensors, plugs, switches, lights and hubs from Sonoff, Innr and Home Assistant, with Zigbee, Wi-Fi and Matter options."
+       },
+       "handle": "smart-home",
+       "id": "gid://shopify/Collection/665836618107",
+       "title": "Smart Home"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "sonoff",
+       "id": "gid://shopify/Collection/667518239099",
+       "title": "Sonoff"
+      }
+     ],
+     "description": {
+      "html": "Turn your Sonoff smart switch or relay into a handy wall switch. These neat, low-profile enclosures can be used to convert Sonoff's tiny Matter and Zigbee relays into proper wall switches. They're slim enough to fit standard back boxes (even shallow ones), with a clip-on design that makes installation quick and fuss-free. Features Compatible with standard 86-type and EU round junction boxes Ultra-slim design (under 23mm thick) - ideal for tight spaces Clip-on construction for easier, quicker installation Durable PC material - fire-resistant and built to last Micro-arc button for a more natural, responsive press Note that this product requires mains wiring knowledge. Please ensure you have the skills and information to install it safely or consult a qualified electrician. Compatibility E1GS (neutral required): for Sonoff MINIR4, MINIR4M, ZBMINIR2 E1GSL (no neutral required): for Sonoff ZBMINIL2 Resources Technical details, troubleshooting or setup tips? Access the E1GS/E1GSL knowledge center for all the info you need."
+     },
+     "gift_card": false,
+     "handle": "sonoff-fusion-series-1-gang-wall-switch-enclosure",
+     "id": "gid://shopify/Product/15363710714235",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/E1GS_6f65f4af-11e0-4384-bb40-814e5398409e.png?v=1774628090"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "Neutral Required"
+        },
+        {
+         "label": "No Neutral Required"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_uksmarthome",
+      "Smart Home"
+     ],
+     "title": "Sonoff Fusion Series 1-Gang Wall Switch Enclosure",
+     "url": "https://shop.pimoroni.com/en-us/products/sonoff-fusion-series-1-gang-wall-switch-enclosure",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56178113151355:1",
+       "description": {
+        "html": "Turn your Sonoff smart switch or relay into a handy wall switch. These neat, low-profile enclosures can be used to convert Sonoff's tiny Matter and Zigbee relays into proper wall switches. They're slim enough to fit standard back boxes (even shallow ones), with a clip-on design that makes installation quick and fuss-free. Features Compatible with standard 86-type and EU round junction boxes Ultra-slim design (under 23mm thick) - ideal for tight spaces Clip-on construction for easier, quicker installation Durable PC material - fire-resistant and built to last Micro-arc button for a more natural, responsive press Note that this product requires mains wiring knowledge. Please ensure you have the skills and information to install it safely or consult a qualified electrician. Compatibility E1GS (neutral required): for Sonoff MINIR4, MINIR4M, ZBMINIR2 E1GSL (no neutral required): for Sonoff ZBMINIL2 Resources Technical details, troubleshooting or setup tips? Access the E1GS/E1GSL knowledge center for all the info you need."
+       },
+       "id": "gid://shopify/ProductVariant/56178113151355",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/E1GS-E1GSL-7A.png?v=1774629618"
+        }
+       ],
+       "options": [
+        {
+         "label": "Neutral Required",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "E1GS",
+       "title": "Neutral Required"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56178113184123:1",
+       "description": {
+        "html": "Turn your Sonoff smart switch or relay into a handy wall switch. These neat, low-profile enclosures can be used to convert Sonoff's tiny Matter and Zigbee relays into proper wall switches. They're slim enough to fit standard back boxes (even shallow ones), with a clip-on design that makes installation quick and fuss-free. Features Compatible with standard 86-type and EU round junction boxes Ultra-slim design (under 23mm thick) - ideal for tight spaces Clip-on construction for easier, quicker installation Durable PC material - fire-resistant and built to last Micro-arc button for a more natural, responsive press Note that this product requires mains wiring knowledge. Please ensure you have the skills and information to install it safely or consult a qualified electrician. Compatibility E1GS (neutral required): for Sonoff MINIR4, MINIR4M, ZBMINIR2 E1GSL (no neutral required): for Sonoff ZBMINIL2 Resources Technical details, troubleshooting or setup tips? Access the E1GS/E1GSL knowledge center for all the info you need."
+       },
+       "id": "gid://shopify/ProductVariant/56178113184123",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/E1GS-E1GSL-7B.png?v=1774629658"
+        }
+       ],
+       "options": [
+        {
+         "label": "No Neutral Required",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "E1GSL",
+       "title": "No Neutral Required"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

@@ -1,0 +1,1419 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "DESPI-C02 e-paper adapter"
+  }
+ },
+ "key": "64065804a18e47a4f9ff8c5eedc5ac6b2c50593d15986940f6ae10f5f481b683",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:31-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "accessory-programmer-adapter",
+       "id": "gid://shopify/Collection/651756732740",
+       "title": "Accessory - Programmer / Adapter"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "1100-595-1090-3085-10080-50070",
+       "id": "gid://shopify/Collection/658922373444",
+       "title": "1(100%)-5(95%)-10(90%)-30(85%)-100(80%)-500(70%)"
+      }
+     ],
+     "description": {
+      "html": "GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) DESPI-C02 Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note See selected SKU images and documentation for physical dimensions Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and See selected SKU images and documentation for physical dimensions. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+     },
+     "gift_card": false,
+     "handle": "24-pin-serial-e-paper",
+     "id": "gid://shopify/Product/15458650390852",
+     "list_price_range": {
+      "max": {
+       "amount": 829,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 829,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "24 Pin Serial E-Paper Screen-01",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/24_Pin_Serial_E-Paper_Screen-01.jpg?v=1770175230"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1000,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Epaper"
+     ],
+     "title": "GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter",
+     "url": "https://openelab.com/products/24-pin-serial-e-paper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56356522950980:1",
+       "description": {
+        "html": "GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) DESPI-C02 Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note See selected SKU images and documentation for physical dimensions Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and See selected SKU images and documentation for physical dimensions. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay DESPI-C02 24-Pin Serial E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+       },
+       "id": "gid://shopify/ProductVariant/56356522950980",
+       "list_price": {
+        "amount": 829,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/24_Pin_Serial_E-Paper_Screen-01.jpg?v=1770175230"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DESPI-C02",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) DESPI-C102 Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note 1.02 inch Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and 1.02 inch. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+     },
+     "gift_card": false,
+     "handle": "goodisplay-1-02-inch-18pin",
+     "id": "gid://shopify/Product/15458650095940",
+     "list_price_range": {
+      "max": {
+       "amount": 829,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 829,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "GooDisplay 1.02 inch 18Pin E-Paper HAT Adapter-01",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/GooDisplay_1.02_inch_18Pin_E-Paper_HAT_Adapter-01.jpg?v=1770175100"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 829,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 829,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Epaper"
+     ],
+     "title": "GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter",
+     "url": "https://openelab.com/products/goodisplay-1-02-inch-18pin",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56356517544260:1",
+       "description": {
+        "html": "GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) DESPI-C102 Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note 1.02 inch Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and 1.02 inch. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay DESPI-C102 1.02 inch E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+       },
+       "id": "gid://shopify/ProductVariant/56356517544260",
+       "list_price": {
+        "amount": 829,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/GooDisplay_1.02_inch_18Pin_E-Paper_HAT_Adapter-01.jpg?v=1770175100"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 829,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DESPI-C102",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The DESPI‑C02‑CV0097 is a professional HAT adapter board designed for 0.97‑inch (18‑pin) ePaper displays. It converts standard 24‑pin HAT interfaces to 18‑pin connectors, ensuring seamless compatibility with GooDisplay’s GDEM0097T61 (monochrome) and GDEM0097F51 (4‑color) ePaper modules. With accurate pin mapping, plug‑and‑play design, and built‑in DIP switch for driver IC compatibility, it simplifies development and debugging for embedded and IoT display projects. Key Features Interface conversion: 24‑pin to 18‑pin for 0.97‑inch ePaper displays Supports multiple driver ICs (UC, SSD series) via DIP switch adjustment Plug & Play design for mainstream development boards (STM32, ESP32, ESP8266, Arduino UNO) Accurate pin mapping without signal or function loss Debugging support: power measurement, voltage test points, status detection Compatible with monochrome and 4‑color ePaper modules Technical Specifications Category Details Model DESPI‑C02‑CV0097 Supported Displays 0.97‑inch 18‑pin ePaper (GDEM0097T61, GDEM0097F51) Interface 24‑pin HAT to 18‑pin adapter Pin Functions BUSY, RES, D/C, CS, SCK, SDI, GND, 3.3V Compatibility STM32, ESP32, ESP8266, Arduino UNO Debugging Voltage test points, power measurement Dimensions Compact HAT adapter board Application Scenarios Embedded and IoT display interface development Rapid prototyping of ePaper modules Driver circuit design and performance tuning Educational projects with ePaper displays Low‑power system display integration Packing List 1 × DESPI‑C02‑CV0097 Adapter Board FAQ 1. Which displays are supported? It supports 0.97‑inch 18‑pin ePaper modules, including GDEM0097T61 (monochrome) and GDEM0097F51 (4‑color). 2. Can it be used with Arduino or ESP32? Yes. It is directly compatible with Arduino UNO, STM32, ESP32, and ESP8266 platforms. 3. Does it require complex wiring? No. It is a plug‑and‑play adapter board, eliminating the need for manual wiring. 4. How does it support debugging? It provides voltage test points, power measurement, and status detection for circuit validation. 5. What driver ICs are supported? It is compatible with UC and SSD series driver ICs, selectable via DIP switch."
+     },
+     "gift_card": false,
+     "handle": "goodisplay-0-97-inch-epaper",
+     "id": "gid://shopify/Product/15509937946948",
+     "list_price_range": {
+      "max": {
+       "amount": 1279,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1279,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_39_O1CN0120KzSJ2MfeL27w1LV__151859855.webp?v=1774606637"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1279,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1279,
+       "currency": "USD"
+      }
+     },
+     "title": "GooDisplay 0.97 inch ePaper HAT Adapter Board, DESPI-C02-CV0097",
+     "url": "https://openelab.com/products/goodisplay-0-97-inch-epaper",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56569916850500:1",
+       "description": {
+        "html": "The DESPI‑C02‑CV0097 is a professional HAT adapter board designed for 0.97‑inch (18‑pin) ePaper displays. It converts standard 24‑pin HAT interfaces to 18‑pin connectors, ensuring seamless compatibility with GooDisplay’s GDEM0097T61 (monochrome) and GDEM0097F51 (4‑color) ePaper modules. With accurate pin mapping, plug‑and‑play design, and built‑in DIP switch for driver IC compatibility, it simplifies development and debugging for embedded and IoT display projects. Key Features Interface conversion: 24‑pin to 18‑pin for 0.97‑inch ePaper displays Supports multiple driver ICs (UC, SSD series) via DIP switch adjustment Plug & Play design for mainstream development boards (STM32, ESP32, ESP8266, Arduino UNO) Accurate pin mapping without signal or function loss Debugging support: power measurement, voltage test points, status detection Compatible with monochrome and 4‑color ePaper modules Technical Specifications Category Details Model DESPI‑C02‑CV0097 Supported Displays 0.97‑inch 18‑pin ePaper (GDEM0097T61, GDEM0097F51) Interface 24‑pin HAT to 18‑pin adapter Pin Functions BUSY, RES, D/C, CS, SCK, SDI, GND, 3.3V Compatibility STM32, ESP32, ESP8266, Arduino UNO Debugging Voltage test points, power measurement Dimensions Compact HAT adapter board Application Scenarios Embedded and IoT display interface development Rapid prototyping of ePaper modules Driver circuit design and performance tuning Educational projects with ePaper displays Low‑power system display integration Packing List 1 × DESPI‑C02‑CV0097 Adapter Board FAQ 1. Which displays are supported? It supports 0.97‑inch 18‑pin ePaper modules, including GDEM0097T61 (monochrome) and GDEM0097F51 (4‑color). 2. Can it be used with Arduino or ESP32? Yes. It is directly compatible with Arduino UNO, STM32, ESP32, and ESP8266 platforms. 3. Does it require complex wiring? No. It is a plug‑and‑play adapter board, eliminating the need for manual wiring. 4. How does it support debugging? It provides voltage test points, power measurement, and status detection for circuit validation. 5. What driver ICs are supported? It is compatible with UC and SSD series driver ICs, selectable via DIP switch."
+       },
+       "id": "gid://shopify/ProductVariant/56569916850500",
+       "list_price": {
+        "amount": 1279,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/imgi_39_O1CN0120KzSJ2MfeL27w1LV__151859855.webp?v=1774606637"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1279,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DESPI-C02-CV0097",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "accessory-programmer-adapter",
+       "id": "gid://shopify/Collection/651756732740",
+       "title": "Accessory - Programmer / Adapter"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Basic Function Driver circuit: Peripheral Boost Circuit Supporting screen: 5.79 inch Matching motherboard: STM32、ESP32-L、ESP8266-L、Arduino UNO-L Basic Parameters Outline size: 41x22mm Communication Interface: SPI Screen Interface: 24PIN 0.5mm Key Components: SI1308EDL, MBR0530 DIP Switch: None Operating Voltage: 3.3V Operating Temperature: -20~70℃ Auxiliary Functions Boost Detection: Reserved boost detection points for convenient fault diagnosis. Design Reference: Initial design reference for user product design."
+     },
+     "gift_card": false,
+     "handle": "79-inch-e-paper-hat",
+     "id": "gid://shopify/Product/15461443502404",
+     "list_price_range": {
+      "max": {
+       "amount": 839,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 839,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "5.79-inch E-Paper HAT Adapter Board-01",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg?v=1770343786"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 839,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 839,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Epaper"
+     ],
+     "title": "5.79-inch E-Paper HAT Adapter Board DESPI-C579",
+     "url": "https://openelab.com/products/79-inch-e-paper-hat",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56364467552580:1",
+       "description": {
+        "html": "Basic Function Driver circuit: Peripheral Boost Circuit Supporting screen: 5.79 inch Matching motherboard: STM32、ESP32-L、ESP8266-L、Arduino UNO-L Basic Parameters Outline size: 41x22mm Communication Interface: SPI Screen Interface: 24PIN 0.5mm Key Components: SI1308EDL, MBR0530 DIP Switch: None Operating Voltage: 3.3V Operating Temperature: -20~70℃ Auxiliary Functions Boost Detection: Reserved boost detection points for convenient fault diagnosis. Design Reference: Initial design reference for user product design."
+       },
+       "id": "gid://shopify/ProductVariant/56364467552580",
+       "list_price": {
+        "amount": 839,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5.79-inch_E-Paper_HAT_Adapter_Board-01.jpg?v=1770343786"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 839,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DESPI-C579",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "accessory-programmer-adapter",
+       "id": "gid://shopify/Collection/651756732740",
+       "title": "Accessory - Programmer / Adapter"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "Basic function Driver circuit: Peripheral Boost Circuit Supporting screen: 4 inch, 7.3 inch Basic parameters Outline size: 47x32mm Communication Interface: SPI Screen Interface: 50PIN 0.5mm Key Components: SI1308EDL, MBR0530 DIP Switch: None Operating Voltage: 3.3V Operating Temperature: -20~70℃ Auxiliary Functions Boost Detection: Reserved boost detection points for convenient fault diagnosis. Design Reference: Initial design reference for user product design."
+     },
+     "gift_card": false,
+     "handle": "7-3-inch-4-inch",
+     "id": "gid://shopify/Product/15460656775492",
+     "list_price_range": {
+      "max": {
+       "amount": 1119,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1119,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "7.3 inch & 4 inch E-Paper HAT Adapter Board-01",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.3_inch_4_inch_E-Paper_HAT_Adapter_Board-01.jpg?v=1770277873"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1119,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1119,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Epaper"
+     ],
+     "title": "7.3 inch & 4 inch E-Paper HAT Adapter Board",
+     "url": "https://openelab.com/products/7-3-inch-4-inch",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56361211265348:1",
+       "description": {
+        "html": "Basic function Driver circuit: Peripheral Boost Circuit Supporting screen: 4 inch, 7.3 inch Basic parameters Outline size: 47x32mm Communication Interface: SPI Screen Interface: 50PIN 0.5mm Key Components: SI1308EDL, MBR0530 DIP Switch: None Operating Voltage: 3.3V Operating Temperature: -20~70℃ Auxiliary Functions Boost Detection: Reserved boost detection points for convenient fault diagnosis. Design Reference: Initial design reference for user product design."
+       },
+       "id": "gid://shopify/ProductVariant/56361211265348",
+       "list_price": {
+        "amount": 1119,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/7.3_inch_4_inch_E-Paper_HAT_Adapter_Board-01.jpg?v=1770277873"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1119,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DESPI-C73",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The STM32 series of 32-bit microcontrollers are based on the Cortex-M processor, which can support high-performance, real-time functionality, digital signal processing, and low-power, low-voltage operation. It also has a perfect integration and easy-to-use development. The product line with STM32 as its application is very extensive, mainly due to its industrial standard based core, a large number of tools and software support, making this series of chips an ideal choice for many products. GooDisplay has launched the following full series of development kits based on STM32, aiming to make it easier for users to learn how to drive electronic paper displays based on STM32, design related driving circuits, and understand product performance. If customers want to use touch screens and front lights, we have also configured relevant driver circuits on the driver board for their convenience."
+     },
+     "gift_card": false,
+     "handle": "stm32-e-paper-development-kits",
+     "id": "gid://shopify/Product/15458645147972",
+     "list_price_range": {
+      "max": {
+       "amount": 3069,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3069,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "STM32 E-Paper Development Kits-01",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/STM32_E-Paper_Development_Kits-01.jpg?v=1770173324"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3069,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3069,
+       "currency": "USD"
+      }
+     },
+     "title": "STM32 E-Paper Development Kits DESPI-M02L Series",
+     "url": "https://openelab.com/products/stm32-e-paper-development-kits",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56356480352580:1",
+       "description": {
+        "html": "The STM32 series of 32-bit microcontrollers are based on the Cortex-M processor, which can support high-performance, real-time functionality, digital signal processing, and low-power, low-voltage operation. It also has a perfect integration and easy-to-use development. The product line with STM32 as its application is very extensive, mainly due to its industrial standard based core, a large number of tools and software support, making this series of chips an ideal choice for many products. GooDisplay has launched the following full series of development kits based on STM32, aiming to make it easier for users to learn how to drive electronic paper displays based on STM32, design related driving circuits, and understand product performance. If customers want to use touch screens and front lights, we have also configured relevant driver circuits on the driver board for their convenience."
+       },
+       "id": "gid://shopify/ProductVariant/56356480352580",
+       "list_price": {
+        "amount": 3069,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/STM32_E-Paper_Development_Kits-01.jpg?v=1770173324"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3069,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "TB-EPAPERDEVB",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our extensive selection of accessories. We offer connectors, cables, enclosures, breakout boards, adapters, and mounting hardware, providing essential components for a smooth development process. Tailored to work with popular platforms like Arduino, Raspberry Pi, and ESP, our accessories facilitate easy integration, helping you create robust, professional-grade projects. With comprehensive documentation and community support, you’ll have all the resources needed to bring your innovative ideas to life."
+       },
+       "handle": "accessory",
+       "id": "gid://shopify/Collection/648243577156",
+       "title": "Accessory"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "accessory-programmer-adapter",
+       "id": "gid://shopify/Collection/651756732740",
+       "title": "Accessory - Programmer / Adapter"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) TB-EPAPERAB Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note 0.97 inch Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and 0.97 inch. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+     },
+     "gift_card": false,
+     "handle": "goodisplay-0-97-inch-18pin",
+     "id": "gid://shopify/Product/15458644820292",
+     "list_price_range": {
+      "max": {
+       "amount": 829,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 829,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "GooDisplay 0.97 inch 18Pin E-Paper",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/GooDisplay_0.97_inch_18Pin_E-Paper.jpg?v=1770173230"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 829,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 829,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Epaper"
+     ],
+     "title": "GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter",
+     "url": "https://openelab.com/products/goodisplay-0-97-inch-18pin",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56356478976324:1",
+       "description": {
+        "html": "GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter is a display or indicator module for microcontroller, sbc, or embedded display projects using the documented interface. This optimized description keeps the facts tied to the selected SKU, Shopify variant, product images, and available vendor or platform documentation instead of adding unsupported accessory claims. For ordering context and technical reference, review OpenELAB product page, Good Display official website, Good Display GitHub examples, Raspberry Pi documentation. Technical Specifications Brand / Series GooDisplay SKU(s) TB-EPAPERAB Product Type Display or indicator module Variant Options Single default variant Key Component / Function Selected SKU function: GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter Interface / Connection No specific signal interface is stated in the current title or source text Power / Electrical Note Use only the power range stated in the selected board or module documentation Size / Display / Capacity Note 0.97 inch Compatibility Context Microcontroller, SBC, or embedded display projects using the documented interface Confirmed Listing Details Key listing details include Selected SKU function: GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter, No specific signal interface is stated in the current title or source text, Use only the power range stated in the selected board or module documentation, and 0.97 inch. Documentation Boundary Verify voltage, pinout, host platform, library or driver needs, and selected SKU accessories against the linked documentation. Board Layout & Label Guide Active Display Area - Avoid pressure, bending, scratches, or fingerprints on the visible panel. Driver / Controller Side - Identify the controller IC, adapter board, or HAT before wiring. Signal Connector - Match SPI, I2C, FFC, pin header, or cable orientation before power-up. Voltage Pins - Use the documented logic and power voltage for the selected module. Mounting Points - Leave clearance around glass, flexible FPC, and edge connectors. Refresh / Viewing Notes - For e-paper, allow full refresh cycles and avoid unsupported partial-refresh usage. Packing List 1 x GooDisplay 0.97 inch 18-Pin E-Paper HAT Adapter FAQ Does this listing include every accessory shown in photos? No assumption should be made from photos alone. The supplied item follows the selected SKU, variant name, and current Shopify packing list. What should I verify before power-up? Check voltage, polarity, pinout, connector orientation, and host-platform compatibility. Where can I find project setup details? Use the linked GooDisplay or platform documentation for pin mapping, libraries, examples, or driver notes when the selected product requires them. Is it suitable for industrial production equipment? Treat it as a maker, lab, education, or development item unless the selected product documentation states the required certification."
+       },
+       "id": "gid://shopify/ProductVariant/56356478976324",
+       "list_price": {
+        "amount": 829,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/GooDisplay_0.97_inch_18Pin_E-Paper.jpg?v=1770173230"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 829,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "TB-EPAPERAB",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-display",
+       "id": "gid://shopify/Collection/658454970692",
+       "title": "Waveshare - Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-display-e-paper",
+       "id": "gid://shopify/Collection/661233369412",
+       "title": "Waveshare - Display - E-paper"
+      }
+     ],
+     "description": {
+      "html": "Details Universal e-Paper Driver HAT, supports most Waveshare SPI e-Paper raw panels (not all) Universal E-Paper Driver HAT Supports controller boards like Raspberry Pi/Jetson Nano/Arduino/STM32 can be used to drive most SPI interface e-Paper from Waveshare Features at a glance Standard Raspberry Pi 40PIN GPIO extension header, supports Raspberry Pi series boards, Jetson Nano SPI interface, for connecting with other controller boards like Raspberry/Arduino/Nucleo, etc. Onboard voltage translator, compatible with 3.3V/5V MCUs Comes with development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications operating voltage 3.3V/5V interface 3-wire SPI, 4-wire SPI outline dimensions 65.0 × 30.2mm Mounting hole size 3.0mm Comes with adapter board and FFC cable Expanding display interface via FFC cable, for easy connecting to the e-paper Compatible with multiple e-paper models and various motherboards Connecting with 5.83inch e-Paper Connecting with Raspberry Pi Zero and 5.83inch e-Paper (B) Connecting with Raspberry Pi Zero and 7.5inch e-Paper Connecting with Raspberry Pi 4B and 7.5inch e-Paper (B) for reference only, the Raspberry Pi boards and e-paper screens are NOT included Onboard SPI control interface for use with other controller boards like Raspberry Pi/Jetson Nano/STM32/Arduino VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output PWR Power on/off control Product Show for reference only, the e-paper screen is NOT included Outline dimensions"
+     },
+     "gift_card": false,
+     "handle": "waveshare-epaper-hat-display-13512",
+     "id": "gid://shopify/Product/15561813492036",
+     "list_price_range": {
+      "max": {
+       "amount": 1039,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1039,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare Universal e-Paper Raw Panel Driver HAT - image 1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-13512-01.webp?v=1779887695"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1039,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1039,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare Universal e-Paper Raw Panel Driver HAT",
+     "url": "https://openelab.com/products/waveshare-epaper-hat-display-13512",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56796005859652:1",
+       "description": {
+        "html": "Details Universal e-Paper Driver HAT, supports most Waveshare SPI e-Paper raw panels (not all) Universal E-Paper Driver HAT Supports controller boards like Raspberry Pi/Jetson Nano/Arduino/STM32 can be used to drive most SPI interface e-Paper from Waveshare Features at a glance Standard Raspberry Pi 40PIN GPIO extension header, supports Raspberry Pi series boards, Jetson Nano SPI interface, for connecting with other controller boards like Raspberry/Arduino/Nucleo, etc. Onboard voltage translator, compatible with 3.3V/5V MCUs Comes with development resources and manual (examples for Raspberry Pi/Jetson Nano/Arduino/STM32) Specifications operating voltage 3.3V/5V interface 3-wire SPI, 4-wire SPI outline dimensions 65.0 × 30.2mm Mounting hole size 3.0mm Comes with adapter board and FFC cable Expanding display interface via FFC cable, for easy connecting to the e-paper Compatible with multiple e-paper models and various motherboards Connecting with 5.83inch e-Paper Connecting with Raspberry Pi Zero and 5.83inch e-Paper (B) Connecting with Raspberry Pi Zero and 7.5inch e-Paper Connecting with Raspberry Pi 4B and 7.5inch e-Paper (B) for reference only, the Raspberry Pi boards and e-paper screens are NOT included Onboard SPI control interface for use with other controller boards like Raspberry Pi/Jetson Nano/STM32/Arduino VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output PWR Power on/off control Product Show for reference only, the e-paper screen is NOT included Outline dimensions"
+       },
+       "id": "gid://shopify/ProductVariant/56796005859652",
+       "list_price": {
+        "amount": 1039,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/waveshare-13512-01.webp?v=1779887695"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1039,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-13512",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": "GooDisplay is a brand that specializes in display solutions, particularly E-paper (E-ink) technology for various applications. Their product range includes E-ink displays and related modules designed for low power consumption and high visibility, making them ideal for digital signage, smart labels, and embedded systems. Emphasizing user-friendly design, GooDisplay offers extensive documentation and support to help developers easily integrate their displays into projects. With a commitment to innovation, GooDisplay seeks to enhance user experiences in digital display technology."
+       },
+       "handle": "brands-goodisplay",
+       "id": "gid://shopify/Collection/651379802436",
+       "title": "Brands - GooDisplay"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "display-e-paper",
+       "id": "gid://shopify/Collection/651470340420",
+       "title": "Display - e-Paper"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "E Ink Display's Basic Function Refresh method: Full update for 4s、Partial update for 0.42s (tested at 25°C ambient temperature) Display orientation: Horizontal or vertical E Ink Display's Basic Parameters Product size: 10.2 inch Resolution: 960x640 PPI: 113.12 Color: Black and White Driver IC: SSD1677 Interface: SPI Operating voltage: 3.3V Operating temperature: 0-50 ℃ E Ink Display's Main Features Display feature: Bistable display (retains the current content after a power outage) Display mode: Pure reflection Viewing angle: Wide viewing angle exceeding 170 degrees Surface Treatment: Hard-coated for anti-glare effects Energy conservation: No power consumption when not refreshing the screen Eye Protection: No blue light emission, zero radiation PARAMETERS PART NUMBER GDEM102T91 TYPE Dot Matrix SIZE 10.2 inch IC SSD1677 RESOLUTION 960x640 PPI 113.12 OUTLINE SIZE(mm) 224x157x1.0 ACTIVE SIZE(mm) 215.52x143.68 PIXEL PITCH(mm) 0.2245x0.2245 OPERATING TEMP. 0℃~50℃ STORAGE TEMP. -25℃~70℃ CONNECTOR 24 Pin FPC COLOR Black, White INTERFACE SPI FULL REFRESH(s) 4 PARTIAL REFRESH TIME(s) 0.42 POWER CONSUMPTION OF THE REFRESH(mW) 48 STANDBY POWER CONSUMPTION (mW) 0.003"
+     },
+     "gift_card": false,
+     "handle": "inch-e-paper-spi-e",
+     "id": "gid://shopify/Product/15461448843588",
+     "list_price_range": {
+      "max": {
+       "amount": 17369,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17369,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "10.2-inch E-Paper SPI E-Ink 960x640 Display Large Screen-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/10.2-inch_E-Paper_SPI_E-Ink_960x640_Display_Large_Screen-1.jpg?v=1770344580"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 17369,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17369,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "10.2 inch"
+     ],
+     "title": "10.2-inch E-Paper SPI E-Ink 960x640 Display Large Screen",
+     "url": "https://openelab.com/products/inch-e-paper-spi-e",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56364480627012:1",
+       "description": {
+        "html": "E Ink Display's Basic Function Refresh method: Full update for 4s、Partial update for 0.42s (tested at 25°C ambient temperature) Display orientation: Horizontal or vertical E Ink Display's Basic Parameters Product size: 10.2 inch Resolution: 960x640 PPI: 113.12 Color: Black and White Driver IC: SSD1677 Interface: SPI Operating voltage: 3.3V Operating temperature: 0-50 ℃ E Ink Display's Main Features Display feature: Bistable display (retains the current content after a power outage) Display mode: Pure reflection Viewing angle: Wide viewing angle exceeding 170 degrees Surface Treatment: Hard-coated for anti-glare effects Energy conservation: No power consumption when not refreshing the screen Eye Protection: No blue light emission, zero radiation PARAMETERS PART NUMBER GDEM102T91 TYPE Dot Matrix SIZE 10.2 inch IC SSD1677 RESOLUTION 960x640 PPI 113.12 OUTLINE SIZE(mm) 224x157x1.0 ACTIVE SIZE(mm) 215.52x143.68 PIXEL PITCH(mm) 0.2245x0.2245 OPERATING TEMP. 0℃~50℃ STORAGE TEMP. -25℃~70℃ CONNECTOR 24 Pin FPC COLOR Black, White INTERFACE SPI FULL REFRESH(s) 4 PARTIAL REFRESH TIME(s) 0.42 POWER CONSUMPTION OF THE REFRESH(mW) 48 STANDBY POWER CONSUMPTION (mW) 0.003"
+       },
+       "id": "gid://shopify/ProductVariant/56364480627012",
+       "list_price": {
+        "amount": 17369,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/10.2-inch_E-Paper_SPI_E-Ink_960x640_Display_Large_Screen-1.jpg?v=1770344580"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 17369,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "GDEM102T91",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

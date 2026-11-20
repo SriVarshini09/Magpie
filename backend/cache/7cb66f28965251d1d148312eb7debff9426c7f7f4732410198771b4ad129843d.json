@@ -1,0 +1,1197 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "Push button reset button"
+  }
+ },
+ "key": "7cb66f28965251d1d148312eb7debff9426c7f7f4732410198771b4ad129843d",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:04-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 564); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6NTY0LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 564
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<strong>5pcs Normally Close Push Button Switch w/Wire</strong><br><br><strong>Feature:</strong><br>1:100% Brand New and High Quality<br>2:The product activity part should be smooth and there is no stuck phenomenon;<br>3:Withstand voltage,good power resistance, good solder resistance<br>4:Installation Instructions Not Included.<br>5:Easy to install.<br><br><strong>Specifics:</strong><br>Condition:100% Brand New<br>Shape:Same as the picture show<br>Color:Same as the picture show<br>Type:N/C Normally Close Push Button<br><br>Conditions<br>1. Rating 3A/250VAC, 6A/125VAC<br>2. Operating force 20N-35N, no stagnation and light weight<br>3. Withstand voltage; terminal and terminal, terminal and outer casing apply 1500VAC 50/60HZ leakage current is 5mA without breakdown without leakage alarm.<br>4. Terminal and terminal, terminal and case apply 500VAC/min insulation resistance is 100MΩ<br>5. Electrical life of 20,000 times, mechanical life of 50,000 times<br>6. Ambient temperature -25°-85°, humidity 85%Rh<br><br><strong>Note:</strong><br>1. Due to the different display and different light, the picture may not reflect the actual color of the item. <br>2. Any questions please contact us by clicking \"ask a question\" at the bottom of this page or click \"contact seller\" in the \"purchase history\".<br><br><strong>Package Included:</strong><br>5 x N/C Push Button Switch as pictured"
+     },
+     "handle": "5pc-normally-closed-momentary-self-resetting-push-button-reset-switch-w-wire-red",
+     "id": "gid://shopify/p/1QtJ4YScBduiH98Q2ggP38",
+     "media": [
+      {
+       "alt_text": "5pc Normally Closed Momentary Self-resetting Push Button Reset Switch w/Wire Red",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0657/4030/8569/files/342450742847602688_62e013d2-55af-4d76-aa3f-4aabdfb144a3.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0657/4030/8569/files/342450742847602688_62e013d2-55af-4d76-aa3f-4aabdfb144a3.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Self-resetting mechanism: Automatically returns to original position after each press for convenience",
+       "Normally closed contact: Activates circuit when switch is pressed, ideal for safety and control applications",
+       "High electrical and mechanical life: Withstands up to 20,000 times mechanical and 20,000 times electrical operation",
+       "High withstand voltage: Rated for 1,500V AC/DC insulation resistance for enhanced safety",
+       "Easy installation: Includes wire for straightforward setup in various projects"
+      ],
+      "unique_selling_points": [
+       "Self-resetting momentary switches with robust electrical and mechanical performance, ideal for automotive and DIY applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 42,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "5pc Normally Closed Momentary Self-resetting Push Button Reset Switch w/Wire Red",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://guardxauto.com/buy/44852017791065:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<strong>5pcs Normally Close Push Button Switch w/Wire</strong><br><br><strong>Feature:</strong><br>1:100% Brand New and High Quality<br>2:The product activity part should be smooth and there is no stuck phenomenon;<br>3:Withstand voltage,good power resistance, good solder resistance<br>4:Installation Instructions Not Included.<br>5:Easy to install.<br><br><strong>Specifics:</strong><br>Condition:100% Brand New<br>Shape:Same as the picture show<br>Color:Same as the picture show<br>Type:N/C Normally Close Push Button<br><br>Conditions<br>1. Rating 3A/250VAC, 6A/125VAC<br>2. Operating force 20N-35N, no stagnation and light weight<br>3. Withstand voltage; terminal and terminal, terminal and outer casing apply 1500VAC 50/60HZ leakage current is 5mA without breakdown without leakage alarm.<br>4. Terminal and terminal, terminal and case apply 500VAC/min insulation resistance is 100MΩ<br>5. Electrical life of 20,000 times, mechanical life of 50,000 times<br>6. Ambient temperature -25°-85°, humidity 85%Rh<br><br><strong>Note:</strong><br>1. Due to the different display and different light, the picture may not reflect the actual color of the item. <br>2. Any questions please contact us by clicking \"ask a question\" at the bottom of this page or click \"contact seller\" in the \"purchase history\".<br><br><strong>Package Included:</strong><br>5 x N/C Push Button Switch as pictured"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "5pc-normally-closed-momentary-self-resetting-push-button-reset-switch-w-wire-red",
+       "id": "gid://shopify/ProductVariant/44852017791065",
+       "media": [
+        {
+         "alt_text": "5pc Normally Closed Momentary Self-resetting Push Button Reset Switch w/Wire Red",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0657/4030/8569/files/342450742847602688_62e013d2-55af-4d76-aa3f-4aabdfb144a3.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0657/4030/8569/files/342450742847602688_62e013d2-55af-4d76-aa3f-4aabdfb144a3.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 2899,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "0ayaqc-ff.myshopify.com",
+        "id": "gid://shopify/Shop/65740308569",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/65740308569/policies/32613204057.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/65740308569/policies/34660614233.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/65740308569/policies/34660581465.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/65740308569/policies/34660647001.html"
+         }
+        ],
+        "name": "Guardx Auto",
+        "url": "https://guardxauto.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8376240701529",
+       "source": "shopify",
+       "title": "5pc Normally Closed Momentary Self-resetting Push Button Reset Switch w/Wire Red",
+       "url": "https://guardxauto.com/products/5pc-normally-closed-momentary-self-resetting-push-button-reset-switch-w-wire-red?variant=44852017791065&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>ABB KPR4-105B</p>\n<p><span>KPR4-105B Reset push button </span><span>With shaft </span></p>\n<p><span> Extended </span></p>\n<p><span>Black / Non-illuminated / Black Plastic </span></p>"
+     },
+     "handle": "abb-kpr4-105b",
+     "id": "gid://shopify/p/6ZpgCxXFj48WUSl4W5WamN",
+     "media": [
+      {
+       "alt_text": "ABB KPR4-105B - Northeast Parts",
+       "height": 2701,
+       "preview": {
+        "height": 2701,
+        "url": "https://cdn.shopify.com/s/files/1/0132/0868/2596/products/IMG_1367_1408.jpg",
+        "width": 2701
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0132/0868/2596/products/IMG_1367_1408.jpg",
+       "width": 2701
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Extended shaft enables operation in confined or hard-to-reach areas for increased accessibility",
+       "Non-illuminated black plastic construction offers durability and resistance to industrial environments",
+       "Reset function allows quick restoration of motor or system status",
+       "Push button design provides simple and reliable manual control"
+      ],
+      "unique_selling_points": [
+       "Extended shaft design allows for convenient access and operation in tight spaces."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1533,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1533,
+       "currency": "USD"
+      }
+     },
+     "title": "ABB KPR4-105B",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://northeastparts.com/buy/39816793522211:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>ABB KPR4-105B</p>\n<p><span>KPR4-105B Reset push button </span><span>With shaft </span></p>\n<p><span> Extended </span></p>\n<p><span>Black / Non-illuminated / Black Plastic </span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "abb-kpr4-105b",
+       "id": "gid://shopify/ProductVariant/39816793522211",
+       "media": [
+        {
+         "alt_text": "ABB KPR4-105B - Northeast Parts",
+         "height": 2701,
+         "preview": {
+          "height": 2701,
+          "url": "https://cdn.shopify.com/s/files/1/0132/0868/2596/products/IMG_1367_1408.jpg",
+          "width": 2701
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0132/0868/2596/products/IMG_1367_1408.jpg",
+         "width": 2701
+        }
+       ],
+       "price": {
+        "amount": 1533,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "northparts.myshopify.com",
+        "id": "gid://shopify/Shop/13208682596",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/13208682596/policies/10712088676.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/13208682596/policies/10712121444.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/13208682596/policies/10712055908.html"
+         }
+        ],
+        "name": "Northeast Parts",
+        "url": "https://northeastparts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6722074411043",
+       "source": "shopify",
+       "title": "ABB KPR4-105B",
+       "url": "https://northeastparts.com/products/abb-kpr4-105b?variant=39816793522211&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>High quality Omron type B3F momentary on switch</li>\r\n<li>Perfect as a tactile reset switch</li>\r\n<li>Maximum ratings: DC 12V 50mA</li>\r\n<li>Operation temperature range: -25 to 70°C</li>\r\n</ul>\r\n<p>The <strong>Mini Push Button (5pk)</strong> is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Rated up to 50mA.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF File</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-448/pdf/datasheet-fit0179.pdf\">Datasheet</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "mini-push-button-5pk",
+     "id": "gid://shopify/p/6GHRqNd88iGR6ANZXFhI5D",
+     "media": [
+      {
+       "alt_text": "Mini Push Button (5pk)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Omron Type B3F momentary on switch: Provides reliable tactile feedback for reset or control functions",
+       "50 mA maximum current rating: Supports moderate power loads for various applications",
+       "Operating temperature range -25 to 70°C: Ensures durability in a wide range of environments",
+       "Compact mini design: Fits easily into tight spaces for prototyping or device integration",
+       "Pack of 5 switches: Convenient quantity for multiple projects or batch production"
+      ],
+      "unique_selling_points": [
+       "Includes five Omron Type B3F momentary on switches rated up to 50 mA for reliable tactile reset functionality."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 145,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 145,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 33,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "Mini Push Button (5pk)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42360894193825:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>High quality Omron type B3F momentary on switch</li>\r\n<li>Perfect as a tactile reset switch</li>\r\n<li>Maximum ratings: DC 12V 50mA</li>\r\n<li>Operation temperature range: -25 to 70°C</li>\r\n</ul>\r\n<p>The <strong>Mini Push Button (5pk)</strong> is high quality Omron type B3F momentary on switch. Perfect as a tactile reset switch. Rated up to 50mA.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-4\">\r\n<span class=\"card__title heading h3\">Links</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-4\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<p><strong>PDF File</strong></p>\r\n<ul>\r\n<li><a href=\"https://cdn.robotshop.com/media/d/dfr/rb-dfr-448/pdf/datasheet-fit0179.pdf\">Datasheet</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "mini-push-button-5pk",
+       "id": "gid://shopify/ProductVariant/42360894193825",
+       "media": [
+        {
+         "alt_text": "Mini Push Button (5pk)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/mini-push-button-5pk.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 145,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7487299584161",
+       "source": "shopify",
+       "title": "Mini Push Button (5pk)",
+       "url": "https://www.robotshop.com/products/mini-push-button-5pk?variant=42360894193825&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "\n<h2>8mm Metal Momentary Push Button Switch – Waterproof &amp; Self-Resetting</h2>\n<p>Upgrade your DIY electronics, automotive controls, or home projects with this precision-engineered <strong>8mm Momentary Metal Push Button Switch</strong>. Crafted from premium brass with a durable nickel-plated finish, this compact self-reset switch delivers reliable, responsive performance in a wide range of applications — from motorcycle engine starts to doorbells and custom circuit boards.</p>\n\n<h3>Key Features</h3>\n<ul>\n  <li>\n<strong>Premium Brass Nickel-Plated Housing:</strong> Wear-resistant and corrosion-resistant construction ensures a long service life, even in demanding environments.</li>\n  <li>\n<strong>Momentary Self-Reset Function:</strong> Normally Open (1NO) contact type — the button automatically springs back after each press for reliable, repeatable operation.</li>\n  <li>\n<strong>Dome Spherical Top Design:</strong> Ergonomic curved button surface provides a comfortable pressing feel with a sensitive, responsive trigger.</li>\n  <li>\n<strong>Standard 8mm Mounting Hole:</strong> Easy to install with the included locking nut — fits most modification panels and enclosures right out of the box.</li>\n  <li>\n<strong>Wide Application Range:</strong> Perfect for motorcycles, balance cars, car engine start buttons, DIY electronic circuits, doorbell systems, and countless other projects.</li>\n  <li>\n<strong>Compact &amp; Lightweight:</strong> Weighs just 5–8g per piece — minimal footprint, maximum function.</li>\n</ul>\n\n<h3>Specifications</h3>\n<ul>\n  <li>\n<strong>Mounting Hole Size:</strong> 8mm (0.31 in)</li>\n  <li>\n<strong>Shell Material:</strong> Brass, Nickel-Plated</li>\n  <li>\n<strong>Contact Type:</strong> 1 Normally Open (1NO)</li>\n  <li>\n<strong>Function:</strong> Momentary Self-Reset</li>\n  <li>\n<strong>Max Working Voltage:</strong> ≤220V</li>\n  <li>\n<strong>Rated Current:</strong> Less than 1A</li>\n  <li>\n<strong>LED Indicator:</strong> No</li>\n  <li>\n<strong>Button Diameter:</strong> 11.5mm (0.45 in)</li>\n  <li>\n<strong>Button Height:</strong> 7.5mm (0.30 in)</li>\n  <li>\n<strong>Thread Length:</strong> 7mm (0.28 in)</li>\n  <li>\n<strong>Total Height:</strong> 19.5mm (0.77 in)</li>\n  <li>\n<strong>Net Weight:</strong> Approx. 5–8g per piece</li>\n  <li>\n<strong>Country of Origin:</strong> Made in China</li>\n</ul>\n\n<h3>What's in the Box?</h3>\n<ul>\n  <li>1× Metal Push Button Switch (with locking nut)</li>\n</ul>\n\n<h3>Related Products You May Like</h3>\n<ul>\n  <li><a href=\"/products/10-in-1-multi-functional-bone-wrench-hex-socket-spanner-portable-repair-hand-tool-for-bicycle-motorcycle-furniture-assembly\">10-in-1 Multi Functional Bone Wrench – Portable Repair Hand Tool for Bicycle &amp; Motorcycle</a></li>\n  <li><a href=\"/products/16-in-1-multi-function-bike-repair-tool-portable-folding-hex-wrench-set-for-bicycle-motorcycle-furniture-maintenance-hand-tools\">16-in-1 Multi-Function Bike Repair Tool – Portable Folding Hex Wrench Set</a></li>\n  <li><a href=\"/products/3-in-1-precision-eyeglass-screwdriver-keychain-portable-mini-screwdriver-for-glasses-watch-spectacles-repair-hand-tool\">3-in-1 Precision Mini Screwdriver Keychain – Portable Repair Hand Tool</a></li>\n</ul>\n\n<p>Learn more: <a href=\"https://www.osha.gov/hand-power-tools\" target=\"_blank\" rel=\"noopener\">OSHA guidance on hand and power tools</a></p>\n<h3>Frequently Asked Questions</h3>\n<h4>Q: What does \"momentary self-reset\" mean for this push button switch?</h4>\n<p>A: A momentary self-reset switch means that the circuit is only activated while the button is physically pressed. The moment you release your finger, the internal spring mechanism automatically returns the button to its original position, opening the circuit again. This makes it ideal for applications like engine start buttons, doorbells, and short-trigger electronic controls.</p>\n\n<h4>Q: Is this 8mm push button switch waterproof, and can it be used outdoors or on motorcycles?</h4>\n<p>A: Yes — this metal push button switch features a brass nickel-plated housing that is resistant to corrosion and moisture, making it well-suited for outdoor use and automotive/motorcycle applications. The robust alloy construction ensures reliable performance even in environments exposed to the elements.</p>\n\n<h4>Q: What panel thickness or mounting setup does this switch require?</h4>\n<p>A: The switch requires a standard 8mm (0.31 in) mounting hole. It comes with a matching locking nut to secure it firmly to your panel or enclosure. The thread length is 7mm (0.28 in), so it is compatible with most standard panel thicknesses used in DIY electronics, automotive dashboards, and enclosure builds.</p>\n<!-- production-packaging-notice -->\n<h3>Production &amp; Packaging Notice</h3>\n<p>To maintain high stock availability and fast shipping times, our items are sourced from multiple verified manufacturing facilities. While the core quality, materials, and product specifications remain identical, you may notice slight variations in the packaging design, manufacturing origin, or the wording of the printed instructions.</p>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"What does \\\"momentary self-reset\\\" mean for this push button switch?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"A momentary self-reset switch means that the circuit is only activated while the button is physically pressed. The moment you release your finger, the internal spring mechanism automatically returns the button to its original position, opening the circuit again. This makes it ideal for applications like engine start buttons, doorbells, and short-trigger electronic controls.\"}}, {\"@type\": \"Question\", \"name\": \"Is this 8mm push button switch waterproof, and can it be used outdoors or on motorcycles?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes — this metal push button switch features a brass nickel-plated housing that is resistant to corrosion and moisture, making it well-suited for outdoor use and automotive/motorcycle applications. The robust alloy construction ensures reliable performance even in environments exposed to the elements.\"}}, {\"@type\": \"Question\", \"name\": \"What panel thickness or mounting setup does this switch require?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The switch requires a standard 8mm (0.31 in) mounting hole. It comes with a matching locking nut to secure it firmly to your panel or enclosure. The thread length is 7mm (0.28 in), so it is compatible with most standard panel thicknesses used in DIY electronics, automotive dashboards, and enclosure builds.\"}}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://ntmid8-d2.myshopify.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Home page\", \"item\": \"https://ntmid8-d2.myshopify.com/collections/frontpage\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"8mm Waterproof Metal Momentary Push Button Switch Self-Reset\", \"item\": \"https://ntmid8-d2.myshopify.com/products/8mm-metal-momentary-push-button-switch-waterproof-self-reset\"}]}</script>"
+     },
+     "handle": "8mm-metal-momentary-push-button-switch-waterproof-self-reset",
+     "id": "gid://shopify/p/D2iMIUxGU8nl6sxn4eBSv",
+     "media": [
+      {
+       "alt_text": "8mm Waterproof Metal Momentary Push Button Switch Self-Reset",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0824/8383/9203/files/Sbbcd41a619804731925c696a19c9caa4n.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0824/8383/9203/files/Sbbcd41a619804731925c696a19c9caa4n.webp",
+       "width": 1000
+      }
+     ],
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Black"
+        },
+        {
+         "label": "Blue"
+        },
+        {
+         "label": "Green"
+        },
+        {
+         "label": "Red"
+        },
+        {
+         "label": "Silver"
+        },
+        {
+         "label": "Yellow"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 930,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 930,
+       "currency": "USD"
+      }
+     },
+     "title": "8mm Waterproof Metal Momentary Push Button Switch Self-Reset",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://vibeshopmart.com/buy/67676411396323:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "\n<h2>8mm Metal Momentary Push Button Switch – Waterproof &amp; Self-Resetting</h2>\n<p>Upgrade your DIY electronics, automotive controls, or home projects with this precision-engineered <strong>8mm Momentary Metal Push Button Switch</strong>. Crafted from premium brass with a durable nickel-plated finish, this compact self-reset switch delivers reliable, responsive performance in a wide range of applications — from motorcycle engine starts to doorbells and custom circuit boards.</p>\n\n<h3>Key Features</h3>\n<ul>\n  <li>\n<strong>Premium Brass Nickel-Plated Housing:</strong> Wear-resistant and corrosion-resistant construction ensures a long service life, even in demanding environments.</li>\n  <li>\n<strong>Momentary Self-Reset Function:</strong> Normally Open (1NO) contact type — the button automatically springs back after each press for reliable, repeatable operation.</li>\n  <li>\n<strong>Dome Spherical Top Design:</strong> Ergonomic curved button surface provides a comfortable pressing feel with a sensitive, responsive trigger.</li>\n  <li>\n<strong>Standard 8mm Mounting Hole:</strong> Easy to install with the included locking nut — fits most modification panels and enclosures right out of the box.</li>\n  <li>\n<strong>Wide Application Range:</strong> Perfect for motorcycles, balance cars, car engine start buttons, DIY electronic circuits, doorbell systems, and countless other projects.</li>\n  <li>\n<strong>Compact &amp; Lightweight:</strong> Weighs just 5–8g per piece — minimal footprint, maximum function.</li>\n</ul>\n\n<h3>Specifications</h3>\n<ul>\n  <li>\n<strong>Mounting Hole Size:</strong> 8mm (0.31 in)</li>\n  <li>\n<strong>Shell Material:</strong> Brass, Nickel-Plated</li>\n  <li>\n<strong>Contact Type:</strong> 1 Normally Open (1NO)</li>\n  <li>\n<strong>Function:</strong> Momentary Self-Reset</li>\n  <li>\n<strong>Max Working Voltage:</strong> ≤220V</li>\n  <li>\n<strong>Rated Current:</strong> Less than 1A</li>\n  <li>\n<strong>LED Indicator:</strong> No</li>\n  <li>\n<strong>Button Diameter:</strong> 11.5mm (0.45 in)</li>\n  <li>\n<strong>Button Height:</strong> 7.5mm (0.30 in)</li>\n  <li>\n<strong>Thread Length:</strong> 7mm (0.28 in)</li>\n  <li>\n<strong>Total Height:</strong> 19.5mm (0.77 in)</li>\n  <li>\n<strong>Net Weight:</strong> Approx. 5–8g per piece</li>\n  <li>\n<strong>Country of Origin:</strong> Made in China</li>\n</ul>\n\n<h3>What's in the Box?</h3>\n<ul>\n  <li>1× Metal Push Button Switch (with locking nut)</li>\n</ul>\n\n<h3>Related Products You May Like</h3>\n<ul>\n  <li><a href=\"/products/10-in-1-multi-functional-bone-wrench-hex-socket-spanner-portable-repair-hand-tool-for-bicycle-motorcycle-furniture-assembly\">10-in-1 Multi Functional Bone Wrench – Portable Repair Hand Tool for Bicycle &amp; Motorcycle</a></li>\n  <li><a href=\"/products/16-in-1-multi-function-bike-repair-tool-portable-folding-hex-wrench-set-for-bicycle-motorcycle-furniture-maintenance-hand-tools\">16-in-1 Multi-Function Bike Repair Tool – Portable Folding Hex Wrench Set</a></li>\n  <li><a href=\"/products/3-in-1-precision-eyeglass-screwdriver-keychain-portable-mini-screwdriver-for-glasses-watch-spectacles-repair-hand-tool\">3-in-1 Precision Mini Screwdriver Keychain – Portable Repair Hand Tool</a></li>\n</ul>\n\n<p>Learn more: <a href=\"https://www.osha.gov/hand-power-tools\" target=\"_blank\" rel=\"noopener\">OSHA guidance on hand and power tools</a></p>\n<h3>Frequently Asked Questions</h3>\n<h4>Q: What does \"momentary self-reset\" mean for this push button switch?</h4>\n<p>A: A momentary self-reset switch means that the circuit is only activated while the button is physically pressed. The moment you release your finger, the internal spring mechanism automatically returns the button to its original position, opening the circuit again. This makes it ideal for applications like engine start buttons, doorbells, and short-trigger electronic controls.</p>\n\n<h4>Q: Is this 8mm push button switch waterproof, and can it be used outdoors or on motorcycles?</h4>\n<p>A: Yes — this metal push button switch features a brass nickel-plated housing that is resistant to corrosion and moisture, making it well-suited for outdoor use and automotive/motorcycle applications. The robust alloy construction ensures reliable performance even in environments exposed to the elements.</p>\n\n<h4>Q: What panel thickness or mounting setup does this switch require?</h4>\n<p>A: The switch requires a standard 8mm (0.31 in) mounting hole. It comes with a matching locking nut to secure it firmly to your panel or enclosure. The thread length is 7mm (0.28 in), so it is compatible with most standard panel thicknesses used in DIY electronics, automotive dashboards, and enclosure builds.</p>\n<!-- production-packaging-notice -->\n<h3>Production &amp; Packaging Notice</h3>\n<p>To maintain high stock availability and fast shipping times, our items are sourced from multiple verified manufacturing facilities. While the core quality, materials, and product specifications remain identical, you may notice slight variations in the packaging design, manufacturing origin, or the wording of the printed instructions.</p>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"What does \\\"momentary self-reset\\\" mean for this push button switch?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"A momentary self-reset switch means that the circuit is only activated while the button is physically pressed. The moment you release your finger, the internal spring mechanism automatically returns the button to its original position, opening the circuit again. This makes it ideal for applications like engine start buttons, doorbells, and short-trigger electronic controls.\"}}, {\"@type\": \"Question\", \"name\": \"Is this 8mm push button switch waterproof, and can it be used outdoors or on motorcycles?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes — this metal push button switch features a brass nickel-plated housing that is resistant to corrosion and moisture, making it well-suited for outdoor use and automotive/motorcycle applications. The robust alloy construction ensures reliable performance even in environments exposed to the elements.\"}}, {\"@type\": \"Question\", \"name\": \"What panel thickness or mounting setup does this switch require?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"The switch requires a standard 8mm (0.31 in) mounting hole. It comes with a matching locking nut to secure it firmly to your panel or enclosure. The thread length is 7mm (0.28 in), so it is compatible with most standard panel thicknesses used in DIY electronics, automotive dashboards, and enclosure builds.\"}}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://ntmid8-d2.myshopify.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Home page\", \"item\": \"https://ntmid8-d2.myshopify.com/collections/frontpage\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"8mm Waterproof Metal Momentary Push Button Switch Self-Reset\", \"item\": \"https://ntmid8-d2.myshopify.com/products/8mm-metal-momentary-push-button-switch-waterproof-self-reset\"}]}</script>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "8mm-metal-momentary-push-button-switch-waterproof-self-reset",
+       "id": "gid://shopify/ProductVariant/67676411396323",
+       "list_price": {
+        "amount": 1251,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "8mm Waterproof Metal Momentary Push Button Switch Self-Reset",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0824/8383/9203/files/Sbbcd41a619804731925c696a19c9caa4n.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0824/8383/9203/files/Sbbcd41a619804731925c696a19c9caa4n.webp",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Red",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 930,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ntmid8-d2.myshopify.com",
+        "id": "gid://shopify/Shop/82483839203",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/82483839203/policies/44969165027.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/82483839203/policies/45152927971.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/82483839203/policies/45152862435.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/82483839203/policies/45152895203.html"
+         }
+        ],
+        "name": "VIBE",
+        "url": "https://vibeshopmart.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15419058061539",
+       "source": "shopify",
+       "title": "8mm Waterproof Metal Momentary Push Button Switch Self-Reset",
+       "url": "https://vibeshopmart.com/products/8mm-metal-momentary-push-button-switch-waterproof-self-reset?variant=67676411396323&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Description:</strong></p><p>1.NO contact type, key lock rotary selector action, 22mm panel cutout diameter.</p><p>2.Button locking when rotary, rotary again the key to reset</p><p>3.Only one Position can pull out the key</p><p>4.Used widely to control the electromagnetic starter, contactor, relay and other automatic control electric circuits.</p>"
+     },
+     "handle": "p-1093496",
+     "id": "gid://shopify/p/PzHNTTJX0GWdIV60HSJ54",
+     "media": [
+      {
+       "alt_text": "1Pcs 22mm 2 Position Key Locking Push Button Switch W Keys Black NO",
+       "height": 1100,
+       "preview": {
+        "height": 1100,
+        "url": "https://cdn.shopify.com/s/files/1/0595/2477/6095/files/ux_a18070500ux0398_ux_g03.jpg",
+        "width": 1100
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0595/2477/6095/files/ux_a18070500ux0398_ux_g03.jpg",
+       "width": 1100
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Key lock mechanism: Prevents unauthorized or accidental switching of electrical circuits",
+       "Two-position rotary selector: Offers flexible control between two settings for various applications",
+       "Push button action: Enables easy and reliable manual operation",
+       "Panel cutout diameter 22mm: Fits standard panel boards for straightforward installation",
+       "Resettable with single key press: Allows quick restoration of original position after locking"
+      ],
+      "unique_selling_points": [
+       "Features a key lock mechanism that prevents accidental operation and allows reset with a single key action."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 943,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 943,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "1Pcs 22mm 2 Position Key Locking Push Button Switch W Keys Black NO",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.harfington.com/buy/42123744149753:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Description:</strong></p><p>1.NO contact type, key lock rotary selector action, 22mm panel cutout diameter.</p><p>2.Button locking when rotary, rotary again the key to reset</p><p>3.Only one Position can pull out the key</p><p>4.Used widely to control the electromagnetic starter, contactor, relay and other automatic control electric circuits.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "p-1093496",
+       "id": "gid://shopify/ProductVariant/42123744149753",
+       "media": [
+        {
+         "alt_text": "1Pcs 22mm 2 Position Key Locking Push Button Switch W Keys Black NO",
+         "height": 1100,
+         "preview": {
+          "height": 1100,
+          "url": "https://cdn.shopify.com/s/files/1/0595/2477/6095/files/ux_a18070500ux0398_ux_g03.jpg",
+          "width": 1100
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0595/2477/6095/files/ux_a18070500ux0398_ux_g03.jpg",
+         "width": 1100
+        }
+       ],
+       "price": {
+        "amount": 943,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "harfington.myshopify.com",
+        "id": "gid://shopify/Shop/59524776095",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/59524776095/policies/25701122297.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/59524776095/policies/25701155065.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/59524776095/policies/25701089529.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/59524776095/policies/25701187833.html"
+         }
+        ],
+        "name": "Harfington",
+        "url": "https://www.harfington.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7462086508793",
+       "source": "shopify",
+       "title": "1Pcs 22mm 2 Position Key Locking Push Button Switch W Keys Black NO",
+       "url": "https://www.harfington.com/products/p-1093496?variant=42123744149753&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Push Button, \"Reset\" On Face, Red, 22Mm, W/ Threaded Rod Plunger, Non-Metl</p>"
+     },
+     "handle": "9622-push-button-resetinch-on-face-red-22mm-w-threaded-rod-plunger-non-metl",
+     "id": "gid://shopify/p/1EAvYmbk7V7VIJWJ3twnb8",
+     "media": [
+      {
+       "alt_text": "Part 9622 Push Button, \"Reset\" On Face, Red, 22Mm, W/ Threaded Rod Plunger, Non-Metl",
+       "height": 600,
+       "preview": {
+        "height": 600,
+        "url": "https://cdn.shopify.com/s/files/1/0005/4981/4330/products/Image_Coming_Soon_8a192b1b-1f97-475f-9382-47dabddcc0d3.gif",
+        "width": 600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0005/4981/4330/products/Image_Coming_Soon_8a192b1b-1f97-475f-9382-47dabddcc0d3.gif",
+       "width": 600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Red push button for clear visual identification and operation",
+       "22mm face size for easy mounting and handling",
+       "Threaded rod allows secure and stable installation",
+       "Non-meteorite (non-metallized) housing for compatibility with various environments"
+      ],
+      "unique_selling_points": [
+       "Features a visible red push button with a threaded rod for easy installation and reset functionality."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 6999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6999,
+       "currency": "USD"
+      }
+     },
+     "title": "9622 - Red Push Button",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.loadingdockpro.com/buy/17834603216954:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Push Button, \"Reset\" On Face, Red, 22Mm, W/ Threaded Rod Plunger, Non-Metl</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "9622-push-button-resetinch-on-face-red-22mm-w-threaded-rod-plunger-non-metl",
+       "id": "gid://shopify/ProductVariant/17834603216954",
+       "media": [
+        {
+         "alt_text": "Part 9622 Push Button, \"Reset\" On Face, Red, 22Mm, W/ Threaded Rod Plunger, Non-Metl",
+         "height": 600,
+         "preview": {
+          "height": 600,
+          "url": "https://cdn.shopify.com/s/files/1/0005/4981/4330/products/Image_Coming_Soon_8a192b1b-1f97-475f-9382-47dabddcc0d3.gif",
+          "width": 600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0005/4981/4330/products/Image_Coming_Soon_8a192b1b-1f97-475f-9382-47dabddcc0d3.gif",
+         "width": 600
+        }
+       ],
+       "price": {
+        "amount": 6999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "loading-dock-pro-replacement-parts.myshopify.com",
+        "id": "gid://shopify/Shop/549814330",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/549814330/policies/2195980346.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/549814330/policies/2196013114.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/549814330/policies/2195947578.html"
+         }
+        ],
+        "name": "Loading Dock Pro - Parts & Aftermarket Products",
+        "url": "https://www.loadingdockpro.com"
+       },
+       "seller_product_id": "gid://shopify/Product/1823370281018",
+       "source": "shopify",
+       "title": "9622 - Red Push Button",
+       "url": "https://www.loadingdockpro.com/products/9622-push-button-resetinch-on-face-red-22mm-w-threaded-rod-plunger-non-metl?variant=17834603216954&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3 style=\"text-align: center;\" data-end=\"122\" data-start=\"0\"><strong data-end=\"122\" data-start=\"4\">600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed</strong></h3>\n<p data-end=\"231\" data-start=\"124\"><strong data-end=\"141\" data-start=\"124\">Product Name:</strong><br data-end=\"144\" data-start=\"141\">Red 600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed</p>\n<p data-end=\"718\" data-start=\"233\"><strong data-end=\"254\" data-start=\"233\">Product Overview:</strong><br data-end=\"257\" data-start=\"254\">This high-performance Emergency Stop Push Button is designed for industrial control systems, providing a reliable means to immediately cut power and halt operations in emergencies. The push button features a red, visually prominent design, ensuring quick identification in critical situations. It is equipped with a twist-to-reset mechanism, ensuring the button remains in a safe state until the operator intentionally resets it, minimizing accidental restarts.</p>\n<p data-end=\"737\" data-start=\"720\"><strong data-end=\"737\" data-start=\"720\">Key Features:</strong></p>\n<ul data-end=\"2377\" data-start=\"739\">\n<li data-end=\"836\" data-start=\"739\">\n<p data-end=\"836\" data-start=\"741\"><strong data-end=\"760\" data-start=\"741\">Voltage Rating:</strong><br data-end=\"763\" data-start=\"760\">600V AC/DC, 10A for heavy-duty applications in industrial environments.</p>\n</li>\n<li data-end=\"1031\" data-start=\"840\">\n<p data-end=\"1031\" data-start=\"842\"><strong data-end=\"864\" data-start=\"842\">Size and Mounting:</strong><br data-end=\"867\" data-start=\"864\">22mm diameter for easy panel integration. Compatible with standard 22mm mounting holes, designed for quick installation in control panels or machinery enclosures.</p>\n</li>\n<li data-end=\"1239\" data-start=\"1035\">\n<p data-end=\"1239\" data-start=\"1037\"><strong data-end=\"1054\" data-start=\"1037\">Contact Type:</strong><br data-end=\"1057\" data-start=\"1054\">Single Normally Closed (NC) contact. This configuration ensures that when the button is pressed, the circuit is interrupted, cutting off power immediately for emergency situations.</p>\n</li>\n<li data-end=\"1468\" data-start=\"1241\">\n<p data-end=\"1468\" data-start=\"1243\"><strong data-end=\"1263\" data-start=\"1243\">Reset Mechanism:</strong><br data-end=\"1266\" data-start=\"1263\">Twist-to-reset function. After the button is pressed (emergency stop), the button will remain in a depressed state until manually twisted to reset, preventing accidental restarts and enhancing safety.</p>\n</li>\n<li data-end=\"1721\" data-start=\"1470\">\n<p data-end=\"1721\" data-start=\"1472\"><strong data-end=\"1500\" data-start=\"1472\">Material and Durability:</strong><br data-end=\"1503\" data-start=\"1500\">Constructed with high-quality, durable materials designed to withstand harsh environmental conditions and physical stress. The button is impact-resistant and rated for continuous operation in industrial environments.</p>\n</li>\n<li data-end=\"1907\" data-start=\"1723\">\n<p data-end=\"1907\" data-start=\"1725\"><strong data-end=\"1745\" data-start=\"1725\">Indicator Color:</strong><br data-end=\"1748\" data-start=\"1745\">Bright red actuator for high visibility, ensuring quick identification in emergencies. The color is standardized to alert operators or personnel immediately.</p>\n</li>\n<li data-end=\"2105\" data-start=\"1909\">\n<p data-end=\"2105\" data-start=\"1911\"><strong data-end=\"1925\" data-start=\"1911\">IP Rating:</strong><br data-end=\"1928\" data-start=\"1925\">Typically rated IP65 or equivalent (depending on specific model), offering protection against dust and water ingress. Suitable for use in both indoor and outdoor environments.</p>\n</li>\n<li data-end=\"2235\" data-start=\"2107\">\n<p data-end=\"2235\" data-start=\"2109\"><strong data-end=\"2141\" data-start=\"2109\">Operating Temperature Range:</strong><br data-end=\"2144\" data-start=\"2141\">Typically -25°C to +70°C, making it suitable for a wide range of industrial environments.</p>\n</li>\n<li data-end=\"2377\" data-start=\"2237\">\n<p data-end=\"2377\" data-start=\"2239\"><strong data-end=\"2261\" data-start=\"2239\">Safety Compliance:</strong><br data-end=\"2264\" data-start=\"2261\">Meets international safety standards such as UL, CE, and EN, ensuring reliable performance and operator safety.</p>\n</li>\n</ul>\n<p data-end=\"2451\" data-start=\"2379\"><strong data-end=\"2396\" data-start=\"2379\">Applications:</strong><br data-end=\"2399\" data-start=\"2396\">This emergency stop push button is ideal for use in:</p>\n<ul data-end=\"2598\" data-start=\"2452\">\n<li data-end=\"2474\" data-start=\"2452\">\n<p data-end=\"2474\" data-start=\"2454\">Industrial machinery</p>\n</li>\n<li data-end=\"2493\" data-start=\"2475\">\n<p data-end=\"2493\" data-start=\"2477\">Conveyor systems</p>\n</li>\n<li data-end=\"2531\" data-start=\"2494\">\n<p data-end=\"2531\" data-start=\"2496\">Control panels and circuit breakers</p>\n</li>\n<li data-end=\"2566\" data-start=\"2532\">\n<p data-end=\"2566\" data-start=\"2534\">Automated equipment and robotics</p>\n</li>\n<li data-end=\"2598\" data-start=\"2567\">\n<p data-end=\"2598\" data-start=\"2569\">Heavy-duty electrical systems</p>\n</li>\n</ul>\n<p data-end=\"2922\" data-start=\"2600\"><strong data-end=\"2618\" data-start=\"2600\">Functionality:</strong><br data-end=\"2621\" data-start=\"2618\">When pressed, the Emergency Stop Push Button immediately opens the normally closed contacts, cutting off power or halting operations. The twist-to-reset mechanism ensures the button can only be reset intentionally, reducing the risk of unintended restart and ensuring safety in hazardous environments.</p>\n<p data-end=\"2954\" data-start=\"2924\"><strong data-end=\"2954\" data-start=\"2924\">Installation Instructions:</strong></p>\n<ol data-end=\"3257\" data-start=\"2955\">\n<li data-end=\"3003\" data-start=\"2955\">\n<p data-end=\"3003\" data-start=\"2958\">Mount the push button in a 22mm panel cutout.</p>\n</li>\n<li data-end=\"3061\" data-start=\"3004\">\n<p data-end=\"3061\" data-start=\"3007\">Secure the button with the provided mounting hardware.</p>\n</li>\n<li data-end=\"3159\" data-start=\"3062\">\n<p data-end=\"3159\" data-start=\"3065\">Wire the Normally Closed (NC) terminals according to the system’s emergency stop requirements.</p>\n</li>\n<li data-end=\"3257\" data-start=\"3160\">\n<p data-end=\"3257\" data-start=\"3163\">To reset after activation, twist the button clockwise until it clicks into the reset position.</p>\n</li>\n</ol>\n<p data-end=\"3282\" data-start=\"3259\"><strong data-end=\"3282\" data-start=\"3259\">Electrical Ratings:</strong></p>\n<ul data-end=\"3447\" data-start=\"3283\">\n<li data-end=\"3308\" data-start=\"3283\">\n<p data-end=\"3308\" data-start=\"3285\"><strong data-end=\"3297\" data-start=\"3285\">Voltage:</strong><span> </span>600V AC/DC</p>\n</li>\n<li data-end=\"3327\" data-start=\"3309\">\n<p data-end=\"3327\" data-start=\"3311\"><strong data-end=\"3323\" data-start=\"3311\">Current:</strong><span> </span>10A</p>\n</li>\n<li data-end=\"3381\" data-start=\"3328\">\n<p data-end=\"3381\" data-start=\"3330\"><strong data-end=\"3356\" data-start=\"3330\">Contact Configuration:</strong><span> </span>1 x Normally Closed (NC)<img></p>\n</li>\n</ul>"
+     },
+     "handle": "600v-10a-22mm-emergency-stop-push-button-twist-to-reset-1-contact-normally-closed",
+     "id": "gid://shopify/p/W7h1u49IeQV6knjflZBvh",
+     "media": [
+      {
+       "alt_text": "600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed",
+       "height": 977,
+       "preview": {
+        "height": 977,
+        "url": "https://cdn.shopify.com/s/files/1/0069/7430/8407/files/DisplaytwoFINAL.jpg",
+        "width": 1088
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0069/7430/8407/files/DisplaytwoFINAL.jpg",
+       "width": 1088
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Twist-to-reset mechanism: Prevents accidental restarts for improved operator safety",
+       "Bright red indicator: Ensures quick identification in emergency situations",
+       "600V AC/DC voltage rating: Supports heavy-duty industrial applications",
+       "22mm diameter: Fits standard panel mounting holes for easy installation",
+       "IP65 or equivalent protection: Withstands dust and water ingress for reliable operation"
+      ],
+      "unique_selling_points": [
+       "Twist-to-reset mechanism prevents accidental restarts, enhancing safety in hazardous environments."
+      ]
+     },
+     "options": [
+      {
+       "name": "Pack quantity",
+       "values": [
+        {
+         "label": "Five Pack"
+        },
+        {
+         "label": "Single"
+        },
+        {
+         "label": "Two Pack"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://acecrewdirect.com/buy/43157038891123:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3 style=\"text-align: center;\" data-end=\"122\" data-start=\"0\"><strong data-end=\"122\" data-start=\"4\">600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed</strong></h3>\n<p data-end=\"231\" data-start=\"124\"><strong data-end=\"141\" data-start=\"124\">Product Name:</strong><br data-end=\"144\" data-start=\"141\">Red 600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed</p>\n<p data-end=\"718\" data-start=\"233\"><strong data-end=\"254\" data-start=\"233\">Product Overview:</strong><br data-end=\"257\" data-start=\"254\">This high-performance Emergency Stop Push Button is designed for industrial control systems, providing a reliable means to immediately cut power and halt operations in emergencies. The push button features a red, visually prominent design, ensuring quick identification in critical situations. It is equipped with a twist-to-reset mechanism, ensuring the button remains in a safe state until the operator intentionally resets it, minimizing accidental restarts.</p>\n<p data-end=\"737\" data-start=\"720\"><strong data-end=\"737\" data-start=\"720\">Key Features:</strong></p>\n<ul data-end=\"2377\" data-start=\"739\">\n<li data-end=\"836\" data-start=\"739\">\n<p data-end=\"836\" data-start=\"741\"><strong data-end=\"760\" data-start=\"741\">Voltage Rating:</strong><br data-end=\"763\" data-start=\"760\">600V AC/DC, 10A for heavy-duty applications in industrial environments.</p>\n</li>\n<li data-end=\"1031\" data-start=\"840\">\n<p data-end=\"1031\" data-start=\"842\"><strong data-end=\"864\" data-start=\"842\">Size and Mounting:</strong><br data-end=\"867\" data-start=\"864\">22mm diameter for easy panel integration. Compatible with standard 22mm mounting holes, designed for quick installation in control panels or machinery enclosures.</p>\n</li>\n<li data-end=\"1239\" data-start=\"1035\">\n<p data-end=\"1239\" data-start=\"1037\"><strong data-end=\"1054\" data-start=\"1037\">Contact Type:</strong><br data-end=\"1057\" data-start=\"1054\">Single Normally Closed (NC) contact. This configuration ensures that when the button is pressed, the circuit is interrupted, cutting off power immediately for emergency situations.</p>\n</li>\n<li data-end=\"1468\" data-start=\"1241\">\n<p data-end=\"1468\" data-start=\"1243\"><strong data-end=\"1263\" data-start=\"1243\">Reset Mechanism:</strong><br data-end=\"1266\" data-start=\"1263\">Twist-to-reset function. After the button is pressed (emergency stop), the button will remain in a depressed state until manually twisted to reset, preventing accidental restarts and enhancing safety.</p>\n</li>\n<li data-end=\"1721\" data-start=\"1470\">\n<p data-end=\"1721\" data-start=\"1472\"><strong data-end=\"1500\" data-start=\"1472\">Material and Durability:</strong><br data-end=\"1503\" data-start=\"1500\">Constructed with high-quality, durable materials designed to withstand harsh environmental conditions and physical stress. The button is impact-resistant and rated for continuous operation in industrial environments.</p>\n</li>\n<li data-end=\"1907\" data-start=\"1723\">\n<p data-end=\"1907\" data-start=\"1725\"><strong data-end=\"1745\" data-start=\"1725\">Indicator Color:</strong><br data-end=\"1748\" data-start=\"1745\">Bright red actuator for high visibility, ensuring quick identification in emergencies. The color is standardized to alert operators or personnel immediately.</p>\n</li>\n<li data-end=\"2105\" data-start=\"1909\">\n<p data-end=\"2105\" data-start=\"1911\"><strong data-end=\"1925\" data-start=\"1911\">IP Rating:</strong><br data-end=\"1928\" data-start=\"1925\">Typically rated IP65 or equivalent (depending on specific model), offering protection against dust and water ingress. Suitable for use in both indoor and outdoor environments.</p>\n</li>\n<li data-end=\"2235\" data-start=\"2107\">\n<p data-end=\"2235\" data-start=\"2109\"><strong data-end=\"2141\" data-start=\"2109\">Operating Temperature Range:</strong><br data-end=\"2144\" data-start=\"2141\">Typically -25°C to +70°C, making it suitable for a wide range of industrial environments.</p>\n</li>\n<li data-end=\"2377\" data-start=\"2237\">\n<p data-end=\"2377\" data-start=\"2239\"><strong data-end=\"2261\" data-start=\"2239\">Safety Compliance:</strong><br data-end=\"2264\" data-start=\"2261\">Meets international safety standards such as UL, CE, and EN, ensuring reliable performance and operator safety.</p>\n</li>\n</ul>\n<p data-end=\"2451\" data-start=\"2379\"><strong data-end=\"2396\" data-start=\"2379\">Applications:</strong><br data-end=\"2399\" data-start=\"2396\">This emergency stop push button is ideal for use in:</p>\n<ul data-end=\"2598\" data-start=\"2452\">\n<li data-end=\"2474\" data-start=\"2452\">\n<p data-end=\"2474\" data-start=\"2454\">Industrial machinery</p>\n</li>\n<li data-end=\"2493\" data-start=\"2475\">\n<p data-end=\"2493\" data-start=\"2477\">Conveyor systems</p>\n</li>\n<li data-end=\"2531\" data-start=\"2494\">\n<p data-end=\"2531\" data-start=\"2496\">Control panels and circuit breakers</p>\n</li>\n<li data-end=\"2566\" data-start=\"2532\">\n<p data-end=\"2566\" data-start=\"2534\">Automated equipment and robotics</p>\n</li>\n<li data-end=\"2598\" data-start=\"2567\">\n<p data-end=\"2598\" data-start=\"2569\">Heavy-duty electrical systems</p>\n</li>\n</ul>\n<p data-end=\"2922\" data-start=\"2600\"><strong data-end=\"2618\" data-start=\"2600\">Functionality:</strong><br data-end=\"2621\" data-start=\"2618\">When pressed, the Emergency Stop Push Button immediately opens the normally closed contacts, cutting off power or halting operations. The twist-to-reset mechanism ensures the button can only be reset intentionally, reducing the risk of unintended restart and ensuring safety in hazardous environments.</p>\n<p data-end=\"2954\" data-start=\"2924\"><strong data-end=\"2954\" data-start=\"2924\">Installation Instructions:</strong></p>\n<ol data-end=\"3257\" data-start=\"2955\">\n<li data-end=\"3003\" data-start=\"2955\">\n<p data-end=\"3003\" data-start=\"2958\">Mount the push button in a 22mm panel cutout.</p>\n</li>\n<li data-end=\"3061\" data-start=\"3004\">\n<p data-end=\"3061\" data-start=\"3007\">Secure the button with the provided mounting hardware.</p>\n</li>\n<li data-end=\"3159\" data-start=\"3062\">\n<p data-end=\"3159\" data-start=\"3065\">Wire the Normally Closed (NC) terminals according to the system’s emergency stop requirements.</p>\n</li>\n<li data-end=\"3257\" data-start=\"3160\">\n<p data-end=\"3257\" data-start=\"3163\">To reset after activation, twist the button clockwise until it clicks into the reset position.</p>\n</li>\n</ol>\n<p data-end=\"3282\" data-start=\"3259\"><strong data-end=\"3282\" data-start=\"3259\">Electrical Ratings:</strong></p>\n<ul data-end=\"3447\" data-start=\"3283\">\n<li data-end=\"3308\" data-start=\"3283\">\n<p data-end=\"3308\" data-start=\"3285\"><strong data-end=\"3297\" data-start=\"3285\">Voltage:</strong><span> </span>600V AC/DC</p>\n</li>\n<li data-end=\"3327\" data-start=\"3309\">\n<p data-end=\"3327\" data-start=\"3311\"><strong data-end=\"3323\" data-start=\"3311\">Current:</strong><span> </span>10A</p>\n</li>\n<li data-end=\"3381\" data-start=\"3328\">\n<p data-end=\"3381\" data-start=\"3330\"><strong data-end=\"3356\" data-start=\"3330\">Contact Configuration:</strong><span> </span>1 x Normally Closed (NC)<img></p>\n</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "600v-10a-22mm-emergency-stop-push-button-twist-to-reset-1-contact-normally-closed",
+       "id": "gid://shopify/ProductVariant/43157038891123",
+       "media": [
+        {
+         "alt_text": "600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed",
+         "height": 977,
+         "preview": {
+          "height": 977,
+          "url": "https://cdn.shopify.com/s/files/1/0069/7430/8407/files/DisplaytwoFINAL.jpg",
+          "width": 1088
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0069/7430/8407/files/DisplaytwoFINAL.jpg",
+         "width": 1088
+        }
+       ],
+       "options": [
+        {
+         "label": "Single",
+         "name": "Pack quantity"
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "acecrew.myshopify.com",
+        "id": "gid://shopify/Shop/6974308407",
+        "name": "AceCrew",
+        "url": "https://acecrewdirect.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8023945117811",
+       "source": "shopify",
+       "title": "600V/10A 22mm Emergency Stop Push Button, Twist to Reset, 1 Contact Normally Closed",
+       "url": "https://acecrewdirect.com/products/600v-10a-22mm-emergency-stop-push-button-twist-to-reset-1-contact-normally-closed?variant=43157038891123&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<br><b>Brand/Manufacturer</b>: Eaton<br><b>Part #</b>: E22PB7L<br><b>UPC</b>: 782113567815<br><b>Package Quantity</b>: 1<br>Mounting: Panel<br>Color: Gray<br>Material: Plastic<br>Type: Push Button, External Reset<br>Size: 25 mm<br><br>Part Number: 782113567815 <br> Part: Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  <br> Push Button, External Reset, 25 mm, Non-Metallic, Non-Illuminated, Flush, Gray, Black Bezel, Plastic Push Rod, Momentary, NEMA 3/3R/4/4X/12/13 <br> Mounting: Panel <br> Color: Gray <br> Material: Plastic <br> Type: Push Button, External Reset <br> Size: 25 mm <br> "
+     },
+     "handle": "eaton-eaton-e22pb7l-push-button-25mm-black-plastic-push-rod-gray-external-reset-eaton-e22pb7l",
+     "id": "gid://shopify/p/4NH1fAi5mVKpu1uPcaJ5kh",
+     "media": [
+      {
+       "alt_text": "Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  Eaton E22PB7L",
+       "height": 67,
+       "preview": {
+        "height": 67,
+        "url": "https://cdn.shopify.com/s/files/1/0258/1112/4273/products/E22PB7L.jpg",
+        "width": 119
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0258/1112/4273/products/E22PB7L.jpg",
+       "width": 119
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "External reset mechanism enables quick and safe reset operations",
+       "Durable plastic construction ensures long-lasting performance",
+       "25mm size fits standard panel mounting requirements",
+       "Non-illuminated design for compatibility with various lighting systems",
+       "Momentary operation for temporary control applications"
+      ],
+      "unique_selling_points": [
+       "External reset design allows for easy maintenance and reset without disconnection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4558,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4558,
+       "currency": "USD"
+      }
+     },
+     "title": "Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  Eaton E22PB7L",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.pacificelectricalresource.com/buy/32345677365297:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<br><b>Brand/Manufacturer</b>: Eaton<br><b>Part #</b>: E22PB7L<br><b>UPC</b>: 782113567815<br><b>Package Quantity</b>: 1<br>Mounting: Panel<br>Color: Gray<br>Material: Plastic<br>Type: Push Button, External Reset<br>Size: 25 mm<br><br>Part Number: 782113567815 <br> Part: Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  <br> Push Button, External Reset, 25 mm, Non-Metallic, Non-Illuminated, Flush, Gray, Black Bezel, Plastic Push Rod, Momentary, NEMA 3/3R/4/4X/12/13 <br> Mounting: Panel <br> Color: Gray <br> Material: Plastic <br> Type: Push Button, External Reset <br> Size: 25 mm <br> "
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "eaton-eaton-e22pb7l-push-button-25mm-black-plastic-push-rod-gray-external-reset-eaton-e22pb7l",
+       "id": "gid://shopify/ProductVariant/32345677365297",
+       "media": [
+        {
+         "alt_text": "Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  Eaton E22PB7L",
+         "height": 67,
+         "preview": {
+          "height": 67,
+          "url": "https://cdn.shopify.com/s/files/1/0258/1112/4273/products/E22PB7L.jpg",
+          "width": 119
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0258/1112/4273/products/E22PB7L.jpg",
+         "width": 119
+        }
+       ],
+       "price": {
+        "amount": 4558,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "pacific-electrical-resource.myshopify.com",
+        "id": "gid://shopify/Shop/25811124273",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/25811124273/policies/13648494641.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/25811124273/policies/13648527409.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/25811124273/policies/13648461873.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/25811124273/policies/13648560177.html"
+         }
+        ],
+        "name": "Pacific Electrical Resource",
+        "url": "https://www.pacificelectricalresource.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4748951552049",
+       "source": "shopify",
+       "title": "Eaton E22PB7L Push Button, 25mm, Black, Plastic Push Rod, Gray, External Reset  Eaton E22PB7L",
+       "url": "https://www.pacificelectricalresource.com/products/eaton-eaton-e22pb7l-push-button-25mm-black-plastic-push-rod-gray-external-reset-eaton-e22pb7l?variant=32345677365297&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Sony Push Button, Reset - 5-250-130-75 helps keep your Sony operating at its best. Built to bring back your appliance’s original performance, this dependable replacement component handles everyday wear and tear while helping your unit function smoothly again.</p>\n\n<p>Manufactured in line with original equipment specifications, the Sony 5-250-130-75 replacement part offers dependable performance, accurate compatibility, and lasting durability. Designed for use with compatible Sony models, it serves as a practical repair and maintenance solution that helps restore proper operation and maintain consistent appliance performance.</p>"
+     },
+     "handle": "sony-5-250-130-75",
+     "id": "gid://shopify/p/1FHSIETZDLK9xOQApzhWKu",
+     "metadata": {
+      "top_features": [
+       "Genuine Sony replacement part ensures precise fit and function for compatible models",
+       "Restores appliance to original performance by replacing worn or faulty components",
+       "Durable construction withstands everyday wear and tear for long-lasting use",
+       "Easy installation simplifies repair and maintenance for users and technicians"
+      ],
+      "unique_selling_points": [
+       "Manufactured to original Sony specifications for dependable repair and maintenance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 685,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 685,
+       "currency": "USD"
+      }
+     },
+     "title": "Sony Push Button, Reset - 5-250-130-75",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://genuinereplacementparts.com/buy/45955525935281:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Sony Push Button, Reset - 5-250-130-75 helps keep your Sony operating at its best. Built to bring back your appliance’s original performance, this dependable replacement component handles everyday wear and tear while helping your unit function smoothly again.</p>\n\n<p>Manufactured in line with original equipment specifications, the Sony 5-250-130-75 replacement part offers dependable performance, accurate compatibility, and lasting durability. Designed for use with compatible Sony models, it serves as a practical repair and maintenance solution that helps restore proper operation and maintain consistent appliance performance.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "sony-5-250-130-75",
+       "id": "gid://shopify/ProductVariant/45955525935281",
+       "list_price": {
+        "amount": 891,
+        "currency": "USD"
+       },
+       "price": {
+        "amount": 685,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "grp-site.myshopify.com",
+        "id": "gid://shopify/Shop/70002933937",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/70002933937/policies/33074413745.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/70002933937/policies/34990555313.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/70002933937/policies/34990358705.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/70002933937/policies/34990686385.html"
+         }
+        ],
+        "name": "Genuine Replacement Parts",
+        "url": "https://genuinereplacementparts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8656621994161",
+       "source": "shopify",
+       "title": "Sony Push Button, Reset - 5-250-130-75",
+       "url": "https://genuinereplacementparts.com/products/sony-5-250-130-75?variant=45955525935281&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\"><ul>\r\n<li>Standard 12mm square switch</li>\r\n<li>Breadboard friendly</li>\r\n<li>Method of input for various projects</li>\r\n<li>Great for use as reset button</li>\r\n</ul></div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div>"
+     },
+     "handle": "12mm-push-button-switch-10pk",
+     "id": "gid://shopify/p/EkrVPmqGyHsMemR9e8asA",
+     "media": [
+      {
+       "alt_text": "12mm Push Button Switch (10PK)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "12mm square breadboard-friendly switch: Simplifies prototyping and integration into breadboarded circuits",
+       "Push button mechanism: Provides reliable mechanical input for electronic projects",
+       "Pack of 10 switches: Offers value and convenience for multiple projects",
+       "Solid black and silver color options: Ensures compatibility with a wide range of circuit boards"
+      ],
+      "unique_selling_points": [
+       "Breadboard-friendly 12mm square switches ideal for easy integration into circuit designs."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 483,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 483,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 7,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "12mm Push Button Switch (10PK)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42360470732961:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=esAjCPQ251GP&_gsid=esAjCPQ251GP",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\"><ul>\r\n<li>Standard 12mm square switch</li>\r\n<li>Breadboard friendly</li>\r\n<li>Method of input for various projects</li>\r\n<li>Great for use as reset button</li>\r\n</ul></div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "12mm-push-button-switch-10pk",
+       "id": "gid://shopify/ProductVariant/42360470732961",
+       "media": [
+        {
+         "alt_text": "12mm Push Button Switch (10PK)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/12mm-push-button-switch-10pk_1.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 483,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7487174869153",
+       "source": "shopify",
+       "title": "12mm Push Button Switch (10PK)",
+       "url": "https://www.robotshop.com/products/12mm-push-button-switch-10pk?variant=42360470732961&_gsid=esAjCPQ251GP&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

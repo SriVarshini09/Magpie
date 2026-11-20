@@ -1,0 +1,164 @@
+[
+  {
+    "store_id": "wowrobo",
+    "display_name": "WowRobo",
+    "domain": "shop.wowrobo.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "armdojo",
+    "display_name": "ArmDojo",
+    "domain": "xee8tz-dc.myshopify.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "geekworm",
+    "display_name": "Geekworm",
+    "domain": "geekworm.myshopify.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "openelab",
+    "display_name": "OpenELAB",
+    "domain": "openelab.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "robotshop",
+    "display_name": "RobotShop USA",
+    "domain": "robotshop-us.myshopify.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "rokland",
+    "display_name": "Rokland",
+    "domain": "store.rokland.com",
+    "action_level": "agent_cart",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "thepihut",
+    "display_name": "The Pi Hut",
+    "domain": "thepihut.com",
+    "action_level": "agent_cart",
+    "caveat": "UK store, GBP: off unless US shipping in USD is confirmed",
+    "enabled": false,
+    "simulated": true
+  },
+  {
+    "store_id": "pimoroni",
+    "display_name": "Pimoroni",
+    "domain": "shop.pimoroni.com",
+    "action_level": "agent_cart",
+    "caveat": "UK store, GBP: off unless US shipping in USD is confirmed",
+    "enabled": false,
+    "simulated": true
+  },
+  {
+    "store_id": "amazon",
+    "display_name": "Amazon",
+    "domain": "amazon.com",
+    "action_level": "prefilled_cart",
+    "caveat": "Amazon asks you to sign in first",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "digikey",
+    "display_name": "Digi-Key",
+    "domain": "digikey.com",
+    "action_level": "prefilled_cart",
+    "caveat": "Needs Digi-Key part numbers (API key)",
+    "enabled": false,
+    "simulated": true
+  },
+  {
+    "store_id": "bestbuy",
+    "display_name": "Best Buy",
+    "domain": "bestbuy.com",
+    "action_level": "prefilled_cart",
+    "caveat": "Best Buy adds one of each",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "walmart",
+    "display_name": "Walmart",
+    "domain": "walmart.com",
+    "action_level": "product_link",
+    "caveat": "Prefilled cart unverified (C21): product link until it passes",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "adafruit",
+    "display_name": "Adafruit",
+    "domain": "adafruit.com",
+    "action_level": "product_link",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "seeed",
+    "display_name": "Seeed Studio",
+    "domain": "seeedstudio.com",
+    "action_level": "product_link",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "sparkfun",
+    "display_name": "SparkFun",
+    "domain": "sparkfun.com",
+    "action_level": "product_link",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "ebay",
+    "display_name": "eBay",
+    "domain": "ebay.com",
+    "action_level": "product_link",
+    "caveat": "New, fixed-price listings only",
+    "enabled": true,
+    "simulated": true
+  },
+  {
+    "store_id": "dfrobot",
+    "display_name": "DFRobot",
+    "domain": "dfrobot.com",
+    "action_level": "product_link",
+    "caveat": "Stretch 7",
+    "enabled": false,
+    "simulated": true
+  },
+  {
+    "store_id": "waveshare",
+    "display_name": "Waveshare",
+    "domain": "waveshare.com",
+    "action_level": "product_link",
+    "caveat": "Stretch 7",
+    "enabled": false,
+    "simulated": true
+  },
+  {
+    "store_id": "mock_store",
+    "display_name": "Mock Hobby Store (simulated)",
+    "domain": "mock.invalid",
+    "action_level": "agent_cart",
+    "caveat": "Simulated store: not a real merchant",
+    "enabled": true,
+    "simulated": true
+  }
+]

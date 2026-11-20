@@ -1,0 +1,1493 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "small table clamp 2 pcs"
+  }
+ },
+ "key": "c52be82daed1a8a6bd4168543fe3a6fd8259c42621cd032a65ccc8980d69f318",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:18:36-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 800); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODAwLCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 800
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>BESSEY® 6\" Ratcheting Lever Clamps are a versatile addition to any shop. Designed for use with multifunction work tables with 20 mm holes, the uses for these clamps are endless. They securely hold workpieces in place for planing, sawing and other woodworking tasks. Use them with your shop-made jigs and fixtures or to create a clamping table. All that is required is a work surface with 20 mm holes and a panel thickness of at least 19 mm.</p><br><p><span><p><strong>Features:</strong><br></p>\n<br><ul>\n<li>Fast, easy and safe clamping on tables with 20 mm holes</li>\n<li>6\" clamping capacity allows for working with thicker materials</li>\n<li>Securely holds workpieces without slipping</li>\n<li>Quick-release trigger for immediate clamp release</li>\n<li>Lightweight magnesium sliding arm for rapid, vibration-free clamping</li>\n</ul>\n<br><p><strong>Specifications:</strong><br></p>\n<ul>\n<li>Clamping Capacity: 6\"</li>\n<li>Throat Depth: 3\"</li>\n<li>Clamping Force: Up to 150 lb</li>\n<li>Approximate Weight: 1.43 lb</li>\n<li>Table or Panel Thickness Required: 19 mm or greater</li>\n</ul>\n<br><p><strong>What's Included:</strong><br></p>\n<ul><li>(2) Bessey® 6\" Ratcheting Lever Clamp for 20 mm MFT Style Table</li></ul>\n<br></span></p>"
+     },
+     "handle": "bessey-6-ratcheting-lever-clamp-for-20-mm-mft-style-table-2-piece",
+     "id": "gid://shopify/p/1u7CEF9FDsMz2D2zj9lMba",
+     "media": [
+      {
+       "alt_text": "6” Ratcheting Lever Clamp for 20 mm MFT Style Table – 2 Piece",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/191745_000_001.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/191745_000_001.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Quick-release ratcheting trigger allows immediate clamp release for efficient workflow",
+       "6 inch clamping capacity accommodates thicker workpieces for versatile use",
+       "Lightweight magnesium sliding arm enables rapid vibration-free clamping",
+       "Secure grip prevents slipping during sawing, planing, or jig work",
+       "Compatible with 20 mm MFT style tables for broad shop integration"
+      ],
+      "unique_selling_points": [
+       "Quick-release ratcheting mechanism enables fast, safe, and slip-free clamping for thick materials."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 6299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 3
+     },
+     "title": "6” Ratcheting Lever Clamp for 20 mm MFT Style Table – 2 Piece",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.woodcraft.com/buy/45742416560266:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>BESSEY® 6\" Ratcheting Lever Clamps are a versatile addition to any shop. Designed for use with multifunction work tables with 20 mm holes, the uses for these clamps are endless. They securely hold workpieces in place for planing, sawing and other woodworking tasks. Use them with your shop-made jigs and fixtures or to create a clamping table. All that is required is a work surface with 20 mm holes and a panel thickness of at least 19 mm.</p><br><p><span><p><strong>Features:</strong><br></p>\n<br><ul>\n<li>Fast, easy and safe clamping on tables with 20 mm holes</li>\n<li>6\" clamping capacity allows for working with thicker materials</li>\n<li>Securely holds workpieces without slipping</li>\n<li>Quick-release trigger for immediate clamp release</li>\n<li>Lightweight magnesium sliding arm for rapid, vibration-free clamping</li>\n</ul>\n<br><p><strong>Specifications:</strong><br></p>\n<ul>\n<li>Clamping Capacity: 6\"</li>\n<li>Throat Depth: 3\"</li>\n<li>Clamping Force: Up to 150 lb</li>\n<li>Approximate Weight: 1.43 lb</li>\n<li>Table or Panel Thickness Required: 19 mm or greater</li>\n</ul>\n<br><p><strong>What's Included:</strong><br></p>\n<ul><li>(2) Bessey® 6\" Ratcheting Lever Clamp for 20 mm MFT Style Table</li></ul>\n<br></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "bessey-6-ratcheting-lever-clamp-for-20-mm-mft-style-table-2-piece",
+       "id": "gid://shopify/ProductVariant/45742416560266",
+       "media": [
+        {
+         "alt_text": "6” Ratcheting Lever Clamp for 20 mm MFT Style Table – 2 Piece",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/191745_000_001.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0616/1711/1178/files/191745_000_001.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 6299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4
+       },
+       "seller": {
+        "domain": "woodcraft-supply.myshopify.com",
+        "id": "gid://shopify/Shop/61617111178",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/61617111178/policies/46066303114.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/61617111178/policies/40958066826.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/61617111178/policies/40958034058.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/61617111178/policies/40958132362.html"
+         }
+        ],
+        "name": "Woodcraft",
+        "url": "https://www.woodcraft.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8369389633674",
+       "source": "shopify",
+       "title": "6” Ratcheting Lever Clamp for 20 mm MFT Style Table – 2 Piece",
+       "url": "https://www.woodcraft.com/products/bessey-6-ratcheting-lever-clamp-for-20-mm-mft-style-table-2-piece?variant=45742416560266&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Our heavy-duty Table Clamp is made of 6mm thick steel 32 mm wide and has a black powdercoat finish. Attaches to desks, tables and other surfaces from 1/4\" thick up to 1-5/8\" thick. Features two countersunk holes for attaching flexible gooseneck arm either inline or perpendicular. Rubber pads to protect your clamping surface. Includes stainless steel screw and washers for attaching to SnakeClamp brand flexible gooseneck or rigid arms.  Weight: 9.3 oz.</p>\n<p>[split]</p>\n<p>[tab1]What's Included[/tab1]</p>\n<p>[tab2]Assembly Instruction[/tab2]</p>\n<p>[tab3]Video Demonstration[/tab3]</p>\n<p>[split]</p>\n<p>[tab1contents]</p>\n<ul>\n<li>(1) Table Clamp</li>\n<li>(1) 3/8\"-24 x 3/4\" long flat-head stainless steel screw</li>\n<li>(1) 3/8\" flat washer</li>\n<li>(1) 3/8\" lock washer</li>\n<li>(1) 7/32\" allen wrench</li>\n</ul>\n<p>[/tab1contents]</p>\n<p>[tab2contents]</p>\n<p><a href=\"https://cdn.shopify.com/s/files/1/2988/7530/files/assemble-your-table-clamp.pdf?11844163663189216183\" target=\"_blank\">Assembly Instructions for Table Clamp (PDF)</a></p>\n<p>[/tab2contents]</p>\n<p>[tab3contents]</p>\n<p><span><iframe class=\"youtube\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Ydb4u4hktrc?rel=0\" frameborder=\"0\" allowfullscreen=\"\"></iframe><a href=\"https://youtube.com/embed/Ydb4u4hktrc?rel=0\" class=\"youtube-link\" target=\"_blank\">Video Link</a></span></p>\n<p>[/tab3contents]</p>\n"
+     },
+     "handle": "table-clamp",
+     "id": "gid://shopify/p/2bVssVaJW7fZDzWG08yrI7",
+     "media": [
+      {
+       "alt_text": "Table Clamp from SnakeClamp Products shown with flexible gooseneck arm attached to shelf",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/2988/7530/products/tableclampattachedshelfwithverticalgooseneck.jpg",
+        "width": 2048
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2988/7530/products/tableclampattachedshelfwithverticalgooseneck.jpg",
+       "width": 2048
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "6mm thick steel construction ensures long-lasting durability and strength",
+       "Black powdercoat finish provides corrosion resistance and a professional appearance",
+       "Attaches to 1/4 inch to 1-5/8 inch thick surfaces for broad compatibility",
+       "Two countersunk holes allow flexible installation of gooseneck arm in multiple orientations",
+       "Rubber pads protect surfaces from scratches during clamping"
+      ],
+      "unique_selling_points": [
+       "Features a flexible gooseneck arm and robust steel construction for versatile, secure mounting."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2395,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2395,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 9,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "Table Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://snakeclamp.com/buy/7025769087023:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Our heavy-duty Table Clamp is made of 6mm thick steel 32 mm wide and has a black powdercoat finish. Attaches to desks, tables and other surfaces from 1/4\" thick up to 1-5/8\" thick. Features two countersunk holes for attaching flexible gooseneck arm either inline or perpendicular. Rubber pads to protect your clamping surface. Includes stainless steel screw and washers for attaching to SnakeClamp brand flexible gooseneck or rigid arms.  Weight: 9.3 oz.</p>\n<p>[split]</p>\n<p>[tab1]What's Included[/tab1]</p>\n<p>[tab2]Assembly Instruction[/tab2]</p>\n<p>[tab3]Video Demonstration[/tab3]</p>\n<p>[split]</p>\n<p>[tab1contents]</p>\n<ul>\n<li>(1) Table Clamp</li>\n<li>(1) 3/8\"-24 x 3/4\" long flat-head stainless steel screw</li>\n<li>(1) 3/8\" flat washer</li>\n<li>(1) 3/8\" lock washer</li>\n<li>(1) 7/32\" allen wrench</li>\n</ul>\n<p>[/tab1contents]</p>\n<p>[tab2contents]</p>\n<p><a href=\"https://cdn.shopify.com/s/files/1/2988/7530/files/assemble-your-table-clamp.pdf?11844163663189216183\" target=\"_blank\">Assembly Instructions for Table Clamp (PDF)</a></p>\n<p>[/tab2contents]</p>\n<p>[tab3contents]</p>\n<p><span><iframe class=\"youtube\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Ydb4u4hktrc?rel=0\" frameborder=\"0\" allowfullscreen=\"\"></iframe><a href=\"https://youtube.com/embed/Ydb4u4hktrc?rel=0\" class=\"youtube-link\" target=\"_blank\">Video Link</a></span></p>\n<p>[/tab3contents]</p>\n"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "table-clamp",
+       "id": "gid://shopify/ProductVariant/7025769087023",
+       "media": [
+        {
+         "alt_text": "Table Clamp from SnakeClamp Products shown with flexible gooseneck arm attached to shelf",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/2988/7530/products/tableclampattachedshelfwithverticalgooseneck.jpg",
+          "width": 2048
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2988/7530/products/tableclampattachedshelfwithverticalgooseneck.jpg",
+         "width": 2048
+        }
+       ],
+       "price": {
+        "amount": 2395,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 8,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "snakeclamp.myshopify.com",
+        "id": "gid://shopify/Shop/29887530",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/29887530/policies/2206203951.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/29887530/policies/2206236719.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/29887530/policies/2206171183.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/29887530/policies/23311548463.html"
+         }
+        ],
+        "name": "SnakeClamp Products",
+        "url": "https://snakeclamp.com"
+       },
+       "seller_product_id": "gid://shopify/Product/543525961775",
+       "source": "shopify",
+       "title": "Table Clamp",
+       "url": "https://snakeclamp.com/products/table-clamp?variant=7025769087023&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h5>3\" MINI CLAMPS - Set of 2 clamps</h5>\n<p><br></p>\n<ul>\n<li>Engineered using premium plastic materials for strength and durability</li>\n<li>Ideal for assembling, holding and securing objects in place</li>\n<li>Set of two 3 inch mini plastic clamps with side beams graduated in inches</li>\n<li>Notched jaws help keep workpieces steady; quick-release lock opens jaws instantly</li>\n<li>Made in USA</li>\n</ul>\n<p><br></p>"
+     },
+     "handle": "mini-plastic-clamps-3-inch-capacity-set-of-2",
+     "id": "gid://shopify/p/7ICHfybqBYCPtsGXULr9Zp",
+     "media": [
+      {
+       "alt_text": "Mini Plastic Clamps, 3 Inch Capacity (Set of 2)",
+       "height": 600,
+       "preview": {
+        "height": 600,
+        "url": "https://cdn.shopify.com/s/files/1/0648/5550/7115/files/mini-plastic-clamps-3-inch-capacity-set-of-2-909805.jpg",
+        "width": 600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0648/5550/7115/files/mini-plastic-clamps-3-inch-capacity-set-of-2-909805.jpg",
+       "width": 600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Premium plastic construction ensures strength and durability for repeated use",
+       "Quick-release lock opens jaws instantly for fast clamping and release",
+       "Notched jaws provide a secure grip on workpieces",
+       "Graduated side beams allow for precise measurement during use",
+       "Set of two clamps offers versatility for different tasks"
+      ],
+      "unique_selling_points": [
+       "Quick-release lock mechanism enables instant jaw opening for fast and secure clamping."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 995,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 995,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Excel Mini Plastic Clamps, 3 Inch Capacity (Set of 2)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://micromark.com/buy/43874094743723:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h5>3\" MINI CLAMPS - Set of 2 clamps</h5>\n<p><br></p>\n<ul>\n<li>Engineered using premium plastic materials for strength and durability</li>\n<li>Ideal for assembling, holding and securing objects in place</li>\n<li>Set of two 3 inch mini plastic clamps with side beams graduated in inches</li>\n<li>Notched jaws help keep workpieces steady; quick-release lock opens jaws instantly</li>\n<li>Made in USA</li>\n</ul>\n<p><br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "mini-plastic-clamps-3-inch-capacity-set-of-2",
+       "id": "gid://shopify/ProductVariant/43874094743723",
+       "media": [
+        {
+         "alt_text": "Mini Plastic Clamps, 3 Inch Capacity (Set of 2)",
+         "height": 600,
+         "preview": {
+          "height": 600,
+          "url": "https://cdn.shopify.com/s/files/1/0648/5550/7115/files/mini-plastic-clamps-3-inch-capacity-set-of-2-909805.jpg",
+          "width": 600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0648/5550/7115/files/mini-plastic-clamps-3-inch-capacity-set-of-2-909805.jpg",
+         "width": 600
+        }
+       ],
+       "price": {
+        "amount": 995,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "60316b-80.myshopify.com",
+        "id": "gid://shopify/Shop/64855507115",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/64855507115/policies/27532296363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/64855507115/policies/27532329131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/64855507115/policies/27532263595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/64855507115/policies/27532361899.html"
+         }
+        ],
+        "name": "Micro-Mark",
+        "url": "https://micromark.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8016175562923",
+       "source": "shopify",
+       "title": "Excel Mini Plastic Clamps, 3 Inch Capacity (Set of 2)",
+       "url": "https://micromark.com/products/mini-plastic-clamps-3-inch-capacity-set-of-2?variant=43874094743723&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<!-- Begin start of Selling Points section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_selling_points0\"></span><br></p>\n<!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>Material: aluminum alloy</li>\n<li>Weight: 230G</li>\n<li>Clamping range: 0-1 Inch<br>\n</li>\n<li><span style=\"font: Arial; font-size: 12pt; color: #343434;\">Dimensions: 3.5x3x3 Inches</span></li>\n<li><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\">Suction Cup Diameter: 3.15 Inches</span></span></li>\n</ul>\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_product_features0\"><br></span></p>\n<!-- End of Product Features and Specifications Section -->\n<p> </p>\n<!-- Start of Package Contents Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>1x Mini Vise</li>\n<li>1x Wrench</li>\n</ul>\n<!-- End of Package Contents Section -->"
+     },
+     "handle": "universal-mini-table-vise-clamp-360-degree-rotating-with-suction-grip",
+     "id": "gid://shopify/p/74PfGJg6yw7w0O75TUpRGP",
+     "media": [
+      {
+       "alt_text": "Universal Mini Table Vise Clamp 360-Degree Rotating with Suction Grip",
+       "height": 800,
+       "preview": {
+        "height": 800,
+        "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/VICE.2.jpg",
+        "width": 800
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/VICE.2.jpg",
+       "width": 800
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "360-degree rotating mechanism allows flexible positioning for various tasks",
+       "Suction cup grip ensures a secure hold on smooth or irregular surfaces",
+       "Compact aluminum alloy construction offers lightweight durability",
+       "Wide clamping range accommodates objects from 0 to 1 inch thick",
+       "Includes wrench for convenient maintenance and adjustments"
+      ],
+      "unique_selling_points": [
+       "360-degree rotating suction grip enables precise positioning and secure hold for small parts."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "Universal Mini Table Vise Clamp 360-Degree Rotating with Suction Grip",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://speedyfpv.com/buy/43058021105878:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<!-- Begin start of Selling Points section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_selling_points0\"></span><br></p>\n<!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>Material: aluminum alloy</li>\n<li>Weight: 230G</li>\n<li>Clamping range: 0-1 Inch<br>\n</li>\n<li><span style=\"font: Arial; font-size: 12pt; color: #343434;\">Dimensions: 3.5x3x3 Inches</span></li>\n<li><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\">Suction Cup Diameter: 3.15 Inches</span></span></li>\n</ul>\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_product_features0\"><br></span></p>\n<!-- End of Product Features and Specifications Section -->\n<p> </p>\n<!-- Start of Package Contents Section -->\n<p><span style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span></p>\n<ul style=\"padding-left: 25px;\">\n<li>1x Mini Vise</li>\n<li>1x Wrench</li>\n</ul>\n<!-- End of Package Contents Section -->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "universal-mini-table-vise-clamp-360-degree-rotating-with-suction-grip",
+       "id": "gid://shopify/ProductVariant/43058021105878",
+       "media": [
+        {
+         "alt_text": "Universal Mini Table Vise Clamp 360-Degree Rotating with Suction Grip",
+         "height": 800,
+         "preview": {
+          "height": 800,
+          "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/VICE.2.jpg",
+          "width": 800
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1840/1085/products/VICE.2.jpg",
+         "width": 800
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "speedyfpv.myshopify.com",
+        "id": "gid://shopify/Shop/18401085",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299083.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/18401085/policies/33299147.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299019.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/25847562454.html"
+         }
+        ],
+        "name": "SpeedyFPV",
+        "url": "https://speedyfpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7710848418006",
+       "source": "shopify",
+       "title": "Universal Mini Table Vise Clamp 360-Degree Rotating with Suction Grip",
+       "url": "https://speedyfpv.com/products/universal-mini-table-vise-clamp-360-degree-rotating-with-suction-grip?variant=43058021105878&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Description</strong><meta charset=\"utf-8\"></p>\n<p>Take your IGT setup beyond the frame.<span class=\"PDq2pG_selectionAnchor\"></span></p>\n<p>The Stanluck Universal Clamp transforms virtually any edge into a mounting point for your favorite IGT accessories. Whether you're attaching it to a railing, picnic table, kitchen countertop, or workbench, it lets you bring versatility wherever you need it.</p>\n<p>Designed with the same modular philosophy as our IGT system, the Universal Clamp features integrated mounting holes for lantern poles, table extensions, and compatible accessories, along with a precision-machined sliding slot that accepts Stanluck bamboo tabletops. In seconds, you can create a compact side table, mount lighting, or expand your workspace, without needing an IGT frame.</p>\n<p>Its heavy-duty clamping mechanism securely attaches to surfaces up to <strong>1.75 inches thick</strong>, providing a stable foundation for cooking, dining, organizing, or relaxing wherever your adventure takes you.</p>\n<p>Because your setup shouldn't be limited to one table.</p>\n<p><strong>Sold in pairs. </strong></p>\n<p><strong>One clamp. Endless possibilities.</strong> Expand your workspace anywhere and bring the flexibility of the Stanluck modular ecosystem beyond the IGT frame.</p>\n<p><strong>Key Features<br></strong><meta charset=\"utf-8\"></p>\n<ul>\n<li>Converts virtually any tabletop, railing, countertop, or flat edge into a modular IGT-compatible mounting point</li>\n<li>Compatible with surfaces up to <strong>1.75in (44mm)</strong> thick</li>\n<li>Precision sliding slot accepts Stanluck bamboo tabletops for instant side tables or work surfaces</li>\n<li>Integrated mounting holes support lantern poles, table extensions, and compatible IGT accessories</li>\n<li>Heavy-duty clamping mechanism provides a secure, stable hold without permanent installation</li>\n<li>CNC-machined aluminum construction for durability with minimal weight</li>\n<li>Available in Black and Silver finishes</li>\n<li>Quick, tool-free installation and adjustment</li>\n</ul>\n<p><strong>Compatibility<br></strong>All IGT frames, extensions, and more</p>\n<p><strong>Material</strong><br>Stainless Steel</p>"
+     },
+     "handle": "igt-universal-clamp",
+     "id": "gid://shopify/p/69wNJmD2O5HJkRFyOl5Igv",
+     "media": [
+      {
+       "alt_text": "IGT Universal Clamp holding a bamboo board to an IGT frame",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/0801/5092/1528/files/IMG_7480.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0801/5092/1528/files/IMG_7480.jpg",
+       "width": 1600
+      }
+     ],
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Black"
+        },
+        {
+         "label": "Silver"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4400,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "IGT Universal Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://stanluck.com/buy/52367231910200:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Description</strong><meta charset=\"utf-8\"></p>\n<p>Take your IGT setup beyond the frame.<span class=\"PDq2pG_selectionAnchor\"></span></p>\n<p>The Stanluck Universal Clamp transforms virtually any edge into a mounting point for your favorite IGT accessories. Whether you're attaching it to a railing, picnic table, kitchen countertop, or workbench, it lets you bring versatility wherever you need it.</p>\n<p>Designed with the same modular philosophy as our IGT system, the Universal Clamp features integrated mounting holes for lantern poles, table extensions, and compatible accessories, along with a precision-machined sliding slot that accepts Stanluck bamboo tabletops. In seconds, you can create a compact side table, mount lighting, or expand your workspace, without needing an IGT frame.</p>\n<p>Its heavy-duty clamping mechanism securely attaches to surfaces up to <strong>1.75 inches thick</strong>, providing a stable foundation for cooking, dining, organizing, or relaxing wherever your adventure takes you.</p>\n<p>Because your setup shouldn't be limited to one table.</p>\n<p><strong>Sold in pairs. </strong></p>\n<p><strong>One clamp. Endless possibilities.</strong> Expand your workspace anywhere and bring the flexibility of the Stanluck modular ecosystem beyond the IGT frame.</p>\n<p><strong>Key Features<br></strong><meta charset=\"utf-8\"></p>\n<ul>\n<li>Converts virtually any tabletop, railing, countertop, or flat edge into a modular IGT-compatible mounting point</li>\n<li>Compatible with surfaces up to <strong>1.75in (44mm)</strong> thick</li>\n<li>Precision sliding slot accepts Stanluck bamboo tabletops for instant side tables or work surfaces</li>\n<li>Integrated mounting holes support lantern poles, table extensions, and compatible IGT accessories</li>\n<li>Heavy-duty clamping mechanism provides a secure, stable hold without permanent installation</li>\n<li>CNC-machined aluminum construction for durability with minimal weight</li>\n<li>Available in Black and Silver finishes</li>\n<li>Quick, tool-free installation and adjustment</li>\n</ul>\n<p><strong>Compatibility<br></strong>All IGT frames, extensions, and more</p>\n<p><strong>Material</strong><br>Stainless Steel</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "igt-universal-clamp",
+       "id": "gid://shopify/ProductVariant/52367231910200",
+       "media": [
+        {
+         "alt_text": "IGT Universal Clamp holding a bamboo board to an IGT frame",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/0801/5092/1528/files/IMG_7480.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0801/5092/1528/files/IMG_7480.jpg",
+         "width": 1600
+        }
+       ],
+       "options": [
+        {
+         "label": "Silver",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 4400,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "stanluck.myshopify.com",
+        "id": "gid://shopify/Shop/80150921528",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/80150921528/policies/38111248696.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/80150921528/policies/38111281464.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/80150921528/policies/38111215928.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/80150921528/policies/38111314232.html"
+         }
+        ],
+        "name": "Stanluck, Inc.",
+        "url": "https://stanluck.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10693270438200",
+       "source": "shopify",
+       "title": "IGT Universal Clamp",
+       "url": "https://stanluck.com/products/igt-universal-clamp?variant=52367231910200&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h4><strong>Description</strong></h4>\n<p>Our super cool table clamp gives you the edge - literally. Mount any model light onto the edge of any table for stable convenience. It is especially great for the back of a desk!</p>\n<p>This accessory is compatible with the Reveal, Elite X, Revolution X, Ultra X, and the Multimedia X, Saturn</p>\n<h4>Specifications</h4>\n<p> </p>\n<p><span>• Clamps onto tables and shelves 3.93\" (10cm)</span><br><span>• Includes a 7\" (17.5) post</span><br><span>• Fits all previous and current lighting models</span></p>\n<h4><span>Shipping &amp; Warranty</span></h4>\n<p> </p>\n<p><b>SHIPPING</b><br><span>• US shipping address:<br></span><span>Ships the following business day from the day your order is placed.</span></p>\n<p>• Outside the US:<br><span>Ships same or following business day by DHL Express.</span></p>\n<p><b>WARRANTY</b><br><span>One (1) year unlimited unconditional warranty covering manufacturer's defects, loss of functionality, parts, shipping, and service. After one year, we will still continue to provide service repair to our products, provided we have the parts available for repair and/or replace. Please reach out to our Customer Solutions (CS) team for assistance.</span></p>"
+     },
+     "handle": "table-clamp-mount-any-model-light",
+     "id": "gid://shopify/p/2BPO4XsuQ2xIi9sBVelTya",
+     "media": [
+      {
+       "alt_text": "Super cool GLAMCOR table clamp for stable lighting convenience on any table edge.",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/2225/9285/products/glamcor-table-clamp-accessory.jpg",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2225/9285/products/glamcor-table-clamp-accessory.jpg",
+       "width": 1080
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Mounts to tables and shelves for flexible lighting placement",
+       "Compatible with Reveal Elite X, Revolution X, Ultra X, and Multimedia X lights for broad usability",
+       "Sturdy metal and plastic construction ensures reliable support",
+       "Fits both previous and current lighting models for long-term use"
+      ],
+      "unique_selling_points": [
+       "Compatible with multiple lighting models and mounts to any table edge for versatile studio use."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3600,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 14,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.4
+     },
+     "title": "Table Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://glamcor.com/buy/40455857874:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h4><strong>Description</strong></h4>\n<p>Our super cool table clamp gives you the edge - literally. Mount any model light onto the edge of any table for stable convenience. It is especially great for the back of a desk!</p>\n<p>This accessory is compatible with the Reveal, Elite X, Revolution X, Ultra X, and the Multimedia X, Saturn</p>\n<h4>Specifications</h4>\n<p> </p>\n<p><span>• Clamps onto tables and shelves 3.93\" (10cm)</span><br><span>• Includes a 7\" (17.5) post</span><br><span>• Fits all previous and current lighting models</span></p>\n<h4><span>Shipping &amp; Warranty</span></h4>\n<p> </p>\n<p><b>SHIPPING</b><br><span>• US shipping address:<br></span><span>Ships the following business day from the day your order is placed.</span></p>\n<p>• Outside the US:<br><span>Ships same or following business day by DHL Express.</span></p>\n<p><b>WARRANTY</b><br><span>One (1) year unlimited unconditional warranty covering manufacturer's defects, loss of functionality, parts, shipping, and service. After one year, we will still continue to provide service repair to our products, provided we have the parts available for repair and/or replace. Please reach out to our Customer Solutions (CS) team for assistance.</span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "table-clamp-mount-any-model-light",
+       "id": "gid://shopify/ProductVariant/40455857874",
+       "list_price": {
+        "amount": 4000,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Super cool GLAMCOR table clamp for stable lighting convenience on any table edge.",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/2225/9285/products/glamcor-table-clamp-accessory.jpg",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2225/9285/products/glamcor-table-clamp-accessory.jpg",
+         "width": 1080
+        }
+       ],
+       "price": {
+        "amount": 3600,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 17,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.1
+       },
+       "seller": {
+        "domain": "glamcor-com.myshopify.com",
+        "id": "gid://shopify/Shop/22259285",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/22259285/policies/37916562.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/22259285/policies/37916626.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/22259285/policies/37916498.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/22259285/policies/13672415326.html"
+         }
+        ],
+        "name": "GLAMCOR",
+        "url": "https://glamcor.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10287939730",
+       "source": "shopify",
+       "title": "Table Clamp",
+       "url": "https://glamcor.com/products/table-clamp-mount-any-model-light?variant=40455857874&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3>\n<span>Diamond Painting Canvas Table Clamps are the perfect solution for keeping your canvas out of the way while diamond painting!</span><br><br><span>Our 3D printed holder securely holds your rolled-up canvas, freeing up space on your table. Now you can easily focus on perfecting your diamond painting without the canvas getting in your way.</span><br><br><span>Simply attach the single middle clamp to the center of the table and insert your rolled up diamond painting, and unrolling the canvas a little at a time as needed, perfect for small desk &amp; Tables with a big canvas, works fine with are without Drills.</span><br>\n</h3>\n<h3><a href=\"https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc\"><span style=\"color: rgb(43, 0, 255);\"><strong>How To Video By Casey:</strong></span></a></h3>\n<h3><a href=\"https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc\"><span style=\"color: rgb(43, 0, 255);\"><strong>https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc</strong></span></a></h3>\n<h3><span style=\"color: rgb(43, 0, 255);\"><strong>Can accommodate up to a 2-1/4'' in thickness Desktop . </strong></span></h3>\n<p><span style=\"color: #ff00ff;\"><strong>Colors may vary slightly due to filament availability. Rainbow, Dual, and Tri colors have a random pattern. so every print will be different.</strong></span></p>\n<p><span style=\"color: #ff2a00;\"><strong> They are 3D printed items so there might be some slight imperfections, but it does not interfere with functionality. If you have any issues, reach out to us thru the contact tab.</strong></span></p>\n<p> </p>\n<div style=\"text-align: left;\"><br></div>\n<p><span style=\"color: #ff2a00;\"><strong><img src=\"https://cdn.shopify.com/s/files/1/0593/1237/3802/files/Rainbowexplation_480x480.png?v=1709075140\" alt=\"Rainbow explanation on small items.\"></strong></span></p>"
+     },
+     "handle": "diamond-painting-single-middle-of-canvas-holder-table-clamp",
+     "id": "gid://shopify/p/2qzT0syncyRegosfJULrsM",
+     "media": [
+      {
+       "alt_text": "Diamond Painting Single Middle of Canvas Holder Table Clamp",
+       "height": 3024,
+       "preview": {
+        "height": 3024,
+        "url": "https://cdn.shopify.com/s/files/1/0593/1237/3802/files/IMG_4250.jpg",
+        "width": 4032
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0593/1237/3802/files/IMG_4250.jpg",
+       "width": 4032
+      },
+      {
+       "alt_text": "Diamond Painting Single Middle of Canvas Holder Table Clamp",
+       "duration": 54,
+       "preview": {
+        "height": 1024,
+        "url": "https://cdn.shopify.com/s/files/1/0593/1237/3802/files/preview_images/50def76945f3459db2820fc5e1a7ee58.thumbnail.0000000000.jpg",
+        "width": 576
+       },
+       "sources": [
+        {
+         "format": "m3u8",
+         "height": 720,
+         "mime_type": "application/x-mpegURL",
+         "url": "https://cdn.shopify.com/videos/c/vp/50def76945f3459db2820fc5e1a7ee58/50def76945f3459db2820fc5e1a7ee58.m3u8",
+         "width": 404
+        },
+        {
+         "format": "mp4",
+         "height": 720,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/50def76945f3459db2820fc5e1a7ee58/50def76945f3459db2820fc5e1a7ee58.HD-720p-1.6Mbps-88670101.mp4",
+         "width": 404
+        },
+        {
+         "format": "mp4",
+         "height": 480,
+         "mime_type": "video/mp4",
+         "url": "https://cdn.shopify.com/videos/c/vp/50def76945f3459db2820fc5e1a7ee58/50def76945f3459db2820fc5e1a7ee58.SD-480p-0.9Mbps-88670101.mp4",
+         "width": 270
+        }
+       ],
+       "type": "video",
+       "url": "https://cdn.shopify.com/videos/c/vp/50def76945f3459db2820fc5e1a7ee58/50def76945f3459db2820fc5e1a7ee58.m3u8"
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3D printed construction: Provides lightweight durability and easy installation",
+       "Center clamp design: Keeps canvas securely in the middle of the table for optimal workflow",
+       "No-drill installation: Compatible with most tables for quick setup",
+       "Accommodates up to 2.25 inch canvas thickness: Suitable for a wide range of canvas sizes",
+       "Random color patterns: Each print offers a unique rainbow, dual, or tri-color effect"
+      ],
+      "unique_selling_points": [
+       "3D printed holder keeps rolled-up canvas centered and accessible without taking up table space."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Blue To Green Changing"
+        },
+        {
+         "label": "Bubblegum Pink Elixir"
+        },
+        {
+         "label": "Burnt Titanium"
+        },
+        {
+         "label": "Dark Purple"
+        },
+        {
+         "label": "Funfetti Clear"
+        },
+        {
+         "label": "Lavender Chip"
+        },
+        {
+         "label": "Lavender Elixir"
+        },
+        {
+         "label": "Matte Pastel Rainbow"
+        },
+        {
+         "label": "Mermaid"
+        },
+        {
+         "label": "Mint Green Elixir"
+        },
+        {
+         "label": "Moonstone"
+        },
+        {
+         "label": "Nightshade"
+        },
+        {
+         "label": "Pastel Rainbow Elixir"
+        },
+        {
+         "label": "Perfect Purple"
+        },
+        {
+         "label": "Periwinkle"
+        },
+        {
+         "label": "Purple To Teal Changing"
+        },
+        {
+         "label": "Rose Gold"
+        },
+        {
+         "label": "Ruby Red Elixir"
+        },
+        {
+         "label": "Silk Blue"
+        },
+        {
+         "label": "Silk Cotton Candy Blue"
+        },
+        {
+         "label": "Silk Magenta"
+        },
+        {
+         "label": "Silk Neon Green"
+        },
+        {
+         "label": "Silk Orange"
+        },
+        {
+         "label": "Silk Pastel Rainbow"
+        },
+        {
+         "label": "Silk Peacock Blue"
+        },
+        {
+         "label": "Silk Purple"
+        },
+        {
+         "label": "Silk Rainbow"
+        },
+        {
+         "label": "Silk Violet Purple"
+        },
+        {
+         "label": "Silk White"
+        },
+        {
+         "label": "Silk Yellow"
+        },
+        {
+         "label": "Silky Black"
+        },
+        {
+         "label": "Silky Red"
+        },
+        {
+         "label": "Solar Flare Elixir"
+        },
+        {
+         "label": "Sunrise Elixir"
+        },
+        {
+         "label": "Teal Elixir"
+        },
+        {
+         "label": "Translucent Black Star"
+        },
+        {
+         "label": "Translucent Blue Glitter"
+        },
+        {
+         "label": "Translucent Floss Pink → Purple → Blue Star"
+        },
+        {
+         "label": "Translucent Mint Star"
+        },
+        {
+         "label": "Translucent Pink Star"
+        },
+        {
+         "label": "Translucent Purple Star"
+        },
+        {
+         "label": "Unicorn"
+        },
+        {
+         "label": "Unicorn Elixir"
+        },
+        {
+         "label": "Witchcraft"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4375,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4375,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 12,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Diamond Painting Single Middle of Canvas Holder Table Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.carissas-craft-corner.com/buy/43660406652970:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3>\n<span>Diamond Painting Canvas Table Clamps are the perfect solution for keeping your canvas out of the way while diamond painting!</span><br><br><span>Our 3D printed holder securely holds your rolled-up canvas, freeing up space on your table. Now you can easily focus on perfecting your diamond painting without the canvas getting in your way.</span><br><br><span>Simply attach the single middle clamp to the center of the table and insert your rolled up diamond painting, and unrolling the canvas a little at a time as needed, perfect for small desk &amp; Tables with a big canvas, works fine with are without Drills.</span><br>\n</h3>\n<h3><a href=\"https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc\"><span style=\"color: rgb(43, 0, 255);\"><strong>How To Video By Casey:</strong></span></a></h3>\n<h3><a href=\"https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc\"><span style=\"color: rgb(43, 0, 255);\"><strong>https://www.tiktok.com/@casey_spacey1/video/7657264940423646478?is_from_webapp=1&amp;sender_device=pc</strong></span></a></h3>\n<h3><span style=\"color: rgb(43, 0, 255);\"><strong>Can accommodate up to a 2-1/4'' in thickness Desktop . </strong></span></h3>\n<p><span style=\"color: #ff00ff;\"><strong>Colors may vary slightly due to filament availability. Rainbow, Dual, and Tri colors have a random pattern. so every print will be different.</strong></span></p>\n<p><span style=\"color: #ff2a00;\"><strong> They are 3D printed items so there might be some slight imperfections, but it does not interfere with functionality. If you have any issues, reach out to us thru the contact tab.</strong></span></p>\n<p> </p>\n<div style=\"text-align: left;\"><br></div>\n<p><span style=\"color: #ff2a00;\"><strong><img src=\"https://cdn.shopify.com/s/files/1/0593/1237/3802/files/Rainbowexplation_480x480.png?v=1709075140\" alt=\"Rainbow explanation on small items.\"></strong></span></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "diamond-painting-single-middle-of-canvas-holder-table-clamp",
+       "id": "gid://shopify/ProductVariant/43660406652970",
+       "media": [
+        {
+         "alt_text": "Diamond Painting Single Middle of Canvas Holder Table Clamp",
+         "height": 3024,
+         "preview": {
+          "height": 3024,
+          "url": "https://cdn.shopify.com/s/files/1/0593/1237/3802/files/IMG_4250.jpg",
+          "width": 4032
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0593/1237/3802/files/IMG_4250.jpg",
+         "width": 4032
+        }
+       ],
+       "options": [
+        {
+         "label": "Nightshade",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 4375,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 20,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "1cdbad-2.myshopify.com",
+        "id": "gid://shopify/Shop/59312373802",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/59312373802/policies/25180045354.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/59312373802/policies/25180078122.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/59312373802/policies/25180012586.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/59312373802/policies/25180110890.html"
+         }
+        ],
+        "name": "Carissa's Craft Corner",
+        "url": "https://www.carissas-craft-corner.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7709534912554",
+       "source": "shopify",
+       "title": "Diamond Painting Single Middle of Canvas Holder Table Clamp",
+       "url": "https://www.carissas-craft-corner.com/products/diamond-painting-single-middle-of-canvas-holder-table-clamp?variant=43660406652970&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h4>Specification</h4>\n<table>\n<tbody>\n<tr>\n<td>\n<p>Material</p>\n</td>\n<td>\n<p>Aluminum Alloy</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dimensions</p>\n</td>\n<td>\n<p>99mm L x 20mm W x 70mm H (3.9 x 0.8 x 2.8in)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Color</p>\n</td>\n<td>\n<p>Silvery</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Max.Clamping</p>\n</td>\n<td>\n<p>50mm (1.97'')</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h4 class=\"a-spacing-mini\">T-Track for CNC 3040/4030 Series</h4>\n<p>Upgraded clamps that are heavier duty and reliable solutions for keeping your T-Track or T-slot workpieces in place. Compatible with<span> </span><a href=\"https://www.sainsmart.com/products/genmitsu-proverxl-4030-threaded-inserts-mdf-spoilboard\" target=\"_blank\"><span class=\"a-text-bold\">Genmitsu PROVerXL 4030 MDF Spoilboard</span></a><span> </span>and<span> </span><a href=\"https://www.sainsmart.com/products/genmitsu-t-slot-table-6060-aluminum-spoilboard-for-proverxl-4030-xy-axis-extension-kit\" target=\"_blank\"><span class=\"a-text-bold\">6060 Extension Aluminum Spoilboard</span></a>. Also, it can be used for other larger MDF Spoilboard and Aluminum Spoilboard that fits the size of the<span> </span><strong><span class=\"a-text-bold\">M6 T-slot nut (16 x 16mm)</span>.</strong></p>\n<p> </p>\n<p><strong>Remove T-slot slide can be compatible with: </strong></p>\n<p>PROVerXL 6050 Plus, PROVerXL 4030, 4040-RENO, 4040-PRO, 3030-PROVer MAX, 3020-PRO MAX V2, 3018-PROVer V2</p>\n<p> </p>\n<h4>Feature</h4>\n<p>Made of high-strength aluminum alloy which can provide you with high-tension clamping action. The star knob gives you full-range control. This makes adjusting, tightening, and securing your material a breeze.</p>\n<p> </p>\n<h4>Unique Groove Design</h4>\n<p>Two grooves on the top are designed for a stronger and more solid clamping force. Compared to other fixtures on the market, there are two different options available for you to choose: Choose the size range that best suits your materials.</p>"
+     },
+     "handle": "2pcs-t-track-mini-hold-down-clamp-kit-for-wood-working-on-proverxl-4030",
+     "id": "gid://shopify/p/1fEAxAq2IJSKB7TZN1XIx9",
+     "media": [
+      {
+       "alt_text": "MCPV2 2PCS Mini Hold Down Clamp Kit, for T-track & Molded Spoilboard.",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/1978/9859/products/01_83baca0b-9f55-4edc-96f4-2a342d8ad466.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1978/9859/products/01_83baca0b-9f55-4edc-96f4-2a342d8ad466.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High-strength aluminum alloy construction ensures durability and long-lasting performance",
+       "Dual groove design provides stronger, more stable clamping force than standard fixtures",
+       "Non-marring pads protect workpiece surfaces from scratches and damage",
+       "Quick and easy T-track adjustment for fast setup and material changes",
+       "Compact mini clamp design fits small to medium workpieces and CNC routers"
+      ],
+      "unique_selling_points": [
+       "High-strength aluminum alloy clamps with dual groove design for enhanced clamping force and compatibility with multiple T-track and spoilboard systems."
+      ]
+     },
+     "options": [
+      {
+       "name": "Ship to",
+       "values": [
+        {
+         "label": "USA"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 4,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "MCPV2 2PCS Mini Hold Down Clamp Kit, for T-track & Molded Spoilboard",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.sainsmart.com/buy/39538998673487:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h4>Specification</h4>\n<table>\n<tbody>\n<tr>\n<td>\n<p>Material</p>\n</td>\n<td>\n<p>Aluminum Alloy</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Dimensions</p>\n</td>\n<td>\n<p>99mm L x 20mm W x 70mm H (3.9 x 0.8 x 2.8in)</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Color</p>\n</td>\n<td>\n<p>Silvery</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Max.Clamping</p>\n</td>\n<td>\n<p>50mm (1.97'')</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h4 class=\"a-spacing-mini\">T-Track for CNC 3040/4030 Series</h4>\n<p>Upgraded clamps that are heavier duty and reliable solutions for keeping your T-Track or T-slot workpieces in place. Compatible with<span> </span><a href=\"https://www.sainsmart.com/products/genmitsu-proverxl-4030-threaded-inserts-mdf-spoilboard\" target=\"_blank\"><span class=\"a-text-bold\">Genmitsu PROVerXL 4030 MDF Spoilboard</span></a><span> </span>and<span> </span><a href=\"https://www.sainsmart.com/products/genmitsu-t-slot-table-6060-aluminum-spoilboard-for-proverxl-4030-xy-axis-extension-kit\" target=\"_blank\"><span class=\"a-text-bold\">6060 Extension Aluminum Spoilboard</span></a>. Also, it can be used for other larger MDF Spoilboard and Aluminum Spoilboard that fits the size of the<span> </span><strong><span class=\"a-text-bold\">M6 T-slot nut (16 x 16mm)</span>.</strong></p>\n<p> </p>\n<p><strong>Remove T-slot slide can be compatible with: </strong></p>\n<p>PROVerXL 6050 Plus, PROVerXL 4030, 4040-RENO, 4040-PRO, 3030-PROVer MAX, 3020-PRO MAX V2, 3018-PROVer V2</p>\n<p> </p>\n<h4>Feature</h4>\n<p>Made of high-strength aluminum alloy which can provide you with high-tension clamping action. The star knob gives you full-range control. This makes adjusting, tightening, and securing your material a breeze.</p>\n<p> </p>\n<h4>Unique Groove Design</h4>\n<p>Two grooves on the top are designed for a stronger and more solid clamping force. Compared to other fixtures on the market, there are two different options available for you to choose: Choose the size range that best suits your materials.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "2pcs-t-track-mini-hold-down-clamp-kit-for-wood-working-on-proverxl-4030",
+       "id": "gid://shopify/ProductVariant/39538998673487",
+       "media": [
+        {
+         "alt_text": "MCPV2 2PCS Mini Hold Down Clamp Kit, for T-track & Molded Spoilboard.",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/1978/9859/products/01_83baca0b-9f55-4edc-96f4-2a342d8ad466.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1978/9859/products/01_83baca0b-9f55-4edc-96f4-2a342d8ad466.jpg",
+         "width": 1600
+        }
+       ],
+       "options": [
+        {
+         "label": "USA",
+         "name": "Ship to"
+        }
+       ],
+       "price": {
+        "amount": 2999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4
+       },
+       "seller": {
+        "domain": "sainsmart.myshopify.com",
+        "id": "gid://shopify/Shop/19789859",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/19789859/policies/37063316.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/19789859/policies/37063380.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/19789859/policies/37063252.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/19789859/policies/12384501839.html"
+         }
+        ],
+        "name": "SainSmart.com",
+        "url": "https://www.sainsmart.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6599808254031",
+       "source": "shopify",
+       "title": "MCPV2 2PCS Mini Hold Down Clamp Kit, for T-track & Molded Spoilboard",
+       "url": "https://www.sainsmart.com/products/2pcs-t-track-mini-hold-down-clamp-kit-for-wood-working-on-proverxl-4030?variant=39538998673487&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Crafted from high-strength CNC-machined steel, this desk clamp mount delivers exceptional rigidity and durability. The precision multi-angle adjustment ensures a stable and comfortable driving position, while the space-saving clamp design securely fits a wide range of desk thicknesses. With selected components also supporting aluminum profile rig mounting, it offers a versatile installation solution for <span style=\"color: rgb(201, 175, 137);\"><strong>MOZA R5, R9, and R12</strong></span> direct drive wheel bases.</p>"
+     },
+     "handle": "table-clamp",
+     "id": "gid://shopify/p/3882VsG9bqxYf1mZFqa23u",
+     "media": [
+      {
+       "alt_text": "Table Clamp",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0942/7134/0846/files/R5-R9-Table-Clamp-2.png",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0942/7134/0846/files/R5-R9-Table-Clamp-2.png",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High-strength CNC-machined steel construction ensures durability and stability during intense racing sessions",
+       "Multi-angle adjustment allows precise positioning of wheelbases for optimal comfort and control",
+       "Universal desk compatibility fits a wide range of desk thicknesses from 5 mm to 50 mm",
+       "Simple installation with included mounting hardware for quick setup",
+       "Versatile use for sim racing, flight simulation, and other gaming or workspace setups"
+      ],
+      "unique_selling_points": [
+       "Multi-angle adjustment and universal desk compatibility for optimal sim racing setup."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3900,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 113,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Table Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://us.mozaracing.com/buy/50638943453486:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Crafted from high-strength CNC-machined steel, this desk clamp mount delivers exceptional rigidity and durability. The precision multi-angle adjustment ensures a stable and comfortable driving position, while the space-saving clamp design securely fits a wide range of desk thicknesses. With selected components also supporting aluminum profile rig mounting, it offers a versatile installation solution for <span style=\"color: rgb(201, 175, 137);\"><strong>MOZA R5, R9, and R12</strong></span> direct drive wheel bases.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "table-clamp",
+       "id": "gid://shopify/ProductVariant/50638943453486",
+       "list_price": {
+        "amount": 4900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Table Clamp",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0942/7134/0846/files/R5-R9-Table-Clamp-2.png",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0942/7134/0846/files/R5-R9-Table-Clamp-2.png",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 3900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 103,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.7
+       },
+       "seller": {
+        "domain": "mozaracingus.myshopify.com",
+        "id": "gid://shopify/Shop/94271340846",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/94271340846/policies/46054146350.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/94271340846/policies/46363967790.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/94271340846/policies/46363935022.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/94271340846/policies/46363771182.html"
+         }
+        ],
+        "name": "MOZA Racing US",
+        "url": "https://us.mozaracing.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9858046558510",
+       "source": "shopify",
+       "title": "Table Clamp",
+       "url": "https://us.mozaracing.com/products/table-clamp?variant=50638943453486&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Key Features:</strong><br>- <strong>3 Angle Adjustments: </strong>Find the perfect racing position easily.<br>- <strong>Rock Solid Design: </strong>Accessory-free lock for seamless and secure mounting.<br>- <strong>Quick Setup:</strong> Hidden hand locks under the desk for fast installation.<br>- <strong>4mm Steel Construction:</strong> Durable and reliable for long-term use.<br>- <strong>Adjustable Height:</strong> 56mm margin to fit most desks.<br>- <strong>Full SIMAGIC Compatibility: </strong>Works with all SIMAGIC Alpha base series and more.</p>"
+     },
+     "handle": "simagic-t-loc-wheelbase-table-clamp",
+     "id": "gid://shopify/p/aszL5JVDCMA3pzW4sdo0A",
+     "media": [
+      {
+       "alt_text": "Simagic - T-LOC Wheelbase Table Clamp",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/0726/3394/2336/files/T-LOC1.webp",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0726/3394/2336/files/T-LOC1.webp",
+       "width": 1080
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Three adjustable angles for optimal racing position and comfort",
+       "Tool-free, quick setup with hidden hand locks for fast installation",
+       "Rock-solid, accessory-free lock ensures secure mounting",
+       "Fits most desks up to 56 mm thick for broad compatibility",
+       "Durable 4 mm steel or CNC-machined aluminum construction for long-term reliability"
+      ],
+      "unique_selling_points": [
+       "Quick, tool-free setup with adjustable angles and secure, accessory-free lock for Simagic wheelbase compatibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 3900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3900,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 9,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "Simagic - T-LOC Wheelbase Table Clamp",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://simshop.com/buy/45211240399168:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=PgQFZfMJv7Z9&_gsid=PgQFZfMJv7Z9",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Key Features:</strong><br>- <strong>3 Angle Adjustments: </strong>Find the perfect racing position easily.<br>- <strong>Rock Solid Design: </strong>Accessory-free lock for seamless and secure mounting.<br>- <strong>Quick Setup:</strong> Hidden hand locks under the desk for fast installation.<br>- <strong>4mm Steel Construction:</strong> Durable and reliable for long-term use.<br>- <strong>Adjustable Height:</strong> 56mm margin to fit most desks.<br>- <strong>Full SIMAGIC Compatibility: </strong>Works with all SIMAGIC Alpha base series and more.</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "simagic-t-loc-wheelbase-table-clamp",
+       "id": "gid://shopify/ProductVariant/45211240399168",
+       "media": [
+        {
+         "alt_text": "Simagic - T-LOC Wheelbase Table Clamp",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/0726/3394/2336/files/T-LOC1.webp",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0726/3394/2336/files/T-LOC1.webp",
+         "width": 1080
+        }
+       ],
+       "price": {
+        "amount": 3900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 17,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "sim-shop-team.myshopify.com",
+        "id": "gid://shopify/Shop/72633942336",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/72633942336/policies/30348345664.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/72633942336/policies/30348378432.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/72633942336/policies/30348312896.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/72633942336/policies/30348411200.html"
+         }
+        ],
+        "name": "Simshop",
+        "url": "https://simshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8364101108032",
+       "source": "shopify",
+       "title": "Simagic - T-LOC Wheelbase Table Clamp",
+       "url": "https://simshop.com/products/simagic-t-loc-wheelbase-table-clamp?variant=45211240399168&_gsid=PgQFZfMJv7Z9&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

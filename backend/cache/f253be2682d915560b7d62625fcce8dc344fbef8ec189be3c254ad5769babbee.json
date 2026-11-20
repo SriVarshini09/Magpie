@@ -1,0 +1,1369 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "3 inch propellers 3 blade"
+  }
+ },
+ "key": "f253be2682d915560b7d62625fcce8dc344fbef8ec189be3c254ad5769babbee",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:09-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 867); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODY3LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 867
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers - (2CW+2CCW)</p>\n<p>Check out all our <a href=\"https://pyrodrone.com/collections/3-inch\" title='3\" Propellers For FPV Drone Racing and Freestyle Sold At Pyrodrone' target=\"_blank\">3\" Propellers</a> and the rest of our <a href=\"https://pyrodrone.com/collections/gemfan-props\" title=\"Gemfan FPV propellers sold at Pyrodrone\" target=\"_blank\">Gemfan Collection!</a></p>\n<h3>Specifications:</h3>\n<ul>\n<li>Center Hole Diameter: 1.5mm</li>\n<li><span>Recommended Motor: 1106 and up</span></li>\n<li>Props Dia: 3\" / 76.5mm</li>\n<li>Material: PC</li>\n<li>Blade: 3</li>\n<li>Pitch: 2 inch</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Weight: 1.3g</li>\n</ul>\n<h3>Package Includes:<br>\n</h3>\n<ul>\n<li>2 CW x Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers</li>\n<li>2 CCW x Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers</li>\n</ul>"
+     },
+     "handle": "gemfan-hurricane-3020-3-3-tri-blade-1-5mm-centerhole-t-mount-propellers-2cw-2ccw-choose-color",
+     "id": "gid://shopify/p/2SKQFyo9ubDszkHrQUnrWf",
+     "media": [
+      {
+       "alt_text": "Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers (2CW+2CCW) - Choose Color",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/21121015511232.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/21121015511232.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Tri-blade design increases thrust and stability for improved flight performance",
+       "1.5 mm center hole ensures secure fit on T-mount motors",
+       "PC blade material offers durability and lightweight construction",
+       "Available in both clockwise and counterclockwise models for versatile use"
+      ],
+      "unique_selling_points": [
+       "Includes both clockwise and counterclockwise propellers for complete T-mount compatibility."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Clear Grey"
+        },
+        {
+         "label": "Whisky"
+        },
+        {
+         "label": "Wine Red"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 4,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers (2CW+2CCW) - Choose Color",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40926548918315:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers - (2CW+2CCW)</p>\n<p>Check out all our <a href=\"https://pyrodrone.com/collections/3-inch\" title='3\" Propellers For FPV Drone Racing and Freestyle Sold At Pyrodrone' target=\"_blank\">3\" Propellers</a> and the rest of our <a href=\"https://pyrodrone.com/collections/gemfan-props\" title=\"Gemfan FPV propellers sold at Pyrodrone\" target=\"_blank\">Gemfan Collection!</a></p>\n<h3>Specifications:</h3>\n<ul>\n<li>Center Hole Diameter: 1.5mm</li>\n<li><span>Recommended Motor: 1106 and up</span></li>\n<li>Props Dia: 3\" / 76.5mm</li>\n<li>Material: PC</li>\n<li>Blade: 3</li>\n<li>Pitch: 2 inch</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Weight: 1.3g</li>\n</ul>\n<h3>Package Includes:<br>\n</h3>\n<ul>\n<li>2 CW x Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers</li>\n<li>2 CCW x Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gemfan-hurricane-3020-3-3-tri-blade-1-5mm-centerhole-t-mount-propellers-2cw-2ccw-choose-color",
+       "id": "gid://shopify/ProductVariant/40926548918315",
+       "media": [
+        {
+         "alt_text": "Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers (2CW+2CCW) - Choose Color",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/21121015511232.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/21121015511232.jpg",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Clear Grey",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 19,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7160380358699",
+       "source": "shopify",
+       "title": "Gemfan Hurricane 3020-3 3\" Tri-Blade 1.5mm Centerhole T-Mount Propellers (2CW+2CCW) - Choose Color",
+       "url": "https://pyrodrone.com/products/gemfan-hurricane-3020-3-3-tri-blade-1-5mm-centerhole-t-mount-propellers-2cw-2ccw-choose-color?variant=40926548918315&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Push your 3-inch FPV drone to the limit with the HQProp T3X3X3 tri-blade propellers — the go-to choice for freestyle pilots and cinewhoop builders chasing precision, durability, and that classic HQProp flight feel. Engineered from tough polycarbonate (PC), these 3-inch props strike the ideal balance between rigidity and flexibility, so they can take hard crashes without shattering mid-flight.<br>Each set includes two clockwise (CW) and two counter-clockwise (CCW) propellers — enough to fully equip one quad. The 3-inch diameter paired with a 3-inch pitch gives you the thrust profile you need for aggressive freestyle tricks, smooth cinematic shots, and high-speed runs, while the tri-blade geometry delivers a punchier throttle response than comparable bi-blade props.<br>At just 1.48 grams per prop, the T3X3X3 keeps your drone's all-up weight down, which means longer flight time, snappier acro performance, and less stress on your motors. The 9.8mm hub with 4.9mm thickness and a T-mount shaft (1.9/1.4/1.9mm) fit most popular 3-inch frames, including builds based on the S30 Pro and similar freestyle platforms.<br>Whether you're a weekend warrior or a competitive racer, HQProp T3X3X3 props give you the consistent, predictable flight feel that lets you focus on the line, not the gear. Swap out your worn props, refresh your fleet, and feel the difference the moment you punch the throttle.<br>Add a set (or two) to your cart today and keep spares on hand — because in FPV, the only thing worse than a cracked prop is no spare.</p>\n<h3> FEATURE BULLET POINTS</h3>\n<ul>\n<li>Built to take hits: Polycarbonate (PC) construction absorbs impact and resists cracking, so you can push your freestyle lines without babying your gear.</li>\n<li>Snappy, predictable thrust: 3-inch diameter with 3-inch pitch and tri-blade geometry delivers punchy throttle response for freestyle and cinematic flying.</li>\n<li>Featherweight for longer flights: Just 1.48g per prop keeps your all-up weight down, extending flight time and reducing motor stress.</li>\n<li>Broad 3-inch frame compatibility: 9.8mm hub, 4.9mm thickness, and T-mount shaft (1.9/1.4/1.9mm) fit popular builds like the S30 Pro and similar freestyle platforms.</li>\n</ul>"
+     },
+     "handle": "hqprop-t3x3x3-3-inch-tri-blade-fpv-propeller-set-2cw-2ccw-t-mount",
+     "id": "gid://shopify/p/4n71xaSb3l6PBZtRfrqsJh",
+     "media": [
+      {
+       "alt_text": "HQProp T3X3X3 3-Inch Tri-Blade FPV Propeller Set | 2CW+2CCW | T-Mount",
+       "height": 1080,
+       "preview": {
+        "height": 1080,
+        "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/HQProp3inchpurplepropeller.png",
+        "width": 1080
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/HQProp3inchpurplepropeller.png",
+       "width": 1080
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Polycarbonate construction: Absorbs impact and resists cracking for reliable performance in hard landings",
+       "Tri-blade geometry: Delivers punchier throttle response and smoother flight feel for freestyle and cinematic flying",
+       "Lightweight design: 1.48 g per prop reduces overall weight for longer flight time and less motor stress",
+       "Broad compatibility: 9.8 mm hub, 4.9 mm thickness, and 1.9–1.4–1.9 mm T-mount shaft fit popular 3 inch FPV frames",
+       "Complete set: Includes two clockwise and two counterclockwise propellers for full quad equipping"
+      ],
+      "unique_selling_points": [
+       "Polycarbonate construction absorbs impact and resists cracking, enabling aggressive freestyle flying without gear replacement."
+      ]
+     },
+     "options": [
+      {
+       "name": "Qty",
+       "values": [
+        {
+         "label": "1 Pack (2cw 2ccw)"
+        },
+        {
+         "label": "2Pack (4cw 4ccw)"
+        },
+        {
+         "label": "4Pack (8cw 8ccw)"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 499,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4
+     },
+     "title": "HQProp T3X3X3 3-Inch Tri-Blade FPV Propeller Set | 2CW+2CCW | T-Mount",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://ratefpv.com/buy/54065010213232:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Push your 3-inch FPV drone to the limit with the HQProp T3X3X3 tri-blade propellers — the go-to choice for freestyle pilots and cinewhoop builders chasing precision, durability, and that classic HQProp flight feel. Engineered from tough polycarbonate (PC), these 3-inch props strike the ideal balance between rigidity and flexibility, so they can take hard crashes without shattering mid-flight.<br>Each set includes two clockwise (CW) and two counter-clockwise (CCW) propellers — enough to fully equip one quad. The 3-inch diameter paired with a 3-inch pitch gives you the thrust profile you need for aggressive freestyle tricks, smooth cinematic shots, and high-speed runs, while the tri-blade geometry delivers a punchier throttle response than comparable bi-blade props.<br>At just 1.48 grams per prop, the T3X3X3 keeps your drone's all-up weight down, which means longer flight time, snappier acro performance, and less stress on your motors. The 9.8mm hub with 4.9mm thickness and a T-mount shaft (1.9/1.4/1.9mm) fit most popular 3-inch frames, including builds based on the S30 Pro and similar freestyle platforms.<br>Whether you're a weekend warrior or a competitive racer, HQProp T3X3X3 props give you the consistent, predictable flight feel that lets you focus on the line, not the gear. Swap out your worn props, refresh your fleet, and feel the difference the moment you punch the throttle.<br>Add a set (or two) to your cart today and keep spares on hand — because in FPV, the only thing worse than a cracked prop is no spare.</p>\n<h3> FEATURE BULLET POINTS</h3>\n<ul>\n<li>Built to take hits: Polycarbonate (PC) construction absorbs impact and resists cracking, so you can push your freestyle lines without babying your gear.</li>\n<li>Snappy, predictable thrust: 3-inch diameter with 3-inch pitch and tri-blade geometry delivers punchy throttle response for freestyle and cinematic flying.</li>\n<li>Featherweight for longer flights: Just 1.48g per prop keeps your all-up weight down, extending flight time and reducing motor stress.</li>\n<li>Broad 3-inch frame compatibility: 9.8mm hub, 4.9mm thickness, and T-mount shaft (1.9/1.4/1.9mm) fit popular builds like the S30 Pro and similar freestyle platforms.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hqprop-t3x3x3-3-inch-tri-blade-fpv-propeller-set-2cw-2ccw-t-mount",
+       "id": "gid://shopify/ProductVariant/54065010213232",
+       "media": [
+        {
+         "alt_text": "HQProp T3X3X3 3-Inch Tri-Blade FPV Propeller Set | 2CW+2CCW | T-Mount",
+         "height": 1080,
+         "preview": {
+          "height": 1080,
+          "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/HQProp3inchpurplepropeller.png",
+          "width": 1080
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1010/9639/1024/files/HQProp3inchpurplepropeller.png",
+         "width": 1080
+        }
+       ],
+       "options": [
+        {
+         "label": "1 Pack (2cw 2ccw)",
+         "name": "Qty"
+        }
+       ],
+       "price": {
+        "amount": 499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4
+       },
+       "seller": {
+        "domain": "dqdsvn-ta.myshopify.com",
+        "id": "gid://shopify/Shop/101096391024",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54083944816.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150431088.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54150332784.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/101096391024/policies/54149874032.html"
+         }
+        ],
+        "name": "RATEFPV",
+        "url": "https://ratefpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15191889543536",
+       "source": "shopify",
+       "title": "HQProp T3X3X3 3-Inch Tri-Blade FPV Propeller Set | 2CW+2CCW | T-Mount",
+       "url": "https://ratefpv.com/products/hqprop-t3x3x3-3-inch-tri-blade-fpv-propeller-set-2cw-2ccw-t-mount?variant=54065010213232&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>A efficient T-mount 3 inch prop from HQ Prop.<br></p>\n<p><span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/3-props\" target=\"_blank\" title='all 3\" props for sale at racedayquads' rel=\"noopener noreferrer\">3\" Props</a><span>, and all our </span><a href=\"https://www.racedayquads.com/collections/hqprop-products\" target=\"_blank\" title=\"all hqprop products for sale at racedayquads\" rel=\"noopener noreferrer\">HQProp products</a><span>!</span></p>\n<h3><span>Specifications</span></h3>\n<ul>\n<li>Propeller Diameter: 3inch       </li>\n<li>Pitch: 1.8             </li>\n<li>Blades: 3</li>\n<li>Material: Poly Carbonate        </li>\n<li>Weight: 1.21g</li>\n<li>Hub Diameter: 10mm           </li>\n<li>Hub Thickness: 4.5mm           </li>\n<li>Shaft 1.9/1.5 or 2/1.9mm</li>\n<li>Adaptor Rings: No</li>\n</ul>\n<ul></ul>\n<h3><span>Includes</span></h3>\n<ul>\n<li><span>1x HQProp T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color</span></li>\n</ul>"
+     },
+     "handle": "hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-2mm-shaft-choose-your-color",
+     "id": "gid://shopify/p/xPUxdCdy6WkE6ZTkIsjrg",
+     "media": [
+      {
+       "alt_text": "HQPROP Prop Pink HQ Prop T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-1-5mm-shaft-choose-your-color-pink-prop-14943557288049.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-1-5mm-shaft-choose-your-color-pink-prop-14943557288049.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Tri-blade 3 inch design: Provides efficient thrust and agility for micro quad drones",
+       "Balanced manufacturing: Reduces vibration and rotor wobble at high speeds",
+       "1.5mm shaft compatibility: Ensures secure and quick T-mount installation",
+       "Lightweight poly carbonate construction: Minimizes added weight for agile flight",
+       "Consistent blade geometry: Delivers dependable performance in FPV racing and freestyle"
+      ],
+      "unique_selling_points": [
+       "Balanced tri-blade design delivers clean, precise maneuvers and reduced vibration for micro FPV drones."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Pink"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 28,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "HQ Prop T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/31874128052337:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>A efficient T-mount 3 inch prop from HQ Prop.<br></p>\n<p><span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/3-props\" target=\"_blank\" title='all 3\" props for sale at racedayquads' rel=\"noopener noreferrer\">3\" Props</a><span>, and all our </span><a href=\"https://www.racedayquads.com/collections/hqprop-products\" target=\"_blank\" title=\"all hqprop products for sale at racedayquads\" rel=\"noopener noreferrer\">HQProp products</a><span>!</span></p>\n<h3><span>Specifications</span></h3>\n<ul>\n<li>Propeller Diameter: 3inch       </li>\n<li>Pitch: 1.8             </li>\n<li>Blades: 3</li>\n<li>Material: Poly Carbonate        </li>\n<li>Weight: 1.21g</li>\n<li>Hub Diameter: 10mm           </li>\n<li>Hub Thickness: 4.5mm           </li>\n<li>Shaft 1.9/1.5 or 2/1.9mm</li>\n<li>Adaptor Rings: No</li>\n</ul>\n<ul></ul>\n<h3><span>Includes</span></h3>\n<ul>\n<li><span>1x HQProp T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-2mm-shaft-choose-your-color",
+       "id": "gid://shopify/ProductVariant/31874128052337",
+       "media": [
+        {
+         "alt_text": "HQPROP Prop Pink HQ Prop T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-1-5mm-shaft-choose-your-color-pink-prop-14943557288049.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-1-5mm-shaft-choose-your-color-pink-prop-14943557288049.jpg",
+         "width": 1000
+        }
+       ],
+       "options": [
+        {
+         "label": "Pink",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 24,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4529542955121",
+       "source": "shopify",
+       "title": "HQ Prop T3x1.8x3 Tri-Blade 3\" Prop 4 Pack (1.5mm Shaft) - Choose Your Color",
+       "url": "https://www.racedayquads.com/products/hq-prop-t3x1-8x3-tri-blade-3-prop-4-pack-2mm-shaft-choose-your-color?variant=31874128052337&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2>Gemfan 5127.5 PROXY PC 3 Blade<br>\n</h2>\n<p>The <strong>Gemfan 5127.5 PROXY PC 3 Blade Propeller</strong> is engineered for high-performance FPV drones, delivering enhanced control and stability. Its three-blade design offers increased thrust and precise maneuverability, making it a top choice for freestyle and racing pilots. Crafted from durable polycarbonate (PC), this propeller is both lightweight and strong, ensuring long-lasting reliability in challenging flight environments.</p>\n<h4>Key Features of Gemfan 5127.5 PROXY PC 3 Blade Propeller:</h4>\n<ul>\n<li>\n<strong>3-Blade Configuration</strong>: Provides superior thrust and smooth flight control, ideal for freestyle and racing FPV drones.</li>\n<li>\n<strong>Durable Polycarbonate Material</strong>: Made from high-quality PC for increased resilience and longevity.</li>\n<li>\n<strong>5127.5 Size</strong>: Optimized for agile, high-speed performance with minimal noise and vibrations.</li>\n<li>\n<strong>Stable Flight Dynamics</strong>: Improves overall drone stability and responsiveness during high-speed maneuvers.</li>\n<li>\n<strong>Black Finish</strong>: Adds a sleek, professional look to any FPV drone build.</li>\n</ul>\n<p>Perfect for competitive pilots, the <strong>Gemfan 5127.5 PROXY PC 3 Blade Propeller</strong> delivers outstanding performance and durability for FPV racing and freestyle flying.</p>\n<div class=\"index-title\">\n<p><strong>Description</strong></p>\n</div>\n<div class=\"content m-desc ck-content\">\n<figure>\n<div class=\"table\">\n<table border=\"0\" width=\"776\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td class=\"et3\" width=\"298\" height=\"26\">Type</td>\n<td class=\"et5\" width=\"478\">Gemfan-proxy 5127.5</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Material</td>\n<td class=\"et10\">PC</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Pitch</td>\n<td class=\"et10\">2.75in</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"28\">Colour</td>\n<td class=\"et13\" width=\"478\">Hot Pink, mint green, whiskey, Midnight Black, Neon Yellow, Phoenix Red</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Prop Disk Diameter</td>\n<td class=\"et10\">129mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Center Thickness</td>\n<td class=\"et10\">6.2mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Center Hole Inner diameter</td>\n<td class=\"et10\">5mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Max Prop Width</td>\n<td class=\"et10\">14.9mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Weight</td>\n<td class=\"et10\">4.2g</td>\n</tr>\n<tr>\n<td class=\"et14\" width=\"298\" height=\"26\">Recommended Motor</td>\n<td class=\"et16\">2207</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Takeoff weight</td>\n<td class=\"et10\">500g</td>\n</tr>\n</tbody>\n</table>\n</div>\n</figure>\n<p><strong>Characteristic: </strong><br>5127.5,a new kind of Gemfan freestyle propeller. Its has a smooth feeling with anti-bending because of its curved perimeter. Besides, the special surface treatment,not only bring a beautiful shape, but also can decrease the possibility of losing control. </p>\n</div>"
+     },
+     "handle": "gemfan-5127-5-proxy-pc-3-blade",
+     "id": "gid://shopify/p/1Jely6O7KF0KRty6W3CxYG",
+     "media": [
+      {
+       "alt_text": "Gemfan 5127.5 PROXY PC 3 Blade - NewBeeDrone",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Gemfan-5127.5-PROXY-PC-3-Blade-Gemfan-53019366.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Gemfan-5127.5-PROXY-PC-3-Blade-Gemfan-53019366.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3-blade configuration provides superior thrust and smooth flight control for agile maneuvers",
+       "Durable polycarbonate material increases resilience and ensures long-lasting reliability",
+       "Optimized 2.75 inch pitch delivers a grippy feel and stable flight dynamics",
+       "Anti-bending curved perimeter reduces risk of control loss during high-speed use",
+       "Sleek black finish offers a professional look for competitive builds"
+      ],
+      "unique_selling_points": [
+       "Durable polycarbonate 3-blade design optimized for high-speed FPV drone performance with anti-bending curved perimeter for superior control and longevity."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Black"
+        },
+        {
+         "label": "Hot Pink"
+        },
+        {
+         "label": "Macho Pink"
+        },
+        {
+         "label": "Midnight Black"
+        },
+        {
+         "label": "Neon Yellow"
+        },
+        {
+         "label": "Phoenix Red"
+        },
+        {
+         "label": "Whiskey"
+        },
+        {
+         "label": "Whisky"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 379,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 379,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gemfan 5127.5 PROXY PC 3 Blade",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://newbeedrone.com/buy/42013515022419:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h2>Gemfan 5127.5 PROXY PC 3 Blade<br>\n</h2>\n<p>The <strong>Gemfan 5127.5 PROXY PC 3 Blade Propeller</strong> is engineered for high-performance FPV drones, delivering enhanced control and stability. Its three-blade design offers increased thrust and precise maneuverability, making it a top choice for freestyle and racing pilots. Crafted from durable polycarbonate (PC), this propeller is both lightweight and strong, ensuring long-lasting reliability in challenging flight environments.</p>\n<h4>Key Features of Gemfan 5127.5 PROXY PC 3 Blade Propeller:</h4>\n<ul>\n<li>\n<strong>3-Blade Configuration</strong>: Provides superior thrust and smooth flight control, ideal for freestyle and racing FPV drones.</li>\n<li>\n<strong>Durable Polycarbonate Material</strong>: Made from high-quality PC for increased resilience and longevity.</li>\n<li>\n<strong>5127.5 Size</strong>: Optimized for agile, high-speed performance with minimal noise and vibrations.</li>\n<li>\n<strong>Stable Flight Dynamics</strong>: Improves overall drone stability and responsiveness during high-speed maneuvers.</li>\n<li>\n<strong>Black Finish</strong>: Adds a sleek, professional look to any FPV drone build.</li>\n</ul>\n<p>Perfect for competitive pilots, the <strong>Gemfan 5127.5 PROXY PC 3 Blade Propeller</strong> delivers outstanding performance and durability for FPV racing and freestyle flying.</p>\n<div class=\"index-title\">\n<p><strong>Description</strong></p>\n</div>\n<div class=\"content m-desc ck-content\">\n<figure>\n<div class=\"table\">\n<table border=\"0\" width=\"776\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td class=\"et3\" width=\"298\" height=\"26\">Type</td>\n<td class=\"et5\" width=\"478\">Gemfan-proxy 5127.5</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Material</td>\n<td class=\"et10\">PC</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Pitch</td>\n<td class=\"et10\">2.75in</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"28\">Colour</td>\n<td class=\"et13\" width=\"478\">Hot Pink, mint green, whiskey, Midnight Black, Neon Yellow, Phoenix Red</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Prop Disk Diameter</td>\n<td class=\"et10\">129mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Center Thickness</td>\n<td class=\"et10\">6.2mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Center Hole Inner diameter</td>\n<td class=\"et10\">5mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Max Prop Width</td>\n<td class=\"et10\">14.9mm</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Weight</td>\n<td class=\"et10\">4.2g</td>\n</tr>\n<tr>\n<td class=\"et14\" width=\"298\" height=\"26\">Recommended Motor</td>\n<td class=\"et16\">2207</td>\n</tr>\n<tr>\n<td class=\"et8\" width=\"298\" height=\"26\">Takeoff weight</td>\n<td class=\"et10\">500g</td>\n</tr>\n</tbody>\n</table>\n</div>\n</figure>\n<p><strong>Characteristic: </strong><br>5127.5,a new kind of Gemfan freestyle propeller. Its has a smooth feeling with anti-bending because of its curved perimeter. Besides, the special surface treatment,not only bring a beautiful shape, but also can decrease the possibility of losing control. </p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gemfan-5127-5-proxy-pc-3-blade",
+       "id": "gid://shopify/ProductVariant/42013515022419",
+       "list_price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Gemfan 5127.5 PROXY PC 3 Blade - NewBeeDrone",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Gemfan-5127.5-PROXY-PC-3-Blade-Gemfan-53019366.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1126/9610/files/Gemfan-5127.5-PROXY-PC-3-Blade-Gemfan-53019366.jpg",
+         "width": 1500
+        }
+       ],
+       "options": [
+        {
+         "label": "Whiskey",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 379,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "newbeedrone.myshopify.com",
+        "id": "gid://shopify/Shop/11269610",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619846.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11269610/policies/17619910.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/17619782.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11269610/policies/26099712083.html"
+         }
+        ],
+        "name": "NewBeeDrone",
+        "url": "https://newbeedrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7400746123347",
+       "source": "shopify",
+       "title": "Gemfan 5127.5 PROXY PC 3 Blade",
+       "url": "https://newbeedrone.com/products/gemfan-5127-5-proxy-pc-3-blade?variant=42013515022419&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<!-- Begin start of Selling Points section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_selling_points0\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"></span><br> <!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span>\n<ul style=\"padding-left: 25px;\" data-mce-style=\"padding-left: 25px;\">\n<li>\n<span>Propeller Diameter: 3.5 inch </span><br><span></span>\n</li>\n<li>\n<span>Pitch : 2.8  </span><br><span></span>\n</li>\n<li>\n<span>Blades : 3</span><br><span></span>\n</li>\n<li>\n<span>Material : Poly Carbonate  </span><br><span></span>\n</li>\n<li>\n<span>Weight : 1.7g</span><br><span></span>\n</li>\n<li>\n<span>Hub Diameter : 10.5mm </span><br><span></span>\n</li>\n<li>\n<span>Hub Thickness:6mm </span><br><span></span>\n</li>\n<li><span>Shaft :5mm</span></li>\n</ul>\n<span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_product_features0\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><br> </span> <!-- End of Product Features and Specifications Section --> <!-- Start of Package Contents Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span>\n<ul style=\"padding-left: 25px;\" data-mce-style=\"padding-left: 25px;\">\n<li>\n<span>2x CW HQProp T3.5X2.5X3 Grey Propellers</span><br><span>2x CCW HQProp T3.5X2.5X3 Grey Propellers</span>\n</li>\n</ul>\n<!-- End of Package Contents Section -->"
+     },
+     "handle": "hqprop-3-5x2-8x3-3-5-inch-3-blade-propeller-set-2x-cw-2x-ccw-gray-polycarbonate",
+     "id": "gid://shopify/p/79SKYabhFeJCgyTGYW3S1f",
+     "media": [
+      {
+       "alt_text": "HQProp 3.5X2.8X3 3.5 Inch 3-Blade Propeller Set (2x CW / 2x CCW) Gray Polycarbonate",
+       "height": 2000,
+       "preview": {
+        "height": 2000,
+        "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/1e0d5e53508.jpg",
+        "width": 2000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/1e0d5e53508.jpg",
+       "width": 2000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3-blade design provides efficient thrust and stable flight",
+       "Polycarbonate construction offers high durability and impact resistance",
+       "Lightweight build reduces strain on drone motors",
+       "Includes both CW and CCW propellers for versatile use"
+      ],
+      "unique_selling_points": [
+       "Includes both clockwise and counterclockwise propellers for complete compatibility with most drones."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 339,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 339,
+       "currency": "USD"
+      }
+     },
+     "title": "HQProp 3.5X2.8X3 3.5 Inch 3-Blade Propeller Set (2x CW / 2x CCW) Gray Polycarbonate",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://speedyfpv.com/buy/44818704859350:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<!-- Begin start of Selling Points section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_selling_points0\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"></span><br> <!-- End of Selling Points Section --><!-- Start of Product Features and Specifications Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"> <!-- Product Features Area --><b>Specifications:</b><br></span></span>\n<ul style=\"padding-left: 25px;\" data-mce-style=\"padding-left: 25px;\">\n<li>\n<span>Propeller Diameter: 3.5 inch </span><br><span></span>\n</li>\n<li>\n<span>Pitch : 2.8  </span><br><span></span>\n</li>\n<li>\n<span>Blades : 3</span><br><span></span>\n</li>\n<li>\n<span>Material : Poly Carbonate  </span><br><span></span>\n</li>\n<li>\n<span>Weight : 1.7g</span><br><span></span>\n</li>\n<li>\n<span>Hub Diameter : 10.5mm </span><br><span></span>\n</li>\n<li>\n<span>Hub Thickness:6mm </span><br><span></span>\n</li>\n<li><span>Shaft :5mm</span></li>\n</ul>\n<span style=\"font: Arial; font-size: 12pt; color: #343434;\" id=\"listing_product_features0\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><br> </span> <!-- End of Product Features and Specifications Section --> <!-- Start of Package Contents Section --> <span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"><span style=\"font: Arial; font-size: 12pt; color: #343434;\" data-mce-style=\"font: Arial; font-size: 12pt; color: #343434;\"> <b>Package Contents:</b><br></span></span>\n<ul style=\"padding-left: 25px;\" data-mce-style=\"padding-left: 25px;\">\n<li>\n<span>2x CW HQProp T3.5X2.5X3 Grey Propellers</span><br><span>2x CCW HQProp T3.5X2.5X3 Grey Propellers</span>\n</li>\n</ul>\n<!-- End of Package Contents Section -->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hqprop-3-5x2-8x3-3-5-inch-3-blade-propeller-set-2x-cw-2x-ccw-gray-polycarbonate",
+       "id": "gid://shopify/ProductVariant/44818704859350",
+       "media": [
+        {
+         "alt_text": "HQProp 3.5X2.8X3 3.5 Inch 3-Blade Propeller Set (2x CW / 2x CCW) Gray Polycarbonate",
+         "height": 2000,
+         "preview": {
+          "height": 2000,
+          "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/1e0d5e53508.jpg",
+          "width": 2000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1840/1085/files/1e0d5e53508.jpg",
+         "width": 2000
+        }
+       ],
+       "price": {
+        "amount": 339,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "speedyfpv.myshopify.com",
+        "id": "gid://shopify/Shop/18401085",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299083.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/18401085/policies/33299147.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/33299019.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/18401085/policies/25847562454.html"
+         }
+        ],
+        "name": "SpeedyFPV",
+        "url": "https://speedyfpv.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8267489902806",
+       "source": "shopify",
+       "title": "HQProp 3.5X2.8X3 3.5 Inch 3-Blade Propeller Set (2x CW / 2x CCW) Gray Polycarbonate",
+       "url": "https://speedyfpv.com/products/hqprop-3-5x2-8x3-3-5-inch-3-blade-propeller-set-2x-cw-2x-ccw-gray-polycarbonate?variant=44818704859350&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The HQProp 3×2.9×3 tri‑blades deliver smooth, efficient power with durable polycarbonate construction, making them a solid all‑around choice for 3‑inch multirotors.</p>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>Part #: T3X2.9X3GR-PC<br>\n</li>\n<li>Propeller Diameter: 3 inch       <br>\n</li>\n<li>Pitch: 2.9                                <br>\n</li>\n<li>Blades: 3<br>\n</li>\n<li>Material: Poly Carbonate           <br>\n</li>\n<li>Weight: 1.7g<br>\n</li>\n<li>Hub Diameter: 11mm           <br>\n</li>\n<li>Hub Thickness: 5mm         <br>\n</li>\n<li>Shaft: 1.5mm<br>\n</li>\n</ul>\n<p><br></p>\n<p><strong>INCLUDES:</strong></p>\n<p>(4) HQProp T3X2.9 / 3-Blade Propellers (2CW + 2CCW)</p>"
+     },
+     "handle": "hqprop-t3x2-9-3-blade-propeller-set-1-5mm-bore-4pcs",
+     "id": "gid://shopify/p/6GY54iMZb3Zqs7QhpOyQM2",
+     "media": [
+      {
+       "alt_text": "HQProp T3X2.9 / 3-Blade Propeller Set (1.5mm Bore / 4pcs)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/hqprop_3-inch_prop.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/hqprop_3-inch_prop.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Three-blade design ensures smooth and efficient power transfer for stable flight",
+       "Durable polycarbonate material provides long-lasting performance and resistance to impact",
+       "1.5 mm bore fits standard 3-inch multirotor propellers for easy compatibility",
+       "Includes both clockwise and counterclockwise propellers for complete setup",
+       "Lightweight construction reduces rotational load and increases flight time"
+      ],
+      "unique_selling_points": [
+       "All-around performance and robust polycarbonate construction for reliable multirotor operation."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 399,
+       "currency": "USD"
+      }
+     },
+     "title": "HQProp T3X2.9 / 3-Blade Propeller Set (1.5mm Bore / 4pcs)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/48263897645270:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The HQProp 3×2.9×3 tri‑blades deliver smooth, efficient power with durable polycarbonate construction, making them a solid all‑around choice for 3‑inch multirotors.</p>\n<p> </p>\n<p><strong>SPECIFICATIONS:</strong></p>\n<ul>\n<li>Part #: T3X2.9X3GR-PC<br>\n</li>\n<li>Propeller Diameter: 3 inch       <br>\n</li>\n<li>Pitch: 2.9                                <br>\n</li>\n<li>Blades: 3<br>\n</li>\n<li>Material: Poly Carbonate           <br>\n</li>\n<li>Weight: 1.7g<br>\n</li>\n<li>Hub Diameter: 11mm           <br>\n</li>\n<li>Hub Thickness: 5mm         <br>\n</li>\n<li>Shaft: 1.5mm<br>\n</li>\n</ul>\n<p><br></p>\n<p><strong>INCLUDES:</strong></p>\n<p>(4) HQProp T3X2.9 / 3-Blade Propellers (2CW + 2CCW)</p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hqprop-t3x2-9-3-blade-propeller-set-1-5mm-bore-4pcs",
+       "id": "gid://shopify/ProductVariant/48263897645270",
+       "media": [
+        {
+         "alt_text": "HQProp T3X2.9 / 3-Blade Propeller Set (1.5mm Bore / 4pcs)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/hqprop_3-inch_prop.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/hqprop_3-inch_prop.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9354650943702",
+       "source": "shopify",
+       "title": "HQProp T3X2.9 / 3-Blade Propeller Set (1.5mm Bore / 4pcs)",
+       "url": "https://www.rc-n-go.com/products/hqprop-t3x2-9-3-blade-propeller-set-1-5mm-bore-4pcs?variant=48263897645270&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>The</span><strong> </strong>Gemfan Hurricane 3630 3-Blade Propeller<span> has a 1.5mm mounting diameter, 3.6\" length, and 3\" pitch, and weighs only 2.3g each. These propellers will outlast other performance props!</span></p>\n<p><span style=\"font-size: 0.875rem;\"> <span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/3-5-props\" title='3.5\" Props for sale at RaceDayQuads!' target=\"_blank\">3.5\" Props</a><span>, </span>as well as all of our </span><a style=\"font-size: 0.875rem;\" href=\"https://www.racedayquads.com/collections/gemfan-products\" title=\"all gemfan fpv products for sale at racedayquads\" target=\"_blank\">Gemfan products</a><span style=\"font-size: 0.875rem;\">!</span></p>\n<h3><span style=\"font-size: 0.875rem;\">Features</span></h3>\n<ul>\n<li>1.5mm Mount</li>\n<li>3-Blade propeller</li>\n<li>3.6\" Size</li>\n</ul>\n<h3><span style=\"font-size: 0.875rem;\">Specifications</span></h3>\n<ul>\n<li>Prop Mounting Pattern: 1.5mm T-Mount</li>\n<li>Colors: Clear Gray, Green, Clear Purple</li>\n<li>Prop Disk Diameter: 91.44mm</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Max Prop Width: 16mm</li>\n<li>Materials: PC</li>\n<li>Weight: 2.3g</li>\n<li>Inch: 3.6in</li>\n<li>Pitch: 3in</li>\n</ul>\n<h3><span style=\"font-size: 0.875rem;\">Includes</span></h3>\n<ul>\n<li>2x Gemfan Hurricane 3630 3-Blade Propeller (CCW) - 1.5mm</li>\n<li>2x Gemfan Hurricane 3630 3-Blade Propeller (CW) -1.5mm</li>\n</ul>"
+     },
+     "handle": "gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm",
+     "id": "gid://shopify/p/2aqPcAPuie2XGhIiZYCL2d",
+     "media": [
+      {
+       "alt_text": "GEMFAN Prop Clear Gray Gemfan Hurricane 3630 3-Blade Propeller (Set of 4) -1.5mm",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm-clear-gray-prop-1226992186.webp",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm-clear-gray-prop-1226992186.webp",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "3-blade configuration maximizes thrust and stability for enhanced flight performance",
+       "Ultra-lightweight 2.3 g per propeller reduces load on the drone for improved agility",
+       "Durable PC material construction ensures long-lasting use and resistance to wear",
+       "1.5 mm T-mount compatibility fits a wide range of Gemfan and other drones",
+       "Available in multiple colors for easy identification and customization"
+      ],
+      "unique_selling_points": [
+       "Ultra-lightweight and robust 3-blade design outlasts standard performance props for Gemfan Hurricane 3630 drones."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Clear Gray"
+        },
+        {
+         "label": "Clear Green"
+        },
+        {
+         "label": "Clear Purple"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 269,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 269,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gemfan Hurricane 3630 3-Blade Propeller (Set of 4) -1.5mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/43059967492209:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>The</span><strong> </strong>Gemfan Hurricane 3630 3-Blade Propeller<span> has a 1.5mm mounting diameter, 3.6\" length, and 3\" pitch, and weighs only 2.3g each. These propellers will outlast other performance props!</span></p>\n<p><span style=\"font-size: 0.875rem;\"> <span>Check out all our </span><a href=\"https://www.racedayquads.com/collections/3-5-props\" title='3.5\" Props for sale at RaceDayQuads!' target=\"_blank\">3.5\" Props</a><span>, </span>as well as all of our </span><a style=\"font-size: 0.875rem;\" href=\"https://www.racedayquads.com/collections/gemfan-products\" title=\"all gemfan fpv products for sale at racedayquads\" target=\"_blank\">Gemfan products</a><span style=\"font-size: 0.875rem;\">!</span></p>\n<h3><span style=\"font-size: 0.875rem;\">Features</span></h3>\n<ul>\n<li>1.5mm Mount</li>\n<li>3-Blade propeller</li>\n<li>3.6\" Size</li>\n</ul>\n<h3><span style=\"font-size: 0.875rem;\">Specifications</span></h3>\n<ul>\n<li>Prop Mounting Pattern: 1.5mm T-Mount</li>\n<li>Colors: Clear Gray, Green, Clear Purple</li>\n<li>Prop Disk Diameter: 91.44mm</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Max Prop Width: 16mm</li>\n<li>Materials: PC</li>\n<li>Weight: 2.3g</li>\n<li>Inch: 3.6in</li>\n<li>Pitch: 3in</li>\n</ul>\n<h3><span style=\"font-size: 0.875rem;\">Includes</span></h3>\n<ul>\n<li>2x Gemfan Hurricane 3630 3-Blade Propeller (CCW) - 1.5mm</li>\n<li>2x Gemfan Hurricane 3630 3-Blade Propeller (CW) -1.5mm</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm",
+       "id": "gid://shopify/ProductVariant/43059967492209",
+       "media": [
+        {
+         "alt_text": "GEMFAN Prop Clear Gray Gemfan Hurricane 3630 3-Blade Propeller (Set of 4) -1.5mm",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm-clear-gray-prop-1226992186.webp",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm-clear-gray-prop-1226992186.webp",
+         "width": 700
+        }
+       ],
+       "options": [
+        {
+         "label": "Clear Gray",
+         "name": "Color"
+        }
+       ],
+       "price": {
+        "amount": 269,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 6,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7606580707441",
+       "source": "shopify",
+       "title": "Gemfan Hurricane 3630 3-Blade Propeller (Set of 4) -1.5mm",
+       "url": "https://www.racedayquads.com/products/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm?variant=43059967492209&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Just another great prop from HQ. With less bite than a<span> </span><a href=\"https://www.racedayquads.com/products/hq-prop-t3x2-5x3-durable-tri-blade-3-prop-4-pack-grey\" target=\"_blank\" title=\"hqprop t3x2.5x3 prop for sale at racedayquads\" rel=\"noopener noreferrer\">T3x2.5x3</a><span> </span>it's a good choice for efficiency.</p>\n<p>Check out all our<span> </span><a href=\"https://www.racedayquads.com/collections/3-props\" target=\"_blank\" title=\"all 3 props for sale at racedayquads\" rel=\"noopener noreferrer\">3\" props</a><span> </span>and all our <a href=\"https://www.racedayquads.com/collections/hq-props\" target=\"_blank\" rel=\"noopener noreferrer\">HQProp products</a>!</p>\n<h3>Specifications</h3>\n<ul>\n<li>Propeller Diameter: 3 inch       </li>\n<li>Pitch : 1.5                                </li>\n<li>Blades :3      </li>\n<li>Material : Poly Carbonate           </li>\n<li>Weight :1.13g</li>\n<li>Hub Diameter : 9.8mm           </li>\n<li>Hub Thickness:4.5mm         </li>\n<li>Shaft :1.9/1.4/1.9mm </li>\n<li>Adaptor Rings : NO </li>\n</ul>\n<ul></ul>\n<h3>Includes</h3>\n<ul>\n<li>4x HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop (2 CW, 2 CCW)</li>\n</ul>"
+     },
+     "handle": "hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey",
+     "id": "gid://shopify/p/zYNNZqVWABupii4fJBe46",
+     "media": [
+      {
+       "alt_text": "HQPROP Prop HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop 4 Pack - Grey",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey-prop-28545011351665.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey-prop-28545011351665.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Lightweight poly carbonate construction: Reduces overall drone weight for improved agility",
+       "Tri-blade design: Enhances efficiency and stability during flight",
+       "3-inch diameter: Suitable for a wide range of FPV drones",
+       "1.5 pitch: Optimized for smooth, efficient propeller rotation",
+       "Pack of 4: Provides multiple replacements or spares for extended use"
+      ],
+      "unique_selling_points": [
+       "Less aggressive pitch and reduced weight for optimal performance in smaller motors and FPV racing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 25,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop 4 Pack - Grey",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/31492242997361:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Just another great prop from HQ. With less bite than a<span> </span><a href=\"https://www.racedayquads.com/products/hq-prop-t3x2-5x3-durable-tri-blade-3-prop-4-pack-grey\" target=\"_blank\" title=\"hqprop t3x2.5x3 prop for sale at racedayquads\" rel=\"noopener noreferrer\">T3x2.5x3</a><span> </span>it's a good choice for efficiency.</p>\n<p>Check out all our<span> </span><a href=\"https://www.racedayquads.com/collections/3-props\" target=\"_blank\" title=\"all 3 props for sale at racedayquads\" rel=\"noopener noreferrer\">3\" props</a><span> </span>and all our <a href=\"https://www.racedayquads.com/collections/hq-props\" target=\"_blank\" rel=\"noopener noreferrer\">HQProp products</a>!</p>\n<h3>Specifications</h3>\n<ul>\n<li>Propeller Diameter: 3 inch       </li>\n<li>Pitch : 1.5                                </li>\n<li>Blades :3      </li>\n<li>Material : Poly Carbonate           </li>\n<li>Weight :1.13g</li>\n<li>Hub Diameter : 9.8mm           </li>\n<li>Hub Thickness:4.5mm         </li>\n<li>Shaft :1.9/1.4/1.9mm </li>\n<li>Adaptor Rings : NO </li>\n</ul>\n<ul></ul>\n<h3>Includes</h3>\n<ul>\n<li>4x HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop (2 CW, 2 CCW)</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey",
+       "id": "gid://shopify/ProductVariant/31492242997361",
+       "media": [
+        {
+         "alt_text": "HQPROP Prop HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop 4 Pack - Grey",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey-prop-28545011351665.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hqprop-hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey-prop-28545011351665.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 23,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.8
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4427336220785",
+       "source": "shopify",
+       "title": "HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop 4 Pack - Grey",
+       "url": "https://www.racedayquads.com/products/hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey?variant=31492242997361&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers - (2CW+2CCW)</p>\n<p>Check out all our <a href=\"https://pyrodrone.com/collections/3-inch\" target=\"_blank\" title='3\" Propellers For FPV Drone Racing and Freestyle Sold At Pyrodrone' rel=\"noopener noreferrer\">3\" Propellers</a> and the rest of our <a href=\"https://pyrodrone.com/collections/gemfan-props\" title=\"Gemfan FPV propellers sold at Pyrodrone\" target=\"_blank\">Gemfan Collection!</a></p>\n<h3>Specifications:</h3>\n<ul>\n<li>Color: Grey</li>\n<li>Center Hole Diameter: 2mm</li>\n<li><span>Recommended Motor: 1106 and up</span></li>\n<li>Props Dia: 3\"</li>\n<li>Material: PC</li>\n<li>Blade: 3</li>\n<li>Pitch: 2 inch</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Weight: 1.3g</li>\n</ul>\n<h3>Package Includes:<br>\n</h3>\n<ul>\n<li>2 CW x Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers</li>\n<li>2 CCW x Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers</li>\n</ul>"
+     },
+     "handle": "gemfan-3020-3-3-tri-blade-t-mount-propellers-2cw-2ccw",
+     "id": "gid://shopify/p/3fRSPAJIJd5so0reI3S10Z",
+     "media": [
+      {
+       "alt_text": "Gemfan 3020-3 3\" Tri-Blade 2mm Centerhole T-Mount Propellers - (2CW+2CCW)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/23011210325553.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/23011210325553.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Tri-blade design provides efficient thrust and stability for drones",
+       "2 mm center hole ensures precise fit with Gemfan motors",
+       "Lightweight PC construction reduces rotational drag for faster speeds",
+       "Includes both 2CW and 2CCW propellers for complete installation",
+       "3 inch diameter offers optimal balance between thrust and speed"
+      ],
+      "unique_selling_points": [
+       "Includes both clockwise and counterclockwise propellers for complete T-mount compatibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 1,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "Gemfan 3020-3 3\" Tri-Blade 2mm Centerhole T-Mount Propellers - (2CW+2CCW)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40687877029931:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers - (2CW+2CCW)</p>\n<p>Check out all our <a href=\"https://pyrodrone.com/collections/3-inch\" target=\"_blank\" title='3\" Propellers For FPV Drone Racing and Freestyle Sold At Pyrodrone' rel=\"noopener noreferrer\">3\" Propellers</a> and the rest of our <a href=\"https://pyrodrone.com/collections/gemfan-props\" title=\"Gemfan FPV propellers sold at Pyrodrone\" target=\"_blank\">Gemfan Collection!</a></p>\n<h3>Specifications:</h3>\n<ul>\n<li>Color: Grey</li>\n<li>Center Hole Diameter: 2mm</li>\n<li><span>Recommended Motor: 1106 and up</span></li>\n<li>Props Dia: 3\"</li>\n<li>Material: PC</li>\n<li>Blade: 3</li>\n<li>Pitch: 2 inch</li>\n<li>Center Thickness: 5.5mm</li>\n<li>Weight: 1.3g</li>\n</ul>\n<h3>Package Includes:<br>\n</h3>\n<ul>\n<li>2 CW x Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers</li>\n<li>2 CCW x Gemfan 3020-3 3\" Tri-Blade T-Mount Propellers</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "gemfan-3020-3-3-tri-blade-t-mount-propellers-2cw-2ccw",
+       "id": "gid://shopify/ProductVariant/40687877029931",
+       "media": [
+        {
+         "alt_text": "Gemfan 3020-3 3\" Tri-Blade 2mm Centerhole T-Mount Propellers - (2CW+2CCW)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/23011210325553.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/products/23011210325553.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 6,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7069110304811",
+       "source": "shopify",
+       "title": "Gemfan 3020-3 3\" Tri-Blade 2mm Centerhole T-Mount Propellers - (2CW+2CCW)",
+       "url": "https://pyrodrone.com/products/gemfan-3020-3-3-tri-blade-t-mount-propellers-2cw-2ccw?variant=40687877029931&_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<style>#html-body [data-pb-style=G26AD1Q],#html-body [data-pb-style=OSI7S6A]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=F6G7UEE],#html-body [data-pb-style=QIO95AT]{display:none}#html-body [data-pb-style=J179PHB]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=CFGG10U],#html-body [data-pb-style=OJS7EFK]{display:none}#html-body [data-pb-style=T9JRI5V]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=FA5I4YX]{display:none}#html-body [data-pb-style=UNF91M8]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=CD9CRSY],#html-body [data-pb-style=VVVSUT0]{display:none}#html-body [data-pb-style=FK0WEHG]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=KSBDUQY]{display:none}#html-body [data-pb-style=D87OT6E],#html-body [data-pb-style=SYM3TLM]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=V0U3FQJ]{display:none}#html-body [data-pb-style=DJCKK2X]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=UA5CPVG]{display:none}#html-body [data-pb-style=J0XX0QA]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=EQG1XOV]{display:none}#html-body [data-pb-style=JB0TY6O],#html-body [data-pb-style=JSTYE25]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=HSPQTUK]{display:none}#html-body [data-pb-style=KI5KMWF]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=GYXQ2DM],#html-body [data-pb-style=Q3BDAYR]{display:none}</style>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"G26AD1Q\">\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<p>The <strong>HQProp MacroQuad 12x7.5x3 Propeller</strong><strong> </strong>is a 3-blade propeller with a 7.5-inch pitch. Crafted with precision engineering, this set of four propellers is designed to elevate your drone's performance. With their sleek black finish, these propellers not only add a touch of style but also ensure smooth and stable flights. <span style=\"color: #ff0000;\"><em><strong></strong></em></span></p>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"T9JRI5V\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Features</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>Enhanced Thrust and Efficiency</li>\n<li>Smooth and Stable Flights</li>\n<li>Versatile Compatibility</li>\n<li>Set of Four Propellers</li>\n<li>Precision Engineering</li>\n<li>Sleek Black Finish</li>\n<li>Easy Installation</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"CD9CRSY\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"FK0WEHG\"></div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"D87OT6E\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Specifications</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>Material: Glass Fiber Reinforced Nylon</li>\n<li>Propeller Diameter: 12 inches</li>\n<li>Hub Thickness: 10mm</li>\n<li>Hub Diameter: 18mm</li>\n<li>Weight: 36g</li>\n<li>Color: Black</li>\n<li>Shaft: 5mm</li>\n<li>Pitch: 7.5</li>\n<li>Blades: 3</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"V0U3FQJ\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"DJCKK2X\"></div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"JB0TY6O\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Includes</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>2x HQProp MacroQuad 12x7.5x3 3-Blade Propeller - Black CCW</li>\n<li>2x HQProp MacroQuad 12x7.5x3 3-Blade Propeller - Black  CW</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"HSPQTUK\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"KI5KMWF\">\n<div data-content-type=\"video\" data-appearance=\"default\" data-element=\"main\" data-pb-style=\"Q3BDAYR\"><br></div>\n</div>\n</div>"
+     },
+     "handle": "hqprop-macroquad-12x7-5x3-3-blade-propeller-set-of-2-black",
+     "id": "gid://shopify/p/owlveyTDq33aVEOg2IStG",
+     "media": [
+      {
+       "alt_text": "HQProp MacroQuad 12x7.5x3 3-Blade Propeller (Set of 2) - Black ",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0698/9525/8342/files/hqprop-macroquad-12x7.5x3-3-blade-propeller-_set-of-2_---black-_image-1_1.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0698/9525/8342/files/hqprop-macroquad-12x7.5x3-3-blade-propeller-_set-of-2_---black-_image-1_1.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Enhanced thrust and efficiency for improved drone maneuverability",
+       "Smooth and stable flight performance for reliable operation",
+       "Versatile compatibility with various drone models",
+       "Precision engineering ensures consistent quality and fit",
+       "Sleek black finish for a professional look"
+      ],
+      "unique_selling_points": [
+       "Set of four high-thrust, glass fiber reinforced nylon propellers with 7.5 inch pitch for enhanced performance and easy installation."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1499,
+       "currency": "USD"
+      }
+     },
+     "title": "HQProp MacroQuad 12x7.5x3 3-Blade Propeller (Set of 2) - Black",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://lumenier.myshopify.com/buy/46702228635878:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&channel=hydrogen&attribution/click_id_tag=_gsid&attribution/click_id_value=yURMZtKA7cAF&_gsid=yURMZtKA7cAF",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<style>#html-body [data-pb-style=G26AD1Q],#html-body [data-pb-style=OSI7S6A]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=F6G7UEE],#html-body [data-pb-style=QIO95AT]{display:none}#html-body [data-pb-style=J179PHB]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=CFGG10U],#html-body [data-pb-style=OJS7EFK]{display:none}#html-body [data-pb-style=T9JRI5V]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=FA5I4YX]{display:none}#html-body [data-pb-style=UNF91M8]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=CD9CRSY],#html-body [data-pb-style=VVVSUT0]{display:none}#html-body [data-pb-style=FK0WEHG]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=KSBDUQY]{display:none}#html-body [data-pb-style=D87OT6E],#html-body [data-pb-style=SYM3TLM]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=V0U3FQJ]{display:none}#html-body [data-pb-style=DJCKK2X]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=UA5CPVG]{display:none}#html-body [data-pb-style=J0XX0QA]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=EQG1XOV]{display:none}#html-body [data-pb-style=JB0TY6O],#html-body [data-pb-style=JSTYE25]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=HSPQTUK]{display:none}#html-body [data-pb-style=KI5KMWF]{justify-content:flex-start;display:flex;flex-direction:column;background-position:left top;background-size:cover;background-repeat:no-repeat;background-attachment:scroll}#html-body [data-pb-style=GYXQ2DM],#html-body [data-pb-style=Q3BDAYR]{display:none}</style>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"G26AD1Q\">\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<p>The <strong>HQProp MacroQuad 12x7.5x3 Propeller</strong><strong> </strong>is a 3-blade propeller with a 7.5-inch pitch. Crafted with precision engineering, this set of four propellers is designed to elevate your drone's performance. With their sleek black finish, these propellers not only add a touch of style but also ensure smooth and stable flights. <span style=\"color: #ff0000;\"><em><strong></strong></em></span></p>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"T9JRI5V\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Features</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>Enhanced Thrust and Efficiency</li>\n<li>Smooth and Stable Flights</li>\n<li>Versatile Compatibility</li>\n<li>Set of Four Propellers</li>\n<li>Precision Engineering</li>\n<li>Sleek Black Finish</li>\n<li>Easy Installation</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"CD9CRSY\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"FK0WEHG\"></div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"D87OT6E\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Specifications</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>Material: Glass Fiber Reinforced Nylon</li>\n<li>Propeller Diameter: 12 inches</li>\n<li>Hub Thickness: 10mm</li>\n<li>Hub Diameter: 18mm</li>\n<li>Weight: 36g</li>\n<li>Color: Black</li>\n<li>Shaft: 5mm</li>\n<li>Pitch: 7.5</li>\n<li>Blades: 3</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"V0U3FQJ\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"DJCKK2X\"></div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"JB0TY6O\">\n<h2 data-content-type=\"heading\" data-appearance=\"default\" data-element=\"main\">Includes</h2>\n<div data-content-type=\"text\" data-appearance=\"default\" data-element=\"main\">\n<ul>\n<li>2x HQProp MacroQuad 12x7.5x3 3-Blade Propeller - Black CCW</li>\n<li>2x HQProp MacroQuad 12x7.5x3 3-Blade Propeller - Black  CW</li>\n</ul>\n</div>\n</div>\n</div>\n<div data-content-type=\"row\" data-appearance=\"contained\" data-element=\"main\" data-pb-style=\"HSPQTUK\">\n<div data-enable-parallax=\"0\" data-parallax-speed=\"0.5\" data-background-images=\"{}\" data-background-type=\"image\" data-video-loop=\"true\" data-video-play-only-visible=\"true\" data-video-lazy-load=\"true\" data-video-fallback-src=\"\" data-element=\"inner\" data-pb-style=\"KI5KMWF\">\n<div data-content-type=\"video\" data-appearance=\"default\" data-element=\"main\" data-pb-style=\"Q3BDAYR\"><br></div>\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hqprop-macroquad-12x7-5x3-3-blade-propeller-set-of-2-black",
+       "id": "gid://shopify/ProductVariant/46702228635878",
+       "media": [
+        {
+         "alt_text": "HQProp MacroQuad 12x7.5x3 3-Blade Propeller (Set of 2) - Black ",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0698/9525/8342/files/hqprop-macroquad-12x7.5x3-3-blade-propeller-_set-of-2_---black-_image-1_1.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0698/9525/8342/files/hqprop-macroquad-12x7.5x3-3-blade-propeller-_set-of-2_---black-_image-1_1.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "lumenier.myshopify.com",
+        "id": "gid://shopify/Shop/69895258342",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/69895258342/policies/39094157542.html"
+         }
+        ],
+        "name": "Lumenier",
+        "url": "https://www.lumenier.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9431841538278",
+       "source": "shopify",
+       "title": "HQProp MacroQuad 12x7.5x3 3-Blade Propeller (Set of 2) - Black",
+       "url": "https://www.lumenier.com/products/hqprop-macroquad-12x7-5x3-3-blade-propeller-set-of-2-black?_gsid=yURMZtKA7cAF&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

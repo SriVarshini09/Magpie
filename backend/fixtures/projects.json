@@ -1,0 +1,148 @@
+[
+  {
+    "build_type": "quadcopter",
+    "title": "Small camera drone",
+    "example_text": "a small camera drone under $200",
+    "blurb": "Typed request, template rows, a procedural model",
+    "mandate_preset": {
+      "budget_usd": 200.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "mock_store",
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "procedural",
+    "simulated": true
+  },
+  {
+    "build_type": "robot_arm",
+    "title": "SO-101 robot arm (link)",
+    "source_url": "https://github.com/TheRobotStudio/SO-ARM100",
+    "blurb": "Every part quoted from the README, the project's own 3D model",
+    "mandate_preset": {
+      "budget_usd": 160.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "wowrobo",
+        "armdojo",
+        "geekworm",
+        "amazon",
+        "seeed",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "urdf",
+    "simulated": true
+  },
+  {
+    "build_type": "claw_gripper",
+    "title": "Robot claw for my desk",
+    "example_text": "a robot claw for my desk",
+    "blurb": "A servo gripper from a template",
+    "mandate_preset": {
+      "budget_usd": 100.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "procedural",
+    "simulated": true
+  },
+  {
+    "build_type": "rc_car",
+    "title": "RC car with a camera",
+    "example_text": "an RC car with a camera",
+    "blurb": "Donkey Car style, from a template",
+    "mandate_preset": {
+      "budget_usd": 100.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "amazon",
+        "adafruit",
+        "seeed",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "procedural",
+    "simulated": true
+  },
+  {
+    "build_type": "electronics_mcu",
+    "title": "E-paper weather display (link)",
+    "source_url": "https://github.com/lmarzen/esp32-weather-epd",
+    "blurb": "Electronics only, shown as a board diagram",
+    "mandate_preset": {
+      "budget_usd": 130.0,
+      "deadline": "2026-12-04",
+      "ship_to_country": "US",
+      "allowed_merchants": [
+        "openelab",
+        "robotshop",
+        "rokland",
+        "amazon",
+        "adafruit",
+        "sparkfun"
+      ],
+      "data_sharing": {
+        "country": true,
+        "postal_code": false,
+        "street_address": false,
+        "email": false,
+        "phone": false,
+        "name": false,
+        "photo_to_models": false
+      }
+    },
+    "view_kind": "diagram",
+    "simulated": true
+  }
+]

@@ -1,0 +1,1556 @@
+{
+ "args": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "FireBeetle 2 ESP32-E"
+  }
+ },
+ "key": "759d0a620dfe1f6efe47bb795db8e5bc79cc9b3e2068b7f36b18eb3eb4d6370c",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:03-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://9irjdt-u1.myshopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://9irjdt-u1.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqb3hOVFF5TnpZeE1UQTJOalk1TWl3aWNtVjJaWEp6WlNJNmRISjFaU3dpYjJabWMyVjBJam81ZlE9PSIsInBhZ2UiOjJ9",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "DFRobot FireBeetle 2 ESP32-E is an advanced IoT microcontroller based on the ESP-WROOM-32E module, equipped with dual-core ECO V3 chips, offering improved stability, lower power consumption, and powerful wireless communication. As a versatile ESP32 development board, it supports WiFi + Bluetooth dual-mode, USB-C charging, and Arduino programming, making it ideal for smart home automation, wearables, DIY IoT systems, and wireless sensors. With a compact stamp-hole design, the board fits perfectly into embedded applications while supporting rich I/O including UART, I2C, SPI, and more. Whether you're a developer or hobbyist using an ESP32-E module, it provides flexibility and performance with minimal power consumption for any Arduino ESP32 project. Figure 1. Board Overview Figure 2.Pinout Espressif has recently released one wafer-level change on ESP32 Series of products (ECO V3). Below are the main design changes in ECO V3 Series of chips for your ESP32 WiFi Bluetooth applications: 1. PSRAM Cache Bug Fix: Fixed “When the CPU accesses the external SRAM in a certain sequence, read & write errors can occur”. 2. Fixed “When each CPU reads certain different address spaces simultaneously, a read error can occur.” 3. Optimized 32.768 KHz crystal oscillator stability, the issue was reported by the client that there is a low probability that under ECO V1 hardware, the 32.768 KHz crystal oscillator couldn’t start properly. 4. Fixed Fault injection issues regarding secure boot and flash encryption are fixed. 5. Improvement: Changed the minimum baud rate supported by the CAN module from 25 kHz to 12.5 kHz. Key Features ESP32-E dual-core microcontroller (ECO V3) with improved PSRAM stability and fault protection for IoT development Supports WiFi (802.11 b/g/n/e/i/k/r) up to 150 Mbps & Bluetooth v4.2 connectivity USB-C powered, onboard charging circuit & PH2.0 lithium battery interface for this IoT microcontroller Ultra-low power consumption: average 2mA, deep sleep 10µA, ideal for battery-powered ESP32 development board projects RGB LED, GDI Display Port, and onboard side key for user interaction with your ESP32-E Pre-soldered header version for plug-and-play compatibility with Arduino ESP32 setups Compatible with Arduino, MicroPython, and Scratch (future support) Ideal for integration with Gravity sensors, IFTTT platforms, and wearable IoT microcontroller projects Specifications Processor Tensilica LX6 dual-core, 240MHz ESP32 development board Flash 4MB SRAM 520KB Digital I/O 10 Analog Input 5 Interfaces UART x1, SPI x1, I2C x1 (ESP32-E) Wi-Fi Protocols 802.11 b/g/n/e/i/k/r (ESP32 WiFi Bluetooth) Bluetooth Protocols v4.2 BR/EDR, BLE Operating Voltage 3.3V Input Voltage 3.3V–5.5V Operating Temp -40℃ to +85℃ Module Size 25.4mm × 60mm / 1\" × 2.36\" Mount Hole Inner Diameter 2mm Weight 23g What’s in the Box 1x FireBeetle 2 Board ESP32-E (with Header) 1x 18-pin 2.54mm Pitch Pin (Male) 1x 18-pin 2.54mm Pitch Pin (Female) 1x 14-pin 2.54mm Pitch Pin (Male) 1x 14-pin 2.54mm Pitch Pin (Female) Compatibility Notice Please note: FireBeetle 2 is not compatible with original FireBeetle shields or their expansion boards due to different pin layouts and dimensions. Reference Product wiki"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-2-esp32-e",
+     "id": "gid://shopify/Product/15440461005124",
+     "list_price_range": {
+      "max": {
+       "amount": 1929,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1929,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "DFRobot FireBeetle 2 ESP32-E IoT Microcontroller with Header-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp?v=1769068479"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1929,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1929,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board"
+     ],
+     "title": "FireBeetle 2 ESP32-E IoT Microcontroller with Header - Arduino IDE",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-2-esp32-e",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56279890690372:1",
+       "description": {
+        "html": "DFRobot FireBeetle 2 ESP32-E is an advanced IoT microcontroller based on the ESP-WROOM-32E module, equipped with dual-core ECO V3 chips, offering improved stability, lower power consumption, and powerful wireless communication. As a versatile ESP32 development board, it supports WiFi + Bluetooth dual-mode, USB-C charging, and Arduino programming, making it ideal for smart home automation, wearables, DIY IoT systems, and wireless sensors. With a compact stamp-hole design, the board fits perfectly into embedded applications while supporting rich I/O including UART, I2C, SPI, and more. Whether you're a developer or hobbyist using an ESP32-E module, it provides flexibility and performance with minimal power consumption for any Arduino ESP32 project. Figure 1. Board Overview Figure 2.Pinout Espressif has recently released one wafer-level change on ESP32 Series of products (ECO V3). Below are the main design changes in ECO V3 Series of chips for your ESP32 WiFi Bluetooth applications: 1. PSRAM Cache Bug Fix: Fixed “When the CPU accesses the external SRAM in a certain sequence, read & write errors can occur”. 2. Fixed “When each CPU reads certain different address spaces simultaneously, a read error can occur.” 3. Optimized 32.768 KHz crystal oscillator stability, the issue was reported by the client that there is a low probability that under ECO V1 hardware, the 32.768 KHz crystal oscillator couldn’t start properly. 4. Fixed Fault injection issues regarding secure boot and flash encryption are fixed. 5. Improvement: Changed the minimum baud rate supported by the CAN module from 25 kHz to 12.5 kHz. Key Features ESP32-E dual-core microcontroller (ECO V3) with improved PSRAM stability and fault protection for IoT development Supports WiFi (802.11 b/g/n/e/i/k/r) up to 150 Mbps & Bluetooth v4.2 connectivity USB-C powered, onboard charging circuit & PH2.0 lithium battery interface for this IoT microcontroller Ultra-low power consumption: average 2mA, deep sleep 10µA, ideal for battery-powered ESP32 development board projects RGB LED, GDI Display Port, and onboard side key for user interaction with your ESP32-E Pre-soldered header version for plug-and-play compatibility with Arduino ESP32 setups Compatible with Arduino, MicroPython, and Scratch (future support) Ideal for integration with Gravity sensors, IFTTT platforms, and wearable IoT microcontroller projects Specifications Processor Tensilica LX6 dual-core, 240MHz ESP32 development board Flash 4MB SRAM 520KB Digital I/O 10 Analog Input 5 Interfaces UART x1, SPI x1, I2C x1 (ESP32-E) Wi-Fi Protocols 802.11 b/g/n/e/i/k/r (ESP32 WiFi Bluetooth) Bluetooth Protocols v4.2 BR/EDR, BLE Operating Voltage 3.3V Input Voltage 3.3V–5.5V Operating Temp -40℃ to +85℃ Module Size 25.4mm × 60mm / 1\" × 2.36\" Mount Hole Inner Diameter 2mm Weight 23g What’s in the Box 1x FireBeetle 2 Board ESP32-E (with Header) 1x 18-pin 2.54mm Pitch Pin (Male) 1x 18-pin 2.54mm Pitch Pin (Female) 1x 14-pin 2.54mm Pitch Pin (Male) 1x 14-pin 2.54mm Pitch Pin (Female) Compatibility Notice Please note: FireBeetle 2 is not compatible with original FireBeetle shields or their expansion boards due to different pin layouts and dimensions. Reference Product wiki"
+       },
+       "id": "gid://shopify/ProductVariant/56279890690372",
+       "list_price": {
+        "amount": 1929,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-E_IoT_Microcontroller_with_Header-1.webp?v=1769068479"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1929,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0654-F",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The FireBeetle 2 ESP32-C6 is a compact, energy-efficient IoT development board built for smart home automation, sensor networks, and wireless connectivity. As a high-performance controller, the FireBeetle 2 ESP32-C6 features a 160MHz RISC-V processor and supports Wi-Fi 6, Bluetooth 5, Zigbee 3.0, Thread 1.3, and the Matter protocol. This makes the FireBeetle 2 ESP32-C6 highly adaptable for both personal and industrial IoT projects. Note: DFR1075 Product Change Notification 20260528 Key Features Ultra-Low Power Mode: The FireBeetle 2 ESP32-C6 has a deep sleep current as low as 16μA, perfect for battery-operated IoT devices. Multi-Protocol Support: FireBeetle 2 ESP32-C6 enables Wi-Fi 6, BLE, Bluetooth Mesh, Zigbee 3.0, and Thread 1.3 for seamless smart home integration. Support for Matter: The FireBeetle 2 ESP32-C6 is compatible with Apple HomeKit, Google Home, Amazon Alexa, and other Matter-certified ecosystems. Multiple Power Supply Options: The FireBeetle 2 ESP32-C6 includes USB Type-C, 5V DC, and solar charging, with real-time battery monitoring. High-Speed Data: Wi-Fi 6 on the FireBeetle 2 ESP32-C6 delivers up to 9.6 Gbps, while Bluetooth 5 supports up to 2 Mbps. Open Source Friendly: FireBeetle 2 ESP32-C6 is programmable with Arduino IDE and MicroPython. GDI Display Support: Easily connect the FireBeetle 2 ESP32-C6 to TFT screens for visual interfaces. Typical Applications Indoor Air Quality Monitoring with FireBeetle 2 ESP32-C6 Ambient Lighting Systems using FireBeetle 2 ESP32-C6 Smart Plant Watering (Soil Moisture Monitoring) Outdoor Weather Stations powered by FireBeetle 2 ESP32-C6 Smart Appliance Control via Matter with FireBeetle 2 ESP32-C6 Technical Specifications Processor: 160 MHz RISC-V (on the FireBeetle 2 ESP32-C6) Memory: 512KB SRAM, 320KB ROM, 4MB Flash Sleep Current: 16μA (V1.0 for FireBeetle 2 ESP32-C6) Connectivity: Wi-Fi 6 / Bluetooth 5 / Zigbee / Thread / IEEE 802.15.4 Input Voltage: 5V DC or 4.5–6V via Solar Panel Charging Current: Max 0.5A Operating Temperature: -10°C to 60°C Size: 25.4 x 60 mm What's in the Box 1 × FireBeetle 2 ESP32-C6 Development Board 2 × 20-pin 2.54mm Pin Header Project. Building an Environmental Monitoring Node using FireBeetle 2 ESP32-C6 Project. How to Connect FireBeetle 2 ESP32-C6 to the Matter Network Project. Smart Planter Monitoring with FireBeetle 2 ESP32-C6 Project. Home Temperature and Air Quality Monitoring via FireBeetle 2 ESP32-C6 Project. DIY GPS Speed-meter with FireBeetle 2 ESP32-C6 Project: Perfect Temperature Tea using FireBeetle 2 ESP32-C6 Reference Product wiki Zigbee Solution Tutorial Board Overview and Pin Diagram FAQ Basic Tutorial Advanced Tutorial ESP32-C6 Chip Datasheet V1.0 Schematics V1.1 Schematics Dimension CN3165 Chip Datasheet HM6245 Chip Datasheet Make your own case (shell stl file)"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-2-esp32-c6-iot",
+     "id": "gid://shopify/Product/15299145990468",
+     "list_price_range": {
+      "max": {
+       "amount": 1077,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1077,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp?v=1759128136"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1054,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1054,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Sensor",
+      "WIFI Moudle"
+     ],
+     "title": "ESP32-C6 FireBeetle 2: Wi-Fi 6, Matter, Zigbee 3.0, Thread & Solar",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-2-esp32-c6-iot",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/55703549083972:1",
+       "description": {
+        "html": "The FireBeetle 2 ESP32-C6 is a compact, energy-efficient IoT development board built for smart home automation, sensor networks, and wireless connectivity. As a high-performance controller, the FireBeetle 2 ESP32-C6 features a 160MHz RISC-V processor and supports Wi-Fi 6, Bluetooth 5, Zigbee 3.0, Thread 1.3, and the Matter protocol. This makes the FireBeetle 2 ESP32-C6 highly adaptable for both personal and industrial IoT projects. Note: DFR1075 Product Change Notification 20260528 Key Features Ultra-Low Power Mode: The FireBeetle 2 ESP32-C6 has a deep sleep current as low as 16μA, perfect for battery-operated IoT devices. Multi-Protocol Support: FireBeetle 2 ESP32-C6 enables Wi-Fi 6, BLE, Bluetooth Mesh, Zigbee 3.0, and Thread 1.3 for seamless smart home integration. Support for Matter: The FireBeetle 2 ESP32-C6 is compatible with Apple HomeKit, Google Home, Amazon Alexa, and other Matter-certified ecosystems. Multiple Power Supply Options: The FireBeetle 2 ESP32-C6 includes USB Type-C, 5V DC, and solar charging, with real-time battery monitoring. High-Speed Data: Wi-Fi 6 on the FireBeetle 2 ESP32-C6 delivers up to 9.6 Gbps, while Bluetooth 5 supports up to 2 Mbps. Open Source Friendly: FireBeetle 2 ESP32-C6 is programmable with Arduino IDE and MicroPython. GDI Display Support: Easily connect the FireBeetle 2 ESP32-C6 to TFT screens for visual interfaces. Typical Applications Indoor Air Quality Monitoring with FireBeetle 2 ESP32-C6 Ambient Lighting Systems using FireBeetle 2 ESP32-C6 Smart Plant Watering (Soil Moisture Monitoring) Outdoor Weather Stations powered by FireBeetle 2 ESP32-C6 Smart Appliance Control via Matter with FireBeetle 2 ESP32-C6 Technical Specifications Processor: 160 MHz RISC-V (on the FireBeetle 2 ESP32-C6) Memory: 512KB SRAM, 320KB ROM, 4MB Flash Sleep Current: 16μA (V1.0 for FireBeetle 2 ESP32-C6) Connectivity: Wi-Fi 6 / Bluetooth 5 / Zigbee / Thread / IEEE 802.15.4 Input Voltage: 5V DC or 4.5–6V via Solar Panel Charging Current: Max 0.5A Operating Temperature: -10°C to 60°C Size: 25.4 x 60 mm What's in the Box 1 × FireBeetle 2 ESP32-C6 Development Board 2 × 20-pin 2.54mm Pin Header Project. Building an Environmental Monitoring Node using FireBeetle 2 ESP32-C6 Project. How to Connect FireBeetle 2 ESP32-C6 to the Matter Network Project. Smart Planter Monitoring with FireBeetle 2 ESP32-C6 Project. Home Temperature and Air Quality Monitoring via FireBeetle 2 ESP32-C6 Project. DIY GPS Speed-meter with FireBeetle 2 ESP32-C6 Project: Perfect Temperature Tea using FireBeetle 2 ESP32-C6 Reference Product wiki Zigbee Solution Tutorial Board Overview and Pin Diagram FAQ Basic Tutorial Advanced Tutorial ESP32-C6 Chip Datasheet V1.0 Schematics V1.1 Schematics Dimension CN3165 Chip Datasheet HM6245 Chip Datasheet Make your own case (shell stl file)"
+       },
+       "id": "gid://shopify/ProductVariant/55703549083972",
+       "list_price": {
+        "amount": 1077,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/DFRobot_FireBeetle_2_ESP32-C6_IoT_Development_Board_Smart_Home-1_800x800_70ff47ac-7cc5-43f6-84bd-0620718bfbf1.webp?v=1759128136"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1054,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR1075",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "The DFRobot Beetle is a compact, Arduino-compatible development board tailored for wearable electronics, DIY projects, and embedded applications. Its coin-sized design houses a powerful ATmega32U4 microcontroller, making it perfect for cost-effective, space-efficient designs."
+       },
+       "handle": "dfrobot-beetle",
+       "id": "gid://shopify/Collection/648150745412",
+       "title": "DFRobot - Beetle"
+      },
+      {
+       "description": {
+        "html": "Dev Board is a development board designed for electronic engineers and developers. It provides rich interface and module support to facilitate rapid development and debugging of hardware and software. It is suitable for prototyping, learning and various embedded projects, and is an ideal tool for innovative development."
+       },
+       "handle": "dev-board",
+       "id": "gid://shopify/Collection/648201601348",
+       "title": "Dev Board"
+      }
+     ],
+     "description": {
+      "html": "The DFRobot FireBeetle 2 ESP32-S3 is a high-performance AIoT microcontroller designed for smart applications. Powered by a 240 MHz Xtensa dual-core LX7 processor, it features 16MB Flash and 8MB PSRAM for enhanced storage. The board includes an onboard OV2640 2MP camera with an independent power supply, enabling image recognition and smart monitoring. Supporting WiFi (802.11 b/g/n) and Bluetooth 5 (LE) plus Mesh and Matter protocols, it offers reliable dual-mode communication. Integrated power management supports Li-ion battery charging and hardware control. Programmable via Arduino IDE, ESP-IDF, and MicroPython, it is ideal for flexible, AI-powered IoT developments. This ESP32-S3 development board with camera is the perfect AI microcontroller for image recognition projects. Key Features Onboard 2MP OV2640 camera with independent power supply for AI camera applications Dual-mode WiFi and Bluetooth 5 connectivity with Mesh and Matter support for IoT Powerful 240 MHz dual-core Xtensa processor with AI acceleration and ESP32-S3 performance 16MB Flash and 8MB PSRAM for greater storage capacity in this microcontroller board Integrated Li-ion battery charging & hardware power management for portable AIoT Onboard GDI interface for easy screen connection to your ESP32-S3 board Compatible with Arduino, ESP-IDF, and MicroPython for flexible programming Technical Specifications CPU: Xtensa® dual-core 32-bit LX7 @ 240 MHz (ESP32-S3) Flash: 16MB; PSRAM: 8MB; SRAM: 512KB; Storage: High-capacity development board Camera: OV2640, 2MP, 68° FOV, 1600x1200 resolution AI camera module Connectivity: WiFi 802.11 b/g/n (2.4 GHz), Bluetooth 5 (LE), Mesh, Matter IoT protocol Ports: 26 Digital I/O, SPI x2, UART x3, I2C x2, I2S x2, ADC 12-bit x20 channels Input Voltage: 3.3V (operating), 5V (Type-C and VCC) Dimensions: 25.4 x 60 mm compact ESP32-S3 form factor Applications AIoT and smart home devices using ESP32-S3 Speech and image recognition with AI camera Industrial IoT solutions and Matter-compatible systems Smart monitoring and automation systems with WiFi Bluetooth Why Choose DFRobot FireBeetle 2 Board ESP32-S3 AIoT Microcontroller with Camera? The FireBeetle 2 ESP32-S3 combines powerful AI processing, dual-mode wireless communication, and an easy-to-use camera interface in a compact, energy-efficient package. Its support for multiple programming frameworks like Arduino and ESP-IDF, combined with integrated power management, makes it perfect for developers aiming to build fast, reliable, and scalable AIoT applications with minimal hassle. Whether for smart homes, industrial automation, or AI-powered projects, this ESP32-S3 development board provides a comprehensive, ready-to-use AI camera solution."
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-2-board-esp32",
+     "id": "gid://shopify/Product/15441111318852",
+     "list_price_range": {
+      "max": {
+       "amount": 2679,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2679,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp?v=1769139038"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2679,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2679,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Camera",
+      "Dev Board"
+     ],
+     "title": "FireBeetle 2 ESP32-S3 AI Camera Board | Matter IoT Microcontroller",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-2-board-esp32",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56281995477316:1",
+       "description": {
+        "html": "The DFRobot FireBeetle 2 ESP32-S3 is a high-performance AIoT microcontroller designed for smart applications. Powered by a 240 MHz Xtensa dual-core LX7 processor, it features 16MB Flash and 8MB PSRAM for enhanced storage. The board includes an onboard OV2640 2MP camera with an independent power supply, enabling image recognition and smart monitoring. Supporting WiFi (802.11 b/g/n) and Bluetooth 5 (LE) plus Mesh and Matter protocols, it offers reliable dual-mode communication. Integrated power management supports Li-ion battery charging and hardware control. Programmable via Arduino IDE, ESP-IDF, and MicroPython, it is ideal for flexible, AI-powered IoT developments. This ESP32-S3 development board with camera is the perfect AI microcontroller for image recognition projects. Key Features Onboard 2MP OV2640 camera with independent power supply for AI camera applications Dual-mode WiFi and Bluetooth 5 connectivity with Mesh and Matter support for IoT Powerful 240 MHz dual-core Xtensa processor with AI acceleration and ESP32-S3 performance 16MB Flash and 8MB PSRAM for greater storage capacity in this microcontroller board Integrated Li-ion battery charging & hardware power management for portable AIoT Onboard GDI interface for easy screen connection to your ESP32-S3 board Compatible with Arduino, ESP-IDF, and MicroPython for flexible programming Technical Specifications CPU: Xtensa® dual-core 32-bit LX7 @ 240 MHz (ESP32-S3) Flash: 16MB; PSRAM: 8MB; SRAM: 512KB; Storage: High-capacity development board Camera: OV2640, 2MP, 68° FOV, 1600x1200 resolution AI camera module Connectivity: WiFi 802.11 b/g/n (2.4 GHz), Bluetooth 5 (LE), Mesh, Matter IoT protocol Ports: 26 Digital I/O, SPI x2, UART x3, I2C x2, I2S x2, ADC 12-bit x20 channels Input Voltage: 3.3V (operating), 5V (Type-C and VCC) Dimensions: 25.4 x 60 mm compact ESP32-S3 form factor Applications AIoT and smart home devices using ESP32-S3 Speech and image recognition with AI camera Industrial IoT solutions and Matter-compatible systems Smart monitoring and automation systems with WiFi Bluetooth Why Choose DFRobot FireBeetle 2 Board ESP32-S3 AIoT Microcontroller with Camera? The FireBeetle 2 ESP32-S3 combines powerful AI processing, dual-mode wireless communication, and an easy-to-use camera interface in a compact, energy-efficient package. Its support for multiple programming frameworks like Arduino and ESP-IDF, combined with integrated power management, makes it perfect for developers aiming to build fast, reliable, and scalable AIoT applications with minimal hassle. Whether for smart homes, industrial automation, or AI-powered projects, this ESP32-S3 development board provides a comprehensive, ready-to-use AI camera solution."
+       },
+       "id": "gid://shopify/ProductVariant/56281995477316",
+       "list_price": {
+        "amount": 2679,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_6b4425d8-5eee-44ec-a36a-7efd45328e8a.webp?v=1769139038"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2679,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0975",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-6-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "The DFRobot Beetle is a compact, Arduino-compatible development board tailored for wearable electronics, DIY projects, and embedded applications. Its coin-sized design houses a powerful ATmega32U4 microcontroller, making it perfect for cost-effective, space-efficient designs."
+       },
+       "handle": "dfrobot-beetle",
+       "id": "gid://shopify/Collection/648150745412",
+       "title": "DFRobot - Beetle"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "🚀 Experience cutting-edge 1080p edge AI and interactive HMI development with the FireBeetle 2 ESP32-P4 Kit. This compact solution is built around the powerful ESP32-P4: a dual-core RISC-V processor with a Single-Precision FPU and a multimedia engine supporting hardware H.264 encoding (1080p@30fps). 🎥 Equipped with both MIPI and parallel interfaces, the kit offers versatile camera and display options. An integrated co-processor adds modern Wi-Fi 6 📡 and Bluetooth 5 🔗. Paired with the IO Expansion Board, developers can quickly prototype advanced AI cameras, smart panels, and vision-based systems. ✨ Features AI & Video Performance 🎬 The ESP32-P4 is optimized for demanding HMI and video workloads. Its 360MHz dual-core RISC-V CPU includes a single-precision FPU and AI instruction support, delivering strong computational power for complex tasks. It integrates a multimedia engine capable of 1080p video via MIPI-CSI/DSI and parallel interfaces. Hardware acceleration enables real-time H.264 encoding at 1080p@30fps. Built-in ISP, PPA, and 2D-DMA ensure responsive GUI rendering. With support for capacitive touch ✋ and voice recognition 🎤, this kit is ideal for interactive smart devices. Advanced Connectivity 🌐 The ESP32-C6 co-processor manages wireless communication, allowing the ESP32-P4 CPU to focus on AI and video. This separation ensures reliable performance. For AI Cameras & Doorbells: Wi-Fi 6 📶 provides high-speed, low-latency streaming.For Smart Panels & Robotics: Bluetooth 5 (LE) 🔧 simplifies setup and enables control of nearby devices. ⚡ Fast Prototyping with IO Expansion Board The IO Expansion Board solves common hardware challenges like tangled wiring and unstable connections. It offers a clear, stable platform so developers can focus on software. For Robot Vision 🤖: I2C sensors and motor drivers connect directly without pinout confusion.For Home Automation 🏠: UART headers make it easy to add LiDAR or other serial peripherals. Multiple power pins 🔋 ensure consistent supply for displays and sensors. Compatibility ⚠️: This kit uses the ESP32-P4 chip (v1.0). It works with Arduino IDE and ESP-IDF. Note: advanced MIPI-CSI and AI features currently require ESP-IDF, while other functions are supported in Arduino IDE. 📌 Applications AI cameras with facial recognition 😊 and live streaming Smart doorbells 🔔 or digital peephole viewers Object-tracking gimbals 🎯 and robot vision 🤖 Interactive home automation panels 🏡 Advertising displays 📺 and digital photo frames 🖼️ 📊 Specification Processor & Memory 💾 HP Core: RISC-V Dual-Core @ 360 MHz LP Core: RISC-V Single-Core @ 40 MHz PSRAM: 32MB Flash: 16MB L2 Cache: 768 KB Wireless 📡 Wi-Fi: ESP32-C6 Co-processor Protocol: IEEE 802.11 b/g/n/ax (Wi-Fi 6) Bluetooth: 5 (LE) Interfaces 🔌 Display: 1x MIPI-DSI (2-lane, Raspberry Pi compatible) Camera: 1x MIPI-CSI (2-lane, Raspberry Pi compatible) USB: 1x High-Speed USB OTG 2.0 (Type-C), 1x USB CDC (Type-C) Audio: 1x PDM Microphone 🎤 Storage: 1x TF Card Slot 💽 Other: I2C, I3C, SPI, I2S, UART, SDIO, ADC, Touch, PWM, IR Physical ⚙️ Operating Voltage: 3.3V Input Voltage: 5V DC (Type-C or VCC) Temperature: -10°C to 60°C 🌡️ Board Size: 25.4 x 60 mm 📏 Note: Peripheral functions are multiplexed. Values show maximum available counts. 📑 Documents Product wiki 📘 ESP32-P4 Datasheet 📄 FireBeetle 2 ESP32-P4 Schematic 📐 IO Expansion Schematic 🔧 IO Expansion Dimensions 📏 MIC Datasheet 🎤 📦 Shipping List FireBeetle 2 ESP32-P4 Board x1 IO Expansion Board for ESP32-P4 x1 20pin-2.54mm Pin Header x2 📝 Notes ⚠️ Please ensure you are using the latest ESP-IDF for advanced camera and AI features. Arduino IDE supports general functions, but MIPI-CSI and AI acceleration require ESP-IDF. 💡 For best performance, pair the kit with high-quality peripherals such as MIPI-compatible cameras and displays."
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-ai-development-kit",
+     "id": "gid://shopify/Product/15380946420036",
+     "list_price_range": {
+      "max": {
+       "amount": 2020,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2020,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_896c6912-a28e-4e27-a832-16a578be169b.webp?v=1764124037"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2825,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2825,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board"
+     ],
+     "title": "DFRobot FireBeetle 2 ESP32-P4 AI Development Kit",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-ai-development-kit",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56004538106180:1",
+       "description": {
+        "html": "🚀 Experience cutting-edge 1080p edge AI and interactive HMI development with the FireBeetle 2 ESP32-P4 Kit. This compact solution is built around the powerful ESP32-P4: a dual-core RISC-V processor with a Single-Precision FPU and a multimedia engine supporting hardware H.264 encoding (1080p@30fps). 🎥 Equipped with both MIPI and parallel interfaces, the kit offers versatile camera and display options. An integrated co-processor adds modern Wi-Fi 6 📡 and Bluetooth 5 🔗. Paired with the IO Expansion Board, developers can quickly prototype advanced AI cameras, smart panels, and vision-based systems. ✨ Features AI & Video Performance 🎬 The ESP32-P4 is optimized for demanding HMI and video workloads. Its 360MHz dual-core RISC-V CPU includes a single-precision FPU and AI instruction support, delivering strong computational power for complex tasks. It integrates a multimedia engine capable of 1080p video via MIPI-CSI/DSI and parallel interfaces. Hardware acceleration enables real-time H.264 encoding at 1080p@30fps. Built-in ISP, PPA, and 2D-DMA ensure responsive GUI rendering. With support for capacitive touch ✋ and voice recognition 🎤, this kit is ideal for interactive smart devices. Advanced Connectivity 🌐 The ESP32-C6 co-processor manages wireless communication, allowing the ESP32-P4 CPU to focus on AI and video. This separation ensures reliable performance. For AI Cameras & Doorbells: Wi-Fi 6 📶 provides high-speed, low-latency streaming.For Smart Panels & Robotics: Bluetooth 5 (LE) 🔧 simplifies setup and enables control of nearby devices. ⚡ Fast Prototyping with IO Expansion Board The IO Expansion Board solves common hardware challenges like tangled wiring and unstable connections. It offers a clear, stable platform so developers can focus on software. For Robot Vision 🤖: I2C sensors and motor drivers connect directly without pinout confusion.For Home Automation 🏠: UART headers make it easy to add LiDAR or other serial peripherals. Multiple power pins 🔋 ensure consistent supply for displays and sensors. Compatibility ⚠️: This kit uses the ESP32-P4 chip (v1.0). It works with Arduino IDE and ESP-IDF. Note: advanced MIPI-CSI and AI features currently require ESP-IDF, while other functions are supported in Arduino IDE. 📌 Applications AI cameras with facial recognition 😊 and live streaming Smart doorbells 🔔 or digital peephole viewers Object-tracking gimbals 🎯 and robot vision 🤖 Interactive home automation panels 🏡 Advertising displays 📺 and digital photo frames 🖼️ 📊 Specification Processor & Memory 💾 HP Core: RISC-V Dual-Core @ 360 MHz LP Core: RISC-V Single-Core @ 40 MHz PSRAM: 32MB Flash: 16MB L2 Cache: 768 KB Wireless 📡 Wi-Fi: ESP32-C6 Co-processor Protocol: IEEE 802.11 b/g/n/ax (Wi-Fi 6) Bluetooth: 5 (LE) Interfaces 🔌 Display: 1x MIPI-DSI (2-lane, Raspberry Pi compatible) Camera: 1x MIPI-CSI (2-lane, Raspberry Pi compatible) USB: 1x High-Speed USB OTG 2.0 (Type-C), 1x USB CDC (Type-C) Audio: 1x PDM Microphone 🎤 Storage: 1x TF Card Slot 💽 Other: I2C, I3C, SPI, I2S, UART, SDIO, ADC, Touch, PWM, IR Physical ⚙️ Operating Voltage: 3.3V Input Voltage: 5V DC (Type-C or VCC) Temperature: -10°C to 60°C 🌡️ Board Size: 25.4 x 60 mm 📏 Note: Peripheral functions are multiplexed. Values show maximum available counts. 📑 Documents Product wiki 📘 ESP32-P4 Datasheet 📄 FireBeetle 2 ESP32-P4 Schematic 📐 IO Expansion Schematic 🔧 IO Expansion Dimensions 📏 MIC Datasheet 🎤 📦 Shipping List FireBeetle 2 ESP32-P4 Board x1 IO Expansion Board for ESP32-P4 x1 20pin-2.54mm Pin Header x2 📝 Notes ⚠️ Please ensure you are using the latest ESP-IDF for advanced camera and AI features. Arduino IDE supports general functions, but MIPI-CSI and AI acceleration require ESP-IDF. 💡 For best performance, pair the kit with high-quality peripherals such as MIPI-compatible cameras and displays."
+       },
+       "id": "gid://shopify/ProductVariant/56004538106180",
+       "list_price": {
+        "amount": 2020,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_896c6912-a28e-4e27-a832-16a578be169b.webp?v=1764124037"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2825,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR1237",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "The DFRobot Beetle is a compact, Arduino-compatible development board tailored for wearable electronics, DIY projects, and embedded applications. Its coin-sized design houses a powerful ATmega32U4 microcontroller, making it perfect for cost-effective, space-efficient designs."
+       },
+       "handle": "dfrobot-beetle",
+       "id": "gid://shopify/Collection/648150745412",
+       "title": "DFRobot - Beetle"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "🚀 FireBeetle 2 ESP32-P4: Edge AI & Multimedia Platform The FireBeetle 2 ESP32-P4 accelerates Edge AI and multimedia projects with its compact, highly-integrated design. Powered by a 360MHz dual-core RISC-V CPU, native MIPI-CSI/DSI interfaces, an onboard microphone, and Wi-Fi 6 connectivity, it is the ideal core for AI cameras, interactive GUIs, and smart home panels. ⚡ High-Performance AI Core At its center, the board integrates a 360MHz dual-core RISC-V processor with single-precision FPU and AI instruction extensions. This enables direct deployment of lightweight ML models such as TensorFlow Lite for facial recognition, object detection, and voice-based AI assistants. 🎥 Native Multimedia Powerhouse With native MIPI-CSI and MIPI-DSI interfaces, the board supports direct connection of high-resolution cameras and displays. Hardware accelerators for H.264 video and JPEG encoding allow efficient handling of 1080p video streams. Interfaces are pin-compatible with Raspberry Pi peripherals,, simplifying component sourcing. 📏 Compact & Integrated Design Measuring only 25.4 × 60mm, the FireBeetle 2 includes a PDM digital microphone for voice applications and a TF card slot for local storage. This integration reduces external modules, streamlines product design, and is ideal for space-constrained devices. 🌐 Future-Proof Connectivity Equipped with an ESP32-C6 co-processor, the board supports Wi-Fi 6 for higher throughput and lower latency, plus Bluetooth 5 (LE) for versatile peripheral communication. 🔌 Board Interfaces MIPI-DSI Interface: 2-lane display port, Raspberry Pi compatible MIPI-CSI Interface: 2-lane camera port, Raspberry Pi compatible ESP32-C6 Co-processor: Wi-Fi 6 + Bluetooth 5 (LE) High-Speed USB OTG (Type-C): USB 2.0 port for fast data transfer USB CDC & Power (Type-C): Programming, debugging, and power PDM Microphone: Onboard digital mic for voice AI TF Card Slot: MicroSD storage for AI models and logs BOOT & RST Buttons: Reset and firmware download For detailed pin descriptions, see the Product Wiki. 🛠️ Development Kit For rapid prototyping, consider the FireBeetle 2 ESP32-P4 Development Kit, which includes the board and an IO Expansion Board for plug-and-play peripherals. ⚠️ Compatibility Notice The board uses the ESP32-P4 chip (v1.0) at 360MHz. It supports both Arduino IDE and ESP-IDF. Note: MIPI-CSI and AI functions currently require ESP-IDF; other functions are fully Arduino-compatible. 🎯 Applications AI-Powered Network Cameras & Smart Surveillance AI Video Doorbells & Smart Peephole Viewers Object Tracking Gimbals Smart Home Control Panels Interactive Digital Photo Frames Multimedia Advertising Players 📊 Specifications Basic Parameters Operating voltage: 3.3V Type-C input voltage: 5V DC VIN input voltage: 5V DC Operating temperature: -10~60℃ Module size: 25.4 × 60mm CPU & Storage HP Core: RISC-V 32-bit Dual-core, 360 MHz LP Core: RISC-V 32-bit Single-core, 40 MHz 32MB PSRAM 16MB Flash 768 KB HP L2MEM 32 KB LP SRAM 128 KB HP ROM 16 KB LP ROM Wi-Fi Protocols: IEEE 802.11b/g/n/ax Modes: Station, SoftAP, SoftAP+Station, Promiscuous Frequency: 2.4GHz Bandwidth: 20/40 MHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5 Data rates: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps Interface Pins Digital I/O ×24 MIPI CSI ×2 channels MIPI DSI ×2 channels UART ×5 + LP UART ×1 I2C ×2 + LP I2C ×1 I3C ×1 I2S ×3 + LP I2S ×1 SPI ×2 + LP SPI ×1 High-speed USB OTG 2.0 ×1 SDIO 2.0 ×1 TOUCH ×4 channels PWM Controller ×8 channels Infrared Transceiver: TX ×5, RX ×5 12-bit SAR ADC ×7 channels Note: Pins are multiplexed; numbers above are maximum values. 📄 Documents ESP32-P4 Datasheet | FireBeetle 2 ESP32-P4 Schematic 📦 Shipping List FireBeetle 2 ESP32-P4 Development Board ×1 20-pin 2.54mm Male Header ×2"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-2-esp32-p4",
+     "id": "gid://shopify/Product/15401747185988",
+     "list_price_range": {
+      "max": {
+       "amount": 2696,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2696,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_b421d56f-7508-4f03-b4c2-df31411ef51a.webp?v=1765788352"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2696,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2696,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board",
+      "Wireless"
+     ],
+     "title": "DFRobot FireBeetle 2 ESP32-P4 IoT HMI Dev Board with MIPI-CSI/DSI",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-2-esp32-p4",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56109819167044:1",
+       "description": {
+        "html": "🚀 FireBeetle 2 ESP32-P4: Edge AI & Multimedia Platform The FireBeetle 2 ESP32-P4 accelerates Edge AI and multimedia projects with its compact, highly-integrated design. Powered by a 360MHz dual-core RISC-V CPU, native MIPI-CSI/DSI interfaces, an onboard microphone, and Wi-Fi 6 connectivity, it is the ideal core for AI cameras, interactive GUIs, and smart home panels. ⚡ High-Performance AI Core At its center, the board integrates a 360MHz dual-core RISC-V processor with single-precision FPU and AI instruction extensions. This enables direct deployment of lightweight ML models such as TensorFlow Lite for facial recognition, object detection, and voice-based AI assistants. 🎥 Native Multimedia Powerhouse With native MIPI-CSI and MIPI-DSI interfaces, the board supports direct connection of high-resolution cameras and displays. Hardware accelerators for H.264 video and JPEG encoding allow efficient handling of 1080p video streams. Interfaces are pin-compatible with Raspberry Pi peripherals,, simplifying component sourcing. 📏 Compact & Integrated Design Measuring only 25.4 × 60mm, the FireBeetle 2 includes a PDM digital microphone for voice applications and a TF card slot for local storage. This integration reduces external modules, streamlines product design, and is ideal for space-constrained devices. 🌐 Future-Proof Connectivity Equipped with an ESP32-C6 co-processor, the board supports Wi-Fi 6 for higher throughput and lower latency, plus Bluetooth 5 (LE) for versatile peripheral communication. 🔌 Board Interfaces MIPI-DSI Interface: 2-lane display port, Raspberry Pi compatible MIPI-CSI Interface: 2-lane camera port, Raspberry Pi compatible ESP32-C6 Co-processor: Wi-Fi 6 + Bluetooth 5 (LE) High-Speed USB OTG (Type-C): USB 2.0 port for fast data transfer USB CDC & Power (Type-C): Programming, debugging, and power PDM Microphone: Onboard digital mic for voice AI TF Card Slot: MicroSD storage for AI models and logs BOOT & RST Buttons: Reset and firmware download For detailed pin descriptions, see the Product Wiki. 🛠️ Development Kit For rapid prototyping, consider the FireBeetle 2 ESP32-P4 Development Kit, which includes the board and an IO Expansion Board for plug-and-play peripherals. ⚠️ Compatibility Notice The board uses the ESP32-P4 chip (v1.0) at 360MHz. It supports both Arduino IDE and ESP-IDF. Note: MIPI-CSI and AI functions currently require ESP-IDF; other functions are fully Arduino-compatible. 🎯 Applications AI-Powered Network Cameras & Smart Surveillance AI Video Doorbells & Smart Peephole Viewers Object Tracking Gimbals Smart Home Control Panels Interactive Digital Photo Frames Multimedia Advertising Players 📊 Specifications Basic Parameters Operating voltage: 3.3V Type-C input voltage: 5V DC VIN input voltage: 5V DC Operating temperature: -10~60℃ Module size: 25.4 × 60mm CPU & Storage HP Core: RISC-V 32-bit Dual-core, 360 MHz LP Core: RISC-V 32-bit Single-core, 40 MHz 32MB PSRAM 16MB Flash 768 KB HP L2MEM 32 KB LP SRAM 128 KB HP ROM 16 KB LP ROM Wi-Fi Protocols: IEEE 802.11b/g/n/ax Modes: Station, SoftAP, SoftAP+Station, Promiscuous Frequency: 2.4GHz Bandwidth: 20/40 MHz Frame Aggregation: TX/RX A-MPDU, TX/RX A-MSDU Bluetooth Protocol: Bluetooth 5 Data rates: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps Interface Pins Digital I/O ×24 MIPI CSI ×2 channels MIPI DSI ×2 channels UART ×5 + LP UART ×1 I2C ×2 + LP I2C ×1 I3C ×1 I2S ×3 + LP I2S ×1 SPI ×2 + LP SPI ×1 High-speed USB OTG 2.0 ×1 SDIO 2.0 ×1 TOUCH ×4 channels PWM Controller ×8 channels Infrared Transceiver: TX ×5, RX ×5 12-bit SAR ADC ×7 channels Note: Pins are multiplexed; numbers above are maximum values. 📄 Documents ESP32-P4 Datasheet | FireBeetle 2 ESP32-P4 Schematic 📦 Shipping List FireBeetle 2 ESP32-P4 Development Board ×1 20-pin 2.54mm Male Header ×2"
+       },
+       "id": "gid://shopify/ProductVariant/56109819167044",
+       "list_price": {
+        "amount": 2696,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/1_b421d56f-7508-4f03-b4c2-df31411ef51a.webp?v=1765788352"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2696,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR1172",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a variety of camera modules designed for robotics, AI, and vision-based applications. These cameras are utilized for object tracking, facial recognition, barcode scanning, and environmental monitoring."
+       },
+       "handle": "dfrobot-camera",
+       "id": "gid://shopify/Collection/648152908100",
+       "title": "DFRobot - Camera"
+      }
+     ],
+     "description": {
+      "html": "The FireBeetle 2 ESP32-S3-U is a high-performance IoT controller built around the ESP32-S3-U-WROOM-1-N16R8 module. It features a 240MHz dual-core processor with AI acceleration, 16MB Flash, and 8MB PSRAM for demanding edge-computing tasks like speech/image recognition. The board includes a detachable OV2640 camera (2MP, 1600×1200 resolution) and supports Wi-Fi 4 (802.11 b/g/n) and Bluetooth 5 (LE) dual-mode communication—including Bluetooth Mesh and Matter protocols for industrial smart home applications. Integrated power management enables Li-ion battery charging, while the GDI display interface simplifies screen integration. Image recognition Video picture transmission ⚡ Features AI Edge Computing: ESP32-S3-U chip accelerates neural networks for real-time image/speech recognition. Stores more facial models (e.g., smart home security) for faster data comparisons. Camera System: OV2640 sensor (68° FOV) with independent power circuit to reduce signal interference. Captures 1600×1200 images for monitoring/alert systems (e.g., intrusion detection). Connectivity: Wi-Fi Mesh and Bluetooth 5 support long-range, multi-device networks. Matter protocol ensures cross-brand smart home compatibility. User-Friendly Design: Plug-and-play peripherals: 26x digital I/O, 3x UART, 2x I2C, and GDI display port. Programmable via Arduino IDE, ESP-IDF, or MicroPython (C/Python support). 📊 Specifications Category Details Model FireBeetle 2 ESP32-S3-U (SKU: DFR0975-U) Processor Xtensa® dual-core LX7 @ 240MHz Memory 16MB Flash + 8MB PSRAM + 512KB SRAM Camera OV2640 (2MP, 1600×1200, 68° FOV) Wireless Wi-Fi 4 (802.11 b/g/n), Bluetooth 5 LE/Mesh, Matter protocol Power 5V USB-C input • Li-ion charging (3.7V) • 1A max current I/O Interfaces 26x GPIO • 3x UART • 2x I2C • 2x SPI • 20x ADC channels Dimensions 25.4 × 60mm (1 × 2.36\") Operating Temp. -20°C to 70°C 🚀 Applications Smart Home: Intrusion alerts via camera + Matter-enabled automation. Industrial IoT: Machine vision (defect detection) with edge AI processing. Remote Monitoring: Wi-Fi Mesh networks for wide-area sensor deployments. Education: MicroPython-based AI/robotics prototyping. 📦 Package Contents FireBeetle 2 ESP32-S3-U Board ×1 OV2640 Camera Module ×1 External IPEX Antenna ×1 Pin Headers (18-pin ×2, 14-pin ×2) Female Headers (18-pin ×1, 14-pin ×1) 💡 Advantages Expandable Storage: MicroSD slot logs image/audio data for offline AI training. Rapid Prototyping: Pre-soldered headers + Arduino libraries reduce setup time to minutes. Low-Power Operation: Deep sleep (10μA) enables months of battery life for field sensors. Enhanced Signal: External antenna (vs. PCB antenna) extends Wi-Fi/Bluetooth range by ~30% in obstructed areas."
+     },
+     "gift_card": false,
+     "handle": "dfrobot-firebeetle-board-esp32-s3",
+     "id": "gid://shopify/Product/15396422517060",
+     "list_price_range": {
+      "max": {
+       "amount": 2696,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2696,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp?v=1765331951"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2696,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2696,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Camera"
+     ],
+     "title": "DFRobot FireBeetle 2 Board ESP32-S3-U AIoT Microcontroller with Camera",
+     "url": "https://openelab.com/products/dfrobot-firebeetle-board-esp32-s3",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56087640899908:1",
+       "description": {
+        "html": "The FireBeetle 2 ESP32-S3-U is a high-performance IoT controller built around the ESP32-S3-U-WROOM-1-N16R8 module. It features a 240MHz dual-core processor with AI acceleration, 16MB Flash, and 8MB PSRAM for demanding edge-computing tasks like speech/image recognition. The board includes a detachable OV2640 camera (2MP, 1600×1200 resolution) and supports Wi-Fi 4 (802.11 b/g/n) and Bluetooth 5 (LE) dual-mode communication—including Bluetooth Mesh and Matter protocols for industrial smart home applications. Integrated power management enables Li-ion battery charging, while the GDI display interface simplifies screen integration. Image recognition Video picture transmission ⚡ Features AI Edge Computing: ESP32-S3-U chip accelerates neural networks for real-time image/speech recognition. Stores more facial models (e.g., smart home security) for faster data comparisons. Camera System: OV2640 sensor (68° FOV) with independent power circuit to reduce signal interference. Captures 1600×1200 images for monitoring/alert systems (e.g., intrusion detection). Connectivity: Wi-Fi Mesh and Bluetooth 5 support long-range, multi-device networks. Matter protocol ensures cross-brand smart home compatibility. User-Friendly Design: Plug-and-play peripherals: 26x digital I/O, 3x UART, 2x I2C, and GDI display port. Programmable via Arduino IDE, ESP-IDF, or MicroPython (C/Python support). 📊 Specifications Category Details Model FireBeetle 2 ESP32-S3-U (SKU: DFR0975-U) Processor Xtensa® dual-core LX7 @ 240MHz Memory 16MB Flash + 8MB PSRAM + 512KB SRAM Camera OV2640 (2MP, 1600×1200, 68° FOV) Wireless Wi-Fi 4 (802.11 b/g/n), Bluetooth 5 LE/Mesh, Matter protocol Power 5V USB-C input • Li-ion charging (3.7V) • 1A max current I/O Interfaces 26x GPIO • 3x UART • 2x I2C • 2x SPI • 20x ADC channels Dimensions 25.4 × 60mm (1 × 2.36\") Operating Temp. -20°C to 70°C 🚀 Applications Smart Home: Intrusion alerts via camera + Matter-enabled automation. Industrial IoT: Machine vision (defect detection) with edge AI processing. Remote Monitoring: Wi-Fi Mesh networks for wide-area sensor deployments. Education: MicroPython-based AI/robotics prototyping. 📦 Package Contents FireBeetle 2 ESP32-S3-U Board ×1 OV2640 Camera Module ×1 External IPEX Antenna ×1 Pin Headers (18-pin ×2, 14-pin ×2) Female Headers (18-pin ×1, 14-pin ×1) 💡 Advantages Expandable Storage: MicroSD slot logs image/audio data for offline AI training. Rapid Prototyping: Pre-soldered headers + Arduino libraries reduce setup time to minutes. Low-Power Operation: Deep sleep (10μA) enables months of battery life for field sensors. Enhanced Signal: External antenna (vs. PCB antenna) extends Wi-Fi/Bluetooth range by ~30% in obstructed areas."
+       },
+       "id": "gid://shopify/ProductVariant/56087640899908",
+       "list_price": {
+        "amount": 2696,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/49_077af399-19c7-4025-b09b-55c37771884c.webp?v=1765331951"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2696,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0975-U",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot offers a wide range of development boards designed for prototyping, IoT, robotics, and AI applications. These boards provide powerful computing capabilities and versatile connectivity options for makers, educators, and developers."
+       },
+       "handle": "dfrobot-dev-board",
+       "id": "gid://shopify/Collection/648150909252",
+       "title": "DFRobot - Dev Board"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "The FireBeetle ESP32 IoT Microcontroller is a compact, low-power development board designed for high-performance IoT applications. As a versatile ESP32 development board part of the DFRobot FireBeetle Series, this board integrates the dual-core ESP-WROOM-32 module and supports both WiFi and Bluetooth communication, making it an ideal choice for a wide range of low-power IoT projects and professional ESP32 microcontroller needs. Projects Project 1. ESP32 Deep Sleep Tutorial for Low Power Projects Introduction: Learn how to put the ESP32 chip into the Deep Sleep mode in order to conserve power and make our projects battery friendly. This ESP32 development board guide is essential for energy-efficient designs. Project 2. How to Use Bluetooth(BLE) With ESP32 Introduction: Learn how to use the ESP32 board to send temperature reading over Bluetooth Low Energy. This WiFi Bluetooth board simplifies wireless data transmission. Project 3. Controlling Air Conditioner temperature automatically with ESP32 Introduction: This tutorial teaches you how to fetch the real-time weather data with a microcontroller and how to mimic the air conditioner remote control that uses IR (Infrared) technology to control the AC using an IR transmitter. This ESP32 microcontroller project is perfect for home automation. Project 4. Solar Weather Station Using ESP32 Introduction: This project aims at building a Weather Station and send the data to your channel. The system will be placed on the balcony and will retrieve temperature, humidity and air pressure using this advanced ESP32 development board. Key Features of FireBeetle ESP32 Dev Board Dual-core ESP-WROOM-32 chip, running at 240MHz 16MB Flash and 520KB SRAM Integrated WiFi and Bluetooth v4.2 for dual-mode communication Supports multiple programming methods: Arduino, IDF, MicroPython, Mind+ Compact design, ideal for battery-powered and space-constrained projects Automatic power switching between USB and 3.7V lithium battery Fully Arduino IDE compatible, supports one-click downloading Rich interfaces: 5 analog pins, 10 digital I/O, UART, SPI, I2C, I2S, SD card LED_BUILTIN on D9, FireBeetle pin-compatible Over 250 Detailed ESP32 Tutorials The FireBeetle ESP32 development board comes with over 250 comprehensive tutorials. Whether you're a beginner or an advanced developer, these resources guide you through everything from setup and installation to complex IoT project development—helping you make the most out of this powerful ESP32 dev board and Arduino ESP32 environment. Flexible Power Supply Options Supports USB power and external 3.7V lithium battery Auto power switching ensures seamless operation in mobile or embedded systems Rich Interface & Peripheral Support With its versatile I/O, the FireBeetle ESP32 easily connects to various sensors and actuators. This ESP32 microcontroller is fully expandable for professional use: 5 analog inputs 10 digital I/O pins 1 UART, 1 SPI, 1 I2C, 1 I2S, SD card interface Compatible with FireBeetle Gravity Series peripherals Multiple Programming Methods This ESP32 microcontroller supports various development environments, making it a top-tier ESP32 development board: Arduino IDE with direct Dx-style pin mapping MicroPython for rapid prototyping Mind+ graphical programming for visual learners ESP-IDF for low-level hardware control Version Upgrades New anti-reverse connection silk screen Revised LiPo battery connector orientation for better cable management Specifications Operating Voltage: 3.3V Input Voltage: 3.3V~5V Max Discharge Current: 600mA Max Charge Current: 500mA Processor: Tensilica LX6 dual-core Frequency: 240MHz Flash: 16MB SRAM: 520KB WiFi Protocols: 802.11 b/g/n/d/e/i/k/r Bluetooth: v4.2 BR/EDR/BLE Working Current: 80mA (average) Temperature Range: -40°C to +85°C Dimensions: 29 × 58 mm (1.14 x 2.28 in) Mounting Hole Diameter: 3.1mm inner / 6mm outer Applications Remote environmental monitoring Smart home automation Wearable IoT projects Educational electronics DIY robotics Wireless data logging Package Includes 1 × FireBeetle ESP32 IoT Microcontroller 2 × 18-Pin 2.54mm Male Header 2 × 18-Pin 2.54mm Female Header"
+     },
+     "gift_card": false,
+     "handle": "firebeetle-esp32-iot-microcontroller-with",
+     "id": "gid://shopify/Product/15439241838916",
+     "list_price_range": {
+      "max": {
+       "amount": 1659,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1659,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "FireBeetle ESP32 IoT Microcontroller with 250+ ESP32 Tutorials-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/FireBeetle_ESP32_IoT_Microcontroller_with_250_ESP32_Tutorials-1.webp?v=1768989260"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1659,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1659,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Dev Board",
+      "WIFI Moudle"
+     ],
+     "title": "FireBeetle ESP32 IoT Microcontroller - Arduino Dev Board & Tutorials",
+     "url": "https://openelab.com/products/firebeetle-esp32-iot-microcontroller-with",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56277379285316:1",
+       "description": {
+        "html": "The FireBeetle ESP32 IoT Microcontroller is a compact, low-power development board designed for high-performance IoT applications. As a versatile ESP32 development board part of the DFRobot FireBeetle Series, this board integrates the dual-core ESP-WROOM-32 module and supports both WiFi and Bluetooth communication, making it an ideal choice for a wide range of low-power IoT projects and professional ESP32 microcontroller needs. Projects Project 1. ESP32 Deep Sleep Tutorial for Low Power Projects Introduction: Learn how to put the ESP32 chip into the Deep Sleep mode in order to conserve power and make our projects battery friendly. This ESP32 development board guide is essential for energy-efficient designs. Project 2. How to Use Bluetooth(BLE) With ESP32 Introduction: Learn how to use the ESP32 board to send temperature reading over Bluetooth Low Energy. This WiFi Bluetooth board simplifies wireless data transmission. Project 3. Controlling Air Conditioner temperature automatically with ESP32 Introduction: This tutorial teaches you how to fetch the real-time weather data with a microcontroller and how to mimic the air conditioner remote control that uses IR (Infrared) technology to control the AC using an IR transmitter. This ESP32 microcontroller project is perfect for home automation. Project 4. Solar Weather Station Using ESP32 Introduction: This project aims at building a Weather Station and send the data to your channel. The system will be placed on the balcony and will retrieve temperature, humidity and air pressure using this advanced ESP32 development board. Key Features of FireBeetle ESP32 Dev Board Dual-core ESP-WROOM-32 chip, running at 240MHz 16MB Flash and 520KB SRAM Integrated WiFi and Bluetooth v4.2 for dual-mode communication Supports multiple programming methods: Arduino, IDF, MicroPython, Mind+ Compact design, ideal for battery-powered and space-constrained projects Automatic power switching between USB and 3.7V lithium battery Fully Arduino IDE compatible, supports one-click downloading Rich interfaces: 5 analog pins, 10 digital I/O, UART, SPI, I2C, I2S, SD card LED_BUILTIN on D9, FireBeetle pin-compatible Over 250 Detailed ESP32 Tutorials The FireBeetle ESP32 development board comes with over 250 comprehensive tutorials. Whether you're a beginner or an advanced developer, these resources guide you through everything from setup and installation to complex IoT project development—helping you make the most out of this powerful ESP32 dev board and Arduino ESP32 environment. Flexible Power Supply Options Supports USB power and external 3.7V lithium battery Auto power switching ensures seamless operation in mobile or embedded systems Rich Interface & Peripheral Support With its versatile I/O, the FireBeetle ESP32 easily connects to various sensors and actuators. This ESP32 microcontroller is fully expandable for professional use: 5 analog inputs 10 digital I/O pins 1 UART, 1 SPI, 1 I2C, 1 I2S, SD card interface Compatible with FireBeetle Gravity Series peripherals Multiple Programming Methods This ESP32 microcontroller supports various development environments, making it a top-tier ESP32 development board: Arduino IDE with direct Dx-style pin mapping MicroPython for rapid prototyping Mind+ graphical programming for visual learners ESP-IDF for low-level hardware control Version Upgrades New anti-reverse connection silk screen Revised LiPo battery connector orientation for better cable management Specifications Operating Voltage: 3.3V Input Voltage: 3.3V~5V Max Discharge Current: 600mA Max Charge Current: 500mA Processor: Tensilica LX6 dual-core Frequency: 240MHz Flash: 16MB SRAM: 520KB WiFi Protocols: 802.11 b/g/n/d/e/i/k/r Bluetooth: v4.2 BR/EDR/BLE Working Current: 80mA (average) Temperature Range: -40°C to +85°C Dimensions: 29 × 58 mm (1.14 x 2.28 in) Mounting Hole Diameter: 3.1mm inner / 6mm outer Applications Remote environmental monitoring Smart home automation Wearable IoT projects Educational electronics DIY robotics Wireless data logging Package Includes 1 × FireBeetle ESP32 IoT Microcontroller 2 × 18-Pin 2.54mm Male Header 2 × 18-Pin 2.54mm Female Header"
+       },
+       "id": "gid://shopify/ProductVariant/56277379285316",
+       "list_price": {
+        "amount": 1659,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/FireBeetle_ESP32_IoT_Microcontroller_with_250_ESP32_Tutorials-1.webp?v=1768989260"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1659,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0478",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot is a prominent provider of open-source hardware and robotics solutions. Established in 2008, the company has been a leader in innovation, developing user-friendly hardware and software products that function as essential components for various electronic projects. Over the years, DFRobot has broadened its scope to include STEM education, manufacturing, and industrial applications alongside its open-source hardware initiatives. The company offers an extensive array of products, such as sensors, robotic platforms, communication modules, and educational kits tailored for students and educators. Their product lines support popular platforms like Arduino, Raspberry Pi, LattePanda, and micro:bit, simplifying the process for hobbyists, developers, and educators to turn their ideas into reality. Additionally, DFRobot provides comprehensive online documentation, sample codes, and schematics to assist users in getting started efficiently."
+       },
+       "handle": "dfrobot",
+       "id": "gid://shopify/Collection/648148189508",
+       "title": "DFRobot"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": "The DFRobot Beetle is a compact, Arduino-compatible development board tailored for wearable electronics, DIY projects, and embedded applications. Its coin-sized design houses a powerful ATmega32U4 microcontroller, making it perfect for cost-effective, space-efficient designs."
+       },
+       "handle": "dfrobot-beetle",
+       "id": "gid://shopify/Collection/648150745412",
+       "title": "DFRobot - Beetle"
+      },
+      {
+       "description": {
+        "html": "ESP microcontroller modules offer powerful and cost-effective solutions for IoT and smart device projects. With built-in Wi-Fi and Bluetooth capabilities, these modules are ideal for developing connected devices and automation systems. Their robust processing power, flexible GPIO options, and extensive development tools make it easy to create a wide array of applications. Supported by comprehensive documentation and a vibrant community, ESP modules empower users to transform their ideas into reality."
+       },
+       "handle": "dev-board-esp32-esp8266",
+       "id": "gid://shopify/Collection/648189378884",
+       "title": "Dev Board - ESP32 / ESP8266"
+      }
+     ],
+     "description": {
+      "html": "Is the FireBeetle ESP32 IoT Microcontroller too bulky for your compact project? Meet the newly launched Beetle ESP32 Microcontroller, a specialized IoT Microcontroller designed with a mini footprint of just 1.38” × 1.34”. This ultra-compact version of the FireBeetle ESP32 is perfect for DIY makers and electronics engineers. The Beetle ESP32 Microcontroller offers a simplified form with 4 analog ports, 4 digital ports, UART, and I2C interfaces, making it an ideal IoT Microcontroller alternative to larger boards. Features Mini size: Just 35mm × 34mm Beetle ESP32 Microcontroller dimensions Plug-and-play: Supports IoT Microcontroller programming via Micro USB, no external programmer required Gold-plated I/O ports: Easy to connect wires to the Beetle ESP32 Microcontroller or sew onto fabric Honeycomb-style power interfaces: Simplify wiring and IoT Microcontroller integration Built-in Wi-Fi and Bluetooth: Ideal for FireBeetle ESP32 style IoT applications Specifications USB Supply Voltage: 5.0V for Beetle ESP32 Microcontroller VIN Supply Voltage: DC 3.5~6.5V IoT Microcontroller input Processor: Tensilica LX6 dual-core, similar to FireBeetle ESP32 for independent programming Frequency: 240MHz Beetle ESP32 Microcontroller clock speed SRAM: 520KB IoT Microcontroller memory Flash: 16Mbit Beetle ESP32 Microcontroller flash Wi-Fi Protocol: 802.11 b/g/n/d/e/i/k/r (Up to 150 Mbps, IoT Microcontroller support) Bluetooth: Compliant with Bluetooth v4.2 (BR/EDR/BLE) Digital Pins: D2, D3, D4, D7 on Beetle ESP32 Microcontroller Analog Pins: A0, A1, A2, A3 for IoT Microcontroller sensors I2C Interface: 1 on Beetle ESP32 Microcontroller UART: 1 IoT Microcontroller serial port Dimensions: 35mm × 34mm / 1.38” × 1.34” IoT Microcontroller Comparison Table This table compares the Beetle ESP32 with other IoT Microcontroller boards such as WiDo, FireBeetle ESP8266, and FireBeetle ESP32, highlighting why this Beetle ESP32 Microcontroller is superior for compact designs. Name WiDo Beetle ESP32 FireBeetle ESP8266 FireBeetle ESP32 SKU DFR0321 DFR0575 DFR0489 DFR0478 Microcontroller CC3000 ESP32 ESP8266 ESP32 Flash (Mbit) – 16 16 16 SRAM (KB) – 520 50 520 Analog Pins 6 4 1 5 Digital Pins 14 4 11 10 UART / I2C / SPI 1 / 1 / 1 1 / 1 / 1 1 / 1 / 1 1 / 1 / 1 Wi-Fi Protocol 802.11b/g 802.11b/g/n 802.11b/g/n 802.11b/g/n Bluetooth ✗ Yes (v4.2) ✗ Yes (BLE + APP) CPU Frequency (MHz) 16 240 160 240 Power Supply USB / DC2.1 USB USB or 3.7V LiPo USB or 3.7V LiPo USB Voltage (V) 5V 3.5 – 6.5V 3.3 – 5.0V 3.3 – 5.0V Dimension (mm) 75 × 54 35 × 34 58 × 29 58 × 29 Weight (g) 30 12 24 24 Project Example Installing the Beetle ESP32 Microcontroller Board in Arduino IDE – DFRobotIncludes a step-by-step video tutorial on how to install and configure the IoT Microcontroller board using Arduino IDE. Shipping List 1× Beetle ESP32 Microcontroller Reference Product wiki for Beetle ESP32 Microcontroller"
+     },
+     "gift_card": false,
+     "handle": "beetle-esp32-microcontroller",
+     "id": "gid://shopify/Product/15434051027268",
+     "list_price_range": {
+      "max": {
+       "amount": 1538,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1538,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Beetle ESP32 Microcontroller-1",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Beetle_ESP32_Microcontroller-1.webp?v=1768459901"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1538,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1538,
+       "currency": "USD"
+      }
+     },
+     "title": "Beetle ESP32-C3: Mini WiFi & Bluetooth IoT Controller - Arduino",
+     "url": "https://openelab.com/products/beetle-esp32-microcontroller",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56255927746884:1",
+       "description": {
+        "html": "Is the FireBeetle ESP32 IoT Microcontroller too bulky for your compact project? Meet the newly launched Beetle ESP32 Microcontroller, a specialized IoT Microcontroller designed with a mini footprint of just 1.38” × 1.34”. This ultra-compact version of the FireBeetle ESP32 is perfect for DIY makers and electronics engineers. The Beetle ESP32 Microcontroller offers a simplified form with 4 analog ports, 4 digital ports, UART, and I2C interfaces, making it an ideal IoT Microcontroller alternative to larger boards. Features Mini size: Just 35mm × 34mm Beetle ESP32 Microcontroller dimensions Plug-and-play: Supports IoT Microcontroller programming via Micro USB, no external programmer required Gold-plated I/O ports: Easy to connect wires to the Beetle ESP32 Microcontroller or sew onto fabric Honeycomb-style power interfaces: Simplify wiring and IoT Microcontroller integration Built-in Wi-Fi and Bluetooth: Ideal for FireBeetle ESP32 style IoT applications Specifications USB Supply Voltage: 5.0V for Beetle ESP32 Microcontroller VIN Supply Voltage: DC 3.5~6.5V IoT Microcontroller input Processor: Tensilica LX6 dual-core, similar to FireBeetle ESP32 for independent programming Frequency: 240MHz Beetle ESP32 Microcontroller clock speed SRAM: 520KB IoT Microcontroller memory Flash: 16Mbit Beetle ESP32 Microcontroller flash Wi-Fi Protocol: 802.11 b/g/n/d/e/i/k/r (Up to 150 Mbps, IoT Microcontroller support) Bluetooth: Compliant with Bluetooth v4.2 (BR/EDR/BLE) Digital Pins: D2, D3, D4, D7 on Beetle ESP32 Microcontroller Analog Pins: A0, A1, A2, A3 for IoT Microcontroller sensors I2C Interface: 1 on Beetle ESP32 Microcontroller UART: 1 IoT Microcontroller serial port Dimensions: 35mm × 34mm / 1.38” × 1.34” IoT Microcontroller Comparison Table This table compares the Beetle ESP32 with other IoT Microcontroller boards such as WiDo, FireBeetle ESP8266, and FireBeetle ESP32, highlighting why this Beetle ESP32 Microcontroller is superior for compact designs. Name WiDo Beetle ESP32 FireBeetle ESP8266 FireBeetle ESP32 SKU DFR0321 DFR0575 DFR0489 DFR0478 Microcontroller CC3000 ESP32 ESP8266 ESP32 Flash (Mbit) – 16 16 16 SRAM (KB) – 520 50 520 Analog Pins 6 4 1 5 Digital Pins 14 4 11 10 UART / I2C / SPI 1 / 1 / 1 1 / 1 / 1 1 / 1 / 1 1 / 1 / 1 Wi-Fi Protocol 802.11b/g 802.11b/g/n 802.11b/g/n 802.11b/g/n Bluetooth ✗ Yes (v4.2) ✗ Yes (BLE + APP) CPU Frequency (MHz) 16 240 160 240 Power Supply USB / DC2.1 USB USB or 3.7V LiPo USB or 3.7V LiPo USB Voltage (V) 5V 3.5 – 6.5V 3.3 – 5.0V 3.3 – 5.0V Dimension (mm) 75 × 54 35 × 34 58 × 29 58 × 29 Weight (g) 30 12 24 24 Project Example Installing the Beetle ESP32 Microcontroller Board in Arduino IDE – DFRobotIncludes a step-by-step video tutorial on how to install and configure the IoT Microcontroller board using Arduino IDE. Shipping List 1× Beetle ESP32 Microcontroller Reference Product wiki for Beetle ESP32 Microcontroller"
+       },
+       "id": "gid://shopify/ProductVariant/56255927746884",
+       "list_price": {
+        "amount": 1538,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/Beetle_ESP32_Microcontroller-1.webp?v=1768459901"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1538,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0575",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "DFRobot, founded in 2008 and based in Shanghai, is a leading provider of open-source hardware, robotics platforms, and STEM education solutions. It offers a wide range of electronic modules, robot kits, and AI products for makers, educators, and engineers, with well-known product lines like Gravity, Boson, and LattePanda. With a strong open-source spirit, high-quality products, and an active global community, DFRobot is committed to making innovation simple, accessible, and fun, while advancing technology education worldwide."
+       },
+       "handle": "brands-dfrobot",
+       "id": "gid://shopify/Collection/648148812100",
+       "title": "Brands - DFRobot"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "黑五折扣产品",
+       "id": "gid://shopify/Collection/668116386116",
+       "title": "黑五折扣产品"
+      }
+     ],
+     "description": {
+      "html": "🖥 FireBeetle Covers-OLED12864 – OLED Shield for ESP8266/ESP32 The DFRobot FireBeetle Covers-OLED12864 Display Module is a low-power OLED shield designed for IoT projects. Equipped with a 128×64 resolution OLED and the SSD1360 driver IC, it uses the I2C interface and supports both Arduino libraries and MicroPython coding, fully compatible with the Gravity I2C OLED-2864 screen. The OLED screen includes a protective frame to prevent scratches, integrates the GT30L24A3W multi-language font chip, and the BMA220 three-axis accelerometer. It also features an analog directional key and two independent digital keys (A & B), making it ideal for UI development on ESP8266/ESP32 boards. 🔑 Features 🌐 Multi-language Font Support: Built-in GT30L24A3W chip. 📡 3-Axis Accelerometer: Integrated BMA220 sensor via I2C. 🎮 User Controls: Analog directional key + 2 digital buttons (A & B). 🔌 Easy Integration: I2C bus for OLED, SPI bus for font chip. 🖥 Compact OLED Display: 0.96\" blue screen, 128×64 pixels. ⚡ Low Power Consumption: 250µA accelerometer, 12mA OLED. 📊 Specifications Specification Details Voltage Range 3.7V–5.5V User Buttons Digital port D3, D8 5-Way Switch Analog port A0 Accelerometer BMA220, I2C Dimension (Accelerometer) 2 × 2 × 0.9 mm Resolution 6-bit Range 2/4/8/16g Power Consumption 250µA OLED Model UG-2864HLBEG01 OLED Size 0.96\" OLED Color Blue OLED Interface I2C OLED Resolution 128 × 64 Font Chip GT30L24A3W, SPI Character Sets GB18030 (Simplified/Traditional Chinese), KSC5601 (Korean), JIS0208 (Japanese), 180 foreign fonts Unicode Support Multinational Unicode, ISO8859, CODE PAGE Character Sizes Chinese: 12/16/24 dot matrix; Foreign: 16/24 dot matrix OLED Working Current 12mA 🎯 Applications IoT Projects: Easy UI for ESP8266/ESP32. Robotics & Sensors: Integrated accelerometer for motion detection. Multi-language Displays: Supports Chinese, Korean, Japanese, and Unicode fonts. DIY & Education: Perfect for prototyping and learning projects. 📦 Shipping List 1 × FireBeetle Covers-OLED12864 Display 2 × 18-pin 2.54mm Pin Header 2 × 18-pin 2.54mm Long Pin Header"
+     },
+     "gift_card": false,
+     "handle": "dfrobot-oled-display-firebeetle-covers",
+     "id": "gid://shopify/Product/15401725886788",
+     "list_price_range": {
+      "max": {
+       "amount": 1795,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1795,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_eabacc20-0099-4809-b6d9-f0c4477980ec.webp?v=1765772161"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1795,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1795,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Extention",
+      "OLED"
+     ],
+     "title": "DFRobot OLED 128x64 Display FireBeetle Covers",
+     "url": "https://openelab.com/products/dfrobot-oled-display-firebeetle-covers",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56109604340036:1",
+       "description": {
+        "html": "🖥 FireBeetle Covers-OLED12864 – OLED Shield for ESP8266/ESP32 The DFRobot FireBeetle Covers-OLED12864 Display Module is a low-power OLED shield designed for IoT projects. Equipped with a 128×64 resolution OLED and the SSD1360 driver IC, it uses the I2C interface and supports both Arduino libraries and MicroPython coding, fully compatible with the Gravity I2C OLED-2864 screen. The OLED screen includes a protective frame to prevent scratches, integrates the GT30L24A3W multi-language font chip, and the BMA220 three-axis accelerometer. It also features an analog directional key and two independent digital keys (A & B), making it ideal for UI development on ESP8266/ESP32 boards. 🔑 Features 🌐 Multi-language Font Support: Built-in GT30L24A3W chip. 📡 3-Axis Accelerometer: Integrated BMA220 sensor via I2C. 🎮 User Controls: Analog directional key + 2 digital buttons (A & B). 🔌 Easy Integration: I2C bus for OLED, SPI bus for font chip. 🖥 Compact OLED Display: 0.96\" blue screen, 128×64 pixels. ⚡ Low Power Consumption: 250µA accelerometer, 12mA OLED. 📊 Specifications Specification Details Voltage Range 3.7V–5.5V User Buttons Digital port D3, D8 5-Way Switch Analog port A0 Accelerometer BMA220, I2C Dimension (Accelerometer) 2 × 2 × 0.9 mm Resolution 6-bit Range 2/4/8/16g Power Consumption 250µA OLED Model UG-2864HLBEG01 OLED Size 0.96\" OLED Color Blue OLED Interface I2C OLED Resolution 128 × 64 Font Chip GT30L24A3W, SPI Character Sets GB18030 (Simplified/Traditional Chinese), KSC5601 (Korean), JIS0208 (Japanese), 180 foreign fonts Unicode Support Multinational Unicode, ISO8859, CODE PAGE Character Sizes Chinese: 12/16/24 dot matrix; Foreign: 16/24 dot matrix OLED Working Current 12mA 🎯 Applications IoT Projects: Easy UI for ESP8266/ESP32. Robotics & Sensors: Integrated accelerometer for motion detection. Multi-language Displays: Supports Chinese, Korean, Japanese, and Unicode fonts. DIY & Education: Perfect for prototyping and learning projects. 📦 Shipping List 1 × FireBeetle Covers-OLED12864 Display 2 × 18-pin 2.54mm Pin Header 2 × 18-pin 2.54mm Long Pin Header"
+       },
+       "id": "gid://shopify/ProductVariant/56109604340036",
+       "list_price": {
+        "amount": 1795,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/5_eabacc20-0099-4809-b6d9-f0c4477980ec.webp?v=1765772161"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1795,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "DF-DFR0507",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is a high-tech company based in China, established in 2006, that specializes in the development and distribution of electronic modules and development boards. The company provides an extensive variety of products, including displays, sensors, communication modules, and expansion boards compatible with platforms like Raspberry Pi, Jetson Nano, and Arduino. With its proprietary core technologies, detailed documentation, and a strong commitment to innovation and compatibility, Waveshare has become a favored choice for developers, educational institutions, and makers around the globe."
+       },
+       "handle": "brands-waveshare",
+       "id": "gid://shopify/Collection/647304970564",
+       "title": "Brands - Waveshare"
+      },
+      {
+       "description": {
+        "html": "Welcome to the Bestseller Hot Picks section! 🔥Here you will find a collection of the best-rated, customer-favourite products that have been tried, tested and loved by many. Whether it's a high-quality classic or an innovative trend item, here you'll find the must-haves you can't afford to miss! 🚀"
+       },
+       "handle": "avada-best-sellers",
+       "id": "gid://shopify/Collection/648082260292",
+       "title": "Best Sellers"
+      },
+      {
+       "description": {
+        "html": "Elevate your electronics projects with our high-quality display modules, featuring vibrant visuals. Whether you need basic LED displays or sophisticated LCD and touchscreen panels, our diverse range suits various applications and budgets. These displays seamlessly integrate with popular development platforms like Arduino, Raspberry Pi, and ESP modules. With comprehensive documentation and strong community support, our display modules enable you to enhance your innovative projects with a professional flair."
+       },
+       "handle": "display",
+       "id": "gid://shopify/Collection/648242889028",
+       "title": "Display"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/651470373188",
+       "title": "Waveshare"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "waveshare-display",
+       "id": "gid://shopify/Collection/658454970692",
+       "title": "Waveshare - Display"
+      }
+     ],
+     "description": {
+      "html": "High-performance development board featuring 480×480 resolution display, 32-bit LX7 dual-core processor with WiFi and Bluetooth connectivity, optional touch function for versatile IoT applications Version Options ESP32-S3-LCD-2.8Cwithout touch control ESP32-S3-Touch-LCD-2.8Cwith touch control Features This product is a microcontroller development board with 2.4GHz WiFi and Bluetooth BLE 5 support, integrates high-capacity Flash and PSRAM. Onboard 2.8inch LCD screen can smoothly run GUI programs such as LVGL. Combined with various peripheral interfaces, suitable for the quick development of the HMI and other ESP32-S3 applications. Equipped with high-performance Xtensa 32-bit LX7 dual-core processor, up to 240MHz main frequency Supports 2.4GHz Wi-Fi (802.81 b/g/n) and Bluetooth 5 (LE), with onboard antenna Built-in 512KB SRAM and 384KB ROM, with onboard 16MB Flash and 8MB PSRAM Onboard 2.8inch LCD display, 480×480 resolution Supports touch control via I2C interface, with interrupt support (for touch version only) Adapting UART, I2C and some IO interfaces, integrates full-speed USB port Onboard QMI8658 6-axis sensor, RTC sensor, TF card slot and battery recharge management module, etc. Supports accurate control such as flexible clock and multiple power modes to realize low power consumption in different scenarios Display Parameters Display Panel IPS Display Size 2.8 inch Resolution 480 × 480 Contrast Ratio 1200:1 Communication Interface RGB Driver IC ST7701 Touch Interface(Touch Version Only) I2C Touch IC(Touch Version Only) GT911 Application Scenarios IPS Display Panel Excellent display performance, 160° viewing angle Supports ESP-IDF, Arduino IDE Comprehensive SDK, dev resources, and tutorials to help you easily get started Supports Multiple Peripherals Supports the expansion of multiple peripherals via GPIO, UART and I2C interfaces, etc. What's On Board ESP32-S3R8Dual-core processor, up to 240MHz operating frequency QST attitude sensorQMI8658 (6-axis IMU includes a 3-axis gyroscope and a 3-axis accelerometer) TCA9554PWRGPIO expander chip FSUSB42UMXUART selection chip, the 4-pin UART header is disabled when connected to the UART Type-C port CH343PUSB to UART with onboard automatic download circuit, enabling program burning without additional operations 16MB Flash RTC chipPCF85063 RTC chip Battery recharge manager ME6217C33M5GLow dropout regulator, 800mA output (Max.) USB Type-C port MX1.25 battery headerMX1.25 2PIN connector, for 3.7V Lithium battery, supports charging and discharging 12PIN multi-functional pin header IPEX1 connectorSwitching to use external antenna via resoldering the resistor TF card slot RTC battery headerfor connecting rechargeable RTC battery I2C headerconnecting with internal chip, only supports the I2C peripherals and cannot be mapped to other functions UART headeronly available when the USB to UART Type-C port is not connected USB TO UART Type-C portfor power supply, program burning and debugging Buzzer Charge indicatorLithium battery charge indicator, lights up when charging, off when fully charged (the light status is uncertain when the battery is not connected) Power indicator Battery power supply control button RESET button BOOT button Outline Dimensions ESP32-S3-LCD-2.8C ESP32-S3-Touch-LCD-2.8C"
+     },
+     "gift_card": false,
+     "handle": "round-touch-display-480-480",
+     "id": "gid://shopify/Product/15427611066692",
+     "list_price_range": {
+      "max": {
+       "amount": 5519,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5519,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/esp32-s3-touch-lcd-2-4.webp?v=1767937455"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5519,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5519,
+       "currency": "USD"
+      }
+     },
+     "title": "Waveshare ESP32-S3 2.8inch Round Touch Display 480×480",
+     "url": "https://openelab.com/products/round-touch-display-480-480",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://9irjdt-u1.myshopify.com/cart/56228195500356:1",
+       "description": {
+        "html": "High-performance development board featuring 480×480 resolution display, 32-bit LX7 dual-core processor with WiFi and Bluetooth connectivity, optional touch function for versatile IoT applications Version Options ESP32-S3-LCD-2.8Cwithout touch control ESP32-S3-Touch-LCD-2.8Cwith touch control Features This product is a microcontroller development board with 2.4GHz WiFi and Bluetooth BLE 5 support, integrates high-capacity Flash and PSRAM. Onboard 2.8inch LCD screen can smoothly run GUI programs such as LVGL. Combined with various peripheral interfaces, suitable for the quick development of the HMI and other ESP32-S3 applications. Equipped with high-performance Xtensa 32-bit LX7 dual-core processor, up to 240MHz main frequency Supports 2.4GHz Wi-Fi (802.81 b/g/n) and Bluetooth 5 (LE), with onboard antenna Built-in 512KB SRAM and 384KB ROM, with onboard 16MB Flash and 8MB PSRAM Onboard 2.8inch LCD display, 480×480 resolution Supports touch control via I2C interface, with interrupt support (for touch version only) Adapting UART, I2C and some IO interfaces, integrates full-speed USB port Onboard QMI8658 6-axis sensor, RTC sensor, TF card slot and battery recharge management module, etc. Supports accurate control such as flexible clock and multiple power modes to realize low power consumption in different scenarios Display Parameters Display Panel IPS Display Size 2.8 inch Resolution 480 × 480 Contrast Ratio 1200:1 Communication Interface RGB Driver IC ST7701 Touch Interface(Touch Version Only) I2C Touch IC(Touch Version Only) GT911 Application Scenarios IPS Display Panel Excellent display performance, 160° viewing angle Supports ESP-IDF, Arduino IDE Comprehensive SDK, dev resources, and tutorials to help you easily get started Supports Multiple Peripherals Supports the expansion of multiple peripherals via GPIO, UART and I2C interfaces, etc. What's On Board ESP32-S3R8Dual-core processor, up to 240MHz operating frequency QST attitude sensorQMI8658 (6-axis IMU includes a 3-axis gyroscope and a 3-axis accelerometer) TCA9554PWRGPIO expander chip FSUSB42UMXUART selection chip, the 4-pin UART header is disabled when connected to the UART Type-C port CH343PUSB to UART with onboard automatic download circuit, enabling program burning without additional operations 16MB Flash RTC chipPCF85063 RTC chip Battery recharge manager ME6217C33M5GLow dropout regulator, 800mA output (Max.) USB Type-C port MX1.25 battery headerMX1.25 2PIN connector, for 3.7V Lithium battery, supports charging and discharging 12PIN multi-functional pin header IPEX1 connectorSwitching to use external antenna via resoldering the resistor TF card slot RTC battery headerfor connecting rechargeable RTC battery I2C headerconnecting with internal chip, only supports the I2C peripherals and cannot be mapped to other functions UART headeronly available when the USB to UART Type-C port is not connected USB TO UART Type-C portfor power supply, program burning and debugging Buzzer Charge indicatorLithium battery charge indicator, lights up when charging, off when fully charged (the light status is uncertain when the battery is not connected) Power indicator Battery power supply control button RESET button BOOT button Outline Dimensions ESP32-S3-LCD-2.8C ESP32-S3-Touch-LCD-2.8C"
+       },
+       "id": "gid://shopify/ProductVariant/56228195500356",
+       "list_price": {
+        "amount": 5519,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0935/3727/2132/files/esp32-s3-touch-lcd-2-4.webp?v=1767937455"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 5519,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Waveshare-29086",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/lookup",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.common.location.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/common/location_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/common/location/search",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "93537272132"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "OpenELAB Inc.",
+        "merchant_origin": "openelab.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "93537272132"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

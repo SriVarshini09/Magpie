@@ -1,0 +1,1830 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Raspberry Pi 5"
+  }
+ },
+ "key": "e7f73451327921c3215fae0a5968ace6bb9b5969a4b049d50a88d06f37eb5b86",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:32:07-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzNNRFU0T0RBMU1EWXpOell6TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Add super-fast storage to your Raspberry Pi 5 allowing for lightning fast boots, NAS use, and snappy applications! NVMe Base is a PCIe extension board for Raspberry Pi 5. Simply populate it with an M-key NVMe SSD (2230 to 2280 sizes supported) and mount it under your Pi for a compact and fast storage solution - It even comes with rubber feet! It's the perfect solution for turning your Raspberry Pi 5 into a file server, media centre, reverse proxy, etc. - really any task that benefits from large amounts of fast storage, especially with random high operations per second (IOPS) workloads. In short it's a game changer! NVMe Base follows the new \"PIP\" design guidelines provided by Raspberry Pi ensuring that it will be easy to use and be supported long term by updates to Raspberry Pi OS. ✨ If you're looking for a smart aluminium case to keep your NVMe setup safe and protected check out our new NVMe Base Case! Kit Includes Base Kit NVMe Base PCB with M.2 Slot (M-Key) 'PCIe Pipe' Flat Flex Cable 4x Rubber feet M2 bolt and 2x nuts for SSD mounting 4x 7mm M2.5 standoffs for base mounting 8x short M2.5 bolts for base mounting 4x long M2.5 bolts for 'pass-thru' mounting with a HAT NVMe Base + SSD Bundle We’re currently unable to offer kits that include NVMe drives due to the volatility of the flash memory market. We’re keeping a close eye on things and hope to bring SSD bundles back once things settle down. We also offer the kit bundled with a 250GB, 500GB, 1000GB or 2000GB NVMe SSD (PCIe Gen 3 or better). The Raspberry Pi 5 will run at PCIe 3.0 x 1 speeds at best, even though this mode is unsupported officially, so most drives are limited to around 700-800MB/s read and 350-450MB write at peak. Due to the tides and vagaries of the SSD market, the brand of drive that we ship may vary. We can say that: It will have 250GB / 500GB / 1000GB / 2000GB (or better) capacity It will be rated by the manufacturer at PCIe Gen 3 or better speed We'll have personally tested the drive with NVMe Base and it will be in the list below. It'll be backed by the usual Pimoroni guarantees and customer service. Drive compatibility We have tested NVMe Base with the following M.2 NVMe drives successfully. We have usually tested one drive from one batch, so this is not comprehensive, or an 'Approved' list, but it's a good guide for drives to seek out: AData Legend 700 AData Legend 800 AData XPG SX8200 Pro Axe Memory Generic Drive Crucial P2 M.2 Crucial P3 M.2 Crucial P3 Plus M.2 Inland PCIe NVMe SSD Kingston KC3000 Kioxia Exceria NVMe SSD Kioxia Exceria G2 NVMe SSD Lexar NM620 Lexar NM710 Lexar NM790 Netac NV2000 NVMe SSD Netac NV3000 NVMe SSD Origin Inception TLC830 Pro NVMe Sabrent Rocket 4.0 Sabrent Rocket Nano Samsung 980 Samsung 980 Pro (500GB/1TB) Team MP33 Western Digital Black SN750 SE (Phison Controller ' Maybe' List. Works with quirks/not ideal. These drives either needed extra power, were a bit quirky when we tested them or we've had reports of them being problematic. It may just be the drive we had, but they're probably best avoided. Kioxia BG4 2230. Performance very patchy. Runs at quite a high temp. Patriot P300 - These drives have various controllers, some of which seem to be incompatible at this time. Patriot P310 - These drives have various controllers, some of which seem to be incompatible at this time. PNY CS1030 (250GB). Reports of this size not working. Samsung 970 EVO Plus. Runs at a higher temp. Some user reports of problems under heavy load or not showing up on boot. Samsung 980 Pro (250GB). Reports of this size not working. WD Blue SN550. Our fresh unit could be used as storage but could not be booted from. WD Red SN700. Slow to boot first time, but worked and booted OK. WD SN740. Our fresh unit worked well. YMMV. WD Black SN770. Our fresh unit worked fine. YMMV. 'Avoid' List. We've had problems or reports of problems. Gigabyte G3NVMEV2256G KingSpec NX Series Kingston OM8SEP4256Q-A0 Transcend 110Q (TS500GMTE110Q) WD Green/Blue/Red/Black not in the above list. Variable results or not working because of quirks of a SanDisk controller/firmware. Our SN350 and SN570 prevented the RPi 5 from booting at all especially. Western Digital SN810 256GB Otherwise most M.2 NVMe drive (Not SATA!) you have lying around should work fine. Check out our benchmark results over at pibenchmarks.net! Getting Started Video: Installing the Pimoroni NVMe Base on Raspberry Pi 5 📹 Learn: Getting Started with NVMe Base for Raspberry Pi 5 💾 Firmware For the most hassle-free experience, make sure your Raspberry Pi OS is up to date, and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer. This supports all the features of the RPi PCIe spec and means you don't have to mess with config files to get started. Software update on the RPi OS should do this for you, but to force it you can: open a Terminal (Ctrl-Alt-T) run sudo raspi-config and choose 'Latest' under Advanced Options > Bootloader Version. Running sudo rpi-eeprom-update in the Terminal will tell you which version of firmware is running. PCIe 3 Mode To enable experimental and not-officially-supported PCIe 3 mode, add the follow line to the [all] section at the end of your Raspberry Pi /boot/firmware/config.txt file like this: [all] dtparam=pciex1_gen=3 Save and reboot - your drive is ready to use! Formatting the NVMe and booting from NVMe If you want to boot from the NVMe drive, follow these extra steps: Make sure your firmware is updated as above! Format the drive using Raspberry Pi Imager You can do this with your NVMe Base installed by booting the RPi 5 from SD card and running Raspberry Pi Imager from the start menu. Open a Terminal (Ctrl-Alt-T). Run sudo raspi-config Choose NVMe/USB boot under Advanced Options > Boot Order. Reboot your RPi 5. Notes Always power off your RPi and disconnect the power supply before installing or uninstalling the NVMe Base. NVMe Base offers a general purpose PCIe x1 connection - while we know most people want to add fast storage in theory you can use other devices with it, we just can't help you make them work! :-D What Would Jeff (Geerling) Do? Resources Dimensional drawing 3D model (PNG / STEP)"
+     },
+     "gift_card": false,
+     "handle": "nvme-base",
+     "id": "gid://shopify/Product/7111054524499",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvme-base-final-7.jpg?v=1706109087"
+      }
+     ],
+     "options": [
+      {
+       "name": "Included Storage",
+       "values": [
+        {
+         "label": "No Disk"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_customs",
+      "HATs & Addons",
+      "NVMe",
+      "Raspberry Pi",
+      "Storage"
+     ],
+     "title": "NVMe Base for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/nvme-base",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41219587178579:1",
+       "description": {
+        "html": "Add super-fast storage to your Raspberry Pi 5 allowing for lightning fast boots, NAS use, and snappy applications! NVMe Base is a PCIe extension board for Raspberry Pi 5. Simply populate it with an M-key NVMe SSD (2230 to 2280 sizes supported) and mount it under your Pi for a compact and fast storage solution - It even comes with rubber feet! It's the perfect solution for turning your Raspberry Pi 5 into a file server, media centre, reverse proxy, etc. - really any task that benefits from large amounts of fast storage, especially with random high operations per second (IOPS) workloads. In short it's a game changer! NVMe Base follows the new \"PIP\" design guidelines provided by Raspberry Pi ensuring that it will be easy to use and be supported long term by updates to Raspberry Pi OS. ✨ If you're looking for a smart aluminium case to keep your NVMe setup safe and protected check out our new NVMe Base Case! Kit Includes Base Kit NVMe Base PCB with M.2 Slot (M-Key) 'PCIe Pipe' Flat Flex Cable 4x Rubber feet M2 bolt and 2x nuts for SSD mounting 4x 7mm M2.5 standoffs for base mounting 8x short M2.5 bolts for base mounting 4x long M2.5 bolts for 'pass-thru' mounting with a HAT NVMe Base + SSD Bundle We’re currently unable to offer kits that include NVMe drives due to the volatility of the flash memory market. We’re keeping a close eye on things and hope to bring SSD bundles back once things settle down. We also offer the kit bundled with a 250GB, 500GB, 1000GB or 2000GB NVMe SSD (PCIe Gen 3 or better). The Raspberry Pi 5 will run at PCIe 3.0 x 1 speeds at best, even though this mode is unsupported officially, so most drives are limited to around 700-800MB/s read and 350-450MB write at peak. Due to the tides and vagaries of the SSD market, the brand of drive that we ship may vary. We can say that: It will have 250GB / 500GB / 1000GB / 2000GB (or better) capacity It will be rated by the manufacturer at PCIe Gen 3 or better speed We'll have personally tested the drive with NVMe Base and it will be in the list below. It'll be backed by the usual Pimoroni guarantees and customer service. Drive compatibility We have tested NVMe Base with the following M.2 NVMe drives successfully. We have usually tested one drive from one batch, so this is not comprehensive, or an 'Approved' list, but it's a good guide for drives to seek out: AData Legend 700 AData Legend 800 AData XPG SX8200 Pro Axe Memory Generic Drive Crucial P2 M.2 Crucial P3 M.2 Crucial P3 Plus M.2 Inland PCIe NVMe SSD Kingston KC3000 Kioxia Exceria NVMe SSD Kioxia Exceria G2 NVMe SSD Lexar NM620 Lexar NM710 Lexar NM790 Netac NV2000 NVMe SSD Netac NV3000 NVMe SSD Origin Inception TLC830 Pro NVMe Sabrent Rocket 4.0 Sabrent Rocket Nano Samsung 980 Samsung 980 Pro (500GB/1TB) Team MP33 Western Digital Black SN750 SE (Phison Controller ' Maybe' List. Works with quirks/not ideal. These drives either needed extra power, were a bit quirky when we tested them or we've had reports of them being problematic. It may just be the drive we had, but they're probably best avoided. Kioxia BG4 2230. Performance very patchy. Runs at quite a high temp. Patriot P300 - These drives have various controllers, some of which seem to be incompatible at this time. Patriot P310 - These drives have various controllers, some of which seem to be incompatible at this time. PNY CS1030 (250GB). Reports of this size not working. Samsung 970 EVO Plus. Runs at a higher temp. Some user reports of problems under heavy load or not showing up on boot. Samsung 980 Pro (250GB). Reports of this size not working. WD Blue SN550. Our fresh unit could be used as storage but could not be booted from. WD Red SN700. Slow to boot first time, but worked and booted OK. WD SN740. Our fresh unit worked well. YMMV. WD Black SN770. Our fresh unit worked fine. YMMV. 'Avoid' List. We've had problems or reports of problems. Gigabyte G3NVMEV2256G KingSpec NX Series Kingston OM8SEP4256Q-A0 Transcend 110Q (TS500GMTE110Q) WD Green/Blue/Red/Black not in the above list. Variable results or not working because of quirks of a SanDisk controller/firmware. Our SN350 and SN570 prevented the RPi 5 from booting at all especially. Western Digital SN810 256GB Otherwise most M.2 NVMe drive (Not SATA!) you have lying around should work fine. Check out our benchmark results over at pibenchmarks.net! Getting Started Video: Installing the Pimoroni NVMe Base on Raspberry Pi 5 📹 Learn: Getting Started with NVMe Base for Raspberry Pi 5 💾 Firmware For the most hassle-free experience, make sure your Raspberry Pi OS is up to date, and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer. This supports all the features of the RPi PCIe spec and means you don't have to mess with config files to get started. Software update on the RPi OS should do this for you, but to force it you can: open a Terminal (Ctrl-Alt-T) run sudo raspi-config and choose 'Latest' under Advanced Options > Bootloader Version. Running sudo rpi-eeprom-update in the Terminal will tell you which version of firmware is running. PCIe 3 Mode To enable experimental and not-officially-supported PCIe 3 mode, add the follow line to the [all] section at the end of your Raspberry Pi /boot/firmware/config.txt file like this: [all] dtparam=pciex1_gen=3 Save and reboot - your drive is ready to use! Formatting the NVMe and booting from NVMe If you want to boot from the NVMe drive, follow these extra steps: Make sure your firmware is updated as above! Format the drive using Raspberry Pi Imager You can do this with your NVMe Base installed by booting the RPi 5 from SD card and running Raspberry Pi Imager from the start menu. Open a Terminal (Ctrl-Alt-T). Run sudo raspi-config Choose NVMe/USB boot under Advanced Options > Boot Order. Reboot your RPi 5. Notes Always power off your RPi and disconnect the power supply before installing or uninstalling the NVMe Base. NVMe Base offers a general purpose PCIe x1 connection - while we know most people want to add fast storage in theory you can use other devices with it, we just can't help you make them work! :-D What Would Jeff (Geerling) Do? Resources Dimensional drawing 3D model (PNG / STEP)"
+       },
+       "id": "gid://shopify/ProductVariant/41219587178579",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvmestd0.png?v=1733503101"
+        }
+       ],
+       "options": [
+        {
+         "label": "No Disk",
+         "name": "Included Storage"
+        }
+       ],
+       "price": {
+        "amount": 1500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM699",
+       "title": "No Disk"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Add two super-fast NVMe SSDs to your Raspberry Pi 5! Ideal if you need redundancy or just a load more storage on your RPi. NVMe Base Duo is a PCIe Gen 2 extension board for Raspberry Pi 5. Simply populate it with one or two M-key NVMe SSDs (2230 to 2280 sizes supported) and mount it under (or over) your Pi for a compact and fast storage solution - It even comes with rubber feet! It's the perfect solution for turning your Raspberry Pi 5 into a file server, media centre, reverse proxy, home automation server with built in backup, etc. - really any task that benefits from large amounts of fast storage, redundancy, or just to make use of a couple of spare disks - especially with random high operations per second (IOPS) workloads. In short it's a game changer! NVMe Base Duo follows the new \"PIP\" design guidelines provided by Raspberry Pi ensuring that it will be easy to use and be supported long term by updates to Raspberry Pi OS. ✨ If you're looking for a smart aluminium case to keep your NVMe setup safe and protected check out our new NVMe Base Case! Kit Includes Base Kit NVMe Base Duo PCB with two M.2 slots (M-Key) 'PCIe Flex' Flat Flex Cable 4x Rubber feet 4x M2 bolt and 2x 5mm standoffs for SSD mounting 4x 12mm M2.5 standoffs for base mounting 8x short M2.5 bolts for base mounting 4x 20mm M2.5 bolts for 'pass-thru' mounting with a HAT The shipping product may have minor differences to the photos, but will be the same in essentials. We’re currently unable to offer kits that include NVMe drives due to the volatility of the flash memory market. We’re keeping a close eye on things and hope to bring SSD bundles back once things settle down. NVMe Base Duo + 500GB (2 x 250GB) SSD Bundle Base Kit 2 x 250GB+ NVMe SSDs NVMe Base Duo + 1000GB (2 x 500GB) SSD Bundle Base Kit 2 x 500GB+ NVMe SSDs NVMe Base Duo + 2000GB (2 x 1000GB) SSD Bundle Base Kit 2 x 1000GB+ NVMe SSDs NVMe Base Duo + 4000GB (2 x 2000GB) SSD Bundle Base Kit 2 x 2000GB+ NVMe SSDs We recommend running the Raspberry Pi 5 at PCIe Gen 2 x 1 speeds with this Base. The total throughput is around 450MB/sec, or 220MB/sec+ per disk for simultaneous access as they share the bandwidth through the PCIe switch. Due to the tides and vagaries of the SSD market, the brand of drives that we ship may vary. We can say that: They will have 250/500/1000/2000GB or better capacity They will be rated by the manufacturer at PCIe Gen 3 or better speed (although Duo only supports Gen 2 speeds) We'll have personally tested this model of drive with NVMe Base Duo. They'll be backed by the usual Pimoroni guarantees and customer service. NOTE: Bundled drives may be from the same manufacturing batch. If you're a storage-integrity aficionado, you may want to source your own drives to avoid the unlikely edge-case of an issue or bug affecting an entire batch of drives. Drive Compatibility We've tested NVMe Base Duo with the following drives successfully. We have usually tested one drive from one batch, so this is not comprehensive, or an 'Approved' list, but it's a good guide for drives to seek out. In general, as the drives are behind the switch and not being used at boot we’ve found a much wider range of drives to be working and useful compared to the standard NVMe Base. ADATA SX8200PNP ADATA LEGEND 700 Crucial CT500P5PSSD8 Gigabyte GP-GSM2NE3256GNTD Kingston SKC3000S512G KIOXIA EXCERIA SSD 500GB KIOXIA EXCERIA G2 SSD 2TB Lexar SSD NM710 1TB Netac NV200-512-E4X ORIGIN Inception TLC830 Pro 256GB Patriot P300 256GB Patriot P310 240GB Patriot P300 512GB PNY CS1030 1TB Sabrent Rocket Nano 500GB Sabrent SB-RKT4P-1TB Sabrent Rocket 4.0 1TB Samsung SSD 970 EVO Plus 500GB Samsung SSD 980 500GB Samsung SSD 980 PRO 1TB SK hynix GOLD P31 TeamGroup TM8FP6256G Toshiba KBG40ZNS1T02 1TB Transcend TS500GMTE110Q WD Blue SN550 500GB WD Black SN750 SE WD PC SN740 512GB WD Red SN700 500GB WD Black SN770 1TB WD Blue SN570 1TB WD Green SN350 480GB 'Avoid' List. We've had problems or reports of problems. Ortial ON-750-128 256GB Otherwise most M.2 NVMe drive (not SATA!) you have lying around should work fine. Check out our benchmark results over at pibenchmarks.net! Getting Started Learn: Getting Started with NVMe Base Duo for Raspberry Pi 💾 Firmware For the most hassle-free experience, make sure your Raspberry Pi OS is up to date, and your RPi 5 firmware is updated to 2024-05-17 (May 17th) or newer. The newest version supports all the features of the RPi PCIe spec and means you don't have to mess with config files to get started. Software update on the RPi OS should do this for you, but to force it you can: open a Terminal (Ctrl-Alt-T) run sudo raspi-config and choose 'Latest' under Advanced Options > Bootloader Version. Running sudo rpi-eeprom-update in the Terminal will tell you which version of firmware is running. Notes It is now possible to boot from NVMe drives installed on NVMe Base Duo! 🎉 Make sure your Raspberry Pi firmware is updated to the most recent version (17/05/24 or later). Always power off your RPi and disconnect the power supply before installing or uninstalling the NVMe Base. NVMe Base Duo offers offers two PCIe Gen 2 M.2 slots behind a PCIe Gen2 Packet Switcher on a general purpose PCIe x1 connection - while we know most people want to add fast storage in theory you can use other devices with it, we just can't help you make them work! :-D What Would Jeff (Geerling) Do? Les used NVMe Base Duo to connect up the module from a Raspberry Pi AI Kit at the same time as an NVMe SSD. Check out his review! Some drives need more power than the standard PCIe FPC connection can provide. In this case, there are +5V and GND pads on NVMe Base Duo you can use to provide extra power. We'd recommend connecting them to the Pi's 5V/GND pins or the same power supply that powers the Pi. Resources Dimensional drawing"
+     },
+     "gift_card": false,
+     "handle": "nvme-base-duo-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/7173969903699",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/DSC02120-Edit.jpg?v=1709654288"
+      }
+     ],
+     "options": [
+      {
+       "name": "Style",
+       "values": [
+        {
+         "label": "No Disks"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_customs",
+      "HATs & Addons",
+      "NVMe",
+      "Raspberry Pi",
+      "Storage"
+     ],
+     "title": "NVMe Base Duo for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/nvme-base-duo-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41434434895955:1",
+       "description": {
+        "html": "Add two super-fast NVMe SSDs to your Raspberry Pi 5! Ideal if you need redundancy or just a load more storage on your RPi. NVMe Base Duo is a PCIe Gen 2 extension board for Raspberry Pi 5. Simply populate it with one or two M-key NVMe SSDs (2230 to 2280 sizes supported) and mount it under (or over) your Pi for a compact and fast storage solution - It even comes with rubber feet! It's the perfect solution for turning your Raspberry Pi 5 into a file server, media centre, reverse proxy, home automation server with built in backup, etc. - really any task that benefits from large amounts of fast storage, redundancy, or just to make use of a couple of spare disks - especially with random high operations per second (IOPS) workloads. In short it's a game changer! NVMe Base Duo follows the new \"PIP\" design guidelines provided by Raspberry Pi ensuring that it will be easy to use and be supported long term by updates to Raspberry Pi OS. ✨ If you're looking for a smart aluminium case to keep your NVMe setup safe and protected check out our new NVMe Base Case! Kit Includes Base Kit NVMe Base Duo PCB with two M.2 slots (M-Key) 'PCIe Flex' Flat Flex Cable 4x Rubber feet 4x M2 bolt and 2x 5mm standoffs for SSD mounting 4x 12mm M2.5 standoffs for base mounting 8x short M2.5 bolts for base mounting 4x 20mm M2.5 bolts for 'pass-thru' mounting with a HAT The shipping product may have minor differences to the photos, but will be the same in essentials. We’re currently unable to offer kits that include NVMe drives due to the volatility of the flash memory market. We’re keeping a close eye on things and hope to bring SSD bundles back once things settle down. NVMe Base Duo + 500GB (2 x 250GB) SSD Bundle Base Kit 2 x 250GB+ NVMe SSDs NVMe Base Duo + 1000GB (2 x 500GB) SSD Bundle Base Kit 2 x 500GB+ NVMe SSDs NVMe Base Duo + 2000GB (2 x 1000GB) SSD Bundle Base Kit 2 x 1000GB+ NVMe SSDs NVMe Base Duo + 4000GB (2 x 2000GB) SSD Bundle Base Kit 2 x 2000GB+ NVMe SSDs We recommend running the Raspberry Pi 5 at PCIe Gen 2 x 1 speeds with this Base. The total throughput is around 450MB/sec, or 220MB/sec+ per disk for simultaneous access as they share the bandwidth through the PCIe switch. Due to the tides and vagaries of the SSD market, the brand of drives that we ship may vary. We can say that: They will have 250/500/1000/2000GB or better capacity They will be rated by the manufacturer at PCIe Gen 3 or better speed (although Duo only supports Gen 2 speeds) We'll have personally tested this model of drive with NVMe Base Duo. They'll be backed by the usual Pimoroni guarantees and customer service. NOTE: Bundled drives may be from the same manufacturing batch. If you're a storage-integrity aficionado, you may want to source your own drives to avoid the unlikely edge-case of an issue or bug affecting an entire batch of drives. Drive Compatibility We've tested NVMe Base Duo with the following drives successfully. We have usually tested one drive from one batch, so this is not comprehensive, or an 'Approved' list, but it's a good guide for drives to seek out. In general, as the drives are behind the switch and not being used at boot we’ve found a much wider range of drives to be working and useful compared to the standard NVMe Base. ADATA SX8200PNP ADATA LEGEND 700 Crucial CT500P5PSSD8 Gigabyte GP-GSM2NE3256GNTD Kingston SKC3000S512G KIOXIA EXCERIA SSD 500GB KIOXIA EXCERIA G2 SSD 2TB Lexar SSD NM710 1TB Netac NV200-512-E4X ORIGIN Inception TLC830 Pro 256GB Patriot P300 256GB Patriot P310 240GB Patriot P300 512GB PNY CS1030 1TB Sabrent Rocket Nano 500GB Sabrent SB-RKT4P-1TB Sabrent Rocket 4.0 1TB Samsung SSD 970 EVO Plus 500GB Samsung SSD 980 500GB Samsung SSD 980 PRO 1TB SK hynix GOLD P31 TeamGroup TM8FP6256G Toshiba KBG40ZNS1T02 1TB Transcend TS500GMTE110Q WD Blue SN550 500GB WD Black SN750 SE WD PC SN740 512GB WD Red SN700 500GB WD Black SN770 1TB WD Blue SN570 1TB WD Green SN350 480GB 'Avoid' List. We've had problems or reports of problems. Ortial ON-750-128 256GB Otherwise most M.2 NVMe drive (not SATA!) you have lying around should work fine. Check out our benchmark results over at pibenchmarks.net! Getting Started Learn: Getting Started with NVMe Base Duo for Raspberry Pi 💾 Firmware For the most hassle-free experience, make sure your Raspberry Pi OS is up to date, and your RPi 5 firmware is updated to 2024-05-17 (May 17th) or newer. The newest version supports all the features of the RPi PCIe spec and means you don't have to mess with config files to get started. Software update on the RPi OS should do this for you, but to force it you can: open a Terminal (Ctrl-Alt-T) run sudo raspi-config and choose 'Latest' under Advanced Options > Bootloader Version. Running sudo rpi-eeprom-update in the Terminal will tell you which version of firmware is running. Notes It is now possible to boot from NVMe drives installed on NVMe Base Duo! 🎉 Make sure your Raspberry Pi firmware is updated to the most recent version (17/05/24 or later). Always power off your RPi and disconnect the power supply before installing or uninstalling the NVMe Base. NVMe Base Duo offers offers two PCIe Gen 2 M.2 slots behind a PCIe Gen2 Packet Switcher on a general purpose PCIe x1 connection - while we know most people want to add fast storage in theory you can use other devices with it, we just can't help you make them work! :-D What Would Jeff (Geerling) Do? Les used NVMe Base Duo to connect up the module from a Raspberry Pi AI Kit at the same time as an NVMe SSD. Check out his review! Some drives need more power than the standard PCIe FPC connection can provide. In this case, there are +5V and GND pads on NVMe Base Duo you can use to provide extra power. We'd recommend connecting them to the Pi's 5V/GND pins or the same power supply that powers the Pi. Resources Dimensional drawing"
+       },
+       "id": "gid://shopify/ProductVariant/41434434895955",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvmeduo0.png?v=1733502690"
+        }
+       ],
+       "options": [
+        {
+         "label": "No Disks",
+         "name": "Style"
+        }
+       ],
+       "price": {
+        "amount": 3400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM704",
+       "title": "No Disks"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+     },
+     "gift_card": false,
+     "handle": "argon-one-v5-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/14893585826171",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_A_713x_1046d685-0530-4626-9561-d50f13882114.webp?v=1737460050"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "Case Only"
+        },
+        {
+         "label": "With M.2 NVMe Slot"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 5200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Raspberry Pi"
+     ],
+     "title": "Argon ONE V5 Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/argon-one-v5-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54967045063035:1",
+       "description": {
+        "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+       },
+       "id": "gid://shopify/ProductVariant/54967045063035",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_A_713x_1046d685-0530-4626-9561-d50f13882114.webp?v=1737460050"
+        }
+       ],
+       "options": [
+        {
+         "label": "Case Only",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 3800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-ONE-V5",
+       "title": "Case Only"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/54967045095803:1",
+       "description": {
+        "html": "Elevate your Raspberry Pi 5 experience with unmatched performance, versatility, and style. Built from cast aluminium, this sleek black enclosure provides passive and active cooling and includes a built in DAC with 3.5mm mic and headphone jacks. It also has an internal USB port - you could use this to plug in a Zigbee dongle for a tidy Home Assistant setup! If you'd like to be able to plug a a speedy M.2 NVMe solid state drive into your Pi, be sure to pick up the version of this case that comes with an M.2 NVMe slot. Features Made from Cast Aluminium that also serves as the heatsink for passive cooling Built-in 30mm PWM Fan for greater thermal control, providing active cooling ensuring optimal performance during intense workloads Dual HDMI Ports allow you to connect dual displays at high resolutions, making it perfect for multi-tasking and media playback Access your files faster with two additional front-Facing USB 2.0 Ports for easier access to peripherals, boosting convenience and flexibility Built-in DAC with 3.5mm Mic & Headphone Jacks provides 3.5mm mic input and headphone output, ideal for seamless video calls and enhanced audio output Tap into the future of smart homes with an Internal USB Port for Zigbee Modules allowing for easy integration of Zigbee modules, making it perfect for Home Assistant and other IoT projects Limitless possibilities with standard Raspberry Pi HAT Compatibility all in one package Supercharge your Raspberry Pi 5 with high-speed storage using the optional M.2 NVMe PCIe Slot, delivering faster data access and expanded storage capabilities. Resources Instruction Manual"
+       },
+       "id": "gid://shopify/ProductVariant/54967045095803",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ARGONONEV5_M.2NVMePCIeboard_713x_c59a5049-fba3-4267-a336-a0f0622d78c9.webp?v=1737462885"
+        }
+       ],
+       "options": [
+        {
+         "label": "With M.2 NVMe Slot",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 5200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-V5-NVME-S",
+       "title": "With M.2 NVMe Slot"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "A sleek, folded aluminium case that will accommodate a Raspberry Pi 5 plus an NVMe Base or NVMe Base Duo. This anodised aluminium case can be used to keep your hardworking Raspberry Pi 5 setup safe and protected whilst it goes about its important day to day business, be it a media server, Home Assistant box or desktop computer. It will work with NVMe Base or NVMe Base Duo and there's space to add an Active Cooler to make sure your Pi 5 stays nice and cool. There's also plenty of air vents to ensure that your solid state storage stays well ventilated and a power button so you can turn your Pi on and off from the outside of the case. Raspberry Pi 5, NVMe Base and accessories are sold separately Features Anodised aluminium top and bottom case Fixings included to mount NVMe Base or NVMe Base Duo External power button Rubber feet Slot for passing through a camera or display cable. Compatible with Raspberry Pi 5 Getting Started Learn: Assembling the NVMe Base Case Notes The case is made of metal and hence can be conductive, so be careful not to short any components on it. You should ensure that your Pi is powered off and unplugged when fitting the case. Note that the SD card slot is only accessible by removing the lid of the case. Dimensions: 95x60x37mm"
+     },
+     "gift_card": false,
+     "handle": "nvme-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/15041570210171",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvme-case-4.jpg?v=1744730217"
+      }
+     ],
+     "options": [
+      {
+       "name": "Colour",
+       "values": [
+        {
+         "label": "Graphite Black"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1600,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_customs",
+      "Cases",
+      "NVMe",
+      "Raspberry Pi"
+     ],
+     "title": "NVMe Base Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/nvme-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55335126663547:1",
+       "description": {
+        "html": "A sleek, folded aluminium case that will accommodate a Raspberry Pi 5 plus an NVMe Base or NVMe Base Duo. This anodised aluminium case can be used to keep your hardworking Raspberry Pi 5 setup safe and protected whilst it goes about its important day to day business, be it a media server, Home Assistant box or desktop computer. It will work with NVMe Base or NVMe Base Duo and there's space to add an Active Cooler to make sure your Pi 5 stays nice and cool. There's also plenty of air vents to ensure that your solid state storage stays well ventilated and a power button so you can turn your Pi on and off from the outside of the case. Raspberry Pi 5, NVMe Base and accessories are sold separately Features Anodised aluminium top and bottom case Fixings included to mount NVMe Base or NVMe Base Duo External power button Rubber feet Slot for passing through a camera or display cable. Compatible with Raspberry Pi 5 Getting Started Learn: Assembling the NVMe Base Case Notes The case is made of metal and hence can be conductive, so be careful not to short any components on it. You should ensure that your Pi is powered off and unplugged when fitting the case. Note that the SD card slot is only accessible by removing the lid of the case. Dimensions: 95x60x37mm"
+       },
+       "id": "gid://shopify/ProductVariant/55335126663547",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/nvme-case-4.jpg?v=1744730217"
+        }
+       ],
+       "options": [
+        {
+         "label": "Graphite Black",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM771",
+       "title": "Graphite Black"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "single-board-computers",
+       "id": "gid://shopify/Collection/263507312723",
+       "title": "Single Board Computers"
+      }
+     ],
+     "description": {
+      "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-4",
+     "id": "gid://shopify/Product/3855360327763",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1_2746b87e-3a72-4282-8be0-f1a788f1fae2.jpg?v=1738658804"
+      }
+     ],
+     "options": [
+      {
+       "name": "Memory",
+       "values": [
+        {
+         "label": "1GB RAM"
+        },
+        {
+         "label": "2GB RAM"
+        },
+        {
+         "label": "3GB RAM"
+        },
+        {
+         "label": "4GB RAM"
+        },
+        {
+         "label": "8GB RAM"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 17600,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Raspberry Pi",
+      "Single Board Computer"
+     ],
+     "title": "Raspberry Pi 4 Model B",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-4",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39576373690451:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/39576373690451",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "1GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 3800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0192",
+       "title": "1GB RAM"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/29157087412307:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/29157087412307",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "2GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 7200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0193",
+       "title": "2GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/56184185815419:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/56184185815419",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "3GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 9000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC2337",
+       "title": "3GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/29157087445075:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/29157087445075",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "4GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 10700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0194",
+       "title": "4GB RAM"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/31856486416467:1",
+       "description": {
+        "html": "Raspberry Pi 4 has up to 8GB RAM, a quad-core CPU, supports dual displays up to 4K resolution, Gigabit Ethernet, USB3.0, Wi-Fi, BT 5.0, and USB-C power. That's desktop PC performance! The overall form factor remains the same, so you'll still be able to use HATs and pHATs as before, but due to the changes to the ports on the Raspberry Pi 4, we've designed a brand new Pibow Coupé 4 case in three fetching colour-ways. Features 1.8GHz 64-bit quad-core ARM Cortex-A72 CPU (ARM v8, BCM2711) 2GB, 4GB, or 8GB RAM (LPDDR4-3200) On-board dual-band wireless LAN - 2.4/5.0 GHz 802.11 b/g/n/ac On-board Bluetooth 5.0, low-energy (BLE) 2x USB 3.0 ports, 2x USB 2.0 ports Gigabit ethernet 40-pin GPIO header 2× micro-HDMI ports (up to 4Kp60 supported) H.265 (4Kp60 decode) H.264 (1080p60 decode, 1080p30 encode) OpenGL ES 3.1 graphics DSI display port, CSI camera port Combined 3.5mm analog audio and composite video jack Micro-SD card slot USB-C power As always with new Raspberry Pi models, you'll need the latest version of Raspbian to run on your Raspberry Pi 4. We sell a pre-imaged 32GB microSD card separately, or you can get one with our fully-loaded Raspberry Pi 4 Essentials Kit. Desktop-level performance The faster 1.8GHz 64-bit quad-core CPU on the Raspberry Pi 4's Cortex A72 SoC, coupled with the up to 8GB LPDDR4 RAM give performance comparable to entry-level x86 desktop PCs. You'll see significantly faster boot speeds, and much better performance for CPU-heavy tasks like emulation and media centre usage; much snappier all round! The Raspberry Pi 4 moves to USB-C power meaning that you'll need a new USB-C power supply that can supply 5V at 3A. We've got a couple of different options: a worldwide USB-C power supply, and the official Raspberry Pi power supply. Significantly faster IO The Raspberry Pi 4 has two USB 3.0 ports, for up to 10x faster transfer speeds than USB 2.0, perfect for connecting fast peripherals like SSDs and flash drives. There are also two USB 2.0 ports for connecting less speed-dependent peripherals like keyboards and mice. The ethernet jack on the Raspberry Pi 4 moves to true gigabit speed, for super-speedy wired networking and, as with the Raspberry Pi 3 B+, there's Power-over-Ethernet capability too (requires additional Raspberry Pi PoE HAT). 4K display support, dual micro-HDMI There are dual micro-HDMI ports that support up to 4Kp60, to use your Raspberry Pi 4 with much larger displays with crisp, sharp, high resolution. Use the H.265 4Kp60 hardware decoding to watch 4K movies in your favourite media centre distro. For the first time, you'll be able to use dual HDMI displays with the Raspberry Pi. This is great for working on a bunch of different tasks at the same time without having to work in tiny windows. If you need a micro-HDMI cable to plug your Pi 4 into a display we've got you covered! Bluetooth 5.0 and wireless LAN The new chipset supports Bluetooth 5.0 (from 4.2 on the Raspberry Pi 3 B+) and also dual-band 802.11 b/g/n/ac wireless LAN, like the previous generation Raspberry Pi, for quick wireless networking with less interference and better reception."
+       },
+       "id": "gid://shopify/ProductVariant/31856486416467",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/raspberry-pi-4-1.jpg?v=1738658804"
+        }
+       ],
+       "options": [
+        {
+         "label": "8GB RAM",
+         "name": "Memory"
+        }
+       ],
+       "price": {
+        "amount": 17600,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC0195",
+       "title": "8GB RAM"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "Looking for a chill way to keep your Raspberry Pi 5 as cool as a cucumber while it's working its circuits off? Enter the Active Cooler — your Pi 5’s new best friend! This dynamic cooling dream team of heatsink and fan is so easy to hook up — you might even say that Installation is a “breeze”!? The Active Cooler attaches effortlessly to your Raspberry Pi 5 using spring-loaded pins that pop right into a couple of mounting holes. So, if you want your Raspberry Pi 5 to run long and hard without breaking a sweat — then it's high time you treated it to the Active Cooler. Trust us, your Pi will thank you. * Raspberry Pi 5 not included."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-5-active-cooler",
+     "id": "gid://shopify/Product/7058854969427",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ActiveCooler-square_onwhite.png?v=1695739838"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 500,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Coolers",
+      "Heatsinks",
+      "Raspberry Pi"
+     ],
+     "title": "Raspberry Pi 5 Official Active Cooler",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-5-active-cooler",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41044554580051:1",
+       "description": {
+        "html": "Looking for a chill way to keep your Raspberry Pi 5 as cool as a cucumber while it's working its circuits off? Enter the Active Cooler — your Pi 5’s new best friend! This dynamic cooling dream team of heatsink and fan is so easy to hook up — you might even say that Installation is a “breeze”!? The Active Cooler attaches effortlessly to your Raspberry Pi 5 using spring-loaded pins that pop right into a couple of mounting holes. So, if you want your Raspberry Pi 5 to run long and hard without breaking a sweat — then it's high time you treated it to the Active Cooler. Trust us, your Pi will thank you. * Raspberry Pi 5 not included."
+       },
+       "id": "gid://shopify/ProductVariant/41044554580051",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/ActiveCooler-square_onwhite.png?v=1695739838"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1148",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "The tidy Argon NEO 5 aluminium case with active and passive cooling has been designed to meet the high demands of the Raspberry Pi 5. Effective cooling Argon NEO's slim aluminium enclosure dissipates heat effectively to provide both passive and active cooling. Aluminium case enclosure with passive cooling fins that act as a heatsink. Thermal pads are included to transfer heat away from your Raspberry Pi. Air intake vents allow for cool air to enter the case. 30mm PWM fan helps push out hot air to exhaust vents. Simple and beautifully designed Argon NEO is made with aluminium alloy and polished with a black (or black and red) finish for stunning aesthetics. Easy 3 part assembly (printed instructions are included). Easily mount to your desired station with built in mounting points. Complete access to all ports with removable top cover. Superior protection & security Argon NEO provides solid outer protection to keep the Raspberry Pi 5 board safe from physical damage. The case has a screw on top cover to keep the ports safe when not in use, and there's an optional SD card cover to protect your data even further. Native Raspberry Pi 5 support Argon NEO lets you access the power button and activity LED on your Pi 5 with its own integrated power button."
+     },
+     "gift_card": false,
+     "handle": "argon-neo-5-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/7120497115219",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/NEO5_BLCK_01_713x_e4c06da4-42ef-462b-85f4-46341ce07d41.webp?v=1710511259"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "Black"
+        },
+        {
+         "label": "Red and Black"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2000,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Raspberry Pi"
+     ],
+     "title": "Argon NEO 5 Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/argon-neo-5-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/53521790370171:1",
+       "description": {
+        "html": "The tidy Argon NEO 5 aluminium case with active and passive cooling has been designed to meet the high demands of the Raspberry Pi 5. Effective cooling Argon NEO's slim aluminium enclosure dissipates heat effectively to provide both passive and active cooling. Aluminium case enclosure with passive cooling fins that act as a heatsink. Thermal pads are included to transfer heat away from your Raspberry Pi. Air intake vents allow for cool air to enter the case. 30mm PWM fan helps push out hot air to exhaust vents. Simple and beautifully designed Argon NEO is made with aluminium alloy and polished with a black (or black and red) finish for stunning aesthetics. Easy 3 part assembly (printed instructions are included). Easily mount to your desired station with built in mounting points. Complete access to all ports with removable top cover. Superior protection & security Argon NEO provides solid outer protection to keep the Raspberry Pi 5 board safe from physical damage. The case has a screw on top cover to keep the ports safe when not in use, and there's an optional SD card cover to protect your data even further. Native Raspberry Pi 5 support Argon NEO lets you access the power button and activity LED on your Pi 5 with its own integrated power button."
+       },
+       "id": "gid://shopify/ProductVariant/53521790370171",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/NEO5_BLCK_06_713x_c02e2c4e-6f32-4b70-9698-4fd427e4c145.webp?v=1710511254"
+        }
+       ],
+       "options": [
+        {
+         "label": "Black",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 2000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-NEO5-BLCK",
+       "title": "Black"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/53521790402939:1",
+       "description": {
+        "html": "The tidy Argon NEO 5 aluminium case with active and passive cooling has been designed to meet the high demands of the Raspberry Pi 5. Effective cooling Argon NEO's slim aluminium enclosure dissipates heat effectively to provide both passive and active cooling. Aluminium case enclosure with passive cooling fins that act as a heatsink. Thermal pads are included to transfer heat away from your Raspberry Pi. Air intake vents allow for cool air to enter the case. 30mm PWM fan helps push out hot air to exhaust vents. Simple and beautifully designed Argon NEO is made with aluminium alloy and polished with a black (or black and red) finish for stunning aesthetics. Easy 3 part assembly (printed instructions are included). Easily mount to your desired station with built in mounting points. Complete access to all ports with removable top cover. Superior protection & security Argon NEO provides solid outer protection to keep the Raspberry Pi 5 board safe from physical damage. The case has a screw on top cover to keep the ports safe when not in use, and there's an optional SD card cover to protect your data even further. Native Raspberry Pi 5 support Argon NEO lets you access the power button and activity LED on your Pi 5 with its own integrated power button."
+       },
+       "id": "gid://shopify/ProductVariant/53521790402939",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/AMZ_AR-NEO-5_20231122_03_713x_59afa9e0-b954-4e84-87cc-37bf3d5406b7.webp?v=1730810479"
+        }
+       ],
+       "options": [
+        {
+         "label": "Red and Black",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 2000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-NEO5-BRED",
+       "title": "Red and Black"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "The slim, hackable and attractive case for Raspberry Pi 5. Here at Pirate Towers, we happen to think that plugging a bunch of fun stuff into a Raspberry Pi is the best thing ever, so we designed a protective case that will let you do that easily. Pibow 5 lets you access all the ports and connectors on your Pi and even has a clever little tab that will let you push the Pi 5's brand new power button whilst it's safely ensconced in its case. The case is designed to fit neatly around Raspberry Pi's new Active Cooler. Pibow 5 is available in three vibrant colourways - Ninja (translucent black), Royale (translucent purple) and Rainbow (opaque rainbow). Raspberry Pi 5 and Active Cooler are not included! Note that Pibow is not currently compatible with NVMe Base / NVMe Base Duo - we are working on a case solution for these though. Features Compatible with Raspberry Pi 5 only (view other flavours of Pibow here). Compatible with Raspberry Pi 5 Official Active Cooler Super-slimline profile Fully HAT/pHAT compatible Protects your beloved Pi 5! Clear top leaves Raspberry Pi 5 visible (so you can gaze upon its wonder). GPIO cut-out Leaves all ports and connectors accessible External Power Button Nubbin via compliant mechanism magic Mounting holes on the base that will accommodate M2.5 screws/bolts and the studs on popular Danish ABS construction blocks 👀 Made from lightweight high-quality cast acrylic Great for hacking and tinkering! Made in Sheffield, UK Crafted out of five unique layers including a transparent top that leaves your beautiful Pi visible inside. Each layer is laser-cut from colourful high-quality cast acrylic and once stacked they securely contain a Raspberry Pi 5 while leaving the primary ports and GPIO accessible. This case is lightweight and ideal for mounting to any surface. No tools are required for assembly or disassembly! Getting Started Check out our online assembly guide for step-by-step instructions for how to assemble your Pibow! Learn: Building your Pibow 5"
+     },
+     "gift_card": false,
+     "handle": "pibow-5",
+     "id": "gid://shopify/Product/7059060850771",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pibow-5-01.jpg?v=1696441048"
+      }
+     ],
+     "options": [
+      {
+       "name": "Colour",
+       "values": [
+        {
+         "label": "Royale"
+        },
+        {
+         "label": "Rainbow"
+        },
+        {
+         "label": "Ninja"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "Pibow",
+      "Raspberry Pi"
+     ],
+     "title": "Pibow Coupe 5 (Case for Raspberry Pi 5)",
+     "url": "https://shop.pimoroni.com/en-us/products/pibow-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41045302607955:1",
+       "description": {
+        "html": "The slim, hackable and attractive case for Raspberry Pi 5. Here at Pirate Towers, we happen to think that plugging a bunch of fun stuff into a Raspberry Pi is the best thing ever, so we designed a protective case that will let you do that easily. Pibow 5 lets you access all the ports and connectors on your Pi and even has a clever little tab that will let you push the Pi 5's brand new power button whilst it's safely ensconced in its case. The case is designed to fit neatly around Raspberry Pi's new Active Cooler. Pibow 5 is available in three vibrant colourways - Ninja (translucent black), Royale (translucent purple) and Rainbow (opaque rainbow). Raspberry Pi 5 and Active Cooler are not included! Note that Pibow is not currently compatible with NVMe Base / NVMe Base Duo - we are working on a case solution for these though. Features Compatible with Raspberry Pi 5 only (view other flavours of Pibow here). Compatible with Raspberry Pi 5 Official Active Cooler Super-slimline profile Fully HAT/pHAT compatible Protects your beloved Pi 5! Clear top leaves Raspberry Pi 5 visible (so you can gaze upon its wonder). GPIO cut-out Leaves all ports and connectors accessible External Power Button Nubbin via compliant mechanism magic Mounting holes on the base that will accommodate M2.5 screws/bolts and the studs on popular Danish ABS construction blocks 👀 Made from lightweight high-quality cast acrylic Great for hacking and tinkering! Made in Sheffield, UK Crafted out of five unique layers including a transparent top that leaves your beautiful Pi visible inside. Each layer is laser-cut from colourful high-quality cast acrylic and once stacked they securely contain a Raspberry Pi 5 while leaving the primary ports and GPIO accessible. This case is lightweight and ideal for mounting to any surface. No tools are required for assembly or disassembly! Getting Started Check out our online assembly guide for step-by-step instructions for how to assemble your Pibow! Learn: Building your Pibow 5"
+       },
+       "id": "gid://shopify/ProductVariant/41045302607955",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pibow-5-01.jpg?v=1696441048"
+        }
+       ],
+       "options": [
+        {
+         "label": "Royale",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM679",
+       "title": "Royale"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41045302575187:1",
+       "description": {
+        "html": "The slim, hackable and attractive case for Raspberry Pi 5. Here at Pirate Towers, we happen to think that plugging a bunch of fun stuff into a Raspberry Pi is the best thing ever, so we designed a protective case that will let you do that easily. Pibow 5 lets you access all the ports and connectors on your Pi and even has a clever little tab that will let you push the Pi 5's brand new power button whilst it's safely ensconced in its case. The case is designed to fit neatly around Raspberry Pi's new Active Cooler. Pibow 5 is available in three vibrant colourways - Ninja (translucent black), Royale (translucent purple) and Rainbow (opaque rainbow). Raspberry Pi 5 and Active Cooler are not included! Note that Pibow is not currently compatible with NVMe Base / NVMe Base Duo - we are working on a case solution for these though. Features Compatible with Raspberry Pi 5 only (view other flavours of Pibow here). Compatible with Raspberry Pi 5 Official Active Cooler Super-slimline profile Fully HAT/pHAT compatible Protects your beloved Pi 5! Clear top leaves Raspberry Pi 5 visible (so you can gaze upon its wonder). GPIO cut-out Leaves all ports and connectors accessible External Power Button Nubbin via compliant mechanism magic Mounting holes on the base that will accommodate M2.5 screws/bolts and the studs on popular Danish ABS construction blocks 👀 Made from lightweight high-quality cast acrylic Great for hacking and tinkering! Made in Sheffield, UK Crafted out of five unique layers including a transparent top that leaves your beautiful Pi visible inside. Each layer is laser-cut from colourful high-quality cast acrylic and once stacked they securely contain a Raspberry Pi 5 while leaving the primary ports and GPIO accessible. This case is lightweight and ideal for mounting to any surface. No tools are required for assembly or disassembly! Getting Started Check out our online assembly guide for step-by-step instructions for how to assemble your Pibow! Learn: Building your Pibow 5"
+       },
+       "id": "gid://shopify/ProductVariant/41045302575187",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pibow-5-08.jpg?v=1696441048"
+        }
+       ],
+       "options": [
+        {
+         "label": "Rainbow",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM678",
+       "title": "Rainbow"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41045302542419:1",
+       "description": {
+        "html": "The slim, hackable and attractive case for Raspberry Pi 5. Here at Pirate Towers, we happen to think that plugging a bunch of fun stuff into a Raspberry Pi is the best thing ever, so we designed a protective case that will let you do that easily. Pibow 5 lets you access all the ports and connectors on your Pi and even has a clever little tab that will let you push the Pi 5's brand new power button whilst it's safely ensconced in its case. The case is designed to fit neatly around Raspberry Pi's new Active Cooler. Pibow 5 is available in three vibrant colourways - Ninja (translucent black), Royale (translucent purple) and Rainbow (opaque rainbow). Raspberry Pi 5 and Active Cooler are not included! Note that Pibow is not currently compatible with NVMe Base / NVMe Base Duo - we are working on a case solution for these though. Features Compatible with Raspberry Pi 5 only (view other flavours of Pibow here). Compatible with Raspberry Pi 5 Official Active Cooler Super-slimline profile Fully HAT/pHAT compatible Protects your beloved Pi 5! Clear top leaves Raspberry Pi 5 visible (so you can gaze upon its wonder). GPIO cut-out Leaves all ports and connectors accessible External Power Button Nubbin via compliant mechanism magic Mounting holes on the base that will accommodate M2.5 screws/bolts and the studs on popular Danish ABS construction blocks 👀 Made from lightweight high-quality cast acrylic Great for hacking and tinkering! Made in Sheffield, UK Crafted out of five unique layers including a transparent top that leaves your beautiful Pi visible inside. Each layer is laser-cut from colourful high-quality cast acrylic and once stacked they securely contain a Raspberry Pi 5 while leaving the primary ports and GPIO accessible. This case is lightweight and ideal for mounting to any surface. No tools are required for assembly or disassembly! Getting Started Check out our online assembly guide for step-by-step instructions for how to assemble your Pibow! Learn: Building your Pibow 5"
+       },
+       "id": "gid://shopify/ProductVariant/41045302542419",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pibow-5-09.jpg?v=1696440014"
+        }
+       ],
+       "options": [
+        {
+         "label": "Ninja",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM677",
+       "title": "Ninja"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "This sleek Raspberry Pi 5 case has all the great features of the standard NEO case plus an expansion board that lets you connect a NVMe M.2 drive (up to 2280 size) to add super fast SSD storage. Please note that a NVMe M.2 drive/SSD is not included. Add M.2 NVME storage This version of Argon NEO includes a M.2 NVME expansion board. Boot your Raspberry Pi 5 from NVME M.2 drive and enjoy faster storage by connecting a M.2 NVME drive up to the Pi 5's high speed PCIe slot. The compartment that holds the SSD is accessible without disassembling the rest of the case, and it has a built in heatsink and thermal pads to keep your drive cool and working efficiently. Compatible with any M.2 NVME drive with M-Key up to 2280 size. Reliable and consistent data transfer with included FPC impedance controlled cable. Effective cooling Argon NEO's slim aluminium enclosure dissipates heat effectively to provide both passive and active cooling. Aluminium case enclosure with passive cooling fins that act as a heatsink. Thermal pads are included to transfer heat away from your Raspberry Pi. Air intake vents allow for cool air to enter the case. 30mm PWM fan helps push out hot air to exhaust vents. Simple and beautifully designed Argon NEO is made with aluminium alloy and polished with a black finish for stunning aesthetics. Easy 3 part assembly (printed instructions are included). Easily mount to your desired station with built in mounting points. Complete access to all ports with removable top cover. Superior protection & security Argon NEO provides solid outer protection to keep the Raspberry Pi 5 board safe from physical damage. The case has a screw on top cover to keep the ports safe when not in use. Native Raspberry Pi 5 support Argon NEO lets you access the power button and activity LED on your Pi 5 with its own integrated power button. Dimensions 95mm x 72mm x 41mm (L x W x H, approx)"
+     },
+     "gift_card": false,
+     "handle": "argon-neo-5-m-2-nvme-pcie-case-for-raspberry-pi-5",
+     "id": "gid://shopify/Product/7153720066131",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/AMZ_AR-NEO-5_NVMe_20240202_01_713x_641cef10-bb6e-4873-ad9c-23ff2611666a.webp?v=1707758053"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3900,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Cases",
+      "NVMe",
+      "Raspberry Pi"
+     ],
+     "title": "Argon NEO 5 M.2 NVME PCIE Case for Raspberry Pi 5",
+     "url": "https://shop.pimoroni.com/en-us/products/argon-neo-5-m-2-nvme-pcie-case-for-raspberry-pi-5",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41375662833747:1",
+       "description": {
+        "html": "This sleek Raspberry Pi 5 case has all the great features of the standard NEO case plus an expansion board that lets you connect a NVMe M.2 drive (up to 2280 size) to add super fast SSD storage. Please note that a NVMe M.2 drive/SSD is not included. Add M.2 NVME storage This version of Argon NEO includes a M.2 NVME expansion board. Boot your Raspberry Pi 5 from NVME M.2 drive and enjoy faster storage by connecting a M.2 NVME drive up to the Pi 5's high speed PCIe slot. The compartment that holds the SSD is accessible without disassembling the rest of the case, and it has a built in heatsink and thermal pads to keep your drive cool and working efficiently. Compatible with any M.2 NVME drive with M-Key up to 2280 size. Reliable and consistent data transfer with included FPC impedance controlled cable. Effective cooling Argon NEO's slim aluminium enclosure dissipates heat effectively to provide both passive and active cooling. Aluminium case enclosure with passive cooling fins that act as a heatsink. Thermal pads are included to transfer heat away from your Raspberry Pi. Air intake vents allow for cool air to enter the case. 30mm PWM fan helps push out hot air to exhaust vents. Simple and beautifully designed Argon NEO is made with aluminium alloy and polished with a black finish for stunning aesthetics. Easy 3 part assembly (printed instructions are included). Easily mount to your desired station with built in mounting points. Complete access to all ports with removable top cover. Superior protection & security Argon NEO provides solid outer protection to keep the Raspberry Pi 5 board safe from physical damage. The case has a screw on top cover to keep the ports safe when not in use. Native Raspberry Pi 5 support Argon NEO lets you access the power button and activity LED on your Pi 5 with its own integrated power button. Dimensions 95mm x 72mm x 41mm (L x W x H, approx)"
+       },
+       "id": "gid://shopify/ProductVariant/41375662833747",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/AMZ_AR-NEO-5_NVMe_20240202_01_713x_641cef10-bb6e-4873-ad9c-23ff2611666a.webp?v=1707758053"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3900,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AR-NEO5-NVME",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-27w-usb-c-power-supply",
+     "id": "gid://shopify/Product/7058805063763",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/PSUWhiteDetail-square.jpg?v=1695732825"
+      }
+     ],
+     "options": [
+      {
+       "name": "Region",
+       "values": [
+        {
+         "label": "United Kingdom"
+        },
+        {
+         "label": "Europe"
+        },
+        {
+         "label": "United States"
+        }
+       ]
+      },
+      {
+       "name": "Colour",
+       "values": [
+        {
+         "label": "White"
+        },
+        {
+         "label": "Black"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1300,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1300,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Power",
+      "Power Supply",
+      "Raspberry Pi",
+      "USB"
+     ],
+     "title": "Raspberry Pi 5 Official 27W PSU",
+     "url": "https://shop.pimoroni.com/en-us/products/raspberry-pi-27w-usb-c-power-supply",
+     "variants": [
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41044500349011:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41044500349011",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PSUWhiteUK-square.jpg?v=1695732942"
+        }
+       ],
+       "options": [
+        {
+         "label": "United Kingdom",
+         "name": "Region"
+        },
+        {
+         "label": "White",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1149",
+       "title": "United Kingdom / White"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41044500414547:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41044500414547",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PSUWhiteEU-square.jpg?v=1695732877"
+        }
+       ],
+       "options": [
+        {
+         "label": "Europe",
+         "name": "Region"
+        },
+        {
+         "label": "White",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1407",
+       "title": "Europe / White"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41044500480083:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41044500480083",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/PSUWhiteUS-square.jpg?v=1695732994"
+        }
+       ],
+       "options": [
+        {
+         "label": "United States",
+         "name": "Region"
+        },
+        {
+         "label": "White",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1153",
+       "title": "United States / White"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41120791232595:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41120791232595",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/PSUBLACKDetail.jpg?v=1698681800"
+        }
+       ],
+       "options": [
+        {
+         "label": "United Kingdom",
+         "name": "Region"
+        },
+        {
+         "label": "Black",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1154",
+       "title": "United Kingdom / Black"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41120802013267:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41120802013267",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/PSUBLACKDetail.jpg?v=1698681800"
+        }
+       ],
+       "options": [
+        {
+         "label": "Europe",
+         "name": "Region"
+        },
+        {
+         "label": "Black",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1408",
+       "title": "Europe / Black"
+      },
+      {
+       "availability": {
+        "available": false
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/41120805290067:1",
+       "description": {
+        "html": "The new 27W USB-C PD (Power Delivery) Power Supply will deliver a maximum of 5.1V, 5A enabling the Raspberry Pi 5 to power a wider range of peripherals. The total power drawn from the four USB ports on Raspberry Pi 5 is limited by default to a nominal 600mA; this limit is automatically increased to a nominal 1.6A when the USB-C PD Power Supply is detected. The USB-C PD Power Supply is also capable of delivering 3A @ 9V, 2.25A @ 12V, and 1.8A @ 15V to PD-compatible products, making it a good cost-effective power supply for many general-purpose, non-Raspberry Pi use cases. Input: 100-240VAC Output: 5A @ 5.1V, 3A @ 9V, 2.25A @ 12V, 1.8A @ 15V Connector: USB-C Cable: 1.2m, 18awg Colours White, black Plug Types: US, Canada (type A)Europe (type C)UK (type G)"
+       },
+       "id": "gid://shopify/ProductVariant/41120805290067",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/PSUBLACKDetail.jpg?v=1698681800"
+        }
+       ],
+       "options": [
+        {
+         "label": "United States",
+         "name": "Region"
+        },
+        {
+         "label": "Black",
+         "name": "Colour"
+        }
+       ],
+       "price": {
+        "amount": 1300,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "SC1158",
+       "title": "United States / Black"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

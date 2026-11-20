@@ -1,0 +1,1260 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "5.8GHz VTX 20x20"
+  }
+ },
+ "key": "a6c77a93fb624cd3e7cb97a0f9d6246b205d588c926401ae89321f8e5fde86d6",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:29:24-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 858); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6ODU4LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 858
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p data-mce-fragment=\"1\">Smart mounting VTX, fits 16x16, 20x20, and whoop/toothpick mounting patterns.<br data-mce-fragment=\"1\"></p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Checkout our </span><a title=\"All VTX for sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\">VTX section</a><span data-mce-fragment=\"1\"> and our full collection of </span><a title=\"HGLRC products for sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/hglrc-products\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/hglrc-products\">HGLRC products!</a></p>\n<h3 data-mce-fragment=\"1\">Features</h3>\n<ul>\n<li>5V input</li>\n<li><span>16x16, 20x20, and whoop/toothpick mounting patterns</span></li>\n<li><span>Up to 350mW output</span></li>\n<li><span>Covers 40 Channels and 5 bands</span></li>\n<li><span>Built in microphone</span></li>\n</ul>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul>\n<li><span>Built-in Microphone</span></li>\n<li><span>Input voltage:DC 5V</span></li>\n<ul>\n<li><span>PIT@75mA</span></li>\n<li><span>25mW@180mA/16dBm</span></li>\n<li><span>100mW@280mA/21.5dBm</span></li>\n<li><span>200mW@330mA/24.5dBm</span></li>\n<li><span>350mW@400mA/27.5dBm</span></li>\n</ul>\n<li><span>Antenna interface: U.FL</span></li>\n<li><span>Output power: PIT/25/100/200/350mW</span></li>\n<li><span>Standard 40 channels. A/B/E/F/R frequency group</span></li>\n<li><span>Installing Hole:16X16/25.5X25.5mm.M2</span></li>\n<li><span>20X20mm.M3</span></li>\n<li><span>Size: 18.6mm x 13.6mm x 6mm</span></li>\n<li><span>Weight: 2.4g</span></li>\n</ul>"
+     },
+     "handle": "hglrc-zeus-nano-25-350mw-5-8ghz-16x16-20x20-25x25-vtx-u-fl",
+     "id": "gid://shopify/p/3LRTNlRWMPmaSJKEQCspUk",
+     "media": [
+      {
+       "alt_text": "HGLRC VTX HGLRC Zeus Nano 16x16/20x20/25x25 25-350mW 5.8GHz VTX - U.FL",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hglrc-hglrc-zeus-nano-16x16-20x20-25x25-25-350mw-5-8ghz-vtx-u-fl-vtx-16054248046705.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hglrc-hglrc-zeus-nano-16x16-20x20-25x25-25-350mw-5-8ghz-vtx-u-fl-vtx-16054248046705.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Supports 16x16, 20x20, and 25x25 inch FPV screens for flexible display compatibility",
+       "Built-in microphone enables hands-free audio transmission",
+       "5V input with up to 350mW output for reliable power delivery",
+       "Covers 40 channels across 5 bands for broad frequency coverage",
+       "Smart and toothpick mounting patterns for easy installation"
+      ],
+      "unique_selling_points": [
+       "Ultra-compact design with high power output and multiple mounting options for versatile FPV setups."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2299,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2299,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 36,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.6
+     },
+     "title": "HGLRC Zeus Nano 16x16/20x20/25x25 25-350mW 5.8GHz VTX - U.FL",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/32214146941041:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p data-mce-fragment=\"1\">Smart mounting VTX, fits 16x16, 20x20, and whoop/toothpick mounting patterns.<br data-mce-fragment=\"1\"></p>\n<p data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Checkout our </span><a title=\"All VTX for sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\">VTX section</a><span data-mce-fragment=\"1\"> and our full collection of </span><a title=\"HGLRC products for sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/hglrc-products\" data-mce-fragment=\"1\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/hglrc-products\">HGLRC products!</a></p>\n<h3 data-mce-fragment=\"1\">Features</h3>\n<ul>\n<li>5V input</li>\n<li><span>16x16, 20x20, and whoop/toothpick mounting patterns</span></li>\n<li><span>Up to 350mW output</span></li>\n<li><span>Covers 40 Channels and 5 bands</span></li>\n<li><span>Built in microphone</span></li>\n</ul>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul>\n<li><span>Built-in Microphone</span></li>\n<li><span>Input voltage:DC 5V</span></li>\n<ul>\n<li><span>PIT@75mA</span></li>\n<li><span>25mW@180mA/16dBm</span></li>\n<li><span>100mW@280mA/21.5dBm</span></li>\n<li><span>200mW@330mA/24.5dBm</span></li>\n<li><span>350mW@400mA/27.5dBm</span></li>\n</ul>\n<li><span>Antenna interface: U.FL</span></li>\n<li><span>Output power: PIT/25/100/200/350mW</span></li>\n<li><span>Standard 40 channels. A/B/E/F/R frequency group</span></li>\n<li><span>Installing Hole:16X16/25.5X25.5mm.M2</span></li>\n<li><span>20X20mm.M3</span></li>\n<li><span>Size: 18.6mm x 13.6mm x 6mm</span></li>\n<li><span>Weight: 2.4g</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hglrc-zeus-nano-25-350mw-5-8ghz-16x16-20x20-25x25-vtx-u-fl",
+       "id": "gid://shopify/ProductVariant/32214146941041",
+       "media": [
+        {
+         "alt_text": "HGLRC VTX HGLRC Zeus Nano 16x16/20x20/25x25 25-350mW 5.8GHz VTX - U.FL",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hglrc-hglrc-zeus-nano-16x16-20x20-25x25-25-350mw-5-8ghz-vtx-u-fl-vtx-16054248046705.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/hglrc-hglrc-zeus-nano-16x16-20x20-25x25-25-350mw-5-8ghz-vtx-u-fl-vtx-16054248046705.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2299,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 33,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.6
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4624065822833",
+       "source": "shopify",
+       "title": "HGLRC Zeus Nano 16x16/20x20/25x25 25-350mW 5.8GHz VTX - U.FL",
+       "url": "https://www.racedayquads.com/products/hglrc-zeus-nano-25-350mw-5-8ghz-16x16-20x20-25x25-vtx-u-fl?variant=32214146941041&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div id=\"ali-anchor-AliPostDhMb-wmui5\" data-section=\"AliPostDhMb-wmui5\" data-section-title=\"Product Description\">\n<p data-mce-fragment=\"1\">JHEMCU has a perfect VTX to add to your next build. The 20x20 mounting holes make it able to be mounted in most frames. With the 600mw output and the IRC Tramp control, this VTX has just about everything you could need.</p>\n<p data-mce-fragment=\"1\"><span>Check out all our </span><a title=\"20x20mm mounting VTX sold at Pyrodrone\" href=\"https://pyrodrone.com/collections/analog-vtx/20-x-20\">20x20mm Video Transmitters</a><span> and the rest of our </span><a href=\"https://pyrodrone.com/collections/jhemcu-products\" title=\"JHEMCU Products for FPV Drone Racing and Freestyle sold by PyroDrone\" target=\"_blank\">JHEMCU Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/Screenshot_1_6f80cbe1-1153-496e-a8c2-9f8f0d23677e.png?v=1717795768\"></span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/H6e11d2c347a7430984addea627a8a4a2U.webp?v=1717795787\"></span></p>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage: </span><span data-mce-fragment=\"1\">7-26</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">RF Output Power: </span>25-600mW</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Output Voltage: </span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V </span><span data-mce-fragment=\"1\">1</span><span data-mce-fragment=\"1\">A</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector: </span>MMCX</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Power/Video Connection: </span><span data-mce-fragment=\"1\">Pin Connector or Solder Pads</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size: </span>20x20mm</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions: </span><span data-mce-fragment=\"1\">27</span><span data-mce-fragment=\"1\">x</span><span data-mce-fragment=\"1\">27</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight: </span><span data-mce-fragment=\"1\">3</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1x JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm</li>\n</ul>\n</div>"
+     },
+     "handle": "jhemcu-25-600mw-5-8ghz-mmcx-vtx-w-irc-tramp-20x20mm",
+     "id": "gid://shopify/p/4FAFGsv0yZRI4bW8PcM1I9",
+     "media": [
+      {
+       "alt_text": "JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/Hb939437cc22747699023a381b42312dec.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/Hb939437cc22747699023a381b42312dec.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "600mW RF output power enables strong, clear video transmission for FPV applications",
+       "IRC tramp control allows for easy remote control of video transmitter functions",
+       "20x20mm mounting holes provide compatibility with most frames and builds",
+       "MMCX antenna connector ensures secure and reliable signal connection",
+       "Lightweight 3g design minimizes added weight to your drone"
+      ],
+      "unique_selling_points": [
+       "Combines high power output, IRC tramp control, and 20x20mm mounting in a lightweight, compact design."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://foldedjoy.store/buy/68102107005007:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div id=\"ali-anchor-AliPostDhMb-wmui5\" data-section=\"AliPostDhMb-wmui5\" data-section-title=\"Product Description\">\n<p data-mce-fragment=\"1\">JHEMCU has a perfect VTX to add to your next build. The 20x20 mounting holes make it able to be mounted in most frames. With the 600mw output and the IRC Tramp control, this VTX has just about everything you could need.</p>\n<p data-mce-fragment=\"1\"><span>Check out all our </span><a title=\"20x20mm mounting VTX sold at Pyrodrone\" href=\"https://pyrodrone.com/collections/analog-vtx/20-x-20\">20x20mm Video Transmitters</a><span> and the rest of our </span><a href=\"https://pyrodrone.com/collections/jhemcu-products\" title=\"JHEMCU Products for FPV Drone Racing and Freestyle sold by PyroDrone\" target=\"_blank\">JHEMCU Products</a><span>!</span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/Screenshot_1_6f80cbe1-1153-496e-a8c2-9f8f0d23677e.png?v=1717795768\"></span></p>\n<p data-mce-fragment=\"1\"><span><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/2778/6650/files/H6e11d2c347a7430984addea627a8a4a2U.webp?v=1717795787\"></span></p>\n<h3 data-mce-fragment=\"1\">Specifications</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage: </span><span data-mce-fragment=\"1\">7-26</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">RF Output Power: </span>25-600mW</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Output Voltage: </span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V </span><span data-mce-fragment=\"1\">1</span><span data-mce-fragment=\"1\">A</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector: </span>MMCX</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Power/Video Connection: </span><span data-mce-fragment=\"1\">Pin Connector or Solder Pads</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size: </span>20x20mm</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions: </span><span data-mce-fragment=\"1\">27</span><span data-mce-fragment=\"1\">x</span><span data-mce-fragment=\"1\">27</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight: </span><span data-mce-fragment=\"1\">3</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3 data-mce-fragment=\"1\">Includes</h3>\n<ul data-mce-fragment=\"1\">\n<li data-mce-fragment=\"1\">1x JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm</li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "jhemcu-25-600mw-5-8ghz-mmcx-vtx-w-irc-tramp-20x20mm",
+       "id": "gid://shopify/ProductVariant/68102107005007",
+       "media": [
+        {
+         "alt_text": "JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/Hb939437cc22747699023a381b42312dec.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0710/3076/7695/files/Hb939437cc22747699023a381b42312dec.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ny1tms-xb.myshopify.com",
+        "id": "gid://shopify/Shop/71030767695",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/39289716815.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859359311.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859326543.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/71030767695/policies/44859392079.html"
+         }
+        ],
+        "name": " Folded Joy",
+        "url": "https://foldedjoy.store"
+       },
+       "seller_product_id": "gid://shopify/Product/15537261936719",
+       "source": "shopify",
+       "title": "JHEMCU 25-600mW 5.8GHz MMCX VTX w/ IRC Tramp - 20x20mm",
+       "url": "https://foldedjoy.store/products/jhemcu-25-600mw-5-8ghz-mmcx-vtx-w-irc-tramp-20x20mm?variant=68102107005007&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-description rte\">\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n<p>The kit includes a Runcam HDZero Nano 90, HDZero RHCP Antenna, and a 120mm MIPI Cable. <br data-mce-fragment=\"1\"></p>\n<p>The RunCam HDZero Nano 90 HD Camera is the first 90fps camera for HDZero VTX. This camera enables HDZero to be 5ms faster than analog 60i video to show a full field/frame.<br></p>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\"><span data-mce-fragment=\"1\">Check out our <a href=\"https://pyrodrone.com/collections/sharkbyte-digital-fpv-products\" title=\"HDZero Products Sold At Pyrodrone\">HDZero Compatible Gear</a></span><span data-mce-fragment=\"1\"> </span><span data-mce-fragment=\"1\">and the rest of our <a href=\"https://pyrodrone.com/collections/divimath-products\" title=\"Divimath HDZero Products Sold At Pyrodrone\">HDZero Products</a>!</span></p>\n<p data-mce-fragment=\"1\"><span class=\"Polaris-Popover__ContentContainer_vq40t\"><span id=\":r16b:\" class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\"><span class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\"><span class=\"_Container_b3ydm_1\"><span class=\"_OutputSection_cdfjs_1 _WithUplift_cdfjs_7\" aria-live=\"polite\"><span class=\"_ContentWrapper_cdfjs_22\"><span class=\"_Content_cdfjs_22 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\"><span class=\"Polaris-Box_375yx\"><span class=\"Polaris-HorizontalStack_dv6q6\"><span class=\"_TextOutput_5pg1p_1\"></span></span></span></span></span></span></span></span></span></span><span style=\"text-align: start;\"><img style=\"margin-bottom: -24px; float: none;\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" alt=\"\"></span><span style=\"text-align: start;\"></span><span style=\"text-align: start;\"><img style=\"margin-bottom: -23px; float: none;\" src=\"https://static.wixstatic.com/media/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png/v1/fill/w_578,h_771,al_c,usm_0.66_1.00_0.01/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png\" alt=\"\"></span></p>\n<h3><br></h3>\n<h3><br></h3>\n<h3>Specification</h3>\n<p class=\"Polaris-Header-Title_2qj8j\" data-mce-fragment=\"1\"><strong>Freestyle V2 VTX</strong></p>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<p class=\"_2qrJF\" data-hook=\"product-title\"><strong>Runcam HDZero Nano 90</strong></p>\n<ul>\n<li>Resolution: 540P@90fps 4:3 | 720P@60fps 4:3</li>\n<li>Dimensions: L18mmxW14mmxH18mm</li>\n<li>Lens: FOV D:160° H:127° V:92°</li>\n<li>Net Weight: 5.2g(without cable)</li>\n<li>Shutter: Rolling Shutter</li>\n<li>Image Sensor: 1/3\"</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Nano 90 Camera (with 19 x 19 Mount)</span><br><span></span>\n</li>\n<li>\n<span>1x HDZero RHCP Antenna</span><br><span></span>\n</li>\n<li>\n<span>1x 120mm MIPI Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li><span data-mce-fragment=\"1\">1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<p data-mce-fragment=\"1\"> </p>\n</div>\n<div class=\"product-description rte\"><br></div>"
+     },
+     "handle": "hdzero-freestyle-v2-20x20-25-1000mw-hd-vtx-kit-w-u-fl",
+     "id": "gid://shopify/p/7fsVKVJxj23alFLEC2jRWi",
+     "media": [
+      {
+       "alt_text": "HDZero Freestyle V2 20x20 25-1000mW HD VTX Kit W/u.FL",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/HDZero-Freestyle-V2-VTX-15Kit_1000x1000_9795c24e-b799-433c-85a1-7ad68f03d618.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/HDZero-Freestyle-V2-VTX-15Kit_1000x1000_9795c24e-b799-433c-85a1-7ad68f03d618.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "CNC-protected case ensures RF shielding and improved signal integrity for stable video transmission",
+       "Supports multiple video modes including 720p60, 1080p30, 540p60, and 540p90 for versatile frame rates",
+       "Includes Runcam HDZero Nano 90 camera with 19x19 mount for fast, high-resolution video capture",
+       "Secure wire harness and retention bars keep power and Mipi cables firmly in place during flight",
+       "SmartAudio and MSP canvas mode enable advanced audio and video control for optimal FPV performance"
+      ],
+      "unique_selling_points": [
+       "Includes a 90fps Runcam HDZero Nano 90 camera and secure CNC-protected case for reliable, high-speed FPV transmission."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 19199,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19199,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 2,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.5
+     },
+     "title": "HDZero Freestyle V2 20x20 25-1000mW HD VTX Kit W/u.FL",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pyrodrone.com/buy/40890297352235:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-description rte\">\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n<p>The kit includes a Runcam HDZero Nano 90, HDZero RHCP Antenna, and a 120mm MIPI Cable. <br data-mce-fragment=\"1\"></p>\n<p>The RunCam HDZero Nano 90 HD Camera is the first 90fps camera for HDZero VTX. This camera enables HDZero to be 5ms faster than analog 60i video to show a full field/frame.<br></p>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\"><span data-mce-fragment=\"1\">Check out our <a href=\"https://pyrodrone.com/collections/sharkbyte-digital-fpv-products\" title=\"HDZero Products Sold At Pyrodrone\">HDZero Compatible Gear</a></span><span data-mce-fragment=\"1\"> </span><span data-mce-fragment=\"1\">and the rest of our <a href=\"https://pyrodrone.com/collections/divimath-products\" title=\"Divimath HDZero Products Sold At Pyrodrone\">HDZero Products</a>!</span></p>\n<p data-mce-fragment=\"1\"><span class=\"Polaris-Popover__ContentContainer_vq40t\"><span id=\":r16b:\" class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\"><span class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\"><span class=\"_Container_b3ydm_1\"><span class=\"_OutputSection_cdfjs_1 _WithUplift_cdfjs_7\" aria-live=\"polite\"><span class=\"_ContentWrapper_cdfjs_22\"><span class=\"_Content_cdfjs_22 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\" data-polaris-scrollable=\"true\"><span class=\"Polaris-Box_375yx\"><span class=\"Polaris-HorizontalStack_dv6q6\"><span class=\"_TextOutput_5pg1p_1\"></span></span></span></span></span></span></span></span></span></span><span style=\"text-align: start;\"><img style=\"margin-bottom: -24px; float: none;\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" alt=\"\"></span><span style=\"text-align: start;\"></span><span style=\"text-align: start;\"><img style=\"margin-bottom: -23px; float: none;\" src=\"https://static.wixstatic.com/media/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png/v1/fill/w_578,h_771,al_c,usm_0.66_1.00_0.01/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png\" alt=\"\"></span></p>\n<h3><br></h3>\n<h3><br></h3>\n<h3>Specification</h3>\n<p class=\"Polaris-Header-Title_2qj8j\" data-mce-fragment=\"1\"><strong>Freestyle V2 VTX</strong></p>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<p class=\"_2qrJF\" data-hook=\"product-title\"><strong>Runcam HDZero Nano 90</strong></p>\n<ul>\n<li>Resolution: 540P@90fps 4:3 | 720P@60fps 4:3</li>\n<li>Dimensions: L18mmxW14mmxH18mm</li>\n<li>Lens: FOV D:160° H:127° V:92°</li>\n<li>Net Weight: 5.2g(without cable)</li>\n<li>Shutter: Rolling Shutter</li>\n<li>Image Sensor: 1/3\"</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Nano 90 Camera (with 19 x 19 Mount)</span><br><span></span>\n</li>\n<li>\n<span>1x HDZero RHCP Antenna</span><br><span></span>\n</li>\n<li>\n<span>1x 120mm MIPI Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li><span data-mce-fragment=\"1\">1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<p data-mce-fragment=\"1\"> </p>\n</div>\n<div class=\"product-description rte\"><br></div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hdzero-freestyle-v2-20x20-25-1000mw-hd-vtx-kit-w-u-fl",
+       "id": "gid://shopify/ProductVariant/40890297352235",
+       "media": [
+        {
+         "alt_text": "HDZero Freestyle V2 20x20 25-1000mW HD VTX Kit W/u.FL",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/HDZero-Freestyle-V2-VTX-15Kit_1000x1000_9795c24e-b799-433c-85a1-7ad68f03d618.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2778/6650/files/HDZero-Freestyle-V2-VTX-15Kit_1000x1000_9795c24e-b799-433c-85a1-7ad68f03d618.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 19199,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 23,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "pyro-drone.myshopify.com",
+        "id": "gid://shopify/Shop/27786650",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241976363.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/27786650/policies/6242009131.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/6241943595.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/27786650/policies/33385283627.html"
+         }
+        ],
+        "name": "Pyrodrone",
+        "url": "https://pyrodrone.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7148143214635",
+       "source": "shopify",
+       "title": "HDZero Freestyle V2 20x20 25-1000mW HD VTX Kit W/u.FL",
+       "url": "https://pyrodrone.com/products/hdzero-freestyle-v2-20x20-25-1000mw-hd-vtx-kit-w-u-fl?variant=40890297352235&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><span>The VTX1000 is a high-power FPV video transmitter with durable heat-resistant materials and efficient cooling. It supports up to 1000mW output and should be mounted in a ventilated, upward-facing position for optimal heat dissipation.</span></p>\n<p> </p>\n<p><strong><span>SPECIFICATIONS:<br></span></strong></p>\n<ul>\n<li>Model: VTX1000 (B-Cube or Cyclone)</li>\n<li>Frequency: 5645-5945MHZ</li>\n<li>Input voltage: 7-26V</li>\n<li>Output voltage: 5V/1A</li>\n<li>Channel: 40CH</li>\n<li>Protocol: SmartAudio 2.1</li>\n<li>Size: 29MM*29MM / 37.5MM*37.5mm</li>\n<li>Transmission power: PIT/25MW/100/200/400/1000MW</li>\n<li>Screw hole: 30.5*30.5MM / 20.5MM*20.5MM</li>\n<li>Screw aperture: M3</li>\n<li>Weight: 7.3g</li>\n</ul>\n<p><br></p>\n<p><strong>HELPFUL LINKS: <br></strong></p>\n<ul>\n<li><a href=\"https://blog.rctoysky.com/invoice/invoice/VTX1000mW.json\" title=\"VTX1000 VTX Table\" target=\"_blank\"><strong>VTX Table</strong></a></li>\n</ul>\n<p><br></p>\n<p><span style=\"color: #000000;\"><em></em></span><strong>INCLUDES:<br></strong></p>\n<p>(1) VTX1000 5.8GHz Analog Video Transmitter<br>(4) Grommets<br>(4) Nylon Single-Standoffs, Screws &amp; Nuts<br>(1) Heat Sink<br>(1) 5.8G 5DB Antenna<br>(1) 6P 1.0MM Plug Cable</p>\n<p> </p>\n<p><span style=\"color: #000000;\"><strong>NOTES:<br></strong></span></p>\n<ul>\n<li style=\"font-style: italic; color: rgb(0, 0, 0);\">Before powering on, please ensure the antenna is securely connected; otherwise, the device may be damaged.</li>\n<li style=\"font-style: italic; color: rgb(0, 0, 0);\">Certain channels and the 1000mW power setting are not enabled by default due to FCC regulations. Users with a valid Ham license may access these frequencies and power levels. By purchasing this equipment, the user agrees to understand these responsibilities and to operate the equipment legally. For more information related to Ham licensing, please visit<em><span style=\"color: #ff0000;\"><span style=\"color: #000000;\"> </span><a title=\"Ham License\" href=\"http://www.arrl.org/getting-licensed\" target=\"_blank\"><img alt=\"\">http://www.arrl.org/getting-licensed</a>.</span></em>\n</li>\n</ul>"
+     },
+     "handle": "vtx1000-5-8ghz-analog-video-transmitter-30x30-20x20mm-1000mw-mmcx",
+     "id": "gid://shopify/p/25SI0QkbFJ5hyfhPJ55H3s",
+     "media": [
+      {
+       "alt_text": "VTX1000 5.8GHz Analog Video Transmitter (30x30 & 20x20mm / 1000mW / MMCX) Cyclone",
+       "height": 885,
+       "preview": {
+        "height": 885,
+        "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/cyclone_vtx.jpg",
+        "width": 894
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/cyclone_vtx.jpg",
+       "width": 894
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "1000mW high-power output enables long-range FPV video transmission",
+       "Durable heat-resistant materials and efficient cooling ensure reliable operation",
+       "Supports up to 40 channels for flexible signal selection",
+       "Surface-mount design with included mounting hardware for easy installation",
+       "Compatible with SmartAudio 2.1 protocol for advanced audio/video integration"
+      ],
+      "unique_selling_points": [
+       "Supports up to 1000mW output with durable heat-resistant materials and efficient cooling for reliable high-power transmission."
+      ]
+     },
+     "options": [
+      {
+       "name": "Brand",
+       "values": [
+        {
+         "label": "Cyclone"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4499,
+       "currency": "USD"
+      }
+     },
+     "title": "VTX1000 5.8GHz Analog Video Transmitter (30x30 & 20x20mm / 1000mW / MMCX)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.rc-n-go.com/buy/48328560541910:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><span>The VTX1000 is a high-power FPV video transmitter with durable heat-resistant materials and efficient cooling. It supports up to 1000mW output and should be mounted in a ventilated, upward-facing position for optimal heat dissipation.</span></p>\n<p> </p>\n<p><strong><span>SPECIFICATIONS:<br></span></strong></p>\n<ul>\n<li>Model: VTX1000 (B-Cube or Cyclone)</li>\n<li>Frequency: 5645-5945MHZ</li>\n<li>Input voltage: 7-26V</li>\n<li>Output voltage: 5V/1A</li>\n<li>Channel: 40CH</li>\n<li>Protocol: SmartAudio 2.1</li>\n<li>Size: 29MM*29MM / 37.5MM*37.5mm</li>\n<li>Transmission power: PIT/25MW/100/200/400/1000MW</li>\n<li>Screw hole: 30.5*30.5MM / 20.5MM*20.5MM</li>\n<li>Screw aperture: M3</li>\n<li>Weight: 7.3g</li>\n</ul>\n<p><br></p>\n<p><strong>HELPFUL LINKS: <br></strong></p>\n<ul>\n<li><a href=\"https://blog.rctoysky.com/invoice/invoice/VTX1000mW.json\" title=\"VTX1000 VTX Table\" target=\"_blank\"><strong>VTX Table</strong></a></li>\n</ul>\n<p><br></p>\n<p><span style=\"color: #000000;\"><em></em></span><strong>INCLUDES:<br></strong></p>\n<p>(1) VTX1000 5.8GHz Analog Video Transmitter<br>(4) Grommets<br>(4) Nylon Single-Standoffs, Screws &amp; Nuts<br>(1) Heat Sink<br>(1) 5.8G 5DB Antenna<br>(1) 6P 1.0MM Plug Cable</p>\n<p> </p>\n<p><span style=\"color: #000000;\"><strong>NOTES:<br></strong></span></p>\n<ul>\n<li style=\"font-style: italic; color: rgb(0, 0, 0);\">Before powering on, please ensure the antenna is securely connected; otherwise, the device may be damaged.</li>\n<li style=\"font-style: italic; color: rgb(0, 0, 0);\">Certain channels and the 1000mW power setting are not enabled by default due to FCC regulations. Users with a valid Ham license may access these frequencies and power levels. By purchasing this equipment, the user agrees to understand these responsibilities and to operate the equipment legally. For more information related to Ham licensing, please visit<em><span style=\"color: #ff0000;\"><span style=\"color: #000000;\"> </span><a title=\"Ham License\" href=\"http://www.arrl.org/getting-licensed\" target=\"_blank\"><img alt=\"\">http://www.arrl.org/getting-licensed</a>.</span></em>\n</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "vtx1000-5-8ghz-analog-video-transmitter-30x30-20x20mm-1000mw-mmcx",
+       "id": "gid://shopify/ProductVariant/48328560541910",
+       "media": [
+        {
+         "alt_text": "VTX1000 5.8GHz Analog Video Transmitter (30x30 & 20x20mm / 1000mW / MMCX) Cyclone",
+         "height": 885,
+         "preview": {
+          "height": 885,
+          "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/cyclone_vtx.jpg",
+          "width": 894
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1751/0217/files/cyclone_vtx.jpg",
+         "width": 894
+        }
+       ],
+       "options": [
+        {
+         "label": "Cyclone",
+         "name": "Brand"
+        }
+       ],
+       "price": {
+        "amount": 4499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "rc-n-go.myshopify.com",
+        "id": "gid://shopify/Shop/17510217",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597777.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/17510217/policies/33597841.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/33597713.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/17510217/policies/5879889980.html"
+         }
+        ],
+        "name": "RC-N-Go",
+        "url": "https://www.rc-n-go.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9096051359958",
+       "source": "shopify",
+       "title": "VTX1000 5.8GHz Analog Video Transmitter (30x30 & 20x20mm / 1000mW / MMCX)",
+       "url": "https://www.rc-n-go.com/products/vtx1000-5-8ghz-analog-video-transmitter-30x30-20x20mm-1000mw-mmcx?variant=48328560541910&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div>\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n</div>\n<div class=\"Polaris-Popover__ContentContainer_vq40t\">\n<div class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\" id=\":r16b:\">\n<div data-polaris-scrollable=\"true\" class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div data-polaris-scrollable=\"true\" class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div class=\"_Container_b3ydm_1\">\n<div aria-live=\"polite\" class=\"_OutputSection_cdfjs_1 _WithUplift_cdfjs_7\">\n<div class=\"_ContentWrapper_cdfjs_22\">\n<div data-polaris-scrollable=\"true\" class=\"_Content_cdfjs_22 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div class=\"Polaris-Box_375yx\">\n<div class=\"Polaris-HorizontalStack_dv6q6\">\n<div class=\"_TextOutput_5pg1p_1\">\n<div>\n<div id=\":r16b:\">\n<div data-polaris-scrollable=\"true\">\n<div data-polaris-scrollable=\"true\">\n<div>\n<div aria-live=\"polite\">\n<div>\n<div data-polaris-scrollable=\"true\">\n<div>\n<div>\n<div>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n<p>The kit includes a Runcam HDZero Nano 90, HDZero RHCP Antenna, and a 120mm MIPI Cable. <br data-mce-fragment=\"1\"></p>\n<p>The RunCam HDZero Nano 90 HD Camera is the first 90fps camera for HDZero VTX. This camera enables HDZero to be 5ms faster than analog 60i video to show a full field/frame.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\">Check out all our <a title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">VTXs</a> and our <a href=\"https://www.racedayquads.com/collections/hdzero-products\" title=\"HDzero products at race day quads\" target=\"_blank\">HDZero selection</a>.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"margin-bottom: -24px; float: none;\" alt=\"\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" data-mce-style=\"margin-bottom: -24px; float: none;\"></div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"></div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://static.wixstatic.com/media/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png/v1/fill/w_578,h_771,al_c,usm_0.66_1.00_0.01/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3></h3>\n<h3><br></h3>\n<h3>Specification</h3>\n<p data-mce-fragment=\"1\" class=\"Polaris-Header-Title_2qj8j\"><strong>Freestyle V2 VTX</strong></p>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<p data-hook=\"product-title\" class=\"_2qrJF\"><strong>Runcam HDZero Nano 90</strong></p>\n<ul>\n<li>Resolution: 540P@90fps 4:3 | 720P@60fps 4:3</li>\n<li>Dimensions: L18mmxW14mmxH18mm</li>\n<li>Lens: FOV D:160° H:127° V:92°</li>\n<li>Net Weight: 5.2g(without cable)</li>\n<li>Shutter: Rolling Shutter</li>\n<li>Image Sensor: 1/3\"</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Nano 90 Camera (with 19 x 19 Mount)</span><br><span></span>\n</li>\n<li>\n<span>1x HDZero RHCP Antenna</span><br><span></span>\n</li>\n<li>\n<span>1x 120mm MIPI Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li><span data-mce-fragment=\"1\">1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img alt=\"HDZero Freestyle 2 VTX\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-selected=\"1\"></p>"
+     },
+     "handle": "hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl",
+     "id": "gid://shopify/p/ZBUz1cVD0vhJx66Tntdmz",
+     "media": [
+      {
+       "alt_text": "HDZERO Camera VTX HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX Kit - U.FL",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl-camera-vtx-30815157485681.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl-camera-vtx-30815157485681.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "90fps HD camera enables 5ms faster video than analog 60i for smoother FPV footage",
+       "CNC-machined RF shielding case ensures improved signal integrity and durability",
+       "Supports 720p60, 1080p30, 540p60, and 540p90 video modes for versatile frame rates",
+       "Secure U.FL and MIPI connections with retention bars and screws for reliable setup",
+       "Wireless power and MSP UART port allow flexible, solderless installation"
+      ],
+      "unique_selling_points": [
+       "Includes the first 90fps HDZero Nano 90 camera for ultra-fast, high-quality video transmission."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 17999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 17999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 22,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 5
+     },
+     "title": "HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX Kit - U.FL",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40251616723057:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div>\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n</div>\n<div class=\"Polaris-Popover__ContentContainer_vq40t\">\n<div class=\"Polaris-Popover__Content_xd1mk Polaris-Popover__Content--fluidContent_141kh\" id=\":r16b:\">\n<div data-polaris-scrollable=\"true\" class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div data-polaris-scrollable=\"true\" class=\"Polaris-Popover__Pane_yisof Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div class=\"_Container_b3ydm_1\">\n<div aria-live=\"polite\" class=\"_OutputSection_cdfjs_1 _WithUplift_cdfjs_7\">\n<div class=\"_ContentWrapper_cdfjs_22\">\n<div data-polaris-scrollable=\"true\" class=\"_Content_cdfjs_22 Polaris-Scrollable_1ed9o Polaris-Scrollable--vertical_uiuuj Polaris-Scrollable--horizontal_17qq4\">\n<div class=\"Polaris-Box_375yx\">\n<div class=\"Polaris-HorizontalStack_dv6q6\">\n<div class=\"_TextOutput_5pg1p_1\">\n<div>\n<div id=\":r16b:\">\n<div data-polaris-scrollable=\"true\">\n<div data-polaris-scrollable=\"true\">\n<div>\n<div aria-live=\"polite\">\n<div>\n<div data-polaris-scrollable=\"true\">\n<div>\n<div>\n<div>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n<p>The kit includes a Runcam HDZero Nano 90, HDZero RHCP Antenna, and a 120mm MIPI Cable. <br data-mce-fragment=\"1\"></p>\n<p>The RunCam HDZero Nano 90 HD Camera is the first 90fps camera for HDZero VTX. This camera enables HDZero to be 5ms faster than analog 60i video to show a full field/frame.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p class=\"Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s\">Check out all our <a title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">VTXs</a> and our <a href=\"https://www.racedayquads.com/collections/hdzero-products\" title=\"HDzero products at race day quads\" target=\"_blank\">HDZero selection</a>.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"margin-bottom: -24px; float: none;\" alt=\"\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" data-mce-style=\"margin-bottom: -24px; float: none;\"></div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"></div>\n<div style=\"text-align: start;\" data-mce-style=\"text-align: start;\"><img style=\"margin-bottom: -23px; float: none;\" alt=\"\" src=\"https://static.wixstatic.com/media/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png/v1/fill/w_578,h_771,al_c,usm_0.66_1.00_0.01/967e02_224e68f76ec34424be1ec4c15d37bebd~mv2.png\" data-mce-style=\"margin-bottom: -23px; float: none;\"></div>\n<h3></h3>\n<h3><br></h3>\n<h3>Specification</h3>\n<p data-mce-fragment=\"1\" class=\"Polaris-Header-Title_2qj8j\"><strong>Freestyle V2 VTX</strong></p>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<p data-hook=\"product-title\" class=\"_2qrJF\"><strong>Runcam HDZero Nano 90</strong></p>\n<ul>\n<li>Resolution: 540P@90fps 4:3 | 720P@60fps 4:3</li>\n<li>Dimensions: L18mmxW14mmxH18mm</li>\n<li>Lens: FOV D:160° H:127° V:92°</li>\n<li>Net Weight: 5.2g(without cable)</li>\n<li>Shutter: Rolling Shutter</li>\n<li>Image Sensor: 1/3\"</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Nano 90 Camera (with 19 x 19 Mount)</span><br><span></span>\n</li>\n<li>\n<span>1x HDZero RHCP Antenna</span><br><span></span>\n</li>\n<li>\n<span>1x 120mm MIPI Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li>\n<span data-mce-fragment=\"1\">1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br data-mce-fragment=\"1\"><span data-mce-fragment=\"1\"></span>\n</li>\n<li><span data-mce-fragment=\"1\">1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img alt=\"HDZero Freestyle 2 VTX\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-selected=\"1\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl",
+       "id": "gid://shopify/ProductVariant/40251616723057",
+       "media": [
+        {
+         "alt_text": "HDZERO Camera VTX HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX Kit - U.FL",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl-camera-vtx-30815157485681.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl-camera-vtx-30815157485681.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 17999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 16,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.7
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6883647914097",
+       "source": "shopify",
+       "title": "HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX Kit - U.FL",
+       "url": "https://www.racedayquads.com/products/hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-kit-u-fl?variant=40251616723057&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>There is nothing like the experience of flying an FPV drone, but building these marvelous machines is more complex than it needs to be. With Tramp, we set out to raise the bar on video transmitter technology. With Ghost, we set out to redefine the norms in receivers for R/C control. And now we have fused these two together, in the groundbreaking Ghost Hybrid. Designed by pilots, built by pilots, supported by pilots.<br></p>\n<p><span data-mce-fragment=\"1\">Check out the entire <a href=\"https://www.racedayquads.com/collections/immersionrc-ghost-rc-system\" data-mce-href=\"https://www.racedayquads.com/collections/immersionrc-ghost-rc-system\" target=\"_blank\">Ghost RC System</a>, as well as the rest of our <a href=\"https://www.racedayquads.com/collections/immersionrc-products\" data-mce-href=\"https://www.racedayquads.com/collections/immersionrc-products\" target=\"_blank\">ImmersionRC</a> selection!</span></p>\n<h3>\n<span data-mce-fragment=\"1\">Features</span><span data-mce-fragment=\"1\"><br></span>\n</h3>\n<ul>\n<li><span data-mce-fragment=\"1\">Two full receiver channels (not just dual antenna)</span></li>\n<li><span data-mce-fragment=\"1\">Only 2.2g, perfect for the popular sub-250g class</span></li>\n<li><span data-mce-fragment=\"1\">Extreme Range AND Low Latency</span></li>\n<li><span data-mce-fragment=\"1\">500Hz R/C Link Updates (HW is 1kHz ready)</span></li>\n<li><span data-mce-fragment=\"1\">2.4GHz Lora OR FLRC control modes, for the best performance in any environment</span></li>\n<li><span data-mce-fragment=\"1\">Integrated 5.8GHz 25mW - 600mW Video Transmitter</span></li>\n<li><span data-mce-fragment=\"1\">Thermally Regulated, Factory Calibrated</span></li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage:<span> </span></span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">VTX Output Power:<span> 25-</span></span><span data-mce-fragment=\"1\">600</span><span data-mce-fragment=\"1\">mW</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector:<span> </span></span><span data-mce-fragment=\"1\">U.FL</span>\n</li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Power/Video Connection: Solder Pads / Plug</span></li>\n<li data-mce-fragment=\"1\">Frequency Range : 2406 - 2479MHz</li>\n<li data-mce-fragment=\"1\">Modulation: Chirp Spread Spectrum + Adaptive FHSS</li>\n<li data-mce-fragment=\"1\">Binding: Bidirectional with confirmation and protocol negotiation</li>\n<li data-mce-fragment=\"1\">RF Profiles: Race, Pure Race, ‘Normal’, and Long Range, more to come</li>\n<li data-mce-fragment=\"1\">Downlink Tx Power: +13dBm</li>\n<li data-mce-fragment=\"1\">Sensitivity: -117dBm in Long Range mode</li>\n<li data-mce-fragment=\"1\">Serial Formats: SBus, SBus-Fast (200k) , SRXL-2 (400k), GHST, SBus Inverted</li>\n<li data-mce-fragment=\"1\">Firmware: Over-the-air (OTA) upgradable</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size:<span> </span></span><span data-mce-fragment=\"1\">20x20mm, 25x25mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions:<span> 31.5</span></span><span data-mce-fragment=\"1\">x30</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight:<span> </span></span><span data-mce-fragment=\"1\">2.2</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Includes</span></h3>\n<ul>\n<li><span data-mce-fragment=\"1\">1x ImmersionRC Ghost Hybrid DUO V2 2.4GHz Receiver &amp; 25-600mW 5.8GHz VTX</span></li>\n</ul>"
+     },
+     "handle": "immersionrc-ghost-hybrid-duo-v2-2-4ghz-receiver-20-600mw-5-8ghz-vtx",
+     "id": "gid://shopify/p/1EwOGvVzreFa92TlZGW0oF",
+     "media": [
+      {
+       "alt_text": "IMMERSIONRC VTX ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/immersionrc-immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-25-600mw-5-8ghz-20x20-vtx-vtx-29008667410545.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/immersionrc-immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-25-600mw-5-8ghz-20x20-vtx-vtx-29008667410545.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual full receiver channels enable advanced multi-channel control for complex FPV maneuvers",
+       "5.8GHz VTX with 25-600mW output power supports long-range, high-quality video transmission",
+       "Thermally regulated, factory-calibrated VTX ensures consistent performance and safety",
+       "Supports multiple RF profiles and control modes for optimal compatibility and performance",
+       "Firmware upgradable via OTA for future-proofing and bug fixes"
+      ],
+      "unique_selling_points": [
+       "Combines a 2.4GHz diversity receiver with a 5.8GHz VTX in a single, pilot-built system for unmatched range and reliability."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8249,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8249,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 3,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.3
+     },
+     "title": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/39525356961905:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>There is nothing like the experience of flying an FPV drone, but building these marvelous machines is more complex than it needs to be. With Tramp, we set out to raise the bar on video transmitter technology. With Ghost, we set out to redefine the norms in receivers for R/C control. And now we have fused these two together, in the groundbreaking Ghost Hybrid. Designed by pilots, built by pilots, supported by pilots.<br></p>\n<p><span data-mce-fragment=\"1\">Check out the entire <a href=\"https://www.racedayquads.com/collections/immersionrc-ghost-rc-system\" data-mce-href=\"https://www.racedayquads.com/collections/immersionrc-ghost-rc-system\" target=\"_blank\">Ghost RC System</a>, as well as the rest of our <a href=\"https://www.racedayquads.com/collections/immersionrc-products\" data-mce-href=\"https://www.racedayquads.com/collections/immersionrc-products\" target=\"_blank\">ImmersionRC</a> selection!</span></p>\n<h3>\n<span data-mce-fragment=\"1\">Features</span><span data-mce-fragment=\"1\"><br></span>\n</h3>\n<ul>\n<li><span data-mce-fragment=\"1\">Two full receiver channels (not just dual antenna)</span></li>\n<li><span data-mce-fragment=\"1\">Only 2.2g, perfect for the popular sub-250g class</span></li>\n<li><span data-mce-fragment=\"1\">Extreme Range AND Low Latency</span></li>\n<li><span data-mce-fragment=\"1\">500Hz R/C Link Updates (HW is 1kHz ready)</span></li>\n<li><span data-mce-fragment=\"1\">2.4GHz Lora OR FLRC control modes, for the best performance in any environment</span></li>\n<li><span data-mce-fragment=\"1\">Integrated 5.8GHz 25mW - 600mW Video Transmitter</span></li>\n<li><span data-mce-fragment=\"1\">Thermally Regulated, Factory Calibrated</span></li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage:<span> </span></span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">VTX Output Power:<span> 25-</span></span><span data-mce-fragment=\"1\">600</span><span data-mce-fragment=\"1\">mW</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector:<span> </span></span><span data-mce-fragment=\"1\">U.FL</span>\n</li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Power/Video Connection: Solder Pads / Plug</span></li>\n<li data-mce-fragment=\"1\">Frequency Range : 2406 - 2479MHz</li>\n<li data-mce-fragment=\"1\">Modulation: Chirp Spread Spectrum + Adaptive FHSS</li>\n<li data-mce-fragment=\"1\">Binding: Bidirectional with confirmation and protocol negotiation</li>\n<li data-mce-fragment=\"1\">RF Profiles: Race, Pure Race, ‘Normal’, and Long Range, more to come</li>\n<li data-mce-fragment=\"1\">Downlink Tx Power: +13dBm</li>\n<li data-mce-fragment=\"1\">Sensitivity: -117dBm in Long Range mode</li>\n<li data-mce-fragment=\"1\">Serial Formats: SBus, SBus-Fast (200k) , SRXL-2 (400k), GHST, SBus Inverted</li>\n<li data-mce-fragment=\"1\">Firmware: Over-the-air (OTA) upgradable</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size:<span> </span></span><span data-mce-fragment=\"1\">20x20mm, 25x25mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions:<span> 31.5</span></span><span data-mce-fragment=\"1\">x30</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight:<span> </span></span><span data-mce-fragment=\"1\">2.2</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Includes</span></h3>\n<ul>\n<li><span data-mce-fragment=\"1\">1x ImmersionRC Ghost Hybrid DUO V2 2.4GHz Receiver &amp; 25-600mW 5.8GHz VTX</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "immersionrc-ghost-hybrid-duo-v2-2-4ghz-receiver-20-600mw-5-8ghz-vtx",
+       "id": "gid://shopify/ProductVariant/39525356961905",
+       "media": [
+        {
+         "alt_text": "IMMERSIONRC VTX ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/immersionrc-immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-25-600mw-5-8ghz-20x20-vtx-vtx-29008667410545.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/products/immersionrc-immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-25-600mw-5-8ghz-20x20-vtx-vtx-29008667410545.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 8249,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 4,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6630284787825",
+       "source": "shopify",
+       "title": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+       "url": "https://www.racedayquads.com/products/immersionrc-ghost-hybrid-duo-v2-2-4ghz-receiver-20-600mw-5-8ghz-vtx?variant=39525356961905&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>There is nothing like the experience of flying an FPV drone, but building these marvelous machines is more complex than it needs to be. With Tramp, we set out to raise the bar on video transmitter technology. With Ghost, we set out to redefine the norms in receivers for R/C control. And now we have fused these two together, in the groundbreaking Ghost Hybrid. Designed by pilots, built by pilots, supported by pilots.<br></p>\n<p><span data-mce-fragment=\"1\">Check out the entire <a href=\"https://www.WREKD.com/collections/immersionrc-ghost-rc-system\" target=\"_blank\" data-mce-href=\"https://www.WREKD.com/collections/immersionrc-ghost-rc-system\">Ghost RC System</a>, as well as the rest of our <a href=\"https://www.WREKD.com/collections/immersionrc-products\" target=\"_blank\" data-mce-href=\"https://www.WREKD.com/collections/immersionrc-products\">ImmersionRC</a> selection!</span></p>\n<h3>\n<span data-mce-fragment=\"1\">Features</span><span data-mce-fragment=\"1\"><br></span>\n</h3>\n<ul>\n<li><span data-mce-fragment=\"1\">Two full receiver channels (not just dual antenna)</span></li>\n<li><span data-mce-fragment=\"1\">Only 2.2g, perfect for the popular sub-250g class</span></li>\n<li><span data-mce-fragment=\"1\">Extreme Range AND Low Latency</span></li>\n<li><span data-mce-fragment=\"1\">500Hz R/C Link Updates (HW is 1kHz ready)</span></li>\n<li><span data-mce-fragment=\"1\">2.4GHz Lora OR FLRC control modes, for the best performance in any environment</span></li>\n<li><span data-mce-fragment=\"1\">Integrated 5.8GHz 25mW - 600mW Video Transmitter</span></li>\n<li><span data-mce-fragment=\"1\">Thermally Regulated, Factory Calibrated</span></li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage:</span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">VTX Output Power:<span> 25-</span></span><span data-mce-fragment=\"1\">600</span><span data-mce-fragment=\"1\">mW</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector:</span><span data-mce-fragment=\"1\">U.FL</span>\n</li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Power/Video Connection: Solder Pads / Plug</span></li>\n<li data-mce-fragment=\"1\">Frequency Range : 2406 - 2479MHz</li>\n<li data-mce-fragment=\"1\">Modulation: Chirp Spread Spectrum + Adaptive FHSS</li>\n<li data-mce-fragment=\"1\">Binding: Bidirectional with confirmation and protocol negotiation</li>\n<li data-mce-fragment=\"1\">RF Profiles: Race, Pure Race, ‘Normal’, and Long Range, more to come</li>\n<li data-mce-fragment=\"1\">Downlink Tx Power: +13dBm</li>\n<li data-mce-fragment=\"1\">Sensitivity: -117dBm in Long Range mode</li>\n<li data-mce-fragment=\"1\">Serial Formats: SBus, SBus-Fast (200k) , SRXL-2 (400k), GHST, SBus Inverted</li>\n<li data-mce-fragment=\"1\">Firmware: Over-the-air (OTA) upgradable</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size:</span><span data-mce-fragment=\"1\">20x20mm, 25x25mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions:<span> 31.5</span></span><span data-mce-fragment=\"1\">x30</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight:</span><span data-mce-fragment=\"1\">2.2</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Includes</span></h3>\n<ul>\n<li><span data-mce-fragment=\"1\">1x ImmersionRC Ghost Hybrid DUO V2 2.4GHz Receiver &amp; 20-600mW 5.8GHz VTX</span></li>\n</ul>"
+     },
+     "handle": "immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-20-600mw-5-8ghz-20x20-vtx",
+     "id": "gid://shopify/p/7ksN3hUx94ADAs2p0zpOCh",
+     "media": [
+      {
+       "alt_text": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 20-600mW 5.8GHz 20x20 VTX at WREKD Co.",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/products/immersionrc-ghost-hybrid-duo-v2-24ghz-diversity-receiver-20-600mw-58ghz-20x20-vtx-646268.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/products/immersionrc-ghost-hybrid-duo-v2-24ghz-diversity-receiver-20-600mw-58ghz-20x20-vtx-646268.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dual full receiver channels enable advanced multi-channel control for complex FPV maneuvers",
+       "Integrated 5.8GHz VTX with 25-600mW power output ensures strong, stable video signal transmission",
+       "2.4GHz and 5.8GHz frequency bands provide flexibility and reduced interference in any environment",
+       "Thermally regulated, factory-calibrated VTX maintains optimal performance during extended use",
+       "Firmware over the air (OTA) upgradability allows for easy software updates without physical intervention"
+      ],
+      "unique_selling_points": [
+       "Combines a dual-channel 2.4GHz receiver with a 5.8GHz VTX in one system for unmatched control precision and range."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8249,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8249,
+       "currency": "USD"
+      }
+     },
+     "title": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://wrekd.com/buy/47528943845680:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>There is nothing like the experience of flying an FPV drone, but building these marvelous machines is more complex than it needs to be. With Tramp, we set out to raise the bar on video transmitter technology. With Ghost, we set out to redefine the norms in receivers for R/C control. And now we have fused these two together, in the groundbreaking Ghost Hybrid. Designed by pilots, built by pilots, supported by pilots.<br></p>\n<p><span data-mce-fragment=\"1\">Check out the entire <a href=\"https://www.WREKD.com/collections/immersionrc-ghost-rc-system\" target=\"_blank\" data-mce-href=\"https://www.WREKD.com/collections/immersionrc-ghost-rc-system\">Ghost RC System</a>, as well as the rest of our <a href=\"https://www.WREKD.com/collections/immersionrc-products\" target=\"_blank\" data-mce-href=\"https://www.WREKD.com/collections/immersionrc-products\">ImmersionRC</a> selection!</span></p>\n<h3>\n<span data-mce-fragment=\"1\">Features</span><span data-mce-fragment=\"1\"><br></span>\n</h3>\n<ul>\n<li><span data-mce-fragment=\"1\">Two full receiver channels (not just dual antenna)</span></li>\n<li><span data-mce-fragment=\"1\">Only 2.2g, perfect for the popular sub-250g class</span></li>\n<li><span data-mce-fragment=\"1\">Extreme Range AND Low Latency</span></li>\n<li><span data-mce-fragment=\"1\">500Hz R/C Link Updates (HW is 1kHz ready)</span></li>\n<li><span data-mce-fragment=\"1\">2.4GHz Lora OR FLRC control modes, for the best performance in any environment</span></li>\n<li><span data-mce-fragment=\"1\">Integrated 5.8GHz 25mW - 600mW Video Transmitter</span></li>\n<li><span data-mce-fragment=\"1\">Thermally Regulated, Factory Calibrated</span></li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Specifications</span></h3>\n<ul>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Input Voltage:</span><span data-mce-fragment=\"1\">5</span><span data-mce-fragment=\"1\">V</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">VTX Output Power:<span> 25-</span></span><span data-mce-fragment=\"1\">600</span><span data-mce-fragment=\"1\">mW</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Antenna Connector:</span><span data-mce-fragment=\"1\">U.FL</span>\n</li>\n<li data-mce-fragment=\"1\"><span data-mce-fragment=\"1\">Power/Video Connection: Solder Pads / Plug</span></li>\n<li data-mce-fragment=\"1\">Frequency Range : 2406 - 2479MHz</li>\n<li data-mce-fragment=\"1\">Modulation: Chirp Spread Spectrum + Adaptive FHSS</li>\n<li data-mce-fragment=\"1\">Binding: Bidirectional with confirmation and protocol negotiation</li>\n<li data-mce-fragment=\"1\">RF Profiles: Race, Pure Race, ‘Normal’, and Long Range, more to come</li>\n<li data-mce-fragment=\"1\">Downlink Tx Power: +13dBm</li>\n<li data-mce-fragment=\"1\">Sensitivity: -117dBm in Long Range mode</li>\n<li data-mce-fragment=\"1\">Serial Formats: SBus, SBus-Fast (200k) , SRXL-2 (400k), GHST, SBus Inverted</li>\n<li data-mce-fragment=\"1\">Firmware: Over-the-air (OTA) upgradable</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Stack Size:</span><span data-mce-fragment=\"1\">20x20mm, 25x25mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Dimensions:<span> 31.5</span></span><span data-mce-fragment=\"1\">x30</span><span data-mce-fragment=\"1\">mm</span>\n</li>\n<li data-mce-fragment=\"1\">\n<span data-mce-fragment=\"1\">Weight:</span><span data-mce-fragment=\"1\">2.2</span><span data-mce-fragment=\"1\">g</span>\n</li>\n</ul>\n<h3><span data-mce-fragment=\"1\">Includes</span></h3>\n<ul>\n<li><span data-mce-fragment=\"1\">1x ImmersionRC Ghost Hybrid DUO V2 2.4GHz Receiver &amp; 20-600mW 5.8GHz VTX</span></li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-20-600mw-5-8ghz-20x20-vtx",
+       "id": "gid://shopify/ProductVariant/47528943845680",
+       "media": [
+        {
+         "alt_text": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 20-600mW 5.8GHz 20x20 VTX at WREKD Co.",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/products/immersionrc-ghost-hybrid-duo-v2-24ghz-diversity-receiver-20-600mw-58ghz-20x20-vtx-646268.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0722/5661/8800/products/immersionrc-ghost-hybrid-duo-v2-24ghz-diversity-receiver-20-600mw-58ghz-20x20-vtx-646268.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 8249,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "kaack.myshopify.com",
+        "id": "gid://shopify/Shop/72256618800",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121820464.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121853232.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/72256618800/policies/30121787696.html"
+         }
+        ],
+        "name": "WREKD Co.",
+        "url": "https://wrekd.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8934749045040",
+       "source": "shopify",
+       "title": "ImmersionRC Ghost Hybrid DUO V2 2.4GHz Diversity Receiver & 25-600mW 5.8GHz 20x20 VTX",
+       "url": "https://wrekd.com/products/immersionrc-ghost-hybrid-duo-v2-2-4ghz-diversity-receiver-20-600mw-5-8ghz-20x20-vtx?variant=47528943845680&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"Polaris-Popover__ContentContainer_vq40t\">\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees protection and durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n</div>\n<div>\n<div id=\":r16b:\">\n<div data-polaris-scrollable=\"true\">\n<div data-polaris-scrollable=\"true\">\n<div>\n<div aria-live=\"polite\">\n<div>\n<div data-polaris-scrollable=\"true\">\n<div>\n<div>\n<div>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p>Check out all our <a href=\"https://www.racedayquads.com/collections/all-video-transmitters\" title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\">VTXs</a> and our <a href=\"https://www.racedayquads.com/collections/hdzero-products\" title=\"HDzero products at race day quads\" target=\"_blank\">HDZero selection</a>.</p>\n<p><img data-mce-fragment=\"1\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" style=\"font-size: 0.875rem;\" data-mce-src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" data-mce-style=\"font-size: 0.875rem;\"><br></p>\n<h3>Specification</h3>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br><span></span>\n</li>\n<li>\n<span>1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br><span></span>\n</li>\n<li><span>1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img alt=\"HDZero Freestyle 2 VTX\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\"></p>\n<ul></ul>"
+     },
+     "handle": "hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl",
+     "id": "gid://shopify/p/5y02Nwj3JgJkvanu8jlefC",
+     "media": [
+      {
+       "alt_text": "HDZERO Camera VTX HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl-camera-vtx-30815156306033.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl-camera-vtx-30815156306033.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Low-latency video transmission ensures responsive FPV control for tight maneuvers",
+       "High-definition clarity provides clear, real-time video feeds for competitive racing",
+       "Compact and lightweight build fits most freestyle and 3.5-inch drones for easy installation",
+       "Durable CNC case and RF shielding protect against harsh conditions and improve signal integrity",
+       "Advanced cooling system maintains optimal performance during extended flights"
+      ],
+      "unique_selling_points": [
+       "Delivers real-time, high-definition video with minimal latency in a lightweight, durable design for freestyle FPV drones."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 11899,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 11899,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 28,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40251616526449:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"Polaris-Popover__ContentContainer_vq40t\">\n<p>HDZero Freestyle V2 VTX is the second generation 5.8GHz digital video transmitter, perfect for most 3.5-inch and 5-inch drones. It comes in a CNC case that guarantees protection and durable RF shielding with improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. Moreover, the antenna and MIPI cable are secured with a retention bar and screws. This VTX supports 720p60, 1080p30, 540p60, and 540p90 video modes. </p>\n</div>\n<div>\n<div id=\":r16b:\">\n<div data-polaris-scrollable=\"true\">\n<div data-polaris-scrollable=\"true\">\n<div>\n<div aria-live=\"polite\">\n<div>\n<div data-polaris-scrollable=\"true\">\n<div>\n<div>\n<div>\n<p>This VTX can fit most frames that can accommodate the Caddx Vista/Runcam Link VTX.<br></p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<p>Check out all our <a href=\"https://www.racedayquads.com/collections/all-video-transmitters\" title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" target=\"_blank\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\">VTXs</a> and our <a href=\"https://www.racedayquads.com/collections/hdzero-products\" title=\"HDzero products at race day quads\" target=\"_blank\">HDZero selection</a>.</p>\n<p><img data-mce-fragment=\"1\" src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" style=\"font-size: 0.875rem;\" data-mce-src=\"https://www.defiancerc.com/cdn/shop/files/IMG-4282.jpg?v=1694527830\" data-mce-style=\"font-size: 0.875rem;\"><br></p>\n<h3>Specification</h3>\n<ul>\n<li>Manufacturer:  Divimath, Inc</li>\n<li>Model:  HDZero Freestyle V2 VTX</li>\n<li>Weight:  22.3g</li>\n<li>Dimensions:  29x30x14mm</li>\n<li>Operating Frequency:  5.725-5.850GHz</li>\n<li>Transmitter Power:  25mW, 200mW, XXXXmW</li>\n<li>Mounting Pattern:  20x20mm M2 Holes</li>\n<li>Antenna Interface:  Secured u.FL</li>\n<li>Video In:  Secured MIPI</li>\n<li>SmartAudio:  YES</li>\n<li>MSP Canvas Mode:  YES</li>\n<li>Input Power:  7-25V</li>\n<li>Operating Temperature:  32F-104F (0-40C)</li>\n<li>Power Consumption:  6-15W</li>\n</ul>\n<h3>Includes</h3>\n<ul>\n<li>1x  HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL</li>\n<li>\n<span>1x Power Cable</span><br><span></span>\n</li>\n<li>\n<span>1x SA Cable</span><br><span></span>\n</li>\n<li>\n<span>1x Plastic bar for MIPI Cable with 3x Screws (M1.4 x 2mm)</span><br><span></span>\n</li>\n<li>\n<span>1x Plastic bar for U.FL with 3x Screws (M1.4 x 8mm)</span><br><span></span>\n</li>\n<li><span>1x Double Sided Tape (29 x 30 x 1mm)</span></li>\n</ul>\n<h4>Wiring Diagram</h4>\n<p><img alt=\"HDZero Freestyle 2 VTX\" src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\" data-mce-src=\"https://cdn.shopify.com/s/files/1/1349/4827/files/FreestyleWiringDiagram.jpg?v=1694489738\"></p>\n<ul></ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl",
+       "id": "gid://shopify/ProductVariant/40251616526449",
+       "media": [
+        {
+         "alt_text": "HDZERO Camera VTX HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl-camera-vtx-30815156306033.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl-camera-vtx-30815156306033.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 11899,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 15,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.7
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6883647848561",
+       "source": "shopify",
+       "title": "HDZero Freestyle V2 20x20 25-1000mW Digital HD VTX - U.FL",
+       "url": "https://www.racedayquads.com/products/hdzero-freestyle-v2-20x20-25-1000mw-digital-hd-vtx-u-fl?variant=40251616526449&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>The HDZero Race V3 1080P VTX is your ideal choice for durability and reliability. Additionally, the Race V3 features larger components for increased <span data-mce-fragment=\"1\">stability consideration </span>and an extra glue coating for superior crash protection. Get the ultimate VTX for race-ready performance. This board is rated with a 1.6mm thick PCB and reverse polarity protection circuit, you'll experience safer time working on this board. <span data-mce-fragment=\"1\">No soldering is needed – just plug the wire harness into a compatible HD-ready FC. </span></p>\n<p><span>The HDZero Race V3 VTX offers high-quality video in 540p90, 720p60 and 1080p30 resolutions with 25/200mW </span><span>switchable</span><span> power on 5.8GHz.</span></p>\n<p><span>Check out </span><a title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">all our VTXs</a> and our <a data-mce-fragment=\"1\" title=\"HDzero products at race day quads\" href=\"https://www.racedayquads.com/collections/hdzero-products\" data-mce-href=\"https://www.racedayquads.com/collections/hdzero-products\">HDZero selection</a></p>\n<h3>Features</h3>\n<ul>\n<li>Easy installation without soldering, just plug the wire harness into a compatible HD-ready FC</li>\n<li>High-quality video in multiple resolutions: 540p90, 720p60, and 1080p30</li>\n<li>Improved durability and reduced weight with a width similar to many FCs</li>\n<li>Additional glue coating for crash protection of smaller components</li>\n<li>Secure attachment of antenna with a metal bar and screws</li>\n<li>Switchable power options: 25mW and 200mW</li>\n<li>Small and lightweight: 28x32x5mm, 5.5 grams</li>\n<li>Large package size components for stability</li>\n<li>Durable design with a 1.6mm thick PCB</li>\n<li>Operates on a 5.8GHz frequency band</li>\n<li>3rd generation digital video transmitter</li>\n<li>Wide voltage range: 4V to 12V</li>\n<li>Designed for FPV racing</li>\n</ul>\n<p><iframe title=\"HDZero Race v3 is the new state-of-the-art for drone racing\" src=\"https://www.youtube.com/embed/PTqhmHctHAc\" height=\"715\" width=\"1271\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe title=\"HDZero Race V3 vtx\" src=\"https://www.youtube.com/embed/ZPyMPMmUcC4\" height=\"656\" width=\"1166\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe width=\"1166\" height=\"656\" src=\"https://www.youtube.com/embed/ichBA9cgubg\" title=\"HDZero New Race V3 VTX - Smaller, More Durable &amp; 540P 14ms Latency\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"></iframe></p>\n<p><img src=\"https://static.wixstatic.com/media/967e02_8482c15f98a74194a417400dcde9a98c~mv2.png/v1/fill/w_712,h_712,al_c,usm_0.66_1.00_0.01/967e02_8482c15f98a74194a417400dcde9a98c~mv2.png\"></p>\n<h3>Specifications</h3>\n<ul>\n<li>Resolution Default: 540p90/720p60/1080p30<br>\n</li>\n<li>Frequency: 5.725-5.850GHz<br>\n</li>\n<li>RF power: 25mw/200mw<br>\n</li>\n<li>RF Connector: Secured U.FL<br>\n</li>\n<li>Interface: 4 lane MIPI CSI YUV422<br>\n</li>\n<li>Video Connector: 20 Position 0.30mm Pitch<br>\n</li>\n<li>Size: 32mmx28mmx5mm<br>\n</li>\n<li>Weight: 5.5g<br>\n</li>\n<li>Harness length: 40mm<br>\n</li>\n<li>power input: 4V-12V<br>\n</li>\n<li>Mounting: 20mm x 20mm M4 with rubber grommets</li>\n</ul>\n<h3 data-element=\"main\" data-appearance=\"default\" data-content-type=\"heading\">Firmware<br>\n</h3>\n<div data-element=\"main\" data-appearance=\"default\" data-content-type=\"text\">\n<ul>\n<li><a href=\"https://github.com/hd-zero/hdzero-vtx/releases/tag/v1.3.0\" target=\"_blank\">Firmware</a></li>\n</ul>\n</div>\n<h3>Includes</h3>\n<ul>\n<li>1x HDZero Race V3 720P 20x20 25-200mw Digital HD VTX </li>\n</ul>"
+     },
+     "handle": "hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx",
+     "id": "gid://shopify/p/6tHgVSPz36gQjwzA1eyha7",
+     "media": [
+      {
+       "alt_text": "HDZERO VTX HDZero Race V3 1080P 20x20 25-200mw Digital HD VTX",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx-vtx-30768960274545.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx-vtx-30768960274545.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Ultra-lightweight 5.5 g build reduces overall drone weight for improved flight performance",
+       "Switchable 25mW/200mW RF power output enables flexible transmission for different racing conditions",
+       "Wide voltage input range (4V–12V) ensures compatibility with most FCs and regulators",
+       "Durable 1.6 mm thick PCB and glue-coated components provide enhanced crash and shock resistance",
+       "Plug-and-play antenna attachment with metal bar and screws eliminates soldering for quick installation"
+      ],
+      "unique_selling_points": [
+       "Ultra-lightweight, crash-resistant design with switchable 25mW/200mW power and wide voltage range for FPV racing."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 8399,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 8399,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 25,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "HDZero Race V3 1080P 20x20 25-200mw Digital HD VTX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40221174694001:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>The HDZero Race V3 1080P VTX is your ideal choice for durability and reliability. Additionally, the Race V3 features larger components for increased <span data-mce-fragment=\"1\">stability consideration </span>and an extra glue coating for superior crash protection. Get the ultimate VTX for race-ready performance. This board is rated with a 1.6mm thick PCB and reverse polarity protection circuit, you'll experience safer time working on this board. <span data-mce-fragment=\"1\">No soldering is needed – just plug the wire harness into a compatible HD-ready FC. </span></p>\n<p><span>The HDZero Race V3 VTX offers high-quality video in 540p90, 720p60 and 1080p30 resolutions with 25/200mW </span><span>switchable</span><span> power on 5.8GHz.</span></p>\n<p><span>Check out </span><a title=\"all vtxs /FPV Products for Sale at RaceDayQuads\" href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">all our VTXs</a> and our <a data-mce-fragment=\"1\" title=\"HDzero products at race day quads\" href=\"https://www.racedayquads.com/collections/hdzero-products\" data-mce-href=\"https://www.racedayquads.com/collections/hdzero-products\">HDZero selection</a></p>\n<h3>Features</h3>\n<ul>\n<li>Easy installation without soldering, just plug the wire harness into a compatible HD-ready FC</li>\n<li>High-quality video in multiple resolutions: 540p90, 720p60, and 1080p30</li>\n<li>Improved durability and reduced weight with a width similar to many FCs</li>\n<li>Additional glue coating for crash protection of smaller components</li>\n<li>Secure attachment of antenna with a metal bar and screws</li>\n<li>Switchable power options: 25mW and 200mW</li>\n<li>Small and lightweight: 28x32x5mm, 5.5 grams</li>\n<li>Large package size components for stability</li>\n<li>Durable design with a 1.6mm thick PCB</li>\n<li>Operates on a 5.8GHz frequency band</li>\n<li>3rd generation digital video transmitter</li>\n<li>Wide voltage range: 4V to 12V</li>\n<li>Designed for FPV racing</li>\n</ul>\n<p><iframe title=\"HDZero Race v3 is the new state-of-the-art for drone racing\" src=\"https://www.youtube.com/embed/PTqhmHctHAc\" height=\"715\" width=\"1271\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe title=\"HDZero Race V3 vtx\" src=\"https://www.youtube.com/embed/ZPyMPMmUcC4\" height=\"656\" width=\"1166\" allowfullscreen=\"\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" frameborder=\"0\"></iframe></p>\n<p><iframe width=\"1166\" height=\"656\" src=\"https://www.youtube.com/embed/ichBA9cgubg\" title=\"HDZero New Race V3 VTX - Smaller, More Durable &amp; 540P 14ms Latency\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"></iframe></p>\n<p><img src=\"https://static.wixstatic.com/media/967e02_8482c15f98a74194a417400dcde9a98c~mv2.png/v1/fill/w_712,h_712,al_c,usm_0.66_1.00_0.01/967e02_8482c15f98a74194a417400dcde9a98c~mv2.png\"></p>\n<h3>Specifications</h3>\n<ul>\n<li>Resolution Default: 540p90/720p60/1080p30<br>\n</li>\n<li>Frequency: 5.725-5.850GHz<br>\n</li>\n<li>RF power: 25mw/200mw<br>\n</li>\n<li>RF Connector: Secured U.FL<br>\n</li>\n<li>Interface: 4 lane MIPI CSI YUV422<br>\n</li>\n<li>Video Connector: 20 Position 0.30mm Pitch<br>\n</li>\n<li>Size: 32mmx28mmx5mm<br>\n</li>\n<li>Weight: 5.5g<br>\n</li>\n<li>Harness length: 40mm<br>\n</li>\n<li>power input: 4V-12V<br>\n</li>\n<li>Mounting: 20mm x 20mm M4 with rubber grommets</li>\n</ul>\n<h3 data-element=\"main\" data-appearance=\"default\" data-content-type=\"heading\">Firmware<br>\n</h3>\n<div data-element=\"main\" data-appearance=\"default\" data-content-type=\"text\">\n<ul>\n<li><a href=\"https://github.com/hd-zero/hdzero-vtx/releases/tag/v1.3.0\" target=\"_blank\">Firmware</a></li>\n</ul>\n</div>\n<h3>Includes</h3>\n<ul>\n<li>1x HDZero Race V3 720P 20x20 25-200mw Digital HD VTX </li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx",
+       "id": "gid://shopify/ProductVariant/40221174694001",
+       "media": [
+        {
+         "alt_text": "HDZERO VTX HDZero Race V3 1080P 20x20 25-200mw Digital HD VTX",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx-vtx-30768960274545.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/hdzero-hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx-vtx-30768960274545.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 8399,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 10,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 4.9
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/6872676532337",
+       "source": "shopify",
+       "title": "HDZero Race V3 1080P 20x20 25-200mw Digital HD VTX",
+       "url": "https://www.racedayquads.com/products/hdzero-race-v3-1080p-20x20-25-200mw-digital-hd-vtx?variant=40221174694001&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>With the TBS UNIFY PRO32 HV we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor.</p>\n<p><span data-mce-fragment=\"1\">Check out the rest of out <a href=\"https://www.racedayquads.com/collections/tbs\" title=\"TBS products at RDQ\" rel=\"noopener\" target=\"_blank\">TBS Products</a> and <a href=\"https://www.racedayquads.com/collections/all-video-transmitters\" title=\"all video transmitters for Sale at RaceDayQuads\" rel=\"noopener\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">all our VTXs</a>!</span></p>\n<h3>Features</h3>\n<p>With the TBS UNIFY PRO32 HV (MMCX) we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor. In a nutshell, it’s the most comprehensive, future proof, highest quality and overall best HV VTx ever made.</p>\n<ul>\n<li>Double-decker design for insane cooling and durability<br>\n</li>\n<li>1000mW output power<br>\n</li>\n<li>Ultra-clean transmission (up to 16 pilots at once!)<br>\n</li>\n<li>PitMode - power up your quad during a race. Now with team-race capability!<br>\n</li>\n<li>Easy OSD, FC and RC channel changes, with fallback button menu<br>\n</li>\n<li>Robust RF amplifier allows powering up without antenna for hours!<br>\n</li>\n<li>Clean powerup and video switching<br>\n</li>\n<li>CE certified</li>\n</ul>\n<p><br><strong>PitMode - Made to race</strong><br>Zero interference even while powered up, it's now a possibility! If you've ever repaired a quad during a race, you'll know the frustrations of not being able to power on and test your system. With PitMode, we will reduce the output power to a bare minimum (way below single digit mW's) to allow you to power up your quad and still see the image! You've got less than one meter of range to put your quad through its paces before placing it on that starting grid. Using SmartAudio or CRSF, you can power up the VTx using your remote!</p>\n<p><strong>SmartAudio V2.1 &amp; CRSF - Team Race Ready</strong><br>SmartAudio technology provides UART control for your entire video transmitter. Parameters such as output power, bands, channels and frequency can be freely controlled. This enables remote channel control directly from a smart device (TBS Crossfire, external bluetooth or wifi module required), from your radio (TBS Crossfire with TBS Tango or OpenTX compatible remote required), or from the OSD (e.g. Betaflight OSD, TBS CORE PRO).</p>\n<p>With all these options available, you ought to find something that fits your bill. Together with CleanSwitch, the sky is the limit ... jump between channels without interfering fellow pilots in air, create backup-/emergency-frequencies, global VTx power adjustments by race organizers or other clever systems aimed at streamlining and improving race management are now a possibility!</p>\n<p><strong>CleanSwitch - Neighbor friendly</strong><br>CleanSwitch is a technology developed at TBS that will ensure that your video transmitter is interference-free while powering on, or while changing channels. All current video transmitters swipe across the entire band while being powered on, often resulting in flickering and heavy interference to anyone in the air, regardless of video channel chosen. TBS CleanSwitch will allow you to power on and change channels while your buddies are in the air, without any external interference. CleanSwitch is race friendly, and pilot friendly ... that's how we like it at TBS.</p>\n<h3>Specification</h3>\n<ul>\n<li>Operating Voltage: 6V - 25V (2 - 6S)<br>\n</li>\n<li>Operating Temperature: watch for normal airflow<br>\n</li>\n<li>Video Input Impedance: 75 Ohm<br>\n</li>\n<li>Weight: 8.7g<br>\n</li>\n<li>Dimensions: 37 x 25 x 5.8mm<br>\n</li>\n<li>Antenna Connector: MMCX<br>\n</li>\n<li>Video Format: NTSC/PAL<br>\n</li>\n<li>Output Power: 14dBm (25mW), 20dBm (100mW), 26dBm (400mW), 30dBm+ (1000mW+)</li>\n</ul>\n<p><a href=\"https://www.team-blacksheep.com/tbs-unify-pro32-manual.pdf\" target=\"_blank\" title=\"TBS Unify PRO32 Manual\" rel=\"noopener\">TBS Unify PRO32 Manual</a></p>\n<h3>Includes</h3>\n<ul>\n<li>1x TBS UNIFY PRO32 5G8 HV Video transmitter<br>\n</li>\n<li>1x Silicone cable (ends pre-tinned)<br>\n</li>\n<li>1x MMCX to SMA pigtail</li>\n</ul>\n<p> </p>\n<!---->"
+     },
+     "handle": "tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx",
+     "id": "gid://shopify/p/1OSdtClZH5UR1mHPq95Rkb",
+     "media": [
+      {
+       "alt_text": "TBS VTX TBS Unify Pro32 HV 25-1000mW 5.8GHz VTX - MMCX",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/tbs-tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx-vtx-31698206294129.jpg",
+        "width": 700
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/tbs-tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx-vtx-31698206294129.jpg",
+       "width": 700
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Double-decker design maximizes cooling and durability for extended use",
+       "Ultra-clean transmission supports up to 16 pilots simultaneously without interference",
+       "PitMode enables power-up of the drone during races for real-time adjustments",
+       "CleanSwitch technology allows interference-free power-up and channel switching",
+       "SmartAudio and CRSF compatibility provide remote and direct control of video transmitter parameters"
+      ],
+      "unique_selling_points": [
+       "Delivers up to 1000mW output power with ultra-clean transmission and advanced race features like PitMode and CleanSwitch."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 5999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 5999,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 100,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.7
+     },
+     "title": "TBS Unify Pro32 HV 25-1000mW 5.8GHz VTX - MMCX",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.racedayquads.com/buy/40882403311729:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=CaJ1igkpw2Cc&_gsid=CaJ1igkpw2Cc",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>With the TBS UNIFY PRO32 HV we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor.</p>\n<p><span data-mce-fragment=\"1\">Check out the rest of out <a href=\"https://www.racedayquads.com/collections/tbs\" title=\"TBS products at RDQ\" rel=\"noopener\" target=\"_blank\">TBS Products</a> and <a href=\"https://www.racedayquads.com/collections/all-video-transmitters\" title=\"all video transmitters for Sale at RaceDayQuads\" rel=\"noopener\" data-mce-fragment=\"1\" data-mce-href=\"https://www.racedayquads.com/collections/all-video-transmitters\" target=\"_blank\">all our VTXs</a>!</span></p>\n<h3>Features</h3>\n<p>With the TBS UNIFY PRO32 HV (MMCX) we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor. In a nutshell, it’s the most comprehensive, future proof, highest quality and overall best HV VTx ever made.</p>\n<ul>\n<li>Double-decker design for insane cooling and durability<br>\n</li>\n<li>1000mW output power<br>\n</li>\n<li>Ultra-clean transmission (up to 16 pilots at once!)<br>\n</li>\n<li>PitMode - power up your quad during a race. Now with team-race capability!<br>\n</li>\n<li>Easy OSD, FC and RC channel changes, with fallback button menu<br>\n</li>\n<li>Robust RF amplifier allows powering up without antenna for hours!<br>\n</li>\n<li>Clean powerup and video switching<br>\n</li>\n<li>CE certified</li>\n</ul>\n<p><br><strong>PitMode - Made to race</strong><br>Zero interference even while powered up, it's now a possibility! If you've ever repaired a quad during a race, you'll know the frustrations of not being able to power on and test your system. With PitMode, we will reduce the output power to a bare minimum (way below single digit mW's) to allow you to power up your quad and still see the image! You've got less than one meter of range to put your quad through its paces before placing it on that starting grid. Using SmartAudio or CRSF, you can power up the VTx using your remote!</p>\n<p><strong>SmartAudio V2.1 &amp; CRSF - Team Race Ready</strong><br>SmartAudio technology provides UART control for your entire video transmitter. Parameters such as output power, bands, channels and frequency can be freely controlled. This enables remote channel control directly from a smart device (TBS Crossfire, external bluetooth or wifi module required), from your radio (TBS Crossfire with TBS Tango or OpenTX compatible remote required), or from the OSD (e.g. Betaflight OSD, TBS CORE PRO).</p>\n<p>With all these options available, you ought to find something that fits your bill. Together with CleanSwitch, the sky is the limit ... jump between channels without interfering fellow pilots in air, create backup-/emergency-frequencies, global VTx power adjustments by race organizers or other clever systems aimed at streamlining and improving race management are now a possibility!</p>\n<p><strong>CleanSwitch - Neighbor friendly</strong><br>CleanSwitch is a technology developed at TBS that will ensure that your video transmitter is interference-free while powering on, or while changing channels. All current video transmitters swipe across the entire band while being powered on, often resulting in flickering and heavy interference to anyone in the air, regardless of video channel chosen. TBS CleanSwitch will allow you to power on and change channels while your buddies are in the air, without any external interference. CleanSwitch is race friendly, and pilot friendly ... that's how we like it at TBS.</p>\n<h3>Specification</h3>\n<ul>\n<li>Operating Voltage: 6V - 25V (2 - 6S)<br>\n</li>\n<li>Operating Temperature: watch for normal airflow<br>\n</li>\n<li>Video Input Impedance: 75 Ohm<br>\n</li>\n<li>Weight: 8.7g<br>\n</li>\n<li>Dimensions: 37 x 25 x 5.8mm<br>\n</li>\n<li>Antenna Connector: MMCX<br>\n</li>\n<li>Video Format: NTSC/PAL<br>\n</li>\n<li>Output Power: 14dBm (25mW), 20dBm (100mW), 26dBm (400mW), 30dBm+ (1000mW+)</li>\n</ul>\n<p><a href=\"https://www.team-blacksheep.com/tbs-unify-pro32-manual.pdf\" target=\"_blank\" title=\"TBS Unify PRO32 Manual\" rel=\"noopener\">TBS Unify PRO32 Manual</a></p>\n<h3>Includes</h3>\n<ul>\n<li>1x TBS UNIFY PRO32 5G8 HV Video transmitter<br>\n</li>\n<li>1x Silicone cable (ends pre-tinned)<br>\n</li>\n<li>1x MMCX to SMA pigtail</li>\n</ul>\n<p> </p>\n<!---->"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx",
+       "id": "gid://shopify/ProductVariant/40882403311729",
+       "media": [
+        {
+         "alt_text": "TBS VTX TBS Unify Pro32 HV 25-1000mW 5.8GHz VTX - MMCX",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/tbs-tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx-vtx-31698206294129.jpg",
+          "width": 700
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1285/4651/files/tbs-tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx-vtx-31698206294129.jpg",
+         "width": 700
+        }
+       ],
+       "price": {
+        "amount": 5999,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "raceday-quads.myshopify.com",
+        "id": "gid://shopify/Shop/12854651",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606087.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12854651/policies/25606151.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12854651/policies/25606023.html"
+         }
+        ],
+        "name": "RaceDayQuads",
+        "url": "https://www.racedayquads.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7086449033329",
+       "source": "shopify",
+       "title": "TBS Unify Pro32 HV 25-1000mW 5.8GHz VTX - MMCX",
+       "url": "https://www.racedayquads.com/products/tbs-unify-pro32-hv-25-1000mw-5-8ghz-vtx-mmcx?variant=40882403311729&_gsid=CaJ1igkpw2Cc&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

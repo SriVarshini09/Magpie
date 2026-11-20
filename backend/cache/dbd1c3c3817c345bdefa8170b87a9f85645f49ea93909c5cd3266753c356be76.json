@@ -1,0 +1,1251 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "5V power supply 5.5x2.1mm"
+  }
+ },
+ "key": "dbd1c3c3817c345bdefa8170b87a9f85645f49ea93909c5cd3266753c356be76",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:18:21-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 904); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6OTA0LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 904
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p>-- THIS PRODUCT CONTAINS 1 ADAPTER PER PACK --</p>\n<p>This 5V 5A AC/DC power supply provides a stable, regulated DC output for electronics requiring up to 25 watts of power. Designed to replace problematic or failed WeBoost cell phone signal booster power supplies, this adapter features a universal 100–240V AC input and standard 5.5x2.5mm DC barrel plug (also compatible with 5.5x2.1mm jacks), ensuring easy integration into your setup.</p>\n<p>It is ideal for loads drawing between 1A and 5A and includes built-in safeguards such as overload protection, over-voltage shutoff, thermal protection, and short-circuit prevention. Its durable build ensures quiet and low-heat operation, making it a reliable indoor-use solution.</p>\n<p>**Important Disclaimer:**  <br>This product is **not manufactured by, sold by, or affiliated with WeBoost™** or Wilson Electronics™. Any references to WeBoost are for **compatibility and identification purposes only**. All trademarks, service marks, and registered trademarks are the property of their respective owners.</p>\n<p>**Please Note:**  <br>This adapter is **not a battery charger** and should **not be used with battery-charging devices**. Indoor use only.</p>\n<p>**Specifications**  <br>- **Input Voltage:** 100–240V AC, 50/60Hz  <br>- **Output Voltage:** 5V DC  <br>- **Max Output Current:** 5A  <br>- **Power Output:** 25W  <br>- **DC Plug Size:** 5.5x2.5mm (also fits 5.5x2.1mm)  <br>- **Polarity:** Center positive (+), outer negative (−)  <br>- **Protections:** Overload, over-voltage, overheat, short circuit  <br>- **Operating Conditions:** Stable, low-heat output  <br>- **Environment:** For indoor use only  </p>\n<p>**Key Features**  <br>- • Stable 5V DC output up to 5A (25W max)  <br>- • Safely replaces failed WeBoost booster power supplies  <br>- • Integrated safety protections for quiet and reliable operation  <br>- • Universal AC input for worldwide use  <br>- • Standard 5.5x2.5mm plug with center-positive polarity  <br></p>"
+     },
+     "handle": "5v-5a-ac-dc-power-supply-adapter-25w-led-driver-psu-5v5a",
+     "id": "gid://shopify/p/2T4PJHVTFY4GZ9SkzSIXJ0",
+     "media": [
+      {
+       "alt_text": "5V 5A AC/DC Power Supply Adapter – Replaces WeBoost Cellular Booster Power Supply",
+       "height": 2390,
+       "preview": {
+        "height": 2390,
+        "url": "https://cdn.shopify.com/s/files/1/0887/2670/0329/files/WeBoost_Power_Supply.jpg",
+        "width": 2585
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0887/2670/0329/files/WeBoost_Power_Supply.jpg",
+       "width": 2585
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Stable 5V DC output up to 5A ensures reliable power for electronics",
+       "Integrated overload, overvoltage, overheat, and short circuit protections enhance safety",
+       "Universal 100-240V AC input supports worldwide use",
+       "Standard 5.5x2.5mm plug with center positive polarity for easy integration",
+       "Durable build delivers quiet, low heat operation for indoor environments"
+      ],
+      "unique_selling_points": [
+       "Replaces problematic or failed WeBoost cellular booster power supplies with universal compatibility and robust safety features."
+      ]
+     },
+     "options": [
+      {
+       "name": "Color",
+       "values": [
+        {
+         "label": "Black"
+        }
+       ]
+      },
+      {
+       "name": "Connection type",
+       "values": [
+        {
+         "label": "AC adapter"
+        }
+       ]
+      },
+      {
+       "name": "Power source",
+       "values": [
+        {
+         "label": "AC-powered"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2499,
+       "currency": "USD"
+      }
+     },
+     "title": "5V 5A AC/DC Power Supply Adapter – Replaces WeBoost Cellular Booster Power Supply",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://tekshack.com/buy/50691087761705:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>-- THIS PRODUCT CONTAINS 1 ADAPTER PER PACK --</p>\n<p>This 5V 5A AC/DC power supply provides a stable, regulated DC output for electronics requiring up to 25 watts of power. Designed to replace problematic or failed WeBoost cell phone signal booster power supplies, this adapter features a universal 100–240V AC input and standard 5.5x2.5mm DC barrel plug (also compatible with 5.5x2.1mm jacks), ensuring easy integration into your setup.</p>\n<p>It is ideal for loads drawing between 1A and 5A and includes built-in safeguards such as overload protection, over-voltage shutoff, thermal protection, and short-circuit prevention. Its durable build ensures quiet and low-heat operation, making it a reliable indoor-use solution.</p>\n<p>**Important Disclaimer:**  <br>This product is **not manufactured by, sold by, or affiliated with WeBoost™** or Wilson Electronics™. Any references to WeBoost are for **compatibility and identification purposes only**. All trademarks, service marks, and registered trademarks are the property of their respective owners.</p>\n<p>**Please Note:**  <br>This adapter is **not a battery charger** and should **not be used with battery-charging devices**. Indoor use only.</p>\n<p>**Specifications**  <br>- **Input Voltage:** 100–240V AC, 50/60Hz  <br>- **Output Voltage:** 5V DC  <br>- **Max Output Current:** 5A  <br>- **Power Output:** 25W  <br>- **DC Plug Size:** 5.5x2.5mm (also fits 5.5x2.1mm)  <br>- **Polarity:** Center positive (+), outer negative (−)  <br>- **Protections:** Overload, over-voltage, overheat, short circuit  <br>- **Operating Conditions:** Stable, low-heat output  <br>- **Environment:** For indoor use only  </p>\n<p>**Key Features**  <br>- • Stable 5V DC output up to 5A (25W max)  <br>- • Safely replaces failed WeBoost booster power supplies  <br>- • Integrated safety protections for quiet and reliable operation  <br>- • Universal AC input for worldwide use  <br>- • Standard 5.5x2.5mm plug with center-positive polarity  <br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "5v-5a-ac-dc-power-supply-adapter-25w-led-driver-psu-5v5a",
+       "id": "gid://shopify/ProductVariant/50691087761705",
+       "media": [
+        {
+         "alt_text": "5V 5A AC/DC Power Supply Adapter – Replaces WeBoost Cellular Booster Power Supply",
+         "height": 2390,
+         "preview": {
+          "height": 2390,
+          "url": "https://cdn.shopify.com/s/files/1/0887/2670/0329/files/WeBoost_Power_Supply.jpg",
+          "width": 2585
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0887/2670/0329/files/WeBoost_Power_Supply.jpg",
+         "width": 2585
+        }
+       ],
+       "options": [
+        {
+         "label": "Black",
+         "name": "Color"
+        },
+        {
+         "label": "AC-powered",
+         "name": "Power source"
+        },
+        {
+         "label": "AC adapter",
+         "name": "Connection type"
+        }
+       ],
+       "price": {
+        "amount": 2499,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "bbcdab-5a.myshopify.com",
+        "id": "gid://shopify/Shop/88726700329",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/88726700329/policies/39099498793.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/88726700329/policies/42804838697.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/88726700329/policies/42804642089.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/88726700329/policies/42805035305.html"
+         }
+        ],
+        "name": "TekShack",
+        "url": "https://tekshack.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9761991196969",
+       "source": "shopify",
+       "title": "5V 5A AC/DC Power Supply Adapter – Replaces WeBoost Cellular Booster Power Supply",
+       "url": "https://tekshack.com/products/5v-5a-ac-dc-power-supply-adapter-25w-led-driver-psu-5v5a?variant=50691087761705&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "The Conversions Tech PS5V4000MA-003 is used in consumer electronics like modems, routers, set-top boxes, printers, switches and hubs ect. This power supply is a high-performance switching power supply that provides a 5 VDC and 4 Amp source.<br><br><br><span><br><br></span><span>Power Source Color Chart: </span><span></span><span><br></span><br><div><p><strong>Availability:</strong> This item ships on our standard restock cycle — typical lead time 2–3 weeks. Order now to reserve your place in the queue, or email <a href=\"mailto:sales@conversionstech.com\">sales@conversionstech.com</a> for expedited options and firm dates on volume orders.</p></div><div>\n<h3>Specifications</h3>\n<table>\n<tr>\n<td><strong>Part Number</strong></td>\n<td>PS5V4000MA-003</td>\n</tr>\n<tr>\n<td><strong>Category</strong></td>\n<td>Bracket</td>\n</tr>\n<tr>\n<td><strong>Weight</strong></td>\n<td>1.0 lb</td>\n</tr>\n<tr>\n<td><strong>HS Code</strong></td>\n<td>7326.90.8688</td>\n</tr>\n</table>\n</div>"
+     },
+     "handle": "power-supply-5v-4000ma-5-5-x-2-1-wall-mount",
+     "id": "gid://shopify/p/3TklqA5poTbHZBXceKTYLI",
+     "media": [
+      {
+       "alt_text": "Theta® Power Supply, 5V 4000MA 5.5 x 2.1 Wall Mount",
+       "height": 400,
+       "preview": {
+        "height": 400,
+        "url": "https://cdn.shopify.com/s/files/1/0291/8445/8804/products/theta-power-supply-5v-4000ma-5-5-x-2-1-wall-mount-1157100859.jpg",
+        "width": 400
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0291/8445/8804/products/theta-power-supply-5v-4000ma-5-5-x-2-1-wall-mount-1157100859.jpg",
+       "width": 400
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "High 4000MA output current ensures compatibility with power-hungry devices",
+       "Stable 5V DC output supports sensitive electronics",
+       "Wall mount design saves space and simplifies installation",
+       "Switching power supply delivers consistent performance for reliable operation"
+      ],
+      "unique_selling_points": [
+       "Delivers stable 5V 4000MA output for demanding electronics applications."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 879,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 879,
+       "currency": "USD"
+      }
+     },
+     "title": "Theta | Power Supply | 5V 4000MA 5.5 x 2.1 Wall Mount",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://conversionstech.com/buy/32101959467060:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "The Conversions Tech PS5V4000MA-003 is used in consumer electronics like modems, routers, set-top boxes, printers, switches and hubs ect. This power supply is a high-performance switching power supply that provides a 5 VDC and 4 Amp source.<br><br><br><span><br><br></span><span>Power Source Color Chart: </span><span></span><span><br></span><br><div><p><strong>Availability:</strong> This item ships on our standard restock cycle — typical lead time 2–3 weeks. Order now to reserve your place in the queue, or email <a href=\"mailto:sales@conversionstech.com\">sales@conversionstech.com</a> for expedited options and firm dates on volume orders.</p></div><div>\n<h3>Specifications</h3>\n<table>\n<tr>\n<td><strong>Part Number</strong></td>\n<td>PS5V4000MA-003</td>\n</tr>\n<tr>\n<td><strong>Category</strong></td>\n<td>Bracket</td>\n</tr>\n<tr>\n<td><strong>Weight</strong></td>\n<td>1.0 lb</td>\n</tr>\n<tr>\n<td><strong>HS Code</strong></td>\n<td>7326.90.8688</td>\n</tr>\n</table>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "power-supply-5v-4000ma-5-5-x-2-1-wall-mount",
+       "id": "gid://shopify/ProductVariant/32101959467060",
+       "media": [
+        {
+         "alt_text": "Theta® Power Supply, 5V 4000MA 5.5 x 2.1 Wall Mount",
+         "height": 400,
+         "preview": {
+          "height": 400,
+          "url": "https://cdn.shopify.com/s/files/1/0291/8445/8804/products/theta-power-supply-5v-4000ma-5-5-x-2-1-wall-mount-1157100859.jpg",
+          "width": 400
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0291/8445/8804/products/theta-power-supply-5v-4000ma-5-5-x-2-1-wall-mount-1157100859.jpg",
+         "width": 400
+        }
+       ],
+       "price": {
+        "amount": 879,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "conversions-technology.myshopify.com",
+        "id": "gid://shopify/Shop/29184458804",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/29184458804/policies/14159937588.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/29184458804/policies/14159970356.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/29184458804/policies/14159904820.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/29184458804/policies/14160003124.html"
+         }
+        ],
+        "name": "Conversions Tech",
+        "url": "https://conversionstech.com"
+       },
+       "seller_product_id": "gid://shopify/Product/4610631893044",
+       "source": "shopify",
+       "title": "Theta | Power Supply | 5V 4000MA 5.5 x 2.1 Wall Mount",
+       "url": "https://conversionstech.com/products/power-supply-5v-4000ma-5-5-x-2-1-wall-mount?variant=32101959467060&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "The Main Picture is a Schematic Diagram, And The Actual Shape Received May be Slightly Different.<br>AbleGrid Brand! New Replacement Product! Non-OEM but 100% Compatible!<br>Input: AC 100V-240V 50-60Hz; Output: DC Barrel tip"
+     },
+     "handle": "385bd919db-la-1",
+     "id": "gid://shopify/p/136ejXOh641sxt8nyyprl0",
+     "media": [
+      {
+       "alt_text": "AbleGrid US Plug AC 5V 1A 5.5mm * 2.1mm Center + Positive Adapter Charger Power Supply",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/1178/0444/products/TThxNnpFcGFISkVDSERZVnlSK2tBdVhMRFlKR1ZRYlFZTkpvUTBqbGhsaz0.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1178/0444/products/TThxNnpFcGFISkVDSERZVnlSK2tBdVhMRFlKR1ZRYlFZTkpvUTBqbGhsaz0.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "US plug design ensures compatibility with North American power outlets for global travelers",
+       "5V 1A output supports a wide range of electronic devices for versatile charging",
+       "Durable construction provides long-lasting performance for frequent use",
+       "Compact 5.5mm x 2.1mm barrel connector fits standard charging ports",
+       "Non-OEM replacement offers a cost-effective alternative to original equipment"
+      ],
+      "unique_selling_points": [
+       "Compatible with US outlets and delivers consistent 5V 1A output for device charging."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 998,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 998,
+       "currency": "USD"
+      }
+     },
+     "title": "AbleGrid US Plug AC 5V 1A 5.5mm * 2.1mm Center + Positive Adapter Charger Power Supply",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.ablegrid.com/buy/47133233905824:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "The Main Picture is a Schematic Diagram, And The Actual Shape Received May be Slightly Different.<br>AbleGrid Brand! New Replacement Product! Non-OEM but 100% Compatible!<br>Input: AC 100V-240V 50-60Hz; Output: DC Barrel tip"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "385bd919db-la-1",
+       "id": "gid://shopify/ProductVariant/47133233905824",
+       "media": [
+        {
+         "alt_text": "AbleGrid US Plug AC 5V 1A 5.5mm * 2.1mm Center + Positive Adapter Charger Power Supply",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/1178/0444/products/TThxNnpFcGFISkVDSERZVnlSK2tBdVhMRFlKR1ZRYlFZTkpvUTBqbGhsaz0.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1178/0444/products/TThxNnpFcGFISkVDSERZVnlSK2tBdVhMRFlKR1ZRYlFZTkpvUTBqbGhsaz0.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 998,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "ablegrid.myshopify.com",
+        "id": "gid://shopify/Shop/11780444",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/11780444/policies/20645319.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/11780444/policies/20645383.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/11780444/policies/20645255.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/11780444/policies/6447857698.html"
+         }
+        ],
+        "name": "Ablegrid.com",
+        "url": "https://www.ablegrid.com"
+       },
+       "seller_product_id": "gid://shopify/Product/11190607839392",
+       "source": "shopify",
+       "title": "AbleGrid US Plug AC 5V 1A 5.5mm * 2.1mm Center + Positive Adapter Charger Power Supply",
+       "url": "https://www.ablegrid.com/products/385bd919db-la-1?variant=47133233905824&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>This is a 5V DC @ 1A Regulated Power Supply Adapter with a 5.5mm x 2.1mm Coaxial DC Plug, Center Positive. </p>\n<p><strong>Features:</strong></p>\n<ul>\n<li>Output Voltage: 5.0V DC Regulated</li>\n<li>Output Current: 1 AMP Maximum<br>\n</li>\n<li>Input Volt</li>\n</ul>"
+     },
+     "handle": "jf005wr-0500100uh",
+     "id": "gid://shopify/p/6oIXtP5lUmHOyyMm7KPSYv",
+     "media": [
+      {
+       "alt_text": "5VDC @ 1A Regulated Power Supply Adapter 5.5mm x 2.1mm DC Plug (+) Center",
+       "height": 1732,
+       "preview": {
+        "height": 1732,
+        "url": "https://cdn.shopify.com/s/files/1/2239/5529/products/JF005WR_3_ef126a70-07dc-47c9-b76e-0aa16d76f045.jpg",
+        "width": 1497
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/2239/5529/products/JF005WR_3_ef126a70-07dc-47c9-b76e-0aa16d76f045.jpg",
+       "width": 1497
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Regulated 5V DC output ensures stable power for sensitive electronics",
+       "1A maximum output current supports a range of small devices",
+       "5.5mm x 2.1mm coaxial DC plug enables easy connection to compatible equipment",
+       "Center positive polarity for standard electronic circuit compatibility",
+       "AC-powered design offers convenient plug-and-play operation"
+      ],
+      "unique_selling_points": [
+       "Regulated 5V DC output with US plug and compact coaxial design for versatile connectivity."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 995,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 995,
+       "currency": "USD"
+      }
+     },
+     "title": "5VDC @ 1A Regulated Power Supply Adapter 5.5mm x 2.1mm DC Plug (+) Center",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://marvac.com/buy/1500472999956:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>This is a 5V DC @ 1A Regulated Power Supply Adapter with a 5.5mm x 2.1mm Coaxial DC Plug, Center Positive. </p>\n<p><strong>Features:</strong></p>\n<ul>\n<li>Output Voltage: 5.0V DC Regulated</li>\n<li>Output Current: 1 AMP Maximum<br>\n</li>\n<li>Input Volt</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "jf005wr-0500100uh",
+       "id": "gid://shopify/ProductVariant/1500472999956",
+       "media": [
+        {
+         "alt_text": "5VDC @ 1A Regulated Power Supply Adapter 5.5mm x 2.1mm DC Plug (+) Center",
+         "height": 1732,
+         "preview": {
+          "height": 1732,
+          "url": "https://cdn.shopify.com/s/files/1/2239/5529/products/JF005WR_3_ef126a70-07dc-47c9-b76e-0aa16d76f045.jpg",
+          "width": 1497
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/2239/5529/products/JF005WR_3_ef126a70-07dc-47c9-b76e-0aa16d76f045.jpg",
+         "width": 1497
+        }
+       ],
+       "price": {
+        "amount": 995,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "marvac.myshopify.com",
+        "id": "gid://shopify/Shop/22395529",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/22395529/policies/38969684.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/22395529/policies/38969748.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/22395529/policies/38969620.html"
+         }
+        ],
+        "name": "MarVac Electronics",
+        "url": "https://marvac.com"
+       },
+       "seller_product_id": "gid://shopify/Product/124776939540",
+       "source": "shopify",
+       "title": "5VDC @ 1A Regulated Power Supply Adapter 5.5mm x 2.1mm DC Plug (+) Center",
+       "url": "https://marvac.com/products/jf005wr-0500100uh?variant=1500472999956&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "Brand: Security-01<br><br>Model: CS-0502000<br><br>Reliable 5V 2A Power Adapter Specifications: Input: AC 100-240V 50/60Hz Output: DC 5V, 2A (2000mA), Center Positive Polarity Connector: 5.5mm x 2.1mm Barrel Plug Cable: 1.2m (4ft) Efficiency: Level VI Safety &amp; Compliance: UL Listed (E123456), FCC Compliant, RoHS, WEEE *IMPORTANT:* Only compatible with devices requiring EXACTLY 5V DC and a 2A (or less) current draw, using a 5.5x2.1mm CENTER-POSITIVE jack. ALWAYS verify your device's requirements before use.<br><br>• Universal Input: AC 100-240V 50/60Hz. Works worldwide with appropriate plug adapters.<br>• Stable DC Output: Provides regulated 5V DC at 2A (2000mA / 10W) power.<br>• Standard Connector: Features a center-positive 5.5mm (outer) x 2.1mm (inner) DC barrel plug.<br>• Safety Certified: UL Listed (File E123456), FCC Compliant, RoHS, WEEE.<br>• Wide Compatibility: Powers devices requiring 5V 2A input with a 5.5x2.1mm center-positive jack (e.g., routers, LED strips, security cameras). *CHECK YOUR DEVICE'S VOLTAGE/AMP &amp; PLUG SIZE/POLARITY BEFORE USE.*<br><br>Wattage/Output: 1-Pack"
+     },
+     "handle": "security-01-ac-to-dc-5v-2a-2000ma-power-supply-adapter-plug-5-5mm-x-2-1mm-ul-listed-fcc",
+     "id": "gid://shopify/p/3bt8XQOCy5jxIGv1YRKw7q",
+     "media": [
+      {
+       "alt_text": "Security-01 AC to DC 5V 2A 2000mA Power Supply Adapter, Plug 5.5mm x 2.1mm, UL Listed FCC",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/61GmK6fd2LL.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/61GmK6fd2LL.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "5V 2A output delivers consistent power for sensitive electronics",
+       "5.5mm x 2.1mm plug fits a wide range of devices for flexible use",
+       "1.2 meter DC line length offers convenient placement options",
+       "UL, FCC, CUL, RoHS, and WeEU certifications ensure safety and compliance",
+       "High efficiency (Level VI) reduces energy loss and heat"
+      ],
+      "unique_selling_points": [
+       "UL, FCC, and CUL listed for safety and compliance, with a long 5.5Mm x 2.1Mm plug for versatile device compatibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2229,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2229,
+       "currency": "USD"
+      }
+     },
+     "title": "Security-01 AC to DC 5V 2A 2000mA Power Supply Adapter, Plug 5.5mm x 2.1mm, UL Listed FCC",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://craftedyogi.com/buy/51593919824154:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "Brand: Security-01<br><br>Model: CS-0502000<br><br>Reliable 5V 2A Power Adapter Specifications: Input: AC 100-240V 50/60Hz Output: DC 5V, 2A (2000mA), Center Positive Polarity Connector: 5.5mm x 2.1mm Barrel Plug Cable: 1.2m (4ft) Efficiency: Level VI Safety &amp; Compliance: UL Listed (E123456), FCC Compliant, RoHS, WEEE *IMPORTANT:* Only compatible with devices requiring EXACTLY 5V DC and a 2A (or less) current draw, using a 5.5x2.1mm CENTER-POSITIVE jack. ALWAYS verify your device's requirements before use.<br><br>• Universal Input: AC 100-240V 50/60Hz. Works worldwide with appropriate plug adapters.<br>• Stable DC Output: Provides regulated 5V DC at 2A (2000mA / 10W) power.<br>• Standard Connector: Features a center-positive 5.5mm (outer) x 2.1mm (inner) DC barrel plug.<br>• Safety Certified: UL Listed (File E123456), FCC Compliant, RoHS, WEEE.<br>• Wide Compatibility: Powers devices requiring 5V 2A input with a 5.5x2.1mm center-positive jack (e.g., routers, LED strips, security cameras). *CHECK YOUR DEVICE'S VOLTAGE/AMP &amp; PLUG SIZE/POLARITY BEFORE USE.*<br><br>Wattage/Output: 1-Pack"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "security-01-ac-to-dc-5v-2a-2000ma-power-supply-adapter-plug-5-5mm-x-2-1mm-ul-listed-fcc",
+       "id": "gid://shopify/ProductVariant/51593919824154",
+       "list_price": {
+        "amount": 2397,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Security-01 AC to DC 5V 2A 2000mA Power Supply Adapter, Plug 5.5mm x 2.1mm, UL Listed FCC",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/61GmK6fd2LL.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/61GmK6fd2LL.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 2229,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "xcjhsr-4d.myshopify.com",
+        "id": "gid://shopify/Shop/96567722266",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48899293466.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940515610.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940646682.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940613914.html"
+         }
+        ],
+        "name": "Craftedyogi",
+        "url": "https://craftedyogi.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10099921551642",
+       "source": "shopify",
+       "title": "Security-01 AC to DC 5V 2A 2000mA Power Supply Adapter, Plug 5.5mm x 2.1mm, UL Listed FCC",
+       "url": "https://craftedyogi.com/products/security-01-ac-to-dc-5v-2a-2000ma-power-supply-adapter-plug-5-5mm-x-2-1mm-ul-listed-fcc?variant=51593919824154&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": " ?5V 1A Power Adapter ? AC input: 100V to 240V. DC output: 5V/1.0A.Power: 5W Max. Cable length: 4.9ft / 150cm. Plug hole(outside diameter x inside diameter): 5.5x2.1mm. DC connector polarity: central positive(+). Works well with 5V devices that draws less than 1A(1000mA) 5W, such as 200mA 400mA 500mA 800mA 1000mA . If you use it to power device more than 1A 5W,it will not work. NEVER OVERLOAD!According to the relevant industry standards,±5% of the voltage difference is qualified products.<br> -? 9pcs Frequently Used Tips?: Comes with an original 5.5x2.1mm plug and 9pcs frequently used tips: 5.5x2.5mm, 6.4x4.4mm, 6.3x3.0mm, 5.5x2.1mm, 5.5x1.7mm, 4.8x1.7mm, 4.0x1.7mm, 3.5x1.35mm,terminal connector. Polarity is internal \"+\", outside\"-\". This 9-in-1 5V 1A universal power adapter kit greatly expands its application scope.And 9 different tips can fit various devices with different DC connector polarity and size. You can easily switch between the tips without soldering or cutting wires.<br> -?Safety Protection? We designed this 5V power adapter with safety in mind. Built in multiple protection system: automatic over-current cut-off, over voltage protection, over heat protection,over current protection No noise, no fire hazard. Protect you and your device very well.<br> -? Wide Application ? Perfect for Router,electronic refrigerator, LCD monitor, LED lighting, communications equipment, audio and video products, security, computer case and the other digital products which require 5.5*2.1 mm plug and other 5v devices less than 5W<br> -?Compact and Portable?: Its lightweight design and sturdy cg make it an ideal choice for travel and everyday use. Easy to store and carry.Please choose the adapter according to the product description and purchg guidelines.Note: NOT For Laptops And Mobile Phone ?The product is only suitable for devices with a voltage of 5v and a current of 1A,Such as light strings, inflation devices,etc.Please carefully check whether the voltage and current of your device are compatible with this product before purchg to avoid incorrect use and damage to your device.Please do not use this product to power laptops or mobile phones, as it may cause the product to malfunction.<br> -"
+     },
+     "handle": "5v-1a-wall-charger-power-adapter-with-plug-5-5-x-2-1mm-5w-universal-ac-dc-adapter-100-240v-ac-to-dc-5v-power-cord-converter-with-9-interchangeable-jacks-plug-1-pack",
+     "id": "gid://shopify/p/7dsALduEZ8Nk3C2VeokTQF",
+     "media": [
+      {
+       "alt_text": "5V 1A Wall Charger Power Adapter with Plug 5.5 x 2.1mm, 5W Universal AC/DC Adapter 100-240V AC to DC 5V Power Cord Converter with 9 Interchangeable Jacks Plug (1 Pack)",
+       "height": 1500,
+       "preview": {
+        "height": 1500,
+        "url": "https://cdn.shopify.com/s/files/1/0576/4526/9179/files/41jXm1dKT_L._US1500.jpg",
+        "width": 1500
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0576/4526/9179/files/41jXm1dKT_L._US1500.jpg",
+       "width": 1500
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "9 interchangeable jacks: Supports various device connectors for broad compatibility",
+       "Automatic overcurrent and overvoltage protection: Safeguards devices from electrical hazards",
+       "Wide AC input range (100-240V): Suitable for global travel and use in different regions",
+       "Compact and portable design: Easy to carry and store for travel or everyday use",
+       "No noise or fire hazard: Ensures safe operation without disturbing users"
+      ],
+      "unique_selling_points": [
+       "Includes 9 interchangeable jacks for multiple device compatibility and universal AC/DC conversion."
+      ]
+     },
+     "options": [
+      {
+       "name": "Model",
+       "values": [
+        {
+         "label": "Atr2120a4079"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 999,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 999,
+       "currency": "USD"
+      }
+     },
+     "title": "5V 1A Wall Charger Power Adapter with Plug 5.5 x 2.1mm, 5W Universal AC/DC Adapter 100-240V AC to DC 5V Power Cord Converter with 9 Interchangeable Jacks Plug (1 Pack)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://globaleparts.com/buy/46971908948155:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": " ?5V 1A Power Adapter ? AC input: 100V to 240V. DC output: 5V/1.0A.Power: 5W Max. Cable length: 4.9ft / 150cm. Plug hole(outside diameter x inside diameter): 5.5x2.1mm. DC connector polarity: central positive(+). Works well with 5V devices that draws less than 1A(1000mA) 5W, such as 200mA 400mA 500mA 800mA 1000mA . If you use it to power device more than 1A 5W,it will not work. NEVER OVERLOAD!According to the relevant industry standards,±5% of the voltage difference is qualified products.<br> -? 9pcs Frequently Used Tips?: Comes with an original 5.5x2.1mm plug and 9pcs frequently used tips: 5.5x2.5mm, 6.4x4.4mm, 6.3x3.0mm, 5.5x2.1mm, 5.5x1.7mm, 4.8x1.7mm, 4.0x1.7mm, 3.5x1.35mm,terminal connector. Polarity is internal \"+\", outside\"-\". This 9-in-1 5V 1A universal power adapter kit greatly expands its application scope.And 9 different tips can fit various devices with different DC connector polarity and size. You can easily switch between the tips without soldering or cutting wires.<br> -?Safety Protection? We designed this 5V power adapter with safety in mind. Built in multiple protection system: automatic over-current cut-off, over voltage protection, over heat protection,over current protection No noise, no fire hazard. Protect you and your device very well.<br> -? Wide Application ? Perfect for Router,electronic refrigerator, LCD monitor, LED lighting, communications equipment, audio and video products, security, computer case and the other digital products which require 5.5*2.1 mm plug and other 5v devices less than 5W<br> -?Compact and Portable?: Its lightweight design and sturdy cg make it an ideal choice for travel and everyday use. Easy to store and carry.Please choose the adapter according to the product description and purchg guidelines.Note: NOT For Laptops And Mobile Phone ?The product is only suitable for devices with a voltage of 5v and a current of 1A,Such as light strings, inflation devices,etc.Please carefully check whether the voltage and current of your device are compatible with this product before purchg to avoid incorrect use and damage to your device.Please do not use this product to power laptops or mobile phones, as it may cause the product to malfunction.<br> -"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "5v-1a-wall-charger-power-adapter-with-plug-5-5-x-2-1mm-5w-universal-ac-dc-adapter-100-240v-ac-to-dc-5v-power-cord-converter-with-9-interchangeable-jacks-plug-1-pack",
+       "id": "gid://shopify/ProductVariant/46971908948155",
+       "list_price": {
+        "amount": 2099,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "5V 1A Wall Charger Power Adapter with Plug 5.5 x 2.1mm, 5W Universal AC/DC Adapter 100-240V AC to DC 5V Power Cord Converter with 9 Interchangeable Jacks Plug (1 Pack)",
+         "height": 1500,
+         "preview": {
+          "height": 1500,
+          "url": "https://cdn.shopify.com/s/files/1/0576/4526/9179/files/41jXm1dKT_L._US1500.jpg",
+          "width": 1500
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0576/4526/9179/files/41jXm1dKT_L._US1500.jpg",
+         "width": 1500
+        }
+       ],
+       "options": [
+        {
+         "label": "Atr2120a4079",
+         "name": "Model"
+        }
+       ],
+       "price": {
+        "amount": 999,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "globaleparts.myshopify.com",
+        "id": "gid://shopify/Shop/57645269179",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57645269179/policies/24256774331.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57645269179/policies/24256807099.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57645269179/policies/24256741563.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57645269179/policies/24256839867.html"
+         }
+        ],
+        "name": "Globaleparts",
+        "url": "https://globaleparts.com"
+       },
+       "seller_product_id": "gid://shopify/Product/8189973627067",
+       "source": "shopify",
+       "title": "5V 1A Wall Charger Power Adapter with Plug 5.5 x 2.1mm, 5W Universal AC/DC Adapter 100-240V AC to DC 5V Power Cord Converter with 9 Interchangeable Jacks Plug (1 Pack)",
+       "url": "https://globaleparts.com/products/5v-1a-wall-charger-power-adapter-with-plug-5-5-x-2-1mm-5w-universal-ac-dc-adapter-100-240v-ac-to-dc-5v-power-cord-converter-with-9-interchangeable-jacks-plug-1-pack?variant=46971908948155&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div><br></div><div>\n<div>\n<div>\n<div><b><span style=\"font-family: Arial; font-size: 16pt;\">Notes:</span><br style=\"font-family: Arial;\"><span style=\"font-family: Arial; font-size: 16pt;\">99.99% of the problem orders are due to the adapter's interface error. Even if the model you purchased is correct, you still need to check the interface carefully. ( The reason is: more and more cases of the same adapter model and multiple interfaces appear on the market.</span><font face=\"Arial\" size=\"4\"></font></b></div>\n<table align=\"center\" style='font-family: \"Microsoft YaHei\"; border-spacing: 0px; width: 1362px;'><tbody><tr><td><div id=\"ds_div\"><font face=\"Arial\" rwr=\"1\" size=\"4\"><div id=\"_crosspromo_top\"></div>\n<div id=\"_crosspromo_top\"></div>\n<p><b>Details:</b></p>\n<ul>\n<li>Tested fully functional</li>\n<li>Present normal use wear</li>\n<li>Power Cord is included</li>\n<li>5.5x2.5mm No Pin inside please make sure the DC output and connector size of  AC adapter are the same as above listing before you buy</li>\n</ul>\n<p><strong>International Return:</strong></p>\n<p></p>\n<div>\n<p></p>\n<div>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 0px 0px 1.25em; color: rgb(13, 13, 13); white-space-collapse: preserve;\">Customers using a forwarding freight service to order items to another country, even if the shipping address is in the USA, will be considered as international shipments. This policy is implemented because many international buyers may choose not to return items for a refund due to expensive return shipping costs. However, customers can still initiate a return request for a refund through the eBay standard return procedure. Please carefully review the policy outlined below and refrain from purchasing and agreeing to it if you have any concerns.</p>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 1.25em 0px; color: rgb(13, 13, 13); white-space-collapse: preserve;\">For returns due to reasons such as defects, damages, malfunction, or discrepancies from the description, we will not cover international return shipping costs. If items are deemed defective, you are responsible for returning them to us at your expense. By placing your order, you fully agree to this return policy.</p>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 1.25em 0px 0px; color: rgb(13, 13, 13); white-space-collapse: preserve;\">No partial refunds will be issued for defects. If you wish to receive a refund, the item (order) must be returned to us at your expense. Customers can still return items by adhering to eBay's return policy. Please note that we only provide a return label to the original address to which the order has been shipped.</p>\n</div>\n<strong></strong>\n</div>\n<p><br></p>\n<p><strong><em>SHIPPING</em></strong> <br>We ship out the order when payment is cleared. <br>We offer FREE SHIPPING on over 90% of our listings to the continental U.S. Please check this listing's shipping charge under the item price.<br>If you are in Alaska, PR, GU, MP or Hawaii please contact us for shipping costs. The listed prices do not apply.<br>We do not ship to international destinations, APO/FPO addresses under any circumstance.<br>If you purchase multiple items we will consolidate your orders.<br>A shipping notification will be emailed to you once your order has been shipped.         <br>We do not ship on weekend or public holidays.<br>          </p>\n<p><strong><em>RETURN   </em></strong>      <br>We stand behind our products. Items can be returned for exchange or full refund within 30 days from the date you receive your merchandise.100% Hassle Free returns.<br>Return shipping is paid by the buyer and is non-refundable unless the item was DOA.<br>We will only provide a return shipping label from the original address the item was shipped to. If any item is forwarded to a different address or out of the continuous 48 State of the USA, the buyer will be held responsible to pay for the return of the item back to the address we have on file for when the item was delivered. We do not cover international return.</p>\n<p><br></p>\n<p class=\"MsoNormal\" style=\"line-height: normal;\"><strong><em>FEEDBACK       </em></strong><br>Problems or Lost Communication: If there is any problem that makes you lower the rating, please hold and contact us via eBay message for solution. We will solve your any concerns and guarantee your 100% satisfaction. All messages will be answered within 24 hours (except weekend and public holiday). Directly email to us may not be checked on time, please use eBay message system to contact us. please check your spam setting of email or check your spam/filtered email folder when you do NOT receive response from us.</p></font></div></td></tr></tbody></table>\n</div>\n<p class=\"\" data-end=\"106\" data-start=\"66\"><strong data-end=\"106\" data-start=\"66\"><font face=\"Arial\" size=\"4\">Order Cancellation Is Not Guaranteed:</font></strong></p>\n<p class=\"\" data-end=\"314\" data-start=\"108\"><font face=\"Arial\" size=\"4\">We cannot cancel your order if it has already been shipped or if a shipping label has been created.<br></font></p>\n<p class=\"\" data-end=\"314\" data-start=\"108\"><font face=\"Arial\" size=\"4\">Please do not message us to argue that the label was \"just created\" and the item has not been shipped yet. Make sure to purchase with full consent. Do not place an order and then request a cancellation afterward. We can only cancel your order <strong data-end=\"542\" data-start=\"468\">if it has not yet been shipped and no shipping label has been created.</strong></font></p>\n</div>\n<p style='font-family: \"Microsoft YaHei\";'><strong><font face=\"Arial\" size=\"4\">Order Notes / Special Requests</font></strong></p>\n<p data-start=\"103\" data-end=\"312\" style='font-family: \"Microsoft YaHei\";'><font face=\"Arial\" size=\"4\">Please <strong>DO NOT</strong><strong data-start=\"110\" data-end=\"162\"> </strong><span data-start=\"110\" data-end=\"162\">leave any order notes or special requests</span> in the order. If you have a special request, <span data-start=\"208\" data-end=\"237\">contact us directly first</span>. Once we confirm and agree to your request, you may then place your order. </font><font face=\"Arial\" size=\"4\">Do <strong data-start=\"317\" data-end=\"324\">not</strong> leave new requests in the order notes after purchasing. We will <strong data-start=\"389\" data-end=\"396\">not</strong> be able to honor requests written only in the notes. </font><span style=\"font-family: Arial; font-size: large;\">Feel free to contact us before checkout if you need assistance. Thank you.</span></p>\n</div> <br>Listed with ExportYourStore.com"
+     },
+     "handle": "genuine-delta-ac-adapter-eadp-20nb-c-5v-4a-power-supply-5-5-2-1mm",
+     "id": "gid://shopify/p/3rN0oSrKPFDcflxhD0sOV6",
+     "media": [
+      {
+       "alt_text": "Genuine Delta AC Adapter EADP-20NB C 5V 4A Power Supply 5.5*2.1MM",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0662/9120/4327/files/57_880ebb99-b153-404d-bfff-395749608319.jpg",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0662/9120/4327/files/57_880ebb99-b153-404d-bfff-395749608319.jpg",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "OEM genuine Delta adapter ensures compatibility and reliability for electronics repair",
+       "5V 4A output power supports a wide range of electronic devices",
+       "5.5x2.1 mm connector interface for secure and accurate fit",
+       "Includes power cord for immediate use",
+       "Tested fully functional for dependable operation"
+      ],
+      "unique_selling_points": [
+       "Genuine Delta adapter with precise 5.5x2.1 mm interface and 5V 4A output for consistent performance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1499,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1499,
+       "currency": "USD"
+      }
+     },
+     "title": "Genuine Delta AC Adapter EADP-20NB C 5V 4A Power Supply 5.5*2.1MM",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://gelectronic.store/buy/52130278867175:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "secondhand"
+       ],
+       "description": {
+        "plain": "<div><br></div><div>\n<div>\n<div>\n<div><b><span style=\"font-family: Arial; font-size: 16pt;\">Notes:</span><br style=\"font-family: Arial;\"><span style=\"font-family: Arial; font-size: 16pt;\">99.99% of the problem orders are due to the adapter's interface error. Even if the model you purchased is correct, you still need to check the interface carefully. ( The reason is: more and more cases of the same adapter model and multiple interfaces appear on the market.</span><font face=\"Arial\" size=\"4\"></font></b></div>\n<table align=\"center\" style='font-family: \"Microsoft YaHei\"; border-spacing: 0px; width: 1362px;'><tbody><tr><td><div id=\"ds_div\"><font face=\"Arial\" rwr=\"1\" size=\"4\"><div id=\"_crosspromo_top\"></div>\n<div id=\"_crosspromo_top\"></div>\n<p><b>Details:</b></p>\n<ul>\n<li>Tested fully functional</li>\n<li>Present normal use wear</li>\n<li>Power Cord is included</li>\n<li>5.5x2.5mm No Pin inside please make sure the DC output and connector size of  AC adapter are the same as above listing before you buy</li>\n</ul>\n<p><strong>International Return:</strong></p>\n<p></p>\n<div>\n<p></p>\n<div>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 0px 0px 1.25em; color: rgb(13, 13, 13); white-space-collapse: preserve;\">Customers using a forwarding freight service to order items to another country, even if the shipping address is in the USA, will be considered as international shipments. This policy is implemented because many international buyers may choose not to return items for a refund due to expensive return shipping costs. However, customers can still initiate a return request for a refund through the eBay standard return procedure. Please carefully review the policy outlined below and refrain from purchasing and agreeing to it if you have any concerns.</p>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 1.25em 0px; color: rgb(13, 13, 13); white-space-collapse: preserve;\">For returns due to reasons such as defects, damages, malfunction, or discrepancies from the description, we will not cover international return shipping costs. If items are deemed defective, you are responsible for returning them to us at your expense. By placing your order, you fully agree to this return policy.</p>\n<p style=\"border: 0px solid rgb(227, 227, 227); box-sizing: border-box; margin: 1.25em 0px 0px; color: rgb(13, 13, 13); white-space-collapse: preserve;\">No partial refunds will be issued for defects. If you wish to receive a refund, the item (order) must be returned to us at your expense. Customers can still return items by adhering to eBay's return policy. Please note that we only provide a return label to the original address to which the order has been shipped.</p>\n</div>\n<strong></strong>\n</div>\n<p><br></p>\n<p><strong><em>SHIPPING</em></strong> <br>We ship out the order when payment is cleared. <br>We offer FREE SHIPPING on over 90% of our listings to the continental U.S. Please check this listing's shipping charge under the item price.<br>If you are in Alaska, PR, GU, MP or Hawaii please contact us for shipping costs. The listed prices do not apply.<br>We do not ship to international destinations, APO/FPO addresses under any circumstance.<br>If you purchase multiple items we will consolidate your orders.<br>A shipping notification will be emailed to you once your order has been shipped.         <br>We do not ship on weekend or public holidays.<br>          </p>\n<p><strong><em>RETURN   </em></strong>      <br>We stand behind our products. Items can be returned for exchange or full refund within 30 days from the date you receive your merchandise.100% Hassle Free returns.<br>Return shipping is paid by the buyer and is non-refundable unless the item was DOA.<br>We will only provide a return shipping label from the original address the item was shipped to. If any item is forwarded to a different address or out of the continuous 48 State of the USA, the buyer will be held responsible to pay for the return of the item back to the address we have on file for when the item was delivered. We do not cover international return.</p>\n<p><br></p>\n<p class=\"MsoNormal\" style=\"line-height: normal;\"><strong><em>FEEDBACK       </em></strong><br>Problems or Lost Communication: If there is any problem that makes you lower the rating, please hold and contact us via eBay message for solution. We will solve your any concerns and guarantee your 100% satisfaction. All messages will be answered within 24 hours (except weekend and public holiday). Directly email to us may not be checked on time, please use eBay message system to contact us. please check your spam setting of email or check your spam/filtered email folder when you do NOT receive response from us.</p></font></div></td></tr></tbody></table>\n</div>\n<p class=\"\" data-end=\"106\" data-start=\"66\"><strong data-end=\"106\" data-start=\"66\"><font face=\"Arial\" size=\"4\">Order Cancellation Is Not Guaranteed:</font></strong></p>\n<p class=\"\" data-end=\"314\" data-start=\"108\"><font face=\"Arial\" size=\"4\">We cannot cancel your order if it has already been shipped or if a shipping label has been created.<br></font></p>\n<p class=\"\" data-end=\"314\" data-start=\"108\"><font face=\"Arial\" size=\"4\">Please do not message us to argue that the label was \"just created\" and the item has not been shipped yet. Make sure to purchase with full consent. Do not place an order and then request a cancellation afterward. We can only cancel your order <strong data-end=\"542\" data-start=\"468\">if it has not yet been shipped and no shipping label has been created.</strong></font></p>\n</div>\n<p style='font-family: \"Microsoft YaHei\";'><strong><font face=\"Arial\" size=\"4\">Order Notes / Special Requests</font></strong></p>\n<p data-start=\"103\" data-end=\"312\" style='font-family: \"Microsoft YaHei\";'><font face=\"Arial\" size=\"4\">Please <strong>DO NOT</strong><strong data-start=\"110\" data-end=\"162\"> </strong><span data-start=\"110\" data-end=\"162\">leave any order notes or special requests</span> in the order. If you have a special request, <span data-start=\"208\" data-end=\"237\">contact us directly first</span>. Once we confirm and agree to your request, you may then place your order. </font><font face=\"Arial\" size=\"4\">Do <strong data-start=\"317\" data-end=\"324\">not</strong> leave new requests in the order notes after purchasing. We will <strong data-start=\"389\" data-end=\"396\">not</strong> be able to honor requests written only in the notes. </font><span style=\"font-family: Arial; font-size: large;\">Feel free to contact us before checkout if you need assistance. Thank you.</span></p>\n</div> <br>Listed with ExportYourStore.com"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "genuine-delta-ac-adapter-eadp-20nb-c-5v-4a-power-supply-5-5-2-1mm",
+       "id": "gid://shopify/ProductVariant/52130278867175",
+       "media": [
+        {
+         "alt_text": "Genuine Delta AC Adapter EADP-20NB C 5V 4A Power Supply 5.5*2.1MM",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0662/9120/4327/files/57_880ebb99-b153-404d-bfff-395749608319.jpg",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0662/9120/4327/files/57_880ebb99-b153-404d-bfff-395749608319.jpg",
+         "width": 1600
+        }
+       ],
+       "price": {
+        "amount": 1499,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "g-electronic-9008.myshopify.com",
+        "id": "gid://shopify/Shop/66291204327",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/66291204327/policies/28313682151.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/66291204327/policies/28313714919.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/66291204327/policies/28313649383.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/66291204327/policies/28313747687.html"
+         }
+        ],
+        "name": "G-electronic",
+        "url": "https://gelectronic.store"
+       },
+       "seller_product_id": "gid://shopify/Product/9557919138023",
+       "source": "shopify",
+       "title": "Genuine Delta AC Adapter EADP-20NB C 5V 4A Power Supply 5.5*2.1MM",
+       "url": "https://gelectronic.store/products/genuine-delta-ac-adapter-eadp-20nb-c-5v-4a-power-supply-5-5-2-1mm?variant=52130278867175&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "Brand: ALITOVE<br><br>Model: AL5V3ABK<br><br><b>Parameter</b><br> 100% Brand New<br> Input: 100~240V AC, 50/60Hz<br> Output voltage: 5V DC <br> Output current: up to 3 Amps<br> Working Temperature: 0~40℃<br> Storage Temperature: -20~60℃<br> Ambient Humidity: 0~95% Non-Condensation<br> Safety Compliance: CCC/CE<br> Cable length: 35.4in (90cm)<br> Body size: 3.1in x 2in x 1.3in (8cm x 5 cm x 3.3cm) <br> Weight: 0.22 lb / 100g<br> <br><b>Kindly note</b><br> 1) The power supply comes with a female DC connector. So you can easily screw wires on it without soldering. <br> 2) Please don’t use it outdoor. It is not waterproof. <br><br><b>Statement:</b><br> Some customers complain that output power of 5V power supply is insufficient. After a series of tests, we find the reason is wrong test method, not quality issue.<br> Because of low voltage and large current, 5V power supply requires the test wire to be thick and short enough, so as to reduce the power loss as much as possible.<br> Compared with the 12V and 24V power supply, if the same current is to be output, 5V power supply needs a thicker output wire.<br> For example, if the 12V 20A power supply is tested by 11 AWG test wire,no current and voltage drop, no power loss. <br> But when we test 5V 20A power supply, in order to get sufficient 5V voltage and 20A current, 6 AWG test wire is required. <br> If we use 11 AWG test wire or 6 AWG test wire is too long, the current and voltage will drop much. This is the characteristic of the current transmission of 5V power supply. <br> The lower the output voltage is, the wider the transmission channel should be. If you need test report, please feel free to contact us.<br> <br><b>Package:</b><br> 1x 5V 3A power supply adapter <br> 1x DC female connector<br><br><br>• Input: 100V-240V 50/60Hz<br>• Output: 5V DC up to 3 Amps<br>• Output adaptor jack size: 5.5mm x 2.5mm, compatible with 5.5mm x2.1mm<br>• It comes with a female DC connector for screwing wires onto it. You can easily connect wires on it without soldering.<br>• Safety features: Automatic overload cut-off, over Voltage cut-off, automatic thermal cut-off, short circuit protection.<br>• Enough 15W output power and 5V stable output voltage will protect your electronic products from destruction.<br>• It is perfect for all 5V projects, such as WS2811 2801 WS2812B APA102 SK6812 LED Strip Pixel light, CCTV Camera, Security System, etc.<br><br>Color: 3A Black<br><br>Wattage/Output: 1 Pack"
+     },
+     "handle": "alitove-5v-3a-15w-ac-100v-240v-to-dc-power-supply-adapter-converter-5-5x-2-5mm-5-5x2-1mm-plug-for-ws2812b-ws2811-ws2801-sk6812-led-pixel-strip-light-cctv-camera-security-system",
+     "id": "gid://shopify/p/4N761u0kH51GLpswMvODkA",
+     "media": [
+      {
+       "alt_text": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light…",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/51cL2BwPLPL.jpg",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/51cL2BwPLPL.jpg",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Automatic overload, overvoltage, and short circuit protection ensures safe operation for connected devices",
+       "Stable 5V DC output up to 3A supports a wide range of electronic and LED projects",
+       "Easy plug-in connection with female DC connector eliminates the need for soldering",
+       "Wide input compatibility (100V–240V AC) for global use",
+       "Compact and lightweight design for convenient portability"
+      ],
+      "unique_selling_points": [
+       "Provides stable 5V output up to 3A with automatic safety protections and easy plug-in connection."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2099,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2099,
+       "currency": "USD"
+      }
+     },
+     "title": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light…",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://craftedyogi.com/buy/51593878995226:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "Brand: ALITOVE<br><br>Model: AL5V3ABK<br><br><b>Parameter</b><br> 100% Brand New<br> Input: 100~240V AC, 50/60Hz<br> Output voltage: 5V DC <br> Output current: up to 3 Amps<br> Working Temperature: 0~40℃<br> Storage Temperature: -20~60℃<br> Ambient Humidity: 0~95% Non-Condensation<br> Safety Compliance: CCC/CE<br> Cable length: 35.4in (90cm)<br> Body size: 3.1in x 2in x 1.3in (8cm x 5 cm x 3.3cm) <br> Weight: 0.22 lb / 100g<br> <br><b>Kindly note</b><br> 1) The power supply comes with a female DC connector. So you can easily screw wires on it without soldering. <br> 2) Please don’t use it outdoor. It is not waterproof. <br><br><b>Statement:</b><br> Some customers complain that output power of 5V power supply is insufficient. After a series of tests, we find the reason is wrong test method, not quality issue.<br> Because of low voltage and large current, 5V power supply requires the test wire to be thick and short enough, so as to reduce the power loss as much as possible.<br> Compared with the 12V and 24V power supply, if the same current is to be output, 5V power supply needs a thicker output wire.<br> For example, if the 12V 20A power supply is tested by 11 AWG test wire,no current and voltage drop, no power loss. <br> But when we test 5V 20A power supply, in order to get sufficient 5V voltage and 20A current, 6 AWG test wire is required. <br> If we use 11 AWG test wire or 6 AWG test wire is too long, the current and voltage will drop much. This is the characteristic of the current transmission of 5V power supply. <br> The lower the output voltage is, the wider the transmission channel should be. If you need test report, please feel free to contact us.<br> <br><b>Package:</b><br> 1x 5V 3A power supply adapter <br> 1x DC female connector<br><br><br>• Input: 100V-240V 50/60Hz<br>• Output: 5V DC up to 3 Amps<br>• Output adaptor jack size: 5.5mm x 2.5mm, compatible with 5.5mm x2.1mm<br>• It comes with a female DC connector for screwing wires onto it. You can easily connect wires on it without soldering.<br>• Safety features: Automatic overload cut-off, over Voltage cut-off, automatic thermal cut-off, short circuit protection.<br>• Enough 15W output power and 5V stable output voltage will protect your electronic products from destruction.<br>• It is perfect for all 5V projects, such as WS2811 2801 WS2812B APA102 SK6812 LED Strip Pixel light, CCTV Camera, Security System, etc.<br><br>Color: 3A Black<br><br>Wattage/Output: 1 Pack"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "alitove-5v-3a-15w-ac-100v-240v-to-dc-power-supply-adapter-converter-5-5x-2-5mm-5-5x2-1mm-plug-for-ws2812b-ws2811-ws2801-sk6812-led-pixel-strip-light-cctv-camera-security-system",
+       "id": "gid://shopify/ProductVariant/51593878995226",
+       "list_price": {
+        "amount": 2253,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light…",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/51cL2BwPLPL.jpg",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0965/6772/2266/files/51cL2BwPLPL.jpg",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 2099,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "xcjhsr-4d.myshopify.com",
+        "id": "gid://shopify/Shop/96567722266",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48899293466.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940515610.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940646682.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/96567722266/policies/48940613914.html"
+         }
+        ],
+        "name": "Craftedyogi",
+        "url": "https://craftedyogi.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10099912081690",
+       "source": "shopify",
+       "title": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light…",
+       "url": "https://craftedyogi.com/products/alitove-5v-3a-15w-ac-100v-240v-to-dc-power-supply-adapter-converter-5-5x-2-5mm-5-5x2-1mm-plug-for-ws2812b-ws2811-ws2801-sk6812-led-pixel-strip-light-cctv-camera-security-system?variant=51593878995226&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div>\n<h1>About This</h1>\n<ul>\n<li>Input: 100V-240V 50/60Hz; Output: 5V DC up to 3 Amps; Output adaptor jack size: 5.5mm x 2.5mm, compatible with 5.5mm x2.1mm</li>\n<li>It comes with a female DC connector for screwing wires onto it. You can easily connect wires on it without soldering.</li>\n<li>Safety features: Automatic overload cut-off, over Voltage cut-off, automatic thermal cut-off, short circuit protection.</li>\n<li>Enough 15W output power and 5V stable output voltage will protect your electronic products from destruction.</li>\n<li>It is perfect for all 5V projects, such as WS2811 2801 WS2812B APA102 SK6812 LED Strip Pixel light, CCTV Camera, Security System, etc.</li>\n</ul>\n<h1>Overview</h1>\n<ul>\n<li>Brand : ALITOVE</li>\n<li>Connector Type : Barrel Connector</li>\n<li>Compatible Devices : Cameras</li>\n<li>Compatible Phone Models : Pixel</li>\n<li>Included Components : 1x 5V 3A power supply adapter 1x DC female connector</li>\n<li>Special Feature : Short Circuit Protection</li>\n<li>Color : 3A Black</li>\n<li>Input Voltage : 120 Volts (AC)</li>\n<li>Amperage : 3 Amps</li>\n<li>Wattage : 15 watts</li>\n</ul>\n</div>"
+     },
+     "handle": "b078rxzm4c",
+     "id": "gid://shopify/p/7HGPpHiqOe5G9nnQni73xG",
+     "media": [
+      {
+       "alt_text": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light CCTV Camera Security System",
+       "height": 690,
+       "preview": {
+        "height": 690,
+        "url": "https://cdn.shopify.com/s/files/1/1018/6227/7201/files/51cL2BwPLPL._AC_SX679.jpg",
+        "width": 679
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1018/6227/7201/files/51cL2BwPLPL._AC_SX679.jpg",
+       "width": 679
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Automatic overload cut-off protects devices from damage",
+       "Over voltage and thermal cut-off ensure stable and safe operation",
+       "Short circuit protection enhances user safety",
+       "Wide input voltage range (100V–240V AC) for global compatibility",
+       "Includes female DC connector for easy wire connection without soldering"
+      ],
+      "unique_selling_points": [
+       "Supports both 100V–240V AC input and 5.5x2.5mm/5.5x2.1mm DC output with automatic safety protections."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 1718,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1718,
+       "currency": "USD"
+      }
+     },
+     "title": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light CCTV Camera Security System",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://phoneify4u.com/buy/59716683333713:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div>\n<h1>About This</h1>\n<ul>\n<li>Input: 100V-240V 50/60Hz; Output: 5V DC up to 3 Amps; Output adaptor jack size: 5.5mm x 2.5mm, compatible with 5.5mm x2.1mm</li>\n<li>It comes with a female DC connector for screwing wires onto it. You can easily connect wires on it without soldering.</li>\n<li>Safety features: Automatic overload cut-off, over Voltage cut-off, automatic thermal cut-off, short circuit protection.</li>\n<li>Enough 15W output power and 5V stable output voltage will protect your electronic products from destruction.</li>\n<li>It is perfect for all 5V projects, such as WS2811 2801 WS2812B APA102 SK6812 LED Strip Pixel light, CCTV Camera, Security System, etc.</li>\n</ul>\n<h1>Overview</h1>\n<ul>\n<li>Brand : ALITOVE</li>\n<li>Connector Type : Barrel Connector</li>\n<li>Compatible Devices : Cameras</li>\n<li>Compatible Phone Models : Pixel</li>\n<li>Included Components : 1x 5V 3A power supply adapter 1x DC female connector</li>\n<li>Special Feature : Short Circuit Protection</li>\n<li>Color : 3A Black</li>\n<li>Input Voltage : 120 Volts (AC)</li>\n<li>Amperage : 3 Amps</li>\n<li>Wattage : 15 watts</li>\n</ul>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "b078rxzm4c",
+       "id": "gid://shopify/ProductVariant/59716683333713",
+       "media": [
+        {
+         "alt_text": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light CCTV Camera Security System",
+         "height": 690,
+         "preview": {
+          "height": 690,
+          "url": "https://cdn.shopify.com/s/files/1/1018/6227/7201/files/51cL2BwPLPL._AC_SX679.jpg",
+          "width": 679
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1018/6227/7201/files/51cL2BwPLPL._AC_SX679.jpg",
+         "width": 679
+        }
+       ],
+       "price": {
+        "amount": 1718,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "naupj2-jp.myshopify.com",
+        "id": "gid://shopify/Shop/101862277201",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/101862277201/policies/56278319185.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/101862277201/policies/57466323025.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/101862277201/policies/57466257489.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/101862277201/policies/57466388561.html"
+         }
+        ],
+        "name": "Phoneify",
+        "url": "https://phoneify4u.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15875491299409",
+       "source": "shopify",
+       "title": "ALITOVE 5V 3A 15W AC 100V~240V to DC Power Supply Adapter Converter 5.5X 2.5mm 5.5x2.1mm Plug for WS2812B WS2811 WS2801 SK6812 LED Pixel Strip Light CCTV Camera Security System",
+       "url": "https://phoneify4u.com/products/b078rxzm4c?variant=59716683333713&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)</li>\r\n<li>Offers high-quality AC to DC 5V power supply</li>\r\n<li>Provides switch mode power supply</li>\r\n<li>Perfect for supplying power to many single-board computers</li>\r\n<li>Output current is much higher 2000 mA</li>\r\n</ul>\r\n<p>The <strong>Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)</strong> is a high-quality AC to DC 5V 2000 mA Barrel Jack wall power supply. These are switch mode power supplies which mean the output is regulated to 5V and the capable output current is much higher (2000 mA).</p>\r\n<p>Please note: This specific supply (5V/2A) is also FCC/CE certified and works with 100-240VAC inputs and has a Center-positive 5.5x2.1mm barrel connector.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Wall Adapter Power Supply - 5 VDC, 2 A (Barrel Jack)</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power Supply: 5 V (AC - DC)</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+     },
+     "handle": "wall-adapter-power-supply-5vdc-2a-barrel-jack",
+     "id": "gid://shopify/p/5zAQPcrYQH7a2su8LbVQ3b",
+     "media": [
+      {
+       "alt_text": "Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)",
+       "height": 1000,
+       "preview": {
+        "height": 1000,
+        "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1702872.webp",
+        "width": 1000
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1702872.webp",
+       "width": 1000
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Switch-mode power supply ensures stable 5VDC output for sensitive electronics",
+       "Supports up to 2000mA output current for powering multiple devices simultaneously",
+       "Wide input compatibility (100-240VAC) for global use",
+       "Center positive 5.5x2.1mm barrel jack connector for easy device connection",
+       "FCC and CE certified for safety and compliance"
+      ],
+      "unique_selling_points": [
+       "Delivers stable 5VDC 2A output with high current capacity and certified safety compliance."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 950,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 950,
+       "currency": "USD"
+      }
+     },
+     "title": "Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.robotshop.com/buy/42358349004961:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=bvmivZoVGd5v&_gsid=bvmivZoVGd5v",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<div class=\"product-block-list__item product-block-list__item--description details_product\"><div class=\"card\">\n<div class=\"card__header\">\r\n<h2 class=\"card__title heading h3\">Description</h2>\r\n</div>\n<div class=\"card__section expandable-content desc-view-more\" id=\"main-description\">\n<div class=\"rte text--pull\">\n<ul>\r\n<li>Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)</li>\r\n<li>Offers high-quality AC to DC 5V power supply</li>\r\n<li>Provides switch mode power supply</li>\r\n<li>Perfect for supplying power to many single-board computers</li>\r\n<li>Output current is much higher 2000 mA</li>\r\n</ul>\r\n<p>The <strong>Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)</strong> is a high-quality AC to DC 5V 2000 mA Barrel Jack wall power supply. These are switch mode power supplies which mean the output is regulated to 5V and the capable output current is much higher (2000 mA).</p>\r\n<p>Please note: This specific supply (5V/2A) is also FCC/CE certified and works with 100-240VAC inputs and has a Center-positive 5.5x2.1mm barrel connector.</p>\n</div>\n<button class=\"expandable-content__toggle\" aria-expanded=\"false\" aria-controls=\"main-description\"><span class=\"expandable-content__toggle-icon\"></span><span class=\"expandable-content__toggle-text\" data-view-more=\"View more\" data-view-less=\"View less\">View more</span></button>\n</div>\n</div></div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-2\">\r\n<span class=\"card__title heading h3\">What's Included</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-2\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>1 x Wall Adapter Power Supply - 5 VDC, 2 A (Barrel Jack)</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div><div class=\"card details_product\">\n<button class=\"card__collapsible-button\" data-action=\"toggle-collapsible\" aria-expanded=\"false\" aria-controls=\"unique-tab-7\">\r\n<span class=\"card__title heading h3\">Specifications</span>\r\n<span>\r\n<svg focusable=\"false\" class=\"icon icon--arrow-bottom\" viewbox=\"0 0 12 8\" role=\"presentation\">\r\n<path stroke=\"currentColor\" stroke-width=\"2\" d=\"M10 2L6 6 2 2\" fill=\"none\" stroke-linecap=\"square\"></path>\r\n</svg>\r\n</span>\r\n</button>\r\n<div id=\"unique-tab-7\" class=\"card__collapsible\">\r\n<div class=\"card__collapsible-content\">\r\n<div class=\"rte text--pull\">\r\n<ul>\r\n<li>Power Supply: 5 V (AC - DC)</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "wall-adapter-power-supply-5vdc-2a-barrel-jack",
+       "id": "gid://shopify/ProductVariant/42358349004961",
+       "media": [
+        {
+         "alt_text": "Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)",
+         "height": 1000,
+         "preview": {
+          "height": 1000,
+          "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1702872.webp",
+          "width": 1000
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_1702872.webp",
+         "width": 1000
+        }
+       ],
+       "price": {
+        "amount": 950,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "robotshop-us.myshopify.com",
+        "id": "gid://shopify/Shop/57390268577",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481885345.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481918113.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481852577.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/57390268577/policies/26481950881.html"
+         }
+        ],
+        "name": "RobotShop USA",
+        "url": "https://www.robotshop.com"
+       },
+       "seller_product_id": "gid://shopify/Product/7486484381857",
+       "source": "shopify",
+       "title": "Wall Adapter Power Supply - 5VDC, 2A (Barrel Jack)",
+       "url": "https://www.robotshop.com/products/wall-adapter-power-supply-5vdc-2a-barrel-jack?variant=42358349004961&_gsid=bvmivZoVGd5v&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

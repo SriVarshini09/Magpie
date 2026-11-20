@@ -1,0 +1,1018 @@
+{
+ "args": {
+  "business": "https://rokland.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "Computer Linux, Windows or MacOS"
+  }
+ },
+ "key": "bb972ea99892859177843011c576ed775da64f6ee337640a86d6a9459a37e4c6",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:38-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://rokland.myshopify.com",
+  "endpoint": "https://rokland.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "frontpage",
+       "id": "gid://shopify/Collection/3581762",
+       "title": "Frontpage"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "alfa-network",
+       "id": "gid://shopify/Collection/3975332",
+       "title": "Alfa Network"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": "Below are the top 5 Alfa brand Wi-Fi USB adapters ranked by overall range (ranking begins with top left, goes left to right, then to second row). All of these models get good range and are great choices."
+       },
+       "handle": "top-5-wi-fi-adapters-ranked-by-overall-range",
+       "id": "gid://shopify/Collection/6169712",
+       "title": "Top 5 indoor Alfa Wi-Fi USB Adapters (ranked by overall range)"
+      }
+     ],
+     "description": {
+      "html": "AWUS036AXML is a new WiFi 6E (802.11ax) tri-band 2.4 GHz / 5 GHz / 6 GHz WiFi USB adapter. It supports speeds up to 3000Mbps when used with a compatible WiFi 6E router (there are various stream models of WiFi 6E routers, 800-1200 mbps will be a more common speed with most routers).View full data sheetDesigned for Microsoft Windows 11, it is also compatible with Microsoft Windows 10. It's MediaTek MT7921AUN chipset also makes it a compatible Linux solution for many distros including Kali and Ubuntu. Rokland is a value added ALFA Network partner that works to ensure Linux support for this chip is available. It comes with a 2-in-1 USB-C / USB-A cable, so even your laptop/PC does not have USB-C, you can use standard USB-A. The dual RP-SMA antenna connectors allow for changing the higher gain or directional antenna to increase the connection distance. Package Contents: AWUS036AXML Wireless Adapter 2x 5dBi Antennas 3ft Type-C Super Speed Cable w/ USB-A adapter Screen Clip & Suction Cup Mount Quick-Start Guide Compatible optional antenna upgrades: ALFA APA-M25-6E ALFA ARS-WiFi6E-M2 We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.-USB 3.0 port required for max speed, though is compatible with USB 2.0 ports also at a max speed of 480 mbps. Additional Features: Product Comparison:- Enterprise-class 64/128 WEP encryption (Windows only)- WPA, WPA-PSK, WPA2, WPA3 support for Windows and Linux- 3000 mbps max High-Speed Transfer Rate for 802.11ax- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036AXMLCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Additional Resources:AWUS036AXML - Support Page & Driver Downloads - Click HereAWUS036AXML Kali Linux Firmware Driver Install & Virtual Machine Troubleshooting Guide - Click HereWarranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: This item can be returned for refund within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "alfa-awus036axml-802-11ax-wifi-6-1800-mbps-tri-band-wifi-usb-adapter-w-bluetooth",
+     "id": "gid://shopify/Product/6923966546003",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/ProductPage700x700_5.png?v=1677606708"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "802.11ac",
+      "feed",
+      "feed2",
+      "WiFi"
+     ],
+     "title": "ALFA AWUS036AXML 802.11ax WiFi 6/6e 3000 mbps Tri Band WiFi USB Adapter",
+     "url": "https://store.rokland.com/products/alfa-awus036axml-802-11ax-wifi-6-1800-mbps-tri-band-wifi-usb-adapter-w-bluetooth",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/40474650902611:1",
+       "description": {
+        "html": "AWUS036AXML is a new WiFi 6E (802.11ax) tri-band 2.4 GHz / 5 GHz / 6 GHz WiFi USB adapter. It supports speeds up to 3000Mbps when used with a compatible WiFi 6E router (there are various stream models of WiFi 6E routers, 800-1200 mbps will be a more common speed with most routers).View full data sheetDesigned for Microsoft Windows 11, it is also compatible with Microsoft Windows 10. It's MediaTek MT7921AUN chipset also makes it a compatible Linux solution for many distros including Kali and Ubuntu. Rokland is a value added ALFA Network partner that works to ensure Linux support for this chip is available. It comes with a 2-in-1 USB-C / USB-A cable, so even your laptop/PC does not have USB-C, you can use standard USB-A. The dual RP-SMA antenna connectors allow for changing the higher gain or directional antenna to increase the connection distance. Package Contents: AWUS036AXML Wireless Adapter 2x 5dBi Antennas 3ft Type-C Super Speed Cable w/ USB-A adapter Screen Clip & Suction Cup Mount Quick-Start Guide Compatible optional antenna upgrades: ALFA APA-M25-6E ALFA ARS-WiFi6E-M2 We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.-USB 3.0 port required for max speed, though is compatible with USB 2.0 ports also at a max speed of 480 mbps. Additional Features: Product Comparison:- Enterprise-class 64/128 WEP encryption (Windows only)- WPA, WPA-PSK, WPA2, WPA3 support for Windows and Linux- 3000 mbps max High-Speed Transfer Rate for 802.11ax- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036AXMLCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Additional Resources:AWUS036AXML - Support Page & Driver Downloads - Click HereAWUS036AXML Kali Linux Firmware Driver Install & Virtual Machine Troubleshooting Guide - Click HereWarranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: This item can be returned for refund within 30 days of receipt. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/40474650902611",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/ProductPage700x700_5.png?v=1677606708"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 6997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "Alfa-AXML",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": "Most Recent Rokland Products"
+       },
+       "handle": "new-arrivals",
+       "id": "gid://shopify/Collection/265491742803",
+       "title": "New Arrivals"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-but-miners",
+       "id": "gid://shopify/Collection/265527689299",
+       "title": "All items but miners"
+      }
+     ],
+     "description": {
+      "html": "Raspberry Pi 5 8GB Single Board Computer is a high-performance development computer that offers enhanced functionality. It is equipped with a 64-bit quad-core Arm Cortex-A76 processor that operates at 2.4GHz, providing two to three times the performance of its predecessor. The silicon used in this board is developed in-house, resulting in a significant improvement in peripheral performance.Specifications: Broadcom BCM2712 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU, with cryptography extensions, 512KB per-core L2 caches and a 2MB shared L3 cache VideoCore VII GPU, supporting OpenGL ES 3.1, Vulkan 1.2 Dual 4Kp60 HDMI® display output with HDR support 4Kp60 HEVC decoder LPDDR4X-4267 SDRAM 8GB Dual-band 802.11ac Wi-Fi® Bluetooth 5.0 / Bluetooth Low Energy (BLE) microSD card slot, with support for high-speed SDR104 mode 2 × USB 3.0 ports, supporting simultaneous 5Gbps operation 2 × USB 2.0 ports Gigabit Ethernet, with PoE+ support (requires separate PoE+ HAT) 2 × 4-lane MIPI camera/display transceivers PCIe 2.0 x1 interface for fast peripherals (requires separate M.2 HAT or other adapter) 5V/5A DC power via USB-C, with Power Delivery support Raspberry Pi standard 40-pin header Real-time clock (RTC), powered from external battery Power button Package Contents: 1 x Raspberry Pi 5 8GB (new in box) Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 days, buyer pays return shipping except in cases of defect or advertisement error. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "raspberry-pi-5-8gb-single-board-computer",
+     "id": "gid://shopify/Product/7487759548499",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RaspberryPi5_2.png?v=1710965429"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 19997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19997,
+       "currency": "USD"
+      }
+     },
+     "title": "Raspberry Pi 5 (8GB) Single Board Computer",
+     "url": "https://store.rokland.com/products/raspberry-pi-5-8gb-single-board-computer",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/42356986150995:1",
+       "description": {
+        "html": "Raspberry Pi 5 8GB Single Board Computer is a high-performance development computer that offers enhanced functionality. It is equipped with a 64-bit quad-core Arm Cortex-A76 processor that operates at 2.4GHz, providing two to three times the performance of its predecessor. The silicon used in this board is developed in-house, resulting in a significant improvement in peripheral performance.Specifications: Broadcom BCM2712 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU, with cryptography extensions, 512KB per-core L2 caches and a 2MB shared L3 cache VideoCore VII GPU, supporting OpenGL ES 3.1, Vulkan 1.2 Dual 4Kp60 HDMI® display output with HDR support 4Kp60 HEVC decoder LPDDR4X-4267 SDRAM 8GB Dual-band 802.11ac Wi-Fi® Bluetooth 5.0 / Bluetooth Low Energy (BLE) microSD card slot, with support for high-speed SDR104 mode 2 × USB 3.0 ports, supporting simultaneous 5Gbps operation 2 × USB 2.0 ports Gigabit Ethernet, with PoE+ support (requires separate PoE+ HAT) 2 × 4-lane MIPI camera/display transceivers PCIe 2.0 x1 interface for fast peripherals (requires separate M.2 HAT or other adapter) 5V/5A DC power via USB-C, with Power Delivery support Raspberry Pi standard 40-pin header Real-time clock (RTC), powered from external battery Power button Package Contents: 1 x Raspberry Pi 5 8GB (new in box) Warranty & Support: Complimentary Telephone and Email/Live Chat Support (Click Here)Online Technical Manuals and Instructions (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: 30 days, buyer pays return shipping except in cases of defect or advertisement error. Items must be returned the way they were received, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/42356986150995",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/files/RaspberryPi5_2.png?v=1710965429"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 19997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RPI58GB",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "alfa-network",
+       "id": "gid://shopify/Collection/3975332",
+       "title": "Alfa Network"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": "Below are the top 5 Alfa brand dual band Wi-Fi USB adapters ranked by overall speed (ranking begins with top left, goes left to right, then to second row). We begin with connection speed to the router, and for the models that have the same max connection speed we sort by overall performance including range. All of these models get good speed and are great choices. To see a list of Alfa models ranked purely by range, click here."
+       },
+       "handle": "top-5-indoor-alfa-wi-fi-adapters-ranked-by-overall-speed",
+       "id": "gid://shopify/Collection/6169762",
+       "title": "Top 5 Alfa Dual Band (2.4/5GHz) Wi-Fi USB adapters (ranked by speed)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      }
+     ],
+     "description": {
+      "html": "ALFA AWUS036ACM brings dual antenna 802.11ac technology to PCs at an affordable cost. It is a new dual antenna 867 Mbps Wi-Fi USB adapter compatible with Windows XP through Windows 10. It features two RP-SMA antenna ports, and two 5 dBi dual-band antennas. The antennas are detachable and can be upgraded. This product is very similar to ALFA AWUS036AC but it has the Mediatek MT7612U chipset.AWUS036ACM is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036AC can achieve throughput speeds up to 867 Mbps. This adapter is backward compatible with 802.11g and 802.11n networks, but an 802.11ac router is required for the maximum throughput.This is brand new in retail box and includes the adapter, two 5 dBi dual-band antennas, driver CD. Output Power( +/- 2dBm )802.11a: 20dBm802.11b: 23dBm802.11g: 23dBm802.11n: 21dBm802.11an: 19dBm802.11ac: 20dBm Receive Sensitivity802.11a: -92dBm802.11b: -97dBm802.11g: -90dBm 802.11n: -90dBm 802.11an: -89dBm802.11ac: -86dBm CompatibilityIt will work with any computer that has an available USB port and Microsoft Windows Vista, Windows 7, Windows 8/8.1, Windows 10, or Windows 11.Linux: USB WiFi adapters based on the Mediatek mt7612u chipset, including the ALFA AWUS036ACM, have been supported in Linux with an in-kernel driver since Linux kernel v4.19, therefore, there is no need for driver installation. AP mode support on 5 GHz may require the use of a module parameter, \"disable_usb_sg\", for maximum performance. For additional information and a script to assist with adding this module parameter, click here.-Supports VIF/VIF capable in Kali (Virtual Interface)USB 3.0 port required for max speed, though is backward compatible with USB 2.0 ports also at a max speed of 480 mbps.Additional Features:- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, 802.1X support- 867 mbps High-Speed Transfer Rate for 802.11ac- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036ACMCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Product Comparison: Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi productsIf you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists.Contact us here for a custom quoteQuantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "alfa-awus036acm-802-11ac-dual-band-2-4-5-ghz-wifi-usb-adapter",
+     "id": "gid://shopify/Product/9826886025",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/AlfaAWUS036ACM802.11acDualBand2.45GHzWiFiUSBAdapter1.png?v=1624636054"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4697,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4697,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "802.11ac",
+      "feed",
+      "feed2",
+      "WiFi"
+     ],
+     "title": "ALFA AWUS036ACM 802.11ac Dual Band 2.4/5 GHz WiFi USB Adapter",
+     "url": "https://store.rokland.com/products/alfa-awus036acm-802-11ac-dual-band-2-4-5-ghz-wifi-usb-adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/32375704125523:1",
+       "description": {
+        "html": "ALFA AWUS036ACM brings dual antenna 802.11ac technology to PCs at an affordable cost. It is a new dual antenna 867 Mbps Wi-Fi USB adapter compatible with Windows XP through Windows 10. It features two RP-SMA antenna ports, and two 5 dBi dual-band antennas. The antennas are detachable and can be upgraded. This product is very similar to ALFA AWUS036AC but it has the Mediatek MT7612U chipset.AWUS036ACM is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036AC can achieve throughput speeds up to 867 Mbps. This adapter is backward compatible with 802.11g and 802.11n networks, but an 802.11ac router is required for the maximum throughput.This is brand new in retail box and includes the adapter, two 5 dBi dual-band antennas, driver CD. Output Power( +/- 2dBm )802.11a: 20dBm802.11b: 23dBm802.11g: 23dBm802.11n: 21dBm802.11an: 19dBm802.11ac: 20dBm Receive Sensitivity802.11a: -92dBm802.11b: -97dBm802.11g: -90dBm 802.11n: -90dBm 802.11an: -89dBm802.11ac: -86dBm CompatibilityIt will work with any computer that has an available USB port and Microsoft Windows Vista, Windows 7, Windows 8/8.1, Windows 10, or Windows 11.Linux: USB WiFi adapters based on the Mediatek mt7612u chipset, including the ALFA AWUS036ACM, have been supported in Linux with an in-kernel driver since Linux kernel v4.19, therefore, there is no need for driver installation. AP mode support on 5 GHz may require the use of a module parameter, \"disable_usb_sg\", for maximum performance. For additional information and a script to assist with adding this module parameter, click here.-Supports VIF/VIF capable in Kali (Virtual Interface)USB 3.0 port required for max speed, though is backward compatible with USB 2.0 ports also at a max speed of 480 mbps.Additional Features:- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, 802.1X support- 867 mbps High-Speed Transfer Rate for 802.11ac- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036ACMCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Product Comparison: Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi productsIf you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists.Contact us here for a custom quoteQuantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/32375704125523",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/AlfaAWUS036ACM802.11acDualBand2.45GHzWiFiUSBAdapter1.png?v=1624636054"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4697,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "56-D6VK-M2J4",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "frontpage",
+       "id": "gid://shopify/Collection/3581762",
+       "title": "Frontpage"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "alfa-network",
+       "id": "gid://shopify/Collection/3975332",
+       "title": "Alfa Network"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      }
+     ],
+     "description": {
+      "html": "ALFA AWUS036ACHM is a long range dual band USB WiFi adapter compatible with Microsoft Windows PCs. It features an RP-SMA antenna port and a 5 dBi dual-band antenna. The antenna is detachable and can be upgraded. It also has a power amplifier that increases it's reception range compared to ALFA's single antenna 802.11n products.This is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036ACHM can achieve throughput speeds up to 433 Mbps. This adapter is backward compatible with 802.11n WiFi routers, but will have limited speed with those networks. An 802.11ac router is required for the maximum throughput.The high receive sensitivity coupled with the internal power amplifier also allow it to pick up Wi-Fi signals from up to 3 times the distance of newer internal 802.11ac Wi-Fi cards shipping inside today's laptops. This is brand new in retail box and includes the adapter, a 5 dBi dual-band detachable antenna, and a clip you can use to attach it to a laptop LCD bezel. We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.CompatibilityIt will work with any computer that has an available USB port and Window Vista, Windows 7, Windows 8/8.1, Windows 10, or Windows 11. Kali Linux now supports packet injection for this adapter (LED light does not illuminate in Linux currently). -Supports VIF/VIF capable in Kali (Virtual Interface)DRIVER CD not included: With many modern laptop and desktop PCs no longer having a CD or DVD drive, ALFA has phased out the driver CD out of environmental waste concerns. You can download the install software for your product here.Additional Features:- Chipset: Mediatek MT7610U- LCD bezel clip- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, WPA3, 802.1X support- 433 mbps High-Speed Transfer Rate for 802.11ac (AC600 standard)- Compatible with 2.4 & 5 GHz WiFi networks- Compatible with 5 GHz DFS channels- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036ACHMCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Product ComparisonAdditional Resources:Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi productsIf you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists.Contact us here for a custom quoteQuantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "alfa-awus036achm-802-11ac-dual-band-high-power-ac1200-mediatek-wifi-usb-adapter",
+     "id": "gid://shopify/Product/4733856120915",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/gallery_ce2a7daf-9b31-4763-b28e-baa4fb870cec.png?v=1610905701"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4897,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4897,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "802.11ac",
+      "feed",
+      "feed2",
+      "WiFi"
+     ],
+     "title": "ALFA AWUS036ACHM 802.11ac Dual Band High Power Mediatek MT7610U WiFi USB Adapter",
+     "url": "https://store.rokland.com/products/alfa-awus036achm-802-11ac-dual-band-high-power-ac1200-mediatek-wifi-usb-adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/32375704027219:1",
+       "description": {
+        "html": "ALFA AWUS036ACHM is a long range dual band USB WiFi adapter compatible with Microsoft Windows PCs. It features an RP-SMA antenna port and a 5 dBi dual-band antenna. The antenna is detachable and can be upgraded. It also has a power amplifier that increases it's reception range compared to ALFA's single antenna 802.11n products.This is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036ACHM can achieve throughput speeds up to 433 Mbps. This adapter is backward compatible with 802.11n WiFi routers, but will have limited speed with those networks. An 802.11ac router is required for the maximum throughput.The high receive sensitivity coupled with the internal power amplifier also allow it to pick up Wi-Fi signals from up to 3 times the distance of newer internal 802.11ac Wi-Fi cards shipping inside today's laptops. This is brand new in retail box and includes the adapter, a 5 dBi dual-band detachable antenna, and a clip you can use to attach it to a laptop LCD bezel. We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.CompatibilityIt will work with any computer that has an available USB port and Window Vista, Windows 7, Windows 8/8.1, Windows 10, or Windows 11. Kali Linux now supports packet injection for this adapter (LED light does not illuminate in Linux currently). -Supports VIF/VIF capable in Kali (Virtual Interface)DRIVER CD not included: With many modern laptop and desktop PCs no longer having a CD or DVD drive, ALFA has phased out the driver CD out of environmental waste concerns. You can download the install software for your product here.Additional Features:- Chipset: Mediatek MT7610U- LCD bezel clip- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, WPA3, 802.1X support- 433 mbps High-Speed Transfer Rate for 802.11ac (AC600 standard)- Compatible with 2.4 & 5 GHz WiFi networks- Compatible with 5 GHz DFS channels- ONE YEAR manufacturer's warranty Specifications : Part/Model #: AWUS036ACHMCountry of Origin: TaiwanManufacturer : Alfa Network Inc. Product ComparisonAdditional Resources:Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi productsIf you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists.Contact us here for a custom quoteQuantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/32375704027219",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/gallery_ce2a7daf-9b31-4763-b28e-baa4fb870cec.png?v=1610905701"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4897,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AWUS036ACHM",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "outdoor-wi-fi-equipment",
+       "id": "gid://shopify/Collection/7531058",
+       "title": "Outdoor Wi-Fi Equipment"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "long-range-wi-fi-equipment",
+       "id": "gid://shopify/Collection/7531986",
+       "title": "Long Range Wi-Fi Equipment"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "wi-fi-bundles-alfa-networking-kits",
+       "id": "gid://shopify/Collection/7532040",
+       "title": "Wi-Fi Bundles & Alfa Networking Kits"
+      }
+     ],
+     "description": {
+      "html": "ALFA ID36ACH is a high power 802.11ac compliant USB 3.0 Wi-Fi receiver/client with industrial grade casing. It is designed for use in industrial, military, and commercial environments, with a heavy duty heat dissipating case made out of the same material used in aircraft manufacturing. It is designed to connect to one specific computer and boosts just the range of that PC.ID36ACH can be used in home environments also. It uses the same Realtek RTL8812AU chipset found in the ALFA AWUS036ACH indoor USB client, and is compatible with Microsoft Windows, Mac OS, and Kali Linux. It features 2x N-female antenna ports (antennas not included). We recommend pairing with 2x AOA-2458-79AM dual band outdoor antennas. Use this product to pick up WiFi signals on a specific computer from a long distance. This is not a repeater, so it cannot share Wi-Fi signal with multiple devices at one. Chipset Realtek RTL8812AU WiFi Standards IEEE 802.11ac/a/b/g/n WiFi Frequency Dual Band 2.4GHz or 5GHz Antenna Connector N female x 2 Antenna Type 2.4G/5GHz Dual-Band 5dBi dipole antenna Wireless Performance 802.11a: up to 54Mbps 802.11b: up to 11Mbps 802.11g: up to 54Mbps 802.11n: up to 300Mbps 802.11ac: up to 867Mbps Wireless Security 64/128 bit WEP,WPA/WPA2,WPA-PSK/WPA2-PSK,WPS Interface USB 3.0 OS Requirement Windows XP, Vista, 7, 8/8.1 and Windows 10 32/64bit, macOS 10.5 to 10.14 or later Linux Additional specs: 802.11g: -76dBm@54Mbps802.11n: -70dBm@300Mbps 802.11ac: -54dBm@867Mbps 64/128bit WEPWPA (TKIP with IEEE 802.1x)WPA2 (AES with IEEE 802.1x)WPA Mixed Temperature: -40°C ~ 70°C Storage Humidity: 5% ~ 98% (Non-condensing) Dimension: 125 x 102 x 34 mm Weight: 680g Box includes 1x ID36ACH dual band USB adapter, 1x 3ft USB 3.0 cable Related Resources:Video: Unboxing the ALFA ID36ACH Industrial Grade Dual Band High Power Wi-Fi USB AdapterWarranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "alfa-id36ach-802-11ac-ac1200-industrial-grade-dual-band-high-power-wi-fi-usb-adapter",
+     "id": "gid://shopify/Product/3928774344787",
+     "list_price_range": {
+      "max": {
+       "amount": 19997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 19997,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/AlfaID36ACH802.11acAC1200IndustrialGradeDualBandHighPowerWi-FiUSBAdapter1.png?v=1587490029"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 14997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 14997,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "feed",
+      "feed2"
+     ],
+     "title": "ALFA ID36ACH 802.11ac AC1200 Industrial Grade Dual Band High Power Wi-Fi USB Adapter",
+     "url": "https://store.rokland.com/products/alfa-id36ach-802-11ac-ac1200-industrial-grade-dual-band-high-power-wi-fi-usb-adapter",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/29405942677587:1",
+       "description": {
+        "html": "ALFA ID36ACH is a high power 802.11ac compliant USB 3.0 Wi-Fi receiver/client with industrial grade casing. It is designed for use in industrial, military, and commercial environments, with a heavy duty heat dissipating case made out of the same material used in aircraft manufacturing. It is designed to connect to one specific computer and boosts just the range of that PC.ID36ACH can be used in home environments also. It uses the same Realtek RTL8812AU chipset found in the ALFA AWUS036ACH indoor USB client, and is compatible with Microsoft Windows, Mac OS, and Kali Linux. It features 2x N-female antenna ports (antennas not included). We recommend pairing with 2x AOA-2458-79AM dual band outdoor antennas. Use this product to pick up WiFi signals on a specific computer from a long distance. This is not a repeater, so it cannot share Wi-Fi signal with multiple devices at one. Chipset Realtek RTL8812AU WiFi Standards IEEE 802.11ac/a/b/g/n WiFi Frequency Dual Band 2.4GHz or 5GHz Antenna Connector N female x 2 Antenna Type 2.4G/5GHz Dual-Band 5dBi dipole antenna Wireless Performance 802.11a: up to 54Mbps 802.11b: up to 11Mbps 802.11g: up to 54Mbps 802.11n: up to 300Mbps 802.11ac: up to 867Mbps Wireless Security 64/128 bit WEP,WPA/WPA2,WPA-PSK/WPA2-PSK,WPS Interface USB 3.0 OS Requirement Windows XP, Vista, 7, 8/8.1 and Windows 10 32/64bit, macOS 10.5 to 10.14 or later Linux Additional specs: 802.11g: -76dBm@54Mbps802.11n: -70dBm@300Mbps 802.11ac: -54dBm@867Mbps 64/128bit WEPWPA (TKIP with IEEE 802.1x)WPA2 (AES with IEEE 802.1x)WPA Mixed Temperature: -40°C ~ 70°C Storage Humidity: 5% ~ 98% (Non-condensing) Dimension: 125 x 102 x 34 mm Weight: 680g Box includes 1x ID36ACH dual band USB adapter, 1x 3ft USB 3.0 cable Related Resources:Video: Unboxing the ALFA ID36ACH Industrial Grade Dual Band High Power Wi-Fi USB AdapterWarranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here) Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/29405942677587",
+       "list_price": {
+        "amount": 19997,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/AlfaID36ACH802.11acAC1200IndustrialGradeDualBandHighPowerWi-FiUSBAdapter1.png?v=1587490029"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 14997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ID36ACH",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "items",
+       "id": "gid://shopify/Collection/3974632",
+       "title": "Items"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "price-0-50",
+       "id": "gid://shopify/Collection/4268292",
+       "title": "All items (sorted by price)"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all-items-excluding-wholesale-lots",
+       "id": "gid://shopify/Collection/8296340",
+       "title": "All items excluding wholesale lots"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "802-11ac-wi-fi-clients-receivers",
+       "id": "gid://shopify/Collection/23352869",
+       "title": "802.11ac Wi-Fi Clients/Receivers"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "dual-band-2-4-5-ghz",
+       "id": "gid://shopify/Collection/193814405",
+       "title": "Dual Band 2.4/5 GHz Wi-Fi Products"
+      }
+     ],
+     "description": {
+      "html": "ALFA AWUS036EAC brings high speed 802.11ac technology to PCs at an affordable cost. It is a 867 Mbps Wi-Fi USB adapter compatible with Windows XP through Windows 10. It features a small profile with fully integrated antennas with a dongle style that connects directly to the USB port. Also included is a special laptop clip that fits many of today's laptop bezels.OEM bulk package eco-pack version, no retail boxAWUS036EAC is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036EAC can achieve throughput speeds up to 867 Mbps, almost three times that of the 802.11n maximum of 300 Mbps. This adapter is backward compatible with 802.11g and 802.11n networks, but will have limited speed with those networks. An 802.11ac router is required for the maximum throughput.ALFA AWUS036EAC combines dual antenna dual band 802.11ac networking at a fraction of the price of competing major brand big box store products.Your 802.11ac router will perform optimally when all of your computers are on the AC standard, so this is a great low-cost way to upgrade them all. This is brand new in retail box and includes the adapter, driver CD, and USB docking clip with cable as shown in the picture. We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.Compatibility:The AWUS036EAC will work with any computer that has an available USB port and:Windows VistaWindows 7Windows 8/8.1Windows 10Windows 11Kali Linux version 2017.1 now supports packet injection for this adapter. Read more at http://rok.land/AWUS036ACH_Kali-USB 3.0 port required for max speed, though is compatible with USB 2.0 ports also at a max speed of 480 mbps. This works on Microsoft Surface Pro tablets running Windows 8/10 (requires driver download) but does NOT work with Windows Surface RT tablets or other tablets/laptops running Microsoft Surface RT, which looks like Windows 8 but is actually a locked down version of Windows that does not support 3rd party drivers.Additional Features:- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, 802.1X support- 867 mbps High-Speed Transfer Rate for 802.11ac- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Product Comparison:Related Resources:WPA3 security support now available for AWUS036AC Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi products If you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists. Contact us here for a custom quote Quantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+     },
+     "gift_card": false,
+     "handle": "alfa-awus036eac-802-11ac-ac1200-dual-band-wifi-usb-adapter-dongle",
+     "id": "gid://shopify/Product/817385860",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/Alfausb.png?v=1611596430"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3997,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3997,
+       "currency": "USD"
+      }
+     },
+     "title": "ALFA AWUS036EAC 802.11ac AC1200 Dual Band WiFi USB Adapter",
+     "url": "https://store.rokland.com/products/alfa-awus036eac-802-11ac-ac1200-dual-band-wifi-usb-adapter-dongle",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://rokland.myshopify.com/cart/32375704289363:1",
+       "description": {
+        "html": "ALFA AWUS036EAC brings high speed 802.11ac technology to PCs at an affordable cost. It is a 867 Mbps Wi-Fi USB adapter compatible with Windows XP through Windows 10. It features a small profile with fully integrated antennas with a dongle style that connects directly to the USB port. Also included is a special laptop clip that fits many of today's laptop bezels.OEM bulk package eco-pack version, no retail boxAWUS036EAC is capable of receiving and transmitting on both the 2.4 GHz and 5 GHz bands. With 802.11ac standard routers, AWUS036EAC can achieve throughput speeds up to 867 Mbps, almost three times that of the 802.11n maximum of 300 Mbps. This adapter is backward compatible with 802.11g and 802.11n networks, but will have limited speed with those networks. An 802.11ac router is required for the maximum throughput.ALFA AWUS036EAC combines dual antenna dual band 802.11ac networking at a fraction of the price of competing major brand big box store products.Your 802.11ac router will perform optimally when all of your computers are on the AC standard, so this is a great low-cost way to upgrade them all. This is brand new in retail box and includes the adapter, driver CD, and USB docking clip with cable as shown in the picture. We buy direct from ALFA and are an authorized retailer of ALFA products. Check directly with ALFA to verify you are getting a 100% genuine ALFA adapter.Compatibility:The AWUS036EAC will work with any computer that has an available USB port and:Windows VistaWindows 7Windows 8/8.1Windows 10Windows 11Kali Linux version 2017.1 now supports packet injection for this adapter. Read more at http://rok.land/AWUS036ACH_Kali-USB 3.0 port required for max speed, though is compatible with USB 2.0 ports also at a max speed of 480 mbps. This works on Microsoft Surface Pro tablets running Windows 8/10 (requires driver download) but does NOT work with Windows Surface RT tablets or other tablets/laptops running Microsoft Surface RT, which looks like Windows 8 but is actually a locked down version of Windows that does not support 3rd party drivers.Additional Features:- Enterprise-class 64/128 WEP encryption, WPA, WPA-PSK, WPA2, 802.1X support- 867 mbps High-Speed Transfer Rate for 802.11ac- USB 3.0 compliant (backward compatible with USB 2)- ONE YEAR manufacturer's warranty Product Comparison:Related Resources:WPA3 security support now available for AWUS036AC Warranty & Support:Complimentary Telephone and Email/Live Chat Support (Click Here)Sales tax is required in many states and will be added at checkout if applicable to your delivery state. Tax exempt forms can be sent to our support department. TAA Compliance: Rokland stands behind our TAA Compliant ALFA Network Wi-Fi products If you represent a government agency looking to purchase Wi-Fi or networking equipment or attending a bid, please contact our Rokland sales specialists. Contact us here for a custom quote Quantity, government, and military discounts are available. GSA (General Services Administration) compatible. Return Policy: This item can be returned for refund within 30 days of receipt. Because range can vary greatly based on your environment, if you are not sure a particular product will meet your range needs please contact us before buying. Orders with free shipping selected will incur a 10% restocking fee to help us cover the original shipping cost unless the item is defective or different from the advertisement. Any expedited shipping charges paid, including return shipping, are non-refundable. Items must be returned the way they were received, in new or like-new condition, with all pieces, documentation, and retail packaging (if applicable) included. For bulk purchases, see our bulk purchase return policy here."
+       },
+       "id": "gid://shopify/ProductVariant/32375704289363",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0071/3772/products/Alfausb.png?v=1611596430"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3997,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "AWUS036EAC",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "713772"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Rokland",
+        "merchant_origin": "store.rokland.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "713772"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

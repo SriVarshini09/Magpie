@@ -1,0 +1,110 @@
+{
+  "kind": "diagram",
+  "parts": [],
+  "edges": [
+    {
+      "from": "panel",
+      "to": "adapter",
+      "label": "24-pin FPC",
+      "rule_ids": [
+        "R15"
+      ]
+    },
+    {
+      "from": "adapter",
+      "to": "mcu",
+      "label": "SPI",
+      "rule_ids": [
+        "R17"
+      ]
+    },
+    {
+      "from": "sensor",
+      "to": "mcu",
+      "label": "I²C · 3.3V",
+      "rule_ids": [
+        "R16"
+      ]
+    },
+    {
+      "from": "battery",
+      "to": "mcu",
+      "label": "JST-PH 2.0 · 2-pin · 3.7V",
+      "rule_ids": [
+        "R12",
+        "R13",
+        "R14"
+      ]
+    }
+  ],
+  "diagram": {
+    "nodes": [
+      {
+        "id": "panel",
+        "bom_line_id": "b2",
+        "label": "7.5\" e-paper panel",
+        "icon": "Monitor",
+        "x": 40.0,
+        "y": 40.0,
+        "w": 220.0,
+        "h": 84.0
+      },
+      {
+        "id": "adapter",
+        "bom_line_id": "b3",
+        "label": "DESPI-C02 adapter",
+        "icon": "Cable",
+        "x": 340.0,
+        "y": 40.0,
+        "w": 200.0,
+        "h": 84.0
+      },
+      {
+        "id": "sensor",
+        "bom_line_id": "b4",
+        "label": "BME280 sensor",
+        "icon": "Thermometer",
+        "x": 40.0,
+        "y": 180.0,
+        "w": 220.0,
+        "h": 84.0
+      },
+      {
+        "id": "battery",
+        "bom_line_id": "b5",
+        "label": "3.7V LiPo battery",
+        "icon": "BatteryMedium",
+        "x": 40.0,
+        "y": 320.0,
+        "w": 220.0,
+        "h": 84.0
+      },
+      {
+        "id": "mcu",
+        "bom_line_id": "b1",
+        "label": "FireBeetle 2 ESP32-E",
+        "icon": "Cpu",
+        "x": 660.0,
+        "y": 170.0,
+        "w": 240.0,
+        "h": 104.0
+      }
+    ],
+    "tray": [
+      "b7",
+      "b8",
+      "b9",
+      "b6",
+      "b10"
+    ]
+  },
+  "tray": [
+    "b7",
+    "b8",
+    "b9",
+    "b6",
+    "b10"
+  ],
+  "note": "Board diagram. Edges are the compatibility rules.",
+  "simulated": true
+}

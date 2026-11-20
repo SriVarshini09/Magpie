@@ -1,0 +1,1653 @@
+{
+ "args": {
+  "business": "https://shop.pimoroni.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "BME280 sensor module"
+  }
+ },
+ "key": "539e6ca1d607bbc9d268ccf67783977e5ceb2da136d4e3dda057d254f33a78e1",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:56-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://shop.pimoroni.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://pimoroni-2.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzJOemswT0RZNU9UTXlNVEUxTENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "Bosch has stepped up their game with their new BME280 sensor, an environmental sensor with temperature, barometric pressure and humidity! This sensor is great for all sorts of indoor environmental sensing and can even be used in both I2C and SPI! This precision sensor from Bosch is the best low-cost sensing solution for measuring humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuraccy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI. Nice sensor right? So Adafruit made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a custom made PCB and comes with a 3.3V regulator and level shifting so you can use it with a 3V or 5V logic microcontroller without worry. The breakout is made in the STEMMA QT form factor, making them easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the BME280 or to chain it with a wide range of other sensors and accessories using a compatible cable. Adafruit even wrote up a nice tutorial with example code for Arduino & CircuitPython, wiring diagrams, schematics, libraries and examples to get you running in 10 minutes! TECHNICAL DETAILS Datasheets, PCB CAD files, Fritzing object and more available in the product tutorial! As of Nov 11, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 19.0mm x 18.0mm x 3.0mm / 0.7\" x 0.7\" x 0.1\" Product Weight: 1.0g / 0.0oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-bme280-i2c-or-spi-temperature-humidity-pressure-sensor",
+     "id": "gid://shopify/Product/1847711425",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/2652-05.jpg?v=1628855362"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1700,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Breakouts",
+      "CircuitPython",
+      "Humidity",
+      "Pressure",
+      "Qw/ST",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "Adafruit BME280 I2C or SPI Temperature Humidity Pressure Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-bme280-i2c-or-spi-temperature-humidity-pressure-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/5701979841:1",
+       "description": {
+        "html": "Bosch has stepped up their game with their new BME280 sensor, an environmental sensor with temperature, barometric pressure and humidity! This sensor is great for all sorts of indoor environmental sensing and can even be used in both I2C and SPI! This precision sensor from Bosch is the best low-cost sensing solution for measuring humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuraccy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI. Nice sensor right? So Adafruit made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a custom made PCB and comes with a 3.3V regulator and level shifting so you can use it with a 3V or 5V logic microcontroller without worry. The breakout is made in the STEMMA QT form factor, making them easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the BME280 or to chain it with a wide range of other sensors and accessories using a compatible cable. Adafruit even wrote up a nice tutorial with example code for Arduino & CircuitPython, wiring diagrams, schematics, libraries and examples to get you running in 10 minutes! TECHNICAL DETAILS Datasheets, PCB CAD files, Fritzing object and more available in the product tutorial! As of Nov 11, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 19.0mm x 18.0mm x 3.0mm / 0.7\" x 0.7\" x 0.1\" Product Weight: 1.0g / 0.0oz"
+       },
+       "id": "gid://shopify/ProductVariant/5701979841",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/2652-05.jpg?v=1628855362"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1700,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA2652",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "velleman",
+       "id": "gid://shopify/Collection/155987869779",
+       "title": "Velleman"
+      }
+     ],
+     "description": {
+      "html": "The BME280 used on this combo module is an integrated environmental sensor developed specifically for mobile applications where size and low power consumption are key design constraints. The BME280 supports both SPI and I2C interface to communicate with the microcontroller. Features applications: measurement of volume and air flow home automation control control heating, ventilation, air conditioning internet of things weather forecast fitness monitoring / well-being Specifications pressure range: 300 to 1100 hPa temperature range: -40 to 85°C supply voltage: 1.2 to 3.6 V I/O voltage: max 3.6 V current consumption: max. 3.6 uA @ 1 Hz (H,P,T) sleep mode consumption: 0.1 uA interface: I2C and SPI dimensions: 15 x 12 mm Manual User manual Info Sheets VMA335 Scheme BME280 Data Sheet Firmware VMA335 Example"
+     },
+     "gift_card": false,
+     "handle": "bme280-temperature-humidity-and-pressure-sensor",
+     "id": "gid://shopify/Product/6572391759955",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/vma335.jpg?v=1623854472"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_retired",
+      "Breakouts",
+      "Humidity",
+      "Pressure",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "BME280 Temperature, Humidity And Pressure Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/bme280-temperature-humidity-and-pressure-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39365428379731:1",
+       "description": {
+        "html": "The BME280 used on this combo module is an integrated environmental sensor developed specifically for mobile applications where size and low power consumption are key design constraints. The BME280 supports both SPI and I2C interface to communicate with the microcontroller. Features applications: measurement of volume and air flow home automation control control heating, ventilation, air conditioning internet of things weather forecast fitness monitoring / well-being Specifications pressure range: 300 to 1100 hPa temperature range: -40 to 85°C supply voltage: 1.2 to 3.6 V I/O voltage: max 3.6 V current consumption: max. 3.6 uA @ 1 Hz (H,P,T) sleep mode consumption: 0.1 uA interface: I2C and SPI dimensions: 15 x 12 mm Manual User manual Info Sheets VMA335 Scheme BME280 Data Sheet Firmware VMA335 Example"
+       },
+       "id": "gid://shopify/ProductVariant/39365428379731",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/vma335.jpg?v=1623854472"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WPSE335",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "internet-of-things-iot",
+       "id": "gid://shopify/Collection/405675402",
+       "title": "Internet of Things (IoT)"
+      },
+      {
+       "description": {
+        "html": "Adafruit Feather boards share one shape and pinout, so you can pick the processor and wireless you need, with FeatherWings to extend them."
+       },
+       "handle": "feather",
+       "id": "gid://shopify/Collection/408444170",
+       "title": "Adafruit Feather"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "What's Feather-shaped and has an ESP32-S2 WiFi module? What has a STEMMA QT connector for I2C devices and a built in ambient sensor? What has your favorite Espressif WiFi microcontroller and lots of Flash and RAM memory for your next IoT project? What will make your next IoT project sensor project flyyyyy? That's right - it's the new Adafruit ESP32-S2 Feather with BME280 temperature/humidity/pressure sensor built right in! With native USB and 4 MB flash + 2 MB of PSRAM, this board is perfect for use with CircuitPython or Arduino with low-cost WiFi. Native USB means it can act like a keyboard or a disk drive. WiFi means its awesome for IoT projects. And Feather means it works with the large community of Feather Wings for expandability. The ESP32-S2 is a highly-integrated, low-power, 2.4 GHz Wi-Fi System-on-Chip (SoC) solution that now has built-in native USB as well as some other interesting new technologies like Time of Flight distance measurements. With its state-of-the-art power and RF performance, this SoC is an ideal choice for a wide variety of application scenarios relating to the Internet of Things (IoT), wearable electronics, and smart homes. Please note the Feather ESP32-S2 has a single-core 240 MHz chip, so it won't be as fast as ESP32's with dual-core. Also, there is no Bluetooth support. However, we are super excited about the ESP32-S2's native USB which unlocks a lot of capabilities for advanced interfacing! This ESP32-S2 mini-module we are using on the Feather comes with 4 MB flash and 2 MB PSRAM so you can buffer massive JSON files for parsing! Features: ESP32-S2 240MHz Tensilica processor - the next generation of ESP32, now with native USB so it can act like a keyboard/mouse, MIDI device, disk drive, etc! Mini module has FCC/CE certification and comes with 4 MByte of Flash and 2 MByte of PSRAM - you can have huge data buffers Power options - USB type C or Lipoly battery Built-in battery charging when powered over USB-C BME280 temperature / humidity / barometric pressures sensor connected over I2C on address 0x77 for immediate ambient weather sensing. LiPoly battery monitor - LC709203 chip actively monitors your battery for voltage and state of charge / percentage reporting over I2C Reset and DFU (BOOT0) buttons to get into the ROM bootloader (which is a USB serial port so you don't need a separate cable!) Serial debug output pin (optional, for checking the hardware serial debug console) STEMMA QT connector for I2C devices, with switchable power, so you can go into low power mode. On/Charge/User LEDs + status NeoPixel with pin-controlled power for low power usage Low Power friendly! In deep sleep mode we can get down to 30uA of current draw from the Lipoly connection. Quiescent current is from the power regulator, ESP32-S2 chip, and Lipoly monitor. Turn off the NeoPixel and external I2C power for the lowest quiescent current draw. Works with Arduino or CircuitPython Technical Details Product Dimensions: 52.4mm x 22.9mm x 7.2mm / 2.1\" x 0.9\" x 0.3\" Product Weight: 6.3g / 0.2oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-esp32-s2-feather-with-bme280-sensor-stemma-qt-4mb-flash-2-mb-psram",
+     "id": "gid://shopify/Product/6651539718227",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5303-00.jpg?v=1636995339"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2800,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2800,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "CircuitPython",
+      "Development Boards",
+      "Feather",
+      "Humidity",
+      "Internet of Things",
+      "Qw/ST",
+      "Temperature",
+      "Wireless"
+     ],
+     "title": "Adafruit ESP32-S2 Feather with BME280 Sensor - (4MB Flash/2MB PSRAM)",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-esp32-s2-feather-with-bme280-sensor-stemma-qt-4mb-flash-2-mb-psram",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39537758470227:1",
+       "description": {
+        "html": "What's Feather-shaped and has an ESP32-S2 WiFi module? What has a STEMMA QT connector for I2C devices and a built in ambient sensor? What has your favorite Espressif WiFi microcontroller and lots of Flash and RAM memory for your next IoT project? What will make your next IoT project sensor project flyyyyy? That's right - it's the new Adafruit ESP32-S2 Feather with BME280 temperature/humidity/pressure sensor built right in! With native USB and 4 MB flash + 2 MB of PSRAM, this board is perfect for use with CircuitPython or Arduino with low-cost WiFi. Native USB means it can act like a keyboard or a disk drive. WiFi means its awesome for IoT projects. And Feather means it works with the large community of Feather Wings for expandability. The ESP32-S2 is a highly-integrated, low-power, 2.4 GHz Wi-Fi System-on-Chip (SoC) solution that now has built-in native USB as well as some other interesting new technologies like Time of Flight distance measurements. With its state-of-the-art power and RF performance, this SoC is an ideal choice for a wide variety of application scenarios relating to the Internet of Things (IoT), wearable electronics, and smart homes. Please note the Feather ESP32-S2 has a single-core 240 MHz chip, so it won't be as fast as ESP32's with dual-core. Also, there is no Bluetooth support. However, we are super excited about the ESP32-S2's native USB which unlocks a lot of capabilities for advanced interfacing! This ESP32-S2 mini-module we are using on the Feather comes with 4 MB flash and 2 MB PSRAM so you can buffer massive JSON files for parsing! Features: ESP32-S2 240MHz Tensilica processor - the next generation of ESP32, now with native USB so it can act like a keyboard/mouse, MIDI device, disk drive, etc! Mini module has FCC/CE certification and comes with 4 MByte of Flash and 2 MByte of PSRAM - you can have huge data buffers Power options - USB type C or Lipoly battery Built-in battery charging when powered over USB-C BME280 temperature / humidity / barometric pressures sensor connected over I2C on address 0x77 for immediate ambient weather sensing. LiPoly battery monitor - LC709203 chip actively monitors your battery for voltage and state of charge / percentage reporting over I2C Reset and DFU (BOOT0) buttons to get into the ROM bootloader (which is a USB serial port so you don't need a separate cable!) Serial debug output pin (optional, for checking the hardware serial debug console) STEMMA QT connector for I2C devices, with switchable power, so you can go into low power mode. On/Charge/User LEDs + status NeoPixel with pin-controlled power for low power usage Low Power friendly! In deep sleep mode we can get down to 30uA of current draw from the Lipoly connection. Quiescent current is from the power regulator, ESP32-S2 chip, and Lipoly monitor. Turn off the NeoPixel and external I2C power for the lowest quiescent current draw. Works with Arduino or CircuitPython Technical Details Product Dimensions: 52.4mm x 22.9mm x 7.2mm / 2.1\" x 0.9\" x 0.3\" Product Weight: 6.3g / 0.2oz"
+       },
+       "id": "gid://shopify/ProductVariant/39537758470227",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5303-00.jpg?v=1636995339"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2800,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA5303",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      }
+     ],
+     "description": {
+      "html": "A fast and precise environmental sensor that can measure temperature, pressure, and altitude. If you're looking for a simple temperature and pressure sensor, then this is the one to pick. It's cheap and accurate (±1 hPa, ±1.0°C, ±1 metre), and ideal for keeping track of temperatures around your home or even for measuring altitude in high-altitude balloon flights. This breakout is compatible with our Breakout Garden system, where using breakouts is as easy just popping it into one of the slots and starting to grow your project, create, and code. It's also Qw/ST compatible, which means it can be plugged into microcontrollers or HATs with a Qwiic or STEMMA QT connector using a handy cable. Features Bosch BMP280 temperature, pressure, altitude sensor (datasheet) I2C interface, with address select via ADDR cuttable trace (0x76 or 0x77) Qwiic/STEMMA QT connector 3.3V or 5V compatible Reverse polarity protection (on Breakout Garden connector) Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Raspberry Pi (Python library) Compatible with Raspberry Pi Pico/RP2040/RP2350 (C++/MicroPython libraries) Compatible with Arduino Kit includes BMP280 breakout 1x5 pin header 1x5 right angle socket header We've designed this breakout board so that you can solder on the piece of right angle female header and pop it straight onto the bottom left 5 pins on your Raspberry Pi's GPIO header (pins 1, 3, 5, 7, 9). The right angle header also has the advantage of positioning the breakout away from the Pi's CPU so as to minimise radiated heat. Software Our Python library for the BMP280 makes it simple to use with Raspberry Pi computers. It lets you take readings from the sensor, and is easy to combine with code for our other Breakout Garden breakouts. Python library You can also use this breakout with Raspberry Pi Pico and other RP2040 and RP2350 powered microcontrollers, using C++ or one of our custom MicroPython builds. Download MicroPython for RP2040 boards Download MicroPython for RP2350 boards MicroPython example Notes The trace on the back (marked ADDR) can be cut to change the I2C address from the default of 0x76 to 0x77, meaning that you can use up to two sensors on the same board. The BME280, BMP280 and BME6XX breakouts all share the same I2C addresses, so if you're using two together then you'll need to change the I2C address on one of them using the solder bridge or cuttable traces. Dimensions: 19x19x5mm (L x W x H, including connector)"
+     },
+     "gift_card": false,
+     "handle": "bmp280-breakout-temperature-pressure-altitude-sensor",
+     "id": "gid://shopify/Product/1563168571475",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/bmp280-qwst-4.jpg?v=1761233898"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Altimeter",
+      "Breakout Garden",
+      "Breakouts",
+      "Environmental",
+      "MicroPython",
+      "Pressure",
+      "Qw/ST",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "BMP280 Breakout - Temperature, Pressure, Altitude Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/bmp280-breakout-temperature-pressure-altitude-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/15383480336467:1",
+       "description": {
+        "html": "A fast and precise environmental sensor that can measure temperature, pressure, and altitude. If you're looking for a simple temperature and pressure sensor, then this is the one to pick. It's cheap and accurate (±1 hPa, ±1.0°C, ±1 metre), and ideal for keeping track of temperatures around your home or even for measuring altitude in high-altitude balloon flights. This breakout is compatible with our Breakout Garden system, where using breakouts is as easy just popping it into one of the slots and starting to grow your project, create, and code. It's also Qw/ST compatible, which means it can be plugged into microcontrollers or HATs with a Qwiic or STEMMA QT connector using a handy cable. Features Bosch BMP280 temperature, pressure, altitude sensor (datasheet) I2C interface, with address select via ADDR cuttable trace (0x76 or 0x77) Qwiic/STEMMA QT connector 3.3V or 5V compatible Reverse polarity protection (on Breakout Garden connector) Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Raspberry Pi (Python library) Compatible with Raspberry Pi Pico/RP2040/RP2350 (C++/MicroPython libraries) Compatible with Arduino Kit includes BMP280 breakout 1x5 pin header 1x5 right angle socket header We've designed this breakout board so that you can solder on the piece of right angle female header and pop it straight onto the bottom left 5 pins on your Raspberry Pi's GPIO header (pins 1, 3, 5, 7, 9). The right angle header also has the advantage of positioning the breakout away from the Pi's CPU so as to minimise radiated heat. Software Our Python library for the BMP280 makes it simple to use with Raspberry Pi computers. It lets you take readings from the sensor, and is easy to combine with code for our other Breakout Garden breakouts. Python library You can also use this breakout with Raspberry Pi Pico and other RP2040 and RP2350 powered microcontrollers, using C++ or one of our custom MicroPython builds. Download MicroPython for RP2040 boards Download MicroPython for RP2350 boards MicroPython example Notes The trace on the back (marked ADDR) can be cut to change the I2C address from the default of 0x76 to 0x77, meaning that you can use up to two sensors on the same board. The BME280, BMP280 and BME6XX breakouts all share the same I2C addresses, so if you're using two together then you'll need to change the I2C address on one of them using the solder bridge or cuttable traces. Dimensions: 19x19x5mm (L x W x H, including connector)"
+       },
+       "id": "gid://shopify/ProductVariant/15383480336467",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/bmp280-qwst-4.jpg?v=1761233898"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM411",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "An extensive selection of add-on boards designed especially for the Raspberry Pi - hi res displays, sensors, amps and DACs and ALL the LEDs!"
+       },
+       "handle": "hats",
+       "id": "gid://shopify/Collection/28055585",
+       "title": "HATs & pHATs for Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi computers, kits and accessories, including Raspberry Pi 5, Pi 500 and Pi Zero 2 W, plus cases, cooling, cameras, displays and HATs."
+       },
+       "handle": "raspberry-pi",
+       "id": "gid://shopify/Collection/162117320787",
+       "title": "Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      }
+     ],
+     "description": {
+      "html": "Monitor your world with Enviro and Enviro + Air Quality for Raspberry Pi! There's a whole bunch of fancy environmental sensors on these boards, and a gorgeous little full-colour LCD to display your data. They're the perfect way to get started with citizen science and environmental monitoring! Monitor your world! Enviro + Air Quality is designed for environmental monitoring, and lets you measure air quality (pollutant gases and particulates*), temperature, pressure, humidity, light, and noise level. When combined with a particulate matter sensor*, it's great for monitoring air quality just outside your house (more information below) and lets you contribute your data to citizen science efforts to monitor air quality via projects like Sensor Community. Enviro is designed for indoor monitoring, letting you measure temperature, pressure, humidity, light, and noise level. It's great for keeping tabs on what's going on in rooms in your house, office, or elsewhere. Push the data to server and you can view the data remotely from anywhere. Enviro + Air Quality features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MICS6814 analog gas sensor (datasheet) ADS1015 analog to digital converter (ADC) (datasheet) * MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Connector for particulate matter (PM) sensor (available separately) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Pinout Python library Dimensions: 65x30x8.5mm Schematics - Enviro / Enviro + Air Quality Enviro features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Python library Dimensions: 65x30x8.5mm Citizen science with Enviro + Air Quality We've developed Enviro + Air Quality in collaboration with the University of Sheffield, with the aim of letting you contribute real-time air quality data from your local area to open data projects like Sensor Community. The alarming drop in our air quality is something that's really important to understand. Devices like Enviro + Air Quality allow fine-grained, detailed datasets that let us see shifts in air quality through time and across different areas of cities. The more devices that contribute data, the better quality the dataset becomes. Particulate matter (PM) is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. They can be measured, in size and quantity, by particulate matter sensors like the PMS5003 that you can connect to Enviro + Air Quality. The analog gas sensor can be used to make qualitative measurements of changes in gas concentrations, so you can tell broadly if the three groups of gases are increasing or decreasing in abundance. Without laboratory conditions or calibration, you won't be able to say \"the concentration of carbon monoxide is n parts per million\", for example. Temperature, air pressure and humidity can all affect particulate levels (and the gas sensor readings) too, so the BME280 sensor on Enviro + Air Quality is really important to understanding the other data that it outputs. We've got a tutorial that shows you how to use Enviro + Air Quality and a few easily-available bits to build the board into a weather-proof housing that you can mount outside your house to monitor local air quality. Indoor monitoring with Enviro Enviro is designed especially for indoor monitoring. The temperature, humidity, light, and noise readings can be used to keep track of conditions in your home and, combined with the LCD to display the data and the proximity sensor for interaction, it makes an ideal headless monitoring device. Why not combine it with some IoT smarts like an Alexa skill so that you can ask what the temperature or humidity is? Or you could set up a trigger action with IFTTT that turns your Philips Hue lights on when the light level drops below a certain level. There's loads of possibilities! Software We've put together a Python library to control all the parts of your Enviro and Enviro + Air Quality. There's a bunch of examples for each of the individual parts, all-in-one examples that shows you the data from the sensors in a visual way. There's also an example that shows you how to contribute data to Sensor Community (requires Enviro + Air Quality and particulate matter sensor). Getting started Have a read through our (exhaustive!) Getting Started with Enviro+ tutorial that walks you through how to install the software, how to run the code examples, and how to use the Python library. Notes Due to exciting global electronic parts shortages, some Enviro +s manufactured in 2021 have an ADS1115 ADC instead of the usual ADS1015. Our Python libraries have been updated to automatically detect and adjust for this chip change."
+     },
+     "gift_card": false,
+     "handle": "enviro",
+     "id": "gid://shopify/Product/3540245774419",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/enviro-plus-shop-1.jpg?v=1565439541"
+      }
+     ],
+     "options": [
+      {
+       "name": "Model",
+       "values": [
+        {
+         "label": "Enviro + Air Quality"
+        },
+        {
+         "label": "Enviro"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 6000,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 3400,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Development Boards",
+      "Enviro",
+      "Environmental",
+      "HATs & Addons",
+      "Raspberry Pi",
+      "Sensors"
+     ],
+     "title": "Enviro for Raspberry Pi",
+     "url": "https://shop.pimoroni.com/en-us/products/enviro",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/31155658457171:1",
+       "description": {
+        "html": "Monitor your world with Enviro and Enviro + Air Quality for Raspberry Pi! There's a whole bunch of fancy environmental sensors on these boards, and a gorgeous little full-colour LCD to display your data. They're the perfect way to get started with citizen science and environmental monitoring! Monitor your world! Enviro + Air Quality is designed for environmental monitoring, and lets you measure air quality (pollutant gases and particulates*), temperature, pressure, humidity, light, and noise level. When combined with a particulate matter sensor*, it's great for monitoring air quality just outside your house (more information below) and lets you contribute your data to citizen science efforts to monitor air quality via projects like Sensor Community. Enviro is designed for indoor monitoring, letting you measure temperature, pressure, humidity, light, and noise level. It's great for keeping tabs on what's going on in rooms in your house, office, or elsewhere. Push the data to server and you can view the data remotely from anywhere. Enviro + Air Quality features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MICS6814 analog gas sensor (datasheet) ADS1015 analog to digital converter (ADC) (datasheet) * MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Connector for particulate matter (PM) sensor (available separately) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Pinout Python library Dimensions: 65x30x8.5mm Schematics - Enviro / Enviro + Air Quality Enviro features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Python library Dimensions: 65x30x8.5mm Citizen science with Enviro + Air Quality We've developed Enviro + Air Quality in collaboration with the University of Sheffield, with the aim of letting you contribute real-time air quality data from your local area to open data projects like Sensor Community. The alarming drop in our air quality is something that's really important to understand. Devices like Enviro + Air Quality allow fine-grained, detailed datasets that let us see shifts in air quality through time and across different areas of cities. The more devices that contribute data, the better quality the dataset becomes. Particulate matter (PM) is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. They can be measured, in size and quantity, by particulate matter sensors like the PMS5003 that you can connect to Enviro + Air Quality. The analog gas sensor can be used to make qualitative measurements of changes in gas concentrations, so you can tell broadly if the three groups of gases are increasing or decreasing in abundance. Without laboratory conditions or calibration, you won't be able to say \"the concentration of carbon monoxide is n parts per million\", for example. Temperature, air pressure and humidity can all affect particulate levels (and the gas sensor readings) too, so the BME280 sensor on Enviro + Air Quality is really important to understanding the other data that it outputs. We've got a tutorial that shows you how to use Enviro + Air Quality and a few easily-available bits to build the board into a weather-proof housing that you can mount outside your house to monitor local air quality. Indoor monitoring with Enviro Enviro is designed especially for indoor monitoring. The temperature, humidity, light, and noise readings can be used to keep track of conditions in your home and, combined with the LCD to display the data and the proximity sensor for interaction, it makes an ideal headless monitoring device. Why not combine it with some IoT smarts like an Alexa skill so that you can ask what the temperature or humidity is? Or you could set up a trigger action with IFTTT that turns your Philips Hue lights on when the light level drops below a certain level. There's loads of possibilities! Software We've put together a Python library to control all the parts of your Enviro and Enviro + Air Quality. There's a bunch of examples for each of the individual parts, all-in-one examples that shows you the data from the sensors in a visual way. There's also an example that shows you how to contribute data to Sensor Community (requires Enviro + Air Quality and particulate matter sensor). Getting started Have a read through our (exhaustive!) Getting Started with Enviro+ tutorial that walks you through how to install the software, how to run the code examples, and how to use the Python library. Notes Due to exciting global electronic parts shortages, some Enviro +s manufactured in 2021 have an ADS1115 ADC instead of the usual ADS1015. Our Python libraries have been updated to automatically detect and adjust for this chip change."
+       },
+       "id": "gid://shopify/ProductVariant/31155658457171",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/enviro-plus-shop-1.jpg?v=1565439541"
+        }
+       ],
+       "options": [
+        {
+         "label": "Enviro + Air Quality",
+         "name": "Model"
+        }
+       ],
+       "price": {
+        "amount": 6000,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM458",
+       "title": "Enviro + Air Quality"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/31155658489939:1",
+       "description": {
+        "html": "Monitor your world with Enviro and Enviro + Air Quality for Raspberry Pi! There's a whole bunch of fancy environmental sensors on these boards, and a gorgeous little full-colour LCD to display your data. They're the perfect way to get started with citizen science and environmental monitoring! Monitor your world! Enviro + Air Quality is designed for environmental monitoring, and lets you measure air quality (pollutant gases and particulates*), temperature, pressure, humidity, light, and noise level. When combined with a particulate matter sensor*, it's great for monitoring air quality just outside your house (more information below) and lets you contribute your data to citizen science efforts to monitor air quality via projects like Sensor Community. Enviro is designed for indoor monitoring, letting you measure temperature, pressure, humidity, light, and noise level. It's great for keeping tabs on what's going on in rooms in your house, office, or elsewhere. Push the data to server and you can view the data remotely from anywhere. Enviro + Air Quality features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MICS6814 analog gas sensor (datasheet) ADS1015 analog to digital converter (ADC) (datasheet) * MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Connector for particulate matter (PM) sensor (available separately) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Pinout Python library Dimensions: 65x30x8.5mm Schematics - Enviro / Enviro + Air Quality Enviro features BME280 temperature, pressure, humidity sensor (datasheet) LTR-559 light and proximity sensor (datasheet) MEMS microphone (datasheet) 0.96\" colour LCD (160x80) Pimoroni breakout-compatible pin header pHAT-format board Fully-assembled Compatible with all 40-pin header Raspberry Pi models Python library Dimensions: 65x30x8.5mm Citizen science with Enviro + Air Quality We've developed Enviro + Air Quality in collaboration with the University of Sheffield, with the aim of letting you contribute real-time air quality data from your local area to open data projects like Sensor Community. The alarming drop in our air quality is something that's really important to understand. Devices like Enviro + Air Quality allow fine-grained, detailed datasets that let us see shifts in air quality through time and across different areas of cities. The more devices that contribute data, the better quality the dataset becomes. Particulate matter (PM) is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. They can be measured, in size and quantity, by particulate matter sensors like the PMS5003 that you can connect to Enviro + Air Quality. The analog gas sensor can be used to make qualitative measurements of changes in gas concentrations, so you can tell broadly if the three groups of gases are increasing or decreasing in abundance. Without laboratory conditions or calibration, you won't be able to say \"the concentration of carbon monoxide is n parts per million\", for example. Temperature, air pressure and humidity can all affect particulate levels (and the gas sensor readings) too, so the BME280 sensor on Enviro + Air Quality is really important to understanding the other data that it outputs. We've got a tutorial that shows you how to use Enviro + Air Quality and a few easily-available bits to build the board into a weather-proof housing that you can mount outside your house to monitor local air quality. Indoor monitoring with Enviro Enviro is designed especially for indoor monitoring. The temperature, humidity, light, and noise readings can be used to keep track of conditions in your home and, combined with the LCD to display the data and the proximity sensor for interaction, it makes an ideal headless monitoring device. Why not combine it with some IoT smarts like an Alexa skill so that you can ask what the temperature or humidity is? Or you could set up a trigger action with IFTTT that turns your Philips Hue lights on when the light level drops below a certain level. There's loads of possibilities! Software We've put together a Python library to control all the parts of your Enviro and Enviro + Air Quality. There's a bunch of examples for each of the individual parts, all-in-one examples that shows you the data from the sensors in a visual way. There's also an example that shows you how to contribute data to Sensor Community (requires Enviro + Air Quality and particulate matter sensor). Getting started Have a read through our (exhaustive!) Getting Started with Enviro+ tutorial that walks you through how to install the software, how to run the code examples, and how to use the Python library. Notes Due to exciting global electronic parts shortages, some Enviro +s manufactured in 2021 have an ADS1115 ADC instead of the usual ADS1015. Our Python libraries have been updated to automatically detect and adjust for this chip change."
+       },
+       "id": "gid://shopify/ProductVariant/31155658489939",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/enviro-lifestyle-1.jpg?v=1573820030"
+        }
+       ],
+       "options": [
+        {
+         "label": "Enviro",
+         "name": "Model"
+        }
+       ],
+       "price": {
+        "amount": 3400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM486",
+       "title": "Enviro"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      }
+     ],
+     "description": {
+      "html": "The long awaited BME680 from Bosch gives you all the environmental sensing you want in one small package. This little sensor contains temperature, humidity, barometric pressure, and VOC gas sensing capabilities. All over SPI or I2C at a great price! Like the BME280 & BMP280, this precision sensor from Bosch can measure humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME680 takes those sensors to the next step in that it contains a small MOX sensor. The heated metal oxide changes resistance based on the volatile organic compounds (VOC) in the air, so it can be used to detect gasses & alcohols such as Ethanol, Alcohol and Carbon Monoxide, and perform air quality measurements. Note it will give you one resistance value, with overall VOC content, but it cannot differentiate gasses or alcohols. Please note this sensor, like all VOC/gas sensors, has variability and to get precise measurements you will want to calibrate it against known sources! That said, for general environmental sensors, it will give you a good idea of trends and comparisons. Adafruit recommend that you run this sensor for 48 hours when you first receive it to \"burn it in\", and then 30 minutes in the desired mode every time the sensor is in use. This is because the sensitivity levels of the sensor will change during early use, and the resistance will slowly rise over time as the MOX warms up to its baseline reading. For your convenience they've pick-and-placed the sensor on a PCB with a 3.3V regulator and some level shifting, so it can be easily used with your favorite 3.3V or 5V microcontroller. All of the pins of the BME680 are available on standard 0.100”/ 2.54mm pitch headers for use with a breadboard. Should you wish to avoid soldering, it now also includes Stemma QT connectors (SparkFun Qwiic compatible). Using these handy connectors you can simply plug in the sensor, no soldering required! This detailed tutorial will get you going with code for both Arduino and CircuitPython, schematics, wiring diagrams, Fritzing objects and more TECHNICAL DETAILS Revision History: As of August 6, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 18.0mm x 16.5mm x 2.8mm / 0.7\" x 0.6\" x 0.1\" Product Weight: 3.0g / 0.1oz BME680 Datasheet"
+     },
+     "gift_card": false,
+     "handle": "adafruit-bme680-temperature-humidity-pressure-and-gas-sensor-stemma-qt",
+     "id": "gid://shopify/Product/4702571495507",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/3660-04.jpg?v=1603272907"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Air Quality",
+      "Breakouts",
+      "CircuitPython",
+      "Environmental",
+      "Humidity",
+      "Pressure",
+      "Qw/ST",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "Adafruit BME680 - Temperature, Humidity, Pressure and Gas Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-bme680-temperature-humidity-pressure-and-gas-sensor-stemma-qt",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/32282863927379:1",
+       "description": {
+        "html": "The long awaited BME680 from Bosch gives you all the environmental sensing you want in one small package. This little sensor contains temperature, humidity, barometric pressure, and VOC gas sensing capabilities. All over SPI or I2C at a great price! Like the BME280 & BMP280, this precision sensor from Bosch can measure humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME680 takes those sensors to the next step in that it contains a small MOX sensor. The heated metal oxide changes resistance based on the volatile organic compounds (VOC) in the air, so it can be used to detect gasses & alcohols such as Ethanol, Alcohol and Carbon Monoxide, and perform air quality measurements. Note it will give you one resistance value, with overall VOC content, but it cannot differentiate gasses or alcohols. Please note this sensor, like all VOC/gas sensors, has variability and to get precise measurements you will want to calibrate it against known sources! That said, for general environmental sensors, it will give you a good idea of trends and comparisons. Adafruit recommend that you run this sensor for 48 hours when you first receive it to \"burn it in\", and then 30 minutes in the desired mode every time the sensor is in use. This is because the sensitivity levels of the sensor will change during early use, and the resistance will slowly rise over time as the MOX warms up to its baseline reading. For your convenience they've pick-and-placed the sensor on a PCB with a 3.3V regulator and some level shifting, so it can be easily used with your favorite 3.3V or 5V microcontroller. All of the pins of the BME680 are available on standard 0.100”/ 2.54mm pitch headers for use with a breadboard. Should you wish to avoid soldering, it now also includes Stemma QT connectors (SparkFun Qwiic compatible). Using these handy connectors you can simply plug in the sensor, no soldering required! This detailed tutorial will get you going with code for both Arduino and CircuitPython, schematics, wiring diagrams, Fritzing objects and more TECHNICAL DETAILS Revision History: As of August 6, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 18.0mm x 16.5mm x 2.8mm / 0.7\" x 0.6\" x 0.1\" Product Weight: 3.0g / 0.1oz BME680 Datasheet"
+       },
+       "id": "gid://shopify/ProductVariant/32282863927379",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/3660-04.jpg?v=1603272907"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA3660",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      }
+     ],
+     "description": {
+      "html": "This super-smart Bosch sensor measures temperature, pressure and humidity precisely. It also has an AI-enhanced gas scanner function. Like previous sensors in the BME6XX series, this high quality sensor can be used to monitor every aspect of your environment, taking high precision measurements of temperature, pressure and humidity. It also features a gas scanner function with extended measurements, which will react to changes in volatile organic compounds (VOCs), volatile sulfur compounds (VSCs) and the presence of carbon monoxide and hydrogen to give a general measure of indoor or outdoor air quality. With Bosch's software, you can analyse the gas readings further and train the algorithms to make inferences about specific air quality indicators, including the likelihood of bacteria growth and the presence of other organic contaminants. Improvements Improvements from the previous BME688 sensor include lower power consumption and increased robustness in humid environments. Want to get an idea of whether there's adequate ventilation in your bedroom, your workshop, or workplace? Set up a BME690 on a Raspberry Pi Zero W or Pico W and have it log sensor readings to a file or post them into your favourite home automation software or a web service like adafruit.io. This breakout is compatible with our Breakout Garden system, where using breakouts is as easy just popping it into one of the slots and starting to grow your project, create, and code. It's also Qw/ST compatible, which means it can be plugged into microcontroller or HATs with a Qwiic or STEMMA QT connector using a handy cable. Features Bosch BME690 4-in-1 environmental sensor with AI (datasheet) I2C interface, with address select via ADDR cuttable trace (0x76 or 0x77) Qwiic/STEMMA QT connector 3.3V or 5V compatible Reverse polarity protection (on Breakout Garden connector) Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Raspberry Pi (Python library) Compatible with Raspberry Pi Pico/RP2040/RP2350 (C++/MicroPython libraries) Kit includes BME690 breakout 1x5 pin header 1x5 right angle socket header We've designed this breakout board so that you can solder on the piece of right angle socket header and pop it straight onto the bottom left 5 pins on your Raspberry Pi's GPIO header (pins 1, 3, 5, 7, 9). The right angle header also has the advantage of positioning the breakout away from the Pi's CPU so as to minimise radiated heat. Software Bosch provide a C library for this sensor, plus desktop tools for further analysis of the sensor data. Bosch C library Bosch BME688 and BME690 software We also provide a Python library for use with Raspberry Pi computers. Python library You can also use this breakout with Raspberry Pi Pico and other RP2040 and RP2350 powered microcontrollers, using C++ or one of our custom MicroPython builds. Download MicroPython for RP2040 boards Download MicroPython for RP2350 boards MicroPython example Resources Schematic Notes The trace on the back of the board marked ADDR can be cut to change the I2C address from the default of 0x76 to 0x77, meaning that you can use up to two sensors at the same time The BME280, BMP280 and BME6XX breakouts all share the same I2C addresses, so if you're using two together then you'll need to change the I2C address on one of them using the solder bridge or cuttable traces. Dimensions: approx 19mm x 19mm x 5mm (L x W x H, including connector)"
+     },
+     "gift_card": false,
+     "handle": "bme690-breakout",
+     "id": "gid://shopify/Product/14943325749627",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/bme690-breakout-3.jpg?v=1742479473"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Air Quality",
+      "Breakout Garden",
+      "Breakouts",
+      "Environmental",
+      "Humidity",
+      "MicroPython",
+      "Pressure",
+      "Qw/ST",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "BME690 4-in-1 Air Quality Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/bme690-breakout",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/55129358467451:1",
+       "description": {
+        "html": "This super-smart Bosch sensor measures temperature, pressure and humidity precisely. It also has an AI-enhanced gas scanner function. Like previous sensors in the BME6XX series, this high quality sensor can be used to monitor every aspect of your environment, taking high precision measurements of temperature, pressure and humidity. It also features a gas scanner function with extended measurements, which will react to changes in volatile organic compounds (VOCs), volatile sulfur compounds (VSCs) and the presence of carbon monoxide and hydrogen to give a general measure of indoor or outdoor air quality. With Bosch's software, you can analyse the gas readings further and train the algorithms to make inferences about specific air quality indicators, including the likelihood of bacteria growth and the presence of other organic contaminants. Improvements Improvements from the previous BME688 sensor include lower power consumption and increased robustness in humid environments. Want to get an idea of whether there's adequate ventilation in your bedroom, your workshop, or workplace? Set up a BME690 on a Raspberry Pi Zero W or Pico W and have it log sensor readings to a file or post them into your favourite home automation software or a web service like adafruit.io. This breakout is compatible with our Breakout Garden system, where using breakouts is as easy just popping it into one of the slots and starting to grow your project, create, and code. It's also Qw/ST compatible, which means it can be plugged into microcontroller or HATs with a Qwiic or STEMMA QT connector using a handy cable. Features Bosch BME690 4-in-1 environmental sensor with AI (datasheet) I2C interface, with address select via ADDR cuttable trace (0x76 or 0x77) Qwiic/STEMMA QT connector 3.3V or 5V compatible Reverse polarity protection (on Breakout Garden connector) Raspberry Pi-compatible pinout (pins 1, 3, 5, 7, 9) Compatible with Raspberry Pi (Python library) Compatible with Raspberry Pi Pico/RP2040/RP2350 (C++/MicroPython libraries) Kit includes BME690 breakout 1x5 pin header 1x5 right angle socket header We've designed this breakout board so that you can solder on the piece of right angle socket header and pop it straight onto the bottom left 5 pins on your Raspberry Pi's GPIO header (pins 1, 3, 5, 7, 9). The right angle header also has the advantage of positioning the breakout away from the Pi's CPU so as to minimise radiated heat. Software Bosch provide a C library for this sensor, plus desktop tools for further analysis of the sensor data. Bosch C library Bosch BME688 and BME690 software We also provide a Python library for use with Raspberry Pi computers. Python library You can also use this breakout with Raspberry Pi Pico and other RP2040 and RP2350 powered microcontrollers, using C++ or one of our custom MicroPython builds. Download MicroPython for RP2040 boards Download MicroPython for RP2350 boards MicroPython example Resources Schematic Notes The trace on the back of the board marked ADDR can be cut to change the I2C address from the default of 0x76 to 0x77, meaning that you can use up to two sensors at the same time The BME280, BMP280 and BME6XX breakouts all share the same I2C addresses, so if you're using two together then you'll need to change the I2C address on one of them using the solder bridge or cuttable traces. Dimensions: approx 19mm x 19mm x 5mm (L x W x H, including connector)"
+       },
+       "id": "gid://shopify/ProductVariant/55129358467451",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/bme690-breakout-3.jpg?v=1742479473"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM769",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      }
+     ],
+     "description": {
+      "html": "The long-awaited BME688 from Bosch gives you all the environmental sensing you want in one small package. This little sensor contains temperature, humidity, barometric pressure, and VOC gas sensing capabilities. All over SPI or I2C at a great price! The BME688 is a 'drop in' replacement for the BME680 - it adds a method of programming the gas-sensor heater for controlled odor-analysis but is otherwise the same hardware. Check out this EYE ON NPI for more details about the machine-learning system you can use to program this sensor for odor detection. Like the BME280 & BMP280, this precision sensor from Bosch can measure humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME688 takes those sensors to the next step in that it contains a small MOX sensor. The heated metal oxide changes resistance based on the volatile organic compounds (VOC) in the air, so it can be used to detect gasses & alcohols such as Ethanol, Alcohol, and Carbon Monoxide, and perform air quality measurements. Note it will give you one resistance value, with overall VOC content, but it cannot differentiate gasses or alcohols. Please note this sensor, like all VOC/gas sensors, has variability, and to get precise measurements you will want to calibrate it against known sources! That said, for general environmental sensors, it will give you a good idea of trends and comparisons. We recommend that you run this sensor for 48 hours when you first receive it to \"burn it in\", and then 30 minutes in the desired mode every time the sensor is in use. This is because the sensitivity levels of the sensor will change during early use, and the resistance will slowly rise over time as the MOX warms up to its baseline reading. For your convenience, Adafruit have pick-and-placed the sensor on a PCB with a 3.3V regulator and some level shifting, so it can be easily used with your favorite 3.3V or 5V microcontroller. All of the pins of the BME688 are available on standard 0.100”/ 2.54mm pitch headers for use with a breadboard. Should you wish to avoid soldering, they now also include Stemma QT connectors (SparkFun Qwiic compatible). Using these handy connectors you can simply plug in the sensor, no soldering required! QT Cable is not included, but we have a variety in the shop This detailed tutorial will get you going with code for both Arduino and CircuitPython, schematics, wiring diagrams, Fritzing objects, and more! TECHNICAL DETAILS Product Dimensions: 25.5mm x 17.6mm x 4.6mm / 1.0\" x 0.7\" x 0.2\" Product Weight: 1.7g / 0.1oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-bme688-temperature-humidity-pressure-and-gas-sensor-stemma-qt",
+     "id": "gid://shopify/Product/6569290104915",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5046-00.jpg?v=1622627457"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2200,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2200,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Air Quality",
+      "Breakouts",
+      "CircuitPython",
+      "Environmental",
+      "Qw/ST",
+      "Sensors"
+     ],
+     "title": "Adafruit BME688 - Temperature, Humidity, Pressure and Gas Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-bme688-temperature-humidity-pressure-and-gas-sensor-stemma-qt",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/39358272798803:1",
+       "description": {
+        "html": "The long-awaited BME688 from Bosch gives you all the environmental sensing you want in one small package. This little sensor contains temperature, humidity, barometric pressure, and VOC gas sensing capabilities. All over SPI or I2C at a great price! The BME688 is a 'drop in' replacement for the BME680 - it adds a method of programming the gas-sensor heater for controlled odor-analysis but is otherwise the same hardware. Check out this EYE ON NPI for more details about the machine-learning system you can use to program this sensor for odor detection. Like the BME280 & BMP280, this precision sensor from Bosch can measure humidity with ±3% accuracy, barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter or better accuracy! The BME688 takes those sensors to the next step in that it contains a small MOX sensor. The heated metal oxide changes resistance based on the volatile organic compounds (VOC) in the air, so it can be used to detect gasses & alcohols such as Ethanol, Alcohol, and Carbon Monoxide, and perform air quality measurements. Note it will give you one resistance value, with overall VOC content, but it cannot differentiate gasses or alcohols. Please note this sensor, like all VOC/gas sensors, has variability, and to get precise measurements you will want to calibrate it against known sources! That said, for general environmental sensors, it will give you a good idea of trends and comparisons. We recommend that you run this sensor for 48 hours when you first receive it to \"burn it in\", and then 30 minutes in the desired mode every time the sensor is in use. This is because the sensitivity levels of the sensor will change during early use, and the resistance will slowly rise over time as the MOX warms up to its baseline reading. For your convenience, Adafruit have pick-and-placed the sensor on a PCB with a 3.3V regulator and some level shifting, so it can be easily used with your favorite 3.3V or 5V microcontroller. All of the pins of the BME688 are available on standard 0.100”/ 2.54mm pitch headers for use with a breadboard. Should you wish to avoid soldering, they now also include Stemma QT connectors (SparkFun Qwiic compatible). Using these handy connectors you can simply plug in the sensor, no soldering required! QT Cable is not included, but we have a variety in the shop This detailed tutorial will get you going with code for both Arduino and CircuitPython, schematics, wiring diagrams, Fritzing objects, and more! TECHNICAL DETAILS Product Dimensions: 25.5mm x 17.6mm x 4.6mm / 1.0\" x 0.7\" x 0.2\" Product Weight: 1.7g / 0.1oz"
+       },
+       "id": "gid://shopify/ProductVariant/39358272798803",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/5046-00.jpg?v=1622627457"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2200,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA5046",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Adafruit microcontroller boards, development kits, sensors, displays and LEDs, with the components and accessories that go with them."
+       },
+       "handle": "adafruit",
+       "id": "gid://shopify/Collection/79476033",
+       "title": "Adafruit"
+      },
+      {
+       "description": {
+        "html": "Breakout boards that add sensors, displays, audio and wireless to a Raspberry Pi, Pico or Arduino, without designing the circuit yourself."
+       },
+       "handle": "breakouts",
+       "id": "gid://shopify/Collection/79787905",
+       "title": "Breakouts"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensor breakouts for temperature, humidity, air quality, light, distance and motion, connecting to a Raspberry Pi, Pico or other microcontroller."
+       },
+       "handle": "sensors",
+       "id": "gid://shopify/Collection/77729759315",
+       "title": "Sensors"
+      },
+      {
+       "description": {
+        "html": "Qw/ST and SP/CE? Many of our boards feature special connectors for easy and reliable connections, eliminating the need for loose jumper leads and pin headers. The main advantage of using Qw/ST and SP/CE boards is that you can wire your entire project without soldering, making it easy to disassemble projects and reuse components - nice! Qw/ST uses a 4-pin JST-SH connector for I2C (power, ground, SDA, SCL) and allows daisy-chaining multiple devices. SP/CE uses an 8-pin JST-SH connector for more complex needs like SPI or UART, typically supporting one device per port. Qw/ST (\"Quest\") combines Sparkfun’s \"Qwiic\" and Adafruit’s \"STEMMA\" systems, which are compatible. SP/CE stands for \"Serial Peripheral Connector Evolution\" our very own abomination of a backronym - you're welcome."
+       },
+       "handle": "qwst-and-spce",
+       "id": "gid://shopify/Collection/642629894523",
+       "title": "Qw/ST & SP/CE"
+      }
+     ],
+     "description": {
+      "html": "Bosch has stepped up their game with their new BMP280 sensor, an environmental sensor with temperature, barometric pressure that is the next generation upgrade to the BMP085/BMP180/BMP183. This sensor is great for all sorts of weather sensing and can even be used in both I2C and SPI! This precision sensor from Bosch is the best low-cost, precision sensing solution for measuring barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter accuracy. The BMP280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI. Nice sensor right? So Adafruit made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a custom made PCB in the STEMMA QT form factor, making them easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the BMP280 or to chain it with a wide range of other sensors and accessories using a compatible cable. They've broken out all the pins to standard headers and added a voltage regulator and level shifting so allow you to use it with either 3.3V or 5V systems such as the Metro M4 or Arduino Uno respectively. They even wrote up a nice tutorial with wiring diagrams, schematics, libraries and examples to get you running in 10 minutes! Make sure to check the tutorial for example code for Arduino and CircuitPython, pinouts, assembly, wiring, downloads, and more! TECHNICAL DETAILS Datasheets, PCB CAD files, Fritzing object and more available in the product tutorial! Revision History: As of July 2, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 19.2mm x 17.9mm x 2.9mm / 0.8\" x 0.7\" x 0.1\" Product Weight: 1.3g / 0.0oz"
+     },
+     "gift_card": false,
+     "handle": "adafruit-bmp280-i2c-or-spi-barometric-pressure-altitude-sensor",
+     "id": "gid://shopify/Product/1847793153",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/2651-07.jpg?v=1598532836"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1100,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1100,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "Altimeter",
+      "Breakouts",
+      "CircuitPython",
+      "Pressure",
+      "Qw/ST",
+      "Sensors",
+      "Temperature"
+     ],
+     "title": "Adafruit BMP280 I2C or SPI Barometric Pressure & Altitude Sensor",
+     "url": "https://shop.pimoroni.com/en-us/products/adafruit-bmp280-i2c-or-spi-barometric-pressure-altitude-sensor",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/5702196353:1",
+       "description": {
+        "html": "Bosch has stepped up their game with their new BMP280 sensor, an environmental sensor with temperature, barometric pressure that is the next generation upgrade to the BMP085/BMP180/BMP183. This sensor is great for all sorts of weather sensing and can even be used in both I2C and SPI! This precision sensor from Bosch is the best low-cost, precision sensing solution for measuring barometric pressure with ±1 hPa absolute accuracy, and temperature with ±1.0°C accuracy. Because pressure changes with altitude, and the pressure measurements are so good, you can also use it as an altimeter with ±1 meter accuracy. The BMP280 is the next-generation of sensors from Bosch, and is the upgrade to the BMP085/BMP180/BMP183 - with a low altitude noise of 0.25m and the same fast conversion time. It has the same specifications, but can use either I2C or SPI. For simple easy wiring, go with I2C. If you want to connect a bunch of sensors without worrying about I2C address collisions, go with SPI. Nice sensor right? So Adafruit made it easy for you to get right into your next project. The surface-mount sensor is soldered onto a custom made PCB in the STEMMA QT form factor, making them easy to interface with. The STEMMA QT connectors on either side are compatible with the SparkFun Qwiic I2C connectors. This allows you to make solderless connections between your development board and the BMP280 or to chain it with a wide range of other sensors and accessories using a compatible cable. They've broken out all the pins to standard headers and added a voltage regulator and level shifting so allow you to use it with either 3.3V or 5V systems such as the Metro M4 or Arduino Uno respectively. They even wrote up a nice tutorial with wiring diagrams, schematics, libraries and examples to get you running in 10 minutes! Make sure to check the tutorial for example code for Arduino and CircuitPython, pinouts, assembly, wiring, downloads, and more! TECHNICAL DETAILS Datasheets, PCB CAD files, Fritzing object and more available in the product tutorial! Revision History: As of July 2, 2020 Adafruit have updated this sensor to be STEMMA QT compatible - that means there's now an easy way to plug-and-play this sensor without any soldering! The physical shape has changed but the pinout is identical to the non-QT earlier version. Product Dimensions: 19.2mm x 17.9mm x 2.9mm / 0.8\" x 0.7\" x 0.1\" Product Weight: 1.3g / 0.0oz"
+       },
+       "id": "gid://shopify/ProductVariant/5702196353",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/2651-07.jpg?v=1598532836"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1100,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "ADA2651",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Our own boards, add-ons and kits, designed and made in Sheffield. Hardware for Raspberry Pi and Pico, from sensor boards and displays to complete products."
+       },
+       "handle": "pimoroni",
+       "id": "gid://shopify/Collection/29440469",
+       "title": "Pimoroni"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/2615803914",
+       "title": "All"
+      },
+      {
+       "description": {
+        "html": "Sensors and boards for measuring air quality, CO2, particulates, temperature, humidity and pressure, from single breakouts to complete monitors."
+       },
+       "handle": "environmental",
+       "id": "gid://shopify/Collection/162906800211",
+       "title": "Environmental"
+      },
+      {
+       "description": {
+        "html": "Raspberry Pi Pico, Pico W, Pico 2 and Pico 2 W, plus our own RP2040 and RP2350 boards, bases and packs, displays and accessories."
+       },
+       "handle": "pico",
+       "id": "gid://shopify/Collection/163356213331",
+       "title": "Raspberry Pi Pico"
+      },
+      {
+       "description": {
+        "html": ""
+       },
+       "handle": "pimoroni-pico-addons",
+       "id": "gid://shopify/Collection/260759158867",
+       "title": "Pimoroni Pico Addons"
+      }
+     ],
+     "description": {
+      "html": "A wireless outdoor air quality monitoring board with environmental and particulate sensors and a microphone. Enviro Urban is an all in one board for checking up on all the airborne nasties that can occur in built up areas. There's a BME280 sensor for measuring temperature, humidity, and pressure, a microphone for noise monitoring and a pre-installed PMS5003I particulate sensor. Particulate matter is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. Accumulate data in a database (we like InfluxDB) to campaign for cleaner air in your area, or use the wireless capabilities of the Raspberry Pi Pico W to contribute to citizen science projects like sensor.community. You can buy an Enviro Urban on its own, or in a kit that includes a weatherproof enclosure and everything else you'll need to get started. Enviro x Pico W Aboard Our new Enviro (Pico W Aboard) range is designed with environmental monitoring / logging in mind. We wanted to make a range of Pico/RP2040-powered, all-in-one sensor boards that are compact, easy to install in places and straightforward to program. The wireless capability of Raspberry Pi Pico W lets Enviro integrate with other systems - so you could post your data into databases, home automation systems, or online citizen science efforts - the Internet's your lobster! Because the least fun thing about adding lots of sensors to your environment is figuring out how supply power to everything without tons of trailing wires, they are all designed to work well off battery power. Each Enviro board has an onboard RTC (Real Time Clock), so that they can periodically wake up from deep sleep, take a reading (and, optionally, connect to wifi) and then go back to sleep - giving you months of untethered battery life. We've also put together some handy accessory kits to go with our Enviro boards, that include an appropriately sized AA or AAA battery pack, a USB cable and other essentials for each board, so you can get going super quick. Enviro Features Raspberry Pi Pico W Aboard Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM 2MB of QSPI flash supporting XiP Powered and programmable by USB micro-B 2.4GHz wireless Deep sleep/wake function using RTC 1 x POKE (user) button Reset button (because we're not monsters) Battery connector (JST-PH connector, 5.5V max voltage) User/activity LED (dimmable via PWM, can only be lit when board is awake) Warn LED (attached to RTC) Qw/ST connector for attaching breakouts Fully assembled No soldering required. Enviro firmware Schematic Enviro Urban Features BME280 temperature, pressure, humidity sensor (datasheet) MEMS microphone (datasheet) PMSA003I particulate matter sensor (datasheet) Enviro Urban + Accessory Kit Includes Enviro Urban Weatherproof cover/Stevenson screen 3 x AA battery pack 3 x AA batteries USB micro-B cable Velcro for attaching the battery pack Software Enviro ships with some super slick provisioning software that makes it really easy to set it up and connect to things, even if it's your first foray into environmental logging/IoT. Power it up and connect to the network called 'Enviro Urban Setup' with your phone, tablet or other wi-fi enabled device - your Pico W will walk you through the rest! Getting Started Guide Connecting Breakouts The Qw/ST connectors on Enviro boards make it super easy to connect up I2C Qwiic or STEMMA QT breakouts. If your breakout has a QW/ST connector on board, you can plug it straight in with a JST-SH to JST-SH cable. Breakout Garden breakouts that don't have a Qw/ST connector can be connected using a JST-SH to JST-SH cable plus a Qw/ST to Breakout Garden adaptor. Want to use multiple breakouts at the same time? Try this adaptor! List of breakouts currently compatible with our C++/MicroPython build. Notes Measurements: 69 x 36 mm (L x W, approx) Enviro boards can enter a deep sleep mode where the Pico W, on board sensors and sensors connected via Qw/ST are completely powered down. The only thing left running on the board is the RTC which can wake up the board again at a set date and time or on a timer. You can also wake up the board via the POKE button, or by connecting the USB cable. If connected to USB power Enviro will never enter deep sleep, though our software will reset the board every time it takes a reading. Power consumption when asleep is 20uA. The RTC can also be used to keep track of the time and date (which means we don't need to waste power by making a wireless call to find out the time/date each time we log a sensor reading!) The Warn LED is connected to the RTC, so it can be lit even during deep sleep to notify you of problems. It is limited to three states - on, off, or 1hz blink (it's not possible to control the brightness). We'd recommend using a 3 x AA battery pack with Enviro Urban as the particulate sensor uses quite a lot of power. Any battery pack that can supply between 2V and 5.5V will (work though - 2 or 3 alkaline AA or AAA cells, 4 rechargeable NiMH cells or a single cell LiPo. If you're using a LiPo, bear in mind there's no battery charging included on Enviro boards, so you'll need a separate LiPo battery charger (like a LiPo Amigo) to be able to charge it. About Pico W Aboard Our new Pico W Aboard products come with a built in Raspberry Pi Pico W. This means you get all the advantages of a RP2040 microcontroller - a speedy fast dual-core ARM processor, a dynamic, growing ecosystem and a choice of different programming methods to experiment with. Most excitingly though, Pico W has wireless connectivity, so your Pico/RP2040 devices can communicate with each other, and the internet! 🌍 Wireless is very new to Pico/RP2040 - be aware that things will move fast and change! Software support (wireless examples, tutorials, CircuitPython support etc) will take a little while to catch up. If you're an absolute beginner to Pico/RP2040, you might have a better experience with wireless if you wait until everything is a little more settled."
+     },
+     "gift_card": false,
+     "handle": "enviro-urban",
+     "id": "gid://shopify/Product/6794869932115",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pico-w-square-9.jpg?v=1656927722"
+      }
+     ],
+     "options": [
+      {
+       "name": "Variant",
+       "values": [
+        {
+         "label": "Enviro Urban Only"
+        },
+        {
+         "label": "Enviro Urban + Accessory Kit"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 8400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6500,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "_alkaline",
+      "Development Boards",
+      "Enviro",
+      "Environmental",
+      "MicroPython",
+      "Pico",
+      "Pico W Aboard",
+      "Sensors"
+     ],
+     "title": "Enviro Urban (Pico W Aboard)",
+     "url": "https://shop.pimoroni.com/en-us/products/enviro-urban",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40056508219475:1",
+       "description": {
+        "html": "A wireless outdoor air quality monitoring board with environmental and particulate sensors and a microphone. Enviro Urban is an all in one board for checking up on all the airborne nasties that can occur in built up areas. There's a BME280 sensor for measuring temperature, humidity, and pressure, a microphone for noise monitoring and a pre-installed PMS5003I particulate sensor. Particulate matter is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. Accumulate data in a database (we like InfluxDB) to campaign for cleaner air in your area, or use the wireless capabilities of the Raspberry Pi Pico W to contribute to citizen science projects like sensor.community. You can buy an Enviro Urban on its own, or in a kit that includes a weatherproof enclosure and everything else you'll need to get started. Enviro x Pico W Aboard Our new Enviro (Pico W Aboard) range is designed with environmental monitoring / logging in mind. We wanted to make a range of Pico/RP2040-powered, all-in-one sensor boards that are compact, easy to install in places and straightforward to program. The wireless capability of Raspberry Pi Pico W lets Enviro integrate with other systems - so you could post your data into databases, home automation systems, or online citizen science efforts - the Internet's your lobster! Because the least fun thing about adding lots of sensors to your environment is figuring out how supply power to everything without tons of trailing wires, they are all designed to work well off battery power. Each Enviro board has an onboard RTC (Real Time Clock), so that they can periodically wake up from deep sleep, take a reading (and, optionally, connect to wifi) and then go back to sleep - giving you months of untethered battery life. We've also put together some handy accessory kits to go with our Enviro boards, that include an appropriately sized AA or AAA battery pack, a USB cable and other essentials for each board, so you can get going super quick. Enviro Features Raspberry Pi Pico W Aboard Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM 2MB of QSPI flash supporting XiP Powered and programmable by USB micro-B 2.4GHz wireless Deep sleep/wake function using RTC 1 x POKE (user) button Reset button (because we're not monsters) Battery connector (JST-PH connector, 5.5V max voltage) User/activity LED (dimmable via PWM, can only be lit when board is awake) Warn LED (attached to RTC) Qw/ST connector for attaching breakouts Fully assembled No soldering required. Enviro firmware Schematic Enviro Urban Features BME280 temperature, pressure, humidity sensor (datasheet) MEMS microphone (datasheet) PMSA003I particulate matter sensor (datasheet) Enviro Urban + Accessory Kit Includes Enviro Urban Weatherproof cover/Stevenson screen 3 x AA battery pack 3 x AA batteries USB micro-B cable Velcro for attaching the battery pack Software Enviro ships with some super slick provisioning software that makes it really easy to set it up and connect to things, even if it's your first foray into environmental logging/IoT. Power it up and connect to the network called 'Enviro Urban Setup' with your phone, tablet or other wi-fi enabled device - your Pico W will walk you through the rest! Getting Started Guide Connecting Breakouts The Qw/ST connectors on Enviro boards make it super easy to connect up I2C Qwiic or STEMMA QT breakouts. If your breakout has a QW/ST connector on board, you can plug it straight in with a JST-SH to JST-SH cable. Breakout Garden breakouts that don't have a Qw/ST connector can be connected using a JST-SH to JST-SH cable plus a Qw/ST to Breakout Garden adaptor. Want to use multiple breakouts at the same time? Try this adaptor! List of breakouts currently compatible with our C++/MicroPython build. Notes Measurements: 69 x 36 mm (L x W, approx) Enviro boards can enter a deep sleep mode where the Pico W, on board sensors and sensors connected via Qw/ST are completely powered down. The only thing left running on the board is the RTC which can wake up the board again at a set date and time or on a timer. You can also wake up the board via the POKE button, or by connecting the USB cable. If connected to USB power Enviro will never enter deep sleep, though our software will reset the board every time it takes a reading. Power consumption when asleep is 20uA. The RTC can also be used to keep track of the time and date (which means we don't need to waste power by making a wireless call to find out the time/date each time we log a sensor reading!) The Warn LED is connected to the RTC, so it can be lit even during deep sleep to notify you of problems. It is limited to three states - on, off, or 1hz blink (it's not possible to control the brightness). We'd recommend using a 3 x AA battery pack with Enviro Urban as the particulate sensor uses quite a lot of power. Any battery pack that can supply between 2V and 5.5V will (work though - 2 or 3 alkaline AA or AAA cells, 4 rechargeable NiMH cells or a single cell LiPo. If you're using a LiPo, bear in mind there's no battery charging included on Enviro boards, so you'll need a separate LiPo battery charger (like a LiPo Amigo) to be able to charge it. About Pico W Aboard Our new Pico W Aboard products come with a built in Raspberry Pi Pico W. This means you get all the advantages of a RP2040 microcontroller - a speedy fast dual-core ARM processor, a dynamic, growing ecosystem and a choice of different programming methods to experiment with. Most excitingly though, Pico W has wireless connectivity, so your Pico/RP2040 devices can communicate with each other, and the internet! 🌍 Wireless is very new to Pico/RP2040 - be aware that things will move fast and change! Software support (wireless examples, tutorials, CircuitPython support etc) will take a little while to catch up. If you're an absolute beginner to Pico/RP2040, you might have a better experience with wireless if you wait until everything is a little more settled."
+       },
+       "id": "gid://shopify/ProductVariant/40056508219475",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pico-w-square-9.jpg?v=1656927722"
+        }
+       ],
+       "options": [
+        {
+         "label": "Enviro Urban Only",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 6500,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM629",
+       "title": "Enviro Urban Only"
+      },
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://pimoroni-2.myshopify.com/cart/40056508252243:1",
+       "description": {
+        "html": "A wireless outdoor air quality monitoring board with environmental and particulate sensors and a microphone. Enviro Urban is an all in one board for checking up on all the airborne nasties that can occur in built up areas. There's a BME280 sensor for measuring temperature, humidity, and pressure, a microphone for noise monitoring and a pre-installed PMS5003I particulate sensor. Particulate matter is made up of tiny particles that are a mix of sizes and types, like dust, pollen, mould spores, smoke particles, organic particles and metal ions, and more. Particulates are much of what we think of as air pollution. Accumulate data in a database (we like InfluxDB) to campaign for cleaner air in your area, or use the wireless capabilities of the Raspberry Pi Pico W to contribute to citizen science projects like sensor.community. You can buy an Enviro Urban on its own, or in a kit that includes a weatherproof enclosure and everything else you'll need to get started. Enviro x Pico W Aboard Our new Enviro (Pico W Aboard) range is designed with environmental monitoring / logging in mind. We wanted to make a range of Pico/RP2040-powered, all-in-one sensor boards that are compact, easy to install in places and straightforward to program. The wireless capability of Raspberry Pi Pico W lets Enviro integrate with other systems - so you could post your data into databases, home automation systems, or online citizen science efforts - the Internet's your lobster! Because the least fun thing about adding lots of sensors to your environment is figuring out how supply power to everything without tons of trailing wires, they are all designed to work well off battery power. Each Enviro board has an onboard RTC (Real Time Clock), so that they can periodically wake up from deep sleep, take a reading (and, optionally, connect to wifi) and then go back to sleep - giving you months of untethered battery life. We've also put together some handy accessory kits to go with our Enviro boards, that include an appropriately sized AA or AAA battery pack, a USB cable and other essentials for each board, so you can get going super quick. Enviro Features Raspberry Pi Pico W Aboard Dual Arm Cortex M0+ running at up to 133Mhz with 264kB of SRAM 2MB of QSPI flash supporting XiP Powered and programmable by USB micro-B 2.4GHz wireless Deep sleep/wake function using RTC 1 x POKE (user) button Reset button (because we're not monsters) Battery connector (JST-PH connector, 5.5V max voltage) User/activity LED (dimmable via PWM, can only be lit when board is awake) Warn LED (attached to RTC) Qw/ST connector for attaching breakouts Fully assembled No soldering required. Enviro firmware Schematic Enviro Urban Features BME280 temperature, pressure, humidity sensor (datasheet) MEMS microphone (datasheet) PMSA003I particulate matter sensor (datasheet) Enviro Urban + Accessory Kit Includes Enviro Urban Weatherproof cover/Stevenson screen 3 x AA battery pack 3 x AA batteries USB micro-B cable Velcro for attaching the battery pack Software Enviro ships with some super slick provisioning software that makes it really easy to set it up and connect to things, even if it's your first foray into environmental logging/IoT. Power it up and connect to the network called 'Enviro Urban Setup' with your phone, tablet or other wi-fi enabled device - your Pico W will walk you through the rest! Getting Started Guide Connecting Breakouts The Qw/ST connectors on Enviro boards make it super easy to connect up I2C Qwiic or STEMMA QT breakouts. If your breakout has a QW/ST connector on board, you can plug it straight in with a JST-SH to JST-SH cable. Breakout Garden breakouts that don't have a Qw/ST connector can be connected using a JST-SH to JST-SH cable plus a Qw/ST to Breakout Garden adaptor. Want to use multiple breakouts at the same time? Try this adaptor! List of breakouts currently compatible with our C++/MicroPython build. Notes Measurements: 69 x 36 mm (L x W, approx) Enviro boards can enter a deep sleep mode where the Pico W, on board sensors and sensors connected via Qw/ST are completely powered down. The only thing left running on the board is the RTC which can wake up the board again at a set date and time or on a timer. You can also wake up the board via the POKE button, or by connecting the USB cable. If connected to USB power Enviro will never enter deep sleep, though our software will reset the board every time it takes a reading. Power consumption when asleep is 20uA. The RTC can also be used to keep track of the time and date (which means we don't need to waste power by making a wireless call to find out the time/date each time we log a sensor reading!) The Warn LED is connected to the RTC, so it can be lit even during deep sleep to notify you of problems. It is limited to three states - on, off, or 1hz blink (it's not possible to control the brightness). We'd recommend using a 3 x AA battery pack with Enviro Urban as the particulate sensor uses quite a lot of power. Any battery pack that can supply between 2V and 5.5V will (work though - 2 or 3 alkaline AA or AAA cells, 4 rechargeable NiMH cells or a single cell LiPo. If you're using a LiPo, bear in mind there's no battery charging included on Enviro boards, so you'll need a separate LiPo battery charger (like a LiPo Amigo) to be able to charge it. About Pico W Aboard Our new Pico W Aboard products come with a built in Raspberry Pi Pico W. This means you get all the advantages of a RP2040 microcontroller - a speedy fast dual-core ARM processor, a dynamic, growing ecosystem and a choice of different programming methods to experiment with. Most excitingly though, Pico W has wireless connectivity, so your Pico/RP2040 devices can communicate with each other, and the internet! 🌍 Wireless is very new to Pico/RP2040 - be aware that things will move fast and change! Software support (wireless examples, tutorials, CircuitPython support etc) will take a little while to catch up. If you're an absolute beginner to Pico/RP2040, you might have a better experience with wireless if you wait until everything is a little more settled."
+       },
+       "id": "gid://shopify/ProductVariant/40056508252243",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/pico-w-square-9.jpg?v=1656927722"
+        }
+       ],
+       "options": [
+        {
+         "label": "Enviro Urban + Accessory Kit",
+         "name": "Variant"
+        }
+       ],
+       "price": {
+        "amount": 8400,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "PIM639",
+       "title": "Enviro Urban + Accessory Kit"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "AMEX",
+           "DISCOVER"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1741800"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "Pimoroni Ltd",
+        "merchant_origin": "shop.pimoroni.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "maestro",
+          "master",
+          "american_express",
+          "discover",
+          "diners_club",
+          "unionpay",
+          "elo"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1741800"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

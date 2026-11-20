@@ -1,0 +1,1642 @@
+{
+ "args": {
+  "business": "https://thepihut.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "e-paper display"
+  }
+ },
+ "key": "cfa17e2c341bb9dcfd97bec4231dc94059f79ed17cfe444bc26e762cfac8f448",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:32:04-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://thepihut.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: shopify catalog extension active — responses may carry shop-specific enrichment beyond the core spec; `variants[*].url` is the PDP and `variants[*].checkout_url` is the buy-now target; discount extension advertised — cart/checkout may accept `discount_codes[]` and surface `discount_allocations` per line item; run --input-schema before adding discount fields; fulfillment extension advertised — delivery groups may carry richer scheduling/handle metadata than the core spec requires; run --input-schema before adding fulfillment fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available; paginate only if you need them."
+  },
+  "endpoint": "https://the-pi-hut.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJncmFwaHFsX2N1cnNvciI6ImV5SndZV2RsSWpveUxDSnNZWE4wWDJsa0lqbzJNalExTWprek1UWXlOamt4TENKeVpYWmxjbk5sSWpwMGNuVmxMQ0p2Wm1aelpYUWlPamw5IiwicGFnZSI6Mn0=",
+    "has_next_page": true
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Whatever parts you need for your next electronics project, you’ll find them in our Maker Store! We stock over 8,000 items in our store and are constantly adding more to our collection; from brands such as Adafruit, SparkFun, Arduino, micro:bit, DFRobot, Seeed, Pimoroni and many more. Every angle of your project is covered here - we stock a huge range of development boards to start your project with, breakout boards, prototyping supplies and tools to create your concept, motors, displays, sensors, LEDs and other electronics parts to bring your project to life, as well as thousands of other items to complete your idea. As the leading official Adafruit UK distributor, we’re always getting the latest gadgets from our friends in New York, so add us to your bookmarks and check back for the latest and greatest maker goodies available in the UK. Be sure to check out our wearables section too, where we stock a huge number of Adafruit Wearable parts for making your own custom wearable designs."
+       },
+       "handle": "maker-store",
+       "id": "gid://shopify/Collection/371341064",
+       "title": "Maker Store"
+      },
+      {
+       "description": {
+        "html": "With new ideas and products being developed daily for makers, we keep a close eye on the market and aim to supply and stock as many maker parts as we can in our Maker Store. Every day, our team of experts hunt down the latest development boards, prototyping equipment, add-on boards, electronics parts, maker accessories and anything else we think our loyal army of makers might need for their projects. Add our new maker products page to your bookmarks and swing by regularly to check out the latest items we have in stock, from quality brands such as Adafruit, Seeed, DFRobot, Pimoroni and more. Can’t find something you need? Get in touch and let us know – we’ll do our very best to stock it."
+       },
+       "handle": "new-products-maker",
+       "id": "gid://shopify/Collection/371341896",
+       "title": "New Products - Maker Store"
+      },
+      {
+       "description": {
+        "html": "There’s just so much fun to be had by adding a display to your projects, and now with so many different sizes, shapes and display technologies – it’s more exciting than ever before. We stock a huge variety of displays for every project and microcontroller, including LCDs, TFTs, OLEDs, Paper displays and more. We also stock adapters and accessories for your traditional HDMI displays. If you’re looking for a larger display for your project, our HDMI section has sizes ranging from 5” to 10.1” – and everything in between! Low-power options are a popular choice for makers. Our ePaper, OLED and TFT products offer crisp detail which can be powered by your microcontroller without the need for a separate power supply. Want some retro appeal to your project? Check out our Nokia 5110 LCD display, or our range of classic 16x2 and 20x4 LCDs which come in a variety of colours. Whatever display you need, you’ll find it at The Pi Hut!"
+       },
+       "handle": "adafruit-lcds-displays",
+       "id": "gid://shopify/Collection/388360776",
+       "title": "LCDs & Displays"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      }
+     ],
+     "description": {
+      "html": "This is a compact, easy to use 296 x 152 2.66\" ePaper display module, designed to be used with a wide range of development boards including the Raspberry Pi and Arduino. The display features an embedded display controller that utilizes the SPI Bus for communication, keeping more of your precious GPIO pins free for the rest of your project. This display will pair perfectly with a Raspberry Pi, Raspberry Pi Pico, Arduino, or other popular boards. A 20cm 8-pin PH2.0 cable is included in the package. Online resources are available, which include setup instructions, can be found on the product Wiki. Features Ultra-low power consumption, power is only required when the screen refreshes. SPI interface, for easy integration with controller boards like Raspberry Pi, Jetson Nano, Arduino, STM32, etc. Onboard voltage regulation, compatible with 3.3V / 5V MCUs Online development resources and manual (Driver Board Schematics, Code Examples for Raspberry Pi, Jetson Nano, Arduino, STM32) Specifications Operating Voltage: 3.3V/5V Interface: SPI Outline Dimensions: 37.0 x 83.5mm Display Size: 30.704 x 60.08mm Dot Pitch: 0.202 x 0.203mm Resolution: 296 x 152 Display Colour: Black, White Grayscale: 2 Partial Refresh Time: 0.3s Full Refresh Time: 6s Refresh Power: 42.4mW(Typ.) Standby Current: <0.01uA (almost none) Viewing Angle: >170° Package Contents 1x 2.66\" e-Paper Module 1x PH2.0 20cm 8-Pin cable Resources Waveshare Wiki Interface VCC - 3.3V GND - GND DIN - SPI MOSI CLK - SPI SCK CS - SPI chip select (Low active) DC - Data/Command control pin (High for data, and low for command) RST - External reset pin (Low for reset) BUSY - Busy state output pin (Low for busy)"
+     },
+     "gift_card": false,
+     "handle": "2-66-e-paper-display-module-black-white-296x152",
+     "id": "gid://shopify/Product/6977908965571",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "2.66\" E-Paper Display Module (Black/White) (296×152) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-66-e-paper-display-module-black-white-296x152-waveshare-wav-18321-30354708660419.jpg?v=1646804352"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1050,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 1050,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_MAKE_DISPLAY",
+      "_MAKE_DISPLAY_PAPER",
+      "_Maker",
+      "_ws10",
+      "Brand_Waveshare",
+      "Colour_Black",
+      "Colour_White"
+     ],
+     "title": "2.66\" ePaper Display Module (296×152)",
+     "url": "https://thepihut.com/products/2-66-e-paper-display-module-black-white-296x152",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/40874955374787:1",
+       "description": {
+        "html": "This is a compact, easy to use 296 x 152 2.66\" ePaper display module, designed to be used with a wide range of development boards including the Raspberry Pi and Arduino. The display features an embedded display controller that utilizes the SPI Bus for communication, keeping more of your precious GPIO pins free for the rest of your project. This display will pair perfectly with a Raspberry Pi, Raspberry Pi Pico, Arduino, or other popular boards. A 20cm 8-pin PH2.0 cable is included in the package. Online resources are available, which include setup instructions, can be found on the product Wiki. Features Ultra-low power consumption, power is only required when the screen refreshes. SPI interface, for easy integration with controller boards like Raspberry Pi, Jetson Nano, Arduino, STM32, etc. Onboard voltage regulation, compatible with 3.3V / 5V MCUs Online development resources and manual (Driver Board Schematics, Code Examples for Raspberry Pi, Jetson Nano, Arduino, STM32) Specifications Operating Voltage: 3.3V/5V Interface: SPI Outline Dimensions: 37.0 x 83.5mm Display Size: 30.704 x 60.08mm Dot Pitch: 0.202 x 0.203mm Resolution: 296 x 152 Display Colour: Black, White Grayscale: 2 Partial Refresh Time: 0.3s Full Refresh Time: 6s Refresh Power: 42.4mW(Typ.) Standby Current: <0.01uA (almost none) Viewing Angle: >170° Package Contents 1x 2.66\" e-Paper Module 1x PH2.0 20cm 8-Pin cable Resources Waveshare Wiki Interface VCC - 3.3V GND - GND DIN - SPI MOSI CLK - SPI SCK CS - SPI chip select (Low active) DC - Data/Command control pin (High for data, and low for command) RST - External reset pin (Low for reset) BUSY - Busy state output pin (Low for busy)"
+       },
+       "id": "gid://shopify/ProductVariant/40874955374787",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-66-e-paper-display-module-black-white-296x152-waveshare-wav-18321-30354708660419.jpg?v=1646804352"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1050,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-18321",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Whatever parts you need for your next electronics project, you’ll find them in our Maker Store! We stock over 8,000 items in our store and are constantly adding more to our collection; from brands such as Adafruit, SparkFun, Arduino, micro:bit, DFRobot, Seeed, Pimoroni and many more. Every angle of your project is covered here - we stock a huge range of development boards to start your project with, breakout boards, prototyping supplies and tools to create your concept, motors, displays, sensors, LEDs and other electronics parts to bring your project to life, as well as thousands of other items to complete your idea. As the leading official Adafruit UK distributor, we’re always getting the latest gadgets from our friends in New York, so add us to your bookmarks and check back for the latest and greatest maker goodies available in the UK. Be sure to check out our wearables section too, where we stock a huge number of Adafruit Wearable parts for making your own custom wearable designs."
+       },
+       "handle": "maker-store",
+       "id": "gid://shopify/Collection/371341064",
+       "title": "Maker Store"
+      },
+      {
+       "description": {
+        "html": "With new ideas and products being developed daily for makers, we keep a close eye on the market and aim to supply and stock as many maker parts as we can in our Maker Store. Every day, our team of experts hunt down the latest development boards, prototyping equipment, add-on boards, electronics parts, maker accessories and anything else we think our loyal army of makers might need for their projects. Add our new maker products page to your bookmarks and swing by regularly to check out the latest items we have in stock, from quality brands such as Adafruit, Seeed, DFRobot, Pimoroni and more. Can’t find something you need? Get in touch and let us know – we’ll do our very best to stock it."
+       },
+       "handle": "new-products-maker",
+       "id": "gid://shopify/Collection/371341896",
+       "title": "New Products - Maker Store"
+      },
+      {
+       "description": {
+        "html": "There’s just so much fun to be had by adding a display to your projects, and now with so many different sizes, shapes and display technologies – it’s more exciting than ever before. We stock a huge variety of displays for every project and microcontroller, including LCDs, TFTs, OLEDs, Paper displays and more. We also stock adapters and accessories for your traditional HDMI displays. If you’re looking for a larger display for your project, our HDMI section has sizes ranging from 5” to 10.1” – and everything in between! Low-power options are a popular choice for makers. Our ePaper, OLED and TFT products offer crisp detail which can be powered by your microcontroller without the need for a separate power supply. Want some retro appeal to your project? Check out our Nokia 5110 LCD display, or our range of classic 16x2 and 20x4 LCDs which come in a variety of colours. Whatever display you need, you’ll find it at The Pi Hut!"
+       },
+       "handle": "adafruit-lcds-displays",
+       "id": "gid://shopify/Collection/388360776",
+       "title": "LCDs & Displays"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      }
+     ],
+     "description": {
+      "html": "A 1.54\" ePaper display module from Waveshare, with a 200x200 resolution, 170° viewing angles and partial refresh support - controlled via SPI. ePaper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, ePaper screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! These ePaper display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface, and support partial refresh. This module includes a 1.54\" (200x200) eInk display & cable assembly designed to plug into your microcontroller's SPI interface. Features No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 48mm x 33mm Display size: 27.6mm x 27.6mm Dot pitch: 0.138 x 0.138 Resolution: 200 x 200 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Resources Product Wiki Package Contents 1x 1.54\" e-Paper Module 1x PH2.0 20cm 8-Pin"
+     },
+     "gift_card": false,
+     "handle": "eink-display-module-spi-1-54-200x200",
+     "id": "gid://shopify/Product/2215667335230",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "E-Ink Display Module SPI - 1.54\" (200x200) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-module-spi-1-54-200x200-waveshare-wav-12955-15132297297982.jpg?v=1646575039"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 842,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 842,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_MAKE_DISPLAY",
+      "_MAKE_DISPLAY_PAPER",
+      "_Maker",
+      "_ws10",
+      "Brand_Waveshare"
+     ],
+     "title": "1.54\" ePaper Display Module (200x200)",
+     "url": "https://thepihut.com/products/eink-display-module-spi-1-54-200x200",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/20063071240254:1",
+       "description": {
+        "html": "A 1.54\" ePaper display module from Waveshare, with a 200x200 resolution, 170° viewing angles and partial refresh support - controlled via SPI. ePaper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, ePaper screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! These ePaper display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface, and support partial refresh. This module includes a 1.54\" (200x200) eInk display & cable assembly designed to plug into your microcontroller's SPI interface. Features No backlight, keeps displaying last content for a long time even when power down Ultra low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 48mm x 33mm Display size: 27.6mm x 27.6mm Dot pitch: 0.138 x 0.138 Resolution: 200 x 200 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Resources Product Wiki Package Contents 1x 1.54\" e-Paper Module 1x PH2.0 20cm 8-Pin"
+       },
+       "id": "gid://shopify/ProductVariant/20063071240254",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-module-spi-1-54-200x200-waveshare-wav-12955-15132297297982.jpg?v=1646575039"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 842,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-12955",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to The Pi Hut's Raspberry Pi superstore – where it all started. Way back in 2012 we started The Pi Hut selling pre-imaged SD cards. We then moved on to Raspberry Pi cases, Wi-Fi adapters and gradually our product listings grew bigger and bigger. Eventually, we became what we are today – the #1 store for Raspberry Pi accessories, HATs, add-ons, cases, cables, SD cards and so much more. We sell all models of the Raspberry Pi including the latest Raspberry Pi 5 , Raspberry Pi 500+ and Raspberry Pi 500, alongside the Raspberry Pi 4, Raspberry Pi 400, Raspberry Pi Zero 2 and Raspberry Pi Pico 2 W. In this section, you’ll find all things Raspberry Pi - from our latest and greatest add-ons & HATs, to essential cables, cases and more. If you need something for your Raspberry Pi, you’ll find it here! Be sure to check out our handy Raspberry Pi compatibility checker on each product page, showing you which products fit which model of Raspberry Pi. Also, be sure to read our fantastic reviews from our loyal customers before you buy."
+       },
+       "handle": "raspberry-pi-store",
+       "id": "gid://shopify/Collection/27082488",
+       "title": "Raspberry Pi Store"
+      },
+      {
+       "description": {
+        "html": "The Raspberry Pi’s GPIO (General Purpose Input Output) allows it to talk to ‘real world things’ – other hardware and electronics – by using code to tell these things what to do and when. You can connect dupont wires to create a circuit yourself, or attach an add-on board or HAT designed for a specific purpose. From handy GPIO headers for your Raspberry Pi Zero 2 to full add-on boards that can control robots, stream digital TV, play music, light-up displays and more – we’ve got you covered with our huge range of GPIO add-ons. We've also got a great selection of Raspberry Pi Pico and Pico W add-ons and headers for you to choose from too!"
+       },
+       "handle": "raspberry-pi-hats",
+       "id": "gid://shopify/Collection/28838052",
+       "title": "Raspberry Pi HATs, pHATS & GPIO"
+      },
+      {
+       "description": {
+        "html": "Adding a display to your Raspberry Pi can give your projects new exciting interfaces, increased mobility and save you a huge amount of space. The Raspberry Pi Display 2 allows you to add touch inputs to your programs, creating a new way to interact with your projects - with 10\", 7\" and 5\" versions now available. On the larger side, the 15.6\" Raspberry Pi Monitor makes for a fantastic desktop screen for day-to-day use of your Raspberry Pi. For smaller projects, LCD and ePaper displays are a fun way to add a visual element to your projects. With simple code and wiring, they’re great for projects that require text, menus and navigation. Also be sure to check out our maker store’s huge range of LCD modules!"
+       },
+       "handle": "raspberry-pi-screens",
+       "id": "gid://shopify/Collection/155544196",
+       "title": "Raspberry Pi Screens & Displays"
+      },
+      {
+       "description": {
+        "html": "Here at The Pi Hut, we’re always on the lookout for new, interesting or just plain useful accessories for your Raspberry Pi. Our team of Raspberry Pi experts are constantly sourcing new add-ons, HATs, cases, cables, accessories and anything else that makes using the Raspberry Pi the most fun and creative experience possible. Add our new products page to your bookmarks and check back regularly to see what goodies we’ve added to our constantly growing list of Raspberry Pi products. Can’t see something you’re after? Get in touch and let us know what’s missing – we’ll do our best to stock it."
+       },
+       "handle": "latest-raspberry-pi-products",
+       "id": "gid://shopify/Collection/371342024",
+       "title": "New Products - Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      }
+     ],
+     "description": {
+      "html": "Looking for an e-Paper display for your Raspberry Pi Pico? Look no further! This 3.7\" 480x280 black/white e-Paper display from Waveshare is perfect for adding a low-power display to your Pico. e-Paper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, e-Paper displays are able to hold text and images indefinitely, even without power! ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Your Raspberry Pi Pico slots into the female connectors on the back of the display, then you simply power the entire setup via the Pico's micro-USB connector - no need for additional power supplies. The display includes corner standoff mounting points and comes complete with 4 metal standoffs for fitting to your own panel or enclosure. This display communicates via the SPI interface and supports partial refresh. Note: Raspberry Pi Pico not included. You'll need a Pico with male headers soldered to it. You can grab a Pico here and Pico male headers here, or buy a Pico with pre-soldered headers. Features Compatible with Raspberry Pi Pico 3.7\" e-Paper display 480x280 pixels 170° Viewing Angle No backlight - keeps displaying last content for a long time even when powered down Ultra-low power consumption, power is only required for refreshing SPI interface - requires minimal IO pins Onboard voltage translator, compatible with 3.3V / 5V MCUs Online development resources and manual Metal standoffs included Specifications Operating Voltage: 3.3V/5V Resolution: 480x280 Pixels Interface: 3-wire SPI, 4-wire SPI Partial refresh time: 0.3s Full refresh time: 3s Outline Dimensions: 95.3mm x 56.9mm Refresh Power: 26.4mW (typ.) Dot Pitch: 0.169mm x 0.169mm Display Colour: Black/white Grey Scale: 4 Viewing Angle: >170° Display size: 81.12mm x 47.32mm Standby current: <0.01uA (almost none) Resources Product Wiki Package Contents 1x 3.7\" Pico e-Paper Display 4x Metal standoffs Raspberry Pi Pico not included Pinout SPI Interface VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output"
+     },
+     "gift_card": false,
+     "handle": "3-7-e-paper-e-ink-display-for-raspberry-pi-pico-480x280",
+     "id": "gid://shopify/Product/6799316779203",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "3.7\" e-Paper e-Ink Display for Raspberry Pi Pico (480x280) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/3-7-e-paper-e-ink-display-for-raspberry-pi-pico-480x280-waveshare-wav-20123-29107820298435.jpg?v=1646780586"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2708,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 2708,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_RaspberryPi",
+      "_RPI_DISPLAY",
+      "_RPI_DISPLAY_GPIO",
+      "_RPI_DISPLAY_MINI",
+      "_RPI_DISPLAY_PAPER",
+      "_RPI_HAT",
+      "_RPI_HAT_Displays",
+      "_RPI_PICO",
+      "_ws10",
+      "Brand_Waveshare",
+      "Compatible With_Raspberry Pi Pico",
+      "Compatible With_Raspberry Pi Pico W"
+     ],
+     "title": "3.7\" ePaper Display for Raspberry Pi Pico (480x280)",
+     "url": "https://thepihut.com/products/3-7-e-paper-e-ink-display-for-raspberry-pi-pico-480x280",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/40239981166787:1",
+       "description": {
+        "html": "Looking for an e-Paper display for your Raspberry Pi Pico? Look no further! This 3.7\" 480x280 black/white e-Paper display from Waveshare is perfect for adding a low-power display to your Pico. e-Paper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, e-Paper displays are able to hold text and images indefinitely, even without power! ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Your Raspberry Pi Pico slots into the female connectors on the back of the display, then you simply power the entire setup via the Pico's micro-USB connector - no need for additional power supplies. The display includes corner standoff mounting points and comes complete with 4 metal standoffs for fitting to your own panel or enclosure. This display communicates via the SPI interface and supports partial refresh. Note: Raspberry Pi Pico not included. You'll need a Pico with male headers soldered to it. You can grab a Pico here and Pico male headers here, or buy a Pico with pre-soldered headers. Features Compatible with Raspberry Pi Pico 3.7\" e-Paper display 480x280 pixels 170° Viewing Angle No backlight - keeps displaying last content for a long time even when powered down Ultra-low power consumption, power is only required for refreshing SPI interface - requires minimal IO pins Onboard voltage translator, compatible with 3.3V / 5V MCUs Online development resources and manual Metal standoffs included Specifications Operating Voltage: 3.3V/5V Resolution: 480x280 Pixels Interface: 3-wire SPI, 4-wire SPI Partial refresh time: 0.3s Full refresh time: 3s Outline Dimensions: 95.3mm x 56.9mm Refresh Power: 26.4mW (typ.) Dot Pitch: 0.169mm x 0.169mm Display Colour: Black/white Grey Scale: 4 Viewing Angle: >170° Display size: 81.12mm x 47.32mm Standby current: <0.01uA (almost none) Resources Product Wiki Package Contents 1x 3.7\" Pico e-Paper Display 4x Metal standoffs Raspberry Pi Pico not included Pinout SPI Interface VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data / Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output"
+       },
+       "id": "gid://shopify/ProductVariant/40239981166787",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/3-7-e-paper-e-ink-display-for-raspberry-pi-pico-480x280-waveshare-wav-20123-29107820298435.jpg?v=1646780586"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2708,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-20123",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Whatever parts you need for your next electronics project, you’ll find them in our Maker Store! We stock over 8,000 items in our store and are constantly adding more to our collection; from brands such as Adafruit, SparkFun, Arduino, micro:bit, DFRobot, Seeed, Pimoroni and many more. Every angle of your project is covered here - we stock a huge range of development boards to start your project with, breakout boards, prototyping supplies and tools to create your concept, motors, displays, sensors, LEDs and other electronics parts to bring your project to life, as well as thousands of other items to complete your idea. As the leading official Adafruit UK distributor, we’re always getting the latest gadgets from our friends in New York, so add us to your bookmarks and check back for the latest and greatest maker goodies available in the UK. Be sure to check out our wearables section too, where we stock a huge number of Adafruit Wearable parts for making your own custom wearable designs."
+       },
+       "handle": "maker-store",
+       "id": "gid://shopify/Collection/371341064",
+       "title": "Maker Store"
+      },
+      {
+       "description": {
+        "html": "With new ideas and products being developed daily for makers, we keep a close eye on the market and aim to supply and stock as many maker parts as we can in our Maker Store. Every day, our team of experts hunt down the latest development boards, prototyping equipment, add-on boards, electronics parts, maker accessories and anything else we think our loyal army of makers might need for their projects. Add our new maker products page to your bookmarks and swing by regularly to check out the latest items we have in stock, from quality brands such as Adafruit, Seeed, DFRobot, Pimoroni and more. Can’t find something you need? Get in touch and let us know – we’ll do our very best to stock it."
+       },
+       "handle": "new-products-maker",
+       "id": "gid://shopify/Collection/371341896",
+       "title": "New Products - Maker Store"
+      },
+      {
+       "description": {
+        "html": "There’s just so much fun to be had by adding a display to your projects, and now with so many different sizes, shapes and display technologies – it’s more exciting than ever before. We stock a huge variety of displays for every project and microcontroller, including LCDs, TFTs, OLEDs, Paper displays and more. We also stock adapters and accessories for your traditional HDMI displays. If you’re looking for a larger display for your project, our HDMI section has sizes ranging from 5” to 10.1” – and everything in between! Low-power options are a popular choice for makers. Our ePaper, OLED and TFT products offer crisp detail which can be powered by your microcontroller without the need for a separate power supply. Want some retro appeal to your project? Check out our Nokia 5110 LCD display, or our range of classic 16x2 and 20x4 LCDs which come in a variety of colours. Whatever display you need, you’ll find it at The Pi Hut!"
+       },
+       "handle": "adafruit-lcds-displays",
+       "id": "gid://shopify/Collection/388360776",
+       "title": "LCDs & Displays"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      }
+     ],
+     "description": {
+      "html": "A 2.9\" ePaper display module from Waveshare, with a 296x128 resolution, 170° viewing angles and partial refresh support - controlled via SPI. ePaper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, ePaper screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! These ePaper display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface, and support partial refresh. Features No backlight, keeps displaying last content for a long time even when powered down Ultra low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 89.5mm x 38mm Display size: 66.89mm x 29.05mm Dot pitch: 0.138 x 0.138 Resolution: 296 x 128 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Pinout SYMBOL DESCRIPTION VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data/Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output, high active Resources Product Wiki Package Contents 1x 2.9\" e-Paper Module 1x PH2.0 20cm 8-Pin"
+     },
+     "gift_card": false,
+     "handle": "eink-display-module-spi-2-9-296x128",
+     "id": "gid://shopify/Product/2215667466302",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "E-Ink Display Module - 2.9\" (296x128) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-module-2-9-296x128-waveshare-wav-12956-14784690225214.jpg?v=1646575027"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1642,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 1642,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_MAKE_DISPLAY",
+      "_MAKE_DISPLAY_PAPER",
+      "_Maker",
+      "_ws10",
+      "Brand_Waveshare"
+     ],
+     "title": "2.9\" ePaper Display Module (296x128)",
+     "url": "https://thepihut.com/products/eink-display-module-spi-2-9-296x128",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/20063071371326:1",
+       "description": {
+        "html": "A 2.9\" ePaper display module from Waveshare, with a 296x128 resolution, 170° viewing angles and partial refresh support - controlled via SPI. ePaper displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, ePaper screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! These ePaper display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface, and support partial refresh. Features No backlight, keeps displaying last content for a long time even when powered down Ultra low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 89.5mm x 38mm Display size: 66.89mm x 29.05mm Dot pitch: 0.138 x 0.138 Resolution: 296 x 128 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Pinout SYMBOL DESCRIPTION VCC 3.3V/5V GND Ground DIN SPI MOSI pin CLK SPI SCK pin CS SPI chip selection, low active DC Data/Command selection (high for data, low for command) RST External reset, low active BUSY Busy status output, high active Resources Product Wiki Package Contents 1x 2.9\" e-Paper Module 1x PH2.0 20cm 8-Pin"
+       },
+       "id": "gid://shopify/ProductVariant/20063071371326",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-module-2-9-296x128-waveshare-wav-12956-14784690225214.jpg?v=1646575027"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1642,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-12956",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to The Pi Hut's Raspberry Pi superstore – where it all started. Way back in 2012 we started The Pi Hut selling pre-imaged SD cards. We then moved on to Raspberry Pi cases, Wi-Fi adapters and gradually our product listings grew bigger and bigger. Eventually, we became what we are today – the #1 store for Raspberry Pi accessories, HATs, add-ons, cases, cables, SD cards and so much more. We sell all models of the Raspberry Pi including the latest Raspberry Pi 5 , Raspberry Pi 500+ and Raspberry Pi 500, alongside the Raspberry Pi 4, Raspberry Pi 400, Raspberry Pi Zero 2 and Raspberry Pi Pico 2 W. In this section, you’ll find all things Raspberry Pi - from our latest and greatest add-ons & HATs, to essential cables, cases and more. If you need something for your Raspberry Pi, you’ll find it here! Be sure to check out our handy Raspberry Pi compatibility checker on each product page, showing you which products fit which model of Raspberry Pi. Also, be sure to read our fantastic reviews from our loyal customers before you buy."
+       },
+       "handle": "raspberry-pi-store",
+       "id": "gid://shopify/Collection/27082488",
+       "title": "Raspberry Pi Store"
+      },
+      {
+       "description": {
+        "html": "Here at The Pi Hut, we’re always on the lookout for new, interesting or just plain useful accessories for your Raspberry Pi. Our team of Raspberry Pi experts are constantly sourcing new add-ons, HATs, cases, cables, accessories and anything else that makes using the Raspberry Pi the most fun and creative experience possible. Add our new products page to your bookmarks and check back regularly to see what goodies we’ve added to our constantly growing list of Raspberry Pi products. Can’t see something you’re after? Get in touch and let us know what’s missing – we’ll do our best to stock it."
+       },
+       "handle": "latest-raspberry-pi-products",
+       "id": "gid://shopify/Collection/371342024",
+       "title": "New Products - Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      },
+      {
+       "description": {
+        "html": "Check out our great range of Raspberry Pi Pico accessories and add-ons! The latest Raspberry Pi Pico 2 is a microcontroller board from Raspberry Pi using the new RP2350 chip, designed for physical computing projects where it can control components such as LEDs, buttons, sensors, motors and even other microcontrollers. A wireless version for IoT - the Raspberry Pi Pico 2 W - is also available. Earlier versions in the Pico family used the RP2040 microcontroller, including the wireless-enabled version - the Raspberry Pi Pico W. The Raspberry Pi Pico is small, affordable and flexible - great for learning to code with MicroPython, taking your first steps in physical computing or simply building a hardware project. We have a number of Raspberry Pi Pico accessories in the store to make using this fantastic little board even easier, including Raspberry Pi Pico GPIO headers for using your Pico with a solderless breadboard, a Raspberry Pi micro-USB cable for connecting your Pico to a computer, and even a great new Raspberry Pi Pico Book for learning how to use your new board with MicroPython. If you're looking for other development boards using Raspberry Pi silicon, head over to our Maker Store Development Board section with the RP2350 chip family filter or RP2040 filter to see other great options! Read about our top 10 Raspberry Pi Pico accessories here!"
+       },
+       "handle": "pico",
+       "id": "gid://shopify/Collection/242549522627",
+       "title": "Raspberry Pi Pico Accessories & Add Ons"
+      }
+     ],
+     "description": {
+      "html": "Looking for a large, 3-colour eInk / ePaper display for your Raspberry Pi Pico? Look no further than this 7.5\" Black/White/Red eInk/ePaper display from Waveshare. It's ideal for adding a low-power, E-Ink display to your next Pi Pico project. Featuring a screen resolution of 800x480 pixels, the E-Ink display utilizes a short ribbon cable and driverboard to move the Raspberry Pi Pico off of the back, allowing for a more lowprofile footprint. ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which loose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle, and additionally have limited reflection under sunlight. The applications are limitless! This E-Ink / ePaper display is also available in a 2-colour, Black/White, version. The Raspberry Pi Pico is NOT included Additional resources can be found on the Waveshare Wiki. Features No backlight, keeps displaying last content for a long time even when power down Black, White, and Red Colours Ultra low power consumption, basically power is only required for refreshing SPI interface, requires minimal IO pins 2x user buttons and 1x reset button for easy interacting Comes with development resources, manual and examples for Raspberry Pi Pico C/C++ and MicroPython Specifications Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Display colour: Black/White/Red Grey Scale: 2 Resolution: 800x480 pixels Partial Refresh Time: N/A Full refresh time: 16s Refresh Power: 48mW (typical) Standby Current: <0.01uA (almost none) Viewing angle: >170° Dot Pitch: 0.204 x 0.204 Display Dimensions: 163.2 x 97.90mm Outline Dimensions: 170.2 x 97.92mm Resources Waveshare Wiki Pinout Package Contents 1x 7.5\" e-Paper (B) 1x Pico-ePaper-Driver-Board 1x Standoff pack"
+     },
+     "gift_card": false,
+     "handle": "7-5-e-paper-display-module-for-raspberry-pi-pico-800x480-red-black-white",
+     "id": "gid://shopify/Product/6945367228611",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "7.5\" E-Paper Display Module for Raspberry Pi Pico (800×480) (Red/Black/White) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/7-5-e-paper-display-module-for-raspberry-pi-pico-800x480-red-black-white-waveshare-wav-20129-29837604487363.jpg?v=1646760971"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 4525,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 4525,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_RaspberryPi",
+      "_RPI_PICO",
+      "_ws10",
+      "Brand_Waveshare",
+      "Colour_Black",
+      "Colour_Red",
+      "Colour_White",
+      "Compatible With_Raspberry Pi Pico",
+      "Compatible With_Raspberry Pi Pico W"
+     ],
+     "title": "7.5\" ePaper Display Module for Raspberry Pi Pico - Red/Black/White (800×480)",
+     "url": "https://thepihut.com/products/7-5-e-paper-display-module-for-raspberry-pi-pico-800x480-red-black-white",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/40746866507971:1",
+       "description": {
+        "html": "Looking for a large, 3-colour eInk / ePaper display for your Raspberry Pi Pico? Look no further than this 7.5\" Black/White/Red eInk/ePaper display from Waveshare. It's ideal for adding a low-power, E-Ink display to your next Pi Pico project. Featuring a screen resolution of 800x480 pixels, the E-Ink display utilizes a short ribbon cable and driverboard to move the Raspberry Pi Pico off of the back, allowing for a more lowprofile footprint. ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which loose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle, and additionally have limited reflection under sunlight. The applications are limitless! This E-Ink / ePaper display is also available in a 2-colour, Black/White, version. The Raspberry Pi Pico is NOT included Additional resources can be found on the Waveshare Wiki. Features No backlight, keeps displaying last content for a long time even when power down Black, White, and Red Colours Ultra low power consumption, basically power is only required for refreshing SPI interface, requires minimal IO pins 2x user buttons and 1x reset button for easy interacting Comes with development resources, manual and examples for Raspberry Pi Pico C/C++ and MicroPython Specifications Operating Voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Display colour: Black/White/Red Grey Scale: 2 Resolution: 800x480 pixels Partial Refresh Time: N/A Full refresh time: 16s Refresh Power: 48mW (typical) Standby Current: <0.01uA (almost none) Viewing angle: >170° Dot Pitch: 0.204 x 0.204 Display Dimensions: 163.2 x 97.90mm Outline Dimensions: 170.2 x 97.92mm Resources Waveshare Wiki Pinout Package Contents 1x 7.5\" e-Paper (B) 1x Pico-ePaper-Driver-Board 1x Standoff pack"
+       },
+       "id": "gid://shopify/ProductVariant/40746866507971",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/7-5-e-paper-display-module-for-raspberry-pi-pico-800x480-red-black-white-waveshare-wav-20129-29837604487363.jpg?v=1646760971"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 4525,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-20129",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Whatever parts you need for your next electronics project, you’ll find them in our Maker Store! We stock over 8,000 items in our store and are constantly adding more to our collection; from brands such as Adafruit, SparkFun, Arduino, micro:bit, DFRobot, Seeed, Pimoroni and many more. Every angle of your project is covered here - we stock a huge range of development boards to start your project with, breakout boards, prototyping supplies and tools to create your concept, motors, displays, sensors, LEDs and other electronics parts to bring your project to life, as well as thousands of other items to complete your idea. As the leading official Adafruit UK distributor, we’re always getting the latest gadgets from our friends in New York, so add us to your bookmarks and check back for the latest and greatest maker goodies available in the UK. Be sure to check out our wearables section too, where we stock a huge number of Adafruit Wearable parts for making your own custom wearable designs."
+       },
+       "handle": "maker-store",
+       "id": "gid://shopify/Collection/371341064",
+       "title": "Maker Store"
+      },
+      {
+       "description": {
+        "html": "With new ideas and products being developed daily for makers, we keep a close eye on the market and aim to supply and stock as many maker parts as we can in our Maker Store. Every day, our team of experts hunt down the latest development boards, prototyping equipment, add-on boards, electronics parts, maker accessories and anything else we think our loyal army of makers might need for their projects. Add our new maker products page to your bookmarks and swing by regularly to check out the latest items we have in stock, from quality brands such as Adafruit, Seeed, DFRobot, Pimoroni and more. Can’t find something you need? Get in touch and let us know – we’ll do our very best to stock it."
+       },
+       "handle": "new-products-maker",
+       "id": "gid://shopify/Collection/371341896",
+       "title": "New Products - Maker Store"
+      },
+      {
+       "description": {
+        "html": "There’s just so much fun to be had by adding a display to your projects, and now with so many different sizes, shapes and display technologies – it’s more exciting than ever before. We stock a huge variety of displays for every project and microcontroller, including LCDs, TFTs, OLEDs, Paper displays and more. We also stock adapters and accessories for your traditional HDMI displays. If you’re looking for a larger display for your project, our HDMI section has sizes ranging from 5” to 10.1” – and everything in between! Low-power options are a popular choice for makers. Our ePaper, OLED and TFT products offer crisp detail which can be powered by your microcontroller without the need for a separate power supply. Want some retro appeal to your project? Check out our Nokia 5110 LCD display, or our range of classic 16x2 and 20x4 LCDs which come in a variety of colours. Whatever display you need, you’ll find it at The Pi Hut!"
+       },
+       "handle": "adafruit-lcds-displays",
+       "id": "gid://shopify/Collection/388360776",
+       "title": "LCDs & Displays"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      }
+     ],
+     "description": {
+      "html": "This is for the screen only! This item does not come with a controller PCB (but you can grab one here for the Raspberry Pi or Arduino). Looking for an eInk / ePaper display for your Raspberry Pi or Arduino project? Look no further! These handy eInk / ePaper displays from Waveshare are available in a range of sizes, so you're bound to find the perfect fit for your project. This is one of the larger panels in the range with a 5.83\" 648x480 display - great for those bigger projects with lots of data to display! Just add a controller board and you're ready to make the ultimate low-power display. ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, E-Ink screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Features No backlight - keeps displaying last content for a long time even when powered down Ultra-low power consumption - power is only required for refreshing Online development resources and manual (driver board schematic, examples for Raspberry Pi/Arduino/STM32) Resources Product Wiki and user guide Package Contents 1x 5.83\" Display Panel (panel only, no controller) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 125.40 × 99.50 × 1.18mm Display size: 119.232 × 88.320mm Dot pitch: 0.184 × 0.184mm Resolution: 648 × 480 pixels Display colour: black, white Grey level: 2 Full refresh time: 5s Refresh power: 26.4mW(typ.) Standby power: <0.01uA (almost none) Viewing angle: >170°"
+     },
+     "gift_card": false,
+     "handle": "e-ink-display-module-5-83-648x480",
+     "id": "gid://shopify/Product/6657450672323",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "E-Ink Display Raw Panel 5.83\" (648x480) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-raw-panel-5-83-648x480-waveshare-wav-14410-28478406623427.jpg?v=1646574482"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 2800,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 2800,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_MAKE_DISPLAY",
+      "_MAKE_DISPLAY_PAPER",
+      "_Maker",
+      "_ws10",
+      "Brand_Waveshare"
+     ],
+     "title": "5.83\" ePaper Display Raw Panel (648x480)",
+     "url": "https://thepihut.com/products/e-ink-display-module-5-83-648x480",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/39695870787779:1",
+       "description": {
+        "html": "This is for the screen only! This item does not come with a controller PCB (but you can grab one here for the Raspberry Pi or Arduino). Looking for an eInk / ePaper display for your Raspberry Pi or Arduino project? Look no further! These handy eInk / ePaper displays from Waveshare are available in a range of sizes, so you're bound to find the perfect fit for your project. This is one of the larger panels in the range with a 5.83\" 648x480 display - great for those bigger projects with lots of data to display! Just add a controller board and you're ready to make the ultimate low-power display. ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, E-Ink screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Features No backlight - keeps displaying last content for a long time even when powered down Ultra-low power consumption - power is only required for refreshing Online development resources and manual (driver board schematic, examples for Raspberry Pi/Arduino/STM32) Resources Product Wiki and user guide Package Contents 1x 5.83\" Display Panel (panel only, no controller) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 125.40 × 99.50 × 1.18mm Display size: 119.232 × 88.320mm Dot pitch: 0.184 × 0.184mm Resolution: 648 × 480 pixels Display colour: black, white Grey level: 2 Full refresh time: 5s Refresh power: 26.4mW(typ.) Standby power: <0.01uA (almost none) Viewing angle: >170°"
+       },
+       "id": "gid://shopify/ProductVariant/39695870787779",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-raw-panel-5-83-648x480-waveshare-wav-14410-28478406623427.jpg?v=1646574482"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 2800,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-14410",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to The Pi Hut's Raspberry Pi superstore – where it all started. Way back in 2012 we started The Pi Hut selling pre-imaged SD cards. We then moved on to Raspberry Pi cases, Wi-Fi adapters and gradually our product listings grew bigger and bigger. Eventually, we became what we are today – the #1 store for Raspberry Pi accessories, HATs, add-ons, cases, cables, SD cards and so much more. We sell all models of the Raspberry Pi including the latest Raspberry Pi 5 , Raspberry Pi 500+ and Raspberry Pi 500, alongside the Raspberry Pi 4, Raspberry Pi 400, Raspberry Pi Zero 2 and Raspberry Pi Pico 2 W. In this section, you’ll find all things Raspberry Pi - from our latest and greatest add-ons & HATs, to essential cables, cases and more. If you need something for your Raspberry Pi, you’ll find it here! Be sure to check out our handy Raspberry Pi compatibility checker on each product page, showing you which products fit which model of Raspberry Pi. Also, be sure to read our fantastic reviews from our loyal customers before you buy."
+       },
+       "handle": "raspberry-pi-store",
+       "id": "gid://shopify/Collection/27082488",
+       "title": "Raspberry Pi Store"
+      },
+      {
+       "description": {
+        "html": "The Raspberry Pi’s GPIO (General Purpose Input Output) allows it to talk to ‘real world things’ – other hardware and electronics – by using code to tell these things what to do and when. You can connect dupont wires to create a circuit yourself, or attach an add-on board or HAT designed for a specific purpose. From handy GPIO headers for your Raspberry Pi Zero 2 to full add-on boards that can control robots, stream digital TV, play music, light-up displays and more – we’ve got you covered with our huge range of GPIO add-ons. We've also got a great selection of Raspberry Pi Pico and Pico W add-ons and headers for you to choose from too!"
+       },
+       "handle": "raspberry-pi-hats",
+       "id": "gid://shopify/Collection/28838052",
+       "title": "Raspberry Pi HATs, pHATS & GPIO"
+      },
+      {
+       "description": {
+        "html": "Adding a display to your Raspberry Pi can give your projects new exciting interfaces, increased mobility and save you a huge amount of space. The Raspberry Pi Display 2 allows you to add touch inputs to your programs, creating a new way to interact with your projects - with 10\", 7\" and 5\" versions now available. On the larger side, the 15.6\" Raspberry Pi Monitor makes for a fantastic desktop screen for day-to-day use of your Raspberry Pi. For smaller projects, LCD and ePaper displays are a fun way to add a visual element to your projects. With simple code and wiring, they’re great for projects that require text, menus and navigation. Also be sure to check out our maker store’s huge range of LCD modules!"
+       },
+       "handle": "raspberry-pi-screens",
+       "id": "gid://shopify/Collection/155544196",
+       "title": "Raspberry Pi Screens & Displays"
+      },
+      {
+       "description": {
+        "html": "Here at The Pi Hut, we’re always on the lookout for new, interesting or just plain useful accessories for your Raspberry Pi. Our team of Raspberry Pi experts are constantly sourcing new add-ons, HATs, cases, cables, accessories and anything else that makes using the Raspberry Pi the most fun and creative experience possible. Add our new products page to your bookmarks and check back regularly to see what goodies we’ve added to our constantly growing list of Raspberry Pi products. Can’t see something you’re after? Get in touch and let us know what’s missing – we’ll do our best to stock it."
+       },
+       "handle": "latest-raspberry-pi-products",
+       "id": "gid://shopify/Collection/371342024",
+       "title": "New Products - Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      }
+     ],
+     "description": {
+      "html": "Looking for an eInk / ePaper display for your Raspberry Pi Pico? Look no further! This great little 2.13\" black/white eInk/ePaper display from Waveshare is perfect for adding a low-power display to your Pico project. This display module has been designed specifically for the Raspberry Pi Pico - just push your Pico into the female headers and you're ready to go (Pico with male headers required). ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! The E-Ink display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface and supporting partial refresh. A Raspberry Pi Pico is not included - click here if you'd like to buy one. Your Pico will need to have male headers soldered to it with the pins pointing downwards (or grab one of our Pre-soldered Picos). Features Designed specifically for the Raspberry Pi Pico No soldering required 2.13\" display 250x122 resolution 170° viewing angle No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface - requires minimal IO pins Online development resources and manual available (Raspberry Pi Pico C/C++ and MicroPython examples) Package Contents 1x 2.13\" E-Ink Pico module Raspberry Pi Pico not included Resources Product Wiki & Manual Pinout Specification Operating Voltage 3.3V Interface 3-wire SPI, 4-wire SPI Outline Dimensions 65.00 × 30.50mm Display Size 48.55 × 23.70mm Dot Pitch 0.194 × 0.194mm Resolution 250×122 pixels Display Colour black, white Grey Scale 2 Partial Refresh Time 0.3s Full Refresh Time 2s Refresh Power 26.4mW (typ.) Standby Current <0.01uA (almost none) Viewing Angle >170°"
+     },
+     "gift_card": false,
+     "handle": "2-13-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-250x122",
+     "id": "gid://shopify/Product/6656497123523",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "2.13\" Black/White E-Ink E-Paper Display Module for Raspberry Pi Pico (250×122) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-13-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-250x122-waveshare-wav-19406-28474191052995.jpg?v=1646795174"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1092,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 1092,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_RaspberryPi",
+      "_RPI_DISPLAY",
+      "_RPI_DISPLAY_GPIO",
+      "_RPI_DISPLAY_MINI",
+      "_RPI_DISPLAY_PAPER",
+      "_RPI_HAT",
+      "_RPI_HAT_Displays",
+      "_RPI_PICO",
+      "_ws10",
+      "Brand_Waveshare",
+      "Colour_Black",
+      "Colour_White",
+      "Compatible With_Raspberry Pi Pico",
+      "Compatible With_Raspberry Pi Pico W"
+     ],
+     "title": "2.13\" ePaper Display Module for Raspberry Pi Pico (250×122)",
+     "url": "https://thepihut.com/products/2-13-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-250x122",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/39692933267651:1",
+       "description": {
+        "html": "Looking for an eInk / ePaper display for your Raspberry Pi Pico? Look no further! This great little 2.13\" black/white eInk/ePaper display from Waveshare is perfect for adding a low-power display to your Pico project. This display module has been designed specifically for the Raspberry Pi Pico - just push your Pico into the female headers and you're ready to go (Pico with male headers required). ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! The E-Ink display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface and supporting partial refresh. A Raspberry Pi Pico is not included - click here if you'd like to buy one. Your Pico will need to have male headers soldered to it with the pins pointing downwards (or grab one of our Pre-soldered Picos). Features Designed specifically for the Raspberry Pi Pico No soldering required 2.13\" display 250x122 resolution 170° viewing angle No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface - requires minimal IO pins Online development resources and manual available (Raspberry Pi Pico C/C++ and MicroPython examples) Package Contents 1x 2.13\" E-Ink Pico module Raspberry Pi Pico not included Resources Product Wiki & Manual Pinout Specification Operating Voltage 3.3V Interface 3-wire SPI, 4-wire SPI Outline Dimensions 65.00 × 30.50mm Display Size 48.55 × 23.70mm Dot Pitch 0.194 × 0.194mm Resolution 250×122 pixels Display Colour black, white Grey Scale 2 Partial Refresh Time 0.3s Full Refresh Time 2s Refresh Power 26.4mW (typ.) Standby Current <0.01uA (almost none) Viewing Angle >170°"
+       },
+       "id": "gid://shopify/ProductVariant/39692933267651",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-13-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-250x122-waveshare-wav-19406-28474191052995.jpg?v=1646795174"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1092,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-19406",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to The Pi Hut's Raspberry Pi superstore – where it all started. Way back in 2012 we started The Pi Hut selling pre-imaged SD cards. We then moved on to Raspberry Pi cases, Wi-Fi adapters and gradually our product listings grew bigger and bigger. Eventually, we became what we are today – the #1 store for Raspberry Pi accessories, HATs, add-ons, cases, cables, SD cards and so much more. We sell all models of the Raspberry Pi including the latest Raspberry Pi 5 , Raspberry Pi 500+ and Raspberry Pi 500, alongside the Raspberry Pi 4, Raspberry Pi 400, Raspberry Pi Zero 2 and Raspberry Pi Pico 2 W. In this section, you’ll find all things Raspberry Pi - from our latest and greatest add-ons & HATs, to essential cables, cases and more. If you need something for your Raspberry Pi, you’ll find it here! Be sure to check out our handy Raspberry Pi compatibility checker on each product page, showing you which products fit which model of Raspberry Pi. Also, be sure to read our fantastic reviews from our loyal customers before you buy."
+       },
+       "handle": "raspberry-pi-store",
+       "id": "gid://shopify/Collection/27082488",
+       "title": "Raspberry Pi Store"
+      },
+      {
+       "description": {
+        "html": "The Raspberry Pi’s GPIO (General Purpose Input Output) allows it to talk to ‘real world things’ – other hardware and electronics – by using code to tell these things what to do and when. You can connect dupont wires to create a circuit yourself, or attach an add-on board or HAT designed for a specific purpose. From handy GPIO headers for your Raspberry Pi Zero 2 to full add-on boards that can control robots, stream digital TV, play music, light-up displays and more – we’ve got you covered with our huge range of GPIO add-ons. We've also got a great selection of Raspberry Pi Pico and Pico W add-ons and headers for you to choose from too!"
+       },
+       "handle": "raspberry-pi-hats",
+       "id": "gid://shopify/Collection/28838052",
+       "title": "Raspberry Pi HATs, pHATS & GPIO"
+      },
+      {
+       "description": {
+        "html": "Adding a display to your Raspberry Pi can give your projects new exciting interfaces, increased mobility and save you a huge amount of space. The Raspberry Pi Display 2 allows you to add touch inputs to your programs, creating a new way to interact with your projects - with 10\", 7\" and 5\" versions now available. On the larger side, the 15.6\" Raspberry Pi Monitor makes for a fantastic desktop screen for day-to-day use of your Raspberry Pi. For smaller projects, LCD and ePaper displays are a fun way to add a visual element to your projects. With simple code and wiring, they’re great for projects that require text, menus and navigation. Also be sure to check out our maker store’s huge range of LCD modules!"
+       },
+       "handle": "raspberry-pi-screens",
+       "id": "gid://shopify/Collection/155544196",
+       "title": "Raspberry Pi Screens & Displays"
+      },
+      {
+       "description": {
+        "html": "Here at The Pi Hut, we’re always on the lookout for new, interesting or just plain useful accessories for your Raspberry Pi. Our team of Raspberry Pi experts are constantly sourcing new add-ons, HATs, cases, cables, accessories and anything else that makes using the Raspberry Pi the most fun and creative experience possible. Add our new products page to your bookmarks and check back regularly to see what goodies we’ve added to our constantly growing list of Raspberry Pi products. Can’t see something you’re after? Get in touch and let us know what’s missing – we’ll do our best to stock it."
+       },
+       "handle": "latest-raspberry-pi-products",
+       "id": "gid://shopify/Collection/371342024",
+       "title": "New Products - Raspberry Pi"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      }
+     ],
+     "description": {
+      "html": "Looking for an eInk / ePaper display for your Raspberry Pi Pico? Look no further! This great little 2.9\" red/black/white eInk/ePaper display from Waveshare is perfect for adding a low-power display to your Pico project. Also available in a Black/White version which supports partial refresh and has a shorter refresh time. This display module has been designed specifically for the Raspberry Pi Pico - just push your Pico into the female headers and you're ready to go (Pico with male headers required). ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! The E-Ink display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface. A Raspberry Pi Pico is not included - click here if you'd like to buy one. Your Pico will need to have male headers soldered to it with the pins pointing downwards (or grab one of our Pre-soldered Picos). Features Designed specifically for the Raspberry Pi Pico Red/Black/White display colours No soldering required 2.9\" display 296x128 resolution 170° viewing angle Onboard voltage translator - 3.3V/5V No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface - requires minimal IO pins Online development resources and manual available (Raspberry Pi Pico C/C++ and MicroPython examples) Package Contents 1x 2.9\" E-Ink Pico module (red/black/white) 1x Standoff pack Raspberry Pi Pico not included Resources Product Wiki & Manual Pinout Specification Operating Voltage 3.3V/5V Interface 3-wire SPI, 4-wire SPI Outline Dimensions 82.00 × 38mm Display Size 66.89 × 29.05mm Dot Pitch 0.226 × 0.227mm Resolution 296×128 pixels Display Colour red, black, white Grey Scale 2 Full Refresh Time 15s Refresh Power 26.4mW (typ.) Standby Current <0.01uA (almost none) Viewing Angle >170°"
+     },
+     "gift_card": false,
+     "handle": "2-9-red-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-296x128",
+     "id": "gid://shopify/Product/6684947611843",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "2.9\" Red/Black/White E-Ink E-Paper Display Module for Raspberry Pi Pico (296×128) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-9-red-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-296x128-waveshare-wav-19607-28584908882115.jpg?v=1646789229"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1342,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 1342,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_RaspberryPi",
+      "_RPI_DISPLAY",
+      "_RPI_DISPLAY_GPIO",
+      "_RPI_DISPLAY_MINI",
+      "_RPI_DISPLAY_PAPER",
+      "_RPI_HAT",
+      "_RPI_HAT_Displays",
+      "_RPI_PICO",
+      "_ws10",
+      "Brand_Waveshare",
+      "Colour_Black",
+      "Colour_Red",
+      "Colour_White",
+      "Compatible With_Raspberry Pi Pico",
+      "Compatible With_Raspberry Pi Pico W"
+     ],
+     "title": "2.9\" ePaper Display Module for Raspberry Pi Pico - Red/Black/White (296×128)",
+     "url": "https://thepihut.com/products/2-9-red-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-296x128",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/39810731180227:1",
+       "description": {
+        "html": "Looking for an eInk / ePaper display for your Raspberry Pi Pico? Look no further! This great little 2.9\" red/black/white eInk/ePaper display from Waveshare is perfect for adding a low-power display to your Pico project. Also available in a Black/White version which supports partial refresh and has a shorter refresh time. This display module has been designed specifically for the Raspberry Pi Pico - just push your Pico into the female headers and you're ready to go (Pico with male headers required). ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! The E-Ink display modules from Waveshare come complete with an embedded controller PCB, communicating via SPI interface. A Raspberry Pi Pico is not included - click here if you'd like to buy one. Your Pico will need to have male headers soldered to it with the pins pointing downwards (or grab one of our Pre-soldered Picos). Features Designed specifically for the Raspberry Pi Pico Red/Black/White display colours No soldering required 2.9\" display 296x128 resolution 170° viewing angle Onboard voltage translator - 3.3V/5V No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface - requires minimal IO pins Online development resources and manual available (Raspberry Pi Pico C/C++ and MicroPython examples) Package Contents 1x 2.9\" E-Ink Pico module (red/black/white) 1x Standoff pack Raspberry Pi Pico not included Resources Product Wiki & Manual Pinout Specification Operating Voltage 3.3V/5V Interface 3-wire SPI, 4-wire SPI Outline Dimensions 82.00 × 38mm Display Size 66.89 × 29.05mm Dot Pitch 0.226 × 0.227mm Resolution 296×128 pixels Display Colour red, black, white Grey Scale 2 Full Refresh Time 15s Refresh Power 26.4mW (typ.) Standby Current <0.01uA (almost none) Viewing Angle >170°"
+       },
+       "id": "gid://shopify/ProductVariant/39810731180227",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/2-9-red-black-white-e-ink-e-paper-display-module-for-raspberry-pi-pico-296x128-waveshare-wav-19607-28584908882115.jpg?v=1646789229"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1342,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-19607",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Whatever parts you need for your next electronics project, you’ll find them in our Maker Store! We stock over 8,000 items in our store and are constantly adding more to our collection; from brands such as Adafruit, SparkFun, Arduino, micro:bit, DFRobot, Seeed, Pimoroni and many more. Every angle of your project is covered here - we stock a huge range of development boards to start your project with, breakout boards, prototyping supplies and tools to create your concept, motors, displays, sensors, LEDs and other electronics parts to bring your project to life, as well as thousands of other items to complete your idea. As the leading official Adafruit UK distributor, we’re always getting the latest gadgets from our friends in New York, so add us to your bookmarks and check back for the latest and greatest maker goodies available in the UK. Be sure to check out our wearables section too, where we stock a huge number of Adafruit Wearable parts for making your own custom wearable designs."
+       },
+       "handle": "maker-store",
+       "id": "gid://shopify/Collection/371341064",
+       "title": "Maker Store"
+      },
+      {
+       "description": {
+        "html": "With new ideas and products being developed daily for makers, we keep a close eye on the market and aim to supply and stock as many maker parts as we can in our Maker Store. Every day, our team of experts hunt down the latest development boards, prototyping equipment, add-on boards, electronics parts, maker accessories and anything else we think our loyal army of makers might need for their projects. Add our new maker products page to your bookmarks and swing by regularly to check out the latest items we have in stock, from quality brands such as Adafruit, Seeed, DFRobot, Pimoroni and more. Can’t find something you need? Get in touch and let us know – we’ll do our very best to stock it."
+       },
+       "handle": "new-products-maker",
+       "id": "gid://shopify/Collection/371341896",
+       "title": "New Products - Maker Store"
+      },
+      {
+       "description": {
+        "html": "There’s just so much fun to be had by adding a display to your projects, and now with so many different sizes, shapes and display technologies – it’s more exciting than ever before. We stock a huge variety of displays for every project and microcontroller, including LCDs, TFTs, OLEDs, Paper displays and more. We also stock adapters and accessories for your traditional HDMI displays. If you’re looking for a larger display for your project, our HDMI section has sizes ranging from 5” to 10.1” – and everything in between! Low-power options are a popular choice for makers. Our ePaper, OLED and TFT products offer crisp detail which can be powered by your microcontroller without the need for a separate power supply. Want some retro appeal to your project? Check out our Nokia 5110 LCD display, or our range of classic 16x2 and 20x4 LCDs which come in a variety of colours. Whatever display you need, you’ll find it at The Pi Hut!"
+       },
+       "handle": "adafruit-lcds-displays",
+       "id": "gid://shopify/Collection/388360776",
+       "title": "LCDs & Displays"
+      },
+      {
+       "description": {
+        "html": "This section shows every product currently available at The Pi Hut, across all categories and ranges in the store - a complete view of absolutely everything we stock! It includes Raspberry Pi and other single-board computers, accessories, components, kits, tools, cables, power supplies, displays, sensors, enclosures, expansion boards and more, alongside our full home automation and smart home range - all listed together in one continuous catalogue! Use filters, sorting, and search to narrow down by board type, category, brand, or availability. For a more focused view, individual store sections are available throughout the site, with filters."
+       },
+       "handle": "all",
+       "id": "gid://shopify/Collection/160377765950",
+       "title": "All Products"
+      },
+      {
+       "description": {
+        "html": "Waveshare offers a huge range of affordable hardware for makers, from development boards to sensors, high-quality displays, and Raspberry Pi accessories. We're proud to be the UK's largest Waveshare stockist, offering everything you need for your project - at a fair price. Need a display for your Raspberry Pi project? Waveshare has a complete assortment of displays, including everything from touchscreen LCDs to OLED and e-Paper. For the Raspberry Pi Pico fans, Waveshare offers an assortment of compatible modules, such as this 1.3” OLED display. If you are new to the Raspberry Pi Pico, their Raspberry Pi Pico MicroPython Learning Kit is a great place to start. BBC micro:bit enthusiasts are covered as well, with Waveshare offering a number of accessories."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/160468205630",
+       "title": "Waveshare Products"
+      }
+     ],
+     "description": {
+      "html": "Looking for an eInk / ePaper display for your project? Look no further! These gorgeous little eInk / ePaper displays from Waveshare are available in 2.9\", 2.13\" & 1.54\" sizes, so you're bound to find the perfect fit for your needs! ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra-low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Note: This comes with the screen only! This does NOT come with a controller PCB. Features No backlight, keeps displaying last content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 48mm x 33mm Display size: 27.6mm x 27.6mm Dot pitch: 0.138 x 0.138 Resolution: 200 x 200 Display colour: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Resources Product Wiki Package Contents 1x 1.54\" e-Paper"
+     },
+     "gift_card": false,
+     "handle": "eink-screen-1-54-200x200-display-only",
+     "id": "gid://shopify/Product/2215667761214",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "1.54\" E-Ink Raw Display Panel (200x200) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-raw-panel-1-54-200x200-waveshare-wav-12561-15132510158910.jpg?v=1682082314"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 450,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 450,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_MAKE_DISPLAY",
+      "_MAKE_DISPLAY_PAPER",
+      "_Maker",
+      "_ws10",
+      "Brand_Waveshare"
+     ],
+     "title": "1.54\" ePaper Display Raw Panel (200x200)",
+     "url": "https://thepihut.com/products/eink-screen-1-54-200x200-display-only",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/20063071699006:1",
+       "description": {
+        "html": "Looking for an eInk / ePaper display for your project? Look no further! These gorgeous little eInk / ePaper displays from Waveshare are available in 2.9\", 2.13\" & 1.54\" sizes, so you're bound to find the perfect fit for your needs! ePaper / eInk displays are designed to replicate the appearance of ink on paper. Unlike regular displays, which lose their image when power is removed, eInk screens are able to hold text and images indefinitely, even without power. ePaper screens are therefore ultra-low power, designed to have a wide viewing angle and additionally have limited reflection under sunlight. The applications are limitless! Note: This comes with the screen only! This does NOT come with a controller PCB. Features No backlight, keeps displaying last content for a long time even when powered down Ultra-low power consumption, basically power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Arduino/Nucleo, etc. Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32) Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Outline dimension: 48mm x 33mm Display size: 27.6mm x 27.6mm Dot pitch: 0.138 x 0.138 Resolution: 200 x 200 Display colour: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.17mW Viewing angle: >170° Resources Product Wiki Package Contents 1x 1.54\" e-Paper"
+       },
+       "id": "gid://shopify/ProductVariant/20063071699006",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/e-ink-display-raw-panel-1-54-200x200-waveshare-wav-12561-15132510158910.jpg?v=1682082314"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 450,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-12561",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/na"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Welcome to The Pi Hut's Raspberry Pi superstore – where it all started. Way back in 2012 we started The Pi Hut selling pre-imaged SD cards. We then moved on to Raspberry Pi cases, Wi-Fi adapters and gradually our product listings grew bigger and bigger. Eventually, we became what we are today – the #1 store for Raspberry Pi accessories, HATs, add-ons, cases, cables, SD cards and so much more. We sell all models of the Raspberry Pi including the latest Raspberry Pi 5 , Raspberry Pi 500+ and Raspberry Pi 500, alongside the Raspberry Pi 4, Raspberry Pi 400, Raspberry Pi Zero 2 and Raspberry Pi Pico 2 W. In this section, you’ll find all things Raspberry Pi - from our latest and greatest add-ons & HATs, to essential cables, cases and more. If you need something for your Raspberry Pi, you’ll find it here! Be sure to check out our handy Raspberry Pi compatibility checker on each product page, showing you which products fit which model of Raspberry Pi. Also, be sure to read our fantastic reviews from our loyal customers before you buy."
+       },
+       "handle": "raspberry-pi-store",
+       "id": "gid://shopify/Collection/27082488",
+       "title": "Raspberry Pi Store"
+      },
+      {
+       "description": {
+        "html": "The Raspberry Pi’s GPIO (General Purpose Input Output) allows it to talk to ‘real world things’ – other hardware and electronics – by using code to tell these things what to do and when. You can connect dupont wires to create a circuit yourself, or attach an add-on board or HAT designed for a specific purpose. From handy GPIO headers for your Raspberry Pi Zero 2 to full add-on boards that can control robots, stream digital TV, play music, light-up displays and more – we’ve got you covered with our huge range of GPIO add-ons. We've also got a great selection of Raspberry Pi Pico and Pico W add-ons and headers for you to choose from too!"
+       },
+       "handle": "raspberry-pi-hats",
+       "id": "gid://shopify/Collection/28838052",
+       "title": "Raspberry Pi HATs, pHATS & GPIO"
+      },
+      {
+       "description": {
+        "html": "Adding a display to your Raspberry Pi can give your projects new exciting interfaces, increased mobility and save you a huge amount of space. The Raspberry Pi Display 2 allows you to add touch inputs to your programs, creating a new way to interact with your projects - with 10\", 7\" and 5\" versions now available. On the larger side, the 15.6\" Raspberry Pi Monitor makes for a fantastic desktop screen for day-to-day use of your Raspberry Pi. For smaller projects, LCD and ePaper displays are a fun way to add a visual element to your projects. With simple code and wiring, they’re great for projects that require text, menus and navigation. Also be sure to check out our maker store’s huge range of LCD modules!"
+       },
+       "handle": "raspberry-pi-screens",
+       "id": "gid://shopify/Collection/155544196",
+       "title": "Raspberry Pi Screens & Displays"
+      },
+      {
+       "description": {
+        "html": "Get more from your Raspberry Pi Zero with our range of accessories, add-ons and essentials made for compact projects. We stock everything you could ever need for a Pi Zero project - cases, GPIO headers, cables, adapters, HATs, pHATs, camera accessories, power supplies and much, much more! Everything is held in stock in our UK warehouse, with next-day delivery options if you're in a rush."
+       },
+       "handle": "zero",
+       "id": "gid://shopify/Collection/169043972",
+       "title": "Raspberry Pi Zero Accessories & Add Ons"
+      },
+      {
+       "description": {
+        "html": "Here at The Pi Hut, we’re always on the lookout for new, interesting or just plain useful accessories for your Raspberry Pi. Our team of Raspberry Pi experts are constantly sourcing new add-ons, HATs, cases, cables, accessories and anything else that makes using the Raspberry Pi the most fun and creative experience possible. Add our new products page to your bookmarks and check back regularly to see what goodies we’ve added to our constantly growing list of Raspberry Pi products. Can’t see something you’re after? Get in touch and let us know what’s missing – we’ll do our best to stock it."
+       },
+       "handle": "latest-raspberry-pi-products",
+       "id": "gid://shopify/Collection/371342024",
+       "title": "New Products - Raspberry Pi"
+      }
+     ],
+     "description": {
+      "html": "This large 5.83\" E-Ink/E-paper display and HAT for the Raspberry Pi is a great way to add a large low-power display to your project with a paper-like effect. The display is ideal for applications which refresh periodically, as the display and project can be turned off whilst retaining the last image on the screen for long periods of time. The wide 170-degree viewing angles and display cable add to the displays flexibility for different types of project, although with no backlight you'll need ambient light to see the display content. With SPI control, you can even use it on other microcontrollers such as Arduino boards (models with larger amounts of RAM). The display has a 648x480 resolution across the 5.83\" screen, allowing you to show more data than traditional mini e-paper HAT displays available for the Raspberry Pi. The included HAT and adapter board also allows you to fit other raw paper modules. Note: Raspberry Pi not included Features Compatible with all 40-pin Raspberry Pi boards No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Jetson Nano/Arduino... Onboard voltage translator - compatible with 3.3V / 5V MCUs Comes with online development resources and manual (including examples for the Raspberry Pi) Package Contents 1x 5.83inch e-Paper 1x e-Paper Driver HAT + adapter board 1x Raspberry Pi screws pack (2pcs) 1x PH2.0 20cm 8-Pin cable Resources Product Wiki Specification Operating voltage: 3.3v/5v Display colour: black, white Interface: 3-wire SPI, 4-wire SPI Grey scale: 2 Full refresh time: 5s Refresh power: 26.4mw (typical) Dot pitch: 0.184 × 0.184mm Standby current: <0.01ua (almost none) Resolution: 648 × 480 pixels Viewing angle: >170° Dimensions Display (Overall): 125.4mm x 99.5mm Display (Viewable): 119.23mm x 88.32mm HAT: 65mm x 30.20mm Adapter Board: 31.75 x 17.50 HAT Pinout VCC (3.3V/5V) GND (Ground) DIN (SPI MOSI pin) CLK (SPI SCK pin) CS (SPI chip selection, low active) DC (Data/Command selection - high for data, low for command) RST (External reset, low active) BUSY (Busy status output, high active)"
+     },
+     "gift_card": false,
+     "handle": "5-83-e-ink-display-hat-for-raspberry-pi-648x480",
+     "id": "gid://shopify/Product/6245293162691",
+     "list_price_range": {
+      "max": {
+       "amount": 0,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 0,
+       "currency": "GBP"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "5.83\" E-Ink Display HAT For Raspberry Pi (648×480) by Waveshare - The Pi Hut",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/5-83-e-ink-display-hat-for-raspberry-pi-648x480-waveshare-wav-14597-23378204197059.jpg?v=1646763858"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 3458,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 3458,
+       "currency": "GBP"
+      }
+     },
+     "tags": [
+      "_bf2420",
+      "_BF25_20",
+      "_RaspberryPi",
+      "_RPI_DISPLAY",
+      "_RPI_DISPLAY_GPIO",
+      "_RPI_DISPLAY_MEDIUM",
+      "_RPI_DISPLAY_PAPER",
+      "_RPI_HAT",
+      "_RPI_HAT_Displays",
+      "_ws10",
+      "Brand_Waveshare",
+      "Compatible With_Raspberry Pi 3",
+      "Compatible With_Raspberry Pi 4",
+      "Compatible With_Raspberry Pi 5",
+      "Compatible With_Raspberry Pi Zero"
+     ],
+     "title": "5.83\" ePaper Display + HAT For Raspberry Pi (648×480)",
+     "url": "https://thepihut.com/products/5-83-e-ink-display-hat-for-raspberry-pi-648x480",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://the-pi-hut.myshopify.com/cart/38122006184131:1",
+       "description": {
+        "html": "This large 5.83\" E-Ink/E-paper display and HAT for the Raspberry Pi is a great way to add a large low-power display to your project with a paper-like effect. The display is ideal for applications which refresh periodically, as the display and project can be turned off whilst retaining the last image on the screen for long periods of time. The wide 170-degree viewing angles and display cable add to the displays flexibility for different types of project, although with no backlight you'll need ambient light to see the display content. With SPI control, you can even use it on other microcontrollers such as Arduino boards (models with larger amounts of RAM). The display has a 648x480 resolution across the 5.83\" screen, allowing you to show more data than traditional mini e-paper HAT displays available for the Raspberry Pi. The included HAT and adapter board also allows you to fit other raw paper modules. Note: Raspberry Pi not included Features Compatible with all 40-pin Raspberry Pi boards No backlight - keeps displaying last content for a long time even when power down Ultra-low power consumption - power is only required for refreshing SPI interface, for connecting with controller boards like Raspberry Pi/Jetson Nano/Arduino... Onboard voltage translator - compatible with 3.3V / 5V MCUs Comes with online development resources and manual (including examples for the Raspberry Pi) Package Contents 1x 5.83inch e-Paper 1x e-Paper Driver HAT + adapter board 1x Raspberry Pi screws pack (2pcs) 1x PH2.0 20cm 8-Pin cable Resources Product Wiki Specification Operating voltage: 3.3v/5v Display colour: black, white Interface: 3-wire SPI, 4-wire SPI Grey scale: 2 Full refresh time: 5s Refresh power: 26.4mw (typical) Dot pitch: 0.184 × 0.184mm Standby current: <0.01ua (almost none) Resolution: 648 × 480 pixels Viewing angle: >170° Dimensions Display (Overall): 125.4mm x 99.5mm Display (Viewable): 119.23mm x 88.32mm HAT: 65mm x 30.20mm Adapter Board: 31.75 x 17.50 HAT Pinout VCC (3.3V/5V) GND (Ground) DIN (SPI MOSI pin) CLK (SPI SCK pin) CS (SPI chip selection, low active) DC (Data/Command selection - high for data, low for command) RST (External reset, low active) BUSY (Busy status output, high active)"
+       },
+       "id": "gid://shopify/ProductVariant/38122006184131",
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0176/3274/products/5-83-e-ink-display-hat-for-raspberry-pi-648x480-waveshare-wav-14597-23378204197059.jpg?v=1646763858"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 3458,
+        "currency": "GBP"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "WAV-14597",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "1763274"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "The Pi Hut",
+        "merchant_origin": "thepihut.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "maestro"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "1763274"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

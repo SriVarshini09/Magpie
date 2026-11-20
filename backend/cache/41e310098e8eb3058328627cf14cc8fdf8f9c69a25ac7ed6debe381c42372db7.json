@@ -1,0 +1,465 @@
+{
+ "args": {
+  "business": "https://robotshop-us.myshopify.com",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "query": "DESPI-C02 e-paper adapter"
+  }
+ },
+ "key": "41e310098e8eb3058328627cf14cc8fdf8f9c69a25ac7ed6debe381c42372db7",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:34:33-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://robotshop-us.myshopify.com",
+  "endpoint": "https://robotshop-us.myshopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "has_next_page": false
+   },
+   "products": [
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-7-9-15-3"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Unlock the potential of your robotic endeavors with our extensive collection of robots. Our selection includes cutting-edge technology tailored for a variety of uses, from versatile domestic helpers to advanced industrial solutions. Explore features like programmable interfaces, artificial intelligence capabilities, and precise sensor integrations. Whether you aim to build DIY projects or incorporate automation into professional applications, our robot collection offers reliable, high-performance options designed to enhance efficiency and innovation."
+       },
+       "handle": "robots",
+       "id": "gid://shopify/Collection/290222342305",
+       "title": "Robots"
+      },
+      {
+       "description": {
+        "html": "Our LCD & Display collection features a variety of high-quality display solutions including TFT, OLED, and e-paper screens. From small OLED displays to large capacitive touchscreens, these products are ideal for enhancing your projects with vibrant visuals and interactive functionality. Compatible with major microcontroller platforms such as Raspberry Pi and Arduino, these displays offer diverse uses ranging from educational tools to advanced IoT applications. Equip your next project with the perfect display to achieve outstanding visual performance."
+       },
+       "handle": "lcd-display",
+       "id": "gid://shopify/Collection/290222440609",
+       "title": "LCD & Display"
+      },
+      {
+       "description": {
+        "html": "Discover a wide assortment of high-quality robot parts designed to enhance and elevate your projects. From versatile motors and precise sensors to robust chassis and advanced controllers, our collection ensures you have the best components for building and customizing your robots. Whether you're building from scratch or upgrading existing designs, our parts are engineered to deliver exceptional performance and reliability. Dive into our extensive selection and find exactly what you need to bring your robotics vision to life."
+       },
+       "handle": "robot-parts",
+       "id": "gid://shopify/Collection/290226536609",
+       "title": "Robot Parts"
+      },
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description No backlight It keeps displaying last content for a long time Ultra-low power consumption SPI interface, for connecting with controller boards Comes with development resources and manual This 1.54\" e-Paper Module 200x200 has an embedded controller, communicating via SPI interface, supports partial refresh. Due to the advantages like ultra-low power consumption, wide viewing angle, great effect under sunlight, it is an ideal choice for applications such as shelf label, industrial instrument, and so on. View more What's Included Weight: 0.024 kg 1 X 1.54inch e-Paper Module 2 X XH2.54 20cm 8Pin Dimensions Outline dimension: 48mm × 33mm Display size: 27.6mm × 27.6mm Links PDF Files 1.54\" e-Paper Module 200x200 Datasheet 1.54\" e-Paper Module 200x200 Schematic Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Dot pitch: 0.138 × 0.138 Resolution: 200 × 200 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.017mW Viewing angle: >170° Interface VCC: 3.3V GND: Ground DIN: SPI MOSI pin CLK: SPI SCK pin CS: SPI chip selection, low active DC: Data/Command selection (high for data, low for command) RST: External reset, low active BUSY: Busy status output, low active"
+     },
+     "gift_card": false,
+     "handle": "154-e-paper-module-200x200",
+     "id": "gid://shopify/Product/7487004934305",
+     "list_price_range": {
+      "max": {
+       "amount": 1054,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1054,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "1.54\" e-Paper Module 200x200",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/154-e-paper-module-200x200.webp?v=1720529369"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 1054,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 1054,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Robot Parts",
+      "category:Robots"
+     ],
+     "title": "1.54\" e-Paper Module 200x200",
+     "url": "https://www.robotshop.com/products/154-e-paper-module-200x200",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/42359497261217:1",
+       "description": {
+        "html": "Description No backlight It keeps displaying last content for a long time Ultra-low power consumption SPI interface, for connecting with controller boards Comes with development resources and manual This 1.54\" e-Paper Module 200x200 has an embedded controller, communicating via SPI interface, supports partial refresh. Due to the advantages like ultra-low power consumption, wide viewing angle, great effect under sunlight, it is an ideal choice for applications such as shelf label, industrial instrument, and so on. View more What's Included Weight: 0.024 kg 1 X 1.54inch e-Paper Module 2 X XH2.54 20cm 8Pin Dimensions Outline dimension: 48mm × 33mm Display size: 27.6mm × 27.6mm Links PDF Files 1.54\" e-Paper Module 200x200 Datasheet 1.54\" e-Paper Module 200x200 Schematic Multimedia docReady(function() {$('button[aria-controls=unique-tab-5]').one('click',function() {$(\"#iframe-video-1\").html('');})}); Specifications Operating voltage: 3.3V Interface: 3-wire SPI, 4-wire SPI Dot pitch: 0.138 × 0.138 Resolution: 200 × 200 Display color: black, white Grey level: 2 Refresh power: 26.4mW(typ.) Standby power: <0.017mW Viewing angle: >170° Interface VCC: 3.3V GND: Ground DIN: SPI MOSI pin CLK: SPI SCK pin CS: SPI chip selection, low active DC: Data/Command selection (high for data, low for command) RST: External reset, low active BUSY: Busy status output, low active"
+       },
+       "id": "gid://shopify/ProductVariant/42359497261217",
+       "list_price": {
+        "amount": 1054,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/154-e-paper-module-200x200.webp?v=1720529369"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 1054,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-119",
+       "title": "Default Title"
+      }
+     ]
+    },
+    {
+     "categories": [
+      {
+       "taxonomy": "shopify",
+       "value": "gid://shopify/TaxonomyCategory/el-3-1"
+      }
+     ],
+     "collections": [
+      {
+       "description": {
+        "html": "Waveshare is renowned for its innovative electronic modules and accessories, offering a wide range of products designed to enhance your DIY and professional projects. From versatile e-Paper displays and cutting-edge camera modules to Raspberry Pi accessories and robust sensor solutions, Waveshare delivers high-quality components that boast impressive compatibility, reliable performance, and ease of use. Ideal for engineers, hobbyists, and developers alike, Waveshare's products ensure seamless integration and optimal functionality for various applications."
+       },
+       "handle": "waveshare",
+       "id": "gid://shopify/Collection/290245804193",
+       "title": "Waveshare"
+      }
+     ],
+     "description": {
+      "html": "Description Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 Offers high 1872x1404 resolution for clear text and images Achieves paper-like display with microcapsule electrophoretic technology Supports 16 grey scales for enhanced image depth Ensures ultra-low power consumption, ideal for efficiency Includes USB/SPI/I80 interfaces for versatile connectivity The Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 is an advanced display module designed for integration with Raspberry Pi systems. This e-Paper display offers a high resolution of 1872×1404 pixels, providing clear and sharp text and images in black and white. It supports a wide range of grey scales, from 2 to 16, enhancing the depth and detail of displayed content. This display is characterized by its paper-like appearance, achieved through microcapsule electrophoretic technology, which reflects ambient light to produce a natural reading experience similar to traditional paper. The display does not require a backlight, allowing it to maintain the last displayed content even when powered down, thus conserving energy. Its ultra-low power consumption makes it ideal for applications where power efficiency is crucial. The display supports partial refresh, which is beneficial for applications requiring frequent updates without the need for a full screen refresh. It features a wide viewing angle of over 170 degrees, ensuring visibility from various positions. The communication interface includes USB, SPI, and I80, providing flexibility in connecting with different controller boards, such as Raspberry Pi and STM32. The module includes a standard Raspberry Pi 40PIN GPIO extension header, ensuring compatibility with the Raspberry Pi series boards. It comes with development resources and a manual, offering examples for Raspberry Pi and STM32, facilitating ease of integration and development. Note: Ensure the display is used in environments with sufficient ambient light, as it is passively reflective and requires external light sources for optimal visibility. View more What's Included 1x Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 1x e-Paper IT8951 Driver HAT (B) 1x 10.3\" e-Paper Adapter 1x 40PIN FFC (same side contact) 1x USB Type A Plug to Micro B Plug Cable 1x PH2.0 20cm 8PIN 1x RPi Screws Pack (2pcs) Dimensions Outline dimensions: 216.70 x 174.40 mm Display size: 209.66 x 157.25 mm Links Website 10.3inch e-Paper e-Ink Display HAT For Raspberry Pi, 1872×1404, Black / White, 16 Grey Scales, USB / SPI / I80 - 103inch ePaper HAT Specifications Resolution: 1872×1404 pixels Viewing angle: Greater than 170° Display color: Black and white Grey scale: 2-16 (1-4 bit) Communication: USB/SPI/I80 Display panel: E-paper Experience: Paper-like Environment: Requires ambient light Display type: Passively reflective Refreshing: Supports partial refresh No backlight; retains last content when powered down Ultra-low power consumption; power needed only for refreshing Standard Raspberry Pi 40PIN GPIO extension header; supports Raspberry Pi series boards USB/SPI/I80 interface for connecting with controller boards like Raspberry Pi/STM32 Includes development resources and manual (examples for Raspberry Pi/STM32) Operating voltage: 5V Full refresh time: Less than 1 second Refresh power: 1.2W (typical) Dot pitch: 0.112 × 0.112mm Standby current: 0.1W (typical)"
+     },
+     "gift_card": false,
+     "handle": "waveshare-103-e-paper-e-ink-display-hat-for-raspberry-pi-18721404-black-white-16-grey-scales-usb-spi-i80",
+     "id": "gid://shopify/Product/14675778929004",
+     "list_price_range": {
+      "max": {
+       "amount": 23914,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 23914,
+       "currency": "USD"
+      }
+     },
+     "media": [
+      {
+       "alt_text": "Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80",
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3851784.webp?v=1776278507"
+      }
+     ],
+     "options": [
+      {
+       "name": "Title",
+       "values": [
+        {
+         "label": "Default Title"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 23914,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 23914,
+       "currency": "USD"
+      }
+     },
+     "tags": [
+      "category:LCD & Display",
+      "category:Microcontroller & SBC Accessories",
+      "category:Raspberry Pi Accessories / HATs",
+      "category:Robot Parts",
+      "category:Robots",
+      "on-demand",
+      "special-order"
+     ],
+     "title": "Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80",
+     "url": "https://www.robotshop.com/products/waveshare-103-e-paper-e-ink-display-hat-for-raspberry-pi-18721404-black-white-16-grey-scales-usb-spi-i80",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://robotshop-us.myshopify.com/cart/51818867655020:1",
+       "description": {
+        "html": "Description Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 Offers high 1872x1404 resolution for clear text and images Achieves paper-like display with microcapsule electrophoretic technology Supports 16 grey scales for enhanced image depth Ensures ultra-low power consumption, ideal for efficiency Includes USB/SPI/I80 interfaces for versatile connectivity The Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 is an advanced display module designed for integration with Raspberry Pi systems. This e-Paper display offers a high resolution of 1872×1404 pixels, providing clear and sharp text and images in black and white. It supports a wide range of grey scales, from 2 to 16, enhancing the depth and detail of displayed content. This display is characterized by its paper-like appearance, achieved through microcapsule electrophoretic technology, which reflects ambient light to produce a natural reading experience similar to traditional paper. The display does not require a backlight, allowing it to maintain the last displayed content even when powered down, thus conserving energy. Its ultra-low power consumption makes it ideal for applications where power efficiency is crucial. The display supports partial refresh, which is beneficial for applications requiring frequent updates without the need for a full screen refresh. It features a wide viewing angle of over 170 degrees, ensuring visibility from various positions. The communication interface includes USB, SPI, and I80, providing flexibility in connecting with different controller boards, such as Raspberry Pi and STM32. The module includes a standard Raspberry Pi 40PIN GPIO extension header, ensuring compatibility with the Raspberry Pi series boards. It comes with development resources and a manual, offering examples for Raspberry Pi and STM32, facilitating ease of integration and development. Note: Ensure the display is used in environments with sufficient ambient light, as it is passively reflective and requires external light sources for optimal visibility. View more What's Included 1x Waveshare 10.3\" e-Paper E-Ink Display HAT for Raspberry Pi, 1872×1404, Black/White, 16 Grey Scales, USB/SPI/I80 1x e-Paper IT8951 Driver HAT (B) 1x 10.3\" e-Paper Adapter 1x 40PIN FFC (same side contact) 1x USB Type A Plug to Micro B Plug Cable 1x PH2.0 20cm 8PIN 1x RPi Screws Pack (2pcs) Dimensions Outline dimensions: 216.70 x 174.40 mm Display size: 209.66 x 157.25 mm Links Website 10.3inch e-Paper e-Ink Display HAT For Raspberry Pi, 1872×1404, Black / White, 16 Grey Scales, USB / SPI / I80 - 103inch ePaper HAT Specifications Resolution: 1872×1404 pixels Viewing angle: Greater than 170° Display color: Black and white Grey scale: 2-16 (1-4 bit) Communication: USB/SPI/I80 Display panel: E-paper Experience: Paper-like Environment: Requires ambient light Display type: Passively reflective Refreshing: Supports partial refresh No backlight; retains last content when powered down Ultra-low power consumption; power needed only for refreshing Standard Raspberry Pi 40PIN GPIO extension header; supports Raspberry Pi series boards USB/SPI/I80 interface for connecting with controller boards like Raspberry Pi/STM32 Includes development resources and manual (examples for Raspberry Pi/STM32) Operating voltage: 5V Full refresh time: Less than 1 second Refresh power: 1.2W (typical) Dot pitch: 0.112 × 0.112mm Standby current: 0.1W (typical)"
+       },
+       "id": "gid://shopify/ProductVariant/51818867655020",
+       "list_price": {
+        "amount": 23914,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0573/9026/8577/files/pp_3851784.webp?v=1776278507"
+        }
+       ],
+       "options": [
+        {
+         "label": "Default Title",
+         "name": "Title"
+        }
+       ],
+       "price": {
+        "amount": 23914,
+        "currency": "USD"
+       },
+       "requires": {
+        "shipping": true
+       },
+       "sku": "RB-Wav-906",
+       "title": "Default Title"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/storefront-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.buyer_consent": [
+     {
+      "extends": [
+       "dev.ucp.shopping.cart",
+       "dev.ucp.shopping.checkout"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/buyer_consent.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/buyer-consent/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.cart": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.checkout": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/checkout.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/checkout/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.discount": [
+     {
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/discount.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/discount/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.fulfillment": [
+     {
+      "config": {
+       "method_combinations": [
+        [
+         "shipping"
+        ]
+       ],
+       "multi_destination": []
+      },
+      "extends": [
+       "dev.ucp.shopping.checkout",
+       "dev.ucp.shopping.cart"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/fulfillment.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/extensions/fulfillment/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.order": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/order.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/order/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "payment_handlers": {
+    "com.google.pay": [
+     {
+      "config": {
+       "allowed_payment_methods": [
+        {
+         "parameters": {
+          "allowed_auth_methods": [
+           "PAN_ONLY",
+           "CRYPTOGRAM_3DS"
+          ],
+          "allowed_card_networks": [
+           "VISA",
+           "MASTERCARD",
+           "DISCOVER",
+           "JCB"
+          ],
+          "billing_address_parameters": {
+           "format": "FULL",
+           "phone_number_required": true
+          },
+          "billing_address_required": true
+         },
+         "tokenization_specification": {
+          "parameters": {
+           "gateway": "shopify",
+           "gatewayMerchantId": "57390268577"
+          },
+          "type": "PAYMENT_GATEWAY"
+         },
+         "type": "CARD"
+        }
+       ],
+       "api_version": 2,
+       "api_version_minor": 0,
+       "merchant_info": {
+        "auth_jwt": "",
+        "merchant_id": "16708973830884969730",
+        "merchant_name": "RobotShop USA",
+        "merchant_origin": "www.robotshop.com"
+       }
+      },
+      "id": "gpay",
+      "schema": "https://pay.google.com/gp/p/ucp/2026-01-11/schemas/config.json",
+      "spec": "https://pay.google.com/gp/p/ucp/2026-01-11/",
+      "version": "2026-01-11"
+     }
+    ],
+    "dev.shopify.card": [
+     {
+      "config": {
+       "payment_methods": [
+        {
+         "enabled_card_brands": [
+          "visa",
+          "master",
+          "discover",
+          "elo",
+          "jcb",
+          "unionpay"
+         ],
+         "type": "card"
+        }
+       ]
+      },
+      "id": "shopify.card",
+      "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/schema.json",
+      "spec": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/spec.md",
+      "version": "2026-01-15"
+     }
+    ],
+    "dev.shopify.shop_pay": [
+     {
+      "config": {
+       "shop_id": "57390268577"
+      },
+      "id": "shop_pay",
+      "schema": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/schema.json",
+      "spec": "https://shopify.dev/ucp/shop-pay-handler/2026-04-08/spec.md",
+      "version": "2026-04-08"
+     }
+    ]
+   },
+   "services": {
+    "dev.ucp.shopping": []
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}

@@ -1,0 +1,1254 @@
+{
+ "args": {
+  "business": "global",
+  "payload": {
+   "context": {
+    "address_country": "US"
+   },
+   "filters": {
+    "ships_from": [
+     {
+      "country": "US"
+     }
+    ]
+   },
+   "query": "Computer Linux, Windows or MacOS"
+  }
+ },
+ "key": "b183e1954baad20662d8b5ab40f9409a29d245fe8ec1f73ed36e16f876be4a1e",
+ "recorded_in": "live",
+ "seen_at": "2026-11-20T18:36:30-05:00",
+ "tool": "ucp.catalog.search",
+ "value": {
+  "business": "https://catalog.shopify.com",
+  "cta": {
+   "commands": [
+    {
+     "command": "ucp cart create --business <seller-domain> --input '{\"line_items\":[{\"item\":{\"id\":\"<variant-id>\"},\"quantity\":1}]}'",
+     "description": "create a cart at the chosen business — substitute <seller-domain> from products[N].variants[M].seller.domain and <variant-id> from products[N].variants[M].id."
+    },
+    {
+     "command": "ucp catalog search --input '<previous search body>' --set-string /pagination/cursor=<cursor>",
+     "description": "fetch next page — more of the same ranking: re-send your previous search body unchanged (query, filters, context, limit) with pagination.cursor set to result.pagination.cursor, copied verbatim; cursors are opaque and may invalidate across inventory changes; if results are weak or off-target, change query/context.intent instead and omit the cursor"
+    }
+   ],
+   "description": "Extensions: global catalog active — variants carry `seller.domain` (for `--business`), `url` (PDP), and `checkout_url` (buy-now) for cross-business routing; the seller identity lives at `variants[*].seller.domain`; run --input-schema to see the full accepted catalog payload, including `like`, context, filters, and extension fields. Cross-business results — each variant belongs to its own seller. Pick the seller AND variant the buyer wants (products[N].variants[M]) before proceeding. To create a cart, pass --business=<products[N].variants[M].seller.domain>. If chosen items span multiple seller.domain values, create one cart/checkout per seller. Buyer handoff: open products[N].variants[M].url for the PDP when the buyer is still browsing; open products[N].variants[M].checkout_url for buy-now handoff when the buyer wants business-hosted checkout. More results available (showing 10 of 926); paginate only if you need them."
+  },
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "result": {
+   "messages": [],
+   "pagination": {
+    "cursor": "eyJvZmZzZXQiOjEwLCJ0b3RhbF9jb3VudCI6OTI2LCJyZXR1cm5lZCI6MTB9",
+    "has_next_page": true,
+    "total_count": 926
+   },
+   "products": [
+    {
+     "description": {
+      "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+     },
+     "handle": "parallels-desktop-27-standard-for-mac-lifetime",
+     "id": "gid://shopify/p/5tYrBci8L09ovWbrsmaqWc",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop 27 Standard for Mac Lifetime",
+       "height": 1254,
+       "preview": {
+        "height": 1254,
+        "url": "https://cdn.shopify.com/s/files/1/1214/7562/files/ParallelsDesktop27Standard.webp",
+        "width": 1254
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/1214/7562/files/ParallelsDesktop27Standard.webp",
+       "width": 1254
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 11999,
+       "currency": "GBP"
+      },
+      "min": {
+       "amount": 11999,
+       "currency": "GBP"
+      }
+     },
+     "rating": {
+      "count": 54,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "Parallels Desktop 27 Standard for Mac Lifetime",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.softwarerepairworld.com/buy/58943286280573:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-27-standard-for-mac-lifetime",
+       "id": "gid://shopify/ProductVariant/58943286280573",
+       "media": [
+        {
+         "alt_text": "Parallels Desktop 27 Standard for Mac Lifetime",
+         "height": 1254,
+         "preview": {
+          "height": 1254,
+          "url": "https://cdn.shopify.com/s/files/1/1214/7562/files/ParallelsDesktop27Standard.webp",
+          "width": 1254
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/1214/7562/files/ParallelsDesktop27Standard.webp",
+         "width": 1254
+        }
+       ],
+       "price": {
+        "amount": 11999,
+        "currency": "GBP"
+       },
+       "seller": {
+        "domain": "completepc4you.myshopify.com",
+        "id": "gid://shopify/Shop/12147562",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/12147562/policies/22252935.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/12147562/policies/22252999.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/12147562/policies/22252871.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/12147562/policies/24889163865.html"
+         }
+        ],
+        "name": "Software Repair World",
+        "url": "https://www.softwarerepairworld.com"
+       },
+       "seller_product_id": "gid://shopify/Product/16081072750973",
+       "source": "shopify",
+       "title": "Parallels Desktop 27 Standard for Mac Lifetime",
+       "url": "https://www.softwarerepairworld.com/products/parallels-desktop-27-standard-for-mac-lifetime?variant=58943286280573&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+     },
+     "handle": "parallels-desktop-27-standard-lifetime-for-mac-1",
+     "id": "gid://shopify/p/302SNCMNrkMwrPdqR0DybE",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop 27 Standard Lifetime for Mac",
+       "height": 1254,
+       "preview": {
+        "height": 1254,
+        "url": "https://cdn.shopify.com/s/files/1/0960/1869/4487/files/ParallelsDesktop27Standard_03d3bace-6d36-4fff-89f4-826950543a81.webp",
+        "width": 1254
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0960/1869/4487/files/ParallelsDesktop27Standard_03d3bace-6d36-4fff-89f4-826950543a81.webp",
+       "width": 1254
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Run Windows 11 and compatible applications directly alongside macOS for uninterrupted workflow",
+       "Seamless integration allows switching between macOS and Windows applications without restarting",
+       "Create and manage Windows and Linux virtual machines for versatile productivity",
+       "Access to Microsoft Office applications and essential business tools for enhanced efficiency",
+       "Efficient virtualization optimized for Apple Silicon Macs for smooth performance"
+      ],
+      "unique_selling_points": [
+       "Lifetime license for running Windows and Linux on Apple Silicon Macs with seamless integration and instant digital delivery."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 16010,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 16010,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 45,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Parallels Desktop 27 Standard Lifetime for Mac",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://realkeys.co.uk/buy/55525338743127:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-27-standard-lifetime-for-mac-1",
+       "id": "gid://shopify/ProductVariant/55525338743127",
+       "list_price": {
+        "amount": 21347,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Parallels Desktop 27 Standard Lifetime for Mac",
+         "height": 1254,
+         "preview": {
+          "height": 1254,
+          "url": "https://cdn.shopify.com/s/files/1/0960/1869/4487/files/ParallelsDesktop27Standard_03d3bace-6d36-4fff-89f4-826950543a81.webp",
+          "width": 1254
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0960/1869/4487/files/ParallelsDesktop27Standard_03d3bace-6d36-4fff-89f4-826950543a81.webp",
+         "width": 1254
+        }
+       ],
+       "price": {
+        "amount": 16010,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "thba4x-tt.myshopify.com",
+        "id": "gid://shopify/Shop/96018694487",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/96018694487/policies/54304375127.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/96018694487/policies/54363717975.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/96018694487/policies/54362341719.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/96018694487/policies/54364373335.html"
+         }
+        ],
+        "name": "Real Keys",
+        "url": "https://realkeys.co.uk"
+       },
+       "seller_product_id": "gid://shopify/Product/11299595190615",
+       "source": "shopify",
+       "title": "Parallels Desktop 27 Standard Lifetime for Mac",
+       "url": "https://realkeys.co.uk/products/parallels-desktop-27-standard-lifetime-for-mac-1?variant=55525338743127&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+     },
+     "handle": "parallels-desktop-27-standard-mac-lifetime-key-1",
+     "id": "gid://shopify/p/5iVPTKTdepxi2OFzHCazSw",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop 27 Standard Mac Lifetime Key",
+       "height": 1254,
+       "preview": {
+        "height": 1254,
+        "url": "https://cdn.shopify.com/s/files/1/0853/7502/5499/files/ParallelsDesktop27Standard_9e8e38f5-f798-432a-afe1-b9701b521050.webp",
+        "width": 1254
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0853/7502/5499/files/ParallelsDesktop27Standard_9e8e38f5-f798-432a-afe1-b9701b521050.webp",
+       "width": 1254
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Run Windows 11 and compatible applications directly alongside macOS for uninterrupted workflow",
+       "Seamless integration allows switching between Mac and Windows applications without restarting",
+       "Create and manage Windows and Linux virtual machines for flexible work, study, and personal use",
+       "Easy file sharing between macOS and virtual operating systems for efficient collaboration",
+       "Optimized for Apple Silicon Macs with efficient virtualization performance"
+      ],
+      "unique_selling_points": [
+       "Lifetime license for running Windows and Linux on Mac with instant digital delivery and full system compatibility."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 16010,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 16010,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 30,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Parallels Desktop 27 Standard Mac Lifetime Key",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://softwarekent.com/buy/54429787160923:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Parallels Desktop 27 Standard for Mac</strong></p>\n<ul>\n<li>✔ Standard Edition Lifetime license for Mac</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with Apple Silicon Macs (M-series)</li>\n<li>✔ License key and digital download included<br>\n</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock the full potential of your Mac with Parallels Desktop 27 Standard. Run Windows 11 applications, access Linux environments and enjoy seamless integration between operating systems without rebooting. Perfect for everyday productivity, business, education and personal use.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications directly alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications without restarting your computer.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and essential productivity tools.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, study and everyday tasks.</li>\n<li>\n<strong>File Sharing:</strong> Easily share files, folders and documents between macOS and Windows.</li>\n<li>\n<strong>Apple Silicon:</strong> Optimised for compatible Apple Silicon Macs with efficient virtualisation performance.</li>\n<li>\n<strong>Easy Setup:</strong> Install and configure virtual operating systems with intuitive tools and guided setup.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-27-standard-mac-lifetime-key-1",
+       "id": "gid://shopify/ProductVariant/54429787160923",
+       "list_price": {
+        "amount": 21347,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Parallels Desktop 27 Standard Mac Lifetime Key",
+         "height": 1254,
+         "preview": {
+          "height": 1254,
+          "url": "https://cdn.shopify.com/s/files/1/0853/7502/5499/files/ParallelsDesktop27Standard_9e8e38f5-f798-432a-afe1-b9701b521050.webp",
+          "width": 1254
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0853/7502/5499/files/ParallelsDesktop27Standard_9e8e38f5-f798-432a-afe1-b9701b521050.webp",
+         "width": 1254
+        }
+       ],
+       "price": {
+        "amount": 16010,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "257dc5-57.myshopify.com",
+        "id": "gid://shopify/Shop/85375025499",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/85375025499/policies/38342164827.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/85375025499/policies/38342197595.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/85375025499/policies/38342132059.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/85375025499/policies/38342230363.html"
+         }
+        ],
+        "name": "Software Kent",
+        "url": "https://softwarekent.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10814834835803",
+       "source": "shopify",
+       "title": "Parallels Desktop 27 Standard Mac Lifetime Key",
+       "url": "https://softwarekent.com/products/parallels-desktop-27-standard-mac-lifetime-key-1?variant=54429787160923&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3><strong>High-Performance Mini PC — Powered by Intel Celeron N95</strong></h3>\n<p><strong>Discover our high-performance mini PC, designed to deliver exceptional computing power and a superior user experience. Ideal for home offices, entertainment, and commercial environments, this mini PC combines powerful hardware with versatile connectivity options.</strong></p>\n<hr>\n<h4><strong>Product Specifications</strong></h4>\n<p><strong>1. System Hardware Configuration</strong></p>\n<table style=\"width: 100%; height: 97.969px;\">\n<thead>\n<tr style=\"height: 19.5938px;\">\n<th style=\"width: 15.4026%; height: 19.5938px;\"><strong>Component</strong></th>\n<th style=\"width: 41.7797%; height: 19.5938px;\"><strong>Details</strong></th>\n<th style=\"width: 38.8031%; height: 19.5938px;\"><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>CPU</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">Intel Celeron N95</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Up to 3.40 GHz</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>GPU</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">Intel® UHD Graphics</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">1.20 GHz</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>RAM</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">16GB / 32GB</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Choose according to your needs</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>SSD Storage</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">128GB / 256GB / 512GB / 1TB / 2TB</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Various storage options available</td>\n</tr>\n</tbody>\n</table>\n<p><strong>2. Network Connections</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>WIFI</strong></td>\n<td>M.2 2230 Intel AC3165</td>\n<td>Supports IEEE 802.11 a/b/g/n/ac (2.4G/5G) + Bluetooth 4.2</td>\n</tr>\n<tr>\n<td><strong>Ethernet</strong></td>\n<td>Dual RJ45 Ports</td>\n<td>1000M × 2</td>\n</tr>\n</tbody>\n</table>\n<p><strong>3. Interface Configuration</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>TPM</strong></td>\n<td>TPM Module</td>\n<td>Supports TPM module</td>\n</tr>\n<tr>\n<td><strong>TF Card Slot</strong></td>\n<td>External Memory</td>\n<td>Supports up to 2TB</td>\n</tr>\n<tr>\n<td><strong>USB Interfaces</strong></td>\n<td>Four USB 3.2 Ports (5Gb/s)</td>\n<td>High-speed data transfer</td>\n</tr>\n<tr>\n<td><strong>Audio Interface</strong></td>\n<td>3.5mm Standard Headphone Jack</td>\n<td>For audio output/input</td>\n</tr>\n<tr>\n<td><strong>DC Power Connector</strong></td>\n<td>4.0mm DC Power Connector</td>\n<td>Standard power connection</td>\n</tr>\n<tr>\n<td><strong>HDMI Interfaces</strong></td>\n<td>Three HDMI 2.0 Ports</td>\n<td>Supports 4K@60Hz and HDR</td>\n</tr>\n<tr>\n<td><strong>M.2 2242 Slot</strong></td>\n<td>Supports M.2 2280 NGFF (SATA) SSD</td>\n<td>For additional storage</td>\n</tr>\n<tr>\n<td><strong>SATA 3.0 Interface</strong></td>\n<td>Supports 2.5\" SSD or HDD</td>\n<td>Maximum thickness 7mm</td>\n</tr>\n</tbody>\n</table>\n<p><strong>4. Essential Accessories</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Power Adapter</strong></td>\n<td>Standard 4.0mm DC 12V@3A</td>\n<td>Included in the package</td>\n</tr>\n</tbody>\n</table>\n<p><strong>5. Software Configuration</strong></p>\n<table style=\"width: 99.9987%;\">\n<thead>\n<tr>\n<th style=\"width: 24.19%;\"><strong>Component</strong></th>\n<th style=\"width: 52.8118%;\"><strong>Details</strong></th>\n<th style=\"width: 22.7128%;\"><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Operating System</strong></td>\n<td style=\"width: 52.8118%;\">Windows 11 Pro / Windows 11 Home / Linux</td>\n<td style=\"width: 22.7128%;\">Multiple OS options available</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Video Decoder</strong></td>\n<td style=\"width: 52.8118%;\">Supports HEVC (H.265) up to 4Kx2Kp60, H.264 up to 1080p240, VP8 up to 4Kx2Kp60, JPEG/MJPEG</td>\n<td style=\"width: 22.7128%;\">High-definition video playback</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Audio Decoder</strong></td>\n<td style=\"width: 52.8118%;\">Supports MP3, WMA, AAC, WAV, OGG, DDP, HD, FLAC, APE</td>\n<td style=\"width: 22.7128%;\">High-quality audio playback</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Operating Temperature Range</strong></td>\n<td style=\"width: 52.8118%;\">-10°C to 50°C</td>\n<td style=\"width: 22.7128%;\">Wide temperature range</td>\n</tr>\n</tbody>\n</table>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_01_2123e7a9-0e32-4f59-a0a5-21b41a4eb0d9.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_02_be8212b8-dc69-43e2-88ad-4aa0132143e7.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_03_c9a0ae5e-b3bb-4392-866a-985d9e77c567.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_08.jpg?v=1724911429\"></p>"
+     },
+     "handle": "dreamquest-pro",
+     "id": "gid://shopify/p/1I8Q2EZbhjHCPsLTfwwJey",
+     "media": [
+      {
+       "alt_text": "Compact black DreamQuest Pro N95 Mini PC with glossy top and power button on front panel",
+       "height": 1600,
+       "preview": {
+        "height": 1600,
+        "url": "https://cdn.shopify.com/s/files/1/0894/7918/4684/files/DreamQuest_Pro.png",
+        "width": 1600
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0894/7918/4684/files/DreamQuest_Pro.png",
+       "width": 1600
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Intel Celeron N95 processor delivers reliable performance for multitasking and everyday tasks",
+       "Dual 1000M/2.3 Ethernet ports provide fast wired connectivity for multiple devices",
+       "Four USB 3.2 Gen 2 ports enable rapid data transfer and external device connection",
+       "Supports both Windows 11 Pro and Linux for flexible operating system choice",
+       "TF card slot and M.2/2280 NGFF slot offer versatile storage expansion options"
+      ],
+      "unique_selling_points": [
+       "Combines Intel Celeron N95 processor, high-speed connectivity, and flexible storage options in a space-saving design."
+      ]
+     },
+     "options": [
+      {
+       "name": "Ram",
+       "values": [
+        {
+         "label": "16GB"
+        },
+        {
+         "label": "32GB"
+        }
+       ]
+      },
+      {
+       "name": "Rom",
+       "values": [
+        {
+         "label": "512GB"
+        },
+        {
+         "label": "1TB"
+        }
+       ]
+      },
+      {
+       "name": "Cpu",
+       "values": [
+        {
+         "label": "Intel N95"
+        }
+       ]
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 25880,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 25880,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 95,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.9
+     },
+     "title": "DreamQuest Pro",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.dreamquest.online/buy/49707377918252:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3><strong>High-Performance Mini PC — Powered by Intel Celeron N95</strong></h3>\n<p><strong>Discover our high-performance mini PC, designed to deliver exceptional computing power and a superior user experience. Ideal for home offices, entertainment, and commercial environments, this mini PC combines powerful hardware with versatile connectivity options.</strong></p>\n<hr>\n<h4><strong>Product Specifications</strong></h4>\n<p><strong>1. System Hardware Configuration</strong></p>\n<table style=\"width: 100%; height: 97.969px;\">\n<thead>\n<tr style=\"height: 19.5938px;\">\n<th style=\"width: 15.4026%; height: 19.5938px;\"><strong>Component</strong></th>\n<th style=\"width: 41.7797%; height: 19.5938px;\"><strong>Details</strong></th>\n<th style=\"width: 38.8031%; height: 19.5938px;\"><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>CPU</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">Intel Celeron N95</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Up to 3.40 GHz</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>GPU</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">Intel® UHD Graphics</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">1.20 GHz</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>RAM</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">16GB / 32GB</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Choose according to your needs</td>\n</tr>\n<tr style=\"height: 19.5938px;\">\n<td style=\"width: 15.4026%; height: 19.5938px;\"><strong>SSD Storage</strong></td>\n<td style=\"width: 41.7797%; height: 19.5938px;\">128GB / 256GB / 512GB / 1TB / 2TB</td>\n<td style=\"width: 38.8031%; height: 19.5938px;\">Various storage options available</td>\n</tr>\n</tbody>\n</table>\n<p><strong>2. Network Connections</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>WIFI</strong></td>\n<td>M.2 2230 Intel AC3165</td>\n<td>Supports IEEE 802.11 a/b/g/n/ac (2.4G/5G) + Bluetooth 4.2</td>\n</tr>\n<tr>\n<td><strong>Ethernet</strong></td>\n<td>Dual RJ45 Ports</td>\n<td>1000M × 2</td>\n</tr>\n</tbody>\n</table>\n<p><strong>3. Interface Configuration</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>TPM</strong></td>\n<td>TPM Module</td>\n<td>Supports TPM module</td>\n</tr>\n<tr>\n<td><strong>TF Card Slot</strong></td>\n<td>External Memory</td>\n<td>Supports up to 2TB</td>\n</tr>\n<tr>\n<td><strong>USB Interfaces</strong></td>\n<td>Four USB 3.2 Ports (5Gb/s)</td>\n<td>High-speed data transfer</td>\n</tr>\n<tr>\n<td><strong>Audio Interface</strong></td>\n<td>3.5mm Standard Headphone Jack</td>\n<td>For audio output/input</td>\n</tr>\n<tr>\n<td><strong>DC Power Connector</strong></td>\n<td>4.0mm DC Power Connector</td>\n<td>Standard power connection</td>\n</tr>\n<tr>\n<td><strong>HDMI Interfaces</strong></td>\n<td>Three HDMI 2.0 Ports</td>\n<td>Supports 4K@60Hz and HDR</td>\n</tr>\n<tr>\n<td><strong>M.2 2242 Slot</strong></td>\n<td>Supports M.2 2280 NGFF (SATA) SSD</td>\n<td>For additional storage</td>\n</tr>\n<tr>\n<td><strong>SATA 3.0 Interface</strong></td>\n<td>Supports 2.5\" SSD or HDD</td>\n<td>Maximum thickness 7mm</td>\n</tr>\n</tbody>\n</table>\n<p><strong>4. Essential Accessories</strong></p>\n<table>\n<thead>\n<tr>\n<th><strong>Component</strong></th>\n<th><strong>Details</strong></th>\n<th><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Power Adapter</strong></td>\n<td>Standard 4.0mm DC 12V@3A</td>\n<td>Included in the package</td>\n</tr>\n</tbody>\n</table>\n<p><strong>5. Software Configuration</strong></p>\n<table style=\"width: 99.9987%;\">\n<thead>\n<tr>\n<th style=\"width: 24.19%;\"><strong>Component</strong></th>\n<th style=\"width: 52.8118%;\"><strong>Details</strong></th>\n<th style=\"width: 22.7128%;\"><strong>Description</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Operating System</strong></td>\n<td style=\"width: 52.8118%;\">Windows 11 Pro / Windows 11 Home / Linux</td>\n<td style=\"width: 22.7128%;\">Multiple OS options available</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Video Decoder</strong></td>\n<td style=\"width: 52.8118%;\">Supports HEVC (H.265) up to 4Kx2Kp60, H.264 up to 1080p240, VP8 up to 4Kx2Kp60, JPEG/MJPEG</td>\n<td style=\"width: 22.7128%;\">High-definition video playback</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Audio Decoder</strong></td>\n<td style=\"width: 52.8118%;\">Supports MP3, WMA, AAC, WAV, OGG, DDP, HD, FLAC, APE</td>\n<td style=\"width: 22.7128%;\">High-quality audio playback</td>\n</tr>\n<tr>\n<td style=\"width: 24.19%;\"><strong>Operating Temperature Range</strong></td>\n<td style=\"width: 52.8118%;\">-10°C to 50°C</td>\n<td style=\"width: 22.7128%;\">Wide temperature range</td>\n</tr>\n</tbody>\n</table>\n<p><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_01_2123e7a9-0e32-4f59-a0a5-21b41a4eb0d9.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_02_be8212b8-dc69-43e2-88ad-4aa0132143e7.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_03_c9a0ae5e-b3bb-4392-866a-985d9e77c567.jpg?v=1724911429\"><img alt=\"\" src=\"https://cdn.shopify.com/s/files/1/0894/7918/4684/files/A_08.jpg?v=1724911429\"></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "dreamquest-pro",
+       "id": "gid://shopify/ProductVariant/49707377918252",
+       "media": [
+        {
+         "alt_text": "Compact black DreamQuest Pro N95 Mini PC with glossy top and power button on front panel",
+         "height": 1600,
+         "preview": {
+          "height": 1600,
+          "url": "https://cdn.shopify.com/s/files/1/0894/7918/4684/files/DreamQuest_Pro.png",
+          "width": 1600
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0894/7918/4684/files/DreamQuest_Pro.png",
+         "width": 1600
+        }
+       ],
+       "options": [
+        {
+         "label": "Intel N95",
+         "name": "Cpu"
+        },
+        {
+         "label": "16GB",
+         "name": "Ram"
+        },
+        {
+         "label": "512GB",
+         "name": "Rom"
+        }
+       ],
+       "price": {
+        "amount": 25880,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 2,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3
+       },
+       "seller": {
+        "domain": "53438d-97.myshopify.com",
+        "id": "gid://shopify/Shop/89479184684",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/89479184684/policies/39739719980.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/89479184684/policies/39793361196.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/89479184684/policies/39746601260.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/89479184684/policies/39793393964.html"
+         }
+        ],
+        "name": "DreamQuest",
+        "url": "https://www.dreamquest.online"
+       },
+       "seller_product_id": "gid://shopify/Product/9612861079852",
+       "source": "shopify",
+       "title": "DreamQuest Pro",
+       "url": "https://www.dreamquest.online/products/dreamquest-pro?variant=49707377918252&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h2><strong>Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD comes with OS Catalina. Refurbished. </strong></h2>\n<h4>Experience reliable performance with this refurbished Apple Mac Mini Late 2012. Powered by a 2.5GHz Core i5-3210M processor and 8GB of RAM, it handles everyday tasks smoothly. The 500GB HDD provides ample space for your files, while macOS Catalina ensures a modern and secure operating system. Compact and energy-efficient, this Mac Mini is perfect for home or office use, delivering excellent value without compromising quality.</h4>\n<h1 class=\"gb-header alignment horizontal-align-center\">Mac mini (Late 2012) - Technical Specifications</h1>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Size and Weight</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Height:<span> </span></i>1.4 inches (3.6 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Width:<span> </span></i>7.7 inches (19.7 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Depth:<span> </span></i>7.7 inches (19.7 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Weight:<span> </span></i>2.7 pounds (1.22 kg)<sup>1</sup></p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Processor</h3>\n<p class=\"gb-paragraph\"><b>2.5GHz</b></p>\n<p class=\"gb-paragraph\">2.5GHz dual-core Intel Core i5 (Turbo Boost up to 3.1GHz) with 3MB L3 cache</p>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Storage</h3>\n<p class=\"gb-paragraph\"><b>2.5 GHz</b></p>\n<p class=\"gb-paragraph\">500GB (5400-rpm) hard drive<sup>2</sup></p>\n<p class=\"gb-paragraph\"><b>2.3GHz</b></p>\n<p class=\"gb-paragraph\">500Gb (5400-rpm) hard drive<sup>2</sup></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Configurable to a 256GB solid-state drive or 1TB Fusion Drive.</p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Graphics</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Intel HD Graphics 4000</p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Memory</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">8GB (two 4GB) of 1600MHz DDR3 memory</p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Configurable to 8GB or 16GB.</p>\n</li>\n</ul>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Video Support</h3>\n<p class=\"gb-paragraph\">Support for up to two displays at 2560 by 1600 pixels, both at millions of colors</p>\n<p class=\"gb-paragraph\"><b>Thunderbolt digital video output</b></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Native Mini DisplayPort output</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">DVI output using Mini DisplayPort to DVI Adapter (sold separately)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">VGA output using Mini DisplayPort to VGA Adapter (sold separately)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Dual-link DVI output using Mini DisplayPort to Dual-Link DVI Adapter (sold separately)</p>\n</li>\n</ul>\n<p class=\"gb-paragraph\"><b>HDMI video output</b></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Support for 1080p resolution at up to 60Hz</p>\n</li>\n</ul>\n<p class=\"gb-paragraph\">DVI output using HDMI to DVI Adapter (sold separately)</p>\n</div>\n<p> </p>"
+     },
+     "handle": "apple-mac-mini-late-2012-2-5ghz-core-i5-3210m-4gb-ram-500gb-hdd-refurbished",
+     "id": "gid://shopify/p/1Ok8pJ8RkyAwQS05ZZCV6m",
+     "media": [
+      {
+       "alt_text": "Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD Refurbished",
+       "height": 272,
+       "preview": {
+        "height": 272,
+        "url": "https://cdn.shopify.com/s/files/1/0291/1623/5869/files/MacMini2012.jpg",
+        "width": 668
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0291/1623/5869/files/MacMini2012.jpg",
+       "width": 668
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "2.5GHz dual-core Intel Core i5 processor delivers smooth performance for everyday tasks",
+       "8GB DDR3 memory ensures efficient multitasking and application responsiveness",
+       "500GB 5400 RPM hard drive provides ample storage for files and media",
+       "Modern macOS Catalina offers a secure and up-to-date operating system",
+       "Compact, energy-efficient design saves space and reduces power consumption"
+      ],
+      "unique_selling_points": [
+       "Refurbished Mac Mini with 2.5GHz Core i5 processor, 8GB RAM, and 500GB HDD, offering modern macOS Catalina at a value price."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 4700,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 4700,
+       "currency": "USD"
+      }
+     },
+     "title": "Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD Refurbished",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.atlasce.ca/buy/50017492500727:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "secondhand"
+       ],
+       "description": {
+        "plain": "<h2><strong>Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD comes with OS Catalina. Refurbished. </strong></h2>\n<h4>Experience reliable performance with this refurbished Apple Mac Mini Late 2012. Powered by a 2.5GHz Core i5-3210M processor and 8GB of RAM, it handles everyday tasks smoothly. The 500GB HDD provides ample space for your files, while macOS Catalina ensures a modern and secure operating system. Compact and energy-efficient, this Mac Mini is perfect for home or office use, delivering excellent value without compromising quality.</h4>\n<h1 class=\"gb-header alignment horizontal-align-center\">Mac mini (Late 2012) - Technical Specifications</h1>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Size and Weight</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Height:<span> </span></i>1.4 inches (3.6 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Width:<span> </span></i>7.7 inches (19.7 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Depth:<span> </span></i>7.7 inches (19.7 cm)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\"><i>Weight:<span> </span></i>2.7 pounds (1.22 kg)<sup>1</sup></p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Processor</h3>\n<p class=\"gb-paragraph\"><b>2.5GHz</b></p>\n<p class=\"gb-paragraph\">2.5GHz dual-core Intel Core i5 (Turbo Boost up to 3.1GHz) with 3MB L3 cache</p>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Storage</h3>\n<p class=\"gb-paragraph\"><b>2.5 GHz</b></p>\n<p class=\"gb-paragraph\">500GB (5400-rpm) hard drive<sup>2</sup></p>\n<p class=\"gb-paragraph\"><b>2.3GHz</b></p>\n<p class=\"gb-paragraph\">500Gb (5400-rpm) hard drive<sup>2</sup></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Configurable to a 256GB solid-state drive or 1TB Fusion Drive.</p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Graphics</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Intel HD Graphics 4000</p>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Memory</h3>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">8GB (two 4GB) of 1600MHz DDR3 memory</p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Configurable to 8GB or 16GB.</p>\n</li>\n</ul>\n</li>\n</ul>\n</div>\n<div class=\"gb-group group-wrap-layout wrap-right\">\n<h3 class=\"gb-header\">Video Support</h3>\n<p class=\"gb-paragraph\">Support for up to two displays at 2560 by 1600 pixels, both at millions of colors</p>\n<p class=\"gb-paragraph\"><b>Thunderbolt digital video output</b></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Native Mini DisplayPort output</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">DVI output using Mini DisplayPort to DVI Adapter (sold separately)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">VGA output using Mini DisplayPort to VGA Adapter (sold separately)</p>\n</li>\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Dual-link DVI output using Mini DisplayPort to Dual-Link DVI Adapter (sold separately)</p>\n</li>\n</ul>\n<p class=\"gb-paragraph\"><b>HDMI video output</b></p>\n<ul class=\"list gb-list\">\n<li class=\"gb-list_item\">\n<p class=\"gb-paragraph\">Support for 1080p resolution at up to 60Hz</p>\n</li>\n</ul>\n<p class=\"gb-paragraph\">DVI output using HDMI to DVI Adapter (sold separately)</p>\n</div>\n<p> </p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "apple-mac-mini-late-2012-2-5ghz-core-i5-3210m-4gb-ram-500gb-hdd-refurbished",
+       "id": "gid://shopify/ProductVariant/50017492500727",
+       "list_price": {
+        "amount": 5700,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD Refurbished",
+         "height": 272,
+         "preview": {
+          "height": 272,
+          "url": "https://cdn.shopify.com/s/files/1/0291/1623/5869/files/MacMini2012.jpg",
+          "width": 668
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0291/1623/5869/files/MacMini2012.jpg",
+         "width": 668
+        }
+       ],
+       "price": {
+        "amount": 4700,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 1,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 5
+       },
+       "seller": {
+        "domain": "atlas-computers-electronics.myshopify.com",
+        "id": "gid://shopify/Shop/29116235869",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/29116235869/policies/13443203165.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/29116235869/policies/13443235933.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/29116235869/policies/13443170397.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/29116235869/policies/13443268701.html"
+         }
+        ],
+        "name": "Atlas Computers & Electronics ",
+        "url": "https://www.atlasce.ca"
+       },
+       "seller_product_id": "gid://shopify/Product/9771240128759",
+       "source": "shopify",
+       "title": "Apple Mac Mini Late 2012 2.5GHz Core i5-3210M / 8GB RAM / 500GB HDD Refurbished",
+       "url": "https://www.atlasce.ca/products/apple-mac-mini-late-2012-2-5ghz-core-i5-3210m-4gb-ram-500gb-hdd-refurbished?variant=50017492500727&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h3>Your Portable AI Workstation.</h3>\n<p><strong>What is Docket Mini? </strong>Docket Mini is a pocket-sized USB drive that transforms any computer into a private AI workstation. Simply plug it in, launch the app, and start chatting with powerful AI models completely offline. Everything runs locally on your machine. Your conversations, your files, your API keys all stay with you on your encrypted and portable Docket.</p>\n<h3><strong>How It Works</strong></h3>\n<ol>\n<li>Plug Docket Mini into any USB port (USB-C or USB-A)</li>\n<li>Launch the Docket app directly from the drive</li>\n<li>Start chatting with pre-loaded AI models instantly</li>\n</ol>\n<p><strong>No</strong> installation. <strong>No</strong> cloud accounts. <strong>No</strong> setup wizards. <strong>No</strong> subscriptions. Just plug in and go. </p>\n<h3><strong>Works On</strong></h3>\n<ul>\n<li>macOS</li>\n<li>Windows</li>\n<li>Linux</li>\n</ul>\n<p>One device. Every platform. Take your AI workspace anywhere.</p>\n<h3><strong>Recommended Minimum Hardware</strong></h3>\n<p>Performance varies based on the model you choose.</p>\n<ul>\n<li>\n<meta charset=\"utf-8\">RAM: 8 GB minimum (16 GB recommended)</li>\n<li>\n<meta charset=\"utf-8\">CPU: 64-bit, 4 cores or more (Intel i5 / AMD Ryzen 5 or newer)</li>\n<li>\n<meta charset=\"utf-8\">Apple Silicon (M1 or newer)</li>\n<li>GPU: Not required (but recommended)</li>\n<li>SSD: Not required (but recommended)</li>\n</ul>\n<h3><strong>What's Included</strong></h3>\n<ul>\n<li>Docket Mini USB Drive (128GB)</li>\n<li>7 Pre-loaded AI Models</li>\n<li>Lifetime software updates</li>\n<li>Quick start guide</li>\n</ul>\n<h3><strong>Technical Specs</strong></h3>\n<ul>\n<li>Storage: 128GB</li>\n<li>Interface: USB-C + USB-A (dual connector)</li>\n<li>USB Standard: USB 3.1 Gen 1</li>\n<li>Encryption: AES 256-bit</li>\n<li>Dimensions: 0.37 × 1.50 × 0.79 in</li>\n<li>Weight: ~9g</li>\n</ul>\n<h3>\n<meta charset=\"utf-8\"> <strong><em>Your AI. Your data. Your pocket.</em></strong>\n</h3>"
+     },
+     "handle": "docket-mini",
+     "id": "gid://shopify/p/367UuhpAKvkom6C0MP3zK2",
+     "media": [
+      {
+       "alt_text": "Docket Mini",
+       "height": 1196,
+       "preview": {
+        "height": 1196,
+        "url": "https://cdn.shopify.com/s/files/1/0928/9085/7656/files/1NewCoverImg.png",
+        "width": 1196
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0928/9085/7656/files/1NewCoverImg.png",
+       "width": 1196
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Plug-and-play AI model chat: Start using pre-loaded AI models instantly without installation or cloud accounts",
+       "Local encryption (AES 256): Ensures all data, conversations, and API keys remain secure and portable",
+       "Cross-platform compatibility: Works on macOS, Windows, and Linux for maximum flexibility",
+       "No setup required: Just plug in, launch the app, and start using—no wizards or subscriptions needed",
+       "Portable design: Compact and lightweight for easy transport and on-the-go AI work"
+      ],
+      "unique_selling_points": [
+       "Enables private, on-device AI model training and chat with pre-loaded models and no cloud accounts required."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 7900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 7900,
+       "currency": "USD"
+      }
+     },
+     "title": "Docket Mini",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://shop.docketoffline.ai/buy/52399418966200:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<h3>Your Portable AI Workstation.</h3>\n<p><strong>What is Docket Mini? </strong>Docket Mini is a pocket-sized USB drive that transforms any computer into a private AI workstation. Simply plug it in, launch the app, and start chatting with powerful AI models completely offline. Everything runs locally on your machine. Your conversations, your files, your API keys all stay with you on your encrypted and portable Docket.</p>\n<h3><strong>How It Works</strong></h3>\n<ol>\n<li>Plug Docket Mini into any USB port (USB-C or USB-A)</li>\n<li>Launch the Docket app directly from the drive</li>\n<li>Start chatting with pre-loaded AI models instantly</li>\n</ol>\n<p><strong>No</strong> installation. <strong>No</strong> cloud accounts. <strong>No</strong> setup wizards. <strong>No</strong> subscriptions. Just plug in and go. </p>\n<h3><strong>Works On</strong></h3>\n<ul>\n<li>macOS</li>\n<li>Windows</li>\n<li>Linux</li>\n</ul>\n<p>One device. Every platform. Take your AI workspace anywhere.</p>\n<h3><strong>Recommended Minimum Hardware</strong></h3>\n<p>Performance varies based on the model you choose.</p>\n<ul>\n<li>\n<meta charset=\"utf-8\">RAM: 8 GB minimum (16 GB recommended)</li>\n<li>\n<meta charset=\"utf-8\">CPU: 64-bit, 4 cores or more (Intel i5 / AMD Ryzen 5 or newer)</li>\n<li>\n<meta charset=\"utf-8\">Apple Silicon (M1 or newer)</li>\n<li>GPU: Not required (but recommended)</li>\n<li>SSD: Not required (but recommended)</li>\n</ul>\n<h3><strong>What's Included</strong></h3>\n<ul>\n<li>Docket Mini USB Drive (128GB)</li>\n<li>7 Pre-loaded AI Models</li>\n<li>Lifetime software updates</li>\n<li>Quick start guide</li>\n</ul>\n<h3><strong>Technical Specs</strong></h3>\n<ul>\n<li>Storage: 128GB</li>\n<li>Interface: USB-C + USB-A (dual connector)</li>\n<li>USB Standard: USB 3.1 Gen 1</li>\n<li>Encryption: AES 256-bit</li>\n<li>Dimensions: 0.37 × 1.50 × 0.79 in</li>\n<li>Weight: ~9g</li>\n</ul>\n<h3>\n<meta charset=\"utf-8\"> <strong><em>Your AI. Your data. Your pocket.</em></strong>\n</h3>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "docket-mini",
+       "id": "gid://shopify/ProductVariant/52399418966200",
+       "list_price": {
+        "amount": 9900,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Docket Mini",
+         "height": 1196,
+         "preview": {
+          "height": 1196,
+          "url": "https://cdn.shopify.com/s/files/1/0928/9085/7656/files/1NewCoverImg.png",
+          "width": 1196
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0928/9085/7656/files/1NewCoverImg.png",
+         "width": 1196
+        }
+       ],
+       "price": {
+        "amount": 7900,
+        "currency": "USD"
+       },
+       "rating": {
+        "count": 3,
+        "scale_max": 5,
+        "scale_min": 1,
+        "value": 3.7
+       },
+       "seller": {
+        "domain": "gmi40p-tu.myshopify.com",
+        "id": "gid://shopify/Shop/92890857656",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/92890857656/policies/48728408248.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/92890857656/policies/50810028216.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/92890857656/policies/50810060984.html"
+         }
+        ],
+        "name": "Docket",
+        "url": "https://shop.docketoffline.ai"
+       },
+       "seller_product_id": "gid://shopify/Product/10172701409464",
+       "source": "shopify",
+       "title": "Docket Mini",
+       "url": "https://shop.docketoffline.ai/products/docket-mini?variant=52399418966200&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<style>\na {\n    text-decoration: none;\n    color: #464feb;\n}\ntr th, tr td {\n    border: 1px solid #e6e6e6;\n}\ntr th {\n    background-color: #f5f5f5;\n}\n</style>\n<div>\n<h2>Parallels Desktop 26 Standard Edition Lifetime License Key</h2>\n<p> </p>\n<p><strong>Parallels Desktop 26 Standard</strong> allows you to run Windows, Linux, and other operating systems on your Mac without restarting. It provides a simple and convenient way to access Windows applications while continuing to work in macOS, making it ideal for work, study, development, and everyday use.</p>\n<p><br></p>\n<h2>Key Features</h2>\n<p> </p>\n<h3>Run Windows and macOS Side by Side</h3>\n<p>Use Windows applications on your Mac without having to reboot. Switch between operating systems instantly and work seamlessly across both environments.</p>\n<h3>Optimized Performance</h3>\n<p>Designed to deliver smooth performance for everyday applications, productivity tools, business software, and web browsing.</p>\n<h3>Seamless Mac Integration</h3>\n<p>Copy and paste text, drag and drop files, and share folders between macOS and Windows with ease.</p>\n<h3>Support for Multiple Operating Systems</h3>\n<p>Create and run virtual machines for Windows, Linux, and other supported operating systems from a single Mac device.</p>\n<h3>Easy Setup and Management</h3>\n<p>Quickly install and manage virtual machines through an intuitive interface designed for both new and experienced users.</p>\n<h3>Compatible with Apple Silicon and Intel Macs</h3>\n<p>Supports modern Apple Silicon (M-series) Macs as well as Intel-based Mac computers.</p>\n<p><meta charset=\"utf-8\"><br></p>\n<h2>Why Choose Parallels Desktop 26 Standard Lifetime Key?</h2>\n<ul>\n<li>One-time purchase with a lifetime license key</li>\n<li>Run Windows and macOS simultaneously on one device</li>\n<li>Access Windows-only applications without leaving macOS</li>\n<li>Easy file sharing and clipboard synchronization between operating systems</li>\n<li>Suitable for work, education, software testing, and personal use</li>\n<li>Supports both Apple Silicon and Intel-based Mac computers</li>\n<li>User-friendly setup with minimal configuration required</li>\n<li>Reliable performance for everyday productivity tasks</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Run Windows applications on a Mac without restarting</li>\n<li>Access multiple operating systems from one device</li>\n<li>Improve productivity with seamless file and clipboard sharing</li>\n<li>Test software and applications in isolated environments</li>\n<li>Reduce the need for separate hardware</li>\n</ul>\n<h2>Ideal For</h2>\n<ul>\n<li>Home users</li>\n<li>Students</li>\n<li>Business professionals</li>\n<li>Remote workers</li>\n<li>Developers</li>\n<li>IT users</li>\n</ul>\n<h2>Important Notes</h2>\n<ul>\n<li>A compatible Mac computer is required.</li>\n<li>A separate Windows license may be required if installing Microsoft Windows.</li>\n<li>Internet access is required for activation and updates.</li>\n</ul>\n<p><strong>Parallels Desktop 26 Standard Edition</strong> is a practical solution for Mac users who need access to Windows applications and other operating systems while maintaining the familiar macOS experience.</p>\n</div>"
+     },
+     "handle": "parallels-desktop-26-standard-lifetime-key",
+     "id": "gid://shopify/p/6NQFzaaMIvsSbe7kHScp79",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop 26 Standard",
+       "height": 1200,
+       "preview": {
+        "height": 1200,
+        "url": "https://cdn.shopify.com/s/files/1/0755/5488/1820/files/unnamed_9b51a170-cbe7-4535-aaa5-5fcf7f7d3c43.jpg",
+        "width": 1200
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0755/5488/1820/files/unnamed_9b51a170-cbe7-4535-aaa5-5fcf7f7d3c43.jpg",
+       "width": 1200
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 10779,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 10779,
+       "currency": "USD"
+      }
+     },
+     "title": "Parallels Desktop 26 Standard Lifetime Key",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.nerdused.com/buy/57666099741054:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<style>\na {\n    text-decoration: none;\n    color: #464feb;\n}\ntr th, tr td {\n    border: 1px solid #e6e6e6;\n}\ntr th {\n    background-color: #f5f5f5;\n}\n</style>\n<div>\n<h2>Parallels Desktop 26 Standard Edition Lifetime License Key</h2>\n<p> </p>\n<p><strong>Parallels Desktop 26 Standard</strong> allows you to run Windows, Linux, and other operating systems on your Mac without restarting. It provides a simple and convenient way to access Windows applications while continuing to work in macOS, making it ideal for work, study, development, and everyday use.</p>\n<p><br></p>\n<h2>Key Features</h2>\n<p> </p>\n<h3>Run Windows and macOS Side by Side</h3>\n<p>Use Windows applications on your Mac without having to reboot. Switch between operating systems instantly and work seamlessly across both environments.</p>\n<h3>Optimized Performance</h3>\n<p>Designed to deliver smooth performance for everyday applications, productivity tools, business software, and web browsing.</p>\n<h3>Seamless Mac Integration</h3>\n<p>Copy and paste text, drag and drop files, and share folders between macOS and Windows with ease.</p>\n<h3>Support for Multiple Operating Systems</h3>\n<p>Create and run virtual machines for Windows, Linux, and other supported operating systems from a single Mac device.</p>\n<h3>Easy Setup and Management</h3>\n<p>Quickly install and manage virtual machines through an intuitive interface designed for both new and experienced users.</p>\n<h3>Compatible with Apple Silicon and Intel Macs</h3>\n<p>Supports modern Apple Silicon (M-series) Macs as well as Intel-based Mac computers.</p>\n<p><meta charset=\"utf-8\"><br></p>\n<h2>Why Choose Parallels Desktop 26 Standard Lifetime Key?</h2>\n<ul>\n<li>One-time purchase with a lifetime license key</li>\n<li>Run Windows and macOS simultaneously on one device</li>\n<li>Access Windows-only applications without leaving macOS</li>\n<li>Easy file sharing and clipboard synchronization between operating systems</li>\n<li>Suitable for work, education, software testing, and personal use</li>\n<li>Supports both Apple Silicon and Intel-based Mac computers</li>\n<li>User-friendly setup with minimal configuration required</li>\n<li>Reliable performance for everyday productivity tasks</li>\n</ul>\n<h2>Benefits</h2>\n<ul>\n<li>Run Windows applications on a Mac without restarting</li>\n<li>Access multiple operating systems from one device</li>\n<li>Improve productivity with seamless file and clipboard sharing</li>\n<li>Test software and applications in isolated environments</li>\n<li>Reduce the need for separate hardware</li>\n</ul>\n<h2>Ideal For</h2>\n<ul>\n<li>Home users</li>\n<li>Students</li>\n<li>Business professionals</li>\n<li>Remote workers</li>\n<li>Developers</li>\n<li>IT users</li>\n</ul>\n<h2>Important Notes</h2>\n<ul>\n<li>A compatible Mac computer is required.</li>\n<li>A separate Windows license may be required if installing Microsoft Windows.</li>\n<li>Internet access is required for activation and updates.</li>\n</ul>\n<p><strong>Parallels Desktop 26 Standard Edition</strong> is a practical solution for Mac users who need access to Windows applications and other operating systems while maintaining the familiar macOS experience.</p>\n</div>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-26-standard-lifetime-key",
+       "id": "gid://shopify/ProductVariant/57666099741054",
+       "list_price": {
+        "amount": 21999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Parallels Desktop 26 Standard",
+         "height": 1200,
+         "preview": {
+          "height": 1200,
+          "url": "https://cdn.shopify.com/s/files/1/0755/5488/1820/files/unnamed_9b51a170-cbe7-4535-aaa5-5fcf7f7d3c43.jpg",
+          "width": 1200
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0755/5488/1820/files/unnamed_9b51a170-cbe7-4535-aaa5-5fcf7f7d3c43.jpg",
+         "width": 1200
+        }
+       ],
+       "price": {
+        "amount": 10779,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "nerdused.myshopify.com",
+        "id": "gid://shopify/Shop/75554881820",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/75554881820/policies/32198000924.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/75554881820/policies/32198033692.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/75554881820/policies/32197968156.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/75554881820/policies/32198066460.html"
+         }
+        ],
+        "name": "Nerdused",
+        "url": "https://www.nerdused.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15996066496894",
+       "source": "shopify",
+       "title": "Parallels Desktop 26 Standard Lifetime Key",
+       "url": "https://www.nerdused.com/products/parallels-desktop-26-standard-lifetime-key?variant=57666099741054&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p><strong>Parallels Desktop 26 for Mac Lifetime</strong></p>\n<ul>\n<li>✔ Lifetime license for 1 Mac device</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with supported Intel and Apple Silicon Macs</li>\n<li>✔ License key and digital download included</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock more possibilities with Parallels Desktop 26 for Mac. Run Windows applications, access Linux environments and use powerful virtualisation tools directly on your Mac without switching devices or rebooting. Perfect for work, study, development and everyday productivity.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications for a smooth, productive workflow.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and specialist programs.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, testing and development.</li>\n<li>\n<strong>File Sharing:</strong> Easily transfer files, share folders and work with documents across operating systems.</li>\n<li>\n<strong>Development:</strong> Test applications, websites and software in different virtual environments.</li>\n<li>\n<strong>Mac Performance:</strong> Enjoy efficient virtualisation designed for compatible Intel and Apple Silicon Macs.</li>\n</ul>"
+     },
+     "handle": "parallels-desktop-standard-26-for-mac-lifetime-1",
+     "id": "gid://shopify/p/1O7GTtsZyergmdnNi8FIEJ",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop Standard 26 for Mac Lifetime",
+       "height": 1254,
+       "preview": {
+        "height": 1254,
+        "url": "https://cdn.shopify.com/s/files/1/0730/9521/7461/files/ParallelsDesktop26_e1ce1a5b-f288-4e58-8ea2-1d6e8d4cf8cf.webp",
+        "width": 1254
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0730/9521/7461/files/ParallelsDesktop26_e1ce1a5b-f288-4e58-8ea2-1d6e8d4cf8cf.webp",
+       "width": 1254
+      }
+     ],
+     "price_range": {
+      "max": {
+       "amount": 13400,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 13400,
+       "currency": "USD"
+      }
+     },
+     "rating": {
+      "count": 48,
+      "scale_max": 5,
+      "scale_min": 1,
+      "value": 4.8
+     },
+     "title": "Parallels Desktop Standard 26 for Mac Lifetime",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://www.softwaredesert.com/buy/55707036025208:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p><strong>Parallels Desktop 26 for Mac Lifetime</strong></p>\n<ul>\n<li>✔ Lifetime license for 1 Mac device</li>\n<li>✔ Instant digital email delivery</li>\n<li>✔ Run Windows and Linux alongside macOS</li>\n<li>✔ Compatible with supported Intel and Apple Silicon Macs</li>\n<li>✔ License key and digital download included</li>\n</ul>\n<p><strong>System Requirements</strong></p>\n<ul>\n<li>\n<div>\n<div>\n<p><span>Operating System:</span> <span>macOS </span><span>Tahoe </span><span>26, </span><span>Sequoia </span><span>15, </span><span>Sonoma </span><span>14, </span><span>Ventura </span><span>13, </span><span>Monterey </span><span>12, </span><span>Big </span><span>Sur </span><span>11, </span><span>Catalina </span><span>10.15 </span><span>or </span><span>Mojave </span><span>10.14 </span><span>(supported </span><span>updates </span><span>required).</span></p>\n</div>\n</div>\n</li>\n<li>\n<div>\n<div>\n<p><span>Processor:</span> <span>Apple </span><span>Silicon </span><span>(M-series) </span><span>or </span><span>Intel </span><span>Core </span><span>i5, </span><span>i7, </span><span>i9, </span><span>Core </span><span>M </span><span>or </span><span>Xeon.</span></p>\n</div>\n</div>\n</li>\n</ul>\n<p>Unlock more possibilities with Parallels Desktop 26 for Mac. Run Windows applications, access Linux environments and use powerful virtualisation tools directly on your Mac without switching devices or rebooting. Perfect for work, study, development and everyday productivity.</p>\n<p><strong>Key Features</strong></p>\n<ul>\n<li>\n<strong>Windows on Mac:</strong> Run Windows 11 and compatible Windows applications alongside macOS.</li>\n<li>\n<strong>Seamless Integration:</strong> Switch between Mac and Windows applications for a smooth, productive workflow.</li>\n<li>\n<strong>Business Tools:</strong> Access Windows-only software, Microsoft Office applications and specialist programs.</li>\n<li>\n<strong>Virtual Machines:</strong> Create and manage Windows and Linux environments for work, testing and development.</li>\n<li>\n<strong>File Sharing:</strong> Easily transfer files, share folders and work with documents across operating systems.</li>\n<li>\n<strong>Development:</strong> Test applications, websites and software in different virtual environments.</li>\n<li>\n<strong>Mac Performance:</strong> Enjoy efficient virtualisation designed for compatible Intel and Apple Silicon Macs.</li>\n</ul>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-standard-26-for-mac-lifetime-1",
+       "id": "gid://shopify/ProductVariant/55707036025208",
+       "list_price": {
+        "amount": 17400,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Parallels Desktop Standard 26 for Mac Lifetime",
+         "height": 1254,
+         "preview": {
+          "height": 1254,
+          "url": "https://cdn.shopify.com/s/files/1/0730/9521/7461/files/ParallelsDesktop26_e1ce1a5b-f288-4e58-8ea2-1d6e8d4cf8cf.webp",
+          "width": 1254
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0730/9521/7461/files/ParallelsDesktop26_e1ce1a5b-f288-4e58-8ea2-1d6e8d4cf8cf.webp",
+         "width": 1254
+        }
+       ],
+       "price": {
+        "amount": 13400,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "softwaredesert.myshopify.com",
+        "id": "gid://shopify/Shop/73095217461",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/73095217461/policies/30482235701.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/73095217461/policies/30482268469.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/73095217461/policies/30482202933.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/73095217461/policies/30482301237.html"
+         }
+        ],
+        "name": "Software Desert",
+        "url": "https://www.softwaredesert.com"
+       },
+       "seller_product_id": "gid://shopify/Product/15068954427768",
+       "source": "shopify",
+       "title": "Parallels Desktop Standard 26 for Mac Lifetime",
+       "url": "https://www.softwaredesert.com/products/parallels-desktop-standard-26-for-mac-lifetime-1?variant=55707036025208&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<h5><span style=\"color: rgb(255, 42, 0);\">All M1 are rented out, you may place order to be held in line.</span></h5>\n<h2>Mac Mini M1 Remote Rental at a Glance</h2>\n<p>Rent a dedicated, physical Mac Mini M1 hosted in Florida, USA, for entry-level remote macOS access. This is bare-metal hardware for your use, not a shared VM, and nothing is shipped to you.</p>\n<ul>\n<li>\n<strong>Processor and memory:</strong> Apple M1, 8-core, with 8 GB unified memory.</li>\n<li>\n<strong>Access:</strong> full admin privileges, secured remote access, and VPN included.</li>\n<li>\n<strong>Use cases:</strong> general macOS development, app testing, Safari testing, and lightweight Xcode builds.</li>\n<li>\n<strong>Choosing a plan:</strong> contact us to confirm SSD capacity, rental term, and setup timing.</li>\n<li>\n<strong>Getting started:</strong> access follows service-agreement acceptance and provisioning.</li>\n</ul>\n<p>Looking for an affordable way to <strong>rent a Mac</strong>? Our <strong>Mac Mini M1 rental</strong> gives you a dedicated Apple Silicon Mac hosted in the United States that you can reach from anywhere. You get full admin access, a VPN and secured remote access. Nothing is shipped, no deposit is needed, and you never maintain any hardware. It's our entry-level <a href=\"/collections/rentals\">remote Mac rental</a>, a dependable choice when you need real macOS without paying for M4 performance.</p>\n<p>☀️ <em>Eco-friendly infrastructure, powered in part by solar energy.</em></p>\n<h2>What You Get With Your Mac Mini M1 Rental</h2>\n<ul>\n<li>\n<strong>Dedicated Apple Mac Mini M1 (8-core)</strong>: bare-metal hardware with your own admin user, not a shared VM</li>\n<li><strong>8 GB unified memory</strong></li>\n<li>\n<strong>High-speed internet</strong> with a <strong>VPN included</strong>\n</li>\n<li>\n<strong>Secured remote access</strong> from your Windows, macOS, or Linux device</li>\n<li>\n<strong>Full admin access</strong> to install the tools you need</li>\n<li>\n<strong>No deposit, no shipping</strong>: we handle the hardware, power, and connectivity</li>\n<li>Standard support (priority support available on some plans)</li>\n</ul>\n<h2>Perfect For</h2>\n<ul>\n<li>General macOS development and app testing</li>\n<li>Lightweight Xcode / iOS builds and code signing</li>\n<li>Web automation and Safari browser testing</li>\n<li>Cost-effective remote macOS access for teams and contractors</li>\n<li>Using macOS from a Windows or Linux computer without buying a Mac</li>\n</ul>\n<h2>Multi-Mac Workgroups</h2>\n<p>Need more than one Mac? If you rent several units, we can set them up on a <strong>shared private network</strong> so they can see each other for file sharing, distributed builds, or collaborative team setups.</p>\n<h2>How It Works</h2>\n<ol>\n<li>\n<strong>Order</strong> your Mac Mini M1 rental.</li>\n<li>\n<strong>Agreement:</strong> we send a service agreement for you to review and sign.</li>\n<li>\n<strong>Provisioning:</strong> we prepare your dedicated Mac Mini and set up remote access.</li>\n<li>\n<strong>Connect</strong> using the secured remote access details we email you.</li>\n<li>\n<strong>Work:</strong> full admin access lets you install your tools and get started.</li>\n</ol>\n<h2>Rental Terms</h2>\n<p>Flexible rental terms are available. See the options above for current pricing. Enterprise and volume discounts are available for multiple instances or longer agreements; <a href=\"/pages/contact\">contact us</a> for a custom quote.</p>\n<h2>Acceptable Use Policy</h2>\n<ul>\n<li>Unlawful use is prohibited and results in immediate termination of service without refund.</li>\n<li>No peer-to-peer (P2P) file sharing or torrenting.</li>\n<li>No large-scale scraping or abusive high-bandwidth behavior unless explicitly permitted in a written agreement.</li>\n</ul>\n<h2>Mac Mini M1 Rental FAQ</h2>\n<h3>Is this a real, dedicated Mac?</h3>\n<p>Yes. It's a physical bare-metal Mac Mini M1 used only by you, not a shared virtual machine.</p>\n<h3>Can I use it for Xcode and iOS development?</h3>\n<p>Yes. Full admin access lets you install Xcode and use it for SwiftUI development, app testing, and standard CI/CD pipelines. For heavier builds, consider our <a href=\"/products/remote-mac-mini-m4-rental\">Mac Mini M4 rental</a>.</p>\n<h3>Is the connection secure?</h3>\n<p>Yes. You connect through secured remote access, and a VPN is included with your rental to help protect your privacy.</p>\n<h3>How do I connect?</h3>\n<p>From your Windows, macOS, or Linux device, using the connection details we email you after provisioning.</p>\n<h3>Where is the hardware located?</h3>\n<p>Physically in the United States (Florida).</p>\n<h3>Is there a deposit or shipping?</h3>\n<p>No. This is a remote rental: nothing is shipped to you and no deposit is required.</p>\n<h3>Is your infrastructure eco-friendly?</h3>\n<p>Yes. Our Mac Minis are powered in part by solar energy.</p>\n<h3>Can I rent multiple Macs for my team?</h3>\n<p>Yes. <a href=\"/pages/contact\">Contact us</a> about multi-unit setups, private networking, and volume discounts.</p>\n<h2>Compare Our Remote Mac Rentals</h2>\n<p>Need more power or a different term? See all <a href=\"/collections/rentals\">Mac Mini rentals</a>, or go straight to a plan:</p>\n<ul>\n<li><a href=\"/products/remote-mac-mini-m4-rental\">Mac Mini M4 rental: more speed and memory options</a></li>\n<li><a href=\"/products/mac-mini-m4-rental-1-month-one-time\">Mac Mini M4 rental, 1-month one-time</a></li>\n<li><a href=\"/products/rent-mac-mini-m5-remote-dedicated-hardware-full-admin-access\">Mac Mini M5 Pro &amp; M6 rental</a></li>\n<li><a href=\"/products/macos-vm-mac-mini-m6\">macOS virtual machine on a Mac Mini M6</a></li>\n</ul>\n<p>Further reading: <a href=\"/blogs/news/mac-mini-vs-vps-for-ai-developers\">Why developers choose a remote Mac Mini over a VPS</a>.</p>\n<p>Need custom specs or a longer-term plan? <a href=\"/pages/contact\">Contact us</a> and we'll prepare a service agreement for your review.</p>\n<p><small>Pricing and availability are subject to change. All rentals are subject to a service agreement.</small></p>"
+     },
+     "handle": "remote-access-mac-mini-m1-rental-dedicated-access",
+     "id": "gid://shopify/p/5EDIP1Bp2EUhHUBBHMkXBx",
+     "media": [
+      {
+       "alt_text": "Remote Access:  Mac Mini M1 Rental — Dedicated Admin Access",
+       "height": 2048,
+       "preview": {
+        "height": 2048,
+        "url": "https://cdn.shopify.com/s/files/1/0744/7809/2517/files/m1tall.png",
+        "width": 1152
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0744/7809/2517/files/m1tall.png",
+       "width": 1152
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Dedicated Mac Mini M1 with admin access: Enables full customization and installation of tools for professional workflows",
+       "Remote access via secure RustDesk: Allows users to connect from anywhere with end-to-end encryption for privacy",
+       "Eco-friendly US infrastructure: Powered in part by solar energy to reduce environmental impact",
+       "High-speed internet and VPN included: Ensures reliable connectivity and secure communication",
+       "Flexible rental terms and volume discounts: Suitable for individuals, teams, and enterprise needs"
+      ],
+      "unique_selling_points": [
+       "No physical hardware transfer or deposits required—remote access to a fully provisioned Mac Mini M1 with full admin rights via secure VPN."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 2900,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 2900,
+       "currency": "USD"
+      }
+     },
+     "title": "Remote Access:  Mac Mini M1 Rental — Dedicated Admin Access",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://mikegyver.com/buy/48597660041445:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "secondhand"
+       ],
+       "description": {
+        "plain": "<h5><span style=\"color: rgb(255, 42, 0);\">All M1 are rented out, you may place order to be held in line.</span></h5>\n<h2>Mac Mini M1 Remote Rental at a Glance</h2>\n<p>Rent a dedicated, physical Mac Mini M1 hosted in Florida, USA, for entry-level remote macOS access. This is bare-metal hardware for your use, not a shared VM, and nothing is shipped to you.</p>\n<ul>\n<li>\n<strong>Processor and memory:</strong> Apple M1, 8-core, with 8 GB unified memory.</li>\n<li>\n<strong>Access:</strong> full admin privileges, secured remote access, and VPN included.</li>\n<li>\n<strong>Use cases:</strong> general macOS development, app testing, Safari testing, and lightweight Xcode builds.</li>\n<li>\n<strong>Choosing a plan:</strong> contact us to confirm SSD capacity, rental term, and setup timing.</li>\n<li>\n<strong>Getting started:</strong> access follows service-agreement acceptance and provisioning.</li>\n</ul>\n<p>Looking for an affordable way to <strong>rent a Mac</strong>? Our <strong>Mac Mini M1 rental</strong> gives you a dedicated Apple Silicon Mac hosted in the United States that you can reach from anywhere. You get full admin access, a VPN and secured remote access. Nothing is shipped, no deposit is needed, and you never maintain any hardware. It's our entry-level <a href=\"/collections/rentals\">remote Mac rental</a>, a dependable choice when you need real macOS without paying for M4 performance.</p>\n<p>☀️ <em>Eco-friendly infrastructure, powered in part by solar energy.</em></p>\n<h2>What You Get With Your Mac Mini M1 Rental</h2>\n<ul>\n<li>\n<strong>Dedicated Apple Mac Mini M1 (8-core)</strong>: bare-metal hardware with your own admin user, not a shared VM</li>\n<li><strong>8 GB unified memory</strong></li>\n<li>\n<strong>High-speed internet</strong> with a <strong>VPN included</strong>\n</li>\n<li>\n<strong>Secured remote access</strong> from your Windows, macOS, or Linux device</li>\n<li>\n<strong>Full admin access</strong> to install the tools you need</li>\n<li>\n<strong>No deposit, no shipping</strong>: we handle the hardware, power, and connectivity</li>\n<li>Standard support (priority support available on some plans)</li>\n</ul>\n<h2>Perfect For</h2>\n<ul>\n<li>General macOS development and app testing</li>\n<li>Lightweight Xcode / iOS builds and code signing</li>\n<li>Web automation and Safari browser testing</li>\n<li>Cost-effective remote macOS access for teams and contractors</li>\n<li>Using macOS from a Windows or Linux computer without buying a Mac</li>\n</ul>\n<h2>Multi-Mac Workgroups</h2>\n<p>Need more than one Mac? If you rent several units, we can set them up on a <strong>shared private network</strong> so they can see each other for file sharing, distributed builds, or collaborative team setups.</p>\n<h2>How It Works</h2>\n<ol>\n<li>\n<strong>Order</strong> your Mac Mini M1 rental.</li>\n<li>\n<strong>Agreement:</strong> we send a service agreement for you to review and sign.</li>\n<li>\n<strong>Provisioning:</strong> we prepare your dedicated Mac Mini and set up remote access.</li>\n<li>\n<strong>Connect</strong> using the secured remote access details we email you.</li>\n<li>\n<strong>Work:</strong> full admin access lets you install your tools and get started.</li>\n</ol>\n<h2>Rental Terms</h2>\n<p>Flexible rental terms are available. See the options above for current pricing. Enterprise and volume discounts are available for multiple instances or longer agreements; <a href=\"/pages/contact\">contact us</a> for a custom quote.</p>\n<h2>Acceptable Use Policy</h2>\n<ul>\n<li>Unlawful use is prohibited and results in immediate termination of service without refund.</li>\n<li>No peer-to-peer (P2P) file sharing or torrenting.</li>\n<li>No large-scale scraping or abusive high-bandwidth behavior unless explicitly permitted in a written agreement.</li>\n</ul>\n<h2>Mac Mini M1 Rental FAQ</h2>\n<h3>Is this a real, dedicated Mac?</h3>\n<p>Yes. It's a physical bare-metal Mac Mini M1 used only by you, not a shared virtual machine.</p>\n<h3>Can I use it for Xcode and iOS development?</h3>\n<p>Yes. Full admin access lets you install Xcode and use it for SwiftUI development, app testing, and standard CI/CD pipelines. For heavier builds, consider our <a href=\"/products/remote-mac-mini-m4-rental\">Mac Mini M4 rental</a>.</p>\n<h3>Is the connection secure?</h3>\n<p>Yes. You connect through secured remote access, and a VPN is included with your rental to help protect your privacy.</p>\n<h3>How do I connect?</h3>\n<p>From your Windows, macOS, or Linux device, using the connection details we email you after provisioning.</p>\n<h3>Where is the hardware located?</h3>\n<p>Physically in the United States (Florida).</p>\n<h3>Is there a deposit or shipping?</h3>\n<p>No. This is a remote rental: nothing is shipped to you and no deposit is required.</p>\n<h3>Is your infrastructure eco-friendly?</h3>\n<p>Yes. Our Mac Minis are powered in part by solar energy.</p>\n<h3>Can I rent multiple Macs for my team?</h3>\n<p>Yes. <a href=\"/pages/contact\">Contact us</a> about multi-unit setups, private networking, and volume discounts.</p>\n<h2>Compare Our Remote Mac Rentals</h2>\n<p>Need more power or a different term? See all <a href=\"/collections/rentals\">Mac Mini rentals</a>, or go straight to a plan:</p>\n<ul>\n<li><a href=\"/products/remote-mac-mini-m4-rental\">Mac Mini M4 rental: more speed and memory options</a></li>\n<li><a href=\"/products/mac-mini-m4-rental-1-month-one-time\">Mac Mini M4 rental, 1-month one-time</a></li>\n<li><a href=\"/products/rent-mac-mini-m5-remote-dedicated-hardware-full-admin-access\">Mac Mini M5 Pro &amp; M6 rental</a></li>\n<li><a href=\"/products/macos-vm-mac-mini-m6\">macOS virtual machine on a Mac Mini M6</a></li>\n</ul>\n<p>Further reading: <a href=\"/blogs/news/mac-mini-vs-vps-for-ai-developers\">Why developers choose a remote Mac Mini over a VPS</a>.</p>\n<p>Need custom specs or a longer-term plan? <a href=\"/pages/contact\">Contact us</a> and we'll prepare a service agreement for your review.</p>\n<p><small>Pricing and availability are subject to change. All rentals are subject to a service agreement.</small></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "remote-access-mac-mini-m1-rental-dedicated-access",
+       "id": "gid://shopify/ProductVariant/48597660041445",
+       "media": [
+        {
+         "alt_text": "Remote Access:  Mac Mini M1 Rental — Dedicated Admin Access",
+         "height": 2048,
+         "preview": {
+          "height": 2048,
+          "url": "https://cdn.shopify.com/s/files/1/0744/7809/2517/files/m1tall.png",
+          "width": 1152
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0744/7809/2517/files/m1tall.png",
+         "width": 1152
+        }
+       ],
+       "price": {
+        "amount": 2900,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "wsimec-d1.myshopify.com",
+        "id": "gid://shopify/Shop/74478092517",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/74478092517/policies/35207971045.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/74478092517/policies/43671584997.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/74478092517/policies/43671486693.html"
+         }
+        ],
+        "name": "Mikegyver Computer & Tech. Inc.",
+        "url": "https://mikegyver.com"
+       },
+       "seller_product_id": "gid://shopify/Product/9525161951461",
+       "source": "shopify",
+       "title": "Remote Access:  Mac Mini M1 Rental — Dedicated Admin Access",
+       "url": "https://mikegyver.com/products/remote-access-mac-mini-m1-rental-dedicated-access?variant=48597660041445&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    },
+    {
+     "description": {
+      "plain": "<p>Parallels Desktop for Mac Business Edition is a single seamless, secure, and powerful platform that unites Mac and Windows environments, streamlines IT management, and boosts the productivity of remote teams.</p>\n<ul>\n<li>\n<strong>For Schools &amp; Administrative Offices:</strong> A cost-effective way to empower your educational Mac users with Windows apps and cross-platform software development capabilities.</li>\n<li>\n<strong>For IT Teams:</strong> Provision virtual machines using Parallels Desktop and manage licenses at scale based on your requirements.</li>\n<li>\n<strong>For Administrators:</strong> Empower your team with a trusted application, simplify onboarding, and ensure everybody is using the same stack.</li>\n</ul>\n<p>Features include:</p>\n<ul>\n<li>\n<strong>Jumpstart Your Org's AI Journey:</strong> Enable your development team to rapidly enhance their AI development skills. The pre-packaged virtual machine makes AI models readily accessible with tools and code examples, empowering individuals and teams to quickly and easily develop AI applications and apply them to real-world applications.</li>\n<li>\n<strong>Admin Capabilities:</strong> Use a deployment package to configure, deploy, and fine-tune Parallels Desktop settings. Add Windows applications to the Dock and enable Single Application Mode using Jamf, InTune, Kandji, Mosyle, Munki, and other Mac management tools.\n<p>Don't have or don't want to use a Mac management solution? No problem! Enroll new users in just a few clicks through automatically generated emails, each accompanied by a Parallels Desktop download link. All installations activate automatically.</p>\n</li>\n</ul>\n<p><strong>Core Components:</strong></p>\n<ul>\n<li>Maximum virtual RAM and CPUs: 128 GB vRAM, 32 vCPUs</li>\n<li>Supports latest versions of macOS, Windows, and Linux</li>\n<li>Authorized by Microsoft and SOC 2-certified</li>\n<li>3D acceleration—DirectX and OpenGL</li>\n<li>Run thousands of Windows apps on your Mac</li>\n</ul>\n<p><strong>Advanced Capabilities:</strong></p>\n<ul>\n<li>Run Windows apps with intensive graphics and processing needs</li>\n<li>Command line interface</li>\n<li>Built-in developer tools</li>\n</ul>\n<p><strong>System Tools:</strong></p>\n<ul>\n<li>Disk cleanup and memory cleaner</li>\n<li>System and performance monitoring</li>\n<li>Multimedia download and conversion</li>\n<li>Productivity and privacy boosters</li>\n<li>Screen capture and recording</li>\n</ul>\n<p><strong>Teams and Small Business (Not available on the Pro Version)</strong></p>\n<ul>\n<li>Centralized administration and license management</li>\n<li>Automation of CI/CD workflows</li>\n<li>Advanced provisioning tools</li>\n<li>Volume Licensing <strong><a href=\"https://thinkedu.com/pages/k12-and-higher-education-school-sales-hardware-and-software-savings-from-thinkedu#schoolSalesForm\" target=\"_blank\" rel=\"noopener\">(Contact us for a Custom Quote)</a></strong>\n</li>\n<li>Jamf and Intune integration for automated deployment and updates</li>\n</ul>\n<hr>\n<p>System Requirements:</p>\n<p><strong>Minimum</strong> to run most applications such as Microsoft Office, accounting software, trading software, and more:</p>\n<ul>\n<li>Processor: Any Apple silicon chip (M-series) Core i5, Core i7, Core i9, Intel Core M or Xeon processor</li>\n<li>Memory: 4GB of RAM</li>\n<li>Storage: 600 MB for Parallels Desktop application installation; Additional disk space for the guest operating system (at least 16 GB is required for Windows OS)</li>\n<li>Graphics: Any Apple silicon chip (M-series); Intel, AMD Radeon, or NVIDIA graphics cards</li>\n<li>Operating Systems:\n<ul>\n<li>macOS Tahoe 26.0 or newer (when released)</li>\n<li>macOS Sequoia 15.5 or newer</li>\n<li>macOS Sonoma 14.7 or newer</li>\n<li>macOS Ventura 13.7 or newer</li>\n<li>macOS Monterey 12.7 or newer[1]</li>\n<li>macOS Big Sur 11.7 or newer[1]</li>\n<li>macOS Catalina 10.15.7 or newer[1]</li>\n<li>macOS Mojave 10.14.6 or newer[1]</li>\n</ul>\n</li>\n</ul>\n<p><br><i>[1] – the marked OS version is not supported by Parallels Desktop 26, and the product installer will set up an earlier product version; support of guest operating systems can be limited. It is recommended to update macOS if possible. </i></p>\n<p>Best Performance for graphics-intensive applications, software development, high loads, and running multiple virtual machines</p>\n<ul>\n<li>Processor: Any Apple silicon chip (M-series); Intel Core i5, Core i7, Core i9 or Xeon processor</li>\n<li>Memory: 16GB of RAM</li>\n<li>Storage: <strong><a href=\"https://thinkedu.com/collections/hardware-storage-solid-state-drives-ssd\" target=\"_blank\" rel=\"noopener\">Solid State Drive (SSD)</a></strong>\n</li>\n<li>Graphics: Any Apple silicon chip (M-series); AMD Radeon Pro graphics card</li>\n<li>Operating Systems:\n<ul>\n<li>macOS Tahoe 26.0 or newer (when released) macOS Sequoia 15.5 or newer macOS Sonoma 14.7 or newer macOS Ventura 13.7 or newer</li>\n</ul>\n</li>\n</ul>\n<p><strong>Supported Guest Operating Systems (Mac with Apple M-series chip)</strong><br>Only Arm versions of operating systems are supported.</p>\n<ul>\n<li>Windows 11 Pro and Enterprise editions (recommended)</li>\n<li>Windows Server 2025 (when released)</li>\n<li>Ubuntu Linux 25.04, 24.04, 23.04, 22.04, 21.10, 21.04, 20.10, 20.04</li>\n<li>Fedora Workstation 42, 41, 40, 39</li>\n<li>Red Hat Enterprise Linux 10, 9</li>\n<li>Debian GNU/Linux 12, 11</li>\n<li>Kali Linux 2025.2, 2024.2, 2023.1, 2022.2, 2022.1, 2021.3</li>\n<li>CentOS Stream 10, 9</li>\n<li>macOS Monterey 12 (in-app download)</li>\n<li>macOS Ventura 13 (in-app download)</li>\n<li>macOS Sonoma 14 (in-app download)</li>\n<li>macOS Sequoia 15 (in-app download)</li>\n</ul>\n<p>Parallels Desktop 26 features a preview version of x86 emulation that allows you to run some of the x86 operating systems.</p>\n<p><strong>Supported Guest Operating Systems (Mac with an Intel processor)</strong><br>Only x86 versions of operating systems are supported.</p>\n<ul>\n<li>Windows 11 (recommended)</li>\n<li>Windows 10[1]</li>\n<li>Windows Server 2025 (when released)</li>\n<li>Windows Server 2022</li>\n<li>Windows Server 2019</li>\n<li>Windows Server 2016</li>\n<li>Windows Server 2012 R2</li>\n<li>Boot2Docker</li>\n<li>Red Hat Enterprise Linux (RHEL) 10, 9, 8, 7</li>\n<li>CentOS Linux Stream 10, 9</li>\n<li>Fedora Linux 42, 41, 40, 39</li>\n<li>Ubuntu 25.04, 24.04, 23.04, 22.04 LTS, 21.10, 21.04, 20.04 LTS</li>\n<li>Debian GNU/Linux 12, 11</li>\n<li>Suse Linux Enterprise 15</li>\n<li>Kali 2025.2, 2024.3, 2023.4, 2022.2, 2022.1</li>\n<li>openBSD 6[2]</li>\n<li>Android OS (in-app download only)</li>\n<li>macOS Sequoia 15.0[3]</li>\n<li>macOS Sonoma 14.0[3]</li>\n<li>macOS Ventura 13.0[3]</li>\n<li>macOS Monterey 12.0[3]</li>\n<li>macOS Big Sur 11.0[3]</li>\n<li>macOS Catalina 10.15[3]</li>\n<li>macOS Mojave 10.14.x[3]</li>\n<li>macOS High Sierra 10.13.x[3]</li>\n<li>macOS Sierra 10.12.x[3]</li>\n<li>OS X El Capitan 10.11.x[3]</li>\n<li>OS X Yosemite 10.10.x[3]</li>\n<li>OS X Mavericks 10.9.x[3]</li>\n<li>and many more...</li>\n</ul>\n<p>[1] — Only the 64-bit version is supported.<br>[2] — Parallels Tools are not available for this operating system.<br>[3] — Requires a Mac computer that supports the operating system as a host OS.<br></p>"
+     },
+     "handle": "parallels-desktop-for-mac-business-edition-download",
+     "id": "gid://shopify/p/3r3ngvaCgmI2IySF4S1SiR",
+     "media": [
+      {
+       "alt_text": "Parallels Desktop for Mac Business Edition Academic 1-Year Subscription (Download)",
+       "height": 700,
+       "preview": {
+        "height": 700,
+        "url": "https://cdn.shopify.com/s/files/1/0800/4435/9966/files/parallelsdesktopbusinessedition.png",
+        "width": 519
+       },
+       "type": "image",
+       "url": "https://cdn.shopify.com/s/files/1/0800/4435/9966/files/parallelsdesktopbusinessedition.png",
+       "width": 519
+      }
+     ],
+     "metadata": {
+      "top_features": [
+       "Run thousands of Windows and Linux applications on your Mac for enhanced productivity",
+       "Centralized administration and license management for scalable deployment",
+       "Advanced provisioning tools and Jamf, Intune, and Kandji integration for automated deployment",
+       "Pre-packaged virtual machines for AI development and rapid onboarding",
+       "3D acceleration and high-performance support for graphics-intensive applications"
+      ],
+      "unique_selling_points": [
+       "Enables cross-platform development and deployment of Windows and Linux applications on Mac with centralized administration and automation tools."
+      ]
+     },
+     "price_range": {
+      "max": {
+       "amount": 6995,
+       "currency": "USD"
+      },
+      "min": {
+       "amount": 6995,
+       "currency": "USD"
+      }
+     },
+     "title": "Parallels Desktop for Mac Business Edition Academic 1-Year Subscription (Download)",
+     "variants": [
+      {
+       "availability": {
+        "available": true
+       },
+       "checkout_url": "https://thinkedu.com/buy/50702872510750:1?ucp/version=2026-08-25&attribution/utm_source=shopify&attribution/utm_medium=catalog&attribution/click_id_tag=_gsid&attribution/click_id_value=zBf7taY2r1eC&_gsid=zBf7taY2r1eC",
+       "condition": [
+        "new"
+       ],
+       "description": {
+        "plain": "<p>Parallels Desktop for Mac Business Edition is a single seamless, secure, and powerful platform that unites Mac and Windows environments, streamlines IT management, and boosts the productivity of remote teams.</p>\n<ul>\n<li>\n<strong>For Schools &amp; Administrative Offices:</strong> A cost-effective way to empower your educational Mac users with Windows apps and cross-platform software development capabilities.</li>\n<li>\n<strong>For IT Teams:</strong> Provision virtual machines using Parallels Desktop and manage licenses at scale based on your requirements.</li>\n<li>\n<strong>For Administrators:</strong> Empower your team with a trusted application, simplify onboarding, and ensure everybody is using the same stack.</li>\n</ul>\n<p>Features include:</p>\n<ul>\n<li>\n<strong>Jumpstart Your Org's AI Journey:</strong> Enable your development team to rapidly enhance their AI development skills. The pre-packaged virtual machine makes AI models readily accessible with tools and code examples, empowering individuals and teams to quickly and easily develop AI applications and apply them to real-world applications.</li>\n<li>\n<strong>Admin Capabilities:</strong> Use a deployment package to configure, deploy, and fine-tune Parallels Desktop settings. Add Windows applications to the Dock and enable Single Application Mode using Jamf, InTune, Kandji, Mosyle, Munki, and other Mac management tools.\n<p>Don't have or don't want to use a Mac management solution? No problem! Enroll new users in just a few clicks through automatically generated emails, each accompanied by a Parallels Desktop download link. All installations activate automatically.</p>\n</li>\n</ul>\n<p><strong>Core Components:</strong></p>\n<ul>\n<li>Maximum virtual RAM and CPUs: 128 GB vRAM, 32 vCPUs</li>\n<li>Supports latest versions of macOS, Windows, and Linux</li>\n<li>Authorized by Microsoft and SOC 2-certified</li>\n<li>3D acceleration—DirectX and OpenGL</li>\n<li>Run thousands of Windows apps on your Mac</li>\n</ul>\n<p><strong>Advanced Capabilities:</strong></p>\n<ul>\n<li>Run Windows apps with intensive graphics and processing needs</li>\n<li>Command line interface</li>\n<li>Built-in developer tools</li>\n</ul>\n<p><strong>System Tools:</strong></p>\n<ul>\n<li>Disk cleanup and memory cleaner</li>\n<li>System and performance monitoring</li>\n<li>Multimedia download and conversion</li>\n<li>Productivity and privacy boosters</li>\n<li>Screen capture and recording</li>\n</ul>\n<p><strong>Teams and Small Business (Not available on the Pro Version)</strong></p>\n<ul>\n<li>Centralized administration and license management</li>\n<li>Automation of CI/CD workflows</li>\n<li>Advanced provisioning tools</li>\n<li>Volume Licensing <strong><a href=\"https://thinkedu.com/pages/k12-and-higher-education-school-sales-hardware-and-software-savings-from-thinkedu#schoolSalesForm\" target=\"_blank\" rel=\"noopener\">(Contact us for a Custom Quote)</a></strong>\n</li>\n<li>Jamf and Intune integration for automated deployment and updates</li>\n</ul>\n<hr>\n<p>System Requirements:</p>\n<p><strong>Minimum</strong> to run most applications such as Microsoft Office, accounting software, trading software, and more:</p>\n<ul>\n<li>Processor: Any Apple silicon chip (M-series) Core i5, Core i7, Core i9, Intel Core M or Xeon processor</li>\n<li>Memory: 4GB of RAM</li>\n<li>Storage: 600 MB for Parallels Desktop application installation; Additional disk space for the guest operating system (at least 16 GB is required for Windows OS)</li>\n<li>Graphics: Any Apple silicon chip (M-series); Intel, AMD Radeon, or NVIDIA graphics cards</li>\n<li>Operating Systems:\n<ul>\n<li>macOS Tahoe 26.0 or newer (when released)</li>\n<li>macOS Sequoia 15.5 or newer</li>\n<li>macOS Sonoma 14.7 or newer</li>\n<li>macOS Ventura 13.7 or newer</li>\n<li>macOS Monterey 12.7 or newer[1]</li>\n<li>macOS Big Sur 11.7 or newer[1]</li>\n<li>macOS Catalina 10.15.7 or newer[1]</li>\n<li>macOS Mojave 10.14.6 or newer[1]</li>\n</ul>\n</li>\n</ul>\n<p><br><i>[1] – the marked OS version is not supported by Parallels Desktop 26, and the product installer will set up an earlier product version; support of guest operating systems can be limited. It is recommended to update macOS if possible. </i></p>\n<p>Best Performance for graphics-intensive applications, software development, high loads, and running multiple virtual machines</p>\n<ul>\n<li>Processor: Any Apple silicon chip (M-series); Intel Core i5, Core i7, Core i9 or Xeon processor</li>\n<li>Memory: 16GB of RAM</li>\n<li>Storage: <strong><a href=\"https://thinkedu.com/collections/hardware-storage-solid-state-drives-ssd\" target=\"_blank\" rel=\"noopener\">Solid State Drive (SSD)</a></strong>\n</li>\n<li>Graphics: Any Apple silicon chip (M-series); AMD Radeon Pro graphics card</li>\n<li>Operating Systems:\n<ul>\n<li>macOS Tahoe 26.0 or newer (when released) macOS Sequoia 15.5 or newer macOS Sonoma 14.7 or newer macOS Ventura 13.7 or newer</li>\n</ul>\n</li>\n</ul>\n<p><strong>Supported Guest Operating Systems (Mac with Apple M-series chip)</strong><br>Only Arm versions of operating systems are supported.</p>\n<ul>\n<li>Windows 11 Pro and Enterprise editions (recommended)</li>\n<li>Windows Server 2025 (when released)</li>\n<li>Ubuntu Linux 25.04, 24.04, 23.04, 22.04, 21.10, 21.04, 20.10, 20.04</li>\n<li>Fedora Workstation 42, 41, 40, 39</li>\n<li>Red Hat Enterprise Linux 10, 9</li>\n<li>Debian GNU/Linux 12, 11</li>\n<li>Kali Linux 2025.2, 2024.2, 2023.1, 2022.2, 2022.1, 2021.3</li>\n<li>CentOS Stream 10, 9</li>\n<li>macOS Monterey 12 (in-app download)</li>\n<li>macOS Ventura 13 (in-app download)</li>\n<li>macOS Sonoma 14 (in-app download)</li>\n<li>macOS Sequoia 15 (in-app download)</li>\n</ul>\n<p>Parallels Desktop 26 features a preview version of x86 emulation that allows you to run some of the x86 operating systems.</p>\n<p><strong>Supported Guest Operating Systems (Mac with an Intel processor)</strong><br>Only x86 versions of operating systems are supported.</p>\n<ul>\n<li>Windows 11 (recommended)</li>\n<li>Windows 10[1]</li>\n<li>Windows Server 2025 (when released)</li>\n<li>Windows Server 2022</li>\n<li>Windows Server 2019</li>\n<li>Windows Server 2016</li>\n<li>Windows Server 2012 R2</li>\n<li>Boot2Docker</li>\n<li>Red Hat Enterprise Linux (RHEL) 10, 9, 8, 7</li>\n<li>CentOS Linux Stream 10, 9</li>\n<li>Fedora Linux 42, 41, 40, 39</li>\n<li>Ubuntu 25.04, 24.04, 23.04, 22.04 LTS, 21.10, 21.04, 20.04 LTS</li>\n<li>Debian GNU/Linux 12, 11</li>\n<li>Suse Linux Enterprise 15</li>\n<li>Kali 2025.2, 2024.3, 2023.4, 2022.2, 2022.1</li>\n<li>openBSD 6[2]</li>\n<li>Android OS (in-app download only)</li>\n<li>macOS Sequoia 15.0[3]</li>\n<li>macOS Sonoma 14.0[3]</li>\n<li>macOS Ventura 13.0[3]</li>\n<li>macOS Monterey 12.0[3]</li>\n<li>macOS Big Sur 11.0[3]</li>\n<li>macOS Catalina 10.15[3]</li>\n<li>macOS Mojave 10.14.x[3]</li>\n<li>macOS High Sierra 10.13.x[3]</li>\n<li>macOS Sierra 10.12.x[3]</li>\n<li>OS X El Capitan 10.11.x[3]</li>\n<li>OS X Yosemite 10.10.x[3]</li>\n<li>OS X Mavericks 10.9.x[3]</li>\n<li>and many more...</li>\n</ul>\n<p>[1] — Only the 64-bit version is supported.<br>[2] — Parallels Tools are not available for this operating system.<br>[3] — Requires a Mac computer that supports the operating system as a host OS.<br></p>"
+       },
+       "eligible": {
+        "native_checkout": false
+       },
+       "handle": "parallels-desktop-for-mac-business-edition-download",
+       "id": "gid://shopify/ProductVariant/50702872510750",
+       "list_price": {
+        "amount": 14999,
+        "currency": "USD"
+       },
+       "media": [
+        {
+         "alt_text": "Parallels Desktop for Mac Business Edition Academic 1-Year Subscription (Download)",
+         "height": 700,
+         "preview": {
+          "height": 700,
+          "url": "https://cdn.shopify.com/s/files/1/0800/4435/9966/files/parallelsdesktopbusinessedition.png",
+          "width": 519
+         },
+         "type": "image",
+         "url": "https://cdn.shopify.com/s/files/1/0800/4435/9966/files/parallelsdesktopbusinessedition.png",
+         "width": 519
+        }
+       ],
+       "price": {
+        "amount": 6995,
+        "currency": "USD"
+       },
+       "seller": {
+        "domain": "thinkedu.myshopify.com",
+        "id": "gid://shopify/Shop/80044359966",
+        "links": [
+         {
+          "type": "privacy_policy",
+          "url": "https://checkout.shopify.com/80044359966/policies/40544305438.html"
+         },
+         {
+          "type": "terms_of_service",
+          "url": "https://checkout.shopify.com/80044359966/policies/40544403742.html"
+         },
+         {
+          "type": "refund_policy",
+          "url": "https://checkout.shopify.com/80044359966/policies/40544370974.html"
+         },
+         {
+          "type": "shipping_policy",
+          "url": "https://checkout.shopify.com/80044359966/policies/40544436510.html"
+         }
+        ],
+        "name": "ThinkEDU",
+        "url": "https://thinkedu.com"
+       },
+       "seller_product_id": "gid://shopify/Product/10040761221406",
+       "source": "shopify",
+       "title": "Parallels Desktop for Mac Business Edition Academic 1-Year Subscription (Download)",
+       "url": "https://thinkedu.com/products/parallels-desktop-for-mac-business-edition-download?variant=50702872510750&_gsid=zBf7taY2r1eC&utm_source=shopify&utm_medium=catalog"
+      }
+     ]
+    }
+   ]
+  },
+  "transport": "mcp",
+  "ucp": {
+   "capabilities": {
+    "dev.shopify.catalog.global": [
+     {
+      "extends": [
+       "dev.ucp.shopping.catalog.search",
+       "dev.ucp.shopping.catalog.lookup"
+      ],
+      "requires": {
+       "protocol": {
+        "min": "2026-08-25"
+       }
+      },
+      "schema": "https://shopify.dev/ucp/schemas/2026-08-25/shopify_catalog_global.json",
+      "spec": "https://shopify.dev/docs/agents/catalog/global-catalog",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.lookup": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_lookup.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ],
+    "dev.ucp.shopping.catalog.search": [
+     {
+      "schema": "https://ucp.dev/2026-08-25/schemas/shopping/catalog_search.json",
+      "spec": "https://ucp.dev/2026-08-25/specification/shopping/catalog/",
+      "version": "2026-08-25"
+     }
+    ]
+   },
+   "status": "success",
+   "version": "2026-08-25"
+  }
+ }
+}
